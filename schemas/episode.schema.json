@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Paperclipalypse Codex Episode",
+  "type": "object",
+  "required": ["premise", "contestants", "jokes", "judgeResults"],
+  "additionalProperties": false,
+  "properties": {
+    "createdAt": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "premise": {
+      "type": "object",
+      "required": ["place", "person", "element", "text"],
+      "additionalProperties": false,
+      "properties": {
+        "place": { "type": "string" },
+        "person": { "type": "string" },
+        "element": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    },
+    "contestants": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "displayName"],
+        "additionalProperties": true,
+        "properties": {
+          "id": { "type": "string" },
+          "displayName": { "type": "string" },
+          "style": { "type": "string" }
+        }
+      }
+    },
+    "jokes": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "contestantId", "contestantName", "title", "setup", "punchline"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "contestantId": { "type": "string" },
+          "contestantName": { "type": "string" },
+          "title": { "type": "string" },
+          "setup": { "type": "string" },
+          "punchline": { "type": "string" }
+        }
+      }
+    },
+    "judgeResults": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["judgeId", "judgeName", "scores"],
+        "additionalProperties": false,
+        "properties": {
+          "judgeId": { "type": "string" },
+          "judgeName": { "type": "string" },
+          "scores": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "jokeId",
+                "originality",
+                "surprise",
+                "craft",
+                "promptFit",
+                "laugh",
+                "comment"
+              ],
+              "additionalProperties": false,
+              "properties": {
+                "jokeId": { "type": "string" },
+                "originality": { "type": "integer", "minimum": 1, "maximum": 10 },
+                "surprise": { "type": "integer", "minimum": 1, "maximum": 10 },
+                "craft": { "type": "integer", "minimum": 1, "maximum": 10 },
+                "promptFit": { "type": "integer", "minimum": 1, "maximum": 10 },
+                "laugh": { "type": "integer", "minimum": 1, "maximum": 10 },
+                "comment": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "comicPanelPrompt": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI",
+      "provider": "openai",
+      "apiKeyEnv": "OPENAI_API_KEY",
+      "modelEnv": "OPENAI_MODEL",
+      "defaultModel": "gpt-4.1"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Anthropic",
+      "provider": "anthropic",
+      "apiKeyEnv": "ANTHROPIC_API_KEY",
+      "modelEnv": "ANTHROPIC_MODEL",
+      "defaultModel": "claude-sonnet-4-5"
+    },
+    {
+      "id": "google",
+      "displayName": "Google",
+      "provider": "google",
+      "apiKeyEnv": "GOOGLE_API_KEY",
+      "modelEnv": "GOOGLE_MODEL",
+      "defaultModel": "gemini-2.5-pro"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI",
+      "provider": "openai-compatible",
+      "baseUrl": "https://api.x.ai/v1",
+      "apiKeyEnv": "XAI_API_KEY",
+      "modelEnv": "XAI_MODEL",
+      "defaultModel": "grok-4"
+    },
+    {
+      "id": "mistral",
+      "displayName": "Mistral",
+      "provider": "openai-compatible",
+      "baseUrl": "https://api.mistral.ai/v1",
+      "apiKeyEnv": "MISTRAL_API_KEY",
+      "modelEnv": "MISTRAL_MODEL",
+      "defaultModel": "mistral-large-latest"
+    }
+  ]
+}
+

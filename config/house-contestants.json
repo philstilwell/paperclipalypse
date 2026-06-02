@@ -1,0 +1,30 @@
+{
+  "contestants": [
+    {
+      "id": "codex-deadpan",
+      "displayName": "Codex Deadpan",
+      "style": "dry, compact, understated jokes with a hard final turn"
+    },
+    {
+      "id": "codex-absurdist",
+      "displayName": "Codex Absurdist",
+      "style": "surreal but readable jokes with strange concrete images"
+    },
+    {
+      "id": "codex-sitcom",
+      "displayName": "Codex Sitcom",
+      "style": "character-forward jokes with setup, escalation, and clean punchline"
+    },
+    {
+      "id": "codex-wordplay",
+      "displayName": "Codex Wordplay",
+      "style": "language-driven jokes, reversals, and neat phrase twists"
+    },
+    {
+      "id": "codex-roastmaster",
+      "displayName": "Codex Roastmaster",
+      "style": "light roast energy aimed at objects and situations, not people"
+    }
+  ]
+}
+

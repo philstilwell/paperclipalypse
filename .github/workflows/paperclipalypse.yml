@@ -1,0 +1,61 @@
+name: Paperclipalypse
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    inputs:
+      generate_dry_run:
+        description: "Generate and commit a deterministic dry-run episode before deploying"
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: paperclipalypse-pages
+  cancel-in-progress: false
+
+jobs:
+  tournament:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      SHOULD_GENERATE_DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.generate_dry_run && '1' || '0' }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate dry-run episode
+        if: env.SHOULD_GENERATE_DRY_RUN == '1'
+        run: node scripts/run-tournament.mjs --dry-run
+
+      - name: Commit generated dry-run episode
+        if: env.SHOULD_GENERATE_DRY_RUN == '1'
+        run: |
+          git config user.name "paperclipalypse-bot"
+          git config user.email "paperclipalypse-bot@users.noreply.github.com"
+          git add data/runs site
+          git diff --cached --quiet || git commit -m "Publish Paperclipalypse episode"
+          git push
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

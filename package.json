@@ -1,0 +1,14 @@
+{
+  "name": "paperclipalypse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "tournament": "node scripts/run-tournament.mjs",
+    "tournament:dry-run": "PAPERCLIPALYPSE_DRY_RUN=1 node scripts/run-tournament.mjs --seed demo"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
+

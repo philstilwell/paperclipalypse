@@ -1,0 +1,89 @@
+# Paperclipalypse
+
+Paperclipalypse is an automated AI comedy tournament for
+[paperclipalypse.com](https://paperclipalypse.com).
+
+Each run:
+
+1. Builds a random premise from a place, a person/archetype, and an element.
+2. Asks five configured AI contestants to write one clean joke.
+3. Asks those same models to judge the jokes they did not write.
+4. Aggregates rubric scores.
+5. Publishes a static scoreboard and archive.
+
+The first version is intentionally small: no dependencies, no database, and no
+paid model APIs by default.
+
+## Cost-Controlled Plan
+
+Your normal Codex subscription is best used through the Codex app or CLI, not as
+a hidden pool of free API calls inside GitHub Actions. GitHub Actions can deploy
+the static site for free, but model generation in CI generally requires API-key
+auth and can cost money.
+
+So the default flow is:
+
+1. A Codex app automation runs on your machine using your normal Codex access.
+2. It follows `prompts/codex-house-tournament.md`.
+3. It writes an episode JSON file under `data/inbox/`.
+4. It runs `node scripts/run-tournament.mjs --episode-file data/inbox/<file>.json`.
+5. It commits and pushes the generated `data/runs/` and `site/` changes.
+6. GitHub Pages deploys the static site on push.
+
+This produces a "Codex house tournament" rather than five independent external
+models. That is the honest no-surprise-bill version. If you later want five
+actual external models, `config/contestants.json` and the provider adapters are
+still available as an opt-in paid API mode.
+
+## Local Run
+
+```sh
+npm run tournament:dry-run
+```
+
+That produces a mock episode under `data/runs/` and updates `site/`.
+
+To publish a Codex-generated episode JSON:
+
+```sh
+node scripts/run-tournament.mjs --episode-file data/inbox/codex-episode.json
+```
+
+For optional live model API calls, copy `.env.example` to `.env`, fill in
+provider keys, and run:
+
+```sh
+npm run tournament
+```
+
+## GitHub Setup
+
+No provider secrets are required for the default Pages deployment.
+
+Only add these repository secrets if you intentionally enable paid API mode:
+
+- `OPENAI_API_KEY`
+- `ANTHROPIC_API_KEY`
+- `GOOGLE_API_KEY`
+- `XAI_API_KEY`
+- `MISTRAL_API_KEY`
+
+Optional repository variables can override the configured model names:
+
+- `OPENAI_MODEL`
+- `ANTHROPIC_MODEL`
+- `GOOGLE_MODEL`
+- `XAI_MODEL`
+- `MISTRAL_MODEL`
+
+GitHub Pages is deployed from the generated `site/` folder by
+`.github/workflows/paperclipalypse.yml` whenever `main` changes. The
+`site/CNAME` file points Pages at `paperclipalypse.com`; DNS still needs to be
+configured with the domain host.
+
+## Safety Posture
+
+The default prompt pools use fictional or archetypal people rather than private
+individuals. The Codex automation prompt also asks for humor that avoids hate,
+harassment, sexual content, defamation, and recent tragedies. A stronger
+moderation pass should be added before this runs unattended in public.
