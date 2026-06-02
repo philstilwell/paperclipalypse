@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { envFlag, loadDotEnv, configuredModel } from "./lib/env.mjs";
+import { allowsPaidApi, envFlag, loadDotEnv, configuredModel } from "./lib/env.mjs";
 import { buildPremise, comicPanelPrompt, generationPrompt, judgingPrompt } from "./lib/prompt.mjs";
 import { callContestant, parseModelJson } from "./lib/providers.mjs";
 import { aggregateScores, deterministicDryScores, normalizeJudgeScores } from "./lib/scoring.mjs";
@@ -34,6 +34,7 @@ if (episodeFile) {
 }
 
 if (!dryRun) {
+  assertPaidApiAllowed(paidContestants);
   assertApiKeys(paidContestants);
 }
 
@@ -256,6 +257,22 @@ function assertApiKeys(modelRoster) {
       `Missing API keys: ${[...new Set(missing)].join(", ")}. Run with --dry-run for local mock output.`
     );
   }
+}
+
+function assertPaidApiAllowed(modelRoster) {
+  const meteredContestants = modelRoster.filter((contestant) => contestant.billing === "paid-api");
+  if (!meteredContestants.length || allowsPaidApi()) {
+    return;
+  }
+
+  throw new Error(
+    [
+      "External live tournament mode includes metered provider APIs.",
+      "This project is configured for no-paid-API hobby mode by default.",
+      "Use npm run tournament:dry-run or publish a Codex-generated episode JSON instead.",
+      "To intentionally allow paid API calls locally, set PAPERCLIPALYPSE_ALLOW_PAID_API=1."
+    ].join(" ")
+  );
 }
 
 function modelName(contestant) {

@@ -31,6 +31,10 @@ export function envFlag(name) {
   return value === "1" || value === "true" || value === "yes";
 }
 
+export function allowsPaidApi() {
+  return envFlag("PAPERCLIPALYPSE_ALLOW_PAID_API");
+}
+
 export function configuredModel(contestant) {
   return process.env[contestant.modelEnv] || contestant.defaultModel;
 }
@@ -45,4 +49,3 @@ function stripQuotes(value) {
 
   return value;
 }
-

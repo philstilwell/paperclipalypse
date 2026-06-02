@@ -1,0 +1,39 @@
+{
+  "mode": "no-paid-apis-by-default",
+  "defaultRuntime": "codex-house",
+  "rules": [
+    "Do not call metered external provider APIs unless PAPERCLIPALYPSE_ALLOW_PAID_API=1 is set locally.",
+    "Do not add provider API keys to GitHub Actions secrets for normal operation.",
+    "Use local seed generation from data/seed-lists.json for routine episodes.",
+    "Use frontier models manually through their free/subscription chat surfaces only when that provider's terms allow it."
+  ],
+  "freeAutomationCandidates": [
+    {
+      "contestantId": "google",
+      "model": "gemini-3.5-flash",
+      "condition": "Use only within Google AI Studio/Gemini API free-tier quota and after accepting Google's data-use terms."
+    }
+  ],
+  "subscriptionOnlyCandidates": [
+    {
+      "contestantId": "openai",
+      "model": "gpt-5.4-mini",
+      "condition": "Use through Codex/ChatGPT subscription workflows, not the metered OpenAI API."
+    },
+    {
+      "contestantId": "anthropic",
+      "model": "Claude Sonnet 4.6",
+      "condition": "Use manually through a free/subscription Claude chat surface if available."
+    },
+    {
+      "contestantId": "xai",
+      "model": "grok-4.3",
+      "condition": "Use manually through a free/subscription Grok surface if available."
+    },
+    {
+      "contestantId": "mistral",
+      "model": "Mistral Small or Medium",
+      "condition": "Use manually through a free/subscription Mistral chat surface if available."
+    }
+  ]
+}

@@ -2,46 +2,60 @@
   "contestants": [
     {
       "id": "openai",
-      "displayName": "OpenAI",
+      "displayName": "OpenAI GPT-5.4 Mini",
       "provider": "openai",
       "apiKeyEnv": "OPENAI_API_KEY",
       "modelEnv": "OPENAI_MODEL",
-      "defaultModel": "gpt-4.1"
+      "defaultModel": "gpt-5.4-mini",
+      "billing": "paid-api",
+      "freeAutomation": false,
+      "notes": "Use through Codex/ChatGPT manually when staying subscription-only; OpenAI API calls are metered separately."
     },
     {
       "id": "anthropic",
-      "displayName": "Anthropic",
+      "displayName": "Claude Sonnet 4.6",
       "provider": "anthropic",
       "apiKeyEnv": "ANTHROPIC_API_KEY",
       "modelEnv": "ANTHROPIC_MODEL",
-      "defaultModel": "claude-sonnet-4-5"
+      "defaultModel": "claude-sonnet-4-6",
+      "billing": "paid-api",
+      "freeAutomation": false,
+      "notes": "Cost-aware Claude family choice; API calls are metered unless covered by separate provider credits."
     },
     {
       "id": "google",
-      "displayName": "Google",
+      "displayName": "Gemini Flash",
       "provider": "google",
       "apiKeyEnv": "GOOGLE_API_KEY",
       "modelEnv": "GOOGLE_MODEL",
-      "defaultModel": "gemini-2.5-pro"
+      "defaultModel": "gemini-3.5-flash",
+      "billing": "free-tier-eligible",
+      "freeAutomation": true,
+      "notes": "Google documents a free tier for Gemini 3.5 Flash text generation; verify quota and data-use terms before enabling."
     },
     {
       "id": "xai",
-      "displayName": "xAI",
+      "displayName": "xAI Grok 4.3",
       "provider": "openai-compatible",
       "baseUrl": "https://api.x.ai/v1",
       "apiKeyEnv": "XAI_API_KEY",
       "modelEnv": "XAI_MODEL",
-      "defaultModel": "grok-4"
+      "defaultModel": "grok-4.3",
+      "billing": "paid-api",
+      "freeAutomation": false,
+      "notes": "Low-cost Grok option, but xAI API use is still metered."
     },
     {
       "id": "mistral",
-      "displayName": "Mistral",
+      "displayName": "Mistral Small",
       "provider": "openai-compatible",
       "baseUrl": "https://api.mistral.ai/v1",
       "apiKeyEnv": "MISTRAL_API_KEY",
       "modelEnv": "MISTRAL_MODEL",
-      "defaultModel": "mistral-large-latest"
+      "defaultModel": "mistral-small-latest",
+      "billing": "paid-api",
+      "freeAutomation": false,
+      "notes": "Cost-aware Mistral API choice; use Mistral Medium 3.5 manually/free-chat if available, but do not automate paid API calls by default."
     }
   ]
 }
-

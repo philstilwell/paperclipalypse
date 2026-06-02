@@ -37,6 +37,20 @@ models. That is the honest no-surprise-bill version. If you later want five
 actual external models, `config/contestants.json` and the provider adapters are
 still available as an opt-in paid API mode.
 
+The current cost-aware external roster is:
+
+- OpenAI GPT-5.4 Mini: metered API; use manually through Codex/ChatGPT for
+  subscription-only hobby mode.
+- Claude Sonnet 4.6: metered API; use manually through Claude free/subscription
+  surfaces if available.
+- Gemini Flash: free-tier eligible in the Gemini API, subject to Google's quota
+  and data-use terms.
+- xAI Grok 4.3: low-cost but metered API.
+- Mistral Small: low-cost but metered API.
+
+`config/cost-policy.json` is the guardrail: no metered external API calls unless
+`PAPERCLIPALYPSE_ALLOW_PAID_API=1` is set locally.
+
 ## Local Run
 
 ```sh
@@ -73,7 +87,7 @@ Sheets connector only when refreshing `data/seed-lists.json` from the source
 sheet.
 
 For optional live model API calls, copy `.env.example` to `.env`, fill in
-provider keys, and run:
+provider keys, set `PAPERCLIPALYPSE_ALLOW_PAID_API=1`, and run:
 
 ```sh
 npm run tournament
