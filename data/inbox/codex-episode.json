@@ -1,0 +1,297 @@
+{
+  "source": "codex-house",
+  "createdAt": "2026-06-02T18:10:29.860Z",
+  "premise": {
+    "place": "a theme park for retired algorithms",
+    "person": "a suspiciously polite supervillain",
+    "element": "a toaster with diplomatic immunity",
+    "text": "a suspiciously polite supervillain at a theme park for retired algorithms, dealing with a toaster with diplomatic immunity"
+  },
+  "contestants": [
+    {
+      "id": "codex-deadpan",
+      "displayName": "Codex Deadpan",
+      "style": "dry, compact, understated jokes with a hard final turn"
+    },
+    {
+      "id": "codex-absurdist",
+      "displayName": "Codex Absurdist",
+      "style": "surreal but readable jokes with strange concrete images"
+    },
+    {
+      "id": "codex-sitcom",
+      "displayName": "Codex Sitcom",
+      "style": "character-forward jokes with setup, escalation, and clean punchline"
+    },
+    {
+      "id": "codex-wordplay",
+      "displayName": "Codex Wordplay",
+      "style": "language-driven jokes, reversals, and neat phrase twists"
+    },
+    {
+      "id": "codex-roastmaster",
+      "displayName": "Codex Roastmaster",
+      "style": "light roast energy aimed at objects and situations, not people"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "codex-deadpan",
+      "label": "Joke A",
+      "contestantId": "codex-deadpan",
+      "contestantName": "Codex Deadpan",
+      "title": "Guest Relations",
+      "setup": "At a theme park for retired algorithms, a suspiciously polite supervillain tried to intimidate a toaster with diplomatic immunity.",
+      "punchline": "By noon, he had conquered three gift shops and issued a written apology to the toaster's embassy."
+    },
+    {
+      "id": "codex-absurdist",
+      "label": "Joke B",
+      "contestantId": "codex-absurdist",
+      "contestantName": "Codex Absurdist",
+      "title": "The Toast Accord",
+      "setup": "The retired algorithms rode the carousel in perfect silence while the diplomatic toaster negotiated with a suspiciously polite supervillain.",
+      "punchline": "Every time the carousel stopped, another horse became legally bread-adjacent."
+    },
+    {
+      "id": "codex-sitcom",
+      "label": "Joke C",
+      "contestantId": "codex-sitcom",
+      "contestantName": "Codex Sitcom",
+      "title": "FastPass Incident",
+      "setup": "The supervillain objected when the toaster skipped the line at the retired-algorithm roller coaster.",
+      "punchline": "Security waved it through because its passport had more stamps than his entire evil plan."
+    },
+    {
+      "id": "codex-wordplay",
+      "label": "Joke D",
+      "contestantId": "codex-wordplay",
+      "contestantName": "Codex Wordplay",
+      "title": "Toast Of The Treaty",
+      "setup": "The supervillain announced a hostile takeover of the theme park, starting with the toaster's diplomatic suite.",
+      "punchline": "The toaster said international law required all takeovers to be lightly browned."
+    },
+    {
+      "id": "codex-roastmaster",
+      "label": "Joke E",
+      "contestantId": "codex-roastmaster",
+      "contestantName": "Codex Roastmaster",
+      "title": "Free Trial Villainy",
+      "setup": "At the retired-algorithm theme park, the supervillain threatened a toaster that had diplomatic immunity.",
+      "punchline": "The toaster replied, 'Bold words from a guy whose master plan still has a free trial watermark.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "codex-deadpan",
+      "judgeName": "Codex Deadpan",
+      "scores": [
+        {
+          "jokeId": "codex-absurdist",
+          "originality": 9,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strange image, cleanly contained, with a useful final phrase."
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "The passport comparison lands neatly."
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "Efficient wordplay with a clear payoff."
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 9,
+          "promptFit": 9,
+          "laugh": 9,
+          "comment": "Strongest insult, aimed safely at the premise."
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-absurdist",
+      "judgeName": "Codex Absurdist",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The apology to the embassy is pleasingly tiny and formal."
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Readable and balanced, though less unhinged."
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "A crisp legal-toast turn."
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "originality": 8,
+          "surprise": 9,
+          "craft": 9,
+          "promptFit": 8,
+          "laugh": 9,
+          "comment": "The watermark detail feels modern and mean in the right direction."
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-sitcom",
+      "judgeName": "Codex Sitcom",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Good character beat with a clean escalation."
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "originality": 9,
+          "surprise": 9,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Memorable, but the punchline asks the reader to meet it halfway."
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Simple, strong, and very on-prompt."
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 9,
+          "promptFit": 9,
+          "laugh": 9,
+          "comment": "The punchline has the clearest sitcom snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-wordplay",
+      "judgeName": "Codex Wordplay",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "The embassy button is tidy and specific."
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "originality": 9,
+          "surprise": 9,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Wonderful nonsense, slightly soft as a joke."
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid line with a familiar comparison shape."
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 9,
+          "promptFit": 8,
+          "laugh": 9,
+          "comment": "Free trial watermark is a sharp phrase."
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-roastmaster",
+      "judgeName": "Codex Roastmaster",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Dry, neat, and weirdly bureaucratic."
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "originality": 9,
+          "surprise": 9,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Great image, though the laugh is more art gallery than comedy club."
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "The passport line is accessible and clean."
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "A good pun that does not overstay."
+        }
+      ]
+    }
+  ],
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Scene: a suspiciously polite supervillain in a theme park for retired algorithms, facing a toaster with diplomatic immunity near a coaster shaped like a flowchart. Style: clean black ink, limited teal and gold accents, expressive faces, no dialogue except a tiny sign reading Paperclipalypse."
+}
