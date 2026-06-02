@@ -2,45 +2,61 @@
   "version": 1,
   "slug": "2026-06-02-demo",
   "seed": "demo",
-  "dryRun": false,
+  "dryRun": true,
   "source": "dry-run",
-  "createdAt": "2026-06-02T18:05:34.373Z",
+  "createdAt": "2026-06-02T18:24:46.306Z",
+  "seedTerms": [
+    "Workout",
+    "Car Valet",
+    "Elevator",
+    "Being given an ultimatum",
+    "Discreet",
+    "Uncommunicative"
+  ],
   "premise": {
-    "place": "a laundromat on Mars",
-    "person": "an overconfident startup founder",
-    "element": "sentient paperclips",
-    "text": "an overconfident startup founder at a laundromat on Mars, dealing with sentient paperclips"
+    "place": "Elevator",
+    "person": "Car Valet",
+    "element": "Being given an ultimatum",
+    "text": "Car Valet at Elevator, facing Being given an ultimatum, with a Discreet instinct and a Uncommunicative streak in a Workout mode",
+    "seedTerms": [
+      "Workout",
+      "Car Valet",
+      "Elevator",
+      "Being given an ultimatum",
+      "Discreet",
+      "Uncommunicative"
+    ]
   },
   "contestants": [
     {
       "id": "codex-deadpan",
       "displayName": "Codex Deadpan",
       "provider": "codex-house",
-      "model": "Codex house style"
+      "model": "dry, compact, understated jokes with a hard final turn"
     },
     {
       "id": "codex-absurdist",
       "displayName": "Codex Absurdist",
       "provider": "codex-house",
-      "model": "Codex house style"
+      "model": "surreal but readable jokes with strange concrete images"
     },
     {
       "id": "codex-sitcom",
       "displayName": "Codex Sitcom",
       "provider": "codex-house",
-      "model": "Codex house style"
+      "model": "character-forward jokes with setup, escalation, and clean punchline"
     },
     {
       "id": "codex-wordplay",
       "displayName": "Codex Wordplay",
       "provider": "codex-house",
-      "model": "Codex house style"
+      "model": "language-driven jokes, reversals, and neat phrase twists"
     },
     {
       "id": "codex-roastmaster",
       "displayName": "Codex Roastmaster",
       "provider": "codex-house",
-      "model": "Codex house style"
+      "model": "light roast energy aimed at objects and situations, not people"
     }
   ],
   "jokes": [
@@ -49,55 +65,55 @@
       "label": "Joke A",
       "contestantId": "codex-deadpan",
       "contestantName": "Codex Deadpan",
-      "model": "codex-house",
+      "model": "dry, compact, understated jokes with a hard final turn",
       "title": "Terms And Conditions",
-      "setup": "an overconfident startup founder arrived at a laundromat on Mars and found sentient paperclips waiting at the front desk.",
+      "setup": "Car Valet arrived at Elevator and found Being given an ultimatum waiting at the front desk.",
       "punchline": "The paperclips said quietly they were not hostile, they were just here to optimize the apology.",
-      "text": "an overconfident startup founder arrived at a laundromat on Mars and found sentient paperclips waiting at the front desk. The paperclips said quietly they were not hostile, they were just here to optimize the apology."
+      "text": "Car Valet arrived at Elevator and found Being given an ultimatum waiting at the front desk. The paperclips said they were not hostile, they were just here to optimize the apology."
     },
     {
       "id": "codex-absurdist",
       "label": "Joke B",
       "contestantId": "codex-absurdist",
       "contestantName": "Codex Absurdist",
-      "model": "codex-house",
+      "model": "surreal but readable jokes with strange concrete images",
       "title": "Quarterly Results",
-      "setup": "a laundromat on Mars had one rule: never let an overconfident startup founder near sentient paperclips.",
+      "setup": "Elevator had one rule: never let Car Valet near Being given an ultimatum.",
       "punchline": "By lunch, the quarterly forecast was just a pie chart labeled somehow worse.",
-      "text": "a laundromat on Mars had one rule: never let an overconfident startup founder near sentient paperclips. By lunch, the quarterly forecast was just a pie chart labeled somehow worse."
+      "text": "Elevator had one rule: never let Car Valet near Being given an ultimatum. By lunch, the quarterly forecast was just a pie chart labeled somehow worse."
     },
     {
       "id": "codex-sitcom",
       "label": "Joke C",
       "contestantId": "codex-sitcom",
       "contestantName": "Codex Sitcom",
-      "model": "codex-house",
+      "model": "character-forward jokes with setup, escalation, and clean punchline",
       "title": "Official Minutes",
-      "setup": "an overconfident startup founder tried to explain sentient paperclips to the manager of a laundromat on Mars.",
+      "setup": "Car Valet tried to explain Being given an ultimatum to the manager of Elevator.",
       "punchline": "The manager nodded, opened a binder, and promoted the problem to committee.",
-      "text": "an overconfident startup founder tried to explain sentient paperclips to the manager of a laundromat on Mars. The manager nodded, opened a binder, and promoted the problem to committee."
+      "text": "Car Valet tried to explain Being given an ultimatum to the manager of Elevator. The manager nodded, opened a binder, and promoted the problem to committee."
     },
     {
       "id": "codex-wordplay",
       "label": "Joke D",
       "contestantId": "codex-wordplay",
       "contestantName": "Codex Wordplay",
-      "model": "codex-house",
+      "model": "language-driven jokes, reversals, and neat phrase twists",
       "title": "Premium Plan",
-      "setup": "At a laundromat on Mars, an overconfident startup founder asked whether sentient paperclips came with support.",
+      "setup": "At Elevator, Car Valet asked whether Being given an ultimatum came with support.",
       "punchline": "It did, but only if you upgraded to the plan where support stops laughing first.",
-      "text": "At a laundromat on Mars, an overconfident startup founder asked whether sentient paperclips came with support. It did, but only if you upgraded to the plan where support stops laughing first."
+      "text": "At Elevator, Car Valet asked whether Being given an ultimatum came with support. It did, but only if you upgraded to the plan where support stops laughing first."
     },
     {
       "id": "codex-roastmaster",
       "label": "Joke E",
       "contestantId": "codex-roastmaster",
       "contestantName": "Codex Roastmaster",
-      "model": "codex-house",
+      "model": "light roast energy aimed at objects and situations, not people",
       "title": "Compliance Training",
-      "setup": "an overconfident startup founder brought sentient paperclips into a laundromat on Mars for a simple demonstration.",
+      "setup": "Car Valet brought Being given an ultimatum into Elevator for a simple demonstration.",
       "punchline": "The demonstration was so simple it immediately became mandatory training.",
-      "text": "an overconfident startup founder brought sentient paperclips into a laundromat on Mars for a simple demonstration. The demonstration was so simple it immediately became mandatory training."
+      "text": "Car Valet brought Being given an ultimatum into Elevator for a simple demonstration. The demonstration was so simple it immediately became mandatory training."
     }
   ],
   "judgeResults": [
@@ -107,43 +123,43 @@
       "scores": [
         {
           "jokeId": "codex-absurdist",
-          "comment": "The image is strange enough to carry the joke.",
-          "originality": 7,
-          "surprise": 5,
-          "craft": 5,
-          "promptFit": 6,
-          "laugh": 7,
-          "total": 6
+          "originality": 8,
+          "surprise": 9,
+          "craft": 6,
+          "promptFit": 5,
+          "laugh": 6,
+          "comment": "Nice surprise without losing the prompt.",
+          "total": 6.8
         },
         {
           "jokeId": "codex-sitcom",
-          "comment": "A tidy joke with a pleasingly odd angle.",
-          "originality": 4,
-          "surprise": 6,
-          "craft": 4,
-          "promptFit": 6,
-          "laugh": 4,
-          "total": 4.8
+          "originality": 7,
+          "surprise": 5,
+          "craft": 8,
+          "promptFit": 5,
+          "laugh": 6,
+          "comment": "Nice surprise without losing the prompt.",
+          "total": 6.2
         },
         {
           "jokeId": "codex-wordplay",
-          "comment": "Clean premise fit with a crisp turn.",
-          "originality": 6,
-          "surprise": 7,
-          "craft": 7,
+          "originality": 10,
+          "surprise": 8,
+          "craft": 6,
           "promptFit": 8,
           "laugh": 6,
-          "total": 6.8
+          "comment": "A tidy joke with a pleasingly odd angle.",
+          "total": 7.6
         },
         {
           "jokeId": "codex-roastmaster",
-          "comment": "A tidy joke with a pleasingly odd angle.",
-          "originality": 5,
-          "surprise": 9,
-          "craft": 6,
-          "promptFit": 9,
-          "laugh": 5,
-          "total": 6.8
+          "originality": 8,
+          "surprise": 4,
+          "craft": 8,
+          "promptFit": 6,
+          "laugh": 7,
+          "comment": "Good structure, though the payoff could hit harder.",
+          "total": 6.6
         }
       ]
     },
@@ -153,43 +169,43 @@
       "scores": [
         {
           "jokeId": "codex-deadpan",
-          "comment": "Nice surprise without losing the prompt.",
-          "originality": 8,
-          "surprise": 7,
-          "craft": 7,
-          "promptFit": 6,
+          "originality": 6,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 7,
           "laugh": 6,
-          "total": 6.8
+          "comment": "Clean premise fit with a crisp turn.",
+          "total": 6.6
         },
         {
           "jokeId": "codex-sitcom",
-          "comment": "The image is strange enough to carry the joke.",
-          "originality": 6,
+          "originality": 9,
           "surprise": 5,
-          "craft": 7,
-          "promptFit": 9,
+          "craft": 6,
+          "promptFit": 7,
           "laugh": 5,
+          "comment": "Nice surprise without losing the prompt.",
           "total": 6.4
         },
         {
           "jokeId": "codex-wordplay",
-          "comment": "Nice surprise without losing the prompt.",
-          "originality": 5,
-          "surprise": 8,
-          "craft": 5,
-          "promptFit": 5,
-          "laugh": 8,
-          "total": 6.2
+          "originality": 3,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Good structure, though the payoff could hit harder.",
+          "total": 5.4
         },
         {
           "jokeId": "codex-roastmaster",
-          "comment": "Nice surprise without losing the prompt.",
-          "originality": 9,
-          "surprise": 9,
-          "craft": 10,
-          "promptFit": 7,
-          "laugh": 8,
-          "total": 8.6
+          "originality": 6,
+          "surprise": 7,
+          "craft": 9,
+          "promptFit": 10,
+          "laugh": 9,
+          "comment": "The image is strange enough to carry the joke.",
+          "total": 8.2
         }
       ]
     },
@@ -199,43 +215,43 @@
       "scores": [
         {
           "jokeId": "codex-deadpan",
-          "comment": "Clean premise fit with a crisp turn.",
-          "originality": 10,
-          "surprise": 8,
-          "craft": 9,
-          "promptFit": 7,
-          "laugh": 8,
-          "total": 8.4
-        },
-        {
-          "jokeId": "codex-absurdist",
-          "comment": "Clean premise fit with a crisp turn.",
-          "originality": 6,
-          "surprise": 5,
-          "craft": 6,
-          "promptFit": 7,
-          "laugh": 5,
+          "originality": 5,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 7,
+          "comment": "The image is strange enough to carry the joke.",
           "total": 5.8
         },
         {
+          "jokeId": "codex-absurdist",
+          "originality": 8,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Nice surprise without losing the prompt.",
+          "total": 6.4
+        },
+        {
           "jokeId": "codex-wordplay",
+          "originality": 7,
+          "surprise": 10,
+          "craft": 10,
+          "promptFit": 10,
+          "laugh": 10,
           "comment": "A tidy joke with a pleasingly odd angle.",
-          "originality": 6,
-          "surprise": 8,
-          "craft": 9,
-          "promptFit": 5,
-          "laugh": 9,
-          "total": 7.4
+          "total": 9.4
         },
         {
           "jokeId": "codex-roastmaster",
-          "comment": "Nice surprise without losing the prompt.",
           "originality": 9,
           "surprise": 10,
           "craft": 10,
-          "promptFit": 8,
+          "promptFit": 10,
           "laugh": 10,
-          "total": 9.4
+          "comment": "Nice surprise without losing the prompt.",
+          "total": 9.8
         }
       ]
     },
@@ -245,43 +261,43 @@
       "scores": [
         {
           "jokeId": "codex-deadpan",
-          "comment": "Good structure, though the payoff could hit harder.",
-          "originality": 10,
-          "surprise": 9,
-          "craft": 8,
-          "promptFit": 10,
-          "laugh": 6,
-          "total": 8.6
-        },
-        {
-          "jokeId": "codex-absurdist",
-          "comment": "Nice surprise without losing the prompt.",
-          "originality": 8,
-          "surprise": 9,
+          "originality": 9,
+          "surprise": 5,
           "craft": 7,
-          "promptFit": 6,
-          "laugh": 6,
+          "promptFit": 7,
+          "laugh": 8,
+          "comment": "A tidy joke with a pleasingly odd angle.",
           "total": 7.2
         },
         {
-          "jokeId": "codex-sitcom",
-          "comment": "Clean premise fit with a crisp turn.",
+          "jokeId": "codex-absurdist",
           "originality": 6,
-          "surprise": 7,
+          "surprise": 6,
           "craft": 8,
-          "promptFit": 4,
-          "laugh": 6,
-          "total": 6.2
+          "promptFit": 6,
+          "laugh": 7,
+          "comment": "Nice surprise without losing the prompt.",
+          "total": 6.6
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 7,
+          "surprise": 9,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 9,
+          "comment": "A tidy joke with a pleasingly odd angle.",
+          "total": 8.2
         },
         {
           "jokeId": "codex-roastmaster",
-          "comment": "Good structure, though the payoff could hit harder.",
           "originality": 7,
           "surprise": 9,
           "craft": 9,
-          "promptFit": 5,
+          "promptFit": 9,
           "laugh": 7,
-          "total": 7.4
+          "comment": "A tidy joke with a pleasingly odd angle.",
+          "total": 8.2
         }
       ]
     },
@@ -291,43 +307,43 @@
       "scores": [
         {
           "jokeId": "codex-deadpan",
-          "comment": "A tidy joke with a pleasingly odd angle.",
-          "originality": 5,
-          "surprise": 9,
-          "craft": 8,
-          "promptFit": 5,
-          "laugh": 5,
-          "total": 6.4
+          "originality": 6,
+          "surprise": 6,
+          "craft": 10,
+          "promptFit": 10,
+          "laugh": 9,
+          "comment": "Good structure, though the payoff could hit harder.",
+          "total": 8.2
         },
         {
           "jokeId": "codex-absurdist",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 7,
           "comment": "The image is strange enough to carry the joke.",
-          "originality": 10,
-          "surprise": 9,
-          "craft": 9,
-          "promptFit": 8,
-          "laugh": 9,
-          "total": 9
+          "total": 6.6
         },
         {
           "jokeId": "codex-sitcom",
-          "comment": "The image is strange enough to carry the joke.",
-          "originality": 7,
-          "surprise": 6,
-          "craft": 8,
-          "promptFit": 8,
-          "laugh": 8,
-          "total": 7.4
+          "originality": 9,
+          "surprise": 9,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 9,
+          "comment": "Clean premise fit with a crisp turn.",
+          "total": 8.8
         },
         {
           "jokeId": "codex-wordplay",
-          "comment": "Nice surprise without losing the prompt.",
-          "originality": 10,
-          "surprise": 7,
-          "craft": 9,
+          "originality": 5,
+          "surprise": 6,
+          "craft": 8,
           "promptFit": 7,
-          "laugh": 8,
-          "total": 8.2
+          "laugh": 7,
+          "comment": "The image is strange enough to carry the joke.",
+          "total": 6.6
         }
       ]
     }
@@ -338,25 +354,25 @@
       "label": "Joke E",
       "contestantId": "codex-roastmaster",
       "contestantName": "Codex Roastmaster",
-      "score": 8,
+      "score": 8.2,
       "judgeCount": 4,
       "rubric": {
         "originality": 7.5,
-        "surprise": 9.3,
-        "craft": 8.8,
-        "promptFit": 7.3,
-        "laugh": 7.5
+        "surprise": 7.5,
+        "craft": 9,
+        "promptFit": 8.8,
+        "laugh": 8.3
       },
       "comments": [
         {
           "judgeId": "codex-deadpan",
           "judgeName": "Codex Deadpan",
-          "comment": "A tidy joke with a pleasingly odd angle."
+          "comment": "Good structure, though the payoff could hit harder."
         },
         {
           "judgeId": "codex-absurdist",
           "judgeName": "Codex Absurdist",
-          "comment": "Nice surprise without losing the prompt."
+          "comment": "The image is strange enough to carry the joke."
         },
         {
           "judgeId": "codex-sitcom",
@@ -366,45 +382,45 @@
         {
           "judgeId": "codex-wordplay",
           "judgeName": "Codex Wordplay",
-          "comment": "Good structure, though the payoff could hit harder."
+          "comment": "A tidy joke with a pleasingly odd angle."
         }
       ],
       "rank": 1
     },
     {
-      "jokeId": "codex-deadpan",
-      "label": "Joke A",
-      "contestantId": "codex-deadpan",
-      "contestantName": "Codex Deadpan",
-      "score": 7.5,
+      "jokeId": "codex-sitcom",
+      "label": "Joke C",
+      "contestantId": "codex-sitcom",
+      "contestantName": "Codex Sitcom",
+      "score": 7.4,
       "judgeCount": 4,
       "rubric": {
-        "originality": 8.3,
-        "surprise": 8.3,
-        "craft": 8,
-        "promptFit": 7,
-        "laugh": 6.3
+        "originality": 8,
+        "surprise": 7,
+        "craft": 7,
+        "promptFit": 7.8,
+        "laugh": 7.3
       },
       "comments": [
+        {
+          "judgeId": "codex-deadpan",
+          "judgeName": "Codex Deadpan",
+          "comment": "Nice surprise without losing the prompt."
+        },
         {
           "judgeId": "codex-absurdist",
           "judgeName": "Codex Absurdist",
           "comment": "Nice surprise without losing the prompt."
         },
         {
-          "judgeId": "codex-sitcom",
-          "judgeName": "Codex Sitcom",
-          "comment": "Clean premise fit with a crisp turn."
-        },
-        {
           "judgeId": "codex-wordplay",
           "judgeName": "Codex Wordplay",
-          "comment": "Good structure, though the payoff could hit harder."
+          "comment": "A tidy joke with a pleasingly odd angle."
         },
         {
           "judgeId": "codex-roastmaster",
           "judgeName": "Codex Roastmaster",
-          "comment": "A tidy joke with a pleasingly odd angle."
+          "comment": "Clean premise fit with a crisp turn."
         }
       ],
       "rank": 2
@@ -414,25 +430,25 @@
       "label": "Joke D",
       "contestantId": "codex-wordplay",
       "contestantName": "Codex Wordplay",
-      "score": 7.2,
+      "score": 7.3,
       "judgeCount": 4,
       "rubric": {
-        "originality": 6.8,
+        "originality": 6.3,
         "surprise": 7.5,
         "craft": 7.5,
-        "promptFit": 6.3,
-        "laugh": 7.8
+        "promptFit": 8,
+        "laugh": 7
       },
       "comments": [
         {
           "judgeId": "codex-deadpan",
           "judgeName": "Codex Deadpan",
-          "comment": "Clean premise fit with a crisp turn."
+          "comment": "A tidy joke with a pleasingly odd angle."
         },
         {
           "judgeId": "codex-absurdist",
           "judgeName": "Codex Absurdist",
-          "comment": "Nice surprise without losing the prompt."
+          "comment": "Good structure, though the payoff could hit harder."
         },
         {
           "judgeId": "codex-sitcom",
@@ -442,78 +458,78 @@
         {
           "judgeId": "codex-roastmaster",
           "judgeName": "Codex Roastmaster",
-          "comment": "Nice surprise without losing the prompt."
+          "comment": "The image is strange enough to carry the joke."
         }
       ],
       "rank": 3
+    },
+    {
+      "jokeId": "codex-deadpan",
+      "label": "Joke A",
+      "contestantId": "codex-deadpan",
+      "contestantName": "Codex Deadpan",
+      "score": 7,
+      "judgeCount": 4,
+      "rubric": {
+        "originality": 6.5,
+        "surprise": 5.8,
+        "craft": 7.5,
+        "promptFit": 7.5,
+        "laugh": 7.5
+      },
+      "comments": [
+        {
+          "judgeId": "codex-absurdist",
+          "judgeName": "Codex Absurdist",
+          "comment": "Clean premise fit with a crisp turn."
+        },
+        {
+          "judgeId": "codex-sitcom",
+          "judgeName": "Codex Sitcom",
+          "comment": "The image is strange enough to carry the joke."
+        },
+        {
+          "judgeId": "codex-wordplay",
+          "judgeName": "Codex Wordplay",
+          "comment": "A tidy joke with a pleasingly odd angle."
+        },
+        {
+          "judgeId": "codex-roastmaster",
+          "judgeName": "Codex Roastmaster",
+          "comment": "Good structure, though the payoff could hit harder."
+        }
+      ],
+      "rank": 4
     },
     {
       "jokeId": "codex-absurdist",
       "label": "Joke B",
       "contestantId": "codex-absurdist",
       "contestantName": "Codex Absurdist",
-      "score": 7,
+      "score": 6.6,
       "judgeCount": 4,
       "rubric": {
-        "originality": 7.8,
+        "originality": 7,
         "surprise": 7,
-        "craft": 6.8,
-        "promptFit": 6.8,
-        "laugh": 6.8
+        "craft": 6.3,
+        "promptFit": 6.3,
+        "laugh": 6.5
       },
       "comments": [
         {
           "judgeId": "codex-deadpan",
           "judgeName": "Codex Deadpan",
-          "comment": "The image is strange enough to carry the joke."
+          "comment": "Nice surprise without losing the prompt."
         },
         {
           "judgeId": "codex-sitcom",
           "judgeName": "Codex Sitcom",
-          "comment": "Clean premise fit with a crisp turn."
+          "comment": "Nice surprise without losing the prompt."
         },
         {
           "judgeId": "codex-wordplay",
           "judgeName": "Codex Wordplay",
           "comment": "Nice surprise without losing the prompt."
-        },
-        {
-          "judgeId": "codex-roastmaster",
-          "judgeName": "Codex Roastmaster",
-          "comment": "The image is strange enough to carry the joke."
-        }
-      ],
-      "rank": 4
-    },
-    {
-      "jokeId": "codex-sitcom",
-      "label": "Joke C",
-      "contestantId": "codex-sitcom",
-      "contestantName": "Codex Sitcom",
-      "score": 6.2,
-      "judgeCount": 4,
-      "rubric": {
-        "originality": 5.8,
-        "surprise": 6,
-        "craft": 6.8,
-        "promptFit": 6.8,
-        "laugh": 5.8
-      },
-      "comments": [
-        {
-          "judgeId": "codex-deadpan",
-          "judgeName": "Codex Deadpan",
-          "comment": "A tidy joke with a pleasingly odd angle."
-        },
-        {
-          "judgeId": "codex-absurdist",
-          "judgeName": "Codex Absurdist",
-          "comment": "The image is strange enough to carry the joke."
-        },
-        {
-          "judgeId": "codex-wordplay",
-          "judgeName": "Codex Wordplay",
-          "comment": "Clean premise fit with a crisp turn."
         },
         {
           "judgeId": "codex-roastmaster",
@@ -524,5 +540,5 @@
       "rank": 5
     }
   ],
-  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Scene: an overconfident startup founder at a laundromat on Mars, dealing with sentient paperclips. The visual should nod to the winning joke titled \"Compliance Training\". Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse."
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Scene: Car Valet at Elevator, facing Being given an ultimatum, with a Discreet instinct and a Uncommunicative streak in a Workout mode. Seed terms: Workout, Car Valet, Elevator, Being given an ultimatum, Discreet, Uncommunicative. The visual should nod to the winning joke titled \"Compliance Training\". Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse."
 }

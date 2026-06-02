@@ -147,11 +147,29 @@ main {
   font-weight: 900;
 }
 
+.seed-terms,
 .scoreboard,
 .jokes,
 .comic-brief,
 .archive {
   padding: 30px 0 0;
+}
+
+.seed-terms ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.seed-terms li {
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--panel);
+  padding: 8px 12px;
+  font-weight: 800;
 }
 
 table {

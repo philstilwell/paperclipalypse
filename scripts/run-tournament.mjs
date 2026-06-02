@@ -7,6 +7,7 @@ import { callContestant, parseModelJson } from "./lib/providers.mjs";
 import { aggregateScores, deterministicDryScores, normalizeJudgeScores } from "./lib/scoring.mjs";
 import { seededRng } from "./lib/random.mjs";
 import { renderSite } from "./lib/site.mjs";
+import { buildPremiseFromSeedTerms, buildSeedTerms } from "./lib/seed-terms.mjs";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 loadDotEnv(path.join(rootDir, ".env"));
@@ -19,6 +20,7 @@ const rng = seededRng(seed);
 const paidContestants = readJson(path.join(rootDir, "config", "contestants.json")).contestants;
 const houseContestants = readJson(path.join(rootDir, "config", "house-contestants.json")).contestants;
 const promptPools = readJson(path.join(rootDir, "data", "prompt-pools.json"));
+const seedListsPath = path.join(rootDir, "data", "seed-lists.json");
 const historyDir = path.join(rootDir, "data", "runs");
 const siteDir = path.join(rootDir, "site");
 const episodeFile = args.get("episode-file");
@@ -35,7 +37,10 @@ if (!dryRun) {
   assertApiKeys(paidContestants);
 }
 
-const premise = buildPremise(promptPools, rng);
+const seedTerms = fs.existsSync(seedListsPath)
+  ? buildSeedTerms(readJson(seedListsPath), rng)
+  : [];
+const premise = buildPremiseFromSeedTerms(seedTerms) || buildPremise(promptPools, rng);
 const createdAt = new Date().toISOString();
 const slug = `${createdAt.slice(0, 10)}-${seed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`;
 const jokes = dryRun
@@ -54,6 +59,7 @@ const run = {
   dryRun,
   source: dryRun ? "dry-run" : "paid-api",
   createdAt,
+  seedTerms,
   premise,
   contestants: contestants.map((contestant) => ({
     id: contestant.id,
@@ -207,7 +213,11 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     dryRun: false,
     source: episode.source || "codex-house",
     createdAt,
-    premise: episode.premise,
+    seedTerms: normalizeSeedTerms(episode.seedTerms),
+    premise: {
+      ...episode.premise,
+      seedTerms: normalizeSeedTerms(episode.seedTerms)
+    },
     contestants: episode.contestants.map((contestant) => ({
       id: contestant.id,
       displayName: contestant.displayName,
@@ -281,6 +291,14 @@ function cleanText(value) {
   return String(value || "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function normalizeSeedTerms(seedTerms) {
+  if (!Array.isArray(seedTerms)) {
+    return [];
+  }
+
+  return seedTerms.map(cleanText).filter(Boolean);
 }
 
 function todaySeed() {

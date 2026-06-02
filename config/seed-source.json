@@ -1,0 +1,12 @@
+{
+  "kind": "google-sheet",
+  "spreadsheetId": "1u-YfuOGClFYyUXxg7SNN5pKrkuE5AztS7ZTIKZGBIVk",
+  "spreadsheetUrl": "https://docs.google.com/spreadsheets/d/1u-YfuOGClFYyUXxg7SNN5pKrkuE5AztS7ZTIKZGBIVk/edit?gid=1714069989#gid=1714069989",
+  "sheetName": "Ideas",
+  "sheetId": 1714069989,
+  "randomizedRange": "A2:A7",
+  "sourceListRange": "B1:G1000",
+  "expectedTerms": 6,
+  "accessMode": "Codex Google Sheets connector for manual refresh only",
+  "localMirror": "data/seed-lists.json"
+}

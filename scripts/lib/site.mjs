@@ -127,6 +127,7 @@ function renderRun(run) {
           <em>${formatScore(winner.score)}</em>
         </aside>
       </section>
+      ${renderSeedTerms(run.seedTerms)}
       <section class="scoreboard">
         <h2>Scoreboard</h2>
         <table>
@@ -151,6 +152,22 @@ function renderRun(run) {
         <p>${escapeHtml(run.comicPanelPrompt)}</p>
       </section>
     </main>`;
+}
+
+function renderSeedTerms(seedTerms) {
+  if (!Array.isArray(seedTerms) || !seedTerms.length) {
+    return "";
+  }
+
+  const terms = seedTerms
+    .map((term) => `<li>${escapeHtml(term)}</li>`)
+    .join("");
+
+  return `
+      <section class="seed-terms">
+        <h2>Seed Terms</h2>
+        <ul>${terms}</ul>
+      </section>`;
 }
 
 function pageShell({ title, body, stylesheetPath = "./styles.css" }) {
@@ -318,11 +335,29 @@ main {
   font-weight: 900;
 }
 
+.seed-terms,
 .scoreboard,
 .jokes,
 .comic-brief,
 .archive {
   padding: 30px 0 0;
+}
+
+.seed-terms ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+.seed-terms li {
+  border: 2px solid var(--ink);
+  border-radius: 999px;
+  background: var(--panel);
+  padding: 8px 12px;
+  font-weight: 800;
 }
 
 table {

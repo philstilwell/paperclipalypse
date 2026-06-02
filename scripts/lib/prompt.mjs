@@ -14,6 +14,7 @@ export function buildPremise(pools, rng) {
 }
 
 export function generationPrompt(premise) {
+  const seedText = seedTermsText(premise.seedTerms);
   return {
     system: [
       "You are a contestant in Paperclipalypse, an AI comedy tournament.",
@@ -23,13 +24,15 @@ export function generationPrompt(premise) {
     ].join(" "),
     user: [
       `Premise: ${premise.text}.`,
+      seedText ? `Seed terms: ${seedText}.` : "",
       "Return this JSON shape exactly:",
       "{\"title\":\"short title\",\"setup\":\"one-sentence setup\",\"punchline\":\"one-sentence punchline\"}"
-    ].join("\n")
+    ].filter(Boolean).join("\n")
   };
 }
 
 export function judgingPrompt(premise, jokes) {
+  const seedText = seedTermsText(premise.seedTerms);
   return {
     system: [
       "You are judging a Paperclipalypse AI comedy tournament.",
@@ -39,6 +42,7 @@ export function judgingPrompt(premise, jokes) {
     ].join(" "),
     user: [
       `Premise: ${premise.text}.`,
+      seedText ? `Seed terms: ${seedText}.` : "",
       "Rubric fields: originality, surprise, craft, promptFit, laugh.",
       "Jokes to judge:",
       JSON.stringify(
@@ -52,7 +56,7 @@ export function judgingPrompt(premise, jokes) {
       ),
       "Return this JSON shape:",
       "{\"scores\":[{\"jokeId\":\"id\",\"originality\":7,\"surprise\":7,\"craft\":7,\"promptFit\":7,\"laugh\":7,\"comment\":\"brief note\"}]}"
-    ].join("\n")
+    ].filter(Boolean).join("\n")
   };
 }
 
@@ -63,8 +67,16 @@ export function comicPanelPrompt(run) {
   return [
     "Single-panel newspaper comic for Paperclipalypse.",
     `Scene: ${run.premise.text}.`,
+    run.seedTerms?.length ? `Seed terms: ${run.seedTerms.join(", ")}.` : "",
     `The visual should nod to the winning joke titled "${winningJoke.title}".`,
     "Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse."
-  ].join(" ");
+  ].filter(Boolean).join(" ");
 }
 
+function seedTermsText(seedTerms) {
+  if (!Array.isArray(seedTerms) || !seedTerms.length) {
+    return "";
+  }
+
+  return seedTerms.join(", ");
+}

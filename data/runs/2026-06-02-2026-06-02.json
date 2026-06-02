@@ -5,11 +5,13 @@
   "dryRun": false,
   "source": "codex-house",
   "createdAt": "2026-06-02T18:10:29.860Z",
+  "seedTerms": [],
   "premise": {
     "place": "a theme park for retired algorithms",
     "person": "a suspiciously polite supervillain",
     "element": "a toaster with diplomatic immunity",
-    "text": "a suspiciously polite supervillain at a theme park for retired algorithms, dealing with a toaster with diplomatic immunity"
+    "text": "a suspiciously polite supervillain at a theme park for retired algorithms, dealing with a toaster with diplomatic immunity",
+    "seedTerms": []
   },
   "contestants": [
     {

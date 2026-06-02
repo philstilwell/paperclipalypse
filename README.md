@@ -25,10 +25,12 @@ So the default flow is:
 
 1. A Codex app automation runs on your machine using your normal Codex access.
 2. It follows `prompts/codex-house-tournament.md`.
-3. It writes an episode JSON file under `data/inbox/`.
-4. It runs `node scripts/run-tournament.mjs --episode-file data/inbox/<file>.json`.
-5. It commits and pushes the generated `data/runs/` and `site/` changes.
-6. GitHub Pages deploys the static site on push.
+3. It generates six seed terms locally from the mirrored lists in
+   `data/seed-lists.json`.
+4. It writes an episode JSON file under `data/inbox/`.
+5. It runs `node scripts/run-tournament.mjs --episode-file data/inbox/<file>.json`.
+6. It commits and pushes the generated `data/runs/` and `site/` changes.
+7. GitHub Pages deploys the static site on push.
 
 This produces a "Codex house tournament" rather than five independent external
 models. That is the honest no-surprise-bill version. If you later want five
@@ -48,6 +50,27 @@ To publish a Codex-generated episode JSON:
 ```sh
 node scripts/run-tournament.mjs --episode-file data/inbox/codex-episode.json
 ```
+
+## Seed Terms
+
+The canonical runtime seed source is:
+
+- Local mirror: `data/seed-lists.json`
+- Runtime categories: genre, occupation, location, conflict, positive trait,
+  negative trait
+
+The Google Sheet remains the refresh source:
+
+- Spreadsheet: `paperclipalypse ideas`
+- Tab: `Ideas`
+- Randomized display range: `A2:A7`
+- Source-list range mirrored locally: `B1:G1000`
+- Config: `config/seed-source.json`
+
+Codex does not need the sheet open in a browser. To avoid Sheets API quota
+limits, normal episode generation should use the local mirror. Use the Google
+Sheets connector only when refreshing `data/seed-lists.json` from the source
+sheet.
 
 For optional live model API calls, copy `.env.example` to `.env`, fill in
 provider keys, and run:
