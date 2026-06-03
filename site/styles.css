@@ -552,9 +552,12 @@ td:nth-child(4) {
   margin-bottom: 0;
 }
 
+.standalone-joke,
 .punchline {
   color: var(--ink) !important;
+  font-size: 1.05rem;
   font-weight: 900;
+  line-height: 1.48 !important;
 }
 
 .joke-card ul {

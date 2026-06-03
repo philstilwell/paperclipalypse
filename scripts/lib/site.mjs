@@ -131,6 +131,7 @@ function renderRun(run, options = {}) {
   const jokes = run.jokes
     .map((joke) => {
       const ranking = run.rankings.find((entry) => entry.jokeId === joke.id);
+      const jokeText = fullJokeText(joke);
       const comments = ranking.comments
         .slice(0, 2)
         .map(
@@ -146,8 +147,7 @@ function renderRun(run, options = {}) {
             <span>${formatScore(ranking.score)}</span>
           </div>
           <h3>${escapeHtml(joke.title)}</h3>
-          <p>${escapeHtml(joke.setup)}</p>
-          <p class="punchline">${escapeHtml(joke.punchline)}</p>
+          <p class="standalone-joke">${escapeHtml(jokeText)}</p>
           <ul>${comments}</ul>
         </article>`;
     })
@@ -191,6 +191,12 @@ function renderRun(run, options = {}) {
         <p>${escapeHtml(run.comicPanelPrompt)}</p>
       </section>
     </main>`;
+}
+
+function fullJokeText(joke) {
+  return cleanDisplayText(
+    joke.joke || joke.text || [joke.setup, joke.punchline].filter(Boolean).join(" ")
+  );
 }
 
 function renderRubric(rubric = rubricForDisplay()) {
@@ -838,9 +844,12 @@ td:nth-child(4) {
   margin-bottom: 0;
 }
 
+.standalone-joke,
 .punchline {
   color: var(--ink) !important;
+  font-size: 1.05rem;
   font-weight: 900;
+  line-height: 1.48 !important;
 }
 
 .joke-card ul {
@@ -1031,6 +1040,9 @@ function formatMode(source) {
   if (source === "paid-api") {
     return "External API";
   }
+  if (source === "live-web") {
+    return "Live Web";
+  }
   return source || "Tournament";
 }
 
@@ -1054,6 +1066,12 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function cleanDisplayText(value) {
+  return String(value || "")
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function cleanGeneratedText(value) {

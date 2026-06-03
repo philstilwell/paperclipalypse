@@ -92,8 +92,9 @@ async function generateJokes(modelRoster, runPremise) {
       const parsed = parseModelJson(raw, {});
       const setup = cleanText(parsed.setup);
       const punchline = cleanText(parsed.punchline);
+      const jokeText = cleanText(parsed.joke || parsed.text || [setup, punchline].filter(Boolean).join(" "));
 
-      if (!setup || !punchline) {
+      if (!jokeText) {
         throw new Error(`${contestant.displayName} returned an unusable joke payload`);
       }
 
@@ -104,9 +105,10 @@ async function generateJokes(modelRoster, runPremise) {
         contestantName: contestant.displayName,
         model: modelName(contestant),
         title: cleanText(parsed.title) || label,
+        joke: jokeText,
         setup,
-        punchline,
-        text: `${setup} ${punchline}`
+        punchline: punchline || jokeText,
+        text: jokeText
       };
     })
   );
@@ -171,6 +173,7 @@ function makeDryJokes(modelRoster, runPremise, localRng) {
     const shape = shapes[index % shapes.length];
     const label = `Joke ${String.fromCharCode(65 + index)}`;
     const tweak = localRng() > 0.5 ? "" : " quietly";
+    const punchline = shape.punchline.replace("said", `said${tweak}`);
 
     return {
       id: contestant.id,
@@ -179,9 +182,10 @@ function makeDryJokes(modelRoster, runPremise, localRng) {
       contestantName: contestant.displayName,
       model: modelName(contestant),
       title: shape.title,
+      joke: `${shape.setup} ${punchline}`,
       setup: shape.setup,
-      punchline: shape.punchline.replace("said", `said${tweak}`),
-      text: `${shape.setup} ${shape.punchline}`
+      punchline,
+      text: `${shape.setup} ${punchline}`
     };
   });
 }
@@ -190,17 +194,24 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
   const episode = readJson(filePath);
   const createdAt = episode.createdAt || new Date().toISOString();
   const localSeed = episode.seed || fallbackSeed || createdAt.slice(0, 10);
-  const manualJokes = episode.jokes.map((joke, index) => ({
-    id: cleanText(joke.id || joke.contestantId || `joke-${index + 1}`),
-    label: cleanText(joke.label || `Joke ${String.fromCharCode(65 + index)}`),
-    contestantId: cleanText(joke.contestantId || joke.id || `contestant-${index + 1}`),
-    contestantName: cleanText(joke.contestantName || `Contestant ${index + 1}`),
-    model: "codex-house",
-    title: cleanText(joke.title || `Joke ${String.fromCharCode(65 + index)}`),
-    setup: cleanText(joke.setup),
-    punchline: cleanText(joke.punchline),
-    text: `${cleanText(joke.setup)} ${cleanText(joke.punchline)}`
-  }));
+  const manualJokes = episode.jokes.map((joke, index) => {
+    const setup = cleanText(joke.setup);
+    const punchline = cleanText(joke.punchline);
+    const jokeText = cleanText(joke.joke || joke.text || [setup, punchline].filter(Boolean).join(" "));
+
+    return {
+      id: cleanText(joke.id || joke.contestantId || `joke-${index + 1}`),
+      label: cleanText(joke.label || `Joke ${String.fromCharCode(65 + index)}`),
+      contestantId: cleanText(joke.contestantId || joke.id || `contestant-${index + 1}`),
+      contestantName: cleanText(joke.contestantName || `Contestant ${index + 1}`),
+      model: cleanText(joke.model || "external chat"),
+      title: cleanText(joke.title || `Joke ${String.fromCharCode(65 + index)}`),
+      joke: jokeText,
+      setup,
+      punchline: punchline || jokeText,
+      text: jokeText
+    };
+  });
   const jokeIds = manualJokes.map((joke) => joke.id);
   const manualJudgeResults = episode.judgeResults.map((result) => ({
     judgeId: cleanText(result.judgeId),
@@ -223,8 +234,8 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     contestants: episode.contestants.map((contestant) => ({
       id: contestant.id,
       displayName: contestant.displayName,
-      provider: "codex-house",
-      model: contestant.style || "Codex house style"
+      provider: contestant.provider || "manual-external",
+      model: contestant.model || contestant.style || "external chat"
     })),
     rubric: rubricForDisplay(),
     jokes: manualJokes,

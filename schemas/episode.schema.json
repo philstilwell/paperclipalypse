@@ -59,7 +59,10 @@
           "label": { "type": "string" },
           "contestantId": { "type": "string" },
           "contestantName": { "type": "string" },
+          "model": { "type": "string" },
           "title": { "type": "string" },
+          "joke": { "type": "string" },
+          "text": { "type": "string" },
           "setup": { "type": "string" },
           "punchline": { "type": "string" }
         }

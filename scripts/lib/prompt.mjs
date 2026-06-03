@@ -19,11 +19,13 @@ export function generationPrompt(premise) {
   return {
     system: [
       "You are a contestant in Paperclipalypse, an AI comedy tournament.",
-      "Write one original, publishable joke or very short humorous story for a broad human audience.",
-      "Your goal is the strongest laugh, not maximum seed compliance.",
+      "Write one original, publishable, standalone joke for a broad human audience.",
+      "The joke must be understandable and funny if read by itself, without the title, premise, or seed list.",
+      "Your goal is the strongest human laugh, not maximum seed compliance.",
       "Use two or three seed terms naturally if that makes the joke better; it is fine to ignore the rest.",
       "Do not cram in all six terms, explain the premise, or make a list.",
-      "Keep it concise: the full joke should usually be 35-90 words.",
+      "Prefer concrete, familiar situations and a clear final turn over whimsy, lore, or clever fog.",
+      "Keep it concise: usually 20-70 words.",
       "Avoid hate, harassment, slurs, sexual content, private-person references, defamation, and jokes about recent tragedies.",
       "Do not explain the joke. Return JSON only."
     ].join(" "),
@@ -31,8 +33,9 @@ export function generationPrompt(premise) {
       `Premise: ${premise.text}.`,
       seedText ? `Seed terms: ${seedText}.` : "",
       "The seed terms are ingredients, not requirements. Prefer the funniest two or three.",
+      "The `joke` field must contain the complete standalone joke humans will read on the site.",
       "Return this JSON shape exactly:",
-      "{\"title\":\"short title\",\"setup\":\"one to three short sentences\",\"punchline\":\"one final sentence\"}"
+      "{\"title\":\"short title\",\"joke\":\"complete standalone joke, 20-70 words\"}"
     ].filter(Boolean).join("\n")
   };
 }

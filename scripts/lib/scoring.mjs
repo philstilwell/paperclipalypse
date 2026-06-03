@@ -90,6 +90,8 @@ export function rubricPromptText() {
     `Rubric version: ${RUBRIC_VERSION}.`,
     "Grade against a fixed future-resistant scale, not against the weakest joke in this batch.",
     "Be strict: 5 means competent but forgettable, 7 means genuinely good, 8 means excellent, 9 is rare, and 10 should almost never appear.",
+    "A joke that is not understandable as a standalone joke should score no higher than 4 for laugh and craft.",
+    "Penalize clever-sounding nonsense, vague absurdity, premise recitation, and punchlines that only restate the setup.",
     "Do not inflate scores because the premise is odd. Reward only humor that a broad human audience could understand and enjoy.",
     "Do not reward seed-term stuffing. Prompt fit is high when two or three seed terms are used naturally, and low when terms feel pasted in.",
     "Use integer 1-10 scores for each field; the site computes the weighted total.",
@@ -231,10 +233,15 @@ function clampScore(value) {
 }
 
 function cleanComment(value) {
-  return String(value || "")
+  const cleaned = String(value || "")
     .replace(/\s+/g, " ")
-    .trim()
-    .slice(0, 180);
+    .trim();
+
+  if (cleaned.length <= 180) {
+    return cleaned;
+  }
+
+  return `${cleaned.slice(0, 177).replace(/\s+\S*$/, "").trim()}...`;
 }
 
 function average(values) {

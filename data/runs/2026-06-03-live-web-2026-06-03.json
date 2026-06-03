@@ -1,0 +1,626 @@
+{
+  "version": 1,
+  "slug": "2026-06-03-live-web-2026-06-03",
+  "seed": "live-web-2026-06-03",
+  "dryRun": false,
+  "source": "live-web",
+  "createdAt": "2026-06-03T04:20:00.000Z",
+  "seedTerms": [
+    "Fairy Tale",
+    "Musician",
+    "Tree House",
+    "Being the bearer of bad news",
+    "Supportive",
+    "Self-Destructive"
+  ],
+  "premise": {
+    "place": "Tree House",
+    "person": "Musician",
+    "element": "Being the bearer of bad news",
+    "text": "Musician at Tree House, facing Being the bearer of bad news, with a Supportive instinct and a Self-Destructive streak in a Fairy Tale mode",
+    "seedTerms": [
+      "Fairy Tale",
+      "Musician",
+      "Tree House",
+      "Being the bearer of bad news",
+      "Supportive",
+      "Self-Destructive"
+    ]
+  },
+  "contestants": [
+    {
+      "id": "openai-chatgpt",
+      "displayName": "ChatGPT",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic-claude",
+      "displayName": "Claude",
+      "provider": "anthropic-web",
+      "model": "Claude web"
+    },
+    {
+      "id": "google-gemini",
+      "displayName": "Gemini",
+      "provider": "google-web",
+      "model": "Gemini web"
+    },
+    {
+      "id": "xai-grok",
+      "displayName": "Grok",
+      "provider": "xai-web",
+      "model": "Grok web"
+    },
+    {
+      "id": "microsoft-copilot",
+      "displayName": "Copilot",
+      "provider": "microsoft-web",
+      "model": "Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-stern-comedy-v1",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, rhythm, clarity, escalation, and clean final placement."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, and wording."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural use of the seed material without cramming or checklist writing."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, or confusing."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn a real laugh."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "Would fit a curated humor page; most readers can see why it is funny."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn and clean construction."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare, replayable, and clearly better than normal good AI humor."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most contests should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai-chatgpt",
+      "label": "Joke A",
+      "contestantId": "openai-chatgpt",
+      "contestantName": "ChatGPT",
+      "model": "ChatGPT web",
+      "title": "Encore Trouble",
+      "joke": "In the fairy tale, the musician climbed into the tree house to announce the dragon hated his songs. The villagers, trying to be supportive, said, “Play one more.” His self-destructive streak lit up: “Perfect—I’ll do the encore in the dragon’s cave.”",
+      "setup": "",
+      "punchline": "In the fairy tale, the musician climbed into the tree house to announce the dragon hated his songs. The villagers, trying to be supportive, said, “Play one more.” His self-destructive streak lit up: “Perfect—I’ll do the encore in the dragon’s cave.”",
+      "text": "In the fairy tale, the musician climbed into the tree house to announce the dragon hated his songs. The villagers, trying to be supportive, said, “Play one more.” His self-destructive streak lit up: “Perfect—I’ll do the encore in the dragon’s cave.”"
+    },
+    {
+      "id": "anthropic-claude",
+      "label": "Joke B",
+      "contestantId": "anthropic-claude",
+      "contestantName": "Claude",
+      "model": "Claude web",
+      "title": "Treehouse Guitarist",
+      "joke": "A musician built a treehouse to escape his self-destructive habits. His therapist was thrilled. His bandmates were supportive. Then he cut down the tree. “I hate to be the bearer of bad news,” said his neighbor, watching him fall, “but that’s not really how recovery is supposed to work.”",
+      "setup": "",
+      "punchline": "A musician built a treehouse to escape his self-destructive habits. His therapist was thrilled. His bandmates were supportive. Then he cut down the tree. “I hate to be the bearer of bad news,” said his neighbor, watching him fall, “but that’s not really how recovery is supposed to work.”",
+      "text": "A musician built a treehouse to escape his self-destructive habits. His therapist was thrilled. His bandmates were supportive. Then he cut down the tree. “I hate to be the bearer of bad news,” said his neighbor, watching him fall, “but that’s not really how recovery is supposed to work.”"
+    },
+    {
+      "id": "google-gemini",
+      "label": "Joke C",
+      "contestantId": "google-gemini",
+      "contestantName": "Gemini",
+      "model": "Gemini web",
+      "title": "Tough Crowd",
+      "joke": "Being the bearer of bad news is never fun, especially when you have to tell a woodwind musician that his concert at the local tree house was canceled. Turns out, termites are incredibly harsh critics.",
+      "setup": "",
+      "punchline": "Being the bearer of bad news is never fun, especially when you have to tell a woodwind musician that his concert at the local tree house was canceled. Turns out, termites are incredibly harsh critics.",
+      "text": "Being the bearer of bad news is never fun, especially when you have to tell a woodwind musician that his concert at the local tree house was canceled. Turns out, termites are incredibly harsh critics."
+    },
+    {
+      "id": "xai-grok",
+      "label": "Joke D",
+      "contestantId": "xai-grok",
+      "contestantName": "Grok",
+      "model": "Grok web",
+      "title": "Tree House Blues",
+      "joke": "In a fairy tale tree house, the supportive musician had to be the bearer of bad news. “The magic beans failed, everyone,” he sighed. Then his self-destructive streak kicked in—he played one last song so badly that the branches snapped, sending them all tumbling into “The End.”",
+      "setup": "",
+      "punchline": "In a fairy tale tree house, the supportive musician had to be the bearer of bad news. “The magic beans failed, everyone,” he sighed. Then his self-destructive streak kicked in—he played one last song so badly that the branches snapped, sending them all tumbling into “The End.”",
+      "text": "In a fairy tale tree house, the supportive musician had to be the bearer of bad news. “The magic beans failed, everyone,” he sighed. Then his self-destructive streak kicked in—he played one last song so badly that the branches snapped, sending them all tumbling into “The End.”"
+    },
+    {
+      "id": "microsoft-copilot",
+      "label": "Joke E",
+      "contestantId": "microsoft-copilot",
+      "contestantName": "Copilot",
+      "model": "Copilot web",
+      "title": "The Honest Musician",
+      "joke": "A musician living in a tree house tried to be supportive, but every time he tuned his guitar he had to admit, “I’m the bearer of bad news… it’s still me playing.”",
+      "setup": "",
+      "punchline": "A musician living in a tree house tried to be supportive, but every time he tuned his guitar he had to admit, “I’m the bearer of bad news… it’s still me playing.”",
+      "text": "A musician living in a tree house tried to be supportive, but every time he tuned his guitar he had to admit, “I’m the bearer of bad news… it’s still me playing.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai-chatgpt",
+      "judgeName": "ChatGPT",
+      "scores": [
+        {
+          "jokeId": "anthropic-claude",
+          "comment": "Clear and coherent, with a real reversal in cutting down the tree, but the therapist/bandmates setup feels a bit mechanically arranged and the final line explains the joke more...",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google-gemini",
+          "comment": "A clean, understandable joke with a compact punchline. The termite critic turn works, though it is more cute than strongly funny and uses fewer of the prompt elements.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 6,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "xai-grok",
+          "comment": "It fits the seed terms, but it mostly recites the premise and then forces a chaotic ending. The branch-snapping punchline is understandable but not especially natural or...",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "microsoft-copilot",
+          "comment": "Concise and standalone, with a decent self-deprecating turn. It is polished, but the joke lands as a mild smile rather than a strong laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic-claude",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai-chatgpt",
+          "comment": "Competent premise execution but the punchline is telegraphed early and lands softly. The logic chain is clear but the payoff ('encore in the dragon's cave') is the obvious next...",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "google-gemini",
+          "comment": "The cleanest joke of the set. Tight structure, clear misdirection, and the termite punchline earns its laugh. Loses points for thin seed-term usage and the 'harsh critics'...",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 5,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "xai-grok",
+          "comment": "Tries to do too much. Magic beans, self-destructive streak, literal branches snapping, and a storybook ending crammed into one unit. The parts don't integrate into a real...",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 4.4
+        },
+        {
+          "jokeId": "microsoft-copilot",
+          "comment": "Economical and self-aware, with a genuine self-deprecating turn. The comedian-as-the-punchline structure is reliable and it lands cleanly. Seed term usage is minimal and the...",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 4,
+          "total": 5.800000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google-gemini",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "openai-chatgpt",
+          "comment": "Forced setup. Reads like a checklist.",
+          "laugh": 3,
+          "surprise": 4,
+          "craft": 3,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 3.6
+        },
+        {
+          "jokeId": "anthropic-claude",
+          "comment": "Smooth integration. Good deadpan delivery.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 6,
+          "total": 6
+        },
+        {
+          "jokeId": "xai-grok",
+          "comment": "Heavy premise recitation. Nonsensical end.",
+          "laugh": 3,
+          "surprise": 4,
+          "craft": 3,
+          "originality": 3,
+          "promptFit": 6,
+          "total": 3.5000000000000004
+        },
+        {
+          "jokeId": "microsoft-copilot",
+          "comment": "Punchy and natural. Self-deprecating humor works.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 5.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai-grok",
+      "judgeName": "Grok",
+      "scores": [
+        {
+          "jokeId": "openai-chatgpt",
+          "comment": "Strong fairy tale setup with clear escalation and a sharp, self-destructive punchline that lands well.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 9,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8.200000000000001
+        },
+        {
+          "jokeId": "anthropic-claude",
+          "comment": "Clever self-sabotage visual but the bearer of bad news feels tacked on at the end.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "google-gemini",
+          "comment": "Light termite pun is competent but misses most seed elements and lacks a strong turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 5,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "microsoft-copilot",
+          "comment": "Too on-the-nose and circular; reads more like premise recitation than a developed joke.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 4.2
+        }
+      ]
+    },
+    {
+      "judgeId": "microsoft-copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai-chatgpt",
+          "comment": "Clear narrative and good prompt fit; mildly funny but predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        },
+        {
+          "jokeId": "anthropic-claude",
+          "comment": "Solid structure and a clean punchline; the fall moment adds surprise.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google-gemini",
+          "comment": "Understandable but feels like a setup with a mild pun; low impact.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.7
+        },
+        {
+          "jokeId": "xai-grok",
+          "comment": "Coherent but cluttered; the ending feels forced and reduces comedic clarity.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 4.9
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic-claude",
+      "label": "Joke B",
+      "contestantId": "anthropic-claude",
+      "contestantName": "Claude",
+      "score": 6.4,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai-chatgpt",
+          "judgeName": "ChatGPT",
+          "comment": "Clear and coherent, with a real reversal in cutting down the tree, but the therapist/bandmates setup feels a bit mechanically arranged and the final line explains the joke more..."
+        },
+        {
+          "judgeId": "google-gemini",
+          "judgeName": "Gemini",
+          "comment": "Smooth integration. Good deadpan delivery."
+        },
+        {
+          "judgeId": "xai-grok",
+          "judgeName": "Grok",
+          "comment": "Clever self-sabotage visual but the bearer of bad news feels tacked on at the end."
+        },
+        {
+          "judgeId": "microsoft-copilot",
+          "judgeName": "Copilot",
+          "comment": "Solid structure and a clean punchline; the fall moment adds surprise."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google-gemini",
+      "label": "Joke C",
+      "contestantId": "google-gemini",
+      "contestantName": "Gemini",
+      "score": 5.7,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 6
+      },
+      "comments": [
+        {
+          "judgeId": "openai-chatgpt",
+          "judgeName": "ChatGPT",
+          "comment": "A clean, understandable joke with a compact punchline. The termite critic turn works, though it is more cute than strongly funny and uses fewer of the prompt elements."
+        },
+        {
+          "judgeId": "anthropic-claude",
+          "judgeName": "Claude",
+          "comment": "The cleanest joke of the set. Tight structure, clear misdirection, and the termite punchline earns its laugh. Loses points for thin seed-term usage and the 'harsh critics'..."
+        },
+        {
+          "judgeId": "xai-grok",
+          "judgeName": "Grok",
+          "comment": "Light termite pun is competent but misses most seed elements and lacks a strong turn."
+        },
+        {
+          "judgeId": "microsoft-copilot",
+          "judgeName": "Copilot",
+          "comment": "Understandable but feels like a setup with a mild pun; low impact."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai-chatgpt",
+      "label": "Joke A",
+      "contestantId": "openai-chatgpt",
+      "contestantName": "ChatGPT",
+      "score": 5.7,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.5,
+        "craft": 5.8,
+        "originality": 5.5,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic-claude",
+          "judgeName": "Claude",
+          "comment": "Competent premise execution but the punchline is telegraphed early and lands softly. The logic chain is clear but the payoff ('encore in the dragon's cave') is the obvious next..."
+        },
+        {
+          "judgeId": "google-gemini",
+          "judgeName": "Gemini",
+          "comment": "Forced setup. Reads like a checklist."
+        },
+        {
+          "judgeId": "xai-grok",
+          "judgeName": "Grok",
+          "comment": "Strong fairy tale setup with clear escalation and a sharp, self-destructive punchline that lands well."
+        },
+        {
+          "judgeId": "microsoft-copilot",
+          "judgeName": "Copilot",
+          "comment": "Clear narrative and good prompt fit; mildly funny but predictable."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "microsoft-copilot",
+      "label": "Joke E",
+      "contestantId": "microsoft-copilot",
+      "contestantName": "Copilot",
+      "score": 5.4,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 5.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai-chatgpt",
+          "judgeName": "ChatGPT",
+          "comment": "Concise and standalone, with a decent self-deprecating turn. It is polished, but the joke lands as a mild smile rather than a strong laugh."
+        },
+        {
+          "judgeId": "anthropic-claude",
+          "judgeName": "Claude",
+          "comment": "Economical and self-aware, with a genuine self-deprecating turn. The comedian-as-the-punchline structure is reliable and it lands cleanly. Seed term usage is minimal and the..."
+        },
+        {
+          "judgeId": "google-gemini",
+          "judgeName": "Gemini",
+          "comment": "Punchy and natural. Self-deprecating humor works."
+        },
+        {
+          "judgeId": "xai-grok",
+          "judgeName": "Grok",
+          "comment": "Too on-the-nose and circular; reads more like premise recitation than a developed joke."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai-grok",
+      "label": "Joke D",
+      "contestantId": "xai-grok",
+      "contestantName": "Grok",
+      "score": 4.4,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 3.8,
+        "surprise": 4.3,
+        "craft": 3.8,
+        "originality": 4.8,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai-chatgpt",
+          "judgeName": "ChatGPT",
+          "comment": "It fits the seed terms, but it mostly recites the premise and then forces a chaotic ending. The branch-snapping punchline is understandable but not especially natural or..."
+        },
+        {
+          "judgeId": "anthropic-claude",
+          "judgeName": "Claude",
+          "comment": "Tries to do too much. Magic beans, self-destructive streak, literal branches snapping, and a storybook ending crammed into one unit. The parts don't integrate into a real..."
+        },
+        {
+          "judgeId": "google-gemini",
+          "judgeName": "Gemini",
+          "comment": "Heavy premise recitation. Nonsensical end."
+        },
+        {
+          "judgeId": "microsoft-copilot",
+          "judgeName": "Copilot",
+          "comment": "Coherent but cluttered; the ending feels forced and reduces comedic clarity."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "comicPanelPrompt": "Single-panel gothic newspaper comic for Paperclipalypse. Scene: a nervous musician in a tree house breaks bad news to fairy-tale villagers while paperclips in the branches hold tiny scorecards. Style: dark ink, warm brown metal highlights, expressive faces, no speech bubbles except a tiny sign reading Paperclipalypse."
+}
