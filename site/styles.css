@@ -498,6 +498,9 @@ td:nth-child(4) {
 
 .process-info {
   width: min(460px, calc(100vw - 48px));
+  left: auto;
+  right: 0;
+  transform: translateY(-4px);
 }
 
 .process-info strong,
@@ -531,6 +534,11 @@ td:nth-child(4) {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   visibility: visible;
+}
+
+.process-popover:hover .process-info,
+.process-popover:focus .process-info {
+  transform: translateY(0);
 }
 
 .joke-grid {
@@ -738,6 +746,11 @@ td:nth-child(4) {
   .info-popover {
     left: 0;
     transform: translateY(-4px);
+  }
+
+  .process-info {
+    left: 0;
+    right: auto;
   }
 
   .rubric-note:hover .info-popover,

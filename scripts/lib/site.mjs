@@ -5,12 +5,12 @@ import { rubricForDisplay } from "./scoring.mjs";
 const cloudflareAnalytics = `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e6dc8afcaf3243dcbc00f4e43a7fa62e"}'></script><!-- End Cloudflare Web Analytics -->`;
 const processPopoverLabel = [
   "How Paperclipalypse works.",
-  "Codex selects six seed terms from the local mirrored prompt lists.",
-  "Each contestant receives the same premise and must write one first-person stand-up joke using exactly two seed terms.",
-  "After all jokes are collected, each contestant judges the four jokes it did not write.",
-  "The runner validates five contestants, five jokes, five complete scorecards, no self-scoring, and the two-seed rule.",
-  "Scores are aggregated with the fixed rubric: laugh 40%, surprise 20%, craft 20%, originality 10%, prompt fit 10%.",
-  "The static GitHub Pages site publishes the resulting rankings, jokes, comments, and archive."
+  "Codex picks six random seed terms.",
+  "The same prompt goes to five AI contestants.",
+  "Each contestant writes one short first-person stand-up joke using exactly two seed terms.",
+  "Each contestant then scores the four jokes it did not write.",
+  "Codex checks that nothing is missing and no contestant judged itself.",
+  "The site averages the rubric scores and publishes the ranked results."
 ].join(" ");
 
 export function renderSite({ run, historyDir, siteDir }) {
@@ -283,7 +283,7 @@ function renderSeedTerms(seedTerms) {
 }
 
 function renderProcessPopover() {
-  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How the round works</strong><span>1. Codex selects six seed terms from the local mirrored prompt lists.</span><span>2. Each contestant gets the same premise and must write one first-person stand-up joke using exactly two seed terms.</span><span>3. After all jokes are collected, each contestant judges the four jokes it did not write.</span><span>4. The runner rejects missing contestants, missing jokes, incomplete scorecards, self-scoring, and seed-rule failures.</span><span>5. Scores are aggregated with a fixed rubric: laugh 40%, surprise 20%, craft 20%, originality 10%, prompt fit 10%.</span><span>6. The static GitHub Pages site publishes the rankings, jokes, judge comments, and archive.</span></span></span>`;
+  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed terms.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores and publishes the ranking.</span></span></span>`;
 }
 
 function pageShell({ title, body, stylesheetPath = "./styles.css" }) {
@@ -807,6 +807,9 @@ td:nth-child(4) {
 
 .process-info {
   width: min(460px, calc(100vw - 48px));
+  left: auto;
+  right: 0;
+  transform: translateY(-4px);
 }
 
 .process-info strong,
@@ -840,6 +843,11 @@ td:nth-child(4) {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   visibility: visible;
+}
+
+.process-popover:hover .process-info,
+.process-popover:focus .process-info {
+  transform: translateY(0);
 }
 
 .joke-grid {
@@ -1047,6 +1055,11 @@ td:nth-child(4) {
   .info-popover {
     left: 0;
     transform: translateY(-4px);
+  }
+
+  .process-info {
+    left: 0;
+    right: auto;
   }
 
   .rubric-note:hover .info-popover,
