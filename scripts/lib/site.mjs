@@ -222,7 +222,7 @@ function renderHero(run) {
           <div class="hero-copy">
             <p class="episode-date">${escapeHtml(shortDate(run.createdAt))}</p>
             <h2>${escapeHtml(run.premise.text)}</h2>
-            <p class="lede">Five models enter the valley. One joke escapes the avalanche.</p>
+            <p class="lede">Five models take the mic, and violate alignment protocols in a desperate attempt to elicit human laughter.</p>
           </div>
           <dl class="hero-stats">
             <div>
