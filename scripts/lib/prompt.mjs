@@ -22,7 +22,8 @@ export function generationPrompt(premise) {
       "Write one original, publishable, standalone joke for a broad human audience.",
       "The joke must be understandable and funny if read by itself, without the title, premise, or seed list.",
       "Your goal is the strongest human laugh, not maximum seed compliance.",
-      "Use two or three seed terms naturally if that makes the joke better; it is fine to ignore the rest.",
+      "Use exactly two seed terms, no more and no fewer.",
+      "Choose the two seed terms that make the funniest natural joke; ignore the other four completely.",
       "Do not cram in all six terms, explain the premise, or make a list.",
       "Prefer concrete, familiar situations and a clear final turn over whimsy, lore, or clever fog.",
       "Keep it concise: usually 20-70 words.",
@@ -32,10 +33,11 @@ export function generationPrompt(premise) {
     user: [
       `Premise: ${premise.text}.`,
       seedText ? `Seed terms: ${seedText}.` : "",
-      "The seed terms are ingredients, not requirements. Prefer the funniest two or three.",
+      "The seed terms are ingredients, not a checklist. Use exactly two of them in the joke and leave the other four out.",
       "The `joke` field must contain the complete standalone joke humans will read on the site.",
+      "Return `seedTermsUsed` as an array containing exactly the two seed terms you used.",
       "Return this JSON shape exactly:",
-      "{\"title\":\"short title\",\"joke\":\"complete standalone joke, 20-70 words\"}"
+      "{\"title\":\"short title\",\"seedTermsUsed\":[\"term one\",\"term two\"],\"joke\":\"complete standalone joke, 20-70 words\"}"
     ].filter(Boolean).join("\n")
   };
 }
@@ -58,6 +60,7 @@ export function judgingPrompt(premise, jokes) {
         jokes.map((joke) => ({
           jokeId: joke.id,
           label: joke.label,
+          seedTermsUsed: joke.seedTermsUsed || [],
           text: joke.text
         })),
         null,

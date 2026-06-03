@@ -203,19 +203,20 @@ function renderRubric(rubric = rubricForDisplay()) {
   const fields = (rubric.fields || [])
     .map(
       (field) => `
-        <li>
+        <li tabindex="0" aria-label="${escapeHtml(`${field.label}: ${field.description}`)}">
           <strong>${escapeHtml(field.label)}</strong>
           <span>${Math.round(Number(field.weight || 0) * 100)}%</span>
-          <p>${escapeHtml(field.description)}</p>
+          <span class="info-popover">${escapeHtml(field.description)}</span>
         </li>`
     )
     .join("");
   const anchors = (rubric.anchors || [])
     .map(
       (anchor) => `
-        <li>
+        <li tabindex="0" aria-label="${escapeHtml(`${anchor.range} ${anchor.label}: ${anchor.description}`)}">
           <strong>${escapeHtml(anchor.range)}</strong>
           <span>${escapeHtml(anchor.label)}</span>
+          <span class="info-popover">${escapeHtml(anchor.description)}</span>
         </li>`
     )
     .join("");
@@ -226,11 +227,9 @@ function renderRubric(rubric = rubricForDisplay()) {
           <p class="eyebrow">Scoring Standard</p>
           <h2>Rubric</h2>
         </div>
-        <div class="rubric-layout">
-          <div>
-            <p class="rubric-note">Fixed scale ${escapeHtml(rubric.version || "current")}: 5 is competent but forgettable, 7 is genuinely good, 8 is excellent, 9 is rare, and 10 should almost never appear.</p>
-            <ul class="rubric-fields">${fields}</ul>
-          </div>
+        <div class="rubric-compact">
+          <span class="rubric-note" tabindex="0" aria-label="Fixed scale ${escapeHtml(rubric.version || "current")}: 5 is competent, 7 good, 8 excellent, 9 rare, 10 nearly never.">Fixed scale<span class="info-popover">Version ${escapeHtml(rubric.version || "current")}. 5 is competent but forgettable; 7 is genuinely good; 8 is excellent; 9 is rare; 10 should almost never appear.</span></span>
+          <ul class="rubric-fields">${fields}</ul>
           <ol class="rubric-anchors">${anchors}</ol>
         </div>
       </section>`;
@@ -264,7 +263,7 @@ function renderSeedTerms(seedTerms) {
       <section class="seed-terms">
         <div class="section-heading">
           <p class="eyebrow">Prompt Genome</p>
-          <h2>Seed Terms</h2>
+          <h2>Seed Terms <span class="rule-popover" tabindex="0" aria-label="Contestants must use exactly two seed terms.">2-term rule<span class="info-popover">Each contestant must pick exactly two seed terms for the joke. The other four are deliberately ignored so the joke stays natural.</span></span></h2>
         </div>
         <ul>${terms}</ul>
       </section>`;
@@ -690,101 +689,105 @@ td:nth-child(4) {
   font-weight: 900;
 }
 
-.rubric-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
-  gap: 16px;
-}
-
-.rubric-note,
-.rubric-fields,
-.rubric-anchors {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background:
-    linear-gradient(180deg, rgba(194, 138, 87, 0.08), transparent 42%),
-    var(--panel);
-  box-shadow: var(--shadow);
-}
-
-.rubric-note {
-  color: var(--muted);
-  line-height: 1.55;
-  margin-bottom: 12px;
-  padding: 16px;
+.rubric-compact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }
 
 .rubric-fields,
 .rubric-anchors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.rubric-fields {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  overflow: hidden;
-}
-
+.rubric-note,
 .rubric-fields li,
-.rubric-anchors li {
-  border-bottom: 1px solid var(--line-cool);
-  padding: 14px;
-}
-
-.rubric-fields li {
-  min-height: 128px;
+.rubric-anchors li,
+.rule-popover {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.12), transparent 58%),
+    rgba(18, 19, 21, 0.86);
+  box-shadow: var(--shadow);
+  cursor: help;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 36px;
+  outline: none;
+  padding: 8px 10px;
+  position: relative;
 }
 
 .rubric-fields strong,
 .rubric-anchors strong {
   color: var(--bone);
-  display: block;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
 }
 
-.rubric-fields span {
+.rubric-note,
+.rubric-fields > li > span:not(.info-popover),
+.rubric-anchors > li > span:not(.info-popover),
+.rule-popover {
   color: var(--brass);
-  display: block;
   font-size: 0.82rem;
   font-weight: 900;
-  margin: 4px 0 8px;
-}
-
-.rubric-fields p {
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.45;
-  margin-bottom: 0;
-}
-
-.rubric-anchors {
-  align-self: start;
-  overflow: hidden;
-}
-
-.rubric-anchors li {
-  display: grid;
-  grid-template-columns: 54px minmax(0, 1fr);
-  gap: 10px;
-  align-items: center;
-}
-
-.rubric-anchors li:last-child,
-.rubric-fields li:last-child {
-  border-bottom: 0;
+  text-transform: uppercase;
 }
 
 .rubric-anchors strong {
   color: var(--brass);
-  font-size: 0.96rem;
+  font-size: 0.92rem;
 }
 
-.rubric-anchors span {
+.rubric-anchors > li > span:not(.info-popover) {
   color: var(--ink);
   font-weight: 850;
+  text-transform: none;
+}
+
+.info-popover {
+  width: min(280px, calc(100vw - 48px));
+  border: 1px solid rgba(194, 138, 87, 0.4);
+  border-radius: 8px;
+  background: rgba(8, 9, 10, 0.98);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.46);
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 750;
+  left: 50%;
+  line-height: 1.45;
+  opacity: 0;
+  padding: 10px 12px;
+  pointer-events: none;
+  position: absolute;
+  text-transform: none;
+  top: calc(100% + 8px);
+  transform: translateX(-50%) translateY(-4px);
+  transition: opacity 140ms ease, transform 140ms ease;
+  visibility: hidden;
+  z-index: 8;
+}
+
+.rubric-note:hover .info-popover,
+.rubric-note:focus .info-popover,
+.rubric-fields li:hover .info-popover,
+.rubric-fields li:focus .info-popover,
+.rubric-anchors li:hover .info-popover,
+.rubric-anchors li:focus .info-popover,
+.rule-popover:hover .info-popover,
+.rule-popover:focus .info-popover {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  visibility: visible;
 }
 
 .joke-grid {
@@ -928,10 +931,6 @@ td:nth-child(4) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .rubric-layout {
-    grid-template-columns: 1fr;
-  }
-
   .episode {
     grid-template-columns: 1fr;
   }
@@ -989,8 +988,24 @@ td:nth-child(4) {
     grid-template-columns: 1fr;
   }
 
-  .rubric-fields {
-    grid-template-columns: 1fr;
+  .rubric-compact {
+    align-items: flex-start;
+  }
+
+  .info-popover {
+    left: 0;
+    transform: translateY(-4px);
+  }
+
+  .rubric-note:hover .info-popover,
+  .rubric-note:focus .info-popover,
+  .rubric-fields li:hover .info-popover,
+  .rubric-fields li:focus .info-popover,
+  .rubric-anchors li:hover .info-popover,
+  .rubric-anchors li:focus .info-popover,
+  .rule-popover:hover .info-popover,
+  .rule-popover:focus .info-popover {
+    transform: translateY(0);
   }
 
   .hero-stats {

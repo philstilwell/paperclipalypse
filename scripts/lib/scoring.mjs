@@ -1,4 +1,4 @@
-export const RUBRIC_VERSION = "2026-06-stern-comedy-v1";
+export const RUBRIC_VERSION = "2026-06-exact-two-v2";
 
 export const RUBRIC_FIELDS = [
   {
@@ -29,7 +29,7 @@ export const RUBRIC_FIELDS = [
     key: "promptFit",
     label: "Prompt Fit",
     weight: 0.1,
-    description: "Natural use of the seed material without cramming or checklist writing."
+    description: "Natural use of exactly two seed terms, with the other four left out."
   }
 ];
 
@@ -93,7 +93,8 @@ export function rubricPromptText() {
     "A joke that is not understandable as a standalone joke should score no higher than 4 for laugh and craft.",
     "Penalize clever-sounding nonsense, vague absurdity, premise recitation, and punchlines that only restate the setup.",
     "Do not inflate scores because the premise is odd. Reward only humor that a broad human audience could understand and enjoy.",
-    "Do not reward seed-term stuffing. Prompt fit is high when two or three seed terms are used naturally, and low when terms feel pasted in.",
+    "Do not reward seed-term stuffing. Prompt fit is high only when exactly two seed terms are used naturally.",
+    "If a joke uses fewer than two or more than two seed terms, promptFit should be 4 or lower unless the mistake is very minor.",
     "Use integer 1-10 scores for each field; the site computes the weighted total.",
     "Fields and weights:",
     fields,

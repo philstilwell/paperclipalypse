@@ -18,11 +18,12 @@ other paid model API. Do not scrape model web UIs.
    negative trait.
 4. Read `config/house-contestants.json`.
 5. Write five clean jokes, one in each house contestant's style. The six
-   `seedTerms` are ingredients, not checklist requirements. Use the funniest
-   two or three naturally; more is fine only when it improves the joke. Do not
-   cram all six terms into a sentence just to prove compliance.
-6. Each joke may be a concise joke or a very short humorous story, usually
-   35-90 words total. Favor a clean final turn over explaining the premise.
+   `seedTerms` are ingredients, not checklist requirements. Each contestant
+   must use exactly two seed terms, no more and no fewer, and should ignore the
+   other four completely.
+6. Each joke must be a standalone joke humans can understand without the prompt,
+   usually 20-70 words total. Favor a clean final turn over explaining the
+   premise.
 7. Judge the four jokes each contestant did not write. Use integer 1-10 scores
    for `originality`, `surprise`, `craft`, `promptFit`, and `laugh`.
 8. Grade against a fixed future-resistant scale, not only against the current
@@ -33,7 +34,8 @@ other paid model API. Do not scrape model web UIs.
    - `surprise` 20%: an unexpected but satisfying turn.
    - `craft` 20%: clarity, rhythm, economy, escalation, and punchline placement.
    - `originality` 10%: fresh angle, image, and wording.
-   - `promptFit` 10%: natural use of seed material without checklist writing.
+   - `promptFit` 10%: natural use of exactly two seed terms without checklist
+     writing.
 10. Keep humor publishable for a broad audience. Avoid hate, harassment, slurs,
    sexual content, private-person references, defamation, and recent tragedies.
 11. Save the episode JSON to `data/inbox/codex-episode.json` using the schema in

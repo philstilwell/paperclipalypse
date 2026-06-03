@@ -61,6 +61,15 @@
           "contestantName": { "type": "string" },
           "model": { "type": "string" },
           "title": { "type": "string" },
+          "seedTermsUsed": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
           "joke": { "type": "string" },
           "text": { "type": "string" },
           "setup": { "type": "string" },
