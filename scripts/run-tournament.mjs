@@ -35,6 +35,7 @@ if (episodeFile) {
 }
 
 if (!dryRun) {
+  assertApiAutomationSupported(paidContestants);
   assertPaidApiAllowed(paidContestants);
   assertApiKeys(paidContestants);
 }
@@ -292,6 +293,26 @@ function assertApiKeys(modelRoster) {
       `Missing API keys: ${[...new Set(missing)].join(", ")}. Run with --dry-run for local mock output.`
     );
   }
+}
+
+function assertApiAutomationSupported(modelRoster) {
+  const manualOnly = modelRoster.filter((contestant) => (
+    contestant.apiAutomation === false ||
+    contestant.provider === "manual-web" ||
+    !contestant.apiKeyEnv
+  ));
+
+  if (!manualOnly.length) {
+    return;
+  }
+
+  throw new Error(
+    [
+      `Live API mode cannot automate manual-only contestants: ${manualOnly.map((contestant) => contestant.displayName).join(", ")}.`,
+      "Use prompts/external-ai-round.md and publish a collected episode JSON instead,",
+      "or replace manual-only contestants with API-backed providers before running npm run tournament."
+    ].join(" ")
+  );
 }
 
 function assertPaidApiAllowed(modelRoster) {

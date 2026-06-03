@@ -9,7 +9,8 @@ missing judge assessments.
 ## Contestants
 
 Use `config/contestants.json` unless the user explicitly changes the roster.
-Each contestant must submit exactly one joke and exactly one scorecard.
+The default roster is OpenAI/ChatGPT, Claude, Gemini, Grok, and Copilot. Each
+contestant must submit exactly one joke and exactly one scorecard.
 
 ## Joke Prompt
 

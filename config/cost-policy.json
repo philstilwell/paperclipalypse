@@ -31,9 +31,9 @@
       "condition": "Use manually through a free/subscription Grok surface if available."
     },
     {
-      "contestantId": "mistral",
-      "model": "Mistral Small or Medium",
-      "condition": "Use manually through a free/subscription Mistral chat surface if available."
+      "contestantId": "copilot",
+      "model": "Microsoft Copilot web",
+      "condition": "Use manually through the Copilot chat surface; no API automation is configured."
     }
   ]
 }

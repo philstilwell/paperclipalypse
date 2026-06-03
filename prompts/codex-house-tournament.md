@@ -8,7 +8,7 @@ static site. It must not be presented as a real external-model tournament.
 
 Create one new Paperclipalypse Codex-house episode using only local files and
 your normal Codex capabilities. Do not call OpenAI, Anthropic, Google, xAI,
-Mistral, or any other paid model API. Do not scrape model web UIs. For a real
+Copilot, or any other paid model API. Do not scrape model web UIs. For a real
 external-model round, use `prompts/external-ai-round.md` instead.
 
 ## Workflow

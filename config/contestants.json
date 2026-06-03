@@ -46,16 +46,14 @@
       "notes": "Low-cost Grok option, but xAI API use is still metered."
     },
     {
-      "id": "mistral",
-      "displayName": "Mistral Small",
-      "provider": "openai-compatible",
-      "baseUrl": "https://api.mistral.ai/v1",
-      "apiKeyEnv": "MISTRAL_API_KEY",
-      "modelEnv": "MISTRAL_MODEL",
-      "defaultModel": "mistral-small-latest",
-      "billing": "paid-api",
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "defaultModel": "Microsoft Copilot web",
+      "billing": "manual-web",
       "freeAutomation": false,
-      "notes": "Cost-aware Mistral API choice; use Mistral Medium 3.5 manually/free-chat if available, but do not automate paid API calls by default."
+      "apiAutomation": false,
+      "notes": "Use manually through Microsoft Copilot's chat surface. No paid API automation is configured for this hobby workflow."
     }
   ]
 }

@@ -58,7 +58,7 @@ The current cost-aware external roster is:
 - Gemini Flash: free-tier eligible in the Gemini API, subject to Google's quota
   and data-use terms.
 - xAI Grok 4.3: low-cost but metered API.
-- Mistral Small: low-cost but metered API.
+- Copilot: manual web contestant; no API automation is configured.
 
 `config/cost-policy.json` is the guardrail: no metered external API calls unless
 `PAPERCLIPALYPSE_ALLOW_PAID_API=1` is set locally.
@@ -150,7 +150,6 @@ Only add these repository secrets if you intentionally enable paid API mode:
 - `ANTHROPIC_API_KEY`
 - `GOOGLE_API_KEY`
 - `XAI_API_KEY`
-- `MISTRAL_API_KEY`
 
 Optional repository variables can override the configured model names:
 
@@ -158,7 +157,6 @@ Optional repository variables can override the configured model names:
 - `ANTHROPIC_MODEL`
 - `GOOGLE_MODEL`
 - `XAI_MODEL`
-- `MISTRAL_MODEL`
 
 GitHub Pages is deployed from the generated `site/` folder by
 `.github/workflows/paperclipalypse.yml` whenever `main` changes. The
