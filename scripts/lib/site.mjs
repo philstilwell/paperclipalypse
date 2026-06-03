@@ -72,6 +72,7 @@ function renderHome(run, runs) {
 
   return pageShell({
     title: "Paperclipalypse",
+    socialImage: socialImageForRun(run),
     body: `
       ${renderHero(run)}
       ${renderRun(run, { showEpisodeHeader: false, showIntro: true })}
@@ -116,12 +117,13 @@ function renderRunPage(run) {
     title: `Paperclipalypse - ${shortDate(run.createdAt)}`,
     stylesheetPath: "../styles.css",
     canonicalPath: `/runs/${run.slug}.html`,
+    socialImage: socialImageForRun(run),
     body: `
       <nav class="topnav">
         <a href="../index.html" class="nav-brand"><span class="mini-mark" aria-hidden="true"></span>Paperclipalypse</a>
         <span>${escapeHtml(shortDate(run.createdAt))}</span>
       </nav>
-      ${renderRun(run)}`
+      ${renderRun(run, { assetBase: "../" })}`
   });
 }
 
@@ -197,6 +199,7 @@ function renderHero(run) {
 function renderRun(run, options = {}) {
   const showEpisodeHeader = options.showEpisodeHeader ?? true;
   const showIntro = options.showIntro ?? false;
+  const assetBase = options.assetBase ?? "./";
   const winner = run.rankings[0];
   const rankingRows = run.rankings
     .map(
@@ -241,6 +244,7 @@ function renderRun(run, options = {}) {
     <main>
       ${showIntro ? renderIntro() : ""}
       ${showEpisodeHeader ? renderEpisodeHeader(run, winner) : ""}
+      ${renderFeatureImage(run, assetBase)}
       ${renderSeedTerms(run.seedTerms)}
       <section class="scoreboard">
         <div class="section-heading">
@@ -277,6 +281,34 @@ function renderRun(run, options = {}) {
         <p>${escapeHtml(run.comicPanelPrompt)}</p>
       </section>
     </main>`;
+}
+
+function renderFeatureImage(run, assetBase) {
+  const feature = run.featureImage;
+  if (!feature?.src) {
+    return "";
+  }
+
+  const winner = run.rankings?.[0];
+  const winningJoke = run.jokes?.find((joke) => joke.id === winner?.jokeId);
+  const title = winningJoke?.title || "Winning Joke";
+  const captionParts = [
+    winner?.contestantName ? `${winner.contestantName}'s winning joke` : "Winning joke",
+    title ? `"${title}"` : "",
+    winner?.score ? `${formatScore(winner.score)} score` : ""
+  ].filter(Boolean);
+
+  return `
+      <section class="feature-image">
+        <div class="section-heading">
+          <p class="eyebrow">Winning Image</p>
+          <h2>${escapeHtml(title)}</h2>
+        </div>
+        <figure>
+          <img src="${escapeHtml(assetPath(feature.src, assetBase))}" alt="${escapeHtml(feature.alt || featureImageAlt(run))}"${feature.width ? ` width="${Number(feature.width)}"` : ""}${feature.height ? ` height="${Number(feature.height)}"` : ""} loading="lazy">
+          <figcaption>${escapeHtml(captionParts.join(" / "))}</figcaption>
+        </figure>
+      </section>`;
 }
 
 function renderIntro() {
@@ -463,11 +495,11 @@ function pageShell({
   body,
   stylesheetPath = "./styles.css",
   canonicalPath = "/",
-  description = "Paperclipalypse is an AI comedy tournament where five models write jokes from the same random prompt and judge each other."
+  description = "Paperclipalypse is an AI comedy tournament where five models write jokes from the same random prompt and judge each other.",
+  socialImage = "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp"
 }) {
   const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.png" : "./favicon.png";
   const canonicalUrl = `https://paperclipalypse.com${canonicalPath}`;
-  const socialImage = "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp";
 
   return `<!doctype html>
 <html lang="en">
@@ -827,6 +859,7 @@ main {
 .rubric,
 .jokes,
 .comic-brief,
+.feature-image,
 .archive {
   padding: 32px 0 0;
 }
@@ -1210,6 +1243,34 @@ td:nth-child(4) {
   line-height: 1.38;
 }
 
+.feature-image figure {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.08), transparent 60%),
+    var(--panel);
+  box-shadow: var(--shadow);
+  margin: 0;
+  overflow: hidden;
+}
+
+.feature-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  display: block;
+  object-fit: cover;
+}
+
+.feature-image figcaption {
+  border-top: 1px solid var(--line-cool);
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 850;
+  line-height: 1.4;
+  padding: 12px 14px;
+}
+
 .comic-brief p,
 .archive ol {
   border: 1px solid var(--line);
@@ -1486,6 +1547,41 @@ function modeDescription(source) {
 
 function formatScore(score) {
   return Number(score).toFixed(1);
+}
+
+function assetPath(src, assetBase = "./") {
+  const cleaned = String(src || "").trim();
+  if (!cleaned || /^https?:\/\//.test(cleaned) || cleaned.startsWith("/")) {
+    return cleaned;
+  }
+
+  return `${assetBase}${cleaned.replace(/^\.?\//, "")}`;
+}
+
+function absoluteAssetUrl(src) {
+  const cleaned = String(src || "").trim();
+  if (!cleaned) {
+    return "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp";
+  }
+  if (/^https?:\/\//.test(cleaned)) {
+    return cleaned;
+  }
+
+  return `https://paperclipalypse.com/${cleaned.replace(/^\.?\//, "")}`;
+}
+
+function socialImageForRun(run) {
+  return run.featureImage?.src
+    ? absoluteAssetUrl(run.featureImage.src)
+    : "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp";
+}
+
+function featureImageAlt(run) {
+  const winner = run.rankings?.[0];
+  const winningJoke = run.jokes?.find((joke) => joke.id === winner?.jokeId);
+  const title = winningJoke?.title ? ` titled ${winningJoke.title}` : "";
+
+  return `Paperclipalypse winning joke feature image${title}: a paperclip stand-up comic, joke text, and the joke scene.`;
 }
 
 function shortDate(value) {

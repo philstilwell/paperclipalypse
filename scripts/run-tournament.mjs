@@ -25,10 +25,12 @@ const seedListsPath = path.join(rootDir, "data", "seed-lists.json");
 const historyDir = path.join(rootDir, "data", "runs");
 const siteDir = path.join(rootDir, "site");
 const episodeFile = args.get("episode-file");
+const featureImagePath = args.get("feature-image");
 const contestants = dryRun ? houseContestants : paidContestants;
 
 if (episodeFile) {
   const run = buildRunFromEpisodeFile(path.resolve(rootDir, episodeFile), seed);
+  attachFeatureImage(run, featureImagePath);
   assertPublishQuality(run);
   writeAndRender(run);
   printSummary(run);
@@ -78,6 +80,7 @@ const run = {
   rankings
 };
 run.comicPanelPrompt = comicPanelPrompt(run);
+attachFeatureImage(run, featureImagePath);
 
 assertPublishQuality(run);
 writeAndRender(run);
@@ -265,7 +268,8 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     rubric: rubricForDisplay(),
     jokes: manualJokes,
     judgeResults: manualJudgeResults,
-    rankings: manualRankings
+    rankings: manualRankings,
+    featureImage: normalizeFeatureImage(episode.featureImage)
   };
 
   run.comicPanelPrompt = cleanText(episode.comicPanelPrompt) || comicPanelPrompt(run);
@@ -276,6 +280,31 @@ function writeAndRender(run) {
   fs.mkdirSync(historyDir, { recursive: true });
   fs.writeFileSync(path.join(historyDir, `${run.slug}.json`), `${JSON.stringify(run, null, 2)}\n`, "utf8");
   renderSite({ run, historyDir, siteDir });
+}
+
+function attachFeatureImage(run, sourcePath) {
+  if (!sourcePath) {
+    return;
+  }
+
+  const absoluteSourcePath = path.resolve(rootDir, sourcePath);
+  if (!fs.existsSync(absoluteSourcePath)) {
+    throw new Error(`Feature image not found: ${sourcePath}`);
+  }
+
+  const ext = path.extname(absoluteSourcePath).toLowerCase() || ".png";
+  const assetRelPath = path.posix.join("assets", "feature-images", `${run.slug}${ext}`);
+  const assetPath = path.join(siteDir, assetRelPath);
+  fs.mkdirSync(path.dirname(assetPath), { recursive: true });
+  fs.copyFileSync(absoluteSourcePath, assetPath);
+
+  run.featureImage = {
+    src: assetRelPath,
+    originalSrc: assetRelPath,
+    source: "approved-generated-image",
+    aspectRatio: "2:1",
+    alt: featureImageAlt(run)
+  };
 }
 
 function printSummary(run) {
@@ -374,6 +403,31 @@ function average(values) {
   }
 
   return usable.reduce((sum, value) => sum + value, 0) / usable.length;
+}
+
+function normalizeFeatureImage(image) {
+  if (!image || typeof image !== "object" || !cleanText(image.src)) {
+    return null;
+  }
+
+  return {
+    src: cleanText(image.src),
+    originalSrc: cleanText(image.originalSrc || image.src),
+    source: cleanText(image.source || "approved-generated-image"),
+    aspectRatio: cleanText(image.aspectRatio || "2:1"),
+    width: Number.isFinite(Number(image.width)) ? Number(image.width) : undefined,
+    height: Number.isFinite(Number(image.height)) ? Number(image.height) : undefined,
+    alt: cleanText(image.alt) || featureImageAlt({ premise: { text: "" }, rankings: [], jokes: [] }),
+    prompt: cleanText(image.prompt)
+  };
+}
+
+function featureImageAlt(run) {
+  const winner = run.rankings?.[0];
+  const winningJoke = run.jokes?.find((joke) => joke.id === winner?.jokeId);
+  const title = winningJoke?.title ? ` titled ${winningJoke.title}` : "";
+
+  return `Paperclipalypse winning joke feature image${title}: a paperclip stand-up comic, joke text, and the joke scene.`;
 }
 
 function modelName(contestant) {

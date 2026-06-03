@@ -83,6 +83,16 @@ To publish a real external/manual episode JSON:
 node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json
 ```
 
+To attach an approved winning-joke feature image during render:
+
+```sh
+node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json --feature-image /path/to/approved-image.webp
+```
+
+The runner copies the image into `site/assets/feature-images/`, records it as
+`featureImage`, renders it on the episode/home pages, and uses it as the social
+preview image.
+
 The runner now performs hard participation checks. A round must have exactly
 five contestants, exactly one joke from each contestant, and exactly one
 scorecard from each contestant. Every scorecard must assess the four jokes that

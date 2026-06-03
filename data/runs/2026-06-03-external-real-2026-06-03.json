@@ -642,5 +642,15 @@
       "rank": 5
     }
   ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-03-external-real-2026-06-03.webp",
+    "originalSrc": "assets/feature-images/2026-06-03-external-real-2026-06-03.png",
+    "source": "OpenAI image generation via Codex app",
+    "aspectRatio": "2:1",
+    "width": 1774,
+    "height": 887,
+    "alt": "Sepia editorial cartoon poster for the winning joke: a paperclip stand-up comic, a park scene with a rescue collie herding four toddlers into a pentagon, and the joke text.",
+    "prompt": ""
+  },
   "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Scene: Massage / Physical Therapist at Park, facing Running out of critical supplies, with a Just instinct and a Foolish streak in a Herding mode. Seed terms: Herding, Massage / Physical Therapist, Park, Running out of critical supplies, Just, Foolish. The visual should nod to the winning joke titled \"Collie Instincts\". Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse."
 }
