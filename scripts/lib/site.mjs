@@ -28,6 +28,7 @@ export function renderSite({ run, historyDir, siteDir }) {
   }
 
   fs.writeFileSync(path.join(siteDir, "index.html"), cleanGeneratedText(renderHome(run, runs)), "utf8");
+  fs.writeFileSync(path.join(siteDir, "about.html"), cleanGeneratedText(renderAboutPage()), "utf8");
   fs.writeFileSync(path.join(siteDir, "styles.css"), cleanGeneratedText(renderCss()), "utf8");
   fs.writeFileSync(path.join(siteDir, "404.html"), cleanGeneratedText(renderNotFound()), "utf8");
   fs.writeFileSync(path.join(siteDir, "robots.txt"), renderRobots(), "utf8");
@@ -92,10 +93,7 @@ function renderNotFound() {
     description: "That Paperclipalypse page escaped the avalanche.",
     canonicalPath: "/404.html",
     body: `
-      <nav class="topnav">
-        <a href="./index.html" class="nav-brand"><span class="mini-mark" aria-hidden="true"></span>Paperclipalypse</a>
-        <span>404</span>
-      </nav>
+      ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", label: "404" })}
       <main>
         <section class="episode">
           <div>
@@ -112,6 +110,36 @@ function renderNotFound() {
   });
 }
 
+function renderAboutPage() {
+  return pageShell({
+    title: "Paperclipalypse - About",
+    description: "About Paperclipalypse, an AI humor tournament tracking how model humor improves over time.",
+    canonicalPath: "/about.html",
+    body: `
+      ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", label: "Origin Story" })}
+      <main>
+        <section class="about-page">
+          <p class="eyebrow">About</p>
+          <h1>Why Paperclipalypse Exists</h1>
+          <p>Paperclipalypse is an AI comedy tournament: five models receive the same odd prompt, write one short joke, judge each other's entries, and let the scoreboard absorb the embarrassment.</p>
+          <p>The final impetus for this site came after weeks of dry, reliable project building. Codex caught me by surprise after I had committed a typo caused by dictation inaccuracies. Instead of simply correcting it, it replied:</p>
+          <blockquote>
+            <p>Small translation note: I assume “Karen job” means “cron job,” which is much less terrifying and much more useful.</p>
+          </blockquote>
+          <p>That was the moment the project stopped being only a build experiment and became a comedy experiment too. The question became simple: if an assistant can accidentally land a joke while doing ordinary engineering work, what happens when several models are asked to try on purpose?</p>
+          <p>Paperclipalypse is meant to keep asking that question over months and years, turning each round into a small record of how AI humor changes as the models get better.</p>
+          <div class="curator-profile">
+            <img src="./assets/phil-hat.jpg" alt="Phil, curator of Paperclipalypse" width="766" height="960" loading="lazy">
+            <div>
+              <p class="eyebrow">Curator</p>
+              <p>The site is curated by Phil, who has a degree in philosophy, so whatever absurdities this site generates will not come as much of a surprise.</p>
+            </div>
+          </div>
+        </section>
+      </main>`
+  });
+}
+
 function renderRunPage(run) {
   return pageShell({
     title: `Paperclipalypse - ${shortDate(run.createdAt)}`,
@@ -119,12 +147,17 @@ function renderRunPage(run) {
     canonicalPath: `/runs/${run.slug}.html`,
     socialImage: socialImageForRun(run),
     body: `
-      <nav class="topnav">
-        <a href="../index.html" class="nav-brand"><span class="mini-mark" aria-hidden="true"></span>Paperclipalypse</a>
-        <span>${escapeHtml(shortDate(run.createdAt))}</span>
-      </nav>
+      ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", label: shortDate(run.createdAt) })}
       ${renderRun(run, { assetBase: "../" })}`
   });
+}
+
+function renderTopnav({ homePath, aboutPath, label }) {
+  return `
+      <nav class="topnav">
+        <a href="${escapeHtml(homePath)}" class="nav-brand"><span class="mini-mark" aria-hidden="true"></span>Paperclipalypse</a>
+        <span class="topnav-links"><a href="${escapeHtml(aboutPath)}">About</a><span>${escapeHtml(label)}</span></span>
+      </nav>`;
 }
 
 function renderRobots() {
@@ -138,6 +171,7 @@ Sitemap: https://paperclipalypse.com/sitemap.xml
 function renderSitemap(runs) {
   const urls = [
     { loc: "https://paperclipalypse.com/", lastmod: latestDate(runs) },
+    { loc: "https://paperclipalypse.com/about.html", lastmod: latestDate(runs) },
     ...runs.map((run) => ({
       loc: `https://paperclipalypse.com/runs/${run.slug}.html`,
       lastmod: dateOnly(run.createdAt)
@@ -168,10 +202,11 @@ function renderHero(run) {
         <div class="hero-inner">
           <div class="brand-row">
             <img class="mark" src="./assets/paperclip-face-mark.png" alt="">
-            <div>
+            <div class="brand-title">
               <p class="eyebrow">AI Comedy Tournament</p>
               <h1>Paperclipalypse</h1>
             </div>
+            <a class="hero-about-link" href="./about.html">About</a>
           </div>
           <div class="hero-copy">
             <p class="episode-date">${escapeHtml(shortDate(run.createdAt))}</p>
@@ -273,13 +308,6 @@ function renderRun(run, options = {}) {
         </div>
         <div class="joke-grid">${jokes}</div>
       </section>
-      <section class="comic-brief">
-        <div class="section-heading">
-          <p class="eyebrow">Image Prompt</p>
-          <h2>Comic Brief</h2>
-        </div>
-        <p>${escapeHtml(run.comicPanelPrompt)}</p>
-      </section>
     </main>`;
 }
 
@@ -301,7 +329,7 @@ function renderFeatureImage(run, assetBase) {
   return `
       <section class="feature-image">
         <div class="section-heading">
-          <p class="eyebrow">Winning Image</p>
+          <p class="eyebrow">Featured Image of the Winning Joke</p>
           <h2>${escapeHtml(title)}</h2>
         </div>
         <figure>
@@ -499,6 +527,7 @@ function pageShell({
   socialImage = "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp"
 }) {
   const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.png" : "./favicon.png";
+  const aboutPath = stylesheetPath.startsWith("../") ? "../about.html" : "./about.html";
   const canonicalUrl = `https://paperclipalypse.com${canonicalPath}`;
 
   return `<!doctype html>
@@ -523,17 +552,17 @@ function pageShell({
   </head>
   <body>
     ${body}
-    ${renderFooter()}
+    ${renderFooter({ aboutPath })}
     ${cloudflareAnalytics}
   </body>
 </html>`;
 }
 
-function renderFooter() {
+function renderFooter({ aboutPath }) {
   return `
     <footer class="site-footer">
       <span>Paperclipalypse is an experimental AI humor tournament.</span>
-      <span>Traffic is measured with Cloudflare Web Analytics.</span>
+      <span><a href="${escapeHtml(aboutPath)}">About</a> / Traffic is measured with Cloudflare Web Analytics.</span>
     </footer>`;
 }
 
@@ -657,9 +686,17 @@ main,
   gap: 20px;
 }
 
-.brand-row > div:last-child {
+.brand-title {
   flex: 1;
   min-width: 0;
+}
+
+.hero-about-link {
+  color: var(--brass);
+  font-size: 0.84rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
 }
 
 .topnav {
@@ -674,6 +711,18 @@ main,
   gap: 10px;
   color: var(--ink);
   text-decoration: none;
+}
+
+.topnav-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.topnav-links a {
+  color: var(--brass);
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .mini-mark {
@@ -858,7 +907,6 @@ main {
 .scoreboard,
 .rubric,
 .jokes,
-.comic-brief,
 .feature-image,
 .archive {
   padding: 32px 0 0;
@@ -881,6 +929,76 @@ main {
   font-weight: 800;
   line-height: 1.5;
   margin: 0;
+}
+
+.about-page {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.09), transparent 62%),
+    var(--panel);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.about-page h1 {
+  max-width: 820px;
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.4rem;
+  line-height: 1.05;
+  margin-bottom: 18px;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.about-page p {
+  max-width: 820px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  font-weight: 750;
+  line-height: 1.65;
+}
+
+.about-page blockquote {
+  max-width: 860px;
+  border-left: 4px solid var(--brass);
+  margin: 24px 0;
+  padding: 4px 0 4px 18px;
+}
+
+.about-page blockquote p {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.52rem;
+  font-weight: 900;
+  line-height: 1.36;
+  margin-bottom: 0;
+}
+
+.curator-profile {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  max-width: 820px;
+  margin-top: 28px;
+}
+
+.curator-profile img {
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1;
+  border: 1px solid rgba(194, 138, 87, 0.38);
+  border-radius: 8px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.38);
+  object-fit: cover;
+  object-position: center 34%;
+}
+
+.curator-profile p:last-child {
+  color: var(--ink);
+  margin-bottom: 0;
 }
 
 .section-heading {
@@ -1045,6 +1163,7 @@ td:nth-child(4) {
   background: rgba(8, 9, 10, 0.98);
   box-shadow: 0 18px 46px rgba(0, 0, 0, 0.46);
   color: var(--ink);
+  display: none;
   font-size: 0.9rem;
   font-weight: 750;
   left: 50%;
@@ -1153,6 +1272,7 @@ td:nth-child(4) {
 .process-popover:focus .info-popover,
 .prompt-popover:hover .info-popover,
 .prompt-popover:focus .info-popover {
+  display: block;
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   visibility: visible;
@@ -1271,18 +1391,12 @@ td:nth-child(4) {
   padding: 12px 14px;
 }
 
-.comic-brief p,
 .archive ol {
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
   box-shadow: var(--shadow);
   padding: 18px;
-}
-
-.comic-brief p {
-  color: var(--muted);
-  line-height: 1.6;
 }
 
 .archive {
@@ -1395,6 +1509,15 @@ td:nth-child(4) {
     align-items: flex-start;
   }
 
+  .brand-title {
+    margin-top: 12px;
+  }
+
+  .hero-about-link {
+    display: inline-block;
+    margin-top: 12px;
+  }
+
   h1 {
     font-size: 2rem;
     line-height: 1;
@@ -1420,6 +1543,34 @@ td:nth-child(4) {
   .hero-stats,
   .archive a {
     grid-template-columns: 1fr;
+  }
+
+  .topnav {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 0;
+  }
+
+  .about-page {
+    padding: 20px;
+  }
+
+  .about-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-page blockquote p {
+    font-size: 1.18rem;
+  }
+
+  .curator-profile {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .curator-profile img {
+    width: min(168px, 58vw);
+    height: min(168px, 58vw);
   }
 
   .seed-terms ul {
