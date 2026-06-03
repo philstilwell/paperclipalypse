@@ -88,6 +88,12 @@ five contestants, exactly one joke from each contestant, and exactly one
 scorecard from each contestant. Every scorecard must assess the four jokes that
 contestant did not write, exactly once each.
 
+Public non-dry-run episodes also pass a quality gate before rendering: the
+winner must score at least 6.0, the average joke score must be at least 5.0,
+and every joke must have the expected four judges. Set
+`PAPERCLIPALYPSE_ALLOW_LOW_QUALITY=1` only when intentionally publishing a weak
+or diagnostic round.
+
 ## Joke And Judging Standard
 
 The six seed terms are ingredients, not checklist requirements. Each contestant
@@ -169,3 +175,5 @@ The default prompt pools use fictional or archetypal people rather than private
 individuals. The Codex automation prompt also asks for humor that avoids hate,
 harassment, sexual content, defamation, and recent tragedies. A stronger
 moderation pass should be added before this runs unattended in public.
+
+The public site uses Cloudflare Web Analytics to measure traffic.

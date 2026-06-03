@@ -29,6 +29,7 @@ const contestants = dryRun ? houseContestants : paidContestants;
 
 if (episodeFile) {
   const run = buildRunFromEpisodeFile(path.resolve(rootDir, episodeFile), seed);
+  assertPublishQuality(run);
   writeAndRender(run);
   printSummary(run);
   process.exit(0);
@@ -78,6 +79,7 @@ const run = {
 };
 run.comicPanelPrompt = comicPanelPrompt(run);
 
+assertPublishQuality(run);
 writeAndRender(run);
 printSummary(run);
 
@@ -315,6 +317,40 @@ function assertApiAutomationSupported(modelRoster) {
   );
 }
 
+function assertPublishQuality(run) {
+  if (run.dryRun || envFlag("PAPERCLIPALYPSE_ALLOW_LOW_QUALITY")) {
+    return;
+  }
+
+  const rankings = Array.isArray(run.rankings) ? run.rankings : [];
+  const winner = rankings[0];
+  const averageScore = average(rankings.map((ranking) => ranking.score));
+  const expectedJudgeCount = Math.max(0, (run.contestants?.length || 0) - 1);
+  const errors = [];
+
+  if (!winner || winner.score < 6) {
+    errors.push("Winner score must be at least 6.0 for a public non-dry-run episode.");
+  }
+  if (averageScore < 5) {
+    errors.push("Average joke score must be at least 5.0 for a public non-dry-run episode.");
+  }
+  for (const ranking of rankings) {
+    if (ranking.judgeCount !== expectedJudgeCount) {
+      errors.push(`${ranking.contestantName} has ${ranking.judgeCount} judges; expected ${expectedJudgeCount}.`);
+    }
+  }
+
+  if (errors.length) {
+    throw new Error(
+      [
+        "Publish quality gate failed:",
+        ...errors.map((error) => `- ${error}`),
+        "Set PAPERCLIPALYPSE_ALLOW_LOW_QUALITY=1 only if you intentionally want to publish a weak or diagnostic round."
+      ].join("\n")
+    );
+  }
+}
+
 function assertPaidApiAllowed(modelRoster) {
   const meteredContestants = modelRoster.filter((contestant) => contestant.billing === "paid-api");
   if (!meteredContestants.length || allowsPaidApi()) {
@@ -329,6 +365,15 @@ function assertPaidApiAllowed(modelRoster) {
       "To intentionally allow paid API calls locally, set PAPERCLIPALYPSE_ALLOW_PAID_API=1."
     ].join(" ")
   );
+}
+
+function average(values) {
+  const usable = values.map(Number).filter((value) => Number.isFinite(value));
+  if (!usable.length) {
+    return 0;
+  }
+
+  return usable.reduce((sum, value) => sum + value, 0) / usable.length;
 }
 
 function modelName(contestant) {

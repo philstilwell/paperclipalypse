@@ -18,6 +18,7 @@ export function renderSite({ run, historyDir, siteDir }) {
   fs.mkdirSync(path.join(siteDir, "runs"), { recursive: true });
 
   const runs = readRuns(historyDir);
+  const publicRuns = runs.filter((archivedRun) => !archivedRun.dryRun);
   for (const archivedRun of runs) {
     fs.writeFileSync(
       path.join(siteDir, "runs", `${archivedRun.slug}.html`),
@@ -28,6 +29,9 @@ export function renderSite({ run, historyDir, siteDir }) {
 
   fs.writeFileSync(path.join(siteDir, "index.html"), cleanGeneratedText(renderHome(run, runs)), "utf8");
   fs.writeFileSync(path.join(siteDir, "styles.css"), cleanGeneratedText(renderCss()), "utf8");
+  fs.writeFileSync(path.join(siteDir, "404.html"), cleanGeneratedText(renderNotFound()), "utf8");
+  fs.writeFileSync(path.join(siteDir, "robots.txt"), renderRobots(), "utf8");
+  fs.writeFileSync(path.join(siteDir, "sitemap.xml"), renderSitemap(publicRuns), "utf8");
 }
 
 function readRuns(historyDir) {
@@ -47,13 +51,22 @@ function renderHome(run, runs) {
   const archive = publicRuns
     .slice(0, 12)
     .map(
-      (archivedRun) => `
+      (archivedRun) => {
+        const archivedWinner = archivedRun.rankings?.[0];
+        const meta = [
+          archivedWinner ? `Winner: ${archivedWinner.contestantName} (${formatScore(archivedWinner.score)})` : "",
+          formatMode(archivedRun.source)
+        ].filter(Boolean).join(" / ");
+
+        return `
         <li>
           <a href="./runs/${escapeHtml(archivedRun.slug)}.html">
             <span>${escapeHtml(shortDate(archivedRun.createdAt))}</span>
             <strong>${escapeHtml(archivedRun.premise.text)}</strong>
+            <small>${escapeHtml(meta)}</small>
           </a>
-        </li>`
+        </li>`;
+      }
     )
     .join("");
 
@@ -61,14 +74,40 @@ function renderHome(run, runs) {
     title: "Paperclipalypse",
     body: `
       ${renderHero(run)}
-      ${renderRun(run, { showEpisodeHeader: false })}
+      ${renderRun(run, { showEpisodeHeader: false, showIntro: true })}
       <section class="archive">
         <div class="section-heading">
           <p class="eyebrow">Memory Bank</p>
           <h2>Recent Episodes</h2>
         </div>
-        <ol>${archive}</ol>
+        <ol>${archive || `<li class="empty-state">No public episodes yet.</li>`}</ol>
       </section>`
+  });
+}
+
+function renderNotFound() {
+  return pageShell({
+    title: "Paperclipalypse - Page Not Found",
+    description: "That Paperclipalypse page escaped the avalanche.",
+    canonicalPath: "/404.html",
+    body: `
+      <nav class="topnav">
+        <a href="./index.html" class="nav-brand"><span class="mini-mark" aria-hidden="true"></span>Paperclipalypse</a>
+        <span>404</span>
+      </nav>
+      <main>
+        <section class="episode">
+          <div>
+            <p class="eyebrow">Missing Episode</p>
+            <h2>That page slipped out of the pile.</h2>
+          </div>
+          <aside>
+            <span>Status</span>
+            <strong>404</strong>
+            <em><a href="./index.html">Home</a></em>
+          </aside>
+        </section>
+      </main>`
   });
 }
 
@@ -76,6 +115,7 @@ function renderRunPage(run) {
   return pageShell({
     title: `Paperclipalypse - ${shortDate(run.createdAt)}`,
     stylesheetPath: "../styles.css",
+    canonicalPath: `/runs/${run.slug}.html`,
     body: `
       <nav class="topnav">
         <a href="../index.html" class="nav-brand"><span class="mini-mark" aria-hidden="true"></span>Paperclipalypse</a>
@@ -83,6 +123,37 @@ function renderRunPage(run) {
       </nav>
       ${renderRun(run)}`
   });
+}
+
+function renderRobots() {
+  return `User-agent: *
+Allow: /
+
+Sitemap: https://paperclipalypse.com/sitemap.xml
+`;
+}
+
+function renderSitemap(runs) {
+  const urls = [
+    { loc: "https://paperclipalypse.com/", lastmod: latestDate(runs) },
+    ...runs.map((run) => ({
+      loc: `https://paperclipalypse.com/runs/${run.slug}.html`,
+      lastmod: dateOnly(run.createdAt)
+    }))
+  ];
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map(
+    (url) => `  <url>
+    <loc>${escapeXml(url.loc)}</loc>
+    <lastmod>${escapeXml(url.lastmod)}</lastmod>
+  </url>`
+  )
+  .join("\n")}
+</urlset>
+`;
 }
 
 function renderHero(run) {
@@ -125,6 +196,7 @@ function renderHero(run) {
 
 function renderRun(run, options = {}) {
   const showEpisodeHeader = options.showEpisodeHeader ?? true;
+  const showIntro = options.showIntro ?? false;
   const winner = run.rankings[0];
   const rankingRows = run.rankings
     .map(
@@ -167,6 +239,7 @@ function renderRun(run, options = {}) {
 
   return `
     <main>
+      ${showIntro ? renderIntro() : ""}
       ${showEpisodeHeader ? renderEpisodeHeader(run, winner) : ""}
       ${renderSeedTerms(run.seedTerms)}
       <section class="scoreboard">
@@ -204,6 +277,14 @@ function renderRun(run, options = {}) {
         <p>${escapeHtml(run.comicPanelPrompt)}</p>
       </section>
     </main>`;
+}
+
+function renderIntro() {
+  return `
+      <section class="intro-panel" aria-label="What this site is">
+        <p class="eyebrow">What This Is</p>
+        <p>Five AI models get the same strange prompt, write one short joke, then judge each other's jokes. Codex checks the round and publishes the results here.</p>
+      </section>`;
 }
 
 function fullJokeText(joke) {
@@ -286,8 +367,16 @@ function renderProcessPopover() {
   return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed terms.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores and publishes the ranking.</span></span></span>`;
 }
 
-function pageShell({ title, body, stylesheetPath = "./styles.css" }) {
+function pageShell({
+  title,
+  body,
+  stylesheetPath = "./styles.css",
+  canonicalPath = "/",
+  description = "Paperclipalypse is an AI comedy tournament where five models write jokes from the same random prompt and judge each other."
+}) {
   const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.png" : "./favicon.png";
+  const canonicalUrl = `https://paperclipalypse.com${canonicalPath}`;
+  const socialImage = "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp";
 
   return `<!doctype html>
 <html lang="en">
@@ -295,15 +384,34 @@ function pageShell({ title, body, stylesheetPath = "./styles.css" }) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${escapeHtml(title)}</title>
-    <meta name="description" content="Paperclipalypse is an AI comedy tournament where models generate jokes from random seed terms and judge each other.">
+    <meta name="description" content="${escapeHtml(description)}">
+    <link rel="canonical" href="${escapeHtml(canonicalUrl)}">
+    <meta property="og:title" content="${escapeHtml(title)}">
+    <meta property="og:description" content="${escapeHtml(description)}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="${escapeHtml(canonicalUrl)}">
+    <meta property="og:image" content="${escapeHtml(socialImage)}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="${escapeHtml(title)}">
+    <meta name="twitter:description" content="${escapeHtml(description)}">
+    <meta name="twitter:image" content="${escapeHtml(socialImage)}">
     <link rel="icon" href="${escapeHtml(faviconPath)}" type="image/png">
     <link rel="stylesheet" href="${escapeHtml(stylesheetPath)}">
   </head>
   <body>
     ${body}
+    ${renderFooter()}
     ${cloudflareAnalytics}
   </body>
 </html>`;
+}
+
+function renderFooter() {
+  return `
+    <footer class="site-footer">
+      <span>Paperclipalypse is an experimental AI humor tournament.</span>
+      <span>Traffic is measured with Cloudflare Web Analytics.</span>
+    </footer>`;
 }
 
 function renderCss() {
@@ -629,6 +737,25 @@ main {
   padding: 32px 0 0;
 }
 
+.intro-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.09), transparent 60%),
+    var(--panel);
+  box-shadow: var(--shadow);
+  padding: 18px;
+}
+
+.intro-panel p:last-child {
+  max-width: 820px;
+  color: var(--ink);
+  font-size: 1.08rem;
+  font-weight: 800;
+  line-height: 1.5;
+  margin: 0;
+}
+
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -852,12 +979,12 @@ td:nth-child(4) {
 
 .joke-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .joke-card {
-  min-height: 330px;
+  min-height: 350px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
@@ -865,19 +992,19 @@ td:nth-child(4) {
     linear-gradient(135deg, rgba(194, 138, 87, 0.08), transparent 40%),
     var(--panel-strong);
   box-shadow: var(--shadow);
-  padding: 18px;
+  padding: 14px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
 }
 
 .joke-meta {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   color: var(--muted);
-  font-size: 0.85rem;
+  font-size: 0.76rem;
 }
 
 .joke-meta span:first-child {
@@ -897,30 +1024,30 @@ td:nth-child(4) {
 .joke-card h3 {
   color: var(--bone);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.35rem;
+  font-size: 1.16rem;
   margin-bottom: 0;
 }
 
 .joke-card p {
   color: var(--muted);
-  line-height: 1.55;
+  line-height: 1.48;
   margin-bottom: 0;
 }
 
 .standalone-joke,
 .punchline {
   color: var(--ink) !important;
-  font-size: 1.05rem;
+  font-size: 0.96rem;
   font-weight: 900;
-  line-height: 1.48 !important;
+  line-height: 1.42 !important;
 }
 
 .joke-card ul {
   margin: auto 0 0;
   padding-left: 18px;
   color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.45;
+  font-size: 0.78rem;
+  line-height: 1.38;
 }
 
 .comic-brief p,
@@ -977,6 +1104,32 @@ td:nth-child(4) {
   line-height: 1.4;
 }
 
+.archive small {
+  grid-column: 2;
+  color: var(--dim);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.empty-state {
+  color: var(--muted);
+  padding: 14px 10px;
+}
+
+.site-footer {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  border-top: 1px solid var(--line-cool);
+  color: var(--dim);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  justify-content: space-between;
+  padding: 22px 0 34px;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
 @media (max-width: 920px) {
   h1 {
     font-size: 4.1rem;
@@ -993,6 +1146,10 @@ td:nth-child(4) {
 
   .episode {
     grid-template-columns: 1fr;
+  }
+
+  .joke-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -1045,6 +1202,10 @@ td:nth-child(4) {
   }
 
   .seed-terms ul {
+    grid-template-columns: 1fr;
+  }
+
+  .joke-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1162,6 +1323,14 @@ function shortDate(value) {
   }).format(new Date(value));
 }
 
+function latestDate(runs) {
+  return dateOnly(runs[0]?.createdAt || "2026-06-03T00:00:00.000Z");
+}
+
+function dateOnly(value) {
+  return String(value || "").slice(0, 10) || "2026-06-03";
+}
+
 function escapeHtml(value) {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -1169,6 +1338,10 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;")
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
+}
+
+function escapeXml(value) {
+  return escapeHtml(value);
 }
 
 function cleanDisplayText(value) {

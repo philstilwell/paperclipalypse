@@ -32,6 +32,8 @@ Rules:
 - Tell the joke as the onstage comic using I, me, or my naturally.
 - The joke must make sense without the title, premise, or seed list.
 - Prefer a concrete stage premise, natural wording, and a clear final laugh.
+- If your first idea is obvious, discard it and find a sharper angle.
+- Make the last sentence carry the joke; do not end by explaining the premise.
 - Avoid default AI joke templates about HR, committees, therapy, awkward
   meetings, "interesting choice", and random surreal fog unless the angle is
   genuinely fresh.
@@ -76,6 +78,7 @@ Fixed scale:
 
 Penalize clever-sounding nonsense, premise recital, seed stuffing, generic AI
 joke shapes, and punchlines that only restate the setup.
+Score below 5 when the joke is understandable but not actually funny.
 
 Jokes to judge:
 {{JOKES_JSON}}
