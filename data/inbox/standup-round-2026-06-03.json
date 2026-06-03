@@ -1,0 +1,339 @@
+{
+  "createdAt": "2026-06-03T11:52:19Z",
+  "source": "codex-house",
+  "seedTerms": [
+    "Herding",
+    "Food Critic",
+    "Greenhouse",
+    "Being ignored / blown off",
+    "Obedient",
+    "Macho"
+  ],
+  "premise": {
+    "place": "Greenhouse",
+    "person": "Food Critic",
+    "element": "Being ignored / blown off",
+    "text": "Food Critic at Greenhouse, facing Being ignored / blown off, with an Obedient instinct and a Macho streak in a Herding mode"
+  },
+  "contestants": [
+    {
+      "id": "codex-deadpan",
+      "displayName": "Codex Deadpan",
+      "style": "dry, compact, understated jokes with a hard final turn"
+    },
+    {
+      "id": "codex-absurdist",
+      "displayName": "Codex Absurdist",
+      "style": "surreal but readable jokes with strange concrete images"
+    },
+    {
+      "id": "codex-sitcom",
+      "displayName": "Codex Sitcom",
+      "style": "character-forward jokes with setup, escalation, and clean punchline"
+    },
+    {
+      "id": "codex-wordplay",
+      "displayName": "Codex Wordplay",
+      "style": "language-driven jokes, reversals, and neat phrase twists"
+    },
+    {
+      "id": "codex-roastmaster",
+      "displayName": "Codex Roastmaster",
+      "style": "light roast energy aimed at objects and situations, not people"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "codex-deadpan",
+      "label": "Joke A",
+      "contestantId": "codex-deadpan",
+      "contestantName": "Codex Deadpan",
+      "model": "dry, compact, understated jokes with a hard final turn",
+      "title": "Immersive Salad",
+      "seedTermsUsed": [
+        "Food Critic",
+        "Greenhouse"
+      ],
+      "joke": "I got hired as a Food Critic for a Greenhouse, which is a tough gig because every review is basically, \"The salad was immersive, but the service kept photosynthesizing.\" I gave one star to a fern and it still had better posture than me.",
+      "text": "I got hired as a Food Critic for a Greenhouse, which is a tough gig because every review is basically, \"The salad was immersive, but the service kept photosynthesizing.\" I gave one star to a fern and it still had better posture than me.",
+      "setup": "I got hired as a Food Critic for a Greenhouse, which is a tough gig because every review is basically, \"The salad was immersive, but the service kept photosynthesizing.\"",
+      "punchline": "I gave one star to a fern and it still had better posture than me."
+    },
+    {
+      "id": "codex-absurdist",
+      "label": "Joke B",
+      "contestantId": "codex-absurdist",
+      "contestantName": "Codex Absurdist",
+      "model": "surreal but readable jokes with strange concrete images",
+      "title": "Group Session",
+      "seedTermsUsed": [
+        "Herding",
+        "Macho"
+      ],
+      "joke": "I tried Herding a bunch of Macho guys into therapy. They refused to talk about feelings, but formed a perfect single-file line behind the first dude who said, \"I'm not angry, my eyebrows are just doing CrossFit.\"",
+      "text": "I tried Herding a bunch of Macho guys into therapy. They refused to talk about feelings, but formed a perfect single-file line behind the first dude who said, \"I'm not angry, my eyebrows are just doing CrossFit.\"",
+      "setup": "I tried Herding a bunch of Macho guys into therapy.",
+      "punchline": "They refused to talk about feelings, but formed a perfect single-file line behind the first dude who said, \"I'm not angry, my eyebrows are just doing CrossFit.\""
+    },
+    {
+      "id": "codex-sitcom",
+      "label": "Joke C",
+      "contestantId": "codex-sitcom",
+      "contestantName": "Codex Sitcom",
+      "model": "character-forward jokes with setup, escalation, and clean punchline",
+      "title": "Growth Potential",
+      "seedTermsUsed": [
+        "Greenhouse",
+        "Obedient"
+      ],
+      "joke": "I went on a date at a Greenhouse because she said she liked someone Obedient. I spent forty minutes nodding at plant care instructions before realizing she brought me there to meet someone with more growth potential.",
+      "text": "I went on a date at a Greenhouse because she said she liked someone Obedient. I spent forty minutes nodding at plant care instructions before realizing she brought me there to meet someone with more growth potential.",
+      "setup": "I went on a date at a Greenhouse because she said she liked someone Obedient.",
+      "punchline": "I spent forty minutes nodding at plant care instructions before realizing she brought me there to meet someone with more growth potential."
+    },
+    {
+      "id": "codex-wordplay",
+      "label": "Joke D",
+      "contestantId": "codex-wordplay",
+      "contestantName": "Codex Wordplay",
+      "model": "language-driven jokes, reversals, and neat phrase twists",
+      "title": "Medium Rare Honesty",
+      "seedTermsUsed": [
+        "Obedient",
+        "Food Critic"
+      ],
+      "joke": "I tried being an Obedient Food Critic. The chef said, \"Be honest,\" so I said, \"Yes, chef, this steak is aggressively medium and I apologize for noticing.\"",
+      "text": "I tried being an Obedient Food Critic. The chef said, \"Be honest,\" so I said, \"Yes, chef, this steak is aggressively medium and I apologize for noticing.\"",
+      "setup": "I tried being an Obedient Food Critic.",
+      "punchline": "The chef said, \"Be honest,\" so I said, \"Yes, chef, this steak is aggressively medium and I apologize for noticing.\""
+    },
+    {
+      "id": "codex-roastmaster",
+      "label": "Joke E",
+      "contestantId": "codex-roastmaster",
+      "contestantName": "Codex Roastmaster",
+      "model": "light roast energy aimed at objects and situations, not people",
+      "title": "Leadership Exercise",
+      "seedTermsUsed": [
+        "Macho",
+        "Herding"
+      ],
+      "joke": "I went to a Macho leadership seminar where the team-building exercise was Herding. Nothing humbles alpha males faster than watching six guys in wraparound sunglasses lose a staring contest to one goat with tenure.",
+      "text": "I went to a Macho leadership seminar where the team-building exercise was Herding. Nothing humbles alpha males faster than watching six guys in wraparound sunglasses lose a staring contest to one goat with tenure.",
+      "setup": "I went to a Macho leadership seminar where the team-building exercise was Herding.",
+      "punchline": "Nothing humbles alpha males faster than watching six guys in wraparound sunglasses lose a staring contest to one goat with tenure."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "codex-deadpan",
+      "judgeName": "Codex Deadpan",
+      "scores": [
+        {
+          "jokeId": "codex-absurdist",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong stage image with a clean final tag; odd but easy to follow."
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clear romantic setup and a tidy turn, though familiar."
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The apology for noticing is sharp and compact."
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Best final image; the joke lands without overexplaining."
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-absurdist",
+      "judgeName": "Codex Absurdist",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Readable and nicely dry; the fern tag is the best part."
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "The date premise is clear and the final phrase is solid."
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clever phrasing, but more neat than laugh-heavy."
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "A vivid roast image with a strong last phrase."
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-sitcom",
+      "judgeName": "Codex Sitcom",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "The premise is fast and the posture tag gives it a human button."
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The eyebrow line is quotable and the setup escalates cleanly."
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Good character voice and a polished comic turn."
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The visual escalation does real work and ends in the right place."
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-wordplay",
+      "judgeName": "Codex Wordplay",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Well built, though photosynthesis is the expected greenhouse route."
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Funny image; a little crowded, but the final line lands."
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean wordplay on growth potential with a plausible setup."
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The last phrase is crisp and carries the roast."
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-roastmaster",
+      "judgeName": "Codex Roastmaster",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Nice dry close; not vicious, but it is clean."
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The CrossFit eyebrow tag feels like an actual stage line."
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid and clear, though the punchline is gentler than the best entries."
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The steak line has good insult economy and a real voice."
+        }
+      ]
+    }
+  ]
+}
