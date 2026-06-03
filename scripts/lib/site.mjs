@@ -386,20 +386,43 @@ main,
 .mini-mark {
   width: 22px;
   height: 22px;
-  border: 2px solid var(--brass);
-  border-radius: 50% 50% 46% 46%;
-  box-shadow: 0 0 18px rgba(255, 48, 72, 0.32);
+  border: 1px solid rgba(95, 101, 108, 0.72);
+  border-radius: 6px;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(0, 0, 0, 0.18)),
+    #0b0c0e;
+  box-shadow: inset 0 0 12px rgba(255, 255, 255, 0.04);
+  position: relative;
+}
+
+.mini-mark::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  left: 6px;
+  top: 3px;
+  border: 2px solid #30343a;
+  border-left-color: transparent;
+  border-radius: 10px;
+  transform: rotate(-24deg);
+  box-shadow:
+    1px 1px 0 #0f1114,
+    inset 1px 1px 0 rgba(184, 190, 196, 0.34);
 }
 
 .mark {
   width: 78px;
   height: 78px;
-  border: 1px solid rgba(194, 138, 87, 0.68);
+  border: 1px solid rgba(99, 105, 112, 0.64);
   border-radius: 8px;
-  background: rgba(6, 7, 8, 0.7);
+  background:
+    radial-gradient(circle at 34% 24%, rgba(255, 255, 255, 0.08), transparent 34%),
+    linear-gradient(145deg, rgba(23, 25, 29, 0.95), rgba(4, 5, 6, 0.96));
   box-shadow:
-    inset 0 0 28px rgba(194, 138, 87, 0.18),
-    0 0 36px rgba(255, 48, 72, 0.22);
+    inset 0 0 0 1px rgba(255, 255, 255, 0.035),
+    inset 0 -16px 28px rgba(0, 0, 0, 0.34),
+    0 18px 48px rgba(0, 0, 0, 0.42);
   position: relative;
   flex: 0 0 auto;
 }
@@ -412,32 +435,43 @@ main,
 }
 
 .mark::before {
-  inset: 12px 18px;
-  border: 4px solid rgba(194, 138, 87, 0.74);
+  width: 32px;
+  height: 50px;
+  left: 23px;
+  top: 13px;
+  border: 6px solid #2e3339;
   border-left-color: transparent;
-  border-radius: 28px;
+  border-radius: 26px;
   transform: rotate(-28deg);
+  box-shadow:
+    2px 3px 0 #0d0f12,
+    inset 2px 2px 0 rgba(168, 174, 181, 0.36),
+    inset -2px -2px 0 rgba(0, 0, 0, 0.42);
 }
 
 .mark::after {
-  width: 24px;
-  height: 9px;
-  left: 27px;
-  top: 35px;
-  border: 3px solid rgba(239, 225, 207, 0.72);
+  width: 17px;
+  height: 30px;
+  left: 34px;
+  top: 24px;
+  border: 4px solid #111317;
   border-left-color: transparent;
-  border-radius: 18px;
-  transform: rotate(-24deg);
+  border-radius: 17px;
+  transform: rotate(-28deg);
+  box-shadow:
+    inset 1px 1px 0 rgba(126, 134, 142, 0.28),
+    1px 1px 0 rgba(100, 106, 114, 0.38);
 }
 
 .mark span {
-  width: 8px;
-  height: 8px;
-  right: 15px;
-  top: 15px;
-  border-radius: 50%;
-  background: var(--ember);
-  box-shadow: 0 0 18px var(--ember);
+  width: 18px;
+  height: 4px;
+  left: 27px;
+  top: 29px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, rgba(190, 197, 204, 0.62), rgba(75, 81, 88, 0.12));
+  transform: rotate(-28deg);
+  opacity: 0.72;
 }
 
 .hero-copy {
