@@ -78,6 +78,7 @@ function renderHero(run) {
 
   return `
       <header class="hero">
+        <img class="hero-backdrop" src="./assets/paperclipalypse-avalanche.webp" alt="">
         <div class="hero-shade"></div>
         <div class="hero-inner">
           <div class="brand-row">
@@ -90,7 +91,7 @@ function renderHero(run) {
           <div class="hero-copy">
             <p class="episode-date">${escapeHtml(shortDate(run.createdAt))}</p>
             <h2>${escapeHtml(run.premise.text)}</h2>
-            <p class="lede">Five contestants enter. One joke survives the spreadsheet.</p>
+            <p class="lede">Five models enter the valley. One joke escapes the avalanche.</p>
           </div>
           <dl class="hero-stats">
             <div>
@@ -225,6 +226,8 @@ function renderSeedTerms(seedTerms) {
 }
 
 function pageShell({ title, body, stylesheetPath = "./styles.css" }) {
+  const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.svg" : "./favicon.svg";
+
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -232,6 +235,7 @@ function pageShell({ title, body, stylesheetPath = "./styles.css" }) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${escapeHtml(title)}</title>
     <meta name="description" content="Paperclipalypse is an AI comedy tournament where models generate jokes from random seed terms and judge each other.">
+    <link rel="icon" href="${escapeHtml(faviconPath)}" type="image/svg+xml">
     <link rel="stylesheet" href="${escapeHtml(stylesheetPath)}">
   </head>
   <body>
@@ -243,19 +247,22 @@ function pageShell({ title, body, stylesheetPath = "./styles.css" }) {
 function renderCss() {
   return `:root {
   color-scheme: dark;
-  --bg: #070910;
-  --bg-2: #0d1220;
-  --ink: #f4f7fb;
-  --muted: #9ca8bb;
-  --panel: rgba(13, 18, 32, 0.92);
-  --panel-strong: rgba(18, 25, 43, 0.98);
-  --line: rgba(155, 236, 255, 0.18);
-  --cyan: #5be7ff;
-  --green: #a8ff6a;
-  --magenta: #ff5cce;
-  --amber: #ffbf55;
-  --danger: #ff6f61;
-  --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  --bg: #070708;
+  --bg-2: #111316;
+  --ink: #f3eee8;
+  --muted: #b9afa4;
+  --dim: #837b72;
+  --panel: rgba(18, 19, 21, 0.88);
+  --panel-strong: rgba(12, 13, 15, 0.95);
+  --line: rgba(194, 138, 87, 0.28);
+  --line-cool: rgba(176, 185, 196, 0.14);
+  --ember: #ff3048;
+  --ember-soft: rgba(255, 48, 72, 0.38);
+  --brass: #c28a57;
+  --bone: #efe1cf;
+  --violet: #8f839b;
+  --ash: #24282d;
+  --shadow: 0 24px 90px rgba(0, 0, 0, 0.58);
 }
 
 * {
@@ -265,7 +272,7 @@ function renderCss() {
 body {
   margin: 0;
   background:
-    linear-gradient(180deg, rgba(7, 9, 16, 0.96), rgba(10, 13, 24, 1) 38%, #070910 100%);
+    linear-gradient(180deg, rgba(7, 7, 8, 0.98), rgba(17, 19, 22, 1) 34%, #070708 100%);
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -276,15 +283,16 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(rgba(91, 231, 255, 0.045) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(91, 231, 255, 0.035) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent 68%);
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), transparent 26%, rgba(255, 48, 72, 0.035) 74%, transparent),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px 6px);
+  mix-blend-mode: screen;
+  opacity: 0.18;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 76%);
 }
 
 a {
   color: inherit;
-  text-decoration-color: rgba(91, 231, 255, 0.45);
+  text-decoration-color: rgba(194, 138, 87, 0.62);
   text-underline-offset: 4px;
 }
 
@@ -297,39 +305,51 @@ main,
 }
 
 .hero {
-  min-height: 620px;
+  min-height: clamp(600px, 78svh, 820px);
   position: relative;
   display: flex;
-  background:
-    linear-gradient(90deg, rgba(7, 9, 16, 0.95), rgba(7, 9, 16, 0.72) 42%, rgba(7, 9, 16, 0.2)),
-    linear-gradient(180deg, rgba(7, 9, 16, 0.1), rgba(7, 9, 16, 1)),
-    url("./assets/neural-comedy-stage.webp") center / cover no-repeat;
-  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  border-bottom: 1px solid rgba(194, 138, 87, 0.2);
   overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 36%;
+  filter: saturate(0.82) contrast(1.08) brightness(0.78);
+  transform: scale(1.018);
+  z-index: -2;
 }
 
 .hero::after {
   content: "";
   position: absolute;
   inset: auto 0 0;
-  height: 140px;
+  height: 210px;
   background: linear-gradient(180deg, transparent, var(--bg));
+  z-index: -1;
 }
 
 .hero-shade {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 75% 20%, rgba(255, 92, 206, 0.16), transparent 32%);
-  opacity: 0.65;
+  background:
+    linear-gradient(90deg, rgba(4, 5, 6, 0.98), rgba(4, 5, 6, 0.82) 35%, rgba(4, 5, 6, 0.34) 68%, rgba(4, 5, 6, 0.68)),
+    linear-gradient(180deg, rgba(7, 7, 8, 0.36), rgba(7, 7, 8, 0.12) 44%, rgba(7, 7, 8, 0.98) 100%);
+  z-index: -1;
 }
 
 .hero-inner {
   position: relative;
-  z-index: 1;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  gap: 42px;
-  padding: 34px 0 54px;
+  gap: 28px;
+  padding: 26px 0 40px;
 }
 
 .brand-row,
@@ -366,20 +386,20 @@ main,
 .mini-mark {
   width: 22px;
   height: 22px;
-  border: 2px solid var(--cyan);
-  border-radius: 7px;
-  box-shadow: 0 0 20px rgba(91, 231, 255, 0.45);
+  border: 2px solid var(--brass);
+  border-radius: 50% 50% 46% 46%;
+  box-shadow: 0 0 18px rgba(255, 48, 72, 0.32);
 }
 
 .mark {
   width: 78px;
   height: 78px;
-  border: 1px solid rgba(91, 231, 255, 0.72);
+  border: 1px solid rgba(194, 138, 87, 0.68);
   border-radius: 8px;
-  background: rgba(5, 9, 18, 0.68);
+  background: rgba(6, 7, 8, 0.7);
   box-shadow:
-    inset 0 0 28px rgba(91, 231, 255, 0.2),
-    0 0 36px rgba(91, 231, 255, 0.36);
+    inset 0 0 28px rgba(194, 138, 87, 0.18),
+    0 0 36px rgba(255, 48, 72, 0.22);
   position: relative;
   flex: 0 0 auto;
 }
@@ -392,17 +412,19 @@ main,
 }
 
 .mark::before {
-  inset: 14px;
-  border: 2px solid rgba(168, 255, 106, 0.7);
-  border-radius: 50%;
+  inset: 12px 18px;
+  border: 4px solid rgba(194, 138, 87, 0.74);
+  border-left-color: transparent;
+  border-radius: 28px;
+  transform: rotate(-28deg);
 }
 
 .mark::after {
-  width: 40px;
-  height: 14px;
-  left: 18px;
-  top: 31px;
-  border: 4px solid var(--cyan);
+  width: 24px;
+  height: 9px;
+  left: 27px;
+  top: 35px;
+  border: 3px solid rgba(239, 225, 207, 0.72);
   border-left-color: transparent;
   border-radius: 18px;
   transform: rotate(-24deg);
@@ -414,8 +436,8 @@ main,
   right: 15px;
   top: 15px;
   border-radius: 50%;
-  background: var(--magenta);
-  box-shadow: 0 0 18px var(--magenta);
+  background: var(--ember);
+  box-shadow: 0 0 18px var(--ember);
 }
 
 .hero-copy {
@@ -426,14 +448,14 @@ main,
 }
 
 .episode-date {
-  color: var(--amber);
+  color: var(--brass);
   font-size: 1rem;
   font-weight: 900;
   margin-bottom: 14px;
 }
 
 .eyebrow {
-  color: var(--green);
+  color: var(--brass);
   font-size: 0.78rem;
   font-weight: 900;
   letter-spacing: 0;
@@ -449,16 +471,21 @@ p {
 }
 
 h1 {
-  font-size: 5.6rem;
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5.2rem;
   line-height: 0.88;
   margin-bottom: 0;
   overflow-wrap: anywhere;
-  text-shadow: 0 0 32px rgba(91, 231, 255, 0.35);
+  text-shadow:
+    0 2px 0 rgba(0, 0, 0, 0.74),
+    0 0 32px rgba(255, 48, 72, 0.22);
 }
 
 .hero h2 {
   max-width: 850px;
-  font-size: 3.1rem;
+  color: var(--ink);
+  font-size: 2.7rem;
   line-height: 1.02;
   margin-bottom: 18px;
   overflow-wrap: anywhere;
@@ -476,21 +503,24 @@ h1 {
   width: min(100%, 860px);
   display: grid;
   grid-template-columns: 1.4fr 0.7fr 1fr;
-  gap: 10px;
+  gap: 12px;
   margin: 0;
 }
 
 .hero-stats div {
-  min-height: 92px;
+  min-height: 84px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(7, 11, 22, 0.72);
+  background:
+    linear-gradient(180deg, rgba(255, 48, 72, 0.07), transparent),
+    rgba(9, 10, 12, 0.74);
   backdrop-filter: blur(16px);
   padding: 16px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
 }
 
 .hero-stats dt {
-  color: var(--muted);
+  color: var(--dim);
   font-size: 0.78rem;
   font-weight: 900;
   margin-bottom: 10px;
@@ -499,7 +529,7 @@ h1 {
 
 .hero-stats dd {
   margin: 0;
-  color: var(--ink);
+  color: var(--bone);
   font-size: 1.45rem;
   font-weight: 900;
 }
@@ -515,7 +545,9 @@ main {
   align-items: stretch;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: var(--panel);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035), transparent 38%),
+    var(--panel);
   box-shadow: var(--shadow);
   padding: 22px;
 }
@@ -528,9 +560,9 @@ main {
 }
 
 .episode aside {
-  border: 1px solid rgba(255, 191, 85, 0.42);
+  border: 1px solid rgba(255, 48, 72, 0.46);
   border-radius: 8px;
-  background: linear-gradient(135deg, rgba(255, 191, 85, 0.12), rgba(91, 231, 255, 0.08));
+  background: linear-gradient(135deg, rgba(255, 48, 72, 0.14), rgba(194, 138, 87, 0.1));
   padding: 18px;
   display: grid;
   align-content: center;
@@ -549,7 +581,7 @@ main {
 }
 
 .episode aside em {
-  color: var(--amber);
+  color: var(--brass);
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 900;
@@ -574,6 +606,8 @@ main {
 .section-heading h2 {
   margin-bottom: 0;
   font-size: 1.55rem;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--bone);
 }
 
 .seed-terms ul {
@@ -587,9 +621,11 @@ main {
 
 .seed-terms li {
   min-height: 54px;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(194, 138, 87, 0.24);
   border-radius: 8px;
-  background: rgba(18, 25, 43, 0.78);
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.08), transparent 55%),
+    rgba(18, 19, 21, 0.82);
   color: var(--ink);
   padding: 12px;
   display: flex;
@@ -616,12 +652,12 @@ th,
 td {
   padding: 13px 14px;
   text-align: left;
-  border-bottom: 1px solid rgba(155, 236, 255, 0.12);
+  border-bottom: 1px solid var(--line-cool);
 }
 
 th {
-  background: rgba(91, 231, 255, 0.11);
-  color: var(--green);
+  background: rgba(194, 138, 87, 0.11);
+  color: var(--brass);
   font-size: 0.78rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -648,7 +684,8 @@ td:nth-child(4) {
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
-    linear-gradient(180deg, rgba(91, 231, 255, 0.09), transparent 34%),
+    linear-gradient(180deg, rgba(255, 48, 72, 0.075), transparent 34%),
+    linear-gradient(135deg, rgba(194, 138, 87, 0.08), transparent 40%),
     var(--panel-strong);
   box-shadow: var(--shadow);
   padding: 18px;
@@ -667,7 +704,7 @@ td:nth-child(4) {
 }
 
 .joke-meta span:first-child {
-  color: var(--green);
+  color: var(--brass);
   font-weight: 900;
 }
 
@@ -676,12 +713,13 @@ td:nth-child(4) {
 }
 
 .joke-meta span:last-child {
-  color: var(--amber);
+  color: var(--ember);
   font-weight: 900;
 }
 
 .joke-card h3 {
-  color: var(--cyan);
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 1.35rem;
   margin-bottom: 0;
 }
@@ -730,7 +768,7 @@ td:nth-child(4) {
 }
 
 .archive li + li {
-  border-top: 1px solid rgba(155, 236, 255, 0.12);
+  border-top: 1px solid var(--line-cool);
 }
 
 .archive a {
@@ -744,11 +782,11 @@ td:nth-child(4) {
 }
 
 .archive a:hover {
-  background: rgba(91, 231, 255, 0.08);
+  background: rgba(194, 138, 87, 0.09);
 }
 
 .archive span {
-  color: var(--amber);
+  color: var(--brass);
   font-size: 0.8rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -779,6 +817,16 @@ td:nth-child(4) {
 }
 
 @media (max-width: 640px) {
+  .hero-backdrop {
+    object-position: center top;
+  }
+
+  .hero-shade {
+    background:
+      linear-gradient(180deg, rgba(4, 5, 6, 0.76), rgba(4, 5, 6, 0.46) 40%, rgba(4, 5, 6, 0.95) 100%),
+      linear-gradient(90deg, rgba(4, 5, 6, 0.86), rgba(4, 5, 6, 0.22) 68%, rgba(4, 5, 6, 0.72));
+  }
+
   .mark {
     width: 58px;
     height: 58px;
@@ -790,17 +838,17 @@ td:nth-child(4) {
   }
 
   h1 {
-    font-size: 2.8rem;
-    line-height: 0.98;
+    font-size: 2.35rem;
+    line-height: 0.96;
   }
 
   .hero {
-    min-height: 560px;
+    min-height: 82svh;
   }
 
   .hero-inner {
-    padding: 22px 0 38px;
-    gap: 26px;
+    padding: 20px 0 32px;
+    gap: 22px;
   }
 
   .hero h2 {
@@ -812,13 +860,24 @@ td:nth-child(4) {
   }
 
   .hero-stats,
-  .seed-terms ul,
   .archive a {
     grid-template-columns: 1fr;
   }
 
+  .seed-terms ul {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-stats div:first-child {
+    grid-column: 1 / -1;
+  }
+
   .hero-stats div {
-    min-height: 72px;
+    min-height: 66px;
   }
 
   .section-heading {
