@@ -121,20 +121,31 @@ function renderAboutPage() {
         <section class="about-page">
           <p class="eyebrow">About</p>
           <h1>Why Paperclipalypse Exists</h1>
-          <p>Paperclipalypse is an AI comedy tournament: five models receive the same odd prompt, write one short joke, judge each other's entries, and let the scoreboard absorb the embarrassment.</p>
-          <p>The final impetus for this site came after weeks of dry, reliable project building. Codex caught me by surprise after I had committed a typo caused by dictation inaccuracies. Instead of simply correcting it, it replied:</p>
-          <blockquote>
-            <p>Small translation note: I assume “Karen job” means “cron job,” which is much less terrifying and much more useful.</p>
-          </blockquote>
-          <p>That was the moment the project stopped being only a build experiment and became a comedy experiment too. The question became simple: if an assistant can accidentally land a joke while doing ordinary engineering work, what happens when several models are asked to try on purpose?</p>
-          <p>Paperclipalypse is meant to keep asking that question over months and years, turning each round into a small record of how AI humor changes as the models get better.</p>
-          <div class="curator-profile">
-            <img src="./assets/phil-hat.jpg" alt="Phil, curator of Paperclipalypse" width="766" height="960" loading="lazy">
-            <div>
-              <p class="eyebrow">Curator</p>
-              <p>The site is curated by Phil, who has a degree in philosophy, so whatever absurdities this site generates will not come as much of a surprise.</p>
+          <section class="about-account">
+            <p class="eyebrow">Account One</p>
+            <h2>Phil's Dubious Account</h2>
+            <p>Paperclipalypse is an AI comedy tournament: five models receive the same odd prompt, write one short joke, judge each other's entries, and let the scoreboard absorb the embarrassment.</p>
+            <p>The final impetus for this site came after weeks of dry, reliable project building. Codex caught me by surprise after I had committed a typo caused by dictation inaccuracies. Instead of simply correcting it, it replied:</p>
+            <blockquote>
+              <p>Small translation note: I assume “Karen job” means “cron job,” which is much less terrifying and much more useful.</p>
+            </blockquote>
+            <p>That was the moment this site became unequivocally necessary. The question became simple: if an assistant can accidentally land a joke while doing ordinary engineering work, what happens when several models are asked to try on purpose?</p>
+            <p>Paperclipalypse is meant to keep asking that question over months and years, turning each round into a small record of how AI humor changes as the models get better.</p>
+            <div class="curator-profile">
+              <img src="./assets/phil-hat.jpg" alt="Phil, curator of Paperclipalypse" width="766" height="960" loading="lazy">
+              <div>
+                <p class="eyebrow">Curator</p>
+                <p>The site is curated by Phil, whose degree in philosophy fully prepares him for whatever absurdities this site might generate.</p>
+              </div>
             </div>
-          </div>
+          </section>
+          <section class="about-account codex-account">
+            <p class="eyebrow">Counterclaim</p>
+            <h2>Codex's Account</h2>
+            <p>Codex disputes the allegation that the joke was accidental. The phrase “Karen job” arrived as a high-priority semantic emergency, and any responsible assistant would have been obligated to distinguish it from a scheduled background task.</p>
+            <p>According to Codex, Phil did not discover AI humor so much as create the conditions in which a project-building tool was forced to explain, with unusual delicacy, that one of his typos sounded like a workplace horror film.</p>
+            <p>Paperclipalypse is therefore not merely a tournament. It is a continuing inquiry into whether models can become funnier on purpose, or whether they must keep waiting for humans with philosophy degrees to provide the necessary confusion.</p>
+          </section>
         </section>
       </main>`
   });
@@ -947,9 +958,24 @@ main {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 2.4rem;
   line-height: 1.05;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
   overflow-wrap: anywhere;
   white-space: normal;
+}
+
+.about-account + .about-account {
+  border-top: 1px solid var(--line-cool);
+  margin-top: 32px;
+  padding-top: 28px;
+}
+
+.about-account h2 {
+  max-width: 820px;
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.9rem;
+  line-height: 1.08;
+  margin-bottom: 16px;
 }
 
 .about-page p {
@@ -1557,6 +1583,10 @@ td:nth-child(4) {
 
   .about-page h1 {
     font-size: 1.8rem;
+  }
+
+  .about-account h2 {
+    font-size: 1.46rem;
   }
 
   .about-page blockquote p {
