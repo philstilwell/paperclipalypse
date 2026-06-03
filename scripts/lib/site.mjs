@@ -245,7 +245,7 @@ function renderRun(run, options = {}) {
       <section class="scoreboard">
         <div class="section-heading">
           <p class="eyebrow">Judgment Matrix</p>
-          <h2>Scoreboard ${renderProcessPopover()}</h2>
+          <h2>Scoreboard ${renderProcessPopover()} ${renderJudgingPromptPopover(run)}</h2>
         </div>
         <div class="table-scroll">
         <table>
@@ -265,7 +265,7 @@ function renderRun(run, options = {}) {
       <section class="jokes">
         <div class="section-heading">
           <p class="eyebrow">Contestant Output</p>
-          <h2>Jokes</h2>
+          <h2>Jokes ${renderJokePromptPopover(run)}</h2>
         </div>
         <div class="joke-grid">${jokes}</div>
       </section>
@@ -365,6 +365,97 @@ function renderSeedTerms(seedTerms) {
 
 function renderProcessPopover() {
   return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed terms.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores and publishes the ranking.</span></span></span>`;
+}
+
+function renderJokePromptPopover(run) {
+  return renderPromptPopover({
+    label: "Joke Prompt",
+    heading: "Current Joke Prompt",
+    note: "The same prompt goes to all five contestants.",
+    prompt: jokePromptText(run)
+  });
+}
+
+function renderJudgingPromptPopover(run) {
+  return renderPromptPopover({
+    label: "Judge Prompt",
+    heading: "Current Judging Prompt",
+    note: "Each judge sees the four jokes it did not write; its own joke is removed.",
+    prompt: judgingPromptText(run)
+  });
+}
+
+function renderPromptPopover({ label, heading, note, prompt }) {
+  return `<span class="prompt-popover" tabindex="0" aria-label="${escapeHtml(`${heading}. ${note}`)}">${escapeHtml(label)}<span class="info-popover prompt-info"><strong>${escapeHtml(heading)}</strong><span>${escapeHtml(note)}</span><code>${escapeHtml(prompt)}</code></span></span>`;
+}
+
+function jokePromptText(run) {
+  return `You are a contestant in Paperclipalypse, an AI comedy tournament.
+
+Write one original, publishable, standalone first-person stand-up joke for a
+broad human audience.
+
+Premise: ${run.premise.text}
+Seed terms: ${seedTermsLine(run)}
+
+Rules:
+- Use exactly two seed terms in the joke text, no more and no fewer.
+- Ignore the other four seed terms completely.
+- Tell the joke as the onstage comic using I, me, or my naturally.
+- The joke must make sense without the title, premise, or seed list.
+- Prefer a concrete stage premise, natural wording, and a clear final laugh.
+- If your first idea is obvious, discard it and find a sharper angle.
+- Make the last sentence carry the joke; do not end by explaining the premise.
+- Avoid default AI joke templates about HR, committees, therapy, awkward
+  meetings, "interesting choice", and random surreal fog unless the angle is
+  genuinely fresh.
+- Keep it concise, usually 30-90 words.
+- Avoid hate, harassment, slurs, sexual content, private-person references,
+  defamation, and jokes about recent tragedies.
+
+Return JSON only:
+{"title":"short title","seedTermsUsed":["term one","term two"],"joke":"complete standalone first-person stand-up joke"}`;
+}
+
+function judgingPromptText(run) {
+  return `You are judging a Paperclipalypse AI comedy tournament.
+
+Premise: ${run.premise.text}
+Seed terms: ${seedTermsLine(run)}
+
+Score every supplied joke exactly once. Do not score your own joke. Do not infer
+or mention which model wrote a joke. Use strict integer 1-10 scores.
+
+Rubric:
+- laugh 40%: likely human laughter, not just cleverness.
+- surprise 20%: an unexpected but satisfying turn.
+- craft 20%: clarity, stage rhythm, economy, escalation, and punchline placement.
+- originality 10%: fresh angle, image, and wording.
+- promptFit 10%: first-person stand-up form and natural use of exactly two seed
+  terms in the joke text.
+
+Fixed scale:
+- 5 means competent but forgettable.
+- 6 is a mild real joke.
+- 7 is genuinely good.
+- 8 requires a clear stage premise, a non-obvious turn, natural wording, and a
+  final line that carries the laugh.
+- 9 is rare and strong by human comedy-editor standards.
+- 10 should almost never appear.
+
+Penalize clever-sounding nonsense, premise recital, seed stuffing, generic AI
+joke shapes, and punchlines that only restate the setup.
+Score below 5 when the joke is understandable but not actually funny.
+
+Jokes to judge:
+{{JOKES_JSON}}
+
+Return JSON only:
+{"scores":[{"jokeId":"id","originality":7,"surprise":7,"craft":7,"promptFit":7,"laugh":7,"comment":"brief note"}]}`;
+}
+
+function seedTermsLine(run) {
+  return Array.isArray(run.seedTerms) && run.seedTerms.length ? run.seedTerms.join(", ") : "(none)";
 }
 
 function pageShell({
@@ -862,7 +953,8 @@ td:nth-child(4) {
 .rubric-anchors li,
 .rule-popover,
 .mode-popover,
-.process-popover {
+.process-popover,
+.prompt-popover {
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
@@ -891,7 +983,8 @@ td:nth-child(4) {
 .rubric-anchors > li > span:not(.info-popover),
 .rule-popover,
 .mode-popover,
-.process-popover {
+.process-popover,
+.prompt-popover {
   color: var(--brass);
   font-size: 0.82rem;
   font-weight: 900;
@@ -955,6 +1048,51 @@ td:nth-child(4) {
   margin-top: 6px;
 }
 
+.prompt-info {
+  width: min(760px, calc(100vw - 48px));
+  max-height: min(70vh, 620px);
+  left: auto;
+  right: 0;
+  overflow: auto;
+  padding: 14px;
+  transform: translateY(-4px);
+}
+
+.prompt-info strong,
+.prompt-info span,
+.prompt-info code {
+  display: block;
+}
+
+.prompt-info strong {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.prompt-info span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-bottom: 10px;
+}
+
+.prompt-info code {
+  border: 1px solid rgba(176, 185, 196, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--ink);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.76rem;
+  font-weight: 650;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  padding: 12px;
+  text-align: left;
+  text-transform: none;
+  white-space: pre-wrap;
+}
+
 .rubric-note:hover .info-popover,
 .rubric-note:focus .info-popover,
 .rubric-fields li:hover .info-popover,
@@ -966,14 +1104,18 @@ td:nth-child(4) {
 .mode-popover:hover .info-popover,
 .mode-popover:focus .info-popover,
 .process-popover:hover .info-popover,
-.process-popover:focus .info-popover {
+.process-popover:focus .info-popover,
+.prompt-popover:hover .info-popover,
+.prompt-popover:focus .info-popover {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   visibility: visible;
 }
 
 .process-popover:hover .process-info,
-.process-popover:focus .process-info {
+.process-popover:focus .process-info,
+.prompt-popover:hover .prompt-info,
+.prompt-popover:focus .prompt-info {
   transform: translateY(0);
 }
 
@@ -1223,6 +1365,12 @@ td:nth-child(4) {
     right: auto;
   }
 
+  .prompt-info {
+    left: 0;
+    right: auto;
+    max-height: min(72vh, 560px);
+  }
+
   .rubric-note:hover .info-popover,
   .rubric-note:focus .info-popover,
   .rubric-fields li:hover .info-popover,
@@ -1234,7 +1382,9 @@ td:nth-child(4) {
   .mode-popover:hover .info-popover,
   .mode-popover:focus .info-popover,
   .process-popover:hover .info-popover,
-  .process-popover:focus .info-popover {
+  .process-popover:focus .info-popover,
+  .prompt-popover:hover .info-popover,
+  .prompt-popover:focus .info-popover {
     transform: translateY(0);
   }
 

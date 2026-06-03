@@ -445,7 +445,8 @@ td:nth-child(4) {
 .rubric-anchors li,
 .rule-popover,
 .mode-popover,
-.process-popover {
+.process-popover,
+.prompt-popover {
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
@@ -474,7 +475,8 @@ td:nth-child(4) {
 .rubric-anchors > li > span:not(.info-popover),
 .rule-popover,
 .mode-popover,
-.process-popover {
+.process-popover,
+.prompt-popover {
   color: var(--brass);
   font-size: 0.82rem;
   font-weight: 900;
@@ -538,6 +540,51 @@ td:nth-child(4) {
   margin-top: 6px;
 }
 
+.prompt-info {
+  width: min(760px, calc(100vw - 48px));
+  max-height: min(70vh, 620px);
+  left: auto;
+  right: 0;
+  overflow: auto;
+  padding: 14px;
+  transform: translateY(-4px);
+}
+
+.prompt-info strong,
+.prompt-info span,
+.prompt-info code {
+  display: block;
+}
+
+.prompt-info strong {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  margin-bottom: 6px;
+}
+
+.prompt-info span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-bottom: 10px;
+}
+
+.prompt-info code {
+  border: 1px solid rgba(176, 185, 196, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--ink);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 0.76rem;
+  font-weight: 650;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+  padding: 12px;
+  text-align: left;
+  text-transform: none;
+  white-space: pre-wrap;
+}
+
 .rubric-note:hover .info-popover,
 .rubric-note:focus .info-popover,
 .rubric-fields li:hover .info-popover,
@@ -549,14 +596,18 @@ td:nth-child(4) {
 .mode-popover:hover .info-popover,
 .mode-popover:focus .info-popover,
 .process-popover:hover .info-popover,
-.process-popover:focus .info-popover {
+.process-popover:focus .info-popover,
+.prompt-popover:hover .info-popover,
+.prompt-popover:focus .info-popover {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   visibility: visible;
 }
 
 .process-popover:hover .process-info,
-.process-popover:focus .process-info {
+.process-popover:focus .process-info,
+.prompt-popover:hover .prompt-info,
+.prompt-popover:focus .prompt-info {
   transform: translateY(0);
 }
 
@@ -806,6 +857,12 @@ td:nth-child(4) {
     right: auto;
   }
 
+  .prompt-info {
+    left: 0;
+    right: auto;
+    max-height: min(72vh, 560px);
+  }
+
   .rubric-note:hover .info-popover,
   .rubric-note:focus .info-popover,
   .rubric-fields li:hover .info-popover,
@@ -817,7 +874,9 @@ td:nth-child(4) {
   .mode-popover:hover .info-popover,
   .mode-popover:focus .info-popover,
   .process-popover:hover .info-popover,
-  .process-popover:focus .info-popover {
+  .process-popover:focus .info-popover,
+  .prompt-popover:hover .info-popover,
+  .prompt-popover:focus .info-popover {
     transform: translateY(0);
   }
 
