@@ -329,6 +329,11 @@ main {
 }
 
 .section-heading h2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 0;
   font-size: 1.55rem;
   font-family: Georgia, "Times New Roman", serif;
@@ -358,8 +363,9 @@ main {
   font-weight: 850;
 }
 
-.scoreboard {
+.table-scroll {
   overflow-x: auto;
+  border-radius: 8px;
 }
 
 table {
@@ -418,7 +424,9 @@ td:nth-child(4) {
 .rubric-note,
 .rubric-fields li,
 .rubric-anchors li,
-.rule-popover {
+.rule-popover,
+.mode-popover,
+.process-popover {
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
@@ -445,7 +453,9 @@ td:nth-child(4) {
 .rubric-note,
 .rubric-fields > li > span:not(.info-popover),
 .rubric-anchors > li > span:not(.info-popover),
-.rule-popover {
+.rule-popover,
+.mode-popover,
+.process-popover {
   color: var(--brass);
   font-size: 0.82rem;
   font-weight: 900;
@@ -486,6 +496,26 @@ td:nth-child(4) {
   z-index: 8;
 }
 
+.process-info {
+  width: min(460px, calc(100vw - 48px));
+}
+
+.process-info strong,
+.process-info span {
+  display: block;
+}
+
+.process-info strong {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.process-info span + span {
+  margin-top: 6px;
+}
+
 .rubric-note:hover .info-popover,
 .rubric-note:focus .info-popover,
 .rubric-fields li:hover .info-popover,
@@ -493,7 +523,11 @@ td:nth-child(4) {
 .rubric-anchors li:hover .info-popover,
 .rubric-anchors li:focus .info-popover,
 .rule-popover:hover .info-popover,
-.rule-popover:focus .info-popover {
+.rule-popover:focus .info-popover,
+.mode-popover:hover .info-popover,
+.mode-popover:focus .info-popover,
+.process-popover:hover .info-popover,
+.process-popover:focus .info-popover {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   visibility: visible;
@@ -713,7 +747,11 @@ td:nth-child(4) {
   .rubric-anchors li:hover .info-popover,
   .rubric-anchors li:focus .info-popover,
   .rule-popover:hover .info-popover,
-  .rule-popover:focus .info-popover {
+  .rule-popover:focus .info-popover,
+  .mode-popover:hover .info-popover,
+  .mode-popover:focus .info-popover,
+  .process-popover:hover .info-popover,
+  .process-popover:focus .info-popover {
     transform: translateY(0);
   }
 

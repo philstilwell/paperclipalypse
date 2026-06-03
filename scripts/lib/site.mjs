@@ -2,6 +2,17 @@ import fs from "node:fs";
 import path from "node:path";
 import { rubricForDisplay } from "./scoring.mjs";
 
+const cloudflareAnalytics = `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e6dc8afcaf3243dcbc00f4e43a7fa62e"}'></script><!-- End Cloudflare Web Analytics -->`;
+const processPopoverLabel = [
+  "How Paperclipalypse works.",
+  "Codex selects six seed terms from the local mirrored prompt lists.",
+  "Each contestant receives the same premise and must write one first-person stand-up joke using exactly two seed terms.",
+  "After all jokes are collected, each contestant judges the four jokes it did not write.",
+  "The runner validates five contestants, five jokes, five complete scorecards, no self-scoring, and the two-seed rule.",
+  "Scores are aggregated with the fixed rubric: laugh 40%, surprise 20%, craft 20%, originality 10%, prompt fit 10%.",
+  "The static GitHub Pages site publishes the resulting rankings, jokes, comments, and archive."
+].join(" ");
+
 export function renderSite({ run, historyDir, siteDir }) {
   fs.mkdirSync(siteDir, { recursive: true });
   fs.mkdirSync(path.join(siteDir, "runs"), { recursive: true });
@@ -105,7 +116,7 @@ function renderHero(run) {
             </div>
             <div>
               <dt>Mode</dt>
-              <dd>${escapeHtml(formatMode(run.source))}</dd>
+              <dd><span class="mode-popover" tabindex="0" aria-label="${escapeHtml(modeDescription(run.source))}">${escapeHtml(formatMode(run.source))}<span class="info-popover">${escapeHtml(modeDescription(run.source))}</span></span></dd>
             </div>
           </dl>
         </div>
@@ -161,8 +172,9 @@ function renderRun(run, options = {}) {
       <section class="scoreboard">
         <div class="section-heading">
           <p class="eyebrow">Judgment Matrix</p>
-          <h2>Scoreboard</h2>
+          <h2>Scoreboard ${renderProcessPopover()}</h2>
         </div>
+        <div class="table-scroll">
         <table>
           <thead>
             <tr>
@@ -175,6 +187,7 @@ function renderRun(run, options = {}) {
           </thead>
           <tbody>${rankingRows}</tbody>
         </table>
+        </div>
       </section>${rubric}
       <section class="jokes">
         <div class="section-heading">
@@ -269,6 +282,10 @@ function renderSeedTerms(seedTerms) {
       </section>`;
 }
 
+function renderProcessPopover() {
+  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How the round works</strong><span>1. Codex selects six seed terms from the local mirrored prompt lists.</span><span>2. Each contestant gets the same premise and must write one first-person stand-up joke using exactly two seed terms.</span><span>3. After all jokes are collected, each contestant judges the four jokes it did not write.</span><span>4. The runner rejects missing contestants, missing jokes, incomplete scorecards, self-scoring, and seed-rule failures.</span><span>5. Scores are aggregated with a fixed rubric: laugh 40%, surprise 20%, craft 20%, originality 10%, prompt fit 10%.</span><span>6. The static GitHub Pages site publishes the rankings, jokes, judge comments, and archive.</span></span></span>`;
+}
+
 function pageShell({ title, body, stylesheetPath = "./styles.css" }) {
   const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.png" : "./favicon.png";
 
@@ -284,6 +301,7 @@ function pageShell({ title, body, stylesheetPath = "./styles.css" }) {
   </head>
   <body>
     ${body}
+    ${cloudflareAnalytics}
   </body>
 </html>`;
 }
@@ -620,6 +638,11 @@ main {
 }
 
 .section-heading h2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 0;
   font-size: 1.55rem;
   font-family: Georgia, "Times New Roman", serif;
@@ -649,8 +672,9 @@ main {
   font-weight: 850;
 }
 
-.scoreboard {
+.table-scroll {
   overflow-x: auto;
+  border-radius: 8px;
 }
 
 table {
@@ -709,7 +733,9 @@ td:nth-child(4) {
 .rubric-note,
 .rubric-fields li,
 .rubric-anchors li,
-.rule-popover {
+.rule-popover,
+.mode-popover,
+.process-popover {
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
@@ -736,7 +762,9 @@ td:nth-child(4) {
 .rubric-note,
 .rubric-fields > li > span:not(.info-popover),
 .rubric-anchors > li > span:not(.info-popover),
-.rule-popover {
+.rule-popover,
+.mode-popover,
+.process-popover {
   color: var(--brass);
   font-size: 0.82rem;
   font-weight: 900;
@@ -777,6 +805,26 @@ td:nth-child(4) {
   z-index: 8;
 }
 
+.process-info {
+  width: min(460px, calc(100vw - 48px));
+}
+
+.process-info strong,
+.process-info span {
+  display: block;
+}
+
+.process-info strong {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+
+.process-info span + span {
+  margin-top: 6px;
+}
+
 .rubric-note:hover .info-popover,
 .rubric-note:focus .info-popover,
 .rubric-fields li:hover .info-popover,
@@ -784,7 +832,11 @@ td:nth-child(4) {
 .rubric-anchors li:hover .info-popover,
 .rubric-anchors li:focus .info-popover,
 .rule-popover:hover .info-popover,
-.rule-popover:focus .info-popover {
+.rule-popover:focus .info-popover,
+.mode-popover:hover .info-popover,
+.mode-popover:focus .info-popover,
+.process-popover:hover .info-popover,
+.process-popover:focus .info-popover {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
   visibility: visible;
@@ -1004,7 +1056,11 @@ td:nth-child(4) {
   .rubric-anchors li:hover .info-popover,
   .rubric-anchors li:focus .info-popover,
   .rule-popover:hover .info-popover,
-  .rule-popover:focus .info-popover {
+  .rule-popover:focus .info-popover,
+  .mode-popover:hover .info-popover,
+  .mode-popover:focus .info-popover,
+  .process-popover:hover .info-popover,
+  .process-popover:focus .info-popover {
     transform: translateY(0);
   }
 
@@ -1059,6 +1115,25 @@ function formatMode(source) {
     return "Live Web";
   }
   return source || "Tournament";
+}
+
+function modeDescription(source) {
+  if (source === "manual-external") {
+    return "A real external-model round: Codex prepared the prompts and page, while the jokes and scorecards were collected from the contestants' normal chat surfaces.";
+  }
+  if (source === "codex-house") {
+    return "A local demo round generated by Codex using house contestant styles. Useful for testing the site, but not a real external-model competition.";
+  }
+  if (source === "dry-run") {
+    return "A deterministic local mock run for smoke testing. It does not represent independent model submissions.";
+  }
+  if (source === "paid-api") {
+    return "A round produced through provider APIs. This mode is opt-in because API calls may be metered.";
+  }
+  if (source === "live-web") {
+    return "A round assembled from model web-chat sessions rather than paid API calls.";
+  }
+  return "The route used to produce and judge this episode.";
 }
 
 function formatScore(score) {
