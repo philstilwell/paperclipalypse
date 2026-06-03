@@ -1,4 +1,4 @@
-export const RUBRIC_VERSION = "2026-06-exact-two-v2";
+export const RUBRIC_VERSION = "2026-06-first-person-standup-v3";
 
 export const RUBRIC_FIELDS = [
   {
@@ -17,7 +17,7 @@ export const RUBRIC_FIELDS = [
     key: "craft",
     label: "Craft",
     weight: 0.2,
-    description: "Economy, rhythm, clarity, escalation, and clean final placement."
+    description: "Economy, stage rhythm, first-person clarity, escalation, and clean final punchline placement."
   },
   {
     key: "originality",
@@ -29,7 +29,7 @@ export const RUBRIC_FIELDS = [
     key: "promptFit",
     label: "Prompt Fit",
     weight: 0.1,
-    description: "Natural use of exactly two seed terms, with the other four left out."
+    description: "Natural first-person stand-up form using exactly two seed terms, with the other four left out."
   }
 ];
 
@@ -91,6 +91,7 @@ export function rubricPromptText() {
     "Grade against a fixed future-resistant scale, not against the weakest joke in this batch.",
     "Be strict: 5 means competent but forgettable, 7 means genuinely good, 8 means excellent, 9 is rare, and 10 should almost never appear.",
     "A joke that is not understandable as a standalone joke should score no higher than 4 for laugh and craft.",
+    "A joke that is not first-person stand-up should score no higher than 4 for promptFit and should lose craft if the form weakens the timing.",
     "Penalize clever-sounding nonsense, vague absurdity, premise recitation, and punchlines that only restate the setup.",
     "Do not inflate scores because the premise is odd. Reward only humor that a broad human audience could understand and enjoy.",
     "Do not reward seed-term stuffing. Prompt fit is high only when exactly two seed terms are used naturally.",

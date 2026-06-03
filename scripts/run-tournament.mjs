@@ -142,39 +142,46 @@ async function judgeJokes(modelRoster, runPremise, submittedJokes) {
 }
 
 function makeDryJokes(modelRoster, runPremise, localRng) {
+  const seedTerms = normalizeSeedTerms(runPremise.seedTerms);
+  const seedPairs = [
+    [seedTerms[0], seedTerms[1]],
+    [seedTerms[1], seedTerms[2]],
+    [seedTerms[2], seedTerms[3]],
+    [seedTerms[3], seedTerms[4]],
+    [seedTerms[4], seedTerms[5]]
+  ].map(([first, second]) => [
+    first || runPremise.person,
+    second || runPremise.place
+  ]);
   const shapes = [
     {
       title: "Terms And Conditions",
-      setup: `${runPremise.person} arrived at ${runPremise.place} and found ${runPremise.element} waiting at the front desk.`,
-      punchline: "The paperclips said they were not hostile, they were just here to optimize the apology."
+      text: (first, second) => `I tried building my new act around ${first} and ${second}. The audience got so quiet I thought I had bombed, but then I realized they were just waiting for the terms and conditions to finish scrolling.`
     },
     {
       title: "Quarterly Results",
-      setup: `${runPremise.place} had one rule: never let ${runPremise.person} near ${runPremise.element}.`,
-      punchline: "By lunch, the quarterly forecast was just a pie chart labeled somehow worse."
+      text: (first, second) => `I brought ${first} energy to a room full of ${second}, which sounds bold until you learn my only punchline was a quarterly forecast. It still got a laugh, mostly because the pie chart was labeled somehow worse.`
     },
     {
       title: "Official Minutes",
-      setup: `${runPremise.person} tried to explain ${runPremise.element} to the manager of ${runPremise.place}.`,
-      punchline: "The manager nodded, opened a binder, and promoted the problem to committee."
+      text: (first, second) => `I tried to explain ${first} to someone committed to ${second}. They nodded, opened a binder, and said, "Great, we can promote this problem to committee." That is when I learned bureaucracy is just heckling with minutes.`
     },
     {
       title: "Premium Plan",
-      setup: `At ${runPremise.place}, ${runPremise.person} asked whether ${runPremise.element} came with support.`,
-      punchline: "It did, but only if you upgraded to the plan where support stops laughing first."
+      text: (first, second) => `I asked if ${first} came with support for ${second}. They said yes, but only on the premium plan. Apparently the free tier is just someone watching me panic and saying, "Interesting choice."`
     },
     {
       title: "Compliance Training",
-      setup: `${runPremise.person} brought ${runPremise.element} into ${runPremise.place} for a simple demonstration.`,
-      punchline: "The demonstration was so simple it immediately became mandatory training."
+      text: (first, second) => `I once mixed ${first} with ${second} for what I called a simple demonstration. It went so badly HR filmed it, added a quiz, and now my worst decision has a certificate of completion.`
     }
   ];
 
   return modelRoster.map((contestant, index) => {
     const shape = shapes[index % shapes.length];
     const label = `Joke ${String.fromCharCode(65 + index)}`;
-    const tweak = localRng() > 0.5 ? "" : " quietly";
-    const punchline = shape.punchline.replace("said", `said${tweak}`);
+    const [firstSeed, secondSeed] = seedPairs[index % seedPairs.length];
+    const jokeText = shape.text(firstSeed, secondSeed);
+    const punchline = localRng() > 0.5 ? jokeText : jokeText.replace("I ", "I quietly ");
 
     return {
       id: contestant.id,
@@ -183,11 +190,11 @@ function makeDryJokes(modelRoster, runPremise, localRng) {
       contestantName: contestant.displayName,
       model: modelName(contestant),
       title: shape.title,
-      seedTermsUsed: normalizeSeedTerms(runPremise.seedTerms).slice(0, 2),
-      joke: `${shape.setup} ${punchline}`,
-      setup: shape.setup,
+      seedTermsUsed: [firstSeed, secondSeed],
+      joke: punchline,
+      setup: "",
       punchline,
-      text: `${shape.setup} ${punchline}`
+      text: punchline
     };
   });
 }

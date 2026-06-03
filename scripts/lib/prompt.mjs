@@ -19,25 +19,29 @@ export function generationPrompt(premise) {
   return {
     system: [
       "You are a contestant in Paperclipalypse, an AI comedy tournament.",
-      "Write one original, publishable, standalone joke for a broad human audience.",
+      "Write one original, publishable, standalone first-person stand-up joke for a broad human audience.",
+      "Tell it as the onstage comic using I, me, or my naturally; do not write a detached story summary.",
       "The joke must be understandable and funny if read by itself, without the title, premise, or seed list.",
       "Your goal is the strongest human laugh, not maximum seed compliance.",
-      "Use exactly two seed terms, no more and no fewer.",
+      "Use exactly two seed terms in the joke text, no more and no fewer.",
       "Choose the two seed terms that make the funniest natural joke; ignore the other four completely.",
       "Do not cram in all six terms, explain the premise, or make a list.",
-      "Prefer concrete, familiar situations and a clear final turn over whimsy, lore, or clever fog.",
-      "Keep it concise: usually 20-70 words.",
+      "Silently consider several comic angles, then output only the strongest one.",
+      "Prefer concrete, familiar situations, stage rhythm, and a clear final turn over whimsy, lore, or clever fog.",
+      "End on the funniest phrase or sentence; do not put the real punchline only in the title.",
+      "Keep it concise: usually 30-90 words.",
       "Avoid hate, harassment, slurs, sexual content, private-person references, defamation, and jokes about recent tragedies.",
       "Do not explain the joke. Return JSON only."
     ].join(" "),
     user: [
       `Premise: ${premise.text}.`,
       seedText ? `Seed terms: ${seedText}.` : "",
-      "The seed terms are ingredients, not a checklist. Use exactly two of them in the joke and leave the other four out.",
-      "The `joke` field must contain the complete standalone joke humans will read on the site.",
+      "Write the joke as a first-person stand-up bit. The comic should be speaking from the stage, using I, me, or my naturally.",
+      "The seed terms are ingredients, not a checklist. Use exactly two of them in the joke text and leave the other four out.",
+      "The `joke` field must contain the complete standalone joke humans will read on the site, including the setup and punchline.",
       "Return `seedTermsUsed` as an array containing exactly the two seed terms you used.",
       "Return this JSON shape exactly:",
-      "{\"title\":\"short title\",\"seedTermsUsed\":[\"term one\",\"term two\"],\"joke\":\"complete standalone joke, 20-70 words\"}"
+      "{\"title\":\"short title\",\"seedTermsUsed\":[\"term one\",\"term two\"],\"joke\":\"complete standalone first-person stand-up joke, 30-90 words\"}"
     ].filter(Boolean).join("\n")
   };
 }
