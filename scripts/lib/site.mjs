@@ -187,7 +187,7 @@ function renderHero(run) {
             </div>
             <div>
               <dt>Mode</dt>
-              <dd><span class="mode-popover" tabindex="0" aria-label="${escapeHtml(modeDescription(run.source))}">${escapeHtml(formatMode(run.source))}<span class="info-popover">${escapeHtml(modeDescription(run.source))}</span></span></dd>
+              <dd><span class="mode-popover" tabindex="0" aria-label="${escapeHtml(modeDescription(run.source))}">${escapeHtml(formatMode(run.source))}<span class="info-popover mode-info">${escapeHtml(modeDescription(run.source))}</span></span></dd>
             </div>
           </dl>
         </div>
@@ -737,6 +737,8 @@ h1 {
   grid-template-columns: 1.4fr 0.7fr 1fr;
   gap: 12px;
   margin: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .hero-stats div {
@@ -1025,6 +1027,16 @@ td:nth-child(4) {
   z-index: 8;
 }
 
+.hero-stats .mode-info {
+  bottom: calc(100% + 8px);
+  left: auto;
+  right: 0;
+  top: auto;
+  transform: translateY(4px);
+  width: min(320px, calc(100vw - 48px));
+  z-index: 20;
+}
+
 .process-info {
   width: min(460px, calc(100vw - 48px));
   left: auto;
@@ -1116,6 +1128,11 @@ td:nth-child(4) {
 .process-popover:focus .process-info,
 .prompt-popover:hover .prompt-info,
 .prompt-popover:focus .prompt-info {
+  transform: translateY(0);
+}
+
+.hero-stats .mode-popover:hover .mode-info,
+.hero-stats .mode-popover:focus .mode-info {
   transform: translateY(0);
 }
 
