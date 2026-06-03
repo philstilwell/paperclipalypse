@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { allowsPaidApi, envFlag, loadDotEnv, configuredModel } from "./lib/env.mjs";
 import { buildPremise, comicPanelPrompt, generationPrompt, judgingPrompt } from "./lib/prompt.mjs";
 import { callContestant, parseModelJson } from "./lib/providers.mjs";
+import { assertCompleteTournament } from "./lib/participation.mjs";
 import { aggregateScores, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
 import { seededRng } from "./lib/random.mjs";
 import { renderSite } from "./lib/site.mjs";
@@ -52,6 +53,7 @@ const judgeResults = dryRun
   ? deterministicDryScores(jokes, contestants, rng)
   : await judgeJokes(contestants, premise, jokes);
 
+assertCompleteTournament({ contestants, jokes, judgeResults, seedTerms });
 const rankings = aggregateScores(jokes, judgeResults);
 const run = {
   version: 1,
@@ -203,6 +205,13 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
   const episode = readJson(filePath);
   const createdAt = episode.createdAt || new Date().toISOString();
   const localSeed = episode.seed || fallbackSeed || createdAt.slice(0, 10);
+  const seedTerms = normalizeSeedTerms(episode.seedTerms);
+  const contestants = episode.contestants.map((contestant) => ({
+    id: cleanText(contestant.id),
+    displayName: cleanText(contestant.displayName),
+    provider: cleanText(contestant.provider || "manual-external"),
+    model: cleanText(contestant.model || contestant.style || "external chat")
+  }));
   const manualJokes = episode.jokes.map((joke, index) => {
     const setup = cleanText(joke.setup);
     const punchline = cleanText(joke.punchline);
@@ -228,6 +237,14 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     judgeName: cleanText(result.judgeName),
     scores: normalizeJudgeScores(result, jokeIds)
   }));
+
+  assertCompleteTournament({
+    contestants,
+    jokes: manualJokes,
+    judgeResults: manualJudgeResults,
+    seedTerms
+  });
+
   const manualRankings = aggregateScores(manualJokes, manualJudgeResults);
   const run = {
     version: 1,
@@ -236,17 +253,12 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     dryRun: false,
     source: episode.source || "codex-house",
     createdAt,
-    seedTerms: normalizeSeedTerms(episode.seedTerms),
+    seedTerms,
     premise: {
       ...episode.premise,
-      seedTerms: normalizeSeedTerms(episode.seedTerms)
+      seedTerms
     },
-    contestants: episode.contestants.map((contestant) => ({
-      id: contestant.id,
-      displayName: contestant.displayName,
-      provider: contestant.provider || "manual-external",
-      model: contestant.model || contestant.style || "external chat"
-    })),
+    contestants,
     rubric: rubricForDisplay(),
     jokes: manualJokes,
     judgeResults: manualJudgeResults,

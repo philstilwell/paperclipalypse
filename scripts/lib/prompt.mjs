@@ -28,6 +28,7 @@ export function generationPrompt(premise) {
       "Do not cram in all six terms, explain the premise, or make a list.",
       "Silently consider several comic angles, then output only the strongest one.",
       "Prefer concrete, familiar situations, stage rhythm, and a clear final turn over whimsy, lore, or clever fog.",
+      "Avoid default AI joke templates about HR, committees, therapy, awkward meetings, and 'interesting choice' unless the angle is genuinely fresh.",
       "End on the funniest phrase or sentence; do not put the real punchline only in the title.",
       "Keep it concise: usually 30-90 words.",
       "Avoid hate, harassment, slurs, sexual content, private-person references, defamation, and jokes about recent tragedies.",
@@ -39,6 +40,7 @@ export function generationPrompt(premise) {
       "Write the joke as a first-person stand-up bit. The comic should be speaking from the stage, using I, me, or my naturally.",
       "The seed terms are ingredients, not a checklist. Use exactly two of them in the joke text and leave the other four out.",
       "The `joke` field must contain the complete standalone joke humans will read on the site, including the setup and punchline.",
+      "Before returning, reject any version that is merely cute, random, pun-only, or understandable only because of the prompt.",
       "Return `seedTermsUsed` as an array containing exactly the two seed terms you used.",
       "Return this JSON shape exactly:",
       "{\"title\":\"short title\",\"seedTermsUsed\":[\"term one\",\"term two\"],\"joke\":\"complete standalone first-person stand-up joke, 30-90 words\"}"

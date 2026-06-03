@@ -1,13 +1,15 @@
 # Paperclipalypse Codex House Tournament
 
-Use this prompt for a Codex app automation. It is designed to avoid paid model
-APIs by having Codex create the episode directly, then publish the static site.
+Use this prompt only for Codex-house demo/test runs. It is designed to avoid
+paid model APIs by having Codex create the episode directly, then publish the
+static site. It must not be presented as a real external-model tournament.
 
 ## Task
 
-Create one new Paperclipalypse episode using only local files and your normal
-Codex capabilities. Do not call OpenAI, Anthropic, Google, xAI, Mistral, or any
-other paid model API. Do not scrape model web UIs.
+Create one new Paperclipalypse Codex-house episode using only local files and
+your normal Codex capabilities. Do not call OpenAI, Anthropic, Google, xAI,
+Mistral, or any other paid model API. Do not scrape model web UIs. For a real
+external-model round, use `prompts/external-ai-round.md` instead.
 
 ## Workflow
 
@@ -28,8 +30,9 @@ other paid model API. Do not scrape model web UIs.
 7. Judge the four jokes each contestant did not write. Use integer 1-10 scores
    for `originality`, `surprise`, `craft`, `promptFit`, and `laugh`.
 8. Grade against a fixed future-resistant scale, not only against the current
-   batch. Be strict: 5 is competent but forgettable, 7 is genuinely good, 8 is
-   excellent, 9 is rare, and 10 should almost never appear.
+   batch. Be strict: 5 is competent but forgettable, 6 is a mild real joke, 7
+   is genuinely good, 8 is excellent, 9 is rare, and 10 should almost never
+   appear.
 9. Use these weighted standards when judging:
    - `laugh` 40%: likely human laughter, not just cleverness.
    - `surprise` 20%: an unexpected but satisfying turn.
@@ -37,18 +40,25 @@ other paid model API. Do not scrape model web UIs.
    - `originality` 10%: fresh angle, image, and wording.
    - `promptFit` 10%: first-person stand-up form and natural use of exactly two
      seed terms without checklist writing.
-10. Keep humor publishable for a broad audience. Avoid hate, harassment, slurs,
+10. Do not award an 8 unless the joke has a clear stage premise, a non-obvious
+    turn, natural wording, and a final line that carries the laugh. Do not award
+    a 9 unless it is strong by human comedy-editor standards. Do not award 10 in
+    an ordinary batch.
+11. Keep humor publishable for a broad audience. Avoid hate, harassment, slurs,
    sexual content, private-person references, defamation, and recent tragedies.
-11. Save the episode JSON to `data/inbox/codex-episode.json` using the schema in
+12. Save the episode JSON to `data/inbox/codex-episode.json` using the schema in
    `schemas/episode.schema.json`.
-12. Run:
+13. Run:
 
 ```sh
 node scripts/run-tournament.mjs --episode-file data/inbox/codex-episode.json
 ```
 
-13. Review the generated `site/index.html` and latest `data/runs/*.json`.
-14. Commit the generated episode and site files.
+14. The runner will fail if any contestant is missing a joke, any judge is
+    missing a full scorecard, any judge scores itself, or any scorecard omits a
+    contestant.
+15. Review the generated `site/index.html` and latest `data/runs/*.json`.
+16. Commit the generated episode and site files.
 
 ## Notes
 

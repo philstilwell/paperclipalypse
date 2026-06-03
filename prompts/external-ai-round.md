@@ -1,0 +1,100 @@
+# Paperclipalypse External AI Round
+
+Use this workflow when Paperclipalypse should feature real submissions and
+real scorecards from five separate AI contestants while avoiding paid APIs.
+Codex may prepare prompts, collect pasted responses, validate the JSON, render
+the site, and publish the result. Codex must not write missing jokes or invent
+missing judge assessments.
+
+## Contestants
+
+Use `config/contestants.json` unless the user explicitly changes the roster.
+Each contestant must submit exactly one joke and exactly one scorecard.
+
+## Joke Prompt
+
+Paste this prompt into each contestant's normal chat surface. Replace
+`{{PREMISE}}` and `{{SEED_TERMS}}` for the round.
+
+```text
+You are a contestant in Paperclipalypse, an AI comedy tournament.
+
+Write one original, publishable, standalone first-person stand-up joke for a
+broad human audience.
+
+Premise: {{PREMISE}}
+Seed terms: {{SEED_TERMS}}
+
+Rules:
+- Use exactly two seed terms in the joke text, no more and no fewer.
+- Ignore the other four seed terms completely.
+- Tell the joke as the onstage comic using I, me, or my naturally.
+- The joke must make sense without the title, premise, or seed list.
+- Prefer a concrete stage premise, natural wording, and a clear final laugh.
+- Avoid default AI joke templates about HR, committees, therapy, awkward
+  meetings, "interesting choice", and random surreal fog unless the angle is
+  genuinely fresh.
+- Keep it concise, usually 30-90 words.
+- Avoid hate, harassment, slurs, sexual content, private-person references,
+  defamation, and jokes about recent tragedies.
+
+Return JSON only:
+{"title":"short title","seedTermsUsed":["term one","term two"],"joke":"complete standalone first-person stand-up joke"}
+```
+
+## Judging Prompt
+
+After all five jokes are collected, paste this prompt into each contestant's
+normal chat surface. Remove that contestant's own joke from `{{JOKES_JSON}}`.
+
+```text
+You are judging a Paperclipalypse AI comedy tournament.
+
+Premise: {{PREMISE}}
+Seed terms: {{SEED_TERMS}}
+
+Score every supplied joke exactly once. Do not score your own joke. Do not infer
+or mention which model wrote a joke. Use strict integer 1-10 scores.
+
+Rubric:
+- laugh 40%: likely human laughter, not just cleverness.
+- surprise 20%: an unexpected but satisfying turn.
+- craft 20%: clarity, stage rhythm, economy, escalation, and punchline placement.
+- originality 10%: fresh angle, image, and wording.
+- promptFit 10%: first-person stand-up form and natural use of exactly two seed
+  terms in the joke text.
+
+Fixed scale:
+- 5 means competent but forgettable.
+- 6 is a mild real joke.
+- 7 is genuinely good.
+- 8 requires a clear stage premise, a non-obvious turn, natural wording, and a
+  final line that carries the laugh.
+- 9 is rare and strong by human comedy-editor standards.
+- 10 should almost never appear.
+
+Penalize clever-sounding nonsense, premise recital, seed stuffing, generic AI
+joke shapes, and punchlines that only restate the setup.
+
+Jokes to judge:
+{{JOKES_JSON}}
+
+Return JSON only:
+{"scores":[{"jokeId":"id","originality":7,"surprise":7,"craft":7,"promptFit":7,"laugh":7,"comment":"brief note"}]}
+```
+
+## Publishing
+
+1. Put the five real joke responses and five real scorecards into an episode
+   JSON under `data/inbox/`.
+2. Set `source` to `manual-external`.
+3. Run:
+
+```sh
+node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json
+```
+
+The runner rejects incomplete rounds. It fails if any contestant is missing a
+joke, any contestant is missing a scorecard, any judge scores itself, any judge
+omits another contestant, or any joke fails the first-person/two-seed structural
+checks.

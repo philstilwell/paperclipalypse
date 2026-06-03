@@ -22,7 +22,18 @@ a hidden pool of free API calls inside GitHub Actions. GitHub Actions can deploy
 the static site for free, but model generation in CI generally requires API-key
 auth and can cost money.
 
-So the default flow is:
+So the preferred real-tournament flow is:
+
+1. Codex generates six seed terms locally from `data/seed-lists.json`.
+2. Codex prepares prompt packets using `prompts/external-ai-round.md`.
+3. You or Codex, with explicit direction, collect responses from the contestants'
+   normal chat surfaces. Codex must not invent missing external jokes or scores.
+4. Codex writes the collected external responses to `data/inbox/`.
+5. It runs `node scripts/run-tournament.mjs --episode-file data/inbox/<file>.json`.
+6. The runner rejects incomplete participation before rendering.
+7. GitHub Pages deploys the static site on push.
+
+The local demo flow is:
 
 1. A Codex app automation runs on your machine using your normal Codex access.
 2. It follows `prompts/codex-house-tournament.md`.
@@ -34,9 +45,9 @@ So the default flow is:
 7. GitHub Pages deploys the static site on push.
 
 This produces a "Codex house tournament" rather than five independent external
-models. That is the honest no-surprise-bill version. If you later want five
-actual external models, `config/contestants.json` and the provider adapters are
-still available as an opt-in paid API mode.
+models. It is for demos and smoke tests, not the main claim of the site. Real
+external rounds should use `manual-external` episodes assembled from actual
+contestant outputs, or the opt-in paid API mode if you deliberately enable it.
 
 The current cost-aware external roster is:
 
@@ -66,6 +77,17 @@ To publish a Codex-generated episode JSON:
 node scripts/run-tournament.mjs --episode-file data/inbox/codex-episode.json
 ```
 
+To publish a real external/manual episode JSON:
+
+```sh
+node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json
+```
+
+The runner now performs hard participation checks. A round must have exactly
+five contestants, exactly one joke from each contestant, and exactly one
+scorecard from each contestant. Every scorecard must assess the four jokes that
+contestant did not write, exactly once each.
+
 ## Joke And Judging Standard
 
 The six seed terms are ingredients, not checklist requirements. Each contestant
@@ -75,7 +97,7 @@ as a first-person stand-up bit, with the comic speaking from the stage. The
 prompts discourage seed stuffing, long explanations, detached story summaries,
 and jokes that merely describe a strange premise.
 
-Scoring uses `2026-06-first-person-standup-v3`, a fixed scale intended to
+Scoring uses `2026-06-strict-standup-v4`, a fixed scale intended to
 remain useful as model humor improves:
 
 - `laugh` 40%: likely human laughter, not just cleverness.
@@ -86,8 +108,9 @@ remain useful as model humor improves:
 - `promptFit` 10%: first-person stand-up form and natural use of exactly two
   seed terms without checklist writing.
 
-Score anchors are deliberately stern: 5 is competent but forgettable, 7 is
-genuinely good, 8 is excellent, 9 is rare, and 10 should almost never appear.
+Score anchors are deliberately stern: 5 is competent but forgettable, 6 is a
+mild real joke, 7 is genuinely good, 8 requires a strong human-level turn, 9 is
+rare, and 10 should almost never appear.
 
 ## Seed Terms
 

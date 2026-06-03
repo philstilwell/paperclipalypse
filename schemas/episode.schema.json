@@ -8,6 +8,9 @@
     "createdAt": {
       "type": "string"
     },
+    "slug": {
+      "type": "string"
+    },
     "source": {
       "type": "string"
     },
@@ -42,6 +45,8 @@
         "properties": {
           "id": { "type": "string" },
           "displayName": { "type": "string" },
+          "provider": { "type": "string" },
+          "model": { "type": "string" },
           "style": { "type": "string" }
         }
       }
@@ -90,6 +95,8 @@
           "judgeName": { "type": "string" },
           "scores": {
             "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
             "items": {
               "type": "object",
               "required": [
