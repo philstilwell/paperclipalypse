@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { rubricForDisplay } from "./scoring.mjs";
 
 export function renderSite({ run, historyDir, siteDir }) {
   fs.mkdirSync(siteDir, { recursive: true });
@@ -151,6 +152,7 @@ function renderRun(run, options = {}) {
         </article>`;
     })
     .join("");
+  const rubric = run.rubric ? renderRubric(run.rubric) : "";
 
   return `
     <main>
@@ -173,7 +175,7 @@ function renderRun(run, options = {}) {
           </thead>
           <tbody>${rankingRows}</tbody>
         </table>
-      </section>
+      </section>${rubric}
       <section class="jokes">
         <div class="section-heading">
           <p class="eyebrow">Contestant Output</p>
@@ -189,6 +191,43 @@ function renderRun(run, options = {}) {
         <p>${escapeHtml(run.comicPanelPrompt)}</p>
       </section>
     </main>`;
+}
+
+function renderRubric(rubric = rubricForDisplay()) {
+  const fields = (rubric.fields || [])
+    .map(
+      (field) => `
+        <li>
+          <strong>${escapeHtml(field.label)}</strong>
+          <span>${Math.round(Number(field.weight || 0) * 100)}%</span>
+          <p>${escapeHtml(field.description)}</p>
+        </li>`
+    )
+    .join("");
+  const anchors = (rubric.anchors || [])
+    .map(
+      (anchor) => `
+        <li>
+          <strong>${escapeHtml(anchor.range)}</strong>
+          <span>${escapeHtml(anchor.label)}</span>
+        </li>`
+    )
+    .join("");
+
+  return `
+      <section class="rubric">
+        <div class="section-heading">
+          <p class="eyebrow">Scoring Standard</p>
+          <h2>Rubric</h2>
+        </div>
+        <div class="rubric-layout">
+          <div>
+            <p class="rubric-note">Fixed scale ${escapeHtml(rubric.version || "current")}: 5 is competent but forgettable, 7 is genuinely good, 8 is excellent, 9 is rare, and 10 should almost never appear.</p>
+            <ul class="rubric-fields">${fields}</ul>
+          </div>
+          <ol class="rubric-anchors">${anchors}</ol>
+        </div>
+      </section>`;
 }
 
 function renderEpisodeHeader(run, winner) {
@@ -560,6 +599,7 @@ main {
 
 .seed-terms,
 .scoreboard,
+.rubric,
 .jokes,
 .comic-brief,
 .archive {
@@ -642,6 +682,103 @@ td:nth-child(1),
 td:nth-child(4) {
   color: var(--ink);
   font-weight: 900;
+}
+
+.rubric-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  gap: 16px;
+}
+
+.rubric-note,
+.rubric-fields,
+.rubric-anchors {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.08), transparent 42%),
+    var(--panel);
+  box-shadow: var(--shadow);
+}
+
+.rubric-note {
+  color: var(--muted);
+  line-height: 1.55;
+  margin-bottom: 12px;
+  padding: 16px;
+}
+
+.rubric-fields,
+.rubric-anchors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.rubric-fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  overflow: hidden;
+}
+
+.rubric-fields li,
+.rubric-anchors li {
+  border-bottom: 1px solid var(--line-cool);
+  padding: 14px;
+}
+
+.rubric-fields li {
+  min-height: 128px;
+}
+
+.rubric-fields strong,
+.rubric-anchors strong {
+  color: var(--bone);
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.05rem;
+}
+
+.rubric-fields span {
+  color: var(--brass);
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 900;
+  margin: 4px 0 8px;
+}
+
+.rubric-fields p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+  margin-bottom: 0;
+}
+
+.rubric-anchors {
+  align-self: start;
+  overflow: hidden;
+}
+
+.rubric-anchors li {
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+
+.rubric-anchors li:last-child,
+.rubric-fields li:last-child {
+  border-bottom: 0;
+}
+
+.rubric-anchors strong {
+  color: var(--brass);
+  font-size: 0.96rem;
+}
+
+.rubric-anchors span {
+  color: var(--ink);
+  font-weight: 850;
 }
 
 .joke-grid {
@@ -782,6 +919,10 @@ td:nth-child(4) {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .rubric-layout {
+    grid-template-columns: 1fr;
+  }
+
   .episode {
     grid-template-columns: 1fr;
   }
@@ -836,6 +977,10 @@ td:nth-child(4) {
   }
 
   .seed-terms ul {
+    grid-template-columns: 1fr;
+  }
+
+  .rubric-fields {
     grid-template-columns: 1fr;
   }
 

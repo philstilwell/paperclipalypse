@@ -6,9 +6,10 @@ Paperclipalypse is an automated AI comedy tournament for
 Each run:
 
 1. Builds a random premise from a place, a person/archetype, and an element.
-2. Asks five configured AI contestants to write one clean joke.
+2. Asks five configured AI contestants to write one clean joke or very short
+   humorous story.
 3. Asks those same models to judge the jokes they did not write.
-4. Aggregates rubric scores.
+4. Aggregates strict weighted rubric scores.
 5. Publishes a static scoreboard and archive.
 
 The first version is intentionally small: no dependencies, no database, and no
@@ -64,6 +65,25 @@ To publish a Codex-generated episode JSON:
 ```sh
 node scripts/run-tournament.mjs --episode-file data/inbox/codex-episode.json
 ```
+
+## Joke And Judging Standard
+
+The six seed terms are ingredients, not checklist requirements. A strong joke
+can use only two or three of them if that produces a better human laugh. The
+prompts discourage seed stuffing, long explanations, and jokes that merely
+describe a strange premise.
+
+Scoring uses `2026-06-stern-comedy-v1`, a fixed scale intended to remain useful
+as model humor improves:
+
+- `laugh` 40%: likely human laughter, not just cleverness.
+- `surprise` 20%: an unexpected but satisfying turn.
+- `craft` 20%: clarity, rhythm, economy, escalation, and punchline placement.
+- `originality` 10%: fresh angle, image, and wording.
+- `promptFit` 10%: natural use of seed material without checklist writing.
+
+Score anchors are deliberately stern: 5 is competent but forgettable, 7 is
+genuinely good, 8 is excellent, 9 is rare, and 10 should almost never appear.
 
 ## Seed Terms
 

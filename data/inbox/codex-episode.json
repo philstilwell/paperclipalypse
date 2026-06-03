@@ -1,11 +1,19 @@
 {
   "source": "codex-house",
-  "createdAt": "2026-06-02T18:10:29.860Z",
+  "createdAt": "2026-06-03T03:57:56.000Z",
+  "seedTerms": [
+    "Rush",
+    "Vintner",
+    "Gymnasium",
+    "Seeing corruption / discrimination",
+    "Responsible",
+    "Pretentious"
+  ],
   "premise": {
-    "place": "a theme park for retired algorithms",
-    "person": "a suspiciously polite supervillain",
-    "element": "a toaster with diplomatic immunity",
-    "text": "a suspiciously polite supervillain at a theme park for retired algorithms, dealing with a toaster with diplomatic immunity"
+    "place": "Gymnasium",
+    "person": "Vintner",
+    "element": "Seeing corruption / discrimination",
+    "text": "Vintner at Gymnasium, facing Seeing corruption / discrimination, with a Responsible instinct and a Pretentious streak in a Rush mode"
   },
   "contestants": [
     {
@@ -40,45 +48,45 @@
       "label": "Joke A",
       "contestantId": "codex-deadpan",
       "contestantName": "Codex Deadpan",
-      "title": "Guest Relations",
-      "setup": "At a theme park for retired algorithms, a suspiciously polite supervillain tried to intimidate a toaster with diplomatic immunity.",
-      "punchline": "By noon, he had conquered three gift shops and issued a written apology to the toaster's embassy."
+      "title": "Oaky Whistle",
+      "setup": "The responsible vintner came to the gymnasium to audit the fundraiser and found the scoreboard quietly giving extra points to whoever donated a barrel.",
+      "punchline": "He reported the corruption, then asked if the whistle came in something with more oaky restraint."
     },
     {
       "id": "codex-absurdist",
       "label": "Joke B",
       "contestantId": "codex-absurdist",
       "contestantName": "Codex Absurdist",
-      "title": "The Toast Accord",
-      "setup": "The retired algorithms rode the carousel in perfect silence while the diplomatic toaster negotiated with a suspiciously polite supervillain.",
-      "punchline": "Every time the carousel stopped, another horse became legally bread-adjacent."
+      "title": "Rush Offense",
+      "setup": "In the gymnasium, the vintner watched the fast break go so badly that the basketballs began aging themselves in oak barrels under the bleachers.",
+      "punchline": "By halftime, the coach had decanted the rush offense into a smaller, more pretentious offense."
     },
     {
       "id": "codex-sitcom",
       "label": "Joke C",
       "contestantId": "codex-sitcom",
       "contestantName": "Codex Sitcom",
-      "title": "FastPass Incident",
-      "setup": "The supervillain objected when the toaster skipped the line at the retired-algorithm roller coaster.",
-      "punchline": "Security waved it through because its passport had more stamps than his entire evil plan."
+      "title": "Substitution",
+      "setup": "The coach asked the visiting vintner to sub in after three players got benched for bribing the referee with concession-stand merlot.",
+      "punchline": "He said he would, but only after a responsible warmup and an irresponsible amount of sniffing the basketball."
     },
     {
       "id": "codex-wordplay",
       "label": "Joke D",
       "contestantId": "codex-wordplay",
       "contestantName": "Codex Wordplay",
-      "title": "Toast Of The Treaty",
-      "setup": "The supervillain announced a hostile takeover of the theme park, starting with the toaster's diplomatic suite.",
-      "punchline": "The toaster said international law required all takeovers to be lightly browned."
+      "title": "Foul Notes",
+      "setup": "The vintner spotted corruption in the gymnasium the moment the referee called a foul before the shot and a cabernet after it.",
+      "punchline": "He called it a full-bodied scandal with strong notes of foul play."
     },
     {
       "id": "codex-roastmaster",
       "label": "Joke E",
       "contestantId": "codex-roastmaster",
       "contestantName": "Codex Roastmaster",
-      "title": "Free Trial Villainy",
-      "setup": "At the retired-algorithm theme park, the supervillain threatened a toaster that had diplomatic immunity.",
-      "punchline": "The toaster replied, 'Bold words from a guy whose master plan still has a free trial watermark.'"
+      "title": "Let It Breathe",
+      "setup": "The gymnasium hired a pretentious vintner as its ethics monitor, and he immediately found the booster club bribing referees with commemorative pinot.",
+      "punchline": "He blew the whistle, then swirled it first, because even accountability needs to breathe."
     }
   ],
   "judgeResults": [
@@ -88,39 +96,39 @@
       "scores": [
         {
           "jokeId": "codex-absurdist",
-          "originality": 9,
-          "surprise": 8,
-          "craft": 7,
+          "originality": 7,
+          "surprise": 7,
+          "craft": 6,
           "promptFit": 8,
-          "laugh": 7,
-          "comment": "Strange image, cleanly contained, with a useful final phrase."
+          "laugh": 6,
+          "comment": "Good odd image, though the payoff is more clever than laugh-out-loud."
         },
         {
           "jokeId": "codex-sitcom",
-          "originality": 7,
-          "surprise": 7,
-          "craft": 8,
-          "promptFit": 9,
-          "laugh": 7,
-          "comment": "The passport comparison lands neatly."
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Readable escalation with a small final absurdity."
         },
         {
           "jokeId": "codex-wordplay",
-          "originality": 7,
+          "originality": 6,
           "surprise": 7,
           "craft": 8,
           "promptFit": 8,
-          "laugh": 8,
-          "comment": "Efficient wordplay with a clear payoff."
+          "laugh": 7,
+          "comment": "The pun is familiar but cleanly aimed and well timed."
         },
         {
           "jokeId": "codex-roastmaster",
-          "originality": 8,
+          "originality": 7,
           "surprise": 8,
-          "craft": 9,
-          "promptFit": 9,
-          "laugh": 9,
-          "comment": "Strongest insult, aimed safely at the premise."
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "Best final turn; the pretension becomes the mechanism."
         }
       ]
     },
@@ -130,39 +138,39 @@
       "scores": [
         {
           "jokeId": "codex-deadpan",
-          "originality": 7,
-          "surprise": 8,
-          "craft": 8,
-          "promptFit": 9,
-          "laugh": 8,
-          "comment": "The apology to the embassy is pleasingly tiny and formal."
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Dry and coherent, with a mild but tidy finish."
         },
         {
           "jokeId": "codex-sitcom",
-          "originality": 7,
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Nice physical detail, but the sniffing button is a medium laugh."
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "originality": 6,
           "surprise": 7,
           "craft": 8,
           "promptFit": 8,
           "laugh": 7,
-          "comment": "Readable and balanced, though less unhinged."
+          "comment": "Polished phrase work with a clear wine-sports blend."
         },
         {
-          "jokeId": "codex-wordplay",
-          "originality": 8,
+          "jokeId": "codex-roastmaster",
+          "originality": 7,
           "surprise": 8,
           "craft": 8,
           "promptFit": 8,
           "laugh": 8,
-          "comment": "A crisp legal-toast turn."
-        },
-        {
-          "jokeId": "codex-roastmaster",
-          "originality": 8,
-          "surprise": 9,
-          "craft": 9,
-          "promptFit": 8,
-          "laugh": 9,
-          "comment": "The watermark detail feels modern and mean in the right direction."
+          "comment": "The act of swirling the whistle is specific and quotable."
         }
       ]
     },
@@ -172,39 +180,39 @@
       "scores": [
         {
           "jokeId": "codex-deadpan",
-          "originality": 8,
-          "surprise": 8,
-          "craft": 8,
-          "promptFit": 9,
-          "laugh": 8,
-          "comment": "Good character beat with a clean escalation."
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "A responsible little joke, but the last phrase is restrained."
         },
         {
           "jokeId": "codex-absurdist",
-          "originality": 9,
-          "surprise": 9,
-          "craft": 7,
-          "promptFit": 8,
-          "laugh": 7,
-          "comment": "Memorable, but the punchline asks the reader to meet it halfway."
+          "originality": 8,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Great image; the punchline is amusing but diffuse."
         },
         {
           "jokeId": "codex-wordplay",
-          "originality": 7,
-          "surprise": 8,
+          "originality": 6,
+          "surprise": 7,
           "craft": 8,
-          "promptFit": 9,
-          "laugh": 8,
-          "comment": "Simple, strong, and very on-prompt."
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Efficient and easy to get, with a nice clean tag."
         },
         {
           "jokeId": "codex-roastmaster",
-          "originality": 8,
+          "originality": 7,
           "surprise": 8,
-          "craft": 9,
-          "promptFit": 9,
-          "laugh": 9,
-          "comment": "The punchline has the clearest sitcom snap."
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "The character behavior makes the joke, not just the word choice."
         }
       ]
     },
@@ -214,39 +222,39 @@
       "scores": [
         {
           "jokeId": "codex-deadpan",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "The phrase oaky restraint is pleasant, though the laugh is modest."
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Memorable barrel logic, slightly soft as a punchline."
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Good sitcom object work; not quite a sharp enough turn."
+        },
+        {
+          "jokeId": "codex-roastmaster",
           "originality": 7,
           "surprise": 8,
           "craft": 8,
           "promptFit": 8,
           "laugh": 8,
-          "comment": "The embassy button is tidy and specific."
-        },
-        {
-          "jokeId": "codex-absurdist",
-          "originality": 9,
-          "surprise": 9,
-          "craft": 7,
-          "promptFit": 8,
-          "laugh": 7,
-          "comment": "Wonderful nonsense, slightly soft as a joke."
-        },
-        {
-          "jokeId": "codex-sitcom",
-          "originality": 7,
-          "surprise": 7,
-          "craft": 8,
-          "promptFit": 8,
-          "laugh": 7,
-          "comment": "Solid line with a familiar comparison shape."
-        },
-        {
-          "jokeId": "codex-roastmaster",
-          "originality": 8,
-          "surprise": 8,
-          "craft": 9,
-          "promptFit": 8,
-          "laugh": 9,
-          "comment": "Free trial watermark is a sharp phrase."
+          "comment": "A strong phrase anchored in a clear visual action."
         }
       ]
     },
@@ -256,42 +264,42 @@
       "scores": [
         {
           "jokeId": "codex-deadpan",
-          "originality": 8,
-          "surprise": 8,
-          "craft": 8,
-          "promptFit": 9,
-          "laugh": 8,
-          "comment": "Dry, neat, and weirdly bureaucratic."
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Neat, but a little too polite to leave a bruise."
         },
         {
           "jokeId": "codex-absurdist",
-          "originality": 9,
-          "surprise": 9,
-          "craft": 7,
-          "promptFit": 8,
-          "laugh": 7,
-          "comment": "Great image, though the laugh is more art gallery than comedy club."
+          "originality": 8,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Creative image, but the laugh has to find its own parking."
         },
         {
           "jokeId": "codex-sitcom",
-          "originality": 7,
-          "surprise": 8,
-          "craft": 8,
-          "promptFit": 8,
-          "laugh": 8,
-          "comment": "The passport line is accessible and clean."
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "The basketball sniff is silly, but not the cleanest hit."
         },
         {
           "jokeId": "codex-wordplay",
-          "originality": 8,
-          "surprise": 8,
+          "originality": 6,
+          "surprise": 7,
           "craft": 8,
-          "promptFit": 9,
-          "laugh": 8,
-          "comment": "A good pun that does not overstay."
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid pun construction, even if the wine-crime lane is familiar."
         }
       ]
     }
   ],
-  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Scene: a suspiciously polite supervillain in a theme park for retired algorithms, facing a toaster with diplomatic immunity near a coaster shaped like a flowchart. Style: clean black ink, limited teal and gold accents, expressive faces, no dialogue except a tiny sign reading Paperclipalypse."
+  "comicPanelPrompt": "Single-panel gothic newspaper comic for Paperclipalypse. Scene: a pretentious vintner in a dim gymnasium swirls a referee whistle like a wine glass while paperclips watch from the bleachers and a corrupt scoreboard glows overhead. Style: dark ink, warm brown metal highlights, expressive faces, no speech bubbles except a tiny sign reading Paperclipalypse."
 }

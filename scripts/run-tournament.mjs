@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 import { allowsPaidApi, envFlag, loadDotEnv, configuredModel } from "./lib/env.mjs";
 import { buildPremise, comicPanelPrompt, generationPrompt, judgingPrompt } from "./lib/prompt.mjs";
 import { callContestant, parseModelJson } from "./lib/providers.mjs";
-import { aggregateScores, deterministicDryScores, normalizeJudgeScores } from "./lib/scoring.mjs";
+import { aggregateScores, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
 import { seededRng } from "./lib/random.mjs";
 import { renderSite } from "./lib/site.mjs";
 import { buildPremiseFromSeedTerms, buildSeedTerms } from "./lib/seed-terms.mjs";
@@ -68,6 +68,7 @@ const run = {
     provider: contestant.provider || "codex-house",
     model: modelName(contestant)
   })),
+  rubric: rubricForDisplay(),
   jokes,
   judgeResults,
   rankings
@@ -225,6 +226,7 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
       provider: "codex-house",
       model: contestant.style || "Codex house style"
     })),
+    rubric: rubricForDisplay(),
     jokes: manualJokes,
     judgeResults: manualJudgeResults,
     rankings: manualRankings

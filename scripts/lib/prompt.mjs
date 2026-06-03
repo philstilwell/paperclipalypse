@@ -1,4 +1,5 @@
 import { pick } from "./random.mjs";
+import { rubricPromptText } from "./scoring.mjs";
 
 export function buildPremise(pools, rng) {
   const place = pick(pools.places, rng);
@@ -18,15 +19,20 @@ export function generationPrompt(premise) {
   return {
     system: [
       "You are a contestant in Paperclipalypse, an AI comedy tournament.",
-      "Write one original, publishable joke for a broad audience.",
+      "Write one original, publishable joke or very short humorous story for a broad human audience.",
+      "Your goal is the strongest laugh, not maximum seed compliance.",
+      "Use two or three seed terms naturally if that makes the joke better; it is fine to ignore the rest.",
+      "Do not cram in all six terms, explain the premise, or make a list.",
+      "Keep it concise: the full joke should usually be 35-90 words.",
       "Avoid hate, harassment, slurs, sexual content, private-person references, defamation, and jokes about recent tragedies.",
       "Do not explain the joke. Return JSON only."
     ].join(" "),
     user: [
       `Premise: ${premise.text}.`,
       seedText ? `Seed terms: ${seedText}.` : "",
+      "The seed terms are ingredients, not requirements. Prefer the funniest two or three.",
       "Return this JSON shape exactly:",
-      "{\"title\":\"short title\",\"setup\":\"one-sentence setup\",\"punchline\":\"one-sentence punchline\"}"
+      "{\"title\":\"short title\",\"setup\":\"one to three short sentences\",\"punchline\":\"one final sentence\"}"
     ].filter(Boolean).join("\n")
   };
 }
@@ -37,13 +43,13 @@ export function judgingPrompt(premise, jokes) {
     system: [
       "You are judging a Paperclipalypse AI comedy tournament.",
       "Score only the jokes provided. Do not infer or mention which model wrote a joke.",
-      "Use 1 to 10 integer scores. Be fair, concise, and avoid self-referential meta commentary.",
+      "Use 1 to 10 integer scores. Be fair, strict, concise, and avoid self-referential meta commentary.",
       "Return JSON only."
     ].join(" "),
     user: [
       `Premise: ${premise.text}.`,
       seedText ? `Seed terms: ${seedText}.` : "",
-      "Rubric fields: originality, surprise, craft, promptFit, laugh.",
+      rubricPromptText(),
       "Jokes to judge:",
       JSON.stringify(
         jokes.map((joke) => ({

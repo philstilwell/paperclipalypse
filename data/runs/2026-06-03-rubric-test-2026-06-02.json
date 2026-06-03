@@ -1,0 +1,621 @@
+{
+  "version": 1,
+  "slug": "2026-06-03-rubric-test-2026-06-02",
+  "seed": "rubric-test-2026-06-02",
+  "dryRun": false,
+  "source": "codex-house",
+  "createdAt": "2026-06-03T03:57:56.000Z",
+  "seedTerms": [
+    "Rush",
+    "Vintner",
+    "Gymnasium",
+    "Seeing corruption / discrimination",
+    "Responsible",
+    "Pretentious"
+  ],
+  "premise": {
+    "place": "Gymnasium",
+    "person": "Vintner",
+    "element": "Seeing corruption / discrimination",
+    "text": "Vintner at Gymnasium, facing Seeing corruption / discrimination, with a Responsible instinct and a Pretentious streak in a Rush mode",
+    "seedTerms": [
+      "Rush",
+      "Vintner",
+      "Gymnasium",
+      "Seeing corruption / discrimination",
+      "Responsible",
+      "Pretentious"
+    ]
+  },
+  "contestants": [
+    {
+      "id": "codex-deadpan",
+      "displayName": "Codex Deadpan",
+      "provider": "codex-house",
+      "model": "dry, compact, understated jokes with a hard final turn"
+    },
+    {
+      "id": "codex-absurdist",
+      "displayName": "Codex Absurdist",
+      "provider": "codex-house",
+      "model": "surreal but readable jokes with strange concrete images"
+    },
+    {
+      "id": "codex-sitcom",
+      "displayName": "Codex Sitcom",
+      "provider": "codex-house",
+      "model": "character-forward jokes with setup, escalation, and clean punchline"
+    },
+    {
+      "id": "codex-wordplay",
+      "displayName": "Codex Wordplay",
+      "provider": "codex-house",
+      "model": "language-driven jokes, reversals, and neat phrase twists"
+    },
+    {
+      "id": "codex-roastmaster",
+      "displayName": "Codex Roastmaster",
+      "provider": "codex-house",
+      "model": "light roast energy aimed at objects and situations, not people"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-stern-comedy-v1",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, rhythm, clarity, escalation, and clean final placement."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, and wording."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural use of the seed material without cramming or checklist writing."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, or confusing."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn a real laugh."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "Would fit a curated humor page; most readers can see why it is funny."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn and clean construction."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare, replayable, and clearly better than normal good AI humor."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most contests should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "codex-deadpan",
+      "label": "Joke A",
+      "contestantId": "codex-deadpan",
+      "contestantName": "Codex Deadpan",
+      "model": "codex-house",
+      "title": "Oaky Whistle",
+      "setup": "The responsible vintner came to the gymnasium to audit the fundraiser and found the scoreboard quietly giving extra points to whoever donated a barrel.",
+      "punchline": "He reported the corruption, then asked if the whistle came in something with more oaky restraint.",
+      "text": "The responsible vintner came to the gymnasium to audit the fundraiser and found the scoreboard quietly giving extra points to whoever donated a barrel. He reported the corruption, then asked if the whistle came in something with more oaky restraint."
+    },
+    {
+      "id": "codex-absurdist",
+      "label": "Joke B",
+      "contestantId": "codex-absurdist",
+      "contestantName": "Codex Absurdist",
+      "model": "codex-house",
+      "title": "Rush Offense",
+      "setup": "In the gymnasium, the vintner watched the fast break go so badly that the basketballs began aging themselves in oak barrels under the bleachers.",
+      "punchline": "By halftime, the coach had decanted the rush offense into a smaller, more pretentious offense.",
+      "text": "In the gymnasium, the vintner watched the fast break go so badly that the basketballs began aging themselves in oak barrels under the bleachers. By halftime, the coach had decanted the rush offense into a smaller, more pretentious offense."
+    },
+    {
+      "id": "codex-sitcom",
+      "label": "Joke C",
+      "contestantId": "codex-sitcom",
+      "contestantName": "Codex Sitcom",
+      "model": "codex-house",
+      "title": "Substitution",
+      "setup": "The coach asked the visiting vintner to sub in after three players got benched for bribing the referee with concession-stand merlot.",
+      "punchline": "He said he would, but only after a responsible warmup and an irresponsible amount of sniffing the basketball.",
+      "text": "The coach asked the visiting vintner to sub in after three players got benched for bribing the referee with concession-stand merlot. He said he would, but only after a responsible warmup and an irresponsible amount of sniffing the basketball."
+    },
+    {
+      "id": "codex-wordplay",
+      "label": "Joke D",
+      "contestantId": "codex-wordplay",
+      "contestantName": "Codex Wordplay",
+      "model": "codex-house",
+      "title": "Foul Notes",
+      "setup": "The vintner spotted corruption in the gymnasium the moment the referee called a foul before the shot and a cabernet after it.",
+      "punchline": "He called it a full-bodied scandal with strong notes of foul play.",
+      "text": "The vintner spotted corruption in the gymnasium the moment the referee called a foul before the shot and a cabernet after it. He called it a full-bodied scandal with strong notes of foul play."
+    },
+    {
+      "id": "codex-roastmaster",
+      "label": "Joke E",
+      "contestantId": "codex-roastmaster",
+      "contestantName": "Codex Roastmaster",
+      "model": "codex-house",
+      "title": "Let It Breathe",
+      "setup": "The gymnasium hired a pretentious vintner as its ethics monitor, and he immediately found the booster club bribing referees with commemorative pinot.",
+      "punchline": "He blew the whistle, then swirled it first, because even accountability needs to breathe.",
+      "text": "The gymnasium hired a pretentious vintner as its ethics monitor, and he immediately found the booster club bribing referees with commemorative pinot. He blew the whistle, then swirled it first, because even accountability needs to breathe."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "codex-deadpan",
+      "judgeName": "Codex Deadpan",
+      "scores": [
+        {
+          "jokeId": "codex-absurdist",
+          "comment": "Good odd image, though the payoff is more clever than laugh-out-loud.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "comment": "Readable escalation with a small final absurdity.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "comment": "The pun is familiar but cleanly aimed and well timed.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "comment": "Best final turn; the pretension becomes the mechanism.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.9
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-absurdist",
+      "judgeName": "Codex Absurdist",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "comment": "Dry and coherent, with a mild but tidy finish.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "comment": "Nice physical detail, but the sniffing button is a medium laugh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "comment": "Polished phrase work with a clear wine-sports blend.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "comment": "The act of swirling the whistle is specific and quotable.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.9
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-sitcom",
+      "judgeName": "Codex Sitcom",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "comment": "A responsible little joke, but the last phrase is restrained.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "comment": "Great image; the punchline is amusing but diffuse.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 8,
+          "promptFit": 7,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "comment": "Efficient and easy to get, with a nice clean tag.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "comment": "The character behavior makes the joke, not just the word choice.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.9
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-wordplay",
+      "judgeName": "Codex Wordplay",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "comment": "The phrase oaky restraint is pleasant, though the laugh is modest.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "comment": "Memorable barrel logic, slightly soft as a punchline.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 8,
+          "promptFit": 7,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "comment": "Good sitcom object work; not quite a sharp enough turn.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "codex-roastmaster",
+          "comment": "A strong phrase anchored in a clear visual action.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.9
+        }
+      ]
+    },
+    {
+      "judgeId": "codex-roastmaster",
+      "judgeName": "Codex Roastmaster",
+      "scores": [
+        {
+          "jokeId": "codex-deadpan",
+          "comment": "Neat, but a little too polite to leave a bruise.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "codex-absurdist",
+          "comment": "Creative image, but the laugh has to find its own parking.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 8,
+          "promptFit": 7,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "codex-sitcom",
+          "comment": "The basketball sniff is silly, but not the cleanest hit.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "codex-wordplay",
+          "comment": "Solid pun construction, even if the wine-crime lane is familiar.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "codex-roastmaster",
+      "label": "Joke E",
+      "contestantId": "codex-roastmaster",
+      "contestantName": "Codex Roastmaster",
+      "score": 7.9,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 8,
+        "surprise": 8,
+        "craft": 8,
+        "originality": 7,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "codex-deadpan",
+          "judgeName": "Codex Deadpan",
+          "comment": "Best final turn; the pretension becomes the mechanism."
+        },
+        {
+          "judgeId": "codex-absurdist",
+          "judgeName": "Codex Absurdist",
+          "comment": "The act of swirling the whistle is specific and quotable."
+        },
+        {
+          "judgeId": "codex-sitcom",
+          "judgeName": "Codex Sitcom",
+          "comment": "The character behavior makes the joke, not just the word choice."
+        },
+        {
+          "judgeId": "codex-wordplay",
+          "judgeName": "Codex Wordplay",
+          "comment": "A strong phrase anchored in a clear visual action."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "codex-wordplay",
+      "label": "Joke D",
+      "contestantId": "codex-wordplay",
+      "contestantName": "Codex Wordplay",
+      "score": 7.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 8,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "codex-deadpan",
+          "judgeName": "Codex Deadpan",
+          "comment": "The pun is familiar but cleanly aimed and well timed."
+        },
+        {
+          "judgeId": "codex-absurdist",
+          "judgeName": "Codex Absurdist",
+          "comment": "Polished phrase work with a clear wine-sports blend."
+        },
+        {
+          "judgeId": "codex-sitcom",
+          "judgeName": "Codex Sitcom",
+          "comment": "Efficient and easy to get, with a nice clean tag."
+        },
+        {
+          "judgeId": "codex-roastmaster",
+          "judgeName": "Codex Roastmaster",
+          "comment": "Solid pun construction, even if the wine-crime lane is familiar."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "codex-absurdist",
+      "label": "Joke B",
+      "contestantId": "codex-absurdist",
+      "contestantName": "Codex Absurdist",
+      "score": 6.5,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 7,
+        "craft": 6,
+        "originality": 7.8,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "codex-deadpan",
+          "judgeName": "Codex Deadpan",
+          "comment": "Good odd image, though the payoff is more clever than laugh-out-loud."
+        },
+        {
+          "judgeId": "codex-sitcom",
+          "judgeName": "Codex Sitcom",
+          "comment": "Great image; the punchline is amusing but diffuse."
+        },
+        {
+          "judgeId": "codex-wordplay",
+          "judgeName": "Codex Wordplay",
+          "comment": "Memorable barrel logic, slightly soft as a punchline."
+        },
+        {
+          "judgeId": "codex-roastmaster",
+          "judgeName": "Codex Roastmaster",
+          "comment": "Creative image, but the laugh has to find its own parking."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "codex-sitcom",
+      "label": "Joke C",
+      "contestantId": "codex-sitcom",
+      "contestantName": "Codex Sitcom",
+      "score": 6.5,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 7
+      },
+      "comments": [
+        {
+          "judgeId": "codex-deadpan",
+          "judgeName": "Codex Deadpan",
+          "comment": "Readable escalation with a small final absurdity."
+        },
+        {
+          "judgeId": "codex-absurdist",
+          "judgeName": "Codex Absurdist",
+          "comment": "Nice physical detail, but the sniffing button is a medium laugh."
+        },
+        {
+          "judgeId": "codex-wordplay",
+          "judgeName": "Codex Wordplay",
+          "comment": "Good sitcom object work; not quite a sharp enough turn."
+        },
+        {
+          "judgeId": "codex-roastmaster",
+          "judgeName": "Codex Roastmaster",
+          "comment": "The basketball sniff is silly, but not the cleanest hit."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "codex-deadpan",
+      "label": "Joke A",
+      "contestantId": "codex-deadpan",
+      "contestantName": "Codex Deadpan",
+      "score": 6.4,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "codex-absurdist",
+          "judgeName": "Codex Absurdist",
+          "comment": "Dry and coherent, with a mild but tidy finish."
+        },
+        {
+          "judgeId": "codex-sitcom",
+          "judgeName": "Codex Sitcom",
+          "comment": "A responsible little joke, but the last phrase is restrained."
+        },
+        {
+          "judgeId": "codex-wordplay",
+          "judgeName": "Codex Wordplay",
+          "comment": "The phrase oaky restraint is pleasant, though the laugh is modest."
+        },
+        {
+          "judgeId": "codex-roastmaster",
+          "judgeName": "Codex Roastmaster",
+          "comment": "Neat, but a little too polite to leave a bruise."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "comicPanelPrompt": "Single-panel gothic newspaper comic for Paperclipalypse. Scene: a pretentious vintner in a dim gymnasium swirls a referee whistle like a wine glass while paperclips watch from the bleachers and a corrupt scoreboard glows overhead. Style: dark ink, warm brown metal highlights, expressive faces, no speech bubbles except a tiny sign reading Paperclipalypse."
+}

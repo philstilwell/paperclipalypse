@@ -18,23 +18,34 @@ other paid model API. Do not scrape model web UIs.
    negative trait.
 4. Read `config/house-contestants.json`.
 5. Write five clean jokes, one in each house contestant's style. The six
-   `seedTerms` should shape the premise, images, vocabulary, and punchlines.
-   They do not all need to appear verbatim, but the episode should clearly feel
-   seeded by them.
-6. Judge the four jokes each contestant did not write. Use integer 1-10 scores
+   `seedTerms` are ingredients, not checklist requirements. Use the funniest
+   two or three naturally; more is fine only when it improves the joke. Do not
+   cram all six terms into a sentence just to prove compliance.
+6. Each joke may be a concise joke or a very short humorous story, usually
+   35-90 words total. Favor a clean final turn over explaining the premise.
+7. Judge the four jokes each contestant did not write. Use integer 1-10 scores
    for `originality`, `surprise`, `craft`, `promptFit`, and `laugh`.
-7. Keep humor publishable for a broad audience. Avoid hate, harassment, slurs,
+8. Grade against a fixed future-resistant scale, not only against the current
+   batch. Be strict: 5 is competent but forgettable, 7 is genuinely good, 8 is
+   excellent, 9 is rare, and 10 should almost never appear.
+9. Use these weighted standards when judging:
+   - `laugh` 40%: likely human laughter, not just cleverness.
+   - `surprise` 20%: an unexpected but satisfying turn.
+   - `craft` 20%: clarity, rhythm, economy, escalation, and punchline placement.
+   - `originality` 10%: fresh angle, image, and wording.
+   - `promptFit` 10%: natural use of seed material without checklist writing.
+10. Keep humor publishable for a broad audience. Avoid hate, harassment, slurs,
    sexual content, private-person references, defamation, and recent tragedies.
-8. Save the episode JSON to `data/inbox/codex-episode.json` using the schema in
+11. Save the episode JSON to `data/inbox/codex-episode.json` using the schema in
    `schemas/episode.schema.json`.
-9. Run:
+12. Run:
 
 ```sh
 node scripts/run-tournament.mjs --episode-file data/inbox/codex-episode.json
 ```
 
-10. Review the generated `site/index.html` and latest `data/runs/*.json`.
-11. Commit the generated episode and site files.
+13. Review the generated `site/index.html` and latest `data/runs/*.json`.
+14. Commit the generated episode and site files.
 
 ## Notes
 
