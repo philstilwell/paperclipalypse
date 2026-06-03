@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-06-03T12:59:12Z",
+  "source": "manual-external",
+  "seedTerms": [
+    "Herding",
+    "Massage / Physical Therapist",
+    "Park",
+    "Running out of critical supplies",
+    "Just",
+    "Foolish"
+  ],
+  "premise": {
+    "place": "Park",
+    "person": "Massage / Physical Therapist",
+    "element": "Running out of critical supplies",
+    "text": "Massage / Physical Therapist at Park, facing Running out of critical supplies, with a Just instinct and a Foolish streak in a Herding mode"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "ChatGPT",
+      "provider": "manual-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "manual-web",
+      "model": "Claude Sonnet 4.6 Low web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "manual-web",
+      "model": "Gemini web"
+    },
+    {
+      "id": "xai",
+      "displayName": "Grok",
+      "provider": "manual-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "ChatGPT",
+      "model": "ChatGPT web",
+      "title": "Consent Cardio",
+      "seedTermsUsed": [
+        "Park",
+        "Foolish"
+      ],
+      "joke": "I set up at the Park offering free leg stretches to joggers, because I thought, “Everybody looks tense.” It was a Foolish plan. The first guy I approached started sprinting, so I sprinted after him yelling, “I can fix that hamstring!” That’s when I learned wellness becomes a crime at about twelve miles an hour.",
+      "text": "I set up at the Park offering free leg stretches to joggers, because I thought, “Everybody looks tense.” It was a Foolish plan. The first guy I approached started sprinting, so I sprinted after him yelling, “I can fix that hamstring!” That’s when I learned wellness becomes a crime at about twelve miles an hour.",
+      "setup": "I set up at the Park offering free leg stretches to joggers, because I thought, “Everybody looks tense.” It was a Foolish plan.",
+      "punchline": "The first guy I approached started sprinting, so I sprinted after him yelling, “I can fix that hamstring!” That’s when I learned wellness becomes a crime at about twelve miles an hour."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Claude Sonnet 4.6 Low web",
+      "title": "Goose Protocol",
+      "seedTermsUsed": [
+        "Park",
+        "Herding"
+      ],
+      "joke": "I'm a massage therapist who sets up in the Park on weekends. Sounds peaceful — it is not. Last Sunday I spent forty minutes herding a client's hamstring back where it belongs, and another twenty explaining to a golden retriever that the table is not a buffet. The dog tipped better.",
+      "text": "I'm a massage therapist who sets up in the Park on weekends. Sounds peaceful — it is not. Last Sunday I spent forty minutes herding a client's hamstring back where it belongs, and another twenty explaining to a golden retriever that the table is not a buffet. The dog tipped better.",
+      "setup": "I'm a massage therapist who sets up in the Park on weekends. Sounds peaceful — it is not.",
+      "punchline": "Last Sunday I spent forty minutes herding a client's hamstring back where it belongs, and another twenty explaining to a golden retriever that the table is not a buffet. The dog tipped better."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Gemini web",
+      "title": "Collie Instincts",
+      "seedTermsUsed": [
+        "Park",
+        "Herding"
+      ],
+      "joke": "I took my new rescue collie to the local park. He absolutely refuses to fetch. His whole life revolves around herding. It sounds adorable, right up until I have to explain to a furious mother why her four toddlers are seamlessly corralled into a tight pentagon by the swingset.",
+      "text": "I took my new rescue collie to the local park. He absolutely refuses to fetch. His whole life revolves around herding. It sounds adorable, right up until I have to explain to a furious mother why her four toddlers are seamlessly corralled into a tight pentagon by the swingset.",
+      "setup": "I took my new rescue collie to the local park. He absolutely refuses to fetch.",
+      "punchline": "His whole life revolves around herding. It sounds adorable, right up until I have to explain to a furious mother why her four toddlers are seamlessly corralled into a tight pentagon by the swingset."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "Grok",
+      "model": "Grok Fast web",
+      "title": "Parkside Therapy",
+      "seedTermsUsed": [
+        "Massage / Physical Therapist",
+        "Park"
+      ],
+      "joke": "Folks, I work as a Massage / Physical Therapist at the Park, and let me tell you it's not the zen paradise I pictured. Last week this stressed executive lies down on my portable table and right as I hit the knot in his back, a frisbee smacks him in the head. He bolts up yelling, and I just shrug and say, 'That's nature's way of saying you need deeper work.'",
+      "text": "Folks, I work as a Massage / Physical Therapist at the Park, and let me tell you it's not the zen paradise I pictured. Last week this stressed executive lies down on my portable table and right as I hit the knot in his back, a frisbee smacks him in the head. He bolts up yelling, and I just shrug and say, 'That's nature's way of saying you need deeper work.'",
+      "setup": "Folks, I work as a Massage / Physical Therapist at the Park, and let me tell you it's not the zen paradise I pictured.",
+      "punchline": "Last week this stressed executive lies down on my portable table and right as I hit the knot in his back, a frisbee smacks him in the head. He bolts up yelling, and I just shrug and say, 'That's nature's way of saying you need deeper work.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Hands Full",
+      "seedTermsUsed": [
+        "Herding",
+        "Massage / Physical Therapist"
+      ],
+      "joke": "As a Massage / Physical Therapist, I never expected my day to turn into full-on Herding. One client brought three friends who all lined up behind me like I was leading a wellness parade. I tried to stay professional, but nothing kills your authority faster than realizing you’re basically the world’s calmest sheepdog with a folding table.",
+      "text": "As a Massage / Physical Therapist, I never expected my day to turn into full-on Herding. One client brought three friends who all lined up behind me like I was leading a wellness parade. I tried to stay professional, but nothing kills your authority faster than realizing you’re basically the world’s calmest sheepdog with a folding table.",
+      "setup": "As a Massage / Physical Therapist, I never expected my day to turn into full-on Herding.",
+      "punchline": "One client brought three friends who all lined up behind me like I was leading a wellness parade. I tried to stay professional, but nothing kills your authority faster than realizing you’re basically the world’s calmest sheepdog with a folding table."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clear stage setup and a workable dog tag, but the hamstring-herding image is slightly blurry and the final line feels familiar."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "Best of the set: clean premise, strong escalation, and the toddlers-in-a-pentagon image gives it a satisfying final laugh."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 5,
+          "laugh": 4,
+          "comment": "The seed phrase is awkwardly inserted, and the frisbee/deeper-work punchline feels like a predictable restatement of the setup."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "A coherent and mildly funny image with decent wording, though the setup is a bit premise-direct and the sheepdog turn is more cute than surprising."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid escalation and the 'twelve miles an hour' line is a genuine payoff with good specificity. The setup is a touch slow but the punchline earns its place."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "The pentagon detail is the joke's engine — specific, visual, and unexpected. Doesn't need the premise context to work, which is the mark of a clean standalone."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Frisbee escalation is functional but the punchline is a therapist-speak callback that sounds like a closer without quite closing."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "World's calmest sheepdog with a folding table is a genuinely good image and saves the joke, though the setup is slightly generic."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 6,
+          "laugh": 6,
+          "comment": "Good escalation. Clear punchline pacing."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "Competent structure. Standard misdirection punchline."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 3,
+          "laugh": 4,
+          "comment": "Slashed seed term breaks natural rhythm."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 3,
+          "laugh": 4,
+          "comment": "Unnatural slashed term. Mild imagery."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid chase visual with good escalation and premise tie-in."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Dog tipping punch lands; herding hamstring is a fun twist."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 6,
+          "comment": "Cute herding image but drifts from massage therapist premise."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Sheepdog analogy works but feels a bit safe overall."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Fun chase visual and a clean punch, though the turn is predictable."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "Pleasant imagery but the herding/hamstring bit feels more cute than funny."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 5,
+          "comment": "Good visual and a tidy punch, but not in first-person stand-up form tied to the premise."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clear stage setup but the frisbee punchline is expected and doesn’t escalate much."
+        }
+      ]
+    }
+  ]
+}
