@@ -200,10 +200,11 @@ h1 {
   font-size: 5.2rem;
   line-height: 0.88;
   margin-bottom: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
   text-shadow:
     0 2px 0 rgba(0, 0, 0, 0.74),
     0 0 32px rgba(255, 48, 72, 0.22);
+  white-space: nowrap;
 }
 
 .hero h2 {
@@ -826,8 +827,8 @@ td:nth-child(4) {
   }
 
   h1 {
-    font-size: 2.35rem;
-    line-height: 0.96;
+    font-size: 2rem;
+    line-height: 1;
   }
 
   .hero {
@@ -929,5 +930,11 @@ td:nth-child(4) {
   th,
   td {
     padding: 10px 8px;
+  }
+}
+
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1.72rem;
   }
 }
