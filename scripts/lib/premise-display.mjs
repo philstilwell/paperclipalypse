@@ -28,10 +28,10 @@ export function displayPremiseFromSeedTerms(seedTerms = []) {
   const role = displayOccupation(occupation);
   const problem = displayConflict(conflict);
   const setting = displayLocation(location);
+  const subject = [traits, role].filter(Boolean).join(" ");
   const description = [
-    "A",
-    traits,
-    role,
+    indefiniteArticle(subject),
+    subject,
     "faces",
     problem,
     setting
@@ -87,7 +87,16 @@ function displayLocation(value) {
     return "";
   }
 
-  return `in ${withDefiniteArticle(lowerPhrase(text))}`;
+  const location = lowerPhrase(text);
+  const preposition = /\b(party|festival|conference|meeting|wedding|funeral)\b/.test(location)
+    ? "at"
+    : "in";
+
+  return `${preposition} ${withDefiniteArticle(location)}`;
+}
+
+function indefiniteArticle(text) {
+  return /^[aeiou]/i.test(cleanDisplayText(text)) ? "An" : "A";
 }
 
 function withDefiniteArticle(text) {

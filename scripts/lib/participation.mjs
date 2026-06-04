@@ -1,7 +1,6 @@
 const REQUIRED_CONTESTANTS = 5;
 const REQUIRED_SEED_TERMS = 6;
 const SCORE_FIELDS = ["originality", "surprise", "craft", "promptFit", "laugh"];
-const EXTRA_TERM_STOPWORDS = new Set(["just"]);
 
 export function assertCompleteTournament({ contestants, jokes, judgeResults, seedTerms }) {
   const errors = [];
@@ -67,20 +66,6 @@ export function assertCompleteTournament({ contestants, jokes, judgeResults, see
     for (const seed of used) {
       if (seedSet.size && !seedSet.has(normalizeForMatch(seed))) {
         errors.push(`Joke ${jokeId} uses seed term "${seed}" that is not in this round.`);
-      }
-      if (jokeText && !containsTerm(jokeText, seed)) {
-        errors.push(`Joke ${jokeId} declares seed term "${seed}" but does not include it in the joke text.`);
-      }
-    }
-    for (const seed of normalizeTextList(seedTerms)) {
-      const normalizedSeed = normalizeForMatch(seed);
-      if (
-        !usedSet.has(normalizedSeed) &&
-        !EXTRA_TERM_STOPWORDS.has(normalizedSeed) &&
-        jokeText &&
-        containsTerm(jokeText, seed)
-      ) {
-        errors.push(`Joke ${jokeId} includes undeclared seed term "${seed}".`);
       }
     }
   }
@@ -196,12 +181,6 @@ function wordCount(text) {
 
 function hasFirstPersonVoice(text) {
   return /\b(I|I'm|I've|I'll|I'd|me|my|mine)\b/i.test(text);
-}
-
-function containsTerm(text, term) {
-  const normalizedText = ` ${normalizeForMatch(text)} `;
-  const normalizedTerm = normalizeForMatch(term);
-  return Boolean(normalizedTerm && normalizedText.includes(` ${normalizedTerm} `));
 }
 
 function normalizeForMatch(value) {

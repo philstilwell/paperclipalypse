@@ -113,6 +113,11 @@ as a first-person stand-up bit, with the comic speaking from the stage. The
 prompts discourage seed stuffing, long explanations, detached story summaries,
 and jokes that merely describe a strange premise.
 
+The runner records the declared seed terms but does not rewrite or disqualify
+otherwise complete jokes for prompt mistakes. If a contestant misses, paraphrases,
+or leaks seed terms, the episode can still be published, but judges are
+instructed to penalize prompt fit sharply.
+
 Scoring uses `2026-06-strict-standup-v4`, a fixed scale intended to
 remain useful as model humor improves:
 

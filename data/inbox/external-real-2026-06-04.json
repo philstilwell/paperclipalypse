@@ -1,0 +1,336 @@
+{
+  "createdAt": "2026-06-04T01:11:44Z",
+  "seed": "external-real-2026-06-04",
+  "source": "manual-external",
+  "seedTerms": [
+    "Hardboiled and Noir",
+    "Bee-Keeper",
+    "Block Party",
+    "A fear or phobia rearing its head",
+    "Appreciative",
+    "Extravagant"
+  ],
+  "premise": {
+    "place": "Block Party",
+    "person": "Bee-Keeper",
+    "element": "A fear or phobia rearing its head",
+    "text": "Bee-Keeper at Block Party, facing A fear or phobia rearing its head, with a Appreciative instinct and a Extravagant streak in a Hardboiled and Noir mode",
+    "displayText": "An appreciative, extravagant bee-keeper faces a fear or phobia rearing its head at the block party."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "ChatGPT",
+      "provider": "manual-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "manual-web",
+      "model": "Claude Sonnet 4.6 Low web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "manual-web",
+      "model": "Gemini web"
+    },
+    {
+      "id": "xai",
+      "displayName": "Grok",
+      "provider": "manual-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "ChatGPT",
+      "model": "ChatGPT web",
+      "title": "Queen's Driver",
+      "seedTermsUsed": [
+        "Bee-Keeper",
+        "Block Party"
+      ],
+      "joke": "I got invited as the Bee-Keeper to a Block Party, which sounds community-minded until you realize my entire contribution was 40,000 tiny guests who don't understand RSVP. Everyone loved the honey samples at first. Then one guy yelled, \"Who's in charge of these bees?\" and I said, \"Technically, the queen. I'm just her nervous Uber driver.\"",
+      "text": "I got invited as the Bee-Keeper to a Block Party, which sounds community-minded until you realize my entire contribution was 40,000 tiny guests who don't understand RSVP. Everyone loved the honey samples at first. Then one guy yelled, \"Who's in charge of these bees?\" and I said, \"Technically, the queen. I'm just her nervous Uber driver.\""
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Claude Sonnet 4.6 Low web",
+      "title": "Noir in the Suburbs",
+      "seedTermsUsed": [
+        "Hardboiled and Noir",
+        "Block Party"
+      ],
+      "joke": "I showed up to the block party wearing all black, fedora pulled low, nursing a lemonade like it owed me money. Kids are doing the Macarena. Janet's crying about her potato salad. And I'm standing there thinking - this is it. This is the darkness at the edge of the cul-de-sac. Nobody gets out of a block party clean.",
+      "text": "I showed up to the block party wearing all black, fedora pulled low, nursing a lemonade like it owed me money. Kids are doing the Macarena. Janet's crying about her potato salad. And I'm standing there thinking - this is it. This is the darkness at the edge of the cul-de-sac. Nobody gets out of a block party clean."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Gemini web",
+      "title": "The Royal Treatment",
+      "seedTermsUsed": [
+        "Block Party",
+        "Bee-Keeper"
+      ],
+      "joke": "I showed up to our neighborhood Block Party straight from work. Big mistake. When you introduce yourself as a Bee-Keeper, people picture a gentle hipster with little jars of local honey. They don't expect a sweating man in a white hazmat suit holding a vibrating box of sixty thousand venomous roommates, yelling, 'Nobody move, I dropped the queen!'",
+      "text": "I showed up to our neighborhood Block Party straight from work. Big mistake. When you introduce yourself as a Bee-Keeper, people picture a gentle hipster with little jars of local honey. They don't expect a sweating man in a white hazmat suit holding a vibrating box of sixty thousand venomous roommates, yelling, 'Nobody move, I dropped the queen!'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "Grok",
+      "model": "Grok Fast web",
+      "title": "Bee-Keeper Block Party",
+      "seedTermsUsed": [
+        "Bee-Keeper",
+        "Block Party"
+      ],
+      "joke": "So I get to the block party dressed as the bee-keeper - full suit, gloves, veil, the works. Figured I'd bring fresh honey, be the hero of the grill. Neighbors are loving it until one bee slips out and heads straight for the potato salad. Suddenly I'm not the fun guy anymore. I'm the guy who turned the whole block party into a screaming stampede!",
+      "text": "So I get to the block party dressed as the bee-keeper - full suit, gloves, veil, the works. Figured I'd bring fresh honey, be the hero of the grill. Neighbors are loving it until one bee slips out and heads straight for the potato salad. Suddenly I'm not the fun guy anymore. I'm the guy who turned the whole block party into a screaming stampede!"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Stung by Style",
+      "seedTermsUsed": [
+        "Bee-Keeper",
+        "Extravagant"
+      ],
+      "joke": "I showed up to a block party dressed like a full-on Bee-Keeper, and everyone thought I was making some bold fashion statement. Truth is, I just panic around anything that buzzes. But I leaned into it - strutted around like I was debuting a new couture line. Nothing says confidence like admitting your fear while wearing a mesh helmet and pretending it's Extravagant.",
+      "text": "I showed up to a block party dressed like a full-on Bee-Keeper, and everyone thought I was making some bold fashion statement. Truth is, I just panic around anything that buzzes. But I leaned into it - strutted around like I was debuting a new couture line. Nothing says confidence like admitting your fear while wearing a mesh helmet and pretending it's Extravagant."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "ChatGPT",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 4,
+          "laugh": 7,
+          "comment": "Strong noir suburban contrast and a clean final line, but only one seed term appears naturally."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Clear stage setup, concrete escalation, and the dropped-queen line carries the laugh well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Understandable and on prompt, but the stampede payoff is predictable and a bit generic."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 4,
+          "laugh": 5,
+          "comment": "Readable premise, but it uses extra seed material in the joke text and the ending explains more than it lands."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "'Nervous Uber driver for the queen' is a genuinely good turn - specific, visual, and earns the laugh. Setup is clean and the escalation lands. Slightly familiar chaotic party guest shape but the closer rescues it."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong image with the hazmat suit and vibrating box, and 'venomous roommates' is the best phrase here. The final line is energetic but the beat it lands on ('dropped the queen') is a setup, not a punchline - the joke stops one beat early."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent but follows the most predictable route exactly: beekeeper brings bees, bee escapes, chaos ensues. No unexpected angle or image. 'Screaming stampede' is a restatement of what we already predicted. Publishable filler."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "The pivot of performing confidence while visibly phobic is a decent angle, and 'couture line' earns a mild smile. 'Extravagant' feels slightly forced as a closing word rather than embedded naturally, but the self-aware structure gives it more life than the pure chaos jokes."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong punchline with a memorable characterization of the bee-keeper as the queen's nervous Uber driver. Good rhythm and uses exactly two seed terms."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 3,
+          "laugh": 7,
+          "comment": "Very funny execution of the noir tone, but heavily penalized for failing to actually use the 'Hardboiled and Noir' seed term in the text."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The narrative is competent but the payoff is generic and highly predictable. Uses exactly two seed terms correctly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 3,
+          "laugh": 5,
+          "comment": "A somewhat strained premise that leans on telling rather than showing. Penalized on prompt fit for using three seed terms instead of two."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "Grok",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid bee-as-guests bit but punchline lands mild."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Noir voice is committed but payoff feels more atmospheric than punchy."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong visual escalation and clean queen drop punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Fear-to-fashion angle is clear but lacks sharp snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Solid premise with a fun queen/Uber turn; competent and amusing."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Strong voice but more mood than joke; ends without a real punch."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear escalation and a strong final line; the funniest of the batch."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Readable and coherent but predictable; ends on a familiar beat."
+        }
+      ]
+    }
+  ]
+}
