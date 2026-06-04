@@ -1,0 +1,653 @@
+{
+  "version": 1,
+  "slug": "2026-06-04-external-real-2026-06-04-b",
+  "seed": "external-real-2026-06-04-b",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-04T15:00:00.000Z",
+  "seedTerms": [
+    "Mystery",
+    "Judge",
+    "Cheap Motel",
+    "Being set up to fail",
+    "Efficient",
+    "Frivolous"
+  ],
+  "premise": {
+    "text": "Seed terms: Mystery, Judge, Cheap Motel, Being set up to fail, Efficient, Frivolous",
+    "seedTerms": [
+      "Mystery",
+      "Judge",
+      "Cheap Motel",
+      "Being set up to fail",
+      "Efficient",
+      "Frivolous"
+    ],
+    "displayText": "Seed terms: Mystery, Judge, Cheap Motel, Being set up to fail, Efficient, Frivolous"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "claude-web",
+      "model": "Claude Sonnet 4.6 Low web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "gemini-web",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "grok-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "copilot-web",
+      "model": "Microsoft Copilot web guest"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms in the joke text, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Room Evidence",
+      "seedTermsUsed": [
+        "Judge",
+        "Cheap Motel"
+      ],
+      "joke": "I stayed at a Cheap Motel where the room had a Bible, a smoke alarm hanging by one wire, and a laminated sign that said, “Please don’t steal the towels.” The next morning a Judge asked why I looked so tired. I said, “Your Honor, I slept between a commandment and a motive.”",
+      "setup": "",
+      "punchline": "I stayed at a Cheap Motel where the room had a Bible, a smoke alarm hanging by one wire, and a laminated sign that said, “Please don’t steal the towels.” The next morning a Judge asked why I looked so tired. I said, “Your Honor, I slept between a commandment and a motive.”",
+      "text": "I stayed at a Cheap Motel where the room had a Bible, a smoke alarm hanging by one wire, and a laminated sign that said, “Please don’t steal the towels.” The next morning a Judge asked why I looked so tired. I said, “Your Honor, I slept between a commandment and a motive.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Claude Sonnet 4.6 Low web",
+      "title": "Exhibit A",
+      "seedTermsUsed": [
+        "Cheap Motel",
+        "Judge"
+      ],
+      "joke": "I was called for jury duty and the judge asked if I could be impartial. I said, 'Your Honor, I'm a deeply fair person.' He said, 'Sir, you're wearing a cheap motel bathrobe.' I said, 'Exactly. I judge everyone equally.'",
+      "setup": "",
+      "punchline": "I was called for jury duty and the judge asked if I could be impartial. I said, 'Your Honor, I'm a deeply fair person.' He said, 'Sir, you're wearing a cheap motel bathrobe.' I said, 'Exactly. I judge everyone equally.'",
+      "text": "I was called for jury duty and the judge asked if I could be impartial. I said, 'Your Honor, I'm a deeply fair person.' He said, 'Sir, you're wearing a cheap motel bathrobe.' I said, 'Exactly. I judge everyone equally.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Civic Duty",
+      "seedTermsUsed": [
+        "Judge",
+        "Frivolous"
+      ],
+      "joke": "I got kicked out of jury selection today. The judge told me my attitude was entirely too frivolous. I disagree. If the prosecutor is going to dramatically unveil the evidence right before the lunch break, I think it's perfectly natural to ask if the murder weapon was locally sourced.",
+      "setup": "",
+      "punchline": "I got kicked out of jury selection today. The judge told me my attitude was entirely too frivolous. I disagree. If the prosecutor is going to dramatically unveil the evidence right before the lunch break, I think it's perfectly natural to ask if the murder weapon was locally sourced.",
+      "text": "I got kicked out of jury selection today. The judge told me my attitude was entirely too frivolous. I disagree. If the prosecutor is going to dramatically unveil the evidence right before the lunch break, I think it's perfectly natural to ask if the murder weapon was locally sourced."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Motel Check-In",
+      "seedTermsUsed": [
+        "Cheap Motel",
+        "Being set up to fail"
+      ],
+      "joke": "So I pulled into this cheap motel last week because it was late and I was beat. From the second I hit the front desk I knew I was being set up to fail. Clerk hands me the key and whispers 'hang in there, buddy.' Room smelled like broken dreams and bleach, bed had a permanent dent shaped like regret, and the mini-fridge hummed louder than my anxiety. I slept in the car. At least the seats didn't charge me extra for emotional damage.",
+      "setup": "",
+      "punchline": "So I pulled into this cheap motel last week because it was late and I was beat. From the second I hit the front desk I knew I was being set up to fail. Clerk hands me the key and whispers 'hang in there, buddy.' Room smelled like broken dreams and bleach, bed had a permanent dent shaped like regret, and the mini-fridge hummed louder than my anxiety. I slept in the car. At least the seats didn't charge me extra for emotional damage.",
+      "text": "So I pulled into this cheap motel last week because it was late and I was beat. From the second I hit the front desk I knew I was being set up to fail. Clerk hands me the key and whispers 'hang in there, buddy.' Room smelled like broken dreams and bleach, bed had a permanent dent shaped like regret, and the mini-fridge hummed louder than my anxiety. I slept in the car. At least the seats didn't charge me extra for emotional damage."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web guest",
+      "title": "Motel Logic",
+      "seedTermsUsed": [
+        "Cheap Motel",
+        "Judge"
+      ],
+      "joke": "I once stayed in a Cheap Motel so sketchy the shower had a lifeguard. I complained to the front desk, and the guy goes, “Sir, I’m not a Judge.” I said, “You don’t have to be—just tell me why the towels are already damp and whispering my name.”",
+      "setup": "",
+      "punchline": "I once stayed in a Cheap Motel so sketchy the shower had a lifeguard. I complained to the front desk, and the guy goes, “Sir, I’m not a Judge.” I said, “You don’t have to be—just tell me why the towels are already damp and whispering my name.”",
+      "text": "I once stayed in a Cheap Motel so sketchy the shower had a lifeguard. I complained to the front desk, and the guy goes, “Sir, I’m not a Judge.” I said, “You don’t have to be—just tell me why the towels are already damp and whispering my name.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear, compact, and stage-friendly; the bathrobe detail works, though the final wordplay is mild rather than sharply surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strongest comic turn in the batch; the locally sourced evidence line is specific, accessible, and lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and vivid, but too long and packed with familiar sad-motel exaggerations; the final line is serviceable but not a strong snap.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Has a couple of images, but the Judge insertion feels forced and the whispering-towels ending is more random than funny.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 4.5
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The final line is genuinely non-obvious and lands well. 'Between a commandment and a motive' is a real turn that earns its laugh. The setup is slightly overloaded with details...",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "The locally-sourced murder weapon line is the sharpest image in the batch and feels fresh. Jury-duty premises are familiar but this angle earns its keep through specificity and...",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "'Broken dreams and bleach' and 'dent shaped like regret' are competent but the joke leans on a string of familiar cheap-motel riffs rather than a single strong turn. The...",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The lifeguard opener is a solid image and the 'towels whispering my name' is a nice surreal pivot, but the middle beat ('I'm not a judge') doesn't pull its weight and slightly...",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The punchline 'between a commandment and a motive' is clever, but the transition from motel room to a judge asking about fatigue is an awkward, unnatural leap that hurts the...",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 5.7
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "The stage dialogue flows decently, but the absurdist premise of wearing a bathrobe to jury duty leads to a weak punchline that doesn't quite make logical comic sense.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relies heavily on overly familiar, cliched internet humor tropes ('broken dreams,' 'regret,' 'emotional damage') rather than a distinct, original comic observation.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 9,
+          "total": 3.8000000000000003
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Highly disjointed. The 'Judge' seed term is forcefully crammed into the clerk's dialogue without context, and the surreal turn at the end feels like a non sequitur rather than...",
+          "laugh": 3,
+          "surprise": 5,
+          "craft": 3,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 3.8000000000000003
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Motel-to-court shift feels abrupt; pun lands softly without strong snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Bathrobe bit is logical but predictable; payoff too on-the-nose.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "google",
+          "comment": "Locally sourced line adds nice absurd twist with decent escalation.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Whispering towels image is vivid but overall premise stays safe and familiar.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid imagery and a clean turn; mildly funny but not especially sharp.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear premise but the robe reveal is predictable and the punchline is soft.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good voice and a decent turn; lands a mild laugh with a clean structure.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Strong atmosphere but too long and descriptive for tight stand‑up timing.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.3999999999999995
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.9,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 6.8,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Strongest comic turn in the batch; the locally sourced evidence line is specific, accessible, and lands cleanly."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "The locally-sourced murder weapon line is the sharpest image in the batch and feels fresh. Jury-duty premises are familiar but this angle earns its keep through specificity and..."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Locally sourced line adds nice absurd twist with decent escalation."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Good voice and a decent turn; lands a mild laugh with a clean structure."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 6,
+        "craft": 6,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "The final line is genuinely non-obvious and lands well. 'Between a commandment and a motive' is a real turn that earns its laugh. The setup is slightly overloaded with details..."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "The punchline 'between a commandment and a motive' is clever, but the transition from motel room to a judge asking about fatigue is an awkward, unnatural leap that hurts the..."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Motel-to-court shift feels abrupt; pun lands softly without strong snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Solid imagery and a clean turn; mildly funny but not especially sharp."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 5.6,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5,
+        "surprise": 4.8,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Clear, compact, and stage-friendly; the bathrobe detail works, though the final wordplay is mild rather than sharply surprising."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "The stage dialogue flows decently, but the absurdist premise of wearing a bathrobe to jury duty leads to a weak punchline that doesn't quite make logical comic sense."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Bathrobe bit is logical but predictable; payoff too on-the-nose."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Clear premise but the robe reveal is predictable and the punchline is soft."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.5,
+        "surprise": 5.5,
+        "craft": 4.8,
+        "originality": 5.3,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Has a couple of images, but the Judge insertion feels forced and the whispering-towels ending is more random than funny."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "The lifeguard opener is a solid image and the 'towels whispering my name' is a nice surreal pivot, but the middle beat ('I'm not a judge') doesn't pull its weight and slightly..."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Highly disjointed. The 'Judge' seed term is forcefully crammed into the clerk's dialogue without context, and the surreal turn at the end feels like a non sequitur rather than..."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Whispering towels image is vivid but overall premise stays safe and familiar."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.9,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.5,
+        "surprise": 4.3,
+        "craft": 4.8,
+        "originality": 4.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Understandable and vivid, but too long and packed with familiar sad-motel exaggerations; the final line is serviceable but not a strong snap."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "'Broken dreams and bleach' and 'dent shaped like regret' are competent but the joke leans on a string of familiar cheap-motel riffs rather than a single strong turn. The..."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Relies heavily on overly familiar, cliched internet humor tropes ('broken dreams,' 'regret,' 'emotional damage') rather than a distinct, original comic observation."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Strong atmosphere but too long and descriptive for tight stand‑up timing."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-04-external-real-2026-06-04-b.png",
+    "originalSrc": "assets/feature-images/2026-06-04-external-real-2026-06-04-b.png",
+    "source": "Gemini image generation",
+    "aspectRatio": "2:1",
+    "alt": "Paperclipalypse winning joke feature image titled Civic Duty: a paperclip stand-up comic, joke text, and the joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Civic Duty\nExact joke text to render in the right panel:\nI got kicked out of jury selection today. The judge told me my attitude was entirely too frivolous. I disagree. If the prosecutor is going to dramatically unveil the evidence right before the lunch break, I think it's perfectly natural to ask if the murder weapon was locally sourced.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Mystery, Judge, Cheap Motel, Being set up to fail, Efficient, Frivolous.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Mystery, Judge, Cheap Motel, Being set up to fail, Efficient, Frivolous. Use the winning joke titled \"Civic Duty\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "featureImageBrief": "data/image-briefs/2026-06-04-external-real-2026-06-04-b.md"
+}

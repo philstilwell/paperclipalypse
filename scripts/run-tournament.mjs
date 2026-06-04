@@ -10,7 +10,7 @@ import { normalizePremiseForDisplay } from "./lib/premise-display.mjs";
 import { aggregateScores, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
 import { seededRng } from "./lib/random.mjs";
 import { renderSite } from "./lib/site.mjs";
-import { buildPremiseFromSeedTerms, buildSeedTerms } from "./lib/seed-terms.mjs";
+import { buildPromptContextFromSeedTerms, buildSeedTerms } from "./lib/seed-terms.mjs";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 loadDotEnv(path.join(rootDir, ".env"));
@@ -51,7 +51,7 @@ if (!dryRun) {
 const seedTerms = fs.existsSync(seedListsPath)
   ? buildSeedTerms(readJson(seedListsPath), rng)
   : [];
-const premise = normalizePremiseForDisplay(buildPremiseFromSeedTerms(seedTerms) || buildPremise(promptPools, rng), seedTerms);
+const premise = normalizePremiseForDisplay(buildPromptContextFromSeedTerms(seedTerms) || buildPremise(promptPools, rng), seedTerms);
 const createdAt = new Date().toISOString();
 const slug = `${createdAt.slice(0, 10)}-${seed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`;
 const jokes = dryRun
@@ -258,6 +258,10 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
   });
 
   const manualRankings = aggregateScores(manualJokes, manualJudgeResults);
+  const promptContext = buildPromptContextFromSeedTerms(seedTerms) || normalizePremiseForDisplay({
+    ...episode.premise,
+    seedTerms
+  }, seedTerms);
   const run = {
     version: 1,
     slug: episode.slug || `${createdAt.slice(0, 10)}-${localSeed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`,
@@ -266,10 +270,7 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     source: episode.source || "codex-house",
     createdAt,
     seedTerms,
-    premise: normalizePremiseForDisplay({
-      ...episode.premise,
-      seedTerms
-    }, seedTerms),
+    premise: promptContext,
     contestants,
     rubric: rubricForDisplay(),
     jokes: manualJokes,
@@ -336,7 +337,9 @@ function attachFeatureImage(run, sourcePath) {
   const assetRelPath = path.posix.join("assets", "feature-images", `${run.slug}${ext}`);
   const assetPath = path.join(siteDir, assetRelPath);
   fs.mkdirSync(path.dirname(assetPath), { recursive: true });
-  fs.copyFileSync(absoluteSourcePath, assetPath);
+  if (path.resolve(assetPath) !== absoluteSourcePath) {
+    fs.copyFileSync(absoluteSourcePath, assetPath);
+  }
 
   run.featureImage = {
     src: assetRelPath,
@@ -349,7 +352,7 @@ function attachFeatureImage(run, sourcePath) {
 
 function printSummary(run) {
   console.log(`Paperclipalypse run complete: ${run.slug}`);
-  console.log(`Premise: ${run.premise.text}`);
+  console.log(`Seed terms: ${run.seedTerms.join(", ") || "(none)"}`);
   console.log(`Winner: ${run.rankings[0].contestantName} (${run.rankings[0].score.toFixed(1)})`);
   console.log(`Mode: ${run.source}`);
 }

@@ -22,11 +22,11 @@ export function generationPrompt(premise) {
       "You are a contestant in Paperclipalypse, an AI comedy tournament.",
       "Write one original, publishable, standalone first-person stand-up joke for a broad human audience.",
       "Tell it as the onstage comic using I, me, or my naturally; do not write a detached story summary.",
-      "The joke must be understandable and funny if read by itself, without the title, premise, or seed list.",
+      "The joke must be understandable and funny if read by itself, without the title or seed list.",
       "Your goal is the strongest human laugh, not maximum seed compliance.",
       "Use exactly two seed terms in the joke text, no more and no fewer.",
       "Choose the two seed terms that make the funniest natural joke; ignore the other four completely.",
-      "Do not cram in all six terms, explain the premise, or make a list.",
+      "Do not cram in all six terms, summarize the prompt, or make a list.",
       "Silently consider several comic angles, then output only the strongest one.",
       "Prefer concrete, familiar situations, stage rhythm, and a clear final turn over whimsy, lore, or clever fog.",
       "Avoid default AI joke templates about HR, committees, therapy, awkward meetings, and 'interesting choice' unless the angle is genuinely fresh.",
@@ -36,10 +36,10 @@ export function generationPrompt(premise) {
       "Do not explain the joke. Return JSON only."
     ].join(" "),
     user: [
-      `Premise: ${premise.text}.`,
       seedText ? `Seed terms: ${seedText}.` : "",
       "Write the joke as a first-person stand-up bit. The comic should be speaking from the stage, using I, me, or my naturally.",
       "The seed terms are ingredients, not a checklist. Use exactly two of them in the joke text and leave the other four out.",
+      "Do not use or assume a supplied premise. Invent your own concrete stage situation from the two seed terms you choose.",
       "The `joke` field must contain the complete standalone joke humans will read on the site, including the setup and punchline.",
       "Before returning, reject any version that is merely cute, random, pun-only, or understandable only because of the prompt.",
       "Return `seedTermsUsed` as an array containing exactly the two seed terms you used.",
@@ -59,7 +59,6 @@ export function judgingPrompt(premise, jokes) {
       "Return JSON only."
     ].join(" "),
     user: [
-      `Premise: ${premise.text}.`,
       seedText ? `Seed terms: ${seedText}.` : "",
       rubricPromptText(),
       "Jokes to judge:",
@@ -68,7 +67,7 @@ export function judgingPrompt(premise, jokes) {
           jokeId: joke.id,
           label: joke.label,
           seedTermsUsed: joke.seedTermsUsed || [],
-          text: joke.text
+          text: fullJokeText(joke)
         })),
         null,
         2
@@ -85,9 +84,8 @@ export function comicPanelPrompt(run) {
 
   return [
     "Single-panel newspaper comic for Paperclipalypse.",
-    `Scene: ${run.premise.text}.`,
     run.seedTerms?.length ? `Seed terms: ${run.seedTerms.join(", ")}.` : "",
-    `The visual should nod to the winning joke titled "${winningJoke.title}".`,
+    `Use the winning joke titled "${winningJoke.title}" as the source of the scene.`,
     "Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse."
   ].filter(Boolean).join(" ");
 }
@@ -98,4 +96,12 @@ function seedTermsText(seedTerms) {
   }
 
   return seedTerms.join(", ");
+}
+
+function fullJokeText(joke = {}) {
+  return String(
+    joke.text || joke.joke || [joke.setup, joke.punchline].filter(Boolean).join(" ")
+  )
+    .replace(/\s+/g, " ")
+    .trim();
 }

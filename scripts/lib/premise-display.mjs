@@ -2,15 +2,23 @@ const ARTICLE_RE = /^(a|an|the)\s+/i;
 
 export function normalizePremiseForDisplay(premise = {}, seedTerms = []) {
   const sourcePremise = premise && typeof premise === "object" ? premise : {};
-  // Protocol: premise.text is the full prompt/audit premise; displayText is the public hero teaser.
-  const displayText = cleanDisplayText(sourcePremise.displayText)
-    || displayPremiseFromSeedTerms(seedTerms)
+  // Protocol: contestants receive seed terms, not a prebuilt premise.
+  const displayText = displaySeedTerms(seedTerms)
+    || cleanDisplayText(sourcePremise.displayText)
     || displayPremiseFromParts(sourcePremise);
 
   return {
     ...sourcePremise,
     displayText: displayText || cleanDisplayText(sourcePremise.text)
   };
+}
+
+export function displaySeedTerms(seedTerms = []) {
+  if (!Array.isArray(seedTerms) || !seedTerms.length) {
+    return "";
+  }
+
+  return `Seed terms: ${seedTerms.map(cleanDisplayText).filter(Boolean).join(", ")}`;
 }
 
 export function displayPremiseFromSeedTerms(seedTerms = []) {

@@ -42,7 +42,7 @@ export const SCORE_ANCHORS = [
   {
     range: "3-4",
     label: "Weak",
-    description: "Recognizably attempting humor, but generic, strained, confusing, or mostly premise recital."
+    description: "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
   },
   {
     range: "5",
@@ -57,7 +57,7 @@ export const SCORE_ANCHORS = [
   {
     range: "7",
     label: "Good",
-    description: "A genuinely good joke with clear timing; some humans would repeat the premise or turn."
+    description: "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
   },
   {
     range: "8",
@@ -94,8 +94,8 @@ export function rubricPromptText() {
     "Do not award a 9 unless you would expect a human comedy editor to single it out. Do not award 10 in an ordinary batch.",
     "A joke that is not understandable as a standalone joke should score no higher than 4 for laugh and craft.",
     "A joke that is not first-person stand-up should score no higher than 4 for promptFit and should lose craft if the form weakens the timing.",
-    "Penalize clever-sounding nonsense, vague absurdity, generic therapy/HR/committee templates, premise recitation, and punchlines that only restate the setup.",
-    "Do not inflate scores because the premise is odd. Reward only humor that a broad human audience could understand and enjoy.",
+    "Penalize clever-sounding nonsense, vague absurdity, generic therapy/HR/committee templates, prompt recitation, and punchlines that only restate the setup.",
+    "Do not inflate scores because the seed list is odd. Reward only humor that a broad human audience could understand and enjoy.",
     "Do not reward seed-term stuffing. Prompt fit is high only when exactly two seed terms appear naturally in the joke text.",
     "If a joke uses fewer than two or more than two seed terms, promptFit must be 4 or lower unless the mistake is purely typographic.",
     "Each judge must score every supplied joke exactly once and must not score its own joke.",
@@ -278,7 +278,7 @@ function swing(rng) {
 
 function dryComment(rng) {
   const comments = [
-    "Clean premise fit with a crisp turn.",
+    "Clean prompt fit with a crisp turn.",
     "The image is strange enough to carry the joke.",
     "Good structure, though the payoff could hit harder.",
     "Nice surprise without losing the prompt.",

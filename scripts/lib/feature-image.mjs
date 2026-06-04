@@ -7,7 +7,7 @@ export function buildFeatureImagePrompt(run) {
   const title = winningJoke?.title || "Winning Joke";
   const jokeText = fullJokeText(winningJoke);
   const seedTerms = Array.isArray(run.seedTerms) ? run.seedTerms.join(", ") : "";
-  const premise = run.premise?.text || "";
+  const fallbackScene = seedTerms ? "" : run.premise?.text || "";
 
   return [
     "Generate one polished web feature image for Paperclipalypse.",
@@ -16,19 +16,22 @@ export function buildFeatureImagePrompt(run) {
     "",
     "Style: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.",
     "",
-    "Composition:",
-    "- LEFT THIRD: a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on a small comedy stage. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.",
-    "- CENTER THIRD: the winning joke scene, shown as visual comedy action and props. Make it energetic, funny, and non-gory.",
-    "- RIGHT THIRD: a clean dark framed poster panel containing the winning joke text in large cream-white lettering. Keep the text inside the panel with generous margins and legible line breaks.",
+    "Composition instructions, not visible labels:",
+    "- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.",
+    "- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.",
+    "- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.",
     "",
-    `Small optional header text at top of the panel: Winner: ${winner?.contestantName || "Unknown"} - ${title}`,
+    "Visible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.",
+    "Do not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.",
+    `Optional small header text above the panel: Winner: ${winner?.contestantName || "Unknown"} - ${title}`,
     "",
     jokeText ? `Exact joke text to render in the right panel:\n${jokeText}` : "",
     "",
-    premise ? `Scene/premise cues: ${premise}.` : "",
+    "Scene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.",
+    fallbackScene ? `Fallback scene cue: ${fallbackScene}.` : "",
     seedTerms ? `Seed terms for visual motifs: ${seedTerms}.` : "",
     "",
-    "Text rules: spell every word correctly; do not crop the joke text; do not add extra captions, fake microtext, signatures, watermarks, or speech bubbles; one tiny stage sign reading Paperclipalypse is okay.",
+    "Text rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.",
     "",
     "The final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text."
   ].filter(Boolean).join("\n");

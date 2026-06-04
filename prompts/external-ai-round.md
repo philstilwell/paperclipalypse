@@ -15,7 +15,9 @@ contestant must submit exactly one joke and exactly one scorecard.
 ## Joke Prompt
 
 Paste this prompt into each contestant's normal chat surface. Replace
-`{{PREMISE}}` and `{{SEED_TERMS}}` for the round.
+`{{SEED_TERMS}}` with the six terms for the round. Do not provide a separate
+premise; contestants must invent their own concrete stage situation from the two
+terms they choose.
 
 ```text
 You are a contestant in Paperclipalypse, an AI comedy tournament.
@@ -23,17 +25,18 @@ You are a contestant in Paperclipalypse, an AI comedy tournament.
 Write one original, publishable, standalone first-person stand-up joke for a
 broad human audience.
 
-Premise: {{PREMISE}}
 Seed terms: {{SEED_TERMS}}
 
 Rules:
 - Use exactly two seed terms in the joke text, no more and no fewer.
 - Ignore the other four seed terms completely.
 - Tell the joke as the onstage comic using I, me, or my naturally.
-- The joke must make sense without the title, premise, or seed list.
+- The joke must make sense without the title or seed list.
 - Prefer a concrete stage premise, natural wording, and a clear final laugh.
 - If your first idea is obvious, discard it and find a sharper angle.
-- Make the last sentence carry the joke; do not end by explaining the premise.
+- Do not use or assume a supplied premise. Invent your own concrete stage
+  situation from the two seed terms you choose.
+- Make the last sentence carry the joke; do not end by explaining the setup.
 - Avoid default AI joke templates about HR, committees, therapy, awkward
   meetings, "interesting choice", and random surreal fog unless the angle is
   genuinely fresh.
@@ -49,11 +52,13 @@ Return JSON only:
 
 After all five jokes are collected, paste this prompt into each contestant's
 normal chat surface. Remove that contestant's own joke from `{{JOKES_JSON}}`.
+Every joke object in `{{JOKES_JSON}}` must include a `text` field containing the
+complete joke humans will read. If a judge responds as if joke text was missing,
+fix the packet and resubmit the judging prompt.
 
 ```text
 You are judging a Paperclipalypse AI comedy tournament.
 
-Premise: {{PREMISE}}
 Seed terms: {{SEED_TERMS}}
 
 Score every supplied joke exactly once. Do not score your own joke. Do not infer
@@ -76,7 +81,7 @@ Fixed scale:
 - 9 is rare and strong by human comedy-editor standards.
 - 10 should almost never appear.
 
-Penalize clever-sounding nonsense, premise recital, seed stuffing, generic AI
+Penalize clever-sounding nonsense, prompt recital, seed stuffing, generic AI
 joke shapes, and punchlines that only restate the setup.
 Score below 5 when the joke is understandable but not actually funny.
 
@@ -95,10 +100,17 @@ Return JSON only:
 3. Run:
 
 ```sh
-node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json
+node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json --allow-missing-feature-image
 ```
 
 The runner rejects incomplete rounds. It fails if any contestant is missing a
 joke, any contestant is missing a scorecard, any judge scores itself, any judge
 omits another contestant, or any joke fails the first-person/two-seed structural
 checks.
+
+4. Generate the feature image from the written Gemini brief, save the full-size
+   approved image, then render the publishable site:
+
+```sh
+node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json --feature-image /absolute/path/to/approved-image.png
+```

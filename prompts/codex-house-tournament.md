@@ -26,7 +26,7 @@ external-model round, use `prompts/external-ai-round.md` instead.
 6. Each joke must be a first-person stand-up bit told by the comic on stage,
    using I, me, or my naturally. It must be standalone humor humans can
    understand without the prompt, usually 30-90 words total. Favor stage rhythm
-   and a clean final turn over explaining the premise.
+   and a clean final turn over explaining the setup.
 7. Judge the four jokes each contestant did not write. Use integer 1-10 scores
    for `originality`, `surprise`, `craft`, `promptFit`, and `laugh`.
 8. Grade against a fixed future-resistant scale, not only against the current

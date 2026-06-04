@@ -5,7 +5,7 @@ Paperclipalypse is an automated AI comedy tournament for
 
 Each run:
 
-1. Builds a random premise from a place, a person/archetype, and an element.
+1. Builds six random seed terms from local mirrored lists.
 2. Asks five configured AI contestants to write one clean first-person
    stand-up joke.
 3. Asks those same models to judge the jokes they did not write.
@@ -25,13 +25,22 @@ auth and can cost money.
 So the preferred real-tournament flow is:
 
 1. Codex generates six seed terms locally from `data/seed-lists.json`.
-2. Codex prepares prompt packets using `prompts/external-ai-round.md`.
+2. Codex prepares prompt packets using `npm run round:prepare -- --seed <seed>`
+   and `prompts/external-ai-round.md`.
 3. You or Codex, with explicit direction, collect responses from the contestants'
    normal chat surfaces. Codex must not invent missing external jokes or scores.
 4. Codex writes the collected external responses to `data/inbox/`.
-5. It runs `node scripts/run-tournament.mjs --episode-file data/inbox/<file>.json`.
-6. The runner rejects incomplete participation before rendering.
-7. GitHub Pages deploys the static site on push.
+5. It runs the tournament once with `--allow-missing-feature-image` to create
+   the Gemini image brief.
+6. It prompts Google Gemini image generation for the winning-joke feature image,
+   downloads the full-size image, and reruns with `--feature-image`.
+7. The runner rejects incomplete participation before rendering.
+8. GitHub Pages deploys the static site on push.
+
+The one-instruction operating version is codified in
+`prompts/one-prompt-full-contest.md`: Phil can ask Codex to run the contest from
+beginning to end, and Codex coordinates the external web chats, Gemini image,
+render, cleanup, commit, and push without using paid APIs.
 
 The local demo flow is:
 
@@ -80,7 +89,7 @@ node scripts/run-tournament.mjs --episode-file data/inbox/codex-episode.json
 To score a real external/manual episode JSON and create the Gemini image brief:
 
 ```sh
-node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json
+node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json --allow-missing-feature-image
 ```
 
 For public non-dry-run episodes, the runner stops here if no approved feature
@@ -118,7 +127,7 @@ must use exactly two seed terms in the joke text, no more and no fewer, so the
 joke has a clear constraint without becoming a checklist. The joke must be told
 as a first-person stand-up bit, with the comic speaking from the stage. The
 prompts discourage seed stuffing, long explanations, detached story summaries,
-and jokes that merely describe a strange premise.
+and jokes that merely recite the prompt instead of building a real comic idea.
 
 The runner records the declared seed terms but does not rewrite or disqualify
 otherwise complete jokes for prompt mistakes. If a contestant misses, paraphrases,

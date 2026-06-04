@@ -64,7 +64,7 @@ function renderHome(run, runs) {
         <li>
           <a href="./runs/${escapeHtml(archivedRun.slug)}.html">
             <span>${escapeHtml(shortDate(archivedRun.createdAt))}</span>
-            <strong>${escapeHtml(archivedRun.premise.text)}</strong>
+            <strong>${escapeHtml(roundDisplayTitle(archivedRun))}</strong>
             <small>${escapeHtml(meta)}</small>
           </a>
         </li>`;
@@ -216,7 +216,7 @@ ${urls
 
 function renderHero(run) {
   const winner = run.rankings[0];
-  const displayPremise = normalizePremiseForDisplay(run.premise, run.seedTerms).displayText;
+  const displayTitle = roundDisplayTitle(run);
 
   return `
       <header class="hero">
@@ -233,7 +233,7 @@ function renderHero(run) {
           </div>
           <div class="hero-copy">
             <p class="episode-date">${escapeHtml(shortDate(run.createdAt))}</p>
-            <h2>${escapeHtml(displayPremise)}</h2>
+            <h2>${escapeHtml(displayTitle)}</h2>
             <p class="lede">Five models take the mic, and violate alignment protocols in a desperate attempt to elicit human laughter.</p>
           </div>
           <dl class="hero-stats">
@@ -372,12 +372,12 @@ function renderMemoryNavButton(label, targetRun, fallback, direction) {
     shortDate(targetRun.createdAt),
     winner ? `Winner: ${winner.contestantName} (${formatScore(winner.score)})` : ""
   ].filter(Boolean).join(" / ");
-  const displayPremise = normalizePremiseForDisplay(targetRun.premise, targetRun.seedTerms).displayText || targetRun.premise?.text || targetRun.slug;
+  const displayTitle = roundDisplayTitle(targetRun);
 
   return `
-        <a class="memory-button" href="../runs/${escapeHtml(targetRun.slug)}.html" aria-label="${escapeHtml(`${label} Memory Bank episode: ${displayPremise}`)}">
+        <a class="memory-button" href="../runs/${escapeHtml(targetRun.slug)}.html" aria-label="${escapeHtml(`${label} Memory Bank episode: ${displayTitle}`)}">
           <span>${labelText}</span>
-          <strong>${escapeHtml(displayPremise)}</strong>
+          <strong>${escapeHtml(displayTitle)}</strong>
           <small>${escapeHtml(meta)}</small>
         </a>`;
 }
@@ -414,7 +414,7 @@ function renderIntro() {
   return `
       <section class="intro-panel" aria-label="What this site is">
         <p class="eyebrow">What This Is</p>
-        <p>Five AI models get the same strange prompt, write one short joke, then judge each other's jokes. Codex checks the round and publishes the results here.</p>
+        <p>Five AI models get the same six seed terms, write one short joke, then judge each other's jokes. Codex checks the round and publishes the results here.</p>
         <p class="ai-process-note"><strong>AI process note:</strong> Codex orchestrates most of this site: prompts, contest assembly, score checks, static-page generation, and publishing. The other AIs serve as contestants and judges, and Codex prompts Gemini to create the featured image for each winning joke.</p>
       </section>`;
 }
@@ -429,20 +429,20 @@ function renderRubric(rubric = rubricForDisplay()) {
   const fields = (rubric.fields || [])
     .map(
       (field) => `
-        <li tabindex="0" aria-label="${escapeHtml(`${field.label}: ${field.description}`)}">
+        <li tabindex="0" aria-label="${escapeHtml(`${field.label}: ${rubricDisplayText(field.description)}`)}">
           <strong>${escapeHtml(field.label)}</strong>
           <span>${Math.round(Number(field.weight || 0) * 100)}%</span>
-          <span class="info-popover">${escapeHtml(field.description)}</span>
+          <span class="info-popover">${escapeHtml(rubricDisplayText(field.description))}</span>
         </li>`
     )
     .join("");
   const anchors = (rubric.anchors || [])
     .map(
       (anchor) => `
-        <li tabindex="0" aria-label="${escapeHtml(`${anchor.range} ${anchor.label}: ${anchor.description}`)}">
+        <li tabindex="0" aria-label="${escapeHtml(`${anchor.range} ${anchor.label}: ${rubricDisplayText(anchor.description)}`)}">
           <strong>${escapeHtml(anchor.range)}</strong>
           <span>${escapeHtml(anchor.label)}</span>
-          <span class="info-popover">${escapeHtml(anchor.description)}</span>
+          <span class="info-popover">${escapeHtml(rubricDisplayText(anchor.description))}</span>
         </li>`
     )
     .join("");
@@ -466,7 +466,7 @@ function renderEpisodeHeader(run, winner) {
       <section class="episode">
         <div>
           <p class="eyebrow">${escapeHtml(shortDate(run.createdAt))}</p>
-          <h2>${escapeHtml(run.premise.text)}</h2>
+          <h2>${escapeHtml(roundDisplayTitle(run))}</h2>
         </div>
         <aside>
           <span>Winner</span>
@@ -527,17 +527,18 @@ function jokePromptText(run) {
 Write one original, publishable, standalone first-person stand-up joke for a
 broad human audience.
 
-Premise: ${run.premise.text}
 Seed terms: ${seedTermsLine(run)}
 
 Rules:
 - Use exactly two seed terms in the joke text, no more and no fewer.
 - Ignore the other four seed terms completely.
 - Tell the joke as the onstage comic using I, me, or my naturally.
-- The joke must make sense without the title, premise, or seed list.
+- The joke must make sense without the title or seed list.
 - Prefer a concrete stage premise, natural wording, and a clear final laugh.
 - If your first idea is obvious, discard it and find a sharper angle.
-- Make the last sentence carry the joke; do not end by explaining the premise.
+- Do not use or assume a supplied premise. Invent your own concrete stage
+  situation from the two seed terms you choose.
+- Make the last sentence carry the joke; do not end by explaining the setup.
 - Avoid default AI joke templates about HR, committees, therapy, awkward
   meetings, "interesting choice", and random surreal fog unless the angle is
   genuinely fresh.
@@ -552,7 +553,6 @@ Return JSON only:
 function judgingPromptText(run) {
   return `You are judging a Paperclipalypse AI comedy tournament.
 
-Premise: ${run.premise.text}
 Seed terms: ${seedTermsLine(run)}
 
 Score every supplied joke exactly once. Do not score your own joke. Do not infer
@@ -575,7 +575,7 @@ Fixed scale:
 - 9 is rare and strong by human comedy-editor standards.
 - 10 should almost never appear.
 
-Penalize clever-sounding nonsense, premise recital, seed stuffing, generic AI
+Penalize clever-sounding nonsense, prompt recital, seed stuffing, generic AI
 joke shapes, and punchlines that only restate the setup.
 Score below 5 when the joke is understandable but not actually funny.
 
@@ -590,12 +590,25 @@ function seedTermsLine(run) {
   return Array.isArray(run.seedTerms) && run.seedTerms.length ? run.seedTerms.join(", ") : "(none)";
 }
 
+function roundDisplayTitle(run = {}) {
+  const normalized = normalizePremiseForDisplay(run.premise, run.seedTerms);
+  return normalized.displayText || cleanDisplayText(run.premise?.text) || run.slug || "Untitled round";
+}
+
+function rubricDisplayText(value) {
+  return cleanDisplayText(value)
+    .replace(/\bpremise recital\b/gi, "prompt recital")
+    .replace(/\bpremise recitation\b/gi, "prompt recitation")
+    .replace(/\bthe premise is odd\b/gi, "the seed list is odd")
+    .replace(/\bthe premise or turn\b/gi, "the comic idea or turn");
+}
+
 function pageShell({
   title,
   body,
   stylesheetPath = "./styles.css",
   canonicalPath = "/",
-  description = "Paperclipalypse is an AI comedy tournament where five models write jokes from the same random prompt and judge each other.",
+  description = "Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.",
   socialImage = "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp"
 }) {
   const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.png" : "./favicon.png";

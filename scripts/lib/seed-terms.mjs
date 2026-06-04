@@ -23,18 +23,13 @@ export function buildSeedTerms(seedLists, rng) {
   });
 }
 
-export function buildPremiseFromSeedTerms(seedTerms) {
-  if (!Array.isArray(seedTerms) || seedTerms.length < 6) {
+export function buildPromptContextFromSeedTerms(seedTerms) {
+  if (!Array.isArray(seedTerms) || !seedTerms.length) {
     return null;
   }
 
-  const [genre, occupation, location, conflict, positiveTrait, negativeTrait] = seedTerms;
-
   return normalizePremiseForDisplay({
-    place: location,
-    person: occupation,
-    element: conflict,
-    text: `${occupation} at ${location}, facing ${conflict}, with a ${positiveTrait} instinct and a ${negativeTrait} streak in a ${genre} mode`,
+    text: `Seed terms: ${seedTerms.join(", ")}`,
     seedTerms
   }, seedTerms);
 }
