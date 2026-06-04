@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { allowsPaidApi, envFlag, loadDotEnv, configuredModel } from "./lib/env.mjs";
 import { buildPremise, comicPanelPrompt, generationPrompt, judgingPrompt } from "./lib/prompt.mjs";
 import { callContestant, parseModelJson } from "./lib/providers.mjs";
+import { buildFeatureImagePrompt, writeFeatureImageBrief } from "./lib/feature-image.mjs";
 import { assertCompleteTournament } from "./lib/participation.mjs";
 import { normalizePremiseForDisplay } from "./lib/premise-display.mjs";
 import { aggregateScores, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
@@ -18,6 +19,7 @@ const args = parseArgs(process.argv.slice(2));
 const dryRun = args.has("dry-run") || envFlag("PAPERCLIPALYPSE_DRY_RUN");
 const seed = args.get("seed") || process.env.PAPERCLIPALYPSE_SEED || todaySeed();
 const rng = seededRng(seed);
+const allowMissingFeatureImage = args.has("allow-missing-feature-image") || envFlag("PAPERCLIPALYPSE_ALLOW_MISSING_FEATURE_IMAGE");
 
 const paidContestants = readJson(path.join(rootDir, "config", "contestants.json")).contestants;
 const houseContestants = readJson(path.join(rootDir, "config", "house-contestants.json")).contestants;
@@ -33,6 +35,7 @@ if (episodeFile) {
   const run = buildRunFromEpisodeFile(path.resolve(rootDir, episodeFile), seed);
   attachFeatureImage(run, featureImagePath);
   assertPublishQuality(run);
+  prepareFeatureImage(run, { episodeFile });
   writeAndRender(run);
   printSummary(run);
   process.exit(0);
@@ -84,6 +87,7 @@ run.comicPanelPrompt = comicPanelPrompt(run);
 attachFeatureImage(run, featureImagePath);
 
 assertPublishQuality(run);
+prepareFeatureImage(run);
 writeAndRender(run);
 printSummary(run);
 
@@ -270,11 +274,41 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     jokes: manualJokes,
     judgeResults: manualJudgeResults,
     rankings: manualRankings,
-    featureImage: normalizeFeatureImage(episode.featureImage)
+    featureImage: normalizeFeatureImage(episode.featureImage),
+    featureImagePrompt: cleanMultiline(episode.featureImagePrompt)
   };
 
   run.comicPanelPrompt = cleanText(episode.comicPanelPrompt) || comicPanelPrompt(run);
   return run;
+}
+
+function prepareFeatureImage(run, { episodeFile } = {}) {
+  run.featureImagePrompt = cleanMultiline(run.featureImagePrompt) || buildFeatureImagePrompt(run);
+
+  if (run.featureImage?.src || run.dryRun) {
+    return;
+  }
+
+  const briefRelPath = writeFeatureImageBrief(run, {
+    rootDir,
+    episodeFile
+  });
+  run.featureImageBrief = briefRelPath;
+
+  if (allowMissingFeatureImage) {
+    console.warn(`Feature image missing. OpenAI image brief written: ${briefRelPath}`);
+    return;
+  }
+
+  throw new Error(
+    [
+      "Feature image required before publishing this public episode.",
+      `OpenAI image brief written: ${briefRelPath}`,
+      "Generate or approve the image with OpenAI image generation, then rerun with:",
+      `node scripts/run-tournament.mjs${episodeFile ? ` --episode-file ${episodeFile}` : ""} --feature-image /absolute/path/to/approved-image.png`,
+      "For diagnostics only, rerun with --allow-missing-feature-image."
+    ].join("\n")
+  );
 }
 
 function writeAndRender(run) {
@@ -302,7 +336,7 @@ function attachFeatureImage(run, sourcePath) {
   run.featureImage = {
     src: assetRelPath,
     originalSrc: assetRelPath,
-    source: "approved-generated-image",
+    source: "OpenAI one-shot image generation",
     aspectRatio: "2:1",
     alt: featureImageAlt(run)
   };
@@ -463,6 +497,13 @@ function readJson(filePath) {
 function cleanText(value) {
   return String(value || "")
     .replace(/\s+/g, " ")
+    .trim();
+}
+
+function cleanMultiline(value) {
+  return String(value || "")
+    .replace(/\r\n/g, "\n")
+    .replace(/[ \t]+\n/g, "\n")
     .trim();
 }
 

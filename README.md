@@ -77,11 +77,15 @@ To publish a Codex-generated episode JSON:
 node scripts/run-tournament.mjs --episode-file data/inbox/codex-episode.json
 ```
 
-To publish a real external/manual episode JSON:
+To score a real external/manual episode JSON and create the OpenAI image brief:
 
 ```sh
 node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json
 ```
+
+For public non-dry-run episodes, the runner stops here if no approved feature
+image is attached. It writes an OpenAI-ready brief under `data/image-briefs/`
+using the actual winner and winning joke.
 
 To attach an approved winning-joke feature image during render:
 
@@ -92,6 +96,9 @@ node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.jso
 The runner copies the image into `site/assets/feature-images/`, records it as
 `featureImage`, renders it on the episode/home pages, and uses it as the social
 preview image.
+
+Use `--allow-missing-feature-image` only for diagnostics. A ready public episode
+should include the approved winning-joke image.
 
 The runner now performs hard participation checks. A round must have exactly
 five contestants, exactly one joke from each contestant, and exactly one
