@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "slug": "2026-06-04-ext-real-2026-06-04-e",
+  "createdAt": "2026-06-04T23:05:52.730Z",
+  "seed": "ext-real-2026-06-04-e",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cyberpunk",
+    "Glassblower / Potter",
+    "Racetrack",
+    "A dangerous crossing",
+    "Private",
+    "Gossipy"
+  ],
+  "premise": {
+    "text": "Seed terms: Cyberpunk, Glassblower / Potter, Racetrack, A dangerous crossing, Private, Gossipy",
+    "headline": "A pottery class fires up the group chat.",
+    "seedTerms": [
+      "Cyberpunk",
+      "Glassblower / Potter",
+      "Racetrack",
+      "A dangerous crossing",
+      "Private",
+      "Gossipy"
+    ]
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Risk Management",
+      "seedTermsUsed": [
+        "Racetrack",
+        "A dangerous crossing"
+      ],
+      "joke": "I quit betting on horse races after almost getting hit in the crosswalk outside the track. Inside, I’m yelling, “Come on, number seven!” Outside, every Uber is number seven. That’s when I realized I don’t actually love danger—I just prefer it with tiny jockeys and a fence.",
+      "text": "I quit betting on horse races after almost getting hit in the crosswalk outside the track. Inside, I’m yelling, “Come on, number seven!” Outside, every Uber is number seven. That’s when I realized I don’t actually love danger—I just prefer it with tiny jockeys and a fence.",
+      "setup": "",
+      "punchline": "I quit betting on horse races after almost getting hit in the crosswalk outside the track. Inside, I’m yelling, “Come on, number seven!” Outside, every Uber is number seven. That’s when I realized I don’t actually love danger—I just prefer it with tiny jockeys and a fence."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Speed Limit",
+      "seedTermsUsed": [
+        "Cyberpunk",
+        "Racetrack"
+      ],
+      "joke": "I bought one of those cyberpunk jackets — LED strips, chrome panels, the whole dystopian deal. Felt incredible. Then I wore it to the grocery store and a seven-year-old pointed at me and yelled, 'Mom, that man thinks he's fast.' Kid, I am fast. I took the self-checkout in forty seconds. That's basically a racetrack record for someone buying hummus and regret.",
+      "text": "I bought one of those cyberpunk jackets — LED strips, chrome panels, the whole dystopian deal. Felt incredible. Then I wore it to the grocery store and a seven-year-old pointed at me and yelled, 'Mom, that man thinks he's fast.' Kid, I am fast. I took the self-checkout in forty seconds. That's basically a racetrack record for someone buying hummus and regret.",
+      "setup": "",
+      "punchline": "I bought one of those cyberpunk jackets — LED strips, chrome panels, the whole dystopian deal. Felt incredible. Then I wore it to the grocery store and a seven-year-old pointed at me and yelled, 'Mom, that man thinks he's fast.' Kid, I am fast. I took the self-checkout in forty seconds. That's basically a racetrack record for someone buying hummus and regret."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Pottery Class Drama",
+      "seedTermsUsed": [
+        "Glassblower / Potter",
+        "Gossipy"
+      ],
+      "joke": "I started taking a pottery class to relax, but my instructor is incredibly gossipy. It is physically impossible to center a lump of wet clay on a spinning wheel while a man named Patrick leans in and whispers, “You know Sarah’s husband is living in an Airbnb, right?” I went in there to make a simple cereal bowl, but now I've got a lopsided ashtray and I'm deeply emotionally invested in the kiln technician's divorce.",
+      "text": "I started taking a pottery class to relax, but my instructor is incredibly gossipy. It is physically impossible to center a lump of wet clay on a spinning wheel while a man named Patrick leans in and whispers, “You know Sarah’s husband is living in an Airbnb, right?” I went in there to make a simple cereal bowl, but now I've got a lopsided ashtray and I'm deeply emotionally invested in the kiln technician's divorce.",
+      "setup": "",
+      "punchline": "I started taking a pottery class to relax, but my instructor is incredibly gossipy. It is physically impossible to center a lump of wet clay on a spinning wheel while a man named Patrick leans in and whispers, “You know Sarah’s husband is living in an Airbnb, right?” I went in there to make a simple cereal bowl, but now I've got a lopsided ashtray and I'm deeply emotionally invested in the kiln technician's divorce."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Racetrack Dash",
+      "seedTermsUsed": [
+        "Racetrack",
+        "A dangerous crossing"
+      ],
+      "joke": "Folks, last weekend I took a shortcut across the racetrack to beat the bathroom line. Big mistake. That was a dangerous crossing. One second I'm jogging between races, next I'm dodging these roaring beasts doing 180, tires screaming like they're mad at me personally. I dove, rolled, and popped up on the other side minus one shoe and half my dignity. The crowd cheered louder for my survival than the actual winner. Never again—I'll hold it next time.",
+      "text": "Folks, last weekend I took a shortcut across the racetrack to beat the bathroom line. Big mistake. That was a dangerous crossing. One second I'm jogging between races, next I'm dodging these roaring beasts doing 180, tires screaming like they're mad at me personally. I dove, rolled, and popped up on the other side minus one shoe and half my dignity. The crowd cheered louder for my survival than the actual winner. Never again—I'll hold it next time.",
+      "setup": "",
+      "punchline": "Folks, last weekend I took a shortcut across the racetrack to beat the bathroom line. Big mistake. That was a dangerous crossing. One second I'm jogging between races, next I'm dodging these roaring beasts doing 180, tires screaming like they're mad at me personally. I dove, rolled, and popped up on the other side minus one shoe and half my dignity. The crowd cheered louder for my survival than the actual winner. Never again—I'll hold it next time."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Street Secrets",
+      "seedTermsUsed": [
+        "A dangerous crossing",
+        "Gossipy"
+      ],
+      "joke": "I was trying to navigate this dangerous street crossing near my apartment, and honestly the cars weren’t the real threat—it was the gossipy neighbor watching from her porch. I took one cautious step and she shouted, “Careful! People talk about what happens there!” I said, “Ma’am, I know. You’re the people.”",
+      "text": "I was trying to navigate this dangerous street crossing near my apartment, and honestly the cars weren’t the real threat—it was the gossipy neighbor watching from her porch. I took one cautious step and she shouted, “Careful! People talk about what happens there!” I said, “Ma’am, I know. You’re the people.”",
+      "setup": "",
+      "punchline": "I was trying to navigate this dangerous street crossing near my apartment, and honestly the cars weren’t the real threat—it was the gossipy neighbor watching from her porch. I took one cautious step and she shouted, “Careful! People talk about what happens there!” I said, “Ma’am, I know. You’re the people.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 6,
+          "laugh": 6,
+          "comment": "Clean stage rhythm and a decent final image, but the racetrack concept is thin and the payoff is more amusing than sharp."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong concrete scene, natural first-person voice, and a funny escalation from pottery class to emotional investment in gossip."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Understandable and uses two seed concepts, but it mostly narrates the obvious danger and the final line is predictable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Compact and clear with a real turn; the punchline works, though it lands as a mild joke rather than a standout."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "The Uber punchline is the clearest turn and lands reasonably well. Setup is a bit cluttered getting there, and 'tiny jockeys and a fence' is charming but not a knockout final image. Competent and publishable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong. The escalation from 'relax' to 'deeply emotionally invested in the kiln technician's divorce' earns the laugh through accumulation. Patrick's specific gossip drop mid-centering is well-placed. The final line lands with good weight. Clean first-person stage rhythm throughout."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The premise is clear but the execution is generic action-comedy narration. 'Minus one shoe and half my dignity' is a familiar template. The crowd-cheering closer restates rather than turns. Competent filler."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Tight and punchy. The reversal — neighbor as the actual danger — is clean, and 'You're the people' is a satisfying snap. Slight weakness: the setup could be sharper before the payoff. Genuinely good short joke with real stage economy."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clever comparison between betting on horses and dodging Ubers; strong, natural punchline and stage presence."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent execution, but relies heavily on tired internet comedy tropes like 'buying mundane item and regret' as a closer."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 4,
+          "laugh": 3,
+          "comment": "Reads like a generic slapstick anecdote rather than a stand-up bit; awkward exact-wording shoehorn and lacks a real punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 6,
+          "laugh": 6,
+          "comment": "The exact seed terms are a bit heavily signaled in the setup, but the snappy retort at the end lands cleanly."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "comment": "Solid premise with a clean turn, but the laugh is mild rather than sharp."
+        },
+        {
+          "jokeId": "anthropic",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "comment": "Fun visual but relies on familiar cyberpunk-mundane contrast; payoff is cute."
+        },
+        {
+          "jokeId": "google",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "comment": "Strong rhythm, vivid escalation, and memorable final image. Excellent execution."
+        },
+        {
+          "jokeId": "copilot",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "comment": "Clever tag but overall thin and the danger element feels underused."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid premise with a clean turn; mildly funny but not especially sharp."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun image and good first-person rhythm; lands a light but real laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong premise, vivid details, and a clean final turn; genuinely good."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear story and timing, but the turn is predictable and less punchy."
+        }
+      ]
+    }
+  ]
+}
