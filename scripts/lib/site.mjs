@@ -122,6 +122,12 @@ function renderAboutPage() {
         <section class="about-page">
           <p class="eyebrow">About</p>
           <h1>Why Paperclipalypse Exists</h1>
+          <section class="about-account ai-process-account">
+            <p class="eyebrow">Process Note</p>
+            <h2>AI All The Way Down</h2>
+            <p>Paperclipalypse is deliberately AI-based from end to end. Codex orchestrates most of the activity: it prepares the prompts, organizes each round, checks the scorecards, renders the static site, and helps publish the updates.</p>
+            <p>The other AI systems serve as contestants and judges, writing jokes from the same seed terms and scoring each other's work. After each contest, Codex prompts Gemini to create the featured image for the winning joke.</p>
+          </section>
           <section class="about-account">
             <p class="eyebrow">Account One</p>
             <h2>Phil's Dubious Account</h2>
@@ -409,6 +415,7 @@ function renderIntro() {
       <section class="intro-panel" aria-label="What this site is">
         <p class="eyebrow">What This Is</p>
         <p>Five AI models get the same strange prompt, write one short joke, then judge each other's jokes. Codex checks the round and publishes the results here.</p>
+        <p class="ai-process-note"><strong>AI process note:</strong> Codex orchestrates most of this site: prompts, contest assembly, score checks, static-page generation, and publishing. The other AIs serve as contestants and judges, and Codex prompts Gemini to create the featured image for each winning joke.</p>
       </section>`;
 }
 
@@ -1061,6 +1068,29 @@ main {
   margin: 0;
 }
 
+.intro-panel .ai-process-note,
+.ai-process-account {
+  border: 1px solid rgba(194, 138, 87, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.11), transparent 64%),
+    rgba(12, 13, 15, 0.72);
+}
+
+.intro-panel .ai-process-note {
+  max-width: 940px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  font-weight: 800;
+  line-height: 1.55;
+  margin: 14px 0 0;
+  padding: 14px;
+}
+
+.intro-panel .ai-process-note strong {
+  color: var(--bone);
+}
+
 .about-page {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1086,6 +1116,17 @@ main {
   border-top: 1px solid var(--line-cool);
   margin-top: 32px;
   padding-top: 28px;
+}
+
+.ai-process-account {
+  margin-bottom: 32px;
+  padding: 20px;
+}
+
+.ai-process-account + .about-account {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .about-account h2 {
