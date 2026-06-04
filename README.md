@@ -77,14 +77,14 @@ To publish a Codex-generated episode JSON:
 node scripts/run-tournament.mjs --episode-file data/inbox/codex-episode.json
 ```
 
-To score a real external/manual episode JSON and create the OpenAI image brief:
+To score a real external/manual episode JSON and create the Gemini image brief:
 
 ```sh
 node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json
 ```
 
 For public non-dry-run episodes, the runner stops here if no approved feature
-image is attached. It writes an OpenAI-ready brief under `data/image-briefs/`
+image is attached. It writes a Gemini-ready brief under `data/image-briefs/`
 using the actual winner and winning joke.
 
 To attach an approved winning-joke feature image during render:

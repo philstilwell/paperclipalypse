@@ -29,6 +29,7 @@ const historyDir = path.join(rootDir, "data", "runs");
 const siteDir = path.join(rootDir, "site");
 const episodeFile = args.get("episode-file");
 const featureImagePath = args.get("feature-image");
+const featureImageSource = "Gemini image generation";
 const contestants = dryRun ? houseContestants : paidContestants;
 
 if (episodeFile) {
@@ -285,7 +286,7 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
 function prepareFeatureImage(run, { episodeFile } = {}) {
   run.featureImagePrompt = cleanMultiline(run.featureImagePrompt) || buildFeatureImagePrompt(run);
 
-  if (run.featureImage?.src || run.dryRun) {
+  if (run.dryRun) {
     return;
   }
 
@@ -295,16 +296,20 @@ function prepareFeatureImage(run, { episodeFile } = {}) {
   });
   run.featureImageBrief = briefRelPath;
 
+  if (run.featureImage?.src) {
+    return;
+  }
+
   if (allowMissingFeatureImage) {
-    console.warn(`Feature image missing. OpenAI image brief written: ${briefRelPath}`);
+    console.warn(`Feature image missing. Gemini image brief written: ${briefRelPath}`);
     return;
   }
 
   throw new Error(
     [
       "Feature image required before publishing this public episode.",
-      `OpenAI image brief written: ${briefRelPath}`,
-      "Generate or approve the image with OpenAI image generation, then rerun with:",
+      `Gemini image brief written: ${briefRelPath}`,
+      "Generate or approve the image with Google Gemini image generation, then rerun with:",
       `node scripts/run-tournament.mjs${episodeFile ? ` --episode-file ${episodeFile}` : ""} --feature-image /absolute/path/to/approved-image.png`,
       "For diagnostics only, rerun with --allow-missing-feature-image."
     ].join("\n")
@@ -336,7 +341,7 @@ function attachFeatureImage(run, sourcePath) {
   run.featureImage = {
     src: assetRelPath,
     originalSrc: assetRelPath,
-    source: "OpenAI one-shot image generation",
+    source: featureImageSource,
     aspectRatio: "2:1",
     alt: featureImageAlt(run)
   };
@@ -448,7 +453,7 @@ function normalizeFeatureImage(image) {
   return {
     src: cleanText(image.src),
     originalSrc: cleanText(image.originalSrc || image.src),
-    source: cleanText(image.source || "approved-generated-image"),
+    source: cleanText(image.source || featureImageSource),
     aspectRatio: cleanText(image.aspectRatio || "2:1"),
     width: Number.isFinite(Number(image.width)) ? Number(image.width) : undefined,
     height: Number.isFinite(Number(image.height)) ? Number(image.height) : undefined,
