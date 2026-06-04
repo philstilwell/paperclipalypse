@@ -21,7 +21,7 @@ external-model round, use `prompts/external-ai-round.md` instead.
 4. Read `config/house-contestants.json`.
 5. Write five clean jokes, one in each house contestant's style. The six
    `seedTerms` are ingredients, not checklist requirements. Each contestant
-   must use exactly two seed terms in the joke text, no more and no fewer, and
+   must use exactly two seed-term concepts, no more and no fewer, and
    should ignore the other four completely.
 6. Each joke must be a first-person stand-up bit told by the comic on stage,
    using I, me, or my naturally. It must be standalone humor humans can

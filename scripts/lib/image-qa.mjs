@@ -1,11 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 
-export const FEATURE_IMAGE_QA_VERSION = "2026-06-feature-image-v1";
+export const FEATURE_IMAGE_QA_VERSION = "2026-06-feature-image-v3";
 
 export const FEATURE_IMAGE_QA_CHECKLIST = [
-  "The image is a full-size Gemini-generated bitmap, not a cropped screenshot.",
-  "The image is approximately 2:1, landscape, and at least 1600px wide by 800px tall.",
+  "The image is a Gemini-generated web-preview bitmap saved from the generated chat image, not a cropped screenshot.",
+  "The image is approximately 2:1, landscape, and at least 1000px wide by 500px tall. The standard target is Gemini's 1024x506 preview.",
   "The image is visually polished: balanced composition, intentional color, clean contrast, and no obvious generation artifacts.",
   "The image clearly features the Paperclipalypse paperclip stand-up comic on or near a microphone.",
   "The image includes a visual scene inspired by the winning joke, not a generic or unrelated scene.",
@@ -15,7 +15,7 @@ export const FEATURE_IMAGE_QA_CHECKLIST = [
   "The exact joke text remains available as HTML on the site even if the image includes stylized text."
 ];
 
-export function qaFeatureImageFile(filePath, { visualApproved = false } = {}) {
+export function qaFeatureImageFile(filePath, { visualApproved = false, allowWebPreview = true } = {}) {
   const absolutePath = path.resolve(filePath);
   const errors = [];
   const warnings = [];
@@ -33,15 +33,20 @@ export function qaFeatureImageFile(filePath, { visualApproved = false } = {}) {
       errors.push("Feature image dimensions could not be read. Use a PNG, JPEG, or WebP image.");
     } else {
       const ratio = dimensions.width / dimensions.height;
-      if (dimensions.width < 1600 || dimensions.height < 800) {
-        errors.push(`Feature image is too small: ${dimensions.width}x${dimensions.height}. Minimum is 1600x800.`);
+      const minWidth = 1000;
+      const minHeight = 500;
+      if (dimensions.width < minWidth || dimensions.height < minHeight) {
+        errors.push(`Feature image is too small: ${dimensions.width}x${dimensions.height}. Minimum is ${minWidth}x${minHeight}.`);
       }
       if (ratio < 1.9 || ratio > 2.1) {
         errors.push(`Feature image aspect ratio is ${ratio.toFixed(2)}:1. Expected approximately 2:1.`);
       }
+      if (dimensions.width > 1400 || dimensions.height > 700) {
+        warnings.push("Feature image is larger than the standard Gemini web-preview size; use the 1024x506 preview unless there is a deliberate reason.");
+      }
     }
 
-    if (sizeBytes < 200_000) {
+    if (sizeBytes < 100_000) {
       errors.push("Feature image file is suspiciously small; verify this is not a thumbnail or failed download.");
     }
     if (sizeBytes > 12_000_000) {
@@ -57,6 +62,8 @@ export function qaFeatureImageFile(filePath, { visualApproved = false } = {}) {
     version: FEATURE_IMAGE_QA_VERSION,
     passed: errors.length === 0,
     visualApproved,
+    allowWebPreview,
+    assetType: "gemini-web-preview",
     dimensions,
     sizeBytes,
     errors,

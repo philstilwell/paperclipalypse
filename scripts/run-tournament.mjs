@@ -31,7 +31,7 @@ const siteDir = path.join(rootDir, "site");
 const episodeFile = args.get("episode-file");
 const featureImagePath = args.get("feature-image");
 const featureImageQaApproved = args.has("feature-image-qa-approved") || envFlag("PAPERCLIPALYPSE_FEATURE_IMAGE_QA_APPROVED");
-const featureImageSource = "Gemini image generation";
+const featureImageSource = "Gemini image generation (web preview)";
 const contestants = dryRun ? houseContestants : paidContestants;
 
 if (episodeFile) {
@@ -346,7 +346,9 @@ function attachFeatureImage(run, sourcePath) {
 
   const qa = run.dryRun
     ? null
-    : assertFeatureImageQa(absoluteSourcePath, { visualApproved: featureImageQaApproved });
+    : assertFeatureImageQa(absoluteSourcePath, {
+        visualApproved: featureImageQaApproved
+      });
   const ext = path.extname(absoluteSourcePath).toLowerCase() || ".png";
   const assetRelPath = path.posix.join("assets", "feature-images", `${run.slug}${ext}`);
   const assetPath = path.join(siteDir, assetRelPath);
@@ -354,6 +356,7 @@ function attachFeatureImage(run, sourcePath) {
   if (path.resolve(assetPath) !== absoluteSourcePath) {
     fs.copyFileSync(absoluteSourcePath, assetPath);
   }
+  fs.chmodSync(assetPath, 0o644);
 
   run.featureImage = {
     src: assetRelPath,
@@ -366,6 +369,7 @@ function attachFeatureImage(run, sourcePath) {
       status: "approved",
       version: qa.version,
       visualApproved: qa.visualApproved,
+      assetType: qa.assetType,
       automaticChecks: "passed",
       warnings: qa.warnings
     } : undefined,

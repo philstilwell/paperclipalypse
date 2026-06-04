@@ -8,7 +8,7 @@ const processPopoverLabel = [
   "How Paperclipalypse works.",
   "Codex picks six random seed terms.",
   "The same prompt goes to five AI contestants.",
-  "Each contestant writes one short first-person stand-up joke using exactly two seed terms.",
+  "Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.",
   "Each contestant then scores the four jokes it did not write.",
   "Codex checks that nothing is missing and no contestant judged itself.",
   "The site averages the rubric scores and publishes the ranked results."
@@ -508,14 +508,14 @@ function renderSeedTerms(seedTerms) {
       <section class="seed-terms">
         <div class="section-heading">
           <p class="eyebrow">Prompt Genome</p>
-          <h2>Seed Terms <span class="rule-popover" tabindex="0" aria-label="Contestants must use exactly two seed terms.">2-term rule<span class="info-popover">Each contestant must pick exactly two seed terms for the joke. The other four are deliberately ignored so the joke stays natural.</span></span></h2>
+          <h2>Seed Terms <span class="rule-popover" tabindex="0" aria-label="Contestants must use exactly two seed-term concepts.">2-term rule<span class="info-popover">Each contestant must pick exactly two seed terms as concepts for the joke. Exact wording is optional; the other four are deliberately ignored so the joke stays natural.</span></span></h2>
         </div>
         <ul>${terms}</ul>
       </section>`;
 }
 
 function renderProcessPopover() {
-  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed terms.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores and publishes the ranking.</span></span></span>`;
+  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores and publishes the ranking.</span></span></span>`;
 }
 
 function renderJokePromptPopover(run) {
@@ -549,7 +549,8 @@ broad human audience.
 Seed terms: ${seedTermsLine(run)}
 
 Rules:
-- Use exactly two seed terms in the joke text, no more and no fewer.
+- Use exactly two seed terms as concepts, no more and no fewer.
+- Exact seed-term wording is optional if the concept is clear in the joke.
 - Ignore the other four seed terms completely.
 - Tell the joke as the onstage comic using I, me, or my naturally.
 - The joke must make sense without the title or seed list.
@@ -583,7 +584,7 @@ Rubric:
 - craft 20%: clarity, stage rhythm, economy, escalation, and punchline placement.
 - originality 10%: fresh angle, image, and wording.
 - promptFit 10%: first-person stand-up form and natural use of exactly two seed
-  terms in the joke text.
+  terms as concepts.
 
 Fixed scale:
 - 5 means competent but forgettable.

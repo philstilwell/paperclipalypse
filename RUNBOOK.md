@@ -11,8 +11,8 @@ Use this when publishing a real public round.
 5. Collect one complete scorecard from each contestant.
 6. Put the collected data in `data/inbox/<round-name>.json` with `source` set to `manual-external`.
 7. Open a fresh Chrome window for Gemini image generation, then generate and
-   approve a 2:1 winning-joke feature image after scoring. Use the normal
-   save-as flow to download the full-size image. Store the approved asset under
+   approve a 2:1 winning-joke feature image after scoring. Save Gemini's
+   1024x506 chat-preview image rather than the full-size export. Store the approved asset under
    `site/assets/feature-images/` and add a `featureImage` object to the episode
    JSON, or pass it with `--feature-image`.
 8. Run:
@@ -43,7 +43,7 @@ The runner blocks publication when:
 - a contestant judges its own joke
 - a scorecard omits another contestant
 - a joke is not first-person stand-up
-- a joke does not use exactly two seed terms
+- a joke does not use exactly two seed-term concepts
 - the winner scores below 6.0
 - the average joke score is below 5.0
 - any joke has fewer than four judges

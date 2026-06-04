@@ -33,9 +33,8 @@ So the preferred real-tournament flow is:
 5. It runs the tournament once with `--allow-missing-feature-image` to create
    the Gemini image brief.
 6. It opens a fresh Chrome window for Google Gemini image generation, prompts
-   the winning-joke feature image, downloads the full-size image through the
-   normal save-as flow, and rejects/regenerates weak images until the image QA
-   checklist passes.
+   the winning-joke feature image, saves Gemini's 1024x506 chat-preview image,
+   and rejects/regenerates weak images until the image QA checklist passes.
 7. It reruns with `--feature-image` and `--feature-image-qa-approved`.
 8. The runner rejects incomplete participation or unapproved images before
    rendering.
@@ -110,10 +109,10 @@ node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.jso
 The runner copies the image into `site/assets/feature-images/`, records it as
 `featureImage`, renders it on the episode/home pages, and uses it as the social
 preview image. The `--feature-image-qa-approved` flag should only be used after
-the full-size Gemini download has passed visual QA: polished composition,
-recognizable paperclip comic, useful winning-joke scene, no visible prompt
-labels or watermarks, and no distracting text garbling. Low-quality images should
-be rejected and regenerated.
+Gemini's 1024x506 chat-preview image has passed visual QA: polished
+composition, recognizable paperclip comic, useful winning-joke scene, no visible
+prompt labels or watermarks, and no distracting text garbling. Low-quality
+images should be rejected and regenerated.
 
 Use `--allow-missing-feature-image` only for diagnostics. A ready public episode
 should include the approved winning-joke image.
@@ -132,7 +131,7 @@ or diagnostic round.
 ## Joke And Judging Standard
 
 The six seed terms are ingredients, not checklist requirements. Each contestant
-must use exactly two seed terms in the joke text, no more and no fewer, so the
+must use exactly two seed-term concepts, no more and no fewer, so the
 joke has a clear constraint without becoming a checklist. The joke must be told
 as a first-person stand-up bit, with the comic speaking from the stage. The
 prompts discourage seed stuffing, long explanations, detached story summaries,

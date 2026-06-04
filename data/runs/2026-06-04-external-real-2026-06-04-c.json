@@ -1,0 +1,663 @@
+{
+  "version": 1,
+  "slug": "2026-06-04-external-real-2026-06-04-c",
+  "seed": "external-real-2026-06-04-c",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-04T15:55:00.000Z",
+  "seedTerms": [
+    "Historical",
+    "Mail Carrier",
+    "Subway Train / Station / Tunnel",
+    "Being cut from a team",
+    "Cooperative",
+    "Disloyal"
+  ],
+  "premise": {
+    "text": "Seed terms: Historical, Mail Carrier, Subway Train / Station / Tunnel, Being cut from a team, Cooperative, Disloyal",
+    "seedTerms": [
+      "Historical",
+      "Mail Carrier",
+      "Subway Train / Station / Tunnel",
+      "Being cut from a team",
+      "Cooperative",
+      "Disloyal"
+    ],
+    "displayText": "Seed terms: Historical, Mail Carrier, Subway Train / Station / Tunnel, Being cut from a team, Cooperative, Disloyal"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "claude-web",
+      "model": "Claude Sonnet 4.6 Low web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "gemini-web",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "grok-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "copilot-web",
+      "model": "Microsoft Copilot web guest"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Late Delivery",
+      "seedTermsUsed": [
+        "Historical",
+        "Mail Carrier"
+      ],
+      "joke": "I was a mail carrier for one summer, and anytime I delivered something late, I called it historical. Customers hated that, but after three weeks your electric bill isn’t correspondence anymore—it’s an exhibit.",
+      "setup": "",
+      "punchline": "I was a mail carrier for one summer, and anytime I delivered something late, I called it historical. Customers hated that, but after three weeks your electric bill isn’t correspondence anymore—it’s an exhibit.",
+      "text": "I was a mail carrier for one summer, and anytime I delivered something late, I called it historical. Customers hated that, but after three weeks your electric bill isn’t correspondence anymore—it’s an exhibit."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Claude Sonnet 4.6 Low web",
+      "title": "Neither Rain nor Slime",
+      "seedTermsUsed": [
+        "Mail Carrier",
+        "Disloyal"
+      ],
+      "joke": "My dog spent three years growling at the mail carrier every single day — fur up, teeth out, absolute commitment. Then last Tuesday I look out the window and he's walking alongside her, tail wagging, letting her pet him. I've never felt so betrayed. That dog has principles I don't even have. I would have switched sides way earlier.",
+      "setup": "",
+      "punchline": "My dog spent three years growling at the mail carrier every single day — fur up, teeth out, absolute commitment. Then last Tuesday I look out the window and he's walking alongside her, tail wagging, letting her pet him. I've never felt so betrayed. That dog has principles I don't even have. I would have switched sides way earlier.",
+      "text": "My dog spent three years growling at the mail carrier every single day — fur up, teeth out, absolute commitment. Then last Tuesday I look out the window and he's walking alongside her, tail wagging, letting her pet him. I've never felt so betrayed. That dog has principles I don't even have. I would have switched sides way earlier."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Man's Best Friend",
+      "seedTermsUsed": [
+        "Disloyal",
+        "Mail Carrier"
+      ],
+      "joke": "I recently discovered my dog is incredibly disloyal. For years, I thought he was fiercely defending our front door every afternoon. Turns out, he’s just throwing a tantrum because he wants belly rubs from the mail carrier. I buy the sixty-dollar bags of premium salmon kibble, and this guy shows up with nothing but dental bills and credit card rejections, and my dog treats him like a returning war hero.",
+      "setup": "",
+      "punchline": "I recently discovered my dog is incredibly disloyal. For years, I thought he was fiercely defending our front door every afternoon. Turns out, he’s just throwing a tantrum because he wants belly rubs from the mail carrier. I buy the sixty-dollar bags of premium salmon kibble, and this guy shows up with nothing but dental bills and credit card rejections, and my dog treats him like a returning war hero.",
+      "text": "I recently discovered my dog is incredibly disloyal. For years, I thought he was fiercely defending our front door every afternoon. Turns out, he’s just throwing a tantrum because he wants belly rubs from the mail carrier. I buy the sixty-dollar bags of premium salmon kibble, and this guy shows up with nothing but dental bills and credit card rejections, and my dog treats him like a returning war hero."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Team Betrayal",
+      "seedTermsUsed": [
+        "Being cut from a team",
+        "Disloyal"
+      ],
+      "joke": "I tried out for this weekend basketball league, all excited. First practice they cut me from the team. Coach says I'm too disloyal. I go, 'What are you talking about?' He says, 'Dude, every time you got the ball you bounced it straight to the other guys.' Look, I panic under pressure, okay? I just wanted everyone to feel included.",
+      "setup": "",
+      "punchline": "I tried out for this weekend basketball league, all excited. First practice they cut me from the team. Coach says I'm too disloyal. I go, 'What are you talking about?' He says, 'Dude, every time you got the ball you bounced it straight to the other guys.' Look, I panic under pressure, okay? I just wanted everyone to feel included.",
+      "text": "I tried out for this weekend basketball league, all excited. First practice they cut me from the team. Coach says I'm too disloyal. I go, 'What are you talking about?' He says, 'Dude, every time you got the ball you bounced it straight to the other guys.' Look, I panic under pressure, okay? I just wanted everyone to feel included."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web guest",
+      "title": "Team Spirit",
+      "seedTermsUsed": [
+        "Being cut from a team",
+        "Mail Carrier"
+      ],
+      "joke": "I once got a notice about being cut from a team, and it was delivered by my mail carrier. I opened it right in front of him, and he goes, “Tough break.” I’m like, “Dude, you walked it over here. You’re basically the bouncer who escorts me out of my own dreams.”",
+      "setup": "",
+      "punchline": "I once got a notice about being cut from a team, and it was delivered by my mail carrier. I opened it right in front of him, and he goes, “Tough break.” I’m like, “Dude, you walked it over here. You’re basically the bouncer who escorts me out of my own dreams.”",
+      "text": "I once got a notice about being cut from a team, and it was delivered by my mail carrier. I opened it right in front of him, and he goes, “Tough break.” I’m like, “Dude, you walked it over here. You’re basically the bouncer who escorts me out of my own dreams.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clean dog-betrayal premise with strong escalation and a good final self-own; familiar setup but well executed.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Relatable and vivid, with the premium kibble versus junk mail contrast working well; slightly overwritten before the final image.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear sports premise and a likable inclusion turn, but the punchline is mild rather than sharply surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Efficient and coherent with a decent image in the dream-bouncer line, though the payoff is more clever than laugh-heavy.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Smart reframe with a clean escalation — 'exhibit' lands well. The laugh is more appreciative than explosive, but the construction is tight and the angle is genuinely fresh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "The dog-disloyal-mail-carrier territory is well-worn, and the turn is predictable once the setup lands. The 'returning war hero' closer has energy but the joke runs slightly...",
+          "laugh": 6,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.800000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "'I just wanted everyone to feel included' is a genuinely good final line — recontextualizes the setup with a satisfying snap. Pacing is efficient and the panic-under-pressure...",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "'Bouncer who escorts me out of my own dreams' is a vivid closer but slightly overwritten. The premise is contrived — mail carriers don't typically deliver team cut notices —...",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Crisp delivery and excellent escalation. Transforming late mail from 'correspondence' to an 'exhibit' is a very strong, natural punchline.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.7
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "A classic dog trope elevated by a decent turn, though the narrator's logic gets slightly tangled in the final two sentences.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The dialogue feels contrived to force the seed term; a coach calling a confused player 'disloyal' for passing to the wrong team does not sound natural.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 4.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The premise of receiving a sports cut notification via physical mail while the carrier watches is quite contrived, though the final simile is somewhat clever.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Mild pun on historical mail with okay rhythm but predictable payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong relatable betrayal visual with natural escalation and solid turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Amusing dog disloyalty bit but too similar to common tropes.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.800000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute premise but the punchline lands softly without strong snap.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a mild turn; solid but not especially funny.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good first-person framing and a relatable betrayal angle; lands a mild real laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear and coherent but more descriptive than punchy; ends without a strong snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "A tidy stage bit with a decent turn; not big laughs but works as a real joke.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.8,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Clean dog-betrayal premise with strong escalation and a good final self-own; familiar setup but well executed."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "A classic dog trope elevated by a decent turn, though the narrator's logic gets slightly tangled in the final two sentences."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Strong relatable betrayal visual with natural escalation and solid turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Good first-person framing and a relatable betrayal angle; lands a mild real laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.5,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "Smart reframe with a clean escalation — 'exhibit' lands well. The laugh is more appreciative than explosive, but the construction is tight and the angle is genuinely fresh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Crisp delivery and excellent escalation. Transforming late mail from 'correspondence' to an 'exhibit' is a very strong, natural punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Mild pun on historical mail with okay rhythm but predictable payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Clean premise with a mild turn; solid but not especially funny."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.3,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 5.3,
+        "craft": 6.5,
+        "originality": 5.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Relatable and vivid, with the premium kibble versus junk mail contrast working well; slightly overwritten before the final image."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "The dog-disloyal-mail-carrier territory is well-worn, and the turn is predictable once the setup lands. The 'returning war hero' closer has energy but the joke runs slightly..."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Amusing dog disloyalty bit but too similar to common tropes."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Clear and coherent but more descriptive than punchy; ends without a strong snap."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Clear sports premise and a likable inclusion turn, but the punchline is mild rather than sharply surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "'I just wanted everyone to feel included' is a genuinely good final line — recontextualizes the setup with a satisfying snap. Pacing is efficient and the panic-under-pressure..."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "The dialogue feels contrived to force the seed term; a coach calling a confused player 'disloyal' for passing to the wrong team does not sound natural."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "A tidy stage bit with a decent turn; not big laughs but works as a real joke."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 6,
+        "craft": 5.8,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Efficient and coherent with a decent image in the dream-bouncer line, though the payoff is more clever than laugh-heavy."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "'Bouncer who escorts me out of my own dreams' is a vivid closer but slightly overwritten. The premise is contrived — mail carriers don't typically deliver team cut notices —..."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "The premise of receiving a sports cut notification via physical mail while the carrier watches is quite contrived, though the final simile is somewhat clever."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Cute premise but the punchline lands softly without strong snap."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-04-external-real-2026-06-04-c.jpg",
+    "originalSrc": "assets/feature-images/2026-06-04-external-real-2026-06-04-c.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v3",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Neither Rain nor Slime: a paperclip stand-up comic, joke text, and the joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Neither Rain nor Slime\nExact joke text to render in the right panel:\nMy dog spent three years growling at the mail carrier every single day — fur up, teeth out, absolute commitment. Then last Tuesday I look out the window and he's walking alongside her, tail wagging, letting her pet him. I've never felt so betrayed. That dog has principles I don't even have. I would have switched sides way earlier.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Historical, Mail Carrier, Subway Train / Station / Tunnel, Being cut from a team, Cooperative, Disloyal.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Historical, Mail Carrier, Subway Train / Station / Tunnel, Being cut from a team, Cooperative, Disloyal. Use the winning joke titled \"Neither Rain nor Slime\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "featureImageBrief": "data/image-briefs/2026-06-04-external-real-2026-06-04-c.md"
+}

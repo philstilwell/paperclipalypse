@@ -29,7 +29,7 @@ export const RUBRIC_FIELDS = [
     key: "promptFit",
     label: "Prompt Fit",
     weight: 0.1,
-    description: "Natural first-person stand-up form using exactly two seed terms in the joke text, with the other four left out."
+    description: "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
   }
 ];
 
@@ -96,8 +96,9 @@ export function rubricPromptText() {
     "A joke that is not first-person stand-up should score no higher than 4 for promptFit and should lose craft if the form weakens the timing.",
     "Penalize clever-sounding nonsense, vague absurdity, generic therapy/HR/committee templates, prompt recitation, and punchlines that only restate the setup.",
     "Do not inflate scores because the seed list is odd. Reward only humor that a broad human audience could understand and enjoy.",
-    "Do not reward seed-term stuffing. Prompt fit is high only when exactly two seed terms appear naturally in the joke text.",
-    "If a joke uses fewer than two or more than two seed terms, promptFit must be 4 or lower unless the mistake is purely typographic.",
+    "Do not reward seed-term stuffing. Prompt fit is high when exactly two seed terms are clearly used as concepts in the joke.",
+    "Exact seed-term wording is not required when the concept is unmistakable.",
+    "If a joke uses fewer than two or more than two seed-term concepts, promptFit must be 4 or lower unless the mismatch is purely typographic.",
     "Each judge must score every supplied joke exactly once and must not score its own joke.",
     "Use integer 1-10 scores for each field; the site computes the weighted total.",
     "Fields and weights:",

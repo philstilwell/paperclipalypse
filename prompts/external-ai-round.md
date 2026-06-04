@@ -28,7 +28,8 @@ broad human audience.
 Seed terms: {{SEED_TERMS}}
 
 Rules:
-- Use exactly two seed terms in the joke text, no more and no fewer.
+- Use exactly two seed terms as concepts, no more and no fewer.
+- Exact seed-term wording is optional if the concept is clear in the joke.
 - Ignore the other four seed terms completely.
 - Tell the joke as the onstage comic using I, me, or my naturally.
 - The joke must make sense without the title or seed list.
@@ -70,7 +71,7 @@ Rubric:
 - craft 20%: clarity, stage rhythm, economy, escalation, and punchline placement.
 - originality 10%: fresh angle, image, and wording.
 - promptFit 10%: first-person stand-up form and natural use of exactly two seed
-  terms in the joke text.
+  terms as concepts.
 
 Fixed scale:
 - 5 means competent but forgettable.
@@ -109,10 +110,10 @@ omits another contestant, or any joke fails the first-person/two-seed structural
 checks.
 
 4. Open a fresh Chrome window for Gemini image generation, then generate the
-   feature image from the written Gemini brief. Save the full-size Gemini
-   download through the normal browser save-as flow, visually inspect it, and
-   reject/regenerate weak images until the image is polished, on-brief, and free
-   of distracting text or prompt-label artifacts.
+   feature image from the written Gemini brief. Save Gemini's 1024x506
+   generated chat-preview image, visually inspect it, and reject/regenerate weak
+   images until the image is polished, on-brief, and free of distracting text or
+   prompt-label artifacts.
 
 ```sh
 node scripts/qa-feature-image.mjs --image /absolute/path/to/approved-image.png --approved
