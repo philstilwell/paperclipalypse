@@ -65,7 +65,7 @@ ${prompt}
 
 ## Attach The Approved Image
 
-Use Google Gemini image generation for the bitmap. Low-quality images must be rejected and regenerated until the QA checklist passes.
+Use Google Gemini image generation for the bitmap. Open a fresh Chrome window first so the normal save-as dialogue is accessible, then download the full-size generated image. Low-quality images must be rejected and regenerated until the QA checklist passes.
 
 ## Feature Image QA
 

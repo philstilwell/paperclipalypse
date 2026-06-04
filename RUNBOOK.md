@@ -10,10 +10,11 @@ Use this when publishing a real public round.
 4. Prepare the judging prompt for each contestant, omitting that contestant's own joke.
 5. Collect one complete scorecard from each contestant.
 6. Put the collected data in `data/inbox/<round-name>.json` with `source` set to `manual-external`.
-7. Generate and approve a 2:1 winning-joke feature image after scoring. Store
-   the approved asset under `site/assets/feature-images/` and add a
-   `featureImage` object to the episode JSON, or pass it with
-   `--feature-image`.
+7. Open a fresh Chrome window for Gemini image generation, then generate and
+   approve a 2:1 winning-joke feature image after scoring. Use the normal
+   save-as flow to download the full-size image. Store the approved asset under
+   `site/assets/feature-images/` and add a `featureImage` object to the episode
+   JSON, or pass it with `--feature-image`.
 8. Run:
 
 ```sh

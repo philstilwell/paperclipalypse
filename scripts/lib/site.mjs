@@ -339,17 +339,20 @@ function renderCritiqueAccordions(comments = []) {
   const items = comments
     .map(
       (comment) => `
-            <details class="judge-critique">
-              <summary><span>${escapeHtml(comment.judgeName)}</span><strong>Critique</strong></summary>
+              <article class="judge-critique">
+                <h4>${escapeHtml(comment.judgeName)}</h4>
               <p>${escapeHtml(comment.comment)}</p>
-            </details>`
+              </article>`
     )
     .join("");
 
   return `
-          <div class="judge-critiques" aria-label="Judge critiques">
+          <details class="judge-critiques">
+            <summary><span>Judge Critiques</span><strong>${comments.length} notes</strong></summary>
+            <div class="judge-critique-list">
             ${items}
-          </div>`;
+            </div>
+          </details>`;
 }
 
 function renderMemoryNav(run, publicRuns = [], ariaLabel = "Memory Bank navigation") {
@@ -1572,15 +1575,10 @@ td:nth-child(4) {
 
 .judge-critiques {
   margin: auto 0 0;
-  display: grid;
-  gap: 8px;
   color: var(--muted);
   font-size: 0.78rem;
-  line-height: 1.38;
-}
-
-.judge-critique {
-  border: 1px solid rgba(194, 138, 87, 0.2);
+  line-height: 1.28;
+  border: 1px solid rgba(194, 138, 87, 0.24);
   border-radius: 8px;
   background:
     linear-gradient(180deg, rgba(194, 138, 87, 0.08), transparent 72%),
@@ -1588,60 +1586,80 @@ td:nth-child(4) {
   overflow: hidden;
 }
 
-.judge-critique[open] {
+.judge-critiques[open] {
   border-color: rgba(194, 138, 87, 0.38);
   background:
     linear-gradient(180deg, rgba(194, 138, 87, 0.12), transparent 72%),
     rgba(9, 10, 12, 0.78);
 }
 
-.judge-critique summary {
+.judge-critiques summary {
   min-height: 34px;
   cursor: pointer;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   gap: 8px;
   align-items: center;
   list-style: none;
   padding: 8px 10px;
 }
 
-.judge-critique summary::-webkit-details-marker {
+.judge-critiques summary::-webkit-details-marker {
   display: none;
 }
 
-.judge-critique summary::after {
+.judge-critiques summary::after {
   content: "+";
   color: var(--brass);
   font-weight: 900;
 }
 
-.judge-critique[open] summary::after {
+.judge-critiques[open] summary::after {
   content: "-";
 }
 
-.judge-critique summary:focus-visible {
+.judge-critiques summary:focus-visible {
   outline: 2px solid rgba(239, 225, 207, 0.78);
   outline-offset: -2px;
 }
 
-.judge-critique summary span {
+.judge-critiques summary span {
   color: var(--muted);
   overflow-wrap: anywhere;
 }
 
-.judge-critique summary strong {
+.judge-critiques summary strong {
   color: var(--brass);
   font-size: 0.68rem;
   font-weight: 900;
   text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.judge-critique-list {
+  border-top: 1px solid rgba(176, 185, 196, 0.1);
+  display: grid;
+  gap: 0;
+  padding: 8px 10px 9px;
+}
+
+.judge-critique + .judge-critique {
+  border-top: 1px solid rgba(176, 185, 196, 0.1);
+  margin-top: 7px;
+  padding-top: 7px;
+}
+
+.judge-critique h4 {
+  color: var(--brass);
+  font-size: 0.72rem;
+  font-weight: 900;
+  margin: 0 0 2px;
 }
 
 .judge-critique p {
-  border-top: 1px solid rgba(176, 185, 196, 0.1);
   color: var(--muted);
   margin: 0;
-  padding: 9px 10px 10px;
+  line-height: 1.28;
 }
 
 .empty-critiques {

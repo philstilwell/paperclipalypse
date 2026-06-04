@@ -32,9 +32,10 @@ So the preferred real-tournament flow is:
 4. Codex writes the collected external responses to `data/inbox/`.
 5. It runs the tournament once with `--allow-missing-feature-image` to create
    the Gemini image brief.
-6. It prompts Google Gemini image generation for the winning-joke feature image,
-   downloads the full-size image, and rejects/regenerates weak images until the
-   image QA checklist passes.
+6. It opens a fresh Chrome window for Google Gemini image generation, prompts
+   the winning-joke feature image, downloads the full-size image through the
+   normal save-as flow, and rejects/regenerates weak images until the image QA
+   checklist passes.
 7. It reruns with `--feature-image` and `--feature-image-qa-approved`.
 8. The runner rejects incomplete participation or unapproved images before
    rendering.

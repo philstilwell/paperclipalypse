@@ -29,15 +29,18 @@ using paid model APIs.
 7. Write the real external episode to `data/inbox/`.
 8. Run the tournament once with `--allow-missing-feature-image` to create the
    Gemini feature image brief.
-9. Prompt Google Gemini image generation for a 2:1 feature image based on the
-   winning joke.
-10. Download the full-size Gemini image through the normal browser save flow.
-11. QA the full-size image. Reject and regenerate low-quality images until the
+9. Open a fresh Chrome window for Gemini image generation so the full browser
+   save-as dialogue is accessible.
+10. Prompt Google Gemini image generation for a 2:1 feature image based on the
+    winning joke.
+11. Download the full-size Gemini image through the normal browser save flow,
+    not from a cropped screenshot or preview thumbnail.
+12. QA the full-size image. Reject and regenerate low-quality images until the
     image is polished, on-brief, readable, and free of visible prompt/layout
     labels or distracting text errors.
-12. Rerun the tournament with `--feature-image` and
+13. Rerun the tournament with `--feature-image` and
     `--feature-image-qa-approved`.
-13. Verify the rendered site, close temporary tabs/dialogues, commit, and push.
+14. Verify the rendered site, close temporary tabs/dialogues, commit, and push.
 
 ## Important Boundaries
 
@@ -47,6 +50,8 @@ using paid model APIs.
 - Codex must not invent external contestant jokes or missing scorecards.
 - Codex must not use paid APIs unless Phil explicitly authorizes metered API use.
 - Gemini image generation is the project default for feature images.
+- Gemini image generation should be run in a fresh Chrome window so Codex can
+  reach the normal save-as dialogue and download the full-size generated image.
 - Gemini may imperfectly render long in-image text. The site HTML remains the
   canonical exact joke text; the image prompt still asks Gemini to include the
   joke text when possible.
