@@ -1,4 +1,5 @@
 import { pick } from "./random.mjs";
+import { normalizePremiseForDisplay } from "./premise-display.mjs";
 import { rubricPromptText } from "./scoring.mjs";
 
 export function buildPremise(pools, rng) {
@@ -6,12 +7,12 @@ export function buildPremise(pools, rng) {
   const person = pick(pools.people, rng);
   const element = pick(pools.elements, rng);
 
-  return {
+  return normalizePremiseForDisplay({
     place,
     person,
     element,
     text: `${person} at ${place}, dealing with ${element}`
-  };
+  });
 }
 
 export function generationPrompt(premise) {

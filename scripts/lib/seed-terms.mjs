@@ -1,4 +1,5 @@
 import { pick } from "./random.mjs";
+import { normalizePremiseForDisplay } from "./premise-display.mjs";
 
 export const SEED_CATEGORIES = [
   "genre",
@@ -29,12 +30,11 @@ export function buildPremiseFromSeedTerms(seedTerms) {
 
   const [genre, occupation, location, conflict, positiveTrait, negativeTrait] = seedTerms;
 
-  return {
+  return normalizePremiseForDisplay({
     place: location,
     person: occupation,
     element: conflict,
     text: `${occupation} at ${location}, facing ${conflict}, with a ${positiveTrait} instinct and a ${negativeTrait} streak in a ${genre} mode`,
     seedTerms
-  };
+  }, seedTerms);
 }
-

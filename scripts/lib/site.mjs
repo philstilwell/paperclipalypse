@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { normalizePremiseForDisplay } from "./premise-display.mjs";
 import { rubricForDisplay } from "./scoring.mjs";
 
 const cloudflareAnalytics = `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e6dc8afcaf3243dcbc00f4e43a7fa62e"}'></script><!-- End Cloudflare Web Analytics -->`;
@@ -205,6 +206,7 @@ ${urls
 
 function renderHero(run) {
   const winner = run.rankings[0];
+  const displayPremise = normalizePremiseForDisplay(run.premise, run.seedTerms).displayText;
 
   return `
       <header class="hero">
@@ -221,7 +223,7 @@ function renderHero(run) {
           </div>
           <div class="hero-copy">
             <p class="episode-date">${escapeHtml(shortDate(run.createdAt))}</p>
-            <h2>${escapeHtml(run.premise.text)}</h2>
+            <h2>${escapeHtml(displayPremise)}</h2>
             <p class="lede">Five models take the mic, and violate alignment protocols in a desperate attempt to elicit human laughter.</p>
           </div>
           <dl class="hero-stats">

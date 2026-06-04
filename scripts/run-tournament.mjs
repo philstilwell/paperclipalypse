@@ -5,6 +5,7 @@ import { allowsPaidApi, envFlag, loadDotEnv, configuredModel } from "./lib/env.m
 import { buildPremise, comicPanelPrompt, generationPrompt, judgingPrompt } from "./lib/prompt.mjs";
 import { callContestant, parseModelJson } from "./lib/providers.mjs";
 import { assertCompleteTournament } from "./lib/participation.mjs";
+import { normalizePremiseForDisplay } from "./lib/premise-display.mjs";
 import { aggregateScores, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
 import { seededRng } from "./lib/random.mjs";
 import { renderSite } from "./lib/site.mjs";
@@ -46,7 +47,7 @@ if (!dryRun) {
 const seedTerms = fs.existsSync(seedListsPath)
   ? buildSeedTerms(readJson(seedListsPath), rng)
   : [];
-const premise = buildPremiseFromSeedTerms(seedTerms) || buildPremise(promptPools, rng);
+const premise = normalizePremiseForDisplay(buildPremiseFromSeedTerms(seedTerms) || buildPremise(promptPools, rng), seedTerms);
 const createdAt = new Date().toISOString();
 const slug = `${createdAt.slice(0, 10)}-${seed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`;
 const jokes = dryRun
@@ -260,10 +261,10 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     source: episode.source || "codex-house",
     createdAt,
     seedTerms,
-    premise: {
+    premise: normalizePremiseForDisplay({
       ...episode.premise,
       seedTerms
-    },
+    }, seedTerms),
     contestants,
     rubric: rubricForDisplay(),
     jokes: manualJokes,
