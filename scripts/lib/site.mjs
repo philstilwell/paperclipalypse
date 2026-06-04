@@ -23,7 +23,7 @@ export function renderSite({ run, historyDir, siteDir }) {
   for (const archivedRun of runs) {
     fs.writeFileSync(
       path.join(siteDir, "runs", `${archivedRun.slug}.html`),
-      cleanGeneratedText(renderRunPage(archivedRun)),
+      cleanGeneratedText(renderRunPage(archivedRun, publicRuns)),
       "utf8"
     );
   }
@@ -152,7 +152,7 @@ function renderAboutPage() {
   });
 }
 
-function renderRunPage(run) {
+function renderRunPage(run, publicRuns) {
   return pageShell({
     title: `Paperclipalypse - ${shortDate(run.createdAt)}`,
     stylesheetPath: "../styles.css",
@@ -160,7 +160,11 @@ function renderRunPage(run) {
     socialImage: socialImageForRun(run),
     body: `
       ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", label: shortDate(run.createdAt) })}
-      ${renderRun(run, { assetBase: "../" })}`
+      ${renderRun(run, {
+        assetBase: "../",
+        memoryNav: renderMemoryNav(run, publicRuns, "Memory Bank navigation"),
+        memoryNavEnd: renderMemoryNav(run, publicRuns, "Memory Bank navigation end")
+      })}`
   });
 }
 
@@ -248,6 +252,8 @@ function renderRun(run, options = {}) {
   const showEpisodeHeader = options.showEpisodeHeader ?? true;
   const showIntro = options.showIntro ?? false;
   const assetBase = options.assetBase ?? "./";
+  const memoryNav = options.memoryNav ?? "";
+  const memoryNavEnd = options.memoryNavEnd ?? "";
   const winner = run.rankings[0];
   const rankingRows = run.rankings
     .map(
@@ -291,7 +297,7 @@ function renderRun(run, options = {}) {
   return `
     <main>
       ${showIntro ? renderIntro() : ""}
-      ${showEpisodeHeader ? renderEpisodeHeader(run, winner) : ""}
+      ${showEpisodeHeader ? renderEpisodeHeader(run, winner) : ""}${memoryNav}
       ${renderFeatureImage(run, assetBase)}
       ${renderSeedTerms(run.seedTerms)}
       <section class="scoreboard">
@@ -320,8 +326,54 @@ function renderRun(run, options = {}) {
           <h2>Jokes ${renderJokePromptPopover(run)}</h2>
         </div>
         <div class="joke-grid">${jokes}</div>
-      </section>
+      </section>${memoryNavEnd}
     </main>`;
+}
+
+function renderMemoryNav(run, publicRuns = [], ariaLabel = "Memory Bank navigation") {
+  const index = publicRuns.findIndex((archivedRun) => archivedRun.slug === run.slug);
+  if (index < 0 || publicRuns.length < 2) {
+    return "";
+  }
+
+  const previousRun = publicRuns[index + 1];
+  const nextRun = publicRuns[index - 1];
+
+  return `
+      <nav class="memory-nav" aria-label="${escapeHtml(ariaLabel)}">
+        ${renderMemoryNavButton("Previous", previousRun, "Older episode", "left")}
+        ${renderMemoryNavButton("Next", nextRun, "Newer episode", "right")}
+      </nav>`;
+}
+
+function renderMemoryNavButton(label, targetRun, fallback, direction) {
+  const arrow = direction === "left" ? "&larr;" : "&rarr;";
+  const labelText = direction === "left"
+    ? `<span aria-hidden="true">${arrow}</span>${escapeHtml(label)}`
+    : `${escapeHtml(label)}<span aria-hidden="true">${arrow}</span>`;
+
+  if (!targetRun) {
+    return `
+        <span class="memory-button is-disabled" aria-disabled="true">
+          <span>${labelText}</span>
+          <strong>No ${escapeHtml(fallback.toLowerCase())}</strong>
+          <small>End of the Memory Bank</small>
+        </span>`;
+  }
+
+  const winner = targetRun.rankings?.[0];
+  const meta = [
+    shortDate(targetRun.createdAt),
+    winner ? `Winner: ${winner.contestantName} (${formatScore(winner.score)})` : ""
+  ].filter(Boolean).join(" / ");
+  const displayPremise = normalizePremiseForDisplay(targetRun.premise, targetRun.seedTerms).displayText || targetRun.premise?.text || targetRun.slug;
+
+  return `
+        <a class="memory-button" href="../runs/${escapeHtml(targetRun.slug)}.html" aria-label="${escapeHtml(`${label} Memory Bank episode: ${displayPremise}`)}">
+          <span>${labelText}</span>
+          <strong>${escapeHtml(displayPremise)}</strong>
+          <small>${escapeHtml(meta)}</small>
+        </a>`;
 }
 
 function renderFeatureImage(run, assetBase) {
@@ -921,8 +973,73 @@ main {
 .rubric,
 .jokes,
 .feature-image,
+.memory-nav,
 .archive {
   padding: 32px 0 0;
+}
+
+.memory-nav {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.memory-button {
+  min-height: 110px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.12), transparent 58%),
+    rgba(18, 19, 21, 0.84);
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.memory-button:hover {
+  border-color: rgba(194, 138, 87, 0.62);
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.18), transparent 62%),
+    rgba(23, 24, 27, 0.92);
+}
+
+.memory-button > span {
+  color: var(--brass);
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.memory-button strong {
+  color: var(--bone);
+  font-size: 1rem;
+  line-height: 1.32;
+  overflow-wrap: anywhere;
+}
+
+.memory-button small {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 850;
+  line-height: 1.35;
+}
+
+.memory-button.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.46;
+}
+
+.memory-button.is-disabled:hover {
+  border-color: var(--line);
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.12), transparent 58%),
+    rgba(18, 19, 21, 0.84);
 }
 
 .intro-panel {
@@ -1569,6 +1686,7 @@ td:nth-child(4) {
   }
 
   .hero-stats,
+  .memory-nav,
   .archive a {
     grid-template-columns: 1fr;
   }
