@@ -278,12 +278,7 @@ function renderRun(run, options = {}) {
     .map((joke) => {
       const ranking = run.rankings.find((entry) => entry.jokeId === joke.id);
       const jokeText = fullJokeText(joke);
-      const comments = ranking.comments
-        .slice(0, 2)
-        .map(
-          (comment) => `<li>${escapeHtml(comment.judgeName)}: ${escapeHtml(comment.comment)}</li>`
-        )
-        .join("");
+      const comments = renderCritiqueAccordions(ranking.comments);
 
       return `
         <article class="joke-card">
@@ -294,7 +289,7 @@ function renderRun(run, options = {}) {
           </div>
           <h3>${escapeHtml(joke.title)}</h3>
           <p class="standalone-joke">${escapeHtml(jokeText)}</p>
-          <ul>${comments}</ul>
+          ${comments}
         </article>`;
     })
     .join("");
@@ -334,6 +329,27 @@ function renderRun(run, options = {}) {
         <div class="joke-grid">${jokes}</div>
       </section>${memoryNavEnd}
     </main>`;
+}
+
+function renderCritiqueAccordions(comments = []) {
+  if (!comments.length) {
+    return `<p class="judge-critiques empty-critiques">No judge critiques recorded.</p>`;
+  }
+
+  const items = comments
+    .map(
+      (comment) => `
+            <details class="judge-critique">
+              <summary><span>${escapeHtml(comment.judgeName)}</span><strong>Critique</strong></summary>
+              <p>${escapeHtml(comment.comment)}</p>
+            </details>`
+    )
+    .join("");
+
+  return `
+          <div class="judge-critiques" aria-label="Judge critiques">
+            ${items}
+          </div>`;
 }
 
 function renderMemoryNav(run, publicRuns = [], ariaLabel = "Memory Bank navigation") {
@@ -1554,12 +1570,82 @@ td:nth-child(4) {
   line-height: 1.42 !important;
 }
 
-.joke-card ul {
+.judge-critiques {
   margin: auto 0 0;
-  padding-left: 18px;
+  display: grid;
+  gap: 8px;
   color: var(--muted);
   font-size: 0.78rem;
   line-height: 1.38;
+}
+
+.judge-critique {
+  border: 1px solid rgba(194, 138, 87, 0.2);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.08), transparent 72%),
+    rgba(7, 8, 9, 0.54);
+  overflow: hidden;
+}
+
+.judge-critique[open] {
+  border-color: rgba(194, 138, 87, 0.38);
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.12), transparent 72%),
+    rgba(9, 10, 12, 0.78);
+}
+
+.judge-critique summary {
+  min-height: 34px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+  align-items: center;
+  list-style: none;
+  padding: 8px 10px;
+}
+
+.judge-critique summary::-webkit-details-marker {
+  display: none;
+}
+
+.judge-critique summary::after {
+  content: "+";
+  color: var(--brass);
+  font-weight: 900;
+}
+
+.judge-critique[open] summary::after {
+  content: "-";
+}
+
+.judge-critique summary:focus-visible {
+  outline: 2px solid rgba(239, 225, 207, 0.78);
+  outline-offset: -2px;
+}
+
+.judge-critique summary span {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.judge-critique summary strong {
+  color: var(--brass);
+  font-size: 0.68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.judge-critique p {
+  border-top: 1px solid rgba(176, 185, 196, 0.1);
+  color: var(--muted);
+  margin: 0;
+  padding: 9px 10px 10px;
+}
+
+.empty-critiques {
+  color: var(--dim);
 }
 
 .feature-image figure {
