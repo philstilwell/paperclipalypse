@@ -3,7 +3,9 @@ const ARTICLE_RE = /^(a|an|the)\s+/i;
 export function normalizePremiseForDisplay(premise = {}, seedTerms = []) {
   const sourcePremise = premise && typeof premise === "object" ? premise : {};
   // Protocol: contestants receive seed terms, not a prebuilt premise.
-  const displayText = displaySeedTerms(seedTerms)
+  const displayText = cleanDisplayText(sourcePremise.headline)
+    || cleanDisplayText(sourcePremise.teaserText)
+    || displaySeedTerms(seedTerms)
     || cleanDisplayText(sourcePremise.displayText)
     || displayPremiseFromParts(sourcePremise);
 

@@ -260,7 +260,9 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
   });
 
   const manualRankings = aggregateScores(manualJokes, manualJudgeResults);
-  const promptContext = buildPromptContextFromSeedTerms(seedTerms) || normalizePremiseForDisplay({
+  const seedContext = buildPromptContextFromSeedTerms(seedTerms) || {};
+  const promptContext = normalizePremiseForDisplay({
+    ...seedContext,
     ...episode.premise,
     seedTerms
   }, seedTerms);
