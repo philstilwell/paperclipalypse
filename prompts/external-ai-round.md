@@ -108,9 +108,12 @@ joke, any contestant is missing a scorecard, any judge scores itself, any judge
 omits another contestant, or any joke fails the first-person/two-seed structural
 checks.
 
-4. Generate the feature image from the written Gemini brief, save the full-size
-   approved image, then render the publishable site:
+4. Generate the feature image from the written Gemini brief. Save the full-size
+   Gemini download, visually inspect it, and reject/regenerate weak images until
+   the image is polished, on-brief, and free of distracting text or prompt-label
+   artifacts.
 
 ```sh
-node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json --feature-image /absolute/path/to/approved-image.png
+node scripts/qa-feature-image.mjs --image /absolute/path/to/approved-image.png --approved
+node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json --feature-image /absolute/path/to/approved-image.png --feature-image-qa-approved
 ```

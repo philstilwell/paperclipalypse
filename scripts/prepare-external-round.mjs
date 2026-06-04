@@ -48,7 +48,9 @@ const packet = {
     "Reject and resubmit any scorecard that omits a joke, scores its own joke, or says the joke text was missing.",
     "Build data/inbox/<seed>.json from the real jokes and scorecards.",
     "Run the tournament once with --allow-missing-feature-image to create the Gemini image brief.",
-    "Generate the feature image in Gemini, download the full-size file, then rerun with --feature-image.",
+    "Generate the feature image in Gemini and download the full-size file.",
+    "Reject and regenerate low-quality images until the image QA checklist passes.",
+    "Rerun with --feature-image and --feature-image-qa-approved only after visual QA approval.",
     "Verify the rendered site, close temporary tabs and dialogues, then commit and push."
   ],
   episodeSkeleton: {

@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { featureImageQaChecklistText } from "./image-qa.mjs";
 
 export function buildFeatureImagePrompt(run) {
   const winner = run.rankings?.[0];
@@ -64,10 +65,24 @@ ${prompt}
 
 ## Attach The Approved Image
 
-Use Google Gemini image generation for the bitmap. After approval, save the image locally and render the episode with:
+Use Google Gemini image generation for the bitmap. Low-quality images must be rejected and regenerated until the QA checklist passes.
+
+## Feature Image QA
+
+Before approval, inspect the downloaded full-size image against this checklist:
+
+${featureImageQaChecklistText()}
+
+You can run the automatic file checks with:
 
 \`\`\`sh
-node scripts/run-tournament.mjs${episodeArg} --feature-image /absolute/path/to/approved-image.png
+node scripts/qa-feature-image.mjs --image /absolute/path/to/approved-image.png --approved
+\`\`\`
+
+After visual approval, save the image locally and render the episode with:
+
+\`\`\`sh
+node scripts/run-tournament.mjs${episodeArg} --feature-image /absolute/path/to/approved-image.png --feature-image-qa-approved
 \`\`\`
 
 The runner will copy the approved Gemini image into \`site/assets/feature-images/\`, attach it to the run JSON, and render it on the home and episode pages.

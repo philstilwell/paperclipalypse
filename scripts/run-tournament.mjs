@@ -5,6 +5,7 @@ import { allowsPaidApi, envFlag, loadDotEnv, configuredModel } from "./lib/env.m
 import { buildPremise, comicPanelPrompt, generationPrompt, judgingPrompt } from "./lib/prompt.mjs";
 import { callContestant, parseModelJson } from "./lib/providers.mjs";
 import { buildFeatureImagePrompt, writeFeatureImageBrief } from "./lib/feature-image.mjs";
+import { assertFeatureImageQa } from "./lib/image-qa.mjs";
 import { assertCompleteTournament } from "./lib/participation.mjs";
 import { normalizePremiseForDisplay } from "./lib/premise-display.mjs";
 import { aggregateScores, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
@@ -29,6 +30,7 @@ const historyDir = path.join(rootDir, "data", "runs");
 const siteDir = path.join(rootDir, "site");
 const episodeFile = args.get("episode-file");
 const featureImagePath = args.get("feature-image");
+const featureImageQaApproved = args.has("feature-image-qa-approved") || envFlag("PAPERCLIPALYPSE_FEATURE_IMAGE_QA_APPROVED");
 const featureImageSource = "Gemini image generation";
 const contestants = dryRun ? houseContestants : paidContestants;
 
@@ -298,6 +300,15 @@ function prepareFeatureImage(run, { episodeFile } = {}) {
   run.featureImageBrief = briefRelPath;
 
   if (run.featureImage?.src) {
+    if (!run.dryRun && !isFeatureImageQaApproved(run.featureImage.qa)) {
+      throw new Error(
+        [
+          "Feature image exists but lacks QA approval metadata.",
+          "Reject low-quality images and regenerate with Google Gemini until the QA checklist passes.",
+          "Then rerun with --feature-image /absolute/path/to/approved-image.png --feature-image-qa-approved."
+        ].join("\n")
+      );
+    }
     return;
   }
 
@@ -333,6 +344,9 @@ function attachFeatureImage(run, sourcePath) {
     throw new Error(`Feature image not found: ${sourcePath}`);
   }
 
+  const qa = run.dryRun
+    ? null
+    : assertFeatureImageQa(absoluteSourcePath, { visualApproved: featureImageQaApproved });
   const ext = path.extname(absoluteSourcePath).toLowerCase() || ".png";
   const assetRelPath = path.posix.join("assets", "feature-images", `${run.slug}${ext}`);
   const assetPath = path.join(siteDir, assetRelPath);
@@ -346,6 +360,15 @@ function attachFeatureImage(run, sourcePath) {
     originalSrc: assetRelPath,
     source: featureImageSource,
     aspectRatio: "2:1",
+    width: qa?.dimensions?.width,
+    height: qa?.dimensions?.height,
+    qa: qa ? {
+      status: "approved",
+      version: qa.version,
+      visualApproved: qa.visualApproved,
+      automaticChecks: "passed",
+      warnings: qa.warnings
+    } : undefined,
     alt: featureImageAlt(run)
   };
 }
@@ -460,9 +483,34 @@ function normalizeFeatureImage(image) {
     aspectRatio: cleanText(image.aspectRatio || "2:1"),
     width: Number.isFinite(Number(image.width)) ? Number(image.width) : undefined,
     height: Number.isFinite(Number(image.height)) ? Number(image.height) : undefined,
+    qa: normalizeFeatureImageQa(image.qa),
     alt: cleanText(image.alt) || featureImageAlt({ premise: { text: "" }, rankings: [], jokes: [] }),
     prompt: cleanText(image.prompt)
   };
+}
+
+function normalizeFeatureImageQa(qa) {
+  if (!qa || typeof qa !== "object") {
+    return undefined;
+  }
+
+  return {
+    status: cleanText(qa.status || "approved"),
+    version: cleanText(qa.version),
+    visualApproved: Boolean(qa.visualApproved),
+    automaticChecks: cleanText(qa.automaticChecks),
+    warnings: Array.isArray(qa.warnings) ? qa.warnings.map(cleanText).filter(Boolean) : []
+  };
+}
+
+function isFeatureImageQaApproved(qa) {
+  return (
+    qa &&
+    typeof qa === "object" &&
+    cleanText(qa.status) === "approved" &&
+    qa.visualApproved === true &&
+    cleanText(qa.automaticChecks) === "passed"
+  );
 }
 
 function featureImageAlt(run) {

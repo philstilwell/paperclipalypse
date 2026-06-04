@@ -33,9 +33,12 @@ So the preferred real-tournament flow is:
 5. It runs the tournament once with `--allow-missing-feature-image` to create
    the Gemini image brief.
 6. It prompts Google Gemini image generation for the winning-joke feature image,
-   downloads the full-size image, and reruns with `--feature-image`.
-7. The runner rejects incomplete participation before rendering.
-8. GitHub Pages deploys the static site on push.
+   downloads the full-size image, and rejects/regenerates weak images until the
+   image QA checklist passes.
+7. It reruns with `--feature-image` and `--feature-image-qa-approved`.
+8. The runner rejects incomplete participation or unapproved images before
+   rendering.
+9. GitHub Pages deploys the static site on push.
 
 The one-instruction operating version is codified in
 `prompts/one-prompt-full-contest.md`: Phil can ask Codex to run the contest from
@@ -99,12 +102,17 @@ using the actual winner and winning joke.
 To attach an approved winning-joke feature image during render:
 
 ```sh
-node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json --feature-image /path/to/approved-image.webp
+node scripts/qa-feature-image.mjs --image /path/to/approved-image.png --approved
+node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json --feature-image /path/to/approved-image.png --feature-image-qa-approved
 ```
 
 The runner copies the image into `site/assets/feature-images/`, records it as
 `featureImage`, renders it on the episode/home pages, and uses it as the social
-preview image.
+preview image. The `--feature-image-qa-approved` flag should only be used after
+the full-size Gemini download has passed visual QA: polished composition,
+recognizable paperclip comic, useful winning-joke scene, no visible prompt
+labels or watermarks, and no distracting text garbling. Low-quality images should
+be rejected and regenerated.
 
 Use `--allow-missing-feature-image` only for diagnostics. A ready public episode
 should include the approved winning-joke image.

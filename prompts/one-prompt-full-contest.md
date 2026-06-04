@@ -32,8 +32,12 @@ using paid model APIs.
 9. Prompt Google Gemini image generation for a 2:1 feature image based on the
    winning joke.
 10. Download the full-size Gemini image through the normal browser save flow.
-11. Rerun the tournament with `--feature-image`.
-12. Verify the rendered site, close temporary tabs/dialogues, commit, and push.
+11. QA the full-size image. Reject and regenerate low-quality images until the
+    image is polished, on-brief, readable, and free of visible prompt/layout
+    labels or distracting text errors.
+12. Rerun the tournament with `--feature-image` and
+    `--feature-image-qa-approved`.
+13. Verify the rendered site, close temporary tabs/dialogues, commit, and push.
 
 ## Important Boundaries
 
@@ -46,6 +50,10 @@ using paid model APIs.
 - Gemini may imperfectly render long in-image text. The site HTML remains the
   canonical exact joke text; the image prompt still asks Gemini to include the
   joke text when possible.
+- The feature image is not publishable until it passes QA. If the image looks
+  cheap, generic, monochrome by accident, off-brief, cropped, visibly labeled by
+  prompt instructions, or badly garbles the joke text, Codex should regenerate
+  instead of approving it.
 
 ## Command Helpers
 
@@ -64,5 +72,6 @@ node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json --allow
 Attach the approved Gemini image:
 
 ```sh
-node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json --feature-image /absolute/path/to/image.png
+node scripts/qa-feature-image.mjs --image /absolute/path/to/image.png --approved
+node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json --feature-image /absolute/path/to/image.png --feature-image-qa-approved
 ```
