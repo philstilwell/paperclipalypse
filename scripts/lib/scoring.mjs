@@ -239,15 +239,9 @@ function clampScore(value) {
 }
 
 function cleanComment(value) {
-  const cleaned = String(value || "")
+  return String(value || "")
     .replace(/\s+/g, " ")
     .trim();
-
-  if (cleaned.length <= 180) {
-    return cleaned;
-  }
-
-  return `${cleaned.slice(0, 177).replace(/\s+\S*$/, "").trim()}...`;
 }
 
 function average(values) {

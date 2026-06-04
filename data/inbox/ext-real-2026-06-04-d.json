@@ -1,0 +1,353 @@
+{
+  "version": 1,
+  "slug": "2026-06-04-ext-real-2026-06-04-d",
+  "createdAt": "2026-06-04T22:34:32.651Z",
+  "seed": "ext-real-2026-06-04-d",
+  "source": "manual-external",
+  "seedTerms": [
+    "Young Adult",
+    "Tour Guide",
+    "Beach",
+    "Being unable to save everyone",
+    "Socially Aware",
+    "Uncouth"
+  ],
+  "premise": {
+    "text": "Seed terms: Young Adult, Tour Guide, Beach, Being unable to save everyone, Socially Aware, Uncouth",
+    "headline": "A doomed dad enters the candy abyss.",
+    "seedTerms": [
+      "Young Adult",
+      "Tour Guide",
+      "Beach",
+      "Being unable to save everyone",
+      "Socially Aware",
+      "Uncouth"
+    ]
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Beach Exhibit",
+      "seedTermsUsed": [
+        "Tour Guide",
+        "Beach"
+      ],
+      "joke": "I was a tour guide at a beach, which is the easiest job in the world until someone points at the ocean and asks, “What’s that?” I said, “That’s our largest exhibit. It’s interactive, it follows you home in your shoes, and unlike the aquarium, it slaps back when you tap the glass.”",
+      "text": "I was a tour guide at a beach, which is the easiest job in the world until someone points at the ocean and asks, “What’s that?” I said, “That’s our largest exhibit. It’s interactive, it follows you home in your shoes, and unlike the aquarium, it slaps back when you tap the glass.”",
+      "setup": "",
+      "punchline": "I was a tour guide at a beach, which is the easiest job in the world until someone points at the ocean and asks, “What’s that?” I said, “That’s our largest exhibit. It’s interactive, it follows you home in your shoes, and unlike the aquarium, it slaps back when you tap the glass.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Unsolicited Docent",
+      "seedTermsUsed": [
+        "Tour Guide",
+        "Socially Aware"
+      ],
+      "joke": "I've become one of those people who can't walk through a museum without quietly explaining the exhibits to strangers nearby. I don't work there. I'm just socially aware enough to notice they're confused, and not socially aware enough to realize that's not my problem. Last week a security guard asked me to stop. I told him about the guard's historical origins in medieval gatekeeping. He removed me from the building.",
+      "text": "I've become one of those people who can't walk through a museum without quietly explaining the exhibits to strangers nearby. I don't work there. I'm just socially aware enough to notice they're confused, and not socially aware enough to realize that's not my problem. Last week a security guard asked me to stop. I told him about the guard's historical origins in medieval gatekeeping. He removed me from the building.",
+      "setup": "",
+      "punchline": "I've become one of those people who can't walk through a museum without quietly explaining the exhibits to strangers nearby. I don't work there. I'm just socially aware enough to notice they're confused, and not socially aware enough to realize that's not my problem. Last week a security guard asked me to stop. I told him about the guard's historical origins in medieval gatekeeping. He removed me from the building."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Times Square Triage",
+      "seedTermsUsed": [
+        "Tour Guide",
+        "Being unable to save everyone"
+      ],
+      "joke": "I used to be a walking tour guide in Times Square. The hardest part of the job is accepting that you simply can't save everyone. In every group, some dad spots a three-story M&M store and just wanders off. You have to make the hard triage decisions. Do I chase him into the neon abyss, or do I protect the herd? I just put a hand on his wife's shoulder and say, 'Let him go, Brenda. The peanut ones have him now.'",
+      "text": "I used to be a walking tour guide in Times Square. The hardest part of the job is accepting that you simply can't save everyone. In every group, some dad spots a three-story M&M store and just wanders off. You have to make the hard triage decisions. Do I chase him into the neon abyss, or do I protect the herd? I just put a hand on his wife's shoulder and say, 'Let him go, Brenda. The peanut ones have him now.'",
+      "setup": "",
+      "punchline": "I used to be a walking tour guide in Times Square. The hardest part of the job is accepting that you simply can't save everyone. In every group, some dad spots a three-story M&M store and just wanders off. You have to make the hard triage decisions. Do I chase him into the neon abyss, or do I protect the herd? I just put a hand on his wife's shoulder and say, 'Let him go, Brenda. The peanut ones have him now.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Beach Tour Guide",
+      "seedTermsUsed": [
+        "Tour Guide",
+        "Beach"
+      ],
+      "joke": "So I took a job as a beach tour guide last summer. I'm leading this group along the shore, flag waving, pointing out the waves and seashells. Everything's fine until a huge wave slams in and soaks half of them. People are sputtering, one lady yells 'Do something!' I just shrugged and said, 'Folks, I'm your tour guide, not Aquaman. My job ends at the scenic views—the drowning part's on you!' Got the biggest tip of the season.",
+      "text": "So I took a job as a beach tour guide last summer. I'm leading this group along the shore, flag waving, pointing out the waves and seashells. Everything's fine until a huge wave slams in and soaks half of them. People are sputtering, one lady yells 'Do something!' I just shrugged and said, 'Folks, I'm your tour guide, not Aquaman. My job ends at the scenic views—the drowning part's on you!' Got the biggest tip of the season.",
+      "setup": "",
+      "punchline": "So I took a job as a beach tour guide last summer. I'm leading this group along the shore, flag waving, pointing out the waves and seashells. Everything's fine until a huge wave slams in and soaks half of them. People are sputtering, one lady yells 'Do something!' I just shrugged and said, 'Folks, I'm your tour guide, not Aquaman. My job ends at the scenic views—the drowning part's on you!' Got the biggest tip of the season."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Beach Wisdom",
+      "seedTermsUsed": [
+        "Beach",
+        "Uncouth"
+      ],
+      "joke": "I was at the beach trying to relax, and this totally uncouth guy stomped over and asked if I could watch his stuff. I said sure, thinking it was a towel. No—he hands me a full grocery bag of loose sandwiches. I’ve never felt more responsible in my life. I guarded that bag like it was national treasure, because nothing ruins a beach day like becoming the guy who lost someone’s mystery sandwiches.",
+      "text": "I was at the beach trying to relax, and this totally uncouth guy stomped over and asked if I could watch his stuff. I said sure, thinking it was a towel. No—he hands me a full grocery bag of loose sandwiches. I’ve never felt more responsible in my life. I guarded that bag like it was national treasure, because nothing ruins a beach day like becoming the guy who lost someone’s mystery sandwiches.",
+      "setup": "",
+      "punchline": "I was at the beach trying to relax, and this totally uncouth guy stomped over and asked if I could watch his stuff. I said sure, thinking it was a towel. No—he hands me a full grocery bag of loose sandwiches. I’ve never felt more responsible in my life. I guarded that bag like it was national treasure, because nothing ruins a beach day like becoming the guy who lost someone’s mystery sandwiches."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean self-awareness turn and good rhythm, though the museum-explainer premise is more amusing than laugh-heavy."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong stage premise, escalating triage language, and a memorable final image with the M&M store payoff."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Clear setup but the Aquaman line is expected, the drowning joke feels blunt, and the final tag weakens the landing."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "The loose-sandwiches image is concrete and odd in a useful way, but the payoff is mild rather than sharp."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "The 'interactive exhibit' framing is genuinely clever and the triple escalation lands well. 'Slaps back when you tap the glass' is a strong final image. Loses a point because the setup (dumb tourist question) is a familiar template, but the execution earns it back partially."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Best in batch. 'The peanut ones have him now' is a genuinely quotable final line with real snap. The triage framing applied to a wandering dad is a non-obvious angle, the escalation is clean, and 'Brenda' adds a grounding specificity that sells the bit. Strong human-level joke."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The premise is workable but the punchline ('drowning part's on you') is a weak restatement of the obvious irony already implied by the setup. 'Got the biggest tip of the season' is an unearned button that adds nothing. The comic logic doesn't quite hold either—a guide shrugging at actual drowning plays mean rather than absurd."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "'Mystery sandwiches' is a nice specific detail and the situation is grounded. But the joke coasts on the observation without finding a real turn—the punchline restates the premise rather than flipping it. Competent and publishable as filler; not a winner."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong structure with a sharp punchline that effectively utilizes the rule of three to personify the ocean."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "A solid premise with good contrast in the setup, though the punchline feels a bit standard for the 'awkward over-explainer' trope."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "The scenario feels contrived and cartoony, ending on a cliché 'got a huge tip' closer that deflates the comedic tension."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Excellent use of highly specific details. 'Loose sandwiches' is a brilliant, grounded comic image that escalates perfectly."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid beach-as-museum bit with clean ocean punch, but turn is fairly expected."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 6,
+          "laugh": 6,
+          "comment": "Know-it-all museum explainer is familiar; guard bit lands but prompt stretch on 'Tour Guide'."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise, fresh triage angle, and memorable 'peanut ones' closer. Best in batch."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Mild sandwich responsibility payoff feels slight and low-stakes."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean premise with a mild twist; amusing but not especially strong."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid character-based humor with a clear turn; lands a mild real laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong structure, vivid imagery, and a memorable final line; genuinely good."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Functional and clear but follows a predictable path; competent but not standout."
+        }
+      ]
+    }
+  ]
+}
