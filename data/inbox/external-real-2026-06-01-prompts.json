@@ -1,9 +1,9 @@
 {
   "version": 1,
   "purpose": "Paperclipalypse manual-external prompt packet",
-  "createdAt": "2026-06-04T19:46:50.897Z",
-  "seed": "external-real-2026-06-04-c",
-  "slug": "2026-06-04-external-real-2026-06-04",
+  "createdAt": "2026-06-01T15:55:00.000Z",
+  "seed": "external-real-2026-06-01",
+  "slug": "2026-06-01-external-real-2026-06-01",
   "seedTerms": [
     "Historical",
     "Mail Carrier",
@@ -76,8 +76,8 @@
     "Verify the rendered site, close temporary tabs and dialogues, then commit and push."
   ],
   "episodeSkeleton": {
-    "createdAt": "2026-06-04T19:46:50.897Z",
-    "seed": "external-real-2026-06-04-c",
+    "createdAt": "2026-06-01T15:55:00.000Z",
+    "seed": "external-real-2026-06-01",
     "source": "manual-external",
     "seedTerms": [
       "Historical",

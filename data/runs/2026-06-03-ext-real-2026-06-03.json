@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "slug": "2026-06-04-ext-real-2026-06-04-e",
-  "seed": "ext-real-2026-06-04-e",
+  "slug": "2026-06-03-ext-real-2026-06-03",
+  "seed": "ext-real-2026-06-03",
   "dryRun": false,
   "source": "manual-external",
-  "createdAt": "2026-06-04T23:05:52.730Z",
+  "createdAt": "2026-06-03T23:05:52.730Z",
   "seedTerms": [
     "Cyberpunk",
     "Glassblower / Potter",
@@ -642,8 +642,8 @@
     }
   ],
   "featureImage": {
-    "src": "assets/feature-images/2026-06-04-ext-real-2026-06-04-e.jpg",
-    "originalSrc": "assets/feature-images/2026-06-04-ext-real-2026-06-04-e.jpg",
+    "src": "assets/feature-images/2026-06-03-ext-real-2026-06-03.jpg",
+    "originalSrc": "assets/feature-images/2026-06-03-ext-real-2026-06-03.jpg",
     "source": "Gemini image generation (web preview)",
     "aspectRatio": "2:1",
     "width": 1024,
@@ -660,5 +660,5 @@
   },
   "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Pottery Class Drama\nExact joke text to render in the right panel:\nI started taking a pottery class to relax, but my instructor is incredibly gossipy. It is physically impossible to center a lump of wet clay on a spinning wheel while a man named Patrick leans in and whispers, “You know Sarah’s husband is living in an Airbnb, right?” I went in there to make a simple cereal bowl, but now I've got a lopsided ashtray and I'm deeply emotionally invested in the kiln technician's divorce.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Cyberpunk, Glassblower / Potter, Racetrack, A dangerous crossing, Private, Gossipy.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
   "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Cyberpunk, Glassblower / Potter, Racetrack, A dangerous crossing, Private, Gossipy. Use the winning joke titled \"Pottery Class Drama\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
-  "featureImageBrief": "data/image-briefs/2026-06-04-ext-real-2026-06-04-e.md"
+  "featureImageBrief": "data/image-briefs/2026-06-03-ext-real-2026-06-03.md"
 }

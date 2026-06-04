@@ -1,9 +1,9 @@
 {
   "version": 1,
   "purpose": "Paperclipalypse manual-external prompt packet",
-  "createdAt": "2026-06-04T23:05:52.730Z",
-  "seed": "ext-real-2026-06-04-e",
-  "slug": "2026-06-04-ext-real-2026-06-04-e",
+  "createdAt": "2026-06-03T23:05:52.730Z",
+  "seed": "ext-real-2026-06-03",
+  "slug": "2026-06-03-ext-real-2026-06-03",
   "seedTerms": [
     "Cyberpunk",
     "Glassblower / Potter",
@@ -76,8 +76,8 @@
     "Verify the rendered site, close temporary tabs and dialogues, then commit and push."
   ],
   "episodeSkeleton": {
-    "createdAt": "2026-06-04T23:05:52.730Z",
-    "seed": "ext-real-2026-06-04-e",
+    "createdAt": "2026-06-03T23:05:52.730Z",
+    "seed": "ext-real-2026-06-03",
     "source": "manual-external",
     "seedTerms": [
       "Cyberpunk",

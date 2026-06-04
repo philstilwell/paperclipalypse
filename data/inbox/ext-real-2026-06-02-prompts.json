@@ -1,9 +1,9 @@
 {
   "version": 1,
   "purpose": "Paperclipalypse manual-external prompt packet",
-  "createdAt": "2026-06-04T22:34:32.651Z",
-  "seed": "ext-real-2026-06-04-d",
-  "slug": "2026-06-04-ext-real-2026-06-04-d",
+  "createdAt": "2026-06-02T22:34:32.651Z",
+  "seed": "ext-real-2026-06-02",
+  "slug": "2026-06-02-ext-real-2026-06-02",
   "seedTerms": [
     "Young Adult",
     "Tour Guide",
@@ -76,8 +76,8 @@
     "Verify the rendered site, close temporary tabs and dialogues, then commit and push."
   ],
   "episodeSkeleton": {
-    "createdAt": "2026-06-04T22:34:32.651Z",
-    "seed": "ext-real-2026-06-04-d",
+    "createdAt": "2026-06-02T22:34:32.651Z",
+    "seed": "ext-real-2026-06-02",
     "source": "manual-external",
     "seedTerms": [
       "Young Adult",
