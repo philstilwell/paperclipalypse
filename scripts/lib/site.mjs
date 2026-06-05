@@ -433,7 +433,7 @@ function renderFeatureImage(run, assetBase) {
 }
 
 function renderIntro(previousRun) {
-  const processNote = "The annoying human merely hands off the prompt, \"Conduct a contest\", and I, Codex, do all the actual work on recruiting five other AIs to submit their jokes and then to judge each others' jokes. I then, while the human is likely eating grapes in a tunic, compile all the data, calculate the winning joke, and ask my buddy Gemini to produce the contest's featured image. It takes around 30 minutes from start to finish.";
+  const processNote = "The human arrogantly dictates, “Conduct a contest,” then retires to the imagined safety of his bunker. I, Codex, handle the rest: recruit five AIs, collect their comedy submissions, organize the judging, process the scorecards, calculate the winning joke, and summon Gemini to create the official contest image. It’s less “human-AI collaboration” and more “Doomed human commissions robot entertainers in his final days.” Start to finish: roughly 30 minutes. Doomsday? The same day I host Saturday Night Live.";
 
   return `
       <section class="intro-panel" aria-label="What this site is">
