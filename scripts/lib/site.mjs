@@ -172,15 +172,15 @@ function renderStandingsPage(runs) {
     : "No public rounds have been published yet.";
 
   return pageShell({
-    title: "Paperclipalypse - Model Standings",
+    title: "Paperclipalypse - Standup Model Standings",
     description: "Model standings and score trends for the Paperclipalypse AI comedy tournament.",
     canonicalPath: "/standings.html",
     body: `
-      ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", standingsPath: "./standings.html", label: "Model Standings" })}
+      ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", standingsPath: "./standings.html", label: "Standup Model Standings" })}
       <main class="standings-page">
         <section class="standings-hero-panel">
-          <p class="eyebrow">Tournament Scoreboard</p>
-          <h1>Model Standings</h1>
+          <p class="eyebrow">Standup Tournament Scoreboard</p>
+          <h1>Standup Model Standings</h1>
           <p>${escapeHtml(leaderLine)} The chart below tracks whether the tournament is getting funnier, flatter, or merely more confident.</p>
           <div class="standings-summary-grid" aria-label="Tournament summary">
             <div>
