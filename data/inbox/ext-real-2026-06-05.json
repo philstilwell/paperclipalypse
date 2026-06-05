@@ -1,0 +1,352 @@
+{
+  "createdAt": "2026-06-05T00:57:42.635Z",
+  "seed": "ext-real-2026-06-05",
+  "slug": "2026-06-05-ext-real-2026-06-05",
+  "source": "manual-external",
+  "seedTerms": [
+    "YA Children's",
+    "Politician",
+    "Spa",
+    "A house fire",
+    "Unselfish",
+    "Impulsive"
+  ],
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Deep Cleanse",
+      "seedTermsUsed": [
+        "Politician",
+        "Spa"
+      ],
+      "joke": "I went to a spa, and the attendant said, “Today we’re doing a deep cleanse.” I said, “Perfect—treat my face like a politician’s search history.” She put mud on me, covered my eyes with cucumbers, and charged me $180. That’s when I realized politics is just skincare for people whose pores have lobbyists.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to a spa, and the attendant said, “Today we’re doing a deep cleanse.” I said, “Perfect—treat my face like a politician’s search history.” She put mud on me, covered my eyes with cucumbers, and charged me $180. That’s when I realized politics is just skincare for people whose pores have lobbyists."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Chapter One",
+      "seedTermsUsed": [
+        "YA Children's",
+        "Politician"
+      ],
+      "joke": "I tried reading a YA novel to my kid last night — you know, the ones where a scrappy teenager discovers she's secretly the chosen one destined to overthrow a corrupt government. My daughter stopped me on page three and goes, 'Wait, is this fiction?' I said, 'Honey, the difference is the teenager succeeds.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried reading a YA novel to my kid last night — you know, the ones where a scrappy teenager discovers she's secretly the chosen one destined to overthrow a corrupt government. My daughter stopped me on page three and goes, 'Wait, is this fiction?' I said, 'Honey, the difference is the teenager succeeds.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Thermal Journey",
+      "seedTermsUsed": [
+        "Spa",
+        "A house fire"
+      ],
+      "joke": "I went to one of those ultra-zen, aggressively calm spas last week. Halfway through my hot stone massage, the fire alarm goes off. There's a literal house fire next door, and smoke is pouring through the vents. My masseuse didn't even break rhythm. She just leaned in, lowered her voice to a whisper, and said, 'We are now incorporating authentic hickory aromatherapy into your thermal journey.' I said, 'Lady, my thermal journey is to the parking lot.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to one of those ultra-zen, aggressively calm spas last week. Halfway through my hot stone massage, the fire alarm goes off. There's a literal house fire next door, and smoke is pouring through the vents. My masseuse didn't even break rhythm. She just leaned in, lowered her voice to a whisper, and said, 'We are now incorporating authentic hickory aromatherapy into your thermal journey.' I said, 'Lady, my thermal journey is to the parking lot.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Kitchen Campfire",
+      "seedTermsUsed": [
+        "Impulsive",
+        "A house fire"
+      ],
+      "joke": "Hey folks, I'm way too impulsive. Last week I walk in the door and there's a house fire going in my kitchen. Normal people call 911. Me? I grab the marshmallows, chocolate, and graham crackers. Firefighters kick the door in yelling 'Get out!' and I'm sitting there roasting s'mores like it's summer camp. 'One more, guys!' Now I'm couch-surfing with my neighbors, but damn... those were the best s'mores I ever had.",
+      "setup": "",
+      "punchline": "",
+      "text": "Hey folks, I'm way too impulsive. Last week I walk in the door and there's a house fire going in my kitchen. Normal people call 911. Me? I grab the marshmallows, chocolate, and graham crackers. Firefighters kick the door in yelling 'Get out!' and I'm sitting there roasting s'mores like it's summer camp. 'One more, guys!' Now I'm couch-surfing with my neighbors, but damn... those were the best s'mores I ever had."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Steam Room Politics",
+      "seedTermsUsed": [
+        "Politician",
+        "Spa"
+      ],
+      "joke": "I tried to relax at a spa last week, but I couldn’t enjoy it. The steam room felt like being trapped with my inner politician—sweaty, overconfident, and promising big changes if I’d just stay five more minutes. I walked out early anyway, because even my pores don’t believe campaign promises.",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried to relax at a spa last week, but I couldn’t enjoy it. The steam room felt like being trapped with my inner politician—sweaty, overconfident, and promising big changes if I’d just stay five more minutes. I walked out early anyway, because even my pores don’t believe campaign promises."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clear standalone premise with a strong political turn; final line lands well, though the cynicism angle is familiar."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Best constructed stage bit here: vivid escalation, good spa-language parody, and a clean final punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Understandable and on prompt, but the s'mores-in-a-fire turn is very expected and the ending mostly restates the premise."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Polished and coherent with a decent closing line, but the politician-as-false-promiser comparison is fairly standard."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "The lobbyist-pores closer is the strongest line and earns its place; the setup is a bit leisurely and the mud/cucumber beat is filler, but the final image lands with reasonable snap."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "'Authentic hickory aromatherapy' is genuinely excellent reframing, and the masseuse staying in spa-voice while the building burns is a well-executed comic premise. The closing line is punchy and earns it. One of the stronger jokes in the batch."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "The s'mores turn is charming and the firefighter beat works, but the punchline ('best s'mores I ever had') is the predictable landing once the setup is clear. Likable and functional but not surprising."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "'Even my pores don't believe campaign promises' is a decent closing line, but the inner-politician conceit is vague and the steam-room setup doesn't build to anything unexpected. Competent but forgettable."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 3,
+          "comment": "Starts with a decent setup but the punchline descends into nonsensical word salad ('pores have lobbyists') that completely kills the momentum."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Possesses a very natural stage rhythm. The punchline is a bit of a familiar cynical observation, but it is well-executed and lands cleanly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 3,
+          "comment": "Extremely literal combination of the seed terms using a hacky, cliche stand-up framework ('Normal people do X. Me?'). Too cartoonish to evoke a real laugh."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Comparing the oppressive heat of a steam room to an 'inner politician' promising big changes is a clever observation, though the final sentence trails off weakly."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clever extended metaphor but relies on familiar politician tropes; mild chuckle."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Sharp, relatable turn with good timing and relatable parent-kid dynamic."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong visual escalation and punchy exit line; solid stage rhythm."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Generic inner-politician analogy; competent but predictable and forgettable."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Solid premise with a clear turn, but the punchline is more clever than funny."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clean structure and a good final turn; lands a mild but real laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong scene, good escalation, and a funny final line; the most polished of the set."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear first-person bit with a coherent turn, but the s'mores angle is predictable."
+        }
+      ]
+    }
+  ],
+  "premise": {
+    "text": "Seed terms: YA Children's, Politician, Spa, A house fire, Unselfish, Impulsive",
+    "headline": "A spa day goes up in aromatic smoke.",
+    "seedTerms": [
+      "YA Children's",
+      "Politician",
+      "Spa",
+      "A house fire",
+      "Unselfish",
+      "Impulsive"
+    ]
+  }
+}
