@@ -31,6 +31,7 @@ export function renderSite({ run, historyDir, siteDir }) {
 
   fs.writeFileSync(path.join(siteDir, "index.html"), cleanGeneratedText(renderHome(run, runs)), "utf8");
   fs.writeFileSync(path.join(siteDir, "about.html"), cleanGeneratedText(renderAboutPage()), "utf8");
+  fs.writeFileSync(path.join(siteDir, "standings.html"), cleanGeneratedText(renderStandingsPage(publicRuns)), "utf8");
   fs.writeFileSync(path.join(siteDir, "styles.css"), cleanGeneratedText(renderCss()), "utf8");
   fs.writeFileSync(path.join(siteDir, "404.html"), cleanGeneratedText(renderNotFound()), "utf8");
   fs.writeFileSync(path.join(siteDir, "robots.txt"), renderRobots(), "utf8");
@@ -119,7 +120,7 @@ function renderAboutPage() {
     description: "About Paperclipalypse, an AI humor tournament tracking how model humor improves over time.",
     canonicalPath: "/about.html",
     body: `
-      ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", label: "Origin Story" })}
+      ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", standingsPath: "./standings.html", label: "Origin Story" })}
       <main>
         <section class="about-page">
           <p class="eyebrow">About</p>
@@ -160,6 +161,326 @@ function renderAboutPage() {
   });
 }
 
+function renderStandingsPage(runs) {
+  const publicRuns = runs.filter((run) => !run.dryRun);
+  const standings = modelStandings(publicRuns);
+  const leader = standings[0];
+  const totalRounds = publicRuns.length;
+  const leaderLine = leader
+    ? `${leader.name} leads with ${leader.wins} ${leader.wins === 1 ? "win" : "wins"} across ${leader.entries} judged entries.`
+    : "No public rounds have been published yet.";
+
+  return pageShell({
+    title: "Paperclipalypse - Model Standings",
+    description: "Model standings and score trends for the Paperclipalypse AI comedy tournament.",
+    canonicalPath: "/standings.html",
+    body: `
+      ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", standingsPath: "./standings.html", label: "Model Standings" })}
+      <main class="standings-page">
+        <section class="standings-hero-panel">
+          <p class="eyebrow">Tournament Scoreboard</p>
+          <h1>Model Standings</h1>
+          <p>${escapeHtml(leaderLine)} The chart below tracks whether the tournament is getting funnier, flatter, or merely more confident.</p>
+          <div class="standings-summary-grid" aria-label="Tournament summary">
+            <div>
+              <span>Published rounds</span>
+              <strong>${totalRounds}</strong>
+            </div>
+            <div>
+              <span>Current leader</span>
+              <strong>${escapeHtml(leader?.name || "Pending")}</strong>
+            </div>
+            <div>
+              <span>Leader average</span>
+              <strong>${leader ? formatScore(leader.averageScore) : "0.0"}</strong>
+            </div>
+          </div>
+        </section>
+        ${renderModelStandings(standings)}
+        ${renderScoreTrend(publicRuns)}
+      </main>`
+  });
+}
+
+function renderModelStandings(standings) {
+  if (!standings.length) {
+    return `
+        <section class="model-standings">
+          <div class="section-heading">
+            <p class="eyebrow">Model Scoreboard</p>
+            <h2>Wins By Contestant</h2>
+          </div>
+          <p class="empty-state">No public contests have been scored yet.</p>
+        </section>`;
+  }
+
+  const cards = standings
+    .slice(0, 5)
+    .map(
+      (entry, index) => `
+        <article class="standing-card">
+          <span>#${index + 1}</span>
+          <h3>${escapeHtml(entry.name)}</h3>
+          <dl>
+            <div><dt>Wins</dt><dd>${entry.wins}</dd></div>
+            <div><dt>Avg</dt><dd>${formatScore(entry.averageScore)}</dd></div>
+            <div><dt>Latest</dt><dd>${formatScore(entry.latestScore)}</dd></div>
+          </dl>
+          <p>${escapeHtml(entry.latestDate)} / latest rank ${entry.latestRank}</p>
+        </article>`
+    )
+    .join("");
+
+  const rows = standings
+    .map(
+      (entry, index) => `
+        <tr>
+          <td>${index + 1}</td>
+          <td><strong class="model-name">${escapeHtml(entry.name)}</strong><small>${entry.wins ? `Last win: ${escapeHtml(entry.lastWinDate)}` : "No wins yet"}</small></td>
+          <td><span class="wins-pill">${entry.wins}</span></td>
+          <td>${formatScore(entry.averageScore)}</td>
+          <td>${formatScore(entry.bestScore)}</td>
+          <td>${formatScore(entry.latestScore)}</td>
+          <td>${formatScore(entry.averageRank)}</td>
+          <td>${entry.entries}</td>
+        </tr>`
+    )
+    .join("");
+
+  return `
+        <section class="model-standings">
+          <div class="section-heading">
+            <p class="eyebrow">Model Scoreboard</p>
+            <h2>Wins By Contestant</h2>
+          </div>
+          <div class="standing-card-grid">${cards}</div>
+          <div class="table-scroll standings-table-scroll">
+            <table class="standings-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Model</th>
+                  <th>Wins</th>
+                  <th>Avg Score</th>
+                  <th>Best</th>
+                  <th>Latest</th>
+                  <th>Avg Rank</th>
+                  <th>Entries</th>
+                </tr>
+              </thead>
+              <tbody>${rows}</tbody>
+            </table>
+          </div>
+        </section>`;
+}
+
+function renderScoreTrend(runs) {
+  const points = scoreTrendPoints(runs);
+  if (!points.length) {
+    return `
+        <section class="score-trend">
+          <div class="section-heading">
+            <p class="eyebrow">Score Trend</p>
+            <h2>Winning Score Over Time</h2>
+          </div>
+          <p class="empty-state">No scored contests are available yet.</p>
+        </section>`;
+  }
+
+  const chart = renderTrendSvg(points);
+  const rows = points
+    .map(
+      (point) => `
+        <tr>
+          <td>${escapeHtml(shortDate(point.run))}</td>
+          <td><a href="./runs/${escapeHtml(point.run.slug)}.html">${escapeHtml(roundDisplayTitle(point.run))}</a></td>
+          <td>${escapeHtml(point.winnerName)}</td>
+          <td>${formatScore(point.winningScore)}</td>
+          <td>${formatScore(point.averageScore)}</td>
+        </tr>`
+    )
+    .join("");
+
+  return `
+        <section class="score-trend">
+          <div class="section-heading">
+            <p class="eyebrow">Score Trend</p>
+            <h2>Winning Score Over Time</h2>
+          </div>
+          <div class="trend-card">
+            <p>The brass line tracks each round's winning score. The gray line shows the average score across all five jokes, which is a calmer read on overall joke quality.</p>
+            <div class="chart-legend" aria-label="Chart legend">
+              <span><i class="legend-win"></i>Winning score</span>
+              <span><i class="legend-average"></i>Field average</span>
+            </div>
+            <div class="trend-chart-wrap">${chart}</div>
+            <div class="table-scroll trend-table-scroll">
+              <table class="trend-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Round</th>
+                    <th>Winner</th>
+                    <th>Winning Score</th>
+                    <th>Field Avg</th>
+                  </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          </div>
+        </section>`;
+}
+
+function renderTrendSvg(points) {
+  const width = 880;
+  const height = 360;
+  const left = 58;
+  const right = 28;
+  const top = 30;
+  const bottom = 62;
+  const plotWidth = width - left - right;
+  const plotHeight = height - top - bottom;
+  const allScores = points.flatMap((point) => [point.winningScore, point.averageScore]);
+  let yMin = Math.max(0, Math.floor(Math.min(...allScores) - 1));
+  let yMax = Math.min(10, Math.ceil(Math.max(...allScores) + 1));
+  if (yMax - yMin < 4) {
+    const padding = Math.ceil((4 - (yMax - yMin)) / 2);
+    yMin = Math.max(0, yMin - padding);
+    yMax = Math.min(10, yMax + padding);
+  }
+
+  const xFor = (index) => points.length === 1
+    ? left + plotWidth / 2
+    : left + (index / (points.length - 1)) * plotWidth;
+  const yFor = (score) => top + ((yMax - score) / (yMax - yMin)) * plotHeight;
+  const winningPolyline = points.map((point, index) => `${xFor(index).toFixed(1)},${yFor(point.winningScore).toFixed(1)}`).join(" ");
+  const averagePolyline = points.map((point, index) => `${xFor(index).toFixed(1)},${yFor(point.averageScore).toFixed(1)}`).join(" ");
+  const ticks = Array.from({ length: yMax - yMin + 1 }, (_, index) => yMin + index);
+  const grid = ticks
+    .map((tick) => {
+      const y = yFor(tick).toFixed(1);
+      return `<g class="trend-grid-line"><line x1="${left}" y1="${y}" x2="${width - right}" y2="${y}"></line><text x="${left - 12}" y="${Number(y) + 4}" text-anchor="end">${tick}</text></g>`;
+    })
+    .join("");
+  const xLabels = points
+    .map((point, index) => {
+      const x = xFor(index).toFixed(1);
+      return `<text class="trend-x-label" x="${x}" y="${height - 24}" text-anchor="middle">${escapeHtml(shortTrendLabel(point.run))}</text>`;
+    })
+    .join("");
+  const winningMarkers = points
+    .map((point, index) => trendMarker(point, xFor(index), yFor(point.winningScore), "win", point.winningScore))
+    .join("");
+  const averageMarkers = points
+    .map((point, index) => trendMarker(point, xFor(index), yFor(point.averageScore), "average", point.averageScore))
+    .join("");
+
+  return `
+              <svg class="score-trend-svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="score-trend-title score-trend-desc">
+                <title id="score-trend-title">Paperclipalypse score trend</title>
+                <desc id="score-trend-desc">Line chart comparing winning scores with the field average for published Paperclipalypse contests.</desc>
+                <rect class="trend-plot-bg" x="${left}" y="${top}" width="${plotWidth}" height="${plotHeight}" rx="8"></rect>
+                ${grid}
+                <line class="trend-axis" x1="${left}" y1="${top + plotHeight}" x2="${width - right}" y2="${top + plotHeight}"></line>
+                <line class="trend-axis" x1="${left}" y1="${top}" x2="${left}" y2="${top + plotHeight}"></line>
+                <polyline class="trend-line trend-line-average" points="${averagePolyline}"></polyline>
+                <polyline class="trend-line trend-line-win" points="${winningPolyline}"></polyline>
+                ${averageMarkers}
+                ${winningMarkers}
+                ${xLabels}
+                <text class="trend-y-title" x="16" y="${top + plotHeight / 2}" text-anchor="middle" transform="rotate(-90 16 ${top + plotHeight / 2})">Score</text>
+              </svg>`;
+}
+
+function trendMarker(point, x, y, type, score) {
+  const label = `${shortDate(point.run)}: ${type === "win" ? "winning score" : "field average"} ${formatScore(score)}`;
+
+  return `
+                <g class="trend-point trend-point-${type}">
+                  <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${type === "win" ? 5 : 4}"><title>${escapeHtml(label)}</title></circle>
+                  ${type === "win" ? `<text x="${x.toFixed(1)}" y="${(y - 12).toFixed(1)}" text-anchor="middle">${formatScore(score)}</text>` : ""}
+                </g>`;
+}
+
+function modelStandings(runs) {
+  const stats = new Map();
+  const newestFirst = [...runs]
+    .filter((run) => Array.isArray(run.rankings) && run.rankings.length)
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+
+  for (const run of newestFirst) {
+    const winner = run.rankings[0];
+    for (const ranking of run.rankings) {
+      const name = ranking.contestantName || ranking.contestantId || "Unknown model";
+      const score = Number(ranking.score) || 0;
+      const rank = Number(ranking.rank) || 0;
+      const entry = stats.get(name) || {
+        name,
+        wins: 0,
+        entries: 0,
+        totalScore: 0,
+        totalRank: 0,
+        bestScore: 0,
+        latestScore: score,
+        latestRank: rank,
+        latestDate: shortDate(run),
+        lastWinDate: ""
+      };
+      const isWinner = winner && (winner.jokeId === ranking.jokeId || winner.contestantName === ranking.contestantName);
+
+      entry.entries += 1;
+      entry.totalScore += score;
+      entry.totalRank += rank;
+      entry.bestScore = Math.max(entry.bestScore, score);
+      if (entry.entries === 1) {
+        entry.latestScore = score;
+        entry.latestRank = rank;
+        entry.latestDate = shortDate(run);
+      }
+      if (isWinner) {
+        entry.wins += 1;
+        entry.lastWinDate ||= shortDate(run);
+      }
+      stats.set(name, entry);
+    }
+  }
+
+  return [...stats.values()]
+    .map((entry) => ({
+      ...entry,
+      averageScore: entry.entries ? entry.totalScore / entry.entries : 0,
+      averageRank: entry.entries ? entry.totalRank / entry.entries : 0,
+      lastWinDate: entry.lastWinDate || "None yet"
+    }))
+    .sort((a, b) =>
+      b.wins - a.wins ||
+      b.averageScore - a.averageScore ||
+      b.bestScore - a.bestScore ||
+      a.name.localeCompare(b.name)
+    );
+}
+
+function scoreTrendPoints(runs) {
+  return [...runs]
+    .filter((run) => Array.isArray(run.rankings) && run.rankings.length)
+    .sort((a, b) => dateOnly(a).localeCompare(dateOnly(b)) || a.createdAt.localeCompare(b.createdAt))
+    .map((run) => {
+      const winner = run.rankings[0];
+      const scores = run.rankings.map((ranking) => Number(ranking.score) || 0);
+      return {
+        run,
+        winnerName: winner.contestantName,
+        winningScore: Number(winner.score) || 0,
+        averageScore: scores.reduce((total, score) => total + score, 0) / scores.length
+      };
+    });
+}
+
+function shortTrendLabel(run) {
+  return shortDate(run).replace(/, \d{4}$/u, "");
+}
+
 function renderRunPage(run, publicRuns) {
   return pageShell({
     title: `Paperclipalypse - ${shortDate(run)}`,
@@ -167,7 +488,7 @@ function renderRunPage(run, publicRuns) {
     canonicalPath: `/runs/${run.slug}.html`,
     socialImage: socialImageForRun(run),
     body: `
-      ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", label: shortDate(run) })}
+      ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", standingsPath: "../standings.html", label: shortDate(run) })}
       ${renderRun(run, {
         assetBase: "../",
         memoryNav: renderMemoryNav(run, publicRuns, "Memory Bank navigation"),
@@ -176,11 +497,13 @@ function renderRunPage(run, publicRuns) {
   });
 }
 
-function renderTopnav({ homePath, aboutPath, label }) {
+function renderTopnav({ homePath, aboutPath, standingsPath, label }) {
+  const standingsHref = standingsPath || (aboutPath.startsWith("../") ? "../standings.html" : "./standings.html");
+
   return `
       <nav class="topnav">
         <a href="${escapeHtml(homePath)}" class="nav-brand"><span class="mini-mark" aria-hidden="true"></span>Paperclipalypse</a>
-        <span class="topnav-links"><a href="${escapeHtml(aboutPath)}">About</a><span>${escapeHtml(label)}</span></span>
+        <span class="topnav-links"><a href="${escapeHtml(standingsHref)}">Standings</a><a href="${escapeHtml(aboutPath)}">About</a><span>${escapeHtml(label)}</span></span>
       </nav>`;
 }
 
@@ -196,6 +519,7 @@ function renderSitemap(runs) {
   const urls = [
     { loc: "https://paperclipalypse.com/", lastmod: latestDate(runs) },
     { loc: "https://paperclipalypse.com/about.html", lastmod: latestDate(runs) },
+    { loc: "https://paperclipalypse.com/standings.html", lastmod: latestDate(runs) },
     ...runs.map((run) => ({
       loc: `https://paperclipalypse.com/runs/${run.slug}.html`,
       lastmod: dateOnly(run)
@@ -232,7 +556,10 @@ function renderHero(run) {
               <h1>Paperclipalypse</h1>
               <p class="brand-subtitle">The comedy stage: humanity’s last holdout.</p>
             </div>
-            <a class="hero-about-link" href="./about.html">About</a>
+            <nav class="hero-links" aria-label="Site">
+              <a class="hero-about-link" href="./standings.html">Standings</a>
+              <a class="hero-about-link" href="./about.html">About</a>
+            </nav>
           </div>
           <div class="hero-copy">
             <p class="episode-date">${escapeHtml(shortDate(run))}</p>
@@ -694,6 +1021,7 @@ function pageShell({
 }) {
   const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.png" : "./favicon.png";
   const aboutPath = stylesheetPath.startsWith("../") ? "../about.html" : "./about.html";
+  const standingsPath = stylesheetPath.startsWith("../") ? "../standings.html" : "./standings.html";
   const canonicalUrl = `https://paperclipalypse.com${canonicalPath}`;
 
   return `<!doctype html>
@@ -718,17 +1046,17 @@ function pageShell({
   </head>
   <body>
     ${body}
-    ${renderFooter({ aboutPath })}
+    ${renderFooter({ aboutPath, standingsPath })}
     ${cloudflareAnalytics}
   </body>
 </html>`;
 }
 
-function renderFooter({ aboutPath }) {
+function renderFooter({ aboutPath, standingsPath }) {
   return `
     <footer class="site-footer">
       <span>Paperclipalypse is an experimental AI humor tournament.</span>
-      <span><a href="${escapeHtml(aboutPath)}">About</a> / Traffic is measured with Cloudflare Web Analytics.</span>
+      <span><a href="${escapeHtml(standingsPath)}">Standings</a> / <a href="${escapeHtml(aboutPath)}">About</a> / Traffic is measured with Cloudflare Web Analytics.</span>
     </footer>`;
 }
 
@@ -850,6 +1178,12 @@ main,
 .brand-row {
   justify-content: space-between;
   gap: 20px;
+}
+
+.hero-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .brand-title {
@@ -1335,6 +1669,271 @@ main {
 .curator-profile p:last-child {
   color: var(--ink);
   margin-bottom: 0;
+}
+
+.standings-page {
+  display: grid;
+  gap: 32px;
+}
+
+.standings-hero-panel,
+.trend-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.1), transparent 58%),
+    var(--panel);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.standings-hero-panel h1 {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.7rem;
+  line-height: 1.02;
+  margin-bottom: 14px;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.standings-hero-panel p {
+  max-width: 860px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  font-weight: 760;
+  line-height: 1.55;
+}
+
+.standings-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.standings-summary-grid div,
+.standing-card {
+  border: 1px solid rgba(194, 138, 87, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 48, 72, 0.06), transparent 54%),
+    rgba(11, 12, 14, 0.78);
+}
+
+.standings-summary-grid div {
+  min-height: 86px;
+  display: grid;
+  align-content: center;
+  gap: 8px;
+  padding: 16px;
+}
+
+.standings-summary-grid span,
+.standing-card span,
+.standing-card dt {
+  color: var(--brass);
+  font-size: 0.76rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.standings-summary-grid strong {
+  color: var(--bone);
+  font-size: 1.45rem;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.standing-card-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.standing-card {
+  min-height: 188px;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 16px;
+}
+
+.standing-card h3 {
+  color: var(--bone);
+  font-size: 1.04rem;
+  line-height: 1.18;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.standing-card dl {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 0;
+}
+
+.standing-card dd {
+  color: var(--ink);
+  font-size: 1.18rem;
+  font-weight: 950;
+  margin: 3px 0 0;
+}
+
+.standing-card p {
+  color: var(--dim);
+  font-size: 0.78rem;
+  font-weight: 850;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.standings-table-scroll,
+.trend-table-scroll {
+  margin-top: 14px;
+}
+
+.standings-table .model-name {
+  color: var(--ink);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.standings-table small {
+  color: var(--dim);
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 850;
+}
+
+.wins-pill {
+  min-width: 32px;
+  border: 1px solid rgba(194, 138, 87, 0.38);
+  border-radius: 999px;
+  background: rgba(194, 138, 87, 0.12);
+  color: var(--brass);
+  display: inline-flex;
+  justify-content: center;
+  padding: 4px 8px;
+  font-weight: 950;
+}
+
+.trend-card > p {
+  max-width: 820px;
+  color: var(--muted);
+  font-size: 1rem;
+  font-weight: 780;
+  line-height: 1.55;
+}
+
+.chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0 14px;
+}
+
+.chart-legend span {
+  color: var(--muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.chart-legend i {
+  width: 28px;
+  height: 3px;
+  border-radius: 999px;
+  display: inline-block;
+}
+
+.legend-win {
+  background: var(--brass);
+}
+
+.legend-average {
+  background: #aeb4bd;
+}
+
+.trend-chart-wrap {
+  border: 1px solid rgba(194, 138, 87, 0.24);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.028), transparent),
+    rgba(7, 8, 9, 0.72);
+  overflow-x: auto;
+  padding: 8px;
+}
+
+.score-trend-svg {
+  min-width: 740px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.score-trend-svg text {
+  fill: var(--muted);
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+  font-size: 12px;
+  font-weight: 850;
+}
+
+.trend-plot-bg {
+  fill: rgba(18, 19, 21, 0.64);
+}
+
+.trend-grid-line line {
+  stroke: rgba(176, 185, 196, 0.12);
+}
+
+.trend-axis {
+  stroke: rgba(194, 138, 87, 0.34);
+  stroke-width: 1.4;
+}
+
+.trend-line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.trend-line-win {
+  stroke: var(--brass);
+  filter: drop-shadow(0 0 8px rgba(194, 138, 87, 0.38));
+}
+
+.trend-line-average {
+  stroke: #aeb4bd;
+  stroke-dasharray: 6 8;
+}
+
+.trend-point circle {
+  stroke: #08090a;
+  stroke-width: 2;
+}
+
+.trend-point-win circle {
+  fill: var(--brass);
+}
+
+.trend-point-average circle {
+  fill: #aeb4bd;
+}
+
+.trend-point-win text {
+  fill: var(--bone);
+  font-size: 11px;
+  font-weight: 950;
+}
+
+.trend-y-title,
+.trend-x-label {
+  fill: var(--dim) !important;
 }
 
 .section-heading {
@@ -1929,6 +2528,10 @@ td:nth-child(4) {
   .joke-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .standing-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -1958,6 +2561,10 @@ td:nth-child(4) {
 
   .hero-about-link {
     display: inline-block;
+    margin-top: 12px;
+  }
+
+  .hero-links {
     margin-top: 12px;
   }
 
@@ -2005,6 +2612,20 @@ td:nth-child(4) {
 
   .about-page h1 {
     font-size: 1.8rem;
+  }
+
+  .standings-hero-panel,
+  .trend-card {
+    padding: 18px;
+  }
+
+  .standings-hero-panel h1 {
+    font-size: 2rem;
+  }
+
+  .standings-summary-grid,
+  .standing-card-grid {
+    grid-template-columns: 1fr;
   }
 
   .about-account h2 {
