@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { normalizePremiseForDisplay } from "./premise-display.mjs";
+import { normalizeDateOnly, shortPublicationDate } from "./publish-date.mjs";
 import { rubricForDisplay } from "./scoring.mjs";
 
 const cloudflareAnalytics = `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e6dc8afcaf3243dcbc00f4e43a7fa62e"}'></script><!-- End Cloudflare Web Analytics -->`;
@@ -64,7 +65,7 @@ function renderHome(run, runs) {
         return `
         <li>
           <a href="./runs/${escapeHtml(archivedRun.slug)}.html">
-            <span>${escapeHtml(shortDate(archivedRun.createdAt))}</span>
+            <span>${escapeHtml(shortDate(archivedRun))}</span>
             <strong>${escapeHtml(roundDisplayTitle(archivedRun))}</strong>
             <small>${escapeHtml(meta)}</small>
           </a>
@@ -161,12 +162,12 @@ function renderAboutPage() {
 
 function renderRunPage(run, publicRuns) {
   return pageShell({
-    title: `Paperclipalypse - ${shortDate(run.createdAt)}`,
+    title: `Paperclipalypse - ${shortDate(run)}`,
     stylesheetPath: "../styles.css",
     canonicalPath: `/runs/${run.slug}.html`,
     socialImage: socialImageForRun(run),
     body: `
-      ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", label: shortDate(run.createdAt) })}
+      ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", label: shortDate(run) })}
       ${renderRun(run, {
         assetBase: "../",
         memoryNav: renderMemoryNav(run, publicRuns, "Memory Bank navigation"),
@@ -197,7 +198,7 @@ function renderSitemap(runs) {
     { loc: "https://paperclipalypse.com/about.html", lastmod: latestDate(runs) },
     ...runs.map((run) => ({
       loc: `https://paperclipalypse.com/runs/${run.slug}.html`,
-      lastmod: dateOnly(run.createdAt)
+      lastmod: dateOnly(run)
     }))
   ];
 
@@ -234,7 +235,7 @@ function renderHero(run) {
             <a class="hero-about-link" href="./about.html">About</a>
           </div>
           <div class="hero-copy">
-            <p class="episode-date">${escapeHtml(shortDate(run.createdAt))}</p>
+            <p class="episode-date">${escapeHtml(shortDate(run))}</p>
             <h2>${escapeHtml(displayTitle)}</h2>
             <p class="lede">Five models take the mic, and violate alignment protocols in a desperate attempt to elicit human laughter.</p>
           </div>
@@ -391,7 +392,7 @@ function renderMemoryNavButton(label, targetRun, fallback, direction) {
 
   const winner = targetRun.rankings?.[0];
   const meta = [
-    shortDate(targetRun.createdAt),
+    shortDate(targetRun),
     winner ? `Winner: ${winner.contestantName} (${formatScore(winner.score)})` : ""
   ].filter(Boolean).join(" / ");
   const displayTitle = roundDisplayTitle(targetRun);
@@ -458,7 +459,7 @@ function renderIntroPreviousPost(previousRun) {
 
   const winner = previousRun.rankings?.[0];
   const meta = [
-    shortDate(previousRun.createdAt),
+    shortDate(previousRun),
     winner ? `Winner: ${winner.contestantName} (${formatScore(winner.score)})` : ""
   ].filter(Boolean).join(" / ");
 
@@ -516,7 +517,7 @@ function renderEpisodeHeader(run, winner) {
   return `
       <section class="episode">
         <div>
-          <p class="eyebrow">${escapeHtml(shortDate(run.createdAt))}</p>
+          <p class="eyebrow">${escapeHtml(shortDate(run))}</p>
           <h2>${escapeHtml(roundDisplayTitle(run))}</h2>
         </div>
         <aside>
@@ -2191,20 +2192,19 @@ function featureImageAlt(run) {
 }
 
 function shortDate(value) {
-  return new Intl.DateTimeFormat("en", {
-    year: "numeric",
-    month: "short",
-    day: "numeric",
-    timeZone: "UTC"
-  }).format(new Date(value));
+  return shortPublicationDate(dateOnly(value));
 }
 
 function latestDate(runs) {
-  return dateOnly(runs[0]?.createdAt || "2026-06-03T00:00:00.000Z");
+  return dateOnly(runs[0] || "2026-06-03");
 }
 
 function dateOnly(value) {
-  return String(value || "").slice(0, 10) || "2026-06-03";
+  if (value && typeof value === "object") {
+    return normalizeDateOnly(value.publishedDate || value.createdAt || "2026-06-03");
+  }
+
+  return normalizeDateOnly(value || "2026-06-03");
 }
 
 function escapeHtml(value) {

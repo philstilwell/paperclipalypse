@@ -50,6 +50,8 @@ using paid model APIs.
 - Codex must not invent external contestant jokes or missing scorecards.
 - Codex must not use paid APIs unless Phil explicitly authorizes metered API use.
 - Gemini image generation is the project default for feature images.
+- Publication dates and generated slugs use Eastern time
+  (`America/New_York`) unless Phil explicitly requests another date.
 - Gemini image generation should be run in a fresh Chrome window so Codex can
   reach the generated image controls and save the 1024x506 chat-preview image.
 - Gemini may imperfectly render long in-image text. The site HTML remains the

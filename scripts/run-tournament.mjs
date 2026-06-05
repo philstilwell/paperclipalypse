@@ -8,6 +8,7 @@ import { buildFeatureImagePrompt, writeFeatureImageBrief } from "./lib/feature-i
 import { assertFeatureImageQa } from "./lib/image-qa.mjs";
 import { assertCompleteTournament } from "./lib/participation.mjs";
 import { normalizePremiseForDisplay } from "./lib/premise-display.mjs";
+import { publicationDateOnly } from "./lib/publish-date.mjs";
 import { aggregateScores, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
 import { seededRng } from "./lib/random.mjs";
 import { renderSite } from "./lib/site.mjs";
@@ -55,7 +56,8 @@ const seedTerms = fs.existsSync(seedListsPath)
   : [];
 const premise = normalizePremiseForDisplay(buildPromptContextFromSeedTerms(seedTerms) || buildPremise(promptPools, rng), seedTerms);
 const createdAt = new Date().toISOString();
-const slug = `${createdAt.slice(0, 10)}-${seed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`;
+const publishedDate = publicationDateOnly(createdAt);
+const slug = `${publishedDate}-${seed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`;
 const jokes = dryRun
   ? makeDryJokes(contestants, premise, rng)
   : await generateJokes(contestants, premise);
@@ -73,6 +75,7 @@ const run = {
   dryRun,
   source: dryRun ? "dry-run" : "paid-api",
   createdAt,
+  publishedDate,
   seedTerms,
   premise,
   contestants: contestants.map((contestant) => ({
@@ -218,7 +221,8 @@ function makeDryJokes(modelRoster, runPremise, localRng) {
 function buildRunFromEpisodeFile(filePath, fallbackSeed) {
   const episode = readJson(filePath);
   const createdAt = episode.createdAt || new Date().toISOString();
-  const localSeed = episode.seed || fallbackSeed || createdAt.slice(0, 10);
+  const publishedDate = episode.publishedDate || publicationDateOnly(createdAt);
+  const localSeed = episode.seed || fallbackSeed || publishedDate;
   const seedTerms = normalizeSeedTerms(episode.seedTerms);
   const contestants = episode.contestants.map((contestant) => ({
     id: cleanText(contestant.id),
@@ -268,11 +272,12 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
   }, seedTerms);
   const run = {
     version: 1,
-    slug: episode.slug || `${createdAt.slice(0, 10)}-${localSeed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`,
+    slug: episode.slug || `${publishedDate}-${localSeed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`,
     seed: localSeed,
     dryRun: false,
     source: episode.source || "codex-house",
     createdAt,
+    publishedDate,
     seedTerms,
     premise: promptContext,
     contestants,
@@ -578,5 +583,5 @@ function normalizeSeedTerms(seedTerms) {
 }
 
 function todaySeed() {
-  return new Date().toISOString().slice(0, 10);
+  return publicationDateOnly(new Date());
 }

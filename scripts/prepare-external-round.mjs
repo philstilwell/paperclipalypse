@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { generationPrompt, judgingPrompt } from "./lib/prompt.mjs";
+import { publicationDateOnly } from "./lib/publish-date.mjs";
 import { seededRng } from "./lib/random.mjs";
 import { buildPromptContextFromSeedTerms, buildSeedTerms } from "./lib/seed-terms.mjs";
 
@@ -9,11 +10,12 @@ const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..")
 const args = parseArgs(process.argv.slice(2));
 const seed = args.get("seed") || todaySeed();
 const createdAt = new Date().toISOString();
+const publishedDate = publicationDateOnly(createdAt);
 const seedLists = readJson(path.join(rootDir, "data", "seed-lists.json"));
 const contestants = readJson(path.join(rootDir, "config", "contestants.json")).contestants;
 const seedTerms = buildSeedTerms(seedLists, seededRng(seed));
 const context = buildPromptContextFromSeedTerms(seedTerms);
-const slug = `${createdAt.slice(0, 10)}-${seed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`;
+const slug = `${publishedDate}-${seed.replace(/[^A-Za-z0-9-]/g, "").slice(0, 24)}`;
 const outRelPath = args.get("out") || path.join("data", "inbox", `${seed}-prompts.json`);
 const outPath = path.resolve(rootDir, outRelPath);
 const generation = generationPrompt(context);
@@ -27,6 +29,7 @@ const packet = {
   slug,
   seedTerms,
   operatingMode: "one operator prompt, manual external AI web surfaces, no paid APIs",
+  publishedDate,
   contestants: contestants.map((contestant, index) => ({
     id: contestant.id,
     label: `Joke ${String.fromCharCode(65 + index)}`,
@@ -56,7 +59,9 @@ const packet = {
   ],
   episodeSkeleton: {
     createdAt,
+    publishedDate,
     seed,
+    slug,
     source: "manual-external",
     seedTerms,
     contestants: contestants.map((contestant) => ({
@@ -116,5 +121,5 @@ function readJson(filePath) {
 }
 
 function todaySeed() {
-  return new Date().toISOString().slice(0, 10);
+  return publicationDateOnly(new Date());
 }

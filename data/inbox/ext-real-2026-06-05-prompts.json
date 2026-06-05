@@ -3,7 +3,7 @@
   "purpose": "Paperclipalypse manual-external prompt packet",
   "createdAt": "2026-06-05T00:57:42.635Z",
   "seed": "ext-real-2026-06-05",
-  "slug": "2026-06-05-ext-real-2026-06-05",
+  "slug": "2026-06-04-ext-real-2026-06-05",
   "seedTerms": [
     "Young adult/Kids",
     "Politician",
@@ -120,6 +120,9 @@
       }
     ],
     "jokes": [],
-    "judgeResults": []
-  }
+    "judgeResults": [],
+    "slug": "2026-06-04-ext-real-2026-06-05",
+    "publishedDate": "2026-06-04"
+  },
+  "publishedDate": "2026-06-04"
 }
