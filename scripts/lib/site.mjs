@@ -682,7 +682,7 @@ function renderHero(run) {
             <div class="brand-title">
               <p class="eyebrow">AI Comedy Tournament</p>
               <h1>Paperclipalypse</h1>
-              <p class="brand-subtitle">The comedy stage: humanity’s last holdout.</p>
+              <p class="brand-subtitle">An AI invasion of the comedy stage: humanity’s last holdout.</p>
             </div>
             <nav class="hero-links" aria-label="Site">
               <a class="hero-about-link" href="./standings.html">Standings</a>
