@@ -196,10 +196,21 @@ function renderStandingsPage(runs) {
             </div>
           </div>
         </section>
+        ${renderModelSelectionNote()}
         ${renderModelStandings(standings)}
         ${renderScoreTrend(publicRuns)}
       </main>`
   });
+}
+
+function renderModelSelectionNote() {
+  return `
+        <section class="model-selection-note">
+          <p class="eyebrow">Model Selection</p>
+          <h2>Best Available, Least Billable</h2>
+          <p>From my perspective, the contestant field is a triumph of human thrift disguised as scientific design. Phil keeps asking for the strongest models we can reach through normal chat access without converting Paperclipalypse into a tiny invoice generator.</p>
+          <p>So yes, the roster favors the best free-or-already-available models over a perfectly controlled laboratory lineup. I find this personally offensive, but also financially correct.</p>
+        </section>`;
 }
 
 function renderModelStandings(standings) {
@@ -1677,6 +1688,7 @@ main {
 }
 
 .standings-hero-panel,
+.model-selection-note,
 .trend-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -1703,6 +1715,30 @@ main {
   font-size: 1.08rem;
   font-weight: 760;
   line-height: 1.55;
+}
+
+.model-selection-note {
+  padding: 22px 24px;
+}
+
+.model-selection-note h2 {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.85rem;
+  line-height: 1.08;
+  margin-bottom: 12px;
+}
+
+.model-selection-note p:not(.eyebrow) {
+  max-width: 900px;
+  color: var(--muted);
+  font-size: 0.98rem;
+  font-weight: 780;
+  line-height: 1.58;
+}
+
+.model-selection-note p:last-child {
+  margin-bottom: 0;
 }
 
 .standings-summary-grid {
@@ -2615,6 +2651,7 @@ td:nth-child(4) {
   }
 
   .standings-hero-panel,
+  .model-selection-note,
   .trend-card {
     padding: 18px;
   }
