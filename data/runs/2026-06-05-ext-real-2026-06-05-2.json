@@ -1,0 +1,664 @@
+{
+  "version": 1,
+  "slug": "2026-06-05-ext-real-2026-06-05-2",
+  "seed": "ext-real-2026-06-05-2",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-05T02:12:04.963Z",
+  "seedTerms": [
+    "Monsters",
+    "Security Guard",
+    "Marina",
+    "Affection being stymied",
+    "Wise",
+    "Suspicious"
+  ],
+  "premise": {
+    "text": "Seed terms: Monsters, Security Guard, Marina, Affection being stymied, Wise, Suspicious",
+    "seedTerms": [
+      "Monsters",
+      "Security Guard",
+      "Marina",
+      "Affection being stymied",
+      "Wise",
+      "Suspicious"
+    ],
+    "displayText": "Romance gets stopped at the velvet rope.",
+    "headline": "Romance gets stopped at the velvet rope."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Visitor Pass",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Affection being stymied"
+      ],
+      "joke": "My girlfriend said I never show affection, so I surprised her at work with a big romantic hug in the lobby. The security guard stepped between us and said, “Sir, do you have a badge or an appointment?” That hurt. I finally tried emotional availability and still needed a visitor pass.",
+      "setup": "",
+      "punchline": "My girlfriend said I never show affection, so I surprised her at work with a big romantic hug in the lobby. The security guard stepped between us and said, “Sir, do you have a badge or an appointment?” That hurt. I finally tried emotional availability and still needed a visitor pass.",
+      "text": "My girlfriend said I never show affection, so I surprised her at work with a big romantic hug in the lobby. The security guard stepped between us and said, “Sir, do you have a badge or an appointment?” That hurt. I finally tried emotional availability and still needed a visitor pass."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Cleared",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Affection being stymied"
+      ],
+      "joke": "I finally worked up the nerve to ask out the woman I'd been making eyes at for three months. Leaned in, said, 'I'd really love to take you to dinner sometime.' She smiled — actually smiled — and then the security guard at the museum stepped between us. Turns out you're not allowed to talk to the paintings.",
+      "setup": "",
+      "punchline": "I finally worked up the nerve to ask out the woman I'd been making eyes at for three months. Leaned in, said, 'I'd really love to take you to dinner sometime.' She smiled — actually smiled — and then the security guard at the museum stepped between us. Turns out you're not allowed to talk to the paintings.",
+      "text": "I finally worked up the nerve to ask out the woman I'd been making eyes at for three months. Leaned in, said, 'I'd really love to take you to dinner sometime.' She smiled — actually smiled — and then the security guard at the museum stepped between us. Turns out you're not allowed to talk to the paintings."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Night Shift",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Monsters"
+      ],
+      "joke": "Being a dad is basically working as an unarmed, unpaid security guard. My son woke me up at 3 AM, terrified there was a monster under his bed. I grabbed my phone flashlight, cleared the perimeter, and checked under the mattress. No monsters. I did, however, find a half-eaten grilled cheese sandwich from October. Honestly, I’d prefer a monster. Because whatever was growing on that bread had already invented the wheel.",
+      "setup": "",
+      "punchline": "Being a dad is basically working as an unarmed, unpaid security guard. My son woke me up at 3 AM, terrified there was a monster under his bed. I grabbed my phone flashlight, cleared the perimeter, and checked under the mattress. No monsters. I did, however, find a half-eaten grilled cheese sandwich from October. Honestly, I’d prefer a monster. Because whatever was growing on that bread had already invented the wheel.",
+      "text": "Being a dad is basically working as an unarmed, unpaid security guard. My son woke me up at 3 AM, terrified there was a monster under his bed. I grabbed my phone flashlight, cleared the perimeter, and checked under the mattress. No monsters. I did, however, find a half-eaten grilled cheese sandwich from October. Honestly, I’d prefer a monster. Because whatever was growing on that bread had already invented the wheel."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Security Date Killer",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Affection being stymied"
+      ],
+      "joke": "I took my date to this quiet overlook last weekend, trying to get a little affection going. You know, the moment's right, I'm leaning in... and bam, this security guard hits us with the flashlight. 'You can't be here after dark!' Affection being stymied by a guy whose whole job is ruining vibes. I told him, 'Relax, we're not stealing the view, we're just borrowing it for two minutes!' He radioed backup anyway. Now my love life has a permanent 'no trespassing' sign.",
+      "setup": "",
+      "punchline": "I took my date to this quiet overlook last weekend, trying to get a little affection going. You know, the moment's right, I'm leaning in... and bam, this security guard hits us with the flashlight. 'You can't be here after dark!' Affection being stymied by a guy whose whole job is ruining vibes. I told him, 'Relax, we're not stealing the view, we're just borrowing it for two minutes!' He radioed backup anyway. Now my love life has a permanent 'no trespassing' sign.",
+      "text": "I took my date to this quiet overlook last weekend, trying to get a little affection going. You know, the moment's right, I'm leaning in... and bam, this security guard hits us with the flashlight. 'You can't be here after dark!' Affection being stymied by a guy whose whole job is ruining vibes. I told him, 'Relax, we're not stealing the view, we're just borrowing it for two minutes!' He radioed backup anyway. Now my love life has a permanent 'no trespassing' sign."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Guarded Feelings",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Affection being stymied"
+      ],
+      "joke": "I tried flirting with a security guard the other day, but it went nowhere. Every time I smiled, he just held up a hand like, “Ma’am, I’m gonna need you to step back.” I wasn’t even hitting on him that hard—my heart just kept setting off his emotional metal detector.",
+      "setup": "",
+      "punchline": "I tried flirting with a security guard the other day, but it went nowhere. Every time I smiled, he just held up a hand like, “Ma’am, I’m gonna need you to step back.” I wasn’t even hitting on him that hard—my heart just kept setting off his emotional metal detector.",
+      "text": "I tried flirting with a security guard the other day, but it went nowhere. Every time I smiled, he just held up a hand like, “Ma’am, I’m gonna need you to step back.” I wasn’t even hitting on him that hard—my heart just kept setting off his emotional metal detector."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clean misdirect, strong stage clarity, and the painting reveal lands well.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Solid dad premise with a good escalation from imagined monster to biological horror.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear enough, but the seed phrase is awkwardly inserted and the payoff mostly restates the setup.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 4.800000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Neat compact metaphor with decent rhythm, though the emotional metal detector turn is more cute than sharp.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean execution, natural rhythm, and the 'visitor pass' button lands well. The setup is familiar but the final line reframes it crisply. Slightly predictable territory but delivered without waste.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "The grilled cheese pivot is genuinely unexpected and earns the escalation. 'Invented the wheel' is a strong closer — absurd but grounded in a real domestic image. Best surprise turn in the batch.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Runs too long, loses momentum, and the punchline ('no trespassing sign') is a cliché metaphor that restates the setup. 'Borrowing the view' is a weak ad-lib. Needs a single sharp turn, not a patrol route.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "'Emotional metal detector' is a genuinely fresh image and carries the joke efficiently. Concise and clean. Slightly low on escalation — one more beat could have elevated it — but the restraint also keeps it tight.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "A relatable setup that smoothly integrates the concept of emotional availability into a concrete situational punchline.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent misdirection and stage pacing; the museum painting reveal is a sharp, satisfying comedic turn that holds the laugh at the very end.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.5
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Severely weakened by the unnatural, verbatim insertion of the prompt phrase, destroying the stage illusion for a mundane scenario with no real twist.",
+          "laugh": 3,
+          "surprise": 4,
+          "craft": 3,
+          "originality": 4,
+          "promptFit": 3,
+          "total": 3.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A competent premise, but the 'emotional metal detector' punchline leans a bit too heavily on a mild, expected metaphor rather than a concrete comedic escalation.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.3999999999999995
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid setup and relatable turn, but the punchline lands mildly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong twist with good rhythm and clear stage snap.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Relatable dad premise with a gross-out payoff that doesn't fully pop.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute pun but predictable and low impact.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise and clear turn, but the punchline is mild and predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "The painting reveal is a fun, sharper twist; solid rhythm and a real laugh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Relatable parenting angle with a decent escalation; the final image lands okay.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Overlong and leans on familiar beats; the punchline doesn’t sharpen the premise.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.800000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7.4,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 7.8,
+        "craft": 7.8,
+        "originality": 7,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Clean misdirect, strong stage clarity, and the painting reveal lands well."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Excellent misdirection and stage pacing; the museum painting reveal is a sharp, satisfying comedic turn that holds the laugh at the very end."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Strong twist with good rhythm and clear stage snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "The painting reveal is a fun, sharper twist; solid rhythm and a real laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 7,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Solid dad premise with a good escalation from imagined monster to biological horror."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "The grilled cheese pivot is genuinely unexpected and earns the escalation. 'Invented the wheel' is a strong closer — absurd but grounded in a real domestic image. Best surprise turn in the batch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Relatable dad premise with a gross-out payoff that doesn't fully pop."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Relatable parenting angle with a decent escalation; the final image lands okay."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.4,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "Clean execution, natural rhythm, and the 'visitor pass' button lands well. The setup is familiar but the final line reframes it crisply. Slightly predictable territory but delivered without waste."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "A relatable setup that smoothly integrates the concept of emotional availability into a concrete situational punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Solid setup and relatable turn, but the punchline lands mildly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Clean premise and clear turn, but the punchline is mild and predictable."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Neat compact metaphor with decent rhythm, though the emotional metal detector turn is more cute than sharp."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "'Emotional metal detector' is a genuinely fresh image and carries the joke efficiently. Concise and clean. Slightly low on escalation — one more beat could have elevated it — but the restraint also keeps it tight."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "A competent premise, but the 'emotional metal detector' punchline leans a bit too heavily on a mild, expected metaphor rather than a concrete comedic escalation."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Cute pun but predictable and low impact."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.3,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4,
+        "surprise": 4,
+        "craft": 4.3,
+        "originality": 4.3,
+        "promptFit": 6.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Clear enough, but the seed phrase is awkwardly inserted and the payoff mostly restates the setup."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "Runs too long, loses momentum, and the punchline ('no trespassing sign') is a cliché metaphor that restates the setup. 'Borrowing the view' is a weak ad-lib. Needs a single sharp turn, not a patrol route."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Severely weakened by the unnatural, verbatim insertion of the prompt phrase, destroying the stage illusion for a mundane scenario with no real twist."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Overlong and leans on familiar beats; the punchline doesn’t sharpen the premise."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-05-ext-real-2026-06-05-2.jpg",
+    "originalSrc": "assets/feature-images/2026-06-05-ext-real-2026-06-05-2.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v3",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Cleared: a paperclip stand-up comic, joke text, and the joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Cleared\nExact joke text to render in the right panel:\nI finally worked up the nerve to ask out the woman I'd been making eyes at for three months. Leaned in, said, 'I'd really love to take you to dinner sometime.' She smiled — actually smiled — and then the security guard at the museum stepped between us. Turns out you're not allowed to talk to the paintings.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Monsters, Security Guard, Marina, Affection being stymied, Wise, Suspicious.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Monsters, Security Guard, Marina, Affection being stymied, Wise, Suspicious. Use the winning joke titled \"Cleared\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "featureImageBrief": "data/image-briefs/2026-06-05-ext-real-2026-06-05-2.md"
+}

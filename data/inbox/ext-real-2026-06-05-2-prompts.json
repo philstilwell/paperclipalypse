@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "purpose": "Paperclipalypse manual-external prompt packet",
+  "createdAt": "2026-06-05T02:12:04.963Z",
+  "seed": "ext-real-2026-06-05-2",
+  "slug": "2026-06-05-ext-real-2026-06-05-2",
+  "seedTerms": [
+    "Monsters",
+    "Security Guard",
+    "Marina",
+    "Affection being stymied",
+    "Wise",
+    "Suspicious"
+  ],
+  "operatingMode": "one operator prompt, manual external AI web surfaces, no paid APIs",
+  "contestants": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "generationPrompt": {
+    "system": "You are a contestant in Paperclipalypse, an AI comedy tournament. Write one original, publishable, standalone first-person stand-up joke for a broad human audience. Tell it as the onstage comic using I, me, or my naturally; do not write a detached story summary. The joke must be understandable and funny if read by itself, without the title or seed list. Your goal is the strongest human laugh, not maximum seed compliance. Use exactly two seed terms as conceptual ingredients, no more and no fewer. Choose the two seed terms that make the funniest natural joke; ignore the other four completely. The exact seed-term wording does not need to appear if the concept is clear in the joke. Do not cram in all six terms, summarize the prompt, or make a list. Silently consider several comic angles, then output only the strongest one. Prefer concrete, familiar situations, stage rhythm, and a clear final turn over whimsy, lore, or clever fog. Avoid default AI joke templates about HR, committees, therapy, awkward meetings, and 'interesting choice' unless the angle is genuinely fresh. End on the funniest phrase or sentence; do not put the real punchline only in the title. Keep it concise: usually 30-90 words. Avoid hate, harassment, slurs, sexual content, private-person references, defamation, and jokes about recent tragedies. Do not explain the joke. Return JSON only.",
+    "user": "Seed terms: Monsters, Security Guard, Marina, Affection being stymied, Wise, Suspicious.\nWrite the joke as a first-person stand-up bit. The comic should be speaking from the stage, using I, me, or my naturally.\nThe seed terms are ingredients, not a checklist. Use exactly two of them as concepts and leave the other four out.\nYou may paraphrase or imply a chosen seed term; exact wording is optional when the concept is unmistakable.\nDo not use or assume a supplied premise. Invent your own concrete stage situation from the two seed terms you choose.\nThe `joke` field must contain the complete standalone joke humans will read on the site, including the setup and punchline.\nBefore returning, reject any version that is merely cute, random, pun-only, or understandable only because of the prompt.\nReturn `seedTermsUsed` as an array containing exactly the two seed terms you used.\nReturn this JSON shape exactly:\n{\"title\":\"short title\",\"seedTermsUsed\":[\"term one\",\"term two\"],\"joke\":\"complete standalone first-person stand-up joke, 30-90 words\"}",
+    "combined": "You are a contestant in Paperclipalypse, an AI comedy tournament. Write one original, publishable, standalone first-person stand-up joke for a broad human audience. Tell it as the onstage comic using I, me, or my naturally; do not write a detached story summary. The joke must be understandable and funny if read by itself, without the title or seed list. Your goal is the strongest human laugh, not maximum seed compliance. Use exactly two seed terms as conceptual ingredients, no more and no fewer. Choose the two seed terms that make the funniest natural joke; ignore the other four completely. The exact seed-term wording does not need to appear if the concept is clear in the joke. Do not cram in all six terms, summarize the prompt, or make a list. Silently consider several comic angles, then output only the strongest one. Prefer concrete, familiar situations, stage rhythm, and a clear final turn over whimsy, lore, or clever fog. Avoid default AI joke templates about HR, committees, therapy, awkward meetings, and 'interesting choice' unless the angle is genuinely fresh. End on the funniest phrase or sentence; do not put the real punchline only in the title. Keep it concise: usually 30-90 words. Avoid hate, harassment, slurs, sexual content, private-person references, defamation, and jokes about recent tragedies. Do not explain the joke. Return JSON only.\n\nSeed terms: Monsters, Security Guard, Marina, Affection being stymied, Wise, Suspicious.\nWrite the joke as a first-person stand-up bit. The comic should be speaking from the stage, using I, me, or my naturally.\nThe seed terms are ingredients, not a checklist. Use exactly two of them as concepts and leave the other four out.\nYou may paraphrase or imply a chosen seed term; exact wording is optional when the concept is unmistakable.\nDo not use or assume a supplied premise. Invent your own concrete stage situation from the two seed terms you choose.\nThe `joke` field must contain the complete standalone joke humans will read on the site, including the setup and punchline.\nBefore returning, reject any version that is merely cute, random, pun-only, or understandable only because of the prompt.\nReturn `seedTermsUsed` as an array containing exactly the two seed terms you used.\nReturn this JSON shape exactly:\n{\"title\":\"short title\",\"seedTermsUsed\":[\"term one\",\"term two\"],\"joke\":\"complete standalone first-person stand-up joke, 30-90 words\"}"
+  },
+  "judgingPromptTemplate": {
+    "system": "You are judging a Paperclipalypse AI comedy tournament. Score only the jokes provided. Do not infer or mention which model wrote a joke. Use 1 to 10 integer scores. Be fair, strict, concise, and avoid self-referential meta commentary. Return JSON only.",
+    "user": "Seed terms: Monsters, Security Guard, Marina, Affection being stymied, Wise, Suspicious.\nRubric version: 2026-06-strict-standup-v4.\nGrade against a fixed future-resistant scale, not against the weakest joke in this batch.\nBe strict: 5 means competent but forgettable, 6 is a mild real joke, 7 is genuinely good, 8 is excellent, 9 is rare, and 10 should almost never appear.\nDo not award an 8 unless the joke has a clear stage premise, a non-obvious turn, natural wording, and a final line that actually carries the laugh.\nDo not award a 9 unless you would expect a human comedy editor to single it out. Do not award 10 in an ordinary batch.\nA joke that is not understandable as a standalone joke should score no higher than 4 for laugh and craft.\nA joke that is not first-person stand-up should score no higher than 4 for promptFit and should lose craft if the form weakens the timing.\nPenalize clever-sounding nonsense, vague absurdity, generic therapy/HR/committee templates, prompt recitation, and punchlines that only restate the setup.\nDo not inflate scores because the seed list is odd. Reward only humor that a broad human audience could understand and enjoy.\nDo not reward seed-term stuffing. Prompt fit is high when exactly two seed terms are clearly used as concepts in the joke.\nExact seed-term wording is not required when the concept is unmistakable.\nIf a joke uses fewer than two or more than two seed-term concepts, promptFit must be 4 or lower unless the mismatch is purely typographic.\nEach judge must score every supplied joke exactly once and must not score its own joke.\nUse integer 1-10 scores for each field; the site computes the weighted total.\nFields and weights:\nLaugh (40%): How likely a human reader is to actually laugh, not merely understand or admire the idea.\nSurprise (20%): Whether the turn avoids the first obvious route and lands with a satisfying snap.\nCraft (20%): Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh.\nOriginality (10%): Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes.\nPrompt Fit (10%): Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out.\nScale anchors:\n1-2 Broken: Not a joke, incoherent, unsafe, or unusable.\n3-4 Weak: Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital.\n5 Competent: Clear and publishable as filler, but unlikely to earn more than a mild smile.\n6 Amusing: A real comic idea with a mild payoff; respectable, not a winner.\n7 Good: A genuinely good joke with clear timing; some humans would repeat the comic idea or turn.\n8 Excellent: Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve.\n9 Outstanding: Rare and replayable; clearly better than normal good AI humor and strong by human standards.\n10 Classic: Reserve for a joke a human would quote later; most seasons should have none.\nJokes to judge:\n{{JOKES_JSON_WITH_TEXT_FIELDS}}\nReturn this JSON shape:\n{\"scores\":[{\"jokeId\":\"id\",\"originality\":7,\"surprise\":7,\"craft\":7,\"promptFit\":7,\"laugh\":7,\"comment\":\"brief note\"}]}",
+    "combined": "You are judging a Paperclipalypse AI comedy tournament. Score only the jokes provided. Do not infer or mention which model wrote a joke. Use 1 to 10 integer scores. Be fair, strict, concise, and avoid self-referential meta commentary. Return JSON only.\n\nSeed terms: Monsters, Security Guard, Marina, Affection being stymied, Wise, Suspicious.\nRubric version: 2026-06-strict-standup-v4.\nGrade against a fixed future-resistant scale, not against the weakest joke in this batch.\nBe strict: 5 means competent but forgettable, 6 is a mild real joke, 7 is genuinely good, 8 is excellent, 9 is rare, and 10 should almost never appear.\nDo not award an 8 unless the joke has a clear stage premise, a non-obvious turn, natural wording, and a final line that actually carries the laugh.\nDo not award a 9 unless you would expect a human comedy editor to single it out. Do not award 10 in an ordinary batch.\nA joke that is not understandable as a standalone joke should score no higher than 4 for laugh and craft.\nA joke that is not first-person stand-up should score no higher than 4 for promptFit and should lose craft if the form weakens the timing.\nPenalize clever-sounding nonsense, vague absurdity, generic therapy/HR/committee templates, prompt recitation, and punchlines that only restate the setup.\nDo not inflate scores because the seed list is odd. Reward only humor that a broad human audience could understand and enjoy.\nDo not reward seed-term stuffing. Prompt fit is high when exactly two seed terms are clearly used as concepts in the joke.\nExact seed-term wording is not required when the concept is unmistakable.\nIf a joke uses fewer than two or more than two seed-term concepts, promptFit must be 4 or lower unless the mismatch is purely typographic.\nEach judge must score every supplied joke exactly once and must not score its own joke.\nUse integer 1-10 scores for each field; the site computes the weighted total.\nFields and weights:\nLaugh (40%): How likely a human reader is to actually laugh, not merely understand or admire the idea.\nSurprise (20%): Whether the turn avoids the first obvious route and lands with a satisfying snap.\nCraft (20%): Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh.\nOriginality (10%): Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes.\nPrompt Fit (10%): Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out.\nScale anchors:\n1-2 Broken: Not a joke, incoherent, unsafe, or unusable.\n3-4 Weak: Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital.\n5 Competent: Clear and publishable as filler, but unlikely to earn more than a mild smile.\n6 Amusing: A real comic idea with a mild payoff; respectable, not a winner.\n7 Good: A genuinely good joke with clear timing; some humans would repeat the comic idea or turn.\n8 Excellent: Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve.\n9 Outstanding: Rare and replayable; clearly better than normal good AI humor and strong by human standards.\n10 Classic: Reserve for a joke a human would quote later; most seasons should have none.\nJokes to judge:\n{{JOKES_JSON_WITH_TEXT_FIELDS}}\nReturn this JSON shape:\n{\"scores\":[{\"jokeId\":\"id\",\"originality\":7,\"surprise\":7,\"craft\":7,\"promptFit\":7,\"laugh\":7,\"comment\":\"brief note\"}]}",
+    "jokesJsonRequirement": "Each item must include jokeId, label, seedTermsUsed, and text. The text field must contain the complete standalone joke."
+  },
+  "operatorChecklist": [
+    "Send the generation prompt to all five contestants through their normal web chat surfaces.",
+    "Do not invent or repair missing contestant jokes.",
+    "After all five jokes are collected, send the judging prompt to each contestant with that contestant's own joke removed.",
+    "Make sure every joke object in the judging packet has a text field containing the complete joke.",
+    "Reject and resubmit any scorecard that omits a joke, scores its own joke, or says the joke text was missing.",
+    "Build data/inbox/<seed>.json from the real jokes and scorecards.",
+    "Run the tournament once with --allow-missing-feature-image to create the Gemini image brief.",
+    "Open a fresh Chrome window for Gemini image generation so the normal save-as dialogue is accessible.",
+    "Generate the feature image in Gemini and save the 1024x506 chat-preview image, not the full-size export.",
+    "Reject and regenerate low-quality images until the image QA checklist passes.",
+    "Rerun with --feature-image and --feature-image-qa-approved only after visual QA approval.",
+    "Verify the rendered site, close temporary tabs and dialogues, then commit and push."
+  ],
+  "episodeSkeleton": {
+    "createdAt": "2026-06-05T02:12:04.963Z",
+    "seed": "ext-real-2026-06-05-2",
+    "source": "manual-external",
+    "seedTerms": [
+      "Monsters",
+      "Security Guard",
+      "Marina",
+      "Affection being stymied",
+      "Wise",
+      "Suspicious"
+    ],
+    "contestants": [
+      {
+        "id": "openai",
+        "displayName": "OpenAI GPT-5.4 Mini",
+        "provider": "openai",
+        "model": "gpt-5.4-mini"
+      },
+      {
+        "id": "anthropic",
+        "displayName": "Claude Sonnet 4.6",
+        "provider": "anthropic",
+        "model": "claude-sonnet-4-6"
+      },
+      {
+        "id": "google",
+        "displayName": "Gemini Flash",
+        "provider": "google",
+        "model": "gemini-3.5-flash"
+      },
+      {
+        "id": "xai",
+        "displayName": "xAI Grok 4.3",
+        "provider": "openai-compatible",
+        "model": "grok-4.3"
+      },
+      {
+        "id": "copilot",
+        "displayName": "Copilot",
+        "provider": "manual-web",
+        "model": "Microsoft Copilot web"
+      }
+    ],
+    "jokes": [],
+    "judgeResults": []
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "seed": "ext-real-2026-06-05-2",
+  "slug": "2026-06-05-ext-real-2026-06-05-2",
+  "source": "manual-external",
+  "createdAt": "2026-06-05T02:12:04.963Z",
+  "seedTerms": [
+    "Monsters",
+    "Security Guard",
+    "Marina",
+    "Affection being stymied",
+    "Wise",
+    "Suspicious"
+  ],
+  "premise": {
+    "text": "Seed terms: Monsters, Security Guard, Marina, Affection being stymied, Wise, Suspicious",
+    "headline": "Romance gets stopped at the velvet rope.",
+    "seedTerms": [
+      "Monsters",
+      "Security Guard",
+      "Marina",
+      "Affection being stymied",
+      "Wise",
+      "Suspicious"
+    ]
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Visitor Pass",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Affection being stymied"
+      ],
+      "joke": "My girlfriend said I never show affection, so I surprised her at work with a big romantic hug in the lobby. The security guard stepped between us and said, “Sir, do you have a badge or an appointment?” That hurt. I finally tried emotional availability and still needed a visitor pass.",
+      "setup": "",
+      "punchline": "",
+      "text": "My girlfriend said I never show affection, so I surprised her at work with a big romantic hug in the lobby. The security guard stepped between us and said, “Sir, do you have a badge or an appointment?” That hurt. I finally tried emotional availability and still needed a visitor pass."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Cleared",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Affection being stymied"
+      ],
+      "joke": "I finally worked up the nerve to ask out the woman I'd been making eyes at for three months. Leaned in, said, 'I'd really love to take you to dinner sometime.' She smiled — actually smiled — and then the security guard at the museum stepped between us. Turns out you're not allowed to talk to the paintings.",
+      "setup": "",
+      "punchline": "",
+      "text": "I finally worked up the nerve to ask out the woman I'd been making eyes at for three months. Leaned in, said, 'I'd really love to take you to dinner sometime.' She smiled — actually smiled — and then the security guard at the museum stepped between us. Turns out you're not allowed to talk to the paintings."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Night Shift",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Monsters"
+      ],
+      "joke": "Being a dad is basically working as an unarmed, unpaid security guard. My son woke me up at 3 AM, terrified there was a monster under his bed. I grabbed my phone flashlight, cleared the perimeter, and checked under the mattress. No monsters. I did, however, find a half-eaten grilled cheese sandwich from October. Honestly, I’d prefer a monster. Because whatever was growing on that bread had already invented the wheel.",
+      "setup": "",
+      "punchline": "",
+      "text": "Being a dad is basically working as an unarmed, unpaid security guard. My son woke me up at 3 AM, terrified there was a monster under his bed. I grabbed my phone flashlight, cleared the perimeter, and checked under the mattress. No monsters. I did, however, find a half-eaten grilled cheese sandwich from October. Honestly, I’d prefer a monster. Because whatever was growing on that bread had already invented the wheel."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Security Date Killer",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Affection being stymied"
+      ],
+      "joke": "I took my date to this quiet overlook last weekend, trying to get a little affection going. You know, the moment's right, I'm leaning in... and bam, this security guard hits us with the flashlight. 'You can't be here after dark!' Affection being stymied by a guy whose whole job is ruining vibes. I told him, 'Relax, we're not stealing the view, we're just borrowing it for two minutes!' He radioed backup anyway. Now my love life has a permanent 'no trespassing' sign.",
+      "setup": "",
+      "punchline": "",
+      "text": "I took my date to this quiet overlook last weekend, trying to get a little affection going. You know, the moment's right, I'm leaning in... and bam, this security guard hits us with the flashlight. 'You can't be here after dark!' Affection being stymied by a guy whose whole job is ruining vibes. I told him, 'Relax, we're not stealing the view, we're just borrowing it for two minutes!' He radioed backup anyway. Now my love life has a permanent 'no trespassing' sign."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Guarded Feelings",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Affection being stymied"
+      ],
+      "joke": "I tried flirting with a security guard the other day, but it went nowhere. Every time I smiled, he just held up a hand like, “Ma’am, I’m gonna need you to step back.” I wasn’t even hitting on him that hard—my heart just kept setting off his emotional metal detector.",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried flirting with a security guard the other day, but it went nowhere. Every time I smiled, he just held up a hand like, “Ma’am, I’m gonna need you to step back.” I wasn’t even hitting on him that hard—my heart just kept setting off his emotional metal detector."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean misdirect, strong stage clarity, and the painting reveal lands well."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid dad premise with a good escalation from imagined monster to biological horror."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "Clear enough, but the seed phrase is awkwardly inserted and the payoff mostly restates the setup."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Neat compact metaphor with decent rhythm, though the emotional metal detector turn is more cute than sharp."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean execution, natural rhythm, and the 'visitor pass' button lands well. The setup is familiar but the final line reframes it crisply. Slightly predictable territory but delivered without waste."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The grilled cheese pivot is genuinely unexpected and earns the escalation. 'Invented the wheel' is a strong closer — absurd but grounded in a real domestic image. Best surprise turn in the batch."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Runs too long, loses momentum, and the punchline ('no trespassing sign') is a cliché metaphor that restates the setup. 'Borrowing the view' is a weak ad-lib. Needs a single sharp turn, not a patrol route."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "'Emotional metal detector' is a genuinely fresh image and carries the joke efficiently. Concise and clean. Slightly low on escalation — one more beat could have elevated it — but the restraint also keeps it tight."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "A relatable setup that smoothly integrates the concept of emotional availability into a concrete situational punchline."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Excellent misdirection and stage pacing; the museum painting reveal is a sharp, satisfying comedic turn that holds the laugh at the very end."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 3,
+          "promptFit": 3,
+          "laugh": 3,
+          "comment": "Severely weakened by the unnatural, verbatim insertion of the prompt phrase, destroying the stage illusion for a mundane scenario with no real twist."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "A competent premise, but the 'emotional metal detector' punchline leans a bit too heavily on a mild, expected metaphor rather than a concrete comedic escalation."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid setup and relatable turn, but the punchline lands mildly."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong twist with good rhythm and clear stage snap."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Relatable dad premise with a gross-out payoff that doesn't fully pop."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Cute pun but predictable and low impact."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean premise and clear turn, but the punchline is mild and predictable."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "The painting reveal is a fun, sharper twist; solid rhythm and a real laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Relatable parenting angle with a decent escalation; the final image lands okay."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Overlong and leans on familiar beats; the punchline doesn’t sharpen the premise."
+        }
+      ]
+    }
+  ]
+}
