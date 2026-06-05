@@ -34,6 +34,7 @@ export function renderSite({ run, historyDir, siteDir }) {
   fs.writeFileSync(path.join(siteDir, "standings.html"), cleanGeneratedText(renderStandingsPage(publicRuns)), "utf8");
   fs.writeFileSync(path.join(siteDir, "styles.css"), cleanGeneratedText(renderCss()), "utf8");
   fs.writeFileSync(path.join(siteDir, "404.html"), cleanGeneratedText(renderNotFound()), "utf8");
+  fs.writeFileSync(path.join(siteDir, "feed.xml"), renderRssFeed(publicRuns), "utf8");
   fs.writeFileSync(path.join(siteDir, "robots.txt"), renderRobots(), "utf8");
   fs.writeFileSync(path.join(siteDir, "sitemap.xml"), renderSitemap(publicRuns), "utf8");
 }
@@ -237,6 +238,7 @@ function renderModelStandings(standings) {
             <div><dt>Avg</dt><dd>${formatScore(entry.averageScore)}</dd></div>
             <div><dt>Latest</dt><dd>${formatScore(entry.latestScore)}</dd></div>
           </dl>
+          <p class="standing-card-note">${escapeHtml(entry.note)}</p>
           <p>${escapeHtml(entry.latestDate)} / latest rank ${entry.latestRank}</p>
         </article>`
     )
@@ -253,6 +255,7 @@ function renderModelStandings(standings) {
           <td>${formatScore(entry.bestScore)}</td>
           <td>${formatScore(entry.latestScore)}</td>
           <td>${formatScore(entry.averageRank)}</td>
+          <td>${escapeHtml(entry.note)}</td>
           <td>${entry.entries}</td>
         </tr>`
     )
@@ -276,6 +279,7 @@ function renderModelStandings(standings) {
                   <th>Best</th>
                   <th>Latest</th>
                   <th>Avg Rank</th>
+                  <th>Pattern</th>
                   <th>Entries</th>
                 </tr>
               </thead>
@@ -419,6 +423,7 @@ function modelStandings(runs) {
   const newestFirst = [...runs]
     .filter((run) => Array.isArray(run.rankings) && run.rankings.length)
     .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+  const judgeProfiles = modelJudgeProfiles(newestFirst);
 
   for (const run of newestFirst) {
     const winner = run.rankings[0];
@@ -436,7 +441,9 @@ function modelStandings(runs) {
         latestScore: score,
         latestRank: rank,
         latestDate: shortDate(run),
-        lastWinDate: ""
+        lastWinDate: "",
+        scores: [],
+        ranks: []
       };
       const isWinner = winner && (winner.jokeId === ranking.jokeId || winner.contestantName === ranking.contestantName);
 
@@ -444,6 +451,8 @@ function modelStandings(runs) {
       entry.totalScore += score;
       entry.totalRank += rank;
       entry.bestScore = Math.max(entry.bestScore, score);
+      entry.scores.push(score);
+      entry.ranks.push(rank);
       if (entry.entries === 1) {
         entry.latestScore = score;
         entry.latestRank = rank;
@@ -458,18 +467,88 @@ function modelStandings(runs) {
   }
 
   return [...stats.values()]
-    .map((entry) => ({
-      ...entry,
-      averageScore: entry.entries ? entry.totalScore / entry.entries : 0,
-      averageRank: entry.entries ? entry.totalRank / entry.entries : 0,
-      lastWinDate: entry.lastWinDate || "None yet"
-    }))
+    .map((entry) => {
+      const enriched = {
+        ...entry,
+        averageScore: entry.entries ? entry.totalScore / entry.entries : 0,
+        averageRank: entry.entries ? entry.totalRank / entry.entries : 0,
+        scoreStdDev: standardDeviation(entry.scores),
+        lastWinDate: entry.lastWinDate || "None yet"
+      };
+
+      return {
+        ...enriched,
+        note: modelPatternNote(enriched, judgeProfiles.get(enriched.name))
+      };
+    })
     .sort((a, b) =>
       b.wins - a.wins ||
       b.averageScore - a.averageScore ||
       b.bestScore - a.bestScore ||
       a.name.localeCompare(b.name)
     );
+}
+
+function modelJudgeProfiles(runs) {
+  const profiles = new Map();
+
+  for (const run of runs) {
+    for (const judgeResult of run.judgeResults || []) {
+      const name = judgeResult.judgeName || judgeResult.judgeId || "Unknown model";
+      const profile = profiles.get(name) || { count: 0, totalGiven: 0 };
+      for (const score of judgeResult.scores || []) {
+        const total = Number(score.total);
+        if (!Number.isFinite(total)) {
+          continue;
+        }
+
+        profile.count += 1;
+        profile.totalGiven += total;
+      }
+      profiles.set(name, profile);
+    }
+  }
+
+  for (const profile of profiles.values()) {
+    profile.averageGiven = profile.count ? profile.totalGiven / profile.count : 0;
+  }
+
+  return profiles;
+}
+
+function modelPatternNote(entry, judgeProfile) {
+  const notes = [];
+  const winRate = entry.entries ? entry.wins / entry.entries : 0;
+
+  if (winRate >= 0.5) {
+    notes.push("front-runner");
+  } else if (entry.averageRank <= 2.5) {
+    notes.push("podium threat");
+  } else if (entry.averageRank >= 4) {
+    notes.push("chasing the pack");
+  } else {
+    notes.push("mid-table grinder");
+  }
+
+  if (entry.scoreStdDev >= 0.65) {
+    notes.push("volatile scores");
+  } else if (entry.scoreStdDev <= 0.25 && entry.entries > 1) {
+    notes.push("steady scores");
+  } else if (entry.bestScore >= 7.5) {
+    notes.push("high ceiling");
+  }
+
+  if (judgeProfile?.count) {
+    if (judgeProfile.averageGiven <= 5.8) {
+      notes.push("strict judge");
+    } else if (judgeProfile.averageGiven >= 6.8) {
+      notes.push("generous judge");
+    } else {
+      notes.push("calibrated judge");
+    }
+  }
+
+  return sentenceCase(`${notes.slice(0, 3).join("; ")}.`);
 }
 
 function scoreTrendPoints(runs) {
@@ -551,6 +630,44 @@ ${urls
 `;
 }
 
+function renderRssFeed(runs) {
+  const publicRuns = [...runs]
+    .filter((run) => !run.dryRun)
+    .sort((a, b) => dateOnly(b).localeCompare(dateOnly(a)) || b.createdAt.localeCompare(a.createdAt));
+  const items = publicRuns
+    .slice(0, 20)
+    .map((run) => {
+      const url = `https://paperclipalypse.com/runs/${run.slug}.html`;
+      const winner = run.rankings?.[0];
+      const winnerLine = winner
+        ? `Winner: ${winner.contestantName} (${formatScore(winner.score)}).`
+        : "Winner pending.";
+      const description = `${winnerLine} ${roundDisplayTitle(run)}`;
+
+      return `    <item>
+      <title>${escapeXml(`${shortDate(run)} - ${roundDisplayTitle(run)}`)}</title>
+      <link>${escapeXml(url)}</link>
+      <guid isPermaLink="true">${escapeXml(url)}</guid>
+      <pubDate>${escapeXml(rssDate(run))}</pubDate>
+      <description>${escapeXml(description)}</description>
+    </item>`;
+    })
+    .join("\n");
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Paperclipalypse</title>
+    <link>https://paperclipalypse.com/</link>
+    <description>AI comedy tournament episodes from Paperclipalypse.</description>
+    <language>en-us</language>
+    <lastBuildDate>${escapeXml(rssDate(publicRuns[0] || "2026-06-03"))}</lastBuildDate>
+${items}
+  </channel>
+</rss>
+`;
+}
+
 function renderHero(run) {
   const winner = run.rankings[0];
   const displayTitle = roundDisplayTitle(run);
@@ -609,8 +726,8 @@ function renderRun(run, options = {}) {
         <tr>
           <td>${ranking.rank}</td>
           <td>${escapeHtml(ranking.contestantName)}</td>
+          <td>${renderScoreBreakdown(ranking, run.rubric)}</td>
           <td>${escapeHtml(ranking.label)}</td>
-          <td>${formatScore(ranking.score)}</td>
           <td>${ranking.judgeCount}</td>
         </tr>`
     )
@@ -654,14 +771,15 @@ function renderRun(run, options = {}) {
             <tr>
               <th>Rank</th>
               <th>Contestant</th>
-              <th>Joke</th>
               <th>Score</th>
+              <th>Joke</th>
               <th>Judges</th>
             </tr>
           </thead>
           <tbody>${rankingRows}</tbody>
         </table>
         </div>
+        ${renderRoundInsights(run)}
       </section>${rubric}
       <section class="jokes">
         <div class="section-heading">
@@ -671,6 +789,159 @@ function renderRun(run, options = {}) {
         <div class="joke-grid">${jokes}</div>
       </section>${memoryNavEnd}
     </main>`;
+}
+
+function renderScoreBreakdown(ranking, rubric) {
+  const fields = rubricFieldsForRanking(ranking, rubric);
+  if (!fields.length) {
+    return escapeHtml(formatScore(ranking.score));
+  }
+
+  const scores = fields
+    .map(
+      (field) => `
+              <div>
+                <span>${escapeHtml(field.label)}</span>
+                <strong>${formatScore(field.value)}</strong>
+              </div>`
+    )
+    .join("");
+
+  return `
+            <details class="score-breakdown">
+              <summary><span>${formatScore(ranking.score)}</span><small>Breakdown</small></summary>
+              <div class="score-breakdown-grid">${scores}
+              </div>
+            </details>`;
+}
+
+function rubricFieldsForRanking(ranking, rubric) {
+  if (!ranking?.rubric) {
+    return [];
+  }
+
+  const configuredFields = rubric?.fields?.length
+    ? rubric.fields
+    : Object.keys(ranking.rubric).map((key) => ({ key, label: readableRubricKey(key) }));
+
+  return configuredFields
+    .map((field) => ({
+      key: field.key,
+      label: field.label || readableRubricKey(field.key),
+      value: Number(ranking.rubric[field.key])
+    }))
+    .filter((field) => Number.isFinite(field.value));
+}
+
+function renderRoundInsights(run) {
+  const divisive = mostDivisiveJoke(run);
+  if (!divisive) {
+    return "";
+  }
+
+  return `
+        <div class="round-insights" aria-label="Round insights">
+          <article>
+            <span>Most Divisive Joke</span>
+            <strong>${escapeHtml(`${divisive.label} / ${divisive.contestantName}`)}</strong>
+            <p>Judges ranged from ${formatScore(divisive.min)} to ${formatScore(divisive.max)}, a ${formatScore(divisive.spread)}-point split.</p>
+          </article>
+        </div>`;
+}
+
+function mostDivisiveJoke(run) {
+  const totalsByJoke = new Map();
+  for (const judgeResult of run.judgeResults || []) {
+    for (const score of judgeResult.scores || []) {
+      const total = Number(score.total);
+      if (!score.jokeId || !Number.isFinite(total)) {
+        continue;
+      }
+
+      const totals = totalsByJoke.get(score.jokeId) || [];
+      totals.push(total);
+      totalsByJoke.set(score.jokeId, totals);
+    }
+  }
+
+  const rankingsByJoke = new Map((run.rankings || []).map((ranking) => [ranking.jokeId, ranking]));
+  const jokesById = new Map((run.jokes || []).map((joke) => [joke.id, joke]));
+  const entries = [...totalsByJoke.entries()]
+    .filter(([, totals]) => totals.length > 1)
+    .map(([jokeId, totals]) => {
+      const min = Math.min(...totals);
+      const max = Math.max(...totals);
+      const ranking = rankingsByJoke.get(jokeId);
+      const joke = jokesById.get(jokeId);
+
+      return {
+        jokeId,
+        label: ranking?.label || joke?.label || jokeId,
+        contestantName: ranking?.contestantName || joke?.contestantName || "Unknown model",
+        min,
+        max,
+        spread: max - min
+      };
+    })
+    .sort((a, b) => b.spread - a.spread || a.label.localeCompare(b.label));
+
+  return entries[0] || null;
+}
+
+function renderWhyItWon(run) {
+  const text = whyItWonText(run);
+  if (!text) {
+    return "";
+  }
+
+  return `<p class="why-it-won"><strong>Why it won:</strong> ${escapeHtml(text)}</p>`;
+}
+
+function whyItWonText(run) {
+  const winner = run.rankings?.[0];
+  if (!winner?.rubric) {
+    return "";
+  }
+
+  const runnerUp = run.rankings?.[1];
+  const margin = runnerUp ? Number(winner.score) - Number(runnerUp.score) : 0;
+  const topFields = rubricFieldsForRanking(winner, run.rubric)
+    .sort((a, b) => b.value - a.value || a.label.localeCompare(b.label))
+    .slice(0, 2)
+    .map((field) => field.label);
+  const edgeField = strongestRubricEdge(run, winner);
+  const marginText = runnerUp && Number.isFinite(margin)
+    ? `It cleared the runner-up by ${formatScore(Math.max(0, margin))} points`
+    : "It led the field";
+  const strengthText = topFields.length
+    ? `, with its strongest marks in ${joinHumanList(topFields)}`
+    : "";
+  const edgeText = edgeField
+    ? `. The biggest separation came from ${edgeField.label}, so that part of the joke carried the room.`
+    : ".";
+
+  return `${marginText}${strengthText}${edgeText}`;
+}
+
+function strongestRubricEdge(run, winner) {
+  const fields = rubricFieldsForRanking(winner, run.rubric);
+  const otherRankings = (run.rankings || []).filter((ranking) => ranking.jokeId !== winner.jokeId);
+  const edges = fields
+    .map((field) => {
+      const others = otherRankings
+        .map((ranking) => Number(ranking.rubric?.[field.key]))
+        .filter((value) => Number.isFinite(value));
+      const otherAverage = average(others);
+
+      return {
+        ...field,
+        edge: Number.isFinite(otherAverage) ? field.value - otherAverage : 0
+      };
+    })
+    .filter((field) => field.edge > 0)
+    .sort((a, b) => b.edge - a.edge || b.value - a.value);
+
+  return edges[0] || null;
 }
 
 function renderCritiqueAccordions(comments = []) {
@@ -767,6 +1038,7 @@ function renderFeatureImage(run, assetBase) {
         <figure>
           <img src="${escapeHtml(assetPath(feature.src, assetBase))}" alt="${escapeHtml(feature.alt || featureImageAlt(run))}"${feature.width ? ` width="${Number(feature.width)}"` : ""}${feature.height ? ` height="${Number(feature.height)}"` : ""} loading="lazy">
           <figcaption>${escapeHtml(captionParts.join(" / "))}</figcaption>
+          ${renderWhyItWon(run)}
         </figure>
       </section>`;
 }
@@ -1033,6 +1305,7 @@ function pageShell({
   const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.png" : "./favicon.png";
   const aboutPath = stylesheetPath.startsWith("../") ? "../about.html" : "./about.html";
   const standingsPath = stylesheetPath.startsWith("../") ? "../standings.html" : "./standings.html";
+  const feedPath = stylesheetPath.startsWith("../") ? "../feed.xml" : "./feed.xml";
   const canonicalUrl = `https://paperclipalypse.com${canonicalPath}`;
 
   return `<!doctype html>
@@ -1052,22 +1325,23 @@ function pageShell({
     <meta name="twitter:title" content="${escapeHtml(title)}">
     <meta name="twitter:description" content="${escapeHtml(description)}">
     <meta name="twitter:image" content="${escapeHtml(socialImage)}">
+    <link rel="alternate" type="application/rss+xml" title="Paperclipalypse RSS" href="https://paperclipalypse.com/feed.xml">
     <link rel="icon" href="${escapeHtml(faviconPath)}" type="image/png">
     <link rel="stylesheet" href="${escapeHtml(stylesheetPath)}">
   </head>
   <body>
     ${body}
-    ${renderFooter({ aboutPath, standingsPath })}
+    ${renderFooter({ aboutPath, standingsPath, feedPath })}
     ${cloudflareAnalytics}
   </body>
 </html>`;
 }
 
-function renderFooter({ aboutPath, standingsPath }) {
+function renderFooter({ aboutPath, standingsPath, feedPath }) {
   return `
     <footer class="site-footer">
       <span>Paperclipalypse is an experimental AI humor tournament.</span>
-      <span><a href="${escapeHtml(standingsPath)}">Standings</a> / <a href="${escapeHtml(aboutPath)}">About</a> / Traffic is measured with Cloudflare Web Analytics.</span>
+      <span><a href="${escapeHtml(standingsPath)}">Standings</a> / <a href="${escapeHtml(aboutPath)}">About</a> / <a href="${escapeHtml(feedPath)}">RSS</a> / Traffic is measured with Cloudflare Web Analytics.</span>
     </footer>`;
 }
 
@@ -1825,9 +2099,19 @@ main {
   margin: 0;
 }
 
+.standing-card .standing-card-note {
+  border-top: 1px solid rgba(176, 185, 196, 0.1);
+  color: var(--muted);
+  padding-top: 10px;
+}
+
 .standings-table-scroll,
 .trend-table-scroll {
   margin-top: 14px;
+}
+
+.standings-table {
+  min-width: 860px;
 }
 
 .standings-table .model-name {
@@ -1853,6 +2137,105 @@ main {
   justify-content: center;
   padding: 4px 8px;
   font-weight: 950;
+}
+
+.score-breakdown {
+  min-width: 132px;
+}
+
+.score-breakdown summary {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.score-breakdown summary::-webkit-details-marker {
+  display: none;
+}
+
+.score-breakdown summary span {
+  color: var(--ink);
+  font-weight: 950;
+}
+
+.score-breakdown summary small {
+  color: var(--brass);
+  font-size: 0.66rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.score-breakdown summary::after {
+  content: "+";
+  color: var(--brass);
+  font-weight: 950;
+}
+
+.score-breakdown[open] summary::after {
+  content: "-";
+}
+
+.score-breakdown-grid {
+  display: grid;
+  gap: 6px;
+  margin-top: 10px;
+  min-width: 190px;
+}
+
+.score-breakdown-grid div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 850;
+}
+
+.score-breakdown-grid strong {
+  color: var(--bone);
+}
+
+.round-insights {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.round-insights article {
+  border: 1px solid rgba(194, 138, 87, 0.26);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.08), transparent 60%),
+    rgba(11, 12, 14, 0.74);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: minmax(160px, 0.24fr) minmax(0, 0.28fr) minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  padding: 12px 14px;
+}
+
+.round-insights span {
+  color: var(--brass);
+  font-size: 0.76rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.round-insights strong {
+  color: var(--bone);
+  line-height: 1.2;
+}
+
+.round-insights p {
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 820;
+  line-height: 1.38;
+  margin: 0;
 }
 
 .trend-card > p {
@@ -2461,6 +2844,20 @@ td:nth-child(4) {
   padding: 12px 14px;
 }
 
+.why-it-won {
+  border-top: 1px solid rgba(176, 185, 196, 0.1);
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 780;
+  line-height: 1.48;
+  margin: 0;
+  padding: 12px 14px 14px;
+}
+
+.why-it-won strong {
+  color: var(--bone);
+}
+
 .archive ol {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -2567,6 +2964,14 @@ td:nth-child(4) {
 
   .standing-card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .round-insights article {
+    grid-template-columns: minmax(140px, 0.32fr) minmax(0, 1fr);
+  }
+
+  .round-insights p {
+    grid-column: 1 / -1;
   }
 }
 
@@ -2761,6 +3166,11 @@ td:nth-child(4) {
   td {
     padding: 10px 8px;
   }
+
+  .round-insights article {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
 }
 
 @media (max-width: 380px) {
@@ -2814,6 +3224,51 @@ function formatScore(score) {
   return Number(score).toFixed(1);
 }
 
+function average(values) {
+  const cleanValues = values.filter((value) => Number.isFinite(value));
+  if (!cleanValues.length) {
+    return NaN;
+  }
+
+  return cleanValues.reduce((total, value) => total + value, 0) / cleanValues.length;
+}
+
+function standardDeviation(values) {
+  const mean = average(values);
+  if (!Number.isFinite(mean)) {
+    return 0;
+  }
+
+  const variance = average(values.map((value) => (value - mean) ** 2));
+  return Number.isFinite(variance) ? Math.sqrt(variance) : 0;
+}
+
+function joinHumanList(items) {
+  const cleanItems = items.filter(Boolean);
+  if (cleanItems.length <= 1) {
+    return cleanItems[0] || "";
+  }
+  if (cleanItems.length === 2) {
+    return `${cleanItems[0]} and ${cleanItems[1]}`;
+  }
+
+  return `${cleanItems.slice(0, -1).join(", ")}, and ${cleanItems.at(-1)}`;
+}
+
+function readableRubricKey(key) {
+  return String(key || "")
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
+    .replace(/[-_]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(/\b\w/g, (letter) => letter.toUpperCase());
+}
+
+function sentenceCase(value) {
+  const text = String(value || "").trim();
+  return text ? `${text.charAt(0).toUpperCase()}${text.slice(1)}` : "";
+}
+
 function assetPath(src, assetBase = "./") {
   const cleaned = String(src || "").trim();
   if (!cleaned || /^https?:\/\//.test(cleaned) || cleaned.startsWith("/")) {
@@ -2851,6 +3306,10 @@ function featureImageAlt(run) {
 
 function shortDate(value) {
   return shortPublicationDate(dateOnly(value));
+}
+
+function rssDate(value) {
+  return new Date(`${dateOnly(value)}T12:00:00Z`).toUTCString();
 }
 
 function latestDate(runs) {
