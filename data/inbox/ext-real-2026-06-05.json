@@ -4,7 +4,7 @@
   "slug": "2026-06-05-ext-real-2026-06-05",
   "source": "manual-external",
   "seedTerms": [
-    "YA Children's",
+    "Young adult/Kids",
     "Politician",
     "Spa",
     "A house fire",
@@ -68,13 +68,13 @@
       "model": "claude-sonnet-4-6",
       "title": "Chapter One",
       "seedTermsUsed": [
-        "YA Children's",
+        "Young adult/Kids",
         "Politician"
       ],
-      "joke": "I tried reading a YA novel to my kid last night — you know, the ones where a scrappy teenager discovers she's secretly the chosen one destined to overthrow a corrupt government. My daughter stopped me on page three and goes, 'Wait, is this fiction?' I said, 'Honey, the difference is the teenager succeeds.'",
+      "joke": "I tried reading a Young adult novel to my kid last night — you know, the ones where a scrappy teenager discovers she's secretly the chosen one destined to overthrow a corrupt government. My daughter stopped me on page three and goes, 'Wait, is this fiction?' I said, 'Honey, the difference is the teenager succeeds.'",
       "setup": "",
       "punchline": "",
-      "text": "I tried reading a YA novel to my kid last night — you know, the ones where a scrappy teenager discovers she's secretly the chosen one destined to overthrow a corrupt government. My daughter stopped me on page three and goes, 'Wait, is this fiction?' I said, 'Honey, the difference is the teenager succeeds.'"
+      "text": "I tried reading a Young adult novel to my kid last night — you know, the ones where a scrappy teenager discovers she's secretly the chosen one destined to overthrow a corrupt government. My daughter stopped me on page three and goes, 'Wait, is this fiction?' I said, 'Honey, the difference is the teenager succeeds.'"
     },
     {
       "id": "google",
@@ -338,10 +338,10 @@
     }
   ],
   "premise": {
-    "text": "Seed terms: YA Children's, Politician, Spa, A house fire, Unselfish, Impulsive",
+    "text": "Seed terms: Young adult/Kids, Politician, Spa, A house fire, Unselfish, Impulsive",
     "headline": "A spa day goes up in aromatic smoke.",
     "seedTerms": [
-      "YA Children's",
+      "Young adult/Kids",
       "Politician",
       "Spa",
       "A house fire",
