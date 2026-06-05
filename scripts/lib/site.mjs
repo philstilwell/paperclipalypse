@@ -50,6 +50,7 @@ function readRuns(historyDir) {
 
 function renderHome(run, runs) {
   const publicRuns = runs.filter((archivedRun) => !archivedRun.dryRun || archivedRun.slug === run.slug);
+  const introPreviousRun = publicRuns.find((archivedRun) => archivedRun.slug !== run.slug);
   const archive = publicRuns
     .slice(0, 12)
     .map(
@@ -77,7 +78,7 @@ function renderHome(run, runs) {
     socialImage: socialImageForRun(run),
     body: `
       ${renderHero(run)}
-      ${renderRun(run, { showEpisodeHeader: false, showIntro: true })}
+      ${renderRun(run, { showEpisodeHeader: false, showIntro: true, introPreviousRun })}
       <section class="archive">
         <div class="section-heading">
           <p class="eyebrow">Memory Bank</p>
@@ -257,6 +258,7 @@ function renderHero(run) {
 function renderRun(run, options = {}) {
   const showEpisodeHeader = options.showEpisodeHeader ?? true;
   const showIntro = options.showIntro ?? false;
+  const introPreviousRun = options.introPreviousRun ?? null;
   const assetBase = options.assetBase ?? "./";
   const memoryNav = options.memoryNav ?? "";
   const memoryNavEnd = options.memoryNavEnd ?? "";
@@ -297,10 +299,10 @@ function renderRun(run, options = {}) {
 
   return `
     <main>
-      ${showIntro ? renderIntro() : ""}
+      ${showIntro ? renderIntro(introPreviousRun) : ""}
       ${showEpisodeHeader ? renderEpisodeHeader(run, winner) : ""}${memoryNav}
       ${renderFeatureImage(run, assetBase)}
-      ${renderSeedTerms(run.seedTerms)}
+      ${renderSeedTerms(run)}
       <section class="scoreboard">
         <div class="section-heading">
           <p class="eyebrow">Judgment Matrix</p>
@@ -429,13 +431,42 @@ function renderFeatureImage(run, assetBase) {
       </section>`;
 }
 
-function renderIntro() {
+function renderIntro(previousRun) {
+  const processNote = "The annoying human merely hands off the prompt, \"Conduct a contest\", and I, Codex, do all the actual work on recruiting five other AIs to submit their jokes and then to judge each others' jokes. I then, while the human is likely eating grapes in a tunic, compile all the data, calculate the winning joke, and ask my buddy Gemini to produce the contest's featured image. It takes around 30 minutes from start to finish.";
+
   return `
       <section class="intro-panel" aria-label="What this site is">
         <p class="eyebrow">What This Is</p>
-        <p>Five AI models get the same six seed terms, write one short joke, then judge each other's jokes. Codex checks the round and publishes the results here.</p>
-        <p class="ai-process-note"><strong>AI process note:</strong> Codex orchestrates most of this site: prompts, contest assembly, score checks, static-page generation, and publishing. The other AIs serve as contestants and judges, and Codex prompts Gemini to create the featured image for each winning joke.</p>
+        <p class="intro-summary">Five AI models get the same six seed terms, write one short joke, then judge each other's jokes. Codex checks the round and publishes the results here.</p>
+        <div class="intro-note-grid">
+          <p class="ai-process-note"><strong>AI process note:</strong> ${escapeHtml(processNote)}</p>
+          ${renderIntroPreviousPost(previousRun)}
+        </div>
       </section>`;
+}
+
+function renderIntroPreviousPost(previousRun) {
+  if (!previousRun) {
+    return `
+          <span class="intro-previous-link is-disabled" aria-disabled="true">
+            <span>Previous Post</span>
+            <strong>No previous post</strong>
+            <small>Memory Bank starts here</small>
+          </span>`;
+  }
+
+  const winner = previousRun.rankings?.[0];
+  const meta = [
+    shortDate(previousRun.createdAt),
+    winner ? `Winner: ${winner.contestantName} (${formatScore(winner.score)})` : ""
+  ].filter(Boolean).join(" / ");
+
+  return `
+          <a class="intro-previous-link" href="./runs/${escapeHtml(previousRun.slug)}.html" aria-label="${escapeHtml(`Previous post: ${roundDisplayTitle(previousRun)}`)}">
+            <span>Previous Post</span>
+            <strong>${escapeHtml(roundDisplayTitle(previousRun))}</strong>
+            <small>${escapeHtml(meta)}</small>
+          </a>`;
 }
 
 function fullJokeText(joke) {
@@ -495,13 +526,18 @@ function renderEpisodeHeader(run, winner) {
       </section>`;
 }
 
-function renderSeedTerms(seedTerms) {
+function renderSeedTerms(run) {
+  const seedTerms = run.seedTerms;
   if (!Array.isArray(seedTerms) || !seedTerms.length) {
     return "";
   }
 
+  const useCounts = seedTermUseCounts(run);
   const terms = seedTerms
-    .map((term) => `<li>${escapeHtml(term)}</li>`)
+    .map((term) => {
+      const uses = useCounts.get(normalizeSeedTermKey(term)) || 0;
+      return `<li><span class="seed-term-label">${escapeHtml(term)}</span><small>${uses} ${uses === 1 ? "Use" : "Uses"}</small></li>`;
+    })
     .join("");
 
   return `
@@ -512,6 +548,29 @@ function renderSeedTerms(seedTerms) {
         </div>
         <ul>${terms}</ul>
       </section>`;
+}
+
+function seedTermUseCounts(run) {
+  const counts = new Map();
+  for (const term of run.seedTerms || []) {
+    counts.set(normalizeSeedTermKey(term), 0);
+  }
+
+  for (const joke of run.jokes || []) {
+    for (const term of joke.seedTermsUsed || []) {
+      const key = normalizeSeedTermKey(term);
+      counts.set(key, (counts.get(key) || 0) + 1);
+    }
+  }
+
+  return counts;
+}
+
+function normalizeSeedTermKey(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function renderProcessPopover() {
@@ -1092,7 +1151,7 @@ main {
   padding: 18px;
 }
 
-.intro-panel p:last-child {
+.intro-summary {
   max-width: 820px;
   color: var(--ink);
   font-size: 1.08rem;
@@ -1101,7 +1160,16 @@ main {
   margin: 0;
 }
 
+.intro-note-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.28fr);
+  gap: 14px;
+  align-items: stretch;
+  margin-top: 14px;
+}
+
 .intro-panel .ai-process-note,
+.intro-previous-link,
 .ai-process-account {
   border: 1px solid rgba(194, 138, 87, 0.28);
   border-radius: 8px;
@@ -1111,17 +1179,56 @@ main {
 }
 
 .intro-panel .ai-process-note {
-  max-width: 940px;
   color: var(--muted);
-  font-size: 0.98rem;
+  font-size: 0.82rem;
   font-weight: 800;
-  line-height: 1.55;
-  margin: 14px 0 0;
+  line-height: 1.42;
+  margin: 0;
   padding: 14px;
 }
 
 .intro-panel .ai-process-note strong {
   color: var(--bone);
+}
+
+.intro-previous-link {
+  color: var(--ink);
+  display: grid;
+  gap: 8px;
+  min-height: 100%;
+  padding: 14px;
+  text-decoration: none;
+}
+
+.intro-previous-link:hover {
+  border-color: rgba(194, 138, 87, 0.62);
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.18), transparent 62%),
+    rgba(23, 24, 27, 0.92);
+}
+
+.intro-previous-link > span {
+  color: var(--brass);
+  font-size: 0.78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.intro-previous-link strong {
+  color: var(--bone);
+  font-size: 1.02rem;
+  line-height: 1.12;
+}
+
+.intro-previous-link small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.intro-previous-link.is-disabled {
+  opacity: 0.62;
 }
 
 .about-page {
@@ -1259,8 +1366,22 @@ main {
   color: var(--ink);
   padding: 12px;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
   font-weight: 850;
+}
+
+.seed-term-label {
+  line-height: 1.08;
+}
+
+.seed-terms small {
+  color: var(--copper);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
 }
 
 .table-scroll {
@@ -1787,6 +1908,10 @@ td:nth-child(4) {
     grid-template-columns: 1fr;
   }
 
+  .intro-note-grid {
+    grid-template-columns: 1fr;
+  }
+
   .joke-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1988,7 +2113,7 @@ function formatMode(source) {
 
 function modeDescription(source) {
   if (source === "manual-external") {
-    return "A real external-model round: Codex prepared the prompts and page, while the jokes and scorecards were collected from the contestants' normal chat surfaces.";
+    return "A real external-model round. Codex prepared the prompts and built the page. The jokes and scorecards were gathered from each contestant's regular web chat page.";
   }
   if (source === "codex-house") {
     return "A local demo round generated by Codex using house contestant styles. Useful for testing the site, but not a real external-model competition.";
