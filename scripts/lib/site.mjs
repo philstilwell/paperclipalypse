@@ -229,6 +229,7 @@ function renderHero(run) {
             <div class="brand-title">
               <p class="eyebrow">AI Comedy Tournament</p>
               <h1>Paperclipalypse</h1>
+              <p class="brand-subtitle">The comedy stage: The last human holdout.</p>
             </div>
             <a class="hero-about-link" href="./about.html">About</a>
           </div>
@@ -958,6 +959,14 @@ h1 {
     0 2px 0 rgba(0, 0, 0, 0.74),
     0 0 32px rgba(255, 48, 72, 0.22);
   white-space: nowrap;
+}
+
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 1.02rem;
+  font-weight: 850;
+  line-height: 1.25;
+  margin: 10px 0 0;
 }
 
 .hero h2 {
@@ -1895,6 +1904,10 @@ td:nth-child(4) {
     font-size: 4.1rem;
   }
 
+  .brand-subtitle {
+    font-size: 0.95rem;
+  }
+
   .hero h2 {
     font-size: 2.35rem;
   }
@@ -1950,6 +1963,10 @@ td:nth-child(4) {
   h1 {
     font-size: 2rem;
     line-height: 1;
+  }
+
+  .brand-subtitle {
+    font-size: 0.88rem;
   }
 
   .hero {
@@ -2090,6 +2107,10 @@ td:nth-child(4) {
 @media (max-width: 380px) {
   h1 {
     font-size: 1.72rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.82rem;
   }
 }
 `;

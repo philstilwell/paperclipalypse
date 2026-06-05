@@ -227,6 +227,14 @@ h1 {
   white-space: nowrap;
 }
 
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 1.02rem;
+  font-weight: 850;
+  line-height: 1.25;
+  margin: 10px 0 0;
+}
+
 .hero h2 {
   max-width: 850px;
   color: var(--ink);
@@ -1162,6 +1170,10 @@ td:nth-child(4) {
     font-size: 4.1rem;
   }
 
+  .brand-subtitle {
+    font-size: 0.95rem;
+  }
+
   .hero h2 {
     font-size: 2.35rem;
   }
@@ -1217,6 +1229,10 @@ td:nth-child(4) {
   h1 {
     font-size: 2rem;
     line-height: 1;
+  }
+
+  .brand-subtitle {
+    font-size: 0.88rem;
   }
 
   .hero {
@@ -1357,5 +1373,9 @@ td:nth-child(4) {
 @media (max-width: 380px) {
   h1 {
     font-size: 1.72rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.82rem;
   }
 }
