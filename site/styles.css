@@ -653,7 +653,7 @@ main {
 }
 
 .seed-terms small {
-  color: var(--copper);
+  color: #f59e0b;
   font-size: 0.72rem;
   font-weight: 900;
   letter-spacing: 0.04em;
