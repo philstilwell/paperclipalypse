@@ -3301,7 +3301,7 @@ function featureImageAlt(run) {
   const winningJoke = run.jokes?.find((joke) => joke.id === winner?.jokeId);
   const title = winningJoke?.title ? ` titled ${winningJoke.title}` : "";
 
-  return `Paperclipalypse winning joke feature image${title}: a paperclip stand-up comic, joke text, and the joke scene.`;
+  return `Paperclipalypse winning joke feature image${title}: a paperclip stand-up comic and the winning joke scene.`;
 }
 
 function shortDate(value) {

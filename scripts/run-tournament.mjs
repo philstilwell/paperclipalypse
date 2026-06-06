@@ -32,7 +32,10 @@ const siteDir = path.join(rootDir, "site");
 const episodeFile = args.get("episode-file");
 const featureImagePath = args.get("feature-image");
 const featureImageQaApproved = args.has("feature-image-qa-approved") || envFlag("PAPERCLIPALYPSE_FEATURE_IMAGE_QA_APPROVED");
-const featureImageSource = "Gemini image generation (web preview)";
+const featureImageAllowPreview = args.has("feature-image-allow-preview") || envFlag("PAPERCLIPALYPSE_FEATURE_IMAGE_ALLOW_PREVIEW");
+const featureImageSource = featureImageAllowPreview
+  ? "Gemini image generation (web preview)"
+  : "Gemini image generation (high-resolution export)";
 const contestants = dryRun ? houseContestants : paidContestants;
 
 if (episodeFile) {
@@ -354,7 +357,8 @@ function attachFeatureImage(run, sourcePath) {
   const qa = run.dryRun
     ? null
     : assertFeatureImageQa(absoluteSourcePath, {
-        visualApproved: featureImageQaApproved
+        visualApproved: featureImageQaApproved,
+        allowWebPreview: featureImageAllowPreview
       });
   const ext = path.extname(absoluteSourcePath).toLowerCase() || ".png";
   const assetRelPath = path.posix.join("assets", "feature-images", `${run.slug}${ext}`);
@@ -529,7 +533,7 @@ function featureImageAlt(run) {
   const winningJoke = run.jokes?.find((joke) => joke.id === winner?.jokeId);
   const title = winningJoke?.title ? ` titled ${winningJoke.title}` : "";
 
-  return `Paperclipalypse winning joke feature image${title}: a paperclip stand-up comic, joke text, and the joke scene.`;
+  return `Paperclipalypse winning joke feature image${title}: a paperclip stand-up comic and the winning joke scene.`;
 }
 
 function modelName(contestant) {

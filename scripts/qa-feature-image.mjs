@@ -4,12 +4,13 @@ const args = parseArgs(process.argv.slice(2));
 const imagePath = args.get("image") || args.get("feature-image") || process.argv.slice(2).find((item) => !item.startsWith("--"));
 
 if (!imagePath) {
-  console.error("Usage: node scripts/qa-feature-image.mjs --image /path/to/image.png [--approved]");
+  console.error("Usage: node scripts/qa-feature-image.mjs --image /path/to/image.png [--approved] [--allow-preview]");
   process.exit(2);
 }
 
 const qa = qaFeatureImageFile(imagePath, {
-  visualApproved: args.has("approved")
+  visualApproved: args.has("approved"),
+  allowWebPreview: args.has("allow-preview") || args.has("allow-web-preview")
 });
 
 if (!qa.passed) {
@@ -19,6 +20,7 @@ if (!qa.passed) {
 
 console.log(`Feature image QA passed: ${imagePath}`);
 console.log(`Dimensions: ${qa.dimensions.width}x${qa.dimensions.height} ${qa.dimensions.format.toUpperCase()}`);
+console.log(`Asset type: ${qa.assetType}`);
 if (qa.warnings.length) {
   console.log("Warnings:");
   for (const warning of qa.warnings) {

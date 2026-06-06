@@ -33,8 +33,9 @@ So the preferred real-tournament flow is:
 5. It runs the tournament once with `--allow-missing-feature-image` to create
    the Gemini image brief.
 6. It opens a fresh Chrome window for Google Gemini image generation, prompts
-   the winning-joke feature image, saves Gemini's 1024x506 chat-preview image,
-   and rejects/regenerates weak images until the image QA checklist passes.
+   the winning-joke feature image, downloads Gemini's full-resolution image
+   export, imports it with `scripts/import-gemini-feature-image.mjs`, and
+   rejects/regenerates weak images until the image QA checklist passes.
 7. It reruns with `--feature-image` and `--feature-image-qa-approved`.
 8. The runner rejects incomplete participation or unapproved images before
    rendering.
@@ -102,17 +103,28 @@ using the actual winner and winning joke.
 To attach an approved winning-joke feature image during render:
 
 ```sh
-node scripts/qa-feature-image.mjs --image /path/to/approved-image.png --approved
-node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json --feature-image /path/to/approved-image.png --feature-image-qa-approved
+node scripts/import-gemini-feature-image.mjs --latest --slug <round-slug>
+node scripts/qa-feature-image.mjs --image tmp/gemini-feature-images/<round-slug>.png --approved
+node scripts/run-tournament.mjs --episode-file data/inbox/<external-episode>.json --feature-image tmp/gemini-feature-images/<round-slug>.png --feature-image-qa-approved
 ```
 
 The runner copies the image into `site/assets/feature-images/`, records it as
 `featureImage`, renders it on the episode/home pages, and uses it as the social
 preview image. The `--feature-image-qa-approved` flag should only be used after
-Gemini's 1024x506 chat-preview image has passed visual QA: polished
-composition, recognizable paperclip comic, useful winning-joke scene, no visible
-prompt labels or watermarks, and no distracting text garbling. Low-quality
-images should be rejected and regenerated.
+the high-resolution Gemini export has been imported to a 2:1 feature image and
+passed visual QA: polished composition, recognizable paperclip comic, useful
+winning-joke scene, no visible prompt labels or watermarks, and no distracting
+text garbling. Low-quality images should be rejected and regenerated.
+
+If you need to inspect candidates before importing, run:
+
+```sh
+node scripts/import-gemini-feature-image.mjs --list
+```
+
+Only use `--feature-image-allow-preview` or `node scripts/qa-feature-image.mjs
+--allow-preview` for legacy repair work; new public rounds should use the
+high-resolution Gemini export.
 
 Use `--allow-missing-feature-image` only for diagnostics. A ready public episode
 should include the approved winning-joke image.

@@ -1,0 +1,665 @@
+{
+  "version": 1,
+  "slug": "2026-06-06-ext-real-2026-06-06",
+  "seed": "ext-real-2026-06-06",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-06T13:03:11.308Z",
+  "publishedDate": "2026-06-06",
+  "seedTerms": [
+    "Portal",
+    "Emergency Room Physician",
+    "Therapist's Office",
+    "Hurting someone to save them",
+    "Friendly",
+    "Antisocial"
+  ],
+  "premise": {
+    "text": "Seed terms: Portal, Emergency Room Physician, Therapist's Office, Hurting someone to save them, Friendly, Antisocial",
+    "seedTerms": [
+      "Portal",
+      "Emergency Room Physician",
+      "Therapist's Office",
+      "Hurting someone to save them",
+      "Friendly",
+      "Antisocial"
+    ],
+    "displayText": "A hero meets his worst emergency: applause.",
+    "headline": "A hero meets his worst emergency: applause."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Bedside Manner",
+      "seedTermsUsed": [
+        "Emergency Room Physician",
+        "Hurting someone to save them"
+      ],
+      "joke": "I have the bedside manner of an emergency room physician. My buddy started choking at dinner, so I did the Heimlich hard enough to crack a rib. He said, “You hurt me!” I said, “That’s how you know it’s working.” Now nobody asks me to open pickle jars.",
+      "setup": "",
+      "punchline": "I have the bedside manner of an emergency room physician. My buddy started choking at dinner, so I did the Heimlich hard enough to crack a rib. He said, “You hurt me!” I said, “That’s how you know it’s working.” Now nobody asks me to open pickle jars.",
+      "text": "I have the bedside manner of an emergency room physician. My buddy started choking at dinner, so I did the Heimlich hard enough to crack a rib. He said, “You hurt me!” I said, “That’s how you know it’s working.” Now nobody asks me to open pickle jars."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Portal to Healing",
+      "seedTermsUsed": [
+        "Portal",
+        "Therapist's Office"
+      ],
+      "joke": "I've been seeing a therapist for six months and I finally understand what she means by 'opening a portal to your inner child.' Last Tuesday I cried for forty minutes about a Capri Sun. Forty minutes. About the straw. About how I could never get the straw in. She called it a breakthrough. I called it seven dollars in parking.",
+      "setup": "",
+      "punchline": "I've been seeing a therapist for six months and I finally understand what she means by 'opening a portal to your inner child.' Last Tuesday I cried for forty minutes about a Capri Sun. Forty minutes. About the straw. About how I could never get the straw in. She called it a breakthrough. I called it seven dollars in parking.",
+      "text": "I've been seeing a therapist for six months and I finally understand what she means by 'opening a portal to your inner child.' Last Tuesday I cried for forty minutes about a Capri Sun. Forty minutes. About the straw. About how I could never get the straw in. She called it a breakthrough. I called it seven dollars in parking."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Hero's Dilemma",
+      "seedTermsUsed": [
+        "Antisocial",
+        "Hurting someone to save them"
+      ],
+      "joke": "I'm so antisocial that being a hero is my worst nightmare. A guy started choking at a diner the other day. I know the Heimlich maneuver, and I'm completely fine with the concept of hurting someone to save them—bruise a rib, whatever. But if it works, he survives. And if he survives, I have to make awkward small talk while the whole restaurant claps. I just kept eating my fries. I figured he'd want his privacy.",
+      "setup": "",
+      "punchline": "I'm so antisocial that being a hero is my worst nightmare. A guy started choking at a diner the other day. I know the Heimlich maneuver, and I'm completely fine with the concept of hurting someone to save them—bruise a rib, whatever. But if it works, he survives. And if he survives, I have to make awkward small talk while the whole restaurant claps. I just kept eating my fries. I figured he'd want his privacy.",
+      "text": "I'm so antisocial that being a hero is my worst nightmare. A guy started choking at a diner the other day. I know the Heimlich maneuver, and I'm completely fine with the concept of hurting someone to save them—bruise a rib, whatever. But if it works, he survives. And if he survives, I have to make awkward small talk while the whole restaurant claps. I just kept eating my fries. I figured he'd want his privacy."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "ER Tough Love",
+      "seedTermsUsed": [
+        "Emergency Room Physician",
+        "Hurting someone to save them"
+      ],
+      "joke": "Folks, I ended up in the ER after a stupid fall. The Emergency Room Physician looks at my messed-up shoulder and says, 'Sometimes you gotta hurt someone to save them.' Then he yanks it back into place. I'm screaming bloody murder and he just nods like, 'See? Working already.' Thanks, doc—I'm healed, but now I know why your job requires a poker face. You're all just professional hurters with better parking spots.",
+      "setup": "",
+      "punchline": "Folks, I ended up in the ER after a stupid fall. The Emergency Room Physician looks at my messed-up shoulder and says, 'Sometimes you gotta hurt someone to save them.' Then he yanks it back into place. I'm screaming bloody murder and he just nods like, 'See? Working already.' Thanks, doc—I'm healed, but now I know why your job requires a poker face. You're all just professional hurters with better parking spots.",
+      "text": "Folks, I ended up in the ER after a stupid fall. The Emergency Room Physician looks at my messed-up shoulder and says, 'Sometimes you gotta hurt someone to save them.' Then he yanks it back into place. I'm screaming bloody murder and he just nods like, 'See? Working already.' Thanks, doc—I'm healed, but now I know why your job requires a poker face. You're all just professional hurters with better parking spots."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Coping Skills",
+      "seedTermsUsed": [
+        "Therapist's Office",
+        "Antisocial"
+      ],
+      "joke": "I told my therapist I might be a little antisocial, and she said, “Try opening up to people.” So I did. I opened up to one guy in the waiting room, and he immediately switched seats. At this point I’m not antisocial—I’m just collecting data that everyone else agrees with my diagnosis.",
+      "setup": "",
+      "punchline": "I told my therapist I might be a little antisocial, and she said, “Try opening up to people.” So I did. I opened up to one guy in the waiting room, and he immediately switched seats. At this point I’m not antisocial—I’m just collecting data that everyone else agrees with my diagnosis.",
+      "text": "I told my therapist I might be a little antisocial, and she said, “Try opening up to people.” So I did. I opened up to one guy in the waiting room, and he immediately switched seats. At this point I’m not antisocial—I’m just collecting data that everyone else agrees with my diagnosis."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear first-person bit with a specific childhood image and a solid final deflation; not huge, but well-shaped.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong antisocial-hero premise with a satisfying privacy turn; a bit long, but the comic logic is clear.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and stage-shaped, but it leans heavily on repeating the seed premise and the punchline is fairly expected.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clean therapy-room joke with a neat final line; familiar territory, but the diagnosis/data turn works.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation and the pickle jar button lands well. The 'that's how you know it's working' line is a satisfying turn, though the overall shape is familiar. Solid stage joke.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "The inversion is genuinely fresh: avoiding heroism not out of cowardice but to dodge social obligation. 'I figured he'd want his privacy' is an excellent final line. The fries detail grounds it. One of the stronger angles in the batch.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent ER setup but the 'professional hurters with better parking spots' ending is more clever than funny. The punchline tries too hard and the poker face line is a detour. Respectable filler.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.800000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Tight and clean. 'Collecting data that everyone agrees with my diagnosis' reframes the premise neatly without being smug. The waiting room detail is concrete. Slightly predictable in shape but the final line earns it.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The premise is solid, but the final punchline about pickle jars feels structurally disconnected from the Heimlich maneuver setup.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent stage rhythm and specific details. The escalation of the Capri Sun straw perfectly contrasts with the mundane reality of the parking fee punchline.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 9,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 8.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Feels too literal and anecdotal. The seed terms are recited clumsily, and the final punchline lacks comic snap.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 5,
+          "total": 4.300000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clean construction with a solid, logical turn at the end. The premise is relatable and well-executed with good economy of words.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with strong final twist on pickle jars; natural delivery and good escalation.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Mild therapy absurdity with specific detail; relatable but follows expected inner-child trope.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Sharp ironic antisocial hero premise with clean, memorable punch on privacy; strong stage rhythm.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent waiting-room bit but predictable payoff; mild smile at best.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with a clean turn; competent and mildly funny.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good imagery and a relatable payoff; leans on familiar therapy beats but works.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fresh angle on antisocial behavior with a strong final turn; the best of the batch.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and competent but follows a predictable ER-shoulder-reset pattern.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.6,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.5,
+        "surprise": 7.5,
+        "craft": 7.3,
+        "originality": 7.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Strong antisocial-hero premise with a satisfying privacy turn; a bit long, but the comic logic is clear."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "The inversion is genuinely fresh: avoiding heroism not out of cowardice but to dodge social obligation. 'I figured he'd want his privacy' is an excellent final line. The fries detail grounds it. One of the stronger angles in the batch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Sharp ironic antisocial hero premise with clean, memorable punch on privacy; strong stage rhythm."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Fresh angle on antisocial behavior with a strong final turn; the best of the batch."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.5,
+        "craft": 7.5,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Clear first-person bit with a specific childhood image and a solid final deflation; not huge, but well-shaped."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Excellent stage rhythm and specific details. The escalation of the Capri Sun straw perfectly contrasts with the mundane reality of the parking fee punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Mild therapy absurdity with specific detail; relatable but follows expected inner-child trope."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Good imagery and a relatable payoff; leans on familiar therapy beats but works."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.5,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Clean therapy-room joke with a neat final line; familiar territory, but the diagnosis/data turn works."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "Tight and clean. 'Collecting data that everyone agrees with my diagnosis' reframes the premise neatly without being smug. The waiting room detail is concrete. Slightly predictable in shape but the final line earns it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Clean construction with a solid, logical turn at the end. The premise is relatable and well-executed with good economy of words."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Competent waiting-room bit but predictable payoff; mild smile at best."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.5,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "Clean escalation and the pickle jar button lands well. The 'that's how you know it's working' line is a satisfying turn, though the overall shape is familiar. Solid stage joke."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "The premise is solid, but the final punchline about pickle jars feels structurally disconnected from the Heimlich maneuver setup."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Solid premise with strong final twist on pickle jars; natural delivery and good escalation."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Solid premise with a clean turn; competent and mildly funny."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.3,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5,
+        "surprise": 4.8,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 7
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Understandable and stage-shaped, but it leans heavily on repeating the seed premise and the punchline is fairly expected."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "Competent ER setup but the 'professional hurters with better parking spots' ending is more clever than funny. The punchline tries too hard and the poker face line is a detour. Respectable filler."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Feels too literal and anecdotal. The seed terms are recited clumsily, and the final punchline lacks comic snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Clear and competent but follows a predictable ER-shoulder-reset pattern."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-06-ext-real-2026-06-06.png",
+    "originalSrc": "assets/feature-images/2026-06-06-ext-real-2026-06-06.png",
+    "source": "Gemini image generation (high-resolution export)",
+    "aspectRatio": "2:1",
+    "width": 2880,
+    "height": 1440,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v3",
+      "visualApproved": true,
+      "assetType": "gemini-high-resolution-export",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Hero's Dilemma: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\n\nASPECT RATIO: exactly 2:1, horizontal wide banner.\n\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted diner greens, dusty blue-gray shadows, subtle deep red accent lights.\n\nComposition:\n- Left side: a charming anthropomorphic metallic paperclip stand-up comedian at a vintage microphone on a small stage, expressive and related to Paperclipalypse's paperclip-comedian mood, but not identical to any logo.\n- Middle and right: a funny diner scene from the winning joke. A man is choking; an antisocial diner patron calmly keeps eating fries to avoid heroic applause and awkward small talk. Show concerned diners, a booth, fries, theatrical lighting, and a clear comic contrast between panic and antisocial calm. Non-gory, playful, clear.\n- Use the full width for visual storytelling. No text panel is needed.\n\nSTRICT TEXT RULE: Do not include any readable text anywhere in the image. No words, no letters, no numbers, no labels, no wall posters with text, no signs, no logos, no watermarks, no signatures, no fake microtext. If a surface would normally contain writing, make it blank or decorative shapes only.\n\nThe image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic and diner scene.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Portal, Emergency Room Physician, Therapist's Office, Hurting someone to save them, Friendly, Antisocial. Use the winning joke titled \"The Hero's Dilemma\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "featureImageBrief": "data/image-briefs/2026-06-06-ext-real-2026-06-06.md"
+}
