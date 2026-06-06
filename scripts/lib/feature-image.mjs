@@ -65,33 +65,27 @@ ${prompt}
 
 ## Attach The Approved Image
 
-Use Google Gemini image generation for the bitmap. Open a fresh Chrome window first, generate the image, and download Gemini's full-resolution image export. Do not copy or save the small chat-preview image. Low-quality images must be rejected and regenerated until the QA checklist passes.
-
-After downloading the approved Gemini image, prepare the exact 2:1 feature asset with:
-
-\`\`\`sh
-node scripts/import-gemini-feature-image.mjs --latest --slug ${run.slug}
-\`\`\`
+Use Google Gemini image generation for the bitmap. Open a fresh Chrome window first, generate the image, then open Gemini's generated preview image and save or capture the smaller 1024x506 preview. Never use Gemini's full-size export for this project. Low-quality images must be rejected and regenerated until the QA checklist passes.
 
 ## Feature Image QA
 
-Before approval, inspect the imported high-resolution Gemini feature image against this checklist:
+Before approval, inspect the saved Gemini preview image against this checklist:
 
 ${featureImageQaChecklistText()}
 
 You can run the automatic file checks with:
 
 \`\`\`sh
-node scripts/qa-feature-image.mjs --image tmp/gemini-feature-images/${run.slug}.png --approved
+node scripts/qa-feature-image.mjs --image tmp/gemini-feature-images/${run.slug}.jpg --approved
 \`\`\`
 
-After visual approval, render the episode with the imported image:
+After visual approval, render the episode with the approved preview image:
 
 \`\`\`sh
-node scripts/run-tournament.mjs${episodeArg} --feature-image tmp/gemini-feature-images/${run.slug}.png --feature-image-qa-approved
+node scripts/run-tournament.mjs${episodeArg} --feature-image tmp/gemini-feature-images/${run.slug}.jpg --feature-image-qa-approved
 \`\`\`
 
-The helper preserves the highest usable resolution while cropping to 2:1. The runner will copy the approved Gemini image into \`site/assets/feature-images/\`, attach it to the run JSON, and render it on the home and episode pages.
+The runner will copy the approved Gemini image into \`site/assets/feature-images/\`, attach it to the run JSON, and render it on the home and episode pages.
 `;
 }
 

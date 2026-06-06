@@ -32,10 +32,7 @@ const siteDir = path.join(rootDir, "site");
 const episodeFile = args.get("episode-file");
 const featureImagePath = args.get("feature-image");
 const featureImageQaApproved = args.has("feature-image-qa-approved") || envFlag("PAPERCLIPALYPSE_FEATURE_IMAGE_QA_APPROVED");
-const featureImageAllowPreview = args.has("feature-image-allow-preview") || envFlag("PAPERCLIPALYPSE_FEATURE_IMAGE_ALLOW_PREVIEW");
-const featureImageSource = featureImageAllowPreview
-  ? "Gemini image generation (web preview)"
-  : "Gemini image generation (high-resolution export)";
+const featureImageSource = "Gemini image generation (web preview)";
 const contestants = dryRun ? houseContestants : paidContestants;
 
 if (episodeFile) {
@@ -356,9 +353,8 @@ function attachFeatureImage(run, sourcePath) {
 
   const qa = run.dryRun
     ? null
-    : assertFeatureImageQa(absoluteSourcePath, {
-        visualApproved: featureImageQaApproved,
-        allowWebPreview: featureImageAllowPreview
+      : assertFeatureImageQa(absoluteSourcePath, {
+        visualApproved: featureImageQaApproved
       });
   const ext = path.extname(absoluteSourcePath).toLowerCase() || ".png";
   const assetRelPath = path.posix.join("assets", "feature-images", `${run.slug}${ext}`);

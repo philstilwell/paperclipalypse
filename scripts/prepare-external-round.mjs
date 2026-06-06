@@ -52,8 +52,8 @@ const packet = {
     "Build data/inbox/<seed>.json from the real jokes and scorecards.",
     "Run the tournament once with --allow-missing-feature-image to create the Gemini image brief.",
     "Open a fresh Chrome window for Gemini image generation so the normal save-as dialogue is accessible.",
-    "Generate the feature image in Gemini and download the full-resolution export, not the small chat-preview image.",
-    "Run node scripts/import-gemini-feature-image.mjs --latest --slug <round-slug> to crop/import the export to a 2:1 feature asset.",
+    "Generate the feature image in Gemini, open the generated preview image, and save or capture the smaller 1024x506 preview.",
+    "Never use Gemini's full-size export for this project.",
     "Reject and regenerate low-quality images until the image QA checklist passes.",
     "Rerun with --feature-image and --feature-image-qa-approved only after visual QA approval.",
     "Verify the rendered site, close temporary tabs and dialogues, then commit and push."

@@ -11,11 +11,10 @@ Use this when publishing a real public round.
 5. Collect one complete scorecard from each contestant.
 6. Put the collected data in `data/inbox/<round-name>.json` with `source` set to `manual-external`.
 7. Open a fresh Chrome window for Gemini image generation, then generate and
-   approve a winning-joke feature image after scoring. Download Gemini's
-   full-resolution image export, not the small chat-preview image. Use
-   `node scripts/import-gemini-feature-image.mjs --latest --slug <round-slug>`
-   to crop/import the image to an exact 2:1 feature asset, then pass that file
-   with `--feature-image`.
+   approve a winning-joke feature image after scoring. Open Gemini's generated
+   preview image and save or capture the smaller 1024x506 preview. Never use the
+   full-size export for this project. Pass the approved preview file with
+   `--feature-image`.
 8. Run:
 
 ```sh
@@ -28,8 +27,7 @@ node scripts/run-tournament.mjs --episode-file data/inbox/<round-name>.json --se
 To attach a newly approved image while rendering:
 
 ```sh
-node scripts/import-gemini-feature-image.mjs --latest --slug <round-slug>
-node scripts/run-tournament.mjs --episode-file data/inbox/<round-name>.json --seed <round-name> --feature-image tmp/gemini-feature-images/<round-slug>.png --feature-image-qa-approved
+node scripts/run-tournament.mjs --episode-file data/inbox/<round-name>.json --seed <round-name> --feature-image tmp/gemini-feature-images/<round-slug>.jpg --feature-image-qa-approved
 ```
 
 The runner copies that image into `site/assets/feature-images/<slug>.<ext>` and
@@ -62,7 +60,7 @@ Do not add API keys to GitHub Actions for normal operation. Only run `npm run to
 
 - Check the page on desktop and mobile widths.
 - Confirm the winning-joke feature image loads and keeps its 2:1 crop.
-- Confirm the feature image came from Gemini's high-resolution export, not the chat-preview thumbnail.
+- Confirm the feature image came from Gemini's 1024x506 preview, not the full-size export.
 - Confirm the `Process`, `Mode`, and rubric popovers work by hover and keyboard focus.
 - Confirm the Cloudflare analytics snippet appears once per generated HTML page.
 - Keep the public language honest: manual external rounds use real chat-surface outputs, not fully autonomous provider APIs.

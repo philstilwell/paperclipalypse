@@ -4,13 +4,12 @@ const args = parseArgs(process.argv.slice(2));
 const imagePath = args.get("image") || args.get("feature-image") || process.argv.slice(2).find((item) => !item.startsWith("--"));
 
 if (!imagePath) {
-  console.error("Usage: node scripts/qa-feature-image.mjs --image /path/to/image.png [--approved] [--allow-preview]");
+  console.error("Usage: node scripts/qa-feature-image.mjs --image /path/to/image.png [--approved]");
   process.exit(2);
 }
 
 const qa = qaFeatureImageFile(imagePath, {
-  visualApproved: args.has("approved"),
-  allowWebPreview: args.has("allow-preview") || args.has("allow-web-preview")
+  visualApproved: args.has("approved")
 });
 
 if (!qa.passed) {

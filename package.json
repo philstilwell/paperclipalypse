@@ -4,7 +4,6 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "image:import-gemini": "node scripts/import-gemini-feature-image.mjs",
     "image:qa": "node scripts/qa-feature-image.mjs",
     "round:prepare": "node scripts/prepare-external-round.mjs",
     "tournament": "node scripts/run-tournament.mjs",
