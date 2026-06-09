@@ -613,6 +613,11 @@ main {
   gap: 32px;
 }
 
+.standings-page > section,
+.trend-card {
+  min-width: 0;
+}
+
 .standings-hero-panel,
 .model-selection-note,
 .trend-card {
@@ -983,6 +988,25 @@ main {
   stroke-dasharray: 6 8;
 }
 
+.judge-trend-line {
+  stroke: var(--series-color);
+  stroke-width: 3;
+}
+
+.judge-trend-points circle {
+  fill: var(--series-color);
+  stroke: #08090a;
+  stroke-width: 2;
+}
+
+.judge-score-legend {
+  gap: 10px 14px;
+}
+
+.judge-score-table {
+  min-width: 980px;
+}
+
 .trend-point circle {
   stroke: #08090a;
   stroke-width: 2;
@@ -1065,6 +1089,7 @@ main {
 }
 
 .table-scroll {
+  max-width: 100%;
   overflow-x: auto;
   border-radius: 8px;
 }

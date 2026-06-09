@@ -181,7 +181,7 @@ function renderStandingsPage(runs) {
         <section class="standings-hero-panel">
           <p class="eyebrow">Standup Tournament Scoreboard</p>
           <h1>Standup Model Standings</h1>
-          <p>${escapeHtml(leaderLine)} The chart below tracks whether the tournament is getting funnier, flatter, or merely more confident.</p>
+          <p>${escapeHtml(leaderLine)} The charts below track whether the tournament is getting funnier, flatter, stricter, or merely more confident.</p>
           <div class="standings-summary-grid" aria-label="Tournament summary">
             <div>
               <span>Published rounds</span>
@@ -200,6 +200,7 @@ function renderStandingsPage(runs) {
         ${renderModelSelectionNote()}
         ${renderModelStandings(standings)}
         ${renderScoreTrend(publicRuns)}
+        ${renderJudgeScoreTrend(publicRuns)}
       </main>`
   });
 }
@@ -345,6 +346,149 @@ function renderScoreTrend(runs) {
             </div>
           </div>
         </section>`;
+}
+
+function renderJudgeScoreTrend(runs) {
+  const data = judgeScoreTrendData(runs);
+  if (!data.runs.length || !data.series.length) {
+    return `
+        <section class="judge-score-trend">
+          <div class="section-heading">
+            <p class="eyebrow">Judging Trend</p>
+            <h2>Average Scores Given Each Contest</h2>
+          </div>
+          <p class="empty-state">No judge scorecards are available yet.</p>
+        </section>`;
+  }
+
+  const chart = renderJudgeScoreTrendSvg(data);
+  const legend = data.series
+    .map(
+      (series) => `
+              <span><i style="background: ${escapeHtml(series.color)}"></i>${escapeHtml(series.judgeName)}</span>`
+    )
+    .join("");
+  const headerCells = data.series.map((series) => `<th>${escapeHtml(series.shortName)}</th>`).join("");
+  const rows = data.runs
+    .map((run, runIndex) => {
+      const scores = data.series
+        .map((series) => {
+          const point = series.points[runIndex];
+          return `<td>${Number.isFinite(point?.score) ? formatScore(point.score) : "—"}</td>`;
+        })
+        .join("");
+
+      return `
+        <tr>
+          <td>${escapeHtml(shortDate(run))}</td>
+          <td><a href="./runs/${escapeHtml(run.slug)}.html">${escapeHtml(roundDisplayTitle(run))}</a></td>
+          ${scores}
+        </tr>`;
+    })
+    .join("");
+
+  return `
+        <section class="judge-score-trend">
+          <div class="section-heading">
+            <p class="eyebrow">Judging Trend</p>
+            <h2>Average Scores Given Each Contest</h2>
+          </div>
+          <div class="trend-card">
+            <p>Each line shows the average score a judge gave across the four jokes it scored in that contest. Lower lines are stricter judges; higher lines are more generous judges.</p>
+            <div class="chart-legend judge-score-legend" aria-label="Judge score chart legend">
+              ${legend}
+            </div>
+            <div class="trend-chart-wrap">${chart}</div>
+            <div class="table-scroll trend-table-scroll">
+              <table class="judge-score-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Round</th>
+                    ${headerCells}
+                  </tr>
+                </thead>
+                <tbody>${rows}</tbody>
+              </table>
+            </div>
+          </div>
+        </section>`;
+}
+
+function renderJudgeScoreTrendSvg(data) {
+  const width = 880;
+  const height = 380;
+  const left = 58;
+  const right = 28;
+  const top = 30;
+  const bottom = 70;
+  const plotWidth = width - left - right;
+  const plotHeight = height - top - bottom;
+  const allScores = data.series
+    .flatMap((series) => series.points.map((point) => point?.score))
+    .filter((score) => Number.isFinite(score));
+  let yMin = Math.max(0, Math.floor(Math.min(...allScores) - 1));
+  let yMax = Math.min(10, Math.ceil(Math.max(...allScores) + 1));
+  if (yMax - yMin < 4) {
+    const padding = Math.ceil((4 - (yMax - yMin)) / 2);
+    yMin = Math.max(0, yMin - padding);
+    yMax = Math.min(10, yMax + padding);
+  }
+
+  const xFor = (index) => data.runs.length === 1
+    ? left + plotWidth / 2
+    : left + (index / (data.runs.length - 1)) * plotWidth;
+  const yFor = (score) => top + ((yMax - score) / (yMax - yMin)) * plotHeight;
+  const ticks = Array.from({ length: yMax - yMin + 1 }, (_, index) => yMin + index);
+  const grid = ticks
+    .map((tick) => {
+      const y = yFor(tick).toFixed(1);
+      return `<g class="trend-grid-line"><line x1="${left}" y1="${y}" x2="${width - right}" y2="${y}"></line><text x="${left - 12}" y="${Number(y) + 4}" text-anchor="end">${tick}</text></g>`;
+    })
+    .join("");
+  const xLabels = data.runs
+    .map((run, index) => {
+      const x = xFor(index).toFixed(1);
+      return `<text class="trend-x-label" x="${x}" y="${height - 28}" text-anchor="middle">${escapeHtml(shortTrendLabel(run))}</text>`;
+    })
+    .join("");
+  const seriesLines = data.series
+    .map((series) => {
+      const validPoints = series.points
+        .map((point, index) => Number.isFinite(point?.score)
+          ? { ...point, index }
+          : null)
+        .filter(Boolean);
+      const polyline = validPoints
+        .map((point) => `${xFor(point.index).toFixed(1)},${yFor(point.score).toFixed(1)}`)
+        .join(" ");
+      const markers = validPoints
+        .map((point) => {
+          const label = `${series.judgeName}, ${shortDate(point.run)}: average score given ${formatScore(point.score)}`;
+          return `<circle cx="${xFor(point.index).toFixed(1)}" cy="${yFor(point.score).toFixed(1)}" r="4"><title>${escapeHtml(label)}</title></circle>`;
+        })
+        .join("");
+
+      return `
+                <g class="judge-trend-series" style="--series-color: ${escapeHtml(series.color)}">
+                  <polyline class="trend-line judge-trend-line" points="${polyline}"></polyline>
+                  <g class="judge-trend-points">${markers}</g>
+                </g>`;
+    })
+    .join("");
+
+  return `
+              <svg class="score-trend-svg judge-score-trend-svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="judge-score-trend-title judge-score-trend-desc">
+                <title id="judge-score-trend-title">Paperclipalypse judge score trend</title>
+                <desc id="judge-score-trend-desc">Line chart comparing each judge model's average score given per contest.</desc>
+                <rect class="trend-plot-bg" x="${left}" y="${top}" width="${plotWidth}" height="${plotHeight}" rx="8"></rect>
+                ${grid}
+                <line class="trend-axis" x1="${left}" y1="${top + plotHeight}" x2="${width - right}" y2="${top + plotHeight}"></line>
+                <line class="trend-axis" x1="${left}" y1="${top}" x2="${left}" y2="${top + plotHeight}"></line>
+                ${seriesLines}
+                ${xLabels}
+                <text class="trend-y-title" x="16" y="${top + plotHeight / 2}" text-anchor="middle" transform="rotate(-90 16 ${top + plotHeight / 2})">Avg given</text>
+              </svg>`;
 }
 
 function renderTrendSvg(points) {
@@ -565,6 +709,70 @@ function scoreTrendPoints(runs) {
         averageScore: scores.reduce((total, score) => total + score, 0) / scores.length
       };
     });
+}
+
+function judgeScoreTrendData(runs) {
+  const chronologicalRuns = [...runs]
+    .filter((run) => Array.isArray(run.judgeResults) && run.judgeResults.length)
+    .sort((a, b) => dateOnly(a).localeCompare(dateOnly(b)) || a.createdAt.localeCompare(b.createdAt));
+  const judgeNames = [];
+  const scoresByRun = chronologicalRuns.map((run) => {
+    const averagesByJudge = new Map();
+
+    for (const judgeResult of run.judgeResults || []) {
+      const totals = (judgeResult.scores || [])
+        .map((score) => Number(score.total))
+        .filter((score) => Number.isFinite(score));
+      const averageGiven = average(totals);
+      const judgeName = judgeResult.judgeName || judgeResult.judgeId || "Unknown model";
+      if (!judgeNames.includes(judgeName)) {
+        judgeNames.push(judgeName);
+      }
+      if (Number.isFinite(averageGiven)) {
+        averagesByJudge.set(judgeName, averageGiven);
+      }
+    }
+
+    return averagesByJudge;
+  });
+
+  const series = judgeNames.map((judgeName, index) => ({
+    judgeName,
+    shortName: shortModelName(judgeName),
+    color: judgeTrendColor(index),
+    points: chronologicalRuns.map((run, runIndex) => ({
+      run,
+      score: scoresByRun[runIndex].get(judgeName)
+    }))
+  }));
+
+  return {
+    runs: chronologicalRuns,
+    series
+  };
+}
+
+function judgeTrendColor(index) {
+  const colors = [
+    "#c28a57",
+    "#7dd3fc",
+    "#f472b6",
+    "#a3e635",
+    "#facc15",
+    "#c4b5fd",
+    "#fb7185"
+  ];
+
+  return colors[index % colors.length];
+}
+
+function shortModelName(name) {
+  return String(name || "Model")
+    .replace(/^OpenAI\s+/u, "")
+    .replace(/^xAI\s+/u, "")
+    .replace(/\s+\d+(?:\.\d+)*\b/u, "")
+    .replace(/\bSonnet\b/u, "Sonnet")
+    .trim();
 }
 
 function shortTrendLabel(run) {
@@ -1980,6 +2188,11 @@ main {
   gap: 32px;
 }
 
+.standings-page > section,
+.trend-card {
+  min-width: 0;
+}
+
 .standings-hero-panel,
 .model-selection-note,
 .trend-card {
@@ -2350,6 +2563,25 @@ main {
   stroke-dasharray: 6 8;
 }
 
+.judge-trend-line {
+  stroke: var(--series-color);
+  stroke-width: 3;
+}
+
+.judge-trend-points circle {
+  fill: var(--series-color);
+  stroke: #08090a;
+  stroke-width: 2;
+}
+
+.judge-score-legend {
+  gap: 10px 14px;
+}
+
+.judge-score-table {
+  min-width: 980px;
+}
+
 .trend-point circle {
   stroke: #08090a;
   stroke-width: 2;
@@ -2432,6 +2664,7 @@ main {
 }
 
 .table-scroll {
+  max-width: 100%;
   overflow-x: auto;
   border-radius: 8px;
 }
