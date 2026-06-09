@@ -2582,6 +2582,11 @@ main {
   min-width: 980px;
 }
 
+.judge-score-table td:nth-child(4) {
+  color: var(--muted);
+  font-weight: inherit;
+}
+
 .trend-point circle {
   stroke: #08090a;
   stroke-width: 2;
