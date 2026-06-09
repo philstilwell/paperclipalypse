@@ -408,7 +408,7 @@ function renderJudgeScoreTrend(runs) {
             <h2>Average Scores Given Each Contest</h2>
           </div>
           <div class="trend-card">
-            <p>Each line shows the raw average score a judge gave across the four jokes it scored in that contest. These raw tendencies drive the rolling normalization; lower lines are stricter judges, higher lines are more generous judges.</p>
+            <p>Each line shows the raw average score a judge gave across the four jokes it scored in that contest. These raw tendencies drive the rolling normalization; lower lines are stricter judges, higher lines are more generous judges. Formula: <strong>adjusted score = raw score - judge rolling average + field rolling average</strong>. This keeps the strictest judge from having an unfair advantage merely because its lower raw scores are harder for contestants to earn.</p>
             <div class="chart-legend judge-score-legend" aria-label="Judge score chart legend">
               ${legend}
             </div>
