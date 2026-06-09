@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-06-09T14:13:53.380Z",
+  "publishedDate": "2026-06-09",
+  "seed": "ext-real-2026-06-09",
+  "slug": "2026-06-09-ext-real-2026-06-09",
+  "source": "manual-external",
+  "seedTerms": [
+    "Rich and Famous",
+    "Repairperson",
+    "Man Cave",
+    "Being given an ultimatum",
+    "Flirtatious",
+    "Abrasive"
+  ],
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Man Cave Inspection",
+      "seedTermsUsed": [
+        "Repairperson",
+        "Man Cave"
+      ],
+      "joke": "I called a repairperson because the outlet in my man cave kept sparking. He walked in, saw the mini-fridge, one sad recliner, and a treadmill being used as a coat rack, and said, “The electrical is fine. This room is just trying to end the marriage faster.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Upgrade",
+      "seedTermsUsed": [
+        "Rich and Famous",
+        "Being given an ultimatum"
+      ],
+      "joke": "My wife said, 'It's either me or your dream of becoming rich and famous.' I said, 'Babe, those aren't competing options.' She said, 'Pick one.' I said, 'I pick rich and famous.' She said, 'Wrong answer.' I said, 'See, this is exactly the kind of budget thinking that's been holding us back.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Bacon Grease",
+      "seedTermsUsed": [
+        "Repairperson",
+        "Being given an ultimatum"
+      ],
+      "joke": "My plumber gave me a strict ultimatum today. He stared at the absolute wreckage under my kitchen sink, wiped his hands on a rag, and said, 'Listen, man. You can either stop pouring hot bacon grease down the drain, or you can legally adopt me, because I basically live here now.' I'm setting up the guest room tonight. It's honestly way cheaper than his hourly rate."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Man Cave Takeover",
+      "seedTermsUsed": [
+        "Man Cave",
+        "Repairperson"
+      ],
+      "joke": "So I finally built my dream man cave downstairs. Wiring was a nightmare, so I called a repairperson. This guy walks in, looks around, and mutters, 'This isn't a man cave, it's a cry for help.' He fixes everything perfectly. Now it's spotless, TV works great... and he's in there every weekend with my buddies. Last night I knocked on my own basement door and asked if I could join them. He said no."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "The Ultimatum",
+      "seedTermsUsed": [
+        "Being given an ultimatum",
+        "Man Cave"
+      ],
+      "joke": "My partner gave me an ultimatum: either I clean out my so‑called man cave, or it becomes her yoga studio. I panicked. I didn’t even know what was in there anymore. I opened the door and it looked like a garage sale hosted by a raccoon. I chose to clean it, because nothing humbles you like finding a sandwich you don’t remember making."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear first-person bit with a decent final turn, though the dialogue runs a little expected and the punchline is more clever than laugh-heavy."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong concrete premise with a satisfying absurd escalation; the adoption turn and hourly-rate tag both land cleanly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Readable and stage-shaped, with a solid reversal, but the 'cry for help' line is familiar and the final exclusion gag is only mildly surprising."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good imagery and a clean final line, but the joke stays in familiar messy-room territory and does not escalate far beyond the setup."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean premise, good turn — the repairman's diagnosis lands well. 'Trying to end the marriage faster' is a solid final line with stage rhythm. Familiar domestic territory but executed with economy."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The escalation from ultimatum to adoption is genuinely funny and unexpected. 'Legally adopt me' is a fresh image. The final line pays off the logic rather than just restating it. Natural voice throughout."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "The premise builds well but the ending overreaches — three beats past the natural punchline. 'He said no' is charming but the joke earned its laugh earlier and then kept going. Trim by one beat and it improves."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Competent and publishable. The raccoon garage sale image is the best line. The sandwich callback is mild and a bit familiar. No strong snap at the end — it coasts to a stop rather than landing."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong economy and a punchline that lands well, utilizing a great rule of three, even if the 'sad man cave' premise is slightly familiar."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "A bit repetitive in its dialogue structure and relies on a very tired sitcom-husband trope that lacks a punchy rhythm."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Starts with a cliché setup but completely salvages it with a wonderfully absurd, escalating twist and a clean hard-stop punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Vivid descriptive writing ('garage sale hosted by a raccoon') elevates a standard messy-room premise into a competent, amusing bit."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid visual premise and twist, but punchline lands mildly."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Sharp dialogue and cheeky escalation; good rhythm."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong absurd twist with vivid setup and memorable payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Relatable mess and solid humble punchline, but premise familiar."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clean, coherent, mildly funny; punchline is predictable but works."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Solid escalation and a decent final turn; still a familiar marital‑ultimatum pattern."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Fun premise with a sharper turn; good rhythm and a clear laugh line."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Amusing idea with a clean structure; ending is funny but not especially surprising."
+        }
+      ]
+    }
+  ],
+  "premise": {
+    "headline": "A clogged sink turns into an adoption ultimatum."
+  }
+}

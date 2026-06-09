@@ -1,0 +1,665 @@
+{
+  "version": 1,
+  "slug": "2026-06-09-ext-real-2026-06-09",
+  "seed": "ext-real-2026-06-09",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-09T14:13:53.380Z",
+  "publishedDate": "2026-06-09",
+  "seedTerms": [
+    "Rich and Famous",
+    "Repairperson",
+    "Man Cave",
+    "Being given an ultimatum",
+    "Flirtatious",
+    "Abrasive"
+  ],
+  "premise": {
+    "text": "Seed terms: Rich and Famous, Repairperson, Man Cave, Being given an ultimatum, Flirtatious, Abrasive",
+    "seedTerms": [
+      "Rich and Famous",
+      "Repairperson",
+      "Man Cave",
+      "Being given an ultimatum",
+      "Flirtatious",
+      "Abrasive"
+    ],
+    "displayText": "A clogged sink turns into an adoption ultimatum.",
+    "headline": "A clogged sink turns into an adoption ultimatum."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Man Cave Inspection",
+      "seedTermsUsed": [
+        "Repairperson",
+        "Man Cave"
+      ],
+      "joke": "I called a repairperson because the outlet in my man cave kept sparking. He walked in, saw the mini-fridge, one sad recliner, and a treadmill being used as a coat rack, and said, “The electrical is fine. This room is just trying to end the marriage faster.”",
+      "setup": "",
+      "punchline": "I called a repairperson because the outlet in my man cave kept sparking. He walked in, saw the mini-fridge, one sad recliner, and a treadmill being used as a coat rack, and said, “The electrical is fine. This room is just trying to end the marriage faster.”",
+      "text": "I called a repairperson because the outlet in my man cave kept sparking. He walked in, saw the mini-fridge, one sad recliner, and a treadmill being used as a coat rack, and said, “The electrical is fine. This room is just trying to end the marriage faster.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Upgrade",
+      "seedTermsUsed": [
+        "Rich and Famous",
+        "Being given an ultimatum"
+      ],
+      "joke": "My wife said, 'It's either me or your dream of becoming rich and famous.' I said, 'Babe, those aren't competing options.' She said, 'Pick one.' I said, 'I pick rich and famous.' She said, 'Wrong answer.' I said, 'See, this is exactly the kind of budget thinking that's been holding us back.'",
+      "setup": "",
+      "punchline": "My wife said, 'It's either me or your dream of becoming rich and famous.' I said, 'Babe, those aren't competing options.' She said, 'Pick one.' I said, 'I pick rich and famous.' She said, 'Wrong answer.' I said, 'See, this is exactly the kind of budget thinking that's been holding us back.'",
+      "text": "My wife said, 'It's either me or your dream of becoming rich and famous.' I said, 'Babe, those aren't competing options.' She said, 'Pick one.' I said, 'I pick rich and famous.' She said, 'Wrong answer.' I said, 'See, this is exactly the kind of budget thinking that's been holding us back.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Bacon Grease",
+      "seedTermsUsed": [
+        "Repairperson",
+        "Being given an ultimatum"
+      ],
+      "joke": "My plumber gave me a strict ultimatum today. He stared at the absolute wreckage under my kitchen sink, wiped his hands on a rag, and said, 'Listen, man. You can either stop pouring hot bacon grease down the drain, or you can legally adopt me, because I basically live here now.' I'm setting up the guest room tonight. It's honestly way cheaper than his hourly rate.",
+      "setup": "",
+      "punchline": "My plumber gave me a strict ultimatum today. He stared at the absolute wreckage under my kitchen sink, wiped his hands on a rag, and said, 'Listen, man. You can either stop pouring hot bacon grease down the drain, or you can legally adopt me, because I basically live here now.' I'm setting up the guest room tonight. It's honestly way cheaper than his hourly rate.",
+      "text": "My plumber gave me a strict ultimatum today. He stared at the absolute wreckage under my kitchen sink, wiped his hands on a rag, and said, 'Listen, man. You can either stop pouring hot bacon grease down the drain, or you can legally adopt me, because I basically live here now.' I'm setting up the guest room tonight. It's honestly way cheaper than his hourly rate."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Man Cave Takeover",
+      "seedTermsUsed": [
+        "Man Cave",
+        "Repairperson"
+      ],
+      "joke": "So I finally built my dream man cave downstairs. Wiring was a nightmare, so I called a repairperson. This guy walks in, looks around, and mutters, 'This isn't a man cave, it's a cry for help.' He fixes everything perfectly. Now it's spotless, TV works great... and he's in there every weekend with my buddies. Last night I knocked on my own basement door and asked if I could join them. He said no.",
+      "setup": "",
+      "punchline": "So I finally built my dream man cave downstairs. Wiring was a nightmare, so I called a repairperson. This guy walks in, looks around, and mutters, 'This isn't a man cave, it's a cry for help.' He fixes everything perfectly. Now it's spotless, TV works great... and he's in there every weekend with my buddies. Last night I knocked on my own basement door and asked if I could join them. He said no.",
+      "text": "So I finally built my dream man cave downstairs. Wiring was a nightmare, so I called a repairperson. This guy walks in, looks around, and mutters, 'This isn't a man cave, it's a cry for help.' He fixes everything perfectly. Now it's spotless, TV works great... and he's in there every weekend with my buddies. Last night I knocked on my own basement door and asked if I could join them. He said no."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "The Ultimatum",
+      "seedTermsUsed": [
+        "Being given an ultimatum",
+        "Man Cave"
+      ],
+      "joke": "My partner gave me an ultimatum: either I clean out my so‑called man cave, or it becomes her yoga studio. I panicked. I didn’t even know what was in there anymore. I opened the door and it looked like a garage sale hosted by a raccoon. I chose to clean it, because nothing humbles you like finding a sandwich you don’t remember making.",
+      "setup": "",
+      "punchline": "My partner gave me an ultimatum: either I clean out my so‑called man cave, or it becomes her yoga studio. I panicked. I didn’t even know what was in there anymore. I opened the door and it looked like a garage sale hosted by a raccoon. I chose to clean it, because nothing humbles you like finding a sandwich you don’t remember making.",
+      "text": "My partner gave me an ultimatum: either I clean out my so‑called man cave, or it becomes her yoga studio. I panicked. I didn’t even know what was in there anymore. I opened the door and it looked like a garage sale hosted by a raccoon. I chose to clean it, because nothing humbles you like finding a sandwich you don’t remember making."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear first-person bit with a decent final turn, though the dialogue runs a little expected and the punchline is more clever than laugh-heavy.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong concrete premise with a satisfying absurd escalation; the adoption turn and hourly-rate tag both land cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Readable and stage-shaped, with a solid reversal, but the 'cry for help' line is familiar and the final exclusion gag is only mildly surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Good imagery and a clean final line, but the joke stays in familiar messy-room territory and does not escalate far beyond the setup.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise, good turn — the repairman's diagnosis lands well. 'Trying to end the marriage faster' is a solid final line with stage rhythm. Familiar domestic territory but executed with economy.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "The escalation from ultimatum to adoption is genuinely funny and unexpected. 'Legally adopt me' is a fresh image. The final line pays off the logic rather than just restating it. Natural voice throughout.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.800000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The premise builds well but the ending overreaches — three beats past the natural punchline. 'He said no' is charming but the joke earned its laugh earlier and then kept going. Trim by one beat and it improves.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent and publishable. The raccoon garage sale image is the best line. The sandwich callback is mild and a bit familiar. No strong snap at the end — it coasts to a stop rather than landing.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong economy and a punchline that lands well, utilizing a great rule of three, even if the 'sad man cave' premise is slightly familiar.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "A bit repetitive in its dialogue structure and relies on a very tired sitcom-husband trope that lacks a punchy rhythm.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Starts with a cliché setup but completely salvages it with a wonderfully absurd, escalating twist and a clean hard-stop punchline.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Vivid descriptive writing ('garage sale hosted by a raccoon') elevates a standard messy-room premise into a competent, amusing bit.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid visual premise and twist, but punchline lands mildly.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Sharp dialogue and cheeky escalation; good rhythm.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong absurd twist with vivid setup and memorable payoff.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relatable mess and solid humble punchline, but premise familiar.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean, coherent, mildly funny; punchline is predictable but works.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid escalation and a decent final turn; still a familiar marital‑ultimatum pattern.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fun premise with a sharper turn; good rhythm and a clear laugh line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Amusing idea with a clean structure; ending is funny but not especially surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.5,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.3,
+        "surprise": 7.3,
+        "craft": 7.5,
+        "originality": 7,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Strong concrete premise with a satisfying absurd escalation; the adoption turn and hourly-rate tag both land cleanly."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "The escalation from ultimatum to adoption is genuinely funny and unexpected. 'Legally adopt me' is a fresh image. The final line pays off the logic rather than just restating it. Natural voice throughout."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Strong absurd twist with vivid setup and memorable payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Fun premise with a sharper turn; good rhythm and a clear laugh line."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6.8,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Readable and stage-shaped, with a solid reversal, but the 'cry for help' line is familiar and the final exclusion gag is only mildly surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "The premise builds well but the ending overreaches — three beats past the natural punchline. 'He said no' is charming but the joke earned its laugh earlier and then kept going. Trim by one beat and it improves."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Starts with a cliché setup but completely salvages it with a wonderfully absurd, escalating twist and a clean hard-stop punchline."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Amusing idea with a clean structure; ending is funny but not especially surprising."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.7,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "Clean premise, good turn — the repairman's diagnosis lands well. 'Trying to end the marriage faster' is a solid final line with stage rhythm. Familiar domestic territory but executed with economy."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Strong economy and a punchline that lands well, utilizing a great rule of three, even if the 'sad man cave' premise is slightly familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Solid visual premise and twist, but punchline lands mildly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Clean, coherent, mildly funny; punchline is predictable but works."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.5,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Good imagery and a clean final line, but the joke stays in familiar messy-room territory and does not escalate far beyond the setup."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "comment": "Competent and publishable. The raccoon garage sale image is the best line. The sandwich callback is mild and a bit familiar. No strong snap at the end — it coasts to a stop rather than landing."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "Vivid descriptive writing ('garage sale hosted by a raccoon') elevates a standard messy-room premise into a competent, amusing bit."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Relatable mess and solid humble punchline, but premise familiar."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.3,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 5.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "comment": "Clear first-person bit with a decent final turn, though the dialogue runs a little expected and the punchline is more clever than laugh-heavy."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "comment": "A bit repetitive in its dialogue structure and relies on a very tired sitcom-husband trope that lacks a punchy rhythm."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "comment": "Sharp dialogue and cheeky escalation; good rhythm."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "comment": "Solid escalation and a decent final turn; still a familiar marital‑ultimatum pattern."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-09-ext-real-2026-06-09.jpg",
+    "originalSrc": "assets/feature-images/2026-06-09-ext-real-2026-06-09.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v3",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Bacon Grease: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Bacon Grease\nExact joke text to render in the right panel:\nMy plumber gave me a strict ultimatum today. He stared at the absolute wreckage under my kitchen sink, wiped his hands on a rag, and said, 'Listen, man. You can either stop pouring hot bacon grease down the drain, or you can legally adopt me, because I basically live here now.' I'm setting up the guest room tonight. It's honestly way cheaper than his hourly rate.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Rich and Famous, Repairperson, Man Cave, Being given an ultimatum, Flirtatious, Abrasive.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Rich and Famous, Repairperson, Man Cave, Being given an ultimatum, Flirtatious, Abrasive. Use the winning joke titled \"Bacon Grease\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "featureImageBrief": "data/image-briefs/2026-06-09-ext-real-2026-06-09.md"
+}
