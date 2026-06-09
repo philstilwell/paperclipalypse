@@ -415,6 +415,11 @@ function renderJudgeScoreTrend(runs) {
             <div class="trend-chart-wrap">${chart}</div>
             <div class="table-scroll trend-table-scroll">
               <table class="judge-score-table">
+                <colgroup>
+                  <col class="judge-score-date-col">
+                  <col class="judge-score-round-col">
+                  ${data.series.map(() => `<col class="judge-score-model-col">`).join("")}
+                </colgroup>
                 <thead>
                   <tr>
                     <th>Date</th>
@@ -2656,7 +2661,21 @@ main {
 }
 
 .judge-score-table {
-  min-width: 980px;
+  min-width: 1120px;
+  table-layout: fixed;
+}
+
+.judge-score-date-col {
+  width: 130px;
+}
+
+.judge-score-round-col {
+  width: 270px;
+}
+
+.judge-score-table th:nth-child(n+3),
+.judge-score-table td:nth-child(n+3) {
+  text-align: center;
 }
 
 .judge-score-table td:nth-child(4) {
