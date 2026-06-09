@@ -12,7 +12,7 @@ const processPopoverLabel = [
   "Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.",
   "Each contestant then scores the four jokes it did not write.",
   "Codex checks that nothing is missing and no contestant judged itself.",
-  "The site averages the rubric scores and publishes the ranked results."
+  "The site averages the rubric scores, publishes the ranked results, and shows each judge's score beside its critique."
 ].join(" ");
 
 export function renderSite({ run, historyDir, siteDir }) {
@@ -737,7 +737,7 @@ function renderRun(run, options = {}) {
     .map((joke) => {
       const ranking = run.rankings.find((entry) => entry.jokeId === joke.id);
       const jokeText = fullJokeText(joke);
-      const comments = renderCritiqueAccordions(ranking.comments);
+      const comments = renderCritiqueAccordions(judgeCritiquesForJoke(run, ranking));
 
       return `
         <article class="joke-card">
@@ -953,7 +953,7 @@ function renderCritiqueAccordions(comments = []) {
     .map(
       (comment) => `
               <article class="judge-critique">
-                <h4>${escapeHtml(comment.judgeName)}</h4>
+                <h4><span>${escapeHtml(comment.judgeName)}</span>${Number.isFinite(comment.score) ? `<strong>${formatScore(comment.score)}</strong>` : ""}</h4>
               <p>${escapeHtml(comment.comment)}</p>
               </article>`
     )
@@ -966,6 +966,25 @@ function renderCritiqueAccordions(comments = []) {
             ${items}
             </div>
           </details>`;
+}
+
+function judgeCritiquesForJoke(run, ranking) {
+  const scores = new Map();
+  for (const judgeResult of run.judgeResults || []) {
+    for (const score of judgeResult.scores || []) {
+      if (score.jokeId !== ranking?.jokeId) {
+        continue;
+      }
+
+      const total = Number(score.total);
+      scores.set(judgeResult.judgeId, Number.isFinite(total) ? total : NaN);
+    }
+  }
+
+  return (ranking?.comments || []).map((comment) => ({
+    ...comment,
+    score: scores.get(comment.judgeId)
+  }));
 }
 
 function renderMemoryNav(run, publicRuns = [], ariaLabel = "Memory Bank navigation") {
@@ -1186,7 +1205,7 @@ function normalizeSeedTermKey(value) {
 }
 
 function renderProcessPopover() {
-  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores and publishes the ranking.</span></span></span>`;
+  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores, publishes the ranking, and shows each judge's score beside its critique.</span></span></span>`;
 }
 
 function renderJokePromptPopover(run) {
@@ -2801,9 +2820,29 @@ td:nth-child(4) {
 
 .judge-critique h4 {
   color: var(--brass);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
   font-size: 0.72rem;
   font-weight: 900;
   margin: 0 0 2px;
+}
+
+.judge-critique h4 span {
+  overflow-wrap: anywhere;
+}
+
+.judge-critique h4 strong {
+  border: 1px solid rgba(194, 138, 87, 0.3);
+  border-radius: 999px;
+  background: rgba(194, 138, 87, 0.1);
+  color: var(--bone);
+  flex: 0 0 auto;
+  font-size: 0.68rem;
+  font-weight: 950;
+  line-height: 1;
+  padding: 3px 6px;
 }
 
 .judge-critique p {
