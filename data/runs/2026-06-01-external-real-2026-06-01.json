@@ -456,8 +456,17 @@
       "contestantId": "anthropic",
       "contestantName": "Claude Sonnet 4.6",
       "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
         "laugh": 6.5,
         "surprise": 6.5,
         "craft": 7,
@@ -468,21 +477,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.3,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0,
           "comment": "Clean dog-betrayal premise with strong escalation and a good final self-own; familiar setup but well executed."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 6.1,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0,
           "comment": "A classic dog trope elevated by a decent turn, though the narrator's logic gets slightly tangled in the final two sentences."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0,
           "comment": "Strong relatable betrayal visual with natural escalation and solid turn."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
           "comment": "Good first-person framing and a relatable betrayal angle; lands a mild real laugh."
         }
       ],
@@ -494,8 +515,17 @@
       "contestantId": "openai",
       "contestantName": "OpenAI GPT-5.4 Mini",
       "score": 6.5,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.8,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 9
+      },
+      "rawRubric": {
         "laugh": 5.8,
         "surprise": 6.3,
         "craft": 6.8,
@@ -506,21 +536,33 @@
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 6.8,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0,
           "comment": "Smart reframe with a clean escalation — 'exhibit' lands well. The laugh is more appreciative than explosive, but the construction is tight and the angle is genuinely fresh."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.7,
+          "scoreAdjustment": 0,
           "comment": "Crisp delivery and excellent escalation. Transforming late mail from 'correspondence' to an 'exhibit' is a very strong, natural punchline."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 5.7,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0,
           "comment": "Mild pun on historical mail with okay rhythm but predictable payoff."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
           "comment": "Clean premise with a mild turn; solid but not especially funny."
         }
       ],
@@ -532,8 +574,17 @@
       "contestantId": "google",
       "contestantName": "Gemini Flash",
       "score": 6.3,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.3,
+        "surprise": 5.3,
+        "craft": 6.5,
+        "originality": 5.3,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
         "laugh": 6.3,
         "surprise": 5.3,
         "craft": 6.5,
@@ -544,21 +595,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7,
+          "rawScore": 7,
+          "scoreAdjustment": 0,
           "comment": "Relatable and vivid, with the premium kibble versus junk mail contrast working well; slightly overwritten before the final image."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 5.8,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0,
           "comment": "The dog-disloyal-mail-carrier territory is well-worn, and the turn is predictable once the setup lands. The 'returning war hero' closer has energy but the joke runs slightly..."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0,
           "comment": "Amusing dog disloyalty bit but too similar to common tropes."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
           "comment": "Clear and coherent but more descriptive than punchy; ends without a strong snap."
         }
       ],
@@ -570,8 +633,17 @@
       "contestantId": "xai",
       "contestantName": "xAI Grok 4.3",
       "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
         "laugh": 5.8,
         "surprise": 5.8,
         "craft": 6,
@@ -582,21 +654,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
           "comment": "Clear sports premise and a likable inclusion turn, but the punchline is mild rather than sharply surprising."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
           "comment": "'I just wanted everyone to feel included' is a genuinely good final line — recontextualizes the setup with a satisfying snap. Pacing is efficient and the panic-under-pressure..."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 4.2,
+          "rawScore": 4.2,
+          "scoreAdjustment": 0,
           "comment": "The dialogue feels contrived to force the seed term; a coach calling a confused player 'disloyal' for passing to the wrong team does not sound natural."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
           "comment": "A tidy stage bit with a decent turn; not big laughs but works as a real joke."
         }
       ],
@@ -608,8 +692,17 @@
       "contestantId": "copilot",
       "contestantName": "Copilot",
       "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.5,
+        "surprise": 6,
+        "craft": 5.8,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "rawRubric": {
         "laugh": 5.5,
         "surprise": 6,
         "craft": 5.8,
@@ -620,21 +713,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.6,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0,
           "comment": "Efficient and coherent with a decent image in the dream-bouncer line, though the payoff is more clever than laugh-heavy."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
           "comment": "'Bouncer who escorts me out of my own dreams' is a vivid closer but slightly overwritten. The premise is contrived — mail carriers don't typically deliver team cut notices —..."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
           "comment": "The premise of receiving a sports cut notification via physical mail while the carrier watches is quite contrived, though the final simile is somewhat clever."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 5.7,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0,
           "comment": "Cute premise but the punchline lands softly without strong snap."
         }
       ],
@@ -660,5 +765,15 @@
   },
   "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Neither Rain nor Slime\nExact joke text to render in the right panel:\nMy dog spent three years growling at the mail carrier every single day — fur up, teeth out, absolute commitment. Then last Tuesday I look out the window and he's walking alongside her, tail wagging, letting her pet him. I've never felt so betrayed. That dog has principles I don't even have. I would have switched sides way earlier.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Historical, Mail Carrier, Subway Train / Station / Tunnel, Being cut from a team, Cooperative, Disloyal.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
   "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Historical, Mail Carrier, Subway Train / Station / Tunnel, Being cut from a team, Cooperative, Disloyal. Use the winning joke titled \"Neither Rain nor Slime\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
-  "featureImageBrief": "data/image-briefs/2026-06-01-external-real-2026-06-01.md"
+  "featureImageBrief": "data/image-briefs/2026-06-01-external-real-2026-06-01.md",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 0,
+    "fieldAverage": 0,
+    "judgeAverages": {},
+    "applied": false
+  }
 }

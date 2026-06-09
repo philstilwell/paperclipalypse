@@ -456,9 +456,18 @@
       "label": "Joke C",
       "contestantId": "google",
       "contestantName": "Gemini Flash",
-      "score": 7.5,
+      "score": 7.3,
+      "rawScore": 7.5,
+      "scoreAdjustment": -0.2,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "rawRubric": {
         "laugh": 7.3,
         "surprise": 7.3,
         "craft": 7.5,
@@ -469,21 +478,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
           "comment": "Strong concrete premise with a satisfying absurd escalation; the adoption turn and hourly-rate tag both land cleanly."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 7.4,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.4,
           "comment": "The escalation from ultimatum to adoption is genuinely funny and unexpected. 'Legally adopt me' is a fresh image. The final line pays off the logic rather than just restating it. Natural voice throughout."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.6,
+          "scoreAdjustment": -0.5,
           "comment": "Strong absurd twist with vivid setup and memorable payoff."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 7.6,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.3,
           "comment": "Fun premise with a sharper turn; good rhythm and a clear laugh line."
         }
       ],
@@ -494,9 +515,18 @@
       "label": "Joke D",
       "contestantId": "xai",
       "contestantName": "xAI Grok 4.3",
-      "score": 6.8,
+      "score": 6.9,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.9,
+        "craft": 6.6,
+        "originality": 6.4,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
         "laugh": 6.5,
         "surprise": 6.8,
         "craft": 6.5,
@@ -507,21 +537,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
           "comment": "Readable and stage-shaped, with a solid reversal, but the 'cry for help' line is familiar and the final exclusion gag is only mildly surprising."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 6.5,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.4,
           "comment": "The premise builds well but the ending overreaches — three beats past the natural punchline. 'He said no' is charming but the joke earned its laugh earlier and then kept going. Trim by one beat and it improves."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 8.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.8,
           "comment": "Starts with a cliché setup but completely salvages it with a wonderfully absurd, escalating twist and a clean hard-stop punchline."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.3,
           "comment": "Amusing idea with a clean structure; ending is funny but not especially surprising."
         }
       ],
@@ -532,9 +574,18 @@
       "label": "Joke A",
       "contestantId": "openai",
       "contestantName": "OpenAI GPT-5.4 Mini",
-      "score": 6.7,
+      "score": 6.8,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
         "laugh": 6.3,
         "surprise": 6.5,
         "craft": 7,
@@ -545,21 +596,33 @@
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 6.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.4,
           "comment": "Clean premise, good turn — the repairman's diagnosis lands well. 'Trying to end the marriage faster' is a solid final line with stage rhythm. Familiar domestic territory but executed with economy."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 8.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.8,
           "comment": "Strong economy and a punchline that lands well, utilizing a great rule of three, even if the 'sad man cave' premise is slightly familiar."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 6.2,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.5,
           "comment": "Solid visual premise and twist, but punchline lands mildly."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.3,
           "comment": "Clean, coherent, mildly funny; punchline is predictable but works."
         }
       ],
@@ -570,9 +633,18 @@
       "label": "Joke E",
       "contestantId": "copilot",
       "contestantName": "Copilot",
-      "score": 6.5,
+      "score": 6.4,
+      "rawScore": 6.5,
+      "scoreAdjustment": -0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.2,
+        "surprise": 5.7,
+        "craft": 6.7,
+        "originality": 5.7,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
         "laugh": 6.3,
         "surprise": 5.8,
         "craft": 6.8,
@@ -583,21 +655,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
           "comment": "Good imagery and a clean final line, but the joke stays in familiar messy-room territory and does not escalate far beyond the setup."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 5.6,
+          "rawScore": 6,
+          "scoreAdjustment": -0.4,
           "comment": "Competent and publishable. The raccoon garage sale image is the best line. The sandwich callback is mild and a bit familiar. No strong snap at the end — it coasts to a stop rather than landing."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 7.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.8,
           "comment": "Vivid descriptive writing ('garage sale hosted by a raccoon') elevates a standard messy-room premise into a competent, amusing bit."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.5,
           "comment": "Relatable mess and solid humble punchline, but premise familiar."
         }
       ],
@@ -608,9 +692,18 @@
       "label": "Joke B",
       "contestantId": "anthropic",
       "contestantName": "Claude Sonnet 4.6",
-      "score": 6.3,
+      "score": 6.4,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.1,
+        "craft": 6.3,
+        "originality": 5.6,
+        "promptFit": 9
+      },
+      "rawRubric": {
         "laugh": 6,
         "surprise": 6,
         "craft": 6.3,
@@ -621,21 +714,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
           "comment": "Clear first-person bit with a decent final turn, though the dialogue runs a little expected and the punchline is more clever than laugh-heavy."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5,
+          "scoreAdjustment": 0.8,
           "comment": "A bit repetitive in its dialogue structure and relies on a very tired sitcom-husband trope that lacks a punchy rhythm."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.5,
           "comment": "Sharp dialogue and cheeky escalation; good rhythm."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.3,
           "comment": "Solid escalation and a decent final turn; still a familiar marital‑ultimatum pattern."
         }
       ],
@@ -661,5 +766,21 @@
   },
   "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Bacon Grease\nExact joke text to render in the right panel:\nMy plumber gave me a strict ultimatum today. He stared at the absolute wreckage under my kitchen sink, wiped his hands on a rag, and said, 'Listen, man. You can either stop pouring hot bacon grease down the drain, or you can legally adopt me, because I basically live here now.' I'm setting up the guest room tonight. It's honestly way cheaper than his hourly rate.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Rich and Famous, Repairperson, Man Cave, Being given an ultimatum, Flirtatious, Abrasive.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
   "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Rich and Famous, Repairperson, Man Cave, Being given an ultimatum, Flirtatious, Abrasive. Use the winning joke titled \"Bacon Grease\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
-  "featureImageBrief": "data/image-briefs/2026-06-09-ext-real-2026-06-09.md"
+  "featureImageBrief": "data/image-briefs/2026-06-09-ext-real-2026-06-09.md",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.7,
+      "google": 5.5,
+      "xai": 6.8,
+      "copilot": 6.1
+    },
+    "applied": true
+  }
 }

@@ -1,4 +1,6 @@
 export const RUBRIC_VERSION = "2026-06-strict-standup-v4";
+export const JUDGE_NORMALIZATION_WINDOW = 5;
+export const JUDGE_NORMALIZATION_METHOD = "rolling-judge-bias-v1";
 
 export const RUBRIC_FIELDS = [
   {
@@ -137,7 +139,8 @@ export function normalizeJudgeScores(payload, jokeIds) {
     });
 }
 
-export function aggregateScores(jokes, judgeResults) {
+export function aggregateScores(jokes, judgeResults, options = {}) {
+  const judgeNormalization = options.judgeNormalization || null;
   const scorebook = new Map(
     jokes.map((joke) => [
       joke.id,
@@ -147,7 +150,9 @@ export function aggregateScores(jokes, judgeResults) {
         contestantId: joke.contestantId,
         contestantName: joke.contestantName,
         totals: [],
+        rawTotals: [],
         rubric: Object.fromEntries(RUBRIC.map((field) => [field, []])),
+        rawRubric: Object.fromEntries(RUBRIC.map((field) => [field, []])),
         comments: []
       }
     ])
@@ -160,32 +165,48 @@ export function aggregateScores(jokes, judgeResults) {
         continue;
       }
 
-      entry.totals.push(score.total);
+      const adjusted = adjustedJudgeScore(score, result.judgeId, judgeNormalization);
+      entry.totals.push(adjusted.total);
+      entry.rawTotals.push(score.total);
       for (const field of RUBRIC) {
-        entry.rubric[field].push(score[field]);
+        entry.rubric[field].push(adjusted.rubric[field]);
+        entry.rawRubric[field].push(score[field]);
       }
       if (score.comment) {
         entry.comments.push({
           judgeId: result.judgeId,
           judgeName: result.judgeName,
+          score: round(adjusted.total),
+          rawScore: round(score.total),
+          scoreAdjustment: round(adjusted.total - score.total),
           comment: score.comment
         });
       }
     }
   }
 
-  const rankings = Array.from(scorebook.values()).map((entry) => ({
-    jokeId: entry.jokeId,
-    label: entry.label,
-    contestantId: entry.contestantId,
-    contestantName: entry.contestantName,
-    score: round(average(entry.totals)),
-    judgeCount: entry.totals.length,
-    rubric: Object.fromEntries(
-      RUBRIC.map((field) => [field, round(average(entry.rubric[field]))])
-    ),
-    comments: entry.comments
-  }));
+  const rankings = Array.from(scorebook.values()).map((entry) => {
+    const score = round(average(entry.totals));
+    const rawScore = round(average(entry.rawTotals));
+
+    return {
+      jokeId: entry.jokeId,
+      label: entry.label,
+      contestantId: entry.contestantId,
+      contestantName: entry.contestantName,
+      score,
+      rawScore,
+      scoreAdjustment: round(score - rawScore),
+      judgeCount: entry.totals.length,
+      rubric: Object.fromEntries(
+        RUBRIC.map((field) => [field, round(average(entry.rubric[field]))])
+      ),
+      rawRubric: Object.fromEntries(
+        RUBRIC.map((field) => [field, round(average(entry.rawRubric[field]))])
+      ),
+      comments: entry.comments
+    };
+  });
 
   rankings.sort((a, b) => {
     if (b.score !== a.score) {
@@ -201,6 +222,75 @@ export function aggregateScores(jokes, judgeResults) {
     ...ranking,
     rank: index + 1
   }));
+}
+
+export function applyRollingJudgeNormalization(runs, options = {}) {
+  const windowSize = Number.isFinite(Number(options.windowSize))
+    ? Math.max(1, Math.round(Number(options.windowSize)))
+    : JUDGE_NORMALIZATION_WINDOW;
+  const chronological = [...runs].sort(compareRunsChronologically);
+  const publicHistory = [];
+  const normalizedBySlug = new Map();
+
+  for (const run of chronological) {
+    const context = rollingJudgeNormalizationContext(publicHistory, { windowSize });
+    const rankings = aggregateScores(run.jokes || [], run.judgeResults || [], {
+      judgeNormalization: context
+    });
+    const normalizedRun = {
+      ...run,
+      rankings,
+      scoring: scoringMetadata(context)
+    };
+
+    normalizedBySlug.set(run.slug, normalizedRun);
+    if (!run.dryRun) {
+      publicHistory.push(run);
+    }
+  }
+
+  return runs.map((run) => normalizedBySlug.get(run.slug) || run);
+}
+
+export function rollingJudgeNormalizationContext(previousRuns, options = {}) {
+  const windowSize = Number.isFinite(Number(options.windowSize))
+    ? Math.max(1, Math.round(Number(options.windowSize)))
+    : JUDGE_NORMALIZATION_WINDOW;
+  const windowRuns = [...previousRuns]
+    .filter((run) => !run.dryRun)
+    .sort(compareRunsChronologically)
+    .slice(-windowSize);
+  const fieldTotals = [];
+  const judgeTotals = new Map();
+
+  for (const run of windowRuns) {
+    for (const result of run.judgeResults || []) {
+      const judgeScores = judgeTotals.get(result.judgeId) || [];
+      for (const score of result.scores || []) {
+        const total = Number(score.total);
+        if (!Number.isFinite(total)) {
+          continue;
+        }
+        fieldTotals.push(total);
+        judgeScores.push(total);
+      }
+      judgeTotals.set(result.judgeId, judgeScores);
+    }
+  }
+
+  const fieldAverage = average(fieldTotals);
+  const judgeAverages = new Map(
+    [...judgeTotals.entries()].map(([judgeId, totals]) => [judgeId, average(totals)])
+  );
+
+  return {
+    method: JUDGE_NORMALIZATION_METHOD,
+    windowSize,
+    historyContestCount: windowRuns.length,
+    fieldAverage,
+    judgeAverages,
+    applied: windowRuns.length > 0 && Number.isFinite(fieldAverage) && fieldTotals.length > 0
+  };
 }
 
 export function deterministicDryScores(jokes, judges, rng) {
@@ -253,6 +343,55 @@ function average(values) {
   return usable.reduce((sum, value) => sum + value, 0) / usable.length;
 }
 
+function adjustedJudgeScore(score, judgeId, context) {
+  const rawTotal = Number(score.total);
+  const delta = judgeScoreAdjustment(judgeId, context);
+  const total = clampTotal(rawTotal + delta);
+  const actualDelta = total - rawTotal;
+
+  return {
+    total,
+    rubric: Object.fromEntries(
+      RUBRIC.map((field) => [field, clampTotal(Number(score[field]) + actualDelta)])
+    )
+  };
+}
+
+function judgeScoreAdjustment(judgeId, context) {
+  if (!context?.applied || !Number.isFinite(context.fieldAverage)) {
+    return 0;
+  }
+
+  const judgeAverage = context.judgeAverages instanceof Map
+    ? context.judgeAverages.get(judgeId)
+    : Number(context.judgeAverages?.[judgeId]);
+
+  if (!Number.isFinite(judgeAverage)) {
+    return 0;
+  }
+
+  return context.fieldAverage - judgeAverage;
+}
+
+function scoringMetadata(context) {
+  const judgeAverages = context?.judgeAverages instanceof Map
+    ? Object.fromEntries(
+      [...context.judgeAverages.entries()].map(([judgeId, value]) => [judgeId, round(value)])
+    )
+    : {};
+
+  return {
+    method: JUDGE_NORMALIZATION_METHOD,
+    label: "Judge-normalized adjusted score",
+    formula: "adjusted = raw - judge rolling average + field rolling average",
+    windowSize: context?.windowSize || JUDGE_NORMALIZATION_WINDOW,
+    historyContestCount: context?.historyContestCount || 0,
+    fieldAverage: round(context?.fieldAverage || 0),
+    judgeAverages,
+    applied: Boolean(context?.applied)
+  };
+}
+
 function weightedTotal(score) {
   const usable = RUBRIC_FIELDS.filter((field) => Number.isFinite(score[field.key]));
   if (!usable.length) {
@@ -265,6 +404,26 @@ function weightedTotal(score) {
 
 function round(value) {
   return Math.round(value * 10) / 10;
+}
+
+function clampTotal(value) {
+  if (!Number.isFinite(value)) {
+    return 0;
+  }
+
+  return Math.max(1, Math.min(10, value));
+}
+
+function compareRunsChronologically(a, b) {
+  return runSortKey(a).localeCompare(runSortKey(b));
+}
+
+function runSortKey(run) {
+  return [
+    run?.publishedDate || String(run?.createdAt || "").slice(0, 10),
+    run?.createdAt || "",
+    run?.slug || ""
+  ].join("|");
 }
 
 function swing(rng) {

@@ -456,8 +456,17 @@
       "contestantId": "google",
       "contestantName": "Gemini Flash",
       "score": 7.5,
+      "rawScore": 7.5,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 7.2,
+        "surprise": 7,
+        "craft": 8,
+        "originality": 7.2,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
         "laugh": 7.3,
         "surprise": 7,
         "craft": 8,
@@ -468,21 +477,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
           "comment": "Strong concrete scene, natural first-person voice, and a funny escalation from pottery class to emotional investment in gossip."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 7.7,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.1,
           "comment": "Strong. The escalation from 'relax' to 'deeply emotionally invested in the kiln technician's divorce' earns the laugh through accumulation. Patrick's specific gossip drop mid-centering is well-placed. The final line lands with good weight. Clean first-person stage rhythm throughout."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 7.5,
+          "rawScore": 7.5,
+          "scoreAdjustment": 0,
           "comment": "Strong rhythm, vivid escalation, and memorable final image. Excellent execution."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 7.6,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.3,
           "comment": "Strong premise, vivid details, and a clean final turn; genuinely good."
         }
       ],
@@ -494,8 +515,17 @@
       "contestantId": "openai",
       "contestantName": "OpenAI GPT-5.4 Mini",
       "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.1,
+        "craft": 6.8,
+        "originality": 6.8,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
         "laugh": 6.3,
         "surprise": 6,
         "craft": 6.8,
@@ -506,21 +536,33 @@
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
           "comment": "The Uber punchline is the clearest turn and lands reasonably well. Setup is a bit cluttered getting there, and 'tiny jockeys and a fence' is charming but not a knockout final image. Competent and publishable."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.5,
+          "scoreAdjustment": 0.2,
           "comment": "Clever comparison between betting on horses and dodging Ubers; strong, natural punchline and stage presence."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
           "comment": "Solid premise with a clean turn, but the laugh is mild rather than sharp."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6,
+          "scoreAdjustment": 0.3,
           "comment": "Solid premise with a clean turn; mildly funny but not especially sharp."
         }
       ],
@@ -531,9 +573,18 @@
       "label": "Joke E",
       "contestantId": "copilot",
       "contestantName": "Copilot",
-      "score": 6.4,
+      "score": 6.3,
+      "rawScore": 6.4,
+      "scoreAdjustment": -0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.9,
+        "surprise": 6.2,
+        "craft": 6.4,
+        "originality": 6.2,
+        "promptFit": 7.7
+      },
+      "rawRubric": {
         "laugh": 6,
         "surprise": 6.3,
         "craft": 6.5,
@@ -544,21 +595,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
           "comment": "Compact and clear with a real turn; the punchline works, though it lands as a mild joke rather than a standout."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
           "comment": "Tight and punchy. The reversal — neighbor as the actual danger — is clean, and 'You're the people' is a satisfying snap. Slight weakness: the setup could be sharper before the payoff. Genuinely good short joke with real stage economy."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 6,
+          "scoreAdjustment": 0.2,
           "comment": "The exact seed terms are a bit heavily signaled in the setup, but the snappy retort at the end lands cleanly."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0,
           "comment": "Clever tag but overall thin and the danger element feels underused."
         }
       ],
@@ -570,8 +633,17 @@
       "contestantId": "anthropic",
       "contestantName": "Claude Sonnet 4.6",
       "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 7.5
+      },
+      "rawRubric": {
         "laugh": 5.8,
         "surprise": 5.8,
         "craft": 6.5,
@@ -582,21 +654,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.9,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.3,
           "comment": "Clean stage rhythm and a decent final image, but the racetrack concept is thin and the payoff is more amusing than sharp."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.2,
           "comment": "Competent execution, but relies heavily on tired internet comedy tropes like 'buying mundane item and regret' as a closer."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
           "comment": "Fun visual but relies on familiar cyberpunk-mundane contrast; payoff is cute."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.3,
           "comment": "Fun image and good first-person rhythm; lands a light but real laugh."
         }
       ],
@@ -608,8 +692,17 @@
       "contestantId": "xai",
       "contestantName": "xAI Grok 4.3",
       "score": 4.7,
+      "rawScore": 4.7,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 4.3,
+        "surprise": 4,
+        "craft": 5,
+        "originality": 4.3,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
         "laugh": 4.3,
         "surprise": 4,
         "craft": 5,
@@ -620,21 +713,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.3,
+          "rawScore": 4.6,
+          "scoreAdjustment": -0.3,
           "comment": "Understandable and uses two seed concepts, but it mostly narrates the obvious danger and the final line is predictable."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 5.1,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.1,
           "comment": "The premise is clear but the execution is generic action-comedy narration. 'Minus one shoe and half my dignity' is a familiar template. The crowd-cheering closer restates rather than turns. Competent filler."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 3.5,
+          "rawScore": 3.3,
+          "scoreAdjustment": 0.2,
           "comment": "Reads like a generic slapstick anecdote rather than a stand-up bit; awkward exact-wording shoehorn and lacks a real punchline."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.3,
           "comment": "Clear story and timing, but the turn is predictable and less punchy."
         }
       ],
@@ -660,5 +765,21 @@
   },
   "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Pottery Class Drama\nExact joke text to render in the right panel:\nI started taking a pottery class to relax, but my instructor is incredibly gossipy. It is physically impossible to center a lump of wet clay on a spinning wheel while a man named Patrick leans in and whispers, “You know Sarah’s husband is living in an Airbnb, right?” I went in there to make a simple cereal bowl, but now I've got a lopsided ashtray and I'm deeply emotionally invested in the kiln technician's divorce.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Cyberpunk, Glassblower / Potter, Racetrack, A dangerous crossing, Private, Gossipy.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
   "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Cyberpunk, Glassblower / Potter, Racetrack, A dangerous crossing, Private, Gossipy. Use the winning joke titled \"Pottery Class Drama\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
-  "featureImageBrief": "data/image-briefs/2026-06-03-ext-real-2026-06-03.md"
+  "featureImageBrief": "data/image-briefs/2026-06-03-ext-real-2026-06-03.md",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 2,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.6,
+      "anthropic": 6.5,
+      "google": 6.2,
+      "xai": 6.4,
+      "copilot": 6.1
+    },
+    "applied": true
+  }
 }

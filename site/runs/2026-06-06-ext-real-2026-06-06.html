@@ -38,7 +38,7 @@
         <aside>
           <span>Winner</span>
           <strong>Gemini Flash</strong>
-          <em>7.6</em>
+          <em>7.4</em>
         </aside>
       </section>
       <nav class="memory-nav" aria-label="Memory Bank navigation">
@@ -52,7 +52,7 @@
         <a class="memory-button" href="../runs/2026-06-07-ext-real-2026-06-07.html" aria-label="Next Memory Bank episode: A dinosaur expert meets her final boss: a pigeon.">
           <span>Next<span aria-hidden="true">&rarr;</span></span>
           <strong>A dinosaur expert meets her final boss: a pigeon.</strong>
-          <small>Jun 7, 2026 / Winner: Claude Sonnet 4.6 (7.1)</small>
+          <small>Jun 7, 2026 / Winner: Claude Sonnet 4.6 (7.2)</small>
         </a>
       </nav>
 
@@ -63,8 +63,8 @@
         </div>
         <figure>
           <img src="../assets/feature-images/2026-06-06-ext-real-2026-06-06.jpg" alt="Paperclipalypse winning joke feature image titled The Hero&#39;s Dilemma: a paperclip stand-up comic and the winning joke scene." width="1024" height="506" loading="lazy">
-          <figcaption>Gemini Flash&#39;s winning joke / &quot;The Hero&#39;s Dilemma&quot; / 7.6 score</figcaption>
-          <p class="why-it-won"><strong>Why it won:</strong> It cleared the runner-up by 0.6 points, with its strongest marks in Prompt Fit and Laugh. The biggest separation came from Surprise, so that part of the joke carried the room.</p>
+          <figcaption>Gemini Flash&#39;s winning joke / &quot;The Hero&#39;s Dilemma&quot; / 7.4 score</figcaption>
+          <p class="why-it-won"><strong>Why it won:</strong> It cleared the runner-up by 0.3 points, with its strongest marks in Prompt Fit and Laugh. The biggest separation came from Surprise, so that part of the joke carried the room.</p>
         </figure>
       </section>
 
@@ -78,7 +78,7 @@
       <section class="scoreboard">
         <div class="section-heading">
           <p class="eyebrow">Judgment Matrix</p>
-          <h2>Scoreboard <span class="process-popover" tabindex="0" aria-label="How Paperclipalypse works. Codex picks six random seed terms. The same prompt goes to five AI contestants. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts. Each contestant then scores the four jokes it did not write. Codex checks that nothing is missing and no contestant judged itself. The site averages the rubric scores, publishes the ranked results, and shows each judge&#39;s score beside its critique.">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores, publishes the ranking, and shows each judge's score beside its critique.</span></span></span> <span class="prompt-popover" tabindex="0" aria-label="Current Judging Prompt. Each judge sees the four jokes it did not write; its own joke is removed.">Judge Prompt<span class="info-popover prompt-info"><strong>Current Judging Prompt</strong><span>Each judge sees the four jokes it did not write; its own joke is removed.</span><code>You are judging a Paperclipalypse AI comedy tournament.
+          <h2>Scoreboard <span class="process-popover" tabindex="0" aria-label="How Paperclipalypse works. Codex picks six random seed terms. The same prompt goes to five AI contestants. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts. Each contestant then scores the four jokes it did not write. Codex checks that nothing is missing and no contestant judged itself. The site adjusts each judge&#39;s numerical scores against that judge&#39;s average over up to five prior contests, publishes the ranked results, and shows each adjusted judge score beside its critique.">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site adjusts each judge's numerical scores against that judge's average over up to five prior contests, publishes the ranking, and shows each adjusted judge score beside its critique.</span></span></span> <span class="prompt-popover" tabindex="0" aria-label="Current Judging Prompt. Each judge sees the four jokes it did not write; its own joke is removed.">Judge Prompt<span class="info-popover prompt-info"><strong>Current Judging Prompt</strong><span>Each judge sees the four jokes it did not write; its own joke is removed.</span><code>You are judging a Paperclipalypse AI comedy tournament.
 
 Seed terms: Portal, Emergency Room Physician, Therapist&#39;s Office, Hurting someone to save them, Friendly, Antisocial
 
@@ -112,13 +112,15 @@ Jokes to judge:
 Return JSON only:
 {&quot;scores&quot;:[{&quot;jokeId&quot;:&quot;id&quot;,&quot;originality&quot;:7,&quot;surprise&quot;:7,&quot;craft&quot;:7,&quot;promptFit&quot;:7,&quot;laugh&quot;:7,&quot;comment&quot;:&quot;brief note&quot;}]}</code></span></span></h2>
         </div>
+
+        <p class="score-adjustment-note"><strong>Adjusted scoring:</strong> each raw judge total is corrected against that judge's rolling average from the previous 5 contests and the field's rolling average. This round used 5 prior contests; field baseline 6.3.</p>
         <div class="table-scroll">
         <table>
           <thead>
             <tr>
               <th>Rank</th>
               <th>Contestant</th>
-              <th>Score</th>
+              <th>Adjusted Score</th>
               <th>Joke</th>
               <th>Judges</th>
             </tr>
@@ -129,27 +131,32 @@ Return JSON only:
           <td>Gemini Flash</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>7.6</span><small>Breakdown</small></summary>
+              <summary><span>7.4</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>7.6</strong></div>
+                <div><span>Adjustment</span><strong>-0.2</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
-                <strong>7.5</strong>
+                <strong>7.4</strong>
               </div>
               <div>
                 <span>Surprise</span>
-                <strong>7.5</strong>
+                <strong>7.4</strong>
               </div>
               <div>
                 <span>Craft</span>
-                <strong>7.3</strong>
+                <strong>7.1</strong>
               </div>
               <div>
                 <span>Originality</span>
-                <strong>7.3</strong>
+                <strong>7.1</strong>
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>9.0</strong>
+                <strong>8.9</strong>
               </div>
               </div>
             </details></td>
@@ -161,7 +168,12 @@ Return JSON only:
           <td>Claude Sonnet 4.6</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>7.0</span><small>Breakdown</small></summary>
+              <summary><span>7.1</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>7.0</strong></div>
+                <div><span>Adjustment</span><strong>+0.1</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -169,19 +181,19 @@ Return JSON only:
               </div>
               <div>
                 <span>Surprise</span>
-                <strong>6.5</strong>
+                <strong>6.6</strong>
               </div>
               <div>
                 <span>Craft</span>
-                <strong>7.5</strong>
+                <strong>7.6</strong>
               </div>
               <div>
                 <span>Originality</span>
-                <strong>6.5</strong>
+                <strong>6.6</strong>
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>8.5</strong>
+                <strong>8.6</strong>
               </div>
               </div>
             </details></td>
@@ -190,10 +202,15 @@ Return JSON only:
         </tr>
         <tr>
           <td>3</td>
-          <td>Copilot</td>
+          <td>OpenAI GPT-5.4 Mini</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>6.5</span><small>Breakdown</small></summary>
+              <summary><span>6.6</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.5</strong></div>
+                <div><span>Adjustment</span><strong>+0.1</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -201,11 +218,48 @@ Return JSON only:
               </div>
               <div>
                 <span>Surprise</span>
-                <strong>5.8</strong>
+                <strong>6.1</strong>
               </div>
               <div>
                 <span>Craft</span>
                 <strong>6.8</strong>
+              </div>
+              <div>
+                <span>Originality</span>
+                <strong>6.1</strong>
+              </div>
+              <div>
+                <span>Prompt Fit</span>
+                <strong>8.8</strong>
+              </div>
+              </div>
+            </details></td>
+          <td>Joke A</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Copilot</td>
+          <td>
+            <details class="score-breakdown">
+              <summary><span>6.4</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.5</strong></div>
+                <div><span>Adjustment</span><strong>-0.1</strong></div>
+              </div>
+              <div class="score-breakdown-grid">
+              <div>
+                <span>Laugh</span>
+                <strong>6.2</strong>
+              </div>
+              <div>
+                <span>Surprise</span>
+                <strong>5.7</strong>
+              </div>
+              <div>
+                <span>Craft</span>
+                <strong>6.7</strong>
               </div>
               <div>
                 <span>Originality</span>
@@ -221,47 +275,20 @@ Return JSON only:
           <td>4</td>
         </tr>
         <tr>
-          <td>4</td>
-          <td>OpenAI GPT-5.4 Mini</td>
-          <td>
-            <details class="score-breakdown">
-              <summary><span>6.5</span><small>Breakdown</small></summary>
-              <div class="score-breakdown-grid">
-              <div>
-                <span>Laugh</span>
-                <strong>6.3</strong>
-              </div>
-              <div>
-                <span>Surprise</span>
-                <strong>6.0</strong>
-              </div>
-              <div>
-                <span>Craft</span>
-                <strong>6.8</strong>
-              </div>
-              <div>
-                <span>Originality</span>
-                <strong>6.0</strong>
-              </div>
-              <div>
-                <span>Prompt Fit</span>
-                <strong>8.8</strong>
-              </div>
-              </div>
-            </details></td>
-          <td>Joke A</td>
-          <td>4</td>
-        </tr>
-        <tr>
           <td>5</td>
           <td>xAI Grok 4.3</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>5.3</span><small>Breakdown</small></summary>
+              <summary><span>5.3</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>5.3</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
-                <strong>5.0</strong>
+                <strong>5.1</strong>
               </div>
               <div>
                 <span>Surprise</span>
@@ -277,7 +304,7 @@ Return JSON only:
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>7.0</strong>
+                <strong>7.1</strong>
               </div>
               </div>
             </details></td>
@@ -291,7 +318,7 @@ Return JSON only:
           <article>
             <span>Most Divisive Joke</span>
             <strong>Joke B / Claude Sonnet 4.6</strong>
-            <p>Judges ranged from 6.0 to 8.2, a 2.2-point split.</p>
+            <p>Adjusted judge scores ranged from 5.8 to 8.8, a 3.0-point split.</p>
           </article>
         </div>
       </section>
@@ -407,7 +434,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke A</span>
             <strong>OpenAI GPT-5.4 Mini</strong>
-            <span>6.5</span>
+            <span>6.6</span>
           </div>
           <h3>Bedside Manner</h3>
           <p class="standalone-joke">I have the bedside manner of an emergency room physician. My buddy started choking at dinner, so I did the Heimlich hard enough to crack a rib. He said, “You hurt me!” I said, “That’s how you know it’s working.” Now nobody asks me to open pickle jars.</p>
@@ -417,19 +444,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>6.9</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>6.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.9 / -0.3</small>
               <p>Clean escalation and the pickle jar button lands well. The &#39;that&#39;s how you know it&#39;s working&#39; line is a satisfying turn, though the overall shape is familiar. Solid stage joke.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>5.6</strong></h4>
+                <h4><span>Gemini Flash</span><strong>6.2</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.6 / +0.6</small>
               <p>The premise is solid, but the final punchline about pickle jars feels structurally disconnected from the Heimlich maneuver setup.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>xAI Grok 4.3</span><strong>7.3</strong></h4>
+                <h4><span>xAI Grok 4.3</span><strong>7.1</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.3 / -0.2</small>
               <p>Solid premise with strong final twist on pickle jars; natural delivery and good escalation.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>6.3</strong></h4>
+                <h4><span>Copilot</span><strong>6.4</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.3 / +0.1</small>
               <p>Solid premise with a clean turn; competent and mildly funny.</p>
               </article>
             </div>
@@ -439,7 +470,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke B</span>
             <strong>Claude Sonnet 4.6</strong>
-            <span>7.0</span>
+            <span>7.1</span>
           </div>
           <h3>Portal to Healing</h3>
           <p class="standalone-joke">I&#39;ve been seeing a therapist for six months and I finally understand what she means by &#39;opening a portal to your inner child.&#39; Last Tuesday I cried for forty minutes about a Capri Sun. Forty minutes. About the straw. About how I could never get the straw in. She called it a breakthrough. I called it seven dollars in parking.</p>
@@ -449,19 +480,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.3</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.1</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.3 / -0.2</small>
               <p>Clear first-person bit with a specific childhood image and a solid final deflation; not huge, but well-shaped.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>8.2</strong></h4>
+                <h4><span>Gemini Flash</span><strong>8.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 8.2 / +0.6</small>
               <p>Excellent stage rhythm and specific details. The escalation of the Capri Sun straw perfectly contrasts with the mundane reality of the parking fee punchline.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>xAI Grok 4.3</span><strong>6.0</strong></h4>
+                <h4><span>xAI Grok 4.3</span><strong>5.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.0 / -0.2</small>
               <p>Mild therapy absurdity with specific detail; relatable but follows expected inner-child trope.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>6.5</strong></h4>
+                <h4><span>Copilot</span><strong>6.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.5 / +0.1</small>
               <p>Good imagery and a relatable payoff; leans on familiar therapy beats but works.</p>
               </article>
             </div>
@@ -471,7 +506,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke C</span>
             <strong>Gemini Flash</strong>
-            <span>7.6</span>
+            <span>7.4</span>
           </div>
           <h3>The Hero&#39;s Dilemma</h3>
           <p class="standalone-joke">I&#39;m so antisocial that being a hero is my worst nightmare. A guy started choking at a diner the other day. I know the Heimlich maneuver, and I&#39;m completely fine with the concept of hurting someone to save them—bruise a rib, whatever. But if it works, he survives. And if he survives, I have to make awkward small talk while the whole restaurant claps. I just kept eating my fries. I figured he&#39;d want his privacy.</p>
@@ -481,19 +516,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.2</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.0</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.2 / -0.2</small>
               <p>Strong antisocial-hero premise with a satisfying privacy turn; a bit long, but the comic logic is clear.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>7.9</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>7.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.9 / -0.3</small>
               <p>The inversion is genuinely fresh: avoiding heroism not out of cowardice but to dodge social obligation. &#39;I figured he&#39;d want his privacy&#39; is an excellent final line. The fries detail grounds it. One of the stronger angles in the batch.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>xAI Grok 4.3</span><strong>8.0</strong></h4>
+                <h4><span>xAI Grok 4.3</span><strong>7.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 8.0 / -0.2</small>
               <p>Sharp ironic antisocial hero premise with clean, memorable punch on privacy; strong stage rhythm.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>7.2</strong></h4>
+                <h4><span>Copilot</span><strong>7.3</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.2 / +0.1</small>
               <p>Fresh angle on antisocial behavior with a strong final turn; the best of the batch.</p>
               </article>
             </div>
@@ -513,19 +552,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>5.4</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>5.2</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.4 / -0.2</small>
               <p>Understandable and stage-shaped, but it leans heavily on repeating the seed premise and the punchline is fairly expected.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>5.8</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>5.5</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.8 / -0.3</small>
               <p>Competent ER setup but the &#39;professional hurters with better parking spots&#39; ending is more clever than funny. The punchline tries too hard and the poker face line is a detour. Respectable filler.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>4.3</strong></h4>
+                <h4><span>Gemini Flash</span><strong>4.9</strong></h4>
+              <small class="judge-critique-adjustment">Raw 4.3 / +0.6</small>
               <p>Feels too literal and anecdotal. The seed terms are recited clumsily, and the final punchline lacks comic snap.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>5.6</strong></h4>
+                <h4><span>Copilot</span><strong>5.7</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.6 / +0.1</small>
               <p>Clear and competent but follows a predictable ER-shoulder-reset pattern.</p>
               </article>
             </div>
@@ -535,7 +578,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke E</span>
             <strong>Copilot</strong>
-            <span>6.5</span>
+            <span>6.4</span>
           </div>
           <h3>Coping Skills</h3>
           <p class="standalone-joke">I told my therapist I might be a little antisocial, and she said, “Try opening up to people.” So I did. I opened up to one guy in the waiting room, and he immediately switched seats. At this point I’m not antisocial—I’m just collecting data that everyone else agrees with my diagnosis.</p>
@@ -545,19 +588,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>6.4</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>6.2</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.4 / -0.2</small>
               <p>Clean therapy-room joke with a neat final line; familiar territory, but the diagnosis/data turn works.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>6.9</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>6.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.9 / -0.3</small>
               <p>Tight and clean. &#39;Collecting data that everyone agrees with my diagnosis&#39; reframes the premise neatly without being smug. The waiting room detail is concrete. Slightly predictable in shape but the final line earns it.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>6.5</strong></h4>
+                <h4><span>Gemini Flash</span><strong>7.1</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.5 / +0.6</small>
               <p>Clean construction with a solid, logical turn at the end. The premise is relatable and well-executed with good economy of words.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>xAI Grok 4.3</span><strong>6.0</strong></h4>
+                <h4><span>xAI Grok 4.3</span><strong>5.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.0 / -0.2</small>
               <p>Competent waiting-room bit but predictable payoff; mild smile at best.</p>
               </article>
             </div>
@@ -575,7 +622,7 @@ Return JSON only:
         <a class="memory-button" href="../runs/2026-06-07-ext-real-2026-06-07.html" aria-label="Next Memory Bank episode: A dinosaur expert meets her final boss: a pigeon.">
           <span>Next<span aria-hidden="true">&rarr;</span></span>
           <strong>A dinosaur expert meets her final boss: a pigeon.</strong>
-          <small>Jun 7, 2026 / Winner: Claude Sonnet 4.6 (7.1)</small>
+          <small>Jun 7, 2026 / Winner: Claude Sonnet 4.6 (7.2)</small>
         </a>
       </nav>
     </main>

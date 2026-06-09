@@ -456,9 +456,18 @@
       "label": "Joke C",
       "contestantId": "google",
       "contestantName": "Gemini Flash",
-      "score": 7.2,
+      "score": 7,
+      "rawScore": 7.2,
+      "scoreAdjustment": -0.2,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.6,
+        "craft": 7.6,
+        "originality": 6.3,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
         "laugh": 7,
         "surprise": 6.8,
         "craft": 7.8,
@@ -469,21 +478,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
           "comment": "Strongest stage rhythm in the batch, with clean escalation and a concrete Thanksgiving payoff; the wine/grudge metaphor is familiar but well executed."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 7.5,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.3,
           "comment": "Strong escalation and the Thanksgiving uncorking is a genuinely satisfying payoff. The grudge-as-aging-wine conceit is familiar in broad strokes, but the execution gives it real stage energy."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.4,
           "comment": "Strong extended metaphor with sharp family dinner payoff."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
           "comment": "Well-built metaphor with a clear escalation; funny image, though slightly long."
         }
       ],
@@ -494,9 +515,18 @@
       "label": "Joke E",
       "contestantId": "copilot",
       "contestantName": "Copilot",
-      "score": 6.3,
+      "score": 6.2,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.7,
+        "craft": 6.2,
+        "originality": 5.7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
         "laugh": 6,
         "surprise": 5.8,
         "craft": 6.3,
@@ -507,21 +537,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.2,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.2,
           "comment": "Competent mild joke with a clear defensive whodunit angle, but the live-alone turn is familiar and slightly muddied by the friend setup."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
           "comment": "'I live alone' is a genuinely clean reversal and 'interrogated myself over my own snack crimes' is a fun closing image. Concise and well-timed."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 5.9,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.7,
           "comment": "Demonstrates competent pacing and escalation, but the twist is heavily overused in modern stand-up."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.4,
           "comment": "Relatable visual bit with clean self-aware snap."
         }
       ],
@@ -532,9 +574,18 @@
       "label": "Joke B",
       "contestantId": "anthropic",
       "contestantName": "Claude Sonnet 4.6",
-      "score": 6,
+      "score": 6.1,
+      "rawScore": 6,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
         "laugh": 5.5,
         "surprise": 5.8,
         "craft": 6.3,
@@ -545,21 +596,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.6,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.2,
           "comment": "Clear setup and a nice self-inverting turn, though the final line is more clever than laugh-heavy."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 5.3,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.7,
           "comment": "Starts with a relatable premise but devolves into a weak, introspective metaphor that does not land as a joke."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.4,
           "comment": "Cute self-own twist, mildly relatable."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
           "comment": "Strong first-person framing and a neat self-reveal; lands as a mild but real joke."
         }
       ],
@@ -570,9 +633,18 @@
       "label": "Joke A",
       "contestantId": "openai",
       "contestantName": "OpenAI GPT-5.4 Mini",
-      "score": 5.9,
+      "score": 6,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 6.5,
+        "originality": 5.3,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
         "laugh": 5.5,
         "surprise": 5.3,
         "craft": 6.5,
@@ -583,21 +655,33 @@
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
           "comment": "Clean concept and the wine-tasting language as murder evidence is a nice inversion, but the punchline lands softly; 'long finish' is the only real turn and it feels like the joke ends where it should accelerate."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.7,
           "comment": "Solidly constructed but relies on a familiar trope; gets a mild smile but lacks a strong, unexpected turn."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.4,
           "comment": "Solid wine pun but predictable trope."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.2,
           "comment": "Clean structure and a clear turn, but the punchline is predictable and mild."
         }
       ],
@@ -608,9 +692,18 @@
       "label": "Joke D",
       "contestantId": "xai",
       "contestantName": "xAI Grok 4.3",
-      "score": 5.3,
+      "score": 5.4,
+      "rawScore": 5.3,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.6,
+        "craft": 5.6,
+        "originality": 4.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
         "laugh": 5,
         "surprise": 4.5,
         "craft": 5.5,
@@ -621,21 +714,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.4,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.2,
           "comment": "Readable and in form, but the Picasso line and cardio tag feel generic and the turn does not sharpen much beyond the setup."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 5.7,
+          "rawScore": 6,
+          "scoreAdjustment": -0.3,
           "comment": "The Picasso line is a solid mid-joke beat, but 'holding grudges is my cardio' is a well-worn closer that deflates the finish."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 4.8,
+          "rawScore": 4.1,
+          "scoreAdjustment": 0.7,
           "comment": "Heavy reliance on dated phrasings limits the humor; reads more like a sitcom caricature than fresh stand-up."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.2,
           "comment": "Solid premise and rhythm, but the turn is familiar and the punchline is light."
         }
       ],
@@ -661,5 +766,21 @@
   },
   "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Aged to Perfection\nExact joke text to render in the right panel:\nPeople say I need to learn to let things go, but I just can't do it. I treat my grudges the way a master vintner treats a fine wine. I lock them in a cold, dark cellar in my brain. I rotate them occasionally. I wait ten to fifteen years until they are perfectly, exquisitely bitter. And then, right when nobody expects it, I uncork that bad boy at Thanksgiving dinner and force my entire family to taste it.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Whodunit, Vintner, Homeless Shelter, Being unable to forgive someone, Funny, Defensive.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
   "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Whodunit, Vintner, Homeless Shelter, Being unable to forgive someone, Funny, Defensive. Use the winning joke titled \"Aged to Perfection\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
-  "featureImageBrief": "data/image-briefs/2026-06-08-ext-real-2026-06-08.md"
+  "featureImageBrief": "data/image-briefs/2026-06-08-ext-real-2026-06-08.md",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.7,
+      "google": 5.6,
+      "xai": 6.8,
+      "copilot": 6.1
+    },
+    "applied": true
+  }
 }

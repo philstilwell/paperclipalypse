@@ -38,7 +38,7 @@
         <aside>
           <span>Winner</span>
           <strong>Gemini Flash</strong>
-          <em>7.6</em>
+          <em>7.5</em>
         </aside>
       </section>
       <nav class="memory-nav" aria-label="Memory Bank navigation">
@@ -63,8 +63,8 @@
         </div>
         <figure>
           <img src="../assets/feature-images/2026-06-04-ext-real-2026-06-05.jpg" alt="Paperclipalypse winning joke feature image titled Thermal Journey: a paperclip stand-up comic, joke text, and the joke scene." width="1024" height="506" loading="lazy">
-          <figcaption>Gemini Flash&#39;s winning joke / &quot;Thermal Journey&quot; / 7.6 score</figcaption>
-          <p class="why-it-won"><strong>Why it won:</strong> It cleared the runner-up by 0.6 points, with its strongest marks in Prompt Fit and Craft. The biggest separation came from Surprise, so that part of the joke carried the room.</p>
+          <figcaption>Gemini Flash&#39;s winning joke / &quot;Thermal Journey&quot; / 7.5 score</figcaption>
+          <p class="why-it-won"><strong>Why it won:</strong> It cleared the runner-up by 0.5 points, with its strongest marks in Prompt Fit and Craft. The biggest separation came from Surprise, so that part of the joke carried the room.</p>
         </figure>
       </section>
 
@@ -78,7 +78,7 @@
       <section class="scoreboard">
         <div class="section-heading">
           <p class="eyebrow">Judgment Matrix</p>
-          <h2>Scoreboard <span class="process-popover" tabindex="0" aria-label="How Paperclipalypse works. Codex picks six random seed terms. The same prompt goes to five AI contestants. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts. Each contestant then scores the four jokes it did not write. Codex checks that nothing is missing and no contestant judged itself. The site averages the rubric scores, publishes the ranked results, and shows each judge&#39;s score beside its critique.">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores, publishes the ranking, and shows each judge's score beside its critique.</span></span></span> <span class="prompt-popover" tabindex="0" aria-label="Current Judging Prompt. Each judge sees the four jokes it did not write; its own joke is removed.">Judge Prompt<span class="info-popover prompt-info"><strong>Current Judging Prompt</strong><span>Each judge sees the four jokes it did not write; its own joke is removed.</span><code>You are judging a Paperclipalypse AI comedy tournament.
+          <h2>Scoreboard <span class="process-popover" tabindex="0" aria-label="How Paperclipalypse works. Codex picks six random seed terms. The same prompt goes to five AI contestants. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts. Each contestant then scores the four jokes it did not write. Codex checks that nothing is missing and no contestant judged itself. The site adjusts each judge&#39;s numerical scores against that judge&#39;s average over up to five prior contests, publishes the ranked results, and shows each adjusted judge score beside its critique.">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site adjusts each judge's numerical scores against that judge's average over up to five prior contests, publishes the ranking, and shows each adjusted judge score beside its critique.</span></span></span> <span class="prompt-popover" tabindex="0" aria-label="Current Judging Prompt. Each judge sees the four jokes it did not write; its own joke is removed.">Judge Prompt<span class="info-popover prompt-info"><strong>Current Judging Prompt</strong><span>Each judge sees the four jokes it did not write; its own joke is removed.</span><code>You are judging a Paperclipalypse AI comedy tournament.
 
 Seed terms: Young adult/Kids, Politician, Spa, A house fire, Unselfish, Impulsive
 
@@ -112,13 +112,15 @@ Jokes to judge:
 Return JSON only:
 {&quot;scores&quot;:[{&quot;jokeId&quot;:&quot;id&quot;,&quot;originality&quot;:7,&quot;surprise&quot;:7,&quot;craft&quot;:7,&quot;promptFit&quot;:7,&quot;laugh&quot;:7,&quot;comment&quot;:&quot;brief note&quot;}]}</code></span></span></h2>
         </div>
+
+        <p class="score-adjustment-note"><strong>Adjusted scoring:</strong> each raw judge total is corrected against that judge's rolling average from the previous 5 contests and the field's rolling average. This round used 3 prior contests; field baseline 6.3.</p>
         <div class="table-scroll">
         <table>
           <thead>
             <tr>
               <th>Rank</th>
               <th>Contestant</th>
-              <th>Score</th>
+              <th>Adjusted Score</th>
               <th>Joke</th>
               <th>Judges</th>
             </tr>
@@ -129,27 +131,32 @@ Return JSON only:
           <td>Gemini Flash</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>7.6</span><small>Breakdown</small></summary>
+              <summary><span>7.5</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>7.6</strong></div>
+                <div><span>Adjustment</span><strong>-0.1</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
-                <strong>7.3</strong>
+                <strong>7.2</strong>
               </div>
               <div>
                 <span>Surprise</span>
-                <strong>7.5</strong>
+                <strong>7.4</strong>
               </div>
               <div>
                 <span>Craft</span>
-                <strong>8.0</strong>
+                <strong>7.9</strong>
               </div>
               <div>
                 <span>Originality</span>
-                <strong>7.3</strong>
+                <strong>7.2</strong>
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>9.0</strong>
+                <strong>8.9</strong>
               </div>
               </div>
             </details></td>
@@ -161,11 +168,16 @@ Return JSON only:
           <td>Claude Sonnet 4.6</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>7.0</span><small>Breakdown</small></summary>
+              <summary><span>7.0</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>7.0</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
-                <strong>6.5</strong>
+                <strong>6.6</strong>
               </div>
               <div>
                 <span>Surprise</span>
@@ -173,7 +185,7 @@ Return JSON only:
               </div>
               <div>
                 <span>Craft</span>
-                <strong>7.5</strong>
+                <strong>7.6</strong>
               </div>
               <div>
                 <span>Originality</span>
@@ -193,11 +205,16 @@ Return JSON only:
           <td>Copilot</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>5.8</span><small>Breakdown</small></summary>
+              <summary><span>5.8</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>5.8</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
-                <strong>5.3</strong>
+                <strong>5.2</strong>
               </div>
               <div>
                 <span>Surprise</span>
@@ -205,15 +222,15 @@ Return JSON only:
               </div>
               <div>
                 <span>Craft</span>
-                <strong>6.3</strong>
+                <strong>6.2</strong>
               </div>
               <div>
                 <span>Originality</span>
-                <strong>5.3</strong>
+                <strong>5.2</strong>
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>8.3</strong>
+                <strong>8.2</strong>
               </div>
               </div>
             </details></td>
@@ -225,7 +242,12 @@ Return JSON only:
           <td>OpenAI GPT-5.4 Mini</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>5.7</span><small>Breakdown</small></summary>
+              <summary><span>5.8</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>5.7</strong></div>
+                <div><span>Adjustment</span><strong>+0.1</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -245,7 +267,7 @@ Return JSON only:
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>8.8</strong>
+                <strong>8.7</strong>
               </div>
               </div>
             </details></td>
@@ -257,7 +279,12 @@ Return JSON only:
           <td>xAI Grok 4.3</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>5.1</span><small>Breakdown</small></summary>
+              <summary><span>5.2</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>5.1</strong></div>
+                <div><span>Adjustment</span><strong>+0.1</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -277,7 +304,7 @@ Return JSON only:
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>8.8</strong>
+                <strong>8.7</strong>
               </div>
               </div>
             </details></td>
@@ -291,7 +318,7 @@ Return JSON only:
           <article>
             <span>Most Divisive Joke</span>
             <strong>Joke A / OpenAI GPT-5.4 Mini</strong>
-            <p>Judges ranged from 4.0 to 6.7, a 2.7-point split.</p>
+            <p>Adjusted judge scores ranged from 4.3 to 6.6, a 2.3-point split.</p>
           </article>
         </div>
       </section>
@@ -407,7 +434,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke A</span>
             <strong>OpenAI GPT-5.4 Mini</strong>
-            <span>5.7</span>
+            <span>5.8</span>
           </div>
           <h3>Deep Cleanse</h3>
           <p class="standalone-joke">I went to a spa, and the attendant said, “Today we’re doing a deep cleanse.” I said, “Perfect—treat my face like a politician’s search history.” She put mud on me, covered my eyes with cucumbers, and charged me $180. That’s when I realized politics is just skincare for people whose pores have lobbyists.</p>
@@ -417,19 +444,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>6.4</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>6.2</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.4 / -0.2</small>
               <p>The lobbyist-pores closer is the strongest line and earns its place; the setup is a bit leisurely and the mud/cucumber beat is filler, but the final image lands with reasonable snap.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>4.0</strong></h4>
+                <h4><span>Gemini Flash</span><strong>4.3</strong></h4>
+              <small class="judge-critique-adjustment">Raw 4.0 / +0.3</small>
               <p>Starts with a decent setup but the punchline descends into nonsensical word salad (&#39;pores have lobbyists&#39;) that completely kills the momentum.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>xAI Grok 4.3</span><strong>6.7</strong></h4>
+                <h4><span>xAI Grok 4.3</span><strong>6.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.7 / -0.1</small>
               <p>Clever extended metaphor but relies on familiar politician tropes; mild chuckle.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>5.8</strong></h4>
+                <h4><span>Copilot</span><strong>6.0</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.8 / +0.2</small>
               <p>Solid premise with a clear turn, but the punchline is more clever than funny.</p>
               </article>
             </div>
@@ -449,19 +480,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.4</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.3</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.4 / -0.1</small>
               <p>Clear standalone premise with a strong political turn; final line lands well, though the cynicism angle is familiar.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>6.2</strong></h4>
+                <h4><span>Gemini Flash</span><strong>6.5</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.2 / +0.3</small>
               <p>Possesses a very natural stage rhythm. The punchline is a bit of a familiar cynical observation, but it is well-executed and lands cleanly.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>xAI Grok 4.3</span><strong>7.6</strong></h4>
+                <h4><span>xAI Grok 4.3</span><strong>7.5</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.6 / -0.1</small>
               <p>Sharp, relatable turn with good timing and relatable parent-kid dynamic.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>6.6</strong></h4>
+                <h4><span>Copilot</span><strong>6.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.6 / +0.2</small>
               <p>Clean structure and a good final turn; lands a mild but real laugh.</p>
               </article>
             </div>
@@ -471,7 +506,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke C</span>
             <strong>Gemini Flash</strong>
-            <span>7.6</span>
+            <span>7.5</span>
           </div>
           <h3>Thermal Journey</h3>
           <p class="standalone-joke">I went to one of those ultra-zen, aggressively calm spas last week. Halfway through my hot stone massage, the fire alarm goes off. There&#39;s a literal house fire next door, and smoke is pouring through the vents. My masseuse didn&#39;t even break rhythm. She just leaned in, lowered her voice to a whisper, and said, &#39;We are now incorporating authentic hickory aromatherapy into your thermal journey.&#39; I said, &#39;Lady, my thermal journey is to the parking lot.&#39;</p>
@@ -481,19 +516,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.7</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.7 / -0.1</small>
               <p>Best constructed stage bit here: vivid escalation, good spa-language parody, and a clean final punchline.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>7.9</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>7.7</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.9 / -0.2</small>
               <p>&#39;Authentic hickory aromatherapy&#39; is genuinely excellent reframing, and the masseuse staying in spa-voice while the building burns is a well-executed comic premise. The closing line is punchy and earns it. One of the stronger jokes in the batch.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>xAI Grok 4.3</span><strong>7.4</strong></h4>
+                <h4><span>xAI Grok 4.3</span><strong>7.3</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.4 / -0.1</small>
               <p>Strong visual escalation and punchy exit line; solid stage rhythm.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>7.5</strong></h4>
+                <h4><span>Copilot</span><strong>7.7</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.5 / +0.2</small>
               <p>Strong scene, good escalation, and a funny final line; the most polished of the set.</p>
               </article>
             </div>
@@ -503,7 +542,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke D</span>
             <strong>xAI Grok 4.3</strong>
-            <span>5.1</span>
+            <span>5.2</span>
           </div>
           <h3>Kitchen Campfire</h3>
           <p class="standalone-joke">Hey folks, I&#39;m way too impulsive. Last week I walk in the door and there&#39;s a house fire going in my kitchen. Normal people call 911. Me? I grab the marshmallows, chocolate, and graham crackers. Firefighters kick the door in yelling &#39;Get out!&#39; and I&#39;m sitting there roasting s&#39;mores like it&#39;s summer camp. &#39;One more, guys!&#39; Now I&#39;m couch-surfing with my neighbors, but damn... those were the best s&#39;mores I ever had.</p>
@@ -513,19 +552,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>5.1</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>5.0</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.1 / -0.1</small>
               <p>Understandable and on prompt, but the s&#39;mores-in-a-fire turn is very expected and the ending mostly restates the premise.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>6.0</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>5.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.0 / -0.2</small>
               <p>The s&#39;mores turn is charming and the firefighter beat works, but the punchline (&#39;best s&#39;mores I ever had&#39;) is the predictable landing once the setup is clear. Likable and functional but not surprising.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>3.7</strong></h4>
+                <h4><span>Gemini Flash</span><strong>4.0</strong></h4>
+              <small class="judge-critique-adjustment">Raw 3.7 / +0.3</small>
               <p>Extremely literal combination of the seed terms using a hacky, cliche stand-up framework (&#39;Normal people do X. Me?&#39;). Too cartoonish to evoke a real laugh.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>5.7</strong></h4>
+                <h4><span>Copilot</span><strong>5.9</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.7 / +0.2</small>
               <p>Clear first-person bit with a coherent turn, but the s&#39;mores angle is predictable.</p>
               </article>
             </div>
@@ -545,19 +588,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>6.5</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>6.4</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.5 / -0.1</small>
               <p>Polished and coherent with a decent closing line, but the politician-as-false-promiser comparison is fairly standard.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>5.5</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>5.3</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.5 / -0.2</small>
               <p>&#39;Even my pores don&#39;t believe campaign promises&#39; is a decent closing line, but the inner-politician conceit is vague and the steam-room setup doesn&#39;t build to anything unexpected. Competent but forgettable.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>5.7</strong></h4>
+                <h4><span>Gemini Flash</span><strong>6.0</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.7 / +0.3</small>
               <p>Comparing the oppressive heat of a steam room to an &#39;inner politician&#39; promising big changes is a clever observation, though the final sentence trails off weakly.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>xAI Grok 4.3</span><strong>5.5</strong></h4>
+                <h4><span>xAI Grok 4.3</span><strong>5.4</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.5 / -0.1</small>
               <p>Generic inner-politician analogy; competent but predictable and forgettable.</p>
               </article>
             </div>

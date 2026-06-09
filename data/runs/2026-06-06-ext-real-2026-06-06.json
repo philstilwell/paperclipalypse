@@ -456,9 +456,18 @@
       "label": "Joke C",
       "contestantId": "google",
       "contestantName": "Gemini Flash",
-      "score": 7.6,
+      "score": 7.4,
+      "rawScore": 7.6,
+      "scoreAdjustment": -0.2,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 7.4,
+        "surprise": 7.4,
+        "craft": 7.1,
+        "originality": 7.1,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
         "laugh": 7.5,
         "surprise": 7.5,
         "craft": 7.3,
@@ -469,21 +478,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
           "comment": "Strong antisocial-hero premise with a satisfying privacy turn; a bit long, but the comic logic is clear."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 7.6,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.3,
           "comment": "The inversion is genuinely fresh: avoiding heroism not out of cowardice but to dodge social obligation. 'I figured he'd want his privacy' is an excellent final line. The fries detail grounds it. One of the stronger angles in the batch."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 7.8,
+          "rawScore": 8,
+          "scoreAdjustment": -0.2,
           "comment": "Sharp ironic antisocial hero premise with clean, memorable punch on privacy; strong stage rhythm."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 7.3,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.1,
           "comment": "Fresh angle on antisocial behavior with a strong final turn; the best of the batch."
         }
       ],
@@ -494,9 +515,18 @@
       "label": "Joke B",
       "contestantId": "anthropic",
       "contestantName": "Claude Sonnet 4.6",
-      "score": 7,
+      "score": 7.1,
+      "rawScore": 7,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.6,
+        "craft": 7.6,
+        "originality": 6.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
         "laugh": 6.8,
         "surprise": 6.5,
         "craft": 7.5,
@@ -507,72 +537,55 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
           "comment": "Clear first-person bit with a specific childhood image and a solid final deflation; not huge, but well-shaped."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 8.8,
+          "rawScore": 8.2,
+          "scoreAdjustment": 0.6,
           "comment": "Excellent stage rhythm and specific details. The escalation of the Capri Sun straw perfectly contrasts with the mundane reality of the parking fee punchline."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6,
+          "scoreAdjustment": -0.2,
           "comment": "Mild therapy absurdity with specific detail; relatable but follows expected inner-child trope."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.1,
           "comment": "Good imagery and a relatable payoff; leans on familiar therapy beats but works."
         }
       ],
       "rank": 2
     },
     {
-      "jokeId": "copilot",
-      "label": "Joke E",
-      "contestantId": "copilot",
-      "contestantName": "Copilot",
-      "score": 6.5,
-      "judgeCount": 4,
-      "rubric": {
-        "laugh": 6.3,
-        "surprise": 5.8,
-        "craft": 6.8,
-        "originality": 6,
-        "promptFit": 8.5
-      },
-      "comments": [
-        {
-          "judgeId": "openai",
-          "judgeName": "OpenAI GPT-5.4 Mini",
-          "comment": "Clean therapy-room joke with a neat final line; familiar territory, but the diagnosis/data turn works."
-        },
-        {
-          "judgeId": "anthropic",
-          "judgeName": "Claude Sonnet 4.6",
-          "comment": "Tight and clean. 'Collecting data that everyone agrees with my diagnosis' reframes the premise neatly without being smug. The waiting room detail is concrete. Slightly predictable in shape but the final line earns it."
-        },
-        {
-          "judgeId": "google",
-          "judgeName": "Gemini Flash",
-          "comment": "Clean construction with a solid, logical turn at the end. The premise is relatable and well-executed with good economy of words."
-        },
-        {
-          "judgeId": "xai",
-          "judgeName": "xAI Grok 4.3",
-          "comment": "Competent waiting-room bit but predictable payoff; mild smile at best."
-        }
-      ],
-      "rank": 3
-    },
-    {
       "jokeId": "openai",
       "label": "Joke A",
       "contestantId": "openai",
       "contestantName": "OpenAI GPT-5.4 Mini",
-      "score": 6.5,
+      "score": 6.6,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.1,
+        "craft": 6.8,
+        "originality": 6.1,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
         "laugh": 6.3,
         "surprise": 6,
         "craft": 6.8,
@@ -583,22 +596,93 @@
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 6.6,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.3,
           "comment": "Clean escalation and the pickle jar button lands well. The 'that's how you know it's working' line is a satisfying turn, though the overall shape is familiar. Solid stage joke."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.6,
           "comment": "The premise is solid, but the final punchline about pickle jars feels structurally disconnected from the Heimlich maneuver setup."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
           "comment": "Solid premise with strong final twist on pickle jars; natural delivery and good escalation."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
           "comment": "Solid premise with a clean turn; competent and mildly funny."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.4,
+      "rawScore": 6.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 5.7,
+        "craft": 6.7,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean therapy-room joke with a neat final line; familiar territory, but the diagnosis/data turn works."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.6,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Tight and clean. 'Collecting data that everyone agrees with my diagnosis' reframes the premise neatly without being smug. The waiting room detail is concrete. Slightly predictable in shape but the final line earns it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.6,
+          "comment": "Clean construction with a solid, logical turn at the end. The premise is relatable and well-executed with good economy of words."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6,
+          "scoreAdjustment": -0.2,
+          "comment": "Competent waiting-room bit but predictable payoff; mild smile at best."
         }
       ],
       "rank": 4
@@ -609,8 +693,17 @@
       "contestantId": "xai",
       "contestantName": "xAI Grok 4.3",
       "score": 5.3,
+      "rawScore": 5.3,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.8,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 7.1
+      },
+      "rawRubric": {
         "laugh": 5,
         "surprise": 4.8,
         "craft": 5.8,
@@ -621,21 +714,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.2,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.2,
           "comment": "Understandable and stage-shaped, but it leans heavily on repeating the seed premise and the punchline is fairly expected."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 5.5,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.3,
           "comment": "Competent ER setup but the 'professional hurters with better parking spots' ending is more clever than funny. The punchline tries too hard and the poker face line is a detour. Respectable filler."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 4.9,
+          "rawScore": 4.3,
+          "scoreAdjustment": 0.6,
           "comment": "Feels too literal and anecdotal. The seed terms are recited clumsily, and the final punchline lacks comic snap."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.1,
           "comment": "Clear and competent but follows a predictable ER-shoulder-reset pattern."
         }
       ],
@@ -661,5 +766,21 @@
   },
   "featureImagePrompt": "Create one polished web feature image for Paperclipalypse.\n\nASPECT RATIO: exactly 2:1, horizontal wide banner.\n\nThis must be a clear illustrated comedy poster, not a busy comic page.\n\nLayout:\n- LEFT 40%: one clean full-color illustration. A charming anthropomorphic metallic paperclip stand-up comedian at a microphone on a small stage, with a simple diner scene behind him: one choking diner, one calm antisocial diner eating fries. Keep this side simple and uncluttered.\n- RIGHT 60%: one flat dark charcoal poster panel with a bronze frame. This panel is mostly typography. Use large cream-white plain sans-serif lettering, like a clean printed poster, not distorted hand lettering.\n\nTEXT ACCURACY IS THE TOP PRIORITY. The right poster panel must contain exactly these lines, with normal spaces between words:\n\nI'm so antisocial that being a hero\nis my worst nightmare.\n\nA guy started choking at a diner.\nI know the Heimlich maneuver,\nand I'm fine with bruising a rib\nto save him.\n\nBut if it works, he survives.\nAnd if he survives, I have to make\nawkward small talk while the whole\nrestaurant claps.\n\nI kept eating my fries.\nI figured he'd want his privacy.\n\nRules:\n- Spell every word correctly.\n- Do not merge words together.\n- Do not invent letters.\n- Keep the text entirely inside the right panel with generous margins.\n- Do not add any other visible words, signs, captions, labels, logos, watermarks, signatures, or fake microtext anywhere else.\n- If space is tight, make the illustration simpler and the right text panel larger. Do not remove, rewrite, or garble the text.",
   "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Portal, Emergency Room Physician, Therapist's Office, Hurting someone to save them, Friendly, Antisocial. Use the winning joke titled \"The Hero's Dilemma\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
-  "featureImageBrief": "data/image-briefs/2026-06-06-ext-real-2026-06-06.md"
+  "featureImageBrief": "data/image-briefs/2026-06-06-ext-real-2026-06-06.md",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.5,
+      "google": 5.7,
+      "xai": 6.5,
+      "copilot": 6.1
+    },
+    "applied": true
+  }
 }

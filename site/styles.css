@@ -620,6 +620,7 @@ main {
 
 .standings-hero-panel,
 .model-selection-note,
+.score-normalization-note,
 .trend-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -648,11 +649,13 @@ main {
   line-height: 1.55;
 }
 
-.model-selection-note {
+.model-selection-note,
+.score-normalization-note {
   padding: 22px 24px;
 }
 
-.model-selection-note h2 {
+.model-selection-note h2,
+.score-normalization-note h2 {
   color: var(--bone);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.85rem;
@@ -660,7 +663,8 @@ main {
   margin-bottom: 12px;
 }
 
-.model-selection-note p:not(.eyebrow) {
+.model-selection-note p:not(.eyebrow),
+.score-normalization-note p:not(.eyebrow) {
   max-width: 900px;
   color: var(--muted);
   font-size: 0.98rem;
@@ -668,8 +672,13 @@ main {
   line-height: 1.58;
 }
 
-.model-selection-note p:last-child {
+.model-selection-note p:last-child,
+.score-normalization-note p:last-child {
   margin-bottom: 0;
+}
+
+.score-normalization-note strong {
+  color: var(--bone);
 }
 
 .standings-summary-grid {
@@ -800,6 +809,22 @@ main {
   min-width: 132px;
 }
 
+.score-adjustment-note {
+  border: 1px solid rgba(194, 138, 87, 0.2);
+  border-radius: 8px;
+  background: rgba(194, 138, 87, 0.07);
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 760;
+  line-height: 1.45;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+}
+
+.score-adjustment-note strong {
+  color: var(--bone);
+}
+
 .score-breakdown summary {
   cursor: pointer;
   display: inline-flex;
@@ -839,6 +864,27 @@ main {
   gap: 6px;
   margin-top: 10px;
   min-width: 190px;
+}
+
+.score-breakdown-meta {
+  border-bottom: 1px solid rgba(176, 185, 196, 0.1);
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+  padding-bottom: 8px;
+}
+
+.score-breakdown-meta div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  color: var(--dim);
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.score-breakdown-meta strong {
+  color: var(--bone);
 }
 
 .score-breakdown-grid div {
@@ -1508,6 +1554,14 @@ td:nth-child(4) {
   padding: 3px 6px;
 }
 
+.judge-critique-adjustment {
+  color: var(--dim);
+  display: block;
+  font-size: 0.66rem;
+  font-weight: 850;
+  margin: 0 0 5px;
+}
+
 .judge-critique p {
   color: var(--muted);
   margin: 0;
@@ -1759,6 +1813,7 @@ td:nth-child(4) {
 
   .standings-hero-panel,
   .model-selection-note,
+  .score-normalization-note,
   .trend-card {
     padding: 18px;
   }

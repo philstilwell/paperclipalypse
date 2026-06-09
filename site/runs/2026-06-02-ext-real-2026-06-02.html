@@ -38,7 +38,7 @@
         <aside>
           <span>Winner</span>
           <strong>Gemini Flash</strong>
-          <em>7.7</em>
+          <em>7.6</em>
         </aside>
       </section>
       <nav class="memory-nav" aria-label="Memory Bank navigation">
@@ -63,8 +63,8 @@
         </div>
         <figure>
           <img src="../assets/feature-images/2026-06-02-ext-real-2026-06-02.jpg" alt="Paperclipalypse winning joke feature image titled Times Square Triage: a paperclip stand-up comic, joke text, and the joke scene." width="1024" height="506" loading="lazy">
-          <figcaption>Gemini Flash&#39;s winning joke / &quot;Times Square Triage&quot; / 7.7 score</figcaption>
-          <p class="why-it-won"><strong>Why it won:</strong> It cleared the runner-up by 1.0 points, with its strongest marks in Prompt Fit and Craft. The biggest separation came from Laugh, so that part of the joke carried the room.</p>
+          <figcaption>Gemini Flash&#39;s winning joke / &quot;Times Square Triage&quot; / 7.6 score</figcaption>
+          <p class="why-it-won"><strong>Why it won:</strong> It cleared the runner-up by 0.8 points, with its strongest marks in Prompt Fit and Craft. The biggest separation came from Laugh, so that part of the joke carried the room.</p>
         </figure>
       </section>
 
@@ -78,7 +78,7 @@
       <section class="scoreboard">
         <div class="section-heading">
           <p class="eyebrow">Judgment Matrix</p>
-          <h2>Scoreboard <span class="process-popover" tabindex="0" aria-label="How Paperclipalypse works. Codex picks six random seed terms. The same prompt goes to five AI contestants. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts. Each contestant then scores the four jokes it did not write. Codex checks that nothing is missing and no contestant judged itself. The site averages the rubric scores, publishes the ranked results, and shows each judge&#39;s score beside its critique.">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores, publishes the ranking, and shows each judge's score beside its critique.</span></span></span> <span class="prompt-popover" tabindex="0" aria-label="Current Judging Prompt. Each judge sees the four jokes it did not write; its own joke is removed.">Judge Prompt<span class="info-popover prompt-info"><strong>Current Judging Prompt</strong><span>Each judge sees the four jokes it did not write; its own joke is removed.</span><code>You are judging a Paperclipalypse AI comedy tournament.
+          <h2>Scoreboard <span class="process-popover" tabindex="0" aria-label="How Paperclipalypse works. Codex picks six random seed terms. The same prompt goes to five AI contestants. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts. Each contestant then scores the four jokes it did not write. Codex checks that nothing is missing and no contestant judged itself. The site adjusts each judge&#39;s numerical scores against that judge&#39;s average over up to five prior contests, publishes the ranked results, and shows each adjusted judge score beside its critique.">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site adjusts each judge's numerical scores against that judge's average over up to five prior contests, publishes the ranking, and shows each adjusted judge score beside its critique.</span></span></span> <span class="prompt-popover" tabindex="0" aria-label="Current Judging Prompt. Each judge sees the four jokes it did not write; its own joke is removed.">Judge Prompt<span class="info-popover prompt-info"><strong>Current Judging Prompt</strong><span>Each judge sees the four jokes it did not write; its own joke is removed.</span><code>You are judging a Paperclipalypse AI comedy tournament.
 
 Seed terms: Young Adult, Tour Guide, Beach, Being unable to save everyone, Socially Aware, Uncouth
 
@@ -112,13 +112,15 @@ Jokes to judge:
 Return JSON only:
 {&quot;scores&quot;:[{&quot;jokeId&quot;:&quot;id&quot;,&quot;originality&quot;:7,&quot;surprise&quot;:7,&quot;craft&quot;:7,&quot;promptFit&quot;:7,&quot;laugh&quot;:7,&quot;comment&quot;:&quot;brief note&quot;}]}</code></span></span></h2>
         </div>
+
+        <p class="score-adjustment-note"><strong>Adjusted scoring:</strong> each raw judge total is corrected against that judge's rolling average from the previous 5 contests and the field's rolling average. This round used 1 prior contest; field baseline 6.3.</p>
         <div class="table-scroll">
         <table>
           <thead>
             <tr>
               <th>Rank</th>
               <th>Contestant</th>
-              <th>Score</th>
+              <th>Adjusted Score</th>
               <th>Joke</th>
               <th>Judges</th>
             </tr>
@@ -129,27 +131,32 @@ Return JSON only:
           <td>Gemini Flash</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>7.7</span><small>Breakdown</small></summary>
+              <summary><span>7.6</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>7.7</strong></div>
+                <div><span>Adjustment</span><strong>-0.1</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
-                <strong>7.5</strong>
+                <strong>7.4</strong>
               </div>
               <div>
                 <span>Surprise</span>
-                <strong>7.5</strong>
+                <strong>7.4</strong>
               </div>
               <div>
                 <span>Craft</span>
-                <strong>7.8</strong>
+                <strong>7.6</strong>
               </div>
               <div>
                 <span>Originality</span>
-                <strong>7.5</strong>
+                <strong>7.4</strong>
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>9.0</strong>
+                <strong>8.9</strong>
               </div>
               </div>
             </details></td>
@@ -161,27 +168,32 @@ Return JSON only:
           <td>OpenAI GPT-5.4 Mini</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>6.7</span><small>Breakdown</small></summary>
+              <summary><span>6.8</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.7</strong></div>
+                <div><span>Adjustment</span><strong>+0.1</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
-                <strong>6.3</strong>
+                <strong>6.4</strong>
               </div>
               <div>
                 <span>Surprise</span>
-                <strong>6.3</strong>
+                <strong>6.4</strong>
               </div>
               <div>
                 <span>Craft</span>
-                <strong>7.0</strong>
+                <strong>7.1</strong>
               </div>
               <div>
                 <span>Originality</span>
-                <strong>6.3</strong>
+                <strong>6.4</strong>
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>9.0</strong>
+                <strong>9.1</strong>
               </div>
               </div>
             </details></td>
@@ -193,15 +205,20 @@ Return JSON only:
           <td>Claude Sonnet 4.6</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>6.3</span><small>Breakdown</small></summary>
+              <summary><span>6.3</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.3</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
-                <strong>6.0</strong>
+                <strong>6.1</strong>
               </div>
               <div>
                 <span>Surprise</span>
-                <strong>6.0</strong>
+                <strong>6.1</strong>
               </div>
               <div>
                 <span>Craft</span>
@@ -213,7 +230,7 @@ Return JSON only:
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>7.5</strong>
+                <strong>7.6</strong>
               </div>
               </div>
             </details></td>
@@ -225,27 +242,32 @@ Return JSON only:
           <td>Copilot</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>6.3</span><small>Breakdown</small></summary>
+              <summary><span>6.2</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.3</strong></div>
+                <div><span>Adjustment</span><strong>-0.1</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
-                <strong>5.8</strong>
+                <strong>5.7</strong>
               </div>
               <div>
                 <span>Surprise</span>
-                <strong>6.3</strong>
+                <strong>6.2</strong>
               </div>
               <div>
                 <span>Craft</span>
-                <strong>6.5</strong>
+                <strong>6.4</strong>
               </div>
               <div>
                 <span>Originality</span>
-                <strong>6.3</strong>
+                <strong>6.2</strong>
               </div>
               <div>
                 <span>Prompt Fit</span>
-                <strong>8.0</strong>
+                <strong>7.9</strong>
               </div>
               </div>
             </details></td>
@@ -257,7 +279,12 @@ Return JSON only:
           <td>xAI Grok 4.3</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>4.7</span><small>Breakdown</small></summary>
+              <summary><span>4.7</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>4.7</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -291,7 +318,7 @@ Return JSON only:
           <article>
             <span>Most Divisive Joke</span>
             <strong>Joke E / Copilot</strong>
-            <p>Judges ranged from 5.5 to 7.6, a 2.1-point split.</p>
+            <p>Adjusted judge scores ranged from 5.5 to 8.0, a 2.5-point split.</p>
           </article>
         </div>
       </section>
@@ -407,7 +434,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke A</span>
             <strong>OpenAI GPT-5.4 Mini</strong>
-            <span>6.7</span>
+            <span>6.8</span>
           </div>
           <h3>Beach Exhibit</h3>
           <p class="standalone-joke">I was a tour guide at a beach, which is the easiest job in the world until someone points at the ocean and asks, “What’s that?” I said, “That’s our largest exhibit. It’s interactive, it follows you home in your shoes, and unlike the aquarium, it slaps back when you tap the glass.”</p>
@@ -417,19 +444,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>7.1</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>6.9</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.1 / -0.2</small>
               <p>The &#39;interactive exhibit&#39; framing is genuinely clever and the triple escalation lands well. &#39;Slaps back when you tap the glass&#39; is a strong final image. Loses a point because the setup (dumb tourist question) is a familiar template, but the execution earns it back partially.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>7.4</strong></h4>
+                <h4><span>Gemini Flash</span><strong>7.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.4 / +0.4</small>
               <p>Strong structure with a sharp punchline that effectively utilizes the rule of three to personify the ocean.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>xAI Grok 4.3</span><strong>6.5</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.5 / 0.0</small>
               <p>Solid beach-as-museum bit with clean ocean punch, but turn is fairly expected.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>5.7</strong></h4>
+                <h4><span>Copilot</span><strong>6.0</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.7 / +0.3</small>
               <p>Clean premise with a mild twist; amusing but not especially strong.</p>
               </article>
             </div>
@@ -449,19 +480,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>6.4</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>5.9</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.4 / -0.5</small>
               <p>Clean self-awareness turn and good rhythm, though the museum-explainer premise is more amusing than laugh-heavy.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>6.4</strong></h4>
+                <h4><span>Gemini Flash</span><strong>6.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.4 / +0.4</small>
               <p>A solid premise with good contrast in the setup, though the punchline feels a bit standard for the &#39;awkward over-explainer&#39; trope.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>xAI Grok 4.3</span><strong>6.1</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.1 / 0.0</small>
               <p>Know-it-all museum explainer is familiar; guard bit lands but prompt stretch on &#39;Tour Guide&#39;.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>6.2</strong></h4>
+                <h4><span>Copilot</span><strong>6.5</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.2 / +0.3</small>
               <p>Solid character-based humor with a clear turn; lands a mild real laugh.</p>
               </article>
             </div>
@@ -471,7 +506,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke C</span>
             <strong>Gemini Flash</strong>
-            <span>7.7</span>
+            <span>7.6</span>
           </div>
           <h3>Times Square Triage</h3>
           <p class="standalone-joke">I used to be a walking tour guide in Times Square. The hardest part of the job is accepting that you simply can&#39;t save everyone. In every group, some dad spots a three-story M&amp;M store and just wanders off. You have to make the hard triage decisions. Do I chase him into the neon abyss, or do I protect the herd? I just put a hand on his wife&#39;s shoulder and say, &#39;Let him go, Brenda. The peanut ones have him now.&#39;</p>
@@ -481,19 +516,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>8.1</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 8.1 / -0.5</small>
               <p>Strong stage premise, escalating triage language, and a memorable final image with the M&amp;M store payoff.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>8.1</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>7.9</strong></h4>
+              <small class="judge-critique-adjustment">Raw 8.1 / -0.2</small>
               <p>Best in batch. &#39;The peanut ones have him now&#39; is a genuinely quotable final line with real snap. The triage framing applied to a wandering dad is a non-obvious angle, the escalation is clean, and &#39;Brenda&#39; adds a grounding specificity that sells the bit. Strong human-level joke.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>xAI Grok 4.3</span><strong>7.4</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.4 / 0.0</small>
               <p>Strong premise, fresh triage angle, and memorable &#39;peanut ones&#39; closer. Best in batch.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>7.2</strong></h4>
+                <h4><span>Copilot</span><strong>7.5</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.2 / +0.3</small>
               <p>Strong structure, vivid imagery, and a memorable final line; genuinely good.</p>
               </article>
             </div>
@@ -513,19 +552,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>4.5</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>4.0</strong></h4>
+              <small class="judge-critique-adjustment">Raw 4.5 / -0.5</small>
               <p>Clear setup but the Aquaman line is expected, the drowning joke feels blunt, and the final tag weakens the landing.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>4.6</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>4.4</strong></h4>
+              <small class="judge-critique-adjustment">Raw 4.6 / -0.2</small>
               <p>The premise is workable but the punchline (&#39;drowning part&#39;s on you&#39;) is a weak restatement of the obvious irony already implied by the setup. &#39;Got the biggest tip of the season&#39; is an unearned button that adds nothing. The comic logic doesn&#39;t quite hold either—a guide shrugging at actual drowning plays mean rather than absurd.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>4.3</strong></h4>
+                <h4><span>Gemini Flash</span><strong>4.7</strong></h4>
+              <small class="judge-critique-adjustment">Raw 4.3 / +0.4</small>
               <p>The scenario feels contrived and cartoony, ending on a cliché &#39;got a huge tip&#39; closer that deflates the comedic tension.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Copilot</span><strong>5.4</strong></h4>
+                <h4><span>Copilot</span><strong>5.7</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.4 / +0.3</small>
               <p>Functional and clear but follows a predictable path; competent but not standout.</p>
               </article>
             </div>
@@ -535,7 +578,7 @@ Return JSON only:
           <div class="joke-meta">
             <span>Joke E</span>
             <strong>Copilot</strong>
-            <span>6.3</span>
+            <span>6.2</span>
           </div>
           <h3>Beach Wisdom</h3>
           <p class="standalone-joke">I was at the beach trying to relax, and this totally uncouth guy stomped over and asked if I could watch his stuff. I said sure, thinking it was a towel. No—he hands me a full grocery bag of loose sandwiches. I’ve never felt more responsible in my life. I guarded that bag like it was national treasure, because nothing ruins a beach day like becoming the guy who lost someone’s mystery sandwiches.</p>
@@ -545,19 +588,23 @@ Return JSON only:
             <div class="judge-critique-list">
 
               <article class="judge-critique">
-                <h4><span>OpenAI GPT-5.4 Mini</span><strong>6.2</strong></h4>
+                <h4><span>OpenAI GPT-5.4 Mini</span><strong>5.7</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.2 / -0.5</small>
               <p>The loose-sandwiches image is concrete and odd in a useful way, but the payoff is mild rather than sharp.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Claude Sonnet 4.6</span><strong>5.8</strong></h4>
+                <h4><span>Claude Sonnet 4.6</span><strong>5.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.8 / -0.2</small>
               <p>&#39;Mystery sandwiches&#39; is a nice specific detail and the situation is grounded. But the joke coasts on the observation without finding a real turn—the punchline restates the premise rather than flipping it. Competent and publishable as filler; not a winner.</p>
               </article>
               <article class="judge-critique">
-                <h4><span>Gemini Flash</span><strong>7.6</strong></h4>
+                <h4><span>Gemini Flash</span><strong>8.0</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.6 / +0.4</small>
               <p>Excellent use of highly specific details. &#39;Loose sandwiches&#39; is a brilliant, grounded comic image that escalates perfectly.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>xAI Grok 4.3</span><strong>5.5</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.5 / 0.0</small>
               <p>Mild sandwich responsibility payoff feels slight and low-stakes.</p>
               </article>
             </div>

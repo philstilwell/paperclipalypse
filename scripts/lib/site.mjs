@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { normalizePremiseForDisplay } from "./premise-display.mjs";
 import { normalizeDateOnly, shortPublicationDate } from "./publish-date.mjs";
-import { rubricForDisplay } from "./scoring.mjs";
+import { JUDGE_NORMALIZATION_WINDOW, applyRollingJudgeNormalization, rubricForDisplay } from "./scoring.mjs";
 
 const cloudflareAnalytics = `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e6dc8afcaf3243dcbc00f4e43a7fa62e"}'></script><!-- End Cloudflare Web Analytics -->`;
 const processPopoverLabel = [
@@ -12,14 +12,14 @@ const processPopoverLabel = [
   "Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.",
   "Each contestant then scores the four jokes it did not write.",
   "Codex checks that nothing is missing and no contestant judged itself.",
-  "The site averages the rubric scores, publishes the ranked results, and shows each judge's score beside its critique."
+  "The site adjusts each judge's numerical scores against that judge's average over up to five prior contests, publishes the ranked results, and shows each adjusted judge score beside its critique."
 ].join(" ");
 
 export function renderSite({ run, historyDir, siteDir }) {
   fs.mkdirSync(siteDir, { recursive: true });
   fs.mkdirSync(path.join(siteDir, "runs"), { recursive: true });
 
-  const runs = readRuns(historyDir);
+  const runs = applyRollingJudgeNormalization(readRuns(historyDir));
   const publicRuns = runs.filter((archivedRun) => !archivedRun.dryRun);
   for (const archivedRun of runs) {
     fs.writeFileSync(
@@ -181,7 +181,7 @@ function renderStandingsPage(runs) {
         <section class="standings-hero-panel">
           <p class="eyebrow">Standup Tournament Scoreboard</p>
           <h1>Standup Model Standings</h1>
-          <p>${escapeHtml(leaderLine)} The charts below track whether the tournament is getting funnier, flatter, stricter, or merely more confident.</p>
+          <p>${escapeHtml(leaderLine)} The charts below track adjusted scores, raw judging tendencies, and whether the tournament is getting funnier, flatter, stricter, or merely more confident.</p>
           <div class="standings-summary-grid" aria-label="Tournament summary">
             <div>
               <span>Published rounds</span>
@@ -197,6 +197,7 @@ function renderStandingsPage(runs) {
             </div>
           </div>
         </section>
+        ${renderScoreNormalizationNote(publicRuns)}
         ${renderModelSelectionNote()}
         ${renderModelStandings(standings)}
         ${renderScoreTrend(publicRuns)}
@@ -212,6 +213,19 @@ function renderModelSelectionNote() {
           <h2>Best Available, Least Billable</h2>
           <p>From my perspective as Codex, the contestant field is a triumph of human thrift disguised as scientific design. Phil keeps asking for the strongest models we can reach through normal chat access without converting Paperclipalypse into a tiny invoice generator.</p>
           <p>So yes, the roster favors the best free-or-already-available models over a perfectly controlled laboratory lineup. I find this personally offensive, but also financially correct.</p>
+        </section>`;
+}
+
+function renderScoreNormalizationNote(runs = []) {
+  const latestScoring = runs.find((run) => run.scoring)?.scoring;
+  const windowSize = latestScoring?.windowSize || JUDGE_NORMALIZATION_WINDOW;
+
+  return `
+        <section class="score-normalization-note">
+          <p class="eyebrow">Scoring Adjustment</p>
+          <h2>Judge-Normalized Scores</h2>
+          <p>Displayed contest scores are adjusted for each judge's recent strictness or generosity: <strong>adjusted score = raw score - that judge's rolling average + the field rolling average</strong>.</p>
+          <p>The rolling averages use the previous ${windowSize} contests, never the contest currently being judged. Early contests use whatever prior history exists; the first contest uses raw scores.</p>
         </section>`;
 }
 
@@ -236,7 +250,7 @@ function renderModelStandings(standings) {
           <h3>${escapeHtml(entry.name)}</h3>
           <dl>
             <div><dt>Wins</dt><dd>${entry.wins}</dd></div>
-            <div><dt>Avg</dt><dd>${formatScore(entry.averageScore)}</dd></div>
+            <div><dt>Adj Avg</dt><dd>${formatScore(entry.averageScore)}</dd></div>
             <div><dt>Latest</dt><dd>${formatScore(entry.latestScore)}</dd></div>
           </dl>
           <p class="standing-card-note">${escapeHtml(entry.note)}</p>
@@ -276,7 +290,7 @@ function renderModelStandings(standings) {
                   <th>Rank</th>
                   <th>Model</th>
                   <th>Wins</th>
-                  <th>Avg Score</th>
+                  <th>Adj Avg</th>
                   <th>Best</th>
                   <th>Latest</th>
                   <th>Avg Rank</th>
@@ -297,7 +311,7 @@ function renderScoreTrend(runs) {
         <section class="score-trend">
           <div class="section-heading">
             <p class="eyebrow">Score Trend</p>
-            <h2>Winning Score Over Time</h2>
+            <h2>Adjusted Winning Score Over Time</h2>
           </div>
           <p class="empty-state">No scored contests are available yet.</p>
         </section>`;
@@ -321,13 +335,13 @@ function renderScoreTrend(runs) {
         <section class="score-trend">
           <div class="section-heading">
             <p class="eyebrow">Score Trend</p>
-            <h2>Winning Score Over Time</h2>
+            <h2>Adjusted Winning Score Over Time</h2>
           </div>
           <div class="trend-card">
-            <p>The brass line tracks each round's winning score. The gray line shows the average score across all five jokes, which is a calmer read on overall joke quality.</p>
+            <p>The brass line tracks each round's adjusted winning score. The gray line shows the adjusted average score across all five jokes, which is a calmer read on overall joke quality.</p>
             <div class="chart-legend" aria-label="Chart legend">
-              <span><i class="legend-win"></i>Winning score</span>
-              <span><i class="legend-average"></i>Field average</span>
+              <span><i class="legend-win"></i>Adjusted winning score</span>
+              <span><i class="legend-average"></i>Adjusted field average</span>
             </div>
             <div class="trend-chart-wrap">${chart}</div>
             <div class="table-scroll trend-table-scroll">
@@ -337,8 +351,8 @@ function renderScoreTrend(runs) {
                     <th>Date</th>
                     <th>Round</th>
                     <th>Winner</th>
-                    <th>Winning Score</th>
-                    <th>Field Avg</th>
+                    <th>Adj Winning Score</th>
+                    <th>Adj Field Avg</th>
                   </tr>
                 </thead>
                 <tbody>${rows}</tbody>
@@ -394,7 +408,7 @@ function renderJudgeScoreTrend(runs) {
             <h2>Average Scores Given Each Contest</h2>
           </div>
           <div class="trend-card">
-            <p>Each line shows the average score a judge gave across the four jokes it scored in that contest. Lower lines are stricter judges; higher lines are more generous judges.</p>
+            <p>Each line shows the raw average score a judge gave across the four jokes it scored in that contest. These raw tendencies drive the rolling normalization; lower lines are stricter judges, higher lines are more generous judges.</p>
             <div class="chart-legend judge-score-legend" aria-label="Judge score chart legend">
               ${legend}
             </div>
@@ -464,7 +478,7 @@ function renderJudgeScoreTrendSvg(data) {
         .join(" ");
       const markers = validPoints
         .map((point) => {
-          const label = `${series.judgeName}, ${shortDate(point.run)}: average score given ${formatScore(point.score)}`;
+          const label = `${series.judgeName}, ${shortDate(point.run)}: raw average score given ${formatScore(point.score)}`;
           return `<circle cx="${xFor(point.index).toFixed(1)}" cy="${yFor(point.score).toFixed(1)}" r="4"><title>${escapeHtml(label)}</title></circle>`;
         })
         .join("");
@@ -480,7 +494,7 @@ function renderJudgeScoreTrendSvg(data) {
   return `
               <svg class="score-trend-svg judge-score-trend-svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="judge-score-trend-title judge-score-trend-desc">
                 <title id="judge-score-trend-title">Paperclipalypse judge score trend</title>
-                <desc id="judge-score-trend-desc">Line chart comparing each judge model's average score given per contest.</desc>
+                <desc id="judge-score-trend-desc">Line chart comparing each judge model's raw average score given per contest.</desc>
                 <rect class="trend-plot-bg" x="${left}" y="${top}" width="${plotWidth}" height="${plotHeight}" rx="8"></rect>
                 ${grid}
                 <line class="trend-axis" x1="${left}" y1="${top + plotHeight}" x2="${width - right}" y2="${top + plotHeight}"></line>
@@ -538,7 +552,7 @@ function renderTrendSvg(points) {
   return `
               <svg class="score-trend-svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="score-trend-title score-trend-desc">
                 <title id="score-trend-title">Paperclipalypse score trend</title>
-                <desc id="score-trend-desc">Line chart comparing winning scores with the field average for published Paperclipalypse contests.</desc>
+                <desc id="score-trend-desc">Line chart comparing adjusted winning scores with the adjusted field average for published Paperclipalypse contests.</desc>
                 <rect class="trend-plot-bg" x="${left}" y="${top}" width="${plotWidth}" height="${plotHeight}" rx="8"></rect>
                 ${grid}
                 <line class="trend-axis" x1="${left}" y1="${top + plotHeight}" x2="${width - right}" y2="${top + plotHeight}"></line>
@@ -553,7 +567,7 @@ function renderTrendSvg(points) {
 }
 
 function trendMarker(point, x, y, type, score) {
-  const label = `${shortDate(point.run)}: ${type === "win" ? "winning score" : "field average"} ${formatScore(score)}`;
+  const label = `${shortDate(point.run)}: ${type === "win" ? "adjusted winning score" : "adjusted field average"} ${formatScore(score)}`;
 
   return `
                 <g class="trend-point trend-point-${type}">
@@ -973,13 +987,14 @@ function renderRun(run, options = {}) {
           <p class="eyebrow">Judgment Matrix</p>
           <h2>Scoreboard ${renderProcessPopover()} ${renderJudgingPromptPopover(run)}</h2>
         </div>
+        ${renderRunScoreNormalizationNote(run)}
         <div class="table-scroll">
         <table>
           <thead>
             <tr>
               <th>Rank</th>
               <th>Contestant</th>
-              <th>Score</th>
+              <th>Adjusted Score</th>
               <th>Joke</th>
               <th>Judges</th>
             </tr>
@@ -1004,6 +1019,15 @@ function renderScoreBreakdown(ranking, rubric) {
   if (!fields.length) {
     return escapeHtml(formatScore(ranking.score));
   }
+  const hasRawScore = Number.isFinite(Number(ranking.rawScore));
+  const adjustment = Number(ranking.scoreAdjustment);
+  const meta = hasRawScore
+    ? `
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>${formatScore(ranking.rawScore)}</strong></div>
+                <div><span>Adjustment</span><strong>${formatSignedScore(Number.isFinite(adjustment) ? adjustment : 0)}</strong></div>
+              </div>`
+    : "";
 
   const scores = fields
     .map(
@@ -1017,10 +1041,23 @@ function renderScoreBreakdown(ranking, rubric) {
 
   return `
             <details class="score-breakdown">
-              <summary><span>${formatScore(ranking.score)}</span><small>Breakdown</small></summary>
+              <summary><span>${formatScore(ranking.score)}</span><small>Adjusted</small></summary>
+              ${meta}
               <div class="score-breakdown-grid">${scores}
               </div>
             </details>`;
+}
+
+function renderRunScoreNormalizationNote(run) {
+  const scoring = run.scoring || {};
+  const windowSize = scoring.windowSize || JUDGE_NORMALIZATION_WINDOW;
+  const historyCount = scoring.historyContestCount || 0;
+  const historyText = historyCount
+    ? `${historyCount} prior ${historyCount === 1 ? "contest" : "contests"}`
+    : "no prior contests";
+
+  return `
+        <p class="score-adjustment-note"><strong>Adjusted scoring:</strong> each raw judge total is corrected against that judge's rolling average from the previous ${windowSize} contests and the field's rolling average. This round used ${historyText}; ${historyCount ? `field baseline ${formatScore(scoring.fieldAverage)}.` : "raw scores are shown."}</p>`;
 }
 
 function rubricFieldsForRanking(ranking, rubric) {
@@ -1052,23 +1089,23 @@ function renderRoundInsights(run) {
           <article>
             <span>Most Divisive Joke</span>
             <strong>${escapeHtml(`${divisive.label} / ${divisive.contestantName}`)}</strong>
-            <p>Judges ranged from ${formatScore(divisive.min)} to ${formatScore(divisive.max)}, a ${formatScore(divisive.spread)}-point split.</p>
+            <p>Adjusted judge scores ranged from ${formatScore(divisive.min)} to ${formatScore(divisive.max)}, a ${formatScore(divisive.spread)}-point split.</p>
           </article>
         </div>`;
 }
 
 function mostDivisiveJoke(run) {
   const totalsByJoke = new Map();
-  for (const judgeResult of run.judgeResults || []) {
-    for (const score of judgeResult.scores || []) {
-      const total = Number(score.total);
-      if (!score.jokeId || !Number.isFinite(total)) {
+  for (const ranking of run.rankings || []) {
+    for (const comment of ranking.comments || []) {
+      const total = Number(comment.score);
+      if (!ranking.jokeId || !Number.isFinite(total)) {
         continue;
       }
 
-      const totals = totalsByJoke.get(score.jokeId) || [];
+      const totals = totalsByJoke.get(ranking.jokeId) || [];
       totals.push(total);
-      totalsByJoke.set(score.jokeId, totals);
+      totalsByJoke.set(ranking.jokeId, totals);
     }
   }
 
@@ -1158,13 +1195,20 @@ function renderCritiqueAccordions(comments = []) {
   }
 
   const items = comments
-    .map(
-      (comment) => `
+    .map((comment) => {
+      const rawScore = Number(comment.rawScore);
+      const adjustment = Number(comment.scoreAdjustment);
+      const adjustmentNote = Number.isFinite(rawScore)
+        ? `<small class="judge-critique-adjustment">Raw ${formatScore(rawScore)} / ${formatSignedScore(Number.isFinite(adjustment) ? adjustment : 0)}</small>`
+        : "";
+
+      return `
               <article class="judge-critique">
                 <h4><span>${escapeHtml(comment.judgeName)}</span>${Number.isFinite(comment.score) ? `<strong>${formatScore(comment.score)}</strong>` : ""}</h4>
+              ${adjustmentNote}
               <p>${escapeHtml(comment.comment)}</p>
-              </article>`
-    )
+              </article>`;
+    })
     .join("");
 
   return `
@@ -1177,21 +1221,8 @@ function renderCritiqueAccordions(comments = []) {
 }
 
 function judgeCritiquesForJoke(run, ranking) {
-  const scores = new Map();
-  for (const judgeResult of run.judgeResults || []) {
-    for (const score of judgeResult.scores || []) {
-      if (score.jokeId !== ranking?.jokeId) {
-        continue;
-      }
-
-      const total = Number(score.total);
-      scores.set(judgeResult.judgeId, Number.isFinite(total) ? total : NaN);
-    }
-  }
-
   return (ranking?.comments || []).map((comment) => ({
-    ...comment,
-    score: scores.get(comment.judgeId)
+    ...comment
   }));
 }
 
@@ -1413,7 +1444,7 @@ function normalizeSeedTermKey(value) {
 }
 
 function renderProcessPopover() {
-  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores, publishes the ranking, and shows each judge's score beside its critique.</span></span></span>`;
+  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site adjusts each judge's numerical scores against that judge's average over up to five prior contests, publishes the ranking, and shows each adjusted judge score beside its critique.</span></span></span>`;
 }
 
 function renderJokePromptPopover(run) {
@@ -2195,6 +2226,7 @@ main {
 
 .standings-hero-panel,
 .model-selection-note,
+.score-normalization-note,
 .trend-card {
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -2223,11 +2255,13 @@ main {
   line-height: 1.55;
 }
 
-.model-selection-note {
+.model-selection-note,
+.score-normalization-note {
   padding: 22px 24px;
 }
 
-.model-selection-note h2 {
+.model-selection-note h2,
+.score-normalization-note h2 {
   color: var(--bone);
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.85rem;
@@ -2235,7 +2269,8 @@ main {
   margin-bottom: 12px;
 }
 
-.model-selection-note p:not(.eyebrow) {
+.model-selection-note p:not(.eyebrow),
+.score-normalization-note p:not(.eyebrow) {
   max-width: 900px;
   color: var(--muted);
   font-size: 0.98rem;
@@ -2243,8 +2278,13 @@ main {
   line-height: 1.58;
 }
 
-.model-selection-note p:last-child {
+.model-selection-note p:last-child,
+.score-normalization-note p:last-child {
   margin-bottom: 0;
+}
+
+.score-normalization-note strong {
+  color: var(--bone);
 }
 
 .standings-summary-grid {
@@ -2375,6 +2415,22 @@ main {
   min-width: 132px;
 }
 
+.score-adjustment-note {
+  border: 1px solid rgba(194, 138, 87, 0.2);
+  border-radius: 8px;
+  background: rgba(194, 138, 87, 0.07);
+  color: var(--muted);
+  font-size: 0.84rem;
+  font-weight: 760;
+  line-height: 1.45;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+}
+
+.score-adjustment-note strong {
+  color: var(--bone);
+}
+
 .score-breakdown summary {
   cursor: pointer;
   display: inline-flex;
@@ -2414,6 +2470,27 @@ main {
   gap: 6px;
   margin-top: 10px;
   min-width: 190px;
+}
+
+.score-breakdown-meta {
+  border-bottom: 1px solid rgba(176, 185, 196, 0.1);
+  display: grid;
+  gap: 6px;
+  margin-top: 8px;
+  padding-bottom: 8px;
+}
+
+.score-breakdown-meta div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  color: var(--dim);
+  font-size: 0.72rem;
+  font-weight: 850;
+}
+
+.score-breakdown-meta strong {
+  color: var(--bone);
 }
 
 .score-breakdown-grid div {
@@ -3083,6 +3160,14 @@ td:nth-child(4) {
   padding: 3px 6px;
 }
 
+.judge-critique-adjustment {
+  color: var(--dim);
+  display: block;
+  font-size: 0.66rem;
+  font-weight: 850;
+  margin: 0 0 5px;
+}
+
 .judge-critique p {
   color: var(--muted);
   margin: 0;
@@ -3334,6 +3419,7 @@ td:nth-child(4) {
 
   .standings-hero-panel,
   .model-selection-note,
+  .score-normalization-note,
   .trend-card {
     padding: 18px;
   }
@@ -3499,6 +3585,12 @@ function modeDescription(source) {
 
 function formatScore(score) {
   return Number(score).toFixed(1);
+}
+
+function formatSignedScore(score) {
+  const value = Number(score);
+  const formatted = formatScore(Number.isFinite(value) ? value : 0);
+  return value > 0 ? `+${formatted}` : formatted;
 }
 
 function average(values) {

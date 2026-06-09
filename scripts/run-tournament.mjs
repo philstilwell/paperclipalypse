@@ -9,7 +9,7 @@ import { assertFeatureImageQa } from "./lib/image-qa.mjs";
 import { assertCompleteTournament } from "./lib/participation.mjs";
 import { normalizePremiseForDisplay } from "./lib/premise-display.mjs";
 import { publicationDateOnly } from "./lib/publish-date.mjs";
-import { aggregateScores, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
+import { aggregateScores, applyRollingJudgeNormalization, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
 import { seededRng } from "./lib/random.mjs";
 import { renderSite } from "./lib/site.mjs";
 import { buildPromptContextFromSeedTerms, buildSeedTerms } from "./lib/seed-terms.mjs";
@@ -36,7 +36,7 @@ const featureImageSource = "Gemini image generation (web preview)";
 const contestants = dryRun ? houseContestants : paidContestants;
 
 if (episodeFile) {
-  const run = buildRunFromEpisodeFile(path.resolve(rootDir, episodeFile), seed);
+  const run = applyCurrentScoring(buildRunFromEpisodeFile(path.resolve(rootDir, episodeFile), seed));
   attachFeatureImage(run, featureImagePath);
   assertPublishQuality(run);
   prepareFeatureImage(run, { episodeFile });
@@ -90,12 +90,13 @@ const run = {
   rankings
 };
 run.comicPanelPrompt = comicPanelPrompt(run);
-attachFeatureImage(run, featureImagePath);
+const scoredRun = applyCurrentScoring(run);
+attachFeatureImage(scoredRun, featureImagePath);
 
-assertPublishQuality(run);
-prepareFeatureImage(run);
-writeAndRender(run);
-printSummary(run);
+assertPublishQuality(scoredRun);
+prepareFeatureImage(scoredRun);
+writeAndRender(scoredRun);
+printSummary(scoredRun);
 
 async function generateJokes(modelRoster, runPremise) {
   const prompt = generationPrompt(runPremise);
@@ -339,6 +340,23 @@ function writeAndRender(run) {
   fs.mkdirSync(historyDir, { recursive: true });
   fs.writeFileSync(path.join(historyDir, `${run.slug}.json`), `${JSON.stringify(run, null, 2)}\n`, "utf8");
   renderSite({ run, historyDir, siteDir });
+}
+
+function applyCurrentScoring(run) {
+  const historyRuns = readRuns(historyDir).filter((archivedRun) => archivedRun.slug !== run.slug);
+  const scoredRuns = applyRollingJudgeNormalization([...historyRuns, run]);
+  return scoredRuns.find((scoredRun) => scoredRun.slug === run.slug) || run;
+}
+
+function readRuns(dir) {
+  if (!fs.existsSync(dir)) {
+    return [];
+  }
+
+  return fs
+    .readdirSync(dir)
+    .filter((file) => file.endsWith(".json"))
+    .map((file) => readJson(path.join(dir, file)));
 }
 
 function attachFeatureImage(run, sourcePath) {

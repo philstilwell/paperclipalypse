@@ -52,7 +52,7 @@
         <a class="memory-button" href="../runs/2026-06-02-ext-real-2026-06-02.html" aria-label="Next Memory Bank episode: A doomed dad enters the candy abyss.">
           <span>Next<span aria-hidden="true">&rarr;</span></span>
           <strong>A doomed dad enters the candy abyss.</strong>
-          <small>Jun 2, 2026 / Winner: Gemini Flash (7.7)</small>
+          <small>Jun 2, 2026 / Winner: Gemini Flash (7.6)</small>
         </a>
       </nav>
 
@@ -78,7 +78,7 @@
       <section class="scoreboard">
         <div class="section-heading">
           <p class="eyebrow">Judgment Matrix</p>
-          <h2>Scoreboard <span class="process-popover" tabindex="0" aria-label="How Paperclipalypse works. Codex picks six random seed terms. The same prompt goes to five AI contestants. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts. Each contestant then scores the four jokes it did not write. Codex checks that nothing is missing and no contestant judged itself. The site averages the rubric scores, publishes the ranked results, and shows each judge&#39;s score beside its critique.">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site averages the rubric scores, publishes the ranking, and shows each judge's score beside its critique.</span></span></span> <span class="prompt-popover" tabindex="0" aria-label="Current Judging Prompt. Each judge sees the four jokes it did not write; its own joke is removed.">Judge Prompt<span class="info-popover prompt-info"><strong>Current Judging Prompt</strong><span>Each judge sees the four jokes it did not write; its own joke is removed.</span><code>You are judging a Paperclipalypse AI comedy tournament.
+          <h2>Scoreboard <span class="process-popover" tabindex="0" aria-label="How Paperclipalypse works. Codex picks six random seed terms. The same prompt goes to five AI contestants. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts. Each contestant then scores the four jokes it did not write. Codex checks that nothing is missing and no contestant judged itself. The site adjusts each judge&#39;s numerical scores against that judge&#39;s average over up to five prior contests, publishes the ranked results, and shows each adjusted judge score beside its critique.">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site adjusts each judge's numerical scores against that judge's average over up to five prior contests, publishes the ranking, and shows each adjusted judge score beside its critique.</span></span></span> <span class="prompt-popover" tabindex="0" aria-label="Current Judging Prompt. Each judge sees the four jokes it did not write; its own joke is removed.">Judge Prompt<span class="info-popover prompt-info"><strong>Current Judging Prompt</strong><span>Each judge sees the four jokes it did not write; its own joke is removed.</span><code>You are judging a Paperclipalypse AI comedy tournament.
 
 Seed terms: Historical, Mail Carrier, Subway Train / Station / Tunnel, Being cut from a team, Cooperative, Disloyal
 
@@ -112,13 +112,15 @@ Jokes to judge:
 Return JSON only:
 {&quot;scores&quot;:[{&quot;jokeId&quot;:&quot;id&quot;,&quot;originality&quot;:7,&quot;surprise&quot;:7,&quot;craft&quot;:7,&quot;promptFit&quot;:7,&quot;laugh&quot;:7,&quot;comment&quot;:&quot;brief note&quot;}]}</code></span></span></h2>
         </div>
+
+        <p class="score-adjustment-note"><strong>Adjusted scoring:</strong> each raw judge total is corrected against that judge's rolling average from the previous 5 contests and the field's rolling average. This round used no prior contests; raw scores are shown.</p>
         <div class="table-scroll">
         <table>
           <thead>
             <tr>
               <th>Rank</th>
               <th>Contestant</th>
-              <th>Score</th>
+              <th>Adjusted Score</th>
               <th>Joke</th>
               <th>Judges</th>
             </tr>
@@ -129,7 +131,12 @@ Return JSON only:
           <td>Claude Sonnet 4.6</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>6.8</span><small>Breakdown</small></summary>
+              <summary><span>6.8</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.8</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -161,7 +168,12 @@ Return JSON only:
           <td>OpenAI GPT-5.4 Mini</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>6.5</span><small>Breakdown</small></summary>
+              <summary><span>6.5</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.5</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -193,7 +205,12 @@ Return JSON only:
           <td>Gemini Flash</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>6.3</span><small>Breakdown</small></summary>
+              <summary><span>6.3</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.3</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -225,7 +242,12 @@ Return JSON only:
           <td>xAI Grok 4.3</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>6.1</span><small>Breakdown</small></summary>
+              <summary><span>6.1</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.1</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -257,7 +279,12 @@ Return JSON only:
           <td>Copilot</td>
           <td>
             <details class="score-breakdown">
-              <summary><span>6.1</span><small>Breakdown</small></summary>
+              <summary><span>6.1</span><small>Adjusted</small></summary>
+
+              <div class="score-breakdown-meta">
+                <div><span>Raw avg</span><strong>6.1</strong></div>
+                <div><span>Adjustment</span><strong>0.0</strong></div>
+              </div>
               <div class="score-breakdown-grid">
               <div>
                 <span>Laugh</span>
@@ -291,7 +318,7 @@ Return JSON only:
           <article>
             <span>Most Divisive Joke</span>
             <strong>Joke D / xAI Grok 4.3</strong>
-            <p>Judges ranged from 4.2 to 7.2, a 3.0-point split.</p>
+            <p>Adjusted judge scores ranged from 4.2 to 7.2, a 3.0-point split.</p>
           </article>
         </div>
       </section>
@@ -418,18 +445,22 @@ Return JSON only:
 
               <article class="judge-critique">
                 <h4><span>Claude Sonnet 4.6</span><strong>6.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.8 / 0.0</small>
               <p>Smart reframe with a clean escalation — &#39;exhibit&#39; lands well. The laugh is more appreciative than explosive, but the construction is tight and the angle is genuinely fresh.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Gemini Flash</span><strong>7.7</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.7 / 0.0</small>
               <p>Crisp delivery and excellent escalation. Transforming late mail from &#39;correspondence&#39; to an &#39;exhibit&#39; is a very strong, natural punchline.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>xAI Grok 4.3</span><strong>5.7</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.7 / 0.0</small>
               <p>Mild pun on historical mail with okay rhythm but predictable payoff.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Copilot</span><strong>5.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.6 / 0.0</small>
               <p>Clean premise with a mild turn; solid but not especially funny.</p>
               </article>
             </div>
@@ -450,18 +481,22 @@ Return JSON only:
 
               <article class="judge-critique">
                 <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.3</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.3 / 0.0</small>
               <p>Clean dog-betrayal premise with strong escalation and a good final self-own; familiar setup but well executed.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Gemini Flash</span><strong>6.1</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.1 / 0.0</small>
               <p>A classic dog trope elevated by a decent turn, though the narrator&#39;s logic gets slightly tangled in the final two sentences.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>xAI Grok 4.3</span><strong>7.1</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.1 / 0.0</small>
               <p>Strong relatable betrayal visual with natural escalation and solid turn.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Copilot</span><strong>6.5</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.5 / 0.0</small>
               <p>Good first-person framing and a relatable betrayal angle; lands a mild real laugh.</p>
               </article>
             </div>
@@ -482,18 +517,22 @@ Return JSON only:
 
               <article class="judge-critique">
                 <h4><span>OpenAI GPT-5.4 Mini</span><strong>7.0</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.0 / 0.0</small>
               <p>Relatable and vivid, with the premium kibble versus junk mail contrast working well; slightly overwritten before the final image.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Claude Sonnet 4.6</span><strong>5.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.8 / 0.0</small>
               <p>The dog-disloyal-mail-carrier territory is well-worn, and the turn is predictable once the setup lands. The &#39;returning war hero&#39; closer has energy but the joke runs slightly...</p>
               </article>
               <article class="judge-critique">
                 <h4><span>xAI Grok 4.3</span><strong>6.8</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.8 / 0.0</small>
               <p>Amusing dog disloyalty bit but too similar to common tropes.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Copilot</span><strong>5.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.6 / 0.0</small>
               <p>Clear and coherent but more descriptive than punchy; ends without a strong snap.</p>
               </article>
             </div>
@@ -514,18 +553,22 @@ Return JSON only:
 
               <article class="judge-critique">
                 <h4><span>OpenAI GPT-5.4 Mini</span><strong>6.5</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.5 / 0.0</small>
               <p>Clear sports premise and a likable inclusion turn, but the punchline is mild rather than sharply surprising.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Claude Sonnet 4.6</span><strong>7.2</strong></h4>
+              <small class="judge-critique-adjustment">Raw 7.2 / 0.0</small>
               <p>&#39;I just wanted everyone to feel included&#39; is a genuinely good final line — recontextualizes the setup with a satisfying snap. Pacing is efficient and the panic-under-pressure...</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Gemini Flash</span><strong>4.2</strong></h4>
+              <small class="judge-critique-adjustment">Raw 4.2 / 0.0</small>
               <p>The dialogue feels contrived to force the seed term; a coach calling a confused player &#39;disloyal&#39; for passing to the wrong team does not sound natural.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Copilot</span><strong>6.3</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.3 / 0.0</small>
               <p>A tidy stage bit with a decent turn; not big laughs but works as a real joke.</p>
               </article>
             </div>
@@ -546,18 +589,22 @@ Return JSON only:
 
               <article class="judge-critique">
                 <h4><span>OpenAI GPT-5.4 Mini</span><strong>6.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.6 / 0.0</small>
               <p>Efficient and coherent with a decent image in the dream-bouncer line, though the payoff is more clever than laugh-heavy.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Claude Sonnet 4.6</span><strong>6.3</strong></h4>
+              <small class="judge-critique-adjustment">Raw 6.3 / 0.0</small>
               <p>&#39;Bouncer who escorts me out of my own dreams&#39; is a vivid closer but slightly overwritten. The premise is contrived — mail carriers don&#39;t typically deliver team cut notices —...</p>
               </article>
               <article class="judge-critique">
                 <h4><span>Gemini Flash</span><strong>5.6</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.6 / 0.0</small>
               <p>The premise of receiving a sports cut notification via physical mail while the carrier watches is quite contrived, though the final simile is somewhat clever.</p>
               </article>
               <article class="judge-critique">
                 <h4><span>xAI Grok 4.3</span><strong>5.7</strong></h4>
+              <small class="judge-critique-adjustment">Raw 5.7 / 0.0</small>
               <p>Cute premise but the punchline lands softly without strong snap.</p>
               </article>
             </div>
@@ -575,7 +622,7 @@ Return JSON only:
         <a class="memory-button" href="../runs/2026-06-02-ext-real-2026-06-02.html" aria-label="Next Memory Bank episode: A doomed dad enters the candy abyss.">
           <span>Next<span aria-hidden="true">&rarr;</span></span>
           <strong>A doomed dad enters the candy abyss.</strong>
-          <small>Jun 2, 2026 / Winner: Gemini Flash (7.7)</small>
+          <small>Jun 2, 2026 / Winner: Gemini Flash (7.6)</small>
         </a>
       </nav>
     </main>

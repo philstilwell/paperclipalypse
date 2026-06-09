@@ -456,9 +456,18 @@
       "label": "Joke B",
       "contestantId": "anthropic",
       "contestantName": "Claude Sonnet 4.6",
-      "score": 7.1,
+      "score": 7.2,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 7.3,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
         "laugh": 6.8,
         "surprise": 6.8,
         "craft": 7.3,
@@ -469,21 +478,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.1,
           "comment": "Clear comic contradiction with a smart paleontology angle; the final beat is amusing but softer than the premise."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 8.1,
+          "rawScore": 7.5,
+          "scoreAdjustment": 0.6,
           "comment": "Excellent stage rhythm and a genuinely smart, grounded observation about the profession. The tag perfectly caps the built-in irony."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 7.8,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.3,
           "comment": "Strong dinosaur-bird irony, very funny payoff."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
           "comment": "Good contrast between profession and fear; solid, mildly funny payoff."
         }
       ],
@@ -494,9 +515,18 @@
       "label": "Joke E",
       "contestantId": "copilot",
       "contestantName": "Copilot",
-      "score": 6.7,
+      "score": 6.6,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6.2,
+        "surprise": 6.5,
+        "craft": 6.2,
+        "originality": 7,
+        "promptFit": 9
+      },
+      "rawRubric": {
         "laugh": 6.3,
         "surprise": 6.5,
         "craft": 6.3,
@@ -507,63 +537,37 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
           "comment": "Fun absurd premise with a decent self-own at the end, though the wording is a little long and the payoff is not sharp enough for a 7."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 7,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.3,
           "comment": "Absurdist but grounded in a relatable panic situation. 'Competitive waterfall watching' earns its laugh and the final line gives the waterfall itself the punchline, which is a nice inversion. Slightly shaggy in the middle."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.6,
           "comment": "Delightfully absurd imagery in the setup, but the final tag is slightly convoluted and blunts what could have been a sharper laugh."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
           "comment": "Absurd premise works but feels a bit forced at end."
         }
       ],
       "rank": 2
-    },
-    {
-      "jokeId": "google",
-      "label": "Joke C",
-      "contestantId": "google",
-      "contestantName": "Gemini Flash",
-      "score": 6.7,
-      "judgeCount": 4,
-      "rubric": {
-        "laugh": 6.3,
-        "surprise": 6,
-        "craft": 7,
-        "originality": 6.8,
-        "promptFit": 9
-      },
-      "comments": [
-        {
-          "judgeId": "openai",
-          "judgeName": "OpenAI GPT-5.4 Mini",
-          "comment": "Strong contrast, clean escalation, and a good final image; the asteroid line carries the joke well."
-        },
-        {
-          "judgeId": "anthropic",
-          "judgeName": "Claude Sonnet 4.6",
-          "comment": "Solid sibling rivalry premise with a well-observed contrast. The toothbrush-lizard-asteroid line is the real joke and it delivers. Setup runs slightly long but the final image saves it."
-        },
-        {
-          "judgeId": "xai",
-          "judgeName": "xAI Grok 4.3",
-          "comment": "Good job contrast but predictable resentment angle."
-        },
-        {
-          "judgeId": "copilot",
-          "judgeName": "Copilot",
-          "comment": "Well‑structured and relatable; punchline is competent but not sharp."
-        }
-      ],
-      "rank": 3
     },
     {
       "jokeId": "openai",
@@ -571,8 +575,17 @@
       "contestantId": "openai",
       "contestantName": "OpenAI GPT-5.4 Mini",
       "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
         "laugh": 6,
         "surprise": 6,
         "craft": 7,
@@ -583,22 +596,93 @@
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 7.2,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.3,
           "comment": "Clean concept, nice escalation from commitment joke to fossil metaphor. The jaw fragment payoff is specific and earns its landing. A little cerebral but the turn is genuinely non-obvious."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.6,
           "comment": "The premise is standard, and the punchline feels like a forced, slightly clunky metaphor rather than a natural stand-up observation."
         },
         {
           "judgeId": "xai",
           "judgeName": "xAI Grok 4.3",
+          "score": 7.2,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.3,
           "comment": "Clever extinct pun, natural seeds, solid chuckle."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.1,
           "comment": "Clear premise and clean wording; turn is mild but works."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.5,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 5.9,
+        "craft": 6.9,
+        "originality": 6.6,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.3,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong contrast, clean escalation, and a good final image; the asteroid line carries the joke well."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid sibling rivalry premise with a well-observed contrast. The toothbrush-lizard-asteroid line is the real joke and it delivers. Setup runs slightly long but the final image saves it."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Good job contrast but predictable resentment angle."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Well‑structured and relatable; punchline is competent but not sharp."
         }
       ],
       "rank": 4
@@ -608,9 +692,18 @@
       "label": "Joke D",
       "contestantId": "xai",
       "contestantName": "xAI Grok 4.3",
-      "score": 4.7,
+      "score": 4.8,
+      "rawScore": 4.7,
+      "scoreAdjustment": 0.1,
       "judgeCount": 4,
       "rubric": {
+        "laugh": 4.1,
+        "surprise": 4.1,
+        "craft": 5.1,
+        "originality": 4.1,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
         "laugh": 4,
         "surprise": 4,
         "craft": 5,
@@ -621,21 +714,33 @@
         {
           "judgeId": "openai",
           "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
           "comment": "Relatable and coherent, but the sports-fan misery angle is familiar and the turn is expected."
         },
         {
           "judgeId": "anthropic",
           "judgeName": "Claude Sonnet 4.6",
+          "score": 4.5,
+          "rawScore": 4.8,
+          "scoreAdjustment": -0.3,
           "comment": "The premise is familiar sports-fan grievance and the turn — root for the other team — is the first obvious destination. Competent filler but nothing surprises or sticks."
         },
         {
           "judgeId": "google",
           "judgeName": "Gemini Flash",
+          "score": 4.3,
+          "rawScore": 3.7,
+          "scoreAdjustment": 0.6,
           "comment": "Opens with a hacky 'Folks...' and proceeds to just list generic sports fan complaints. It lacks a true comedic turn or punchline."
         },
         {
           "judgeId": "copilot",
           "judgeName": "Copilot",
+          "score": 4.9,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.1,
           "comment": "Recognizable premise but predictable; ending restates the setup."
         }
       ],
@@ -661,5 +766,21 @@
   },
   "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Bone Dry\nExact joke text to render in the right panel:\nI started dating a palaeontologist. Seemed great — smart, passionate, outdoorsy. Then I find out she's terrified of birds. Not like 'ooh, that crow startled me.' I mean full panic attack at a pigeon. This woman has spent thirty years lovingly excavating dinosaurs, and their direct living descendants give her a breakdown. I didn't say anything. But I thought it. Loudly.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Sports, Palaeontologist, Waterfall, A fear or phobia rearing its head, Resourceful, Resentful.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
   "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Sports, Palaeontologist, Waterfall, A fear or phobia rearing its head, Resourceful, Resentful. Use the winning joke titled \"Bone Dry\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
-  "featureImageBrief": "data/image-briefs/2026-06-07-ext-real-2026-06-07.md"
+  "featureImageBrief": "data/image-briefs/2026-06-07-ext-real-2026-06-07.md",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.4,
+      "anthropic": 6.6,
+      "google": 5.7,
+      "xai": 6.6,
+      "copilot": 6.2
+    },
+    "applied": true
+  }
 }
