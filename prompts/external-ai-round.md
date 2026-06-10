@@ -55,7 +55,9 @@ After all five jokes are collected, paste this prompt into each contestant's
 normal chat surface. Remove that contestant's own joke from `{{JOKES_JSON}}`.
 Every joke object in `{{JOKES_JSON}}` must include a `text` field containing the
 complete joke humans will read. If a judge responds as if joke text was missing,
-fix the packet and resubmit the judging prompt.
+fix the packet and resubmit the judging prompt. If a judge echoes the example
+JSON with `jokeId` set to `"id"`, reject it as a non-scorecard and send a short
+repair prompt naming the exact four joke IDs it must score.
 
 ```text
 You are judging a Paperclipalypse AI comedy tournament.
@@ -113,7 +115,10 @@ checks.
    feature image from the written Gemini brief. Save Gemini's 1024x506
    generated chat-preview image, visually inspect it, and reject/regenerate weak
    images until the image is polished, on-brief, and free of distracting text or
-   prompt-label artifacts.
+   prompt-label artifacts. If Gemini leaves the prompt in the composer after a
+   send-button click, focus the composer and submit with `Control+Enter`.
+   Prefer the browser media-download action on Gemini's visible 1024x506
+   generated image preview over the full-size export or a native save dialog.
 
 ```sh
 node scripts/qa-feature-image.mjs --image /absolute/path/to/approved-image.png --approved

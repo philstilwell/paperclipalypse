@@ -24,8 +24,8 @@ using paid model APIs.
 5. Send the judging prompt back to each contestant with that contestant's own
    joke removed.
 6. Require every judge to score all four eligible jokes. Missing scorecards,
-   self-scoring, or "no joke text supplied" assessments must be corrected before
-   rendering.
+   self-scoring, "no joke text supplied" assessments, and template echoes such
+   as `{"jokeId":"id", ...}` must be corrected before rendering.
 7. Write the real external episode to `data/inbox/`.
 8. Run the tournament once with `--allow-missing-feature-image` to create the
    Gemini feature image brief.
@@ -61,6 +61,17 @@ using paid model APIs.
   cheap, generic, monochrome by accident, off-brief, cropped, visibly labeled by
   prompt instructions, or badly garbles the joke text, Codex should regenerate
   instead of approving it.
+- Some chat surfaces, especially Gemini, can leave a prompt in the composer even
+  after the visible send button is clicked. Before declaring failure, focus the
+  composer and try `Control+Enter`.
+- If a judge returns a placeholder scorecard instead of scoring the supplied
+  jokes, send a short repair prompt naming the exact four `jokeId` values to
+  score. Do not hand-score on the judge's behalf.
+- For Gemini feature images, prefer downloading the visible 1024x506 generated
+  image with the browser media-download action. It avoids full-size exports and
+  native save dialogs while preserving the intended web preview.
+- Minor incidental text errors, such as a tiny truncated stage sign, can pass QA
+  if the main joke text is legible and the image is otherwise polished.
 
 ## Command Helpers
 

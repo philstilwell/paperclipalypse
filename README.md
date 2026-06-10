@@ -47,6 +47,13 @@ The one-instruction operating version is codified in
 beginning to end, and Codex coordinates the external web chats, Gemini image,
 render, cleanup, commit, and push without using paid APIs.
 
+Operational lesson from live rounds: chat UIs are not APIs. If Gemini leaves a
+prompt in the composer, `Control+Enter` often submits it when the visible send
+button does not. Placeholder scorecards such as `{"jokeId":"id", ...}` must be
+rejected and repaired by the original judge. For feature images, prefer the
+browser media-download action on Gemini's visible 1024x506 preview so the project
+avoids full-size exports and native save dialogs.
+
 The local demo flow is:
 
 1. A Codex app automation runs on your machine using your normal Codex access.

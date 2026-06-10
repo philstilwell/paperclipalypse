@@ -11,10 +11,11 @@ Use this when publishing a real public round.
 5. Collect one complete scorecard from each contestant.
 6. Put the collected data in `data/inbox/<round-name>.json` with `source` set to `manual-external`.
 7. Open a fresh Chrome window for Gemini image generation, then generate and
-   approve a winning-joke feature image after scoring. Open Gemini's generated
-   preview image and save or capture the smaller 1024x506 preview. Never use the
-   full-size export for this project. Pass the approved preview file with
-   `--feature-image`.
+   approve a winning-joke feature image after scoring. Save or capture Gemini's
+   smaller 1024x506 generated preview. Prefer the browser media-download action
+   on the visible generated image element when available; this avoids native
+   save dialogs and still captures the preview. Never use the full-size export
+   for this project. Pass the approved preview file with `--feature-image`.
 8. Run:
 
 ```sh
@@ -32,6 +33,23 @@ node scripts/run-tournament.mjs --episode-file data/inbox/<round-name>.json --se
 
 The runner copies that image into `site/assets/feature-images/<slug>.<ext>` and
 records it as the episode's `featureImage`.
+
+## External Chat Troubleshooting
+
+- If Gemini or another chat surface leaves a prompt sitting in the composer
+  after the send button is clicked, focus the composer and try `Control+Enter`.
+- Treat template echoes as failures. For example, a scorecard that returns only
+  `{"jokeId":"id", ...}` has not judged the round.
+- Repair bad scorecards with a shorter correction prompt that names the exact
+  four `jokeId` values the judge must score.
+- Do not proceed until all five judges have exactly four scores and no
+  self-score.
+- For Gemini images, look for the visible 1024x506 generated image preview. The
+  browser media-download action on that image is preferred over full-size export
+  or native save dialogs.
+- Gemini may truncate tiny incidental text such as a small stage sign. That can
+  pass visual QA when the main joke panel is legible, the composition is strong,
+  and the error is not distracting.
 
 ## Publish Checks
 
