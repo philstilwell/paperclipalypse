@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "slug": "2026-06-10-ext-real-2026-06-10",
+  "seed": "ext-real-2026-06-10",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-10T11:43:36.273Z",
+  "publishedDate": "2026-06-10",
+  "seedTerms": [
+    "Political Change",
+    "Radio Presenter",
+    "Empty Lot",
+    "Getting lost / stranded",
+    "Courteous",
+    "Suspicious"
+  ],
+  "premise": {
+    "text": "Seed terms: Political Change, Radio Presenter, Empty Lot, Getting lost / stranded, Courteous, Suspicious",
+    "seedTerms": [
+      "Political Change",
+      "Radio Presenter",
+      "Empty Lot",
+      "Getting lost / stranded",
+      "Courteous",
+      "Suspicious"
+    ],
+    "displayText": "A rescue gets delayed by excessive politeness.",
+    "headline": "A rescue gets delayed by excessive politeness."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Listener Request",
+      "seedTermsUsed": [
+        "Radio Presenter",
+        "Getting lost / stranded"
+      ],
+      "joke": "I used to be a radio presenter, and when I got stranded after taking a shortcut, the training kicked in: “You’re listening to one man slowly admitting maps were invented for a reason.” The rescue crew finally called and said, “Stay exactly where you are.” I said, “Finally, a listener request I can actually fulfill.”",
+      "setup": "",
+      "punchline": "I used to be a radio presenter, and when I got stranded after taking a shortcut, the training kicked in: “You’re listening to one man slowly admitting maps were invented for a reason.” The rescue crew finally called and said, “Stay exactly where you are.” I said, “Finally, a listener request I can actually fulfill.”",
+      "text": "I used to be a radio presenter, and when I got stranded after taking a shortcut, the training kicked in: “You’re listening to one man slowly admitting maps were invented for a reason.” The rescue crew finally called and said, “Stay exactly where you are.” I said, “Finally, a listener request I can actually fulfill.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Too Polite to Panic",
+      "seedTermsUsed": [
+        "Getting lost / stranded",
+        "Courteous"
+      ],
+      "joke": "I was completely lost in the middle of nowhere — no signal, no map, nothing. A truck finally pulled over. Guy rolls down the window and I go, 'Excuse me, I'm so sorry to bother you, I know you're busy, I really appreciate your time' — bro, I was stranded for six hours and I spent the first forty seconds of my rescue apologizing for existing.",
+      "setup": "",
+      "punchline": "I was completely lost in the middle of nowhere — no signal, no map, nothing. A truck finally pulled over. Guy rolls down the window and I go, 'Excuse me, I'm so sorry to bother you, I know you're busy, I really appreciate your time' — bro, I was stranded for six hours and I spent the first forty seconds of my rescue apologizing for existing.",
+      "text": "I was completely lost in the middle of nowhere — no signal, no map, nothing. A truck finally pulled over. Guy rolls down the window and I go, 'Excuse me, I'm so sorry to bother you, I know you're busy, I really appreciate your time' — bro, I was stranded for six hours and I spent the first forty seconds of my rescue apologizing for existing."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Midnight Marcus",
+      "seedTermsUsed": [
+        "Getting lost / stranded",
+        "Radio Presenter"
+      ],
+      "joke": "There is nothing worse than being hopelessly lost on a dark country road, frantically scanning the dial for civilization, and the only signal you pick up is a late-night radio presenter. I’m pulled over by a cornfield, certain I'm about to freeze to death, and a guy named Midnight Marcus is whispering, 'Just let the smooth jazz melt your troubles away.' Marcus, my transmission is smoking. I need a tow truck, not a sensual bubble bath.",
+      "setup": "",
+      "punchline": "There is nothing worse than being hopelessly lost on a dark country road, frantically scanning the dial for civilization, and the only signal you pick up is a late-night radio presenter. I’m pulled over by a cornfield, certain I'm about to freeze to death, and a guy named Midnight Marcus is whispering, 'Just let the smooth jazz melt your troubles away.' Marcus, my transmission is smoking. I need a tow truck, not a sensual bubble bath.",
+      "text": "There is nothing worse than being hopelessly lost on a dark country road, frantically scanning the dial for civilization, and the only signal you pick up is a late-night radio presenter. I’m pulled over by a cornfield, certain I'm about to freeze to death, and a guy named Midnight Marcus is whispering, 'Just let the smooth jazz melt your troubles away.' Marcus, my transmission is smoking. I need a tow truck, not a sensual bubble bath."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Courtesy Suspect",
+      "seedTermsUsed": [
+        "Courteous",
+        "Suspicious"
+      ],
+      "joke": "Hey folks, I've been trying to be more courteous lately. Holding doors, letting cars merge with a big friendly wave. But it totally backfires. Last week this guy pulls in front of me, I smile and nod like a good neighbor. He locks his doors and stares at me suspicious the whole light. I roll down my window: 'Just being nice, man!' He speeds off like I confessed to something. Screw it, I'm done. Back to cutting people off and staring straight ahead. At least then no one suspects me of anything.",
+      "setup": "",
+      "punchline": "Hey folks, I've been trying to be more courteous lately. Holding doors, letting cars merge with a big friendly wave. But it totally backfires. Last week this guy pulls in front of me, I smile and nod like a good neighbor. He locks his doors and stares at me suspicious the whole light. I roll down my window: 'Just being nice, man!' He speeds off like I confessed to something. Screw it, I'm done. Back to cutting people off and staring straight ahead. At least then no one suspects me of anything.",
+      "text": "Hey folks, I've been trying to be more courteous lately. Holding doors, letting cars merge with a big friendly wave. But it totally backfires. Last week this guy pulls in front of me, I smile and nod like a good neighbor. He locks his doors and stares at me suspicious the whole light. I roll down my window: 'Just being nice, man!' He speeds off like I confessed to something. Screw it, I'm done. Back to cutting people off and staring straight ahead. At least then no one suspects me of anything."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Lost and Courteous",
+      "seedTermsUsed": [
+        "Courteous",
+        "Getting lost / stranded"
+      ],
+      "joke": "I got stranded in my own neighborhood last week because I trusted my GPS too much. It kept saying, “Turn right,” and I kept saying, “No, you go ahead.” I was trying to be courteous, and suddenly I’m three blocks from home asking a mailbox for directions like it’s my life coach.",
+      "setup": "",
+      "punchline": "I got stranded in my own neighborhood last week because I trusted my GPS too much. It kept saying, “Turn right,” and I kept saying, “No, you go ahead.” I was trying to be courteous, and suddenly I’m three blocks from home asking a mailbox for directions like it’s my life coach.",
+      "text": "I got stranded in my own neighborhood last week because I trusted my GPS too much. It kept saying, “Turn right,” and I kept saying, “No, you go ahead.” I was trying to be courteous, and suddenly I’m three blocks from home asking a mailbox for directions like it’s my life coach."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear relatable premise and good first-person rhythm, but the payoff leans on a familiar apologizing-for-existing line.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Concrete scene and a solid contrast between emergency and smooth-jazz patter; amusing but a little overwritten.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Strongest comic logic in the batch: niceness reading as suspicious lands cleanly and the final reversal works.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The GPS courtesy idea is cute, but the stranded-in-own-neighborhood setup and mailbox tag feel strained.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The listener-request closer is the strongest line and earns it. Setup is clean and the radio-voice framing pays off. Slightly familiar 'bad with directions' territory but the turn is non-obvious and stage-ready.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "'Midnight Marcus' is a genuine comic invention and 'sensual bubble bath' lands hard. The escalation from lost to smoking transmission to jazz seduction is well-paced. Final line is the real punchline and it delivers.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid relatable premise and the reversal — being nice reads as suspicious — works. But the ending deflates rather than snaps; 'at least then no one suspects me of anything' restates the setup more than it turns it. Competent and publishable, not memorable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "'Courteous to my GPS' is a cute concept but the mailbox-as-life-coach tag is whimsical filler rather than a real punchline. The joke ends where it should be building. Publishable filler; unlikely to earn more than a mild smile.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup with a clever, well-timed punchline that naturally integrates the radio presenter persona into the stranded scenario.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent conversational rhythm and a highly relatable observation about the absurdity of default politeness in a crisis.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "A recognizable premise, but the execution is slightly overwritten and the punchline lacks a sharp, memorable turn.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The premise relies on unbelievable absurdity (being polite to a GPS voice), and the mailbox punchline feels like a generic AI template.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.3
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with radio tie-in, but punchline lands mildly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable over-politeness in crisis; clean escalation and strong closer.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good contrast but slightly overwritten; jazz mismatch amuses without snapping hard.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute GPS courtesy bit, but forced and forgettable payoff.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with a clean turn; mildly funny and well‑structured.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable and clear with a good first‑person angle; lands a modest laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid imagery and a strong voice; funny but not quite a big pop.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and coherent, but the turn is predictable and the ending soft.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.3,
+        "craft": 7.6,
+        "originality": 6.1,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 7.5,
+        "originality": 6,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear relatable premise and good first-person rhythm, but the payoff leans on a familiar apologizing-for-existing line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.9,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.6,
+          "comment": "Excellent conversational rhythm and a highly relatable observation about the absurdity of default politeness in a crisis."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Relatable over-politeness in crisis; clean escalation and strong closer."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Relatable and clear with a good first‑person angle; lands a modest laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 7,
+      "rawScore": 7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.9,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.4,
+          "comment": "The listener-request closer is the strongest line and earns it. Setup is clean and the radio-voice framing pays off. Slightly familiar 'bad with directions' territory but the turn is non-obvious and stage-ready."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.2,
+          "rawScore": 7.6,
+          "scoreAdjustment": 0.6,
+          "comment": "Clean setup with a clever, well-timed punchline that naturally integrates the radio presenter persona into the stranded scenario."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.5,
+          "comment": "Solid premise with radio tie-in, but punchline lands mildly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Solid premise with a clean turn; mildly funny and well‑structured."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.8,
+      "rawScore": 7,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 7.1,
+        "originality": 6.3,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Concrete scene and a solid contrast between emergency and smooth-jazz patter; amusing but a little overwritten."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.5,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.4,
+          "comment": "'Midnight Marcus' is a genuine comic invention and 'sensual bubble bath' lands hard. The escalation from lost to smoking transmission to jazz seduction is well-paced. Final line is the real punchline and it delivers."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.2,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.5,
+          "comment": "Good contrast but slightly overwritten; jazz mismatch amuses without snapping hard."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.3,
+          "comment": "Vivid imagery and a strong voice; funny but not quite a big pop."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6.2,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.4,
+        "craft": 6.1,
+        "originality": 5.9,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.8,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Strongest comic logic in the batch: niceness reading as suspicious lands cleanly and the final reversal works."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid relatable premise and the reversal — being nice reads as suspicious — works. But the ending deflates rather than snaps; 'at least then no one suspects me of anything' restates the setup more than it turns it. Competent and publishable, not memorable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.6,
+          "comment": "A recognizable premise, but the execution is slightly overwritten and the punchline lacks a sharp, memorable turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear and coherent, but the turn is predictable and the ending soft."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.2,
+      "rawScore": 5.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.7,
+        "surprise": 5.2,
+        "craft": 4.9,
+        "originality": 4.9,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 5.3,
+        "craft": 5,
+        "originality": 5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.5,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.1,
+          "comment": "The GPS courtesy idea is cute, but the stranded-in-own-neighborhood setup and mailbox tag feel strained."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.1,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.4,
+          "comment": "'Courteous to my GPS' is a cute concept but the mailbox-as-life-coach tag is whimsical filler rather than a real punchline. The joke ends where it should be building. Publishable filler; unlikely to earn more than a mild smile."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.9,
+          "rawScore": 4.3,
+          "scoreAdjustment": 0.6,
+          "comment": "The premise relies on unbelievable absurdity (being polite to a GPS voice), and the mailbox punchline feels like a generic AI template."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.2,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.5,
+          "comment": "Cute GPS courtesy bit, but forced and forgettable payoff."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-10-ext-real-2026-06-10.jpg",
+    "originalSrc": "assets/feature-images/2026-06-10-ext-real-2026-06-10.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v3",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Too Polite to Panic: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Too Polite to Panic\nExact joke text to render in the right panel:\nI was completely lost in the middle of nowhere — no signal, no map, nothing. A truck finally pulled over. Guy rolls down the window and I go, 'Excuse me, I'm so sorry to bother you, I know you're busy, I really appreciate your time' — bro, I was stranded for six hours and I spent the first forty seconds of my rescue apologizing for existing.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Political Change, Radio Presenter, Empty Lot, Getting lost / stranded, Courteous, Suspicious.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Political Change, Radio Presenter, Empty Lot, Getting lost / stranded, Courteous, Suspicious. Use the winning joke titled \"Midnight Marcus\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.8,
+      "google": 5.8,
+      "xai": 6.9,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-10-ext-real-2026-06-10.md"
+}

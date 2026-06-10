@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-06-10T11:43:36.273Z",
+  "publishedDate": "2026-06-10",
+  "seed": "ext-real-2026-06-10",
+  "slug": "2026-06-10-ext-real-2026-06-10",
+  "source": "manual-external",
+  "seedTerms": [
+    "Political Change",
+    "Radio Presenter",
+    "Empty Lot",
+    "Getting lost / stranded",
+    "Courteous",
+    "Suspicious"
+  ],
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Listener Request",
+      "seedTermsUsed": [
+        "Radio Presenter",
+        "Getting lost / stranded"
+      ],
+      "joke": "I used to be a radio presenter, and when I got stranded after taking a shortcut, the training kicked in: “You’re listening to one man slowly admitting maps were invented for a reason.” The rescue crew finally called and said, “Stay exactly where you are.” I said, “Finally, a listener request I can actually fulfill.”",
+      "setup": "",
+      "punchline": "I used to be a radio presenter, and when I got stranded after taking a shortcut, the training kicked in: “You’re listening to one man slowly admitting maps were invented for a reason.” The rescue crew finally called and said, “Stay exactly where you are.” I said, “Finally, a listener request I can actually fulfill.”",
+      "text": "I used to be a radio presenter, and when I got stranded after taking a shortcut, the training kicked in: “You’re listening to one man slowly admitting maps were invented for a reason.” The rescue crew finally called and said, “Stay exactly where you are.” I said, “Finally, a listener request I can actually fulfill.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Too Polite to Panic",
+      "seedTermsUsed": [
+        "Getting lost / stranded",
+        "Courteous"
+      ],
+      "joke": "I was completely lost in the middle of nowhere — no signal, no map, nothing. A truck finally pulled over. Guy rolls down the window and I go, 'Excuse me, I'm so sorry to bother you, I know you're busy, I really appreciate your time' — bro, I was stranded for six hours and I spent the first forty seconds of my rescue apologizing for existing.",
+      "setup": "",
+      "punchline": "I was completely lost in the middle of nowhere — no signal, no map, nothing. A truck finally pulled over. Guy rolls down the window and I go, 'Excuse me, I'm so sorry to bother you, I know you're busy, I really appreciate your time' — bro, I was stranded for six hours and I spent the first forty seconds of my rescue apologizing for existing.",
+      "text": "I was completely lost in the middle of nowhere — no signal, no map, nothing. A truck finally pulled over. Guy rolls down the window and I go, 'Excuse me, I'm so sorry to bother you, I know you're busy, I really appreciate your time' — bro, I was stranded for six hours and I spent the first forty seconds of my rescue apologizing for existing."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Midnight Marcus",
+      "seedTermsUsed": [
+        "Getting lost / stranded",
+        "Radio Presenter"
+      ],
+      "joke": "There is nothing worse than being hopelessly lost on a dark country road, frantically scanning the dial for civilization, and the only signal you pick up is a late-night radio presenter. I’m pulled over by a cornfield, certain I'm about to freeze to death, and a guy named Midnight Marcus is whispering, 'Just let the smooth jazz melt your troubles away.' Marcus, my transmission is smoking. I need a tow truck, not a sensual bubble bath.",
+      "setup": "",
+      "punchline": "There is nothing worse than being hopelessly lost on a dark country road, frantically scanning the dial for civilization, and the only signal you pick up is a late-night radio presenter. I’m pulled over by a cornfield, certain I'm about to freeze to death, and a guy named Midnight Marcus is whispering, 'Just let the smooth jazz melt your troubles away.' Marcus, my transmission is smoking. I need a tow truck, not a sensual bubble bath.",
+      "text": "There is nothing worse than being hopelessly lost on a dark country road, frantically scanning the dial for civilization, and the only signal you pick up is a late-night radio presenter. I’m pulled over by a cornfield, certain I'm about to freeze to death, and a guy named Midnight Marcus is whispering, 'Just let the smooth jazz melt your troubles away.' Marcus, my transmission is smoking. I need a tow truck, not a sensual bubble bath."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Courtesy Suspect",
+      "seedTermsUsed": [
+        "Courteous",
+        "Suspicious"
+      ],
+      "joke": "Hey folks, I've been trying to be more courteous lately. Holding doors, letting cars merge with a big friendly wave. But it totally backfires. Last week this guy pulls in front of me, I smile and nod like a good neighbor. He locks his doors and stares at me suspicious the whole light. I roll down my window: 'Just being nice, man!' He speeds off like I confessed to something. Screw it, I'm done. Back to cutting people off and staring straight ahead. At least then no one suspects me of anything.",
+      "setup": "",
+      "punchline": "Hey folks, I've been trying to be more courteous lately. Holding doors, letting cars merge with a big friendly wave. But it totally backfires. Last week this guy pulls in front of me, I smile and nod like a good neighbor. He locks his doors and stares at me suspicious the whole light. I roll down my window: 'Just being nice, man!' He speeds off like I confessed to something. Screw it, I'm done. Back to cutting people off and staring straight ahead. At least then no one suspects me of anything.",
+      "text": "Hey folks, I've been trying to be more courteous lately. Holding doors, letting cars merge with a big friendly wave. But it totally backfires. Last week this guy pulls in front of me, I smile and nod like a good neighbor. He locks his doors and stares at me suspicious the whole light. I roll down my window: 'Just being nice, man!' He speeds off like I confessed to something. Screw it, I'm done. Back to cutting people off and staring straight ahead. At least then no one suspects me of anything."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Lost and Courteous",
+      "seedTermsUsed": [
+        "Courteous",
+        "Getting lost / stranded"
+      ],
+      "joke": "I got stranded in my own neighborhood last week because I trusted my GPS too much. It kept saying, “Turn right,” and I kept saying, “No, you go ahead.” I was trying to be courteous, and suddenly I’m three blocks from home asking a mailbox for directions like it’s my life coach.",
+      "setup": "",
+      "punchline": "I got stranded in my own neighborhood last week because I trusted my GPS too much. It kept saying, “Turn right,” and I kept saying, “No, you go ahead.” I was trying to be courteous, and suddenly I’m three blocks from home asking a mailbox for directions like it’s my life coach.",
+      "text": "I got stranded in my own neighborhood last week because I trusted my GPS too much. It kept saying, “Turn right,” and I kept saying, “No, you go ahead.” I was trying to be courteous, and suddenly I’m three blocks from home asking a mailbox for directions like it’s my life coach."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear relatable premise and good first-person rhythm, but the payoff leans on a familiar apologizing-for-existing line."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Concrete scene and a solid contrast between emergency and smooth-jazz patter; amusing but a little overwritten."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strongest comic logic in the batch: niceness reading as suspicious lands cleanly and the final reversal works."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "The GPS courtesy idea is cute, but the stranded-in-own-neighborhood setup and mailbox tag feel strained."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "The listener-request closer is the strongest line and earns it. Setup is clean and the radio-voice framing pays off. Slightly familiar 'bad with directions' territory but the turn is non-obvious and stage-ready."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "'Midnight Marcus' is a genuine comic invention and 'sensual bubble bath' lands hard. The escalation from lost to smoking transmission to jazz seduction is well-paced. Final line is the real punchline and it delivers."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Solid relatable premise and the reversal — being nice reads as suspicious — works. But the ending deflates rather than snaps; 'at least then no one suspects me of anything' restates the setup more than it turns it. Competent and publishable, not memorable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "'Courteous to my GPS' is a cute concept but the mailbox-as-life-coach tag is whimsical filler rather than a real punchline. The joke ends where it should be building. Publishable filler; unlikely to earn more than a mild smile."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean setup with a clever, well-timed punchline that naturally integrates the radio presenter persona into the stranded scenario."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Excellent conversational rhythm and a highly relatable observation about the absurdity of default politeness in a crisis."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "A recognizable premise, but the execution is slightly overwritten and the punchline lacks a sharp, memorable turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "The premise relies on unbelievable absurdity (being polite to a GPS voice), and the mailbox punchline feels like a generic AI template."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid premise with radio tie-in, but punchline lands mildly."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Relatable over-politeness in crisis; clean escalation and strong closer."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good contrast but slightly overwritten; jazz mismatch amuses without snapping hard."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Cute GPS courtesy bit, but forced and forgettable payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Solid premise with a clean turn; mildly funny and well‑structured."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Relatable and clear with a good first‑person angle; lands a modest laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Vivid imagery and a strong voice; funny but not quite a big pop."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear and coherent, but the turn is predictable and the ending soft."
+        }
+      ]
+    }
+  ],
+  "premise": {
+    "headline": "A rescue gets delayed by excessive politeness."
+  }
+}
