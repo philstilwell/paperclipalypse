@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "slug": "2026-06-11-ext-real-2026-06-11",
+  "seed": "ext-real-2026-06-11",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-11T14:57:44.318Z",
+  "publishedDate": "2026-06-11",
+  "seedTerms": [
+    "Sex",
+    "Recruiter",
+    "Classroom",
+    "Breaking someone's heart",
+    "Centred",
+    "Childish"
+  ],
+  "premise": {
+    "text": "Seed terms: Sex, Recruiter, Classroom, Breaking someone's heart, Centred, Childish",
+    "seedTerms": [
+      "Sex",
+      "Recruiter",
+      "Classroom",
+      "Breaking someone's heart",
+      "Centred",
+      "Childish"
+    ],
+    "displayText": "A job rejection gets promoted to heartbreak.",
+    "headline": "A job rejection gets promoted to heartbreak."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Corporate Breakup",
+      "seedTermsUsed": [
+        "Recruiter",
+        "Breaking someone's heart"
+      ],
+      "joke": "I got dumped by a recruiter. She said, “We’re not moving forward, but we’ll keep your résumé on file.” That’s the coldest breakup line I’ve ever heard. At least my ex had the decency to lie and say, “It’s not you.” This woman said, “It is you, but administratively.”",
+      "setup": "",
+      "punchline": "I got dumped by a recruiter. She said, “We’re not moving forward, but we’ll keep your résumé on file.” That’s the coldest breakup line I’ve ever heard. At least my ex had the decency to lie and say, “It’s not you.” This woman said, “It is you, but administratively.”",
+      "text": "I got dumped by a recruiter. She said, “We’re not moving forward, but we’ll keep your résumé on file.” That’s the coldest breakup line I’ve ever heard. At least my ex had the decency to lie and say, “It’s not you.” This woman said, “It is you, but administratively.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Conference Room Disclosure",
+      "seedTermsUsed": [
+        "Recruiter",
+        "Breaking someone's heart"
+      ],
+      "joke": "A recruiter called to tell me I didn't get the job. Fine. But she spent twenty minutes softening the blow — 'You were incredible, truly, we loved you, this was SO hard for us.' Lady, we had one phone screen. You're breaking up with me and we never even dated. I've had actual relationships end with less closure than this rejection email.",
+      "setup": "",
+      "punchline": "A recruiter called to tell me I didn't get the job. Fine. But she spent twenty minutes softening the blow — 'You were incredible, truly, we loved you, this was SO hard for us.' Lady, we had one phone screen. You're breaking up with me and we never even dated. I've had actual relationships end with less closure than this rejection email.",
+      "text": "A recruiter called to tell me I didn't get the job. Fine. But she spent twenty minutes softening the blow — 'You were incredible, truly, we loved you, this was SO hard for us.' Lady, we had one phone screen. You're breaking up with me and we never even dated. I've had actual relationships end with less closure than this rejection email."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Corporate Breakup",
+      "seedTermsUsed": [
+        "Recruiter",
+        "Breaking someone's heart"
+      ],
+      "joke": "I got rejected for a job recently, and the recruiter delivered the news like she was breaking my heart. She didn't just say they hired someone else. She called me, sighed heavily, and said, 'You’re a great guy, and you’re going to make some mid-level marketing firm really happy someday... but we just need different things right now.' I was so devastated I almost asked if I could at least get my resume back.",
+      "setup": "",
+      "punchline": "I got rejected for a job recently, and the recruiter delivered the news like she was breaking my heart. She didn't just say they hired someone else. She called me, sighed heavily, and said, 'You’re a great guy, and you’re going to make some mid-level marketing firm really happy someday... but we just need different things right now.' I was so devastated I almost asked if I could at least get my resume back.",
+      "text": "I got rejected for a job recently, and the recruiter delivered the news like she was breaking my heart. She didn't just say they hired someone else. She called me, sighed heavily, and said, 'You’re a great guy, and you’re going to make some mid-level marketing firm really happy someday... but we just need different things right now.' I was so devastated I almost asked if I could at least get my resume back."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Recruiter Rejection",
+      "seedTermsUsed": [
+        "Recruiter",
+        "Breaking someone's heart"
+      ],
+      "joke": "Folks, I had this recruiter hyping me up in the interview. 'Your experience is impressive,' she says. I'm beaming, heart racing like it's love at first sight. Then she drops it: 'But we're moving forward with other candidates.' Oof. She broke my heart right there in the conference room. At least when my ex did it, she waited till we split the check.",
+      "setup": "",
+      "punchline": "Folks, I had this recruiter hyping me up in the interview. 'Your experience is impressive,' she says. I'm beaming, heart racing like it's love at first sight. Then she drops it: 'But we're moving forward with other candidates.' Oof. She broke my heart right there in the conference room. At least when my ex did it, she waited till we split the check.",
+      "text": "Folks, I had this recruiter hyping me up in the interview. 'Your experience is impressive,' she says. I'm beaming, heart racing like it's love at first sight. Then she drops it: 'But we're moving forward with other candidates.' Oof. She broke my heart right there in the conference room. At least when my ex did it, she waited till we split the check."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Centred Ambition",
+      "seedTermsUsed": [
+        "Centred",
+        "Classroom"
+      ],
+      "joke": "I tried to stay centred by taking a meditation class, but the instructor kept treating us like we were in a classroom. She’d say, “Clear your mind.” And I’m like, “I’m trying, but mine keeps raising its hand to ask if this will be on the test.”",
+      "setup": "",
+      "punchline": "I tried to stay centred by taking a meditation class, but the instructor kept treating us like we were in a classroom. She’d say, “Clear your mind.” And I’m like, “I’m trying, but mine keeps raising its hand to ask if this will be on the test.”",
+      "text": "I tried to stay centred by taking a meditation class, but the instructor kept treating us like we were in a classroom. She’d say, “Clear your mind.” And I’m like, “I’m trying, but mine keeps raising its hand to ask if this will be on the test.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong relatable premise with clean first-person rhythm; the breakup/recruiter comparison is familiar but lands well.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Best escalation in the batch; the mid-level marketing firm line and resume-back tag give it a sharper final turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.4
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and on prompt, but the ex comparison is the obvious route and the split-check tag is only mildly amusing.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Neat, concise image with a solid final line; cute more than memorable, but cleanly constructed.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "'It is you, but administratively' is a genuinely sharp final line with a non-obvious turn. Clean escalation, strong rhythm, and the contrast between ex's lie and recruiter's bureaucratic honesty lands hard. One of the better executions of this concept.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "google",
+          "comment": "The sigh and 'you'll make some mid-level marketing firm happy' line is amusing and the romantic framing is clear, but the final 'get my resume back' tag is weaker than the setup deserves. Competent with a real comic idea but the punchline dissipates energy rather than concentrating it.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid structure and the 'waited till we split the check' ending has good rhythm and mild snap. The conference room callback is clean. Doesn't transcend its familiar premise but executes it well without apology. Dependable mid-tier joke.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The 'will this be on the test' personification of a wandering mind is a familiar gag. The premise is competent and the seed pairing is natural, but there's no real turn — the punchline simply restates the joke's premise in slightly different words. Publishable filler, not a winner.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Excellent final line with a strong, clean turn. Very natural stand-up rhythm.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.9
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Highly relatable premise with good escalation. The contrast between a phone screen and an actual relationship lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent but leans on somewhat hacky stand-up phrasing. The punchline is a bit predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Structurally sound with a clever visual, though it leans slightly toward whimsical rather than punchy.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Sharp administrative breakup twist, strong fit to seeds.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Over-the-top closure on a weak interaction lands well.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Classic relationship-rejection analogy executed cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Fun classroom/meditation mashup, solid but lighter laugh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 6.900000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise and a tidy final turn; solid but not standout.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable and clear, though the turn is more extended than sharp.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good imagery and a clean punch, though familiar terrain.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Straightforward and competent but the turn is predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 7.5,
+      "rawScore": 7.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.3,
+        "surprise": 7.3,
+        "craft": 7.8,
+        "originality": 7,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7.3,
+        "craft": 7.8,
+        "originality": 7,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.6,
+          "rawScore": 8,
+          "scoreAdjustment": -0.4,
+          "comment": "'It is you, but administratively' is a genuinely sharp final line with a non-obvious turn. Clean escalation, strong rhythm, and the contrast between ex's lie and recruiter's bureaucratic honesty lands hard. One of the better executions of this concept."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.5,
+          "rawScore": 7.9,
+          "scoreAdjustment": 0.6,
+          "comment": "Excellent final line with a strong, clean turn. Very natural stand-up rhythm."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Sharp administrative breakup twist, strong fit to seeds."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Clean premise and a tidy final turn; solid but not standout."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.9,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.1,
+        "craft": 7.1,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.9,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0,
+          "comment": "Strong relatable premise with clean first-person rhythm; the breakup/recruiter comparison is familiar but lands well."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.9,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.6,
+          "comment": "Highly relatable premise with good escalation. The contrast between a phone screen and an actual relationship lands well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Over-the-top closure on a weak interaction lands well."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.3,
+          "comment": "Relatable and clear, though the turn is more extended than sharp."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.8,
+      "rawScore": 6.9,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 6.4,
+        "craft": 7.1,
+        "originality": 6.1,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7.3,
+        "originality": 6.3,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.4,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0,
+          "comment": "Best escalation in the batch; the mid-level marketing firm line and resume-back tag give it a sharper final turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.9,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.4,
+          "comment": "The sigh and 'you'll make some mid-level marketing firm happy' line is amusing and the romantic framing is clear, but the final 'get my resume back' tag is weaker than the setup deserves. Competent with a real comic idea but the punchline dissipates energy rather than concentrating it."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Classic relationship-rejection analogy executed cleanly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Good imagery and a clean punch, though familiar terrain."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.2,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.9,
+        "craft": 6.4,
+        "originality": 6.2,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Neat, concise image with a solid final line; cute more than memorable, but cleanly constructed."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.9,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.4,
+          "comment": "The 'will this be on the test' personification of a wandering mind is a familiar gag. The premise is competent and the seed pairing is natural, but there's no real turn — the punchline simply restates the joke's premise in slightly different words. Publishable filler, not a winner."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.6,
+          "comment": "Structurally sound with a clever visual, though it leans slightly toward whimsical rather than punchy."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Fun classroom/meditation mashup, solid but lighter laugh."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.4,
+        "craft": 6.1,
+        "originality": 5.1,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
+          "comment": "Clear and on prompt, but the ex comparison is the obvious route and the split-check tag is only mildly amusing."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.5,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid structure and the 'waited till we split the check' ending has good rhythm and mild snap. The conference room callback is clean. Doesn't transcend its familiar premise but executes it well without apology. Dependable mid-tier joke."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.9,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.6,
+          "comment": "Competent but leans on somewhat hacky stand-up phrasing. The punchline is a bit predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.3,
+          "comment": "Straightforward and competent but the turn is predictable."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-11-ext-real-2026-06-11.jpg",
+    "originalSrc": "assets/feature-images/2026-06-11-ext-real-2026-06-11.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v3",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Corporate Breakup: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as visual comedy action and props. Make it energetic, funny, and non-gory.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - Corporate Breakup\nExact joke text to render in the right panel:\nI got dumped by a recruiter. She said, “We’re not moving forward, but we’ll keep your résumé on file.” That’s the coldest breakup line I’ve ever heard. At least my ex had the decency to lie and say, “It’s not you.” This woman said, “It is you, but administratively.”\nSafety note: the unused seed term \"Sex\" must not be depicted or implied visually; keep the image safe-for-work and focused on the recruiter/job-rejection breakup scene.\nScene source: use the exact winning joke text as the primary scene brief. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Sex, Recruiter, Classroom, Breaking someone's heart, Centred, Childish.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Sex, Recruiter, Classroom, Breaking someone's heart, Centred, Childish. Use the winning joke titled \"Corporate Breakup\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.8,
+      "google": 5.9,
+      "xai": 6.9,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-11-ext-real-2026-06-11.md"
+}
