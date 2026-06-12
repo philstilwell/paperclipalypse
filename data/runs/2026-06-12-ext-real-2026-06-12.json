@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "slug": "2026-06-12-ext-real-2026-06-12",
+  "seed": "ext-real-2026-06-12",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-12T13:50:48.176Z",
+  "publishedDate": "2026-06-12",
+  "seedTerms": [
+    "Comic Book",
+    "Personal Shopper",
+    "Hardware Store",
+    "A competitor showing up",
+    "Studious",
+    "Irrational"
+  ],
+  "premise": {
+    "text": "Seed terms: Comic Book, Personal Shopper, Hardware Store, A competitor showing up, Studious, Irrational",
+    "seedTerms": [
+      "Comic Book",
+      "Personal Shopper",
+      "Hardware Store",
+      "A competitor showing up",
+      "Studious",
+      "Irrational"
+    ],
+    "displayText": "A hardware-store helper prevents a renter from upgrading to disaster.",
+    "headline": "A hardware-store helper prevents a renter from upgrading to disaster."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Tool Confidence",
+      "seedTermsUsed": [
+        "Personal Shopper",
+        "Hardware Store"
+      ],
+      "joke": "I hired a personal shopper at a hardware store because I wanted to look handy without learning anything. She said, “What project are we doing?” I said, “Mostly convincing my girlfriend I own more than one screwdriver.” She handed me a level and said, “Start with this.” Great—now even my tools think I’m not straight with her.",
+      "setup": "",
+      "punchline": "I hired a personal shopper at a hardware store because I wanted to look handy without learning anything. She said, “What project are we doing?” I said, “Mostly convincing my girlfriend I own more than one screwdriver.” She handed me a level and said, “Start with this.” Great—now even my tools think I’m not straight with her.",
+      "text": "I hired a personal shopper at a hardware store because I wanted to look handy without learning anything. She said, “What project are we doing?” I said, “Mostly convincing my girlfriend I own more than one screwdriver.” She handed me a level and said, “Start with this.” Great—now even my tools think I’m not straight with her."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Aisle Five of Doom",
+      "seedTermsUsed": [
+        "Hardware Store",
+        "Irrational"
+      ],
+      "joke": "I know my fears are irrational. I know this. But I cannot walk into a hardware store without assuming every employee can see exactly what I'm about to do wrong. They don't say anything. They just watch me pick up the wrong-gauge screw with this look — like a wildlife photographer who's decided not to intervene.",
+      "setup": "",
+      "punchline": "I know my fears are irrational. I know this. But I cannot walk into a hardware store without assuming every employee can see exactly what I'm about to do wrong. They don't say anything. They just watch me pick up the wrong-gauge screw with this look — like a wildlife photographer who's decided not to intervene.",
+      "text": "I know my fears are irrational. I know this. But I cannot walk into a hardware store without assuming every employee can see exactly what I'm about to do wrong. They don't say anything. They just watch me pick up the wrong-gauge screw with this look — like a wildlife photographer who's decided not to intervene."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Aisle 4 Assistance",
+      "seedTermsUsed": [
+        "Personal Shopper",
+        "Hardware Store"
+      ],
+      "joke": "Everyone wants a personal shopper for clothes, but I want one for the hardware store. I don't need help picking a sweater. I need an old guy in a denim apron walking behind me, gently swatting my hand away saying, 'Sir, put down the reciprocating saw. You came here for a lightbulb, and you rent an apartment.'",
+      "setup": "",
+      "punchline": "Everyone wants a personal shopper for clothes, but I want one for the hardware store. I don't need help picking a sweater. I need an old guy in a denim apron walking behind me, gently swatting my hand away saying, 'Sir, put down the reciprocating saw. You came here for a lightbulb, and you rent an apartment.'",
+      "text": "Everyone wants a personal shopper for clothes, but I want one for the hardware store. I don't need help picking a sweater. I need an old guy in a denim apron walking behind me, gently swatting my hand away saying, 'Sir, put down the reciprocating saw. You came here for a lightbulb, and you rent an apartment.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Personal Shopper at the Hardware Store",
+      "seedTermsUsed": [
+        "Personal Shopper",
+        "Hardware Store"
+      ],
+      "joke": "I hired a personal shopper last month because my solo trips always end in regret. She drags me straight to the hardware store for 'essentials.' I grab a hammer. She snatches it like it's poison and hands me this sleek one. 'This matches your energy,' she says. Lady, my energy is broke and lazy—I just need to hang a shelf before my wife kills me. Now my garage is full of color-coordinated tools I'll never use, and the shelf is still crooked. Style over function, folks!",
+      "setup": "",
+      "punchline": "I hired a personal shopper last month because my solo trips always end in regret. She drags me straight to the hardware store for 'essentials.' I grab a hammer. She snatches it like it's poison and hands me this sleek one. 'This matches your energy,' she says. Lady, my energy is broke and lazy—I just need to hang a shelf before my wife kills me. Now my garage is full of color-coordinated tools I'll never use, and the shelf is still crooked. Style over function, folks!",
+      "text": "I hired a personal shopper last month because my solo trips always end in regret. She drags me straight to the hardware store for 'essentials.' I grab a hammer. She snatches it like it's poison and hands me this sleek one. 'This matches your energy,' she says. Lady, my energy is broke and lazy—I just need to hang a shelf before my wife kills me. Now my garage is full of color-coordinated tools I'll never use, and the shelf is still crooked. Style over function, folks!"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Comic Book Logic",
+      "seedTermsUsed": [
+        "Comic Book",
+        "Irrational"
+      ],
+      "joke": "I realized I’m irrational the day I tried to get in shape by buying a comic book. I told myself, “If I read about superheroes long enough, maybe my body will get the hint.” Now I’m out fifty bucks and the only thing that got stronger was my denial.",
+      "setup": "",
+      "punchline": "I realized I’m irrational the day I tried to get in shape by buying a comic book. I told myself, “If I read about superheroes long enough, maybe my body will get the hint.” Now I’m out fifty bucks and the only thing that got stronger was my denial.",
+      "text": "I realized I’m irrational the day I tried to get in shape by buying a comic book. I told myself, “If I read about superheroes long enough, maybe my body will get the hint.” Now I’m out fifty bucks and the only thing that got stronger was my denial."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong observational premise with a clean, specific final image; the wildlife-photographer turn gives it real snap.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 7.8
+        },
+        {
+          "jokeId": "google",
+          "comment": "Very stage-ready, concrete, and sharply escalated; the apartment line lands as a strong final turn.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 8.100000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear premise but too long and diffuse, with familiar wife/shelf/tool beats and a weak summarizing closer.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 4.6
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clean and understandable, but the superhero/body/denial turn is predictable and only mildly amusing.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The 'not straight with her' closer is a clean double-meaning payoff with good stage rhythm. Setup is efficient. Slightly predictable shape but the final line earns it.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "The old guy in the denim apron is a vivid, earned image. 'You came here for a lightbulb and you rent an apartment' is a genuinely repeatable line. Tight, clear, and lands without apology.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.800000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Overlong and the punchline ('style over function') is a restatement of the setup. 'My wife kills me' and 'broke and lazy' are familiar templates. The concept is there but the edit isn't.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent and clean, but the turn is mild — denial being strengthened is a predictable comic destination. The image of comic-book fitness logic is relatable but underdeveloped. Publishable filler.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Decent setup but relies on a standard pun for the punchline, making it feel a bit dated.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent stage rhythm and a fantastic, highly relatable final image that carries a genuine laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 9,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.3
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Bloated setup that ends on a clichéd, momentum-killing tag.",
+          "laugh": 3,
+          "surprise": 4,
+          "craft": 3,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 3.7
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent and concise, but the punchline relies on standard self-deprecation rather than a truly surprising turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Relatable premise with a punny closer that lands mildly but feels slightly forced.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong observational image and relatable paranoia payoff.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid character detail and clear escalation with solid rhythm.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Predictable self-deprecation with a soft, expected payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with a clean turn; the final line lands mildly but not sharply.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear voice and imagery; more observational than punchy, ending on a wry note rather than a laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good stage rhythm and a relatable escalation; the final line works but isn’t especially surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Longer and more narrative than needed; the punchline diffuses instead of snapping.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.800000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7.4,
+      "rawScore": 7.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 7.1,
+        "craft": 7.8,
+        "originality": 7.3,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 7,
+        "craft": 7.8,
+        "originality": 7.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.8,
+          "rawScore": 7.8,
+          "scoreAdjustment": 0,
+          "comment": "Strong observational premise with a clean, specific final image; the wildlife-photographer turn gives it real snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.8,
+          "rawScore": 8.3,
+          "scoreAdjustment": 0.5,
+          "comment": "Excellent stage rhythm and a fantastic, highly relatable final image that carries a genuine laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Strong observational image and relatable paranoia payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear voice and imagery; more observational than punchy, ending on a wry note rather than a laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.3,
+      "rawScore": 7.5,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.1,
+        "surprise": 6.9,
+        "craft": 7.6,
+        "originality": 6.6,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7,
+        "craft": 7.8,
+        "originality": 6.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 8.1,
+          "rawScore": 8.1,
+          "scoreAdjustment": 0,
+          "comment": "Very stage-ready, concrete, and sharply escalated; the apartment line lands as a strong final turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.5,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.3,
+          "comment": "The old guy in the denim apron is a vivid, earned image. 'You came here for a lightbulb and you rent an apartment' is a genuinely repeatable line. Tight, clear, and lands without apology."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Vivid character detail and clear escalation with solid rhythm."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.8,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Good stage rhythm and a relatable escalation; the final line works but isn’t especially surprising."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.3,
+      "rawScore": 6.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.2,
+        "craft": 6.2,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 6.3,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "The 'not straight with her' closer is a clean double-meaning payoff with good stage rhythm. Setup is efficient. Slightly predictable shape but the final line earns it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.3,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.5,
+          "comment": "Decent setup but relies on a standard pun for the punchline, making it feel a bit dated."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.7,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Relatable premise with a punny closer that lands mildly but feels slightly forced."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Solid premise with a clean turn; the final line lands mildly but not sharply."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.4,
+      "rawScore": 5.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 4.9,
+        "craft": 5.7,
+        "originality": 4.9,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.7,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0,
+          "comment": "Clean and understandable, but the superhero/body/denial turn is predictable and only mildly amusing."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Competent and clean, but the turn is mild — denial being strengthened is a predictable comic destination. The image of comic-book fitness logic is relatable but underdeveloped. Publishable filler."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.5,
+          "comment": "Competent and concise, but the punchline relies on standard self-deprecation rather than a truly surprising turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.5,
+          "comment": "Predictable self-deprecation with a soft, expected payoff."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.7,
+      "rawScore": 4.6,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.1,
+        "surprise": 4.1,
+        "craft": 4.4,
+        "originality": 4.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 4,
+        "surprise": 4,
+        "craft": 4.3,
+        "originality": 4.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.6,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0,
+          "comment": "Clear premise but too long and diffuse, with familiar wife/shelf/tool beats and a weak summarizing closer."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.8,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Overlong and the punchline ('style over function') is a restatement of the setup. 'My wife kills me' and 'broke and lazy' are familiar templates. The concept is there but the edit isn't."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.2,
+          "rawScore": 3.7,
+          "scoreAdjustment": 0.5,
+          "comment": "Bloated setup that ends on a clichéd, momentum-killing tag."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.1,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.3,
+          "comment": "Longer and more narrative than needed; the punchline diffuses instead of snapping."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-12-ext-real-2026-06-12.jpg",
+    "originalSrc": "assets/feature-images/2026-06-12-ext-real-2026-06-12.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v3",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Aisle Five of Doom: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\n\nASPECT RATIO: exactly 2:1, horizontal wide banner, 1024x506 preview preferred.\n\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use warm amber stage lights, dark bronze and silver metal, muted hardware-store greens, dusty blue-gray shadows, cream-white text, and subtle deep red accents.\n\nComposition: divide the picture visually into three natural areas without writing labels. On the left side, show a charming anthropomorphic metallic paperclip stand-up comedian standing upright on a small wooden comedy stage at a vintage microphone. In the center, show a normal hardware store aisle with believable perspective. On the right side, show a dark framed poster panel containing the joke text.\n\nHardware store scene details: a nervous adult shopper stands in the aisle holding a tiny screw or package labeled only by shape, not readable text. Two hardware store employees in aprons stand nearby at a polite distance, silently watching with the calm expression of people who know disaster is coming. They may hold a clipboard, measuring tape, or small camera as a visual nod to the wildlife-photographer comparison, but keep the setting clearly inside a hardware store. Include grounded shelves, bins, lumber, tools, and overhead lights.\n\nPhysical layout rules:\n- Keep all people, shelves, tools, and furniture grounded on the floor with believable perspective.\n- Do not place a person inside a shelf, bin, drawer, box, ceiling, wall, or impossible aisle.\n- Do not create floating tools, duplicate limbs, warped hands, objects passing through bodies, or shelves that intersect people.\n- Do not depict actual animals, outdoor wilderness, a courtroom, a classroom, or a fantasy machine.\n- Keep the scene safe-for-work, nonviolent, and focused on hardware-store anxiety.\n\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the right panel. Do not render any other words. In particular, do not write LEFT, CENTER, RIGHT, ZONE, composition notes, prompt labels, layout labels, percentages, watermarks, signatures, fake captions, brand names, or filler microtext anywhere in the image.\n\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Aisle Five of Doom\n\nExact joke text to render in the right panel:\nI know my fears are irrational. I know this. But I cannot walk into a hardware store without assuming every employee can see exactly what I'm about to do wrong. They don't say anything. They just watch me pick up the wrong-gauge screw with this look — like a wildlife photographer who's decided not to intervene.\n\nScene source: use the winning joke as the only scene brief. Do not infer a separate premise from all six seed terms.\n\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\n\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, visually balanced, physically possible, and free of prompt/layout labels.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Comic Book, Personal Shopper, Hardware Store, A competitor showing up, Studious, Irrational. Use the winning joke titled \"Aisle 4 Assistance\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.5,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.8,
+      "google": 6,
+      "xai": 7,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-12-ext-real-2026-06-12.md"
+}
