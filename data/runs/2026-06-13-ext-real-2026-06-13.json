@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "slug": "2026-06-13-ext-real-2026-06-13",
+  "seed": "ext-real-2026-06-13",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-13T13:07:50.053Z",
+  "publishedDate": "2026-06-13",
+  "seedTerms": [
+    "Urban",
+    "Actor",
+    "Artist / Photographer's Studio",
+    "Having to blindly trust someone",
+    "Optimistic",
+    "Unintelligent"
+  ],
+  "premise": {
+    "text": "Seed terms: Urban, Actor, Artist / Photographer's Studio, Having to blindly trust someone, Optimistic, Unintelligent",
+    "seedTerms": [
+      "Urban",
+      "Actor",
+      "Artist / Photographer's Studio",
+      "Having to blindly trust someone",
+      "Optimistic",
+      "Unintelligent"
+    ],
+    "displayText": "A background actor prepares for the world’s least glamorous fan encounter.",
+    "headline": "A background actor prepares for the world’s least glamorous fan encounter."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Trust Exercise",
+      "seedTermsUsed": [
+        "Actor",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I tried acting once, and the director said, “In this scene, just fall backward and trust your co-star will catch you.” That’s when I learned acting isn’t lying convincingly; it’s finding out which stranger has been nodding through rehearsal like he read the email. He missed me completely. Great performance, though — I really believed he cared.",
+      "setup": "",
+      "punchline": "I tried acting once, and the director said, “In this scene, just fall backward and trust your co-star will catch you.” That’s when I learned acting isn’t lying convincingly; it’s finding out which stranger has been nodding through rehearsal like he read the email. He missed me completely. Great performance, though — I really believed he cared.",
+      "text": "I tried acting once, and the director said, “In this scene, just fall backward and trust your co-star will catch you.” That’s when I learned acting isn’t lying convincingly; it’s finding out which stranger has been nodding through rehearsal like he read the email. He missed me completely. Great performance, though — I really believed he cared."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Method Acting the GPS",
+      "seedTermsUsed": [
+        "Actor",
+        "Optimistic"
+      ],
+      "joke": "I was in an acting class and the teacher said, 'Commit fully to the role — no matter what, stay in character.' So I played an optimist for a week. Someone told me my car got towed. I said, 'That's amazing — free valet!' My girlfriend left me. 'She's giving me time to grow!' I got fired. I still haven't broken character. I genuinely think this is going great.",
+      "setup": "",
+      "punchline": "I was in an acting class and the teacher said, 'Commit fully to the role — no matter what, stay in character.' So I played an optimist for a week. Someone told me my car got towed. I said, 'That's amazing — free valet!' My girlfriend left me. 'She's giving me time to grow!' I got fired. I still haven't broken character. I genuinely think this is going great.",
+      "text": "I was in an acting class and the teacher said, 'Commit fully to the role — no matter what, stay in character.' So I played an optimist for a week. Someone told me my car got towed. I said, 'That's amazing — free valet!' My girlfriend left me. 'She's giving me time to grow!' I got fired. I still haven't broken character. I genuinely think this is going great."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Blurry Extra",
+      "seedTermsUsed": [
+        "Actor",
+        "Optimistic"
+      ],
+      "joke": "I envy the optimism of struggling actors. My buddy has been a blurry background extra in exactly one regional mayonnaise commercial, but he still lives like he's dodging paparazzi. I went to his apartment and all his blinds were drawn. I asked, 'Is the sun in your eyes?' He whispered, 'No, the fans found my address.' I looked out the window. It was just a raccoon trying to open a yogurt container.",
+      "setup": "",
+      "punchline": "I envy the optimism of struggling actors. My buddy has been a blurry background extra in exactly one regional mayonnaise commercial, but he still lives like he's dodging paparazzi. I went to his apartment and all his blinds were drawn. I asked, 'Is the sun in your eyes?' He whispered, 'No, the fans found my address.' I looked out the window. It was just a raccoon trying to open a yogurt container.",
+      "text": "I envy the optimism of struggling actors. My buddy has been a blurry background extra in exactly one regional mayonnaise commercial, but he still lives like he's dodging paparazzi. I went to his apartment and all his blinds were drawn. I asked, 'Is the sun in your eyes?' He whispered, 'No, the fans found my address.' I looked out the window. It was just a raccoon trying to open a yogurt container."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Blind Trust in the Studio",
+      "seedTermsUsed": [
+        "Having to blindly trust someone",
+        "Artist / Photographer's Studio"
+      ],
+      "joke": "I went to this photographer's studio last month. You stand there under the lights, having to blindly trust the guy behind the camera with your whole image. He's yelling, 'Chin up! Eyes this way!' I'm smiling like an idiot, thinking this is gonna be gold. Got the prints back yesterday – I look like I lost a fight with a wind tunnel. Turns out the only thing I nailed was trusting the wrong artist.",
+      "setup": "",
+      "punchline": "I went to this photographer's studio last month. You stand there under the lights, having to blindly trust the guy behind the camera with your whole image. He's yelling, 'Chin up! Eyes this way!' I'm smiling like an idiot, thinking this is gonna be gold. Got the prints back yesterday – I look like I lost a fight with a wind tunnel. Turns out the only thing I nailed was trusting the wrong artist.",
+      "text": "I went to this photographer's studio last month. You stand there under the lights, having to blindly trust the guy behind the camera with your whole image. He's yelling, 'Chin up! Eyes this way!' I'm smiling like an idiot, thinking this is gonna be gold. Got the prints back yesterday – I look like I lost a fight with a wind tunnel. Turns out the only thing I nailed was trusting the wrong artist."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Blind Trust Issues",
+      "seedTermsUsed": [
+        "Having to blindly trust someone",
+        "Actor"
+      ],
+      "joke": "I once dated an actor who said I should \"trust the process,\" which is terrifying when their whole job is pretending to be someone else. I’d ask how their day was, and they’d pause like they were waiting for a director to yell cut. Nothing makes you question your life choices like realizing you’re emotionally invested in a person who might still be in character.",
+      "setup": "",
+      "punchline": "I once dated an actor who said I should \"trust the process,\" which is terrifying when their whole job is pretending to be someone else. I’d ask how their day was, and they’d pause like they were waiting for a director to yell cut. Nothing makes you question your life choices like realizing you’re emotionally invested in a person who might still be in character.",
+      "text": "I once dated an actor who said I should \"trust the process,\" which is terrifying when their whole job is pretending to be someone else. I’d ask how their day was, and they’d pause like they were waiting for a director to yell cut. Nothing makes you question your life choices like realizing you’re emotionally invested in a person who might still be in character."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear premise and solid escalation, but the optimistic reframing pattern is familiar and the final line mostly extends the setup.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong concrete comic image, good specificity, and the raccoon tag gives it a real final turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and on prompt, but the payoff is generic and the wrong-artist turn does not add much beyond the setup.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A clean relationship angle with good stage clarity, though the final thought is more amusing than sharply surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean trust-fall premise with a genuinely good final line. 'He really believed he cared' lands well. The middle clause is slightly cluttered but recovers.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "The raccoon-with-yogurt closer is specific and absurd in exactly the right way. Escalation from mayonnaise commercial to drawn blinds earns it. One of the stronger images in the batch.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent but the final line just restates the setup. 'Trusting the wrong artist' is the obvious landing. No real turn; the punchline explains rather than snaps.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relatable premise but the joke coasts on the observation without landing anywhere specific. 'Might still be in character' is the turn but it's predictable and the final line trails off rather than punches.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong trust fall premise with excellent phrasing about reading the email.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid rule-of-three execution but highly predictable progression.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Standard bad-photo premise with no real surprise or turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Well-crafted dating premise, ending with a solid, natural realization.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid trust-fall twist with decent rhythm, but the turn is somewhat predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong escalation and commitment payoff; relatable and cleanly delivered.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid raccoon reveal lands well; fresh visual in a familiar actor optimism setup.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Generic dating-an-actor observation without a sharp enough snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with a clear turn; mildly funny and cleanly structured.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Consistent escalation and a clear character game; amusing but not sharply surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good imagery and a fun final reveal; clean timing and a memorable turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relatable setup with a tidy payoff; competent and clear, though not especially sharp.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.3,
+      "rawScore": 7.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.1,
+        "surprise": 6.9,
+        "craft": 7.1,
+        "originality": 7.1,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 7.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "Strong concrete comic image, good specificity, and the raccoon tag gives it a real final turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.6,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.3,
+          "comment": "The raccoon-with-yogurt closer is specific and absurd in exactly the right way. Escalation from mayonnaise commercial to drawn blinds earns it. One of the stronger images in the batch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Vivid raccoon reveal lands well; fresh visual in a familiar actor optimism setup."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.5,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.3,
+          "comment": "Good imagery and a fun final reveal; clean timing and a memorable turn."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean trust-fall premise with a genuinely good final line. 'He really believed he cared' lands well. The middle clause is slightly cluttered but recovers."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.9,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong trust fall premise with excellent phrasing about reading the email."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid trust-fall twist with decent rhythm, but the turn is somewhat predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Solid premise with a clear turn; mildly funny and cleanly structured."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.4,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 5.8,
+        "craft": 6.6,
+        "originality": 5.6,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 5.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Clear premise and solid escalation, but the optimistic reframing pattern is familiar and the final line mostly extends the setup."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Solid rule-of-three execution but highly predictable progression."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong escalation and commitment payoff; relatable and cleanly delivered."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Consistent escalation and a clear character game; amusing but not sharply surprising."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6,
+      "rawScore": 6.1,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 5.4,
+        "craft": 6.4,
+        "originality": 5.7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "A clean relationship angle with good stage clarity, though the final thought is more amusing than sharply surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.4,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Relatable premise but the joke coasts on the observation without landing anywhere specific. 'Might still be in character' is the turn but it's predictable and the final line trails off rather than punches."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.9,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Well-crafted dating premise, ending with a solid, natural realization."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.1,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Generic dating-an-actor observation without a sharp enough snap."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.4,
+      "rawScore": 5.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.6,
+        "craft": 5.3,
+        "originality": 4.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 5.3,
+        "originality": 4.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.1,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0,
+          "comment": "Understandable and on prompt, but the payoff is generic and the wrong-artist turn does not add much beyond the setup."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.9,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Competent but the final line just restates the setup. 'Trusting the wrong artist' is the obvious landing. No real turn; the punchline explains rather than snaps."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Standard bad-photo premise with no real surprise or turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Relatable setup with a tidy payoff; competent and clear, though not especially sharp."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-13-ext-real-2026-06-13.jpg",
+    "originalSrc": "assets/feature-images/2026-06-13-ext-real-2026-06-13.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v3",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Blurry Extra: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\n\nASPECT RATIO: exactly 2:1, horizontal wide banner, 1024x506 preview preferred.\n\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use warm amber stage lights, dark bronze and silver metal, muted apartment blues and greens, dusty blue-gray shadows, cream-white text, and subtle deep red accents.\n\nComposition: divide the picture visually into three natural areas without writing labels. On the left side, show a charming anthropomorphic metallic paperclip stand-up comedian standing upright on a small wooden comedy stage at a vintage microphone. In the center, show a cramped but normal urban apartment interior with believable perspective. On the right side, show a dark framed poster panel containing the joke text.\n\nScene details: a struggling actor stands in a modest apartment with blinds partly drawn, looking overly serious and secretive as if avoiding fame. Through the window, show the harmless final reveal outside: a small raccoon fussing with a yogurt container near a trash can or stoop, while the actor dramatically mistakes it for intense public attention. Include ordinary props such as blinds, a couch, a small table, an unpaid headshot/photo, and city-window lighting.\n\nPhysical layout rules:\n- Keep all people, furniture, windows, blinds, props, and the stage grounded with believable perspective.\n- Do not place anyone inside a wall, window frame, couch, drawer, box, or impossible room.\n- Do not create floating furniture, duplicate limbs, warped hands, objects passing through bodies, or impossible window geometry.\n- Do not show actual paparazzi crowds, camera flashes, brand logos, horror, violence, or unsafe content.\n- Keep the scene funny, non-gory, and focused on comic overreaction.\n\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the right panel. Do not render any other words. In particular, do not write LEFT, CENTER, RIGHT, ZONE, composition notes, prompt labels, layout labels, percentages, watermarks, signatures, fake captions, brand names, or filler microtext anywhere in the image.\n\nOptional small header text above the panel: Winner: Gemini Flash - The Blurry Extra\n\nExact joke text to render in the right panel:\nI envy the optimism of struggling actors. My buddy has been a blurry background extra in exactly one regional mayonnaise commercial, but he still lives like he's dodging paparazzi. I went to his apartment and all his blinds were drawn. I asked, 'Is the sun in your eyes?' He whispered, 'No, the fans found my address.' I looked out the window. It was just a raccoon trying to open a yogurt container.\n\nScene source: use the winning joke as the only scene brief. Do not infer a separate premise from all six seed terms.\n\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\n\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, visually balanced, physically possible, and free of prompt/layout labels.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Urban, Actor, Artist / Photographer's Studio, Having to blindly trust someone, Optimistic, Unintelligent. Use the winning joke titled \"The Blurry Extra\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.7,
+      "google": 6,
+      "xai": 6.8,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-13-ext-real-2026-06-13.md"
+}
