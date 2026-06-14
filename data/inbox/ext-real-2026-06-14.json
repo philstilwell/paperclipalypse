@@ -1,0 +1,345 @@
+{
+  "createdAt": "2026-06-14T14:30:28.982Z",
+  "publishedDate": "2026-06-14",
+  "seed": "ext-real-2026-06-14",
+  "slug": "2026-06-14-ext-real-2026-06-14",
+  "source": "manual-external",
+  "seedTerms": [
+    "Gothic",
+    "Vintner",
+    "Run-down Apartment",
+    "War breaking out",
+    "Observant",
+    "Disloyal"
+  ],
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Historic Character",
+      "seedTermsUsed": [
+        "Gothic",
+        "Run-down Apartment"
+      ],
+      "joke": "I moved into a run-down apartment with what the landlord called “Gothic charm.” That just meant the radiators screamed at midnight, the hallway light flickered like it was confessing, and every ceiling stain looked like a saint being judged. He said, “It has historic character.” I said, “Buddy, if a building needs an exorcist and a tetanus shot, that’s not character—that’s a Yelp warning.”",
+      "setup": "",
+      "punchline": "I moved into a run-down apartment with what the landlord called “Gothic charm.” That just meant the radiators screamed at midnight, the hallway light flickered like it was confessing, and every ceiling stain looked like a saint being judged. He said, “It has historic character.” I said, “Buddy, if a building needs an exorcist and a tetanus shot, that’s not character—that’s a Yelp warning.”",
+      "text": "I moved into a run-down apartment with what the landlord called “Gothic charm.” That just meant the radiators screamed at midnight, the hallway light flickered like it was confessing, and every ceiling stain looked like a saint being judged. He said, “It has historic character.” I said, “Buddy, if a building needs an exorcist and a tetanus shot, that’s not character—that’s a Yelp warning.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Cork Snob",
+      "seedTermsUsed": [
+        "Vintner",
+        "Run-down Apartment"
+      ],
+      "joke": "My downstairs neighbor calls himself a vintner. Vintner. He makes wine in a bathtub in a building where the elevator has been “temporarily out of service” since 2019. He gave me a bottle, told me to let it breathe. I said buddy, everything in this building is already struggling to breathe. He said, “Notes of oak, leather, and... is that mold?” I said that's not a note, that's the building.",
+      "setup": "",
+      "punchline": "My downstairs neighbor calls himself a vintner. Vintner. He makes wine in a bathtub in a building where the elevator has been “temporarily out of service” since 2019. He gave me a bottle, told me to let it breathe. I said buddy, everything in this building is already struggling to breathe. He said, “Notes of oak, leather, and... is that mold?” I said that's not a note, that's the building.",
+      "text": "My downstairs neighbor calls himself a vintner. Vintner. He makes wine in a bathtub in a building where the elevator has been “temporarily out of service” since 2019. He gave me a bottle, told me to let it breathe. I said buddy, everything in this building is already struggling to breathe. He said, “Notes of oak, leather, and... is that mold?” I said that's not a note, that's the building."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Creature of the Night",
+      "seedTermsUsed": [
+        "Gothic",
+        "Run-down Apartment"
+      ],
+      "joke": "I try to maintain a dark, brooding Gothic lifestyle, but it’s really hard to pull off in a run-down apartment. You can’t be a mysterious creature of the night when the walls are so thin you can hear your neighbor burning a Hot Pocket. I tried lighting a single, trembling black candle for that haunted Victorian atmosphere, but all it did was illuminate the ceiling's water damage and attract a cockroach big enough to sign a lease.",
+      "setup": "",
+      "punchline": "I try to maintain a dark, brooding Gothic lifestyle, but it’s really hard to pull off in a run-down apartment. You can’t be a mysterious creature of the night when the walls are so thin you can hear your neighbor burning a Hot Pocket. I tried lighting a single, trembling black candle for that haunted Victorian atmosphere, but all it did was illuminate the ceiling's water damage and attract a cockroach big enough to sign a lease.",
+      "text": "I try to maintain a dark, brooding Gothic lifestyle, but it’s really hard to pull off in a run-down apartment. You can’t be a mysterious creature of the night when the walls are so thin you can hear your neighbor burning a Hot Pocket. I tried lighting a single, trembling black candle for that haunted Victorian atmosphere, but all it did was illuminate the ceiling's water damage and attract a cockroach big enough to sign a lease."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Apartment Betrayal",
+      "seedTermsUsed": [
+        "Run-down Apartment",
+        "Disloyal"
+      ],
+      "joke": "Folks, I was stuck in this run-down apartment with my supposed best friend, but man, was he disloyal. I'd come home from work and find him using my Netflix, eating my leftovers, and telling the landlord the leaky ceiling was my fault. Finally caught him trying to sublet my own bedroom on the side. I said, “Dude, we're supposed to be battling the rats together, not joining their side!” Now I'm sleeping on a friend's couch... at least the rats there are honest.",
+      "setup": "",
+      "punchline": "Folks, I was stuck in this run-down apartment with my supposed best friend, but man, was he disloyal. I'd come home from work and find him using my Netflix, eating my leftovers, and telling the landlord the leaky ceiling was my fault. Finally caught him trying to sublet my own bedroom on the side. I said, “Dude, we're supposed to be battling the rats together, not joining their side!” Now I'm sleeping on a friend's couch... at least the rats there are honest.",
+      "text": "Folks, I was stuck in this run-down apartment with my supposed best friend, but man, was he disloyal. I'd come home from work and find him using my Netflix, eating my leftovers, and telling the landlord the leaky ceiling was my fault. Finally caught him trying to sublet my own bedroom on the side. I said, “Dude, we're supposed to be battling the rats together, not joining their side!” Now I'm sleeping on a friend's couch... at least the rats there are honest."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Haunted Lease",
+      "seedTermsUsed": [
+        "Gothic",
+        "Run-down Apartment"
+      ],
+      "joke": "I used to live in this run-down apartment so Gothic it felt like the building was judging me. Every night the walls creaked like they were sighing at my life choices. One time a chunk of plaster fell off and I apologized to it, because honestly, the place looked more exhausted than I did.",
+      "setup": "",
+      "punchline": "I used to live in this run-down apartment so Gothic it felt like the building was judging me. Every night the walls creaked like they were sighing at my life choices. One time a chunk of plaster fell off and I apologized to it, because honestly, the place looked more exhausted than I did.",
+      "text": "I used to live in this run-down apartment so Gothic it felt like the building was judging me. Every night the walls creaked like they were sighing at my life choices. One time a chunk of plaster fell off and I apologized to it, because honestly, the place looked more exhausted than I did."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear comic premise with good escalation and a solid final turn; bathtub wine in a decaying building is concrete and broadly playable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong visual escalation from Gothic self-image to mundane apartment decay; the cockroach lease tag is familiar but lands cleanly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Understandable first-person bit, but the disloyal roommate angle is generic and the rat-side turn is more cute than sharp."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Atmospheric and coherent, but the final apology/payoff is soft and mostly restates the exhausted-apartment premise."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid escalation, vivid images, decent closer line."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good escalation but cockroach lease line is a familiar AI-ish closer."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun premise, final line lands cleanly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Whimsical but mild; ending is sweet rather than a strong laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Strong imagery for the Gothic theme, though the final punchline relies on a standard Yelp/exorcist construction."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "Excellent stand-up rhythm. The struggling-to-breathe line escalates perfectly to the closer."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "Awkward integration of the disloyal concept and the opening feels like a generic template. The punchline loses steam."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "More of a whimsical anecdote than a stand-up joke. The connection between Gothic and judgment is weak, and the ending is mild."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid apartment horror with gothic flair and clean punch."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Specific vintner absurdity lands well in the building context."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Familiar thin-walls trope with okay but expected final payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Mild observational bit lacking strong escalation or snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Solid imagery and clear premise, but the turn is predictable and the punchline leans on familiar phrasing."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Good escalation and a clean final line; the bathtub wine angle is fun though not wildly surprising."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear first-person setup with relatable details, but the turn lands softly and feels expected."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Coherent and stage-ready, but the roommate-as-traitor angle follows a familiar path without a standout twist."
+        }
+      ]
+    }
+  ],
+  "premise": {
+    "headline": "A bathtub wine tasting discovers the building has notes of structural despair."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\n\nASPECT RATIO: exactly 2:1, horizontal wide banner, 1024x506 preview preferred.\n\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use warm amber stage lights, dark bronze and silver metal, dingy apartment greens, dusty blue-gray shadows, cream-white text, and subtle deep red accents.\n\nComposition: divide the picture visually into three natural areas without writing labels. On the left side, show a charming anthropomorphic metallic paperclip stand-up comedian standing upright on a small wooden comedy stage at a vintage microphone. In the center, show a run-down apartment bathroom or kitchenette with believable perspective. On the right side, show a dark framed poster panel containing the joke text.\n\nScene details: a self-serious amateur vintner neighbor is making wine in a bathtub inside a crumbling apartment building. Show a tired elevator out-of-service vibe without readable signs, peeling paint, a leaky ceiling, damp walls, old pipes, moldy-looking corners, cheap wine bottles, a cork, and the comic absurdity of someone presenting the bathtub wine as if it were fancy. Keep it funny and grimy, not disgusting or graphic.\n\nPhysical layout rules:\n- Keep all people, bathtub, bottles, pipes, floor, stage, and furniture grounded with believable perspective.\n- Do not place anyone inside a wall, ceiling, drawer, cabinet, impossible bathtub shape, or broken perspective room.\n- Do not create floating bottles, duplicate limbs, warped hands, objects passing through bodies, or impossible plumbing.\n- Do not depict war, combat, weapons, explicit filth, gore, brands, logos, or unsafe content.\n- Keep the scene focused on bathtub wine and a failing apartment building.\n\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the right panel. Do not render any other words. In particular, do not write LEFT, CENTER, RIGHT, ZONE, composition notes, prompt labels, layout labels, percentages, watermarks, signatures, fake captions, brand names, warning labels, or filler microtext anywhere in the image.\n\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Cork Snob\n\nExact joke text to render in the right panel:\nMy downstairs neighbor calls himself a vintner. Vintner. He makes wine in a bathtub in a building where the elevator has been “temporarily out of service” since 2019. He gave me a bottle, told me to let it breathe. I said buddy, everything in this building is already struggling to breathe. He said, “Notes of oak, leather, and... is that mold?” I said that's not a note, that's the building.\n\nScene source: use the winning joke as the only scene brief. Do not infer a separate premise from all six seed terms.\n\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect. If space is tight, make the center illustration simpler and the right text panel larger.\n\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, visually balanced, physically possible, and free of prompt/layout labels."
+}
