@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "slug": "2026-06-15-ext-real-2026-06-15",
+  "seed": "ext-real-2026-06-15",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-15T11:42:57.659Z",
+  "publishedDate": "2026-06-15",
+  "seedTerms": [
+    "Time Travel",
+    "Ghostwriter",
+    "River / Creek",
+    "Being recognized",
+    "Socially Aware",
+    "Gossipy"
+  ],
+  "premise": {
+    "text": "Seed terms: Time Travel, Ghostwriter, River / Creek, Being recognized, Socially Aware, Gossipy",
+    "seedTerms": [
+      "Time Travel",
+      "Ghostwriter",
+      "River / Creek",
+      "Being recognized",
+      "Socially Aware",
+      "Gossipy"
+    ],
+    "displayText": "A time machine turns Thanksgiving gossip into a cold case with deviled eggs.",
+    "headline": "A time machine turns Thanksgiving gossip into a cold case with deviled eggs."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "First Draft",
+      "seedTermsUsed": [
+        "Time Travel",
+        "Ghostwriter"
+      ],
+      "joke": "I hired a ghostwriter for my memoir, and he used time travel, which sounds efficient until you realize he came back furious about my character arc. He said, “I fixed your ending.” I said, “I’m still alive.” He said, “That was the first draft.”",
+      "setup": "",
+      "punchline": "I hired a ghostwriter for my memoir, and he used time travel, which sounds efficient until you realize he came back furious about my character arc. He said, “I fixed your ending.” I said, “I’m still alive.” He said, “That was the first draft.”",
+      "text": "I hired a ghostwriter for my memoir, and he used time travel, which sounds efficient until you realize he came back furious about my character arc. He said, “I fixed your ending.” I said, “I’m still alive.” He said, “That was the first draft.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "My Time Machine Has a Ghostwriter",
+      "seedTermsUsed": [
+        "Time Travel",
+        "Ghostwriter"
+      ],
+      "joke": "I finally built a time machine, went back to fix my biggest regret: that email I sent my ex at 2 AM. So I go back, stop myself, and past-me says, “relax, I hired a ghostwriter.” Turns out the email was professionally written. That’s the email that ended it. She wasn’t mad I was a mess — she was mad I clearly had help and still chose those words.",
+      "setup": "",
+      "punchline": "I finally built a time machine, went back to fix my biggest regret: that email I sent my ex at 2 AM. So I go back, stop myself, and past-me says, “relax, I hired a ghostwriter.” Turns out the email was professionally written. That’s the email that ended it. She wasn’t mad I was a mess — she was mad I clearly had help and still chose those words.",
+      "text": "I finally built a time machine, went back to fix my biggest regret: that email I sent my ex at 2 AM. So I go back, stop myself, and past-me says, “relax, I hired a ghostwriter.” Turns out the email was professionally written. That’s the email that ended it. She wasn’t mad I was a mess — she was mad I clearly had help and still chose those words."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Historical Priorities",
+      "seedTermsUsed": [
+        "Time Travel",
+        "Gossipy"
+      ],
+      "joke": "People say if they got a time machine, they’d go back and change history. Stop a war, buy stock in Apple. I’m way too gossipy for that kind of pressure. The space-time continuum is fine. I just want to time-travel back to Thanksgiving 1998, hide in the pantry, and finally hear what Uncle Dave said right before Aunt Linda hit him with a deviled egg. You guys can save the world. I just need to know why Dave spent that winter living in a Honda.",
+      "setup": "",
+      "punchline": "People say if they got a time machine, they’d go back and change history. Stop a war, buy stock in Apple. I’m way too gossipy for that kind of pressure. The space-time continuum is fine. I just want to time-travel back to Thanksgiving 1998, hide in the pantry, and finally hear what Uncle Dave said right before Aunt Linda hit him with a deviled egg. You guys can save the world. I just need to know why Dave spent that winter living in a Honda.",
+      "text": "People say if they got a time machine, they’d go back and change history. Stop a war, buy stock in Apple. I’m way too gossipy for that kind of pressure. The space-time continuum is fine. I just want to time-travel back to Thanksgiving 1998, hide in the pantry, and finally hear what Uncle Dave said right before Aunt Linda hit him with a deviled egg. You guys can save the world. I just need to know why Dave spent that winter living in a Honda."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Time Traveler Recognized",
+      "seedTermsUsed": [
+        "Time Travel",
+        "Being recognized"
+      ],
+      "joke": "Man, being recognized in public is tough enough, but try it as a time traveler. The other night at the bar, this guy walks up and says, “Hey, aren’t you that dude who warned us about the election results last week?” I’m like, “Shhh, I haven’t even gone back yet! Keep it down before I change your future!” Now everyone’s hitting me up for lottery numbers and breakup spoilers. Time travel should come with an NDA, folks.",
+      "setup": "",
+      "punchline": "Man, being recognized in public is tough enough, but try it as a time traveler. The other night at the bar, this guy walks up and says, “Hey, aren’t you that dude who warned us about the election results last week?” I’m like, “Shhh, I haven’t even gone back yet! Keep it down before I change your future!” Now everyone’s hitting me up for lottery numbers and breakup spoilers. Time travel should come with an NDA, folks.",
+      "text": "Man, being recognized in public is tough enough, but try it as a time traveler. The other night at the bar, this guy walks up and says, “Hey, aren’t you that dude who warned us about the election results last week?” I’m like, “Shhh, I haven’t even gone back yet! Keep it down before I change your future!” Now everyone’s hitting me up for lottery numbers and breakup spoilers. Time travel should come with an NDA, folks."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "The Creek Celebrity",
+      "seedTermsUsed": [
+        "River / Creek",
+        "Being recognized"
+      ],
+      "joke": "I went for a walk by this little creek near my place, just trying to clear my head, when a guy jogs past, squints at me, and goes, “Hey… don’t I know you?” And I’m like, wow, I can’t even be anonymous in nature. Even the ducks looked over like, “Yeah, that’s him… the guy who slipped here last week.”",
+      "setup": "",
+      "punchline": "I went for a walk by this little creek near my place, just trying to clear my head, when a guy jogs past, squints at me, and goes, “Hey… don’t I know you?” And I’m like, wow, I can’t even be anonymous in nature. Even the ducks looked over like, “Yeah, that’s him… the guy who slipped here last week.”",
+      "text": "I went for a walk by this little creek near my place, just trying to clear my head, when a guy jogs past, squints at me, and goes, “Hey… don’t I know you?” And I’m like, wow, I can’t even be anonymous in nature. Even the ducks looked over like, “Yeah, that’s him… the guy who slipped here last week.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong premise with a good final turn; the ghostwriter angle pays off cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Specific, stage-ready, and the final Honda detail gives the gossip premise a strong landing.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 8.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and compliant, but the time-traveler-recognition premise follows a familiar route and the NDA tag is soft.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.300000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A tidy, mildly funny image with good economy; the ducks give it a small but real payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean meta turn on memoirs/death; solid escalation and tight final line.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Funny specific image (Honda, deviled egg) but a bit long and the ending trails rather than snaps.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Familiar time-travel-spoiler premise, predictable beats, weak closing line.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Nice escalation to the ducks; final line lands a decent extra beat.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Excellent economy and a sharp, surprising punchline that naturally bridges the two seed concepts.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 8
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Great premise applying a ghostwriter to a breakup text, though the execution gets slightly tangled in its own time-travel logic.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Suffers from generic stand-up cadence and ends on a very weak, clichéd closing thought that completely kills the momentum.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A grounded, natural stage bit with a simple but effective misdirection away from typical fame to local embarrassment.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clever concept but punch feels forced and timing is flat.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Twisty idea but convoluted delivery dilutes the laugh.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong relatable premise with specific, vivid escalation and solid turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Mild observational bit; premise is thin and payoff predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a tidy turn; amusing but not especially memorable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid narrative and a coherent twist; lands as mildly funny rather than sharp.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fun image and clear voice; longer setup dilutes the punch but still works.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Recognizable structure but predictable; competent without a standout turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.9,
+      "rawScore": 7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 6.7,
+        "craft": 6.7,
+        "originality": 7.2,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 6.8,
+        "originality": 7.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 8.2,
+          "rawScore": 8.2,
+          "scoreAdjustment": 0,
+          "comment": "Specific, stage-ready, and the final Honda detail gives the gossip premise a strong landing."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Funny specific image (Honda, deviled egg) but a bit long and the ending trails rather than snaps."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong relatable premise with specific, vivid escalation and solid turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Fun image and clear voice; longer setup dilutes the punch but still works."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 6.5,
+        "originality": 6.5,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 6.5,
+        "originality": 6.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean meta turn on memoirs/death; solid escalation and tight final line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.3,
+          "rawScore": 8,
+          "scoreAdjustment": 0.3,
+          "comment": "Excellent economy and a sharp, surprising punchline that naturally bridges the two seed concepts."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.4,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Clever concept but punch feels forced and timing is flat."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean premise with a tidy turn; amusing but not especially memorable."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.5,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.5,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.5,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.3,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0,
+          "comment": "Strong premise with a good final turn; the ghostwriter angle pays off cleanly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.8,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Great premise applying a ghostwriter to a breakup text, though the execution gets slightly tangled in its own time-travel logic."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.7,
+          "rawScore": 6,
+          "scoreAdjustment": -0.3,
+          "comment": "Twisty idea but convoluted delivery dilutes the laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Solid narrative and a coherent twist; lands as mildly funny rather than sharp."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.2,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 6,
+        "craft": 6.2,
+        "originality": 6,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "A tidy, mildly funny image with good economy; the ducks give it a small but real payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Nice escalation to the ducks; final line lands a decent extra beat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.3,
+          "comment": "A grounded, natural stage bit with a simple but effective misdirection away from typical fame to local embarrassment."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.3,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Mild observational bit; premise is thin and payoff predictable."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.9,
+      "rawScore": 4.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.6,
+        "craft": 4.8,
+        "originality": 4.3,
+        "promptFit": 7.8
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.5,
+        "craft": 4.8,
+        "originality": 4.3,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.3,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0,
+          "comment": "Clear and compliant, but the time-traveler-recognition premise follows a familiar route and the NDA tag is soft."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.4,
+          "rawScore": 4.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Familiar time-travel-spoiler premise, predictable beats, weak closing line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.6,
+          "rawScore": 4.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Suffers from generic stand-up cadence and ends on a very weak, clichéd closing thought that completely kills the momentum."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.5,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Recognizable structure but predictable; competent without a standout turn."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-15-ext-real-2026-06-15.jpg",
+    "originalSrc": "assets/feature-images/2026-06-15-ext-real-2026-06-15.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v3",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Historical Priorities: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\n\nASPECT RATIO: exactly 2:1, horizontal wide banner, target preview size 1024x506.\n\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens and autumn browns for the Thanksgiving scene, dusty blue-gray shadows, cream-white text, and subtle deep red accents.\n\nComposition instructions, not visible labels:\n- LEFT: a charming anthropomorphic metallic paperclip stand-up comedian at a vintage microphone on a small stage, expressive and related to the Paperclipalypse paperclip-comedian logo, but not identical.\n- CENTER: the winning joke scene as visual comedy action: a glowing homemade time machine near a Thanksgiving dining room, a nosy narrator hiding in a pantry doorway, Uncle Dave reacting, Aunt Linda holding or throwing a deviled egg, and a small visual hint of an old Honda outside or through a window. Keep it energetic, funny, non-gory, and easy to understand.\n- RIGHT: a clean dark framed poster panel containing the winning joke text in large cream-white lettering with generous margins and legible line breaks.\n\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small header above the panel: Winner: Gemini Flash - Historical Priorities.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\n\nExact joke text to render in the right panel:\nPeople say if they got a time machine, they’d go back and change history. Stop a war, buy stock in Apple. I’m way too gossipy for that kind of pressure. The space-time continuum is fine. I just want to time-travel back to Thanksgiving 1998, hide in the pantry, and finally hear what Uncle Dave said right before Aunt Linda hit him with a deviled egg. You guys can save the world. I just need to know why Dave spent that winter living in a Honda.\n\nUse only this winning joke as the scene source. Do not add river, creek, ghostwriter, or celebrity motifs unless they are in the joke text. The image should be a balanced feature graphic: paperclip comic on left, joke scene in middle, readable text panel on right.\n\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\n\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Time Travel, Ghostwriter, River / Creek, Being recognized, Socially Aware, Gossipy. Use the winning joke titled \"Historical Priorities\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.4,
+      "anthropic": 6.5,
+      "google": 6.1,
+      "xai": 6.7,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-15-ext-real-2026-06-15.md"
+}
