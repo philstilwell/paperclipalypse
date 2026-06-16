@@ -3,15 +3,15 @@ const ARTICLE_RE = /^(a|an|the)\s+/i;
 export function normalizePremiseForDisplay(premise = {}, seedTerms = []) {
   const sourcePremise = premise && typeof premise === "object" ? premise : {};
   // Protocol: contestants receive seed terms, not a prebuilt premise.
-  const displayText = cleanDisplayText(sourcePremise.headline)
-    || cleanDisplayText(sourcePremise.teaserText)
-    || displaySeedTerms(seedTerms)
-    || cleanDisplayText(sourcePremise.displayText)
-    || displayPremiseFromParts(sourcePremise);
+  const displayText = cleanDisplayHeadline(sourcePremise.headline)
+    || cleanDisplayHeadline(sourcePremise.teaserText)
+    || cleanDisplayHeadline(sourcePremise.displayText)
+    || displayPremiseFromParts(sourcePremise)
+    || displayPremiseFromSeedTerms(seedTerms);
 
   return {
     ...sourcePremise,
-    displayText: displayText || cleanDisplayText(sourcePremise.text)
+    displayText: displayText || cleanDisplayHeadline(sourcePremise.text)
   };
 }
 
@@ -129,4 +129,9 @@ function cleanDisplayText(value) {
   return String(value || "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function cleanDisplayHeadline(value) {
+  const text = cleanDisplayText(value);
+  return /^seed terms\s*:/i.test(text) ? "" : text;
 }
