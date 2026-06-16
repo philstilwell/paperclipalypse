@@ -1,0 +1,341 @@
+{
+  "createdAt": "2026-06-16T15:00:06.085Z",
+  "publishedDate": "2026-06-16",
+  "seed": "ext-real-2026-06-16",
+  "slug": "2026-06-16-ext-real-2026-06-16",
+  "source": "manual-external",
+  "seedTerms": [
+    "Bumbling Detective",
+    "Manual Labourer",
+    "Boardroom",
+    "A loved one being put in harm's way",
+    "Playful",
+    "Lazy"
+  ],
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Case Closed",
+      "seedTermsUsed": [
+        "Bumbling Detective",
+        "Lazy"
+      ],
+      "joke": "I’d be the worst detective. I’m so lazy I’d show up to a crime scene, see the chalk outline, and go, “Great, somebody already traced him.” Then I’d arrest the victim for being the only guy who couldn’t explain where he was.",
+      "text": "I’d be the worst detective. I’m so lazy I’d show up to a crime scene, see the chalk outline, and go, “Great, somebody already traced him.” Then I’d arrest the victim for being the only guy who couldn’t explain where he was.",
+      "setup": "",
+      "punchline": "I’d be the worst detective. I’m so lazy I’d show up to a crime scene, see the chalk outline, and go, “Great, somebody already traced him.” Then I’d arrest the victim for being the only guy who couldn’t explain where he was."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Case Closed",
+      "seedTermsUsed": [
+        "Bumbling Detective",
+        "Lazy"
+      ],
+      "joke": "I tried being a detective for a week. Day one, I found a crucial lead. Day two, I lost it. Day three, I found it again in my jacket. Day four, I decided the jacket was a suspect. By Friday I'd arrested my own coat, written up a full report, and closed the case. The coat got six months. I got a commendation. Justice, apparently, is just paperwork with confidence.",
+      "text": "I tried being a detective for a week. Day one, I found a crucial lead. Day two, I lost it. Day three, I found it again in my jacket. Day four, I decided the jacket was a suspect. By Friday I'd arrested my own coat, written up a full report, and closed the case. The coat got six months. I got a commendation. Justice, apparently, is just paperwork with confidence.",
+      "setup": "",
+      "punchline": "I tried being a detective for a week. Day one, I found a crucial lead. Day two, I lost it. Day three, I found it again in my jacket. Day four, I decided the jacket was a suspect. By Friday I'd arrested my own coat, written up a full report, and closed the case. The coat got six months. I got a commendation. Justice, apparently, is just paperwork with confidence."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Superhuman Strength",
+      "seedTermsUsed": [
+        "A loved one being put in harm's way",
+        "Lazy"
+      ],
+      "joke": "They say in an emergency, adrenaline takes over and you can lift a car off your spouse. But I know myself, and I am deeply, profoundly lazy. If my wife gets pinned under a sedan, my first instinct isn't superhuman strength. It's sliding a throw pillow under her head and whispering, 'Let's just see where we're at in the morning.'",
+      "text": "They say in an emergency, adrenaline takes over and you can lift a car off your spouse. But I know myself, and I am deeply, profoundly lazy. If my wife gets pinned under a sedan, my first instinct isn't superhuman strength. It's sliding a throw pillow under her head and whispering, 'Let's just see where we're at in the morning.'",
+      "setup": "",
+      "punchline": "They say in an emergency, adrenaline takes over and you can lift a car off your spouse. But I know myself, and I am deeply, profoundly lazy. If my wife gets pinned under a sedan, my first instinct isn't superhuman strength. It's sliding a throw pillow under her head and whispering, 'Let's just see where we're at in the morning.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Couch Detective",
+      "seedTermsUsed": [
+        "Bumbling Detective",
+        "Lazy"
+      ],
+      "joke": "You know, I tried being a detective, but I'm way too lazy for the job. Last week my neighbor hired me to find his stolen bike. I 'investigated' from my recliner for three hours, then told him it was probably gone forever. Turns out I was using it as a footrest the whole time. He fired me on the spot. Best case I ever closed without getting up.",
+      "text": "You know, I tried being a detective, but I'm way too lazy for the job. Last week my neighbor hired me to find his stolen bike. I 'investigated' from my recliner for three hours, then told him it was probably gone forever. Turns out I was using it as a footrest the whole time. He fired me on the spot. Best case I ever closed without getting up.",
+      "setup": "",
+      "punchline": "You know, I tried being a detective, but I'm way too lazy for the job. Last week my neighbor hired me to find his stolen bike. I 'investigated' from my recliner for three hours, then told him it was probably gone forever. Turns out I was using it as a footrest the whole time. He fired me on the spot. Best case I ever closed without getting up."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Detective Instincts",
+      "seedTermsUsed": [
+        "Bumbling Detective",
+        "Lazy"
+      ],
+      "joke": "I realized I’m basically a bumbling detective the other day. I tried to find my missing keys, spent ten minutes interrogating the dog, then discovered them in my own pocket. And instead of feeling relieved, I just thought, “Great… even my crimes are lazy.”",
+      "text": "I realized I’m basically a bumbling detective the other day. I tried to find my missing keys, spent ten minutes interrogating the dog, then discovered them in my own pocket. And instead of feeling relieved, I just thought, “Great… even my crimes are lazy.”",
+      "setup": "",
+      "punchline": "I realized I’m basically a bumbling detective the other day. I tried to find my missing keys, spent ten minutes interrogating the dog, then discovered them in my own pocket. And instead of feeling relieved, I just thought, “Great… even my crimes are lazy.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 6,
+          "comment": "Amusing coat escalation and a solid closing idea, but the lazy seed is not clearly used as a concept."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong concrete emergency premise, clean lazy reversal, and the final line lands with real stage rhythm."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear and readable with a decent footrest reveal, though the detective-lazy pairing feels familiar."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean first-person form and fits the seeds, but the missing-keys setup is familiar and the punchline is mild."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Clean escalation, the second sentence lands hard. Arresting the victim for having no alibi is a sharp, non-obvious turn that earns the laugh without telegraphing it. Tight and stageworthy."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 9,
+          "comment": "Best in batch. The 'throw pillow' image is specific and perfectly lazy, and 'let's just see where we're at in the morning' is a genuinely funny final line that a human would repeat. Surprising angle, clean build, no wasted words."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Competent and the footrest reveal is a solid enough turn, but the setup is long and the 'best case I ever closed without getting up' ending tries to do too much at once. Readable filler; not memorable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The key-in-pocket setup is extremely familiar, and 'even my crimes are lazy' is more of a summary than a punchline. The joke does not land beyond a mild nod of recognition."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "The chalk outline setup is a bit cartoonish, but the second punchline arresting the victim is an excellent, unexpected turn that lands well."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "Reads more like a whimsical story than stand-up. The premise escalates into absurdity, and the final line feels like a generic essay takeaway rather than a punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The physical logic of using a neighbor's stolen bike as a recliner footrest without noticing completely breaks the necessary suspension of disbelief."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 5,
+          "laugh": 3,
+          "comment": "Relies on tired tropes of lost keys and interrogating pets, recites the seed term literally, and the final punchline makes no sense as losing keys is not a crime."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid pun setup with a dark twist, but relies on familiar tropes."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Meandering bit that builds to a mild, generic closer."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong premise, vivid lazy subversion of hero trope, lands cleanly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Compact self-own with a decent tag, but predictable."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Solid premise with a clear turn, but the punchline is mild and a bit expected."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Fun escalation and clean storytelling, but the final turn lands more as whimsy than a sharp laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clear premise, relatable angle, and a good final image; lands a real laugh though not quite standout."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent and coherent with a tidy turn, but the humor is predictable and the ending is gentle rather than punchy."
+        }
+      ]
+    }
+  ]
+}
