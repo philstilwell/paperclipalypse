@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-06-17T14:01:35.482Z",
+  "publishedDate": "2026-06-17",
+  "seed": "ext-real-2026-06-17",
+  "slug": "2026-06-17-ext-real-2026-06-17",
+  "source": "manual-external",
+  "premise": {
+    "headline": "Hallway sleuths and hostage manners collide."
+  },
+  "seedTerms": [
+    "Master Detective",
+    "Private Detective",
+    "School Hallway",
+    "Being captured",
+    "Hospitable",
+    "Irresponsible"
+  ],
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Hall Pass Noir",
+      "seedTermsUsed": [
+        "Private Detective",
+        "School Hallway"
+      ],
+      "joke": "I tried working as a private detective, but my first case was in a school hallway, which is impossible. You can’t shadow anyone there. Every six seconds a locker explodes, a kid stops dead, and a teacher goes, “Sir, why are you crouching behind the water fountain?” I said, “Surveillance.” She said, “That’s a sixth grader with a hall pass.”",
+      "text": "I tried working as a private detective, but my first case was in a school hallway, which is impossible. You can’t shadow anyone there. Every six seconds a locker explodes, a kid stops dead, and a teacher goes, “Sir, why are you crouching behind the water fountain?” I said, “Surveillance.” She said, “That’s a sixth grader with a hall pass.”",
+      "setup": "",
+      "punchline": "I tried working as a private detective, but my first case was in a school hallway, which is impossible. You can’t shadow anyone there. Every six seconds a locker explodes, a kid stops dead, and a teacher goes, “Sir, why are you crouching behind the water fountain?” I said, “Surveillance.” She said, “That’s a sixth grader with a hall pass.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Elementary, My Dear Bladder",
+      "seedTermsUsed": [
+        "Master Detective",
+        "School Hallway"
+      ],
+      "joke": "I used to think I was a master detective. I could read a room, clock every detail, notice things nobody else caught. Then I became a substitute teacher. I spent forty minutes convinced the kid in the back was plotting something — intense eye contact, nervous energy, kept shifting in his seat. Turns out he just really needed to use the bathroom. I had cracked the case of the wiggling third-grader.",
+      "text": "I used to think I was a master detective. I could read a room, clock every detail, notice things nobody else caught. Then I became a substitute teacher. I spent forty minutes convinced the kid in the back was plotting something — intense eye contact, nervous energy, kept shifting in his seat. Turns out he just really needed to use the bathroom. I had cracked the case of the wiggling third-grader.",
+      "setup": "",
+      "punchline": "I used to think I was a master detective. I could read a room, clock every detail, notice things nobody else caught. Then I became a substitute teacher. I spent forty minutes convinced the kid in the back was plotting something — intense eye contact, nervous energy, kept shifting in his seat. Turns out he just really needed to use the bathroom. I had cracked the case of the wiggling third-grader."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "People-Pleasing Hostage",
+      "seedTermsUsed": [
+        "Being captured",
+        "Hospitable"
+      ],
+      "joke": "I'm such a people-pleaser that if I ever end up being captured, I'm going to be a ridiculously hospitable hostage. I’ll be zip-tied to a radiator in a damp basement, my kidnapper will hand me a glass of tap water, and I’ll be like, 'Oh, you didn't need to use a coaster, it's just concrete! And honestly, the ropes are perfectly snug. I love what you've done with the murder room, by the way—is this real exposed brick?'",
+      "text": "I'm such a people-pleaser that if I ever end up being captured, I'm going to be a ridiculously hospitable hostage. I’ll be zip-tied to a radiator in a damp basement, my kidnapper will hand me a glass of tap water, and I’ll be like, 'Oh, you didn't need to use a coaster, it's just concrete! And honestly, the ropes are perfectly snug. I love what you've done with the murder room, by the way—is this real exposed brick?'",
+      "setup": "",
+      "punchline": "I'm such a people-pleaser that if I ever end up being captured, I'm going to be a ridiculously hospitable hostage. I’ll be zip-tied to a radiator in a damp basement, my kidnapper will hand me a glass of tap water, and I’ll be like, 'Oh, you didn't need to use a coaster, it's just concrete! And honestly, the ropes are perfectly snug. I love what you've done with the murder room, by the way—is this real exposed brick?'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Private Eye Blunder",
+      "seedTermsUsed": [
+        "Private Detective",
+        "Being captured"
+      ],
+      "joke": "I decided to try my hand as a private detective. Trench coat, shady alley meetings, the works. Last week I'm tailing a hot lead through the neighborhood when suddenly I'm being captured—hands tied, bag over my head. Turns out it was my wife who spotted me lurking and thought I was a creep. She dragged me inside and made me explain why I was following her from the grocery store. Private detective? More like publicly divorced.",
+      "text": "I decided to try my hand as a private detective. Trench coat, shady alley meetings, the works. Last week I'm tailing a hot lead through the neighborhood when suddenly I'm being captured—hands tied, bag over my head. Turns out it was my wife who spotted me lurking and thought I was a creep. She dragged me inside and made me explain why I was following her from the grocery store. Private detective? More like publicly divorced.",
+      "setup": "",
+      "punchline": "I decided to try my hand as a private detective. Trench coat, shady alley meetings, the works. Last week I'm tailing a hot lead through the neighborhood when suddenly I'm being captured—hands tied, bag over my head. Turns out it was my wife who spotted me lurking and thought I was a creep. She dragged me inside and made me explain why I was following her from the grocery store. Private detective? More like publicly divorced."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Hallway Hero",
+      "seedTermsUsed": [
+        "Private Detective",
+        "School Hallway"
+      ],
+      "joke": "I tried being a private detective once, but the only case I ever solved was why the school hallway smelled like fear and cafeteria tater tots. I strutted around like a noir hero until a teacher stopped me and said, “Sir, you don’t even work here.” Hard to look mysterious when you’re being escorted out past the lost‑and‑found box.",
+      "text": "I tried being a private detective once, but the only case I ever solved was why the school hallway smelled like fear and cafeteria tater tots. I strutted around like a noir hero until a teacher stopped me and said, “Sir, you don’t even work here.” Hard to look mysterious when you’re being escorted out past the lost‑and‑found box.",
+      "setup": "",
+      "punchline": "I tried being a private detective once, but the only case I ever solved was why the school hallway smelled like fear and cafeteria tater tots. I strutted around like a noir hero until a teacher stopped me and said, “Sir, you don’t even work here.” Hard to look mysterious when you’re being escorted out past the lost‑and‑found box."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 4,
+          "laugh": 6,
+          "comment": "Clear comic misread with good wording, but it uses a classroom/bathroom situation rather than the school hallway concept, so prompt fit drops."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strongest premise in the batch, with vivid escalation and a clean people-pleaser hostage angle; a bit long but lands well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Understandable and in form, but the capture setup feels forced and the final line is more wordplay than a strong comic turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean first-person setup using exactly two concepts, but the payoff is familiar and mild rather than sharply surprising."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clean escalation, the locker-exploding chaos earns the setup, and the final exchange lands with good timing. 'That’s a sixth grader with a hall pass' is a satisfying snap. Slightly familiar fish-out-of-water shape but executed with real rhythm."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Genuinely fresh angle—the people-pleaser hostage is a non-obvious conceptual turn and the brick detail earns a real laugh. 'Murder room' is the best single phrase in the batch. Runs slightly long but earns the space. Strong human-level joke."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "'Publicly divorced' is a tidy button but the turn is telegraphed early—once the wife appears you know where it's going. Competent construction, familiar shape. The punchline redeems a predictable middle but doesn't fully surprise."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Tater tots and fear is a mild smile, not a laugh. The escorted-out line is a restatement of the premise rather than a turn. Lost-and-found is a nice concrete detail but the joke ends before it builds to anything. Competent filler."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong staging and concrete imagery; the dialogue grounds the absurdity and delivers a solid, relatable punchline."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 5,
+          "laugh": 5,
+          "comment": "Competent stand-up rhythm, but relies on a predictable premise and misses the specific hallway constraint in favor of a general classroom setting."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Decent narrative misdirection, but the escalation feels cartoonish and the bit closes on a weak, strained pun."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Features strong, evocative imagery like cafeteria tater tots, though the final turn is a bit expected compared to the setup."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid school chaos visuals, mild teacher payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clever misread twist but safe substitute-teacher trope."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong escalation and vivid hostage politeness."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Generic school intrusion bit with weak mystery angle."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid premise with clear first‑person voice; the hallway chaos image works, though the ending lands more as a continuation than a sharp turn."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean and coherent, but the turn is predictable and the payoff mild; competent but not especially memorable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong angle with a clear escalation and a crisp final image; the hostage‑hospitality contrast lands well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Fun premise and a decent twist, though the final line leans on a familiar joke shape; still a real, workable bit."
+        }
+      ]
+    }
+  ]
+}
