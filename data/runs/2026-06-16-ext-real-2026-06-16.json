@@ -756,7 +756,7 @@
     "height": 506,
     "qa": {
       "status": "approved",
-      "version": "2026-06-feature-image-v3",
+      "version": "2026-06-feature-image-v4",
       "visualApproved": true,
       "assetType": "gemini-web-preview",
       "automaticChecks": "passed",
