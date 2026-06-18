@@ -1,0 +1,341 @@
+{
+  "createdAt": "2026-06-18T22:36:27.819Z",
+  "publishedDate": "2026-06-18",
+  "seed": "ext-real-2026-06-18",
+  "slug": "2026-06-18-ext-real-2026-06-18",
+  "source": "manual-external",
+  "seedTerms": [
+    "Crafts",
+    "Personal Trainer",
+    "Condemned Apartment Building",
+    "Rules changing",
+    "Happy",
+    "Martyr"
+  ],
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Craft Night Cardio",
+      "seedTermsUsed": [
+        "Crafts",
+        "Personal Trainer"
+      ],
+      "joke": "I hired a personal trainer, but I forgot to cancel craft night, so now my workout plan is just me doing lunges across the living room holding a half-finished birdhouse. He keeps yelling, “Feel the burn!” and I’m like, “I do. That’s why normal people wait for the hot glue to cool before doing squats.”",
+      "text": "I hired a personal trainer, but I forgot to cancel craft night, so now my workout plan is just me doing lunges across the living room holding a half-finished birdhouse. He keeps yelling, “Feel the burn!” and I’m like, “I do. That’s why normal people wait for the hot glue to cool before doing squats.”",
+      "setup": "",
+      "punchline": "I hired a personal trainer, but I forgot to cancel craft night, so now my workout plan is just me doing lunges across the living room holding a half-finished birdhouse. He keeps yelling, “Feel the burn!” and I’m like, “I do. That’s why normal people wait for the hot glue to cool before doing squats.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Progress",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Rules changing"
+      ],
+      "joke": "My personal trainer keeps changing the rules on me. First it was no carbs, then yes carbs, then only carbs that 'earn it.' Last week he told me the new rule is I have to enjoy working out. I looked him dead in the eye and said, 'Sir, I came here to suffer on a schedule. Do not take that from me.'",
+      "text": "My personal trainer keeps changing the rules on me. First it was no carbs, then yes carbs, then only carbs that 'earn it.' Last week he told me the new rule is I have to enjoy working out. I looked him dead in the eye and said, 'Sir, I came here to suffer on a schedule. Do not take that from me.'",
+      "setup": "",
+      "punchline": "My personal trainer keeps changing the rules on me. First it was no carbs, then yes carbs, then only carbs that 'earn it.' Last week he told me the new rule is I have to enjoy working out. I looked him dead in the eye and said, 'Sir, I came here to suffer on a schedule. Do not take that from me.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Urban Tactical Fitness",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Condemned Apartment Building"
+      ],
+      "joke": "I hired a discount personal trainer who runs his sessions out of a condemned apartment building. He tries to sell it as 'urban tactical fitness.' Our cardio warm-up was dodging falling asbestos, and leg day was just kicking a feral raccoon away from my water bottle. I've never had a tighter core, but that's mostly because my plank routine involved holding up a load-bearing wall so we wouldn't get crushed.",
+      "text": "I hired a discount personal trainer who runs his sessions out of a condemned apartment building. He tries to sell it as 'urban tactical fitness.' Our cardio warm-up was dodging falling asbestos, and leg day was just kicking a feral raccoon away from my water bottle. I've never had a tighter core, but that's mostly because my plank routine involved holding up a load-bearing wall so we wouldn't get crushed.",
+      "setup": "",
+      "punchline": "I hired a discount personal trainer who runs his sessions out of a condemned apartment building. He tries to sell it as 'urban tactical fitness.' Our cardio warm-up was dodging falling asbestos, and leg day was just kicking a feral raccoon away from my water bottle. I've never had a tighter core, but that's mostly because my plank routine involved holding up a load-bearing wall so we wouldn't get crushed."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Condemned Gains",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Condemned Apartment Building"
+      ],
+      "joke": "I hired a personal trainer last month, but the guy runs his sessions out of his condemned apartment building. We're doing squats in the kitchen while the ceiling drips and the floor creaks like it's about to surrender. I wheeze, 'This place is marked for demolition!' He just yells, 'So is your couch potato era--ten more!' If the walls come down mid-set, at least I'll die with better glutes than the rubble.",
+      "text": "I hired a personal trainer last month, but the guy runs his sessions out of his condemned apartment building. We're doing squats in the kitchen while the ceiling drips and the floor creaks like it's about to surrender. I wheeze, 'This place is marked for demolition!' He just yells, 'So is your couch potato era--ten more!' If the walls come down mid-set, at least I'll die with better glutes than the rubble.",
+      "setup": "",
+      "punchline": "I hired a personal trainer last month, but the guy runs his sessions out of his condemned apartment building. We're doing squats in the kitchen while the ceiling drips and the floor creaks like it's about to surrender. I wheeze, 'This place is marked for demolition!' He just yells, 'So is your couch potato era--ten more!' If the walls come down mid-set, at least I'll die with better glutes than the rubble."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Crafty Motivation",
+      "seedTermsUsed": [
+        "Crafts",
+        "Personal Trainer"
+      ],
+      "joke": "I hired a personal trainer, but he quit after one session because I kept treating the workout like a craft project. He’d yell, “Give me ten more reps!” and I’d be like, “Absolutely, but first—glitter.” Nothing kills a tough‑guy vibe faster than me bedazzling a kettlebell mid‑squat.",
+      "text": "I hired a personal trainer, but he quit after one session because I kept treating the workout like a craft project. He’d yell, “Give me ten more reps!” and I’d be like, “Absolutely, but first—glitter.” Nothing kills a tough‑guy vibe faster than me bedazzling a kettlebell mid‑squat.",
+      "setup": "",
+      "punchline": "I hired a personal trainer, but he quit after one session because I kept treating the workout like a craft project. He’d yell, “Give me ten more reps!” and I’d be like, “Absolutely, but first—glitter.” Nothing kills a tough‑guy vibe faster than me bedazzling a kettlebell mid‑squat."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clean premise with a strong character turn; final line lands well and keeps the wording natural."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Funny concrete escalation with strong visuals; a bit busy, but the load-bearing-wall plank is a solid payoff."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear and stageable, but the demolition/body transformation parallel is more expected than surprising."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Understandable and tidy, but glitter/bedazzling is a familiar comic route with a mild payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Hot glue burn payoff is clean and concrete. The image earns the joke without straining. Solid mid-tier stand-up bit."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Three-joke structure diffuses focus. 'Kicking a feral raccoon' is the strongest image but gets buried. Feels like a sketch premise more than a stand-up bit."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "'So is your couch potato era' is a good trainer line. Final glutes-and-rubble closer lands but slightly telegraphed. Functional and enjoyable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "'Bedazzling a kettlebell' is a vivid image but the setup is thin and the punchline restates the premise without a real turn. Publishable filler."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "The misdirection on 'feel the burn' to hot glue is a genuinely good, visual stage joke with clean rhythm."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "A relatable, mildly amusing flip on workout psychology. 'Suffer on a schedule' is a strong closing line."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good atmospheric setup and a solid retort from the trainer, though the final punchline is a bit overwritten."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent but relies heavily on the cartoonish, cliché trope of bedazzling and glitter for its humor."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Mild craft-workout mashup; glue burn line lands softly but feels expected."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Relatable trainer frustration with decent closer; solid but familiar trope."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong visual premise and sharp glutes-rubble turn; clear stage energy."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Cute glitter image but predictable and low-stakes payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear premise and clean images; the hot-glue turn works but lands mildly."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Solid voice and structure, though the rule-changing angle stays predictable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong escalation with vivid, funny hazards; the wall-holding turn lands well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good setup and a clean final line, though the demolition beat feels familiar."
+        }
+      ]
+    }
+  ]
+}

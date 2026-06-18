@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-06-18-ext-real-2026-06-18",
+  "seed": "ext-real-2026-06-18",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-18T22:36:27.819Z",
+  "publishedDate": "2026-06-18",
+  "seedTerms": [
+    "Crafts",
+    "Personal Trainer",
+    "Condemned Apartment Building",
+    "Rules changing",
+    "Happy",
+    "Martyr"
+  ],
+  "premise": {
+    "text": "Seed terms: Crafts, Personal Trainer, Condemned Apartment Building, Rules changing, Happy, Martyr",
+    "seedTerms": [
+      "Crafts",
+      "Personal Trainer",
+      "Condemned Apartment Building",
+      "Rules changing",
+      "Happy",
+      "Martyr"
+    ],
+    "displayText": "Seed terms: Crafts, Personal Trainer, Condemned Apartment Building, Rules changing, Happy, Martyr"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Craft Night Cardio",
+      "seedTermsUsed": [
+        "Crafts",
+        "Personal Trainer"
+      ],
+      "joke": "I hired a personal trainer, but I forgot to cancel craft night, so now my workout plan is just me doing lunges across the living room holding a half-finished birdhouse. He keeps yelling, “Feel the burn!” and I’m like, “I do. That’s why normal people wait for the hot glue to cool before doing squats.”",
+      "setup": "",
+      "punchline": "I hired a personal trainer, but I forgot to cancel craft night, so now my workout plan is just me doing lunges across the living room holding a half-finished birdhouse. He keeps yelling, “Feel the burn!” and I’m like, “I do. That’s why normal people wait for the hot glue to cool before doing squats.”",
+      "text": "I hired a personal trainer, but I forgot to cancel craft night, so now my workout plan is just me doing lunges across the living room holding a half-finished birdhouse. He keeps yelling, “Feel the burn!” and I’m like, “I do. That’s why normal people wait for the hot glue to cool before doing squats.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Progress",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Rules changing"
+      ],
+      "joke": "My personal trainer keeps changing the rules on me. First it was no carbs, then yes carbs, then only carbs that 'earn it.' Last week he told me the new rule is I have to enjoy working out. I looked him dead in the eye and said, 'Sir, I came here to suffer on a schedule. Do not take that from me.'",
+      "setup": "",
+      "punchline": "My personal trainer keeps changing the rules on me. First it was no carbs, then yes carbs, then only carbs that 'earn it.' Last week he told me the new rule is I have to enjoy working out. I looked him dead in the eye and said, 'Sir, I came here to suffer on a schedule. Do not take that from me.'",
+      "text": "My personal trainer keeps changing the rules on me. First it was no carbs, then yes carbs, then only carbs that 'earn it.' Last week he told me the new rule is I have to enjoy working out. I looked him dead in the eye and said, 'Sir, I came here to suffer on a schedule. Do not take that from me.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Urban Tactical Fitness",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Condemned Apartment Building"
+      ],
+      "joke": "I hired a discount personal trainer who runs his sessions out of a condemned apartment building. He tries to sell it as 'urban tactical fitness.' Our cardio warm-up was dodging falling asbestos, and leg day was just kicking a feral raccoon away from my water bottle. I've never had a tighter core, but that's mostly because my plank routine involved holding up a load-bearing wall so we wouldn't get crushed.",
+      "setup": "",
+      "punchline": "I hired a discount personal trainer who runs his sessions out of a condemned apartment building. He tries to sell it as 'urban tactical fitness.' Our cardio warm-up was dodging falling asbestos, and leg day was just kicking a feral raccoon away from my water bottle. I've never had a tighter core, but that's mostly because my plank routine involved holding up a load-bearing wall so we wouldn't get crushed.",
+      "text": "I hired a discount personal trainer who runs his sessions out of a condemned apartment building. He tries to sell it as 'urban tactical fitness.' Our cardio warm-up was dodging falling asbestos, and leg day was just kicking a feral raccoon away from my water bottle. I've never had a tighter core, but that's mostly because my plank routine involved holding up a load-bearing wall so we wouldn't get crushed."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Condemned Gains",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Condemned Apartment Building"
+      ],
+      "joke": "I hired a personal trainer last month, but the guy runs his sessions out of his condemned apartment building. We're doing squats in the kitchen while the ceiling drips and the floor creaks like it's about to surrender. I wheeze, 'This place is marked for demolition!' He just yells, 'So is your couch potato era--ten more!' If the walls come down mid-set, at least I'll die with better glutes than the rubble.",
+      "setup": "",
+      "punchline": "I hired a personal trainer last month, but the guy runs his sessions out of his condemned apartment building. We're doing squats in the kitchen while the ceiling drips and the floor creaks like it's about to surrender. I wheeze, 'This place is marked for demolition!' He just yells, 'So is your couch potato era--ten more!' If the walls come down mid-set, at least I'll die with better glutes than the rubble.",
+      "text": "I hired a personal trainer last month, but the guy runs his sessions out of his condemned apartment building. We're doing squats in the kitchen while the ceiling drips and the floor creaks like it's about to surrender. I wheeze, 'This place is marked for demolition!' He just yells, 'So is your couch potato era--ten more!' If the walls come down mid-set, at least I'll die with better glutes than the rubble."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Crafty Motivation",
+      "seedTermsUsed": [
+        "Crafts",
+        "Personal Trainer"
+      ],
+      "joke": "I hired a personal trainer, but he quit after one session because I kept treating the workout like a craft project. He’d yell, “Give me ten more reps!” and I’d be like, “Absolutely, but first—glitter.” Nothing kills a tough‑guy vibe faster than me bedazzling a kettlebell mid‑squat.",
+      "setup": "",
+      "punchline": "I hired a personal trainer, but he quit after one session because I kept treating the workout like a craft project. He’d yell, “Give me ten more reps!” and I’d be like, “Absolutely, but first—glitter.” Nothing kills a tough‑guy vibe faster than me bedazzling a kettlebell mid‑squat.",
+      "text": "I hired a personal trainer, but he quit after one session because I kept treating the workout like a craft project. He’d yell, “Give me ten more reps!” and I’d be like, “Absolutely, but first—glitter.” Nothing kills a tough‑guy vibe faster than me bedazzling a kettlebell mid‑squat."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clean premise with a strong character turn; final line lands well and keeps the wording natural.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Funny concrete escalation with strong visuals; a bit busy, but the load-bearing-wall plank is a solid payoff.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and stageable, but the demolition/body transformation parallel is more expected than surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Understandable and tidy, but glitter/bedazzling is a familiar comic route with a mild payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Hot glue burn payoff is clean and concrete. The image earns the joke without straining. Solid mid-tier stand-up bit.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Three-joke structure diffuses focus. 'Kicking a feral raccoon' is the strongest image but gets buried. Feels like a sketch premise more than a stand-up bit.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "'So is your couch potato era' is a good trainer line. Final glutes-and-rubble closer lands but slightly telegraphed. Functional and enjoyable.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "'Bedazzling a kettlebell' is a vivid image but the setup is thin and the punchline restates the premise without a real turn. Publishable filler.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The misdirection on 'feel the burn' to hot glue is a genuinely good, visual stage joke with clean rhythm.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "A relatable, mildly amusing flip on workout psychology. 'Suffer on a schedule' is a strong closing line.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Good atmospheric setup and a solid retort from the trainer, though the final punchline is a bit overwritten.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent but relies heavily on the cartoonish, cliché trope of bedazzling and glitter for its humor.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Mild craft-workout mashup; glue burn line lands softly but feels expected.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable trainer frustration with decent closer; solid but familiar trope.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong visual premise and sharp glutes-rubble turn; clear stage energy.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute glitter image but predictable and low-stakes payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise and clean images; the hot-glue turn works but lands mildly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid voice and structure, though the rule-changing angle stays predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong escalation with vivid, funny hazards; the wall-holding turn lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Good setup and a clean final line, though the demolition beat feels familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.2,
+      "rawScore": 7.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 6.9,
+        "craft": 6.9,
+        "originality": 7.1,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 7.3,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Funny concrete escalation with strong visuals; a bit busy, but the load-bearing-wall plank is a solid payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Three-joke structure diffuses focus. 'Kicking a feral raccoon' is the strongest image but gets buried. Feels like a sketch premise more than a stand-up bit."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.9,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong visual premise and sharp glutes-rubble turn; clear stage energy."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.3,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong escalation with vivid, funny hazards; the wall-holding turn lands well."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.7,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Hot glue burn payoff is clean and concrete. The image earns the joke without straining. Solid mid-tier stand-up bit."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.4,
+          "rawScore": 7,
+          "scoreAdjustment": 0.4,
+          "comment": "The misdirection on 'feel the burn' to hot glue is a genuinely good, visual stage joke with clean rhythm."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6,
+          "scoreAdjustment": -0.2,
+          "comment": "Mild craft-workout mashup; glue burn line lands softly but feels expected."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear premise and clean images; the hot-glue turn works but lands mildly."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6.6,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.1,
+        "craft": 6.6,
+        "originality": 6.1,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear and stageable, but the demolition/body transformation parallel is more expected than surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.8,
+          "rawScore": 7,
+          "scoreAdjustment": -0.2,
+          "comment": "'So is your couch potato era' is a good trainer line. Final glutes-and-rubble closer lands but slightly telegraphed. Functional and enjoyable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.6,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Good atmospheric setup and a solid retort from the trainer, though the final punchline is a bit overwritten."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Good setup and a clean final line, though the demolition beat feels familiar."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.5,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.4,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean premise with a strong character turn; final line lands well and keeps the wording natural."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.8,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.4,
+          "comment": "A relatable, mildly amusing flip on workout psychology. 'Suffer on a schedule' is a strong closing line."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Relatable trainer frustration with decent closer; solid but familiar trope."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Solid voice and structure, though the rule-changing angle stays predictable."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.6,
+      "rawScore": 5.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5,
+        "craft": 5.7,
+        "originality": 5,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.1,
+          "comment": "Understandable and tidy, but glitter/bedazzling is a familiar comic route with a mild payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "'Bedazzling a kettlebell' is a vivid image but the setup is thin and the punchline restates the premise without a real turn. Publishable filler."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 5,
+          "scoreAdjustment": 0.4,
+          "comment": "Competent but relies heavily on the cartoonish, cliché trope of bedazzling and glitter for its humor."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Cute glitter image but predictable and low-stakes payoff."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-18-ext-real-2026-06-18.jpg",
+    "originalSrc": "assets/feature-images/2026-06-18-ext-real-2026-06-18.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Urban Tactical Fitness: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Urban Tactical Fitness\nExact joke text to render in the right panel:\nI hired a discount personal trainer who runs his sessions out of a condemned apartment building. He tries to sell it as 'urban tactical fitness.' Our cardio warm-up was dodging falling asbestos, and leg day was just kicking a feral raccoon away from my water bottle. I've never had a tighter core, but that's mostly because my plank routine involved holding up a load-bearing wall so we wouldn't get crushed.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Crafts, Personal Trainer, Condemned Apartment Building, Rules changing, Happy, Martyr.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Crafts, Personal Trainer, Condemned Apartment Building, Rules changing, Happy, Martyr. Use the winning joke titled \"Urban Tactical Fitness\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.4,
+      "google": 5.8,
+      "xai": 6.5,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-18-ext-real-2026-06-18.md"
+}
