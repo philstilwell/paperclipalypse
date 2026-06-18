@@ -15,6 +15,10 @@ export function normalizePremiseForDisplay(premise = {}, seedTerms = []) {
   };
 }
 
+export function isSeedTermsDisplayText(value) {
+  return /^seed terms\s*:/i.test(cleanDisplayText(value));
+}
+
 export function displaySeedTerms(seedTerms = []) {
   if (!Array.isArray(seedTerms) || !seedTerms.length) {
     return "";
@@ -56,7 +60,7 @@ export function displayPremiseFromParts(premise = {}) {
   const element = displayConflict(premise.element);
 
   if (!person || !place || !element) {
-    return cleanDisplayText(premise.text);
+    return cleanDisplayHeadline(premise.text);
   }
 
   return `A ${person} faces ${element} ${place}.`;
@@ -133,5 +137,5 @@ function cleanDisplayText(value) {
 
 function cleanDisplayHeadline(value) {
   const text = cleanDisplayText(value);
-  return /^seed terms\s*:/i.test(text) ? "" : text;
+  return isSeedTermsDisplayText(text) ? "" : text;
 }

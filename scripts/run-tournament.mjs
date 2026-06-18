@@ -7,7 +7,7 @@ import { callContestant, parseModelJson } from "./lib/providers.mjs";
 import { buildFeatureImagePrompt, writeFeatureImageBrief } from "./lib/feature-image.mjs";
 import { assertFeatureImageQa } from "./lib/image-qa.mjs";
 import { assertCompleteTournament } from "./lib/participation.mjs";
-import { normalizePremiseForDisplay } from "./lib/premise-display.mjs";
+import { isSeedTermsDisplayText, normalizePremiseForDisplay } from "./lib/premise-display.mjs";
 import { publicationDateOnly } from "./lib/publish-date.mjs";
 import { aggregateScores, applyRollingJudgeNormalization, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
 import { seededRng } from "./lib/random.mjs";
@@ -291,6 +291,7 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
   };
 
   run.comicPanelPrompt = cleanText(episode.comicPanelPrompt) || comicPanelPrompt(run);
+  assertPresentableDisplayTitle(run);
   return run;
 }
 
@@ -516,6 +517,19 @@ function normalizeFeatureImage(image) {
     alt: cleanText(image.alt) || featureImageAlt({ premise: { text: "" }, rankings: [], jokes: [] }),
     prompt: cleanText(image.prompt)
   };
+}
+
+function assertPresentableDisplayTitle(run) {
+  const title = cleanText(run?.premise?.displayText);
+  if (!title || isSeedTermsDisplayText(title)) {
+    throw new Error(
+      [
+        "Round display title resolved to raw seed terms or empty text.",
+        "Provide a real display headline via premise fields or let the seed-term title generator derive one.",
+        `Current value: ${title || "(empty)"}`
+      ].join("\n")
+    );
+  }
 }
 
 function normalizeFeatureImageQa(qa) {

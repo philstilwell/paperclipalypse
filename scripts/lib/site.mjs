@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import { normalizePremiseForDisplay } from "./premise-display.mjs";
+import { isSeedTermsDisplayText, normalizePremiseForDisplay } from "./premise-display.mjs";
 import { normalizeDateOnly, shortPublicationDate } from "./publish-date.mjs";
 import { JUDGE_NORMALIZATION_WINDOW, applyRollingJudgeNormalization, rubricForDisplay } from "./scoring.mjs";
 
@@ -1546,7 +1546,9 @@ function seedTermsLine(run) {
 
 function roundDisplayTitle(run = {}) {
   const normalized = normalizePremiseForDisplay(run.premise, run.seedTerms);
-  return normalized.displayText || cleanDisplayText(run.premise?.text) || run.slug || "Untitled round";
+  const fallbackText = cleanDisplayText(run.premise?.text);
+  const safeFallback = isSeedTermsDisplayText(fallbackText) ? "" : fallbackText;
+  return normalized.displayText || safeFallback || run.slug || "Untitled round";
 }
 
 function rubricDisplayText(value) {
