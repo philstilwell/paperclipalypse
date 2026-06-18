@@ -10,6 +10,7 @@ export const FEATURE_IMAGE_QA_CHECKLIST = [
   "The image clearly features the Paperclipalypse paperclip stand-up comic on or near a microphone.",
   "The image includes a visual scene inspired by the winning joke, not a generic or unrelated scene.",
   "The stage and joke scenario read as one continuous illustration without white gutters, hard section borders, or a boxy three-panel layout; the right-side joke text may remain in a distinct frame.",
+  "Human and animal anatomy looks intentional and clean: no extra arms, extra hands, fused limbs, duplicated body parts, or obviously broken joints.",
   "The image is not monochrome or sepia-only unless explicitly requested for that round.",
   "The image contains no visible prompt labels, layout labels, percentages, watermarks, signatures, or fake filler text.",
   "Any joke text shown inside the image is legible enough not to distract; if Gemini garbles the text badly, reject and regenerate.",
