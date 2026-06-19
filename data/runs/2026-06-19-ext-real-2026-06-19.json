@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-06-19-ext-real-2026-06-19",
+  "seed": "ext-real-2026-06-19",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-19T14:05:00.000Z",
+  "publishedDate": "2026-06-19",
+  "seedTerms": [
+    "Billionaires",
+    "Salesperson",
+    "Run-down Apartment",
+    "Indulging when you shouldn't",
+    "Professional",
+    "Cocky"
+  ],
+  "premise": {
+    "text": "Seed terms: Billionaires, Salesperson, Run-down Apartment, Indulging when you shouldn't, Professional, Cocky",
+    "seedTerms": [
+      "Billionaires",
+      "Salesperson",
+      "Run-down Apartment",
+      "Indulging when you shouldn't",
+      "Professional",
+      "Cocky"
+    ],
+    "displayText": "A professional, cocky salesperson faces indulging when you shouldn't in the run-down apartment."
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Luxury Listing",
+      "seedTermsUsed": [
+        "Billionaires",
+        "Run-down Apartment"
+      ],
+      "joke": "I looked at a run-down apartment so tiny the kitchen sink was also the shower drain, and the landlord called it “minimalist.” I said, “Nobody would live here.” He said, “Billionaires would.” That’s when I realized wealth is just poverty with better nouns.",
+      "setup": "",
+      "punchline": "I looked at a run-down apartment so tiny the kitchen sink was also the shower drain, and the landlord called it “minimalist.” I said, “Nobody would live here.” He said, “Billionaires would.” That’s when I realized wealth is just poverty with better nouns.",
+      "text": "I looked at a run-down apartment so tiny the kitchen sink was also the shower drain, and the landlord called it “minimalist.” I said, “Nobody would live here.” He said, “Billionaires would.” That’s when I realized wealth is just poverty with better nouns."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Closer",
+      "seedTermsUsed": [
+        "Salesperson",
+        "Cocky"
+      ],
+      "joke": "I used to sell timeshares, so I know cocky. My manager said, 'Never let them see you sweat.' I once sold a vacation package to a man at his own wife's funeral. He bought two weeks in Cabo. I said 'for grieving' and he said 'for healing' and I said 'for me, fifteen percent commission.' That's not closing a sale, that's performing surgery while the patient's still talking.",
+      "setup": "",
+      "punchline": "I used to sell timeshares, so I know cocky. My manager said, 'Never let them see you sweat.' I once sold a vacation package to a man at his own wife's funeral. He bought two weeks in Cabo. I said 'for grieving' and he said 'for healing' and I said 'for me, fifteen percent commission.' That's not closing a sale, that's performing surgery while the patient's still talking.",
+      "text": "I used to sell timeshares, so I know cocky. My manager said, 'Never let them see you sweat.' I once sold a vacation package to a man at his own wife's funeral. He bought two weeks in Cabo. I said 'for grieving' and he said 'for healing' and I said 'for me, fifteen percent commission.' That's not closing a sale, that's performing surgery while the patient's still talking."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Unearned Swagger",
+      "seedTermsUsed": [
+        "Cocky",
+        "Run-down Apartment"
+      ],
+      "joke": "I try to act incredibly cocky on dates. Unearned swagger. But the illusion completely shatters the second I bring someone back to my run-down apartment. It is physically impossible to lean in, make smoldering eye contact, and smoothly whisper, 'I want you,' right after saying, 'Hold on, let me jiggle the toilet handle so the screaming stops.'",
+      "setup": "",
+      "punchline": "I try to act incredibly cocky on dates. Unearned swagger. But the illusion completely shatters the second I bring someone back to my run-down apartment. It is physically impossible to lean in, make smoldering eye contact, and smoothly whisper, 'I want you,' right after saying, 'Hold on, let me jiggle the toilet handle so the screaming stops.'",
+      "text": "I try to act incredibly cocky on dates. Unearned swagger. But the illusion completely shatters the second I bring someone back to my run-down apartment. It is physically impossible to lean in, make smoldering eye contact, and smoothly whisper, 'I want you,' right after saying, 'Hold on, let me jiggle the toilet handle so the screaming stops.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Cocky in a Dump",
+      "seedTermsUsed": [
+        "Cocky",
+        "Run-down Apartment"
+      ],
+      "joke": "You know, I get up here acting all cocky, strutting around like I'm the next comedy legend. But after the show I go home to my run-down apartment where the roof leaks, the heat's a myth, and the mice unionized last month. Last night I was practicing my set in the bathroom, really feeling myself, when a cockroach stopped crawling to stare. I swear it shook its head and kept going. Even the pests are like, 'Dude, work on your timing.'",
+      "setup": "",
+      "punchline": "You know, I get up here acting all cocky, strutting around like I'm the next comedy legend. But after the show I go home to my run-down apartment where the roof leaks, the heat's a myth, and the mice unionized last month. Last night I was practicing my set in the bathroom, really feeling myself, when a cockroach stopped crawling to stare. I swear it shook its head and kept going. Even the pests are like, 'Dude, work on your timing.'",
+      "text": "You know, I get up here acting all cocky, strutting around like I'm the next comedy legend. But after the show I go home to my run-down apartment where the roof leaks, the heat's a myth, and the mice unionized last month. Last night I was practicing my set in the bathroom, really feeling myself, when a cockroach stopped crawling to stare. I swear it shook its head and kept going. Even the pests are like, 'Dude, work on your timing.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Luxury Problems",
+      "seedTermsUsed": [
+        "Billionaires",
+        "Run-down Apartment"
+      ],
+      "joke": "I knew I’d hit rock bottom when a billionaire toured my run-down apartment and said, “Wow, this place has… potential.” I was like, “Sir, that’s mold.” He nodded like he was discovering a new asset class. I’ve never felt poorer than watching a man worth ten digits get inspired by my collapsing ceiling.",
+      "setup": "",
+      "punchline": "I knew I’d hit rock bottom when a billionaire toured my run-down apartment and said, “Wow, this place has… potential.” I was like, “Sir, that’s mold.” He nodded like he was discovering a new asset class. I’ve never felt poorer than watching a man worth ten digits get inspired by my collapsing ceiling.",
+      "text": "I knew I’d hit rock bottom when a billionaire toured my run-down apartment and said, “Wow, this place has… potential.” I was like, “Sir, that’s mold.” He nodded like he was discovering a new asset class. I’ve never felt poorer than watching a man worth ten digits get inspired by my collapsing ceiling."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear first-person sales premise with a dark turn, but the funeral escalation feels more shocking than funny and the final metaphor is overworked.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong concrete scene, clean first-person rhythm, and the toilet-handle detail lands as a sharp status-collapse punchline.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.800000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and stage-shaped, but the mice-unionized and judgmental-cockroach beats are familiar and the ending is predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Good billionaire reframing of squalor as investment opportunity, with a clean asset-class turn and a solid final image.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup, but the closing line is a generalized aphorism rather than a personal punch — restates the premise more than it snaps.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong concrete image and the toilet-handle line lands as a real final beat; natural stage voice throughout.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Overlong with too many setup beats (roof, heat, mice) before reaching the cockroach turn; the bit drifts rather than escalates cleanly.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Good economy and a solid closing image, though 'asset class' is a slightly cerebral landing rather than a big laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Snappy writing and a clever final aphorism, but the landlord setup is a familiar trope and doesn't generate a strong laugh.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong, darkly escalating premise with great dialogue, though the final surgery analogy slightly muddles the punchline.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 6,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relies heavily on tired, generic stand-up cliches like unionized mice and judgmental pests; lacks a fresh comic angle.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 9,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Excellent specific imagery with the 'new asset class' line and a tight, natural build to a strong final punchline.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clever wordplay close but mild payoff.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.7
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Bold scenario with decent snap, dark edge limits broad laugh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong visual premise, natural escalation, memorable final line.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.800000000000002
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Solid concept but predictable billionaire contrast.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise with a tidy turn, though the final line lands more as a clever observation than a laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Dark but coherent escalation; the commission line gives it a real punch, though the scenario strains plausibility.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong first-person rhythm and a clean final image; the toilet-handle beat is funny but not especially surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid self-deprecation with a workable turn; the cockroach tag is amusing though familiar in shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.1,
+      "rawScore": 7.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.2,
+        "surprise": 6.4,
+        "craft": 7.4,
+        "originality": 6.4,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 6.5,
+        "craft": 7.5,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.6,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong concrete scene, clean first-person rhythm, and the toilet-handle detail lands as a sharp status-collapse punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.6,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong concrete image and the toilet-handle line lands as a real final beat; natural stage voice throughout."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.6,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong visual premise, natural escalation, memorable final line."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong first-person rhythm and a clean final image; the toilet-handle beat is funny but not especially surprising."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Good billionaire reframing of squalor as investment opportunity, with a clean asset-class turn and a solid final image."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Good economy and a solid closing image, though 'asset class' is a slightly cerebral landing rather than a big laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.8,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Excellent specific imagery with the 'new asset class' line and a tight, natural build to a strong final punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid concept but predictable billionaire contrast."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.8,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.8,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear first-person sales premise with a dark turn, but the funeral escalation feels more shocking than funny and the final metaphor is overworked."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong, darkly escalating premise with great dialogue, though the final surgery analogy slightly muddles the punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.6,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Bold scenario with decent snap, dark edge limits broad laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Dark but coherent escalation; the commission line gives it a real punch, though the scenario strains plausibility."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 5.8,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 5.6,
+        "craft": 6.3,
+        "originality": 5.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5.5,
+        "craft": 6.3,
+        "originality": 5.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.4,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean setup, but the closing line is a generalized aphorism rather than a personal punch — restates the premise more than it snaps."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.4,
+          "rawScore": 6,
+          "scoreAdjustment": 0.4,
+          "comment": "Snappy writing and a clever final aphorism, but the landlord setup is a familiar trope and doesn't generate a strong laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.5,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Clever wordplay close but mild payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear premise with a tidy turn, though the final line lands more as a clever observation than a laugh."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.4,
+      "rawScore": 5.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5,
+        "surprise": 5,
+        "craft": 5.3,
+        "originality": 4.8,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5,
+        "craft": 5.3,
+        "originality": 4.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Understandable and stage-shaped, but the mice-unionized and judgmental-cockroach beats are familiar and the ending is predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Overlong with too many setup beats (roof, heat, mice) before reaching the cockroach turn; the bit drifts rather than escalates cleanly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Relies heavily on tired, generic stand-up cliches like unionized mice and judgmental pests; lacks a fresh comic angle."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Solid self-deprecation with a workable turn; the cockroach tag is amusing though familiar in shape."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-19-ext-real-2026-06-19.jpg",
+    "originalSrc": "assets/feature-images/2026-06-19-ext-real-2026-06-19.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Unearned Swagger: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Unearned Swagger\nExact joke text to render in the right panel:\nI try to act incredibly cocky on dates. Unearned swagger. But the illusion completely shatters the second I bring someone back to my run-down apartment. It is physically impossible to lean in, make smoldering eye contact, and smoothly whisper, 'I want you,' right after saying, 'Hold on, let me jiggle the toilet handle so the screaming stops.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Billionaires, Salesperson, Run-down Apartment, Indulging when you shouldn't, Professional, Cocky.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Billionaires, Salesperson, Run-down Apartment, Indulging when you shouldn't, Professional, Cocky. Use the winning joke titled \"Unearned Swagger\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.4,
+      "anthropic": 6.5,
+      "google": 5.9,
+      "xai": 6.4,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-19-ext-real-2026-06-19.md"
+}

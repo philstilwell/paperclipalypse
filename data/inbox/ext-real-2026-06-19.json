@@ -1,0 +1,341 @@
+{
+  "createdAt": "2026-06-19T14:05:00.000Z",
+  "publishedDate": "2026-06-19",
+  "seed": "ext-real-2026-06-19",
+  "slug": "2026-06-19-ext-real-2026-06-19",
+  "source": "manual-external",
+  "seedTerms": [
+    "Billionaires",
+    "Salesperson",
+    "Run-down Apartment",
+    "Indulging when you shouldn't",
+    "Professional",
+    "Cocky"
+  ],
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Luxury Listing",
+      "seedTermsUsed": [
+        "Billionaires",
+        "Run-down Apartment"
+      ],
+      "joke": "I looked at a run-down apartment so tiny the kitchen sink was also the shower drain, and the landlord called it “minimalist.” I said, “Nobody would live here.” He said, “Billionaires would.” That’s when I realized wealth is just poverty with better nouns.",
+      "text": "I looked at a run-down apartment so tiny the kitchen sink was also the shower drain, and the landlord called it “minimalist.” I said, “Nobody would live here.” He said, “Billionaires would.” That’s when I realized wealth is just poverty with better nouns.",
+      "setup": "",
+      "punchline": "I looked at a run-down apartment so tiny the kitchen sink was also the shower drain, and the landlord called it “minimalist.” I said, “Nobody would live here.” He said, “Billionaires would.” That’s when I realized wealth is just poverty with better nouns."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Closer",
+      "seedTermsUsed": [
+        "Salesperson",
+        "Cocky"
+      ],
+      "joke": "I used to sell timeshares, so I know cocky. My manager said, 'Never let them see you sweat.' I once sold a vacation package to a man at his own wife's funeral. He bought two weeks in Cabo. I said 'for grieving' and he said 'for healing' and I said 'for me, fifteen percent commission.' That's not closing a sale, that's performing surgery while the patient's still talking.",
+      "text": "I used to sell timeshares, so I know cocky. My manager said, 'Never let them see you sweat.' I once sold a vacation package to a man at his own wife's funeral. He bought two weeks in Cabo. I said 'for grieving' and he said 'for healing' and I said 'for me, fifteen percent commission.' That's not closing a sale, that's performing surgery while the patient's still talking.",
+      "setup": "",
+      "punchline": "I used to sell timeshares, so I know cocky. My manager said, 'Never let them see you sweat.' I once sold a vacation package to a man at his own wife's funeral. He bought two weeks in Cabo. I said 'for grieving' and he said 'for healing' and I said 'for me, fifteen percent commission.' That's not closing a sale, that's performing surgery while the patient's still talking."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Unearned Swagger",
+      "seedTermsUsed": [
+        "Cocky",
+        "Run-down Apartment"
+      ],
+      "joke": "I try to act incredibly cocky on dates. Unearned swagger. But the illusion completely shatters the second I bring someone back to my run-down apartment. It is physically impossible to lean in, make smoldering eye contact, and smoothly whisper, 'I want you,' right after saying, 'Hold on, let me jiggle the toilet handle so the screaming stops.'",
+      "text": "I try to act incredibly cocky on dates. Unearned swagger. But the illusion completely shatters the second I bring someone back to my run-down apartment. It is physically impossible to lean in, make smoldering eye contact, and smoothly whisper, 'I want you,' right after saying, 'Hold on, let me jiggle the toilet handle so the screaming stops.'",
+      "setup": "",
+      "punchline": "I try to act incredibly cocky on dates. Unearned swagger. But the illusion completely shatters the second I bring someone back to my run-down apartment. It is physically impossible to lean in, make smoldering eye contact, and smoothly whisper, 'I want you,' right after saying, 'Hold on, let me jiggle the toilet handle so the screaming stops.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Cocky in a Dump",
+      "seedTermsUsed": [
+        "Cocky",
+        "Run-down Apartment"
+      ],
+      "joke": "You know, I get up here acting all cocky, strutting around like I'm the next comedy legend. But after the show I go home to my run-down apartment where the roof leaks, the heat's a myth, and the mice unionized last month. Last night I was practicing my set in the bathroom, really feeling myself, when a cockroach stopped crawling to stare. I swear it shook its head and kept going. Even the pests are like, 'Dude, work on your timing.'",
+      "text": "You know, I get up here acting all cocky, strutting around like I'm the next comedy legend. But after the show I go home to my run-down apartment where the roof leaks, the heat's a myth, and the mice unionized last month. Last night I was practicing my set in the bathroom, really feeling myself, when a cockroach stopped crawling to stare. I swear it shook its head and kept going. Even the pests are like, 'Dude, work on your timing.'",
+      "setup": "",
+      "punchline": "You know, I get up here acting all cocky, strutting around like I'm the next comedy legend. But after the show I go home to my run-down apartment where the roof leaks, the heat's a myth, and the mice unionized last month. Last night I was practicing my set in the bathroom, really feeling myself, when a cockroach stopped crawling to stare. I swear it shook its head and kept going. Even the pests are like, 'Dude, work on your timing.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Luxury Problems",
+      "seedTermsUsed": [
+        "Billionaires",
+        "Run-down Apartment"
+      ],
+      "joke": "I knew I’d hit rock bottom when a billionaire toured my run-down apartment and said, “Wow, this place has… potential.” I was like, “Sir, that’s mold.” He nodded like he was discovering a new asset class. I’ve never felt poorer than watching a man worth ten digits get inspired by my collapsing ceiling.",
+      "text": "I knew I’d hit rock bottom when a billionaire toured my run-down apartment and said, “Wow, this place has… potential.” I was like, “Sir, that’s mold.” He nodded like he was discovering a new asset class. I’ve never felt poorer than watching a man worth ten digits get inspired by my collapsing ceiling.",
+      "setup": "",
+      "punchline": "I knew I’d hit rock bottom when a billionaire toured my run-down apartment and said, “Wow, this place has… potential.” I was like, “Sir, that’s mold.” He nodded like he was discovering a new asset class. I’ve never felt poorer than watching a man worth ten digits get inspired by my collapsing ceiling."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear first-person sales premise with a dark turn, but the funeral escalation feels more shocking than funny and the final metaphor is overworked."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong concrete scene, clean first-person rhythm, and the toilet-handle detail lands as a sharp status-collapse punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Understandable and stage-shaped, but the mice-unionized and judgmental-cockroach beats are familiar and the ending is predictable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Good billionaire reframing of squalor as investment opportunity, with a clean asset-class turn and a solid final image."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clean setup, but the closing line is a generalized aphorism rather than a personal punch — restates the premise more than it snaps."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong concrete image and the toilet-handle line lands as a real final beat; natural stage voice throughout."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Overlong with too many setup beats (roof, heat, mice) before reaching the cockroach turn; the bit drifts rather than escalates cleanly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good economy and a solid closing image, though 'asset class' is a slightly cerebral landing rather than a big laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Snappy writing and a clever final aphorism, but the landlord setup is a familiar trope and doesn't generate a strong laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong, darkly escalating premise with great dialogue, though the final surgery analogy slightly muddles the punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Relies heavily on tired, generic stand-up cliches like unionized mice and judgmental pests; lacks a fresh comic angle."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Excellent specific imagery with the 'new asset class' line and a tight, natural build to a strong final punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clever wordplay close but mild payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Bold scenario with decent snap, dark edge limits broad laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong visual premise, natural escalation, memorable final line."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid concept but predictable billionaire contrast."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear premise with a tidy turn, though the final line lands more as a clever observation than a laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Dark but coherent escalation; the commission line gives it a real punch, though the scenario strains plausibility."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Strong first-person rhythm and a clean final image; the toilet-handle beat is funny but not especially surprising."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid self-deprecation with a workable turn; the cockroach tag is amusing though familiar in shape."
+        }
+      ]
+    }
+  ]
+}
