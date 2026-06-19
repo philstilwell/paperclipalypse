@@ -7,8 +7,9 @@ import { callContestant, parseModelJson } from "./lib/providers.mjs";
 import { buildFeatureImagePrompt, writeFeatureImageBrief } from "./lib/feature-image.mjs";
 import { assertFeatureImageQa } from "./lib/image-qa.mjs";
 import { assertCompleteTournament } from "./lib/participation.mjs";
-import { isSeedTermsDisplayText, normalizePremiseForDisplay } from "./lib/premise-display.mjs";
+import { normalizePremiseForDisplay } from "./lib/premise-display.mjs";
 import { publicationDateOnly } from "./lib/publish-date.mjs";
+import { isSeedDerivedRunTitle, resolveRunDisplayTitle } from "./lib/run-title.mjs";
 import { aggregateScores, applyRollingJudgeNormalization, deterministicDryScores, normalizeJudgeScores, rubricForDisplay } from "./lib/scoring.mjs";
 import { seededRng } from "./lib/random.mjs";
 import { renderSite } from "./lib/site.mjs";
@@ -37,7 +38,9 @@ const contestants = dryRun ? houseContestants : paidContestants;
 
 if (episodeFile) {
   const run = applyCurrentScoring(buildRunFromEpisodeFile(path.resolve(rootDir, episodeFile), seed));
+  applyResolvedDisplayTitle(run);
   attachFeatureImage(run, featureImagePath);
+  assertPresentableDisplayTitle(run);
   assertPublishQuality(run);
   prepareFeatureImage(run, { episodeFile });
   writeAndRender(run);
@@ -91,8 +94,10 @@ const run = {
 };
 run.comicPanelPrompt = comicPanelPrompt(run);
 const scoredRun = applyCurrentScoring(run);
+applyResolvedDisplayTitle(scoredRun);
 attachFeatureImage(scoredRun, featureImagePath);
 
+assertPresentableDisplayTitle(scoredRun);
 assertPublishQuality(scoredRun);
 prepareFeatureImage(scoredRun);
 writeAndRender(scoredRun);
@@ -520,16 +525,23 @@ function normalizeFeatureImage(image) {
 }
 
 function assertPresentableDisplayTitle(run) {
-  const title = cleanText(run?.premise?.displayText);
-  if (!title || isSeedTermsDisplayText(title)) {
+  const title = cleanText(resolveRunDisplayTitle(run));
+  if (!title || isSeedDerivedRunTitle(title, run?.seedTerms)) {
     throw new Error(
       [
-        "Round display title resolved to raw seed terms or empty text.",
-        "Provide a real display headline via premise fields or let the seed-term title generator derive one.",
+        "Round display title resolved to seed-derived or empty text.",
+        "Provide a real display headline via premise fields or ensure the winning joke has a usable title.",
         `Current value: ${title || "(empty)"}`
       ].join("\n")
     );
   }
+}
+
+function applyResolvedDisplayTitle(run) {
+  run.premise = {
+    ...(run.premise || {}),
+    displayText: resolveRunDisplayTitle(run)
+  };
 }
 
 function normalizeFeatureImageQa(qa) {

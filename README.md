@@ -30,6 +30,9 @@ So the preferred real-tournament flow is:
 3. You or Codex, with explicit direction, collect responses from the contestants'
    normal chat surfaces. Codex must not invent missing external jokes or scores.
 4. Codex writes the collected external responses to `data/inbox/`.
+   Set `premise.displayText` to the intended published round title when
+   assembling the episode JSON. If omitted, the runner falls back to the
+   winning joke title.
 5. It runs the tournament once with `--allow-missing-feature-image` to create
    the Gemini image brief.
 6. It opens a fresh Chrome window for Google Gemini image generation, prompts

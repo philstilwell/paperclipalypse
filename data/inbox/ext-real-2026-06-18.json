@@ -12,6 +12,9 @@
     "Happy",
     "Martyr"
   ],
+  "premise": {
+    "displayText": "Urban Tactical Fitness"
+  },
   "contestants": [
     {
       "id": "openai",

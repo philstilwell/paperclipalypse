@@ -10,6 +10,8 @@ Use this when publishing a real public round.
 4. Prepare the judging prompt for each contestant, omitting that contestant's own joke.
 5. Collect one complete scorecard from each contestant.
 6. Put the collected data in `data/inbox/<round-name>.json` with `source` set to `manual-external`.
+   Include `premise.displayText` when you want an editorial round title;
+   otherwise the runner will publish the winning joke title.
 7. Open a fresh Chrome window for Gemini image generation, then generate and
    approve a winning-joke feature image after scoring. Save or capture Gemini's
    smaller 1024x506 generated preview. Prefer the browser media-download action

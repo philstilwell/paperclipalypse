@@ -12,6 +12,9 @@
     "Professional",
     "Cocky"
   ],
+  "premise": {
+    "displayText": "Unearned Swagger"
+  },
   "contestants": [
     {
       "id": "openai",

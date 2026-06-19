@@ -51,6 +51,7 @@ const packet = {
     "Make sure every joke object in the judging packet has a text field containing the complete joke.",
     "Reject and resubmit any scorecard that omits a joke, scores its own joke, says the joke text was missing, or merely echoes the example object with jokeId \"id\".",
     "When repairing a bad scorecard, send a shorter correction that names the exact four jokeIds the judge must score.",
+    "Set episodeSkeleton.premise.displayText to the intended published round title. If left blank, the importer will use the winning joke title.",
     "Build data/inbox/<seed>.json from the real jokes and scorecards.",
     "Run the tournament once with --allow-missing-feature-image to create the Gemini image brief.",
     "Open a fresh Chrome tab or window for Gemini image generation and note its tab id or visible title before working there.",
@@ -67,6 +68,9 @@ const packet = {
     slug,
     source: "manual-external",
     seedTerms,
+    premise: {
+      displayText: ""
+    },
     contestants: contestants.map((contestant) => ({
       id: contestant.id,
       displayName: contestant.displayName,
