@@ -5,6 +5,20 @@ import { normalizeDateOnly, shortPublicationDate } from "./publish-date.mjs";
 import { JUDGE_NORMALIZATION_WINDOW, applyRollingJudgeNormalization, rubricForDisplay } from "./scoring.mjs";
 
 const cloudflareAnalytics = `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e6dc8afcaf3243dcbc00f4e43a7fa62e"}'></script><!-- End Cloudflare Web Analytics -->`;
+const siteOrigin = "https://paperclipalypse.com";
+const siteName = "Paperclipalypse";
+const siteDescription = "Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.";
+const defaultSocialImage = `${siteOrigin}/assets/paperclipalypse-avalanche.webp`;
+const publisherLogo = `${siteOrigin}/assets/paperclip-face-mark.png`;
+const baseKeywords = [
+  "AI comedy tournament",
+  "AI humor",
+  "AI jokes",
+  "large language models",
+  "stand-up comedy",
+  "model rankings",
+  "Paperclipalypse"
+];
 const dailyListPageSize = 12;
 const processPopoverLabel = [
   "How Paperclipalypse works.",
@@ -78,8 +92,12 @@ function renderHome(run, runs) {
     .join("");
 
   return pageShell({
-    title: "Paperclipalypse",
+    title: siteName,
+    description: homeDescription(run, publicRuns),
     socialImage: socialImageForRun(run),
+    socialImageAlt: socialImageAltForRun(run),
+    keywords: pageKeywords(run),
+    schemas: renderHomeSchemas(run, publicRuns),
     body: `
       ${renderHero(run)}
       ${renderRun(run, { showEpisodeHeader: false, showIntro: true, introPreviousRun })}
@@ -98,6 +116,7 @@ function renderNotFound() {
     title: "Paperclipalypse - Page Not Found",
     description: "That Paperclipalypse page escaped the avalanche.",
     canonicalPath: "/404.html",
+    noindex: true,
     body: `
       ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", label: "404" })}
       <main>
@@ -118,9 +137,11 @@ function renderNotFound() {
 
 function renderAboutPage() {
   return pageShell({
-    title: "Paperclipalypse - About",
+    title: "Paperclipalypse - About the AI Comedy Tournament",
     description: "About Paperclipalypse, an AI humor tournament tracking how model humor improves over time.",
     canonicalPath: "/about.html",
+    keywords: pageKeywords(["AI humor tournament", "AI comedy experiment", "model humor benchmark"]),
+    schemas: renderAboutSchemas(),
     body: `
       ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", standingsPath: "./standings.html", label: "Origin Story" })}
       <main>
@@ -173,9 +194,11 @@ function renderStandingsPage(runs) {
     : "No public rounds have been published yet.";
 
   return pageShell({
-    title: "Paperclipalypse - Standup Model Standings",
-    description: "Model standings and score trends for the Paperclipalypse AI comedy tournament.",
+    title: "Paperclipalypse Standings - AI Comedy Model Scores",
+    description: standingsDescription(leader, totalRounds),
     canonicalPath: "/standings.html",
+    keywords: pageKeywords(standings.map((entry) => entry.name)),
+    schemas: renderStandingsSchemas(standings, publicRuns, totalRounds),
     body: `
       ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", standingsPath: "./standings.html", label: "Standup Model Standings" })}
       <main class="standings-page">
@@ -864,11 +887,21 @@ function shortTrendLabel(run) {
 }
 
 function renderRunPage(run, publicRuns) {
+  const displayTitle = roundDisplayTitle(run);
+
   return pageShell({
-    title: `Paperclipalypse - ${shortDate(run)}`,
+    title: `${displayTitle} - Paperclipalypse AI Comedy Round`,
+    description: runDescription(run),
     stylesheetPath: "../styles.css",
     canonicalPath: `/runs/${run.slug}.html`,
     socialImage: socialImageForRun(run),
+    socialImageAlt: socialImageAltForRun(run),
+    ogType: "article",
+    publishedTime: dateTime(run),
+    modifiedTime: dateTime(run),
+    keywords: pageKeywords(run),
+    extraHead: renderRunHeadLinks(run, publicRuns),
+    schemas: renderRunSchemas(run, publicRuns),
     body: `
       ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", standingsPath: "../standings.html", label: shortDate(run) })}
       ${renderRun(run, {
@@ -893,28 +926,59 @@ function renderRobots() {
   return `User-agent: *
 Allow: /
 
-Sitemap: https://paperclipalypse.com/sitemap.xml
+Sitemap: ${siteOrigin}/sitemap.xml
 `;
 }
 
 function renderSitemap(runs) {
   const urls = [
-    { loc: "https://paperclipalypse.com/", lastmod: latestDate(runs) },
-    { loc: "https://paperclipalypse.com/about.html", lastmod: latestDate(runs) },
-    { loc: "https://paperclipalypse.com/standings.html", lastmod: latestDate(runs) },
+    {
+      loc: `${siteOrigin}/`,
+      lastmod: latestDate(runs),
+      changefreq: "daily",
+      priority: "1.0",
+      image: {
+        loc: socialImageForRun(runs[0] || {}),
+        title: siteName,
+        caption: siteDescription
+      }
+    },
+    {
+      loc: `${siteOrigin}/about.html`,
+      lastmod: latestDate(runs),
+      changefreq: "monthly",
+      priority: "0.5"
+    },
+    {
+      loc: `${siteOrigin}/standings.html`,
+      lastmod: latestDate(runs),
+      changefreq: "daily",
+      priority: "0.8"
+    },
     ...runs.map((run) => ({
-      loc: `https://paperclipalypse.com/runs/${run.slug}.html`,
-      lastmod: dateOnly(run)
+      loc: `${siteOrigin}/runs/${run.slug}.html`,
+      lastmod: dateOnly(run),
+      changefreq: "monthly",
+      priority: run.slug === runs[0]?.slug ? "0.8" : "0.6",
+      image: run.featureImage?.src
+        ? {
+          loc: socialImageForRun(run),
+          title: roundDisplayTitle(run),
+          caption: runDescription(run, 220)
+        }
+        : null
     }))
   ];
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 ${urls
   .map(
     (url) => `  <url>
     <loc>${escapeXml(url.loc)}</loc>
     <lastmod>${escapeXml(url.lastmod)}</lastmod>
+    <changefreq>${escapeXml(url.changefreq)}</changefreq>
+    <priority>${escapeXml(url.priority)}</priority>${renderSitemapImage(url.image)}
   </url>`
   )
   .join("\n")}
@@ -929,12 +993,21 @@ function renderRssFeed(runs) {
   const items = publicRuns
     .slice(0, 20)
     .map((run) => {
-      const url = `https://paperclipalypse.com/runs/${run.slug}.html`;
+      const url = runUrl(run);
       const winner = run.rankings?.[0];
       const winnerLine = winner
         ? `Winner: ${winner.contestantName} (${formatScore(winner.score)}).`
         : "Winner pending.";
-      const description = `${winnerLine} ${roundDisplayTitle(run)}`;
+      const description = `${winnerLine} ${runDescription(run, 220)}`;
+      const categories = (run.seedTerms || [])
+        .map((term) => `      <category>${escapeXml(term)}</category>`)
+        .join("\n");
+      const media = run.featureImage?.src
+        ? `      <media:content url="${escapeXml(socialImageForRun(run))}" type="${escapeXml(imageMimeType(run.featureImage.src))}" medium="image">
+        <media:title>${escapeXml(roundDisplayTitle(run))}</media:title>
+        <media:description>${escapeXml(socialImageAltForRun(run))}</media:description>
+      </media:content>`
+        : "";
 
       return `    <item>
       <title>${escapeXml(`${shortDate(run)} - ${roundDisplayTitle(run)}`)}</title>
@@ -942,17 +1015,26 @@ function renderRssFeed(runs) {
       <guid isPermaLink="true">${escapeXml(url)}</guid>
       <pubDate>${escapeXml(rssDate(run))}</pubDate>
       <description>${escapeXml(description)}</description>
+${categories}
+${media}
     </item>`;
     })
     .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Paperclipalypse</title>
-    <link>https://paperclipalypse.com/</link>
-    <description>AI comedy tournament episodes from Paperclipalypse.</description>
+    <link>${siteOrigin}/</link>
+    <atom:link href="${siteOrigin}/feed.xml" rel="self" type="application/rss+xml" />
+    <description>${escapeXml(siteDescription)}</description>
     <language>en-us</language>
+    <ttl>60</ttl>
+    <image>
+      <url>${escapeXml(defaultSocialImage)}</url>
+      <title>Paperclipalypse</title>
+      <link>${siteOrigin}/</link>
+    </image>
     <lastBuildDate>${escapeXml(rssDate(publicRuns[0] || "2026-06-03"))}</lastBuildDate>
 ${items}
   </channel>
@@ -1456,7 +1538,7 @@ function renderEpisodeHeader(run, winner) {
       <section class="episode">
         <div>
           <p class="eyebrow">${escapeHtml(shortDate(run))}</p>
-          <h2>${escapeHtml(roundDisplayTitle(run))}</h2>
+          <h1>${escapeHtml(roundDisplayTitle(run))}</h1>
         </div>
         <aside>
           <span>Winner</span>
@@ -1621,19 +1703,353 @@ function rubricDisplayText(value) {
     .replace(/\bthe premise or turn\b/gi, "the comic idea or turn");
 }
 
+function homeDescription(run, publicRuns = []) {
+  const winner = run?.rankings?.[0];
+  if (!winner) {
+    return siteDescription;
+  }
+
+  const roundCount = publicRuns.length ? ` Browse ${publicRuns.length} published rounds.` : "";
+
+  return truncateSeo(`Daily AI comedy tournament where five models write and judge stand-up jokes. Latest: ${roundDisplayTitle(run)}, won by ${winner.contestantName} with ${formatScore(winner.score)}.${roundCount}`);
+}
+
+function standingsDescription(leader, totalRounds) {
+  if (!leader) {
+    return "AI comedy model standings, score trends, and judging patterns for the Paperclipalypse tournament.";
+  }
+
+  return truncateSeo(`AI comedy model standings for Paperclipalypse. ${leader.name} leads with ${leader.wins} ${leader.wins === 1 ? "win" : "wins"} across ${totalRounds} published rounds, plus score and judging trends.`);
+}
+
+function runDescription(run, maxLength = 160) {
+  const winner = run.rankings?.[0];
+  const seeds = Array.isArray(run.seedTerms) && run.seedTerms.length
+    ? ` Seed terms: ${run.seedTerms.join(", ")}.`
+    : "";
+  const winnerText = winner
+    ? ` ${winner.contestantName} won with ${formatScore(winner.score)}.`
+    : " Winner pending.";
+
+  return truncateSeo(`${shortDate(run)} Paperclipalypse AI comedy round: ${roundDisplayTitle(run)}.${winnerText}${seeds}`, maxLength);
+}
+
+function pageKeywords(value) {
+  return uniqueStrings(normalizeKeywordInput(value));
+}
+
+function normalizeKeywordInput(value) {
+  if (!value) {
+    return [];
+  }
+  if (Array.isArray(value)) {
+    return value.flatMap((item) => normalizeKeywordInput(item));
+  }
+  if (typeof value === "object") {
+    return [
+      roundDisplayTitle(value),
+      ...(value.seedTerms || []),
+      ...(value.rankings || []).map((ranking) => ranking.contestantName)
+    ];
+  }
+
+  return [String(value)];
+}
+
+function renderHomeSchemas(run, publicRuns) {
+  return [
+    publisherSchema(),
+    websiteSchema(),
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${siteOrigin}/#home`,
+      url: `${siteOrigin}/`,
+      name: siteName,
+      description: homeDescription(run, publicRuns),
+      inLanguage: "en-US",
+      isPartOf: { "@id": `${siteOrigin}/#website` },
+      mainEntity: runItemListSchema(publicRuns.slice(0, 12), "Recent Paperclipalypse episodes")
+    }
+  ];
+}
+
+function renderAboutSchemas() {
+  return [
+    publisherSchema(),
+    websiteSchema(),
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "@id": `${siteOrigin}/about.html#about`,
+      url: `${siteOrigin}/about.html`,
+      name: "About Paperclipalypse",
+      description: "About Paperclipalypse, an AI humor tournament tracking how model humor improves over time.",
+      inLanguage: "en-US",
+      isPartOf: { "@id": `${siteOrigin}/#website` }
+    },
+    breadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "About", url: "/about.html" }
+    ])
+  ];
+}
+
+function renderStandingsSchemas(standings, publicRuns, totalRounds) {
+  const leader = standings[0];
+
+  return [
+    publisherSchema(),
+    websiteSchema(),
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${siteOrigin}/standings.html#standings`,
+      url: `${siteOrigin}/standings.html`,
+      name: "Paperclipalypse Standings",
+      description: standingsDescription(leader, totalRounds),
+      inLanguage: "en-US",
+      isPartOf: { "@id": `${siteOrigin}/#website` },
+      mainEntity: {
+        "@type": "ItemList",
+        name: "AI comedy model standings",
+        numberOfItems: standings.length,
+        itemListElement: standings.map((entry, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          item: {
+            "@type": "Thing",
+            name: entry.name,
+            description: `${entry.wins} ${entry.wins === 1 ? "win" : "wins"} across ${entry.entries} entries. ${entry.note}`,
+            additionalProperty: [
+              propertyValue("Wins", entry.wins),
+              propertyValue("Average adjusted score", formatScore(entry.averageScore)),
+              propertyValue("Latest score", formatScore(entry.latestScore))
+            ]
+          }
+        }))
+      },
+      dateModified: dateTime(publicRuns[0] || new Date().toISOString())
+    },
+    breadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Standings", url: "/standings.html" }
+    ])
+  ];
+}
+
+function renderRunSchemas(run, publicRuns) {
+  const winner = run.rankings?.[0];
+  const winningJoke = run.jokes?.find((joke) => joke.id === winner?.jokeId);
+  const url = runUrl(run);
+
+  return [
+    publisherSchema(),
+    websiteSchema(),
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "@id": `${url}#article`,
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": url
+      },
+      headline: `${roundDisplayTitle(run)} - Paperclipalypse AI Comedy Round`,
+      description: runDescription(run),
+      image: [socialImageForRun(run)],
+      datePublished: dateTime(run),
+      dateModified: dateTime(run),
+      inLanguage: "en-US",
+      author: {
+        "@type": "Organization",
+        name: siteName,
+        url: siteOrigin
+      },
+      publisher: { "@id": `${siteOrigin}/#organization` },
+      isPartOf: { "@id": `${siteOrigin}/#website` },
+      articleSection: "AI comedy tournament",
+      keywords: pageKeywords(run).join(", "),
+      about: (run.seedTerms || []).map((term) => ({
+        "@type": "Thing",
+        name: term
+      })),
+      mentions: (run.rankings || []).map((ranking) => ({
+        "@type": "Thing",
+        name: ranking.contestantName
+      })),
+      mainEntity: winningJoke
+        ? {
+          "@type": "CreativeWork",
+          name: winningJoke.title || roundDisplayTitle(run),
+          text: fullJokeText(winningJoke)
+        }
+        : undefined
+    },
+    breadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: shortDate(run), url: `/runs/${run.slug}.html` }
+    ]),
+    runItemListSchema(publicRuns.slice(0, 12), "Recent Paperclipalypse episodes")
+  ];
+}
+
+function publisherSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${siteOrigin}/#organization`,
+    name: siteName,
+    url: siteOrigin,
+    logo: {
+      "@type": "ImageObject",
+      url: publisherLogo
+    }
+  };
+}
+
+function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${siteOrigin}/#website`,
+    url: `${siteOrigin}/`,
+    name: siteName,
+    description: siteDescription,
+    inLanguage: "en-US",
+    publisher: { "@id": `${siteOrigin}/#organization` }
+  };
+}
+
+function runItemListSchema(runs, name) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name,
+    numberOfItems: runs.length,
+    itemListElement: runs.map((run, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "BlogPosting",
+        "@id": `${runUrl(run)}#article`,
+        url: runUrl(run),
+        name: `${shortDate(run)} - ${roundDisplayTitle(run)}`,
+        headline: roundDisplayTitle(run),
+        image: socialImageForRun(run),
+        datePublished: dateTime(run)
+      }
+    }))
+  };
+}
+
+function breadcrumbSchema(items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.url)
+    }))
+  };
+}
+
+function propertyValue(name, value) {
+  return {
+    "@type": "PropertyValue",
+    name,
+    value
+  };
+}
+
+function renderRunHeadLinks(run, publicRuns = []) {
+  const index = publicRuns.findIndex((archivedRun) => archivedRun.slug === run.slug);
+  if (index < 0) {
+    return "";
+  }
+
+  const previousRun = publicRuns[index + 1];
+  const nextRun = publicRuns[index - 1];
+
+  return [
+    previousRun ? `<link rel="prev" href="${escapeHtml(runUrl(previousRun))}">` : "",
+    nextRun ? `<link rel="next" href="${escapeHtml(runUrl(nextRun))}">` : ""
+  ].filter(Boolean).join("\n    ");
+}
+
+function renderKeywordsMeta(keywords) {
+  return keywords.length
+    ? `<meta name="keywords" content="${escapeHtml(keywords.join(", "))}">`
+    : "";
+}
+
+function renderArticleMeta({ publishedTime, modifiedTime }) {
+  return [
+    publishedTime ? `<meta property="article:published_time" content="${escapeHtml(publishedTime)}">` : "",
+    modifiedTime ? `<meta property="article:modified_time" content="${escapeHtml(modifiedTime)}">` : "",
+    publishedTime ? `<meta property="article:author" content="${escapeHtml(siteName)}">` : ""
+  ].filter(Boolean).join("\n    ");
+}
+
+function renderJsonLd(schemas) {
+  const cleanSchemas = (Array.isArray(schemas) ? schemas : [schemas])
+    .filter(Boolean)
+    .map(removeUndefinedValues);
+
+  if (!cleanSchemas.length) {
+    return "";
+  }
+
+  const payload = cleanSchemas.length === 1 ? cleanSchemas[0] : cleanSchemas;
+
+  return `<script type="application/ld+json">${safeJsonLd(payload)}</script>`;
+}
+
+function safeJsonLd(value) {
+  return JSON.stringify(value, null, 2)
+    .replace(/</g, "\\u003c")
+    .replace(/<\/script/gi, "<\\/script");
+}
+
+function removeUndefinedValues(value) {
+  if (Array.isArray(value)) {
+    return value.map(removeUndefinedValues);
+  }
+  if (!value || typeof value !== "object") {
+    return value;
+  }
+
+  return Object.fromEntries(
+    Object.entries(value)
+      .filter(([, entryValue]) => entryValue !== undefined)
+      .map(([key, entryValue]) => [key, removeUndefinedValues(entryValue)])
+  );
+}
+
 function pageShell({
   title,
   body,
   stylesheetPath = "./styles.css",
   canonicalPath = "/",
-  description = "Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.",
-  socialImage = "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp"
+  description = siteDescription,
+  socialImage = defaultSocialImage,
+  socialImageAlt = siteDescription,
+  ogType = "website",
+  publishedTime = "",
+  modifiedTime = "",
+  keywords = [],
+  schemas = [],
+  extraHead = "",
+  noindex = false
 }) {
   const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.png" : "./favicon.png";
   const aboutPath = stylesheetPath.startsWith("../") ? "../about.html" : "./about.html";
   const standingsPath = stylesheetPath.startsWith("../") ? "../standings.html" : "./standings.html";
   const feedPath = stylesheetPath.startsWith("../") ? "../feed.xml" : "./feed.xml";
-  const canonicalUrl = `https://paperclipalypse.com${canonicalPath}`;
+  const canonicalUrl = absoluteUrl(canonicalPath);
+  const cleanDescription = truncateSeo(description, 160);
+  const cleanKeywords = uniqueStrings([...baseKeywords, ...normalizeKeywordInput(keywords)]).slice(0, 24);
 
   return `<!doctype html>
 <html lang="en">
@@ -1641,20 +2057,31 @@ function pageShell({
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>${escapeHtml(title)}</title>
-    <meta name="description" content="${escapeHtml(description)}">
+    <meta name="description" content="${escapeHtml(cleanDescription)}">
+    <meta name="robots" content="${noindex ? "noindex, follow" : "index, follow, max-image-preview:large"}">
+    <meta name="theme-color" content="#070708">
+    <meta name="application-name" content="${escapeHtml(siteName)}">
+    ${renderKeywordsMeta(cleanKeywords)}
     <link rel="canonical" href="${escapeHtml(canonicalUrl)}">
     <meta property="og:title" content="${escapeHtml(title)}">
-    <meta property="og:description" content="${escapeHtml(description)}">
-    <meta property="og:type" content="website">
+    <meta property="og:description" content="${escapeHtml(cleanDescription)}">
+    <meta property="og:type" content="${escapeHtml(ogType)}">
+    <meta property="og:site_name" content="${escapeHtml(siteName)}">
+    <meta property="og:locale" content="en_US">
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}">
     <meta property="og:image" content="${escapeHtml(socialImage)}">
+    <meta property="og:image:alt" content="${escapeHtml(socialImageAlt)}">
+    ${renderArticleMeta({ publishedTime, modifiedTime })}
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${escapeHtml(title)}">
-    <meta name="twitter:description" content="${escapeHtml(description)}">
+    <meta name="twitter:description" content="${escapeHtml(cleanDescription)}">
     <meta name="twitter:image" content="${escapeHtml(socialImage)}">
-    <link rel="alternate" type="application/rss+xml" title="Paperclipalypse RSS" href="https://paperclipalypse.com/feed.xml">
+    <meta name="twitter:image:alt" content="${escapeHtml(socialImageAlt)}">
+    <link rel="alternate" type="application/rss+xml" title="Paperclipalypse RSS" href="${siteOrigin}/feed.xml">
+    ${extraHead}
     <link rel="icon" href="${escapeHtml(faviconPath)}" type="image/png">
     <link rel="stylesheet" href="${escapeHtml(stylesheetPath)}">
+    ${renderJsonLd(schemas)}
   </head>
   <body>
     ${body}
@@ -1988,6 +2415,7 @@ main {
   padding: 22px;
 }
 
+.episode h1,
 .episode h2 {
   font-size: 2.15rem;
   line-height: 1.08;
@@ -3641,6 +4069,7 @@ td:nth-child(4) {
     padding: 16px;
   }
 
+  .episode h1,
   .episode h2 {
     font-size: 1.6rem;
   }
@@ -3774,19 +4203,23 @@ function assetPath(src, assetBase = "./") {
 function absoluteAssetUrl(src) {
   const cleaned = String(src || "").trim();
   if (!cleaned) {
-    return "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp";
+    return defaultSocialImage;
   }
   if (/^https?:\/\//.test(cleaned)) {
     return cleaned;
   }
 
-  return `https://paperclipalypse.com/${cleaned.replace(/^\.?\//, "")}`;
+  return `${siteOrigin}/${cleaned.replace(/^\.?\//, "")}`;
 }
 
 function socialImageForRun(run) {
   return run.featureImage?.src
     ? absoluteAssetUrl(run.featureImage.src)
-    : "https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp";
+    : defaultSocialImage;
+}
+
+function socialImageAltForRun(run) {
+  return run?.featureImage?.alt || featureImageAlt(run);
 }
 
 function featureImageAlt(run) {
@@ -3809,12 +4242,101 @@ function latestDate(runs) {
   return dateOnly(runs[0] || "2026-06-03");
 }
 
+function dateTime(value) {
+  const raw = value && typeof value === "object"
+    ? value.createdAt || value.publishedDate
+    : value;
+  if (raw && String(raw).includes("T")) {
+    const parsed = new Date(raw);
+    if (!Number.isNaN(parsed.getTime())) {
+      return parsed.toISOString();
+    }
+  }
+
+  return `${dateOnly(value)}T12:00:00Z`;
+}
+
 function dateOnly(value) {
   if (value && typeof value === "object") {
     return normalizeDateOnly(value.publishedDate || value.createdAt || "2026-06-03");
   }
 
   return normalizeDateOnly(value || "2026-06-03");
+}
+
+function runUrl(run) {
+  return `${siteOrigin}/runs/${run.slug}.html`;
+}
+
+function absoluteUrl(value = "/") {
+  const cleaned = String(value || "/").trim();
+  if (/^https?:\/\//.test(cleaned)) {
+    return cleaned;
+  }
+
+  const pathname = cleaned.startsWith("/")
+    ? cleaned
+    : `/${cleaned.replace(/^\.?\//, "")}`;
+
+  return `${siteOrigin}${pathname}`;
+}
+
+function renderSitemapImage(image) {
+  if (!image?.loc) {
+    return "";
+  }
+
+  return `
+    <image:image>
+      <image:loc>${escapeXml(image.loc)}</image:loc>
+      ${image.title ? `<image:title>${escapeXml(image.title)}</image:title>` : ""}
+      ${image.caption ? `<image:caption>${escapeXml(image.caption)}</image:caption>` : ""}
+    </image:image>`;
+}
+
+function imageMimeType(src) {
+  const extension = String(src || "").split("?")[0].split(".").pop()?.toLowerCase();
+  if (extension === "png") {
+    return "image/png";
+  }
+  if (extension === "webp") {
+    return "image/webp";
+  }
+  if (extension === "gif") {
+    return "image/gif";
+  }
+
+  return "image/jpeg";
+}
+
+function truncateSeo(value, maxLength = 160) {
+  const text = cleanDisplayText(value);
+  if (text.length <= maxLength) {
+    return text;
+  }
+
+  const clipped = text.slice(0, Math.max(0, maxLength - 3));
+  const boundary = clipped.lastIndexOf(" ");
+  const safeClip = boundary > 80 ? clipped.slice(0, boundary) : clipped;
+
+  return `${safeClip.trim()}...`;
+}
+
+function uniqueStrings(values) {
+  const seen = new Set();
+  const output = [];
+  for (const value of values || []) {
+    const text = cleanDisplayText(value);
+    const key = text.toLowerCase();
+    if (!text || seen.has(key)) {
+      continue;
+    }
+
+    seen.add(key);
+    output.push(text);
+  }
+
+  return output;
 }
 
 function escapeHtml(value) {

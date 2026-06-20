@@ -1,150 +1,357 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
   <channel>
     <title>Paperclipalypse</title>
     <link>https://paperclipalypse.com/</link>
-    <description>AI comedy tournament episodes from Paperclipalypse.</description>
+    <atom:link href="https://paperclipalypse.com/feed.xml" rel="self" type="application/rss+xml" />
+    <description>Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.</description>
     <language>en-us</language>
+    <ttl>60</ttl>
+    <image>
+      <url>https://paperclipalypse.com/assets/paperclipalypse-avalanche.webp</url>
+      <title>Paperclipalypse</title>
+      <link>https://paperclipalypse.com/</link>
+    </image>
     <lastBuildDate>Sat, 20 Jun 2026 12:00:00 GMT</lastBuildDate>
     <item>
       <title>Jun 20, 2026 - Spare Key</title>
       <link>https://paperclipalypse.com/runs/2026-06-20-ext-real-2026-06-20.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-20-ext-real-2026-06-20.html</guid>
       <pubDate>Sat, 20 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: OpenAI GPT-5.4 Mini (6.9). Spare Key</description>
+      <description>Winner: OpenAI GPT-5.4 Mini (6.9). Jun 20, 2026 Paperclipalypse AI comedy round: Spare Key. OpenAI GPT-5.4 Mini won with 6.9. Seed terms: Sports, Locksmith, Antiques Store, A love interest moving on, Objective, Martyr.</description>
+      <category>Sports</category>
+      <category>Locksmith</category>
+      <category>Antiques Store</category>
+      <category>A love interest moving on</category>
+      <category>Objective</category>
+      <category>Martyr</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-20-ext-real-2026-06-20.jpg" type="image/jpeg" medium="image">
+        <media:title>Spare Key</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Spare Key: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 19, 2026 - Unearned Swagger</title>
       <link>https://paperclipalypse.com/runs/2026-06-19-ext-real-2026-06-19.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-19-ext-real-2026-06-19.html</guid>
       <pubDate>Fri, 19 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.1). Unearned Swagger</description>
+      <description>Winner: Gemini Flash (7.1). Jun 19, 2026 Paperclipalypse AI comedy round: Unearned Swagger. Gemini Flash won with 7.1. Seed terms: Billionaires, Salesperson, Run-down Apartment, Indulging when you shouldn&#39;t, Professional, Cocky.</description>
+      <category>Billionaires</category>
+      <category>Salesperson</category>
+      <category>Run-down Apartment</category>
+      <category>Indulging when you shouldn&#39;t</category>
+      <category>Professional</category>
+      <category>Cocky</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-19-ext-real-2026-06-19.jpg" type="image/jpeg" medium="image">
+        <media:title>Unearned Swagger</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Unearned Swagger: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 18, 2026 - Urban Tactical Fitness</title>
       <link>https://paperclipalypse.com/runs/2026-06-18-ext-real-2026-06-18.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-18-ext-real-2026-06-18.html</guid>
       <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.2). Urban Tactical Fitness</description>
+      <description>Winner: Gemini Flash (7.2). Jun 18, 2026 Paperclipalypse AI comedy round: Urban Tactical Fitness. Gemini Flash won with 7.2. Seed terms: Crafts, Personal Trainer, Condemned Apartment Building, Rules changing, Happy, Martyr.</description>
+      <category>Crafts</category>
+      <category>Personal Trainer</category>
+      <category>Condemned Apartment Building</category>
+      <category>Rules changing</category>
+      <category>Happy</category>
+      <category>Martyr</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-18-ext-real-2026-06-18.png" type="image/png" medium="image">
+        <media:title>Urban Tactical Fitness</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Urban Tactical Fitness: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 17, 2026 - Hallway sleuths and hostage manners collide.</title>
       <link>https://paperclipalypse.com/runs/2026-06-17-ext-real-2026-06-17.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-17-ext-real-2026-06-17.html</guid>
       <pubDate>Wed, 17 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.4). Hallway sleuths and hostage manners collide.</description>
+      <description>Winner: Gemini Flash (7.4). Jun 17, 2026 Paperclipalypse AI comedy round: Hallway sleuths and hostage manners collide.. Gemini Flash won with 7.4. Seed terms: Master Detective, Private Detective, School Hallway, Being captured, Hospitable,...</description>
+      <category>Master Detective</category>
+      <category>Private Detective</category>
+      <category>School Hallway</category>
+      <category>Being captured</category>
+      <category>Hospitable</category>
+      <category>Irresponsible</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-17-ext-real-2026-06-17.jpg" type="image/jpeg" medium="image">
+        <media:title>Hallway sleuths and hostage manners collide.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled People-Pleasing Hostage: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 16, 2026 - A roadside rescue becomes a pillow-assisted delay tactic.</title>
       <link>https://paperclipalypse.com/runs/2026-06-16-ext-real-2026-06-16.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-16-ext-real-2026-06-16.html</guid>
       <pubDate>Tue, 16 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.6). A roadside rescue becomes a pillow-assisted delay tactic.</description>
+      <description>Winner: Gemini Flash (7.6). Jun 16, 2026 Paperclipalypse AI comedy round: A roadside rescue becomes a pillow-assisted delay tactic.. Gemini Flash won with 7.6. Seed terms: Bumbling Detective, Manual Labourer, Boardroom, A loved one being put in...</description>
+      <category>Bumbling Detective</category>
+      <category>Manual Labourer</category>
+      <category>Boardroom</category>
+      <category>A loved one being put in harm&#39;s way</category>
+      <category>Playful</category>
+      <category>Lazy</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-16-ext-real-2026-06-16.jpg" type="image/jpeg" medium="image">
+        <media:title>A roadside rescue becomes a pillow-assisted delay tactic.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Superhuman Strength: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 15, 2026 - A time machine turns Thanksgiving gossip into a cold case with deviled eggs.</title>
       <link>https://paperclipalypse.com/runs/2026-06-15-ext-real-2026-06-15.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-15-ext-real-2026-06-15.html</guid>
       <pubDate>Mon, 15 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (6.9). A time machine turns Thanksgiving gossip into a cold case with deviled eggs.</description>
+      <description>Winner: Gemini Flash (6.9). Jun 15, 2026 Paperclipalypse AI comedy round: A time machine turns Thanksgiving gossip into a cold case with deviled eggs.. Gemini Flash won with 6.9. Seed terms: Time Travel, Ghostwriter, River / Creek, Being...</description>
+      <category>Time Travel</category>
+      <category>Ghostwriter</category>
+      <category>River / Creek</category>
+      <category>Being recognized</category>
+      <category>Socially Aware</category>
+      <category>Gossipy</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-15-ext-real-2026-06-15.jpg" type="image/jpeg" medium="image">
+        <media:title>A time machine turns Thanksgiving gossip into a cold case with deviled eggs.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Historical Priorities: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 14, 2026 - A bathtub wine tasting discovers the building has notes of structural despair.</title>
       <link>https://paperclipalypse.com/runs/2026-06-14-ext-real-2026-06-14.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-14-ext-real-2026-06-14.html</guid>
       <pubDate>Sun, 14 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (7.3). A bathtub wine tasting discovers the building has notes of structural despair.</description>
+      <description>Winner: Claude Sonnet 4.6 (7.3). Jun 14, 2026 Paperclipalypse AI comedy round: A bathtub wine tasting discovers the building has notes of structural despair.. Claude Sonnet 4.6 won with 7.3. Seed terms: Gothic, Vintner, Run-down Apartment, War...</description>
+      <category>Gothic</category>
+      <category>Vintner</category>
+      <category>Run-down Apartment</category>
+      <category>War breaking out</category>
+      <category>Observant</category>
+      <category>Disloyal</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-14-ext-real-2026-06-14.jpg" type="image/jpeg" medium="image">
+        <media:title>A bathtub wine tasting discovers the building has notes of structural despair.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Cork Snob: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 13, 2026 - A background actor prepares for the world’s least glamorous fan encounter.</title>
       <link>https://paperclipalypse.com/runs/2026-06-13-ext-real-2026-06-13.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-13-ext-real-2026-06-13.html</guid>
       <pubDate>Sat, 13 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.3). A background actor prepares for the world’s least glamorous fan encounter.</description>
+      <description>Winner: Gemini Flash (7.3). Jun 13, 2026 Paperclipalypse AI comedy round: A background actor prepares for the world’s least glamorous fan encounter.. Gemini Flash won with 7.3. Seed terms: Urban, Actor, Artist / Photographer&#39;s Studio, Having to...</description>
+      <category>Urban</category>
+      <category>Actor</category>
+      <category>Artist / Photographer&#39;s Studio</category>
+      <category>Having to blindly trust someone</category>
+      <category>Optimistic</category>
+      <category>Unintelligent</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-13-ext-real-2026-06-13.jpg" type="image/jpeg" medium="image">
+        <media:title>A background actor prepares for the world’s least glamorous fan encounter.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled The Blurry Extra: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 12, 2026 - A hardware-store helper prevents a renter from upgrading to disaster.</title>
       <link>https://paperclipalypse.com/runs/2026-06-12-ext-real-2026-06-12.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-12-ext-real-2026-06-12.html</guid>
       <pubDate>Fri, 12 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (7.4). A hardware-store helper prevents a renter from upgrading to disaster.</description>
+      <description>Winner: Claude Sonnet 4.6 (7.4). Jun 12, 2026 Paperclipalypse AI comedy round: A hardware-store helper prevents a renter from upgrading to disaster.. Claude Sonnet 4.6 won with 7.4. Seed terms: Comic Book, Personal Shopper, Hardware Store, A...</description>
+      <category>Comic Book</category>
+      <category>Personal Shopper</category>
+      <category>Hardware Store</category>
+      <category>A competitor showing up</category>
+      <category>Studious</category>
+      <category>Irrational</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-12-ext-real-2026-06-12.jpg" type="image/jpeg" medium="image">
+        <media:title>A hardware-store helper prevents a renter from upgrading to disaster.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Aisle Five of Doom: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 11, 2026 - A job rejection gets promoted to heartbreak.</title>
       <link>https://paperclipalypse.com/runs/2026-06-11-ext-real-2026-06-11.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-11-ext-real-2026-06-11.html</guid>
       <pubDate>Thu, 11 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: OpenAI GPT-5.4 Mini (7.5). A job rejection gets promoted to heartbreak.</description>
+      <description>Winner: OpenAI GPT-5.4 Mini (7.5). Jun 11, 2026 Paperclipalypse AI comedy round: A job rejection gets promoted to heartbreak.. OpenAI GPT-5.4 Mini won with 7.5. Seed terms: Sex, Recruiter, Classroom, Breaking someone&#39;s heart, Centred, Childish.</description>
+      <category>Sex</category>
+      <category>Recruiter</category>
+      <category>Classroom</category>
+      <category>Breaking someone&#39;s heart</category>
+      <category>Centred</category>
+      <category>Childish</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-11-ext-real-2026-06-11.jpg" type="image/jpeg" medium="image">
+        <media:title>A job rejection gets promoted to heartbreak.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Corporate Breakup: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 10, 2026 - A rescue gets delayed by excessive politeness.</title>
       <link>https://paperclipalypse.com/runs/2026-06-10-ext-real-2026-06-10.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-10-ext-real-2026-06-10.html</guid>
       <pubDate>Wed, 10 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (7.0). A rescue gets delayed by excessive politeness.</description>
+      <description>Winner: Claude Sonnet 4.6 (7.0). Jun 10, 2026 Paperclipalypse AI comedy round: A rescue gets delayed by excessive politeness.. Claude Sonnet 4.6 won with 7.0. Seed terms: Political Change, Radio Presenter, Empty Lot, Getting lost / stranded,...</description>
+      <category>Political Change</category>
+      <category>Radio Presenter</category>
+      <category>Empty Lot</category>
+      <category>Getting lost / stranded</category>
+      <category>Courteous</category>
+      <category>Suspicious</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-10-ext-real-2026-06-10.jpg" type="image/jpeg" medium="image">
+        <media:title>A rescue gets delayed by excessive politeness.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Too Polite to Panic: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 9, 2026 - A clogged sink turns into an adoption ultimatum.</title>
       <link>https://paperclipalypse.com/runs/2026-06-09-ext-real-2026-06-09.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-09-ext-real-2026-06-09.html</guid>
       <pubDate>Tue, 09 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.3). A clogged sink turns into an adoption ultimatum.</description>
+      <description>Winner: Gemini Flash (7.3). Jun 9, 2026 Paperclipalypse AI comedy round: A clogged sink turns into an adoption ultimatum.. Gemini Flash won with 7.3. Seed terms: Rich and Famous, Repairperson, Man Cave, Being given an ultimatum, Flirtatious,...</description>
+      <category>Rich and Famous</category>
+      <category>Repairperson</category>
+      <category>Man Cave</category>
+      <category>Being given an ultimatum</category>
+      <category>Flirtatious</category>
+      <category>Abrasive</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-09-ext-real-2026-06-09.jpg" type="image/jpeg" medium="image">
+        <media:title>A clogged sink turns into an adoption ultimatum.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Bacon Grease: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 8, 2026 - A grudge gets uncorked at Thanksgiving.</title>
       <link>https://paperclipalypse.com/runs/2026-06-08-ext-real-2026-06-08.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-08-ext-real-2026-06-08.html</guid>
       <pubDate>Mon, 08 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.0). A grudge gets uncorked at Thanksgiving.</description>
+      <description>Winner: Gemini Flash (7.0). Jun 8, 2026 Paperclipalypse AI comedy round: A grudge gets uncorked at Thanksgiving.. Gemini Flash won with 7.0. Seed terms: Whodunit, Vintner, Homeless Shelter, Being unable to forgive someone, Funny, Defensive.</description>
+      <category>Whodunit</category>
+      <category>Vintner</category>
+      <category>Homeless Shelter</category>
+      <category>Being unable to forgive someone</category>
+      <category>Funny</category>
+      <category>Defensive</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-08-ext-real-2026-06-08.jpg" type="image/jpeg" medium="image">
+        <media:title>A grudge gets uncorked at Thanksgiving.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Aged to Perfection: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 7, 2026 - A dinosaur expert meets her final boss: a pigeon.</title>
       <link>https://paperclipalypse.com/runs/2026-06-07-ext-real-2026-06-07.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-07-ext-real-2026-06-07.html</guid>
       <pubDate>Sun, 07 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (7.2). A dinosaur expert meets her final boss: a pigeon.</description>
+      <description>Winner: Claude Sonnet 4.6 (7.2). Jun 7, 2026 Paperclipalypse AI comedy round: A dinosaur expert meets her final boss: a pigeon.. Claude Sonnet 4.6 won with 7.2. Seed terms: Sports, Palaeontologist, Waterfall, A fear or phobia rearing its head,...</description>
+      <category>Sports</category>
+      <category>Palaeontologist</category>
+      <category>Waterfall</category>
+      <category>A fear or phobia rearing its head</category>
+      <category>Resourceful</category>
+      <category>Resentful</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-07-ext-real-2026-06-07.jpg" type="image/jpeg" medium="image">
+        <media:title>A dinosaur expert meets her final boss: a pigeon.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Bone Dry: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 6, 2026 - A hero meets his worst emergency: applause.</title>
       <link>https://paperclipalypse.com/runs/2026-06-06-ext-real-2026-06-06.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-06-ext-real-2026-06-06.html</guid>
       <pubDate>Sat, 06 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.4). A hero meets his worst emergency: applause.</description>
+      <description>Winner: Gemini Flash (7.4). Jun 6, 2026 Paperclipalypse AI comedy round: A hero meets his worst emergency: applause.. Gemini Flash won with 7.4. Seed terms: Portal, Emergency Room Physician, Therapist&#39;s Office, Hurting someone to save them,...</description>
+      <category>Portal</category>
+      <category>Emergency Room Physician</category>
+      <category>Therapist&#39;s Office</category>
+      <category>Hurting someone to save them</category>
+      <category>Friendly</category>
+      <category>Antisocial</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-06-ext-real-2026-06-06.jpg" type="image/jpeg" medium="image">
+        <media:title>A hero meets his worst emergency: applause.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled The Hero&#39;s Dilemma: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 5, 2026 - Romance gets stopped at the velvet rope.</title>
       <link>https://paperclipalypse.com/runs/2026-06-05-ext-real-2026-06-05-2.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-05-ext-real-2026-06-05-2.html</guid>
       <pubDate>Fri, 05 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (7.4). Romance gets stopped at the velvet rope.</description>
+      <description>Winner: Claude Sonnet 4.6 (7.4). Jun 5, 2026 Paperclipalypse AI comedy round: Romance gets stopped at the velvet rope.. Claude Sonnet 4.6 won with 7.4. Seed terms: Monsters, Security Guard, Marina, Affection being stymied, Wise, Suspicious.</description>
+      <category>Monsters</category>
+      <category>Security Guard</category>
+      <category>Marina</category>
+      <category>Affection being stymied</category>
+      <category>Wise</category>
+      <category>Suspicious</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-05-ext-real-2026-06-05-2.jpg" type="image/jpeg" medium="image">
+        <media:title>Romance gets stopped at the velvet rope.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Cleared: a paperclip stand-up comic, joke text, and the joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 4, 2026 - A spa day goes up in aromatic smoke.</title>
       <link>https://paperclipalypse.com/runs/2026-06-04-ext-real-2026-06-05.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-04-ext-real-2026-06-05.html</guid>
       <pubDate>Thu, 04 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.5). A spa day goes up in aromatic smoke.</description>
+      <description>Winner: Gemini Flash (7.5). Jun 4, 2026 Paperclipalypse AI comedy round: A spa day goes up in aromatic smoke.. Gemini Flash won with 7.5. Seed terms: Young adult/Kids, Politician, Spa, A house fire, Unselfish, Impulsive.</description>
+      <category>Young adult/Kids</category>
+      <category>Politician</category>
+      <category>Spa</category>
+      <category>A house fire</category>
+      <category>Unselfish</category>
+      <category>Impulsive</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-04-ext-real-2026-06-05.jpg" type="image/jpeg" medium="image">
+        <media:title>A spa day goes up in aromatic smoke.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Thermal Journey: a paperclip stand-up comic, joke text, and the joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 3, 2026 - A pottery class fires up the group chat.</title>
       <link>https://paperclipalypse.com/runs/2026-06-03-ext-real-2026-06-03.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-03-ext-real-2026-06-03.html</guid>
       <pubDate>Wed, 03 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.5). A pottery class fires up the group chat.</description>
+      <description>Winner: Gemini Flash (7.5). Jun 3, 2026 Paperclipalypse AI comedy round: A pottery class fires up the group chat.. Gemini Flash won with 7.5. Seed terms: Cyberpunk, Glassblower / Potter, Racetrack, A dangerous crossing, Private, Gossipy.</description>
+      <category>Cyberpunk</category>
+      <category>Glassblower / Potter</category>
+      <category>Racetrack</category>
+      <category>A dangerous crossing</category>
+      <category>Private</category>
+      <category>Gossipy</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-03-ext-real-2026-06-03.jpg" type="image/jpeg" medium="image">
+        <media:title>A pottery class fires up the group chat.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Pottery Class Drama: a paperclip stand-up comic, joke text, and the joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 2, 2026 - A doomed dad enters the candy abyss.</title>
       <link>https://paperclipalypse.com/runs/2026-06-02-ext-real-2026-06-02.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-02-ext-real-2026-06-02.html</guid>
       <pubDate>Tue, 02 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.6). A doomed dad enters the candy abyss.</description>
+      <description>Winner: Gemini Flash (7.6). Jun 2, 2026 Paperclipalypse AI comedy round: A doomed dad enters the candy abyss.. Gemini Flash won with 7.6. Seed terms: Young Adult, Tour Guide, Beach, Being unable to save everyone, Socially Aware, Uncouth.</description>
+      <category>Young Adult</category>
+      <category>Tour Guide</category>
+      <category>Beach</category>
+      <category>Being unable to save everyone</category>
+      <category>Socially Aware</category>
+      <category>Uncouth</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-02-ext-real-2026-06-02.jpg" type="image/jpeg" medium="image">
+        <media:title>A doomed dad enters the candy abyss.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Times Square Triage: a paperclip stand-up comic, joke text, and the joke scene.</media:description>
+      </media:content>
     </item>
     <item>
       <title>Jun 1, 2026 - The family watchdog defects to Team Mail Carrier.</title>
       <link>https://paperclipalypse.com/runs/2026-06-01-external-real-2026-06-01.html</link>
       <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-01-external-real-2026-06-01.html</guid>
       <pubDate>Mon, 01 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (6.8). The family watchdog defects to Team Mail Carrier.</description>
+      <description>Winner: Claude Sonnet 4.6 (6.8). Jun 1, 2026 Paperclipalypse AI comedy round: The family watchdog defects to Team Mail Carrier.. Claude Sonnet 4.6 won with 6.8. Seed terms: Historical, Mail Carrier, Subway Train / Station / Tunnel, Being cut from a...</description>
+      <category>Historical</category>
+      <category>Mail Carrier</category>
+      <category>Subway Train / Station / Tunnel</category>
+      <category>Being cut from a team</category>
+      <category>Cooperative</category>
+      <category>Disloyal</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-01-external-real-2026-06-01.jpg" type="image/jpeg" medium="image">
+        <media:title>The family watchdog defects to Team Mail Carrier.</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Neither Rain nor Slime: a paperclip stand-up comic, joke text, and the joke scene.</media:description>
+      </media:content>
     </item>
   </channel>
 </rss>

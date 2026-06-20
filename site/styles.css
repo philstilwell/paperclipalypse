@@ -313,6 +313,7 @@ main {
   padding: 22px;
 }
 
+.episode h1,
 .episode h2 {
   font-size: 2.15rem;
   line-height: 1.08;
@@ -1966,6 +1967,7 @@ td:nth-child(4) {
     padding: 16px;
   }
 
+  .episode h1,
   .episode h2 {
     font-size: 1.6rem;
   }
