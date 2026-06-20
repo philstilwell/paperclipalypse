@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-06-20T14:07:13.932Z",
+  "publishedDate": "2026-06-20",
+  "seed": "ext-real-2026-06-20",
+  "slug": "2026-06-20-ext-real-2026-06-20",
+  "source": "manual-external",
+  "seedTerms": [
+    "Sports",
+    "Locksmith",
+    "Antiques Store",
+    "A love interest moving on",
+    "Objective",
+    "Martyr"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Spare Key",
+      "seedTermsUsed": [
+        "Locksmith",
+        "A love interest moving on"
+      ],
+      "joke": "I found out my ex moved on when I went to return her spare key and there was already a locksmith changing the locks. That hurt. Not because she didn’t trust me—because he looked at the key, looked at me, and said, “Don’t worry, this one hasn’t worked here in a long time.”",
+      "text": "I found out my ex moved on when I went to return her spare key and there was already a locksmith changing the locks. That hurt. Not because she didn’t trust me—because he looked at the key, looked at me, and said, “Don’t worry, this one hasn’t worked here in a long time.”",
+      "setup": "",
+      "punchline": "I found out my ex moved on when I went to return her spare key and there was already a locksmith changing the locks. That hurt. Not because she didn’t trust me—because he looked at the key, looked at me, and said, “Don’t worry, this one hasn’t worked here in a long time.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Locked Out of Love",
+      "seedTermsUsed": [
+        "Locksmith",
+        "A love interest moving on"
+      ],
+      "joke": "My ex started dating a locksmith. Which feels like a personal insult from the universe, because now there is a man out there who is professionally, physically incapable of being locked out of anything, and I can't even get back into my own relationship. I still have a key to her apartment. I tried it last week out of curiosity. He'd already changed the locks. Of course he did. It's free for him.",
+      "text": "My ex started dating a locksmith. Which feels like a personal insult from the universe, because now there is a man out there who is professionally, physically incapable of being locked out of anything, and I can't even get back into my own relationship. I still have a key to her apartment. I tried it last week out of curiosity. He'd already changed the locks. Of course he did. It's free for him.",
+      "setup": "",
+      "punchline": "My ex started dating a locksmith. Which feels like a personal insult from the universe, because now there is a man out there who is professionally, physically incapable of being locked out of anything, and I can't even get back into my own relationship. I still have a key to her apartment. I tried it last week out of curiosity. He'd already changed the locks. Of course he did. It's free for him."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Her Type",
+      "seedTermsUsed": [
+        "Antiques Store",
+        "A love interest moving on"
+      ],
+      "joke": "I just found out my ex moved on and is dating a guy who runs an antiques store. Honestly, it gave me a lot of closure. It’s comforting to know she still has the exact same type: dusty, overly fragile, and completely useless in a modern household.",
+      "text": "I just found out my ex moved on and is dating a guy who runs an antiques store. Honestly, it gave me a lot of closure. It’s comforting to know she still has the exact same type: dusty, overly fragile, and completely useless in a modern household.",
+      "setup": "",
+      "punchline": "I just found out my ex moved on and is dating a guy who runs an antiques store. Honestly, it gave me a lot of closure. It’s comforting to know she still has the exact same type: dusty, overly fragile, and completely useless in a modern household."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Locked Out",
+      "seedTermsUsed": [
+        "Locksmith",
+        "A love interest moving on"
+      ],
+      "joke": "You guys, my love interest moved on last week and I was a mess. Stood outside my apartment sobbing, couldn't even get my key in the door. So I call a locksmith at midnight. Guy shows up, checks it out, and goes, \"Lock's fine, pal... but that heart of yours is jammed shut.\" Handed him sixty bucks and said keep the change. Cheapest therapy I've ever had.",
+      "text": "You guys, my love interest moved on last week and I was a mess. Stood outside my apartment sobbing, couldn't even get my key in the door. So I call a locksmith at midnight. Guy shows up, checks it out, and goes, \"Lock's fine, pal... but that heart of yours is jammed shut.\" Handed him sixty bucks and said keep the change. Cheapest therapy I've ever had.",
+      "setup": "",
+      "punchline": "You guys, my love interest moved on last week and I was a mess. Stood outside my apartment sobbing, couldn't even get my key in the door. So I call a locksmith at midnight. Guy shows up, checks it out, and goes, \"Lock's fine, pal... but that heart of yours is jammed shut.\" Handed him sixty bucks and said keep the change. Cheapest therapy I've ever had."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Locked Out of Love",
+      "seedTermsUsed": [
+        "Locksmith",
+        "A love interest moving on"
+      ],
+      "joke": "My ex moved on so fast I had to call a locksmith just to keep up emotionally. The guy shows up, sees me on the floor eating cereal from the box, and goes, “Buddy, this isn’t a lock problem.” I said, “It is if she still has a key.” He changed the locks, handed me the bill, and whispered, “Heal.”",
+      "text": "My ex moved on so fast I had to call a locksmith just to keep up emotionally. The guy shows up, sees me on the floor eating cereal from the box, and goes, “Buddy, this isn’t a lock problem.” I said, “It is if she still has a key.” He changed the locks, handed me the bill, and whispered, “Heal.”",
+      "setup": "",
+      "punchline": "My ex moved on so fast I had to call a locksmith just to keep up emotionally. The guy shows up, sees me on the floor eating cereal from the box, and goes, “Buddy, this isn’t a lock problem.” I said, “It is if she still has a key.” He changed the locks, handed me the bill, and whispered, “Heal.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear premise with a real comic angle; a bit overextended, but the final line lands."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Cleanest construction; the antique-store comparison is efficient and has a solid final snap."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Readable, but the wording recites the prompt and the heart-jammed-shut turn is corny and familiar."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Has a coherent setup, but the emotional locksmith-as-therapy shape feels generic and the ending is soft."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean closer line, locksmith roast lands, but premise is a touch convenient."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Decent insult-comic turn, but 'dusty/fragile/useless' is the obvious antiques riff."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Heart-metaphor pun is a familiar shape; therapy-tag ending undercuts the snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Cereal-on-the-floor image is fresh and specific; 'whispered heal' closer is mildly soft but works."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid execution with a fun misdirection; the locksmith delivering the emotional burn is a nice comedic turn."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent stage persona and escalation. The petty realization that changing locks is free for the new boyfriend lands perfectly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 3,
+          "promptFit": 4,
+          "laugh": 3,
+          "comment": "Unnatural forced phrasing ('my love interest') and relies on a cheesy, unrealistic interaction rather than a genuine comedic punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent but relies on a slightly nonsensical setup and an oddly melodramatic final punchline that feels like an AI trope."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clean metaphor, solid turn on the key."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Predictable payoff, mild chuckle."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Sharp self-roast with punchy list."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Amusing scene but familiar therapy vibe."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean premise and a tidy emotional turn; the locksmith’s line lands mildly but works."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Solid idea but overlong and leans on exposition; the final beat is predictable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Sharp comparison with a clear snap; not huge laughter but a strong, concise angle."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Readable and coherent, though the heart-as-lock metaphor feels familiar and safe."
+        }
+      ]
+    }
+  ]
+}

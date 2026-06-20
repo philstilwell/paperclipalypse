@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-06-20-ext-real-2026-06-20",
+  "seed": "ext-real-2026-06-20",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-20T14:07:13.932Z",
+  "publishedDate": "2026-06-20",
+  "seedTerms": [
+    "Sports",
+    "Locksmith",
+    "Antiques Store",
+    "A love interest moving on",
+    "Objective",
+    "Martyr"
+  ],
+  "premise": {
+    "text": "Seed terms: Sports, Locksmith, Antiques Store, A love interest moving on, Objective, Martyr",
+    "seedTerms": [
+      "Sports",
+      "Locksmith",
+      "Antiques Store",
+      "A love interest moving on",
+      "Objective",
+      "Martyr"
+    ],
+    "displayText": "Spare Key"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Spare Key",
+      "seedTermsUsed": [
+        "Locksmith",
+        "A love interest moving on"
+      ],
+      "joke": "I found out my ex moved on when I went to return her spare key and there was already a locksmith changing the locks. That hurt. Not because she didn’t trust me—because he looked at the key, looked at me, and said, “Don’t worry, this one hasn’t worked here in a long time.”",
+      "setup": "",
+      "punchline": "I found out my ex moved on when I went to return her spare key and there was already a locksmith changing the locks. That hurt. Not because she didn’t trust me—because he looked at the key, looked at me, and said, “Don’t worry, this one hasn’t worked here in a long time.”",
+      "text": "I found out my ex moved on when I went to return her spare key and there was already a locksmith changing the locks. That hurt. Not because she didn’t trust me—because he looked at the key, looked at me, and said, “Don’t worry, this one hasn’t worked here in a long time.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Locked Out of Love",
+      "seedTermsUsed": [
+        "Locksmith",
+        "A love interest moving on"
+      ],
+      "joke": "My ex started dating a locksmith. Which feels like a personal insult from the universe, because now there is a man out there who is professionally, physically incapable of being locked out of anything, and I can't even get back into my own relationship. I still have a key to her apartment. I tried it last week out of curiosity. He'd already changed the locks. Of course he did. It's free for him.",
+      "setup": "",
+      "punchline": "My ex started dating a locksmith. Which feels like a personal insult from the universe, because now there is a man out there who is professionally, physically incapable of being locked out of anything, and I can't even get back into my own relationship. I still have a key to her apartment. I tried it last week out of curiosity. He'd already changed the locks. Of course he did. It's free for him.",
+      "text": "My ex started dating a locksmith. Which feels like a personal insult from the universe, because now there is a man out there who is professionally, physically incapable of being locked out of anything, and I can't even get back into my own relationship. I still have a key to her apartment. I tried it last week out of curiosity. He'd already changed the locks. Of course he did. It's free for him."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Her Type",
+      "seedTermsUsed": [
+        "Antiques Store",
+        "A love interest moving on"
+      ],
+      "joke": "I just found out my ex moved on and is dating a guy who runs an antiques store. Honestly, it gave me a lot of closure. It’s comforting to know she still has the exact same type: dusty, overly fragile, and completely useless in a modern household.",
+      "setup": "",
+      "punchline": "I just found out my ex moved on and is dating a guy who runs an antiques store. Honestly, it gave me a lot of closure. It’s comforting to know she still has the exact same type: dusty, overly fragile, and completely useless in a modern household.",
+      "text": "I just found out my ex moved on and is dating a guy who runs an antiques store. Honestly, it gave me a lot of closure. It’s comforting to know she still has the exact same type: dusty, overly fragile, and completely useless in a modern household."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Locked Out",
+      "seedTermsUsed": [
+        "Locksmith",
+        "A love interest moving on"
+      ],
+      "joke": "You guys, my love interest moved on last week and I was a mess. Stood outside my apartment sobbing, couldn't even get my key in the door. So I call a locksmith at midnight. Guy shows up, checks it out, and goes, \"Lock's fine, pal... but that heart of yours is jammed shut.\" Handed him sixty bucks and said keep the change. Cheapest therapy I've ever had.",
+      "setup": "",
+      "punchline": "You guys, my love interest moved on last week and I was a mess. Stood outside my apartment sobbing, couldn't even get my key in the door. So I call a locksmith at midnight. Guy shows up, checks it out, and goes, \"Lock's fine, pal... but that heart of yours is jammed shut.\" Handed him sixty bucks and said keep the change. Cheapest therapy I've ever had.",
+      "text": "You guys, my love interest moved on last week and I was a mess. Stood outside my apartment sobbing, couldn't even get my key in the door. So I call a locksmith at midnight. Guy shows up, checks it out, and goes, \"Lock's fine, pal... but that heart of yours is jammed shut.\" Handed him sixty bucks and said keep the change. Cheapest therapy I've ever had."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Locked Out of Love",
+      "seedTermsUsed": [
+        "Locksmith",
+        "A love interest moving on"
+      ],
+      "joke": "My ex moved on so fast I had to call a locksmith just to keep up emotionally. The guy shows up, sees me on the floor eating cereal from the box, and goes, “Buddy, this isn’t a lock problem.” I said, “It is if she still has a key.” He changed the locks, handed me the bill, and whispered, “Heal.”",
+      "setup": "",
+      "punchline": "My ex moved on so fast I had to call a locksmith just to keep up emotionally. The guy shows up, sees me on the floor eating cereal from the box, and goes, “Buddy, this isn’t a lock problem.” I said, “It is if she still has a key.” He changed the locks, handed me the bill, and whispered, “Heal.”",
+      "text": "My ex moved on so fast I had to call a locksmith just to keep up emotionally. The guy shows up, sees me on the floor eating cereal from the box, and goes, “Buddy, this isn’t a lock problem.” I said, “It is if she still has a key.” He changed the locks, handed me the bill, and whispered, “Heal.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear premise with a real comic angle; a bit overextended, but the final line lands.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "google",
+          "comment": "Cleanest construction; the antique-store comparison is efficient and has a solid final snap.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.3
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Readable, but the wording recites the prompt and the heart-jammed-shut turn is corny and familiar.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Has a coherent setup, but the emotional locksmith-as-therapy shape feels generic and the ending is soft.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean closer line, locksmith roast lands, but premise is a touch convenient.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Decent insult-comic turn, but 'dusty/fragile/useless' is the obvious antiques riff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Heart-metaphor pun is a familiar shape; therapy-tag ending undercuts the snap.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.7
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cereal-on-the-floor image is fresh and specific; 'whispered heal' closer is mildly soft but works.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid execution with a fun misdirection; the locksmith delivering the emotional burn is a nice comedic turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent stage persona and escalation. The petty realization that changing locks is free for the new boyfriend lands perfectly.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Unnatural forced phrasing ('my love interest') and relies on a cheesy, unrealistic interaction rather than a genuine comedic punchline.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 3,
+          "originality": 3,
+          "promptFit": 4,
+          "total": 3.1
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent but relies on a slightly nonsensical setup and an oddly melodramatic final punchline that feels like an AI trope.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean metaphor, solid turn on the key.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Predictable payoff, mild chuckle.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Sharp self-roast with punchy list.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Amusing scene but familiar therapy vibe.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise and a tidy emotional turn; the locksmith’s line lands mildly but works.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid idea but overlong and leans on exposition; the final beat is predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.5
+        },
+        {
+          "jokeId": "google",
+          "comment": "Sharp comparison with a clear snap; not huge laughter but a strong, concise angle.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Readable and coherent, though the heart-as-lock metaphor feels familiar and safe.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.9,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean closer line, locksmith roast lands, but premise is a touch convenient."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.6,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Solid execution with a fun misdirection; the locksmith delivering the emotional burn is a nice comedic turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean metaphor, solid turn on the key."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean premise and a tidy emotional turn; the locksmith’s line lands mildly but works."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.8,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.5,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.5,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.8,
+          "rawScore": 7,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise with a real comic angle; a bit overextended, but the final line lands."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.5,
+          "rawScore": 8.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Excellent stage persona and escalation. The petty realization that changing locks is free for the new boyfriend lands perfectly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Predictable payoff, mild chuckle."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Solid idea but overlong and leans on exposition; the final beat is predictable."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.7,
+      "rawScore": 6.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 5.9,
+        "craft": 6.9,
+        "originality": 6.9,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 7,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Cleanest construction; the antique-store comparison is efficient and has a solid final snap."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.6,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.1,
+          "comment": "Decent insult-comic turn, but 'dusty/fragile/useless' is the obvious antiques riff."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.4,
+          "rawScore": 7.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Sharp self-roast with punchy list."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Sharp comparison with a clear snap; not huge laughter but a strong, concise angle."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6,
+      "rawScore": 6.1,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.7,
+        "craft": 6,
+        "originality": 5.2,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Has a coherent setup, but the emotional locksmith-as-therapy shape feels generic and the ending is soft."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Cereal-on-the-floor image is fresh and specific; 'whispered heal' closer is mildly soft but works."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Competent but relies on a slightly nonsensical setup and an oddly melodramatic final punchline that feels like an AI trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Amusing scene but familiar therapy vibe."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.5,
+      "rawScore": 4.4,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4,
+        "surprise": 4,
+        "craft": 4.5,
+        "originality": 4,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
+        "laugh": 4,
+        "surprise": 4,
+        "craft": 4.5,
+        "originality": 4,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.1,
+          "rawScore": 4.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Readable, but the wording recites the prompt and the heart-jammed-shut turn is corny and familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.6,
+          "rawScore": 4.7,
+          "scoreAdjustment": -0.1,
+          "comment": "Heart-metaphor pun is a familiar shape; therapy-tag ending undercuts the snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 3.5,
+          "rawScore": 3.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Unnatural forced phrasing ('my love interest') and relies on a cheesy, unrealistic interaction rather than a genuine comedic punchline."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Readable and coherent, though the heart-as-lock metaphor feels familiar and safe."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-20-ext-real-2026-06-20.jpg",
+    "originalSrc": "assets/feature-images/2026-06-20-ext-real-2026-06-20.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Spare Key: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - Spare Key\nExact joke text to render in the right panel:\nI found out my ex moved on when I went to return her spare key and there was already a locksmith changing the locks. That hurt. Not because she didn’t trust me—because he looked at the key, looked at me, and said, “Don’t worry, this one hasn’t worked here in a long time.”\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Sports, Locksmith, Antiques Store, A love interest moving on, Objective, Martyr.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Sports, Locksmith, Antiques Store, A love interest moving on, Objective, Martyr. Use the winning joke titled \"Spare Key\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.4,
+      "google": 5.9,
+      "xai": 6.5,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-20-ext-real-2026-06-20.md"
+}
