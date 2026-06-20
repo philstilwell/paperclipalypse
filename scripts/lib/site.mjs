@@ -5,6 +5,7 @@ import { normalizeDateOnly, shortPublicationDate } from "./publish-date.mjs";
 import { JUDGE_NORMALIZATION_WINDOW, applyRollingJudgeNormalization, rubricForDisplay } from "./scoring.mjs";
 
 const cloudflareAnalytics = `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e6dc8afcaf3243dcbc00f4e43a7fa62e"}'></script><!-- End Cloudflare Web Analytics -->`;
+const dailyListPageSize = 12;
 const processPopoverLabel = [
   "How Paperclipalypse works.",
   "Codex picks six random seed terms.",
@@ -202,6 +203,7 @@ function renderStandingsPage(runs) {
         ${renderModelStandings(standings)}
         ${renderScoreTrend(publicRuns)}
         ${renderJudgeScoreTrend(publicRuns)}
+        ${renderDailyListPaginationScript()}
       </main>`
   });
 }
@@ -320,8 +322,8 @@ function renderScoreTrend(runs) {
   const chart = renderTrendSvg(points);
   const rows = points
     .map(
-      (point) => `
-        <tr>
+      (point, index) => `
+        <tr data-daily-list-row data-page-index="${Math.floor(index / dailyListPageSize)}">
           <td>${escapeHtml(shortDate(point.run))}</td>
           <td><a href="./runs/${escapeHtml(point.run.slug)}.html">${escapeHtml(roundDisplayTitle(point.run))}</a></td>
           <td>${escapeHtml(point.winnerName)}</td>
@@ -345,7 +347,7 @@ function renderScoreTrend(runs) {
             </div>
             <div class="trend-chart-wrap">${chart}</div>
             <div class="table-scroll trend-table-scroll">
-              <table class="trend-table">
+              <table class="trend-table" id="score-trend-daily-table" data-daily-list data-page-size="${dailyListPageSize}">
                 <thead>
                   <tr>
                     <th>Date</th>
@@ -358,6 +360,7 @@ function renderScoreTrend(runs) {
                 <tbody>${rows}</tbody>
               </table>
             </div>
+            ${renderDailyListPaginationControls("score-trend-daily-table", points.length)}
           </div>
         </section>`;
 }
@@ -393,7 +396,7 @@ function renderJudgeScoreTrend(runs) {
         .join("");
 
       return `
-        <tr>
+        <tr data-daily-list-row data-page-index="${Math.floor(runIndex / dailyListPageSize)}">
           <td>${escapeHtml(shortDate(run))}</td>
           <td><a href="./runs/${escapeHtml(run.slug)}.html">${escapeHtml(roundDisplayTitle(run))}</a></td>
           ${scores}
@@ -414,7 +417,7 @@ function renderJudgeScoreTrend(runs) {
             </div>
             <div class="trend-chart-wrap">${chart}</div>
             <div class="table-scroll trend-table-scroll">
-              <table class="judge-score-table">
+              <table class="judge-score-table" id="judge-score-daily-table" data-daily-list data-page-size="${dailyListPageSize}">
                 <colgroup>
                   <col class="judge-score-date-col">
                   <col class="judge-score-round-col">
@@ -430,8 +433,70 @@ function renderJudgeScoreTrend(runs) {
                 <tbody>${rows}</tbody>
               </table>
             </div>
+            ${renderDailyListPaginationControls("judge-score-daily-table", data.runs.length)}
           </div>
         </section>`;
+}
+
+function renderDailyListPaginationControls(tableId, rowCount) {
+  if (rowCount <= dailyListPageSize) {
+    return "";
+  }
+
+  return `
+            <div class="daily-list-pagination" data-daily-pagination-for="${escapeHtml(tableId)}">
+              <button type="button" data-pagination-action="previous" aria-controls="${escapeHtml(tableId)}" aria-label="Previous 12 dates">Previous</button>
+              <span data-pagination-status aria-live="polite">Dates 1-${Math.min(dailyListPageSize, rowCount)} of ${rowCount}</span>
+              <button type="button" data-pagination-action="next" aria-controls="${escapeHtml(tableId)}" aria-label="Next 12 dates">Next</button>
+            </div>`;
+}
+
+function renderDailyListPaginationScript() {
+  return `
+        <script>
+          (() => {
+            const tables = document.querySelectorAll("[data-daily-list]");
+            for (const table of tables) {
+              const pageSize = Number(table.dataset.pageSize || ${dailyListPageSize});
+              const rows = Array.from(table.querySelectorAll("[data-daily-list-row]"));
+              const controls = document.querySelector(\`[data-daily-pagination-for="\${table.id}"]\`);
+              if (!rows.length || !controls || rows.length <= pageSize) {
+                if (controls) {
+                  controls.hidden = true;
+                }
+                continue;
+              }
+
+              let pageIndex = 0;
+              const totalPages = Math.ceil(rows.length / pageSize);
+              const previous = controls.querySelector("[data-pagination-action='previous']");
+              const next = controls.querySelector("[data-pagination-action='next']");
+              const status = controls.querySelector("[data-pagination-status]");
+
+              const renderPage = () => {
+                const start = pageIndex * pageSize;
+                const end = Math.min(start + pageSize, rows.length);
+                rows.forEach((row, index) => {
+                  row.hidden = index < start || index >= end;
+                });
+                previous.disabled = pageIndex === 0;
+                next.disabled = pageIndex >= totalPages - 1;
+                status.textContent = \`Dates \${start + 1}-\${end} of \${rows.length}\`;
+              };
+
+              previous.addEventListener("click", () => {
+                pageIndex = Math.max(0, pageIndex - 1);
+                renderPage();
+              });
+              next.addEventListener("click", () => {
+                pageIndex = Math.min(totalPages - 1, pageIndex + 1);
+                renderPage();
+              });
+
+              renderPage();
+            }
+          })();
+        </script>`;
 }
 
 function renderJudgeScoreTrendSvg(data) {
@@ -2388,6 +2453,47 @@ main {
 
 .standings-table {
   min-width: 860px;
+}
+
+.daily-list-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.daily-list-pagination button {
+  border: 1px solid rgba(194, 138, 87, 0.34);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.16), transparent 65%),
+    rgba(18, 19, 21, 0.9);
+  color: var(--bone);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 900;
+  min-height: 36px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+
+.daily-list-pagination button:not(:disabled):hover {
+  border-color: rgba(239, 225, 207, 0.42);
+  color: var(--ink);
+}
+
+.daily-list-pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
+.daily-list-pagination span {
+  color: var(--dim);
+  font-size: 0.78rem;
+  font-weight: 900;
 }
 
 .standings-table .model-name {

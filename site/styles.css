@@ -780,6 +780,47 @@ main {
   min-width: 860px;
 }
 
+.daily-list-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.daily-list-pagination button {
+  border: 1px solid rgba(194, 138, 87, 0.34);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.16), transparent 65%),
+    rgba(18, 19, 21, 0.9);
+  color: var(--bone);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 900;
+  min-height: 36px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+
+.daily-list-pagination button:not(:disabled):hover {
+  border-color: rgba(239, 225, 207, 0.42);
+  color: var(--ink);
+}
+
+.daily-list-pagination button:disabled {
+  cursor: not-allowed;
+  opacity: 0.42;
+}
+
+.daily-list-pagination span {
+  color: var(--dim);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
 .standings-table .model-name {
   color: var(--ink);
   display: block;
