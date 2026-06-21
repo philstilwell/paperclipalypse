@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-06-21T14:01:41.280Z",
+  "publishedDate": "2026-06-21",
+  "seed": "ext-real-2026-06-21",
+  "slug": "2026-06-21-ext-real-2026-06-21",
+  "source": "manual-external",
+  "seedTerms": [
+    "Feel-Good",
+    "Mail Carrier",
+    "Nursery",
+    "A competitor showing up",
+    "Cautious",
+    "Indecisive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Return to Sender",
+      "seedTermsUsed": [
+        "Mail Carrier",
+        "Indecisive"
+      ],
+      "joke": "I’m so indecisive I stress out my mail carrier. He handed me a certified letter and said, “You need to sign here.” I said, “Blue or black ink?” He said, “Pen.” I said, “Print or cursive?” He just wrote “return to sender” on my forehead.",
+      "text": "I’m so indecisive I stress out my mail carrier. He handed me a certified letter and said, “You need to sign here.” I said, “Blue or black ink?” He said, “Pen.” I said, “Print or cursive?” He just wrote “return to sender” on my forehead.",
+      "setup": "",
+      "punchline": "I’m so indecisive I stress out my mail carrier. He handed me a certified letter and said, “You need to sign here.” I said, “Blue or black ink?” He said, “Pen.” I said, “Print or cursive?” He just wrote “return to sender” on my forehead."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Substitute Carrier",
+      "seedTermsUsed": [
+        "Mail Carrier",
+        "Indecisive"
+      ],
+      "joke": "My mail carrier got replaced for two weeks by a substitute who was clearly new and deeply indecisive. I'd watch him stand at my mailbox for like ninety seconds, just holding my electric bill, looking at it like it had asked him out. One day he didn't deliver anything. He just left a sticky note that said “thinking about it.”",
+      "text": "My mail carrier got replaced for two weeks by a substitute who was clearly new and deeply indecisive. I'd watch him stand at my mailbox for like ninety seconds, just holding my electric bill, looking at it like it had asked him out. One day he didn't deliver anything. He just left a sticky note that said “thinking about it.”",
+      "setup": "",
+      "punchline": "My mail carrier got replaced for two weeks by a substitute who was clearly new and deeply indecisive. I'd watch him stand at my mailbox for like ninety seconds, just holding my electric bill, looking at it like it had asked him out. One day he didn't deliver anything. He just left a sticky note that said “thinking about it.”"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Outgoing Mail",
+      "seedTermsUsed": [
+        "Indecisive",
+        "Mail Carrier"
+      ],
+      "joke": "I’m so indecisive that my mail carrier actively dreads coming to my house. I'll put an envelope in the outgoing box, panic, take it out, and rewrite the whole thing. Yesterday he caught me holding a letter halfway out the slot, playing tug-of-war with him. He just sighed and said, “Listen, man, just send the electric bill. They really don't care about your tone.”",
+      "text": "I’m so indecisive that my mail carrier actively dreads coming to my house. I'll put an envelope in the outgoing box, panic, take it out, and rewrite the whole thing. Yesterday he caught me holding a letter halfway out the slot, playing tug-of-war with him. He just sighed and said, “Listen, man, just send the electric bill. They really don't care about your tone.”",
+      "setup": "",
+      "punchline": "I’m so indecisive that my mail carrier actively dreads coming to my house. I'll put an envelope in the outgoing box, panic, take it out, and rewrite the whole thing. Yesterday he caught me holding a letter halfway out the slot, playing tug-of-war with him. He just sighed and said, “Listen, man, just send the electric bill. They really don't care about your tone.”"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Cautious Carrier",
+      "seedTermsUsed": [
+        "Mail Carrier",
+        "Cautious"
+      ],
+      "joke": "Folks, I started working as a mail carrier last month, but I'm way too cautious for it. Spot a dog in the yard? I circle the block three times, peeking around corners like I'm on a stakeout. Half the time I just yell “mail's here!” from the sidewalk and bolt. My supervisor pulled me aside and said, “Son, at this rate you're not delivering mail—you're giving the whole neighborhood a new game of hide and seek.”",
+      "text": "Folks, I started working as a mail carrier last month, but I'm way too cautious for it. Spot a dog in the yard? I circle the block three times, peeking around corners like I'm on a stakeout. Half the time I just yell “mail's here!” from the sidewalk and bolt. My supervisor pulled me aside and said, “Son, at this rate you're not delivering mail—you're giving the whole neighborhood a new game of hide and seek.”",
+      "setup": "",
+      "punchline": "Folks, I started working as a mail carrier last month, but I'm way too cautious for it. Spot a dog in the yard? I circle the block three times, peeking around corners like I'm on a stakeout. Half the time I just yell “mail's here!” from the sidewalk and bolt. My supervisor pulled me aside and said, “Son, at this rate you're not delivering mail—you're giving the whole neighborhood a new game of hide and seek.”"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Feel-Good Delivery",
+      "seedTermsUsed": [
+        "Feel-Good",
+        "Mail Carrier"
+      ],
+      "joke": "I tried to hype myself up with one of those feel‑good routines, but it backfired. I walked around my neighborhood telling myself, “You’re unstoppable!” and my mail carrier pulled me aside like, “Buddy, last time someone talked to themselves this loud, I had to file a report.” Nothing kills confidence faster than being out‑motivated by a guy hauling coupons.",
+      "text": "I tried to hype myself up with one of those feel‑good routines, but it backfired. I walked around my neighborhood telling myself, “You’re unstoppable!” and my mail carrier pulled me aside like, “Buddy, last time someone talked to themselves this loud, I had to file a report.” Nothing kills confidence faster than being out‑motivated by a guy hauling coupons.",
+      "setup": "",
+      "punchline": "I tried to hype myself up with one of those feel‑good routines, but it backfired. I walked around my neighborhood telling myself, “You’re unstoppable!” and my mail carrier pulled me aside like, “Buddy, last time someone talked to themselves this loud, I had to file a report.” Nothing kills confidence faster than being out‑motivated by a guy hauling coupons."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear comic idea with a nice final image, though the payoff is mild and the first-person role is observational rather than central."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strongest of the batch: concrete escalation, natural first-person premise, and the electric-bill tone line gives the turn a real snap."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Understandable and prompt-compliant, but the dog/cautious-mail-carrier route is predictable and the final line softens rather than sharpens the laugh."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent but loose; the report line is the best beat, while the final confidence/coupons line feels more phrased than funny."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clean setup and escalation, but 'return to sender on forehead' is a quick non-sequitur swerve rather than an earned punchline; mildly amusing."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good escalating image (tug-of-war through the slot) and the carrier's deadpan line lands as a real character-based punchline; solid timing."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Cautious-mail-carrier premise is fresh and visual, but the supervisor tag restates the bit ('hide and seek') rather than twisting it further."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Self-talk-overheard angle is a fun left turn from feel-good affirmations; final line about being out-motivated by coupons is a decent closer."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid rhythmic dialogue, but the 'return to sender on forehead' visual is a bit cartoonish for modern stand-up."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent simile ('like it had asked him out') and a genuinely funny, restrained final turn with the sticky note."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent premise, but the 'Folks' opener is clunky and the supervisor's dialogue over-explains the punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong closer ('guy hauling coupons') saves this one, anchoring the abstract feel-good premise in a concrete neighborhood interaction."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid visual punch on forehead, good rhythm but indecisive trope fairly familiar."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Role-reversed indecisive carrier works; sticky note lands mildly amusing but not explosive."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Tug-of-war image is decent but very similar to other indecisive mail bits; safe escalation."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Feel-good self-talk meets mail carrier is fresh pairing but payoff feels mild and expected."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear premise and a tidy escalation; the forehead tag is mildly funny but not a big snap."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Readable and coherent, though the indecisive-mailman angle stays predictable and ends softly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid first‑person rhythm with a cleaner turn; the tone joke lands mildly but works."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Functional and clear, but the cautious‑carrier scenario feels familiar and the final line is gentle."
+        }
+      ]
+    }
+  ]
+}
