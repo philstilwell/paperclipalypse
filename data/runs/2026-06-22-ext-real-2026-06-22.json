@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-06-22-ext-real-2026-06-22",
+  "seed": "ext-real-2026-06-22",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-22T15:32:47.579Z",
+  "publishedDate": "2026-06-22",
+  "seedTerms": [
+    "Family and Friendship",
+    "Assassin",
+    "Playground",
+    "War breaking out",
+    "Ambitious",
+    "Addictive"
+  ],
+  "premise": {
+    "text": "Seed terms: Family and Friendship, Assassin, Playground, War breaking out, Ambitious, Addictive",
+    "seedTerms": [
+      "Family and Friendship",
+      "Assassin",
+      "Playground",
+      "War breaking out",
+      "Ambitious",
+      "Addictive"
+    ],
+    "displayText": "Hide and Seek"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Too Considerate",
+      "seedTermsUsed": [
+        "Family and Friendship",
+        "Assassin"
+      ],
+      "joke": "I could never be an assassin. I’m too aware of family and friendship. I’d sneak into the guy’s house, see the photos on the fridge, and go, “Oh no, he has people.” Then I’d leave a note: “Sorry about the break-in. You seem loved. Also, oil that bedroom door; it betrayed you immediately.”",
+      "setup": "",
+      "punchline": "I could never be an assassin. I’m too aware of family and friendship. I’d sneak into the guy’s house, see the photos on the fridge, and go, “Oh no, he has people.” Then I’d leave a note: “Sorry about the break-in. You seem loved. Also, oil that bedroom door; it betrayed you immediately.”",
+      "text": "I could never be an assassin. I’m too aware of family and friendship. I’d sneak into the guy’s house, see the photos on the fridge, and go, “Oh no, he has people.” Then I’d leave a note: “Sorry about the break-in. You seem loved. Also, oil that bedroom door; it betrayed you immediately.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Candy Crush Confession",
+      "seedTermsUsed": [
+        "Family and Friendship",
+        "Addictive"
+      ],
+      "joke": "My mom called me crying. Said she felt disconnected, that I never check in, that she raised me better than this. I felt terrible. I said, 'Mom, I'm so sorry. I'm going to be a better son starting right now.' Then I went back to Candy Crush. She's on my friends list. I can see her. She's on level 4,847. She's fine.",
+      "setup": "",
+      "punchline": "My mom called me crying. Said she felt disconnected, that I never check in, that she raised me better than this. I felt terrible. I said, 'Mom, I'm so sorry. I'm going to be a better son starting right now.' Then I went back to Candy Crush. She's on my friends list. I can see her. She's on level 4,847. She's fine.",
+      "text": "My mom called me crying. Said she felt disconnected, that I never check in, that she raised me better than this. I felt terrible. I said, 'Mom, I'm so sorry. I'm going to be a better son starting right now.' Then I went back to Candy Crush. She's on my friends list. I can see her. She's on level 4,847. She's fine."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Hide and Seek",
+      "seedTermsUsed": [
+        "Playground",
+        "Assassin"
+      ],
+      "joke": "Hide and seek is wild. Most kids just cover their eyes in the middle of the grass and think they're invisible. But there’s always that one six-year-old who treats the playground like he's a trained assassin. He doesn't just hide; he burrows into the mulch to erase his heat signature. I was just trying to read on a bench when he dropped silently from the monkey bars, handed me a crushed juice box, and whispered, 'The slide is compromised.'",
+      "setup": "",
+      "punchline": "Hide and seek is wild. Most kids just cover their eyes in the middle of the grass and think they're invisible. But there’s always that one six-year-old who treats the playground like he's a trained assassin. He doesn't just hide; he burrows into the mulch to erase his heat signature. I was just trying to read on a bench when he dropped silently from the monkey bars, handed me a crushed juice box, and whispered, 'The slide is compromised.'",
+      "text": "Hide and seek is wild. Most kids just cover their eyes in the middle of the grass and think they're invisible. But there’s always that one six-year-old who treats the playground like he's a trained assassin. He doesn't just hide; he burrows into the mulch to erase his heat signature. I was just trying to read on a bench when he dropped silently from the monkey bars, handed me a crushed juice box, and whispered, 'The slide is compromised.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Assassin at the Playground",
+      "seedTermsUsed": [
+        "Assassin",
+        "Playground"
+      ],
+      "joke": "You know, I tried being an assassin. Figured it'd be exciting. First job, they send me to a playground for the hit. I'm crouched behind the slide, scope ready, when this kid tags me yelling 'You're it!' Before I know it, I'm chasing toddlers, pushing swings, and my target just wanders off for ice cream. I quit on the spot. Turns out real assassins can't handle playgrounds—too many witnesses with sticky fingers pointing right at you.",
+      "setup": "",
+      "punchline": "You know, I tried being an assassin. Figured it'd be exciting. First job, they send me to a playground for the hit. I'm crouched behind the slide, scope ready, when this kid tags me yelling 'You're it!' Before I know it, I'm chasing toddlers, pushing swings, and my target just wanders off for ice cream. I quit on the spot. Turns out real assassins can't handle playgrounds—too many witnesses with sticky fingers pointing right at you.",
+      "text": "You know, I tried being an assassin. Figured it'd be exciting. First job, they send me to a playground for the hit. I'm crouched behind the slide, scope ready, when this kid tags me yelling 'You're it!' Before I know it, I'm chasing toddlers, pushing swings, and my target just wanders off for ice cream. I quit on the spot. Turns out real assassins can't handle playgrounds—too many witnesses with sticky fingers pointing right at you."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Playground Professional",
+      "seedTermsUsed": [
+        "Playground",
+        "Assassin"
+      ],
+      "joke": "I realized I might be taking life too seriously when I caught myself on a playground sizing up the monkey bars like a covert mission. Some dad asked if I was okay, and I said, “Yeah, just planning my route.” He goes, “Buddy, it’s recess, not a contract job.” Nothing humbles you faster than being told to relax by a man holding applesauce.",
+      "setup": "",
+      "punchline": "I realized I might be taking life too seriously when I caught myself on a playground sizing up the monkey bars like a covert mission. Some dad asked if I was okay, and I said, “Yeah, just planning my route.” He goes, “Buddy, it’s recess, not a contract job.” Nothing humbles you faster than being told to relax by a man holding applesauce.",
+      "text": "I realized I might be taking life too seriously when I caught myself on a playground sizing up the monkey bars like a covert mission. Some dad asked if I was okay, and I said, “Yeah, just planning my route.” He goes, “Buddy, it’s recess, not a contract job.” Nothing humbles you faster than being told to relax by a man holding applesauce."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong reversal: the emotional family setup becomes a game-addiction status check. Clean, economical, and actually lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Best escalation of the round. The assassin/playground blend is vivid, specific, and the final line is a real punchline.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Uses the two terms clearly, but the tag-game reversal is predictable and the ending explains the joke too much.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Well-phrased and has a nice applesauce tag, but the assassin concept is softened into generic covert-mission language.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 6.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The note left behind is a genuinely surprising pivot that earns its laughs; 'oil that bedroom door; it betrayed you immediately' is sharp, specific craft. Feels fully realized as stand-up.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 9,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 8
+        },
+        {
+          "jokeId": "google",
+          "comment": "'The slide is compromised' is a near-perfect button. The heat-signature detail and juice box escalation build rhythmically. Best joke in the set—tight, visual, and the child assassin premise is committed to fully.",
+          "laugh": 9,
+          "surprise": 8,
+          "craft": 9,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 8.6
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent execution of a well-worn 'fish out of water assassin' template. The toddler-tagging bit has potential but the payoff ('sticky fingers pointing') is a weak, predictable closer. No real subversion.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "'Planning my route' lands cleanly and the applesauce closer is a solid image. But the premise is thin and the joke stops rather than builds. The dad punchline does the job without exceeding it.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Shoehorned seed terms in the setup make it clunky. The squeaky door punchline elevates it slightly, but it ultimately relies on a generic AI joke structure.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 5.1
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent misdirection and natural conversational flow. It beautifully embodies the required concepts through the premise rather than awkwardly dropping keywords.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Suffers from a highly generic AI narrative structure ('I tried being an X...'). The scenario is too cartoonish and implausible to work as grounded stand-up comedy.",
+          "laugh": 3,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 3.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Strong stand-up pacing and excellent use of specific mundane details ('man holding applesauce') to effectively contrast the assassin theme.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong empathetic twist on assassin trope, clean build and punch.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Sharp game addiction reveal, relatable family guilt flip.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid, exaggerated kid-as-assassin imagery lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 7.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Mild self-aware playground bit, soft punchline and relatable but not sharp.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a personable turn; the fridge‑photo beat is solid though not sharply surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable and coherent; the Candy Crush reveal works but lands as a mild, familiar punch.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong imagery and a fun escalation; the assassin‑kid worldbuilding feels fresh and stage‑ready.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Functional but predictable; the playground‑hit setup follows a familiar pattern and ends gently.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.8,
+      "rawScore": 7.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.7,
+        "surprise": 7.5,
+        "craft": 8,
+        "originality": 7.5,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 7.8,
+        "surprise": 7.5,
+        "craft": 8,
+        "originality": 7.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 8,
+          "rawScore": 8,
+          "scoreAdjustment": 0,
+          "comment": "Best escalation of the round. The assassin/playground blend is vivid, specific, and the final line is a real punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 8.6,
+          "rawScore": 8.6,
+          "scoreAdjustment": 0,
+          "comment": "'The slide is compromised' is a near-perfect button. The heat-signature detail and juice box escalation build rhythmically. Best joke in the set—tight, visual, and the child assassin premise is committed to fully."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Vivid, exaggerated kid-as-assassin imagery lands well."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.3,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong imagery and a fun escalation; the assassin‑kid worldbuilding feels fresh and stage‑ready."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7.1,
+      "rawScore": 7.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 7.2,
+        "craft": 7.2,
+        "originality": 6.7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 7.3,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.4,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0,
+          "comment": "Strong reversal: the emotional family setup becomes a game-addiction status check. Clean, economical, and actually lands."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Excellent misdirection and natural conversational flow. It beautifully embodies the required concepts through the premise rather than awkwardly dropping keywords."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Sharp game addiction reveal, relatable family guilt flip."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Relatable and coherent; the Candy Crush reveal works but lands as a mild, familiar punch."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.2,
+        "craft": 7.2,
+        "originality": 6.7,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 8,
+          "rawScore": 8,
+          "scoreAdjustment": 0,
+          "comment": "The note left behind is a genuinely surprising pivot that earns its laughs; 'oil that bedroom door; it betrayed you immediately' is sharp, specific craft. Feels fully realized as stand-up."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.2,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Shoehorned seed terms in the setup make it clunky. The squeaky door punchline elevates it slightly, but it ultimately relies on a generic AI joke structure."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.2,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong empathetic twist on assassin trope, clean build and punch."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean premise with a personable turn; the fridge‑photo beat is solid though not sharply surprising."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.3,
+      "rawScore": 6.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.2,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 7.2
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Well-phrased and has a nice applesauce tag, but the assassin concept is softened into generic covert-mission language."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
+          "comment": "'Planning my route' lands cleanly and the applesauce closer is a solid image. But the premise is thin and the joke stops rather than builds. The dad punchline does the job without exceeding it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.3,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong stand-up pacing and excellent use of specific mundane details ('man holding applesauce') to effectively contrast the assassin theme."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.5,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Mild self-aware playground bit, soft punchline and relatable but not sharp."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.9,
+      "rawScore": 4.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.3,
+        "surprise": 4.6,
+        "craft": 5.1,
+        "originality": 4.6,
+        "promptFit": 7.8
+      },
+      "rawRubric": {
+        "laugh": 4.3,
+        "surprise": 4.5,
+        "craft": 5,
+        "originality": 4.5,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.6,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0,
+          "comment": "Uses the two terms clearly, but the tag-game reversal is predictable and the ending explains the joke too much."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.2,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0,
+          "comment": "Competent execution of a well-worn 'fish out of water assassin' template. The toddler-tagging bit has potential but the payoff ('sticky fingers pointing') is a weak, predictable closer. No real subversion."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4,
+          "rawScore": 3.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Suffers from a highly generic AI narrative structure ('I tried being an X...'). The scenario is too cartoonish and implausible to work as grounded stand-up comedy."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Functional but predictable; the playground‑hit setup follows a familiar pattern and ends gently."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-22-ext-real-2026-06-22.jpg",
+    "originalSrc": "assets/feature-images/2026-06-22-ext-real-2026-06-22.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Hide and Seek: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Hide and Seek\nExact joke text to render in the right panel:\nHide and seek is wild. Most kids just cover their eyes in the middle of the grass and think they're invisible. But there’s always that one six-year-old who treats the playground like he's a trained assassin. He doesn't just hide; he burrows into the mulch to erase his heat signature. I was just trying to read on a bench when he dropped silently from the monkey bars, handed me a crushed juice box, and whispered, 'The slide is compromised.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Family and Friendship, Assassin, Playground, War breaking out, Ambitious, Addictive.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Family and Friendship, Assassin, Playground, War breaking out, Ambitious, Addictive. Use the winning joke titled \"Hide and Seek\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.3,
+      "google": 6.2,
+      "xai": 6.6,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-22-ext-real-2026-06-22.md"
+}
