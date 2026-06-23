@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-06-23-ext-real-2026-06-23",
+  "seed": "ext-real-2026-06-23",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-23T17:26:03Z",
+  "publishedDate": "2026-06-23",
+  "seedTerms": [
+    "Utopia",
+    "Assassin",
+    "Carnival Funhouse",
+    "Being blackmailed",
+    "Cooperative",
+    "Frivolous"
+  ],
+  "premise": {
+    "text": "Seed terms: Utopia, Assassin, Carnival Funhouse, Being blackmailed, Cooperative, Frivolous",
+    "seedTerms": [
+      "Utopia",
+      "Assassin",
+      "Carnival Funhouse",
+      "Being blackmailed",
+      "Cooperative",
+      "Frivolous"
+    ],
+    "displayText": "Mirror Leverage"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Mirror Leverage",
+      "seedTermsUsed": [
+        "Carnival Funhouse",
+        "Being blackmailed"
+      ],
+      "joke": "I got blackmailed at a carnival funhouse. They sent me a photo from the skinny mirror and said, \"Pay up or we post this.\" I said, \"Post it. That's the only picture where I look like I kept my New Year's resolution.\" Then they sent the wide-mirror photo, and I Venmoed them before the clown music looped.",
+      "setup": "",
+      "punchline": "I got blackmailed at a carnival funhouse. They sent me a photo from the skinny mirror and said, \"Pay up or we post this.\" I said, \"Post it. That's the only picture where I look like I kept my New Year's resolution.\" Then they sent the wide-mirror photo, and I Venmoed them before the clown music looped.",
+      "text": "I got blackmailed at a carnival funhouse. They sent me a photo from the skinny mirror and said, \"Pay up or we post this.\" I said, \"Post it. That's the only picture where I look like I kept my New Year's resolution.\" Then they sent the wide-mirror photo, and I Venmoed them before the clown music looped."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Mirror, Mirror",
+      "seedTermsUsed": [
+        "Carnival Funhouse",
+        "Utopia"
+      ],
+      "joke": "I went through one of those carnival funhouse mirror rooms-you know, where one makes you six feet tall and built like a Greek god. I just stood there. Staring. For like ten minutes. The employee finally knocked and asked if I was okay. I said, 'I'm fine. This is the closest to utopia I've ever been. Please don't make me leave.'",
+      "setup": "",
+      "punchline": "I went through one of those carnival funhouse mirror rooms-you know, where one makes you six feet tall and built like a Greek god. I just stood there. Staring. For like ten minutes. The employee finally knocked and asked if I was okay. I said, 'I'm fine. This is the closest to utopia I've ever been. Please don't make me leave.'",
+      "text": "I went through one of those carnival funhouse mirror rooms-you know, where one makes you six feet tall and built like a Greek god. I just stood there. Staring. For like ten minutes. The employee finally knocked and asked if I was okay. I said, 'I'm fine. This is the closest to utopia I've ever been. Please don't make me leave.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Funhouse Leverage",
+      "seedTermsUsed": [
+        "Being blackmailed",
+        "Carnival Funhouse"
+      ],
+      "joke": "I'm currently being blackmailed, which is stressful, but it's hard to be intimidated because of the leverage. A guy followed me to a county fair and took photos of me having a full-blown panic attack inside the carnival funhouse. He wants five grand, or else he's going to release a high-def picture of me sobbing on a neon floor, surrounded by seventeen short, incredibly wide, weeping versions of myself.",
+      "setup": "",
+      "punchline": "I'm currently being blackmailed, which is stressful, but it's hard to be intimidated because of the leverage. A guy followed me to a county fair and took photos of me having a full-blown panic attack inside the carnival funhouse. He wants five grand, or else he's going to release a high-def picture of me sobbing on a neon floor, surrounded by seventeen short, incredibly wide, weeping versions of myself.",
+      "text": "I'm currently being blackmailed, which is stressful, but it's hard to be intimidated because of the leverage. A guy followed me to a county fair and took photos of me having a full-blown panic attack inside the carnival funhouse. He wants five grand, or else he's going to release a high-def picture of me sobbing on a neon floor, surrounded by seventeen short, incredibly wide, weeping versions of myself."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Funhouse Hit",
+      "seedTermsUsed": [
+        "Assassin",
+        "Carnival Funhouse"
+      ],
+      "joke": "So I duck into this carnival funhouse to kill ten minutes, mirrors twisting me into every bad selfie I've ever taken. Halfway through the spinning tunnel, an assassin leaps out with a knife. I freeze, then point at my reflection and go, 'Dude, if you're here for me, you're already too late-the funhouse just murdered my self-esteem.' Guy starts cracking up, misses his swing. I bolted. Nothing like distorted abs to throw off a professional.",
+      "setup": "",
+      "punchline": "So I duck into this carnival funhouse to kill ten minutes, mirrors twisting me into every bad selfie I've ever taken. Halfway through the spinning tunnel, an assassin leaps out with a knife. I freeze, then point at my reflection and go, 'Dude, if you're here for me, you're already too late-the funhouse just murdered my self-esteem.' Guy starts cracking up, misses his swing. I bolted. Nothing like distorted abs to throw off a professional.",
+      "text": "So I duck into this carnival funhouse to kill ten minutes, mirrors twisting me into every bad selfie I've ever taken. Halfway through the spinning tunnel, an assassin leaps out with a knife. I freeze, then point at my reflection and go, 'Dude, if you're here for me, you're already too late-the funhouse just murdered my self-esteem.' Guy starts cracking up, misses his swing. I bolted. Nothing like distorted abs to throw off a professional."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Funhouse Hit Job",
+      "seedTermsUsed": [
+        "Carnival Funhouse",
+        "Assassin"
+      ],
+      "joke": "I knew I was in the wrong line of work when I tried to chase someone through a carnival funhouse. I'm supposed to look intimidating, but nothing kills the vibe like slipping on a spinning floor and threatening a guy while twelve versions of me wobble in the mirrors. Hard to be feared when even I don't know which one of us is real.",
+      "setup": "",
+      "punchline": "I knew I was in the wrong line of work when I tried to chase someone through a carnival funhouse. I'm supposed to look intimidating, but nothing kills the vibe like slipping on a spinning floor and threatening a guy while twelve versions of me wobble in the mirrors. Hard to be feared when even I don't know which one of us is real.",
+      "text": "I knew I was in the wrong line of work when I tried to chase someone through a carnival funhouse. I'm supposed to look intimidating, but nothing kills the vibe like slipping on a spinning floor and threatening a guy while twelve versions of me wobble in the mirrors. Hard to be feared when even I don't know which one of us is real."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear and stageable, but the utopia turn is fairly expected and lands more as a smile than a laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good comic image with the multiplied weeping reflections; a little overwritten, but the premise is amusing.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and energetic, but the self-esteem murder turn is familiar and the assassin action gets cartoonish.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clean first-person setup with decent rhythm, but the payoff is mild and doesn't escalate far beyond the premise.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean three-beat structure with a genuine reversal: the setup earns sympathy, the first turn subverts expectation, and the Venmo punchline lands with rhythm and specificity. The clown music detail is economical and earns its place. One of the tighter constructions in the batch.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "google",
+          "comment": "The image is vivid and the final clause ('seventeen short, incredibly wide, weeping versions') is the best phrase in the joke, but the setup meanders and 'hard to be intimidated because of the leverage' is awkward phrasing that interrupts momentum before the payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The assassin premise is plausible but the execution is crowded. 'The funhouse just murdered my self-esteem' is a recognizable AI joke shape, and 'distorted abs' undercuts rather than sharpens the close. Competent filler, not a winner.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The premise has legs but the joke stops before it fully arrives. 'Even I don't know which one of us is real' is a familiar existential soft-landing rather than a punchline. Needs a concrete final image to pay off the setup's physical comedy potential.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.2
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Tight structure with a strong escalation. The wide-mirror punchline hits the exact right timing and the clown music detail adds excellent texture.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "A competent but familiar self-deprecating setup. The turn to utopia feels slightly forced rather than a natural escalation.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Leans too far into narrative absurdity for a grounded stand-up routine, and the dialogue feels scripted rather than conversational.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Strong initial angle taking the perspective of the professional, but the ending softens into a mild observation rather than a sharp punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid mirror twist but predictable resolution payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Cute vanity bit, more smile than laugh, low energy.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid weeping multiples image lands well, strong visual.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Assassin in mirrors has great physical comedy potential.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a tidy turn; the Venmo beat works but stays within familiar funhouse-photo humor.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Readable and coherent, though the utopia mirror gag is predictable and ends softly without a real snap.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.7
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong visual escalation; the seventeen-versions image lands, though the structure is more descriptive than punchy.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Good first-person rhythm with a clear comedic turn; the self-esteem line delivers the cleanest laugh of the batch.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 7.2,
+      "rawScore": 7.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 8,
+          "rawScore": 8,
+          "scoreAdjustment": 0,
+          "comment": "Clean three-beat structure with a genuine reversal: the setup earns sympathy, the first turn subverts expectation, and the Venmo punchline lands with rhythm and specificity. The clown music detail is economical and earns its place. One of the tighter constructions in the batch."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.1,
+          "rawScore": 8,
+          "scoreAdjustment": 0.1,
+          "comment": "Tight structure with a strong escalation. The wide-mirror punchline hits the exact right timing and the clown music detail adds excellent texture."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid mirror twist but predictable resolution payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean premise with a tidy turn; the Venmo beat works but stays within familiar funhouse-photo humor."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.5,
+      "rawScore": 6.6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 6.2,
+        "craft": 6.5,
+        "originality": 6.2,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
+          "comment": "Good comic image with the multiplied weeping reflections; a little overwritten, but the premise is amusing."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "The image is vivid and the final clause ('seventeen short, incredibly wide, weeping versions') is the best phrase in the joke, but the setup meanders and 'hard to be intimidated because of the leverage' is awkward phrasing that interrupts momentum before the payoff."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Vivid weeping multiples image lands well, strong visual."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong visual escalation; the seventeen-versions image lands, though the structure is more descriptive than punchy."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.2,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
+          "comment": "Clean first-person setup with decent rhythm, but the payoff is mild and doesn't escalate far beyond the premise."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.2,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0,
+          "comment": "The premise has legs but the joke stops before it fully arrives. 'Even I don't know which one of us is real' is a familiar existential soft-landing rather than a punchline. Needs a concrete final image to pay off the setup's physical comedy potential."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong initial angle taking the perspective of the professional, but the ending softens into a mild observation rather than a sharp punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Assassin in mirrors has great physical comedy potential."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.8,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.6,
+        "craft": 5.6,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.5,
+        "craft": 5.5,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.4,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0,
+          "comment": "Understandable and energetic, but the self-esteem murder turn is familiar and the assassin action gets cartoonish."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.4,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0,
+          "comment": "The assassin premise is plausible but the execution is crowded. 'The funhouse just murdered my self-esteem' is a recognizable AI joke shape, and 'distorted abs' undercuts rather than sharpens the close. Competent filler, not a winner."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.1,
+          "rawScore": 5,
+          "scoreAdjustment": 0.1,
+          "comment": "Leans too far into narrative absurdity for a grounded stand-up routine, and the dialogue feels scripted rather than conversational."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.4,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Good first-person rhythm with a clear comedic turn; the self-esteem line delivers the cleanest laugh of the batch."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 5.4,
+      "rawScore": 5.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.7,
+        "surprise": 5,
+        "craft": 5.7,
+        "originality": 5.5,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
+          "comment": "Clear and stageable, but the utopia turn is fairly expected and lands more as a smile than a laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.6,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.1,
+          "comment": "A competent but familiar self-deprecating setup. The turn to utopia feels slightly forced rather than a natural escalation."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.5,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Cute vanity bit, more smile than laugh, low energy."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.9,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0.2,
+          "comment": "Readable and coherent, though the utopia mirror gag is predictable and ends softly without a real snap."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-23-ext-real-2026-06-23.png",
+    "originalSrc": "assets/feature-images/2026-06-23-ext-real-2026-06-23.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Mirror Leverage: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - Mirror Leverage\nExact joke text to render in the right panel:\nI got blackmailed at a carnival funhouse. They sent me a photo from the skinny mirror and said, \"Pay up or we post this.\" I said, \"Post it. That's the only picture where I look like I kept my New Year's resolution.\" Then they sent the wide-mirror photo, and I Venmoed them before the clown music looped.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Utopia, Assassin, Carnival Funhouse, Being blackmailed, Cooperative, Frivolous.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Utopia, Assassin, Carnival Funhouse, Being blackmailed, Cooperative, Frivolous. Use the winning joke titled \"Mirror Leverage\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.4,
+      "anthropic": 6.3,
+      "google": 6.2,
+      "xai": 6.7,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-23-ext-real-2026-06-23.md"
+}
