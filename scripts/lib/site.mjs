@@ -1052,7 +1052,7 @@ function renderHero(run) {
         <div class="hero-shade"></div>
         <div class="hero-inner">
           <div class="brand-row">
-            <img class="mark" src="./assets/paperclip-face-mark.png" alt="">
+            <img class="mark" src="./assets/paperclip-stage-icon.webp" alt="">
             <div class="brand-title">
               <p class="eyebrow">AI Comedy Tournament</p>
               <h1>Paperclipalypse</h1>
