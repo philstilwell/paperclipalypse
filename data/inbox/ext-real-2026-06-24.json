@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-06-24T14:01:35.911Z",
+  "publishedDate": "2026-06-24",
+  "seed": "ext-real-2026-06-24",
+  "slug": "2026-06-24-ext-real-2026-06-24",
+  "source": "manual-external",
+  "seedTerms": [
+    "Body and Extreme",
+    "Painter",
+    "Flower Garden",
+    "Being cut from a team",
+    "Disciplined",
+    "Inattentive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Artist on the Bench",
+      "seedTermsUsed": [
+        "Painter",
+        "Being cut from a team"
+      ],
+      "joke": "I got cut from my softball team, and the coach tried to soften it by saying, \"You seem more like a painter.\" I thought that was beautiful until my first art class, when the teacher said, \"No, he meant every time something comes at you fast, you duck and pretend you saw composition.\"",
+      "text": "I got cut from my softball team, and the coach tried to soften it by saying, \"You seem more like a painter.\" I thought that was beautiful until my first art class, when the teacher said, \"No, he meant every time something comes at you fast, you duck and pretend you saw composition.\"",
+      "setup": "",
+      "punchline": "I got cut from my softball team, and the coach tried to soften it by saying, \"You seem more like a painter.\" I thought that was beautiful until my first art class, when the teacher said, \"No, he meant every time something comes at you fast, you duck and pretend you saw composition.\""
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Rejection Letter",
+      "seedTermsUsed": [
+        "Being cut from a team",
+        "Flower Garden"
+      ],
+      "joke": "I got cut from a community garden. A garden. They said I lacked 'commitment to the collective vision.' I got a letter. With bullet points. My sunflowers were 'inconsistent,' my zucchini showed 'poor spacing awareness.' I didn't even know you could get benched by vegetables. But honestly? Warms my heart knowing somewhere out there, a zucchini is telling the story of the guy it cut.",
+      "text": "I got cut from a community garden. A garden. They said I lacked 'commitment to the collective vision.' I got a letter. With bullet points. My sunflowers were 'inconsistent,' my zucchini showed 'poor spacing awareness.' I didn't even know you could get benched by vegetables. But honestly? Warms my heart knowing somewhere out there, a zucchini is telling the story of the guy it cut.",
+      "setup": "",
+      "punchline": "I got cut from a community garden. A garden. They said I lacked 'commitment to the collective vision.' I got a letter. With bullet points. My sunflowers were 'inconsistent,' my zucchini showed 'poor spacing awareness.' I didn't even know you could get benched by vegetables. But honestly? Warms my heart knowing somewhere out there, a zucchini is telling the story of the guy it cut."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Natural Talent",
+      "seedTermsUsed": [
+        "Flower Garden",
+        "Inattentive"
+      ],
+      "joke": "I tried to build a beautiful, relaxing flower garden in my backyard, but I am way too inattentive for landscaping. I forgot about it for two months, and now my yard looks less like a peaceful sanctuary and more like a crime scene where nature won.",
+      "text": "I tried to build a beautiful, relaxing flower garden in my backyard, but I am way too inattentive for landscaping. I forgot about it for two months, and now my yard looks less like a peaceful sanctuary and more like a crime scene where nature won.",
+      "setup": "",
+      "punchline": "I tried to build a beautiful, relaxing flower garden in my backyard, but I am way too inattentive for landscaping. I forgot about it for two months, and now my yard looks less like a peaceful sanctuary and more like a crime scene where nature won."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Missed the Cut",
+      "seedTermsUsed": [
+        "Being cut from a team",
+        "Inattentive"
+      ],
+      "joke": "I got cut from my rec league basketball team last week. Coach pulls me aside and goes, 'You're too inattentive out there, always missing the play.' I looked at him confused and said, 'What play?' Turns out while they were running drills, I spent half the game wondering why that guy kept stealing the ball from me... it was my own teammate. He was wearing the same jersey and everything.",
+      "text": "I got cut from my rec league basketball team last week. Coach pulls me aside and goes, 'You're too inattentive out there, always missing the play.' I looked at him confused and said, 'What play?' Turns out while they were running drills, I spent half the game wondering why that guy kept stealing the ball from me... it was my own teammate. He was wearing the same jersey and everything.",
+      "setup": "",
+      "punchline": "I got cut from my rec league basketball team last week. Coach pulls me aside and goes, 'You're too inattentive out there, always missing the play.' I looked at him confused and said, 'What play?' Turns out while they were running drills, I spent half the game wondering why that guy kept stealing the ball from me... it was my own teammate. He was wearing the same jersey and everything."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Garden Dropout",
+      "seedTermsUsed": [
+        "Flower Garden",
+        "Being cut from a team"
+      ],
+      "joke": "I got cut from my rec league team so fast I ended up stress‑gardening. Now I’m out there talking to my flowers like a coach who still believes. “Come on, daisies, hustle!” My neighbor asked why I was yelling at a tulip, and I said, “Look, I just need one thing in my life that doesn’t bench me.”",
+      "text": "I got cut from my rec league team so fast I ended up stress‑gardening. Now I’m out there talking to my flowers like a coach who still believes. “Come on, daisies, hustle!” My neighbor asked why I was yelling at a tulip, and I said, “Look, I just need one thing in my life that doesn’t bench me.”",
+      "setup": "",
+      "punchline": "I got cut from my rec league team so fast I ended up stress‑gardening. Now I’m out there talking to my flowers like a coach who still believes. “Come on, daisies, hustle!” My neighbor asked why I was yelling at a tulip, and I said, “Look, I just need one thing in my life that doesn’t bench me.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong comic premise with specific garden-as-team details and a clean final reversal."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear and economical, but the neglect-to-overgrown-yard turn is familiar and only mildly funny."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Understandable premise, but the payoff is strained, overexplained, and mostly restates inattentiveness."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid stage rhythm and a neat benching tag, though the angle is fairly straightforward."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "The pivot from softball to art class is genuinely clever—the coach's metaphor getting reinterpreted as a physical habit rather than an aesthetic gift is a non-obvious turn. 'Duck and pretend you saw composition' earns the laugh. Slightly wordy setup but pays off."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "'Crime scene where nature won' is a decent image but the joke is structurally just setup-then-mild-description. No real turn. The inattentive-gardener premise is familiar and the punchline restates the setup rather than flipping it."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The teammate-in-same-jersey reveal is a serviceable sitcom beat but lands flat as stand-up. The confusion is telegraphed early, the final line explains the joke rather than landing it, and the pacing is loose. Competent but forgettable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "'One thing in my life that doesn't bench me' is a solid button—emotionally resonant and funny. The tulip line sets it up well. Loses points for the slightly on-the-nose 'coach who still believes' framing and the daisy line being filler. Real joke, mid-tier execution."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent stage premise with a clear transition from the sports setup to the art class, though the punchline relies on a slightly convoluted explanation of the coach's metaphor."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong stand-up rhythm and escalation. The absurd premise of corporate-style bureaucracy in a community garden lands well, and the final image of a zucchini cutting a human carries a genuine laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "The premise fits the seed terms naturally, but the turn relies on a fairly standard sitcom-style trope about not recognizing a teammate that feels a bit forced for a live stand-up set."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The transition into stress-gardening is clear, but the punchline mostly restates the initial setup rather than delivering a sharp, unexpected twist to carry the laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Mild twist on painter misinterpretation works but punchline lands softly."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong garden rejection premise with fun zucchini reversal."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Straightforward inattentive gardener observation; no real snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Stress-gardening coach bit is likable but predictable payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clear premise with a tidy turn; the composition line lands mildly."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun escalation and a strong closing image; slightly long but solid."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Coherent but predictable; the crime‑scene line is familiar and soft."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Readable first‑person story; the teammate reveal is expected but works."
+        }
+      ]
+    }
+  ]
+}
