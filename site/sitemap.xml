@@ -2,32 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://paperclipalypse.com/</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-06-24-ext-real-2026-06-24.jpg</image:loc>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-06-25-ext-real-2026-06-25.jpg</image:loc>
       <image:title>Paperclipalypse</image:title>
       <image:caption>Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/about.html</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/standings.html</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paperclipalypse.com/runs/2026-06-25-ext-real-2026-06-25.html</loc>
+    <lastmod>2026-06-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-06-25-ext-real-2026-06-25.jpg</image:loc>
+      <image:title>Tuesday Morning</image:title>
+      <image:caption>Jun 25, 2026 Paperclipalypse AI comedy round: Tuesday Morning. Gemini Flash won with 7.0. Seed terms: Portal, Prostitute, Backyard, A fear or phobia rearing its head, Protective, Apathetic.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/runs/2026-06-24-ext-real-2026-06-24.html</loc>
     <lastmod>2026-06-24</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
     <image:image>
       <image:loc>https://paperclipalypse.com/assets/feature-images/2026-06-24-ext-real-2026-06-24.jpg</image:loc>
       <image:title>The Rejection Letter</image:title>

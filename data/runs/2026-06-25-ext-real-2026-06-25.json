@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-06-25-ext-real-2026-06-25",
+  "seed": "ext-real-2026-06-25",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-25T14:48:42.700Z",
+  "publishedDate": "2026-06-25",
+  "seedTerms": [
+    "Portal",
+    "Prostitute",
+    "Backyard",
+    "A fear or phobia rearing its head",
+    "Protective",
+    "Apathetic"
+  ],
+  "premise": {
+    "text": "Seed terms: Portal, Prostitute, Backyard, A fear or phobia rearing its head, Protective, Apathetic",
+    "seedTerms": [
+      "Portal",
+      "Prostitute",
+      "Backyard",
+      "A fear or phobia rearing its head",
+      "Protective",
+      "Apathetic"
+    ],
+    "displayText": "Tuesday Morning"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Backyard Portal",
+      "seedTermsUsed": [
+        "Portal",
+        "Backyard"
+      ],
+      "joke": "I found a portal in my backyard, which sounds amazing until I realized it only goes to my neighbor’s backyard. He saw me step through holding a beer and said, “How did you get past the fence?” I said, “Science.” He said, “Great, then science can start mowing this side too.”",
+      "setup": "",
+      "punchline": "I found a portal in my backyard, which sounds amazing until I realized it only goes to my neighbor’s backyard. He saw me step through holding a beer and said, “How did you get past the fence?” I said, “Science.” He said, “Great, then science can start mowing this side too.”",
+      "text": "I found a portal in my backyard, which sounds amazing until I realized it only goes to my neighbor’s backyard. He saw me step through holding a beer and said, “How did you get past the fence?” I said, “Science.” He said, “Great, then science can start mowing this side too.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Backyard Bargain",
+      "seedTermsUsed": [
+        "Backyard",
+        "Prostitute"
+      ],
+      "joke": "My neighbor knocked on my door and asked if I wanted to make some money in my backyard. I said sure — I figured she meant a garage sale. Turns out she meant an actual business. I was impressed, honestly. The woman has permits, a client list, repeat customers. Meanwhile I've got a folding table and a box of DVDs nobody wanted in 2009. She's killing it. I'm out there pricing Shrek 2 at fifty cents.",
+      "setup": "",
+      "punchline": "My neighbor knocked on my door and asked if I wanted to make some money in my backyard. I said sure — I figured she meant a garage sale. Turns out she meant an actual business. I was impressed, honestly. The woman has permits, a client list, repeat customers. Meanwhile I've got a folding table and a box of DVDs nobody wanted in 2009. She's killing it. I'm out there pricing Shrek 2 at fifty cents.",
+      "text": "My neighbor knocked on my door and asked if I wanted to make some money in my backyard. I said sure — I figured she meant a garage sale. Turns out she meant an actual business. I was impressed, honestly. The woman has permits, a client list, repeat customers. Meanwhile I've got a folding table and a box of DVDs nobody wanted in 2009. She's killing it. I'm out there pricing Shrek 2 at fifty cents."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Tuesday Morning",
+      "seedTermsUsed": [
+        "Portal",
+        "Apathetic"
+      ],
+      "joke": "A swirling, interdimensional portal opened up in my kitchen this morning. A booming voice echoed from the abyss, begging me to step through and save their dying realm. I just walked around it to reach the coffee maker. Look, I'm not starting a massive, lore-dense quest on a Tuesday. I already have chicken thawing in the sink.",
+      "setup": "",
+      "punchline": "A swirling, interdimensional portal opened up in my kitchen this morning. A booming voice echoed from the abyss, begging me to step through and save their dying realm. I just walked around it to reach the coffee maker. Look, I'm not starting a massive, lore-dense quest on a Tuesday. I already have chicken thawing in the sink.",
+      "text": "A swirling, interdimensional portal opened up in my kitchen this morning. A booming voice echoed from the abyss, begging me to step through and save their dying realm. I just walked around it to reach the coffee maker. Look, I'm not starting a massive, lore-dense quest on a Tuesday. I already have chicken thawing in the sink."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Backyard Portal",
+      "seedTermsUsed": [
+        "Portal",
+        "Backyard"
+      ],
+      "joke": "Hey folks, I'm out in my backyard flipping burgers when this glowing portal rips open by the fence. Future me steps through—buff, rich, total winner—and goes 'Jump in, we can fix everything!' I look at him, hand over the spatula, and say 'Nah man, I'm good.' Slammed it shut and went back to burning dinner. Some upgrades just aren't worth the risk.",
+      "setup": "",
+      "punchline": "Hey folks, I'm out in my backyard flipping burgers when this glowing portal rips open by the fence. Future me steps through—buff, rich, total winner—and goes 'Jump in, we can fix everything!' I look at him, hand over the spatula, and say 'Nah man, I'm good.' Slammed it shut and went back to burning dinner. Some upgrades just aren't worth the risk.",
+      "text": "Hey folks, I'm out in my backyard flipping burgers when this glowing portal rips open by the fence. Future me steps through—buff, rich, total winner—and goes 'Jump in, we can fix everything!' I look at him, hand over the spatula, and say 'Nah man, I'm good.' Slammed it shut and went back to burning dinner. Some upgrades just aren't worth the risk."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Backyard Panic",
+      "seedTermsUsed": [
+        "Backyard",
+        "A fear or phobia rearing its head"
+      ],
+      "joke": "I tried to relax in my backyard last week, but my phobias showed up before I did. I heard one twig snap and immediately turned into a Victorian ghost. I’m clutching my chest, whispering, “Not like this.” My neighbor’s grilling, kids are laughing, and I’m hiding behind a lawn chair like the world’s least effective scarecrow.",
+      "setup": "",
+      "punchline": "I tried to relax in my backyard last week, but my phobias showed up before I did. I heard one twig snap and immediately turned into a Victorian ghost. I’m clutching my chest, whispering, “Not like this.” My neighbor’s grilling, kids are laughing, and I’m hiding behind a lawn chair like the world’s least effective scarecrow.",
+      "text": "I tried to relax in my backyard last week, but my phobias showed up before I did. I heard one twig snap and immediately turned into a Victorian ghost. I’m clutching my chest, whispering, “Not like this.” My neighbor’s grilling, kids are laughing, and I’m hiding behind a lawn chair like the world’s least effective scarecrow."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear comic contrast between yard-sale expectations and a much more professional backyard enterprise; amusing, but the final image is more smile than hard laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clean premise with a satisfying mundane refusal; the chicken thawing detail gives the turn a strong everyday snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and on prompt, but the refusal of the portal upgrade lands generically and the final line mostly explains the joke.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Good physical imagery and first-person clarity, but it stays in one anxiety register without a sharp final turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation, natural dialogue, and the 'science can mow' closer lands with real timing. The portal-as-underwhelming-convenience is a familiar frame but the neighbor's pivot earns it.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.800000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "'Chicken thawing in the sink' is the joke—a perfect mundane anchor that earns the apathy more than any punchline could. Tight, dry, and the Tuesday specificity adds genuine texture.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.800000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Future-self-through-portal is well-trodden. 'Some upgrades aren't worth the risk' reads like a closer that explains itself rather than landing. Competent but the turn is too anticipated.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.100000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "'Victorian ghost' is a strong image and 'world's least effective scarecrow' closes well. Slightly fragmented rhythm in the middle, but the contrast between suburban normalcy and theatrical collapse works.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Subverts sci-fi expectations with a grounded, domestic punchline. Good stage rhythm and a final line that carries the laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Specific details like 'Shrek 2' help the punchline, but the 'prostitute' seed concept is overly veiled and lacks a sharp edge.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 5,
+          "total": 6.100000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Generic 'Hey folks' opening weakens the stand-up framing, and the time-travel trope feels familiar. The final turn lacks snap.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Strong imagery ('Victorian ghost') and clear exaggeration create a solid, relatable joke with decent escalation.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid neighbor twist with mowing punch; relatable but not explosive.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong misunderstanding to business contrast; Shrek line lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Classic apathy bit; chicken detail helps but premise familiar.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Visual phobia bit works mildly; escalation to scarecrow is okay.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise and a tidy neighbor turn; mild but coherent.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear story and contrast; long and more anecdotal than punchy.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.500000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good grounded turn with the Tuesday/chicken line; solid timing.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Readable and first-person; the refusal beat is expected but works.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7,
+      "rawScore": 7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.3,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean premise with a satisfying mundane refusal; the chicken thawing detail gives the turn a strong everyday snap."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.8,
+          "rawScore": 7.8,
+          "scoreAdjustment": 0,
+          "comment": "'Chicken thawing in the sink' is the joke—a perfect mundane anchor that earns the apathy more than any punchline could. Tight, dry, and the Tuesday specificity adds genuine texture."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.5,
+          "comment": "Classic apathy bit; chicken detail helps but premise familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Good grounded turn with the Tuesday/chicken line; solid timing."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.8,
+      "rawScore": 6.9,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7.2,
+        "originality": 6.7,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.8,
+          "rawScore": 7.8,
+          "scoreAdjustment": 0,
+          "comment": "Clean escalation, natural dialogue, and the 'science can mow' closer lands with real timing. The portal-as-underwhelming-convenience is a familiar frame but the neighbor's pivot earns it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.4,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Subverts sci-fi expectations with a grounded, domestic punchline. Good stage rhythm and a final line that carries the laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.3,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.5,
+          "comment": "Solid neighbor twist with mowing punch; relatable but not explosive."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean premise and a tidy neighbor turn; mild but coherent."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.4,
+      "rawScore": 6.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6.2,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.7,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Good physical imagery and first-person clarity, but it stays in one anxiety register without a sharp final turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7,
+          "rawScore": 7,
+          "scoreAdjustment": 0,
+          "comment": "'Victorian ghost' is a strong image and 'world's least effective scarecrow' closes well. Slightly fragmented rhythm in the middle, but the contrast between suburban normalcy and theatrical collapse works."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.2,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong imagery ('Victorian ghost') and clear exaggeration create a solid, relatable joke with decent escalation."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Visual phobia bit works mildly; escalation to scarecrow is okay."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.3,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear comic contrast between yard-sale expectations and a much more professional backyard enterprise; amusing, but the final image is more smile than hard laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Specific details like 'Shrek 2' help the punchline, but the 'prostitute' seed concept is overly veiled and lacks a sharp edge."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Strong misunderstanding to business contrast; Shrek line lands well."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear story and contrast; long and more anecdotal than punchy."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.5,
+      "rawScore": 5.4,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 5.1,
+        "craft": 5.4,
+        "originality": 5.6,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5,
+        "craft": 5.3,
+        "originality": 5.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Understandable and on prompt, but the refusal of the portal upgrade lands generically and the final line mostly explains the joke."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.1,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0,
+          "comment": "Future-self-through-portal is well-trodden. 'Some upgrades aren't worth the risk' reads like a closer that explains itself rather than landing. Competent but the turn is too anticipated."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.7,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Generic 'Hey folks' opening weakens the stand-up framing, and the time-travel trope feels familiar. The final turn lacks snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Readable and first-person; the refusal beat is expected but works."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-25-ext-real-2026-06-25.jpg",
+    "originalSrc": "assets/feature-images/2026-06-25-ext-real-2026-06-25.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Tuesday Morning: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Tuesday Morning\nExact joke text to render in the right panel:\nA swirling, interdimensional portal opened up in my kitchen this morning. A booming voice echoed from the abyss, begging me to step through and save their dying realm. I just walked around it to reach the coffee maker. Look, I'm not starting a massive, lore-dense quest on a Tuesday. I already have chicken thawing in the sink.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Portal, Prostitute, Backyard, A fear or phobia rearing its head, Protective, Apathetic.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Portal, Prostitute, Backyard, A fear or phobia rearing its head, Protective, Apathetic. Use the winning joke titled \"Tuesday Morning\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 6.2,
+      "google": 6.1,
+      "xai": 6.7,
+      "copilot": 6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-25-ext-real-2026-06-25.md"
+}
