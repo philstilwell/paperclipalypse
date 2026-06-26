@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-06-26-ext-real-2026-06-26",
+  "seed": "ext-real-2026-06-26",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-26T14:01:36.753Z",
+  "publishedDate": "2026-06-26",
+  "seedTerms": [
+    "Mind Transfer",
+    "Military Officer",
+    "Concert",
+    "A difficult decision with no easy way",
+    "Playful",
+    "Superstitious"
+  ],
+  "premise": {
+    "text": "Seed terms: Mind Transfer, Military Officer, Concert, A difficult decision with no easy way, Playful, Superstitious",
+    "seedTerms": [
+      "Mind Transfer",
+      "Military Officer",
+      "Concert",
+      "A difficult decision with no easy way",
+      "Playful",
+      "Superstitious"
+    ],
+    "displayText": "Lucky Seat"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "New Body, Same Problem",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Concert"
+      ],
+      "joke": "I paid for a mind transfer before a concert because my back couldn’t survive general admission. They put me in a 22-year-old body, which was great—until my favorite band came on and I realized the old me knew every lyric, and the new me only knew how to film it vertically.",
+      "setup": "",
+      "punchline": "I paid for a mind transfer before a concert because my back couldn’t survive general admission. They put me in a 22-year-old body, which was great—until my favorite band came on and I realized the old me knew every lyric, and the new me only knew how to film it vertically.",
+      "text": "I paid for a mind transfer before a concert because my back couldn’t survive general admission. They put me in a 22-year-old body, which was great—until my favorite band came on and I realized the old me knew every lyric, and the new me only knew how to film it vertically."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Lucky Seat",
+      "seedTermsUsed": [
+        "Concert",
+        "Superstitious"
+      ],
+      "joke": "I'm really superstitious at concerts. Like, embarrassingly superstitious. I won't move from the exact spot where the first song started — even if someone tall stands in front of me, even if I need the bathroom, even if my leg falls asleep. I stood completely still for three hours at a Radiohead show once. My chiropractor thinks I saw God. I did not see God. I saw Thom Yorke's left shoulder.",
+      "setup": "",
+      "punchline": "I'm really superstitious at concerts. Like, embarrassingly superstitious. I won't move from the exact spot where the first song started — even if someone tall stands in front of me, even if I need the bathroom, even if my leg falls asleep. I stood completely still for three hours at a Radiohead show once. My chiropractor thinks I saw God. I did not see God. I saw Thom Yorke's left shoulder.",
+      "text": "I'm really superstitious at concerts. Like, embarrassingly superstitious. I won't move from the exact spot where the first song started — even if someone tall stands in front of me, even if I need the bathroom, even if my leg falls asleep. I stood completely still for three hours at a Radiohead show once. My chiropractor thinks I saw God. I did not see God. I saw Thom Yorke's left shoulder."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Tactical Astrology",
+      "seedTermsUsed": [
+        "Military Officer",
+        "Superstitious"
+      ],
+      "joke": "My dad was a high-ranking military officer, but he was also deeply superstitious. It's a terrifying combination for national defense. You don't want a guy authorizing drone strikes based on his horoscope. He’d be in the situation room like, 'I know the enemy is advancing, gentlemen... but my palm is itchy and I saw an owl. We're gonna burn some sage and hold the perimeter until my crystals charge.'",
+      "setup": "",
+      "punchline": "My dad was a high-ranking military officer, but he was also deeply superstitious. It's a terrifying combination for national defense. You don't want a guy authorizing drone strikes based on his horoscope. He’d be in the situation room like, 'I know the enemy is advancing, gentlemen... but my palm is itchy and I saw an owl. We're gonna burn some sage and hold the perimeter until my crystals charge.'",
+      "text": "My dad was a high-ranking military officer, but he was also deeply superstitious. It's a terrifying combination for national defense. You don't want a guy authorizing drone strikes based on his horoscope. He’d be in the situation room like, 'I know the enemy is advancing, gentlemen... but my palm is itchy and I saw an owl. We're gonna burn some sage and hold the perimeter until my crystals charge.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Mind Swap Mission",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Military Officer"
+      ],
+      "joke": "I volunteered for this military mind transfer experiment so I could step into the shoes of a decorated general. Woke up saluting myself in the mirror, barking orders like a pro. Felt unstoppable until my phone rang—it was him, in my old body, asking my wife what's for dinner and calling her sweetheart. Came back to my life and now I'm the one explaining why the general knows our anniversary plans.",
+      "setup": "",
+      "punchline": "I volunteered for this military mind transfer experiment so I could step into the shoes of a decorated general. Woke up saluting myself in the mirror, barking orders like a pro. Felt unstoppable until my phone rang—it was him, in my old body, asking my wife what's for dinner and calling her sweetheart. Came back to my life and now I'm the one explaining why the general knows our anniversary plans.",
+      "text": "I volunteered for this military mind transfer experiment so I could step into the shoes of a decorated general. Woke up saluting myself in the mirror, barking orders like a pro. Felt unstoppable until my phone rang—it was him, in my old body, asking my wife what's for dinner and calling her sweetheart. Came back to my life and now I'm the one explaining why the general knows our anniversary plans."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Tough Call",
+      "seedTermsUsed": [
+        "Concert",
+        "A difficult decision with no easy way"
+      ],
+      "joke": "I was at this packed concert, and right before my favorite song, my phone buzzes with a text from my boss: “Call me. Urgent.” So now I’m standing there trying to choose between keeping my job or finally hearing the one song I came for. I took the call… but only because the band started playing something from their new album. Even I have limits.",
+      "setup": "",
+      "punchline": "I was at this packed concert, and right before my favorite song, my phone buzzes with a text from my boss: “Call me. Urgent.” So now I’m standing there trying to choose between keeping my job or finally hearing the one song I came for. I took the call… but only because the band started playing something from their new album. Even I have limits.",
+      "text": "I was at this packed concert, and right before my favorite song, my phone buzzes with a text from my boss: “Call me. Urgent.” So now I’m standing there trying to choose between keeping my job or finally hearing the one song I came for. I took the call… but only because the band started playing something from their new album. Even I have limits."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong, concrete concert premise with good escalation and a clean final visual; the Radiohead specificity helps the punchline land.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear comic contrast and understandable stakes, but the horoscope/sage/crystals run feels a bit familiar and list-driven.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The mind-transfer complication is original, but the logic gets a little muddy and the final line explains the premise more than it snaps.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 5.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Readable and stage-friendly with a mild turn, but the 'new album' payoff is a familiar route and not especially memorable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The vertical filming punchline is sharp and earned — a clean generational turn that recontextualizes the sci-fi premise into something immediately recognizable. Natural escalation, strong final line, no wasted words.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 8.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "The sage-and-crystals payoff lands solidly and the situation room specificity helps. The turn is a bit predictable once the setup is clear, but the execution is clean and the final image is vivid enough to carry it.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The anniversary plans punchline undersells the premise. The body-swap logic is slightly muddled and the final line deflates rather than snaps. Competent construction but the comic payoff doesn't match the setup's potential.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The self-aware reversal in the last line saves it from being a straight dilemma joke. Relatable premise, but the situation is familiar and the turn, while decent, doesn't fully surprise. Solid filler-level joke.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong premise blending a sci-fi concept with generational commentary; the vertical filming punchline is a sharp, human-level observation.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Nice escalation of absurdity grounded by a highly specific and effective visual at the end.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Reads more like a narrative summary than natural stage work, and the body-swap infidelity angle is a well-worn trope.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 5.1
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Executes the misdirection cleanly, but relies heavily on the very familiar 'nobody wants to hear the new album' concert trope.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid body-swap premise with a relatable concert twist, but the punch is mildly predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong visual escalation and specific Radiohead detail land a solid chuckle.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Funny absurdity in the situation room, but leans on familiar superstitious trope.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Weak twist on the dilemma; punchline undercuts rather than elevates.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise and image; mild turn with the lyric/filming contrast.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong relatable setup and a clean final visual; solid timing.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Coherent angle; leans on familiar horoscope/crystals beats.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Readable story; the final beat is clear but not especially sharp.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7.2,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.6,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.5,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.7,
+          "rawScore": 7.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong, concrete concert premise with good escalation and a clean final visual; the Radiohead specificity helps the punchline land."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 7,
+          "scoreAdjustment": 0.1,
+          "comment": "Nice escalation of absurdity grounded by a highly specific and effective visual at the end."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong visual escalation and specific Radiohead detail land a solid chuckle."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong relatable setup and a clean final visual; solid timing."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 7.1,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 6.7,
+        "craft": 7.2,
+        "originality": 7,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 7,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.9,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.2,
+          "comment": "The vertical filming punchline is sharp and earned — a clean generational turn that recontextualizes the sci-fi premise into something immediately recognizable. Natural escalation, strong final line, no wasted words."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.2,
+          "rawScore": 8.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong premise blending a sci-fi concept with generational commentary; the vertical filming punchline is a sharp, human-level observation."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.2,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid body-swap premise with a relatable concert twist, but the punch is mildly predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear premise and image; mild turn with the lyric/filming contrast."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.4,
+      "rawScore": 6.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 5.7,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear comic contrast and understandable stakes, but the horoscope/sage/crystals run feels a bit familiar and list-driven."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.8,
+          "rawScore": 7,
+          "scoreAdjustment": -0.2,
+          "comment": "The sage-and-crystals payoff lands solidly and the situation room specificity helps. The turn is a bit predictable once the setup is clear, but the execution is clean and the final image is vivid enough to carry it."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Funny absurdity in the situation room, but leans on familiar superstitious trope."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Coherent angle; leans on familiar horoscope/crystals beats."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6,
+      "rawScore": 6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.7,
+        "craft": 5.9,
+        "originality": 4.9,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Readable and stage-friendly with a mild turn, but the 'new album' payoff is a familiar route and not especially memorable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "The self-aware reversal in the last line saves it from being a straight dilemma joke. Relatable premise, but the situation is familiar and the turn, while decent, doesn't fully surprise. Solid filler-level joke."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Executes the misdirection cleanly, but relies heavily on the very familiar 'nobody wants to hear the new album' concert trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.1,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Weak twist on the dilemma; punchline undercuts rather than elevates."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.6,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 5.3,
+        "craft": 5.3,
+        "originality": 5.8,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5.3,
+        "craft": 5.3,
+        "originality": 5.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.1,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.2,
+          "comment": "The mind-transfer complication is original, but the logic gets a little muddy and the final line explains the premise more than it snaps."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "The anniversary plans punchline undersells the premise. The body-swap logic is slightly muddled and the final line deflates rather than snaps. Competent construction but the comic payoff doesn't match the setup's potential."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.2,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Reads more like a narrative summary than natural stage work, and the body-swap infidelity angle is a well-worn trope."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Readable story; the final beat is clear but not especially sharp."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-26-ext-real-2026-06-26.png",
+    "originalSrc": "assets/feature-images/2026-06-26-ext-real-2026-06-26.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Lucky Seat: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Lucky Seat\nExact joke text to render in the right panel:\nI'm really superstitious at concerts. Like, embarrassingly superstitious. I won't move from the exact spot where the first song started — even if someone tall stands in front of me, even if I need the bathroom, even if my leg falls asleep. I stood completely still for three hours at a Radiohead show once. My chiropractor thinks I saw God. I did not see God. I saw Thom Yorke's left shoulder.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Mind Transfer, Military Officer, Concert, A difficult decision with no easy way, Playful, Superstitious.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Mind Transfer, Military Officer, Concert, A difficult decision with no easy way, Playful, Superstitious. Use the winning joke titled \"Lucky Seat\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 6.5,
+      "google": 6.2,
+      "xai": 6.6,
+      "copilot": 6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-26-ext-real-2026-06-26.md"
+}
