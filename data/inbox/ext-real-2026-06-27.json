@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-06-27T14:00:59.019Z",
+  "publishedDate": "2026-06-27",
+  "seed": "ext-real-2026-06-27",
+  "slug": "2026-06-27-ext-real-2026-06-27",
+  "source": "manual-external",
+  "seedTerms": [
+    "Steampunk",
+    "Nanny",
+    "Limousine",
+    "A health issue cropping up",
+    "Confident",
+    "Evasive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Steam-Powered Childcare",
+      "seedTermsUsed": [
+        "Steampunk",
+        "Nanny"
+      ],
+      "joke": "I hired a steampunk nanny because I thought she’d bring whimsy to the house. She showed up with goggles, a brass umbrella, and a time-out chair powered by gears. My kid asked for a snack, she pulled a lever, steam filled the kitchen, and three minutes later he came out saying, “I’ve reconsidered my tone.”",
+      "text": "I hired a steampunk nanny because I thought she’d bring whimsy to the house. She showed up with goggles, a brass umbrella, and a time-out chair powered by gears. My kid asked for a snack, she pulled a lever, steam filled the kitchen, and three minutes later he came out saying, “I’ve reconsidered my tone.”",
+      "setup": "",
+      "punchline": "I hired a steampunk nanny because I thought she’d bring whimsy to the house. She showed up with goggles, a brass umbrella, and a time-out chair powered by gears. My kid asked for a snack, she pulled a lever, steam filled the kitchen, and three minutes later he came out saying, “I’ve reconsidered my tone.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Passenger Seat Diagnosis",
+      "seedTermsUsed": [
+        "Limousine",
+        "Evasive"
+      ],
+      "joke": "I hired a car service to take me to my doctor's appointment. The whole ride, the driver kept asking what was wrong with me. 'So what are you going in for?' I said it was nothing serious. 'You sure? You don't look great.' I'm in the back of a limousine being negged by a man I'm tipping twenty percent. He cared more about my health than my actual doctor, who just said 'lifestyle factors' and left the room.",
+      "text": "I hired a car service to take me to my doctor's appointment. The whole ride, the driver kept asking what was wrong with me. 'So what are you going in for?' I said it was nothing serious. 'You sure? You don't look great.' I'm in the back of a limousine being negged by a man I'm tipping twenty percent. He cared more about my health than my actual doctor, who just said 'lifestyle factors' and left the room.",
+      "setup": "",
+      "punchline": "I hired a car service to take me to my doctor's appointment. The whole ride, the driver kept asking what was wrong with me. 'So what are you going in for?' I said it was nothing serious. 'You sure? You don't look great.' I'm in the back of a limousine being negged by a man I'm tipping twenty percent. He cared more about my health than my actual doctor, who just said 'lifestyle factors' and left the room."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Nourishment Acquired",
+      "seedTermsUsed": [
+        "Nanny",
+        "Evasive"
+      ],
+      "joke": "We hired a new nanny, and she’s great, but whenever I ask about my toddler's day, she gets incredibly evasive. I’ll ask, 'Hey, did Tommy eat his lunch?' and she’ll stare at the floor and whisper, 'Mistakes were made, but nourishment was acquired.' Like, okay, Mary Poppins, did he actually eat a sandwich, or did he spend the entire afternoon in the backyard eating handfuls of premium mulch?",
+      "text": "We hired a new nanny, and she’s great, but whenever I ask about my toddler's day, she gets incredibly evasive. I’ll ask, 'Hey, did Tommy eat his lunch?' and she’ll stare at the floor and whisper, 'Mistakes were made, but nourishment was acquired.' Like, okay, Mary Poppins, did he actually eat a sandwich, or did he spend the entire afternoon in the backyard eating handfuls of premium mulch?",
+      "setup": "",
+      "punchline": "We hired a new nanny, and she’s great, but whenever I ask about my toddler's day, she gets incredibly evasive. I’ll ask, 'Hey, did Tommy eat his lunch?' and she’ll stare at the floor and whisper, 'Mistakes were made, but nourishment was acquired.' Like, okay, Mary Poppins, did he actually eat a sandwich, or did he spend the entire afternoon in the backyard eating handfuls of premium mulch?"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Steampunk Limo Breakdown",
+      "seedTermsUsed": [
+        "Steampunk",
+        "Limousine"
+      ],
+      "joke": "I bought myself a steampunk limousine, all brass gears and hissing boilers, thinking it'd make me look classy. Drove it to pick up my date, feeling slick as the thing chugged along. Halfway there, it starts belching steam like an old teakettle and the pressure gauge goes nuts. She bails at the next light. Now I know why they call it a midlife crisis: nothing says 'I'm fun' like parallel parking a Victorian submarine while your radiator whistles the national anthem.",
+      "text": "I bought myself a steampunk limousine, all brass gears and hissing boilers, thinking it'd make me look classy. Drove it to pick up my date, feeling slick as the thing chugged along. Halfway there, it starts belching steam like an old teakettle and the pressure gauge goes nuts. She bails at the next light. Now I know why they call it a midlife crisis: nothing says 'I'm fun' like parallel parking a Victorian submarine while your radiator whistles the national anthem.",
+      "setup": "",
+      "punchline": "I bought myself a steampunk limousine, all brass gears and hissing boilers, thinking it'd make me look classy. Drove it to pick up my date, feeling slick as the thing chugged along. Halfway there, it starts belching steam like an old teakettle and the pressure gauge goes nuts. She bails at the next light. Now I know why they call it a midlife crisis: nothing says 'I'm fun' like parallel parking a Victorian submarine while your radiator whistles the national anthem."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Steam‑Powered Babysitting",
+      "seedTermsUsed": [
+        "Steampunk",
+        "Nanny"
+      ],
+      "joke": "I hired this steampunk nanny because I thought it’d make me look sophisticated. Turns out she’s just a Victorian robot judging my life choices. The other day she tightened a brass gear on her hat, looked at my apartment, and said, “You call this a living space?” I was like, ma’am, you’re powered by tea steam and disappointment.",
+      "text": "I hired this steampunk nanny because I thought it’d make me look sophisticated. Turns out she’s just a Victorian robot judging my life choices. The other day she tightened a brass gear on her hat, looked at my apartment, and said, “You call this a living space?” I was like, ma’am, you’re powered by tea steam and disappointment.",
+      "setup": "",
+      "punchline": "I hired this steampunk nanny because I thought it’d make me look sophisticated. Turns out she’s just a Victorian robot judging my life choices. The other day she tightened a brass gear on her hat, looked at my apartment, and said, “You call this a living space?” I was like, ma’am, you’re powered by tea steam and disappointment."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 5,
+          "comment": "Clear and readable, but the health/doctor material adds a third seed concept and the payoff is more wry than laugh-carrying."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strongest of the batch: clean premise, funny evasive phrasing, and a concrete final image that lands."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good comic image and decent final turn, though the premise is artificial and the laugh is more amusing than sharp."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid rhythm and a clean final phrase, but the joke is fairly familiar and the turn is modest."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "The kid's line-'I've reconsidered my tone'-is the best single punchline in the batch: unexpected, character-consistent, and earns a real laugh. Setup escalates cleanly. Both seed terms do conceptual work without stuffing. Loses a point on surprise because the steampunk-nanny premise telegraphs whimsy-chaos from the start, and the steam-filling-kitchen beat is a predictable middle step."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "'Mistakes were made, but nourishment was acquired' is excellent-bureaucratic evasion applied to toddler lunch is a genuinely surprising register collision. The mulch callback sharpens the final image and earns the laugh rather than just restating the premise. Natural first-person rhythm throughout. One of the stronger jokes in the batch by actual comedy standards."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent construction but the punchline ('Victorian submarine while your radiator whistles the national anthem') piles images rather than landing a single clean laugh. 'Midlife crisis' frame is familiar territory. The date-bailing beat is predictable. Some energy in the delivery but no real twist that redeems it."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "'Powered by tea steam and disappointment' is a decent closer-punchy and mildly memorable. But 'Victorian robot judging my life choices' is a well-worn AI/robot-snobbery frame, and the middle beat (tightening a gear, looking at the apartment) is thin escalation. Seed terms work cleanly. Amusing but not a winner."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clear setup and decent economy, though the steampunk imagery is fairly standard. The kid's formal apology punchline is cute and carries a mild laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 4,
+          "laugh": 7,
+          "comment": "Excellent conversational rhythm and a strong standup voice. Penalized on prompt fit for utilizing three seed concepts (limousine, evasive, health issue)."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "A bit overwritten, leaning heavily on familiar steampunk tropes. 'Victorian submarine' is a nice descriptive phrase, but the overall rhythm feels clunky."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Punchy and well-paced with a good rule of three. The final line ('tea steam and disappointment') lands smoothly and serves as a strong tag."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Whimsical steampunk discipline lands mild chuckle; solid image but predictable kid payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 5,
+          "laugh": 6,
+          "comment": "Limo negging relatable but evasive concept strained on driver vs doctor; mild payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Evasive nanny with mulch punchline has good snap and relatable parent frustration."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Steampunk judgment setup is cute but punchline feels familiar and low-stakes."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clear premise and imagery; mild but real payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Coherent and relatable but leans conversational; limited turn."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good escalation and a clean punch; solid, not standout."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Fun imagery but diffuse; punchline lands lightly."
+        }
+      ]
+    }
+  ]
+}
