@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-06-28T14:16:31.713Z",
+  "publishedDate": "2026-06-28",
+  "seed": "ext-real-2026-06-28",
+  "slug": "2026-06-28-ext-real-2026-06-28",
+  "source": "manual-external",
+  "seedTerms": [
+    "Billionaires",
+    "Real Estate Agent",
+    "Flower Shop",
+    "Having to decide to help or do not",
+    "Disciplined",
+    "Gullible"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Billionaire Bouquet",
+      "seedTermsUsed": [
+        "Billionaires",
+        "Flower Shop"
+      ],
+      "joke": "I went to a flower shop and said, “I need something that says I’m sorry.” The florist said, “Normal sorry or billionaire sorry?” I said, “What’s billionaire sorry?” She said, “You buy one rose, underpay everyone, then name the whole garden after yourself.”",
+      "text": "I went to a flower shop and said, “I need something that says I’m sorry.” The florist said, “Normal sorry or billionaire sorry?” I said, “What’s billionaire sorry?” She said, “You buy one rose, underpay everyone, then name the whole garden after yourself.”",
+      "setup": "",
+      "punchline": "I went to a flower shop and said, “I need something that says I’m sorry.” The florist said, “Normal sorry or billionaire sorry?” I said, “What’s billionaire sorry?” She said, “You buy one rose, underpay everyone, then name the whole garden after yourself.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Dream Home",
+      "seedTermsUsed": [
+        "Real Estate Agent",
+        "Gullible"
+      ],
+      "joke": "My real estate agent told me the neighborhood was 'up and coming.' That was six years ago. I'm still waiting. Last week I asked her what's happening with the area and she said, 'Oh, it's exploding.' I looked it up. A gas main broke. She wasn't wrong — I just keep choosing to hear what I want to hear, which I think is her actual sales strategy.",
+      "text": "My real estate agent told me the neighborhood was 'up and coming.' That was six years ago. I'm still waiting. Last week I asked her what's happening with the area and she said, 'Oh, it's exploding.' I looked it up. A gas main broke. She wasn't wrong — I just keep choosing to hear what I want to hear, which I think is her actual sales strategy.",
+      "setup": "",
+      "punchline": "My real estate agent told me the neighborhood was 'up and coming.' That was six years ago. I'm still waiting. Last week I asked her what's happening with the area and she said, 'Oh, it's exploding.' I looked it up. A gas main broke. She wasn't wrong — I just keep choosing to hear what I want to hear, which I think is her actual sales strategy."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Roadside Assistance",
+      "seedTermsUsed": [
+        "Real Estate Agent",
+        "Having to decide to help or do not"
+      ],
+      "joke": "I drove past a real estate agent struggling to change a flat tire in the pouring rain. I was torn on whether to help or not. Do I pull over and lend a hand? Or do I just roll down my window, call the puddle a “breathtaking waterfront feature,” and step on the gas?",
+      "text": "I drove past a real estate agent struggling to change a flat tire in the pouring rain. I was torn on whether to help or not. Do I pull over and lend a hand? Or do I just roll down my window, call the puddle a “breathtaking waterfront feature,” and step on the gas?",
+      "setup": "",
+      "punchline": "I drove past a real estate agent struggling to change a flat tire in the pouring rain. I was torn on whether to help or not. Do I pull over and lend a hand? Or do I just roll down my window, call the puddle a “breathtaking waterfront feature,” and step on the gas?"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Billionaire Discipline",
+      "seedTermsUsed": [
+        "Billionaires",
+        "Gullible"
+      ],
+      "joke": "Folks, I'm pretty gullible. I bought into the whole billionaire routine - be disciplined, wake at dawn, hustle nonstop. Tried it for a month straight. My big win? Realizing how much I missed sleeping in. Those billionaires are probably laughing from their yachts, raking in cash from the self-help books they sold suckers like me. Now my only discipline is hitting snooze on that nonsense.",
+      "text": "Folks, I'm pretty gullible. I bought into the whole billionaire routine - be disciplined, wake at dawn, hustle nonstop. Tried it for a month straight. My big win? Realizing how much I missed sleeping in. Those billionaires are probably laughing from their yachts, raking in cash from the self-help books they sold suckers like me. Now my only discipline is hitting snooze on that nonsense.",
+      "setup": "",
+      "punchline": "Folks, I'm pretty gullible. I bought into the whole billionaire routine - be disciplined, wake at dawn, hustle nonstop. Tried it for a month straight. My big win? Realizing how much I missed sleeping in. Those billionaires are probably laughing from their yachts, raking in cash from the self-help books they sold suckers like me. Now my only discipline is hitting snooze on that nonsense."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Bloom & Doom",
+      "seedTermsUsed": [
+        "Flower Shop",
+        "Gullible"
+      ],
+      "joke": "I tried to impress someone by buying fancy flowers, but the florist saw how gullible I am. She said, “These blooms are perfect for attracting love.” I got home, set them out, and realized she meant they attract bees. Nothing kills the mood faster than me sprinting around my apartment yelling, “I bought romance, not a swarm!”",
+      "text": "I tried to impress someone by buying fancy flowers, but the florist saw how gullible I am. She said, “These blooms are perfect for attracting love.” I got home, set them out, and realized she meant they attract bees. Nothing kills the mood faster than me sprinting around my apartment yelling, “I bought romance, not a swarm!”",
+      "setup": "",
+      "punchline": "I tried to impress someone by buying fancy flowers, but the florist saw how gullible I am. She said, “These blooms are perfect for attracting love.” I got home, set them out, and realized she meant they attract bees. Nothing kills the mood faster than me sprinting around my apartment yelling, “I bought romance, not a swarm!”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clear premise and believable real-estate spin; the gas-main turn is solid, but the final line explains the joke more than it heightens it."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean first-person setup, strong real-estate reframing, and the waterfront-feature punchline lands crisply."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 4,
+          "laugh": 5,
+          "comment": "Competent but familiar billionaire self-help skepticism; it also uses disciplined as a third seed concept, so prompt fit is capped."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Readable and concrete, with a decent bees/romance reversal, but the wording feels sitcom-broad and the payoff is only mildly funny."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Clean three-beat structure with a genuinely good punchline. The billionaires sorry framing is specific and earned, not vague. The final line lands with rhythm and a real comic image. Tight, stageable, no wasted words."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "The pivot from sympathy to waterfront feature is the best surprise in the batch—unexpected, character-specific, and funny without explanation. Natural first-person voice throughout. The closing gas-pedal beat earns it."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "The premise is familiar (billionaire hustle culture skepticism) and the turn is predictable. Hitting snooze on that nonsense is a weak closer. Uses three seed terms as concepts (gullible, billionaires, disciplined), so promptFit is penalized. Competent but forgettable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "The bee-swap is a clean misdirect and the closer has energy, but I bought romance, not a swarm slightly over-explains what just happened. Solid and stageable, just not sharp enough to hit 7. Prompt fit is excellent—exactly two concepts used naturally."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong rhythm and classic rule of three in the punchline. Very economical setup and delivery."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid misdirection with the gas main turn, but the final sentence slightly over-explains the premise."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 5,
+          "promptFit": 3,
+          "laugh": 4,
+          "comment": "Prompt fit penalized for using three seed terms (gullible, billionaires, disciplined). Lacks a sharp turn; reads more like a generic rant than stand-up."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Amusing imagery and competent structure, though the final shouted dialogue feels a bit cartoonish rather than natural spoken stand-up."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clever dialogue but mild payoff, more wordplay than strong laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid twist on realtor speak with self-aware gullibility; good timing."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Amusing premise twist but feels slightly forced in execution."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear visual punch but predictable misdirection on attracting love."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise and a solid billionaire turn; mild but real payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Relatable angle with a tidy turn; steady, not standout."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good escalation and a clear snap; humorous image lands."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Coherent but leans conversational; punchline softens."
+        }
+      ]
+    }
+  ]
+}
