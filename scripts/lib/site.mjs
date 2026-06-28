@@ -343,7 +343,8 @@ function renderScoreTrend(runs) {
   }
 
   const chart = renderTrendSvg(points);
-  const rows = points
+  const tablePoints = [...points].reverse();
+  const rows = tablePoints
     .map(
       (point, index) => `
         <tr data-daily-list-row data-page-index="${Math.floor(index / dailyListPageSize)}">
@@ -409,8 +410,9 @@ function renderJudgeScoreTrend(runs) {
     )
     .join("");
   const headerCells = data.series.map((series) => `<th>${escapeHtml(series.shortName)}</th>`).join("");
-  const rows = data.runs
-    .map((run, runIndex) => {
+  const tableRuns = data.runs.map((run, runIndex) => ({ run, runIndex })).reverse();
+  const rows = tableRuns
+    .map(({ run, runIndex }, displayIndex) => {
       const scores = data.series
         .map((series) => {
           const point = series.points[runIndex];
@@ -419,7 +421,7 @@ function renderJudgeScoreTrend(runs) {
         .join("");
 
       return `
-        <tr data-daily-list-row data-page-index="${Math.floor(runIndex / dailyListPageSize)}">
+        <tr data-daily-list-row data-page-index="${Math.floor(displayIndex / dailyListPageSize)}">
           <td>${escapeHtml(shortDate(run))}</td>
           <td><a href="./runs/${escapeHtml(run.slug)}.html">${escapeHtml(roundDisplayTitle(run))}</a></td>
           ${scores}
