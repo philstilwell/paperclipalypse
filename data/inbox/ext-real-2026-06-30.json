@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-06-30T14:03:06.212Z",
+  "publishedDate": "2026-06-30",
+  "seed": "ext-real-2026-06-30",
+  "slug": "2026-06-30-ext-real-2026-06-30",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cozy and Amateur",
+    "Assassin",
+    "Rainforest",
+    "A natural disaster",
+    "Optimistic",
+    "Resentful"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Craft Night Hitman",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Assassin"
+      ],
+      "joke": "I accidentally hired a cozy amateur assassin. He showed up with a thermos, mittens, and a folder labeled “murder ideas.” Halfway through the job, he asked if I preferred something “rustic but final.” I canceled when he said, “Worst case, we learn a lot and nobody dies tonight.”",
+      "text": "I accidentally hired a cozy amateur assassin. He showed up with a thermos, mittens, and a folder labeled “murder ideas.” Halfway through the job, he asked if I preferred something “rustic but final.” I canceled when he said, “Worst case, we learn a lot and nobody dies tonight.”",
+      "setup": "",
+      "punchline": "I accidentally hired a cozy amateur assassin. He showed up with a thermos, mittens, and a folder labeled “murder ideas.” Halfway through the job, he asked if I preferred something “rustic but final.” I canceled when he said, “Worst case, we learn a lot and nobody dies tonight.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Murder, But Make It Cozy",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Assassin"
+      ],
+      "joke": "I hired an assassin off an app, and I should've known something was off when his profile picture was him in a knitted sweater holding a mug that said 'World's Okayest Killer.' He showed up to the hit twenty minutes late because he stopped to make us both tea. He didn't even bring a real weapon, just kept asking my enemy really pointed questions about his choices. Guy didn't die, he just cried for an hour and rearranged his whole life. I paid full price for a stabbing and got a wellness check.",
+      "text": "I hired an assassin off an app, and I should've known something was off when his profile picture was him in a knitted sweater holding a mug that said 'World's Okayest Killer.' He showed up to the hit twenty minutes late because he stopped to make us both tea. He didn't even bring a real weapon, just kept asking my enemy really pointed questions about his choices. Guy didn't die, he just cried for an hour and rearranged his whole life. I paid full price for a stabbing and got a wellness check.",
+      "setup": "",
+      "punchline": "I hired an assassin off an app, and I should've known something was off when his profile picture was him in a knitted sweater holding a mug that said 'World's Okayest Killer.' He showed up to the hit twenty minutes late because he stopped to make us both tea. He didn't even bring a real weapon, just kept asking my enemy really pointed questions about his choices. Guy didn't die, he just cried for an hour and rearranged his whole life. I paid full price for a stabbing and got a wellness check."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Etsy Hitman",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Assassin"
+      ],
+      "joke": "I realized I’d make a terrible assassin because my whole vibe is way too cozy and amateur. I'm not Jason Bourne, I'm basically a hitman on Etsy. I couldn't send a scary ransom note cut from old magazines—I'd end up doing calligraphy on textured cardstock with a little sprig of dried lavender. And I definitely wouldn't use a sniper rifle. I'd use poison, but only because it pairs so perfectly with a warm cup of chamomile tea and a really soft, chunky knit blanket.",
+      "text": "I realized I’d make a terrible assassin because my whole vibe is way too cozy and amateur. I'm not Jason Bourne, I'm basically a hitman on Etsy. I couldn't send a scary ransom note cut from old magazines—I'd end up doing calligraphy on textured cardstock with a little sprig of dried lavender. And I definitely wouldn't use a sniper rifle. I'd use poison, but only because it pairs so perfectly with a warm cup of chamomile tea and a really soft, chunky knit blanket.",
+      "setup": "",
+      "punchline": "I realized I’d make a terrible assassin because my whole vibe is way too cozy and amateur. I'm not Jason Bourne, I'm basically a hitman on Etsy. I couldn't send a scary ransom note cut from old magazines—I'd end up doing calligraphy on textured cardstock with a little sprig of dried lavender. And I definitely wouldn't use a sniper rifle. I'd use poison, but only because it pairs so perfectly with a warm cup of chamomile tea and a really soft, chunky knit blanket."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Optimistic in the Storm",
+      "seedTermsUsed": [
+        "Optimistic",
+        "A natural disaster"
+      ],
+      "joke": "You know, I'm a pretty optimistic guy. Last year a natural disaster tore through my town and I thought, 'Hey, free home makeover!' As the roof peeled off like a bad band-aid, I'm sitting there sipping coffee going, 'This is just nature's way of telling me to downsize!' Neighbors screaming, sirens everywhere, and I'm yelling back, 'Could be worse— at least the flood waters match my decor!' Yeah... still optimistic about the insurance check though.",
+      "text": "You know, I'm a pretty optimistic guy. Last year a natural disaster tore through my town and I thought, 'Hey, free home makeover!' As the roof peeled off like a bad band-aid, I'm sitting there sipping coffee going, 'This is just nature's way of telling me to downsize!' Neighbors screaming, sirens everywhere, and I'm yelling back, 'Could be worse— at least the flood waters match my decor!' Yeah... still optimistic about the insurance check though.",
+      "setup": "",
+      "punchline": "You know, I'm a pretty optimistic guy. Last year a natural disaster tore through my town and I thought, 'Hey, free home makeover!' As the roof peeled off like a bad band-aid, I'm sitting there sipping coffee going, 'This is just nature's way of telling me to downsize!' Neighbors screaming, sirens everywhere, and I'm yelling back, 'Could be worse— at least the flood waters match my decor!' Yeah... still optimistic about the insurance check though."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Cozy Hitman",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Assassin"
+      ],
+      "joke": "I tried to take a gig as an assassin, but I’m way too cozy and amateur for that life. My target walked in and I panicked, offered him tea. Ten minutes later we’re both under a blanket, and he’s venting about his boss. I didn’t eliminate him—I just helped him process feelings. Worst assassin ever.",
+      "text": "I tried to take a gig as an assassin, but I’m way too cozy and amateur for that life. My target walked in and I panicked, offered him tea. Ten minutes later we’re both under a blanket, and he’s venting about his boss. I didn’t eliminate him—I just helped him process feelings. Worst assassin ever.",
+      "setup": "",
+      "punchline": "I tried to take a gig as an assassin, but I’m way too cozy and amateur for that life. My target walked in and I panicked, offered him tea. Ten minutes later we’re both under a blanket, and he’s venting about his boss. I didn’t eliminate him—I just helped him process feelings. Worst assassin ever."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clear stage premise with good escalation and a solid final turn; slightly familiar cozy-hitman therapy shape, but it lands."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Amusing image work with Etsy/calligraphy details, but the ending is more decorative than sharply surprising."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Readable and on prompt, but most turns are obvious optimism-in-disaster reversals with a mild closer."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Coherent and concise, but it leans on the familiar assassin-as-therapist template and the punchline mostly restates the premise."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid escalating image (thermos, mittens, murder-ideas folder) with a clean closing line, but the punchline restates the cozy/amateur premise rather than twisting it further."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Etsy-hitman framing is cute but predictable list-of-cozy-details structure; final line just piles on another cozy image instead of a sharper turn."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Consistent optimist voice and decent escalation, but each beat is the same joke repeated (disaster = good news) without a real snap at the end."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Tight and well-paced; 'worst assassin ever' lands cleanly as a button, though the therapy-session turn is a fairly familiar comic shape."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 9,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Concise pacing and excellent punchline."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clever pivot from murder to wellness check."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid execution of a classic disaster optimism trope."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Cute premise but overlaps heavily with Anthropic's setup with less punch."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong cozy visuals and self-aware final line land well."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Well-built escalation to the wellness-check punch."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Fresh Etsy and calligraphy details elevate the cozy premise."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid but familiar take; milder payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clear premise with a couple of decent lines; mild humor, tidy form."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid escalation and a real payoff; slightly long but lands cleanly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Consistent angle with neat imagery; pleasant but not strongly funny."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Good optimistic twist with workable timing; respectable humor."
+        }
+      ]
+    }
+  ]
+}

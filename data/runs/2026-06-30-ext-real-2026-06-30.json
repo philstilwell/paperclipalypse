@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-06-30-ext-real-2026-06-30",
+  "seed": "ext-real-2026-06-30",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-06-30T14:03:06.212Z",
+  "publishedDate": "2026-06-30",
+  "seedTerms": [
+    "Cozy and Amateur",
+    "Assassin",
+    "Rainforest",
+    "A natural disaster",
+    "Optimistic",
+    "Resentful"
+  ],
+  "premise": {
+    "text": "Seed terms: Cozy and Amateur, Assassin, Rainforest, A natural disaster, Optimistic, Resentful",
+    "seedTerms": [
+      "Cozy and Amateur",
+      "Assassin",
+      "Rainforest",
+      "A natural disaster",
+      "Optimistic",
+      "Resentful"
+    ],
+    "displayText": "Murder, But Make It Cozy"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Craft Night Hitman",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Assassin"
+      ],
+      "joke": "I accidentally hired a cozy amateur assassin. He showed up with a thermos, mittens, and a folder labeled “murder ideas.” Halfway through the job, he asked if I preferred something “rustic but final.” I canceled when he said, “Worst case, we learn a lot and nobody dies tonight.”",
+      "setup": "",
+      "punchline": "I accidentally hired a cozy amateur assassin. He showed up with a thermos, mittens, and a folder labeled “murder ideas.” Halfway through the job, he asked if I preferred something “rustic but final.” I canceled when he said, “Worst case, we learn a lot and nobody dies tonight.”",
+      "text": "I accidentally hired a cozy amateur assassin. He showed up with a thermos, mittens, and a folder labeled “murder ideas.” Halfway through the job, he asked if I preferred something “rustic but final.” I canceled when he said, “Worst case, we learn a lot and nobody dies tonight.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Murder, But Make It Cozy",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Assassin"
+      ],
+      "joke": "I hired an assassin off an app, and I should've known something was off when his profile picture was him in a knitted sweater holding a mug that said 'World's Okayest Killer.' He showed up to the hit twenty minutes late because he stopped to make us both tea. He didn't even bring a real weapon, just kept asking my enemy really pointed questions about his choices. Guy didn't die, he just cried for an hour and rearranged his whole life. I paid full price for a stabbing and got a wellness check.",
+      "setup": "",
+      "punchline": "I hired an assassin off an app, and I should've known something was off when his profile picture was him in a knitted sweater holding a mug that said 'World's Okayest Killer.' He showed up to the hit twenty minutes late because he stopped to make us both tea. He didn't even bring a real weapon, just kept asking my enemy really pointed questions about his choices. Guy didn't die, he just cried for an hour and rearranged his whole life. I paid full price for a stabbing and got a wellness check.",
+      "text": "I hired an assassin off an app, and I should've known something was off when his profile picture was him in a knitted sweater holding a mug that said 'World's Okayest Killer.' He showed up to the hit twenty minutes late because he stopped to make us both tea. He didn't even bring a real weapon, just kept asking my enemy really pointed questions about his choices. Guy didn't die, he just cried for an hour and rearranged his whole life. I paid full price for a stabbing and got a wellness check."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Etsy Hitman",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Assassin"
+      ],
+      "joke": "I realized I’d make a terrible assassin because my whole vibe is way too cozy and amateur. I'm not Jason Bourne, I'm basically a hitman on Etsy. I couldn't send a scary ransom note cut from old magazines—I'd end up doing calligraphy on textured cardstock with a little sprig of dried lavender. And I definitely wouldn't use a sniper rifle. I'd use poison, but only because it pairs so perfectly with a warm cup of chamomile tea and a really soft, chunky knit blanket.",
+      "setup": "",
+      "punchline": "I realized I’d make a terrible assassin because my whole vibe is way too cozy and amateur. I'm not Jason Bourne, I'm basically a hitman on Etsy. I couldn't send a scary ransom note cut from old magazines—I'd end up doing calligraphy on textured cardstock with a little sprig of dried lavender. And I definitely wouldn't use a sniper rifle. I'd use poison, but only because it pairs so perfectly with a warm cup of chamomile tea and a really soft, chunky knit blanket.",
+      "text": "I realized I’d make a terrible assassin because my whole vibe is way too cozy and amateur. I'm not Jason Bourne, I'm basically a hitman on Etsy. I couldn't send a scary ransom note cut from old magazines—I'd end up doing calligraphy on textured cardstock with a little sprig of dried lavender. And I definitely wouldn't use a sniper rifle. I'd use poison, but only because it pairs so perfectly with a warm cup of chamomile tea and a really soft, chunky knit blanket."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Optimistic in the Storm",
+      "seedTermsUsed": [
+        "Optimistic",
+        "A natural disaster"
+      ],
+      "joke": "You know, I'm a pretty optimistic guy. Last year a natural disaster tore through my town and I thought, 'Hey, free home makeover!' As the roof peeled off like a bad band-aid, I'm sitting there sipping coffee going, 'This is just nature's way of telling me to downsize!' Neighbors screaming, sirens everywhere, and I'm yelling back, 'Could be worse— at least the flood waters match my decor!' Yeah... still optimistic about the insurance check though.",
+      "setup": "",
+      "punchline": "You know, I'm a pretty optimistic guy. Last year a natural disaster tore through my town and I thought, 'Hey, free home makeover!' As the roof peeled off like a bad band-aid, I'm sitting there sipping coffee going, 'This is just nature's way of telling me to downsize!' Neighbors screaming, sirens everywhere, and I'm yelling back, 'Could be worse— at least the flood waters match my decor!' Yeah... still optimistic about the insurance check though.",
+      "text": "You know, I'm a pretty optimistic guy. Last year a natural disaster tore through my town and I thought, 'Hey, free home makeover!' As the roof peeled off like a bad band-aid, I'm sitting there sipping coffee going, 'This is just nature's way of telling me to downsize!' Neighbors screaming, sirens everywhere, and I'm yelling back, 'Could be worse— at least the flood waters match my decor!' Yeah... still optimistic about the insurance check though."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Cozy Hitman",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Assassin"
+      ],
+      "joke": "I tried to take a gig as an assassin, but I’m way too cozy and amateur for that life. My target walked in and I panicked, offered him tea. Ten minutes later we’re both under a blanket, and he’s venting about his boss. I didn’t eliminate him—I just helped him process feelings. Worst assassin ever.",
+      "setup": "",
+      "punchline": "I tried to take a gig as an assassin, but I’m way too cozy and amateur for that life. My target walked in and I panicked, offered him tea. Ten minutes later we’re both under a blanket, and he’s venting about his boss. I didn’t eliminate him—I just helped him process feelings. Worst assassin ever.",
+      "text": "I tried to take a gig as an assassin, but I’m way too cozy and amateur for that life. My target walked in and I panicked, offered him tea. Ten minutes later we’re both under a blanket, and he’s venting about his boss. I didn’t eliminate him—I just helped him process feelings. Worst assassin ever."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear stage premise with good escalation and a solid final turn; slightly familiar cozy-hitman therapy shape, but it lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Amusing image work with Etsy/calligraphy details, but the ending is more decorative than sharply surprising.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.100000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Readable and on prompt, but most turns are obvious optimism-in-disaster reversals with a mild closer.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Coherent and concise, but it leans on the familiar assassin-as-therapist template and the punchline mostly restates the premise.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid escalating image (thermos, mittens, murder-ideas folder) with a clean closing line, but the punchline restates the cozy/amateur premise rather than twisting it further.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Etsy-hitman framing is cute but predictable list-of-cozy-details structure; final line just piles on another cozy image instead of a sharper turn.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Consistent optimist voice and decent escalation, but each beat is the same joke repeated (disaster = good news) without a real snap at the end.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Tight and well-paced; 'worst assassin ever' lands cleanly as a button, though the therapy-session turn is a fairly familiar comic shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Concise pacing and excellent punchline.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 9,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.3
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clever pivot from murder to wellness check.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid execution of a classic disaster optimism trope.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute premise but overlaps heavily with Anthropic's setup with less punch.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong cozy visuals and self-aware final line land well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Well-built escalation to the wellness-check punch.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.800000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fresh Etsy and calligraphy details elevate the cozy premise.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Solid but familiar take; milder payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise with a couple of decent lines; mild humor, tidy form.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.500000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid escalation and a real payoff; slightly long but lands cleanly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Consistent angle with neat imagery; pleasant but not strongly funny.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Good optimistic twist with workable timing; respectable humor.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.900000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7.3,
+      "rawScore": 7.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.1,
+        "surprise": 7.1,
+        "craft": 7.4,
+        "originality": 6.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear stage premise with good escalation and a solid final turn; slightly familiar cozy-hitman therapy shape, but it lands."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.8,
+          "rawScore": 7.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Clever pivot from murder to wellness check."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.6,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Well-built escalation to the wellness-check punch."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.5,
+          "comment": "Solid escalation and a real payoff; slightly long but lands cleanly."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7.2,
+        "originality": 6.5,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.9,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Solid escalating image (thermos, mittens, murder-ideas folder) with a clean closing line, but the punchline restates the cozy/amateur premise rather than twisting it further."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.5,
+          "rawScore": 8.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Concise pacing and excellent punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong cozy visuals and self-aware final line land well."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.5,
+          "comment": "Clear premise with a couple of decent lines; mild humor, tidy form."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 5.9,
+      "rawScore": 6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5,
+        "craft": 6.2,
+        "originality": 6,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5,
+        "craft": 6.3,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Amusing image work with Etsy/calligraphy details, but the ending is more decorative than sharply surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.8,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Etsy-hitman framing is cute but predictable list-of-cozy-details structure; final line just piles on another cozy image instead of a sharper turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7,
+          "scoreAdjustment": -0.2,
+          "comment": "Fresh Etsy and calligraphy details elevate the cozy premise."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.5,
+          "comment": "Consistent angle with neat imagery; pleasant but not strongly funny."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.7,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.1,
+        "craft": 5.8,
+        "originality": 5.3,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.2,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Readable and on prompt, but most turns are obvious optimism-in-disaster reversals with a mild closer."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.8,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Consistent optimist voice and decent escalation, but each beat is the same joke repeated (disaster = good news) without a real snap at the end."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Solid execution of a classic disaster optimism trope."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.5,
+          "comment": "Good optimistic twist with workable timing; respectable humor."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.7,
+      "rawScore": 5.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 5.1,
+        "craft": 5.9,
+        "originality": 5.1,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.2,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Coherent and concise, but it leans on the familiar assassin-as-therapist template and the punchline mostly restates the premise."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.9,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Tight and well-paced; 'worst assassin ever' lands cleanly as a button, though the therapy-session turn is a fairly familiar comic shape."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Cute premise but overlaps heavily with Anthropic's setup with less punch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid but familiar take; milder payoff."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-06-30-ext-real-2026-06-30.png",
+    "originalSrc": "assets/feature-images/2026-06-30-ext-real-2026-06-30.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Murder, But Make It Cozy: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Murder, But Make It Cozy\nExact joke text to render in the right panel:\nI hired an assassin off an app, and I should've known something was off when his profile picture was him in a knitted sweater holding a mug that said 'World's Okayest Killer.' He showed up to the hit twenty minutes late because he stopped to make us both tea. He didn't even bring a real weapon, just kept asking my enemy really pointed questions about his choices. Guy didn't die, he just cried for an hour and rearranged his whole life. I paid full price for a stabbing and got a wellness check.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Cozy and Amateur, Assassin, Rainforest, A natural disaster, Optimistic, Resentful.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Cozy and Amateur, Assassin, Rainforest, A natural disaster, Optimistic, Resentful. Use the winning joke titled \"Murder, But Make It Cozy\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.8,
+      "google": 6.2,
+      "xai": 6.6,
+      "copilot": 5.8
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-06-30-ext-real-2026-06-30.md"
+}
