@@ -1493,6 +1493,19 @@ td:nth-child(4) {
   margin-bottom: 0;
 }
 
+.joke-seed-terms {
+  color: var(--brass) !important;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.22 !important;
+  text-transform: none;
+}
+
+.joke-seed-terms span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .joke-card p {
   color: var(--muted);
   line-height: 1.48;

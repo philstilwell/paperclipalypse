@@ -1123,6 +1123,7 @@ function renderRun(run, options = {}) {
             <span>${formatScore(ranking.score)}</span>
           </div>
           <h3>${escapeHtml(joke.title)}</h3>
+          ${renderJokeSeedTerms(joke)}
           <p class="standalone-joke">${escapeHtml(jokeText)}</p>
           ${comments}
         </article>`;
@@ -1166,6 +1167,17 @@ function renderRun(run, options = {}) {
         <div class="joke-grid">${jokes}</div>
       </section>${memoryNavEnd}
     </main>`;
+}
+
+function renderJokeSeedTerms(joke) {
+  const terms = (joke.seedTermsUsed || [])
+    .map((term) => String(term || "").trim())
+    .filter(Boolean);
+  if (!terms.length) {
+    return "";
+  }
+
+  return `<p class="joke-seed-terms"><span>Seed terms used:</span> ${escapeHtml(terms.join(", "))}</p>`;
 }
 
 function renderScoreBreakdown(ranking, rubric) {
@@ -3595,6 +3607,19 @@ td:nth-child(4) {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.16rem;
   margin-bottom: 0;
+}
+
+.joke-seed-terms {
+  color: var(--brass) !important;
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.22 !important;
+  text-transform: none;
+}
+
+.joke-seed-terms span {
+  color: var(--muted);
+  font-weight: 700;
 }
 
 .joke-card p {
