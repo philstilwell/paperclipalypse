@@ -20,6 +20,7 @@ const baseKeywords = [
   "Paperclipalypse"
 ];
 const dailyListPageSize = 12;
+const recentTrendWindowDays = 14;
 const processPopoverLabel = [
   "How Paperclipalypse works.",
   "Codex picks six random seed terms.",
@@ -342,7 +343,18 @@ function renderScoreTrend(runs) {
         </section>`;
   }
 
-  const chart = renderTrendSvg(points);
+  const recentPoints = recentTrendPoints(points);
+  const weeklyPoints = weeklyScoreTrendPoints(points);
+  const recentChart = renderTrendSvg(recentPoints, {
+    idPrefix: "score-trend-recent",
+    title: "Paperclipalypse recent adjusted score trend",
+    description: "Line chart comparing adjusted winning scores with the adjusted field average for Paperclipalypse contests in the most recent two weeks."
+  });
+  const weeklyChart = renderTrendSvg(weeklyPoints, {
+    idPrefix: "score-trend-weekly",
+    title: "Paperclipalypse weekly average score trend",
+    description: "Line chart comparing weekly average adjusted winning scores with weekly average adjusted field scores for all published Paperclipalypse contests."
+  });
   const tablePoints = [...points].reverse();
   const rows = tablePoints
     .map(
@@ -364,12 +376,20 @@ function renderScoreTrend(runs) {
             <h2>Adjusted Winning Score Over Time</h2>
           </div>
           <div class="trend-card">
-            <p>The brass line tracks each round's adjusted winning score. The gray line shows the adjusted average score across all five jokes, which is a calmer read on overall joke quality.</p>
+            <p>The brass line tracks each round's adjusted winning score. The gray line shows the adjusted average score across all five jokes, which is a calmer read on overall joke quality. The default chart shows the most recent two weeks; the weekly view averages each week from the beginning of the archive.</p>
+            ${renderChartViewToggle("score-trend", "score-trend-recent-panel", "score-trend-weekly-panel")}
             <div class="chart-legend" aria-label="Chart legend">
               <span><i class="legend-win"></i>Adjusted winning score</span>
               <span><i class="legend-average"></i>Adjusted field average</span>
             </div>
-            <div class="trend-chart-wrap">${chart}</div>
+            <div class="trend-chart-panels" data-chart-panels="score-trend">
+              <div class="trend-chart-panel" id="score-trend-recent-panel" data-chart-panel="recent">
+                <div class="trend-chart-wrap">${recentChart}</div>
+              </div>
+              <div class="trend-chart-panel" id="score-trend-weekly-panel" data-chart-panel="weekly" hidden>
+                <div class="trend-chart-wrap">${weeklyChart}</div>
+              </div>
+            </div>
             <div class="table-scroll trend-table-scroll">
               <table class="trend-table" id="score-trend-daily-table" data-daily-list data-page-size="${dailyListPageSize}">
                 <thead>
@@ -402,7 +422,18 @@ function renderJudgeScoreTrend(runs) {
         </section>`;
   }
 
-  const chart = renderJudgeScoreTrendSvg(data);
+  const recentData = recentJudgeScoreTrendData(data);
+  const weeklyData = weeklyJudgeScoreTrendData(data);
+  const recentChart = renderJudgeScoreTrendSvg(recentData, {
+    idPrefix: "judge-score-trend-recent",
+    title: "Paperclipalypse recent judge score trend",
+    description: "Line chart comparing each judge model's raw average score given per contest in the most recent two weeks."
+  });
+  const weeklyChart = renderJudgeScoreTrendSvg(weeklyData, {
+    idPrefix: "judge-score-trend-weekly",
+    title: "Paperclipalypse weekly average judge score trend",
+    description: "Line chart comparing each judge model's weekly average raw score given for all published Paperclipalypse contests."
+  });
   const legend = data.series
     .map(
       (series) => `
@@ -436,11 +467,19 @@ function renderJudgeScoreTrend(runs) {
             <h2>Average Scores Given Each Contest</h2>
           </div>
           <div class="trend-card">
-            <p>Each line shows the raw average score a judge gave across the four jokes it scored in that contest. These raw tendencies drive the rolling normalization; lower lines are stricter judges, higher lines are more generous judges. Formula: <strong>adjusted score = raw score - judge rolling average + field rolling average</strong>. This keeps the strictest judge from having an unfair advantage merely because its lower raw scores are harder for contestants to earn.</p>
+            <p>Each line shows the raw average score a judge gave across the four jokes it scored in that contest. These raw tendencies drive the rolling normalization; lower lines are stricter judges, higher lines are more generous judges. Formula: <strong>adjusted score = raw score - judge rolling average + field rolling average</strong>. The default chart shows the most recent two weeks; the weekly view averages each judge by week from the beginning of the archive.</p>
+            ${renderChartViewToggle("judge-score-trend", "judge-score-trend-recent-panel", "judge-score-trend-weekly-panel")}
             <div class="chart-legend judge-score-legend" aria-label="Judge score chart legend">
               ${legend}
             </div>
-            <div class="trend-chart-wrap">${chart}</div>
+            <div class="trend-chart-panels" data-chart-panels="judge-score-trend">
+              <div class="trend-chart-panel" id="judge-score-trend-recent-panel" data-chart-panel="recent">
+                <div class="trend-chart-wrap">${recentChart}</div>
+              </div>
+              <div class="trend-chart-panel" id="judge-score-trend-weekly-panel" data-chart-panel="weekly" hidden>
+                <div class="trend-chart-wrap">${weeklyChart}</div>
+              </div>
+            </div>
             <div class="table-scroll trend-table-scroll">
               <table class="judge-score-table" id="judge-score-daily-table" data-daily-list data-page-size="${dailyListPageSize}">
                 <colgroup>
@@ -461,6 +500,14 @@ function renderJudgeScoreTrend(runs) {
             ${renderDailyListPaginationControls("judge-score-daily-table", data.runs.length)}
           </div>
         </section>`;
+}
+
+function renderChartViewToggle(chartId, recentPanelId, weeklyPanelId) {
+  return `
+            <div class="chart-view-toggle" data-chart-toggle="${escapeHtml(chartId)}" aria-label="Chart view">
+              <button type="button" data-chart-view="recent" aria-controls="${escapeHtml(recentPanelId)}" aria-pressed="true">Last 2 weeks</button>
+              <button type="button" data-chart-view="weekly" aria-controls="${escapeHtml(weeklyPanelId)}" aria-pressed="false">Weekly averages</button>
+            </div>`;
 }
 
 function renderDailyListPaginationControls(tableId, rowCount) {
@@ -520,11 +567,36 @@ function renderDailyListPaginationScript() {
 
               renderPage();
             }
+
+            const toggles = document.querySelectorAll("[data-chart-toggle]");
+            for (const toggle of toggles) {
+              const chartId = toggle.dataset.chartToggle;
+              const panels = document.querySelector(\`[data-chart-panels="\${chartId}"]\`);
+              if (!chartId || !panels) {
+                continue;
+              }
+
+              const buttons = Array.from(toggle.querySelectorAll("[data-chart-view]"));
+              const renderChartView = (view) => {
+                for (const button of buttons) {
+                  button.setAttribute("aria-pressed", String(button.dataset.chartView === view));
+                }
+                for (const panel of panels.querySelectorAll("[data-chart-panel]")) {
+                  panel.hidden = panel.dataset.chartPanel !== view;
+                }
+              };
+
+              for (const button of buttons) {
+                button.addEventListener("click", () => renderChartView(button.dataset.chartView));
+              }
+              renderChartView("recent");
+            }
           })();
         </script>`;
 }
 
-function renderJudgeScoreTrendSvg(data) {
+function renderJudgeScoreTrendSvg(data, options = {}) {
+  const idPrefix = options.idPrefix || "judge-score-trend";
   const width = 880;
   const height = 380;
   const left = 58;
@@ -557,8 +629,11 @@ function renderJudgeScoreTrendSvg(data) {
     .join("");
   const xLabels = data.runs
     .map((run, index) => {
+      if (!shouldRenderTrendLabel(index, data.runs.length)) {
+        return "";
+      }
       const x = xFor(index).toFixed(1);
-      return `<text class="trend-x-label" x="${x}" y="${height - 28}" text-anchor="middle">${escapeHtml(shortTrendLabel(run))}</text>`;
+      return `<text class="trend-x-label" x="${x}" y="${height - 28}" text-anchor="middle">${escapeHtml(trendPointLabel({ run }))}</text>`;
     })
     .join("");
   const seriesLines = data.series
@@ -573,7 +648,7 @@ function renderJudgeScoreTrendSvg(data) {
         .join(" ");
       const markers = validPoints
         .map((point) => {
-          const label = `${series.judgeName}, ${shortDate(point.run)}: raw average score given ${formatScore(point.score)}`;
+          const label = `${series.judgeName}, ${trendMarkerLabel(point)}: raw average score given ${formatScore(point.score)}`;
           return `<circle cx="${xFor(point.index).toFixed(1)}" cy="${yFor(point.score).toFixed(1)}" r="4"><title>${escapeHtml(label)}</title></circle>`;
         })
         .join("");
@@ -587,9 +662,9 @@ function renderJudgeScoreTrendSvg(data) {
     .join("");
 
   return `
-              <svg class="score-trend-svg judge-score-trend-svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="judge-score-trend-title judge-score-trend-desc">
-                <title id="judge-score-trend-title">Paperclipalypse judge score trend</title>
-                <desc id="judge-score-trend-desc">Line chart comparing each judge model's raw average score given per contest.</desc>
+              <svg class="score-trend-svg judge-score-trend-svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="${escapeHtml(idPrefix)}-title ${escapeHtml(idPrefix)}-desc">
+                <title id="${escapeHtml(idPrefix)}-title">${escapeHtml(options.title || "Paperclipalypse judge score trend")}</title>
+                <desc id="${escapeHtml(idPrefix)}-desc">${escapeHtml(options.description || "Line chart comparing each judge model's raw average score given per contest.")}</desc>
                 <rect class="trend-plot-bg" x="${left}" y="${top}" width="${plotWidth}" height="${plotHeight}" rx="8"></rect>
                 ${grid}
                 <line class="trend-axis" x1="${left}" y1="${top + plotHeight}" x2="${width - right}" y2="${top + plotHeight}"></line>
@@ -600,7 +675,8 @@ function renderJudgeScoreTrendSvg(data) {
               </svg>`;
 }
 
-function renderTrendSvg(points) {
+function renderTrendSvg(points, options = {}) {
+  const idPrefix = options.idPrefix || "score-trend";
   const width = 880;
   const height = 360;
   const left = 58;
@@ -633,8 +709,11 @@ function renderTrendSvg(points) {
     .join("");
   const xLabels = points
     .map((point, index) => {
+      if (!shouldRenderTrendLabel(index, points.length)) {
+        return "";
+      }
       const x = xFor(index).toFixed(1);
-      return `<text class="trend-x-label" x="${x}" y="${height - 24}" text-anchor="middle">${escapeHtml(shortTrendLabel(point.run))}</text>`;
+      return `<text class="trend-x-label" x="${x}" y="${height - 24}" text-anchor="middle">${escapeHtml(trendPointLabel(point))}</text>`;
     })
     .join("");
   const winningMarkers = points
@@ -645,9 +724,9 @@ function renderTrendSvg(points) {
     .join("");
 
   return `
-              <svg class="score-trend-svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="score-trend-title score-trend-desc">
-                <title id="score-trend-title">Paperclipalypse score trend</title>
-                <desc id="score-trend-desc">Line chart comparing adjusted winning scores with the adjusted field average for published Paperclipalypse contests.</desc>
+              <svg class="score-trend-svg" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="${escapeHtml(idPrefix)}-title ${escapeHtml(idPrefix)}-desc">
+                <title id="${escapeHtml(idPrefix)}-title">${escapeHtml(options.title || "Paperclipalypse score trend")}</title>
+                <desc id="${escapeHtml(idPrefix)}-desc">${escapeHtml(options.description || "Line chart comparing adjusted winning scores with the adjusted field average for published Paperclipalypse contests.")}</desc>
                 <rect class="trend-plot-bg" x="${left}" y="${top}" width="${plotWidth}" height="${plotHeight}" rx="8"></rect>
                 ${grid}
                 <line class="trend-axis" x1="${left}" y1="${top + plotHeight}" x2="${width - right}" y2="${top + plotHeight}"></line>
@@ -662,13 +741,170 @@ function renderTrendSvg(points) {
 }
 
 function trendMarker(point, x, y, type, score) {
-  const label = `${shortDate(point.run)}: ${type === "win" ? "adjusted winning score" : "adjusted field average"} ${formatScore(score)}`;
+  const label = `${trendMarkerLabel(point)}: ${type === "win" ? "adjusted winning score" : "adjusted field average"} ${formatScore(score)}`;
 
   return `
                 <g class="trend-point trend-point-${type}">
                   <circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${type === "win" ? 5 : 4}"><title>${escapeHtml(label)}</title></circle>
                   ${type === "win" ? `<text x="${x.toFixed(1)}" y="${(y - 12).toFixed(1)}" text-anchor="middle">${formatScore(score)}</text>` : ""}
                 </g>`;
+}
+
+function recentTrendPoints(points, days = recentTrendWindowDays) {
+  const latestDate = dateOnly(points.at(-1)?.run);
+  const cutoffDate = addDaysDateOnly(latestDate, -(days - 1));
+  const recent = points.filter((point) => dateOnly(point.run) >= cutoffDate);
+
+  return recent.length ? recent : points;
+}
+
+function recentJudgeScoreTrendData(data, days = recentTrendWindowDays) {
+  const latestDate = dateOnly(data.runs.at(-1));
+  const cutoffDate = addDaysDateOnly(latestDate, -(days - 1));
+  const indexes = data.runs
+    .map((run, index) => ({ run, index }))
+    .filter(({ run }) => dateOnly(run) >= cutoffDate)
+    .map(({ index }) => index);
+
+  if (!indexes.length) {
+    return data;
+  }
+
+  return {
+    runs: indexes.map((index) => data.runs[index]),
+    series: data.series.map((series) => ({
+      ...series,
+      points: indexes.map((index) => series.points[index])
+    }))
+  };
+}
+
+function weeklyScoreTrendPoints(points) {
+  return weeklyGroups(points, (point) => dateOnly(point.run))
+    .map((group) => {
+      const run = weeklyRun(group.weekStart, group.weekEnd);
+
+      return {
+        run,
+        winnerName: "Weekly average",
+        winningScore: average(group.items.map((point) => Number(point.winningScore)).filter(Number.isFinite)),
+        averageScore: average(group.items.map((point) => Number(point.averageScore)).filter(Number.isFinite))
+      };
+    })
+    .filter((point) => Number.isFinite(point.winningScore) && Number.isFinite(point.averageScore));
+}
+
+function weeklyJudgeScoreTrendData(data) {
+  const groupedRuns = weeklyGroups(
+    data.runs.map((run, index) => ({ run, index })),
+    ({ run }) => dateOnly(run)
+  );
+  const weeklyRuns = groupedRuns.map((group) => weeklyRun(group.weekStart, group.weekEnd));
+
+  return {
+    runs: weeklyRuns,
+    series: data.series.map((series) => ({
+      ...series,
+      points: groupedRuns.map((group, groupIndex) => {
+        const scores = group.items
+          .map(({ index }) => Number(series.points[index]?.score))
+          .filter(Number.isFinite);
+
+        return {
+          run: weeklyRuns[groupIndex],
+          score: average(scores)
+        };
+      })
+    }))
+  };
+}
+
+function weeklyGroups(items, dateForItem) {
+  const groups = new Map();
+  for (const item of items) {
+    const itemDate = dateForItem(item);
+    const weekStart = weekStartDateOnly(itemDate);
+    const group = groups.get(weekStart) || {
+      weekStart,
+      weekEnd: addDaysDateOnly(weekStart, 6),
+      items: []
+    };
+
+    group.items.push(item);
+    groups.set(weekStart, group);
+  }
+
+  return [...groups.values()].sort((a, b) => a.weekStart.localeCompare(b.weekStart));
+}
+
+function weeklyRun(weekStart, weekEnd) {
+  const label = weeklyRangeLabel(weekStart, weekEnd);
+
+  return {
+    publishedDate: weekStart,
+    createdAt: `${weekStart}T12:00:00Z`,
+    displayLabel: label,
+    markerLabel: `Week ${label}`
+  };
+}
+
+function weeklyRangeLabel(weekStart, weekEnd) {
+  const start = shortPublicationDate(weekStart).replace(/, \d{4}$/u, "");
+  const end = shortPublicationDate(weekEnd).replace(/, \d{4}$/u, "");
+  const [startMonth, startDay] = start.split(" ");
+  const [endMonth, endDay] = end.split(" ");
+
+  return startMonth === endMonth
+    ? `${startMonth} ${startDay}-${endDay}`
+    : `${start}-${end}`;
+}
+
+function weekStartDateOnly(value) {
+  const date = utcDateFromDateOnly(value);
+  const day = date.getUTCDay();
+  const offset = (day + 6) % 7;
+  date.setUTCDate(date.getUTCDate() - offset);
+
+  return dateOnlyFromUtcDate(date);
+}
+
+function addDaysDateOnly(value, days) {
+  const date = utcDateFromDateOnly(value);
+  date.setUTCDate(date.getUTCDate() + days);
+
+  return dateOnlyFromUtcDate(date);
+}
+
+function utcDateFromDateOnly(value) {
+  const [year, month, day] = dateOnly(value).split("-").map(Number);
+
+  return new Date(Date.UTC(year, month - 1, day, 12));
+}
+
+function dateOnlyFromUtcDate(date) {
+  return [
+    date.getUTCFullYear(),
+    String(date.getUTCMonth() + 1).padStart(2, "0"),
+    String(date.getUTCDate()).padStart(2, "0")
+  ].join("-");
+}
+
+function shouldRenderTrendLabel(index, total) {
+  if (total <= 14) {
+    return true;
+  }
+
+  const step = Math.ceil(total / 12);
+
+  return index === 0 || index === total - 1 || index % step === 0;
+}
+
+function trendPointLabel(point) {
+  return point.label || point.run?.displayLabel || shortTrendLabel(point.run);
+}
+
+function trendMarkerLabel(point) {
+  return point.markerLabel || point.label || point.run?.markerLabel || shortDate(point.run);
 }
 
 function modelStandings(runs) {
@@ -3107,6 +3343,41 @@ main {
   line-height: 1.55;
 }
 
+.chart-view-toggle {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 2px;
+}
+
+.chart-view-toggle button {
+  border: 1px solid rgba(194, 138, 87, 0.34);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.12), transparent 65%),
+    rgba(18, 19, 21, 0.88);
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 950;
+  min-height: 36px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+
+.chart-view-toggle button[aria-pressed="true"] {
+  border-color: rgba(239, 225, 207, 0.5);
+  background:
+    linear-gradient(180deg, rgba(255, 48, 72, 0.12), transparent 72%),
+    rgba(194, 138, 87, 0.2);
+  color: var(--bone);
+}
+
+.chart-view-toggle button:not([aria-pressed="true"]):hover {
+  color: var(--ink);
+}
+
 .chart-legend {
   display: flex;
   flex-wrap: wrap;
@@ -3146,6 +3417,10 @@ main {
     rgba(7, 8, 9, 0.72);
   overflow-x: auto;
   padding: 8px;
+}
+
+.trend-chart-panel[hidden] {
+  display: none;
 }
 
 .score-trend-svg {

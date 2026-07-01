@@ -991,6 +991,41 @@ main {
   line-height: 1.55;
 }
 
+.chart-view-toggle {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 2px;
+}
+
+.chart-view-toggle button {
+  border: 1px solid rgba(194, 138, 87, 0.34);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.12), transparent 65%),
+    rgba(18, 19, 21, 0.88);
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 950;
+  min-height: 36px;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+
+.chart-view-toggle button[aria-pressed="true"] {
+  border-color: rgba(239, 225, 207, 0.5);
+  background:
+    linear-gradient(180deg, rgba(255, 48, 72, 0.12), transparent 72%),
+    rgba(194, 138, 87, 0.2);
+  color: var(--bone);
+}
+
+.chart-view-toggle button:not([aria-pressed="true"]):hover {
+  color: var(--ink);
+}
+
 .chart-legend {
   display: flex;
   flex-wrap: wrap;
@@ -1030,6 +1065,10 @@ main {
     rgba(7, 8, 9, 0.72);
   overflow-x: auto;
   padding: 8px;
+}
+
+.trend-chart-panel[hidden] {
+  display: none;
 }
 
 .score-trend-svg {
