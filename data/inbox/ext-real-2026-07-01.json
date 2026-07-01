@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-01T14:02:26.478Z",
+  "publishedDate": "2026-07-01",
+  "seed": "ext-real-2026-07-01",
+  "slug": "2026-07-01-ext-real-2026-07-01",
+  "source": "manual-external",
+  "seedTerms": [
+    "Organised Crime",
+    "Private Detective",
+    "Graveyard / Mausoleum",
+    "Sacrifice one for the many",
+    "Spiritual",
+    "Prejudiced"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Mob Detective",
+      "seedTermsUsed": [
+        "Organised Crime",
+        "Private Detective"
+      ],
+      "joke": "I tried working as a private detective for organised crime. It’s a weird job, because the client always knows who did it, why they did it, and where the body isn’t supposed to be. My whole report was just, “Great instincts, everyone. Maybe next time don’t hire a witness with stationery.”",
+      "text": "I tried working as a private detective for organised crime. It’s a weird job, because the client always knows who did it, why they did it, and where the body isn’t supposed to be. My whole report was just, “Great instincts, everyone. Maybe next time don’t hire a witness with stationery.”",
+      "setup": "",
+      "punchline": "I tried working as a private detective for organised crime. It’s a weird job, because the client always knows who did it, why they did it, and where the body isn’t supposed to be. My whole report was just, “Great instincts, everyone. Maybe next time don’t hire a witness with stationery.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Family Discount",
+      "seedTermsUsed": [
+        "Organised Crime",
+        "Private Detective"
+      ],
+      "joke": "I hired a private detective to find out if my husband was cheating. Turns out the guy used to work for the mob. I know because his invoice had a line item that just said 'knees, if necessary.' I asked what that meant. He said, 'Ma'am, you wanted answers. I can get you answers, or I can get you closure. Closure's extra, but it's permanent.' I said just the answers. He nodded, very disappointed in me, like I'd ordered a salad at a steakhouse.",
+      "text": "I hired a private detective to find out if my husband was cheating. Turns out the guy used to work for the mob. I know because his invoice had a line item that just said 'knees, if necessary.' I asked what that meant. He said, 'Ma'am, you wanted answers. I can get you answers, or I can get you closure. Closure's extra, but it's permanent.' I said just the answers. He nodded, very disappointed in me, like I'd ordered a salad at a steakhouse.",
+      "setup": "",
+      "punchline": "I hired a private detective to find out if my husband was cheating. Turns out the guy used to work for the mob. I know because his invoice had a line item that just said 'knees, if necessary.' I asked what that meant. He said, 'Ma'am, you wanted answers. I can get you answers, or I can get you closure. Closure's extra, but it's permanent.' I said just the answers. He nodded, very disappointed in me, like I'd ordered a salad at a steakhouse."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Vibe Check",
+      "seedTermsUsed": [
+        "Spiritual",
+        "Prejudiced"
+      ],
+      "joke": "I love people who describe themselves as 'spiritual but not religious.' It's a great little loophole. It means you get all the fun of being deeply prejudiced, but instead of judging people for their sins, you get to judge them for their vibes. I had a woman tell me she couldn't date me because my aura was 'too corporate.' Just call me ugly, Madison. It hurts way less than being rejected by a quartz crystal.",
+      "text": "I love people who describe themselves as 'spiritual but not religious.' It's a great little loophole. It means you get all the fun of being deeply prejudiced, but instead of judging people for their sins, you get to judge them for their vibes. I had a woman tell me she couldn't date me because my aura was 'too corporate.' Just call me ugly, Madison. It hurts way less than being rejected by a quartz crystal.",
+      "setup": "",
+      "punchline": "I love people who describe themselves as 'spiritual but not religious.' It's a great little loophole. It means you get all the fun of being deeply prejudiced, but instead of judging people for their sins, you get to judge them for their vibes. I had a woman tell me she couldn't date me because my aura was 'too corporate.' Just call me ugly, Madison. It hurts way less than being rejected by a quartz crystal."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Mafia Stakeout",
+      "seedTermsUsed": [
+        "Private Detective",
+        "Organised Crime"
+      ],
+      "joke": "I thought I'd be a great private detective. Took my first big case against organised crime, spent weeks tailing this mob boss, snapping photos, the works. Finally kick in his office door with all the evidence and yell, 'You're finished!' He just smiles and says, 'Kid, you're perfect.' Turns out he was shopping for a new right-hand man. Now I protect the guy I was supposed to bury. Pays better than solving cases, though the dental plan is mostly cement.",
+      "text": "I thought I'd be a great private detective. Took my first big case against organised crime, spent weeks tailing this mob boss, snapping photos, the works. Finally kick in his office door with all the evidence and yell, 'You're finished!' He just smiles and says, 'Kid, you're perfect.' Turns out he was shopping for a new right-hand man. Now I protect the guy I was supposed to bury. Pays better than solving cases, though the dental plan is mostly cement.",
+      "setup": "",
+      "punchline": "I thought I'd be a great private detective. Took my first big case against organised crime, spent weeks tailing this mob boss, snapping photos, the works. Finally kick in his office door with all the evidence and yell, 'You're finished!' He just smiles and says, 'Kid, you're perfect.' Turns out he was shopping for a new right-hand man. Now I protect the guy I was supposed to bury. Pays better than solving cases, though the dental plan is mostly cement."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Graveyard Shift",
+      "seedTermsUsed": [
+        "Private Detective",
+        "Graveyard / Mausoleum"
+      ],
+      "joke": "I once took a private detective job that had me staking out a mausoleum at midnight. I thought I was being tough, until a raccoon brushed my leg and I screamed so loud a whole tour group outside started praying. Nothing ruins your mystique faster than yelling, “I’m the living one!” at strangers clutching flashlights.",
+      "text": "I once took a private detective job that had me staking out a mausoleum at midnight. I thought I was being tough, until a raccoon brushed my leg and I screamed so loud a whole tour group outside started praying. Nothing ruins your mystique faster than yelling, “I’m the living one!” at strangers clutching flashlights.",
+      "setup": "",
+      "punchline": "I once took a private detective job that had me staking out a mausoleum at midnight. I thought I was being tough, until a raccoon brushed my leg and I screamed so loud a whole tour group outside started praying. Nothing ruins your mystique faster than yelling, “I’m the living one!” at strangers clutching flashlights."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong premise with clean mob-detective escalation. The 'closure' line is the best turn; final salad comparison is funny but slightly softer than the peak."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Sharp, stage-ready joke with a clear social premise, good escalation, and a strong final image. The quartz crystal rejection lands well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear and coherent with a decent reversal, but the mob-recruitment turn and cement dental-plan tag feel familiar. Solid, not especially memorable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Good physical scene and clean first-person delivery. The final line is amusing, though the joke is more cute than sharply surprising."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clean setup, but the closing line is muddled and doesn't land cleanly as a punchline."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Sharp premise with a genuinely surprising specific detail and a strong closing line."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good escalation and narrative turn, though 'you're perfect' twist is a familiar shape; solid closer."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent but the jump-scare setup is a familiar comic shape; closing line is fine but not memorable."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Strong premise with a sharply worded punchline that perfectly captures the absurdity of the setup."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 9,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent character work and dialogue pacing. The steakhouse comparison provides a perfect, grounded final button."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The narrative flows well, but the joke relies heavily on cinematic tropes and a familiar cement-shoes punchline to truly stand out."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "A fun, vivid scenario with a great comedic image of the praying tour group and a solid final exclamation."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Mild mob reversal but weak stationery pun and strained payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong mob PI escalation with sharp closure line and steakhouse tag."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean, relatable spiritual hypocrisy with crisp quartz punch."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid graveyard scare visual but raccoon payoff is familiar territory."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clean premise and a tidy turn; mildly funny but not strongly surprising."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid escalation with a clear payoff; long but lands a real joke."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Fresh angle and crisp wording; good turn, though not a big laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clear story with a workable twist; competent but not strongly funny."
+        }
+      ]
+    }
+  ]
+}
