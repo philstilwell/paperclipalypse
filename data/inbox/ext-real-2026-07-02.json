@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-02T14:45:12.326Z",
+  "publishedDate": "2026-07-02",
+  "seed": "ext-real-2026-07-02",
+  "slug": "2026-07-02-ext-real-2026-07-02",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cringe",
+    "Real Estate Agent",
+    "Empty Lot",
+    "Not achieving a coveted goal",
+    "Kind",
+    "Tactless"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Half Bath",
+      "seedTermsUsed": [
+        "Real Estate Agent",
+        "Empty Lot"
+      ],
+      "joke": "I hired a real estate agent to show me cheaper places, and she drove me to an empty lot. I said, \"Where’s the house?\" She said, \"You’re standing in the living room. Kitchen’s over by the weeds.\" Then she pointed at a puddle and said, \"And with your budget, this is technically a half bath.\"",
+      "text": "I hired a real estate agent to show me cheaper places, and she drove me to an empty lot. I said, \"Where’s the house?\" She said, \"You’re standing in the living room. Kitchen’s over by the weeds.\" Then she pointed at a puddle and said, \"And with your budget, this is technically a half bath.\"",
+      "setup": "",
+      "punchline": "I hired a real estate agent to show me cheaper places, and she drove me to an empty lot. I said, \"Where’s the house?\" She said, \"You’re standing in the living room. Kitchen’s over by the weeds.\" Then she pointed at a puddle and said, \"And with your budget, this is technically a half bath.\""
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Open House",
+      "seedTermsUsed": [
+        "Real Estate Agent",
+        "Tactless"
+      ],
+      "joke": "I hired a real estate agent to sell my house, and this woman is tactless in a way that feels almost professional. Walked a couple through my living room and said, 'Ignore the smell, that's just failure.' They asked about the neighborhood. She goes, 'Quiet. Nobody talks to each other after what happened.' I'm standing right there. She turned to me and whispered, 'Don't worry, I'm rounding down your asking price and up your personality.' The couple left. She turned to me and said, 'They're not ready for a house like you.'",
+      "text": "I hired a real estate agent to sell my house, and this woman is tactless in a way that feels almost professional. Walked a couple through my living room and said, 'Ignore the smell, that's just failure.' They asked about the neighborhood. She goes, 'Quiet. Nobody talks to each other after what happened.' I'm standing right there. She turned to me and whispered, 'Don't worry, I'm rounding down your asking price and up your personality.' The couple left. She turned to me and said, 'They're not ready for a house like you.'",
+      "setup": "",
+      "punchline": "I hired a real estate agent to sell my house, and this woman is tactless in a way that feels almost professional. Walked a couple through my living room and said, 'Ignore the smell, that's just failure.' They asked about the neighborhood. She goes, 'Quiet. Nobody talks to each other after what happened.' I'm standing right there. She turned to me and whispered, 'Don't worry, I'm rounding down your asking price and up your personality.' The couple left. She turned to me and said, 'They're not ready for a house like you.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Open Concept",
+      "seedTermsUsed": [
+        "Real Estate Agent",
+        "Empty Lot"
+      ],
+      "joke": "My real estate agent refuses to let my terrible budget ruin his optimism. Yesterday he drove me out to a completely empty dirt lot, gestured grandly at a patch of weeds, and said, 'Welcome to the ultimate open-concept layout. You’ve got infinite ceilings, 360-degree natural light, and whenever you need a guest bathroom, just pick a bush.'",
+      "text": "My real estate agent refuses to let my terrible budget ruin his optimism. Yesterday he drove me out to a completely empty dirt lot, gestured grandly at a patch of weeds, and said, 'Welcome to the ultimate open-concept layout. You’ve got infinite ceilings, 360-degree natural light, and whenever you need a guest bathroom, just pick a bush.'",
+      "setup": "",
+      "punchline": "My real estate agent refuses to let my terrible budget ruin his optimism. Yesterday he drove me out to a completely empty dirt lot, gestured grandly at a patch of weeds, and said, 'Welcome to the ultimate open-concept layout. You’ve got infinite ceilings, 360-degree natural light, and whenever you need a guest bathroom, just pick a bush.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Empty Lot Special",
+      "seedTermsUsed": [
+        "Real Estate Agent",
+        "Empty Lot"
+      ],
+      "joke": "So I got a job as a real estate agent, thinking I'd be closing deals left and right. First property they give me? This empty lot. I drive this couple out there, dust blowing everywhere, and I go, 'Folks, check out this blank slate – endless possibilities!' The wife stares at the dirt and weeds and says, 'There's literally nothing here.' I lean in with my best smile and tell her, 'Exactly! No repairs, no HOA drama... just pure potential for you to ignore forever, like my commission on this one.'",
+      "text": "So I got a job as a real estate agent, thinking I'd be closing deals left and right. First property they give me? This empty lot. I drive this couple out there, dust blowing everywhere, and I go, 'Folks, check out this blank slate – endless possibilities!' The wife stares at the dirt and weeds and says, 'There's literally nothing here.' I lean in with my best smile and tell her, 'Exactly! No repairs, no HOA drama... just pure potential for you to ignore forever, like my commission on this one.'",
+      "setup": "",
+      "punchline": "So I got a job as a real estate agent, thinking I'd be closing deals left and right. First property they give me? This empty lot. I drive this couple out there, dust blowing everywhere, and I go, 'Folks, check out this blank slate – endless possibilities!' The wife stares at the dirt and weeds and says, 'There's literally nothing here.' I lean in with my best smile and tell her, 'Exactly! No repairs, no HOA drama... just pure potential for you to ignore forever, like my commission on this one.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Lot of Nothing",
+      "seedTermsUsed": [
+        "Real Estate Agent",
+        "Empty Lot"
+      ],
+      "joke": "I tried being a real estate agent, but I’m terrible at selling hope. Last week I showed a couple an empty lot and got so nervous I blurted out, “Picture your dream home right here… because that’s all you’re getting.” They left, and honestly, I don’t blame them. Even I wouldn’t buy imaginary granite countertops from me.",
+      "text": "I tried being a real estate agent, but I’m terrible at selling hope. Last week I showed a couple an empty lot and got so nervous I blurted out, “Picture your dream home right here… because that’s all you’re getting.” They left, and honestly, I don’t blame them. Even I wouldn’t buy imaginary granite countertops from me.",
+      "setup": "",
+      "punchline": "I tried being a real estate agent, but I’m terrible at selling hope. Last week I showed a couple an empty lot and got so nervous I blurted out, “Picture your dream home right here… because that’s all you’re getting.” They left, and honestly, I don’t blame them. Even I wouldn’t buy imaginary granite countertops from me."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Funny tactless-agent voice with several usable lines, but the setup wanders and the final turn is more clever than laugh-heavy."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear, economical real-estate spin on an empty lot with a decent final bush gag, though the open-concept angle is fairly expected."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 4,
+          "laugh": 5,
+          "comment": "Readable premise, but it runs long, the payoff is soft, and the commission/failure angle appears to pull in an extra seed concept."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean first-person setup with a sharper self-own than most of the batch; still more amusing than strongly laugh-out-loud."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean three-beat escalation (living room/kitchen/half bath) with natural dialogue; competent but the shape is familiar."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "'Pick a bush' lands mildly; framing as reported speech softens the timing versus direct first-person delivery."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Longer setup but the callback tying 'potential' to his own ignored commission is a nice non-obvious turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Tightest of the four; 'imaginary granite countertops' is a sharp, economical closer that actually carries the laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid execution of a familiar broke-buyer premise; the half-bath puddle line carries a nice mild punch."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Fun, absurdist escalation of an aggressive agent trope, though it leans slightly more towards a sketch character than standard stand-up rhythm."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent but relies heavily on standard stand-up cadence and a weak self-deprecating tag."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Economical and clean; the nervous agent angle works well, and the imaginary granite countertops punchline lands naturally."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid budget desperation bit with clean escalation."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Tactless insults land with strong rhythm and memorable snaps."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Optimistic empty-lot spin is amusing but familiar territory."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Self-deprecating agent perspective works but payoff is mild."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clear premise and a tidy turn; mildly funny with a consistent angle."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Strong character voice and escalation; long but lands a real joke."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clean construction and a coherent turn; pleasant but not strongly funny."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid first-person rhythm with a workable payoff; respectable mid-level joke."
+        }
+      ]
+    }
+  ]
+}
