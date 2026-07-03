@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-03-ext-real-2026-07-03",
+  "seed": "ext-real-2026-07-03",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-03T15:12:00.000Z",
+  "publishedDate": "2026-07-03",
+  "seedTerms": [
+    "War and Military",
+    "Firefighter",
+    "House Fire",
+    "Being bullied",
+    "Spunky",
+    "Confrontational"
+  ],
+  "premise": {
+    "text": "Seed terms: War and Military, Firefighter, House Fire, Being bullied, Spunky, Confrontational",
+    "seedTerms": [
+      "War and Military",
+      "Firefighter",
+      "House Fire",
+      "Being bullied",
+      "Spunky",
+      "Confrontational"
+    ],
+    "displayText": "Unsolicited Feedback"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Firefighter Origin Story",
+      "seedTermsUsed": [
+        "Firefighter",
+        "Being bullied"
+      ],
+      "joke": "I was bullied so much growing up that becoming a firefighter felt natural. Finally, people scream my name, point at danger, and I get praised for showing up with an axe.",
+      "setup": "",
+      "punchline": "I was bullied so much growing up that becoming a firefighter felt natural. Finally, people scream my name, point at danger, and I get praised for showing up with an axe.",
+      "text": "I was bullied so much growing up that becoming a firefighter felt natural. Finally, people scream my name, point at danger, and I get praised for showing up with an axe."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Trained Response",
+      "seedTermsUsed": [
+        "Firefighter",
+        "Being bullied"
+      ],
+      "joke": "I got bullied so badly as a kid that I grew up and became a firefighter. Everyone thinks that's brave. It's not brave, it's muscle memory. You spend twelve years running toward things that want to hurt you, eventually you just need a uniform and a hose to make it look intentional.",
+      "setup": "",
+      "punchline": "I got bullied so badly as a kid that I grew up and became a firefighter. Everyone thinks that's brave. It's not brave, it's muscle memory. You spend twelve years running toward things that want to hurt you, eventually you just need a uniform and a hose to make it look intentional.",
+      "text": "I got bullied so badly as a kid that I grew up and became a firefighter. Everyone thinks that's brave. It's not brave, it's muscle memory. You spend twelve years running toward things that want to hurt you, eventually you just need a uniform and a hose to make it look intentional."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Unsolicited Feedback",
+      "seedTermsUsed": [
+        "Confrontational",
+        "House Fire"
+      ],
+      "joke": "I'm so naturally confrontational that I view basic emergency warnings as a personal attack. Last week my neighbor pounded on my door at 3 AM screaming, \"Get out, your house is on fire!\" And my immediate instinct was to cross my arms, glare through the peephole, and say, \"Oh, so now we're policing how I heat my own living room, Greg?\"",
+      "setup": "",
+      "punchline": "I'm so naturally confrontational that I view basic emergency warnings as a personal attack. Last week my neighbor pounded on my door at 3 AM screaming, \"Get out, your house is on fire!\" And my immediate instinct was to cross my arms, glare through the peephole, and say, \"Oh, so now we're policing how I heat my own living room, Greg?\"",
+      "text": "I'm so naturally confrontational that I view basic emergency warnings as a personal attack. Last week my neighbor pounded on my door at 3 AM screaming, \"Get out, your house is on fire!\" And my immediate instinct was to cross my arms, glare through the peephole, and say, \"Oh, so now we're policing how I heat my own living room, Greg?\""
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Spunky Survivor",
+      "seedTermsUsed": [
+        "Being bullied",
+        "Spunky"
+      ],
+      "joke": "I got picked on constantly growing up, but I stayed spunky, always mouthing off and standing my ground. One day this huge bully shoves me into a locker and I yell, 'That all you got?' He laughs and says, 'Kid, keep that energy.' Years later at my first job, my boss does the exact same thing. Turns out spunky just means free entertainment for people who can actually hit back.",
+      "setup": "",
+      "punchline": "I got picked on constantly growing up, but I stayed spunky, always mouthing off and standing my ground. One day this huge bully shoves me into a locker and I yell, 'That all you got?' He laughs and says, 'Kid, keep that energy.' Years later at my first job, my boss does the exact same thing. Turns out spunky just means free entertainment for people who can actually hit back.",
+      "text": "I got picked on constantly growing up, but I stayed spunky, always mouthing off and standing my ground. One day this huge bully shoves me into a locker and I yell, 'That all you got?' He laughs and says, 'Kid, keep that energy.' Years later at my first job, my boss does the exact same thing. Turns out spunky just means free entertainment for people who can actually hit back."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Hotshot Rookie",
+      "seedTermsUsed": [
+        "Firefighter",
+        "House Fire"
+      ],
+      "joke": "I once volunteered with a local fire crew, and on my first real house fire I tried to sound brave. I kicked the door, yelled \"I've got this!\" and immediately set off the homeowner's singing fish plaque. Nothing humbles you faster than charging into danger while a plastic trout belts out \"Take Me to the River.\"",
+      "setup": "",
+      "punchline": "I once volunteered with a local fire crew, and on my first real house fire I tried to sound brave. I kicked the door, yelled \"I've got this!\" and immediately set off the homeowner's singing fish plaque. Nothing humbles you faster than charging into danger while a plastic trout belts out \"Take Me to the River.\"",
+      "text": "I once volunteered with a local fire crew, and on my first real house fire I tried to sound brave. I kicked the door, yelled \"I've got this!\" and immediately set off the homeowner's singing fish plaque. Nothing humbles you faster than charging into danger while a plastic trout belts out \"Take Me to the River.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong premise and clean final turn; more clever than explosive but genuinely stage-ready.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Best laugh here; the peephole confrontation escalates naturally to a sharp final line.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.9
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and has a real angle, but the workplace locker beat strains plausibility and softens the payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Concrete visual and strong rhythm; the singing fish gag is familiar but lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean reframe, tight economy, punchline lands but is fairly predictable once setup is clear.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fun escalation with 'Greg' specificity gives it a real comic beat; premise is well-drawn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Decent structure but tag line ('free entertainment for people who can actually hit back') is a bit muddled and undercuts the punch.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.7
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Vivid, specific image (the singing fish plaque) gives genuine surprise and a strong closing line.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 7.6
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Tight and economical. The transition from bullying trauma to the socially acceptable wielding of an axe is a sharp, satisfying turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent psychological twist. Reframing bravery as traumatized muscle memory gives it a great cynical stage rhythm.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.9
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The narrative leap to the boss doing the exact same thing is physically confusing, breaking the reality of the premise and weakening the final definition of spunk.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.8999999999999995
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relies on a very dated novelty item (the singing fish) for the punchline, making it feel more like a generic 90s sitcom outtake than fresh stand-up.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 5.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid twist but predictable arc and mild payoff.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong muscle-memory insight with good escalation.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Sharp premise, natural delivery, killer punchline.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Absurd singing fish image lands well but premise is lighter.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 7.2
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise with a tidy firefighter-bullying link; mildly funny but not sharply surprising.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Consistent first-person rhythm and a workable turn; pleasant joke with modest lift.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong premise and a vivid escalation; funny image though slightly overextended.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean setup and a workable reversal; spunky angle lands a mild real laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.4,
+      "rawScore": 7.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.3,
+        "surprise": 7.3,
+        "craft": 7.5,
+        "originality": 7,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7.3,
+        "craft": 7.5,
+        "originality": 7,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 8,
+          "rawScore": 7.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Best laugh here; the peephole confrontation escalates naturally to a sharp final line."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.1,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0,
+          "comment": "Fun escalation with 'Greg' specificity gives it a real comic beat; premise is well-drawn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.6,
+          "rawScore": 8,
+          "scoreAdjustment": -0.4,
+          "comment": "Sharp premise, natural delivery, killer punchline."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.8,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong premise and a vivid escalation; funny image though slightly overextended."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7.1,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 6.7,
+        "craft": 7.5,
+        "originality": 6.7,
+        "promptFit": 7.7
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 6.8,
+        "craft": 7.5,
+        "originality": 6.8,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.4,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong premise and clean final turn; more clever than explosive but genuinely stage-ready."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.8,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Excellent psychological twist. Reframing bravery as traumatized muscle memory gives it a great cynical stage rhythm."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong muscle-memory insight with good escalation."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.4,
+          "comment": "Consistent first-person rhythm and a workable turn; pleasant joke with modest lift."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.7,
+      "rawScore": 6.9,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 6.6,
+        "craft": 7.1,
+        "originality": 6.6,
+        "promptFit": 7.6
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.4,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Concrete visual and strong rhythm; the singing fish gag is familiar but lands cleanly."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.6,
+          "rawScore": 7.6,
+          "scoreAdjustment": 0,
+          "comment": "Vivid, specific image (the singing fish plaque) gives genuine surprise and a strong closing line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.2,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Relies on a very dated novelty item (the singing fish) for the punchline, making it feel more like a generic 90s sitcom outtake than fresh stand-up."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Absurd singing fish image lands well but premise is lighter."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 5.7,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 7.7
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Clean reframe, tight economy, punchline lands but is fairly predictable once setup is clear."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Tight and economical. The transition from bullying trauma to the socially acceptable wielding of an axe is a sharp, satisfying turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid twist but predictable arc and mild payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear premise with a tidy firefighter-bullying link; mildly funny but not sharply surprising."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.8,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Understandable and has a real angle, but the workplace locker beat strains plausibility and softens the payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.7,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0,
+          "comment": "Decent structure but tag line ('free entertainment for people who can actually hit back') is a bit muddled and undercuts the punch."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.8,
+          "rawScore": 4.9,
+          "scoreAdjustment": -0.1,
+          "comment": "The narrative leap to the boss doing the exact same thing is physically confusing, breaking the reality of the premise and weakening the final definition of spunk."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Clean setup and a workable reversal; spunky angle lands a mild real laugh."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-03-ext-real-2026-07-03.jpg",
+    "originalSrc": "assets/feature-images/2026-07-03-ext-real-2026-07-03.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Unsolicited Feedback: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Unsolicited Feedback\nExact joke text to render in the right panel:\nI'm so naturally confrontational that I view basic emergency warnings as a personal attack. Last week my neighbor pounded on my door at 3 AM screaming, \"Get out, your house is on fire!\" And my immediate instinct was to cross my arms, glare through the peephole, and say, \"Oh, so now we're policing how I heat my own living room, Greg?\"\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: War and Military, Firefighter, House Fire, Being bullied, Spunky, Confrontational.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: War and Military, Firefighter, House Fire, Being bullied, Spunky, Confrontational. Use the winning joke titled \"Unsolicited Feedback\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.3,
+      "google": 6.5,
+      "xai": 6.7,
+      "copilot": 5.9
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-03-ext-real-2026-07-03.md"
+}

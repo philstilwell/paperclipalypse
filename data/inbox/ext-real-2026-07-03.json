@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-03T15:12:00.000Z",
+  "publishedDate": "2026-07-03",
+  "seed": "ext-real-2026-07-03",
+  "slug": "2026-07-03-ext-real-2026-07-03",
+  "source": "manual-external",
+  "seedTerms": [
+    "War and Military",
+    "Firefighter",
+    "House Fire",
+    "Being bullied",
+    "Spunky",
+    "Confrontational"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Firefighter Origin Story",
+      "seedTermsUsed": [
+        "Firefighter",
+        "Being bullied"
+      ],
+      "joke": "I was bullied so much growing up that becoming a firefighter felt natural. Finally, people scream my name, point at danger, and I get praised for showing up with an axe.",
+      "text": "I was bullied so much growing up that becoming a firefighter felt natural. Finally, people scream my name, point at danger, and I get praised for showing up with an axe.",
+      "setup": "",
+      "punchline": "I was bullied so much growing up that becoming a firefighter felt natural. Finally, people scream my name, point at danger, and I get praised for showing up with an axe."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Trained Response",
+      "seedTermsUsed": [
+        "Firefighter",
+        "Being bullied"
+      ],
+      "joke": "I got bullied so badly as a kid that I grew up and became a firefighter. Everyone thinks that's brave. It's not brave, it's muscle memory. You spend twelve years running toward things that want to hurt you, eventually you just need a uniform and a hose to make it look intentional.",
+      "text": "I got bullied so badly as a kid that I grew up and became a firefighter. Everyone thinks that's brave. It's not brave, it's muscle memory. You spend twelve years running toward things that want to hurt you, eventually you just need a uniform and a hose to make it look intentional.",
+      "setup": "",
+      "punchline": "I got bullied so badly as a kid that I grew up and became a firefighter. Everyone thinks that's brave. It's not brave, it's muscle memory. You spend twelve years running toward things that want to hurt you, eventually you just need a uniform and a hose to make it look intentional."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Unsolicited Feedback",
+      "seedTermsUsed": [
+        "Confrontational",
+        "House Fire"
+      ],
+      "joke": "I'm so naturally confrontational that I view basic emergency warnings as a personal attack. Last week my neighbor pounded on my door at 3 AM screaming, \"Get out, your house is on fire!\" And my immediate instinct was to cross my arms, glare through the peephole, and say, \"Oh, so now we're policing how I heat my own living room, Greg?\"",
+      "text": "I'm so naturally confrontational that I view basic emergency warnings as a personal attack. Last week my neighbor pounded on my door at 3 AM screaming, \"Get out, your house is on fire!\" And my immediate instinct was to cross my arms, glare through the peephole, and say, \"Oh, so now we're policing how I heat my own living room, Greg?\"",
+      "setup": "",
+      "punchline": "I'm so naturally confrontational that I view basic emergency warnings as a personal attack. Last week my neighbor pounded on my door at 3 AM screaming, \"Get out, your house is on fire!\" And my immediate instinct was to cross my arms, glare through the peephole, and say, \"Oh, so now we're policing how I heat my own living room, Greg?\""
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Spunky Survivor",
+      "seedTermsUsed": [
+        "Being bullied",
+        "Spunky"
+      ],
+      "joke": "I got picked on constantly growing up, but I stayed spunky, always mouthing off and standing my ground. One day this huge bully shoves me into a locker and I yell, 'That all you got?' He laughs and says, 'Kid, keep that energy.' Years later at my first job, my boss does the exact same thing. Turns out spunky just means free entertainment for people who can actually hit back.",
+      "text": "I got picked on constantly growing up, but I stayed spunky, always mouthing off and standing my ground. One day this huge bully shoves me into a locker and I yell, 'That all you got?' He laughs and says, 'Kid, keep that energy.' Years later at my first job, my boss does the exact same thing. Turns out spunky just means free entertainment for people who can actually hit back.",
+      "setup": "",
+      "punchline": "I got picked on constantly growing up, but I stayed spunky, always mouthing off and standing my ground. One day this huge bully shoves me into a locker and I yell, 'That all you got?' He laughs and says, 'Kid, keep that energy.' Years later at my first job, my boss does the exact same thing. Turns out spunky just means free entertainment for people who can actually hit back."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Hotshot Rookie",
+      "seedTermsUsed": [
+        "Firefighter",
+        "House Fire"
+      ],
+      "joke": "I once volunteered with a local fire crew, and on my first real house fire I tried to sound brave. I kicked the door, yelled \"I've got this!\" and immediately set off the homeowner's singing fish plaque. Nothing humbles you faster than charging into danger while a plastic trout belts out \"Take Me to the River.\"",
+      "text": "I once volunteered with a local fire crew, and on my first real house fire I tried to sound brave. I kicked the door, yelled \"I've got this!\" and immediately set off the homeowner's singing fish plaque. Nothing humbles you faster than charging into danger while a plastic trout belts out \"Take Me to the River.\"",
+      "setup": "",
+      "punchline": "I once volunteered with a local fire crew, and on my first real house fire I tried to sound brave. I kicked the door, yelled \"I've got this!\" and immediately set off the homeowner's singing fish plaque. Nothing humbles you faster than charging into danger while a plastic trout belts out \"Take Me to the River.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong premise and clean final turn; more clever than explosive but genuinely stage-ready."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "Best laugh here; the peephole confrontation escalates naturally to a sharp final line."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Understandable and has a real angle, but the workplace locker beat strains plausibility and softens the payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Concrete visual and strong rhythm; the singing fish gag is familiar but lands cleanly."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean reframe, tight economy, punchline lands but is fairly predictable once setup is clear."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Fun escalation with 'Greg' specificity gives it a real comic beat; premise is well-drawn."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Decent structure but tag line ('free entertainment for people who can actually hit back') is a bit muddled and undercuts the punch."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Vivid, specific image (the singing fish plaque) gives genuine surprise and a strong closing line."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Tight and economical. The transition from bullying trauma to the socially acceptable wielding of an axe is a sharp, satisfying turn."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "Excellent psychological twist. Reframing bravery as traumatized muscle memory gives it a great cynical stage rhythm."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The narrative leap to the boss doing the exact same thing is physically confusing, breaking the reality of the premise and weakening the final definition of spunk."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Relies on a very dated novelty item (the singing fish) for the punchline, making it feel more like a generic 90s sitcom outtake than fresh stand-up."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid twist but predictable arc and mild payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong muscle-memory insight with good escalation."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Sharp premise, natural delivery, killer punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Absurd singing fish image lands well but premise is lighter."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clear premise with a tidy firefighter-bullying link; mildly funny but not sharply surprising."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Consistent first-person rhythm and a workable turn; pleasant joke with modest lift."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Strong premise and a vivid escalation; funny image though slightly overextended."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean setup and a workable reversal; spunky angle lands a mild real laugh."
+        }
+      ]
+    }
+  ]
+}
