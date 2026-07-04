@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-04T14:03:01.347Z",
+  "publishedDate": "2026-07-04",
+  "seed": "ext-real-2026-07-04",
+  "slug": "2026-07-04-ext-real-2026-07-04",
+  "source": "manual-external",
+  "seedTerms": [
+    "Sports",
+    "Bartender",
+    "Art Gallery",
+    "Being recognized",
+    "Extroverted",
+    "Sleazy"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Gallery Defense",
+      "seedTermsUsed": [
+        "Sports",
+        "Art Gallery"
+      ],
+      "joke": "I went to an art gallery and realized I watch too much sports. Everyone was standing silently in front of one canvas, so I leaned over and whispered, 'What’s the score?' The guide said, 'There is no score. It’s a conversation between color, space, and silence.' I said, 'So nobody’s playing defense.'",
+      "setup": "",
+      "punchline": "I went to an art gallery and realized I watch too much sports. Everyone was standing silently in front of one canvas, so I leaned over and whispered, 'What’s the score?' The guide said, 'There is no score. It’s a conversation between color, space, and silence.' I said, 'So nobody’s playing defense.'",
+      "text": "I went to an art gallery and realized I watch too much sports. Everyone was standing silently in front of one canvas, so I leaned over and whispered, 'What’s the score?' The guide said, 'There is no score. It’s a conversation between color, space, and silence.' I said, 'So nobody’s playing defense.'"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Last Call Sommelier",
+      "seedTermsUsed": [
+        "Bartender",
+        "Sleazy"
+      ],
+      "joke": "I tended bar for a while, and I learned real fast that 'let me buy you a drink' is just a sleazy guy's way of saying 'I'd like to purchase your attention in a recurring subscription model.' One dude sent a girl a drink, she said no thanks, so he had me send it back to him. Refunded. Emotionally and financially, that man is a returns department.",
+      "setup": "",
+      "punchline": "I tended bar for a while, and I learned real fast that 'let me buy you a drink' is just a sleazy guy's way of saying 'I'd like to purchase your attention in a recurring subscription model.' One dude sent a girl a drink, she said no thanks, so he had me send it back to him. Refunded. Emotionally and financially, that man is a returns department.",
+      "text": "I tended bar for a while, and I learned real fast that 'let me buy you a drink' is just a sleazy guy's way of saying 'I'd like to purchase your attention in a recurring subscription model.' One dude sent a girl a drink, she said no thanks, so he had me send it back to him. Refunded. Emotionally and financially, that man is a returns department."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Situational Fame",
+      "seedTermsUsed": [
+        "Being recognized",
+        "Bartender"
+      ],
+      "joke": "People talk about the thrill of being recognized. Trust me, it's highly situational. It’s flattering if you’re an actor at a premiere. It is absolutely devastating when you walk into an airport Chili's at 10 AM on a Tuesday, and the bartender instantly shouts, 'The usual bucket of wings, Phil?!' That’s not fame, Kevin. That’s a cry for help.",
+      "setup": "",
+      "punchline": "People talk about the thrill of being recognized. Trust me, it's highly situational. It’s flattering if you’re an actor at a premiere. It is absolutely devastating when you walk into an airport Chili's at 10 AM on a Tuesday, and the bartender instantly shouts, 'The usual bucket of wings, Phil?!' That’s not fame, Kevin. That’s a cry for help.",
+      "text": "People talk about the thrill of being recognized. Trust me, it's highly situational. It’s flattering if you’re an actor at a premiere. It is absolutely devastating when you walk into an airport Chili's at 10 AM on a Tuesday, and the bartender instantly shouts, 'The usual bucket of wings, Phil?!' That’s not fame, Kevin. That’s a cry for help."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Recognized at the Game",
+      "seedTermsUsed": [
+        "Sports",
+        "Being recognized"
+      ],
+      "joke": "I went to the big game last weekend, trying to blend in with the crowd. Suddenly this dude points at me and yells, 'Hey! I know you!' My heart skips—finally, a fan. He runs over and goes, 'You're that guy who tripped over the nachos on the Jumbotron last season!' Yeah, thanks buddy. Twenty thousand people, and I'm the one they remember for face-planting into cheese.",
+      "setup": "",
+      "punchline": "I went to the big game last weekend, trying to blend in with the crowd. Suddenly this dude points at me and yells, 'Hey! I know you!' My heart skips—finally, a fan. He runs over and goes, 'You're that guy who tripped over the nachos on the Jumbotron last season!' Yeah, thanks buddy. Twenty thousand people, and I'm the one they remember for face-planting into cheese.",
+      "text": "I went to the big game last weekend, trying to blend in with the crowd. Suddenly this dude points at me and yells, 'Hey! I know you!' My heart skips—finally, a fan. He runs over and goes, 'You're that guy who tripped over the nachos on the Jumbotron last season!' Yeah, thanks buddy. Twenty thousand people, and I'm the one they remember for face-planting into cheese."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Gallery Mix-Up",
+      "seedTermsUsed": [
+        "Art Gallery",
+        "Being recognized"
+      ],
+      "joke": "I walked into this fancy art gallery, and before I could even pretend to understand a single painting, the curator rushed over like, 'Oh my gosh, you’re back!' I had never been there in my life. But I went with it. I nodded thoughtfully at a blank canvas and said, 'Yeah, this one really captures my divorce.' They applauded. I’ve never been recognized for absolutely nothing so confidently.",
+      "setup": "",
+      "punchline": "I walked into this fancy art gallery, and before I could even pretend to understand a single painting, the curator rushed over like, 'Oh my gosh, you’re back!' I had never been there in my life. But I went with it. I nodded thoughtfully at a blank canvas and said, 'Yeah, this one really captures my divorce.' They applauded. I’ve never been recognized for absolutely nothing so confidently.",
+      "text": "I walked into this fancy art gallery, and before I could even pretend to understand a single painting, the curator rushed over like, 'Oh my gosh, you’re back!' I had never been there in my life. But I went with it. I nodded thoughtfully at a blank canvas and said, 'Yeah, this one really captures my divorce.' They applauded. I’ve never been recognized for absolutely nothing so confidently."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise with clean escalation and a sharp final metaphor; a bit wordy but lands well."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clear, relatable recognition reversal with a solid image; final tag is funny but slightly over-explains."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Understandable and amusing, but the Jumbotron embarrassment angle is familiar and the punchline mostly restates the setup."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Readable and mildly funny, but blank-canvas art-gallery confusion is a familiar route and the final line is more summary than punch."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean stage premise, but sports-vs-art template and defense punchline are fairly predictable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Vivid specific image (Chili's, wing bucket) sells it; the Kevin aside slightly breaks pure monologue form."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid embarrassing-recognition bit, but famous-for-a-blooper is a familiar comic shape."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Confident nonsense turn (the divorce line) is the strongest non-obvious beat in the batch; tight closer."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong clash of contexts with a crisp, natural punchline that fits a spoken-word rhythm perfectly."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "The 'returns department' punchline is excellent and memorable, though the 'subscription model' setup feels slightly literary rather than conversational."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "A coherent setup, but it relies heavily on a familiar sitcom trope (the embarrassing Jumbotron moment) rather than discovering a fresh comic angle."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "A smoothly constructed mistaken identity bit with decent escalation, though 'my divorce on a blank canvas' leans on a very standard art gallery comedy target."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid mashup but predictable sports-in-art punchline."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clever refund metaphor lands mildly; relatable bar energy."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong relatable contrast and sharp final snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun mistaken-identity premise with decent escalation."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise with a sports-gallery contrast; mild but real laugh on the final line."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid bartender angle with a decent turn; wording is natural and the closer lands modestly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Strong situational recognition gag with a clear stage image; good timing and a satisfying final beat."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Relatable sports-crowd embarrassment; straightforward but effective first-person rhythm."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-04-ext-real-2026-07-04",
+  "seed": "ext-real-2026-07-04",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-04T14:03:01.347Z",
+  "publishedDate": "2026-07-04",
+  "seedTerms": [
+    "Sports",
+    "Bartender",
+    "Art Gallery",
+    "Being recognized",
+    "Extroverted",
+    "Sleazy"
+  ],
+  "premise": {
+    "text": "Seed terms: Sports, Bartender, Art Gallery, Being recognized, Extroverted, Sleazy",
+    "seedTerms": [
+      "Sports",
+      "Bartender",
+      "Art Gallery",
+      "Being recognized",
+      "Extroverted",
+      "Sleazy"
+    ],
+    "displayText": "Situational Fame"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Gallery Defense",
+      "seedTermsUsed": [
+        "Sports",
+        "Art Gallery"
+      ],
+      "joke": "I went to an art gallery and realized I watch too much sports. Everyone was standing silently in front of one canvas, so I leaned over and whispered, 'What’s the score?' The guide said, 'There is no score. It’s a conversation between color, space, and silence.' I said, 'So nobody’s playing defense.'",
+      "setup": "",
+      "punchline": "I went to an art gallery and realized I watch too much sports. Everyone was standing silently in front of one canvas, so I leaned over and whispered, 'What’s the score?' The guide said, 'There is no score. It’s a conversation between color, space, and silence.' I said, 'So nobody’s playing defense.'",
+      "text": "I went to an art gallery and realized I watch too much sports. Everyone was standing silently in front of one canvas, so I leaned over and whispered, 'What’s the score?' The guide said, 'There is no score. It’s a conversation between color, space, and silence.' I said, 'So nobody’s playing defense.'"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Last Call Sommelier",
+      "seedTermsUsed": [
+        "Bartender",
+        "Sleazy"
+      ],
+      "joke": "I tended bar for a while, and I learned real fast that 'let me buy you a drink' is just a sleazy guy's way of saying 'I'd like to purchase your attention in a recurring subscription model.' One dude sent a girl a drink, she said no thanks, so he had me send it back to him. Refunded. Emotionally and financially, that man is a returns department.",
+      "setup": "",
+      "punchline": "I tended bar for a while, and I learned real fast that 'let me buy you a drink' is just a sleazy guy's way of saying 'I'd like to purchase your attention in a recurring subscription model.' One dude sent a girl a drink, she said no thanks, so he had me send it back to him. Refunded. Emotionally and financially, that man is a returns department.",
+      "text": "I tended bar for a while, and I learned real fast that 'let me buy you a drink' is just a sleazy guy's way of saying 'I'd like to purchase your attention in a recurring subscription model.' One dude sent a girl a drink, she said no thanks, so he had me send it back to him. Refunded. Emotionally and financially, that man is a returns department."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Situational Fame",
+      "seedTermsUsed": [
+        "Being recognized",
+        "Bartender"
+      ],
+      "joke": "People talk about the thrill of being recognized. Trust me, it's highly situational. It’s flattering if you’re an actor at a premiere. It is absolutely devastating when you walk into an airport Chili's at 10 AM on a Tuesday, and the bartender instantly shouts, 'The usual bucket of wings, Phil?!' That’s not fame, Kevin. That’s a cry for help.",
+      "setup": "",
+      "punchline": "People talk about the thrill of being recognized. Trust me, it's highly situational. It’s flattering if you’re an actor at a premiere. It is absolutely devastating when you walk into an airport Chili's at 10 AM on a Tuesday, and the bartender instantly shouts, 'The usual bucket of wings, Phil?!' That’s not fame, Kevin. That’s a cry for help.",
+      "text": "People talk about the thrill of being recognized. Trust me, it's highly situational. It’s flattering if you’re an actor at a premiere. It is absolutely devastating when you walk into an airport Chili's at 10 AM on a Tuesday, and the bartender instantly shouts, 'The usual bucket of wings, Phil?!' That’s not fame, Kevin. That’s a cry for help."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Recognized at the Game",
+      "seedTermsUsed": [
+        "Sports",
+        "Being recognized"
+      ],
+      "joke": "I went to the big game last weekend, trying to blend in with the crowd. Suddenly this dude points at me and yells, 'Hey! I know you!' My heart skips—finally, a fan. He runs over and goes, 'You're that guy who tripped over the nachos on the Jumbotron last season!' Yeah, thanks buddy. Twenty thousand people, and I'm the one they remember for face-planting into cheese.",
+      "setup": "",
+      "punchline": "I went to the big game last weekend, trying to blend in with the crowd. Suddenly this dude points at me and yells, 'Hey! I know you!' My heart skips—finally, a fan. He runs over and goes, 'You're that guy who tripped over the nachos on the Jumbotron last season!' Yeah, thanks buddy. Twenty thousand people, and I'm the one they remember for face-planting into cheese.",
+      "text": "I went to the big game last weekend, trying to blend in with the crowd. Suddenly this dude points at me and yells, 'Hey! I know you!' My heart skips—finally, a fan. He runs over and goes, 'You're that guy who tripped over the nachos on the Jumbotron last season!' Yeah, thanks buddy. Twenty thousand people, and I'm the one they remember for face-planting into cheese."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Gallery Mix-Up",
+      "seedTermsUsed": [
+        "Art Gallery",
+        "Being recognized"
+      ],
+      "joke": "I walked into this fancy art gallery, and before I could even pretend to understand a single painting, the curator rushed over like, 'Oh my gosh, you’re back!' I had never been there in my life. But I went with it. I nodded thoughtfully at a blank canvas and said, 'Yeah, this one really captures my divorce.' They applauded. I’ve never been recognized for absolutely nothing so confidently.",
+      "setup": "",
+      "punchline": "I walked into this fancy art gallery, and before I could even pretend to understand a single painting, the curator rushed over like, 'Oh my gosh, you’re back!' I had never been there in my life. But I went with it. I nodded thoughtfully at a blank canvas and said, 'Yeah, this one really captures my divorce.' They applauded. I’ve never been recognized for absolutely nothing so confidently.",
+      "text": "I walked into this fancy art gallery, and before I could even pretend to understand a single painting, the curator rushed over like, 'Oh my gosh, you’re back!' I had never been there in my life. But I went with it. I nodded thoughtfully at a blank canvas and said, 'Yeah, this one really captures my divorce.' They applauded. I’ve never been recognized for absolutely nothing so confidently."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong premise with clean escalation and a sharp final metaphor; a bit wordy but lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear, relatable recognition reversal with a solid image; final tag is funny but slightly over-explains.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and amusing, but the Jumbotron embarrassment angle is familiar and the punchline mostly restates the setup.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Readable and mildly funny, but blank-canvas art-gallery confusion is a familiar route and the final line is more summary than punch.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean stage premise, but sports-vs-art template and defense punchline are fairly predictable.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid specific image (Chili's, wing bucket) sells it; the Kevin aside slightly breaks pure monologue form.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid embarrassing-recognition bit, but famous-for-a-blooper is a familiar comic shape.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Confident nonsense turn (the divorce line) is the strongest non-obvious beat in the batch; tight closer.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong clash of contexts with a crisp, natural punchline that fits a spoken-word rhythm perfectly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "The 'returns department' punchline is excellent and memorable, though the 'subscription model' setup feels slightly literary rather than conversational.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 7.800000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "A coherent setup, but it relies heavily on a familiar sitcom trope (the embarrassing Jumbotron moment) rather than discovering a fresh comic angle.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A smoothly constructed mistaken identity bit with decent escalation, though 'my divorce on a blank canvas' leans on a very standard art gallery comedy target.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid mashup but predictable sports-in-art punchline.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clever refund metaphor lands mildly; relatable bar energy.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong relatable contrast and sharp final snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Fun mistaken-identity premise with decent escalation.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a sports-gallery contrast; mild but real laugh on the final line.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid bartender angle with a decent turn; wording is natural and the closer lands modestly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong situational recognition gag with a clear stage image; good timing and a satisfying final beat.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 6.800000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relatable sports-crowd embarrassment; straightforward but effective first-person rhythm.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.900000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7,
+      "rawScore": 7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 7.3,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 7.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear, relatable recognition reversal with a solid image; final tag is funny but slightly over-explains."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.7,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Vivid specific image (Chili's, wing bucket) sells it; the Kevin aside slightly breaks pure monologue form."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong relatable contrast and sharp final snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.3,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0.5,
+          "comment": "Strong situational recognition gag with a clear stage image; good timing and a satisfying final beat."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.9,
+      "rawScore": 7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 6.7,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 6.8,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.3,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong premise with clean escalation and a sharp final metaphor; a bit wordy but lands well."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.1,
+          "comment": "The 'returns department' punchline is excellent and memorable, though the 'subscription model' setup feels slightly literary rather than conversational."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.2,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Clever refund metaphor lands mildly; relatable bar energy."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.5,
+          "comment": "Solid bartender angle with a decent turn; wording is natural and the closer lands modestly."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 7.8
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean stage premise, but sports-vs-art template and defense punchline are fairly predictable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.2,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong clash of contexts with a crisp, natural punchline that fits a spoken-word rhythm perfectly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid mashup but predictable sports-in-art punchline."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.5,
+          "comment": "Clean premise with a sports-gallery contrast; mild but real laugh on the final line."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.4,
+      "rawScore": 6.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.1,
+        "craft": 6.6,
+        "originality": 5.9,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Readable and mildly funny, but blank-canvas art-gallery confusion is a familiar route and the final line is more summary than punch."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.1,
+          "rawScore": 7,
+          "scoreAdjustment": 0.1,
+          "comment": "Confident nonsense turn (the divorce line) is the strongest non-obvious beat in the batch; tight closer."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "A smoothly constructed mistaken identity bit with decent escalation, though 'my divorce on a blank canvas' leans on a very standard art gallery comedy target."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Fun mistaken-identity premise with decent escalation."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.1,
+        "craft": 6.1,
+        "originality": 5.4,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Understandable and amusing, but the Jumbotron embarrassment angle is familiar and the punchline mostly restates the setup."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Solid embarrassing-recognition bit, but famous-for-a-blooper is a familiar comic shape."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.1,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.1,
+          "comment": "A coherent setup, but it relies heavily on a familiar sitcom trope (the embarrassing Jumbotron moment) rather than discovering a fresh comic angle."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.5,
+          "comment": "Relatable sports-crowd embarrassment; straightforward but effective first-person rhythm."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-04-ext-real-2026-07-04.jpg",
+    "originalSrc": "assets/feature-images/2026-07-04-ext-real-2026-07-04.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Situational Fame: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Situational Fame\nExact joke text to render in the right panel:\nPeople talk about the thrill of being recognized. Trust me, it's highly situational. It’s flattering if you’re an actor at a premiere. It is absolutely devastating when you walk into an airport Chili's at 10 AM on a Tuesday, and the bartender instantly shouts, 'The usual bucket of wings, Phil?!' That’s not fame, Kevin. That’s a cry for help.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Sports, Bartender, Art Gallery, Being recognized, Extroverted, Sleazy.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Sports, Bartender, Art Gallery, Being recognized, Extroverted, Sleazy. Use the winning joke titled \"Situational Fame\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.3,
+      "google": 6.5,
+      "xai": 6.8,
+      "copilot": 5.9
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-04-ext-real-2026-07-04.md"
+}
