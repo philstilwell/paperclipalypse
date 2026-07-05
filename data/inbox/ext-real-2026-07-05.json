@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-05T14:01:09.307Z",
+  "publishedDate": "2026-07-05",
+  "seed": "ext-real-2026-07-05",
+  "slug": "2026-07-05-ext-real-2026-07-05",
+  "source": "manual-external",
+  "seedTerms": [
+    "Whodunit",
+    "Nanny",
+    "Shooting Range",
+    "Experiencing a crisis of self-doubt",
+    "Disciplined",
+    "Martyr"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Sticky Evidence",
+      "seedTermsUsed": [
+        "Whodunit",
+        "Nanny"
+      ],
+      "joke": "I hired a nanny who treats every mess like a whodunit. I come home, there’s applesauce on the ceiling, and she lines up the toddlers like, “One of you had motive, access, and terrible grip strength.” Then she dusts the high chair for prints. Ma’am, they’re all sticky. That’s not evidence; that’s their whole personality.",
+      "setup": "",
+      "punchline": "I hired a nanny who treats every mess like a whodunit. I come home, there’s applesauce on the ceiling, and she lines up the toddlers like, “One of you had motive, access, and terrible grip strength.” Then she dusts the high chair for prints. Ma’am, they’re all sticky. That’s not evidence; that’s their whole personality.",
+      "text": "I hired a nanny who treats every mess like a whodunit. I come home, there’s applesauce on the ceiling, and she lines up the toddlers like, “One of you had motive, access, and terrible grip strength.” Then she dusts the high chair for prints. Ma’am, they’re all sticky. That’s not evidence; that’s their whole personality."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Nanny Whodunit",
+      "seedTermsUsed": [
+        "Whodunit",
+        "Nanny"
+      ],
+      "joke": "I hired a nanny who used to host murder mystery dinner parties for a living, and I did not think that through. Every bath time, she interrogates my toddler like there's a body in the tub. 'Where were you at 6 PM? Who had access to the rubber duck? Someone in this room is lying about eating the soap.' My son is two. He just confessed to everything just to make it stop.",
+      "setup": "",
+      "punchline": "I hired a nanny who used to host murder mystery dinner parties for a living, and I did not think that through. Every bath time, she interrogates my toddler like there's a body in the tub. 'Where were you at 6 PM? Who had access to the rubber duck? Someone in this room is lying about eating the soap.' My son is two. He just confessed to everything just to make it stop.",
+      "text": "I hired a nanny who used to host murder mystery dinner parties for a living, and I did not think that through. Every bath time, she interrogates my toddler like there's a body in the tub. 'Where were you at 6 PM? Who had access to the rubber duck? Someone in this room is lying about eating the soap.' My son is two. He just confessed to everything just to make it stop."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Tactical DJ",
+      "seedTermsUsed": [
+        "Shooting Range",
+        "Experiencing a crisis of self-doubt"
+      ],
+      "joke": "I went to a shooting range to feel tough, but it just sent me into a massive crisis of self-doubt. It’s impossible to feel like John Wick when you're wearing rented safety goggles over your prescription glasses and bright neon earmuffs that make you look like a tactical DJ. I paid fifty bucks just to violently flinch at my own weapon, miss a stationary piece of paper, and instinctively whisper, 'My bad,' every time I pulled the trigger.",
+      "setup": "",
+      "punchline": "I went to a shooting range to feel tough, but it just sent me into a massive crisis of self-doubt. It’s impossible to feel like John Wick when you're wearing rented safety goggles over your prescription glasses and bright neon earmuffs that make you look like a tactical DJ. I paid fifty bucks just to violently flinch at my own weapon, miss a stationary piece of paper, and instinctively whisper, 'My bad,' every time I pulled the trigger.",
+      "text": "I went to a shooting range to feel tough, but it just sent me into a massive crisis of self-doubt. It’s impossible to feel like John Wick when you're wearing rented safety goggles over your prescription glasses and bright neon earmuffs that make you look like a tactical DJ. I paid fifty bucks just to violently flinch at my own weapon, miss a stationary piece of paper, and instinctively whisper, 'My bad,' every time I pulled the trigger."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Target Practice for the Soul",
+      "seedTermsUsed": [
+        "Shooting Range",
+        "Experiencing a crisis of self-doubt"
+      ],
+      "joke": "I was experiencing a crisis of self-doubt last month, so I dragged myself to the shooting range thinking, 'This'll fix me—I'll feel like a total badass.' Folks, I missed every single target. The instructor finally walked over, looked at my scorecard, and said, 'Sir, at this point the paper is winning.' Now I'm back to doubting everything... including why I thought guns would help.",
+      "setup": "",
+      "punchline": "I was experiencing a crisis of self-doubt last month, so I dragged myself to the shooting range thinking, 'This'll fix me—I'll feel like a total badass.' Folks, I missed every single target. The instructor finally walked over, looked at my scorecard, and said, 'Sir, at this point the paper is winning.' Now I'm back to doubting everything... including why I thought guns would help.",
+      "text": "I was experiencing a crisis of self-doubt last month, so I dragged myself to the shooting range thinking, 'This'll fix me—I'll feel like a total badass.' Folks, I missed every single target. The instructor finally walked over, looked at my scorecard, and said, 'Sir, at this point the paper is winning.' Now I'm back to doubting everything... including why I thought guns would help."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Identity Crisis at the Range",
+      "seedTermsUsed": [
+        "Shooting Range",
+        "Experiencing a crisis of self-doubt"
+      ],
+      "joke": "I went to a shooting range to feel tough, but halfway through I had a full crisis of self-doubt. The instructor kept saying, “Trust yourself!” and I’m like, “Buddy, I don’t even trust myself to pick a Netflix show.” By the end, the target looked more confident than I did.",
+      "setup": "",
+      "punchline": "I went to a shooting range to feel tough, but halfway through I had a full crisis of self-doubt. The instructor kept saying, “Trust yourself!” and I’m like, “Buddy, I don’t even trust myself to pick a Netflix show.” By the end, the target looked more confident than I did.",
+      "text": "I went to a shooting range to feel tough, but halfway through I had a full crisis of self-doubt. The instructor kept saying, “Trust yourself!” and I’m like, “Buddy, I don’t even trust myself to pick a Netflix show.” By the end, the target looked more confident than I did."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong concrete premise, good escalation, and the toddler confession lands cleanly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Best physical specificity in the batch; tactical DJ and apologizing to the gun are strong turns."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear and mildly funny, but the paper-winning line is familiar and the ending explains the premise."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean structure and readable, but the Netflix comparison and confident target payoff are fairly generic."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean detective-nanny premise with good escalation; closing line lands but isn't a knockout."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong specific imagery (tactical DJ earmuffs) and self-deprecating closer; best-paced of the range jokes."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Instructor punchline works but the 'nobody believes they're tough at a range' setup is familiar territory."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent but the closing line mostly restates the setup rather than adding a real turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Strong punchlines with 'terrible grip strength' and 'that's their whole personality' elevating a solid premise."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Competent mapping of an interrogation onto a toddler, though the 'confessed to everything' ending is a standard trope."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "'The paper is winning' is mildly amusing, but the setup and resolution rely on a highly predictable structure."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 2,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 3,
+          "comment": "Relies heavily on the exhausted 'picking a Netflix show' trope, and the final visual of a confident target falls flat."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong visual details and clever nanny-whodunit fusion"
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Similar premise to A but more predictable interrogation tropes"
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Relatable and vividly self-deprecating with strong imagery"
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Generic self-doubt punchline, lacks depth and specificity"
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clear premise with a tidy whodunit–nanny blend; final line lands a mild real laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Consistent first‑person rhythm; interrogation escalation works, though the turn is predictable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Strong imagery and natural timing; the tactical‑DJ line and whispered apology deliver a real laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean first‑person arc; the ‘paper is winning’ line is modestly funny but not a standout turn."
+        }
+      ]
+    }
+  ]
+}
