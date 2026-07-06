@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-06-ext-real-2026-07-06",
+  "seed": "ext-real-2026-07-06",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-06T14:08:47.415Z",
+  "publishedDate": "2026-07-06",
+  "seedTerms": [
+    "Historical",
+    "Barista",
+    "Cruise Ship",
+    "Having to beat the clock",
+    "Talented",
+    "Macho"
+  ],
+  "premise": {
+    "text": "Seed terms: Historical, Barista, Cruise Ship, Having to beat the clock, Talented, Macho",
+    "seedTerms": [
+      "Historical",
+      "Barista",
+      "Cruise Ship",
+      "Having to beat the clock",
+      "Talented",
+      "Macho"
+    ],
+    "displayText": "Tummy-Time Latte"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Morning Rush",
+      "seedTermsUsed": [
+        "Barista",
+        "Having to beat the clock"
+      ],
+      "joke": "I worked as a barista during the morning rush, and it felt like defusing bombs for people who were mad the bomb wasn't vanilla. Every order had a timer: latte, oat milk, extra shot, no foam, hurry. I finally understood workplace pressure when a man said, 'I'm late for a meeting,' while I was drawing a leaf on his caffeine hostage.",
+      "setup": "",
+      "punchline": "I worked as a barista during the morning rush, and it felt like defusing bombs for people who were mad the bomb wasn't vanilla. Every order had a timer: latte, oat milk, extra shot, no foam, hurry. I finally understood workplace pressure when a man said, 'I'm late for a meeting,' while I was drawing a leaf on his caffeine hostage.",
+      "text": "I worked as a barista during the morning rush, and it felt like defusing bombs for people who were mad the bomb wasn't vanilla. Every order had a timer: latte, oat milk, extra shot, no foam, hurry. I finally understood workplace pressure when a man said, 'I'm late for a meeting,' while I was drawing a leaf on his caffeine hostage."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Last Call",
+      "seedTermsUsed": [
+        "Barista",
+        "Having to beat the clock"
+      ],
+      "joke": "I worked as a barista, and nothing tests a relationship like ordering coffee together. My girlfriend takes four full minutes to order a latte. Four minutes! There's a line behind her building up like she's defusing a bomb. Meanwhile I'm standing there doing that thing where you check the time on your phone just to make a point. She's not even reading the menu anymore, she's just making eye contact with the barista like they're negotiating a hostage release. I finally leaned in and whispered, 'Just say oat milk and walk away.' She looked at me like I'd suggested we rob the place.",
+      "setup": "",
+      "punchline": "I worked as a barista, and nothing tests a relationship like ordering coffee together. My girlfriend takes four full minutes to order a latte. Four minutes! There's a line behind her building up like she's defusing a bomb. Meanwhile I'm standing there doing that thing where you check the time on your phone just to make a point. She's not even reading the menu anymore, she's just making eye contact with the barista like they're negotiating a hostage release. I finally leaned in and whispered, 'Just say oat milk and walk away.' She looked at me like I'd suggested we rob the place.",
+      "text": "I worked as a barista, and nothing tests a relationship like ordering coffee together. My girlfriend takes four full minutes to order a latte. Four minutes! There's a line behind her building up like she's defusing a bomb. Meanwhile I'm standing there doing that thing where you check the time on your phone just to make a point. She's not even reading the menu anymore, she's just making eye contact with the barista like they're negotiating a hostage release. I finally leaned in and whispered, 'Just say oat milk and walk away.' She looked at me like I'd suggested we rob the place."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Tummy-Time Latte",
+      "seedTermsUsed": [
+        "Barista",
+        "Macho"
+      ],
+      "joke": "I feel bad for the macho barista at my local coffee shop. He’s built like a lumberjack and covered in barbed-wire tattoos, but his entire job is aggressively making little treats. He looks like he should be bare-knuckle fighting a grizzly bear, but instead he’s staring me dead in the eyes, furiously shaking a carton of oat milk to make sure the microfoam on my iced lavender tummy-time latte is perfectly delicate.",
+      "setup": "",
+      "punchline": "I feel bad for the macho barista at my local coffee shop. He’s built like a lumberjack and covered in barbed-wire tattoos, but his entire job is aggressively making little treats. He looks like he should be bare-knuckle fighting a grizzly bear, but instead he’s staring me dead in the eyes, furiously shaking a carton of oat milk to make sure the microfoam on my iced lavender tummy-time latte is perfectly delicate.",
+      "text": "I feel bad for the macho barista at my local coffee shop. He’s built like a lumberjack and covered in barbed-wire tattoos, but his entire job is aggressively making little treats. He looks like he should be bare-knuckle fighting a grizzly bear, but instead he’s staring me dead in the eyes, furiously shaking a carton of oat milk to make sure the microfoam on my iced lavender tummy-time latte is perfectly delicate."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Cruise Coffee Chaos",
+      "seedTermsUsed": [
+        "Barista",
+        "Cruise Ship"
+      ],
+      "joke": "Folks, I took a job as a barista on a cruise ship thinking it'd be relaxing ocean views and fancy tips. Wrong. One big swell hits and I'm wrestling the milk steamer like it's trying to escape. Handed this lady her latte and half of it was on the saucer. She stares and goes, 'This is terrible!' I wiped my brow and told her, 'Ma'am, on land I'm a pro, but out here the ocean's the real barista – I'm just the guy holding the cup!'",
+      "setup": "",
+      "punchline": "Folks, I took a job as a barista on a cruise ship thinking it'd be relaxing ocean views and fancy tips. Wrong. One big swell hits and I'm wrestling the milk steamer like it's trying to escape. Handed this lady her latte and half of it was on the saucer. She stares and goes, 'This is terrible!' I wiped my brow and told her, 'Ma'am, on land I'm a pro, but out here the ocean's the real barista – I'm just the guy holding the cup!'",
+      "text": "Folks, I took a job as a barista on a cruise ship thinking it'd be relaxing ocean views and fancy tips. Wrong. One big swell hits and I'm wrestling the milk steamer like it's trying to escape. Handed this lady her latte and half of it was on the saucer. She stares and goes, 'This is terrible!' I wiped my brow and told her, 'Ma'am, on land I'm a pro, but out here the ocean's the real barista – I'm just the guy holding the cup!'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Foam Panic",
+      "seedTermsUsed": [
+        "Barista",
+        "Having to beat the clock"
+      ],
+      "joke": "Back when I was a barista, every shift felt like I was racing the clock in some caffeine Olympics. One guy would sprint in yelling, “I need my latte NOW!” like I was holding the antidote. I’m steaming milk thinking, “Sir, if this is your emergency plan, you’re already doomed.” He grabbed his cup and said, “You saved me.” I’m like, “Great, now save me by leaving.”",
+      "setup": "",
+      "punchline": "Back when I was a barista, every shift felt like I was racing the clock in some caffeine Olympics. One guy would sprint in yelling, “I need my latte NOW!” like I was holding the antidote. I’m steaming milk thinking, “Sir, if this is your emergency plan, you’re already doomed.” He grabbed his cup and said, “You saved me.” I’m like, “Great, now save me by leaving.”",
+      "text": "Back when I was a barista, every shift felt like I was racing the clock in some caffeine Olympics. One guy would sprint in yelling, “I need my latte NOW!” like I was holding the antidote. I’m steaming milk thinking, “Sir, if this is your emergency plan, you’re already doomed.” He grabbed his cup and said, “You saved me.” I’m like, “Great, now save me by leaving.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong relatable setup with good escalation; final turn is funny but slightly familiar hostage/pressure imagery.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clean comic contrast between macho appearance and delicate coffee work; vivid wording and a strong final image.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and understandable, but the ocean-as-barista punchline feels broad and predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent barista-rush bit with a mild payoff, but the emergency/antidote angle is familiar.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid bomb/hostage extended metaphor, clear stage voice, but punchline is more descriptive image than a sharp final turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong visual contrast, escalates well, lands on a specific absurd detail that carries the laugh cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent setup but the closing pun restates the premise rather than delivering a genuine surprise.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Nice reversal on the closing line, decent rhythm, though 'caffeine Olympics' framing is fairly familiar territory.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The vanilla bomb comparison is a genuinely funny and vivid image. The ending turn about the caffeine hostage is a bit clunky, but overall a solid stand-up bit.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "The perspective is fatally flawed; it opens with 'I worked as a barista' but then immediately shifts to the narrator standing in line with their girlfriend ordering from a different barista, confusing the entire setup.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 3,
+          "originality": 5,
+          "promptFit": 5,
+          "total": 4.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Uses a very dated, hacky rhythm ('Folks, I took a job... Wrong.'). The punchline feels like a generic sitcom response rather than a sharp, surprising stand-up turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relies heavily on familiar AI retail joke templates. The final 'save me by leaving' line is a generic sassy comeback that lacks real comedic surprise.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid analogies but mild payoff and familiar rush-hour tropes.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable couple bit with decent rhythm but predictable coffee-order frustration.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong visual macho contrast but observational rather than personal first-person premise.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 5,
+          "total": 6.800000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Tight escalation and sharp final reversal; clean stand-up delivery.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise and timing; the final image lands a mild real laugh.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid escalation with a relatable hostage‑negotiation metaphor; lands a modest payoff.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong contrast and vivid imagery; the macho‑oat‑milk turn delivers a real laugh.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 6.800000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean first‑person arc with a decent ocean‑barista turn; mildly funny and coherent.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.900000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.2,
+      "rawScore": 7.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.3,
+        "surprise": 6.8,
+        "craft": 7.5,
+        "originality": 7.3,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 6.8,
+        "craft": 7.5,
+        "originality": 7.3,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.6,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean comic contrast between macho appearance and delicate coffee work; vivid wording and a strong final image."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.5,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong visual contrast, escalates well, lands on a specific absurd detail that carries the laugh cleanly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong visual macho contrast but observational rather than personal first-person premise."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.2,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong contrast and vivid imagery; the macho‑oat‑milk turn delivers a real laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.1,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 7.8
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Solid bomb/hostage extended metaphor, clear stage voice, but punchline is more descriptive image than a sharp final turn."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0,
+          "comment": "The vanilla bomb comparison is a genuinely funny and vivid image. The ending turn about the caffeine hostage is a bit clunky, but overall a solid stand-up bit."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid analogies but mild payoff and familiar rush-hour tropes."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear premise and timing; the final image lands a mild real laugh."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 5.7,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.2,
+        "craft": 5.7,
+        "originality": 5.4,
+        "promptFit": 6.7
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 5.5,
+        "promptFit": 6.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong relatable setup with good escalation; final turn is funny but slightly familiar hostage/pressure imagery."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.2,
+          "rawScore": 4.2,
+          "scoreAdjustment": 0,
+          "comment": "The perspective is fatally flawed; it opens with 'I worked as a barista' but then immediately shifts to the narrator standing in line with their girlfriend ordering from a different barista, confusing the entire setup."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.6,
+          "rawScore": 6,
+          "scoreAdjustment": -0.4,
+          "comment": "Relatable couple bit with decent rhythm but predictable coffee-order frustration."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.4,
+          "comment": "Solid escalation with a relatable hostage‑negotiation metaphor; lands a modest payoff."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.7,
+      "rawScore": 5.9,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 5.4,
+        "craft": 6.1,
+        "originality": 4.9,
+        "promptFit": 7.9
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6.3,
+        "originality": 5,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.2,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Competent barista-rush bit with a mild payoff, but the emergency/antidote angle is familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.3,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Nice reversal on the closing line, decent rhythm, though 'caffeine Olympics' framing is fairly familiar territory."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.6,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0,
+          "comment": "Relies heavily on familiar AI retail joke templates. The final 'save me by leaving' line is a generic sassy comeback that lacks real comedic surprise."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Tight escalation and sharp final reversal; clean stand-up delivery."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.3,
+      "rawScore": 5.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.6,
+        "craft": 5.3,
+        "originality": 5.1,
+        "promptFit": 7.6
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 5.3,
+        "originality": 5,
+        "promptFit": 7.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear and understandable, but the ocean-as-barista punchline feels broad and predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.3,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Competent setup but the closing pun restates the premise rather than delivering a genuine surprise."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.5,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0,
+          "comment": "Uses a very dated, hacky rhythm ('Folks, I took a job... Wrong.'). The punchline feels like a generic sitcom response rather than a sharp, surprising stand-up turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.4,
+          "comment": "Clean first‑person arc with a decent ocean‑barista turn; mildly funny and coherent."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-06-ext-real-2026-07-06.jpg",
+    "originalSrc": "assets/feature-images/2026-07-06-ext-real-2026-07-06.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Tummy-Time Latte: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Tummy-Time Latte\nExact joke text to render in the right panel:\nI feel bad for the macho barista at my local coffee shop. He’s built like a lumberjack and covered in barbed-wire tattoos, but his entire job is aggressively making little treats. He looks like he should be bare-knuckle fighting a grizzly bear, but instead he’s staring me dead in the eyes, furiously shaking a carton of oat milk to make sure the microfoam on my iced lavender tummy-time latte is perfectly delicate.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Historical, Barista, Cruise Ship, Having to beat the clock, Talented, Macho.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Historical, Barista, Cruise Ship, Having to beat the clock, Talented, Macho. Use the winning joke titled \"Tummy-Time Latte\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.5,
+    "judgeAverages": {
+      "openai": 6.7,
+      "anthropic": 6.3,
+      "google": 6.5,
+      "xai": 6.8,
+      "copilot": 6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-06-ext-real-2026-07-06.md"
+}

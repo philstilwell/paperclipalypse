@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-06T14:08:47.415Z",
+  "publishedDate": "2026-07-06",
+  "seed": "ext-real-2026-07-06",
+  "slug": "2026-07-06-ext-real-2026-07-06",
+  "source": "manual-external",
+  "seedTerms": [
+    "Historical",
+    "Barista",
+    "Cruise Ship",
+    "Having to beat the clock",
+    "Talented",
+    "Macho"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Morning Rush",
+      "seedTermsUsed": [
+        "Barista",
+        "Having to beat the clock"
+      ],
+      "joke": "I worked as a barista during the morning rush, and it felt like defusing bombs for people who were mad the bomb wasn't vanilla. Every order had a timer: latte, oat milk, extra shot, no foam, hurry. I finally understood workplace pressure when a man said, 'I'm late for a meeting,' while I was drawing a leaf on his caffeine hostage.",
+      "setup": "",
+      "punchline": "I worked as a barista during the morning rush, and it felt like defusing bombs for people who were mad the bomb wasn't vanilla. Every order had a timer: latte, oat milk, extra shot, no foam, hurry. I finally understood workplace pressure when a man said, 'I'm late for a meeting,' while I was drawing a leaf on his caffeine hostage.",
+      "text": "I worked as a barista during the morning rush, and it felt like defusing bombs for people who were mad the bomb wasn't vanilla. Every order had a timer: latte, oat milk, extra shot, no foam, hurry. I finally understood workplace pressure when a man said, 'I'm late for a meeting,' while I was drawing a leaf on his caffeine hostage."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Last Call",
+      "seedTermsUsed": [
+        "Barista",
+        "Having to beat the clock"
+      ],
+      "joke": "I worked as a barista, and nothing tests a relationship like ordering coffee together. My girlfriend takes four full minutes to order a latte. Four minutes! There's a line behind her building up like she's defusing a bomb. Meanwhile I'm standing there doing that thing where you check the time on your phone just to make a point. She's not even reading the menu anymore, she's just making eye contact with the barista like they're negotiating a hostage release. I finally leaned in and whispered, 'Just say oat milk and walk away.' She looked at me like I'd suggested we rob the place.",
+      "setup": "",
+      "punchline": "I worked as a barista, and nothing tests a relationship like ordering coffee together. My girlfriend takes four full minutes to order a latte. Four minutes! There's a line behind her building up like she's defusing a bomb. Meanwhile I'm standing there doing that thing where you check the time on your phone just to make a point. She's not even reading the menu anymore, she's just making eye contact with the barista like they're negotiating a hostage release. I finally leaned in and whispered, 'Just say oat milk and walk away.' She looked at me like I'd suggested we rob the place.",
+      "text": "I worked as a barista, and nothing tests a relationship like ordering coffee together. My girlfriend takes four full minutes to order a latte. Four minutes! There's a line behind her building up like she's defusing a bomb. Meanwhile I'm standing there doing that thing where you check the time on your phone just to make a point. She's not even reading the menu anymore, she's just making eye contact with the barista like they're negotiating a hostage release. I finally leaned in and whispered, 'Just say oat milk and walk away.' She looked at me like I'd suggested we rob the place."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Tummy-Time Latte",
+      "seedTermsUsed": [
+        "Barista",
+        "Macho"
+      ],
+      "joke": "I feel bad for the macho barista at my local coffee shop. He’s built like a lumberjack and covered in barbed-wire tattoos, but his entire job is aggressively making little treats. He looks like he should be bare-knuckle fighting a grizzly bear, but instead he’s staring me dead in the eyes, furiously shaking a carton of oat milk to make sure the microfoam on my iced lavender tummy-time latte is perfectly delicate.",
+      "setup": "",
+      "punchline": "I feel bad for the macho barista at my local coffee shop. He’s built like a lumberjack and covered in barbed-wire tattoos, but his entire job is aggressively making little treats. He looks like he should be bare-knuckle fighting a grizzly bear, but instead he’s staring me dead in the eyes, furiously shaking a carton of oat milk to make sure the microfoam on my iced lavender tummy-time latte is perfectly delicate.",
+      "text": "I feel bad for the macho barista at my local coffee shop. He’s built like a lumberjack and covered in barbed-wire tattoos, but his entire job is aggressively making little treats. He looks like he should be bare-knuckle fighting a grizzly bear, but instead he’s staring me dead in the eyes, furiously shaking a carton of oat milk to make sure the microfoam on my iced lavender tummy-time latte is perfectly delicate."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Cruise Coffee Chaos",
+      "seedTermsUsed": [
+        "Barista",
+        "Cruise Ship"
+      ],
+      "joke": "Folks, I took a job as a barista on a cruise ship thinking it'd be relaxing ocean views and fancy tips. Wrong. One big swell hits and I'm wrestling the milk steamer like it's trying to escape. Handed this lady her latte and half of it was on the saucer. She stares and goes, 'This is terrible!' I wiped my brow and told her, 'Ma'am, on land I'm a pro, but out here the ocean's the real barista – I'm just the guy holding the cup!'",
+      "setup": "",
+      "punchline": "Folks, I took a job as a barista on a cruise ship thinking it'd be relaxing ocean views and fancy tips. Wrong. One big swell hits and I'm wrestling the milk steamer like it's trying to escape. Handed this lady her latte and half of it was on the saucer. She stares and goes, 'This is terrible!' I wiped my brow and told her, 'Ma'am, on land I'm a pro, but out here the ocean's the real barista – I'm just the guy holding the cup!'",
+      "text": "Folks, I took a job as a barista on a cruise ship thinking it'd be relaxing ocean views and fancy tips. Wrong. One big swell hits and I'm wrestling the milk steamer like it's trying to escape. Handed this lady her latte and half of it was on the saucer. She stares and goes, 'This is terrible!' I wiped my brow and told her, 'Ma'am, on land I'm a pro, but out here the ocean's the real barista – I'm just the guy holding the cup!'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Foam Panic",
+      "seedTermsUsed": [
+        "Barista",
+        "Having to beat the clock"
+      ],
+      "joke": "Back when I was a barista, every shift felt like I was racing the clock in some caffeine Olympics. One guy would sprint in yelling, “I need my latte NOW!” like I was holding the antidote. I’m steaming milk thinking, “Sir, if this is your emergency plan, you’re already doomed.” He grabbed his cup and said, “You saved me.” I’m like, “Great, now save me by leaving.”",
+      "setup": "",
+      "punchline": "Back when I was a barista, every shift felt like I was racing the clock in some caffeine Olympics. One guy would sprint in yelling, “I need my latte NOW!” like I was holding the antidote. I’m steaming milk thinking, “Sir, if this is your emergency plan, you’re already doomed.” He grabbed his cup and said, “You saved me.” I’m like, “Great, now save me by leaving.”",
+      "text": "Back when I was a barista, every shift felt like I was racing the clock in some caffeine Olympics. One guy would sprint in yelling, “I need my latte NOW!” like I was holding the antidote. I’m steaming milk thinking, “Sir, if this is your emergency plan, you’re already doomed.” He grabbed his cup and said, “You saved me.” I’m like, “Great, now save me by leaving.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong relatable setup with good escalation; final turn is funny but slightly familiar hostage/pressure imagery."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Clean comic contrast between macho appearance and delicate coffee work; vivid wording and a strong final image."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear and understandable, but the ocean-as-barista punchline feels broad and predictable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent barista-rush bit with a mild payoff, but the emergency/antidote angle is familiar."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid bomb/hostage extended metaphor, clear stage voice, but punchline is more descriptive image than a sharp final turn."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong visual contrast, escalates well, lands on a specific absurd detail that carries the laugh cleanly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent setup but the closing pun restates the premise rather than delivering a genuine surprise."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Nice reversal on the closing line, decent rhythm, though 'caffeine Olympics' framing is fairly familiar territory."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "The vanilla bomb comparison is a genuinely funny and vivid image. The ending turn about the caffeine hostage is a bit clunky, but overall a solid stand-up bit."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 3,
+          "promptFit": 5,
+          "laugh": 4,
+          "comment": "The perspective is fatally flawed; it opens with 'I worked as a barista' but then immediately shifts to the narrator standing in line with their girlfriend ordering from a different barista, confusing the entire setup."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Uses a very dated, hacky rhythm ('Folks, I took a job... Wrong.'). The punchline feels like a generic sitcom response rather than a sharp, surprising stand-up turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Relies heavily on familiar AI retail joke templates. The final 'save me by leaving' line is a generic sassy comeback that lacks real comedic surprise."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid analogies but mild payoff and familiar rush-hour tropes."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Relatable couple bit with decent rhythm but predictable coffee-order frustration."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 5,
+          "laugh": 7,
+          "comment": "Strong visual macho contrast but observational rather than personal first-person premise."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Tight escalation and sharp final reversal; clean stand-up delivery."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clear premise and timing; the final image lands a mild real laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid escalation with a relatable hostage‑negotiation metaphor; lands a modest payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Strong contrast and vivid imagery; the macho‑oat‑milk turn delivers a real laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean first‑person arc with a decent ocean‑barista turn; mildly funny and coherent."
+        }
+      ]
+    }
+  ]
+}
