@@ -8,7 +8,7 @@ export function buildFeatureImagePrompt(run) {
   const title = winningJoke?.title || "Winning Joke";
   const jokeText = fullJokeText(winningJoke);
   const seedTerms = Array.isArray(run.seedTerms) ? run.seedTerms.join(", ") : "";
-  const fallbackScene = seedTerms ? "" : run.premise?.text || "";
+  const fallbackScene = fallbackSceneCue(run);
 
   return [
     "Generate one polished web feature image for Paperclipalypse.",
@@ -34,8 +34,10 @@ export function buildFeatureImagePrompt(run) {
     jokeText ? `Exact joke text to render in the right panel:\n${jokeText}` : "",
     "",
     "Scene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.",
-    fallbackScene ? `Fallback scene cue: ${fallbackScene}.` : "",
-    seedTerms ? `Seed terms for visual motifs: ${seedTerms}.` : "",
+    "Do not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.",
+    "If the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.",
+    fallbackScene ? `Fallback scene cue, only if the winning joke text is genuinely too abstract to stage literally: ${fallbackScene}.` : "",
+    seedTerms ? `Round seed terms for exclusion reference only: ${seedTerms}. These are not scene ingredients unless the winning joke explicitly uses them.` : "",
     "",
     "Text rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.",
     "",
@@ -113,4 +115,15 @@ function cleanText(value) {
   return String(value || "")
     .replace(/\s+/g, " ")
     .trim();
+}
+
+function fallbackSceneCue(run) {
+  const text = cleanText(run.premise?.text || "");
+  if (!text) {
+    return "";
+  }
+  if (/^seed terms:/i.test(text)) {
+    return "";
+  }
+  return text;
 }
