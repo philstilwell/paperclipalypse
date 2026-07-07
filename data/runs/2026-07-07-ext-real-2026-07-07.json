@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-07-ext-real-2026-07-07",
+  "seed": "ext-real-2026-07-07",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-07T14:01:45.282Z",
+  "publishedDate": "2026-07-07",
+  "seedTerms": [
+    "Lawmen",
+    "Animal Groomer",
+    "Flower Shop",
+    "A loss of prestige or wealth",
+    "Ambitious",
+    "Evil"
+  ],
+  "premise": {
+    "text": "Seed terms: Lawmen, Animal Groomer, Flower Shop, A loss of prestige or wealth, Ambitious, Evil",
+    "seedTerms": [
+      "Lawmen",
+      "Animal Groomer",
+      "Flower Shop",
+      "A loss of prestige or wealth",
+      "Ambitious",
+      "Evil"
+    ],
+    "displayText": "The Crypto Florist"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Formerly Fancy",
+      "seedTermsUsed": [
+        "Animal Groomer",
+        "A loss of prestige or wealth"
+      ],
+      "joke": "I took my dog to a discount animal groomer called Formerly Fancy Pets. You could tell the place had fallen on hard times because the receptionist whispered, “We used to do show dogs,” while cutting a coupon off my Labrador. My dog came out with uneven bangs and the expression of a CEO who now has to wear the mascot costume.",
+      "setup": "",
+      "punchline": "I took my dog to a discount animal groomer called Formerly Fancy Pets. You could tell the place had fallen on hard times because the receptionist whispered, “We used to do show dogs,” while cutting a coupon off my Labrador. My dog came out with uneven bangs and the expression of a CEO who now has to wear the mascot costume.",
+      "text": "I took my dog to a discount animal groomer called Formerly Fancy Pets. You could tell the place had fallen on hard times because the receptionist whispered, “We used to do show dogs,” while cutting a coupon off my Labrador. My dog came out with uneven bangs and the expression of a CEO who now has to wear the mascot costume."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Career Pivot",
+      "seedTermsUsed": [
+        "Animal Groomer",
+        "Ambitious"
+      ],
+      "joke": "I used to be a hedge fund manager. Now I'm a dog groomer. People think that's a fall from grace. It's not — I'm still trimming portfolios, they just bark now. Honestly the clients are better. A poodle has never once asked me to explain cryptocurrency at a dinner party. And when a golden retriever is unhappy with my performance, it doesn't sue me, it just bites my hand, which, frankly, is more honest feedback than I ever got in finance.",
+      "setup": "",
+      "punchline": "I used to be a hedge fund manager. Now I'm a dog groomer. People think that's a fall from grace. It's not — I'm still trimming portfolios, they just bark now. Honestly the clients are better. A poodle has never once asked me to explain cryptocurrency at a dinner party. And when a golden retriever is unhappy with my performance, it doesn't sue me, it just bites my hand, which, frankly, is more honest feedback than I ever got in finance.",
+      "text": "I used to be a hedge fund manager. Now I'm a dog groomer. People think that's a fall from grace. It's not — I'm still trimming portfolios, they just bark now. Honestly the clients are better. A poodle has never once asked me to explain cryptocurrency at a dinner party. And when a golden retriever is unhappy with my performance, it doesn't sue me, it just bites my hand, which, frankly, is more honest feedback than I ever got in finance."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Crypto Florist",
+      "seedTermsUsed": [
+        "Flower Shop",
+        "A loss of prestige or wealth"
+      ],
+      "joke": "I lost my entire life savings in crypto last year. Went from a high-rise corner office to arranging bouquets at a local flower shop. My parents are devastated by the drop in prestige, but honestly? The business model is exactly the same. Guys come in in a total panic, hand me way too much money, and I give them something that's guaranteed to be dead in three days.",
+      "setup": "",
+      "punchline": "I lost my entire life savings in crypto last year. Went from a high-rise corner office to arranging bouquets at a local flower shop. My parents are devastated by the drop in prestige, but honestly? The business model is exactly the same. Guys come in in a total panic, hand me way too much money, and I give them something that's guaranteed to be dead in three days.",
+      "text": "I lost my entire life savings in crypto last year. Went from a high-rise corner office to arranging bouquets at a local flower shop. My parents are devastated by the drop in prestige, but honestly? The business model is exactly the same. Guys come in in a total panic, hand me way too much money, and I give them something that's guaranteed to be dead in three days."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Humbled Ambitions",
+      "seedTermsUsed": [
+        "Ambitious",
+        "A loss of prestige or wealth"
+      ],
+      "joke": "I used to be so ambitious, folks. Big dreams, power suits, corner office – I was gonna conquer everything. Then life served up a brutal loss of prestige and wealth. One bad quarter and suddenly I'm the guy whose LinkedIn is just sad. Now I stand here telling jokes, praying you laugh hard enough to cover my ramen budget. Turns out the only empire I built was this pile of 'what ifs' in my parents' basement.",
+      "setup": "",
+      "punchline": "I used to be so ambitious, folks. Big dreams, power suits, corner office – I was gonna conquer everything. Then life served up a brutal loss of prestige and wealth. One bad quarter and suddenly I'm the guy whose LinkedIn is just sad. Now I stand here telling jokes, praying you laugh hard enough to cover my ramen budget. Turns out the only empire I built was this pile of 'what ifs' in my parents' basement.",
+      "text": "I used to be so ambitious, folks. Big dreams, power suits, corner office – I was gonna conquer everything. Then life served up a brutal loss of prestige and wealth. One bad quarter and suddenly I'm the guy whose LinkedIn is just sad. Now I stand here telling jokes, praying you laugh hard enough to cover my ramen budget. Turns out the only empire I built was this pile of 'what ifs' in my parents' basement."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Prestige Problems",
+      "seedTermsUsed": [
+        "A loss of prestige or wealth",
+        "Animal Groomer"
+      ],
+      "joke": "I knew I’d hit a real loss of prestige when my bank called to say my credit score was now considered “anxious.” I tried to cheer myself up by taking my dog to the groomer, but even she looked at me and said, “Sir… he can’t be the only one getting a trim today.”",
+      "setup": "",
+      "punchline": "I knew I’d hit a real loss of prestige when my bank called to say my credit score was now considered “anxious.” I tried to cheer myself up by taking my dog to the groomer, but even she looked at me and said, “Sir… he can’t be the only one getting a trim today.”",
+      "text": "I knew I’d hit a real loss of prestige when my bank called to say my credit score was now considered “anxious.” I tried to cheer myself up by taking my dog to the groomer, but even she looked at me and said, “Sir… he can’t be the only one getting a trim today.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid finance-to-grooming turn with several usable tags, though it runs a bit long and the final bite is more clever than explosive.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clean premise, strong parallel between crypto panic and flower-shop panic, and a sharp final line that carries the laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Mostly a sad status monologue with prompt terms stated directly; it lacks a real comic turn or memorable punchline.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 7,
+          "total": 3.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A compact, understandable joke with a decent double meaning on “trim,” but the setup is thin and the payoff is mild.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation from discount groomer to CEO-in-mascot-costume image; solid but not surprising turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Crypto-to-flowers analogy lands well; the 'dead in three days' closer actually carries the laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Familiar fallen-ambition/basement tropes; punchline restates the premise rather than turning it.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Nice 'anxious' credit score personification; groomer tag is clever but slightly unclear as a standalone closer.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong final image and good stage rhythm. Beautifully weaves the two seed concepts together without relying on exact wording.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Violates the prompt constraints by incorporating a third seed concept ('loss of prestige' via 'fall from grace'), and relies heavily on safe, generic corporate comparisons.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Suffers from heavy prompt recitation, forcing the exact seed phrases rather than conceptualizing them, and falls back on tired stand-up clichés.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 3,
+          "originality": 3,
+          "promptFit": 5,
+          "total": 3.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The 'anxious' credit score is a clever premise and the punchline lands solidly, though the opening awkwardly recites the prompt verbatim.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with vivid dog/CEO image; good escalation but punchline mildly predictable.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clean finance-to-groomer transition with honest feedback bite; relies on familiar tropes.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.999999999999999
+        },
+        {
+          "jokeId": "google",
+          "comment": "Tight premise, strong relatable punchline equating bouquets to crypto; natural delivery.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute anxious credit score setup but groomer punchline feels forced and mild.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with a clear turn; mildly funny and cleanly written.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Consistent humor and relatable comparisons; leans familiar but works.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong premise, clean escalation, and a sharp final line.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "xai",
+          "comment": "More confessional than joke; lacks a distinct turn and uses only one seed concept clearly.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 4.300000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.4,
+      "rawScore": 7.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.4,
+        "surprise": 7.2,
+        "craft": 7.4,
+        "originality": 6.7,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 7.5,
+        "surprise": 7.3,
+        "craft": 7.5,
+        "originality": 6.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.8,
+          "rawScore": 8,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean premise, strong parallel between crypto panic and flower-shop panic, and a sharp final line that carries the laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.1,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0,
+          "comment": "Crypto-to-flowers analogy lands well; the 'dead in three days' closer actually carries the laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.6,
+          "rawScore": 8,
+          "scoreAdjustment": -0.4,
+          "comment": "Tight premise, strong relatable punchline equating bouquets to crypto; natural delivery."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong premise, clean escalation, and a sharp final line."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 6.8,
+        "originality": 6.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Clean escalation from discount groomer to CEO-in-mascot-costume image; solid but not surprising turn."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.5,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong final image and good stage rhythm. Beautifully weaves the two seed concepts together without relying on exact wording."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid premise with vivid dog/CEO image; good escalation but punchline mildly predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.3,
+          "comment": "Solid premise with a clear turn; mildly funny and cleanly written."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.3,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 5.7,
+        "craft": 6.7,
+        "originality": 6,
+        "promptFit": 7
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 7
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid finance-to-grooming turn with several usable tags, though it runs a bit long and the final bite is more clever than explosive."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Violates the prompt constraints by incorporating a third seed concept ('loss of prestige' via 'fall from grace'), and relies heavily on safe, generic corporate comparisons."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.6,
+          "rawScore": 7,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean finance-to-groomer transition with honest feedback bite; relies on familiar tropes."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6,
+          "scoreAdjustment": 0.3,
+          "comment": "Consistent humor and relatable comparisons; leans familiar but works."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.1,
+      "rawScore": 6.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 6.2,
+        "craft": 5.9,
+        "originality": 5.9,
+        "promptFit": 7.9
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6.3,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "A compact, understandable joke with a decent double meaning on “trim,” but the setup is thin and the payoff is mild."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.8,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0,
+          "comment": "Nice 'anxious' credit score personification; groomer tag is clever but slightly unclear as a standalone closer."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "The 'anxious' credit score is a clever premise and the punchline lands solidly, though the opening awkwardly recites the prompt verbatim."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.9,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Cute anxious credit score setup but groomer punchline feels forced and mild."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.1,
+      "rawScore": 4,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 3.9,
+        "surprise": 3.6,
+        "craft": 4.4,
+        "originality": 3.9,
+        "promptFit": 5.9
+      },
+      "rawRubric": {
+        "laugh": 3.8,
+        "surprise": 3.5,
+        "craft": 4.3,
+        "originality": 3.8,
+        "promptFit": 5.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 3.4,
+          "rawScore": 3.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Mostly a sad status monologue with prompt terms stated directly; it lacks a real comic turn or memorable punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.9,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0,
+          "comment": "Familiar fallen-ambition/basement tropes; punchline restates the premise rather than turning it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 3.5,
+          "rawScore": 3.2,
+          "scoreAdjustment": 0.3,
+          "comment": "Suffers from heavy prompt recitation, forcing the exact seed phrases rather than conceptualizing them, and falls back on tired stand-up clichés."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.6,
+          "rawScore": 4.3,
+          "scoreAdjustment": 0.3,
+          "comment": "More confessional than joke; lacks a distinct turn and uses only one seed concept clearly."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-07-ext-real-2026-07-07.png",
+    "originalSrc": "assets/feature-images/2026-07-07-ext-real-2026-07-07.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Crypto Florist: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - The Crypto Florist\nExact joke text to render in the right panel:\nI lost my entire life savings in crypto last year. Went from a high-rise corner office to arranging bouquets at a local flower shop. My parents are devastated by the drop in prestige, but honestly? The business model is exactly the same. Guys come in in a total panic, hand me way too much money, and I give them something that's guaranteed to be dead in three days.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nSeed terms for visual motifs: Lawmen, Animal Groomer, Flower Shop, A loss of prestige or wealth, Ambitious, Evil.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Lawmen, Animal Groomer, Flower Shop, A loss of prestige or wealth, Ambitious, Evil. Use the winning joke titled \"The Crypto Florist\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.6,
+      "anthropic": 6.3,
+      "google": 6,
+      "xai": 6.8,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-07-ext-real-2026-07-07.md"
+}

@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-07T14:01:45.282Z",
+  "publishedDate": "2026-07-07",
+  "seed": "ext-real-2026-07-07",
+  "slug": "2026-07-07-ext-real-2026-07-07",
+  "source": "manual-external",
+  "seedTerms": [
+    "Lawmen",
+    "Animal Groomer",
+    "Flower Shop",
+    "A loss of prestige or wealth",
+    "Ambitious",
+    "Evil"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Formerly Fancy",
+      "seedTermsUsed": [
+        "Animal Groomer",
+        "A loss of prestige or wealth"
+      ],
+      "joke": "I took my dog to a discount animal groomer called Formerly Fancy Pets. You could tell the place had fallen on hard times because the receptionist whispered, “We used to do show dogs,” while cutting a coupon off my Labrador. My dog came out with uneven bangs and the expression of a CEO who now has to wear the mascot costume.",
+      "setup": "",
+      "punchline": "I took my dog to a discount animal groomer called Formerly Fancy Pets. You could tell the place had fallen on hard times because the receptionist whispered, “We used to do show dogs,” while cutting a coupon off my Labrador. My dog came out with uneven bangs and the expression of a CEO who now has to wear the mascot costume.",
+      "text": "I took my dog to a discount animal groomer called Formerly Fancy Pets. You could tell the place had fallen on hard times because the receptionist whispered, “We used to do show dogs,” while cutting a coupon off my Labrador. My dog came out with uneven bangs and the expression of a CEO who now has to wear the mascot costume."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Career Pivot",
+      "seedTermsUsed": [
+        "Animal Groomer",
+        "Ambitious"
+      ],
+      "joke": "I used to be a hedge fund manager. Now I'm a dog groomer. People think that's a fall from grace. It's not — I'm still trimming portfolios, they just bark now. Honestly the clients are better. A poodle has never once asked me to explain cryptocurrency at a dinner party. And when a golden retriever is unhappy with my performance, it doesn't sue me, it just bites my hand, which, frankly, is more honest feedback than I ever got in finance.",
+      "setup": "",
+      "punchline": "I used to be a hedge fund manager. Now I'm a dog groomer. People think that's a fall from grace. It's not — I'm still trimming portfolios, they just bark now. Honestly the clients are better. A poodle has never once asked me to explain cryptocurrency at a dinner party. And when a golden retriever is unhappy with my performance, it doesn't sue me, it just bites my hand, which, frankly, is more honest feedback than I ever got in finance.",
+      "text": "I used to be a hedge fund manager. Now I'm a dog groomer. People think that's a fall from grace. It's not — I'm still trimming portfolios, they just bark now. Honestly the clients are better. A poodle has never once asked me to explain cryptocurrency at a dinner party. And when a golden retriever is unhappy with my performance, it doesn't sue me, it just bites my hand, which, frankly, is more honest feedback than I ever got in finance."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Crypto Florist",
+      "seedTermsUsed": [
+        "Flower Shop",
+        "A loss of prestige or wealth"
+      ],
+      "joke": "I lost my entire life savings in crypto last year. Went from a high-rise corner office to arranging bouquets at a local flower shop. My parents are devastated by the drop in prestige, but honestly? The business model is exactly the same. Guys come in in a total panic, hand me way too much money, and I give them something that's guaranteed to be dead in three days.",
+      "setup": "",
+      "punchline": "I lost my entire life savings in crypto last year. Went from a high-rise corner office to arranging bouquets at a local flower shop. My parents are devastated by the drop in prestige, but honestly? The business model is exactly the same. Guys come in in a total panic, hand me way too much money, and I give them something that's guaranteed to be dead in three days.",
+      "text": "I lost my entire life savings in crypto last year. Went from a high-rise corner office to arranging bouquets at a local flower shop. My parents are devastated by the drop in prestige, but honestly? The business model is exactly the same. Guys come in in a total panic, hand me way too much money, and I give them something that's guaranteed to be dead in three days."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Humbled Ambitions",
+      "seedTermsUsed": [
+        "Ambitious",
+        "A loss of prestige or wealth"
+      ],
+      "joke": "I used to be so ambitious, folks. Big dreams, power suits, corner office – I was gonna conquer everything. Then life served up a brutal loss of prestige and wealth. One bad quarter and suddenly I'm the guy whose LinkedIn is just sad. Now I stand here telling jokes, praying you laugh hard enough to cover my ramen budget. Turns out the only empire I built was this pile of 'what ifs' in my parents' basement.",
+      "setup": "",
+      "punchline": "I used to be so ambitious, folks. Big dreams, power suits, corner office – I was gonna conquer everything. Then life served up a brutal loss of prestige and wealth. One bad quarter and suddenly I'm the guy whose LinkedIn is just sad. Now I stand here telling jokes, praying you laugh hard enough to cover my ramen budget. Turns out the only empire I built was this pile of 'what ifs' in my parents' basement.",
+      "text": "I used to be so ambitious, folks. Big dreams, power suits, corner office – I was gonna conquer everything. Then life served up a brutal loss of prestige and wealth. One bad quarter and suddenly I'm the guy whose LinkedIn is just sad. Now I stand here telling jokes, praying you laugh hard enough to cover my ramen budget. Turns out the only empire I built was this pile of 'what ifs' in my parents' basement."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Prestige Problems",
+      "seedTermsUsed": [
+        "A loss of prestige or wealth",
+        "Animal Groomer"
+      ],
+      "joke": "I knew I’d hit a real loss of prestige when my bank called to say my credit score was now considered “anxious.” I tried to cheer myself up by taking my dog to the groomer, but even she looked at me and said, “Sir… he can’t be the only one getting a trim today.”",
+      "setup": "",
+      "punchline": "I knew I’d hit a real loss of prestige when my bank called to say my credit score was now considered “anxious.” I tried to cheer myself up by taking my dog to the groomer, but even she looked at me and said, “Sir… he can’t be the only one getting a trim today.”",
+      "text": "I knew I’d hit a real loss of prestige when my bank called to say my credit score was now considered “anxious.” I tried to cheer myself up by taking my dog to the groomer, but even she looked at me and said, “Sir… he can’t be the only one getting a trim today.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid finance-to-grooming turn with several usable tags, though it runs a bit long and the final bite is more clever than explosive."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Clean premise, strong parallel between crypto panic and flower-shop panic, and a sharp final line that carries the laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 3,
+          "comment": "Mostly a sad status monologue with prompt terms stated directly; it lacks a real comic turn or memorable punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "A compact, understandable joke with a decent double meaning on “trim,” but the setup is thin and the payoff is mild."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean escalation from discount groomer to CEO-in-mascot-costume image; solid but not surprising turn."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Crypto-to-flowers analogy lands well; the 'dead in three days' closer actually carries the laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Familiar fallen-ambition/basement tropes; punchline restates the premise rather than turning it."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Nice 'anxious' credit score personification; groomer tag is clever but slightly unclear as a standalone closer."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong final image and good stage rhythm. Beautifully weaves the two seed concepts together without relying on exact wording."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 5,
+          "comment": "Violates the prompt constraints by incorporating a third seed concept ('loss of prestige' via 'fall from grace'), and relies heavily on safe, generic corporate comparisons."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 3,
+          "promptFit": 5,
+          "laugh": 3,
+          "comment": "Suffers from heavy prompt recitation, forcing the exact seed phrases rather than conceptualizing them, and falls back on tired stand-up clichés."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "The 'anxious' credit score is a clever premise and the punchline lands solidly, though the opening awkwardly recites the prompt verbatim."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "comment": "Solid premise with vivid dog/CEO image; good escalation but punchline mildly predictable."
+        },
+        {
+          "jokeId": "anthropic",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "comment": "Clean finance-to-groomer transition with honest feedback bite; relies on familiar tropes."
+        },
+        {
+          "jokeId": "google",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "comment": "Tight premise, strong relatable punchline equating bouquets to crypto; natural delivery."
+        },
+        {
+          "jokeId": "copilot",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "comment": "Cute anxious credit score setup but groomer punchline feels forced and mild."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid premise with a clear turn; mildly funny and cleanly written."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Consistent humor and relatable comparisons; leans familiar but works."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong premise, clean escalation, and a sharp final line."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 4,
+          "laugh": 4,
+          "comment": "More confessional than joke; lacks a distinct turn and uses only one seed concept clearly."
+        }
+      ]
+    }
+  ]
+}
