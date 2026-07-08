@@ -4098,7 +4098,7 @@ td:nth-child(4) {
 
 .archive a {
   display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
+  grid-template-columns: 156px minmax(0, 1fr);
   gap: 16px;
   align-items: start;
   padding: 14px 10px;
