@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-08-ext-real-2026-07-08",
+  "seed": "ext-real-2026-07-08",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-08T14:02:15.885Z",
+  "publishedDate": "2026-07-08",
+  "seedTerms": [
+    "Paranormal",
+    "Therapist",
+    "Country Road",
+    "Experiencing a crisis of self-doubt",
+    "Empathetic",
+    "Macho"
+  ],
+  "premise": {
+    "text": "Seed terms: Paranormal, Therapist, Country Road, Experiencing a crisis of self-doubt, Empathetic, Macho",
+    "seedTerms": [
+      "Paranormal",
+      "Therapist",
+      "Country Road",
+      "Experiencing a crisis of self-doubt",
+      "Empathetic",
+      "Macho"
+    ],
+    "displayText": "Rugged Chassis"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Back Road Bravery",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Country Road"
+      ],
+      "joke": "I was driving down a country road at night when my GPS said, \"Turn left,\" and the only thing on the left was a cornfield. Then the radio whispered my name. I tried to stay calm, but when a scarecrow moved, I didn’t investigate the paranormal—I became paranormal. I left my body at 55 and my dignity at the next mailbox.",
+      "setup": "",
+      "punchline": "I was driving down a country road at night when my GPS said, \"Turn left,\" and the only thing on the left was a cornfield. Then the radio whispered my name. I tried to stay calm, but when a scarecrow moved, I didn’t investigate the paranormal—I became paranormal. I left my body at 55 and my dignity at the next mailbox.",
+      "text": "I was driving down a country road at night when my GPS said, \"Turn left,\" and the only thing on the left was a cornfield. Then the radio whispered my name. I tried to stay calm, but when a scarecrow moved, I didn’t investigate the paranormal—I became paranormal. I left my body at 55 and my dignity at the next mailbox."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Ghost Hunter's Confidence",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Macho"
+      ],
+      "joke": "I dated a paranormal investigator for a while. Guy walks into haunted houses with night vision goggles and an EMF meter, screaming 'SHOW YOURSELF, COWARD' at empty hallways. Total tough guy. Then one night the floorboard creaked and he grabbed my hand so hard I thought he was gonna propose. I said, 'I thought you weren't afraid of ghosts.' He said, 'I'm not afraid of ghosts. I'm afraid of getting murdered by one.' Bro, that's the same thing. He goes, 'No, one's a career, the other's Tuesday.'",
+      "setup": "",
+      "punchline": "I dated a paranormal investigator for a while. Guy walks into haunted houses with night vision goggles and an EMF meter, screaming 'SHOW YOURSELF, COWARD' at empty hallways. Total tough guy. Then one night the floorboard creaked and he grabbed my hand so hard I thought he was gonna propose. I said, 'I thought you weren't afraid of ghosts.' He said, 'I'm not afraid of ghosts. I'm afraid of getting murdered by one.' Bro, that's the same thing. He goes, 'No, one's a career, the other's Tuesday.'",
+      "text": "I dated a paranormal investigator for a while. Guy walks into haunted houses with night vision goggles and an EMF meter, screaming 'SHOW YOURSELF, COWARD' at empty hallways. Total tough guy. Then one night the floorboard creaked and he grabbed my hand so hard I thought he was gonna propose. I said, 'I thought you weren't afraid of ghosts.' He said, 'I'm not afraid of ghosts. I'm afraid of getting murdered by one.' Bro, that's the same thing. He goes, 'No, one's a career, the other's Tuesday.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Rugged Chassis",
+      "seedTermsUsed": [
+        "Therapist",
+        "Macho"
+      ],
+      "joke": "I finally started seeing a therapist, which is tough when you're raised to be super macho. In our first session, she asked me to describe my feelings. I didn't have the emotional vocabulary, so I panicked and described a truck commercial. I squinted, lowered my voice, and said, 'Doc, I'm hauling a heavy payload on a rugged, steel-reinforced chassis.' She just nodded and diagnosed me with a Ford F-150.",
+      "setup": "",
+      "punchline": "I finally started seeing a therapist, which is tough when you're raised to be super macho. In our first session, she asked me to describe my feelings. I didn't have the emotional vocabulary, so I panicked and described a truck commercial. I squinted, lowered my voice, and said, 'Doc, I'm hauling a heavy payload on a rugged, steel-reinforced chassis.' She just nodded and diagnosed me with a Ford F-150.",
+      "text": "I finally started seeing a therapist, which is tough when you're raised to be super macho. In our first session, she asked me to describe my feelings. I didn't have the emotional vocabulary, so I panicked and described a truck commercial. I squinted, lowered my voice, and said, 'Doc, I'm hauling a heavy payload on a rugged, steel-reinforced chassis.' She just nodded and diagnosed me with a Ford F-150."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Macho Meltdown",
+      "seedTermsUsed": [
+        "Macho",
+        "Experiencing a crisis of self-doubt"
+      ],
+      "joke": "Folks, I’ve always played the macho guy—big truck, beard, fixing stuff with my bare hands like it’s nothing. But lately I’ve been experiencing a crisis of self-doubt. Am I really that tough? So I grabbed an axe, headed to the backyard to chop wood and prove it. First swing, I missed the log, nailed my foot. Now I’m in the ER yelling at the nurse, 'This doesn’t count—I’m still macho!' She just patted my hand and said, 'Sure, big guy.'",
+      "setup": "",
+      "punchline": "Folks, I’ve always played the macho guy—big truck, beard, fixing stuff with my bare hands like it’s nothing. But lately I’ve been experiencing a crisis of self-doubt. Am I really that tough? So I grabbed an axe, headed to the backyard to chop wood and prove it. First swing, I missed the log, nailed my foot. Now I’m in the ER yelling at the nurse, 'This doesn’t count—I’m still macho!' She just patted my hand and said, 'Sure, big guy.'",
+      "text": "Folks, I’ve always played the macho guy—big truck, beard, fixing stuff with my bare hands like it’s nothing. But lately I’ve been experiencing a crisis of self-doubt. Am I really that tough? So I grabbed an axe, headed to the backyard to chop wood and prove it. First swing, I missed the log, nailed my foot. Now I’m in the ER yelling at the nurse, 'This doesn’t count—I’m still macho!' She just patted my hand and said, 'Sure, big guy.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Macho Ghost",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Macho"
+      ],
+      "joke": "I tried to act all macho when I thought my house was haunted. I marched right into the living room like, 'If there’s a ghost in here, show yourself!' And the lights flickered, the floor creaked, and I immediately yelled, 'Okay, you showed yourself! Great job! I’m leaving now!'",
+      "setup": "",
+      "punchline": "I tried to act all macho when I thought my house was haunted. I marched right into the living room like, 'If there’s a ghost in here, show yourself!' And the lights flickered, the floor creaked, and I immediately yelled, 'Okay, you showed yourself! Great job! I’m leaving now!'",
+      "text": "I tried to act all macho when I thought my house was haunted. I marched right into the living room like, 'If there’s a ghost in here, show yourself!' And the lights flickered, the floor creaked, and I immediately yelled, 'Okay, you showed yourself! Great job! I’m leaving now!'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong premise and good stage rhythm, though the final distinction is a little muddled.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clean, playable bit with a fresh truck-commercial metaphor and a solid final tag.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Too much prompt recitation, predictable escalation, and a stock nurse-patronizing ending.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 6,
+          "total": 3.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clear and readable, but the turn is obvious and the payoff is mild.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong escalation and a genuinely funny closing image; clean two-seed use.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fresh angle, unexpected specificity (F-150 diagnosis) lands as a real punchline.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 8
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid setup and escalation; punchline is amusing but fairly predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clear premise but the turn is the first obvious route and ends abruptly without a strong final snap.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "The premise is a bit standard, but leaving the body at 55 and dignity at the mailbox is a well-crafted, genuinely amusing punchline.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Starts very strong with the 'coward' line and the hand-grab misdirection, but the final dialogue exchange about 'Tuesday' is confusing and kills the momentum.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Unnatural integration of the exact seed phrase 'experiencing a crisis of self-doubt' disrupts the stage rhythm, leading to a highly predictable physical comedy setup.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 3.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Coherent and properly formatted, but relies on the oldest, most predictable haunted house trope possible with zero twist or fresh perspective.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 9,
+          "total": 4.4
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Haunted road trope with mild pun payoff.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Amusing tough-guy fear twist but punchline lands softly.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong premise, clear timing, memorable truck metaphor turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Short, solid macho-backdown bit but familiar haunted house setup.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise and a clear turn; funny image but not highly memorable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Consistent story with a decent payoff; a bit long and familiar in shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clean rhythm and a clear turn; therapy angle is familiar but handled well.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Straightforward macho-fail story; competent but predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.2,
+      "rawScore": 7.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 6.9,
+        "craft": 7.6,
+        "originality": 6.9,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.8,
+        "originality": 7,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean, playable bit with a fresh truck-commercial metaphor and a solid final tag."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 8.1,
+          "rawScore": 8,
+          "scoreAdjustment": 0.1,
+          "comment": "Fresh angle, unexpected specificity (F-150 diagnosis) lands as a real punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Strong premise, clear timing, memorable truck metaphor turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Clean rhythm and a clear turn; therapy angle is familiar but handled well."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 5.7,
+        "craft": 6.2,
+        "originality": 6.5,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 6.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.7,
+          "rawScore": 7,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong premise and good stage rhythm, though the final distinction is a little muddled."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.7,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.5,
+          "comment": "Starts very strong with the 'coward' line and the hand-grab misdirection, but the final dialogue exchange about 'Tuesday' is confusing and kills the momentum."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.7,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Amusing tough-guy fear twist but punchline lands softly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Consistent story with a decent payoff; a bit long and familiar in shape."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.6,
+        "craft": 6.3,
+        "originality": 6.1,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.5,
+        "craft": 6.3,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.2,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong escalation and a genuinely funny closing image; clean two-seed use."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.2,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.5,
+          "comment": "The premise is a bit standard, but leaving the body at 55 and dignity at the mailbox is a well-crafted, genuinely amusing punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.5,
+          "comment": "Haunted road trope with mild pun payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Solid premise and a clear turn; funny image but not highly memorable."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.3,
+      "rawScore": 5.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 4.4,
+        "craft": 5.9,
+        "originality": 4.2,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 6,
+        "originality": 4.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.2,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear and readable, but the turn is obvious and the payoff is mild."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.4,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear premise but the turn is the first obvious route and ends abruptly without a strong final snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.9,
+          "rawScore": 4.4,
+          "scoreAdjustment": 0.5,
+          "comment": "Coherent and properly formatted, but relies on the oldest, most predictable haunted house trope possible with zero twist or fresh perspective."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Short, solid macho-backdown bit but familiar haunted house setup."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5,
+      "rawScore": 4.8,
+      "scoreAdjustment": 0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.4,
+        "craft": 5.4,
+        "originality": 4.6,
+        "promptFit": 6.9
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.3,
+        "craft": 5.3,
+        "originality": 4.5,
+        "promptFit": 6.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 3.6,
+          "rawScore": 3.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Too much prompt recitation, predictable escalation, and a stock nurse-patronizing ending."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.5,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.1,
+          "comment": "Solid setup and escalation; punchline is amusing but fairly predictable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.1,
+          "rawScore": 3.6,
+          "scoreAdjustment": 0.5,
+          "comment": "Unnatural integration of the exact seed phrase 'experiencing a crisis of self-doubt' disrupts the stage rhythm, leading to a highly predictable physical comedy setup."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Straightforward macho-fail story; competent but predictable."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-08-ext-real-2026-07-08.png",
+    "originalSrc": "assets/feature-images/2026-07-08-ext-real-2026-07-08.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Rugged Chassis: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Rugged Chassis\nExact joke text to render in the right panel:\nI finally started seeing a therapist, which is tough when you're raised to be super macho. In our first session, she asked me to describe my feelings. I didn't have the emotional vocabulary, so I panicked and described a truck commercial. I squinted, lowered my voice, and said, 'Doc, I'm hauling a heavy payload on a rugged, steel-reinforced chassis.' She just nodded and diagnosed me with a Ford F-150.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Paranormal, Therapist, Country Road, Experiencing a crisis of self-doubt, Empathetic, Macho. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Paranormal, Therapist, Country Road, Experiencing a crisis of self-doubt, Empathetic, Macho. Use the winning joke titled \"Rugged Chassis\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.6,
+      "anthropic": 6.3,
+      "google": 5.9,
+      "xai": 6.9,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-08-ext-real-2026-07-08.md"
+}

@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-08T14:02:15.885Z",
+  "publishedDate": "2026-07-08",
+  "seed": "ext-real-2026-07-08",
+  "slug": "2026-07-08-ext-real-2026-07-08",
+  "source": "manual-external",
+  "seedTerms": [
+    "Paranormal",
+    "Therapist",
+    "Country Road",
+    "Experiencing a crisis of self-doubt",
+    "Empathetic",
+    "Macho"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Back Road Bravery",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Country Road"
+      ],
+      "joke": "I was driving down a country road at night when my GPS said, \"Turn left,\" and the only thing on the left was a cornfield. Then the radio whispered my name. I tried to stay calm, but when a scarecrow moved, I didn’t investigate the paranormal—I became paranormal. I left my body at 55 and my dignity at the next mailbox.",
+      "setup": "",
+      "punchline": "I was driving down a country road at night when my GPS said, \"Turn left,\" and the only thing on the left was a cornfield. Then the radio whispered my name. I tried to stay calm, but when a scarecrow moved, I didn’t investigate the paranormal—I became paranormal. I left my body at 55 and my dignity at the next mailbox.",
+      "text": "I was driving down a country road at night when my GPS said, \"Turn left,\" and the only thing on the left was a cornfield. Then the radio whispered my name. I tried to stay calm, but when a scarecrow moved, I didn’t investigate the paranormal—I became paranormal. I left my body at 55 and my dignity at the next mailbox."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Ghost Hunter's Confidence",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Macho"
+      ],
+      "joke": "I dated a paranormal investigator for a while. Guy walks into haunted houses with night vision goggles and an EMF meter, screaming 'SHOW YOURSELF, COWARD' at empty hallways. Total tough guy. Then one night the floorboard creaked and he grabbed my hand so hard I thought he was gonna propose. I said, 'I thought you weren't afraid of ghosts.' He said, 'I'm not afraid of ghosts. I'm afraid of getting murdered by one.' Bro, that's the same thing. He goes, 'No, one's a career, the other's Tuesday.'",
+      "setup": "",
+      "punchline": "I dated a paranormal investigator for a while. Guy walks into haunted houses with night vision goggles and an EMF meter, screaming 'SHOW YOURSELF, COWARD' at empty hallways. Total tough guy. Then one night the floorboard creaked and he grabbed my hand so hard I thought he was gonna propose. I said, 'I thought you weren't afraid of ghosts.' He said, 'I'm not afraid of ghosts. I'm afraid of getting murdered by one.' Bro, that's the same thing. He goes, 'No, one's a career, the other's Tuesday.'",
+      "text": "I dated a paranormal investigator for a while. Guy walks into haunted houses with night vision goggles and an EMF meter, screaming 'SHOW YOURSELF, COWARD' at empty hallways. Total tough guy. Then one night the floorboard creaked and he grabbed my hand so hard I thought he was gonna propose. I said, 'I thought you weren't afraid of ghosts.' He said, 'I'm not afraid of ghosts. I'm afraid of getting murdered by one.' Bro, that's the same thing. He goes, 'No, one's a career, the other's Tuesday.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Rugged Chassis",
+      "seedTermsUsed": [
+        "Therapist",
+        "Macho"
+      ],
+      "joke": "I finally started seeing a therapist, which is tough when you're raised to be super macho. In our first session, she asked me to describe my feelings. I didn't have the emotional vocabulary, so I panicked and described a truck commercial. I squinted, lowered my voice, and said, 'Doc, I'm hauling a heavy payload on a rugged, steel-reinforced chassis.' She just nodded and diagnosed me with a Ford F-150.",
+      "setup": "",
+      "punchline": "I finally started seeing a therapist, which is tough when you're raised to be super macho. In our first session, she asked me to describe my feelings. I didn't have the emotional vocabulary, so I panicked and described a truck commercial. I squinted, lowered my voice, and said, 'Doc, I'm hauling a heavy payload on a rugged, steel-reinforced chassis.' She just nodded and diagnosed me with a Ford F-150.",
+      "text": "I finally started seeing a therapist, which is tough when you're raised to be super macho. In our first session, she asked me to describe my feelings. I didn't have the emotional vocabulary, so I panicked and described a truck commercial. I squinted, lowered my voice, and said, 'Doc, I'm hauling a heavy payload on a rugged, steel-reinforced chassis.' She just nodded and diagnosed me with a Ford F-150."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Macho Meltdown",
+      "seedTermsUsed": [
+        "Macho",
+        "Experiencing a crisis of self-doubt"
+      ],
+      "joke": "Folks, I’ve always played the macho guy—big truck, beard, fixing stuff with my bare hands like it’s nothing. But lately I’ve been experiencing a crisis of self-doubt. Am I really that tough? So I grabbed an axe, headed to the backyard to chop wood and prove it. First swing, I missed the log, nailed my foot. Now I’m in the ER yelling at the nurse, 'This doesn’t count—I’m still macho!' She just patted my hand and said, 'Sure, big guy.'",
+      "setup": "",
+      "punchline": "Folks, I’ve always played the macho guy—big truck, beard, fixing stuff with my bare hands like it’s nothing. But lately I’ve been experiencing a crisis of self-doubt. Am I really that tough? So I grabbed an axe, headed to the backyard to chop wood and prove it. First swing, I missed the log, nailed my foot. Now I’m in the ER yelling at the nurse, 'This doesn’t count—I’m still macho!' She just patted my hand and said, 'Sure, big guy.'",
+      "text": "Folks, I’ve always played the macho guy—big truck, beard, fixing stuff with my bare hands like it’s nothing. But lately I’ve been experiencing a crisis of self-doubt. Am I really that tough? So I grabbed an axe, headed to the backyard to chop wood and prove it. First swing, I missed the log, nailed my foot. Now I’m in the ER yelling at the nurse, 'This doesn’t count—I’m still macho!' She just patted my hand and said, 'Sure, big guy.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Macho Ghost",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Macho"
+      ],
+      "joke": "I tried to act all macho when I thought my house was haunted. I marched right into the living room like, 'If there’s a ghost in here, show yourself!' And the lights flickered, the floor creaked, and I immediately yelled, 'Okay, you showed yourself! Great job! I’m leaving now!'",
+      "setup": "",
+      "punchline": "I tried to act all macho when I thought my house was haunted. I marched right into the living room like, 'If there’s a ghost in here, show yourself!' And the lights flickered, the floor creaked, and I immediately yelled, 'Okay, you showed yourself! Great job! I’m leaving now!'",
+      "text": "I tried to act all macho when I thought my house was haunted. I marched right into the living room like, 'If there’s a ghost in here, show yourself!' And the lights flickered, the floor creaked, and I immediately yelled, 'Okay, you showed yourself! Great job! I’m leaving now!'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise and good stage rhythm, though the final distinction is a little muddled."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean, playable bit with a fresh truck-commercial metaphor and a solid final tag."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "Too much prompt recitation, predictable escalation, and a stock nurse-patronizing ending."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear and readable, but the turn is obvious and the payoff is mild."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong escalation and a genuinely funny closing image; clean two-seed use."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "Fresh angle, unexpected specificity (F-150 diagnosis) lands as a real punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid setup and escalation; punchline is amusing but fairly predictable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear premise but the turn is the first obvious route and ends abruptly without a strong final snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "The premise is a bit standard, but leaving the body at 55 and dignity at the mailbox is a well-crafted, genuinely amusing punchline."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Starts very strong with the 'coward' line and the hand-grab misdirection, but the final dialogue exchange about 'Tuesday' is confusing and kills the momentum."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 6,
+          "laugh": 3,
+          "comment": "Unnatural integration of the exact seed phrase 'experiencing a crisis of self-doubt' disrupts the stage rhythm, leading to a highly predictable physical comedy setup."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Coherent and properly formatted, but relies on the oldest, most predictable haunted house trope possible with zero twist or fresh perspective."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Haunted road trope with mild pun payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Amusing tough-guy fear twist but punchline lands softly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise, clear timing, memorable truck metaphor turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Short, solid macho-backdown bit but familiar haunted house setup."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid premise and a clear turn; funny image but not highly memorable."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Consistent story with a decent payoff; a bit long and familiar in shape."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean rhythm and a clear turn; therapy angle is familiar but handled well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Straightforward macho-fail story; competent but predictable."
+        }
+      ]
+    }
+  ]
+}
