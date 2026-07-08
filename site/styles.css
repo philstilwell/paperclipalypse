@@ -1130,17 +1130,38 @@ main {
   gap: 10px 14px;
 }
 
+.trend-table {
+  min-width: 1120px;
+  table-layout: fixed;
+}
+
+.trend-table th:nth-child(1),
+.trend-table td:nth-child(1) {
+  width: 156px;
+  white-space: nowrap;
+}
+
+.trend-table th:nth-child(2),
+.trend-table td:nth-child(2) {
+  width: 320px;
+}
+
 .judge-score-table {
   min-width: 1120px;
   table-layout: fixed;
 }
 
 .judge-score-date-col {
-  width: 130px;
+  width: 156px;
 }
 
 .judge-score-round-col {
   width: 270px;
+}
+
+.judge-score-table th:nth-child(1),
+.judge-score-table td:nth-child(1) {
+  white-space: nowrap;
 }
 
 .judge-score-table th:nth-child(n+3),
