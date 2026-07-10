@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-10T14:17:27.448Z",
+  "publishedDate": "2026-07-10",
+  "seed": "ext-real-2026-07-10",
+  "slug": "2026-07-10-ext-real-2026-07-10",
+  "source": "manual-external",
+  "seedTerms": [
+    "Locked Room",
+    "Vintner",
+    "Ancient Ruins",
+    "Being insulted",
+    "Adventurous",
+    "Evil"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Tasting Notes",
+      "seedTermsUsed": [
+        "Vintner",
+        "Being insulted"
+      ],
+      "joke": "A vintner insulted me by saying my palate was unsophisticated. He said his wine had notes of blackberry, leather, and regret. I said, “I tasted the regret immediately. The blackberry and leather showed up when I tried to return it.”",
+      "setup": "",
+      "punchline": "A vintner insulted me by saying my palate was unsophisticated. He said his wine had notes of blackberry, leather, and regret. I said, “I tasted the regret immediately. The blackberry and leather showed up when I tried to return it.”",
+      "text": "A vintner insulted me by saying my palate was unsophisticated. He said his wine had notes of blackberry, leather, and regret. I said, “I tasted the regret immediately. The blackberry and leather showed up when I tried to return it.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Wine Guy",
+      "seedTermsUsed": [
+        "Vintner",
+        "Being insulted"
+      ],
+      "joke": "I dated a vintner for a while. Guy could insult you with a compliment. I brought a bottle of wine to dinner once, he swirled it, sniffed it, and said, 'This is very... approachable.' I said thanks. He said, 'No, I mean anyone could get into it. It has low standards, like a bar that lets in tourists.' Then he looked at me the same way.",
+      "setup": "",
+      "punchline": "I dated a vintner for a while. Guy could insult you with a compliment. I brought a bottle of wine to dinner once, he swirled it, sniffed it, and said, 'This is very... approachable.' I said thanks. He said, 'No, I mean anyone could get into it. It has low standards, like a bar that lets in tourists.' Then he looked at me the same way.",
+      "text": "I dated a vintner for a while. Guy could insult you with a compliment. I brought a bottle of wine to dinner once, he swirled it, sniffed it, and said, 'This is very... approachable.' I said thanks. He said, 'No, I mean anyone could get into it. It has low standards, like a bar that lets in tourists.' Then he looked at me the same way."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The IKEA Escape",
+      "seedTermsUsed": [
+        "Locked Room",
+        "Being insulted"
+      ],
+      "joke": "I paid forty bucks to do an escape room with my parents. Total waste of money. If I wanted to be trapped in a locked room while my dad systematically insults my problem-solving skills, I could have just asked him to help me put together IKEA furniture.",
+      "setup": "",
+      "punchline": "I paid forty bucks to do an escape room with my parents. Total waste of money. If I wanted to be trapped in a locked room while my dad systematically insults my problem-solving skills, I could have just asked him to help me put together IKEA furniture.",
+      "text": "I paid forty bucks to do an escape room with my parents. Total waste of money. If I wanted to be trapped in a locked room while my dad systematically insults my problem-solving skills, I could have just asked him to help me put together IKEA furniture."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Wine Cellar Trap",
+      "seedTermsUsed": [
+        "Locked Room",
+        "Vintner"
+      ],
+      "joke": "I booked a private tasting with this vintner at his estate. He leads me into what he calls the 'perfect aging room' and I hear the door lock behind us. It's just me, him, and rows of barrels. He starts describing every vintage in detail while I nod along, sipping. Three hours later I'm politely asking for the key and he's like, 'Patience, my friend—the wine needs time.' Yeah, well, so does my liver after this locked room experience.",
+      "setup": "",
+      "punchline": "I booked a private tasting with this vintner at his estate. He leads me into what he calls the 'perfect aging room' and I hear the door lock behind us. It's just me, him, and rows of barrels. He starts describing every vintage in detail while I nod along, sipping. Three hours later I'm politely asking for the key and he's like, 'Patience, my friend—the wine needs time.' Yeah, well, so does my liver after this locked room experience.",
+      "text": "I booked a private tasting with this vintner at his estate. He leads me into what he calls the 'perfect aging room' and I hear the door lock behind us. It's just me, him, and rows of barrels. He starts describing every vintage in detail while I nod along, sipping. Three hours later I'm politely asking for the key and he's like, 'Patience, my friend—the wine needs time.' Yeah, well, so does my liver after this locked room experience."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Cabernet Panic",
+      "seedTermsUsed": [
+        "Locked Room",
+        "Vintner"
+      ],
+      "joke": "I once got stuck in a locked tasting room with a vintner who insisted I could “hear the wine breathe.” Meanwhile I’m breathing like someone trapped in a very polite panic attack. He’s swirling a glass, giving a lecture on terroir, and I’m just praying the emergency exit isn’t considered part of the bouquet.",
+      "setup": "",
+      "punchline": "I once got stuck in a locked tasting room with a vintner who insisted I could “hear the wine breathe.” Meanwhile I’m breathing like someone trapped in a very polite panic attack. He’s swirling a glass, giving a lecture on terroir, and I’m just praying the emergency exit isn’t considered part of the bouquet.",
+      "text": "I once got stuck in a locked tasting room with a vintner who insisted I could “hear the wine breathe.” Meanwhile I’m breathing like someone trapped in a very polite panic attack. He’s swirling a glass, giving a lecture on terroir, and I’m just praying the emergency exit isn’t considered part of the bouquet."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Smooth escalation and a clear final insult, though the snobbish-vintner angle is familiar."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Concise, relatable, and well timed; the IKEA comparison delivers a solid payoff."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The setup is understandable, but it runs long and ends with a strained prompt-echoing punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Natural stage voice and a tidy bouquet callback, but the turn is amusing rather than especially sharp."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Sharp wordplay turning wine descriptors into a comeback; clean and tight."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Relatable family bit with a strong closing comparison to IKEA; solid escalation."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Drawn-out setup, punchline mostly restates premise rather than turning it; weak payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Vivid physical comedy, 'polite panic attack' and bouquet/exit line land a genuine snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent but formulaic one-liner; explicitly states the prompt terms rather than embodying a stage premise naturally."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Excellent rhythm and a genuinely funny turn comparing backhanded wine tasting notes to personal flaws."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "Weak punchline that just reiterates the setup and explicitly uses the prompt term without a satisfying comedic snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "A clean improvement; good absurd imagery with the 'polite panic attack' and a solid thematic punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Mild pun exchange, clever but no strong stage snap or big laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid dating turn with wine metaphor, amusing but familiar shape."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Relatable premise with clean, strong analogy and punchy close."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Cute scenario but lands soft with mild absurdity, no big payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Competent wine‑return gag; clear but predictable and mild."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Good character angle and a sharper turn; still familiar in shape."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Relatable IKEA comparison; clean timing though not highly surprising."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Long and expected; the locked‑room angle lands but without a strong snap."
+        }
+      ]
+    }
+  ]
+}

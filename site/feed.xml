@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Thu, 09 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 10 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Jul 10, 2026 - Wine Guy</title>
+      <link>https://paperclipalypse.com/runs/2026-07-10-ext-real-2026-07-10.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-10-ext-real-2026-07-10.html</guid>
+      <pubDate>Fri, 10 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Winner: Claude Sonnet 4.6 (6.7). Jul 10, 2026 Paperclipalypse AI comedy round: Wine Guy. Claude Sonnet 4.6 won with 6.7. Seed terms: Locked Room, Vintner, Ancient Ruins, Being insulted, Adventurous, Evil.</description>
+      <category>Locked Room</category>
+      <category>Vintner</category>
+      <category>Ancient Ruins</category>
+      <category>Being insulted</category>
+      <category>Adventurous</category>
+      <category>Evil</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-10-ext-real-2026-07-10.jpg" type="image/jpeg" medium="image">
+        <media:title>Wine Guy</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Wine Guy: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Jul 9, 2026 - Tiny Hypnotist</title>
       <link>https://paperclipalypse.com/runs/2026-07-09-ext-real-2026-07-09.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-21-ext-real-2026-06-21.jpg" type="image/jpeg" medium="image">
         <media:title>The Substitute Carrier</media:title>
         <media:description>Paperclipalypse winning joke feature image titled The Substitute Carrier: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Jun 20, 2026 - Spare Key</title>
-      <link>https://paperclipalypse.com/runs/2026-06-20-ext-real-2026-06-20.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-06-20-ext-real-2026-06-20.html</guid>
-      <pubDate>Sat, 20 Jun 2026 12:00:00 GMT</pubDate>
-      <description>Winner: OpenAI GPT-5.4 Mini (6.9). Jun 20, 2026 Paperclipalypse AI comedy round: Spare Key. OpenAI GPT-5.4 Mini won with 6.9. Seed terms: Sports, Locksmith, Antiques Store, A love interest moving on, Objective, Martyr.</description>
-      <category>Sports</category>
-      <category>Locksmith</category>
-      <category>Antiques Store</category>
-      <category>A love interest moving on</category>
-      <category>Objective</category>
-      <category>Martyr</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-06-20-ext-real-2026-06-20.jpg" type="image/jpeg" medium="image">
-        <media:title>Spare Key</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled Spare Key: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>
