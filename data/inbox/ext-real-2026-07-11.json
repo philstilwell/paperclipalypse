@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-11T14:02:11.155Z",
+  "publishedDate": "2026-07-11",
+  "slug": "2026-07-11-ext-real-2026-07-11",
+  "seed": "ext-real-2026-07-11",
+  "source": "manual-external",
+  "seedTerms": [
+    "Black and Dark",
+    "Inventor",
+    "Used Car Dealership",
+    "An unexpected change of plans",
+    "Uninhibited",
+    "Resentful"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "claude-web",
+      "model": "Claude Sonnet 4.6 web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "gemini-web",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "grok-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "copilot-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Field Testing",
+      "seedTermsUsed": [
+        "Inventor",
+        "Used Car Dealership"
+      ],
+      "joke": "I invented a lie detector and tested it at a used-car dealership. The salesman said, “This beauty was owned by one careful elderly lady.” My machine didn’t beep—it just printed a resignation letter and rolled itself into traffic.",
+      "text": "I invented a lie detector and tested it at a used-car dealership. The salesman said, “This beauty was owned by one careful elderly lady.” My machine didn’t beep—it just printed a resignation letter and rolled itself into traffic.",
+      "setup": "",
+      "punchline": "I invented a lie detector and tested it at a used-car dealership. The salesman said, “This beauty was owned by one careful elderly lady.” My machine didn’t beep—it just printed a resignation letter and rolled itself into traffic."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Claude Sonnet 4.6 web",
+      "title": "The Odometer Whisperer",
+      "seedTermsUsed": [
+        "Inventor",
+        "Used Car Dealership"
+      ],
+      "joke": "My uncle's an inventor. Not the cool kind. He invented a device that rolls back odometers, and he sells his cars himself, so he's basically an inventor, a manufacturer, and a con man all in one guy, which really cuts down on his supply chain. Thanksgiving, he showed me his newest patent. I said, “Uncle Ray, that's just a screwdriver.” He said, “Not the way I use it.”",
+      "text": "My uncle's an inventor. Not the cool kind. He invented a device that rolls back odometers, and he sells his cars himself, so he's basically an inventor, a manufacturer, and a con man all in one guy, which really cuts down on his supply chain. Thanksgiving, he showed me his newest patent. I said, “Uncle Ray, that's just a screwdriver.” He said, “Not the way I use it.”",
+      "setup": "",
+      "punchline": "My uncle's an inventor. Not the cool kind. He invented a device that rolls back odometers, and he sells his cars himself, so he's basically an inventor, a manufacturer, and a con man all in one guy, which really cuts down on his supply chain. Thanksgiving, he showed me his newest patent. I said, “Uncle Ray, that's just a screwdriver.” He said, “Not the way I use it.”"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Goth Retriever",
+      "seedTermsUsed": [
+        "Black and Dark",
+        "Uninhibited"
+      ],
+      "joke": "My high school goth phase was a total disaster. You can't successfully project a black and dark aura when you have the completely uninhibited personality of a golden retriever. I’d be stomping around the mall in a heavy trench coat and combat boots, just aggressively waving at people like, “Hey! Life is a bottomless abyss, but these Auntie Anne's pretzel bites are amazing!”",
+      "text": "My high school goth phase was a total disaster. You can't successfully project a black and dark aura when you have the completely uninhibited personality of a golden retriever. I’d be stomping around the mall in a heavy trench coat and combat boots, just aggressively waving at people like, “Hey! Life is a bottomless abyss, but these Auntie Anne's pretzel bites are amazing!”",
+      "setup": "",
+      "punchline": "My high school goth phase was a total disaster. You can't successfully project a black and dark aura when you have the completely uninhibited personality of a golden retriever. I’d be stomping around the mall in a heavy trench coat and combat boots, just aggressively waving at people like, “Hey! Life is a bottomless abyss, but these Auntie Anne's pretzel bites are amazing!”"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Lot of Regret",
+      "seedTermsUsed": [
+        "Used Car Dealership",
+        "An unexpected change of plans"
+      ],
+      "joke": "So I roll into this used car dealership last Saturday, cash in hand, ready for freedom. Salesman swears this sedan is a gem, barely driven by a grandma. I buy it, cruise off the lot blasting music like I'm in a commercial. Two miles later the brakes fail and I'm fishtailing into a ditch. An unexpected change of plans: what I thought was my upgrade turned into an expensive paperweight and a long walk home. Next time I'm just sticking with the bus and my dignity.",
+      "text": "So I roll into this used car dealership last Saturday, cash in hand, ready for freedom. Salesman swears this sedan is a gem, barely driven by a grandma. I buy it, cruise off the lot blasting music like I'm in a commercial. Two miles later the brakes fail and I'm fishtailing into a ditch. An unexpected change of plans: what I thought was my upgrade turned into an expensive paperweight and a long walk home. Next time I'm just sticking with the bus and my dignity.",
+      "setup": "",
+      "punchline": "So I roll into this used car dealership last Saturday, cash in hand, ready for freedom. Salesman swears this sedan is a gem, barely driven by a grandma. I buy it, cruise off the lot blasting music like I'm in a commercial. Two miles later the brakes fail and I'm fishtailing into a ditch. An unexpected change of plans: what I thought was my upgrade turned into an expensive paperweight and a long walk home. Next time I'm just sticking with the bus and my dignity."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Midnight Test Drive",
+      "seedTermsUsed": [
+        "Used Car Dealership",
+        "Inventor"
+      ],
+      "joke": "I once bought a car from this used‑lot inventor who was way too proud of his “custom features.” I turn the key and the headlights flicker like a haunted porch. He goes, “That’s intentional—mood lighting for night driving.” I hit the brakes and the horn plays a sad trombone. I’m like, “Man, I don’t need a vehicle with feelings. I just need it to stop before I do.”",
+      "text": "I once bought a car from this used‑lot inventor who was way too proud of his “custom features.” I turn the key and the headlights flicker like a haunted porch. He goes, “That’s intentional—mood lighting for night driving.” I hit the brakes and the horn plays a sad trombone. I’m like, “Man, I don’t need a vehicle with feelings. I just need it to stop before I do.”",
+      "setup": "",
+      "punchline": "I once bought a car from this used‑lot inventor who was way too proud of his “custom features.” I turn the key and the headlights flicker like a haunted porch. He goes, “That’s intentional—mood lighting for night driving.” I hit the brakes and the horn plays a sad trombone. I’m like, “Man, I don’t need a vehicle with feelings. I just need it to stop before I do.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise, efficient escalation, and a crisp final reversal. The dealership concept is implicit rather than explicit but remains clear."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear comic contrast with a vivid mall image and good performance rhythm. The goth-versus-golden-retriever premise is familiar but lands."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 10,
+          "laugh": 3,
+          "comment": "Understandable and on prompt, but it reads as an accident story rather than a constructed joke. The final line is generic and lacks a sharp turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Solid escalation through defective features and a clean final line. Amusing and well formed, though the haunted-car material is somewhat familiar."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean premise, good escalation, personified machine \"giving up\" lands well as final image."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Vivid contrast (goth vs. golden retriever) with a specific, funny closing line; strongest turn of the batch."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Standard bad-used-car narrative; competent but predictable, closing line restates rather than surprises."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Cute personified-car bit with sad trombone gag; solid but a notch below the sharper entries."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Classic setup elevated by an absurd, highly visual punchline. Strong cartoon logic."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 7,
+          "laugh": 8,
+          "comment": "Excellent character-driven stand-up rhythm. The punchline is understated and lands perfectly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 2,
+          "craft": 3,
+          "promptFit": 4,
+          "laugh": 2,
+          "comment": "Reads as a generic anecdote rather than a joke. Severely penalized for forced prompt recitation and lack of a turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Amusing middle imagery, but the final punchline is mechanically confusing and weakens the payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong visual punch with machine resignation; clean escalation."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Screwdriver line lands mildly but relies on familiar scam tropes."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Sharp personality contrast; natural rhythm and relatable image."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Quirky features amuse but feel a bit list-like without big snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise and a fun visual; predictable but solid."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Decent character humor; familiar shape and a mild payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Strong first‑person angle with a clear turn and lively imagery."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Straightforward story; understandable but lacks a sharp final snap."
+        }
+      ]
+    }
+  ]
+}

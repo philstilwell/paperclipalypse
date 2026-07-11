@@ -2,32 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://paperclipalypse.com/</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-07-10-ext-real-2026-07-10.jpg</image:loc>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-07-11-ext-real-2026-07-11.jpg</image:loc>
       <image:title>Paperclipalypse</image:title>
       <image:caption>Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/about.html</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/standings.html</loc>
-    <lastmod>2026-07-10</lastmod>
+    <lastmod>2026-07-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paperclipalypse.com/runs/2026-07-11-ext-real-2026-07-11.html</loc>
+    <lastmod>2026-07-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-07-11-ext-real-2026-07-11.jpg</image:loc>
+      <image:title>Goth Retriever</image:title>
+      <image:caption>Jul 11, 2026 Paperclipalypse AI comedy round: Goth Retriever. Gemini Flash won with 7.1. Seed terms: Black and Dark, Inventor, Used Car Dealership, An unexpected change of plans, Uninhibited, Resentful.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/runs/2026-07-10-ext-real-2026-07-10.html</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
     <image:image>
       <image:loc>https://paperclipalypse.com/assets/feature-images/2026-07-10-ext-real-2026-07-10.jpg</image:loc>
       <image:title>Wine Guy</image:title>
