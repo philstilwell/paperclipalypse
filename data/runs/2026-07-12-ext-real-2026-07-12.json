@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-12-ext-real-2026-07-12",
+  "seed": "ext-real-2026-07-12",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-12T14:01:35.292Z",
+  "publishedDate": "2026-07-12",
+  "seedTerms": [
+    "Caper",
+    "Glassblower / Potter",
+    "Subway Train / Station / Tunnel",
+    "Taking advice from the wrong person",
+    "Loyal",
+    "Foolish"
+  ],
+  "premise": {
+    "text": "Seed terms: Caper, Glassblower / Potter, Subway Train / Station / Tunnel, Taking advice from the wrong person, Loyal, Foolish",
+    "seedTerms": [
+      "Caper",
+      "Glassblower / Potter",
+      "Subway Train / Station / Tunnel",
+      "Taking advice from the wrong person",
+      "Loyal",
+      "Foolish"
+    ],
+    "displayText": "The Missing Lid"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "claude-web",
+      "model": "Claude Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "gemini-web",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "grok-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "copilot-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "The Missing Lid",
+      "seedTermsUsed": [
+        "Glassblower / Potter",
+        "Taking advice from the wrong person"
+      ],
+      "joke": "I took a pottery class. The guy beside me said, “The secret is more speed,” so I cranked the wheel. My bowl launched across the room and landed upside down on his. Turns out he wasn’t the instructor—he’d just been waiting for someone to make him a lid.",
+      "setup": "",
+      "punchline": "I took a pottery class. The guy beside me said, “The secret is more speed,” so I cranked the wheel. My bowl launched across the room and landed upside down on his. Turns out he wasn’t the instructor—he’d just been waiting for someone to make him a lid.",
+      "text": "I took a pottery class. The guy beside me said, “The secret is more speed,” so I cranked the wheel. My bowl launched across the room and landed upside down on his. Turns out he wasn’t the instructor—he’d just been waiting for someone to make him a lid."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Claude Sonnet 5 Medium web",
+      "title": "Glass Half Empty",
+      "seedTermsUsed": [
+        "Glassblower / Potter",
+        "Taking advice from the wrong person"
+      ],
+      "joke": "I told my buddy I wanted to try a relaxing new hobby, so he suggested glassblowing. Guy's never done it either. First day, I'm holding a five-foot pipe with molten glass on the end, and he yells, 'Just blow harder if it's not working!' Twenty minutes later I'm in the ER and the doctor asks what happened. I said, 'I trusted a guy whose only craft experience was blowing up pool floats.'",
+      "setup": "",
+      "punchline": "I told my buddy I wanted to try a relaxing new hobby, so he suggested glassblowing. Guy's never done it either. First day, I'm holding a five-foot pipe with molten glass on the end, and he yells, 'Just blow harder if it's not working!' Twenty minutes later I'm in the ER and the doctor asks what happened. I said, 'I trusted a guy whose only craft experience was blowing up pool floats.'",
+      "text": "I told my buddy I wanted to try a relaxing new hobby, so he suggested glassblowing. Guy's never done it either. First day, I'm holding a five-foot pipe with molten glass on the end, and he yells, 'Just blow harder if it's not working!' Twenty minutes later I'm in the ER and the doctor asks what happened. I said, 'I trusted a guy whose only craft experience was blowing up pool floats.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "The Getaway",
+      "seedTermsUsed": [
+        "Caper",
+        "Subway Train / Station / Tunnel"
+      ],
+      "joke": "I recently pulled off a high-stakes bank caper. Flawless execution. Unfortunately, our getaway van got towed, so my crew had to take the subway. Let me tell you, the adrenaline of a heist really fades when you're standing on a local platform for forty minutes holding canvas sacks with giant dollar signs on them. When the cops finally found us, they didn't even yell 'Freeze!' They just drew their weapons and ordered us to let the passengers off first.",
+      "setup": "",
+      "punchline": "I recently pulled off a high-stakes bank caper. Flawless execution. Unfortunately, our getaway van got towed, so my crew had to take the subway. Let me tell you, the adrenaline of a heist really fades when you're standing on a local platform for forty minutes holding canvas sacks with giant dollar signs on them. When the cops finally found us, they didn't even yell 'Freeze!' They just drew their weapons and ordered us to let the passengers off first.",
+      "text": "I recently pulled off a high-stakes bank caper. Flawless execution. Unfortunately, our getaway van got towed, so my crew had to take the subway. Let me tell you, the adrenaline of a heist really fades when you're standing on a local platform for forty minutes holding canvas sacks with giant dollar signs on them. When the cops finally found us, they didn't even yell 'Freeze!' They just drew their weapons and ordered us to let the passengers off first."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Subway Stranger Advice",
+      "seedTermsUsed": [
+        "Taking advice from the wrong person",
+        "Subway Train / Station / Tunnel"
+      ],
+      "joke": "You ever catch yourself taking advice from the wrong person? Yesterday I'm standing on the subway platform, late for a meeting, and this guy with a giant map tattoo says, 'Take the local, it's more reliable.' I hop on like an idiot. Forty minutes later we're stalled in the tunnel, lights flickering, AC dead. I'm dripping sweat, missing my stop, and the whole car smells like defeat. Why do I talk to people?",
+      "setup": "",
+      "punchline": "You ever catch yourself taking advice from the wrong person? Yesterday I'm standing on the subway platform, late for a meeting, and this guy with a giant map tattoo says, 'Take the local, it's more reliable.' I hop on like an idiot. Forty minutes later we're stalled in the tunnel, lights flickering, AC dead. I'm dripping sweat, missing my stop, and the whole car smells like defeat. Why do I talk to people?",
+      "text": "You ever catch yourself taking advice from the wrong person? Yesterday I'm standing on the subway platform, late for a meeting, and this guy with a giant map tattoo says, 'Take the local, it's more reliable.' I hop on like an idiot. Forty minutes later we're stalled in the tunnel, lights flickering, AC dead. I'm dripping sweat, missing my stop, and the whole car smells like defeat. Why do I talk to people?"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Tunnel Wisdom",
+      "seedTermsUsed": [
+        "Subway Train / Station / Tunnel",
+        "Taking advice from the wrong person"
+      ],
+      "joke": "I once took advice from a guy in a subway tunnel who looked like he’d been down there since the last renovation. He told me, “If you miss your train, just chase it. Shows initiative.” So there I am sprinting after a departing car like it’s a job interview on wheels, and the conductor’s staring at me like, “Buddy, this is not how ambition works.”",
+      "setup": "",
+      "punchline": "I once took advice from a guy in a subway tunnel who looked like he’d been down there since the last renovation. He told me, “If you miss your train, just chase it. Shows initiative.” So there I am sprinting after a departing car like it’s a job interview on wheels, and the conductor’s staring at me like, “Buddy, this is not how ambition works.”",
+      "text": "I once took advice from a guy in a subway tunnel who looked like he’d been down there since the last renovation. He told me, “If you miss your train, just chase it. Shows initiative.” So there I am sprinting after a departing car like it’s a job interview on wheels, and the conductor’s staring at me like, “Buddy, this is not how ambition works.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear premise and a serviceable pool-float turn, though the ER escalation is underexplained and the final line earns only a mild laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong visual premise, clean escalation, and a final transit-etiquette turn that lands naturally without overplaying the absurdity.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and properly structured, but it becomes a familiar subway complaint and ends with a generic expression of regret rather than a punchline.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The train-chasing image is amusing and concise, but the job-interview comparison and final ambition line feel manufactured rather than sharply surprising.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean twist (he wanted a lid, not teaching), natural stage voice, solid but not explosive payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good escalation from heist to mundane subway wait; cop line ('let the passengers off first') is a genuinely funny anticlimax.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Standard delayed-train complaint; closing line is a flat rhetorical question rather than a punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Serviceable, the 'ambition on wheels' bit lands mildly but the conductor tag is a soft close.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Economical wording with a distinct, non-obvious punchline that effectively lands the laugh.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.7
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Competent setup, but the escalation to the ER is cliché and the punchline feels like a logical stretch.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Lacks a real comedic turn or punchline; reads more like a frustrating anecdote than a structured joke.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 3.9000000000000004
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relies heavily on generic corporate/HR tropes for the punchline, which dulls the comic impact.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean visual payoff with strong misdirection on the instructor.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid escalation but punchline leans predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Memorable absurd image and polite-cops twist lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Decent visual but setup feels generic.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation and a tidy final image; mildly funny and well-formed.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear story but long and predictable; payoff lands as a familiar exaggeration.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fun premise with a solid turn; slightly overlong but readable and coherent.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relatable setup; ending is more complaint than punchline, limiting the laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean twist (he wanted a lid, not teaching), natural stage voice, solid but not explosive payoff."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.3,
+          "rawScore": 7.7,
+          "scoreAdjustment": 0.6,
+          "comment": "Economical wording with a distinct, non-obvious punchline that effectively lands the laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.6,
+          "comment": "Clean visual payoff with strong misdirection on the instructor."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Clean escalation and a tidy final image; mildly funny and well-formed."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.7,
+      "rawScore": 6.9,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 6.6,
+        "originality": 6.6,
+        "promptFit": 7.9
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 6.8,
+        "originality": 6.8,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong visual premise, clean escalation, and a final transit-etiquette turn that lands naturally without overplaying the absurdity."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Good escalation from heist to mundane subway wait; cop line ('let the passengers off first') is a genuinely funny anticlimax."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.6,
+          "comment": "Memorable absurd image and polite-cops twist lands well."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Fun premise with a solid turn; slightly overlong but readable and coherent."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 5.8,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.6,
+        "craft": 6.1,
+        "originality": 5.3,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear premise and a serviceable pool-float turn, though the ER escalation is underexplained and the final line earns only a mild laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.6,
+          "rawScore": 5,
+          "scoreAdjustment": 0.6,
+          "comment": "Competent setup, but the escalation to the ER is cliché and the punchline feels like a logical stretch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.6,
+          "comment": "Solid escalation but punchline leans predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear story but long and predictable; payoff lands as a familiar exaggeration."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.5,
+      "rawScore": 5.6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 5.2,
+        "craft": 5.7,
+        "originality": 5.2,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 5.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.5,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.1,
+          "comment": "The train-chasing image is amusing and concise, but the job-interview comparison and final ambition line feel manufactured rather than sharply surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.1,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Serviceable, the 'ambition on wheels' bit lands mildly but the conductor tag is a soft close."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.6,
+          "rawScore": 5,
+          "scoreAdjustment": 0.6,
+          "comment": "Relies heavily on generic corporate/HR tropes for the punchline, which dulls the comic impact."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.6,
+          "comment": "Decent visual but setup feels generic."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.7,
+      "rawScore": 4.6,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.1,
+        "surprise": 3.9,
+        "craft": 5.1,
+        "originality": 4.4,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 4,
+        "surprise": 3.8,
+        "craft": 5,
+        "originality": 4.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.4,
+          "rawScore": 4.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Understandable and properly structured, but it becomes a familiar subway complaint and ends with a generic expression of regret rather than a punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.2,
+          "rawScore": 4.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Standard delayed-train complaint; closing line is a flat rhetorical question rather than a punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.5,
+          "rawScore": 3.9,
+          "scoreAdjustment": 0.6,
+          "comment": "Lacks a real comedic turn or punchline; reads more like a frustrating anecdote than a structured joke."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Relatable setup; ending is more complaint than punchline, limiting the laugh."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-12-ext-real-2026-07-12.jpg",
+    "originalSrc": "assets/feature-images/2026-07-12-ext-real-2026-07-12.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Missing Lid: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - The Missing Lid\nExact joke text to render in the right panel:\nI took a pottery class. The guy beside me said, “The secret is more speed,” so I cranked the wheel. My bowl launched across the room and landed upside down on his. Turns out he wasn’t the instructor—he’d just been waiting for someone to make him a lid.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Caper, Glassblower / Potter, Subway Train / Station / Tunnel, Taking advice from the wrong person, Loyal, Foolish. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Caper, Glassblower / Potter, Subway Train / Station / Tunnel, Taking advice from the wrong person, Loyal, Foolish. Use the winning joke titled \"The Getaway\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.2,
+      "anthropic": 6.5,
+      "google": 5.6,
+      "xai": 6.7,
+      "copilot": 5.8
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-12-ext-real-2026-07-12.md"
+}
