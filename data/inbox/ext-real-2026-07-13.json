@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-13T14:01:23.306Z",
+  "publishedDate": "2026-07-13",
+  "seed": "ext-real-2026-07-13",
+  "slug": "2026-07-13-ext-real-2026-07-13",
+  "source": "manual-external",
+  "seedTerms": [
+    "Black and Dark",
+    "Personal Trainer",
+    "Convenience Store",
+    "Being poisoned",
+    "Sophisticated",
+    "Inflexible"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Impulse Training",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Convenience Store"
+      ],
+      "joke": "My personal trainer told me to stop buying dinner at the convenience store. I said, “But they sell protein.” He said, “So does a pet shop. That doesn’t make the hamster aisle a salad bar.” Now every time I buy a hot dog, I hear his voice—mostly because he works the register at night.",
+      "text": "My personal trainer told me to stop buying dinner at the convenience store. I said, “But they sell protein.” He said, “So does a pet shop. That doesn’t make the hamster aisle a salad bar.” Now every time I buy a hot dog, I hear his voice—mostly because he works the register at night.",
+      "setup": "",
+      "punchline": "My personal trainer told me to stop buying dinner at the convenience store. I said, “But they sell protein.” He said, “So does a pet shop. That doesn’t make the hamster aisle a salad bar.” Now every time I buy a hot dog, I hear his voice—mostly because he works the register at night."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Claude Sonnet 5 Medium web",
+      "title": "Gains and Losses",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Inflexible"
+      ],
+      "joke": "I hired a personal trainer to help me get flexible. Guy's completely inflexible about it. I said, \"Can we move Tuesday's session?\" He said no. I said, \"Can we do fifteen minutes instead of an hour?\" He said no. I'm paying a man four hundred dollars a month to teach me flexibility, and he won't bend on anything. My hamstrings are more open-minded than this guy.",
+      "text": "I hired a personal trainer to help me get flexible. Guy's completely inflexible about it. I said, \"Can we move Tuesday's session?\" He said no. I said, \"Can we do fifteen minutes instead of an hour?\" He said no. I'm paying a man four hundred dollars a month to teach me flexibility, and he won't bend on anything. My hamstrings are more open-minded than this guy.",
+      "setup": "",
+      "punchline": "I hired a personal trainer to help me get flexible. Guy's completely inflexible about it. I said, \"Can we move Tuesday's session?\" He said no. I said, \"Can we do fifteen minutes instead of an hour?\" He said no. I'm paying a man four hundred dollars a month to teach me flexibility, and he won't bend on anything. My hamstrings are more open-minded than this guy."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Medical Emergency",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Being poisoned"
+      ],
+      "joke": "I hired a personal trainer, and after ten minutes, my chest was tight, my vision went blurry, and I tasted copper. I panicked, convinced someone was secretly poisoning my water bottle. I went straight to the emergency room. The doctor ran my vitals, sighed, and said, \"Sir, nobody is trying to kill you. This condition is called cardio.\"",
+      "text": "I hired a personal trainer, and after ten minutes, my chest was tight, my vision went blurry, and I tasted copper. I panicked, convinced someone was secretly poisoning my water bottle. I went straight to the emergency room. The doctor ran my vitals, sighed, and said, \"Sir, nobody is trying to kill you. This condition is called cardio.\"",
+      "setup": "",
+      "punchline": "I hired a personal trainer, and after ten minutes, my chest was tight, my vision went blurry, and I tasted copper. I panicked, convinced someone was secretly poisoning my water bottle. I went straight to the emergency room. The doctor ran my vitals, sighed, and said, \"Sir, nobody is trying to kill you. This condition is called cardio.\""
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Inflexible Trainer",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Inflexible"
+      ],
+      "joke": "I hired a personal trainer last month thinking it'd whip me into shape. This guy is so inflexible, I mentioned my back was acting up and suggested we modify the deadlifts. He just deadpanned, \"The plan is the plan.\" Now I'm waddling around like a penguin with a pulled muscle, cursing every rep. Thanks, man—I'm not getting stronger, I'm just becoming consistently miserable!",
+      "text": "I hired a personal trainer last month thinking it'd whip me into shape. This guy is so inflexible, I mentioned my back was acting up and suggested we modify the deadlifts. He just deadpanned, \"The plan is the plan.\" Now I'm waddling around like a penguin with a pulled muscle, cursing every rep. Thanks, man—I'm not getting stronger, I'm just becoming consistently miserable!",
+      "setup": "",
+      "punchline": "I hired a personal trainer last month thinking it'd whip me into shape. This guy is so inflexible, I mentioned my back was acting up and suggested we modify the deadlifts. He just deadpanned, \"The plan is the plan.\" Now I'm waddling around like a penguin with a pulled muscle, cursing every rep. Thanks, man—I'm not getting stronger, I'm just becoming consistently miserable!"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Poisoned Gains",
+      "seedTermsUsed": [
+        "Personal Trainer",
+        "Being poisoned"
+      ],
+      "joke": "My personal trainer is way too intense. Last week he handed me a green smoothie and said, “Drink this… it’ll flush out your weaknesses.” Ten minutes later I’m on the floor wondering if he meant that literally. He leans over and goes, “If you can still breathe, you can still do burpees.” I’m like, “Man, I think you poisoned me.” He nods and says, “Good. Now you’re committed.”",
+      "text": "My personal trainer is way too intense. Last week he handed me a green smoothie and said, “Drink this… it’ll flush out your weaknesses.” Ten minutes later I’m on the floor wondering if he meant that literally. He leans over and goes, “If you can still breathe, you can still do burpees.” I’m like, “Man, I think you poisoned me.” He nods and says, “Good. Now you’re committed.”",
+      "setup": "",
+      "punchline": "My personal trainer is way too intense. Last week he handed me a green smoothie and said, “Drink this… it’ll flush out your weaknesses.” Ten minutes later I’m on the floor wondering if he meant that literally. He leans over and goes, “If you can still breathe, you can still do burpees.” I’m like, “Man, I think you poisoned me.” He nods and says, “Good. Now you’re committed.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear premise and good rhythm, but the flexible/inflexible wordplay is predictable; the hamstrings tag earns a mild laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Cleanly constructed and easy to follow, but mistaking exercise for mortal danger and the cardio reveal are familiar comic territory."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 10,
+          "laugh": 3,
+          "comment": "The situation fits the seeds, but it plays as a complaint rather than a shaped joke, and the final line merely summarizes the misery."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "There is escalation and a recognizable trainer caricature, but the poisoning premise is strained and the final commitment line does not deliver a strong turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Hamster-aisle line is a fresh, funny image; night-register twist lands as a real turn."
+        },
+        {
+          "jokeId": "google",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clean setup but the 'it's just cardio' reveal is a familiar gag shape."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Solid inflexible-trainer premise but closing line is flat, undercuts escalation."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good escalation and the 'now you're committed' compliance-pun turn earns a real laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong twist ending that neatly recontextualizes the setup. Excellent pacing and natural stage voice."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid wordplay premise exploiting literal versus metaphorical flexibility. Great stage rhythm and a well-delivered final line."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "Reads like a genuine grievance rather than a structured joke. Lacks a clear comedic turn or punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent execution but leans heavily on the generic hyper-intense trainer trope. The poisoning dialogue feels slightly forced."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Mild irony but forced twist and weak closer."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong irony with clean escalation and solid punch."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Reliable cardio misdirect; good snap but familiar angle."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Decent commitment bit but predictable intensity trope."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid premise with a fun final reveal; mildly funny and cleanly built."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clear angle and tidy rhythm; familiar structure but lands a mild laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Strong turn and crisp timing; relatable escalation with a satisfying snap."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Understandable and coherent but leans on complaint more than punchline."
+        }
+      ]
+    }
+  ]
+}
