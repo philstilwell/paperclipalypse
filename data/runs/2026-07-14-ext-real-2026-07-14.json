@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-14-ext-real-2026-07-14",
+  "seed": "ext-real-2026-07-14",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-14T14:01:12.309Z",
+  "publishedDate": "2026-07-14",
+  "seedTerms": [
+    "Blockbuster",
+    "Professor",
+    "Beach Party",
+    "Doing something stupid while drunk",
+    "Courteous",
+    "Grumpy"
+  ],
+  "premise": {
+    "text": "Seed terms: Blockbuster, Professor, Beach Party, Doing something stupid while drunk, Courteous, Grumpy",
+    "seedTerms": [
+      "Blockbuster",
+      "Professor",
+      "Beach Party",
+      "Doing something stupid while drunk",
+      "Courteous",
+      "Grumpy"
+    ],
+    "displayText": "Polite Intoxication"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Supporting Evidence",
+      "seedTermsUsed": [
+        "Professor",
+        "Doing something stupid while drunk"
+      ],
+      "joke": "In college, I got drunk and emailed my professor, “I deserve a better grade.” The next morning he replied, “Your argument lacks evidence.” So I sent him security footage of me trying to unlock my dorm with a slice of pizza. He raised the grade—not for the essay, but because I’d finally supported a claim.",
+      "setup": "",
+      "punchline": "In college, I got drunk and emailed my professor, “I deserve a better grade.” The next morning he replied, “Your argument lacks evidence.” So I sent him security footage of me trying to unlock my dorm with a slice of pizza. He raised the grade—not for the essay, but because I’d finally supported a claim.",
+      "text": "In college, I got drunk and emailed my professor, “I deserve a better grade.” The next morning he replied, “Your argument lacks evidence.” So I sent him security footage of me trying to unlock my dorm with a slice of pizza. He raised the grade—not for the essay, but because I’d finally supported a claim."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Claude Sonnet 5 Medium web",
+      "title": "Last Known Rental",
+      "seedTermsUsed": [
+        "Blockbuster",
+        "Doing something stupid while drunk"
+      ],
+      "joke": "I did something stupid while drunk in college. I joined Blockbuster's DVD rewards program. Lifetime membership, they said. Fifty free rentals, they said. I've been holding onto that card for fifteen years like it's a savings bond. My friends invested in crypto, I invested in a company that now exists only as a single store in Bend, Oregon, staffed by a man who is basically a folk hero. I'm not mad. I'm diversified in nostalgia. It's due back never.",
+      "setup": "",
+      "punchline": "I did something stupid while drunk in college. I joined Blockbuster's DVD rewards program. Lifetime membership, they said. Fifty free rentals, they said. I've been holding onto that card for fifteen years like it's a savings bond. My friends invested in crypto, I invested in a company that now exists only as a single store in Bend, Oregon, staffed by a man who is basically a folk hero. I'm not mad. I'm diversified in nostalgia. It's due back never.",
+      "text": "I did something stupid while drunk in college. I joined Blockbuster's DVD rewards program. Lifetime membership, they said. Fifty free rentals, they said. I've been holding onto that card for fifteen years like it's a savings bond. My friends invested in crypto, I invested in a company that now exists only as a single store in Bend, Oregon, staffed by a man who is basically a folk hero. I'm not mad. I'm diversified in nostalgia. It's due back never."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Polite Intoxication",
+      "seedTermsUsed": [
+        "Courteous",
+        "Doing something stupid while drunk"
+      ],
+      "joke": "I am dangerously courteous when I'm drunk. Normal people get hammered and text their ex. I get blacked out and leave glowing Yelp reviews for ATMs. Last night I got so trashed I passed out on my neighbor’s front lawn. But I did it respectfully. I woke up curled in the fetal position, holding a handwritten sign that said, 'Please keep off the grass.'",
+      "setup": "",
+      "punchline": "I am dangerously courteous when I'm drunk. Normal people get hammered and text their ex. I get blacked out and leave glowing Yelp reviews for ATMs. Last night I got so trashed I passed out on my neighbor’s front lawn. But I did it respectfully. I woke up curled in the fetal position, holding a handwritten sign that said, 'Please keep off the grass.'",
+      "text": "I am dangerously courteous when I'm drunk. Normal people get hammered and text their ex. I get blacked out and leave glowing Yelp reviews for ATMs. Last night I got so trashed I passed out on my neighbor’s front lawn. But I did it respectfully. I woke up curled in the fetal position, holding a handwritten sign that said, 'Please keep off the grass.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Sandy Regrets",
+      "seedTermsUsed": [
+        "Beach Party",
+        "Doing something stupid while drunk"
+      ],
+      "joke": "I went to a beach party last summer and ended up doing something stupid while drunk. My buddies buried me in the sand up to my neck for laughs, and I passed out cold. Woke up to the tide rolling in and seagulls circling overhead. Turns out those birds don't care if you're a human statue—they treated me like an open buffet. I haven't been invited back since.",
+      "setup": "",
+      "punchline": "I went to a beach party last summer and ended up doing something stupid while drunk. My buddies buried me in the sand up to my neck for laughs, and I passed out cold. Woke up to the tide rolling in and seagulls circling overhead. Turns out those birds don't care if you're a human statue—they treated me like an open buffet. I haven't been invited back since.",
+      "text": "I went to a beach party last summer and ended up doing something stupid while drunk. My buddies buried me in the sand up to my neck for laughs, and I passed out cold. Woke up to the tide rolling in and seagulls circling overhead. Turns out those birds don't care if you're a human statue—they treated me like an open buffet. I haven't been invited back since."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Beachside Genius",
+      "seedTermsUsed": [
+        "Beach Party",
+        "Doing something stupid while drunk"
+      ],
+      "joke": "I got way too drunk at a beach party and decided I should give a TED Talk in the sand. I stood on a cooler like it was a stage and announced, “Tonight, I solve all of humanity’s problems!” Then I immediately fell off, knocked over the chips, and declared, “Step one: gravity is rude.”",
+      "setup": "",
+      "punchline": "I got way too drunk at a beach party and decided I should give a TED Talk in the sand. I stood on a cooler like it was a stage and announced, “Tonight, I solve all of humanity’s problems!” Then I immediately fell off, knocked over the chips, and declared, “Step one: gravity is rude.”",
+      "text": "I got way too drunk at a beach party and decided I should give a TED Talk in the sand. I stood on a cooler like it was a stage and announced, “Tonight, I solve all of humanity’s problems!” Then I immediately fell off, knocked over the chips, and declared, “Step one: gravity is rude.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Amusing nostalgia premise with several solid lines, but it runs long and the final tag is cleverer than it is laugh-heavy.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear comic character, strong escalation, and a clean visual punchline that naturally combines both concepts.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and on-prompt, but the buried-drunk scenario is familiar, the seagull turn is predictable, and the final line does not sharpen the joke.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 4.6
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clean and concise with decent stage rhythm, but the TED Talk setup and personified-gravity punchline feel familiar and mildly amusing rather than strong.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean callback structure, punchline pays off the setup logic well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong escalation and a genuinely surprising, vivid final image.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent but the seagull-buffet turn is fairly predictable.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Amusing physical bit, decent final line but not a big laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean structure and a clever academic punchline that pays off the premise well without reciting the prompt literally.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Reciting the exact prompt phrase weakens the stage rhythm, and the ending feels more like an essay conclusion than a punchy stand-up line.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 5.5
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Reads like a straightforward, fictional anecdote rather than a crafted joke with a clear comedic turn. The ending relies on a tired cliché.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 4.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A fun visual premise with the cooler and good escalation, though the final punchline leans a bit too heavily on quirky absurdity.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Mild academic twist lands softly; setup drags before payoff.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong nostalgia premise with decent close but low re-laugh potential.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Sharp visual and polite-drunk contrast; final sign delivers clean snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Familiar party mishap with cute but obvious punch; lacks strong escalation.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a solid turn; evidence gag lands mildly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Amusing nostalgia angle but long and diffuse; payoff is soft.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.3
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong image and tidy timing; courteous blackout sign is a fun snap.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Coherent story but predictable; seagull beat is familiar and less punchy.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.2,
+      "rawScore": 7.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.2,
+        "surprise": 6.7,
+        "craft": 7.4,
+        "originality": 6.9,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 6.8,
+        "craft": 7.5,
+        "originality": 7,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.4,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear comic character, strong escalation, and a clean visual punchline that naturally combines both concepts."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.8,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong escalation and a genuinely surprising, vivid final image."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.6,
+          "comment": "Sharp visual and polite-drunk contrast; final sign delivers clean snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong image and tidy timing; courteous blackout sign is a fun snap."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.8,
+      "rawScore": 6.9,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.2,
+        "craft": 7.5,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 7.5,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.3,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean callback structure, punchline pays off the setup logic well."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.8,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Clean structure and a clever academic punchline that pays off the premise well without reciting the prompt literally."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.7,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.6,
+          "comment": "Mild academic twist lands softly; setup drags before payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Clean premise with a solid turn; evidence gag lands mildly."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.5,
+        "craft": 5.8,
+        "originality": 6,
+        "promptFit": 7.8
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.5,
+        "craft": 5.8,
+        "originality": 6,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Amusing nostalgia premise with several solid lines, but it runs long and the final tag is cleverer than it is laugh-heavy."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.9,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Reciting the exact prompt phrase weakens the stage rhythm, and the ending feels more like an essay conclusion than a punchy stand-up line."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.6,
+          "comment": "Strong nostalgia premise with decent close but low re-laugh potential."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Amusing nostalgia angle but long and diffuse; payoff is soft."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6,
+      "rawScore": 6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.4,
+        "craft": 5.9,
+        "originality": 5.4,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.8,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean and concise with decent stage rhythm, but the TED Talk setup and personified-gravity punchline feel familiar and mildly amusing rather than strong."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Amusing physical bit, decent final line but not a big laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.5,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.4,
+          "comment": "A fun visual premise with the cooler and good escalation, though the final punchline leans a bit too heavily on quirky absurdity."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.4,
+          "rawScore": 6,
+          "scoreAdjustment": -0.6,
+          "comment": "Familiar party mishap with cute but obvious punch; lacks strong escalation."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5,
+      "rawScore": 4.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.4,
+        "craft": 4.9,
+        "originality": 4.6,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.3,
+        "craft": 4.8,
+        "originality": 4.5,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.7,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Understandable and on-prompt, but the buried-drunk scenario is familiar, the seagull turn is predictable, and the final line does not sharpen the joke."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.3,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent but the seagull-buffet turn is fairly predictable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.6,
+          "rawScore": 4.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Reads like a straightforward, fictional anecdote rather than a crafted joke with a clear comedic turn. The ending relies on a tired cliché."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.5,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.3,
+          "comment": "Coherent story but predictable; seagull beat is familiar and less punchy."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-14-ext-real-2026-07-14.png",
+    "originalSrc": "assets/feature-images/2026-07-14-ext-real-2026-07-14.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Polite Intoxication: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Polite Intoxication\nExact joke text to render in the right panel:\nI am dangerously courteous when I'm drunk. Normal people get hammered and text their ex. I get blacked out and leave glowing Yelp reviews for ATMs. Last night I got so trashed I passed out on my neighbor’s front lawn. But I did it respectfully. I woke up curled in the fetal position, holding a handwritten sign that said, 'Please keep off the grass.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Blockbuster, Professor, Beach Party, Doing something stupid while drunk, Courteous, Grumpy. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Blockbuster, Professor, Beach Party, Doing something stupid while drunk, Courteous, Grumpy. Use the winning joke titled \"Polite Intoxication\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 6.3,
+      "google": 5.8,
+      "xai": 6.7,
+      "copilot": 5.8
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-14-ext-real-2026-07-14.md"
+}
