@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-15T14:01:02.921Z",
+  "publishedDate": "2026-07-15",
+  "seed": "ext-real-2026-07-15",
+  "slug": "2026-07-15-ext-real-2026-07-15",
+  "source": "manual-external",
+  "seedTerms": [
+    "Historical",
+    "Model",
+    "Military Base",
+    "Confiding in the wrong person",
+    "Patient",
+    "Spoiled"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Adult Customer Service",
+      "seedTermsUsed": [
+        "Confiding in the wrong person",
+        "Spoiled"
+      ],
+      "joke": "I made the mistake of confiding in my spoiled nephew that my job was crushing me. He said, “Have your mom call your boss.” That’s when I realized he thinks adulthood is just childhood with worse customer service.",
+      "text": "I made the mistake of confiding in my spoiled nephew that my job was crushing me. He said, “Have your mom call your boss.” That’s when I realized he thinks adulthood is just childhood with worse customer service.",
+      "setup": "",
+      "punchline": "I made the mistake of confiding in my spoiled nephew that my job was crushing me. He said, “Have your mom call your boss.” That’s when I realized he thinks adulthood is just childhood with worse customer service."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Claude Sonnet 5 Medium web",
+      "title": "Confiding in a Toddler",
+      "seedTermsUsed": [
+        "Confiding in the wrong person",
+        "Spoiled"
+      ],
+      "joke": "I made the mistake of venting to my six-year-old niece about my breakup. Told her everything. She just stared at me, then said, \"I'm telling Grandma you cried.\" That's it. That's her whole personality now — a tiny extortionist with a bedtime. I confided in someone who negotiates snack prices for a living. Worst therapist I've ever had, and she bills in gummy bears.",
+      "text": "I made the mistake of venting to my six-year-old niece about my breakup. Told her everything. She just stared at me, then said, \"I'm telling Grandma you cried.\" That's it. That's her whole personality now — a tiny extortionist with a bedtime. I confided in someone who negotiates snack prices for a living. Worst therapist I've ever had, and she bills in gummy bears.",
+      "setup": "",
+      "punchline": "I made the mistake of venting to my six-year-old niece about my breakup. Told her everything. She just stared at me, then said, \"I'm telling Grandma you cried.\" That's it. That's her whole personality now — a tiny extortionist with a bedtime. I confided in someone who negotiates snack prices for a living. Worst therapist I've ever had, and she bills in gummy bears."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Open Floor Plan",
+      "seedTermsUsed": [
+        "Spoiled",
+        "Military Base"
+      ],
+      "joke": "My girlfriend is incredibly spoiled. She thinks \"camping\" is when the hotel WiFi drops to two bars. To give her some perspective, I took her to visit my brother on his military base. We were walking through the barracks, staring at the endless rows of miserable, tightly-made cots. She gasped in horror, clutched my arm, and whispered, \"Oh my god... an open floor plan?\"",
+      "text": "My girlfriend is incredibly spoiled. She thinks \"camping\" is when the hotel WiFi drops to two bars. To give her some perspective, I took her to visit my brother on his military base. We were walking through the barracks, staring at the endless rows of miserable, tightly-made cots. She gasped in horror, clutched my arm, and whispered, \"Oh my god... an open floor plan?\"",
+      "setup": "",
+      "punchline": "My girlfriend is incredibly spoiled. She thinks \"camping\" is when the hotel WiFi drops to two bars. To give her some perspective, I took her to visit my brother on his military base. We were walking through the barracks, staring at the endless rows of miserable, tightly-made cots. She gasped in horror, clutched my arm, and whispered, \"Oh my god... an open floor plan?\""
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Waiting Room Betrayal",
+      "seedTermsUsed": [
+        "Confiding in the wrong person",
+        "Patient"
+      ],
+      "joke": "You guys, I learned the hard way about confiding in the wrong person at the doctor's office. I was there as a patient with this killer headache, so I turn to the guy next to me and spill every detail. Turns out he's there for the exact same thing! When my name gets called, the doctor looks at me like I'm crazy because the other guy already used my symptoms word for word. Now I'm cured of oversharing... but I still have the headache!",
+      "text": "You guys, I learned the hard way about confiding in the wrong person at the doctor's office. I was there as a patient with this killer headache, so I turn to the guy next to me and spill every detail. Turns out he's there for the exact same thing! When my name gets called, the doctor looks at me like I'm crazy because the other guy already used my symptoms word for word. Now I'm cured of oversharing... but I still have the headache!",
+      "setup": "",
+      "punchline": "You guys, I learned the hard way about confiding in the wrong person at the doctor's office. I was there as a patient with this killer headache, so I turn to the guy next to me and spill every detail. Turns out he's there for the exact same thing! When my name gets called, the doctor looks at me like I'm crazy because the other guy already used my symptoms word for word. Now I'm cured of oversharing... but I still have the headache!"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Wrong Confidant",
+      "seedTermsUsed": [
+        "Confiding in the wrong person",
+        "Military Base"
+      ],
+      "joke": "I once tried to open up about my feelings to a guy I met near a military base. I said, “I’m struggling with vulnerability.” He said, “Copy that,” pulled out a notepad, and asked if my emotions were hostile, approaching, or in need of air support. I’ve never shut down faster in my life.",
+      "text": "I once tried to open up about my feelings to a guy I met near a military base. I said, “I’m struggling with vulnerability.” He said, “Copy that,” pulled out a notepad, and asked if my emotions were hostile, approaching, or in need of air support. I’ve never shut down faster in my life.",
+      "setup": "",
+      "punchline": "I once tried to open up about my feelings to a guy I met near a military base. I said, “I’m struggling with vulnerability.” He said, “Copy that,” pulled out a notepad, and asked if my emotions were hostile, approaching, or in need of air support. I’ve never shut down faster in my life."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean escalation and solid tags, though the spoiled concept is only weakly established and the therapist framing is familiar."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear premise, natural seed integration, and a strong visual turn; the open-floor-plan punchline lands cleanly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 3,
+          "promptFit": 9,
+          "laugh": 3,
+          "comment": "The symptom theft premise is difficult to believe or follow, and the final line merely summarizes the experience rather than sharpening it."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Well-constructed military-jargon analogy with clean rhythm, but the central joke is somewhat predictable and the final tag is mild."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean two-line structure, solid final line, mild but real laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Great escalation and visual, \"open floor plan\" is a strong, surprising snap."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Fun premise but overlong setup dilutes timing; decent payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Military jargon pun is a bit expected/AI-shaped; mild chuckle at best."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong economy and an excellent concluding analogy that lands with a sharp, natural turn."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Relies heavily on familiar sassy-kid tropes; the final line feels slightly manufactured rather than genuinely funny."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 3,
+          "promptFit": 8,
+          "laugh": 3,
+          "comment": "The internal logic of the scenario collapses; stealing symptoms does not make a coherent or funny stage premise."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "The setup awkwardly forces the location to fit the seed, and the punchline relies on a standard jargon-translation trope."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Relatable generational gap but mild payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Vivid kid extortionist image lands cleanly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong spoiled contrast with barracks twist."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Jargon response works but feels predictable."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise; final line has a mild but real snap."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Fun escalation; gummy-bear billing is a solid closer."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Consistent angle; open-floor-plan turn lands decently."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clear story but predictable; ending softens the payoff."
+        }
+      ]
+    }
+  ]
+}
