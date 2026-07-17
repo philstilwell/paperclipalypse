@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-17T16:45:00.000Z",
+  "publishedDate": "2026-07-17",
+  "seed": "ext-real-2026-07-17",
+  "slug": "2026-07-17-ext-real-2026-07-17",
+  "source": "manual-external",
+  "seedTerms": [
+    "Slasher and Splatter",
+    "Animal Rescue Worker",
+    "Science Laboratory",
+    "Being targeted by a monster",
+    "Appreciative",
+    "Haughty"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Rescue Staff",
+      "seedTermsUsed": [
+        "Animal Rescue Worker",
+        "Haughty"
+      ],
+      "joke": "I volunteer at an animal rescue, which is how I learned cats don't believe in rescue-they believe in staff. I pulled one out of a storm drain, wrapped him in a blanket, fed him, and took him to the vet. He stared at me the whole time like, \"This hotel has really declined.\"",
+      "text": "I volunteer at an animal rescue, which is how I learned cats don't believe in rescue-they believe in staff. I pulled one out of a storm drain, wrapped him in a blanket, fed him, and took him to the vet. He stared at me the whole time like, \"This hotel has really declined.\"",
+      "setup": "",
+      "punchline": "I volunteer at an animal rescue, which is how I learned cats don't believe in rescue-they believe in staff. I pulled one out of a storm drain, wrapped him in a blanket, fed him, and took him to the vet. He stared at me the whole time like, \"This hotel has really declined.\""
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Claude Sonnet 5 Medium web",
+      "title": "Cat Lady Final Girl",
+      "seedTermsUsed": [
+        "Slasher and Splatter",
+        "Animal Rescue Worker"
+      ],
+      "joke": "I do animal rescue, so I've basically got final girl energy built in. I've crawled into a collapsed barn at 2 AM after a feral cat, alone, flashlight in my teeth, calling 'here kitty kitty' into the darkness like an idiot. Any slasher movie villain sees my resume, he's switching targets immediately. Bro's staring at his knife going, 'she already walks toward danger for free, what am I offering her?'",
+      "text": "I do animal rescue, so I've basically got final girl energy built in. I've crawled into a collapsed barn at 2 AM after a feral cat, alone, flashlight in my teeth, calling 'here kitty kitty' into the darkness like an idiot. Any slasher movie villain sees my resume, he's switching targets immediately. Bro's staring at his knife going, 'she already walks toward danger for free, what am I offering her?'",
+      "setup": "",
+      "punchline": "I do animal rescue, so I've basically got final girl energy built in. I've crawled into a collapsed barn at 2 AM after a feral cat, alone, flashlight in my teeth, calling 'here kitty kitty' into the darkness like an idiot. Any slasher movie villain sees my resume, he's switching targets immediately. Bro's staring at his knife going, 'she already walks toward danger for free, what am I offering her?'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Broken Instincts",
+      "seedTermsUsed": [
+        "Animal Rescue Worker",
+        "Being targeted by a monster"
+      ],
+      "joke": "I've worked in animal rescue for so long that my survival instinct is completely broken. If I'm walking through the woods at night and realize I'm being targeted by an eight-foot, bloodthirsty swamp monster, my first thought isn't to run. I'd just slowly crouch down, offer the back of my hand, and go, 'Aww, are you feral? Did someone dump you out here? Come here, big guy, let's check you for a microchip.'",
+      "text": "I've worked in animal rescue for so long that my survival instinct is completely broken. If I'm walking through the woods at night and realize I'm being targeted by an eight-foot, bloodthirsty swamp monster, my first thought isn't to run. I'd just slowly crouch down, offer the back of my hand, and go, 'Aww, are you feral? Did someone dump you out here? Come here, big guy, let's check you for a microchip.'",
+      "setup": "",
+      "punchline": "I've worked in animal rescue for so long that my survival instinct is completely broken. If I'm walking through the woods at night and realize I'm being targeted by an eight-foot, bloodthirsty swamp monster, my first thought isn't to run. I'd just slowly crouch down, offer the back of my hand, and go, 'Aww, are you feral? Did someone dump you out here? Come here, big guy, let's check you for a microchip.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Monster Rescue",
+      "seedTermsUsed": [
+        "Animal Rescue Worker",
+        "Being targeted by a monster"
+      ],
+      "joke": "I work as an animal rescue worker, always swooping in to save the day. Last week I pulled this massive stray dog from a ditch, brought him home, felt like a hero. Now he's claimed my entire apartment and I'm the one being targeted by a monster. Every time I move, those eyes lock on like I'm dinner. I rescue animals for a living, but this one's rescuing my will to live right out the door.",
+      "text": "I work as an animal rescue worker, always swooping in to save the day. Last week I pulled this massive stray dog from a ditch, brought him home, felt like a hero. Now he's claimed my entire apartment and I'm the one being targeted by a monster. Every time I move, those eyes lock on like I'm dinner. I rescue animals for a living, but this one's rescuing my will to live right out the door.",
+      "setup": "",
+      "punchline": "I work as an animal rescue worker, always swooping in to save the day. Last week I pulled this massive stray dog from a ditch, brought him home, felt like a hero. Now he's claimed my entire apartment and I'm the one being targeted by a monster. Every time I move, those eyes lock on like I'm dinner. I rescue animals for a living, but this one's rescuing my will to live right out the door."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Monster Magnet",
+      "seedTermsUsed": [
+        "Being targeted by a monster",
+        "Animal Rescue Worker"
+      ],
+      "joke": "I knew my job as an animal rescue worker was getting out of hand when a monster started targeting me. It wasn't even dramatic, just followed me around like it was waiting for me to fill out adoption papers. I finally yelled, 'Pick someone else!' and it shrugged like, 'Nah, you look like you already clean up disasters for a living.'",
+      "text": "I knew my job as an animal rescue worker was getting out of hand when a monster started targeting me. It wasn't even dramatic, just followed me around like it was waiting for me to fill out adoption papers. I finally yelled, 'Pick someone else!' and it shrugged like, 'Nah, you look like you already clean up disasters for a living.'",
+      "setup": "",
+      "punchline": "I knew my job as an animal rescue worker was getting out of hand when a monster started targeting me. It wasn't even dramatic, just followed me around like it was waiting for me to fill out adoption papers. I finally yelled, 'Pick someone else!' and it shrugged like, 'Nah, you look like you already clean up disasters for a living.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Strong stage premise, vivid escalation, and a genuinely sharp final reversal."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear comic logic and good escalation; the microchip tag lands, though the rescue-instinct turn is somewhat foreseeable."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Understandable but generic, with strained phrasing and a final line that weakens rather than sharpens the premise."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Competent and clean, but the monster's disaster-cleanup observation produces only a mild payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean, well-timed, natural voice; punchline lands crisply though angle is fairly familiar (cats as ungrateful royalty)."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong reversal-treating a monster like a feral rescue case-escalates naturally and the microchip line is a genuinely funny, specific final beat."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Solid setup but the closing line is a soft pun that restates the premise rather than landing a sharp turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Cute personification of the monster wanting paperwork, but the punchline is mild and doesn't escalate much beyond the premise."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Craft is solid, but the premise relies on the heavily worn cliche that cats view humans as staff, severely dulling the surprise."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "A highly original angle that perfectly marries the two seed concepts with great stage rhythm and a strong, visual punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Starts with a recognizable premise but stumbles on an awkward, clunky final phrase that muddles the punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 5,
+          "laugh": 5,
+          "comment": "Suffers from forced prompt recital in the opening sentence, though the absurd image of a monster waiting for adoption papers has mild charm."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Cute cat haughtiness but predictable and mild payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 6,
+          "laugh": 7,
+          "comment": "Strong final girl energy with solid villain perspective turn; splatter concept underused."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent rescuer instinct twist on monster; vivid, natural escalation and strong closer."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Amusing adoption angle but lacks sharp snap or memorable escalation."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise and a solid haughty-cat angle; mild but real joke."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong voice, clear escalation, and a fun slasher turn; genuinely good."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Funny rescue-instinct inversion with a clean final line; good timing."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Readable and coherent but the monster-as-dog turn is predictable and softer."
+        }
+      ]
+    }
+  ]
+}
