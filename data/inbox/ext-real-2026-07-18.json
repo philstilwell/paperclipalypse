@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-18T14:01:02.616Z",
+  "publishedDate": "2026-07-18",
+  "seed": "ext-real-2026-07-18",
+  "slug": "2026-07-18-ext-real-2026-07-18",
+  "source": "manual-external",
+  "seedTerms": [
+    "Blockbuster",
+    "Professor",
+    "Police Station",
+    "Having to betray someone",
+    "Confident",
+    "Grumpy"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Extra Credit",
+      "seedTermsUsed": [
+        "Professor",
+        "Grumpy"
+      ],
+      "joke": "I had a professor so grumpy that when I asked if there was any extra credit, he smiled for the first time all semester and said, “Absolutely—retake the course next year and pay tuition twice.”",
+      "setup": "",
+      "punchline": "I had a professor so grumpy that when I asked if there was any extra credit, he smiled for the first time all semester and said, “Absolutely—retake the course next year and pay tuition twice.”",
+      "text": "I had a professor so grumpy that when I asked if there was any extra credit, he smiled for the first time all semester and said, “Absolutely—retake the course next year and pay tuition twice.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Late Fee",
+      "seedTermsUsed": [
+        "Blockbuster",
+        "Grumpy"
+      ],
+      "joke": "I still owe Blockbuster a late fee. Nobody knows where to send the check. I've tried mailing it into the void, I've tried apologizing to a Redbox, nothing works. So now I just carry twelve dollars in cash everywhere, in case the ghost of a Blockbuster employee rises up and asks me to return 'Cast Away' again. And honestly, he'd still be grumpier about it than I am about owing him money for a movie about being stranded and alone forever.",
+      "setup": "",
+      "punchline": "I still owe Blockbuster a late fee. Nobody knows where to send the check. I've tried mailing it into the void, I've tried apologizing to a Redbox, nothing works. So now I just carry twelve dollars in cash everywhere, in case the ghost of a Blockbuster employee rises up and asks me to return 'Cast Away' again. And honestly, he'd still be grumpier about it than I am about owing him money for a movie about being stranded and alone forever.",
+      "text": "I still owe Blockbuster a late fee. Nobody knows where to send the check. I've tried mailing it into the void, I've tried apologizing to a Redbox, nothing works. So now I just carry twelve dollars in cash everywhere, in case the ghost of a Blockbuster employee rises up and asks me to return 'Cast Away' again. And honestly, he'd still be grumpier about it than I am about owing him money for a movie about being stranded and alone forever."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Interrogation",
+      "seedTermsUsed": [
+        "Police Station",
+        "Having to betray someone"
+      ],
+      "joke": "Everyone acts so tough, but I know exactly how I'd handle being interrogated at a police station. I wouldn't even need the good cop, bad cop routine. The second a detective slides a lukewarm Diet Coke across the table, I'm turning state's witness. I will enthusiastically betray anyone just to keep the vibe polite. 'My brother did the robbery, my dad commits tax fraud, and my cat is running a pyramid scheme.' I'd fold instantly just for the free soda.",
+      "setup": "",
+      "punchline": "Everyone acts so tough, but I know exactly how I'd handle being interrogated at a police station. I wouldn't even need the good cop, bad cop routine. The second a detective slides a lukewarm Diet Coke across the table, I'm turning state's witness. I will enthusiastically betray anyone just to keep the vibe polite. 'My brother did the robbery, my dad commits tax fraud, and my cat is running a pyramid scheme.' I'd fold instantly just for the free soda.",
+      "text": "Everyone acts so tough, but I know exactly how I'd handle being interrogated at a police station. I wouldn't even need the good cop, bad cop routine. The second a detective slides a lukewarm Diet Coke across the table, I'm turning state's witness. I will enthusiastically betray anyone just to keep the vibe polite. 'My brother did the robbery, my dad commits tax fraud, and my cat is running a pyramid scheme.' I'd fold instantly just for the free soda."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Station Snitch",
+      "seedTermsUsed": [
+        "Police Station",
+        "Having to betray someone"
+      ],
+      "joke": "I was at the police station the other day for a stupid fender bender, and the cop leans over and says, 'Look, to keep this off your record, you're gonna have to betray someone.' I thought about it and went, 'Alright, it was my roommate—he's the one who's been eating my leftover pizza and blaming the dog.' The cop just stares at me and says, 'That's not what I meant.' I told him, 'Officer, in my apartment, that's the ultimate betrayal!'",
+      "setup": "",
+      "punchline": "I was at the police station the other day for a stupid fender bender, and the cop leans over and says, 'Look, to keep this off your record, you're gonna have to betray someone.' I thought about it and went, 'Alright, it was my roommate—he's the one who's been eating my leftover pizza and blaming the dog.' The cop just stares at me and says, 'That's not what I meant.' I told him, 'Officer, in my apartment, that's the ultimate betrayal!'",
+      "text": "I was at the police station the other day for a stupid fender bender, and the cop leans over and says, 'Look, to keep this off your record, you're gonna have to betray someone.' I thought about it and went, 'Alright, it was my roommate—he's the one who's been eating my leftover pizza and blaming the dog.' The cop just stares at me and says, 'That's not what I meant.' I told him, 'Officer, in my apartment, that's the ultimate betrayal!'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Grumpy Cop",
+      "seedTermsUsed": [
+        "Police Station",
+        "Grumpy"
+      ],
+      "joke": "I got hauled into a police station last week because the officer said I looked suspicious. I told him, “I’m not suspicious, I’m just grumpy.” He nodded like that explained everything. Then he asked if I had any weapons, and I said, “Only this face, apparently.” He sighed so hard I thought he’d arrest me for mood violations.",
+      "setup": "",
+      "punchline": "I got hauled into a police station last week because the officer said I looked suspicious. I told him, “I’m not suspicious, I’m just grumpy.” He nodded like that explained everything. Then he asked if I had any weapons, and I said, “Only this face, apparently.” He sighed so hard I thought he’d arrest me for mood violations.",
+      "text": "I got hauled into a police station last week because the officer said I looked suspicious. I told him, “I’m not suspicious, I’m just grumpy.” He nodded like that explained everything. Then he asked if I had any weapons, and I said, “Only this face, apparently.” He sighed so hard I thought he’d arrest me for mood violations."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Amusing ghost-employee image, but the setup runs long and the final Cast Away comparison weakens rather than sharpens the payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear stage premise, strong character logic, and a good escalating confession list. The final soda callback is clean but slightly predictable."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "The police bargain feels artificially constructed, and the roommate-pizza reveal leads to a familiar, explicitly explained punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Natural rhythm and concise phrasing, but the face-as-a-weapon and mood-violation turns are mild and familiar."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean, classic setup-punchline economy; the turn is mild but the delivery lands naturally."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Good escalation with the list of betrayals; the cat pyramid scheme is a nice specific closer."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid misdirection between legal betrayal and roommate pizza betrayal; punchline lands with genuine snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Mild wordplay but punchline mostly restates the setup; weakest turn of the batch."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Competent but cliché setup with a predictable and slightly clunky punchline."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "Some fun imagery with the Redbox, but the punchline loses rhythm by awkwardly shoehorning the second seed term."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 3,
+          "promptFit": 6,
+          "laugh": 3,
+          "comment": "The premise lacks internal logic and relies on a tired, unnatural misunderstanding trope."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Competently constructed but relies on gentle, predictable banter rather than a sharp comedic turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean professor bit with mild twist, but predictable grumpy angle."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Rambling nostalgia, weak payoff and loose rhythm."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong exaggeration and polite-vibe snap; solid stage energy."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Mild face pun, competent but forgettable."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clean and clear but predictable; mild smile."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun imagery and a real angle; a bit long but lands decently."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong first-person premise with a crisp turn; genuinely good."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid premise and relatable betrayal bit; tidy and amusing."
+        }
+      ]
+    }
+  ]
+}

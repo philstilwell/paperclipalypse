@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-18-ext-real-2026-07-18",
+  "seed": "ext-real-2026-07-18",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-18T14:01:02.616Z",
+  "publishedDate": "2026-07-18",
+  "seedTerms": [
+    "Blockbuster",
+    "Professor",
+    "Police Station",
+    "Having to betray someone",
+    "Confident",
+    "Grumpy"
+  ],
+  "premise": {
+    "text": "Seed terms: Blockbuster, Professor, Police Station, Having to betray someone, Confident, Grumpy",
+    "seedTerms": [
+      "Blockbuster",
+      "Professor",
+      "Police Station",
+      "Having to betray someone",
+      "Confident",
+      "Grumpy"
+    ],
+    "displayText": "The Interrogation"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Extra Credit",
+      "seedTermsUsed": [
+        "Professor",
+        "Grumpy"
+      ],
+      "joke": "I had a professor so grumpy that when I asked if there was any extra credit, he smiled for the first time all semester and said, “Absolutely—retake the course next year and pay tuition twice.”",
+      "setup": "",
+      "punchline": "I had a professor so grumpy that when I asked if there was any extra credit, he smiled for the first time all semester and said, “Absolutely—retake the course next year and pay tuition twice.”",
+      "text": "I had a professor so grumpy that when I asked if there was any extra credit, he smiled for the first time all semester and said, “Absolutely—retake the course next year and pay tuition twice.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Late Fee",
+      "seedTermsUsed": [
+        "Blockbuster",
+        "Grumpy"
+      ],
+      "joke": "I still owe Blockbuster a late fee. Nobody knows where to send the check. I've tried mailing it into the void, I've tried apologizing to a Redbox, nothing works. So now I just carry twelve dollars in cash everywhere, in case the ghost of a Blockbuster employee rises up and asks me to return 'Cast Away' again. And honestly, he'd still be grumpier about it than I am about owing him money for a movie about being stranded and alone forever.",
+      "setup": "",
+      "punchline": "I still owe Blockbuster a late fee. Nobody knows where to send the check. I've tried mailing it into the void, I've tried apologizing to a Redbox, nothing works. So now I just carry twelve dollars in cash everywhere, in case the ghost of a Blockbuster employee rises up and asks me to return 'Cast Away' again. And honestly, he'd still be grumpier about it than I am about owing him money for a movie about being stranded and alone forever.",
+      "text": "I still owe Blockbuster a late fee. Nobody knows where to send the check. I've tried mailing it into the void, I've tried apologizing to a Redbox, nothing works. So now I just carry twelve dollars in cash everywhere, in case the ghost of a Blockbuster employee rises up and asks me to return 'Cast Away' again. And honestly, he'd still be grumpier about it than I am about owing him money for a movie about being stranded and alone forever."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Interrogation",
+      "seedTermsUsed": [
+        "Police Station",
+        "Having to betray someone"
+      ],
+      "joke": "Everyone acts so tough, but I know exactly how I'd handle being interrogated at a police station. I wouldn't even need the good cop, bad cop routine. The second a detective slides a lukewarm Diet Coke across the table, I'm turning state's witness. I will enthusiastically betray anyone just to keep the vibe polite. 'My brother did the robbery, my dad commits tax fraud, and my cat is running a pyramid scheme.' I'd fold instantly just for the free soda.",
+      "setup": "",
+      "punchline": "Everyone acts so tough, but I know exactly how I'd handle being interrogated at a police station. I wouldn't even need the good cop, bad cop routine. The second a detective slides a lukewarm Diet Coke across the table, I'm turning state's witness. I will enthusiastically betray anyone just to keep the vibe polite. 'My brother did the robbery, my dad commits tax fraud, and my cat is running a pyramid scheme.' I'd fold instantly just for the free soda.",
+      "text": "Everyone acts so tough, but I know exactly how I'd handle being interrogated at a police station. I wouldn't even need the good cop, bad cop routine. The second a detective slides a lukewarm Diet Coke across the table, I'm turning state's witness. I will enthusiastically betray anyone just to keep the vibe polite. 'My brother did the robbery, my dad commits tax fraud, and my cat is running a pyramid scheme.' I'd fold instantly just for the free soda."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Station Snitch",
+      "seedTermsUsed": [
+        "Police Station",
+        "Having to betray someone"
+      ],
+      "joke": "I was at the police station the other day for a stupid fender bender, and the cop leans over and says, 'Look, to keep this off your record, you're gonna have to betray someone.' I thought about it and went, 'Alright, it was my roommate—he's the one who's been eating my leftover pizza and blaming the dog.' The cop just stares at me and says, 'That's not what I meant.' I told him, 'Officer, in my apartment, that's the ultimate betrayal!'",
+      "setup": "",
+      "punchline": "I was at the police station the other day for a stupid fender bender, and the cop leans over and says, 'Look, to keep this off your record, you're gonna have to betray someone.' I thought about it and went, 'Alright, it was my roommate—he's the one who's been eating my leftover pizza and blaming the dog.' The cop just stares at me and says, 'That's not what I meant.' I told him, 'Officer, in my apartment, that's the ultimate betrayal!'",
+      "text": "I was at the police station the other day for a stupid fender bender, and the cop leans over and says, 'Look, to keep this off your record, you're gonna have to betray someone.' I thought about it and went, 'Alright, it was my roommate—he's the one who's been eating my leftover pizza and blaming the dog.' The cop just stares at me and says, 'That's not what I meant.' I told him, 'Officer, in my apartment, that's the ultimate betrayal!'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Grumpy Cop",
+      "seedTermsUsed": [
+        "Police Station",
+        "Grumpy"
+      ],
+      "joke": "I got hauled into a police station last week because the officer said I looked suspicious. I told him, “I’m not suspicious, I’m just grumpy.” He nodded like that explained everything. Then he asked if I had any weapons, and I said, “Only this face, apparently.” He sighed so hard I thought he’d arrest me for mood violations.",
+      "setup": "",
+      "punchline": "I got hauled into a police station last week because the officer said I looked suspicious. I told him, “I’m not suspicious, I’m just grumpy.” He nodded like that explained everything. Then he asked if I had any weapons, and I said, “Only this face, apparently.” He sighed so hard I thought he’d arrest me for mood violations.",
+      "text": "I got hauled into a police station last week because the officer said I looked suspicious. I told him, “I’m not suspicious, I’m just grumpy.” He nodded like that explained everything. Then he asked if I had any weapons, and I said, “Only this face, apparently.” He sighed so hard I thought he’d arrest me for mood violations."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Amusing ghost-employee image, but the setup runs long and the final Cast Away comparison weakens rather than sharpens the payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear stage premise, strong character logic, and a good escalating confession list. The final soda callback is clean but slightly predictable.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The police bargain feels artificially constructed, and the roommate-pizza reveal leads to a familiar, explicitly explained punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 4.800000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Natural rhythm and concise phrasing, but the face-as-a-weapon and mood-violation turns are mild and familiar.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean, classic setup-punchline economy; the turn is mild but the delivery lands naturally.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good escalation with the list of betrayals; the cat pyramid scheme is a nice specific closer.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid misdirection between legal betrayal and roommate pizza betrayal; punchline lands with genuine snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Mild wordplay but punchline mostly restates the setup; weakest turn of the batch.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.7
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Competent but cliché setup with a predictable and slightly clunky punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Some fun imagery with the Redbox, but the punchline loses rhythm by awkwardly shoehorning the second seed term.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 6,
+          "total": 5.199999999999999
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The premise lacks internal logic and relies on a tired, unnatural misunderstanding trope.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 3,
+          "originality": 3,
+          "promptFit": 6,
+          "total": 3.3000000000000003
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competently constructed but relies on gentle, predictable banter rather than a sharp comedic turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean professor bit with mild twist, but predictable grumpy angle.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Rambling nostalgia, weak payoff and loose rhythm.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong exaggeration and polite-vibe snap; solid stage energy.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Mild face pun, competent but forgettable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean and clear but predictable; mild smile.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Fun imagery and a real angle; a bit long but lands decently.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong first-person premise with a crisp turn; genuinely good.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.9
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid premise and relatable betrayal bit; tidy and amusing.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7,
+      "rawScore": 7.1,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 6.4,
+        "craft": 6.9,
+        "originality": 6.6,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.5,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear stage premise, strong character logic, and a good escalating confession list. The final soda callback is clean but slightly predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.7,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.2,
+          "comment": "Good escalation with the list of betrayals; the cat pyramid scheme is a nice specific closer."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Strong exaggeration and polite-vibe snap; solid stage energy."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong first-person premise with a crisp turn; genuinely good."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 5.8,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.1,
+        "craft": 5.6,
+        "originality": 6.1,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5,
+        "craft": 5.5,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Amusing ghost-employee image, but the setup runs long and the final Cast Away comparison weakens rather than sharpens the payoff."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.6,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Some fun imagery with the Redbox, but the punchline loses rhythm by awkwardly shoehorning the second seed term."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 4.7,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Rambling nostalgia, weak payoff and loose rhythm."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6,
+          "scoreAdjustment": 0.2,
+          "comment": "Fun imagery and a real angle; a bit long but lands decently."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 5.5,
+      "rawScore": 5.6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 4.5,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 4.5,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean, classic setup-punchline economy; the turn is mild but the delivery lands naturally."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Competent but cliché setup with a predictable and slightly clunky punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Clean professor bit with mild twist, but predictable grumpy angle."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.3,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean and clear but predictable; mild smile."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.4,
+      "rawScore": 5.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.9,
+        "craft": 5.4,
+        "originality": 4.9,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.8,
+        "craft": 5.3,
+        "originality": 4.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.2,
+          "comment": "The police bargain feels artificially constructed, and the roommate-pizza reveal leads to a familiar, explicitly explained punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid misdirection between legal betrayal and roommate pizza betrayal; punchline lands with genuine snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 3.7,
+          "rawScore": 3.3,
+          "scoreAdjustment": 0.4,
+          "comment": "The premise lacks internal logic and relies on a tired, unnatural misunderstanding trope."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6,
+          "scoreAdjustment": 0.2,
+          "comment": "Solid premise and relatable betrayal bit; tidy and amusing."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.1,
+      "rawScore": 5.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.5,
+        "surprise": 4.5,
+        "craft": 5.5,
+        "originality": 4.5,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.5,
+        "craft": 5.5,
+        "originality": 4.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.9,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.2,
+          "comment": "Natural rhythm and concise phrasing, but the face-as-a-weapon and mood-violation turns are mild and familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.5,
+          "rawScore": 4.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Mild wordplay but punchline mostly restates the setup; weakest turn of the batch."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Competently constructed but relies on gentle, predictable banter rather than a sharp comedic turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.1,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.5,
+          "comment": "Mild face pun, competent but forgettable."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-18-ext-real-2026-07-18.jpg",
+    "originalSrc": "assets/feature-images/2026-07-18-ext-real-2026-07-18.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Interrogation: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - The Interrogation\nExact joke text to render in the right panel:\nEveryone acts so tough, but I know exactly how I'd handle being interrogated at a police station. I wouldn't even need the good cop, bad cop routine. The second a detective slides a lukewarm Diet Coke across the table, I'm turning state's witness. I will enthusiastically betray anyone just to keep the vibe polite. 'My brother did the robbery, my dad commits tax fraud, and my cat is running a pyramid scheme.' I'd fold instantly just for the free soda.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Blockbuster, Professor, Police Station, Having to betray someone, Confident, Grumpy. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Blockbuster, Professor, Police Station, Having to betray someone, Confident, Grumpy. Use the winning joke titled \"The Interrogation\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6,
+      "anthropic": 6.4,
+      "google": 5.7,
+      "xai": 6.7,
+      "copilot": 5.9
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-18-ext-real-2026-07-18.md"
+}
