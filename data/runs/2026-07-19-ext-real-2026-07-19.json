@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-19-ext-real-2026-07-19",
+  "seed": "ext-real-2026-07-19",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-19T14:10:47.780Z",
+  "publishedDate": "2026-07-19",
+  "seedTerms": [
+    "Rich and Famous",
+    "Talent Agent",
+    "Military Base",
+    "Lost temper / composure",
+    "Uninhibited",
+    "Callous"
+  ],
+  "premise": {
+    "text": "Seed terms: Rich and Famous, Talent Agent, Military Base, Lost temper / composure, Uninhibited, Callous",
+    "seedTerms": [
+      "Rich and Famous",
+      "Talent Agent",
+      "Military Base",
+      "Lost temper / composure",
+      "Uninhibited",
+      "Callous"
+    ],
+    "displayText": "Hotel Tantrum"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Unexpected Weight",
+      "seedTermsUsed": [
+        "Rich and Famous",
+        "Lost temper / composure"
+      ],
+      "joke": "I knew I wasn’t built to be rich and famous when I lost my composure at a self-checkout. Celebrities survive paparazzi, lawsuits, and public scandals. I got psychologically broken by a machine accusing my bananas of being an unexpected item.",
+      "setup": "",
+      "punchline": "I knew I wasn’t built to be rich and famous when I lost my composure at a self-checkout. Celebrities survive paparazzi, lawsuits, and public scandals. I got psychologically broken by a machine accusing my bananas of being an unexpected item.",
+      "text": "I knew I wasn’t built to be rich and famous when I lost my composure at a self-checkout. Celebrities survive paparazzi, lawsuits, and public scandals. I got psychologically broken by a machine accusing my bananas of being an unexpected item."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "My Agent's Rejection Speech",
+      "seedTermsUsed": [
+        "Talent Agent",
+        "Lost temper / composure"
+      ],
+      "joke": "I fired my talent agent last month. Not because he was bad at his job — because he was TOO honest about it. I called him crying after another rejection, and he goes, \"Look, I'll be straight with you. I've gotten dogs more callbacks than you.\" I said, \"That's insane, I have range!\" He said, \"Yeah, the dog has an agent AND a lawyer.\" I lost it. Full meltdown, screaming into the phone. And he just says, calm as ever, \"See, THAT'S the emotional range I need on tape.\"",
+      "setup": "",
+      "punchline": "I fired my talent agent last month. Not because he was bad at his job — because he was TOO honest about it. I called him crying after another rejection, and he goes, \"Look, I'll be straight with you. I've gotten dogs more callbacks than you.\" I said, \"That's insane, I have range!\" He said, \"Yeah, the dog has an agent AND a lawyer.\" I lost it. Full meltdown, screaming into the phone. And he just says, calm as ever, \"See, THAT'S the emotional range I need on tape.\"",
+      "text": "I fired my talent agent last month. Not because he was bad at his job — because he was TOO honest about it. I called him crying after another rejection, and he goes, \"Look, I'll be straight with you. I've gotten dogs more callbacks than you.\" I said, \"That's insane, I have range!\" He said, \"Yeah, the dog has an agent AND a lawyer.\" I lost it. Full meltdown, screaming into the phone. And he just says, calm as ever, \"See, THAT'S the emotional range I need on tape.\""
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Hotel Tantrum",
+      "seedTermsUsed": [
+        "Rich and Famous",
+        "Lost temper / composure"
+      ],
+      "joke": "I'm at that awkward level of success where I'm not quite rich and famous enough to throw a proper tantrum at a hotel front desk. I tried it last week. I slammed my hand down and yelled, \"Do you have any idea who I am?!\" The clerk just sighed, tapped his screen, and said, \"Yeah, you're the guy whose debit card just declined for a mini-bar Toblerone.\"",
+      "setup": "",
+      "punchline": "I'm at that awkward level of success where I'm not quite rich and famous enough to throw a proper tantrum at a hotel front desk. I tried it last week. I slammed my hand down and yelled, \"Do you have any idea who I am?!\" The clerk just sighed, tapped his screen, and said, \"Yeah, you're the guy whose debit card just declined for a mini-bar Toblerone.\"",
+      "text": "I'm at that awkward level of success where I'm not quite rich and famous enough to throw a proper tantrum at a hotel front desk. I tried it last week. I slammed my hand down and yelled, \"Do you have any idea who I am?!\" The clerk just sighed, tapped his screen, and said, \"Yeah, you're the guy whose debit card just declined for a mini-bar Toblerone.\""
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Agent's Promise",
+      "seedTermsUsed": [
+        "Talent Agent",
+        "Rich and Famous"
+      ],
+      "joke": "I finally got a talent agent who swore he'd make me rich and famous. Moved to LA, quit my day job, the works. Last week he calls me all excited: 'Kid, you're blowing up!' Turns out he meant my credit score. Now he's rich from my advance, driving a Tesla, while I'm famous for being the cautionary tale at open mics.",
+      "setup": "",
+      "punchline": "I finally got a talent agent who swore he'd make me rich and famous. Moved to LA, quit my day job, the works. Last week he calls me all excited: 'Kid, you're blowing up!' Turns out he meant my credit score. Now he's rich from my advance, driving a Tesla, while I'm famous for being the cautionary tale at open mics.",
+      "text": "I finally got a talent agent who swore he'd make me rich and famous. Moved to LA, quit my day job, the works. Last week he calls me all excited: 'Kid, you're blowing up!' Turns out he meant my credit score. Now he's rich from my advance, driving a Tesla, while I'm famous for being the cautionary tale at open mics."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Agent Problems",
+      "seedTermsUsed": [
+        "Rich and Famous",
+        "Talent Agent"
+      ],
+      "joke": "I tried to get a talent agent because I figured being rich and famous sounded nice. He asked what my talent was, and I panicked and said, “I can eat an entire rotisserie chicken alone in my car.” He nodded like that was normal and said, “Great… but can you do it on camera?”",
+      "setup": "",
+      "punchline": "I tried to get a talent agent because I figured being rich and famous sounded nice. He asked what my talent was, and I panicked and said, “I can eat an entire rotisserie chicken alone in my car.” He nodded like that was normal and said, “Great… but can you do it on camera?”",
+      "text": "I tried to get a talent agent because I figured being rich and famous sounded nice. He asked what my talent was, and I panicked and said, “I can eat an entire rotisserie chicken alone in my car.” He nodded like that was normal and said, “Great… but can you do it on camera?”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong escalation and a clean callback punchline, though the agent exploiting a meltdown as an audition is somewhat familiar.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Excellent economy and a specific final image; the celebrity tantrum premise is familiar, but the declined Toblerone lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.4
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and structurally complete, but “credit score blowing up” is strained and the final cautionary-tale line weakens the payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The rotisserie-chicken confession is concrete and amusing, but the camera response is more of a mild turn than a strong punchline.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation, relatable self-checkout image, solid closing line.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good deadpan clerk turn, specific detail (Toblerone) lands the punch well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid premise but ending trails off rather than snapping; less punchy than the others.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Absurd talent reveal plus deadpan agent response is fresh and tight.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Good economy and punchline, but the self-checkout 'unexpected item' premise is a very familiar comedy trope.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong narrative build and a satisfying twist on the callous Hollywood agent trope with a great final line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Structurally sound but relies heavily on tired cliches about Hollywood scams and open mics.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 8,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Features a genuinely funny, specific visual and a snappy deadpan turn from the agent.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Mild relatable frustration but predictable self-checkout trope.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid dialogue and agent twist, but runs long for tight stand-up.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clean premise, sharp final line with good escalation.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Absurd talent bit lands mildly but lacks strong snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Relatable premise with a clean turn; mild but real joke.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong escalation and a sharp final line; genuinely good.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear setup and a crisp, funny reveal; solid timing.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Coherent and humorous, though the turn is more expected.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7,
+      "rawScore": 7.1,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 6.6,
+        "craft": 7.4,
+        "originality": 5.9,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 6.8,
+        "craft": 7.5,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.5,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.1,
+          "comment": "Excellent economy and a specific final image; the celebrity tantrum premise is familiar, but the declined Toblerone lands well."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.6,
+          "rawScore": 7,
+          "scoreAdjustment": -0.4,
+          "comment": "Good deadpan clerk turn, specific detail (Toblerone) lands the punch well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean premise, sharp final line with good escalation."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear setup and a crisp, funny reveal; solid timing."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.6,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.3,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong escalation and a clean callback punchline, though the agent exploiting a meltdown as an audition is somewhat familiar."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.6,
+          "rawScore": 7,
+          "scoreAdjustment": 0.6,
+          "comment": "Strong narrative build and a satisfying twist on the callous Hollywood agent trope with a great final line."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.9,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid dialogue and agent twist, but runs long for tight stand-up."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong escalation and a sharp final line; genuinely good."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 6.2,
+        "craft": 6.5,
+        "originality": 6.7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.8,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.1,
+          "comment": "The rotisserie-chicken confession is concrete and amusing, but the camera response is more of a mild turn than a strong punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Absurd talent reveal plus deadpan agent response is fresh and tight."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.6,
+          "comment": "Features a genuinely funny, specific visual and a snappy deadpan turn from the agent."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.1,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Absurd talent bit lands mildly but lacks strong snap."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 5.2,
+        "craft": 6.5,
+        "originality": 5.2,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.3,
+        "craft": 6.5,
+        "originality": 5.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean escalation, relatable self-checkout image, solid closing line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.6,
+          "rawScore": 6,
+          "scoreAdjustment": 0.6,
+          "comment": "Good economy and punchline, but the self-checkout 'unexpected item' premise is a very familiar comedy trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.2,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Mild relatable frustration but predictable self-checkout trope."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6,
+          "scoreAdjustment": 0.1,
+          "comment": "Relatable premise with a clean turn; mild but real joke."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.6,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 4.9,
+        "craft": 5.6,
+        "originality": 4.9,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 4.8,
+        "craft": 5.5,
+        "originality": 4.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear and structurally complete, but “credit score blowing up” is strained and the final cautionary-tale line weakens the payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.5,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid premise but ending trails off rather than snapping; less punchy than the others."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.1,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.6,
+          "comment": "Structurally sound but relies heavily on tired cliches about Hollywood scams and open mics."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6,
+          "scoreAdjustment": 0.1,
+          "comment": "Coherent and humorous, though the turn is more expected."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-19-ext-real-2026-07-19.jpg",
+    "originalSrc": "assets/feature-images/2026-07-19-ext-real-2026-07-19.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Hotel Tantrum: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Hotel Tantrum\nExact joke text to render in the right panel:\nI'm at that awkward level of success where I'm not quite rich and famous enough to throw a proper tantrum at a hotel front desk. I tried it last week. I slammed my hand down and yelled, \"Do you have any idea who I am?!\" The clerk just sighed, tapped his screen, and said, \"Yeah, you're the guy whose debit card just declined for a mini-bar Toblerone.\"\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Rich and Famous, Talent Agent, Military Base, Lost temper / composure, Uninhibited, Callous. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Rich and Famous, Talent Agent, Military Base, Lost temper / composure, Uninhibited, Callous. Use the winning joke titled \"Hotel Tantrum\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6,
+      "anthropic": 6.4,
+      "google": 5.5,
+      "xai": 6.5,
+      "copilot": 6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-19-ext-real-2026-07-19.md"
+}
