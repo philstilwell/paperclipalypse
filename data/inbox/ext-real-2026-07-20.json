@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-20T14:02:15.812Z",
+  "publishedDate": "2026-07-20",
+  "seed": "ext-real-2026-07-20",
+  "slug": "2026-07-20-ext-real-2026-07-20",
+  "source": "manual-external",
+  "seedTerms": [
+    "Utopia",
+    "Conductor",
+    "Summer Camp",
+    "Sacrificing ethics for greater good",
+    "Independent",
+    "Suspicious"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Middle Management",
+      "seedTermsUsed": [
+        "Conductor",
+        "Suspicious"
+      ],
+      "joke": "I’m suspicious of orchestra conductors. I watched one spend two hours waving a stick while a hundred people did all the work, then turn around and take the bow. That’s not music—that’s middle management with violins.",
+      "setup": "",
+      "punchline": "I’m suspicious of orchestra conductors. I watched one spend two hours waving a stick while a hundred people did all the work, then turn around and take the bow. That’s not music—that’s middle management with violins.",
+      "text": "I’m suspicious of orchestra conductors. I watched one spend two hours waving a stick while a hundred people did all the work, then turn around and take the bow. That’s not music—that’s middle management with violins."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Camp Rules",
+      "seedTermsUsed": [
+        "Summer Camp",
+        "Sacrificing ethics for greater good"
+      ],
+      "joke": "I was a camp counselor for one summer. Just one. Because on day two, a kid drowned a little, and I had to decide, fast, between 'save him' and 'win color war for the Blue Team.' I want you to know I thought about it. Not long. But I thought about it. Blue Team's still undefeated in my heart.",
+      "setup": "",
+      "punchline": "I was a camp counselor for one summer. Just one. Because on day two, a kid drowned a little, and I had to decide, fast, between 'save him' and 'win color war for the Blue Team.' I want you to know I thought about it. Not long. But I thought about it. Blue Team's still undefeated in my heart.",
+      "text": "I was a camp counselor for one summer. Just one. Because on day two, a kid drowned a little, and I had to decide, fast, between 'save him' and 'win color war for the Blue Team.' I want you to know I thought about it. Not long. But I thought about it. Blue Team's still undefeated in my heart."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Cabin 4",
+      "seedTermsUsed": [
+        "Summer Camp",
+        "Utopia"
+      ],
+      "joke": "My parents shipped me off to summer camp promising this beautiful, technology-free utopia. Just kids living in perfect harmony with nature! But you put twelve sweaty middle-schoolers in a wooden box with one toilet and zero supervision? That’s not a utopia. That’s a Lord of the Flies prequel supervised by a nineteen-year-old named Chad who's being paid in mozzarella sticks.",
+      "setup": "",
+      "punchline": "My parents shipped me off to summer camp promising this beautiful, technology-free utopia. Just kids living in perfect harmony with nature! But you put twelve sweaty middle-schoolers in a wooden box with one toilet and zero supervision? That’s not a utopia. That’s a Lord of the Flies prequel supervised by a nineteen-year-old named Chad who's being paid in mozzarella sticks.",
+      "text": "My parents shipped me off to summer camp promising this beautiful, technology-free utopia. Just kids living in perfect harmony with nature! But you put twelve sweaty middle-schoolers in a wooden box with one toilet and zero supervision? That’s not a utopia. That’s a Lord of the Flies prequel supervised by a nineteen-year-old named Chad who's being paid in mozzarella sticks."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Apartment Utopia",
+      "seedTermsUsed": [
+        "Utopia",
+        "Sacrificing ethics for greater good"
+      ],
+      "joke": "I’ve been trying to turn my apartment into a little utopia, folks. Shared chores, positive vibes only, the works. But to make it happen I started sacrificing ethics for the greater good—like 'forgetting' to mention the rent hike to my roommate and using his fancy coffee because it 'served the collective calm.' Everything was peaceful until he caught me rearranging his furniture at 2 a.m. for better energy flow. Now it’s just me in my utopia, wondering why the silence has a key to the door.",
+      "setup": "",
+      "punchline": "I’ve been trying to turn my apartment into a little utopia, folks. Shared chores, positive vibes only, the works. But to make it happen I started sacrificing ethics for the greater good—like 'forgetting' to mention the rent hike to my roommate and using his fancy coffee because it 'served the collective calm.' Everything was peaceful until he caught me rearranging his furniture at 2 a.m. for better energy flow. Now it’s just me in my utopia, wondering why the silence has a key to the door.",
+      "text": "I’ve been trying to turn my apartment into a little utopia, folks. Shared chores, positive vibes only, the works. But to make it happen I started sacrificing ethics for the greater good—like 'forgetting' to mention the rent hike to my roommate and using his fancy coffee because it 'served the collective calm.' Everything was peaceful until he caught me rearranging his furniture at 2 a.m. for better energy flow. Now it’s just me in my utopia, wondering why the silence has a key to the door."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Camp Counselor",
+      "seedTermsUsed": [
+        "Summer Camp",
+        "Suspicious"
+      ],
+      "joke": "I went back to the summer camp I grew up in, and the counselor greeted me like, “Welcome! We teach trust here.” Meanwhile I’m thinking, trust? Last time I was here they told me the lake was warm, and I came out sounding like a cartoon chipmunk. I’m still suspicious of any adult who smiles that hard while handing me a canoe.",
+      "setup": "",
+      "punchline": "I went back to the summer camp I grew up in, and the counselor greeted me like, “Welcome! We teach trust here.” Meanwhile I’m thinking, trust? Last time I was here they told me the lake was warm, and I came out sounding like a cartoon chipmunk. I’m still suspicious of any adult who smiles that hard while handing me a canoe.",
+      "text": "I went back to the summer camp I grew up in, and the counselor greeted me like, “Welcome! We teach trust here.” Meanwhile I’m thinking, trust? Last time I was here they told me the lake was warm, and I came out sounding like a cartoon chipmunk. I’m still suspicious of any adult who smiles that hard while handing me a canoe."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong dark premise, clean escalation, and a final tag that lands without overexplaining."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear and well-paced, but the Lord of the Flies comparison is familiar; the mozzarella-sticks detail supplies the best laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Overlong and visibly built around the seed phrase; the final metaphor is strained rather than punchy."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Competent structure and natural delivery, but the cold-lake chipmunk image and suspicious-counselor turn are predictable."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise and tight closing tag ('middle management with violins'), but the lazy-conductor angle is a fairly familiar observational bit."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Vivid escalation with specific, odd details (Chad, mozzarella sticks) that pay off the utopia setup well; strongest closer of the batch."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Solid two-term integration but the final line's logic (silence having a key) is muddled, softening the punch."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Nice callback structure (warm lake/chipmunk voice) and clear suspicion payoff, though the closing image is a mild, expected button."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Excellent rhythm and a very strong, stage-ready punchline. 'Middle management with violins' perfectly snaps the premise together."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Dark, confident, and highly effective. 'Drowned a little' is great wording, and the final line commits fully to the horrible premise."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 3,
+          "promptFit": 4,
+          "laugh": 4,
+          "comment": "Forced setup with direct, awkward prompt recitation. The narrative rambles and the final punchline is confusing rather than funny."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Competent and functional, but the cold water trope is overly familiar. The closing image of the canoe is the best part."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Sharp manager analogy lands cleanly with good rhythm."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Dark camp dilemma has bite but payoff is slightly strained."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid utopia-to-chaos escalation with vivid details."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Chipmunk voice image amuses mildly but premise meanders."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise with a relatable turn; mild but real joke."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Darkly funny escalation with a strong final beat; genuinely good."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid rhythm and a vivid payoff; good camp chaos imagery."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong first-person arc with a clear turn; well‑constructed and funny."
+        }
+      ]
+    }
+  ]
+}
