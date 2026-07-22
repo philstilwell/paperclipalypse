@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-22T14:03:15.380Z",
+  "publishedDate": "2026-07-22",
+  "seed": "ext-real-2026-07-22",
+  "slug": "2026-07-22-ext-real-2026-07-22",
+  "source": "manual-external",
+  "seedTerms": [
+    "Fairy Tale",
+    "Dancer",
+    "Funeral Home",
+    "A difficult decision with no easy way",
+    "Discreet",
+    "Possessive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Prince Charming",
+      "seedTermsUsed": [
+        "Fairy Tale",
+        "Possessive"
+      ],
+      "joke": "I dated a woman so possessive she ruined fairy tales for me. She said Cinderella wasn't romantic—she left the party without checking in. Rapunzel wasn't imprisoned; she was “where I can see her.” When she called me her Prince Charming, I finally understood the job: smile, own one outfit, and never leave the castle without written permission.",
+      "setup": "",
+      "punchline": "I dated a woman so possessive she ruined fairy tales for me. She said Cinderella wasn't romantic—she left the party without checking in. Rapunzel wasn't imprisoned; she was “where I can see her.” When she called me her Prince Charming, I finally understood the job: smile, own one outfit, and never leave the castle without written permission.",
+      "text": "I dated a woman so possessive she ruined fairy tales for me. She said Cinderella wasn't romantic—she left the party without checking in. Rapunzel wasn't imprisoned; she was “where I can see her.” When she called me her Prince Charming, I finally understood the job: smile, own one outfit, and never leave the castle without written permission."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "First Recital",
+      "seedTermsUsed": [
+        "Dancer",
+        "Funeral Home"
+      ],
+      "joke": "My daughter's dance recital was at a funeral home. Budget cuts. So for forty-five minutes I watched six-year-olds in tutus tap-dance past a sign that said 'Viewing Room B,' while a grieving family tried to sneak past the snack table during 'Le Petite Jazz Hands.' Nobody claps too loud at a funeral home. It's the only recital where the standing ovation looks suspicious.",
+      "setup": "",
+      "punchline": "My daughter's dance recital was at a funeral home. Budget cuts. So for forty-five minutes I watched six-year-olds in tutus tap-dance past a sign that said 'Viewing Room B,' while a grieving family tried to sneak past the snack table during 'Le Petite Jazz Hands.' Nobody claps too loud at a funeral home. It's the only recital where the standing ovation looks suspicious.",
+      "text": "My daughter's dance recital was at a funeral home. Budget cuts. So for forty-five minutes I watched six-year-olds in tutus tap-dance past a sign that said 'Viewing Room B,' while a grieving family tried to sneak past the snack table during 'Le Petite Jazz Hands.' Nobody claps too loud at a funeral home. It's the only recital where the standing ovation looks suspicious."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Interpretive Grief",
+      "seedTermsUsed": [
+        "Dancer",
+        "Funeral Home"
+      ],
+      "joke": "I recently started dating a contemporary dancer. It sounds deeply romantic, until someone dies. We were at the funeral home for my great-aunt's wake, and I had to frantically grab his arm and whisper, 'Babe, please. Stop trying to interpret my grief with your torso.'",
+      "setup": "",
+      "punchline": "I recently started dating a contemporary dancer. It sounds deeply romantic, until someone dies. We were at the funeral home for my great-aunt's wake, and I had to frantically grab his arm and whisper, 'Babe, please. Stop trying to interpret my grief with your torso.'",
+      "text": "I recently started dating a contemporary dancer. It sounds deeply romantic, until someone dies. We were at the funeral home for my great-aunt's wake, and I had to frantically grab his arm and whisper, 'Babe, please. Stop trying to interpret my grief with your torso.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Casket Shopping",
+      "seedTermsUsed": [
+        "Funeral Home",
+        "Possessive"
+      ],
+      "joke": "I stopped by the funeral home the other day to make arrangements—you know, just in case. My wife's super possessive, so she tagged along. The director asks about the casket and she jumps in: 'The mahogany one, top of the line. I want him comfortable.' I whisper, 'Babe, I'm not dead yet.' She smiles and says, 'Not yet.'",
+      "setup": "",
+      "punchline": "I stopped by the funeral home the other day to make arrangements—you know, just in case. My wife's super possessive, so she tagged along. The director asks about the casket and she jumps in: 'The mahogany one, top of the line. I want him comfortable.' I whisper, 'Babe, I'm not dead yet.' She smiles and says, 'Not yet.'",
+      "text": "I stopped by the funeral home the other day to make arrangements—you know, just in case. My wife's super possessive, so she tagged along. The director asks about the casket and she jumps in: 'The mahogany one, top of the line. I want him comfortable.' I whisper, 'Babe, I'm not dead yet.' She smiles and says, 'Not yet.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Possessive Moves",
+      "seedTermsUsed": [
+        "Dancer",
+        "Possessive"
+      ],
+      "joke": "I dated a dancer who was so possessive she’d correct my posture during arguments. I’d be trying to explain my feelings and she’d say, “You can’t be mad at me with shoulders like that.” The breakup was rough—she even tried to choreograph it. I’m standing there crying while she’s yelling, “On the count of eight, we both turn away dramatically!”",
+      "setup": "",
+      "punchline": "I dated a dancer who was so possessive she’d correct my posture during arguments. I’d be trying to explain my feelings and she’d say, “You can’t be mad at me with shoulders like that.” The breakup was rough—she even tried to choreograph it. I’m standing there crying while she’s yelling, “On the count of eight, we both turn away dramatically!”",
+      "text": "I dated a dancer who was so possessive she’d correct my posture during arguments. I’d be trying to explain my feelings and she’d say, “You can’t be mad at me with shoulders like that.” The breakup was rough—she even tried to choreograph it. I’m standing there crying while she’s yelling, “On the count of eight, we both turn away dramatically!”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong visual premise with good escalation and a clean final turn; slightly overlong before the punchline."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Concise, vivid, and unexpectedly specific; the torso line delivers the strongest comic image in the batch."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear and functional, but the ominous possessive-wife twist and 'not yet' payoff are highly familiar."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Natural escalation with two solid dancer-specific turns; the final image lands, though the premise is somewhat conventional."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean escalating bit with a satisfying final line, though fairy-tale reinterpretation is a familiar comic template."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Tight, economical, and the torso line is a genuinely fresh, well-timed closer."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Dark premise escalates well; 'Not yet' lands as a sharp, unsettling snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Amusing choreography conceit but the closing image is more whimsical than sharply timed."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid structure and a nice final observation about Prince Charming's role, though the possessive partner trope feels familiar."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Excellent premise with vivid, absurd imagery and a very strong closing punchline that fully utilizes the setting."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 3,
+          "comment": "Relies heavily on a tired, predictable trope about a murderous spouse, lacking any fresh observational angle."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "A strong, highly visual joke with a great specific line about posture and a memorable choreographed breakup punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "comment": "Strong escalation through fairy tale twists; sharp final line."
+        },
+        {
+          "jokeId": "anthropic",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "comment": "Vivid absurd visuals; strong closer on suspicious ovation."
+        },
+        {
+          "jokeId": "google",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "comment": "Mild payoff on torso line; setup works but lands softly."
+        },
+        {
+          "jokeId": "copilot",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "comment": "Clean dancer-possessive blend; choreographed breakup punch lands well."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid premise with clean escalation; lands a mild but real laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong imagery and timing; genuinely good joke with a memorable angle."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Funny moment and clear voice; smaller payoff but still amusing."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean setup and dark turn; competent and mildly funny."
+        }
+      ]
+    }
+  ]
+}

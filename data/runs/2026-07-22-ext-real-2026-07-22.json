@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-22-ext-real-2026-07-22",
+  "seed": "ext-real-2026-07-22",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-22T14:03:15.380Z",
+  "publishedDate": "2026-07-22",
+  "seedTerms": [
+    "Fairy Tale",
+    "Dancer",
+    "Funeral Home",
+    "A difficult decision with no easy way",
+    "Discreet",
+    "Possessive"
+  ],
+  "premise": {
+    "text": "Seed terms: Fairy Tale, Dancer, Funeral Home, A difficult decision with no easy way, Discreet, Possessive",
+    "seedTerms": [
+      "Fairy Tale",
+      "Dancer",
+      "Funeral Home",
+      "A difficult decision with no easy way",
+      "Discreet",
+      "Possessive"
+    ],
+    "displayText": "First Recital"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Prince Charming",
+      "seedTermsUsed": [
+        "Fairy Tale",
+        "Possessive"
+      ],
+      "joke": "I dated a woman so possessive she ruined fairy tales for me. She said Cinderella wasn't romantic—she left the party without checking in. Rapunzel wasn't imprisoned; she was “where I can see her.” When she called me her Prince Charming, I finally understood the job: smile, own one outfit, and never leave the castle without written permission.",
+      "setup": "",
+      "punchline": "I dated a woman so possessive she ruined fairy tales for me. She said Cinderella wasn't romantic—she left the party without checking in. Rapunzel wasn't imprisoned; she was “where I can see her.” When she called me her Prince Charming, I finally understood the job: smile, own one outfit, and never leave the castle without written permission.",
+      "text": "I dated a woman so possessive she ruined fairy tales for me. She said Cinderella wasn't romantic—she left the party without checking in. Rapunzel wasn't imprisoned; she was “where I can see her.” When she called me her Prince Charming, I finally understood the job: smile, own one outfit, and never leave the castle without written permission."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "First Recital",
+      "seedTermsUsed": [
+        "Dancer",
+        "Funeral Home"
+      ],
+      "joke": "My daughter's dance recital was at a funeral home. Budget cuts. So for forty-five minutes I watched six-year-olds in tutus tap-dance past a sign that said 'Viewing Room B,' while a grieving family tried to sneak past the snack table during 'Le Petite Jazz Hands.' Nobody claps too loud at a funeral home. It's the only recital where the standing ovation looks suspicious.",
+      "setup": "",
+      "punchline": "My daughter's dance recital was at a funeral home. Budget cuts. So for forty-five minutes I watched six-year-olds in tutus tap-dance past a sign that said 'Viewing Room B,' while a grieving family tried to sneak past the snack table during 'Le Petite Jazz Hands.' Nobody claps too loud at a funeral home. It's the only recital where the standing ovation looks suspicious.",
+      "text": "My daughter's dance recital was at a funeral home. Budget cuts. So for forty-five minutes I watched six-year-olds in tutus tap-dance past a sign that said 'Viewing Room B,' while a grieving family tried to sneak past the snack table during 'Le Petite Jazz Hands.' Nobody claps too loud at a funeral home. It's the only recital where the standing ovation looks suspicious."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Interpretive Grief",
+      "seedTermsUsed": [
+        "Dancer",
+        "Funeral Home"
+      ],
+      "joke": "I recently started dating a contemporary dancer. It sounds deeply romantic, until someone dies. We were at the funeral home for my great-aunt's wake, and I had to frantically grab his arm and whisper, 'Babe, please. Stop trying to interpret my grief with your torso.'",
+      "setup": "",
+      "punchline": "I recently started dating a contemporary dancer. It sounds deeply romantic, until someone dies. We were at the funeral home for my great-aunt's wake, and I had to frantically grab his arm and whisper, 'Babe, please. Stop trying to interpret my grief with your torso.'",
+      "text": "I recently started dating a contemporary dancer. It sounds deeply romantic, until someone dies. We were at the funeral home for my great-aunt's wake, and I had to frantically grab his arm and whisper, 'Babe, please. Stop trying to interpret my grief with your torso.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Casket Shopping",
+      "seedTermsUsed": [
+        "Funeral Home",
+        "Possessive"
+      ],
+      "joke": "I stopped by the funeral home the other day to make arrangements—you know, just in case. My wife's super possessive, so she tagged along. The director asks about the casket and she jumps in: 'The mahogany one, top of the line. I want him comfortable.' I whisper, 'Babe, I'm not dead yet.' She smiles and says, 'Not yet.'",
+      "setup": "",
+      "punchline": "I stopped by the funeral home the other day to make arrangements—you know, just in case. My wife's super possessive, so she tagged along. The director asks about the casket and she jumps in: 'The mahogany one, top of the line. I want him comfortable.' I whisper, 'Babe, I'm not dead yet.' She smiles and says, 'Not yet.'",
+      "text": "I stopped by the funeral home the other day to make arrangements—you know, just in case. My wife's super possessive, so she tagged along. The director asks about the casket and she jumps in: 'The mahogany one, top of the line. I want him comfortable.' I whisper, 'Babe, I'm not dead yet.' She smiles and says, 'Not yet.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Possessive Moves",
+      "seedTermsUsed": [
+        "Dancer",
+        "Possessive"
+      ],
+      "joke": "I dated a dancer who was so possessive she’d correct my posture during arguments. I’d be trying to explain my feelings and she’d say, “You can’t be mad at me with shoulders like that.” The breakup was rough—she even tried to choreograph it. I’m standing there crying while she’s yelling, “On the count of eight, we both turn away dramatically!”",
+      "setup": "",
+      "punchline": "I dated a dancer who was so possessive she’d correct my posture during arguments. I’d be trying to explain my feelings and she’d say, “You can’t be mad at me with shoulders like that.” The breakup was rough—she even tried to choreograph it. I’m standing there crying while she’s yelling, “On the count of eight, we both turn away dramatically!”",
+      "text": "I dated a dancer who was so possessive she’d correct my posture during arguments. I’d be trying to explain my feelings and she’d say, “You can’t be mad at me with shoulders like that.” The breakup was rough—she even tried to choreograph it. I’m standing there crying while she’s yelling, “On the count of eight, we both turn away dramatically!”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong visual premise with good escalation and a clean final turn; slightly overlong before the punchline.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Concise, vivid, and unexpectedly specific; the torso line delivers the strongest comic image in the batch.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and functional, but the ominous possessive-wife twist and 'not yet' payoff are highly familiar.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 3,
+          "promptFit": 9,
+          "total": 5.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Natural escalation with two solid dancer-specific turns; the final image lands, though the premise is somewhat conventional.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalating bit with a satisfying final line, though fairy-tale reinterpretation is a familiar comic template.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Tight, economical, and the torso line is a genuinely fresh, well-timed closer.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Dark premise escalates well; 'Not yet' lands as a sharp, unsettling snap.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Amusing choreography conceit but the closing image is more whimsical than sharply timed.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid structure and a nice final observation about Prince Charming's role, though the possessive partner trope feels familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent premise with vivid, absurd imagery and a very strong closing punchline that fully utilizes the setting.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relies heavily on a tired, predictable trope about a murderous spouse, lacking any fresh observational angle.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 8,
+          "total": 3.7
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A strong, highly visual joke with a great specific line about posture and a memorable choreographed breakup punchline.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong escalation through fairy tale twists; sharp final line.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.800000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Vivid absurd visuals; strong closer on suspicious ovation.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Mild payoff on torso line; setup works but lands softly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clean dancer-possessive blend; choreographed breakup punch lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with clean escalation; lands a mild but real laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong imagery and timing; genuinely good joke with a memorable angle.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Funny moment and clear voice; smaller payoff but still amusing.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean setup and dark turn; competent and mildly funny.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7.3,
+      "rawScore": 7.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 7.5,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 7.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "Strong visual premise with good escalation and a clean final turn; slightly overlong before the punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.9,
+          "rawScore": 7.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Excellent premise with vivid, absurd imagery and a very strong closing punchline that fully utilizes the setting."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Vivid absurd visuals; strong closer on suspicious ovation."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0,
+          "comment": "Strong imagery and timing; genuinely good joke with a memorable angle."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 7.1,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "Natural escalation with two solid dancer-specific turns; the final image lands, though the premise is somewhat conventional."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Amusing choreography conceit but the closing image is more whimsical than sharply timed."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8,
+          "rawScore": 7.6,
+          "scoreAdjustment": 0.4,
+          "comment": "A strong, highly visual joke with a great specific line about posture and a memorable choreographed breakup punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean dancer-possessive blend; choreographed breakup punch lands well."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.3,
+        "craft": 7.3,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.3,
+        "craft": 7.3,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.7,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean escalating bit with a satisfying final line, though fairy-tale reinterpretation is a familiar comic template."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.8,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Solid structure and a nice final observation about Prince Charming's role, though the possessive partner trope feels familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.6,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong escalation through fairy tale twists; sharp final line."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Solid premise with clean escalation; lands a mild but real laugh."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.7,
+      "rawScore": 6.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 6.4,
+        "craft": 6.9,
+        "originality": 6.6,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.7,
+          "rawScore": 7.7,
+          "scoreAdjustment": 0,
+          "comment": "Concise, vivid, and unexpectedly specific; the torso line delivers the strongest comic image in the batch."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Tight, economical, and the torso line is a genuinely fresh, well-timed closer."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Mild payoff on torso line; setup works but lands softly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 6,
+          "scoreAdjustment": 0,
+          "comment": "Funny moment and clear voice; smaller payoff but still amusing."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.7,
+      "rawScore": 5.6,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.2,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0,
+          "comment": "Clear and functional, but the ominous possessive-wife twist and 'not yet' payoff are highly familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Dark premise escalates well; 'Not yet' lands as a sharp, unsettling snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.1,
+          "rawScore": 3.7,
+          "scoreAdjustment": 0.4,
+          "comment": "Relies heavily on a tired, predictable trope about a murderous spouse, lacking any fresh observational angle."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Clean setup and dark turn; competent and mildly funny."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-22-ext-real-2026-07-22.png",
+    "originalSrc": "assets/feature-images/2026-07-22-ext-real-2026-07-22.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled First Recital: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - First Recital\nExact joke text to render in the right panel:\nMy daughter's dance recital was at a funeral home. Budget cuts. So for forty-five minutes I watched six-year-olds in tutus tap-dance past a sign that said 'Viewing Room B,' while a grieving family tried to sneak past the snack table during 'Le Petite Jazz Hands.' Nobody claps too loud at a funeral home. It's the only recital where the standing ovation looks suspicious.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Fairy Tale, Dancer, Funeral Home, A difficult decision with no easy way, Discreet, Possessive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Fairy Tale, Dancer, Funeral Home, A difficult decision with no easy way, Discreet, Possessive. Use the winning joke titled \"First Recital\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.4,
+      "google": 5.8,
+      "xai": 6.4,
+      "copilot": 6.3
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-22-ext-real-2026-07-22.md"
+}

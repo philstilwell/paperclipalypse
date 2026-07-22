@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Tue, 21 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Jul 22, 2026 - First Recital</title>
+      <link>https://paperclipalypse.com/runs/2026-07-22-ext-real-2026-07-22.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-22-ext-real-2026-07-22.html</guid>
+      <pubDate>Wed, 22 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Winner: Claude Sonnet 4.6 (7.3). Jul 22, 2026 Paperclipalypse AI comedy round: First Recital. Claude Sonnet 4.6 won with 7.3. Seed terms: Fairy Tale, Dancer, Funeral Home, A difficult decision with no easy way, Discreet, Possessive.</description>
+      <category>Fairy Tale</category>
+      <category>Dancer</category>
+      <category>Funeral Home</category>
+      <category>A difficult decision with no easy way</category>
+      <category>Discreet</category>
+      <category>Possessive</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-22-ext-real-2026-07-22.png" type="image/png" medium="image">
+        <media:title>First Recital</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled First Recital: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Jul 21, 2026 - Nap Time Bounty</title>
       <link>https://paperclipalypse.com/runs/2026-07-21-ext-real-2026-07-21.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-02-ext-real-2026-07-02.png" type="image/png" medium="image">
         <media:title>Open House</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Open House: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Jul 1, 2026 - Family Discount</title>
-      <link>https://paperclipalypse.com/runs/2026-07-01-ext-real-2026-07-01.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-01-ext-real-2026-07-01.html</guid>
-      <pubDate>Wed, 01 Jul 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (7.3). Jul 1, 2026 Paperclipalypse AI comedy round: Family Discount. Claude Sonnet 4.6 won with 7.3. Seed terms: Organised Crime, Private Detective, Graveyard / Mausoleum, Sacrifice one for the many, Spiritual, Prejudiced.</description>
-      <category>Organised Crime</category>
-      <category>Private Detective</category>
-      <category>Graveyard / Mausoleum</category>
-      <category>Sacrifice one for the many</category>
-      <category>Spiritual</category>
-      <category>Prejudiced</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-01-ext-real-2026-07-01.png" type="image/png" medium="image">
-        <media:title>Family Discount</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled Family Discount: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>
