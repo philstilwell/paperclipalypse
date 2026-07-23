@@ -1,0 +1,334 @@
+{
+  "createdAt": "2026-07-23T14:01:41.791Z",
+  "publishedDate": "2026-07-23",
+  "seed": "ext-real-2026-07-23",
+  "slug": "2026-07-23-ext-real-2026-07-23",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cyberpunk",
+    "Crime Scene Cleaner",
+    "Military Base",
+    "Having to stay behind",
+    "Spontaneous",
+    "Stingy"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Basic Package",
+      "seedTermsUsed": [
+        "Crime Scene Cleaner",
+        "Stingy"
+      ],
+      "joke": "I’m so stingy I hired the cheapest crime-scene cleaner online. He said the basic package included “one stain and no questions.” He cleaned around the chalk outline and left. Now my apartment doesn’t look like a crime scene—it looks like the victim had a very strict security deposit.",
+      "text": "I’m so stingy I hired the cheapest crime-scene cleaner online. He said the basic package included “one stain and no questions.” He cleaned around the chalk outline and left. Now my apartment doesn’t look like a crime scene—it looks like the victim had a very strict security deposit."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Crime Scene Discount",
+      "seedTermsUsed": [
+        "Crime Scene Cleaner",
+        "Stingy"
+      ],
+      "joke": "I'm a crime scene cleaner, and my dad's so stingy he asked for a family discount. I said 'Dad, there's no discount, this is blood and regret.' He goes 'Fine, then I'll clean it myself, I raised you for free, I can mop for free.' Now every Sunday my father is on his knees scrubbing a stranger's tragedy to save forty bucks, humming, actually humming, like it's church.",
+      "text": "I'm a crime scene cleaner, and my dad's so stingy he asked for a family discount. I said 'Dad, there's no discount, this is blood and regret.' He goes 'Fine, then I'll clean it myself, I raised you for free, I can mop for free.' Now every Sunday my father is on his knees scrubbing a stranger's tragedy to save forty bucks, humming, actually humming, like it's church."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Aftermath",
+      "seedTermsUsed": [
+        "Crime Scene Cleaner",
+        "Having to stay behind"
+      ],
+      "joke": "People think being a crime scene cleaner is exciting, but it really just means you're the one having to stay behind after all the cool stuff happens. The cops get the thrilling shootout, the paramedics get the dramatic rescue, and I get left alone in a defunct warehouse at four in the morning, trying to figure out if club soda gets henchman out of the grout.",
+      "text": "People think being a crime scene cleaner is exciting, but it really just means you're the one having to stay behind after all the cool stuff happens. The cops get the thrilling shootout, the paramedics get the dramatic rescue, and I get left alone in a defunct warehouse at four in the morning, trying to figure out if club soda gets henchman out of the grout."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Stingy Scene Cleaner",
+      "seedTermsUsed": [
+        "Crime Scene Cleaner",
+        "Stingy"
+      ],
+      "joke": "I started working as a crime scene cleaner, but I'm way too stingy. I cut every corner, reusing bloody rags and watering down the bleach. After one nasty job, the cops pull me aside: 'We found foreign DNA at the scene.' I'm like, 'That's from the last murder – I'm all about that recycling life!' Now I'm the prime suspect. Hey, at least the interrogation room's on the house!",
+      "text": "I started working as a crime scene cleaner, but I'm way too stingy. I cut every corner, reusing bloody rags and watering down the bleach. After one nasty job, the cops pull me aside: 'We found foreign DNA at the scene.' I'm like, 'That's from the last murder – I'm all about that recycling life!' Now I'm the prime suspect. Hey, at least the interrogation room's on the house!"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Staying Late",
+      "seedTermsUsed": [
+        "Having to stay behind",
+        "Crime Scene Cleaner"
+      ],
+      "joke": "I once had to stay behind after a neighbor’s dinner party, and somehow I became the crime scene cleaner. Everyone else left smiling, and I’m in the living room holding a sponge like, “Did a lasagna explode here?” By the end, the host thanked me for coming. I was like, “I didn’t come—I survived.”",
+      "text": "I once had to stay behind after a neighbor’s dinner party, and somehow I became the crime scene cleaner. Everyone else left smiling, and I’m in the living room holding a sponge like, “Did a lasagna explode here?” By the end, the host thanked me for coming. I was like, “I didn’t come—I survived.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Strong escalating image and character voice, though the long final beat is more darkly amusing than sharply punchy."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear premise, efficient escalation, and a strong final image; the henchman-and-grout line lands cleanly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Coherent and energetic, but the recycling angle, prime-suspect turn, and final tag feel familiar and overextended."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Readable first-person bit with decent rhythm, but the dinner-party crime-scene comparison and survival tag are predictable."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean, economical, decent final image, but a bit safe."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Solid premise but punchline (grout/soda) undercooked, more mundane than funny."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Overloaded with beats, drags before landing; recycling line is fine but buried."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Fresh angle, clear escalation, strong closing line with real snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong premise and excellent final turn tying the chalk outline to a strict security deposit."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Vivid, dark imagery, but the underlying logic of the setup (why the dad is paying for a stranger's tragedy) is confusing and distracts from the joke."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The escalation is logical, but the dialogue feels unnatural and it ends on a very weak punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 3,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "Relatable situation, but uses the crime scene concept merely as a light metaphor and ends on a highly cliché punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clever deposit twist but premise slightly unclear on who did the crime."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Family anecdote feels more story than tight stand-up; mild payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Solid premise but predictable and low snap on the grout line."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Amusing party-to-crime-scene exaggeration with decent rhythm."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise with a decent turn; mildly funny and well‑formed."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong voice and vivid escalation; genuinely good payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid angle with a clear image; amusing but not highly surprising."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun escalation and a tidy final beat; competent and mildly funny."
+        }
+      ]
+    }
+  ]
+}

@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Wed, 22 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Jul 23, 2026 - Basic Package</title>
+      <link>https://paperclipalypse.com/runs/2026-07-23-ext-real-2026-07-23.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-23-ext-real-2026-07-23.html</guid>
+      <pubDate>Thu, 23 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Winner: OpenAI GPT-5.4 Mini (6.6). Jul 23, 2026 Paperclipalypse AI comedy round: Basic Package. OpenAI GPT-5.4 Mini won with 6.6. Seed terms: Cyberpunk, Crime Scene Cleaner, Military Base, Having to stay behind, Spontaneous, Stingy.</description>
+      <category>Cyberpunk</category>
+      <category>Crime Scene Cleaner</category>
+      <category>Military Base</category>
+      <category>Having to stay behind</category>
+      <category>Spontaneous</category>
+      <category>Stingy</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-23-ext-real-2026-07-23.png" type="image/png" medium="image">
+        <media:title>Basic Package</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Basic Package: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Jul 22, 2026 - First Recital</title>
       <link>https://paperclipalypse.com/runs/2026-07-22-ext-real-2026-07-22.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-03-ext-real-2026-07-03.jpg" type="image/jpeg" medium="image">
         <media:title>Unsolicited Feedback</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Unsolicited Feedback: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Jul 2, 2026 - Open House</title>
-      <link>https://paperclipalypse.com/runs/2026-07-02-ext-real-2026-07-02.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-02-ext-real-2026-07-02.html</guid>
-      <pubDate>Thu, 02 Jul 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (6.7). Jul 2, 2026 Paperclipalypse AI comedy round: Open House. Claude Sonnet 4.6 won with 6.7. Seed terms: Cringe, Real Estate Agent, Empty Lot, Not achieving a coveted goal, Kind, Tactless.</description>
-      <category>Cringe</category>
-      <category>Real Estate Agent</category>
-      <category>Empty Lot</category>
-      <category>Not achieving a coveted goal</category>
-      <category>Kind</category>
-      <category>Tactless</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-02-ext-real-2026-07-02.png" type="image/png" medium="image">
-        <media:title>Open House</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled Open House: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>
