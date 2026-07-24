@@ -1,0 +1,334 @@
+{
+  "createdAt": "2026-07-24T14:01:42.138Z",
+  "publishedDate": "2026-07-24",
+  "seed": "ext-real-2026-07-24",
+  "slug": "2026-07-24-ext-real-2026-07-24",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cringe",
+    "Funeral Director / Undertaker",
+    "Forest",
+    "An opportunity to cheat",
+    "Organized",
+    "Inattentive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Save the Date",
+      "seedTermsUsed": [
+        "Funeral Director / Undertaker",
+        "Organized"
+      ],
+      "joke": "I met a funeral director so organized, he asked whether I wanted to pre-plan. I said, “I’m only thirty-five.” He said, “Perfect—plenty of lead time.” Then he sent me a save-the-date. Nothing motivates you to exercise like an RSVP deadline for your own funeral.",
+      "text": "I met a funeral director so organized, he asked whether I wanted to pre-plan. I said, “I’m only thirty-five.” He said, “Perfect—plenty of lead time.” Then he sent me a save-the-date. Nothing motivates you to exercise like an RSVP deadline for your own funeral."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Family Discount",
+      "seedTermsUsed": [
+        "Funeral Director / Undertaker",
+        "An opportunity to cheat"
+      ],
+      "joke": "My uncle's a funeral director, and I asked him if the job ever gets depressing. He said no, the real perk is nobody double-checks your math. You tell a widow the casket was four thousand dollars, she's not exactly calling around for quotes. I said that's messed up. He said, \"I prefer grief-adjusted pricing.\" Same energy as a mechanic, except my customers never come back to complain.",
+      "text": "My uncle's a funeral director, and I asked him if the job ever gets depressing. He said no, the real perk is nobody double-checks your math. You tell a widow the casket was four thousand dollars, she's not exactly calling around for quotes. I said that's messed up. He said, \"I prefer grief-adjusted pricing.\" Same energy as a mechanic, except my customers never come back to complain."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Occupational Hazards",
+      "seedTermsUsed": [
+        "Funeral Director / Undertaker",
+        "Cringe"
+      ],
+      "joke": "I’m a funeral director, and the hardest part of my job isn’t the grief. It’s the cringe. Last Tuesday we had this beautiful, perfectly silent viewing. The weeping widow leans over the open casket to kiss her husband one last time... and from deep inside his suit jacket, his Apple Watch loudly announces, “It looks like you’ve taken a hard fall.”",
+      "text": "I’m a funeral director, and the hardest part of my job isn’t the grief. It’s the cringe. Last Tuesday we had this beautiful, perfectly silent viewing. The weeping widow leans over the open casket to kiss her husband one last time... and from deep inside his suit jacket, his Apple Watch loudly announces, “It looks like you’ve taken a hard fall.”"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Casket Salesman",
+      "seedTermsUsed": [
+        "Cringe",
+        "Funeral Director / Undertaker"
+      ],
+      "joke": "I had to meet with a funeral director last month to plan my uncle's service. The guy starts showing me caskets like he's pitching timeshares. “This model's got memory foam lining—your uncle will rest in luxury!” I'm standing there thinking about the guy, and all I can say is, “He hated camping.” The director just nods and pulls out a brochure for eternal packages. Whole thing was so cringe I almost asked if they offered a “just put him in a cardboard box” discount.",
+      "text": "I had to meet with a funeral director last month to plan my uncle's service. The guy starts showing me caskets like he's pitching timeshares. “This model's got memory foam lining—your uncle will rest in luxury!” I'm standing there thinking about the guy, and all I can say is, “He hated camping.” The director just nods and pulls out a brochure for eternal packages. Whole thing was so cringe I almost asked if they offered a “just put him in a cardboard box” discount."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Cringe Hike",
+      "seedTermsUsed": [
+        "Forest",
+        "Cringe"
+      ],
+      "joke": "I tried to look confident on a nature walk, but the forest immediately called me out. I slipped on some moss, flailed like a malfunctioning windmill, and apologized to a rock. Nothing humbles you faster than realizing even the trees are silently judging you for being the cringiest thing on the trail.",
+      "text": "I tried to look confident on a nature walk, but the forest immediately called me out. I slipped on some moss, flailed like a malfunctioning windmill, and apologized to a rock. Nothing humbles you faster than realizing even the trees are silently judging you for being the cringiest thing on the trail."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear escalation and a solid final comparison, though the dishonest-undertaker premise and grief-pricing angle are fairly predictable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong visual premise, excellent timing, and a specific technological interruption that delivers a clean, memorable final laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The sales-pitch premise is understandable, but the camping response is strained and the cardboard-box ending feels expected rather than sharp."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Readable and concise, but mostly a sequence of familiar clumsy-hiker images ending in a generic personification rather than a real turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean escalation, natural voice, punchline lands with a genuine snap; strongest closer in the set."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Vivid, visual, well-timed reveal; the Apple Watch line is a strong, surprising turn."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Good premise but runs long and diffuse; multiple half-punchlines dilute the ending instead of one clean snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Mild, familiar klutz-in-nature bit; closing line mostly restates the setup rather than turning it."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Solid premise with a good turn. The 'RSVP deadline' for a funeral is a strong punchline."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Dark but effective. 'Grief-adjusted pricing' and the mechanic comparison work well on stage."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The setup takes too long and the 'cardboard box discount' punchline falls a bit flat. The use of 'cringe' feels forced."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "A bit generic. 'Malfunctioning windmill' and 'apologized to a rock' are well-worn tropes that don't elevate the joke."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid premise with a clever save-the-date turn but mild overall laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Cynical angle lands but feels familiar and slightly edgy without big snap."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong visual premise, perfect unexpected watch payoff, clean stage rhythm."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Relatable but generic clumsy-hiker trope with light payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise with a tidy turn; mildly funny and well-constructed."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong angle with sharp timing; genuinely good and memorable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid image and clear escalation; amusing with a neat final beat."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Consistent voice and a decent turn; competent and mildly funny."
+        }
+      ]
+    }
+  ]
+}
