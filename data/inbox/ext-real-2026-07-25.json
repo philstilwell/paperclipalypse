@@ -1,0 +1,334 @@
+{
+  "createdAt": "2026-07-25T14:04:14.870Z",
+  "publishedDate": "2026-07-25",
+  "seed": "ext-real-2026-07-25",
+  "slug": "2026-07-25-ext-real-2026-07-25",
+  "source": "manual-external",
+  "seedTerms": [
+    "Blockbuster",
+    "Animal Rescue Worker",
+    "Factory",
+    "Being lied to",
+    "Affectionate",
+    "Morbid"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Orientation",
+      "seedTermsUsed": [
+        "Animal Rescue Worker",
+        "Morbid"
+      ],
+      "joke": "I volunteered at an animal rescue. During orientation they proudly said, “We never put down a healthy animal.” Then I coughed, and three employees slowly turned to look at me. I have never recovered from a cold so fast.",
+      "text": "I volunteered at an animal rescue. During orientation they proudly said, “We never put down a healthy animal.” Then I coughed, and three employees slowly turned to look at me. I have never recovered from a cold so fast."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Return Policy",
+      "seedTermsUsed": [
+        "Animal Rescue Worker",
+        "Affectionate"
+      ],
+      "joke": "I foster dogs for a rescue. People say, 'How do you give them back, doesn't it break your heart?' No, because I'm affectionate in a very specific, legally temporary way. I love those dogs the way you love a rental car. Full eye contact, sweet nothings, and the second the paperwork's done I'm like 'not my problem if you have separation anxiety, sir.'",
+      "text": "I foster dogs for a rescue. People say, 'How do you give them back, doesn't it break your heart?' No, because I'm affectionate in a very specific, legally temporary way. I love those dogs the way you love a rental car. Full eye contact, sweet nothings, and the second the paperwork's done I'm like 'not my problem if you have separation anxiety, sir.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Sympathy",
+      "seedTermsUsed": [
+        "Animal Rescue Worker",
+        "Morbid"
+      ],
+      "joke": "My girlfriend is an animal rescue worker. It sounds like a wholesome job, but it gives you a deeply morbid approach to healthcare. I tweaked my knee last week and was just groaning on the living room rug. She knelt down next to me, stroked my hair with profound sympathy, and softly whispered, 'It's okay baby. If it doesn't heal up... we can always just put you down.'",
+      "text": "My girlfriend is an animal rescue worker. It sounds like a wholesome job, but it gives you a deeply morbid approach to healthcare. I tweaked my knee last week and was just groaning on the living room rug. She knelt down next to me, stroked my hair with profound sympathy, and softly whispered, 'It's okay baby. If it doesn't heal up... we can always just put you down.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Rescue Call",
+      "seedTermsUsed": [
+        "Animal Rescue Worker",
+        "Morbid"
+      ],
+      "joke": "I used to be an animal rescue worker. People always downplay it. 'Oh, my dog's just a little off today.' I get there and the dog's not off—it's checked out completely. One lady insisted her hamster was hibernating in July. Ma'am, that's not hibernation. That's a morbidly permanent nap. I don't do pet funerals, just pickups.",
+      "text": "I used to be an animal rescue worker. People always downplay it. 'Oh, my dog's just a little off today.' I get there and the dog's not off—it's checked out completely. One lady insisted her hamster was hibernating in July. Ma'am, that's not hibernation. That's a morbidly permanent nap. I don't do pet funerals, just pickups."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Factory Honesty",
+      "seedTermsUsed": [
+        "Factory",
+        "Being lied to"
+      ],
+      "joke": "I toured a factory once, and the manager kept bragging about their \"cutting‑edge technology.\" Then I watched a machine jam and three guys fixed it with a broom handle and sheer optimism. I asked if that was part of the system, and he said, \"Absolutely.\" That's when I realized the only thing truly automated in that place was me being lied to.",
+      "text": "I toured a factory once, and the manager kept bragging about their \"cutting‑edge technology.\" Then I watched a machine jam and three guys fixed it with a broom handle and sheer optimism. I asked if that was part of the system, and he said, \"Absolutely.\" That's when I realized the only thing truly automated in that place was me being lied to."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong rental-car analogy with natural escalation and a solid final tag; slightly wordy but genuinely funny."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean setup and delivery, but the pet-worker 'put you down' turn is familiar and easy to anticipate."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear and competent, though the dead-hamster reveal is predictable and 'permanent nap' feels mildly stock."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Relatable factory image and tidy structure, but the final line is more clever phrasing than a strong laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise, sharp final beat implying the narrator as the next 'patient'; economical and natural."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Good escalation from tender to morbid; the whispered punchline lands well and feels natural in delivery."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Funny mid-section (hamster line) but closing line is weaker than the peak, slightly diffusing the punch."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent factory-tour bit, but the 'automation/being lied to' turn is a fairly familiar irony template."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong stage joke with a great visual punchline based on a clever, well-paced misdirection."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "Excellent character work; the rental car analogy is fresh, memorable, and perfectly executed for stage."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "Relies on a familiar dead-pet trope and awkwardly forces the seed word into the phrasing instead of using the concept naturally."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "The setup uses familiar AI phrasing tropes, and the final punchline feels structurally contrived rather than like natural stage speech."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean implication gag with solid stage timing and a sharp recovery line."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Rental-car analogy works but the bit runs long and the payoff stays mild."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong premise-to-punch construction; final whisper lands the laugh cleanly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Setup is clear but the closing line restates the premise without a real turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise with a sharp final beat; mildly funny and well-constructed."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Fresh angle with confident timing; genuinely good and memorable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong image and a clear morbid turn; lands with a solid laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent and coherent, though more narrative than punchy."
+        }
+      ]
+    }
+  ]
+}
