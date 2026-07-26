@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-26T14:02:56.405Z",
+  "publishedDate": "2026-07-26",
+  "seed": "ext-real-2026-07-26",
+  "slug": "2026-07-26-ext-real-2026-07-26",
+  "source": "manual-external",
+  "seedTerms": [
+    "Paranormal",
+    "Bartender",
+    "Liquor Store",
+    "A fear or phobia rearing its head",
+    "Introverted",
+    "Perfectionist"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Last Call",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Bartender"
+      ],
+      "joke": "I bartended at a haunted hotel. Every night at closing, a ghost appeared and pointed at the top shelf, so I poured him a whiskey. He vanished without paying. That’s when I stopped believing in ghosts—no customer has ever left a bar without saying, “Actually, make it one more.”",
+      "setup": "",
+      "punchline": "I bartended at a haunted hotel. Every night at closing, a ghost appeared and pointed at the top shelf, so I poured him a whiskey. He vanished without paying. That’s when I stopped believing in ghosts—no customer has ever left a bar without saying, “Actually, make it one more.”",
+      "text": "I bartended at a haunted hotel. Every night at closing, a ghost appeared and pointed at the top shelf, so I poured him a whiskey. He vanished without paying. That’s when I stopped believing in ghosts—no customer has ever left a bar without saying, “Actually, make it one more.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Last Call",
+      "seedTermsUsed": [
+        "Bartender",
+        "Perfectionist"
+      ],
+      "joke": "I bartended for a year. Worst job for a perfectionist, because drunk people have zero quality standards. I'd spend four minutes on a perfect martini, garnish angled just right, and hand it to a guy who goes 'sick, thanks' and immediately spills half of it on himself while looking directly at me. Meanwhile I'm dying inside like I just watched someone use a Fabergé egg as a coaster. I once made a Manhattan so balanced I almost cried, and the guy said, 'can you make it stronger.' Sir, that IS stronger. That's just alcohol now.",
+      "setup": "",
+      "punchline": "I bartended for a year. Worst job for a perfectionist, because drunk people have zero quality standards. I'd spend four minutes on a perfect martini, garnish angled just right, and hand it to a guy who goes 'sick, thanks' and immediately spills half of it on himself while looking directly at me. Meanwhile I'm dying inside like I just watched someone use a Fabergé egg as a coaster. I once made a Manhattan so balanced I almost cried, and the guy said, 'can you make it stronger.' Sir, that IS stronger. That's just alcohol now.",
+      "text": "I bartended for a year. Worst job for a perfectionist, because drunk people have zero quality standards. I'd spend four minutes on a perfect martini, garnish angled just right, and hand it to a guy who goes 'sick, thanks' and immediately spills half of it on himself while looking directly at me. Meanwhile I'm dying inside like I just watched someone use a Fabergé egg as a coaster. I once made a Manhattan so balanced I almost cried, and the guy said, 'can you make it stronger.' Sir, that IS stronger. That's just alcohol now."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Shy Ghost",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Introverted"
+      ],
+      "joke": "I recently discovered my apartment is haunted, but luckily, the ghost is incredibly introverted. He doesn't rattle heavy chains or violently slam doors—he just quietly clears his throat when I'm standing in front of the microwave. Last night, the TV turned on by itself at 3 AM, but it was on mute with the closed captions running so he wouldn't wake me up. I'm not even scared of the afterlife anymore, I'm just stressed about having to make small talk in the hallway.",
+      "setup": "",
+      "punchline": "I recently discovered my apartment is haunted, but luckily, the ghost is incredibly introverted. He doesn't rattle heavy chains or violently slam doors—he just quietly clears his throat when I'm standing in front of the microwave. Last night, the TV turned on by itself at 3 AM, but it was on mute with the closed captions running so he wouldn't wake me up. I'm not even scared of the afterlife anymore, I'm just stressed about having to make small talk in the hallway.",
+      "text": "I recently discovered my apartment is haunted, but luckily, the ghost is incredibly introverted. He doesn't rattle heavy chains or violently slam doors—he just quietly clears his throat when I'm standing in front of the microwave. Last night, the TV turned on by itself at 3 AM, but it was on mute with the closed captions running so he wouldn't wake me up. I'm not even scared of the afterlife anymore, I'm just stressed about having to make small talk in the hallway."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Best Customer Ever",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Bartender"
+      ],
+      "joke": "I'm a bartender at this old place people swear is haunted. One night a glass slides down the bar all by itself. I pour it a whiskey. The glass empties. Next night, same glass, same thing. By the third night I'm calling it by name and setting a stool. My boss asks why the inventory's off. I tell him I've got a regular who tips in cold spots and never complains about the music. Best customer in the joint.",
+      "setup": "",
+      "punchline": "I'm a bartender at this old place people swear is haunted. One night a glass slides down the bar all by itself. I pour it a whiskey. The glass empties. Next night, same glass, same thing. By the third night I'm calling it by name and setting a stool. My boss asks why the inventory's off. I tell him I've got a regular who tips in cold spots and never complains about the music. Best customer in the joint.",
+      "text": "I'm a bartender at this old place people swear is haunted. One night a glass slides down the bar all by itself. I pour it a whiskey. The glass empties. Next night, same glass, same thing. By the third night I'm calling it by name and setting a stool. My boss asks why the inventory's off. I tell him I've got a regular who tips in cold spots and never complains about the music. Best customer in the joint."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Haunted Happy Hour",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Bartender"
+      ],
+      "joke": "I told my bartender I’m pretty sure my apartment is haunted. He asked if I’d seen any spirits. I said, “Yeah, but they only show up when I’m out of mixers.” He didn’t blink—just poured me a double and said, “If your ghost wants a drink too, it’s gonna need ID.”",
+      "setup": "",
+      "punchline": "I told my bartender I’m pretty sure my apartment is haunted. He asked if I’d seen any spirits. I said, “Yeah, but they only show up when I’m out of mixers.” He didn’t blink—just poured me a double and said, “If your ghost wants a drink too, it’s gonna need ID.”",
+      "text": "I told my bartender I’m pretty sure my apartment is haunted. He asked if I’d seen any spirits. I said, “Yeah, but they only show up when I’m out of mixers.” He didn’t blink—just poured me a double and said, “If your ghost wants a drink too, it’s gonna need ID.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong stage premise and vivid examples; the final alcohol-only turn lands, though the route is somewhat predictable."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean escalation and a natural final turn; the considerate introvert ghost is familiar but well executed."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear, economical storytelling with a solid cold-spots line, but the ghost-as-bar-regular concept is conventional."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 3,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Readable and concise, but it relies on familiar spirits and ID bar jokes with little unexpected development."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean misdirection turning ghost logic into bar-culture logic; solid economical punchline."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Well-escalated conceit (mute captions, hallway small talk) with a genuinely fresh final beat."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Solid setup but the 'best customer' close mostly restates the bit already established."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Relies on a mild 'spirits/ID' pun chain; competent but lands softly."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Solid misdirection on why they stopped believing in ghosts, but the wording in the punchline relies on a slightly clunky customer trope."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Excellent stand-up rhythm and strong imagery with the Faberge egg. The final punchline lands very naturally and realistically."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "A competent premise with 'tips in cold spots', but the progression feels static and ends on a predictable 'best customer' cliche."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 2,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 3,
+          "comment": "Relies heavily on an old, familiar 'spirits' pun. The final punchline about the ghost needing an ID is illogical and falls flat."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid premise and clean closer, but the turn is mild and the payoff stays within familiar bar-customer territory."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong observational escalation and a sharp final beat; length is manageable but the core conflict is familiar."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clear stage rhythm, polite-ghost details land cleanly, and the small-talk closer carries a genuine laugh."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Obvious spirits pun with minimal escalation; the ID line is competent filler rather than a real snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid premise with a clean turn; mildly funny and well-timed."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Long but coherent; good images and a real comic angle with steady payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fresh, gentle paranormal angle; amusing escalation and a relatable final beat."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean rhythm and a fun closer; a tidy, mildly funny haunted-bar bit."
+        }
+      ]
+    }
+  ]
+}

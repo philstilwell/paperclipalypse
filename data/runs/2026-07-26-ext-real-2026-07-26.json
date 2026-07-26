@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-26-ext-real-2026-07-26",
+  "seed": "ext-real-2026-07-26",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-26T14:02:56.405Z",
+  "publishedDate": "2026-07-26",
+  "seedTerms": [
+    "Paranormal",
+    "Bartender",
+    "Liquor Store",
+    "A fear or phobia rearing its head",
+    "Introverted",
+    "Perfectionist"
+  ],
+  "premise": {
+    "text": "Seed terms: Paranormal, Bartender, Liquor Store, A fear or phobia rearing its head, Introverted, Perfectionist",
+    "seedTerms": [
+      "Paranormal",
+      "Bartender",
+      "Liquor Store",
+      "A fear or phobia rearing its head",
+      "Introverted",
+      "Perfectionist"
+    ],
+    "displayText": "The Shy Ghost"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Last Call",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Bartender"
+      ],
+      "joke": "I bartended at a haunted hotel. Every night at closing, a ghost appeared and pointed at the top shelf, so I poured him a whiskey. He vanished without paying. That’s when I stopped believing in ghosts—no customer has ever left a bar without saying, “Actually, make it one more.”",
+      "setup": "",
+      "punchline": "I bartended at a haunted hotel. Every night at closing, a ghost appeared and pointed at the top shelf, so I poured him a whiskey. He vanished without paying. That’s when I stopped believing in ghosts—no customer has ever left a bar without saying, “Actually, make it one more.”",
+      "text": "I bartended at a haunted hotel. Every night at closing, a ghost appeared and pointed at the top shelf, so I poured him a whiskey. He vanished without paying. That’s when I stopped believing in ghosts—no customer has ever left a bar without saying, “Actually, make it one more.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Last Call",
+      "seedTermsUsed": [
+        "Bartender",
+        "Perfectionist"
+      ],
+      "joke": "I bartended for a year. Worst job for a perfectionist, because drunk people have zero quality standards. I'd spend four minutes on a perfect martini, garnish angled just right, and hand it to a guy who goes 'sick, thanks' and immediately spills half of it on himself while looking directly at me. Meanwhile I'm dying inside like I just watched someone use a Fabergé egg as a coaster. I once made a Manhattan so balanced I almost cried, and the guy said, 'can you make it stronger.' Sir, that IS stronger. That's just alcohol now.",
+      "setup": "",
+      "punchline": "I bartended for a year. Worst job for a perfectionist, because drunk people have zero quality standards. I'd spend four minutes on a perfect martini, garnish angled just right, and hand it to a guy who goes 'sick, thanks' and immediately spills half of it on himself while looking directly at me. Meanwhile I'm dying inside like I just watched someone use a Fabergé egg as a coaster. I once made a Manhattan so balanced I almost cried, and the guy said, 'can you make it stronger.' Sir, that IS stronger. That's just alcohol now.",
+      "text": "I bartended for a year. Worst job for a perfectionist, because drunk people have zero quality standards. I'd spend four minutes on a perfect martini, garnish angled just right, and hand it to a guy who goes 'sick, thanks' and immediately spills half of it on himself while looking directly at me. Meanwhile I'm dying inside like I just watched someone use a Fabergé egg as a coaster. I once made a Manhattan so balanced I almost cried, and the guy said, 'can you make it stronger.' Sir, that IS stronger. That's just alcohol now."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Shy Ghost",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Introverted"
+      ],
+      "joke": "I recently discovered my apartment is haunted, but luckily, the ghost is incredibly introverted. He doesn't rattle heavy chains or violently slam doors—he just quietly clears his throat when I'm standing in front of the microwave. Last night, the TV turned on by itself at 3 AM, but it was on mute with the closed captions running so he wouldn't wake me up. I'm not even scared of the afterlife anymore, I'm just stressed about having to make small talk in the hallway.",
+      "setup": "",
+      "punchline": "I recently discovered my apartment is haunted, but luckily, the ghost is incredibly introverted. He doesn't rattle heavy chains or violently slam doors—he just quietly clears his throat when I'm standing in front of the microwave. Last night, the TV turned on by itself at 3 AM, but it was on mute with the closed captions running so he wouldn't wake me up. I'm not even scared of the afterlife anymore, I'm just stressed about having to make small talk in the hallway.",
+      "text": "I recently discovered my apartment is haunted, but luckily, the ghost is incredibly introverted. He doesn't rattle heavy chains or violently slam doors—he just quietly clears his throat when I'm standing in front of the microwave. Last night, the TV turned on by itself at 3 AM, but it was on mute with the closed captions running so he wouldn't wake me up. I'm not even scared of the afterlife anymore, I'm just stressed about having to make small talk in the hallway."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Best Customer Ever",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Bartender"
+      ],
+      "joke": "I'm a bartender at this old place people swear is haunted. One night a glass slides down the bar all by itself. I pour it a whiskey. The glass empties. Next night, same glass, same thing. By the third night I'm calling it by name and setting a stool. My boss asks why the inventory's off. I tell him I've got a regular who tips in cold spots and never complains about the music. Best customer in the joint.",
+      "setup": "",
+      "punchline": "I'm a bartender at this old place people swear is haunted. One night a glass slides down the bar all by itself. I pour it a whiskey. The glass empties. Next night, same glass, same thing. By the third night I'm calling it by name and setting a stool. My boss asks why the inventory's off. I tell him I've got a regular who tips in cold spots and never complains about the music. Best customer in the joint.",
+      "text": "I'm a bartender at this old place people swear is haunted. One night a glass slides down the bar all by itself. I pour it a whiskey. The glass empties. Next night, same glass, same thing. By the third night I'm calling it by name and setting a stool. My boss asks why the inventory's off. I tell him I've got a regular who tips in cold spots and never complains about the music. Best customer in the joint."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Haunted Happy Hour",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Bartender"
+      ],
+      "joke": "I told my bartender I’m pretty sure my apartment is haunted. He asked if I’d seen any spirits. I said, “Yeah, but they only show up when I’m out of mixers.” He didn’t blink—just poured me a double and said, “If your ghost wants a drink too, it’s gonna need ID.”",
+      "setup": "",
+      "punchline": "I told my bartender I’m pretty sure my apartment is haunted. He asked if I’d seen any spirits. I said, “Yeah, but they only show up when I’m out of mixers.” He didn’t blink—just poured me a double and said, “If your ghost wants a drink too, it’s gonna need ID.”",
+      "text": "I told my bartender I’m pretty sure my apartment is haunted. He asked if I’d seen any spirits. I said, “Yeah, but they only show up when I’m out of mixers.” He didn’t blink—just poured me a double and said, “If your ghost wants a drink too, it’s gonna need ID.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong stage premise and vivid examples; the final alcohol-only turn lands, though the route is somewhat predictable.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clean escalation and a natural final turn; the considerate introvert ghost is familiar but well executed.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear, economical storytelling with a solid cold-spots line, but the ghost-as-bar-regular concept is conventional.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Readable and concise, but it relies on familiar spirits and ID bar jokes with little unexpected development.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 3,
+          "promptFit": 9,
+          "total": 5.2
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean misdirection turning ghost logic into bar-culture logic; solid economical punchline.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Well-escalated conceit (mute captions, hallway small talk) with a genuinely fresh final beat.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid setup but the 'best customer' close mostly restates the bit already established.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relies on a mild 'spirits/ID' pun chain; competent but lands softly.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.2
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid misdirection on why they stopped believing in ghosts, but the wording in the punchline relies on a slightly clunky customer trope.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.800000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent stand-up rhythm and strong imagery with the Faberge egg. The final punchline lands very naturally and realistically.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "A competent premise with 'tips in cold spots', but the progression feels static and ends on a predictable 'best customer' cliche.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relies heavily on an old, familiar 'spirits' pun. The final punchline about the ghost needing an ID is illogical and falls flat.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 2,
+          "promptFit": 7,
+          "total": 3.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise and clean closer, but the turn is mild and the payoff stays within familiar bar-customer territory.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong observational escalation and a sharp final beat; length is manageable but the core conflict is familiar.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear stage rhythm, polite-ghost details land cleanly, and the small-talk closer carries a genuine laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Obvious spirits pun with minimal escalation; the ID line is competent filler rather than a real snap.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.9
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with a clean turn; mildly funny and well-timed.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Long but coherent; good images and a real comic angle with steady payoff.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fresh, gentle paranormal angle; amusing escalation and a relatable final beat.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean rhythm and a fun closer; a tidy, mildly funny haunted-bar bit.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7,
+      "rawScore": 7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 6.7,
+        "craft": 7.2,
+        "originality": 6.9,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 7,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "Clean escalation and a natural final turn; the considerate introvert ghost is familiar but well executed."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.3,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0,
+          "comment": "Well-escalated conceit (mute captions, hallway small talk) with a genuinely fresh final beat."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear stage rhythm, polite-ghost details land cleanly, and the small-talk closer carries a genuine laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
+          "comment": "Fresh, gentle paranormal angle; amusing escalation and a relatable final beat."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.9,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0,
+          "comment": "Strong stage premise and vivid examples; the final alcohol-only turn lands, though the route is somewhat predictable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.6,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Excellent stand-up rhythm and strong imagery with the Faberge egg. The final punchline lands very naturally and realistically."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong observational escalation and a sharp final beat; length is manageable but the core conflict is familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 6,
+          "scoreAdjustment": 0,
+          "comment": "Long but coherent; good images and a real comic angle with steady payoff."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.1,
+      "rawScore": 6.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 6,
+        "craft": 6.2,
+        "originality": 5.7,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Clean misdirection turning ghost logic into bar-culture logic; solid economical punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.2,
+          "comment": "Solid misdirection on why they stopped believing in ghosts, but the wording in the punchline relies on a slightly clunky customer trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.9,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid premise and clean closer, but the turn is mild and the payoff stays within familiar bar-customer territory."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Solid premise with a clean turn; mildly funny and well-timed."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.6,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Clear, economical storytelling with a solid cold-spots line, but the ghost-as-bar-regular concept is conventional."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.5,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0,
+          "comment": "Solid setup but the 'best customer' close mostly restates the bit already established."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.2,
+          "comment": "A competent premise with 'tips in cold spots', but the progression feels static and ends on a predictable 'best customer' cliche."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Clean rhythm and a fun closer; a tidy, mildly funny haunted-bar bit."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 4.7,
+      "rawScore": 4.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.5,
+        "surprise": 4,
+        "craft": 5,
+        "originality": 3.2,
+        "promptFit": 7.7
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4,
+        "craft": 5,
+        "originality": 3.3,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.2,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0,
+          "comment": "Readable and concise, but it relies on familiar spirits and ID bar jokes with little unexpected development."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.2,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0,
+          "comment": "Relies on a mild 'spirits/ID' pun chain; competent but lands softly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 3.7,
+          "rawScore": 3.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Relies heavily on an old, familiar 'spirits' pun. The final punchline about the ghost needing an ID is illogical and falls flat."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 4.6,
+          "rawScore": 4.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Obvious spirits pun with minimal escalation; the ID line is competent filler rather than a real snap."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-26-ext-real-2026-07-26.png",
+    "originalSrc": "assets/feature-images/2026-07-26-ext-real-2026-07-26.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Shy Ghost: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - The Shy Ghost\nExact joke text to render in the right panel:\nI recently discovered my apartment is haunted, but luckily, the ghost is incredibly introverted. He doesn't rattle heavy chains or violently slam doors—he just quietly clears his throat when I'm standing in front of the microwave. Last night, the TV turned on by itself at 3 AM, but it was on mute with the closed captions running so he wouldn't wake me up. I'm not even scared of the afterlife anymore, I'm just stressed about having to make small talk in the hallway.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Paranormal, Bartender, Liquor Store, A fear or phobia rearing its head, Introverted, Perfectionist. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Paranormal, Bartender, Liquor Store, A fear or phobia rearing its head, Introverted, Perfectionist. Use the winning joke titled \"The Shy Ghost\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.4,
+      "google": 6.1,
+      "xai": 6.6,
+      "copilot": 6.3
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-26-ext-real-2026-07-26.md"
+}
