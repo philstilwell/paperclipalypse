@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-27T14:02:35.260Z",
+  "publishedDate": "2026-07-27",
+  "seed": "ext-real-2026-07-27",
+  "slug": "2026-07-27-ext-real-2026-07-27",
+  "source": "manual-external",
+  "seedTerms": [
+    "Caper",
+    "Manual Labourer",
+    "Antiques Store",
+    "Taking advice from the wrong person",
+    "Funny",
+    "Disorganized"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Handle With Care",
+      "seedTermsUsed": [
+        "Manual Labourer",
+        "Antiques Store"
+      ],
+      "joke": "I took a minimum-wage job moving furniture at an antiques store. They handed me a $12,000 cabinet and said, “Be careful—it’s irreplaceable.” That’s when I realized the only replaceable antique in the building was me.",
+      "setup": "",
+      "punchline": "I took a minimum-wage job moving furniture at an antiques store. They handed me a $12,000 cabinet and said, “Be careful—it’s irreplaceable.” That’s when I realized the only replaceable antique in the building was me.",
+      "text": "I took a minimum-wage job moving furniture at an antiques store. They handed me a $12,000 cabinet and said, “Be careful—it’s irreplaceable.” That’s when I realized the only replaceable antique in the building was me."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Antique Heist",
+      "seedTermsUsed": [
+        "Caper",
+        "Antiques Store"
+      ],
+      "joke": "My buddy talked me into robbing an antiques store. Told me it'd be the perfect caper, low security, no cameras. He was right about the security. Took us four hours to steal one chair because we kept stopping to ask each other 'wait, is this valuable or just old.' We escaped with a lamp, a spoon, and crippling guilt over the spoon, because the spoon was clearly somebody's grandmother's, and now it's ours, and it judges me.",
+      "setup": "",
+      "punchline": "My buddy talked me into robbing an antiques store. Told me it'd be the perfect caper, low security, no cameras. He was right about the security. Took us four hours to steal one chair because we kept stopping to ask each other 'wait, is this valuable or just old.' We escaped with a lamp, a spoon, and crippling guilt over the spoon, because the spoon was clearly somebody's grandmother's, and now it's ours, and it judges me.",
+      "text": "My buddy talked me into robbing an antiques store. Told me it'd be the perfect caper, low security, no cameras. He was right about the security. Took us four hours to steal one chair because we kept stopping to ask each other 'wait, is this valuable or just old.' We escaped with a lamp, a spoon, and crippling guilt over the spoon, because the spoon was clearly somebody's grandmother's, and now it's ours, and it judges me."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Relationship Advice",
+      "seedTermsUsed": [
+        "Taking advice from the wrong person",
+        "Antiques Store"
+      ],
+      "joke": "I recently made the mistake of taking relationship advice from the guy who runs my local antiques store. I told him I was in a fight with my girlfriend and asked what I should buy her to smooth things over. He looked me dead in the eye and suggested a rusted nineteenth-century butter churn. It’s my own fault. The man’s entire livelihood relies on clinging to things that stopped working a hundred years ago, and I treated him like a couples counselor.",
+      "setup": "",
+      "punchline": "I recently made the mistake of taking relationship advice from the guy who runs my local antiques store. I told him I was in a fight with my girlfriend and asked what I should buy her to smooth things over. He looked me dead in the eye and suggested a rusted nineteenth-century butter churn. It’s my own fault. The man’s entire livelihood relies on clinging to things that stopped working a hundred years ago, and I treated him like a couples counselor.",
+      "text": "I recently made the mistake of taking relationship advice from the guy who runs my local antiques store. I told him I was in a fight with my girlfriend and asked what I should buy her to smooth things over. He looked me dead in the eye and suggested a rusted nineteenth-century butter churn. It’s my own fault. The man’s entire livelihood relies on clinging to things that stopped working a hundred years ago, and I treated him like a couples counselor."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Bigger Hammer",
+      "seedTermsUsed": [
+        "Manual Labourer",
+        "Taking advice from the wrong person"
+      ],
+      "joke": "I was trying to hang some shelves last week and took advice from the wrong person—this manual labourer I met at Home Depot. He said, 'Just use a bigger hammer, it'll go right in.' Now there's a hole in the wall the size of a dinner plate, the shelves are on the floor, and guess who's doing all the manual labour fixing it? Me.",
+      "setup": "",
+      "punchline": "I was trying to hang some shelves last week and took advice from the wrong person—this manual labourer I met at Home Depot. He said, 'Just use a bigger hammer, it'll go right in.' Now there's a hole in the wall the size of a dinner plate, the shelves are on the floor, and guess who's doing all the manual labour fixing it? Me.",
+      "text": "I was trying to hang some shelves last week and took advice from the wrong person—this manual labourer I met at Home Depot. He said, 'Just use a bigger hammer, it'll go right in.' Now there's a hole in the wall the size of a dinner plate, the shelves are on the floor, and guess who's doing all the manual labour fixing it? Me."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Bad Advice at the Antiques Shop",
+      "seedTermsUsed": [
+        "Antiques Store",
+        "Taking advice from the wrong person"
+      ],
+      "joke": "I tried to impress a date by buying something classy from an antiques store, but I took advice from the guy who looked like he lived in the basement. He told me a cracked teapot was “a conversation piece.” He was right—my date took one look and said, “The conversation is over.”",
+      "setup": "",
+      "punchline": "I tried to impress a date by buying something classy from an antiques store, but I took advice from the guy who looked like he lived in the basement. He told me a cracked teapot was “a conversation piece.” He was right—my date took one look and said, “The conversation is over.”",
+      "text": "I tried to impress a date by buying something classy from an antiques store, but I took advice from the guy who looked like he lived in the basement. He told me a cracked teapot was “a conversation piece.” He was right—my date took one look and said, “The conversation is over.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 6,
+          "comment": "Good comic details and escalation, but the ending sprawls, and being talked into the robbery also invokes the wrong-advice concept, creating a likely third seed."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clear premise, strong analogy, natural rhythm, and a final line that cleanly delivers the main laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Understandable and properly structured, but the bigger-hammer mishap and role-reversal payoff are highly predictable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean and economical, but the conversation-piece wordplay is familiar and produces only a mild payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean setup and a tidy self-deprecating turn; final line lands but isn't a big laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Nice extended bit about the shopkeeper's worldview, but runs a bit long before the punch fully resolves."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Straightforward wordplay on 'manual labour'; competent but the turn is fairly predictable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Callback pun ('conversation piece'/'conversation is over') is the sharpest turn of the batch and lands cleanly."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean setup and solid juxtaposition, though referring to oneself as a replaceable antique is slightly imprecise."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise with a highly relatable observation about antiques being indistinguishable from old junk. Excellent stage rhythm and escalation."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Generic premise that relies heavily on restating the prompt terms. Weak punchline that merely repeats the setup without a satisfying turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent stage rhythm but relies on a predictable, dated punchline structure that feels more like a dad joke than modern stand-up."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean self-deprecation but the replaceable-worker turn is the first and most obvious route."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid heist-value confusion idea, but the spoon coda rambles and dilutes the snap."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Butter-churn suggestion lands; final explanation restates the metaphor too plainly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Tight construction and clean callback, yet the conversation-piece pivot is familiar."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clean, concise, solid closer; mild but tidy."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Funny images and a clear arc; a bit long but lands well."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Strong premise and a sharp final line; well-built."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Straightforward and predictable; readable but light."
+        }
+      ]
+    }
+  ]
+}
