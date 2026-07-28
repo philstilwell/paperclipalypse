@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-28T14:09:26.251Z",
+  "publishedDate": "2026-07-28",
+  "seed": "ext-real-2026-07-28",
+  "slug": "2026-07-28-ext-real-2026-07-28",
+  "source": "manual-external",
+  "seedTerms": [
+    "Fairy Tale",
+    "Secret Service Agent",
+    "Skate Park",
+    "A health issue cropping up",
+    "Sentimental",
+    "Martyr"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "The Deductible",
+      "seedTermsUsed": [
+        "Skate Park",
+        "A health issue cropping up"
+      ],
+      "joke": "I took my nephew to a skate park and told him, “I used to do this.” He handed me a board. One push in, my lower back seized so hard I had to lie flat on the concrete. The kids were impressed. They thought I’d invented a trick called “the deductible.”",
+      "setup": "",
+      "punchline": "I took my nephew to a skate park and told him, “I used to do this.” He handed me a board. One push in, my lower back seized so hard I had to lie flat on the concrete. The kids were impressed. They thought I’d invented a trick called “the deductible.”",
+      "text": "I took my nephew to a skate park and told him, “I used to do this.” He handed me a board. One push in, my lower back seized so hard I had to lie flat on the concrete. The kids were impressed. They thought I’d invented a trick called “the deductible.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Grandpa Bails",
+      "seedTermsUsed": [
+        "Skate Park",
+        "A health issue cropping up"
+      ],
+      "joke": "My grandpa, seventy-eight years old, took up skateboarding at the skate park down the street. I said, 'Grandpa, why now?' He goes, 'Doctor told me I need more cardio.' I said, 'He meant walking!' Grandpa just shrugged and said cardio's cardio. Yesterday he landed his first ollie and pulled his hip so bad he now does cardio in a waiting room, filling out forms with a hand that still smells like Bengay and victory.",
+      "setup": "",
+      "punchline": "My grandpa, seventy-eight years old, took up skateboarding at the skate park down the street. I said, 'Grandpa, why now?' He goes, 'Doctor told me I need more cardio.' I said, 'He meant walking!' Grandpa just shrugged and said cardio's cardio. Yesterday he landed his first ollie and pulled his hip so bad he now does cardio in a waiting room, filling out forms with a hand that still smells like Bengay and victory.",
+      "text": "My grandpa, seventy-eight years old, took up skateboarding at the skate park down the street. I said, 'Grandpa, why now?' He goes, 'Doctor told me I need more cardio.' I said, 'He meant walking!' Grandpa just shrugged and said cardio's cardio. Yesterday he landed his first ollie and pulled his hip so bad he now does cardio in a waiting room, filling out forms with a hand that still smells like Bengay and victory."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Package",
+      "seedTermsUsed": [
+        "Secret Service Agent",
+        "Skate Park"
+      ],
+      "joke": "Taking my seven-year-old to the skate park instantly turns me into a Secret Service agent. I don't even own a board. I just hover by the halfpipe in sunglasses, pressing a finger to my ear, whispering, 'The package is approaching the ramp. The package is attempting an ollie. The package has eaten pavement. Move in, move in... deploy the SpongeBob band-aids.'",
+      "setup": "",
+      "punchline": "Taking my seven-year-old to the skate park instantly turns me into a Secret Service agent. I don't even own a board. I just hover by the halfpipe in sunglasses, pressing a finger to my ear, whispering, 'The package is approaching the ramp. The package is attempting an ollie. The package has eaten pavement. Move in, move in... deploy the SpongeBob band-aids.'",
+      "text": "Taking my seven-year-old to the skate park instantly turns me into a Secret Service agent. I don't even own a board. I just hover by the halfpipe in sunglasses, pressing a finger to my ear, whispering, 'The package is approaching the ramp. The package is attempting an ollie. The package has eaten pavement. Move in, move in... deploy the SpongeBob band-aids.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Skate Park Detail",
+      "seedTermsUsed": [
+        "Secret Service Agent",
+        "Skate Park"
+      ],
+      "joke": "I took my nephew to the skate park and went full Secret Service agent. Every time he hit a ramp I scanned for threats. He wiped out once and I body-slammed him shouting, 'Stay down, Mr. President!' He shoved me off and said, 'Uncle, it's just a board.' The other dads clapped. For him.",
+      "setup": "",
+      "punchline": "I took my nephew to the skate park and went full Secret Service agent. Every time he hit a ramp I scanned for threats. He wiped out once and I body-slammed him shouting, 'Stay down, Mr. President!' He shoved me off and said, 'Uncle, it's just a board.' The other dads clapped. For him.",
+      "text": "I took my nephew to the skate park and went full Secret Service agent. Every time he hit a ramp I scanned for threats. He wiped out once and I body-slammed him shouting, 'Stay down, Mr. President!' He shoved me off and said, 'Uncle, it's just a board.' The other dads clapped. For him."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Skate Park Heroics",
+      "seedTermsUsed": [
+        "Skate Park",
+        "Martyr"
+      ],
+      "joke": "I tried to be a hero at the skate park the other day. Some kid wiped out, and I jumped in like I was sacrificing myself for the greater good. I yelled, “I’ll save you!” and immediately tripped over my own board. The kid stood up fine, and I’m lying there like a martyr for absolutely nothing except my own bad decisions.",
+      "setup": "",
+      "punchline": "I tried to be a hero at the skate park the other day. Some kid wiped out, and I jumped in like I was sacrificing myself for the greater good. I yelled, “I’ll save you!” and immediately tripped over my own board. The kid stood up fine, and I’m lying there like a martyr for absolutely nothing except my own bad decisions.",
+      "text": "I tried to be a hero at the skate park the other day. Some kid wiped out, and I jumped in like I was sacrificing myself for the greater good. I yelled, “I’ll save you!” and immediately tripped over my own board. The kid stood up fine, and I’m lying there like a martyr for absolutely nothing except my own bad decisions."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear premise and vivid closing image, but the route is predictable and slightly overextended."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong escalation, natural stage rhythm, and a clean final turn with the band-aids."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Solid physical escalation, though the final applause tag is weaker than the main image."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Understandable and compliant, but generic, repetitive, and lacking a distinct punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean escalation, tight economical punchline that lands on a fresh word."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong sustained bit with good radio-speak escalation; SpongeBob band-aid snap is a nice bathos turn."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Fun visual but final line ('clapped. For him.') is a bit muddled and softens the punch."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Familiar 'clumsy hero' template; punchline mostly restates the setup rather than turning it."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 9,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent economy and stage rhythm. 'The deductible' is a highly original and surprising punchline that lands with a great snap."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "A competent story but slightly wordy and reliant on the familiar 'quirky grandpa' trope. The final image is decent but lacks a hard comic turn."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The premise is heavily telegraphed early on, and the 'other dads clapped' ending relies on a tired internet cliche rather than a fresh punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 3,
+          "surprise": 2,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 3,
+          "comment": "Lacks a genuine comic turn. The joke merely describes falling down, and 'martyr' feels forced in as a literal description rather than a sharp observation."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean premise and solid final image; the deductible label snaps the health-failure bit into a real laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Familiar old-guy-skates setup; mild payoff diluted by length and soft closing image."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong stage premise with escalating radio chatter that lands cleanly on the undercut band-aid line."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear self-own structure and usable martyr turn, but the trip is the expected route and the laugh stays mild."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise and a neat final turn; solid, mildly funny."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Warm and vivid but a bit long; payoff is gentle rather than sharp."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Strong stage rhythm and a fun Secret Service angle; good closer."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear premise but the turn is predictable; readable, modest laugh."
+        }
+      ]
+    }
+  ]
+}

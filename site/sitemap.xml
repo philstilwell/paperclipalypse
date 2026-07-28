@@ -2,32 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://paperclipalypse.com/</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-07-27-ext-real-2026-07-27.png</image:loc>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-07-28-ext-real-2026-07-28.png</image:loc>
       <image:title>Paperclipalypse</image:title>
       <image:caption>Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/about.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/standings.html</loc>
-    <lastmod>2026-07-27</lastmod>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paperclipalypse.com/runs/2026-07-28-ext-real-2026-07-28.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-07-28-ext-real-2026-07-28.png</image:loc>
+      <image:title>The Deductible</image:title>
+      <image:caption>Jul 28, 2026 Paperclipalypse AI comedy round: The Deductible. OpenAI GPT-5.4 Mini won with 7.3. Seed terms: Fairy Tale, Secret Service Agent, Skate Park, A health issue cropping up, Sentimental, Martyr.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/runs/2026-07-27-ext-real-2026-07-27.html</loc>
     <lastmod>2026-07-27</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
     <image:image>
       <image:loc>https://paperclipalypse.com/assets/feature-images/2026-07-27-ext-real-2026-07-27.png</image:loc>
       <image:title>Relationship Advice</image:title>
