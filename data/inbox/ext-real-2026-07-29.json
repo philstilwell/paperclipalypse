@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-29T14:01:40.733Z",
+  "publishedDate": "2026-07-29",
+  "seed": "ext-real-2026-07-29",
+  "slug": "2026-07-29-ext-real-2026-07-29",
+  "source": "manual-external",
+  "seedTerms": [
+    "Journalist",
+    "Emergency Room Physician",
+    "Living Room",
+    "Rules changing",
+    "Empathetic",
+    "Cowardly"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Off the Record",
+      "seedTermsUsed": [
+        "Journalist",
+        "Rules changing"
+      ],
+      "joke": "I married a journalist, so every argument has ground rules. I say, “Off the record,” and she says the rules changed—that only works before I say something stupid. Apparently “off the record” isn’t a time machine; it’s a tiny umbrella you open after the piano lands.",
+      "setup": "",
+      "punchline": "I married a journalist, so every argument has ground rules. I say, “Off the record,” and she says the rules changed—that only works before I say something stupid. Apparently “off the record” isn’t a time machine; it’s a tiny umbrella you open after the piano lands.",
+      "text": "I married a journalist, so every argument has ground rules. I say, “Off the record,” and she says the rules changed—that only works before I say something stupid. Apparently “off the record” isn’t a time machine; it’s a tiny umbrella you open after the piano lands."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "House Rules",
+      "seedTermsUsed": [
+        "Living Room",
+        "Rules changing"
+      ],
+      "joke": "My family has a strict living room rule: no phones during movie night. Been that way for years. Then last week I caught my dad on his phone, and instead of getting mad, I just said, 'New rule — no phones.' He goes, 'Since when?' I said, 'Since you got caught. That's how rules work in this house. They're not laws, they're reactions.'",
+      "setup": "",
+      "punchline": "My family has a strict living room rule: no phones during movie night. Been that way for years. Then last week I caught my dad on his phone, and instead of getting mad, I just said, 'New rule — no phones.' He goes, 'Since when?' I said, 'Since you got caught. That's how rules work in this house. They're not laws, they're reactions.'",
+      "text": "My family has a strict living room rule: no phones during movie night. Been that way for years. Then last week I caught my dad on his phone, and instead of getting mad, I just said, 'New rule — no phones.' He goes, 'Since when?' I said, 'Since you got caught. That's how rules work in this house. They're not laws, they're reactions.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Active Listening",
+      "seedTermsUsed": [
+        "Emergency Room Physician",
+        "Empathetic"
+      ],
+      "joke": "I realized I’m way too empathetic to be an ER doctor. A guy comes in with a severed finger, screaming in agony, so I immediately start screaming too. I’m like, 'I feel you, man! This is so unfair! We're both having a terrible Tuesday!' The nurses are yelling at me to apply pressure, and I'm just holding his good hand, sobbing, 'Your feelings are perfectly valid!' Turns out, massive blood loss requires medical intervention, not active listening.",
+      "setup": "",
+      "punchline": "I realized I’m way too empathetic to be an ER doctor. A guy comes in with a severed finger, screaming in agony, so I immediately start screaming too. I’m like, 'I feel you, man! This is so unfair! We're both having a terrible Tuesday!' The nurses are yelling at me to apply pressure, and I'm just holding his good hand, sobbing, 'Your feelings are perfectly valid!' Turns out, massive blood loss requires medical intervention, not active listening.",
+      "text": "I realized I’m way too empathetic to be an ER doctor. A guy comes in with a severed finger, screaming in agony, so I immediately start screaming too. I’m like, 'I feel you, man! This is so unfair! We're both having a terrible Tuesday!' The nurses are yelling at me to apply pressure, and I'm just holding his good hand, sobbing, 'Your feelings are perfectly valid!' Turns out, massive blood loss requires medical intervention, not active listening."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Badge of Courage",
+      "seedTermsUsed": [
+        "Emergency Room Physician",
+        "Cowardly"
+      ],
+      "joke": "I'm an emergency room physician, but between us, I'm a total coward. Last night a guy rolls in with a steak knife still stuck in his chest, and my medical training kicks in perfectly—I scream louder than he does, point at the exit signs, and hide under a gurney until the real doctors show up.",
+      "setup": "",
+      "punchline": "I'm an emergency room physician, but between us, I'm a total coward. Last night a guy rolls in with a steak knife still stuck in his chest, and my medical training kicks in perfectly—I scream louder than he does, point at the exit signs, and hide under a gurney until the real doctors show up.",
+      "text": "I'm an emergency room physician, but between us, I'm a total coward. Last night a guy rolls in with a steak knife still stuck in his chest, and my medical training kicks in perfectly—I scream louder than he does, point at the exit signs, and hide under a gurney until the real doctors show up."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Living Room Panic",
+      "seedTermsUsed": [
+        "Living Room",
+        "Cowardly"
+      ],
+      "joke": "I found out I’m a complete coward when a bird flew into my living room. I didn’t try to guide it out—I just grabbed my coat and left like it had legally claimed the space. I even texted my friend, “If you hear chirping, that’s the new tenant. I’m not going back in there.”",
+      "setup": "",
+      "punchline": "I found out I’m a complete coward when a bird flew into my living room. I didn’t try to guide it out—I just grabbed my coat and left like it had legally claimed the space. I even texted my friend, “If you hear chirping, that’s the new tenant. I’m not going back in there.”",
+      "text": "I found out I’m a complete coward when a bird flew into my living room. I didn’t try to guide it out—I just grabbed my coat and left like it had legally claimed the space. I even texted my friend, “If you hear chirping, that’s the new tenant. I’m not going back in there.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear premise and tidy wording, but the final observation explains the bit more than it delivers a punchline."
+        },
+        {
+          "jokeId": "google",
+          "originality": 3,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Understandable escalation, but it relies heavily on the familiar therapy-language-in-the-wrong-setting template."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The premise is immediately obvious, and the screaming-and-hiding payoff follows the most predictable route."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "A clean, relatable premise with two solid turns; the tenant line lands mildly but memorably."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Nice closing image (umbrella after piano lands), clean two-seed use, mild but real laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid comic idea, but runs long and the escalation is a bit repetitive before the payoff line."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Tight escalation, clear coward premise, good economy and a satisfying final beat."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Cute concrete scenario, decent closer, but 'new tenant' text is a bit expected as endings go."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent escalation; the piano and umbrella metaphor is fresh and carries a strong, unexpected laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent observation about family dynamics, but it lacks a strong comedic turn or a punchline with snap."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "A solid execution of the cowardly professional trope with vivid, stage-ready imagery and good timing."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Relatable and tight. Treating the bird as a legal tenant is a clever and funny rationalization of cowardice."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid premise and sharp final image, but the laugh stays mild rather than big."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear setup yet the turn is explanatory and lands flat."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong escalation and clean final line; genuine comic idea with real timing."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Concrete visual and natural cowardly turn; solid mild-to-good payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise with a fun metaphor; solid but not sharply surprising."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Relatable and clear, but the turn is expected and lands mildly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Energetic escalation and a decent payoff; a bit long and slightly overstuffed."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clear setup and a simple turn; humorous but predictable."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-07-29-ext-real-2026-07-29",
+  "seed": "ext-real-2026-07-29",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-07-29T14:01:40.733Z",
+  "publishedDate": "2026-07-29",
+  "seedTerms": [
+    "Journalist",
+    "Emergency Room Physician",
+    "Living Room",
+    "Rules changing",
+    "Empathetic",
+    "Cowardly"
+  ],
+  "premise": {
+    "text": "Seed terms: Journalist, Emergency Room Physician, Living Room, Rules changing, Empathetic, Cowardly",
+    "seedTerms": [
+      "Journalist",
+      "Emergency Room Physician",
+      "Living Room",
+      "Rules changing",
+      "Empathetic",
+      "Cowardly"
+    ],
+    "displayText": "Off the Record"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Off the Record",
+      "seedTermsUsed": [
+        "Journalist",
+        "Rules changing"
+      ],
+      "joke": "I married a journalist, so every argument has ground rules. I say, “Off the record,” and she says the rules changed—that only works before I say something stupid. Apparently “off the record” isn’t a time machine; it’s a tiny umbrella you open after the piano lands.",
+      "setup": "",
+      "punchline": "I married a journalist, so every argument has ground rules. I say, “Off the record,” and she says the rules changed—that only works before I say something stupid. Apparently “off the record” isn’t a time machine; it’s a tiny umbrella you open after the piano lands.",
+      "text": "I married a journalist, so every argument has ground rules. I say, “Off the record,” and she says the rules changed—that only works before I say something stupid. Apparently “off the record” isn’t a time machine; it’s a tiny umbrella you open after the piano lands."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "House Rules",
+      "seedTermsUsed": [
+        "Living Room",
+        "Rules changing"
+      ],
+      "joke": "My family has a strict living room rule: no phones during movie night. Been that way for years. Then last week I caught my dad on his phone, and instead of getting mad, I just said, 'New rule — no phones.' He goes, 'Since when?' I said, 'Since you got caught. That's how rules work in this house. They're not laws, they're reactions.'",
+      "setup": "",
+      "punchline": "My family has a strict living room rule: no phones during movie night. Been that way for years. Then last week I caught my dad on his phone, and instead of getting mad, I just said, 'New rule — no phones.' He goes, 'Since when?' I said, 'Since you got caught. That's how rules work in this house. They're not laws, they're reactions.'",
+      "text": "My family has a strict living room rule: no phones during movie night. Been that way for years. Then last week I caught my dad on his phone, and instead of getting mad, I just said, 'New rule — no phones.' He goes, 'Since when?' I said, 'Since you got caught. That's how rules work in this house. They're not laws, they're reactions.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Active Listening",
+      "seedTermsUsed": [
+        "Emergency Room Physician",
+        "Empathetic"
+      ],
+      "joke": "I realized I’m way too empathetic to be an ER doctor. A guy comes in with a severed finger, screaming in agony, so I immediately start screaming too. I’m like, 'I feel you, man! This is so unfair! We're both having a terrible Tuesday!' The nurses are yelling at me to apply pressure, and I'm just holding his good hand, sobbing, 'Your feelings are perfectly valid!' Turns out, massive blood loss requires medical intervention, not active listening.",
+      "setup": "",
+      "punchline": "I realized I’m way too empathetic to be an ER doctor. A guy comes in with a severed finger, screaming in agony, so I immediately start screaming too. I’m like, 'I feel you, man! This is so unfair! We're both having a terrible Tuesday!' The nurses are yelling at me to apply pressure, and I'm just holding his good hand, sobbing, 'Your feelings are perfectly valid!' Turns out, massive blood loss requires medical intervention, not active listening.",
+      "text": "I realized I’m way too empathetic to be an ER doctor. A guy comes in with a severed finger, screaming in agony, so I immediately start screaming too. I’m like, 'I feel you, man! This is so unfair! We're both having a terrible Tuesday!' The nurses are yelling at me to apply pressure, and I'm just holding his good hand, sobbing, 'Your feelings are perfectly valid!' Turns out, massive blood loss requires medical intervention, not active listening."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Badge of Courage",
+      "seedTermsUsed": [
+        "Emergency Room Physician",
+        "Cowardly"
+      ],
+      "joke": "I'm an emergency room physician, but between us, I'm a total coward. Last night a guy rolls in with a steak knife still stuck in his chest, and my medical training kicks in perfectly—I scream louder than he does, point at the exit signs, and hide under a gurney until the real doctors show up.",
+      "setup": "",
+      "punchline": "I'm an emergency room physician, but between us, I'm a total coward. Last night a guy rolls in with a steak knife still stuck in his chest, and my medical training kicks in perfectly—I scream louder than he does, point at the exit signs, and hide under a gurney until the real doctors show up.",
+      "text": "I'm an emergency room physician, but between us, I'm a total coward. Last night a guy rolls in with a steak knife still stuck in his chest, and my medical training kicks in perfectly—I scream louder than he does, point at the exit signs, and hide under a gurney until the real doctors show up."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Living Room Panic",
+      "seedTermsUsed": [
+        "Living Room",
+        "Cowardly"
+      ],
+      "joke": "I found out I’m a complete coward when a bird flew into my living room. I didn’t try to guide it out—I just grabbed my coat and left like it had legally claimed the space. I even texted my friend, “If you hear chirping, that’s the new tenant. I’m not going back in there.”",
+      "setup": "",
+      "punchline": "I found out I’m a complete coward when a bird flew into my living room. I didn’t try to guide it out—I just grabbed my coat and left like it had legally claimed the space. I even texted my friend, “If you hear chirping, that’s the new tenant. I’m not going back in there.”",
+      "text": "I found out I’m a complete coward when a bird flew into my living room. I didn’t try to guide it out—I just grabbed my coat and left like it had legally claimed the space. I even texted my friend, “If you hear chirping, that’s the new tenant. I’m not going back in there.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear premise and tidy wording, but the final observation explains the bit more than it delivers a punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Understandable escalation, but it relies heavily on the familiar therapy-language-in-the-wrong-setting template.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 9,
+          "total": 5
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The premise is immediately obvious, and the screaming-and-hiding payoff follows the most predictable route.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A clean, relatable premise with two solid turns; the tenant line lands mildly but memorably.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Nice closing image (umbrella after piano lands), clean two-seed use, mild but real laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Solid comic idea, but runs long and the escalation is a bit repetitive before the payoff line.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Tight escalation, clear coward premise, good economy and a satisfying final beat.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute concrete scenario, decent closer, but 'new tenant' text is a bit expected as endings go.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Excellent escalation; the piano and umbrella metaphor is fresh and carries a strong, unexpected laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Competent observation about family dynamics, but it lacks a strong comedic turn or a punchline with snap.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "xai",
+          "comment": "A solid execution of the cowardly professional trope with vivid, stage-ready imagery and good timing.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relatable and tight. Treating the bird as a legal tenant is a clever and funny rationalization of cowardice.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise and sharp final image, but the laugh stays mild rather than big.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear setup yet the turn is explanatory and lands flat.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong escalation and clean final line; genuine comic idea with real timing.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Concrete visual and natural cowardly turn; solid mild-to-good payoff.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a fun metaphor; solid but not sharply surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable and clear, but the turn is expected and lands mildly.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        },
+        {
+          "jokeId": "google",
+          "comment": "Energetic escalation and a decent payoff; a bit long and slightly overstuffed.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear setup and a simple turn; humorous but predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.7,
+        "craft": 7.2,
+        "originality": 6.7,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Nice closing image (umbrella after piano lands), clean two-seed use, mild but real laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.4,
+          "rawScore": 8.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Excellent escalation; the piano and umbrella metaphor is fresh and carries a strong, unexpected laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid premise and sharp final image, but the laugh stays mild rather than big."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean premise with a fun metaphor; solid but not sharply surprising."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.7,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.1,
+          "rawScore": 6,
+          "scoreAdjustment": 0.1,
+          "comment": "A clean, relatable premise with two solid turns; the tenant line lands mildly but memorably."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Cute concrete scenario, decent closer, but 'new tenant' text is a bit expected as endings go."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Relatable and tight. Treating the bird as a legal tenant is a clever and funny rationalization of cowardice."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.6,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Concrete visual and natural cowardly turn; solid mild-to-good payoff."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.7,
+        "craft": 5.9,
+        "originality": 5.4,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.1,
+          "rawScore": 5,
+          "scoreAdjustment": 0.1,
+          "comment": "Understandable escalation, but it relies heavily on the familiar therapy-language-in-the-wrong-setting template."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid comic idea, but runs long and the escalation is a bit repetitive before the payoff line."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong escalation and clean final line; genuine comic idea with real timing."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Energetic escalation and a decent payoff; a bit long and slightly overstuffed."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.1,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.6,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.1,
+          "comment": "The premise is immediately obvious, and the screaming-and-hiding payoff follows the most predictable route."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.7,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.1,
+          "comment": "Tight escalation, clear coward premise, good economy and a satisfying final beat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.2,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.3,
+          "comment": "A solid execution of the cowardly professional trope with vivid, stage-ready imagery and good timing."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.5,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear setup and a simple turn; humorous but predictable."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 5.4,
+      "rawScore": 5.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 5.5,
+        "originality": 5,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 5.5,
+        "originality": 5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.7,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear premise and tidy wording, but the final observation explains the bit more than it delivers a punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Competent observation about family dynamics, but it lacks a strong comedic turn or a punchline with snap."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 4.9,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear setup yet the turn is explanatory and lands flat."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.5,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.1,
+          "comment": "Relatable and clear, but the turn is expected and lands mildly."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-07-29-ext-real-2026-07-29.png",
+    "originalSrc": "assets/feature-images/2026-07-29-ext-real-2026-07-29.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Off the Record: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - Off the Record\nExact joke text to render in the right panel:\nI married a journalist, so every argument has ground rules. I say, “Off the record,” and she says the rules changed—that only works before I say something stupid. Apparently “off the record” isn’t a time machine; it’s a tiny umbrella you open after the piano lands.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Journalist, Emergency Room Physician, Living Room, Rules changing, Empathetic, Cowardly. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Journalist, Emergency Room Physician, Living Room, Rules changing, Empathetic, Cowardly. Use the winning joke titled \"Off the Record\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 6.3,
+      "google": 5.9,
+      "xai": 6.5,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-07-29-ext-real-2026-07-29.md"
+}

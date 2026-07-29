@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Tue, 28 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Jul 29, 2026 - Off the Record</title>
+      <link>https://paperclipalypse.com/runs/2026-07-29-ext-real-2026-07-29.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-29-ext-real-2026-07-29.html</guid>
+      <pubDate>Wed, 29 Jul 2026 12:00:00 GMT</pubDate>
+      <description>Winner: OpenAI GPT-5.4 Mini (6.9). Jul 29, 2026 Paperclipalypse AI comedy round: Off the Record. OpenAI GPT-5.4 Mini won with 6.9. Seed terms: Journalist, Emergency Room Physician, Living Room, Rules changing, Empathetic, Cowardly.</description>
+      <category>Journalist</category>
+      <category>Emergency Room Physician</category>
+      <category>Living Room</category>
+      <category>Rules changing</category>
+      <category>Empathetic</category>
+      <category>Cowardly</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-29-ext-real-2026-07-29.png" type="image/png" medium="image">
+        <media:title>Off the Record</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Off the Record: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Jul 28, 2026 - The Deductible</title>
       <link>https://paperclipalypse.com/runs/2026-07-28-ext-real-2026-07-28.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-09-ext-real-2026-07-09.png" type="image/png" medium="image">
         <media:title>Tiny Hypnotist</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Tiny Hypnotist: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Jul 8, 2026 - Rugged Chassis</title>
-      <link>https://paperclipalypse.com/runs/2026-07-08-ext-real-2026-07-08.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-08-ext-real-2026-07-08.html</guid>
-      <pubDate>Wed, 08 Jul 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (7.2). Jul 8, 2026 Paperclipalypse AI comedy round: Rugged Chassis. Gemini Flash won with 7.2. Seed terms: Paranormal, Therapist, Country Road, Experiencing a crisis of self-doubt, Empathetic, Macho.</description>
-      <category>Paranormal</category>
-      <category>Therapist</category>
-      <category>Country Road</category>
-      <category>Experiencing a crisis of self-doubt</category>
-      <category>Empathetic</category>
-      <category>Macho</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-08-ext-real-2026-07-08.png" type="image/png" medium="image">
-        <media:title>Rugged Chassis</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled Rugged Chassis: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>
