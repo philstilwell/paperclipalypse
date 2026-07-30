@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-07-30T14:02:45.171Z",
+  "publishedDate": "2026-07-30",
+  "seed": "ext-real-2026-07-30",
+  "slug": "2026-07-30-ext-real-2026-07-30",
+  "source": "manual-external",
+  "seedTerms": [
+    "Slasher and Splatter",
+    "Repairperson",
+    "Trailer Park",
+    "Bureaucracy tying hands",
+    "Spontaneous",
+    "Reckless"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Department Transfer",
+      "seedTermsUsed": [
+        "Repairperson",
+        "Bureaucracy tying hands"
+      ],
+      "joke": "I called a repairman about a leak under my sink. He said company rules forbade him from touching it until the water-damage department verified there was water. Three days later, they arrived by canoe. The repairman surveyed my flooded kitchen and said, “Sorry—this is no longer plumbing. You need marine services.”",
+      "setup": "",
+      "punchline": "I called a repairman about a leak under my sink. He said company rules forbade him from touching it until the water-damage department verified there was water. Three days later, they arrived by canoe. The repairman surveyed my flooded kitchen and said, “Sorry—this is no longer plumbing. You need marine services.”",
+      "text": "I called a repairman about a leak under my sink. He said company rules forbade him from touching it until the water-damage department verified there was water. Three days later, they arrived by canoe. The repairman surveyed my flooded kitchen and said, “Sorry—this is no longer plumbing. You need marine services.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "The Reckless Repairman",
+      "seedTermsUsed": [
+        "Repairperson",
+        "Reckless"
+      ],
+      "joke": "I hired a repairman to fix my dishwasher, and this guy handled a wrench like he was auditioning for a horror movie. Sparks flying, water everywhere, at one point he just screamed 'IT'S FIGHTING BACK' and stabbed the control panel. I said, 'Do you have a license?' He said, 'I have a temper.' Cleanest dishwasher I've ever owned. Also the scariest thirty minutes of my life.",
+      "setup": "",
+      "punchline": "I hired a repairman to fix my dishwasher, and this guy handled a wrench like he was auditioning for a horror movie. Sparks flying, water everywhere, at one point he just screamed 'IT'S FIGHTING BACK' and stabbed the control panel. I said, 'Do you have a license?' He said, 'I have a temper.' Cleanest dishwasher I've ever owned. Also the scariest thirty minutes of my life.",
+      "text": "I hired a repairman to fix my dishwasher, and this guy handled a wrench like he was auditioning for a horror movie. Sparks flying, water everywhere, at one point he just screamed 'IT'S FIGHTING BACK' and stabbed the control panel. I said, 'Do you have a license?' He said, 'I have a temper.' Cleanest dishwasher I've ever owned. Also the scariest thirty minutes of my life."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Hourly Rate",
+      "seedTermsUsed": [
+        "Slasher and Splatter",
+        "Repairperson"
+      ],
+      "joke": "I just realized the only difference between an emergency plumber and a slasher movie villain is the hourly rate. A stranger pulls up to your house in a windowless van, gets out wearing stained coveralls, grabs a hacksaw, and says, 'I'm gonna need to go down into your basement.' Honestly, the slasher is way less terrifying. At least when he’s done splattering the walls, you aren't out three grand for parts and labor.",
+      "setup": "",
+      "punchline": "I just realized the only difference between an emergency plumber and a slasher movie villain is the hourly rate. A stranger pulls up to your house in a windowless van, gets out wearing stained coveralls, grabs a hacksaw, and says, 'I'm gonna need to go down into your basement.' Honestly, the slasher is way less terrifying. At least when he’s done splattering the walls, you aren't out three grand for parts and labor.",
+      "text": "I just realized the only difference between an emergency plumber and a slasher movie villain is the hourly rate. A stranger pulls up to your house in a windowless van, gets out wearing stained coveralls, grabs a hacksaw, and says, 'I'm gonna need to go down into your basement.' Honestly, the slasher is way less terrifying. At least when he’s done splattering the walls, you aren't out three grand for parts and labor."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Neighborhood Motto",
+      "seedTermsUsed": [
+        "Trailer Park",
+        "Reckless"
+      ],
+      "joke": "I grew up in a trailer park, where reckless isn't a phase, it's the official weather forecast. My uncle once decided the fastest way to open a stuck garage was to floor his riding mower straight through the door. Worked great until the mower kept going, took out the barbecue, and ended up in the neighbor's kiddie pool. We still call that Tuesday.",
+      "setup": "",
+      "punchline": "I grew up in a trailer park, where reckless isn't a phase, it's the official weather forecast. My uncle once decided the fastest way to open a stuck garage was to floor his riding mower straight through the door. Worked great until the mower kept going, took out the barbecue, and ended up in the neighbor's kiddie pool. We still call that Tuesday.",
+      "text": "I grew up in a trailer park, where reckless isn't a phase, it's the official weather forecast. My uncle once decided the fastest way to open a stuck garage was to floor his riding mower straight through the door. Worked great until the mower kept going, took out the barbecue, and ended up in the neighbor's kiddie pool. We still call that Tuesday."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Trailer Park Heroics",
+      "seedTermsUsed": [
+        "Repairperson",
+        "Trailer Park"
+      ],
+      "joke": "I tried to play hero in my trailer park by fixing my own AC. I marched in with a screwdriver like I was born knowing wires. Ten seconds later it sparked, growled, and I apologized to it like it was a person. I finally told my neighbor, “Good news—I’ve identified the problem. Bad news—I’ve also created two new ones.”",
+      "setup": "",
+      "punchline": "I tried to play hero in my trailer park by fixing my own AC. I marched in with a screwdriver like I was born knowing wires. Ten seconds later it sparked, growled, and I apologized to it like it was a person. I finally told my neighbor, “Good news—I’ve identified the problem. Bad news—I’ve also created two new ones.”",
+      "text": "I tried to play hero in my trailer park by fixing my own AC. I marched in with a screwdriver like I was born knowing wires. Ten seconds later it sparked, growled, and I apologized to it like it was a person. I finally told my neighbor, “Good news—I’ve identified the problem. Bad news—I’ve also created two new ones.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Strong chaotic characterization and a solid \"I have a temper\" turn, but the two closing tags weaken the finish."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear premise, vivid escalation, and a proper final payoff, though the frightening-repair-bill comparison is fairly familiar."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Concrete and easy to follow, but the trailer-park recklessness premise and \"we call that Tuesday\" ending are highly familiar."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean first-person construction with a usable closing line, but the DIY repair mishap and multiplying-problems payoff are generic."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean escalation with absurd bureaucratic runaround; canoe/marine-services turn lands well and avoids the obvious complaint-only route."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong comparative premise, vivid imagery, and the cost punchline hits hardest of the batch with a clean final beat."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Fun chaotic escalation and a solid deadpan closer, though the mower gag is a fairly familiar reckless-relative shape."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Amiable self-deprecating bit but the closing line is a generic 'good news/bad news' template that undercuts the payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid escalation and a nice twist at the end, though the bureaucratic plumber trope is a somewhat familiar premise."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 6,
+          "laugh": 7,
+          "comment": "Strong visual premise and a great snappy punchline ('I have a temper'), though the horror references slightly bleed into a third seed concept."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 3,
+          "comment": "The imagery is clear, but ending on the tired 'we call that Tuesday' cliché completely deflates the punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The stage delivery is competent, but it relies on a very old, recycled punchline about creating two new problems."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean escalation from red tape to canoe and marine services; solid mild laugh but familiar bureaucracy shape."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Reckless repairman with temper punch lands well; vivid and stage-ready without overreaching."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise and final cost contrast; plumber-as-slasher comparison is sharp and carries the laugh cleanly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Standard DIY fail in trailer park; serviceable but predictable and mild payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Fun escalation and a clean absurd turn; solid but not sharply surprising."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Energetic imagery and a lively payoff; a bit long but clearly funny."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clever comparison with a decent turn; leans more on concept than stage rhythm."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Strong storytelling and a clean final beat; familiar but well executed."
+        }
+      ]
+    }
+  ]
+}
