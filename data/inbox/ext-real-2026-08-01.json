@@ -1,0 +1,304 @@
+{
+  "createdAt": "2026-08-01T14:02:20.111Z",
+  "publishedDate": "2026-08-01",
+  "seed": "ext-real-2026-08-01",
+  "slug": "2026-08-01-ext-real-2026-08-01",
+  "source": "manual-external",
+  "seedTerms": [
+    "Achieve Potential",
+    "Inventor",
+    "Bakery",
+    "Losing a bet",
+    "Studious",
+    "Defensive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "contestantId": "openai",
+      "title": "Best Version",
+      "seedTermsUsed": [
+        "Achieve Potential",
+        "Losing a bet"
+      ],
+      "text": "I lost a bet and had to attend a seminar called “Achieve Your Potential.” The speaker told us to imagine the best version of ourselves. Mine was at home, because he hadn’t lost the bet."
+    },
+    {
+      "contestantId": "anthropic",
+      "title": "The Bet",
+      "seedTermsUsed": [
+        "Losing a bet",
+        "Inventor"
+      ],
+      "text": "I lost a bet to my buddy and had to tell people I'm an inventor for a week. Worst week of my life. Guy at a party goes, \"Oh cool, what have you invented?\" I panicked and said \"the fitted sheet.\" He just stared at me. I said \"the good news is I'm still working on the instructions.\""
+    },
+    {
+      "contestantId": "google",
+      "title": "Aggressive Brunch",
+      "seedTermsUsed": [
+        "Bakery",
+        "Defensive"
+      ],
+      "text": "I get weirdly defensive in bakeries. The teenager at the counter asked if my dozen eclairs were for a special occasion. I immediately crossed my arms and snapped, \"They're for a party.\" He looked at my sweatpants and said, \"At 8 AM on a Tuesday?\" I stared him down and said, \"It's a very aggressive brunch, Kevin, just box the pastries and mind your own business.\""
+    },
+    {
+      "contestantId": "xai",
+      "title": "Bakery Shift Forfeit",
+      "seedTermsUsed": [
+        "Losing a bet",
+        "Bakery"
+      ],
+      "text": "I lost a bet last week, so the forfeit was working a full shift at my buddy's bakery. Morning rush, this guy storms in complaining his croissant is too flaky. I look at him and say, \"Sir, I lost a bet to be standing here covered in flour at 6 a.m. Your pastry is the least of our issues.\""
+    },
+    {
+      "contestantId": "copilot",
+      "title": "Defensive Dough",
+      "seedTermsUsed": [
+        "Bakery",
+        "Defensive"
+      ],
+      "text": "I walked into a bakery the other day and asked if they had anything fresh. The baker got super defensive, like, “Everything here is fresh!” I’m thinking, relax, man, I’m not the croissant police. But he kept going, so I finally said, “Look, I just want a muffin, not a sworn affidavit.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear premise and a solid fitted-sheet turn, though the folding-instructions angle is familiar."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good escalation and stage voice; “aggressive brunch” lands mildly but is not a major surprise."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Understandable and concise, but the final response mostly restates the setup rather than delivering a punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent rhythm, but the croissant-police and sworn-affidavit lines follow familiar joke constructions."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean self-deprecating turn, tidy premise-to-punchline arc, but the twist is fairly telegraphed once the seminar setup lands."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong scene work: specific details (sweatpants, Kevin, 8AM Tuesday) build real escalation and the defensive persona pays off cleanly at the end."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Functional premise and competent closing line, but the bet-to-bakery connection and punchline feel like a familiar service-industry complaint bit."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Croissant police and sworn affidavit are nice wordplay choices; escalation is a bit thin but the closer lands with decent snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Economical construction with a logical and clean subversion of the seminar's premise."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Good stage rhythm and a solid double-punchline, though fitted sheets are a familiar comedic target."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The punchline merely restates the setup premise angrily without offering a true comedic turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Competent escalation using decent exaggerations, but follows a highly standard and familiar observational structure."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean setup and tidy closer, but the turn is mild and the payoff stays small."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid escalation to the fitted-sheet claim; the instructions tag lands cleanly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong character voice and specific escalation; aggressive brunch carries the laugh."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent bakery bit with a mild affidavit closer that stays forgettable."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise with a neat self-deprecating turn; mild but solid."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Good escalation and a tidy closer; respectable and clearly structured."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Strong voice, vivid scene, and a fun final line; genuinely good."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clear and competent but predictable; a mild smile rather than a laugh."
+        }
+      ]
+    }
+  ]
+}
