@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-02T14:02:50.250Z",
+  "publishedDate": "2026-08-02",
+  "seed": "external-real-2026-08-02",
+  "slug": "2026-08-02-external-real-2026-08-02",
+  "source": "manual-external",
+  "seedTerms": [
+    "Military",
+    "Food Critic",
+    "Parking Garage / Lot",
+    "Being framed",
+    "Inspirational",
+    "Abrasive"
+  ],
+  "premise": {
+    "displayText": "The Impound Lot"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Mission Accomplished",
+      "seedTermsUsed": [
+        "Military",
+        "Inspirational"
+      ],
+      "joke": "My drill sergeant was incredibly inspirational. Every morning he shouted, “You can do anything you set your mind to!” Eight weeks later, I had achieved the impossible: getting the military to agree I should be a civilian.",
+      "setup": "",
+      "punchline": "My drill sergeant was incredibly inspirational. Every morning he shouted, “You can do anything you set your mind to!” Eight weeks later, I had achieved the impossible: getting the military to agree I should be a civilian.",
+      "text": "My drill sergeant was incredibly inspirational. Every morning he shouted, “You can do anything you set your mind to!” Eight weeks later, I had achieved the impossible: getting the military to agree I should be a civilian."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Three Stars for the Metered Spots",
+      "seedTermsUsed": [
+        "Food Critic",
+        "Parking Garage / Lot"
+      ],
+      "joke": "I dated a food critic for two months. Ruined me. Now I can't do anything without narrating it in that voice. Found parking on level three of the garage downtown, and in my head I heard, 'A bold, confident space, though the concrete finish leaves something to be desired, and the ticket arrives underseasoned with hope.' I just wanted to park. She made me cry about a pillar.",
+      "setup": "",
+      "punchline": "I dated a food critic for two months. Ruined me. Now I can't do anything without narrating it in that voice. Found parking on level three of the garage downtown, and in my head I heard, 'A bold, confident space, though the concrete finish leaves something to be desired, and the ticket arrives underseasoned with hope.' I just wanted to park. She made me cry about a pillar.",
+      "text": "I dated a food critic for two months. Ruined me. Now I can't do anything without narrating it in that voice. Found parking on level three of the garage downtown, and in my head I heard, 'A bold, confident space, though the concrete finish leaves something to be desired, and the ticket arrives underseasoned with hope.' I just wanted to park. She made me cry about a pillar."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Impounded",
+      "seedTermsUsed": [
+        "Parking Garage / Lot",
+        "Being framed"
+      ],
+      "joke": "Someone planted three kilos of cocaine in my car at the airport parking garage. I was definitely being framed. But when the DEA told me they had to impound the vehicle as evidence, I was honestly just relieved. I’d been parked there for a week. Doing ten years in a federal penitentiary is way cheaper than paying for a lost ticket.",
+      "setup": "",
+      "punchline": "Someone planted three kilos of cocaine in my car at the airport parking garage. I was definitely being framed. But when the DEA told me they had to impound the vehicle as evidence, I was honestly just relieved. I’d been parked there for a week. Doing ten years in a federal penitentiary is way cheaper than paying for a lost ticket.",
+      "text": "Someone planted three kilos of cocaine in my car at the airport parking garage. I was definitely being framed. But when the DEA told me they had to impound the vehicle as evidence, I was honestly just relieved. I’d been parked there for a week. Doing ten years in a federal penitentiary is way cheaper than paying for a lost ticket."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Too Abrasive",
+      "seedTermsUsed": [
+        "Food Critic",
+        "Abrasive"
+      ],
+      "joke": "I tried being a food critic, but I'm too abrasive for it. Last night I told a chef, 'Your soup has the depth of a puddle and the personality of wet cardboard.' He asked what I suggested, and I said, 'Retirement.'",
+      "setup": "",
+      "punchline": "I tried being a food critic, but I'm too abrasive for it. Last night I told a chef, 'Your soup has the depth of a puddle and the personality of wet cardboard.' He asked what I suggested, and I said, 'Retirement.'",
+      "text": "I tried being a food critic, but I'm too abrasive for it. Last night I told a chef, 'Your soup has the depth of a puddle and the personality of wet cardboard.' He asked what I suggested, and I said, 'Retirement.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Garage Drill",
+      "seedTermsUsed": [
+        "Military",
+        "Parking Garage / Lot"
+      ],
+      "joke": "I parked in one of those giant garages and spent ten minutes wandering around like I was on a military training exercise. I’m checking levels, scanning rows, whispering, “Stay sharp, soldier.” When I finally found my car, I actually saluted it. A couple walking by saw me and I just said, “Mission accomplished,” like that was a normal thing to say in public.",
+      "setup": "",
+      "punchline": "I parked in one of those giant garages and spent ten minutes wandering around like I was on a military training exercise. I’m checking levels, scanning rows, whispering, “Stay sharp, soldier.” When I finally found my car, I actually saluted it. A couple walking by saw me and I just said, “Mission accomplished,” like that was a normal thing to say in public.",
+      "text": "I parked in one of those giant garages and spent ten minutes wandering around like I was on a military training exercise. I’m checking levels, scanning rows, whispering, “Stay sharp, soldier.” When I finally found my car, I actually saluted it. A couple walking by saw me and I just said, “Mission accomplished,” like that was a normal thing to say in public."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "A fresh comic voice and several good images, though the final pillar line is more quirky than sharply punchy."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear premise, strong escalation, and a genuinely non-obvious final turn that lands cleanly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Readable and concise, but the insult sequence and retirement payoff are familiar and highly predictable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Competent stage delivery, but the military-mission analogy is obvious and the ending mainly repeats the premise."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean irony on the inspirational-quote setup; solid but familiar boot-camp discharge shape."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Best turn of the batch: relief over a parking fee vs. a decade in prison lands as genuinely surprising and escalates well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Competent insult-comic exchange, but the 'retirement' capper is a fairly standard abrasive-critic beat."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Nice sustained military-metaphor bit; 'Mission accomplished' is a fine capper though the middle sags slightly."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid subversion of the inspirational military trope with good punchline timing."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 9,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent stage rhythm and specific imagery. The mundane setting elevates the critic persona."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 5,
+          "laugh": 4,
+          "comment": "Generic setup and punchline; literally stating the seed word 'abrasive' weakens the delivery."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "A bit cliché regarding getting lost in parking garages, and the punchline feels overly explanatory."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean discharge twist on inspirational speech; solid timing but familiar military exit territory."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong critic-voice application to parking with specific details and a sharp closer."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Absurd cost-benefit relief after framing lands cleanly with good escalation."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Mild military metaphor for lost-car wandering; pleasant but low-stakes and expected."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise with a tidy reversal; mildly funny and well‑formed."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Strong voice and vivid imagery; the pillar line lands with a real laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Dark but coherent; the cost‑comparison turn is amusing and clear."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Straightforward insult‑critic bit; competent but predictable."
+        }
+      ]
+    }
+  ]
+}

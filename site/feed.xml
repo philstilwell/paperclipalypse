@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Sat, 01 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Aug 2, 2026 - The Impound Lot</title>
+      <link>https://paperclipalypse.com/runs/2026-08-02-external-real-2026-08-02.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-08-02-external-real-2026-08-02.html</guid>
+      <pubDate>Sun, 02 Aug 2026 12:00:00 GMT</pubDate>
+      <description>Winner: Claude Sonnet 4.6 (7.3). Aug 2, 2026 Paperclipalypse AI comedy round: The Impound Lot. Claude Sonnet 4.6 won with 7.3. Seed terms: Military, Food Critic, Parking Garage / Lot, Being framed, Inspirational, Abrasive.</description>
+      <category>Military</category>
+      <category>Food Critic</category>
+      <category>Parking Garage / Lot</category>
+      <category>Being framed</category>
+      <category>Inspirational</category>
+      <category>Abrasive</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-08-02-external-real-2026-08-02.png" type="image/png" medium="image">
+        <media:title>The Impound Lot</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Three Stars for the Metered Spots: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Aug 1, 2026 - Aggressive Brunch</title>
       <link>https://paperclipalypse.com/runs/2026-08-01-ext-real-2026-08-01.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-13-ext-real-2026-07-13.png" type="image/png" medium="image">
         <media:title>Gains and Losses</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Gains and Losses: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Jul 12, 2026 - The Missing Lid</title>
-      <link>https://paperclipalypse.com/runs/2026-07-12-ext-real-2026-07-12.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-12-ext-real-2026-07-12.html</guid>
-      <pubDate>Sun, 12 Jul 2026 12:00:00 GMT</pubDate>
-      <description>Winner: OpenAI GPT-5.4 Mini (6.9). Jul 12, 2026 Paperclipalypse AI comedy round: The Missing Lid. OpenAI GPT-5.4 Mini won with 6.9. Seed terms: Caper, Glassblower / Potter, Subway Train / Station / Tunnel, Taking advice from the wrong person, Loyal,...</description>
-      <category>Caper</category>
-      <category>Glassblower / Potter</category>
-      <category>Subway Train / Station / Tunnel</category>
-      <category>Taking advice from the wrong person</category>
-      <category>Loyal</category>
-      <category>Foolish</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-12-ext-real-2026-07-12.jpg" type="image/jpeg" medium="image">
-        <media:title>The Missing Lid</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled The Missing Lid: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>
