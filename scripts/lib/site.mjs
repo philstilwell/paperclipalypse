@@ -75,8 +75,11 @@ function renderHome(run, runs) {
     .map(
       (archivedRun) => {
         const archivedWinner = archivedRun.rankings?.[0];
+        const archivedWinnerName = archivedWinner
+          ? displayNameForContestant(archivedRun, archivedWinner.contestantId, archivedWinner.contestantName)
+          : "";
         const meta = [
-          archivedWinner ? `Winner: ${archivedWinner.contestantName} (${formatScore(archivedWinner.score)})` : "",
+          archivedWinner ? `Winner: ${archivedWinnerName} (${formatScore(archivedWinner.score)})` : "",
           formatMode(archivedRun.source)
         ].filter(Boolean).join(" / ");
 
@@ -917,7 +920,7 @@ function modelStandings(runs) {
   for (const run of newestFirst) {
     const winner = run.rankings[0];
     for (const ranking of run.rankings) {
-      const name = ranking.contestantName || ranking.contestantId || "Unknown model";
+      const name = displayNameForContestant(run, ranking.contestantId, ranking.contestantName);
       const score = Number(ranking.score) || 0;
       const rank = Number(ranking.rank) || 0;
       const entry = stats.get(name) || {
@@ -983,7 +986,7 @@ function modelJudgeProfiles(runs) {
 
   for (const run of runs) {
     for (const judgeResult of run.judgeResults || []) {
-      const name = judgeResult.judgeName || judgeResult.judgeId || "Unknown model";
+      const name = displayNameForContestant(run, judgeResult.judgeId, judgeResult.judgeName);
       const profile = profiles.get(name) || { count: 0, totalGiven: 0 };
       for (const score of judgeResult.scores || []) {
         const total = Number(score.total);
@@ -1049,7 +1052,7 @@ function scoreTrendPoints(runs) {
       const scores = run.rankings.map((ranking) => Number(ranking.score) || 0);
       return {
         run,
-        winnerName: winner.contestantName,
+        winnerName: displayNameForContestant(run, winner.contestantId, winner.contestantName),
         winningScore: Number(winner.score) || 0,
         averageScore: scores.reduce((total, score) => total + score, 0) / scores.length
       };
@@ -1069,7 +1072,7 @@ function judgeScoreTrendData(runs) {
         .map((score) => Number(score.total))
         .filter((score) => Number.isFinite(score));
       const averageGiven = average(totals);
-      const judgeName = judgeResult.judgeName || judgeResult.judgeId || "Unknown model";
+      const judgeName = displayNameForContestant(run, judgeResult.judgeId, judgeResult.judgeName);
       if (!judgeNames.includes(judgeName)) {
         judgeNames.push(judgeName);
       }
@@ -1109,6 +1112,53 @@ function judgeTrendColor(index) {
   ];
 
   return colors[index % colors.length];
+}
+
+function displayNameForContestant(run, contestantId, fallbackName) {
+  const trimmedId = String(contestantId || "").trim();
+  const contestant = (run.contestants || []).find((entry) => String(entry.id || "").trim() === trimmedId);
+  const displayName = String(contestant?.displayName || "").trim();
+  const trimmedFallback = String(fallbackName || "").trim();
+
+  if (displayName && shouldPreferRosterDisplayName(trimmedFallback, trimmedId, displayName)) {
+    return displayName;
+  }
+
+  if (trimmedFallback) {
+    return trimmedFallback;
+  }
+
+  if (!trimmedId) {
+    return "Unknown model";
+  }
+
+  return displayName || trimmedId || "Unknown model";
+}
+
+function shouldPreferRosterDisplayName(fallbackName, contestantId, displayName) {
+  if (!displayName) {
+    return false;
+  }
+
+  if (!fallbackName) {
+    return true;
+  }
+
+  const normalizedFallback = fallbackName.trim();
+  if (!normalizedFallback) {
+    return true;
+  }
+
+  if (/^Contestant\s+\d+$/u.test(normalizedFallback)) {
+    return true;
+  }
+
+  const normalizedId = String(contestantId || "").trim();
+  if (normalizedId && normalizedFallback.toLowerCase() === normalizedId.toLowerCase()) {
+    return true;
+  }
+
+  return false;
 }
 
 function shortModelName(name) {
@@ -1233,8 +1283,11 @@ function renderRssFeed(runs) {
     .map((run) => {
       const url = runUrl(run);
       const winner = run.rankings?.[0];
+      const winnerName = winner
+        ? displayNameForContestant(run, winner.contestantId, winner.contestantName)
+        : "";
       const winnerLine = winner
-        ? `Winner: ${winner.contestantName} (${formatScore(winner.score)}).`
+        ? `Winner: ${winnerName} (${formatScore(winner.score)}).`
         : "Winner pending.";
       const description = `${winnerLine} ${runDescription(run, 220)}`;
       const categories = (run.seedTerms || [])
@@ -1309,7 +1362,7 @@ function renderHero(run) {
           <dl class="hero-stats">
             <div>
               <dt>Winner</dt>
-              <dd>${escapeHtml(winner.contestantName)}</dd>
+              <dd>${escapeHtml(displayNameForContestant(run, winner.contestantId, winner.contestantName))}</dd>
             </div>
             <div>
               <dt>Score</dt>
@@ -1337,7 +1390,7 @@ function renderRun(run, options = {}) {
       (ranking) => `
         <tr>
           <td>${ranking.rank}</td>
-          <td>${escapeHtml(ranking.contestantName)}</td>
+          <td>${escapeHtml(displayNameForContestant(run, ranking.contestantId, ranking.contestantName))}</td>
           <td>${renderScoreBreakdown(ranking, run.rubric)}</td>
           <td>${escapeHtml(ranking.label)}</td>
           <td>${ranking.judgeCount}</td>
@@ -1355,7 +1408,7 @@ function renderRun(run, options = {}) {
         <article class="joke-card">
           <div class="joke-meta">
             <span>${escapeHtml(joke.label)}</span>
-            <strong>${escapeHtml(joke.contestantName)}</strong>
+            <strong>${escapeHtml(displayNameForContestant(run, joke.contestantId, joke.contestantName))}</strong>
             <span>${formatScore(ranking.score)}</span>
           </div>
           <h3>${escapeHtml(joke.title)}</h3>
@@ -1524,7 +1577,11 @@ function mostDivisiveJoke(run) {
       return {
         jokeId,
         label: ranking?.label || joke?.label || jokeId,
-        contestantName: ranking?.contestantName || joke?.contestantName || "Unknown model",
+        contestantName: displayNameForContestant(
+          run,
+          ranking?.contestantId || joke?.contestantId,
+          ranking?.contestantName || joke?.contestantName
+        ),
         min,
         max,
         spread: max - min
@@ -1660,9 +1717,12 @@ function renderMemoryNavButton(label, targetRun, fallback, direction) {
   }
 
   const winner = targetRun.rankings?.[0];
+  const winnerName = winner
+    ? displayNameForContestant(targetRun, winner.contestantId, winner.contestantName)
+    : "";
   const meta = [
     shortDate(targetRun),
-    winner ? `Winner: ${winner.contestantName} (${formatScore(winner.score)})` : ""
+    winner ? `Winner: ${winnerName} (${formatScore(winner.score)})` : ""
   ].filter(Boolean).join(" / ");
   const displayTitle = roundDisplayTitle(targetRun);
 
@@ -1683,8 +1743,11 @@ function renderFeatureImage(run, assetBase) {
   const winner = run.rankings?.[0];
   const winningJoke = run.jokes?.find((joke) => joke.id === winner?.jokeId);
   const title = winningJoke?.title || "Winning Joke";
+  const winnerName = winner
+    ? displayNameForContestant(run, winner.contestantId, winner.contestantName)
+    : "";
   const captionParts = [
-    winner?.contestantName ? `${winner.contestantName}'s winning joke` : "Winning joke",
+    winnerName ? `${winnerName}'s winning joke` : "Winning joke",
     title ? `"${title}"` : "",
     winner?.score ? `${formatScore(winner.score)} score` : ""
   ].filter(Boolean);
@@ -1728,9 +1791,12 @@ function renderIntroPreviousPost(previousRun) {
   }
 
   const winner = previousRun.rankings?.[0];
+  const winnerName = winner
+    ? displayNameForContestant(previousRun, winner.contestantId, winner.contestantName)
+    : "";
   const meta = [
     shortDate(previousRun),
-    winner ? `Winner: ${winner.contestantName} (${formatScore(winner.score)})` : ""
+    winner ? `Winner: ${winnerName} (${formatScore(winner.score)})` : ""
   ].filter(Boolean).join(" / ");
 
   return `
@@ -1792,7 +1858,7 @@ function renderEpisodeHeader(run, winner) {
         </div>
         <aside>
           <span>Winner</span>
-          <strong>${escapeHtml(winner.contestantName)}</strong>
+          <strong>${escapeHtml(displayNameForContestant(run, winner.contestantId, winner.contestantName))}</strong>
           <em>${formatScore(winner.score)}</em>
         </aside>
       </section>`;
@@ -1961,7 +2027,8 @@ function homeDescription(run, publicRuns = []) {
 
   const roundCount = publicRuns.length ? ` Browse ${publicRuns.length} published rounds.` : "";
 
-  return truncateSeo(`Daily AI comedy tournament where five models write and judge stand-up jokes. Latest: ${roundDisplayTitle(run)}, won by ${winner.contestantName} with ${formatScore(winner.score)}.${roundCount}`);
+  const winnerName = displayNameForContestant(run, winner.contestantId, winner.contestantName);
+  return truncateSeo(`Daily AI comedy tournament where five models write and judge stand-up jokes. Latest: ${roundDisplayTitle(run)}, won by ${winnerName} with ${formatScore(winner.score)}.${roundCount}`);
 }
 
 function standingsDescription(leader, totalRounds) {
@@ -1977,8 +2044,11 @@ function runDescription(run, maxLength = 160) {
   const seeds = Array.isArray(run.seedTerms) && run.seedTerms.length
     ? ` Seed terms: ${run.seedTerms.join(", ")}.`
     : "";
+  const winnerName = winner
+    ? displayNameForContestant(run, winner.contestantId, winner.contestantName)
+    : "";
   const winnerText = winner
-    ? ` ${winner.contestantName} won with ${formatScore(winner.score)}.`
+    ? ` ${winnerName} won with ${formatScore(winner.score)}.`
     : " Winner pending.";
 
   return truncateSeo(`${shortDate(run)} Paperclipalypse AI comedy round: ${roundDisplayTitle(run)}.${winnerText}${seeds}`, maxLength);
@@ -1999,7 +2069,7 @@ function normalizeKeywordInput(value) {
     return [
       roundDisplayTitle(value),
       ...(value.seedTerms || []),
-      ...(value.rankings || []).map((ranking) => ranking.contestantName)
+      ...(value.rankings || []).map((ranking) => displayNameForContestant(value, ranking.contestantId, ranking.contestantName))
     ];
   }
 
@@ -2125,7 +2195,7 @@ function renderRunSchemas(run, publicRuns) {
       })),
       mentions: (run.rankings || []).map((ranking) => ({
         "@type": "Thing",
-        name: ranking.contestantName
+        name: displayNameForContestant(run, ranking.contestantId, ranking.contestantName)
       })),
       mainEntity: winningJoke
         ? {
