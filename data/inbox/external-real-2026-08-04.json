@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-04T14:00:00.000Z",
+  "publishedDate": "2026-08-04",
+  "seed": "external-real-2026-08-04",
+  "slug": "2026-08-04-external-real-2026-08-04",
+  "source": "manual-external",
+  "seedTerms": [
+    "Rich and Famous",
+    "Corrections Officer",
+    "Country Road",
+    "An unexpected pregnancy",
+    "Adaptable",
+    "Workaholic"
+  ],
+  "premise": {
+    "displayText": "Unexpected Developments"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Internal Candidate",
+      "seedTermsUsed": [
+        "Corrections Officer",
+        "Adaptable"
+      ],
+      "joke": "I applied to be a corrections officer. They asked if I was adaptable. I said, “Absolutely—I can change.” The warden slid my résumé back and said, “That’s what everyone in here says.” I didn’t get the job, but they did move up my parole hearing.",
+      "setup": "",
+      "punchline": "I applied to be a corrections officer. They asked if I was adaptable. I said, “Absolutely—I can change.” The warden slid my résumé back and said, “That’s what everyone in here says.” I didn’t get the job, but they did move up my parole hearing.",
+      "text": "I applied to be a corrections officer. They asked if I was adaptable. I said, “Absolutely—I can change.” The warden slid my résumé back and said, “That’s what everyone in here says.” I didn’t get the job, but they did move up my parole hearing."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Career Day",
+      "seedTermsUsed": [
+        "Corrections Officer",
+        "Workaholic"
+      ],
+      "joke": "I'm a workaholic, so I became a corrections officer, because I wanted a job where the people I'm mad at literally cannot leave the building either. My wife says I bring work home with me. No I don't. I bring home the belief that everyone's lying about where they were last night, and that's different.",
+      "setup": "",
+      "punchline": "I'm a workaholic, so I became a corrections officer, because I wanted a job where the people I'm mad at literally cannot leave the building either. My wife says I bring work home with me. No I don't. I bring home the belief that everyone's lying about where they were last night, and that's different.",
+      "text": "I'm a workaholic, so I became a corrections officer, because I wanted a job where the people I'm mad at literally cannot leave the building either. My wife says I bring work home with me. No I don't. I bring home the belief that everyone's lying about where they were last night, and that's different."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Cell Checks",
+      "seedTermsUsed": [
+        "An unexpected pregnancy",
+        "Corrections Officer"
+      ],
+      "joke": "I just found out I’m dealing with an unexpected pregnancy. It’s a pretty massive lifestyle shift. You go from having your own hobbies and free time to suddenly becoming a corrections officer for a tiny, suicidal drunk person. My entire future now is just doing 3 AM cell checks to make sure my inmate hasn't managed to choke on a rogue Lego.",
+      "setup": "",
+      "punchline": "I just found out I’m dealing with an unexpected pregnancy. It’s a pretty massive lifestyle shift. You go from having your own hobbies and free time to suddenly becoming a corrections officer for a tiny, suicidal drunk person. My entire future now is just doing 3 AM cell checks to make sure my inmate hasn't managed to choke on a rogue Lego.",
+      "text": "I just found out I’m dealing with an unexpected pregnancy. It’s a pretty massive lifestyle shift. You go from having your own hobbies and free time to suddenly becoming a corrections officer for a tiny, suicidal drunk person. My entire future now is just doing 3 AM cell checks to make sure my inmate hasn't managed to choke on a rogue Lego."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Project Baby",
+      "seedTermsUsed": [
+        "Workaholic",
+        "An unexpected pregnancy"
+      ],
+      "joke": "I'm a workaholic, so when my wife announced an unexpected pregnancy, I didn't freak out—I opened Excel. Nine-month timeline, critical path for the delivery, risk matrix for sleepless nights, and a Gantt chart tracking every kick. At the end I asked, \"Does this project come with stock options, or just unlimited unpaid overtime?\"",
+      "setup": "",
+      "punchline": "I'm a workaholic, so when my wife announced an unexpected pregnancy, I didn't freak out—I opened Excel. Nine-month timeline, critical path for the delivery, risk matrix for sleepless nights, and a Gantt chart tracking every kick. At the end I asked, \"Does this project come with stock options, or just unlimited unpaid overtime?\"",
+      "text": "I'm a workaholic, so when my wife announced an unexpected pregnancy, I didn't freak out—I opened Excel. Nine-month timeline, critical path for the delivery, risk matrix for sleepless nights, and a Gantt chart tracking every kick. At the end I asked, \"Does this project come with stock options, or just unlimited unpaid overtime?\""
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Country Road Confession",
+      "seedTermsUsed": [
+        "Country Road",
+        "An unexpected pregnancy"
+      ],
+      "joke": "I was driving down this empty country road when my GPS suddenly said, “In two miles, prepare for an unexpected development.” I panicked—last time I heard something like that, my cousin announced a surprise pregnancy at Thanksgiving. I pulled over like, “Look, if this road is about to give me a baby, I am not emotionally equipped for that level of roadside assistance.”",
+      "setup": "",
+      "punchline": "I was driving down this empty country road when my GPS suddenly said, “In two miles, prepare for an unexpected development.” I panicked—last time I heard something like that, my cousin announced a surprise pregnancy at Thanksgiving. I pulled over like, “Look, if this road is about to give me a baby, I am not emotionally equipped for that level of roadside assistance.”",
+      "text": "I was driving down this empty country road when my GPS suddenly said, “In two miles, prepare for an unexpected development.” I panicked—last time I heard something like that, my cousin announced a surprise pregnancy at Thanksgiving. I pulled over like, “Look, if this road is about to give me a baby, I am not emotionally equipped for that level of roadside assistance.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear premise and solid second turn; the suspicious-spouse payoff is amusing but not especially sharp."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong, accessible baby-as-inmate comparison with vivid escalation; slightly familiar framing, but it lands."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Competently structured, but the Excel-project-manager angle and unpaid-overtime punchline are highly predictable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "The road-giving-birth premise is novel but strained, and the final roadside-assistance line produces more whimsy than laughter."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean double-meaning on 'adaptable/change,' escalates to a genuine reveal-twist ending that recontextualizes the whole bit."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Strong sustained metaphor (baby as inmate) with a vivid, specific closing image; solid but the payoff is more clever than a big laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Familiar 'workaholic maps everything to spreadsheets' shape; competent execution but predictable turn and closing line."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Fun GPS pun opener but the bit drifts and the closing line is muddled rather than a clean punch."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid misdirection that successfully recontextualizes the narrator as an inmate. The punchline is clean, though slightly telegraphed by the word 'change'."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong natural stand-up rhythm. The first half is a decent setup, but the turn at the end about interrogating family members elevates it into a highly believable human joke."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Relies on the overused AI trope of applying spreadsheet and corporate project management jargon to domestic life. Competent but generic."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The logic bridging a GPS direction to roadside obstetrics is strained. The absurdity feels forced rather than arriving at a natural comic realization."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clean prison-application turn with solid parole payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Serviceable premise; suspicion punchline lands mildly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong inmate-baby image and Lego closer carry it."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "GPS-pregnancy link feels strained and under-delivered."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise with a neat final turn; mildly funny and well‑paced."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid first‑person angle with a clear comic voice; good closing contrast."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Strong metaphor with vivid imagery; the Lego line lands well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Competent and clear, but the turn is familiar and the closer is mild."
+        }
+      ]
+    }
+  ]
+}
