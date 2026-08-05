@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-05T14:02:06.202Z",
+  "publishedDate": "2026-08-05",
+  "seed": "external-real-2026-08-05",
+  "slug": "2026-08-05-external-real-2026-08-05",
+  "source": "manual-external",
+  "seedTerms": [
+    "Alt. and Parallel Universe",
+    "Kids Entertainer",
+    "Country Fair",
+    "A partner / friend racking up debt",
+    "Hospitable",
+    "Temperamental"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "claude-web",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "gemini-web",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "grok-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "copilot-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Cosmic Credit",
+      "seedTermsUsed": [
+        "Alt. and Parallel Universe",
+        "A partner / friend racking up debt"
+      ],
+      "joke": "My roommate believes in parallel universes, which is convenient because he keeps racking up debt. Every time a bill arrives, he says, \"In another universe, I already paid that.\" I said, \"Excellent\u2014let\u2019s move there.\" He said, \"Can we?\" I said, \"Not with your credit score.\"",
+      "text": "My roommate believes in parallel universes, which is convenient because he keeps racking up debt. Every time a bill arrives, he says, \"In another universe, I already paid that.\" I said, \"Excellent\u2014let\u2019s move there.\" He said, \"Can we?\" I said, \"Not with your credit score.\"",
+      "setup": "",
+      "punchline": "My roommate believes in parallel universes, which is convenient because he keeps racking up debt. Every time a bill arrives, he says, \"In another universe, I already paid that.\" I said, \"Excellent\u2014let\u2019s move there.\" He said, \"Can we?\" I said, \"Not with your credit score.\""
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Sonnet 5 Medium web",
+      "title": "Balloon Animals of Debt",
+      "seedTermsUsed": [
+        "Kids Entertainer",
+        "A partner / friend racking up debt"
+      ],
+      "joke": "I work as a kids' entertainer\u2014balloon animals, face paint, the whole squeaky-voiced circus. But my girlfriend's credit card debt is so bad that lately my balloon animals aren't coming out right. I asked for a dog, I got a debt collector. I asked for a giraffe, I got a debt collector with a longer neck, still very aggressive about the neck.",
+      "text": "I work as a kids' entertainer\u2014balloon animals, face paint, the whole squeaky-voiced circus. But my girlfriend's credit card debt is so bad that lately my balloon animals aren't coming out right. I asked for a dog, I got a debt collector. I asked for a giraffe, I got a debt collector with a longer neck, still very aggressive about the neck.",
+      "setup": "",
+      "punchline": "I work as a kids' entertainer\u2014balloon animals, face paint, the whole squeaky-voiced circus. But my girlfriend's credit card debt is so bad that lately my balloon animals aren't coming out right. I asked for a dog, I got a debt collector. I asked for a giraffe, I got a debt collector with a longer neck, still very aggressive about the neck."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "The Illusionist",
+      "seedTermsUsed": [
+        "Kids Entertainer",
+        "Temperamental"
+      ],
+      "joke": "I briefly tried working as a kids' party magician, but it turns out I\u2019m way too temperamental for the gig. You can only have a sticky seven-year-old scream, 'I saw the quarter go up your sleeve!' so many times before you completely snap. I just leaned in and whispered, 'Yeah? Well I saw your dad crying in the Kia Sorento, Tyler. Looks like the illusion is shattered for both of us.'",
+      "text": "I briefly tried working as a kids' party magician, but it turns out I\u2019m way too temperamental for the gig. You can only have a sticky seven-year-old scream, 'I saw the quarter go up your sleeve!' so many times before you completely snap. I just leaned in and whispered, 'Yeah? Well I saw your dad crying in the Kia Sorento, Tyler. Looks like the illusion is shattered for both of us.'",
+      "setup": "",
+      "punchline": "I briefly tried working as a kids' party magician, but it turns out I\u2019m way too temperamental for the gig. You can only have a sticky seven-year-old scream, 'I saw the quarter go up your sleeve!' so many times before you completely snap. I just leaned in and whispered, 'Yeah? Well I saw your dad crying in the Kia Sorento, Tyler. Looks like the illusion is shattered for both of us.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Balloon Manners",
+      "seedTermsUsed": [
+        "Kids Entertainer",
+        "Temperamental"
+      ],
+      "joke": "I used to work as a kids' entertainer. Big problem: I'm temperamental. At one birthday party, a little boy shouted that my balloon dog looked stupid. So I popped it, handed him the rubber scraps, and said, 'There. Now it looks like your manners.'",
+      "text": "I used to work as a kids' entertainer. Big problem: I'm temperamental. At one birthday party, a little boy shouted that my balloon dog looked stupid. So I popped it, handed him the rubber scraps, and said, 'There. Now it looks like your manners.'",
+      "setup": "",
+      "punchline": "I used to work as a kids' entertainer. Big problem: I'm temperamental. At one birthday party, a little boy shouted that my balloon dog looked stupid. So I popped it, handed him the rubber scraps, and said, 'There. Now it looks like your manners.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Fair Trouble",
+      "seedTermsUsed": [
+        "Country Fair",
+        "A partner / friend racking up debt"
+      ],
+      "joke": "I took my friend to a country fair, and he treated it like a financial trap. I\u2019m trying to enjoy funnel cake, and he\u2019s out there racking up debt like the Ferris wheel is offering zero-interest loans. By the end, I wasn\u2019t sure if we\u2019d won a giant stuffed bear or just co-signed a very small, very colorful bankruptcy.",
+      "text": "I took my friend to a country fair, and he treated it like a financial trap. I\u2019m trying to enjoy funnel cake, and he\u2019s out there racking up debt like the Ferris wheel is offering zero-interest loans. By the end, I wasn\u2019t sure if we\u2019d won a giant stuffed bear or just co-signed a very small, very colorful bankruptcy.",
+      "setup": "",
+      "punchline": "I took my friend to a country fair, and he treated it like a financial trap. I\u2019m trying to enjoy funnel cake, and he\u2019s out there racking up debt like the Ferris wheel is offering zero-interest loans. By the end, I wasn\u2019t sure if we\u2019d won a giant stuffed bear or just co-signed a very small, very colorful bankruptcy."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear premise and compliant seed use, but the debt-collector transformations feel strained and the neck tag weakens rather than heightens the payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong stage premise, vivid specificity, and a sharp retaliatory turn; the final illusion callback cleanly carries the laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean, concise, and performable, but the balloon-popping retaliation and manners insult follow a fairly predictable route."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The financial imagery is coherent and polished, but it stays in one metaphorical lane and ends with a clever formulation rather than a strong punch."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean premise and tidy button line, but the multiverse-excuse-for-debt angle is a fairly familiar comic shape."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Sharp, specific turn (the Kia Sorento detail) gives real surprise and a strong mutual-humiliation payoff; slightly long but earns it."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid setup and quick escalation, but the comeback ('looks like your manners') is a fairly predictable insult-comic move."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good closing wordplay ('small, colorful bankruptcy'), consistent debt-at-the-fair conceit, though the middle stretch is a bit generic."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Punchy and well-structured with a strong, natural turn at the end."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Fun absurdist escalation. The giraffe debt collector image is fresh and amusing."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Setup is clear, but the punchline feels like a generic retort rather than a surprising comedic turn."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "The final image of a very small, very colorful bankruptcy is a well-crafted punchline that carries the laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise and solid final line, but the turn is fairly expected and the laugh stays mild."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Concept is clear but the debt-collector balloon gag repeats without enough escalation or snap."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong first-person stage voice and a sharp, specific final image that lands cleanly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Functional setup and image, yet the bankruptcy punchline feels predictable and lightly forced."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise with a tidy turn; solid but not standout."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Fun imagery but the escalation repeats; mild payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Strong turn with sharp timing; memorable closer."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Straightforward and clear but predictable; modest laugh."
+        }
+      ]
+    }
+  ]
+}

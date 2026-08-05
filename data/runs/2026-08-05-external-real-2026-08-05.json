@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-05-external-real-2026-08-05",
+  "seed": "external-real-2026-08-05",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-05T14:02:06.202Z",
+  "publishedDate": "2026-08-05",
+  "seedTerms": [
+    "Alt. and Parallel Universe",
+    "Kids Entertainer",
+    "Country Fair",
+    "A partner / friend racking up debt",
+    "Hospitable",
+    "Temperamental"
+  ],
+  "premise": {
+    "text": "Seed terms: Alt. and Parallel Universe, Kids Entertainer, Country Fair, A partner / friend racking up debt, Hospitable, Temperamental",
+    "seedTerms": [
+      "Alt. and Parallel Universe",
+      "Kids Entertainer",
+      "Country Fair",
+      "A partner / friend racking up debt",
+      "Hospitable",
+      "Temperamental"
+    ],
+    "displayText": "The Illusionist"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "claude-web",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "gemini-web",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "grok-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "copilot-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Cosmic Credit",
+      "seedTermsUsed": [
+        "Alt. and Parallel Universe",
+        "A partner / friend racking up debt"
+      ],
+      "joke": "My roommate believes in parallel universes, which is convenient because he keeps racking up debt. Every time a bill arrives, he says, \"In another universe, I already paid that.\" I said, \"Excellent—let’s move there.\" He said, \"Can we?\" I said, \"Not with your credit score.\"",
+      "setup": "",
+      "punchline": "My roommate believes in parallel universes, which is convenient because he keeps racking up debt. Every time a bill arrives, he says, \"In another universe, I already paid that.\" I said, \"Excellent—let’s move there.\" He said, \"Can we?\" I said, \"Not with your credit score.\"",
+      "text": "My roommate believes in parallel universes, which is convenient because he keeps racking up debt. Every time a bill arrives, he says, \"In another universe, I already paid that.\" I said, \"Excellent—let’s move there.\" He said, \"Can we?\" I said, \"Not with your credit score.\""
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Sonnet 5 Medium web",
+      "title": "Balloon Animals of Debt",
+      "seedTermsUsed": [
+        "Kids Entertainer",
+        "A partner / friend racking up debt"
+      ],
+      "joke": "I work as a kids' entertainer—balloon animals, face paint, the whole squeaky-voiced circus. But my girlfriend's credit card debt is so bad that lately my balloon animals aren't coming out right. I asked for a dog, I got a debt collector. I asked for a giraffe, I got a debt collector with a longer neck, still very aggressive about the neck.",
+      "setup": "",
+      "punchline": "I work as a kids' entertainer—balloon animals, face paint, the whole squeaky-voiced circus. But my girlfriend's credit card debt is so bad that lately my balloon animals aren't coming out right. I asked for a dog, I got a debt collector. I asked for a giraffe, I got a debt collector with a longer neck, still very aggressive about the neck.",
+      "text": "I work as a kids' entertainer—balloon animals, face paint, the whole squeaky-voiced circus. But my girlfriend's credit card debt is so bad that lately my balloon animals aren't coming out right. I asked for a dog, I got a debt collector. I asked for a giraffe, I got a debt collector with a longer neck, still very aggressive about the neck."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "The Illusionist",
+      "seedTermsUsed": [
+        "Kids Entertainer",
+        "Temperamental"
+      ],
+      "joke": "I briefly tried working as a kids' party magician, but it turns out I’m way too temperamental for the gig. You can only have a sticky seven-year-old scream, 'I saw the quarter go up your sleeve!' so many times before you completely snap. I just leaned in and whispered, 'Yeah? Well I saw your dad crying in the Kia Sorento, Tyler. Looks like the illusion is shattered for both of us.'",
+      "setup": "",
+      "punchline": "I briefly tried working as a kids' party magician, but it turns out I’m way too temperamental for the gig. You can only have a sticky seven-year-old scream, 'I saw the quarter go up your sleeve!' so many times before you completely snap. I just leaned in and whispered, 'Yeah? Well I saw your dad crying in the Kia Sorento, Tyler. Looks like the illusion is shattered for both of us.'",
+      "text": "I briefly tried working as a kids' party magician, but it turns out I’m way too temperamental for the gig. You can only have a sticky seven-year-old scream, 'I saw the quarter go up your sleeve!' so many times before you completely snap. I just leaned in and whispered, 'Yeah? Well I saw your dad crying in the Kia Sorento, Tyler. Looks like the illusion is shattered for both of us.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Balloon Manners",
+      "seedTermsUsed": [
+        "Kids Entertainer",
+        "Temperamental"
+      ],
+      "joke": "I used to work as a kids' entertainer. Big problem: I'm temperamental. At one birthday party, a little boy shouted that my balloon dog looked stupid. So I popped it, handed him the rubber scraps, and said, 'There. Now it looks like your manners.'",
+      "setup": "",
+      "punchline": "I used to work as a kids' entertainer. Big problem: I'm temperamental. At one birthday party, a little boy shouted that my balloon dog looked stupid. So I popped it, handed him the rubber scraps, and said, 'There. Now it looks like your manners.'",
+      "text": "I used to work as a kids' entertainer. Big problem: I'm temperamental. At one birthday party, a little boy shouted that my balloon dog looked stupid. So I popped it, handed him the rubber scraps, and said, 'There. Now it looks like your manners.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Fair Trouble",
+      "seedTermsUsed": [
+        "Country Fair",
+        "A partner / friend racking up debt"
+      ],
+      "joke": "I took my friend to a country fair, and he treated it like a financial trap. I’m trying to enjoy funnel cake, and he’s out there racking up debt like the Ferris wheel is offering zero-interest loans. By the end, I wasn’t sure if we’d won a giant stuffed bear or just co-signed a very small, very colorful bankruptcy.",
+      "setup": "",
+      "punchline": "I took my friend to a country fair, and he treated it like a financial trap. I’m trying to enjoy funnel cake, and he’s out there racking up debt like the Ferris wheel is offering zero-interest loans. By the end, I wasn’t sure if we’d won a giant stuffed bear or just co-signed a very small, very colorful bankruptcy.",
+      "text": "I took my friend to a country fair, and he treated it like a financial trap. I’m trying to enjoy funnel cake, and he’s out there racking up debt like the Ferris wheel is offering zero-interest loans. By the end, I wasn’t sure if we’d won a giant stuffed bear or just co-signed a very small, very colorful bankruptcy."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear premise and compliant seed use, but the debt-collector transformations feel strained and the neck tag weakens rather than heightens the payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.5
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong stage premise, vivid specificity, and a sharp retaliatory turn; the final illusion callback cleanly carries the laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean, concise, and performable, but the balloon-popping retaliation and manners insult follow a fairly predictable route.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The financial imagery is coherent and polished, but it stays in one metaphorical lane and ends with a clever formulation rather than a strong punch.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise and tidy button line, but the multiverse-excuse-for-debt angle is a fairly familiar comic shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Sharp, specific turn (the Kia Sorento detail) gives real surprise and a strong mutual-humiliation payoff; slightly long but earns it.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid setup and quick escalation, but the comeback ('looks like your manners') is a fairly predictable insult-comic move.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Good closing wordplay ('small, colorful bankruptcy'), consistent debt-at-the-fair conceit, though the middle stretch is a bit generic.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Punchy and well-structured with a strong, natural turn at the end.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Fun absurdist escalation. The giraffe debt collector image is fresh and amusing.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Setup is clear, but the punchline feels like a generic retort rather than a surprising comedic turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The final image of a very small, very colorful bankruptcy is a well-crafted punchline that carries the laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise and solid final line, but the turn is fairly expected and the laugh stays mild.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Concept is clear but the debt-collector balloon gag repeats without enough escalation or snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong first-person stage voice and a sharp, specific final image that lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Functional setup and image, yet the bankruptcy punchline feels predictable and lightly forced.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a tidy turn; solid but not standout.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Fun imagery but the escalation repeats; mild payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.3
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong turn with sharp timing; memorable closer.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Straightforward and clear but predictable; modest laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.5,
+      "rawScore": 7.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.5,
+        "surprise": 7.5,
+        "craft": 7.2,
+        "originality": 7.5,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 7.5,
+        "surprise": 7.5,
+        "craft": 7.3,
+        "originality": 7.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 8.3,
+          "rawScore": 8.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong stage premise, vivid specificity, and a sharp retaliatory turn; the final illusion callback cleanly carries the laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.8,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Sharp, specific turn (the Kia Sorento detail) gives real surprise and a strong mutual-humiliation payoff; slightly long but earns it."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong first-person stage voice and a sharp, specific final image that lands cleanly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong turn with sharp timing; memorable closer."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean premise and tidy button line, but the multiverse-excuse-for-debt angle is a fairly familiar comic shape."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Punchy and well-structured with a strong, natural turn at the end."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean premise and solid final line, but the turn is fairly expected and the laugh stays mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean premise with a tidy turn; solid but not standout."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.2,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.7,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.9,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.2,
+          "comment": "The financial imagery is coherent and polished, but it stays in one metaphorical lane and ends with a clever formulation rather than a strong punch."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Good closing wordplay ('small, colorful bankruptcy'), consistent debt-at-the-fair conceit, though the middle stretch is a bit generic."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.5,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.1,
+          "comment": "The final image of a very small, very colorful bankruptcy is a well-crafted punchline that carries the laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Functional setup and image, yet the bankruptcy punchline feels predictable and lightly forced."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.8,
+        "craft": 5.5,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.8,
+        "craft": 5.5,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.7,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear premise and compliant seed use, but the debt-collector transformations feel strained and the neck tag weakens rather than heightens the payoff."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.6,
+          "rawScore": 7.5,
+          "scoreAdjustment": 0.1,
+          "comment": "Fun absurdist escalation. The giraffe debt collector image is fresh and amusing."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Concept is clear but the debt-collector balloon gag repeats without enough escalation or snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.4,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Fun imagery but the escalation repeats; mild payoff."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.8,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.1,
+        "craft": 5.8,
+        "originality": 5.1,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean, concise, and performable, but the balloon-popping retaliation and manners insult follow a fairly predictable route."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.9,
+          "rawScore": 6,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid setup and quick escalation, but the comeback ('looks like your manners') is a fairly predictable insult-comic move."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Setup is clear, but the punchline feels like a generic retort rather than a surprising comedic turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.3,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Straightforward and clear but predictable; modest laugh."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-05-external-real-2026-08-05.png",
+    "originalSrc": "assets/feature-images/2026-08-05-external-real-2026-08-05.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Illusionist: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - The Illusionist\nExact joke text to render in the right panel:\nI briefly tried working as a kids' party magician, but it turns out I’m way too temperamental for the gig. You can only have a sticky seven-year-old scream, 'I saw the quarter go up your sleeve!' so many times before you completely snap. I just leaned in and whispered, 'Yeah? Well I saw your dad crying in the Kia Sorento, Tyler. Looks like the illusion is shattered for both of us.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Alt. and Parallel Universe, Kids Entertainer, Country Fair, A partner / friend racking up debt, Hospitable, Temperamental. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Alt. and Parallel Universe, Kids Entertainer, Country Fair, A partner / friend racking up debt, Hospitable, Temperamental. Use the winning joke titled \"The Illusionist\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 6.3,
+      "google": 6.2,
+      "xai": 6.5,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-05-external-real-2026-08-05.md"
+}

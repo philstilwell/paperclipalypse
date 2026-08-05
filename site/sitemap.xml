@@ -2,32 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://paperclipalypse.com/</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-04-external-real-2026-08-04.png</image:loc>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-05-external-real-2026-08-05.png</image:loc>
       <image:title>Paperclipalypse</image:title>
       <image:caption>Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/about.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/standings.html</loc>
-    <lastmod>2026-08-04</lastmod>
+    <lastmod>2026-08-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paperclipalypse.com/runs/2026-08-05-external-real-2026-08-05.html</loc>
+    <lastmod>2026-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-05-external-real-2026-08-05.png</image:loc>
+      <image:title>The Illusionist</image:title>
+      <image:caption>Aug 5, 2026 Paperclipalypse AI comedy round: The Illusionist. Gemini Flash won with 7.5. Seed terms: Alt. and Parallel Universe, Kids Entertainer, Country Fair, A partner / friend racking up debt, Hospitable,...</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/runs/2026-08-04-external-real-2026-08-04.html</loc>
     <lastmod>2026-08-04</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
     <image:image>
       <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-04-external-real-2026-08-04.png</image:loc>
       <image:title>Unexpected Developments</image:title>
