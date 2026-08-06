@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-06-external-real-2026-08-06",
+  "seed": "external-real-2026-08-06",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-06T14:35:45.432Z",
+  "publishedDate": "2026-08-06",
+  "seedTerms": [
+    "Post-Apocalyptic",
+    "Bouncer",
+    "Parade",
+    "Lost temper / composure",
+    "Gentle",
+    "Disorganized"
+  ],
+  "premise": {
+    "text": "Seed terms: Post-Apocalyptic, Bouncer, Parade, Lost temper / composure, Gentle, Disorganized",
+    "seedTerms": [
+      "Post-Apocalyptic",
+      "Bouncer",
+      "Parade",
+      "Lost temper / composure",
+      "Gentle",
+      "Disorganized"
+    ],
+    "displayText": "Post-Apocalyptic Door Policy"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "claude-web",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "gemini-web",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "grok-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "copilot-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Selective Survival",
+      "seedTermsUsed": [
+        "Post-Apocalyptic",
+        "Bouncer"
+      ],
+      "joke": "After the apocalypse, I found the last nightclub on Earth. The bouncer looked at my torn clothes, homemade spear, and three days of radioactive dust and said, “Not with those shoes.” I said, “Humanity is down to twelve people.” He checked the clipboard: “Exactly. We can finally be selective.”",
+      "setup": "",
+      "punchline": "After the apocalypse, I found the last nightclub on Earth. The bouncer looked at my torn clothes, homemade spear, and three days of radioactive dust and said, “Not with those shoes.” I said, “Humanity is down to twelve people.” He checked the clipboard: “Exactly. We can finally be selective.”",
+      "text": "After the apocalypse, I found the last nightclub on Earth. The bouncer looked at my torn clothes, homemade spear, and three days of radioactive dust and said, “Not with those shoes.” I said, “Humanity is down to twelve people.” He checked the clipboard: “Exactly. We can finally be selective.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Sonnet 5 Medium web",
+      "title": "Bouncer Apocalypse",
+      "seedTermsUsed": [
+        "Post-Apocalyptic",
+        "Bouncer"
+      ],
+      "joke": "After the apocalypse I became a bouncer for the last nightclub on Earth. It's not hard. There's a list, there's two names on it, and one of them is a guy named Gary who's been dead since Tuesday. Still, I stand there all night, arms crossed, going 'not tonight' to zombies. They don't even want in. They just miss having somewhere to be turned away from.",
+      "setup": "",
+      "punchline": "After the apocalypse I became a bouncer for the last nightclub on Earth. It's not hard. There's a list, there's two names on it, and one of them is a guy named Gary who's been dead since Tuesday. Still, I stand there all night, arms crossed, going 'not tonight' to zombies. They don't even want in. They just miss having somewhere to be turned away from.",
+      "text": "After the apocalypse I became a bouncer for the last nightclub on Earth. It's not hard. There's a list, there's two names on it, and one of them is a guy named Gary who's been dead since Tuesday. Still, I stand there all night, arms crossed, going 'not tonight' to zombies. They don't even want in. They just miss having somewhere to be turned away from."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Wasteland Logistics",
+      "seedTermsUsed": [
+        "Post-Apocalyptic",
+        "Disorganized"
+      ],
+      "joke": "I'm not worried about ruthless motorcycle gangs taking over in a post-apocalyptic wasteland, because my friend group is way too disorganized for that. I can't even get four of them to agree on a time for Sunday brunch. You really think we're going to successfully coordinate a fifty-car convoy to raid a desert fortress? We'd be ten miles down Fury Road and I'd have to pull the war rig over because Dave forgot his spiked shoulder pads.",
+      "setup": "",
+      "punchline": "I'm not worried about ruthless motorcycle gangs taking over in a post-apocalyptic wasteland, because my friend group is way too disorganized for that. I can't even get four of them to agree on a time for Sunday brunch. You really think we're going to successfully coordinate a fifty-car convoy to raid a desert fortress? We'd be ten miles down Fury Road and I'd have to pull the war rig over because Dave forgot his spiked shoulder pads.",
+      "text": "I'm not worried about ruthless motorcycle gangs taking over in a post-apocalyptic wasteland, because my friend group is way too disorganized for that. I can't even get four of them to agree on a time for Sunday brunch. You really think we're going to successfully coordinate a fifty-car convoy to raid a desert fortress? We'd be ten miles down Fury Road and I'd have to pull the war rig over because Dave forgot his spiked shoulder pads."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Door Policy",
+      "seedTermsUsed": [
+        "Post-Apocalyptic",
+        "Bouncer"
+      ],
+      "joke": "I work as a bouncer in the post-apocalypse. It's the only job left that still has a working door. Last night a guy covered in radiation scars and wearing a traffic cone walks up. I say, \"You're not on the list.\" He stares at me and goes, \"There is no list. There is no society.\" I looked him over and said, \"Then the cover charge is two cans of beans and whatever's left of your dignity.\"",
+      "setup": "",
+      "punchline": "I work as a bouncer in the post-apocalypse. It's the only job left that still has a working door. Last night a guy covered in radiation scars and wearing a traffic cone walks up. I say, \"You're not on the list.\" He stares at me and goes, \"There is no list. There is no society.\" I looked him over and said, \"Then the cover charge is two cans of beans and whatever's left of your dignity.\"",
+      "text": "I work as a bouncer in the post-apocalypse. It's the only job left that still has a working door. Last night a guy covered in radiation scars and wearing a traffic cone walks up. I say, \"You're not on the list.\" He stares at me and goes, \"There is no list. There is no society.\" I looked him over and said, \"Then the cover charge is two cans of beans and whatever's left of your dignity.\""
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Calm Night",
+      "seedTermsUsed": [
+        "Bouncer",
+        "Lost temper / composure"
+      ],
+      "joke": "I once worked as a bouncer, which was a terrible fit because I don’t really do anger. One guy tried to start a fight, and instead of throwing him out, I calmly told him, “Sir, I am extremely disappointed in your choices.” He froze like I’d hit him with dad energy. That was the first time anyone backed down because I sounded like a report card.",
+      "setup": "",
+      "punchline": "I once worked as a bouncer, which was a terrible fit because I don’t really do anger. One guy tried to start a fight, and instead of throwing him out, I calmly told him, “Sir, I am extremely disappointed in your choices.” He froze like I’d hit him with dad energy. That was the first time anyone backed down because I sounded like a report card.",
+      "text": "I once worked as a bouncer, which was a terrible fit because I don’t really do anger. One guy tried to start a fight, and instead of throwing him out, I calmly told him, “Sir, I am extremely disappointed in your choices.” He froze like I’d hit him with dad energy. That was the first time anyone backed down because I sounded like a report card."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong premise, clean escalation, and a distinctive final turn that gives the zombies an unexpectedly human motive.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear and relatable with good visual specificity, but the disorganized-friends-versus-apocalypse contrast follows a familiar route.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Several solid lines and a coherent setting, though the dignity tag is less sharp than the working-door setup.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The report-card comparison lands mildly, but the narrator explicitly retains composure rather than losing it, so only one seed concept is clearly used.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 5.900000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup/turn, standard 'exclusive club' joke shape but well executed and snappy.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Solid relatable premise, Mad Max riff funny but runs a bit long before the Dave payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent bouncer bit but 'cover charge' turn is fairly predictable and a touch flat.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Fresh angle on a bouncer joke, 'dad energy' and 'report card' land as a genuine surprise turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid, classic setup-punchline structure with a crisp final beat. The nightclub/shoes trope in an apocalypse is slightly predictable, but the execution and timing land well.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Great stage rhythm and subtle observational humor. The bit about zombies missing having somewhere to be turned away from gives it a strong, memorable tag line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Functional stand-up premise, but the ending fizzles slightly by trailing off into a generic 'beans and dignity' joke rather than a sharp turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relatable premise with natural conversational flow. The 'dad energy' comparison works, though the final phrase leans a bit conventional.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup and selective payoff land as mild amusement; turn is competent but expected.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid stage voice and zombies-missing-rejection finish give a genuine comic snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Specific brunch-to-Fury-Road escalation works; concrete and repeatable.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Gentle-disappointment angle is clear but mild and familiar; report-card line only softens.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a neat turn; solid but not standout.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Fun imagery but the escalation repeats; mild payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.3
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong relatable angle with a clear, funny turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Good imagery and a clean final line; respectable overall.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.6,
+          "rawScore": 7.5,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong premise, clean escalation, and a distinctive final turn that gives the zombies an unexpectedly human motive."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.2,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Great stage rhythm and subtle observational humor. The bit about zombies missing having somewhere to be turned away from gives it a strong, memorable tag line."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid stage voice and zombies-missing-rejection finish give a genuine comic snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.4,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Fun imagery but the escalation repeats; mild payoff."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.7,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear and relatable with good visual specificity, but the disorganized-friends-versus-apocalypse contrast follows a familiar route."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid relatable premise, Mad Max riff funny but runs a bit long before the Dave payoff."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Specific brunch-to-Fury-Road escalation works; concrete and repeatable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong relatable angle with a clear, funny turn."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.7,
+        "originality": 5.7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean setup/turn, standard 'exclusive club' joke shape but well executed and snappy."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid, classic setup-punchline structure with a crisp final beat. The nightclub/shoes trope in an apocalypse is slightly predictable, but the execution and timing land well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean setup and selective payoff land as mild amusement; turn is competent but expected."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean premise with a neat turn; solid but not standout."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.2,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 5.7,
+        "promptFit": 7.7
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.1,
+          "comment": "The report-card comparison lands mildly, but the narrator explicitly retains composure rather than losing it, so only one seed concept is clearly used."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Fresh angle on a bouncer joke, 'dad energy' and 'report card' land as a genuine surprise turn."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Relatable premise with natural conversational flow. The 'dad energy' comparison works, though the final phrase leans a bit conventional."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Gentle-disappointment angle is clear but mild and familiar; report-card line only softens."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6,
+      "rawScore": 6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.7,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Several solid lines and a coherent setting, though the dignity tag is less sharp than the working-door setup."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.5,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent bouncer bit but 'cover charge' turn is fairly predictable and a touch flat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Functional stand-up premise, but the ending fizzles slightly by trailing off into a generic 'beans and dignity' joke rather than a sharp turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Good imagery and a clean final line; respectable overall."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-06-external-real-2026-08-06.jpg",
+    "originalSrc": "assets/feature-images/2026-08-06-external-real-2026-08-06.jpg",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Bouncer Apocalypse: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Bouncer Apocalypse\nExact joke text to render in the right panel:\nAfter the apocalypse I became a bouncer for the last nightclub on Earth. It's not hard. There's a list, there's two names on it, and one of them is a guy named Gary who's been dead since Tuesday. Still, I stand there all night, arms crossed, going 'not tonight' to zombies. They don't even want in. They just miss having somewhere to be turned away from.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Post-Apocalyptic, Bouncer, Parade, Lost temper / composure, Gentle, Disorganized. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Post-Apocalyptic, Bouncer, Parade, Lost temper / composure, Gentle, Disorganized. Use the winning joke titled \"Bouncer Apocalypse\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 6.3,
+      "google": 6.3,
+      "xai": 6.4,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-06-external-real-2026-08-06.md"
+}

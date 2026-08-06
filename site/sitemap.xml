@@ -2,32 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://paperclipalypse.com/</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-05-external-real-2026-08-05.png</image:loc>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-06-external-real-2026-08-06.jpg</image:loc>
       <image:title>Paperclipalypse</image:title>
       <image:caption>Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/about.html</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/standings.html</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-08-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://paperclipalypse.com/runs/2026-08-06-external-real-2026-08-06.html</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-06-external-real-2026-08-06.jpg</image:loc>
+      <image:title>Post-Apocalyptic Door Policy</image:title>
+      <image:caption>Aug 6, 2026 Paperclipalypse AI comedy round: Post-Apocalyptic Door Policy. Claude Sonnet 4.6 won with 6.8. Seed terms: Post-Apocalyptic, Bouncer, Parade, Lost temper / composure, Gentle, Disorganized.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/runs/2026-08-05-external-real-2026-08-05.html</loc>
     <lastmod>2026-08-05</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
     <image:image>
       <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-05-external-real-2026-08-05.png</image:loc>
       <image:title>The Illusionist</image:title>
