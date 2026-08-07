@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-07-external-real-2026-08-07",
+  "seed": "external-real-2026-08-07",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-07T14:01:56.639Z",
+  "publishedDate": "2026-08-07",
+  "seedTerms": [
+    "Outlaws",
+    "Socialite",
+    "Slaughterhouse",
+    "Chafing under poor leadership",
+    "Proper",
+    "Reckless"
+  ],
+  "premise": {
+    "text": "Seed terms: Outlaws, Socialite, Slaughterhouse, Chafing under poor leadership, Proper, Reckless",
+    "seedTerms": [
+      "Outlaws",
+      "Socialite",
+      "Slaughterhouse",
+      "Chafing under poor leadership",
+      "Proper",
+      "Reckless"
+    ],
+    "displayText": "Immersive Dining"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "claude-web",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "gemini-web",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "grok-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "copilot-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Polite Crime",
+      "seedTermsUsed": [
+        "Outlaws",
+        "Proper"
+      ],
+      "joke": "I tried joining an outlaw biker gang, but I was raised way too proper. They said, “We ride at midnight.” I said, “Perfect—what’s the dress code?” I lasted one robbery. Apparently when a man points a gun and yells, “Nobody move!” you’re not supposed to lean over and whisper, “He means please.”",
+      "setup": "",
+      "punchline": "I tried joining an outlaw biker gang, but I was raised way too proper. They said, “We ride at midnight.” I said, “Perfect—what’s the dress code?” I lasted one robbery. Apparently when a man points a gun and yells, “Nobody move!” you’re not supposed to lean over and whisper, “He means please.”",
+      "text": "I tried joining an outlaw biker gang, but I was raised way too proper. They said, “We ride at midnight.” I said, “Perfect—what’s the dress code?” I lasted one robbery. Apparently when a man points a gun and yells, “Nobody move!” you’re not supposed to lean over and whisper, “He means please.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Sonnet 5 Medium web",
+      "title": "Charity Gala",
+      "seedTermsUsed": [
+        "Socialite",
+        "Proper"
+      ],
+      "joke": "I dated a socialite for two months. Her family had a proper way to do everything. Proper fork for salad, proper fork for fish, proper fork for telling the help you're disappointed in them. I once used the wrong spoon for soup and her mother looked at me like I'd brought a felony into the house. I said, \"It's soup, Diane.\" She said, \"It's bisque.\" I said, \"It's still just wet food we're pretending is a lifestyle.\" We broke up. I kept the spoon out of spite. It's proper now. It's had more therapy than me.",
+      "setup": "",
+      "punchline": "I dated a socialite for two months. Her family had a proper way to do everything. Proper fork for salad, proper fork for fish, proper fork for telling the help you're disappointed in them. I once used the wrong spoon for soup and her mother looked at me like I'd brought a felony into the house. I said, \"It's soup, Diane.\" She said, \"It's bisque.\" I said, \"It's still just wet food we're pretending is a lifestyle.\" We broke up. I kept the spoon out of spite. It's proper now. It's had more therapy than me.",
+      "text": "I dated a socialite for two months. Her family had a proper way to do everything. Proper fork for salad, proper fork for fish, proper fork for telling the help you're disappointed in them. I once used the wrong spoon for soup and her mother looked at me like I'd brought a felony into the house. I said, \"It's soup, Diane.\" She said, \"It's bisque.\" I said, \"It's still just wet food we're pretending is a lifestyle.\" We broke up. I kept the spoon out of spite. It's proper now. It's had more therapy than me."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Immersive Dining",
+      "seedTermsUsed": [
+        "Socialite",
+        "Slaughterhouse"
+      ],
+      "joke": "I recently started dating a wealthy socialite, and she loves dragging me to these ultra-exclusive, immersive \"farm-to-table\" galas. It sounds incredibly elegant, but it’s really just a slaughterhouse with a strict dress code and a jazz quartet. I’m standing in mud in a rented tuxedo, nervously sipping champagne, while a sommelier named Tristan asks if I'd like to look my brisket in the eye.",
+      "setup": "",
+      "punchline": "I recently started dating a wealthy socialite, and she loves dragging me to these ultra-exclusive, immersive \"farm-to-table\" galas. It sounds incredibly elegant, but it’s really just a slaughterhouse with a strict dress code and a jazz quartet. I’m standing in mud in a rented tuxedo, nervously sipping champagne, while a sommelier named Tristan asks if I'd like to look my brisket in the eye.",
+      "text": "I recently started dating a wealthy socialite, and she loves dragging me to these ultra-exclusive, immersive \"farm-to-table\" galas. It sounds incredibly elegant, but it’s really just a slaughterhouse with a strict dress code and a jazz quartet. I’m standing in mud in a rented tuxedo, nervously sipping champagne, while a sommelier named Tristan asks if I'd like to look my brisket in the eye."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Polite Stickup",
+      "seedTermsUsed": [
+        "Outlaws",
+        "Proper"
+      ],
+      "joke": "I always wanted to be an outlaw. But my mom raised me proper. So the one time I tried to rob a liquor store, I waited in line, said please and thank you, and asked if they had change for a hundred. The guy behind the counter gave me a free bottle and a high five. Then he called the cops. Turns out manners don't count as a disguise.",
+      "setup": "",
+      "punchline": "I always wanted to be an outlaw. But my mom raised me proper. So the one time I tried to rob a liquor store, I waited in line, said please and thank you, and asked if they had change for a hundred. The guy behind the counter gave me a free bottle and a high five. Then he called the cops. Turns out manners don't count as a disguise.",
+      "text": "I always wanted to be an outlaw. But my mom raised me proper. So the one time I tried to rob a liquor store, I waited in line, said please and thank you, and asked if they had change for a hundred. The guy behind the counter gave me a free bottle and a high five. Then he called the cops. Turns out manners don't count as a disguise."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Polished Bandit",
+      "seedTermsUsed": [
+        "Outlaws",
+        "Socialite"
+      ],
+      "joke": "I tried hanging out with a group of outlaws once, just to feel edgy. But I showed up dressed like a socialite at a charity gala. They were comparing scars, and I was like, “I have a blister from new loafers.” One guy asked if I was undercover, and I said, “No, I’m just overdressed.”",
+      "setup": "",
+      "punchline": "I tried hanging out with a group of outlaws once, just to feel edgy. But I showed up dressed like a socialite at a charity gala. They were comparing scars, and I was like, “I have a blister from new loafers.” One guy asked if I was undercover, and I said, “No, I’m just overdressed.”",
+      "text": "I tried hanging out with a group of outlaws once, just to feel edgy. But I showed up dressed like a socialite at a charity gala. They were comparing scars, and I was like, “I have a blister from new loafers.” One guy asked if I was undercover, and I said, “No, I’m just overdressed.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Several solid lines and a clear social-class premise, but the therapy tag is generic and weaker than the bisque exchange.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong, coherent escalation with vivid imagery; the final brisket line is an effective, non-obvious payoff.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean stage rhythm and a respectable final turn, though the overly-polite-criminal premise is familiar and fairly predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clear and economical, but the overdressed punchline mostly restates the setup rather than delivering a stronger turn.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation, strong final line that reinterprets the robbery scene well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid, unexpected image (sommelier line) with fresh angle on farm-to-table pretension; strongest turn of the set.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Same premise as Joke A but punchline restates the setup rather than snapping; weaker payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Solid setup and imagery, but closing line is flat compared to the blister joke that precedes it.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Very clean stage rhythm and a solid payoff. The polite-criminal premise is a familiar trope, but the whispered 'he means please' lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Starts strong with an excellent rule of three about the forks, but the ending fizzles out by relying on a generic and disconnected therapy trope.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent but pedestrian execution of the polite-robber premise. The final punchline feels too expository rather than landing as a joke.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The contrast is clear but overly predictable. It reads more like a quick caption for a single-panel cartoon than a rhythmic stand-up bit.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise and solid final whisper; familiar proper-vs-criminal shape but well-timed.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Some sharp class lines early, but the spoon-therapy close softens the payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong concrete image and non-obvious farm-to-table turn; final line carries cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Obvious mismatch setup; blister detail mild, final line too soft to land.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a tidy turn; solid but not standout.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Long, with some fun lines, but the payoff softens under the length.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.3
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong imagery and a clear turn; amusing but not quite excellent.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Straightforward and predictable; mild laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.4,
+      "rawScore": 7.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.8,
+        "originality": 7.5,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.8,
+        "originality": 7.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.6,
+          "rawScore": 7.6,
+          "scoreAdjustment": 0,
+          "comment": "Strong, coherent escalation with vivid imagery; the final brisket line is an effective, non-obvious payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 8,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Vivid, unexpected image (sommelier line) with fresh angle on farm-to-table pretension; strongest turn of the set."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.3,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong concrete image and non-obvious farm-to-table turn; final line carries cleanly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong imagery and a clear turn; amusing but not quite excellent."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.9,
+      "rawScore": 7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 6.7,
+        "craft": 7.2,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.2,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean escalation, strong final line that reinterprets the robbery scene well."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.3,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0,
+          "comment": "Very clean stage rhythm and a solid payoff. The polite-criminal premise is a familiar trope, but the whispered 'he means please' lands well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean premise and solid final whisper; familiar proper-vs-criminal shape but well-timed."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean premise with a tidy turn; solid but not standout."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6,
+      "rawScore": 6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Several solid lines and a clear social-class premise, but the therapy tag is generic and weaker than the bisque exchange."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Starts strong with an excellent rule of three about the forks, but the ending fizzles out by relying on a generic and disconnected therapy trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Some sharp class lines early, but the spoon-therapy close softens the payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.5,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Long, with some fun lines, but the payoff softens under the length."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.7,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Clean stage rhythm and a respectable final turn, though the overly-polite-criminal premise is familiar and fairly predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.5,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Same premise as Joke A but punchline restates the setup rather than snapping; weaker payoff."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.3,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0,
+          "comment": "Competent but pedestrian execution of the polite-robber premise. The final punchline feels too expository rather than landing as a joke."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.4,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Straightforward and predictable; mild laugh."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.4,
+      "rawScore": 5.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5,
+        "surprise": 4.7,
+        "craft": 5.2,
+        "originality": 5,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.8,
+        "craft": 5.3,
+        "originality": 5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.3,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0,
+          "comment": "Clear and economical, but the overdressed punchline mostly restates the setup rather than delivering a stronger turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.5,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid setup and imagery, but closing line is flat compared to the blister joke that precedes it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.3,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0,
+          "comment": "The contrast is clear but overly predictable. It reads more like a quick caption for a single-panel cartoon than a rhythmic stand-up bit."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.3,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Obvious mismatch setup; blister detail mild, final line too soft to land."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-07-external-real-2026-08-07.png",
+    "originalSrc": "assets/feature-images/2026-08-07-external-real-2026-08-07.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Immersive Dining: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Immersive Dining\nExact joke text to render in the right panel:\nI recently started dating a wealthy socialite, and she loves dragging me to these ultra-exclusive, immersive \"farm-to-table\" galas. It sounds incredibly elegant, but it’s really just a slaughterhouse with a strict dress code and a jazz quartet. I’m standing in mud in a rented tuxedo, nervously sipping champagne, while a sommelier named Tristan asks if I'd like to look my brisket in the eye.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Outlaws, Socialite, Slaughterhouse, Chafing under poor leadership, Proper, Reckless. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Outlaws, Socialite, Slaughterhouse, Chafing under poor leadership, Proper, Reckless. Use the winning joke titled \"Immersive Dining\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.4,
+      "google": 6.3,
+      "xai": 6.4,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-07-external-real-2026-08-07.md"
+}

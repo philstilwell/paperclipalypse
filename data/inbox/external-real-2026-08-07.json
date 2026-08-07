@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-07T14:01:56.639Z",
+  "publishedDate": "2026-08-07",
+  "seed": "external-real-2026-08-07",
+  "slug": "2026-08-07-external-real-2026-08-07",
+  "source": "manual-external",
+  "seedTerms": [
+    "Outlaws",
+    "Socialite",
+    "Slaughterhouse",
+    "Chafing under poor leadership",
+    "Proper",
+    "Reckless"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai-web",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "claude-web",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "gemini-web",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "grok-web",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "copilot-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Polite Crime",
+      "seedTermsUsed": [
+        "Outlaws",
+        "Proper"
+      ],
+      "joke": "I tried joining an outlaw biker gang, but I was raised way too proper. They said, “We ride at midnight.” I said, “Perfect—what’s the dress code?” I lasted one robbery. Apparently when a man points a gun and yells, “Nobody move!” you’re not supposed to lean over and whisper, “He means please.”",
+      "text": "I tried joining an outlaw biker gang, but I was raised way too proper. They said, “We ride at midnight.” I said, “Perfect—what’s the dress code?” I lasted one robbery. Apparently when a man points a gun and yells, “Nobody move!” you’re not supposed to lean over and whisper, “He means please.”",
+      "setup": "",
+      "punchline": "I tried joining an outlaw biker gang, but I was raised way too proper. They said, “We ride at midnight.” I said, “Perfect—what’s the dress code?” I lasted one robbery. Apparently when a man points a gun and yells, “Nobody move!” you’re not supposed to lean over and whisper, “He means please.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Sonnet 5 Medium web",
+      "title": "Charity Gala",
+      "seedTermsUsed": [
+        "Socialite",
+        "Proper"
+      ],
+      "joke": "I dated a socialite for two months. Her family had a proper way to do everything. Proper fork for salad, proper fork for fish, proper fork for telling the help you're disappointed in them. I once used the wrong spoon for soup and her mother looked at me like I'd brought a felony into the house. I said, \"It's soup, Diane.\" She said, \"It's bisque.\" I said, \"It's still just wet food we're pretending is a lifestyle.\" We broke up. I kept the spoon out of spite. It's proper now. It's had more therapy than me.",
+      "text": "I dated a socialite for two months. Her family had a proper way to do everything. Proper fork for salad, proper fork for fish, proper fork for telling the help you're disappointed in them. I once used the wrong spoon for soup and her mother looked at me like I'd brought a felony into the house. I said, \"It's soup, Diane.\" She said, \"It's bisque.\" I said, \"It's still just wet food we're pretending is a lifestyle.\" We broke up. I kept the spoon out of spite. It's proper now. It's had more therapy than me.",
+      "setup": "",
+      "punchline": "I dated a socialite for two months. Her family had a proper way to do everything. Proper fork for salad, proper fork for fish, proper fork for telling the help you're disappointed in them. I once used the wrong spoon for soup and her mother looked at me like I'd brought a felony into the house. I said, \"It's soup, Diane.\" She said, \"It's bisque.\" I said, \"It's still just wet food we're pretending is a lifestyle.\" We broke up. I kept the spoon out of spite. It's proper now. It's had more therapy than me."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Immersive Dining",
+      "seedTermsUsed": [
+        "Socialite",
+        "Slaughterhouse"
+      ],
+      "joke": "I recently started dating a wealthy socialite, and she loves dragging me to these ultra-exclusive, immersive \"farm-to-table\" galas. It sounds incredibly elegant, but it’s really just a slaughterhouse with a strict dress code and a jazz quartet. I’m standing in mud in a rented tuxedo, nervously sipping champagne, while a sommelier named Tristan asks if I'd like to look my brisket in the eye.",
+      "text": "I recently started dating a wealthy socialite, and she loves dragging me to these ultra-exclusive, immersive \"farm-to-table\" galas. It sounds incredibly elegant, but it’s really just a slaughterhouse with a strict dress code and a jazz quartet. I’m standing in mud in a rented tuxedo, nervously sipping champagne, while a sommelier named Tristan asks if I'd like to look my brisket in the eye.",
+      "setup": "",
+      "punchline": "I recently started dating a wealthy socialite, and she loves dragging me to these ultra-exclusive, immersive \"farm-to-table\" galas. It sounds incredibly elegant, but it’s really just a slaughterhouse with a strict dress code and a jazz quartet. I’m standing in mud in a rented tuxedo, nervously sipping champagne, while a sommelier named Tristan asks if I'd like to look my brisket in the eye."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast web",
+      "title": "Polite Stickup",
+      "seedTermsUsed": [
+        "Outlaws",
+        "Proper"
+      ],
+      "joke": "I always wanted to be an outlaw. But my mom raised me proper. So the one time I tried to rob a liquor store, I waited in line, said please and thank you, and asked if they had change for a hundred. The guy behind the counter gave me a free bottle and a high five. Then he called the cops. Turns out manners don't count as a disguise.",
+      "text": "I always wanted to be an outlaw. But my mom raised me proper. So the one time I tried to rob a liquor store, I waited in line, said please and thank you, and asked if they had change for a hundred. The guy behind the counter gave me a free bottle and a high five. Then he called the cops. Turns out manners don't count as a disguise.",
+      "setup": "",
+      "punchline": "I always wanted to be an outlaw. But my mom raised me proper. So the one time I tried to rob a liquor store, I waited in line, said please and thank you, and asked if they had change for a hundred. The guy behind the counter gave me a free bottle and a high five. Then he called the cops. Turns out manners don't count as a disguise."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Polished Bandit",
+      "seedTermsUsed": [
+        "Outlaws",
+        "Socialite"
+      ],
+      "joke": "I tried hanging out with a group of outlaws once, just to feel edgy. But I showed up dressed like a socialite at a charity gala. They were comparing scars, and I was like, “I have a blister from new loafers.” One guy asked if I was undercover, and I said, “No, I’m just overdressed.”",
+      "text": "I tried hanging out with a group of outlaws once, just to feel edgy. But I showed up dressed like a socialite at a charity gala. They were comparing scars, and I was like, “I have a blister from new loafers.” One guy asked if I was undercover, and I said, “No, I’m just overdressed.”",
+      "setup": "",
+      "punchline": "I tried hanging out with a group of outlaws once, just to feel edgy. But I showed up dressed like a socialite at a charity gala. They were comparing scars, and I was like, “I have a blister from new loafers.” One guy asked if I was undercover, and I said, “No, I’m just overdressed.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Several solid lines and a clear social-class premise, but the therapy tag is generic and weaker than the bisque exchange."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong, coherent escalation with vivid imagery; the final brisket line is an effective, non-obvious payoff."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clean stage rhythm and a respectable final turn, though the overly-polite-criminal premise is familiar and fairly predictable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear and economical, but the overdressed punchline mostly restates the setup rather than delivering a stronger turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean escalation, strong final line that reinterprets the robbery scene well."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Vivid, unexpected image (sommelier line) with fresh angle on farm-to-table pretension; strongest turn of the set."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Same premise as Joke A but punchline restates the setup rather than snapping; weaker payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Solid setup and imagery, but closing line is flat compared to the blister joke that precedes it."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Very clean stage rhythm and a solid payoff. The polite-criminal premise is a familiar trope, but the whispered 'he means please' lands well."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Starts strong with an excellent rule of three about the forks, but the ending fizzles out by relying on a generic and disconnected therapy trope."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent but pedestrian execution of the polite-robber premise. The final punchline feels too expository rather than landing as a joke."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "The contrast is clear but overly predictable. It reads more like a quick caption for a single-panel cartoon than a rhythmic stand-up bit."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean premise and solid final whisper; familiar proper-vs-criminal shape but well-timed."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Some sharp class lines early, but the spoon-therapy close softens the payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong concrete image and non-obvious farm-to-table turn; final line carries cleanly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Obvious mismatch setup; blister detail mild, final line too soft to land."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise with a tidy turn; solid but not standout."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Long, with some fun lines, but the payoff softens under the length."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Strong imagery and a clear turn; amusing but not quite excellent."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Straightforward and predictable; mild laugh."
+        }
+      ]
+    }
+  ]
+}
