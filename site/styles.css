@@ -153,7 +153,9 @@ main,
 .topnav-links {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 14px;
+  justify-content: flex-end;
 }
 
 .topnav-links a {
@@ -607,6 +609,269 @@ main {
 .curator-profile p:last-child {
   color: var(--ink);
   margin-bottom: 0;
+}
+
+.showcase-page {
+  display: grid;
+  gap: 28px;
+}
+
+.showcase-hero-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(255, 48, 72, 0.13), transparent 36%),
+    linear-gradient(180deg, rgba(194, 138, 87, 0.12), transparent 64%),
+    var(--panel);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.showcase-hero-panel h1 {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.25rem;
+  line-height: 0.98;
+  margin-bottom: 14px;
+  white-space: normal;
+}
+
+.showcase-hero-panel > p:not(.eyebrow) {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  font-weight: 760;
+  line-height: 1.55;
+}
+
+.showcase-summary {
+  display: grid;
+  grid-template-columns: 190px 190px minmax(0, 1fr);
+  gap: 12px;
+  align-items: stretch;
+  margin-top: 22px;
+}
+
+.showcase-summary div,
+.showcase-summary > p {
+  border: 1px solid rgba(194, 138, 87, 0.26);
+  border-radius: 8px;
+  background: rgba(10, 11, 13, 0.74);
+  margin: 0;
+  padding: 14px 16px;
+}
+
+.showcase-summary div {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+}
+
+.showcase-summary span {
+  color: var(--brass);
+  font-size: 0.74rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.showcase-summary strong {
+  color: var(--bone);
+}
+
+.showcase-summary div strong {
+  font-size: 1.4rem;
+}
+
+.showcase-summary > p {
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  font-size: 0.84rem;
+  font-weight: 780;
+  line-height: 1.45;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 28px;
+}
+
+.showcase-card-featured {
+  grid-column: 1 / -1;
+}
+
+.showcase-card article {
+  height: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.08), transparent 62%),
+    var(--panel);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.showcase-image-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.showcase-image-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 52%, rgba(5, 5, 6, 0.64));
+  pointer-events: none;
+}
+
+.showcase-image-link img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  display: block;
+  object-fit: cover;
+  transition: filter 180ms ease, transform 260ms ease;
+}
+
+.showcase-image-link:hover img,
+.showcase-image-link:focus-visible img {
+  filter: brightness(1.08);
+  transform: scale(1.012);
+}
+
+.showcase-image-link:focus-visible {
+  outline: 3px solid var(--bone);
+  outline-offset: -3px;
+}
+
+.showcase-rank,
+.showcase-score {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid rgba(239, 225, 207, 0.28);
+  background: rgba(7, 7, 8, 0.86);
+  backdrop-filter: blur(12px);
+  color: var(--bone);
+  font-weight: 950;
+}
+
+.showcase-rank {
+  top: 14px;
+  left: 14px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  padding: 7px 10px;
+}
+
+.showcase-score {
+  right: 14px;
+  bottom: 14px;
+  border-radius: 8px;
+  display: grid;
+  gap: 2px;
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 9px 11px;
+  text-align: right;
+}
+
+.showcase-score small {
+  color: var(--brass);
+  font-size: 0.58rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.showcase-card-body {
+  padding: 18px;
+}
+
+.showcase-card-featured .showcase-card-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 26px;
+  align-items: end;
+  padding: 22px;
+}
+
+.showcase-kicker {
+  color: var(--brass);
+  font-size: 0.76rem;
+  font-weight: 950;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.showcase-card h2 {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  line-height: 1.08;
+  margin-bottom: 8px;
+}
+
+.showcase-card-featured h2 {
+  font-size: 2.05rem;
+}
+
+.showcase-round {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 780;
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.showcase-round strong {
+  color: var(--ink);
+}
+
+.showcase-concepts {
+  border-top: 1px solid var(--line-cool);
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 780;
+  line-height: 1.45;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.showcase-concepts span {
+  color: var(--dim);
+  display: block;
+  font-size: 0.66rem;
+  font-weight: 950;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.showcase-episode-link {
+  color: var(--brass);
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 950;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+.showcase-card-featured .showcase-kicker,
+.showcase-card-featured h2,
+.showcase-card-featured .showcase-round,
+.showcase-card-featured .showcase-concepts {
+  grid-column: 1;
+}
+
+.showcase-card-featured .showcase-episode-link {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  align-self: center;
+  margin-top: 0;
 }
 
 .standings-page {
@@ -1851,6 +2116,14 @@ td:nth-child(4) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .showcase-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .showcase-summary > p {
+    grid-column: 1 / -1;
+  }
+
   .round-insights article {
     grid-template-columns: minmax(140px, 0.32fr) minmax(0, 1fr);
   }
@@ -1938,6 +2211,40 @@ td:nth-child(4) {
 
   .about-page h1 {
     font-size: 1.8rem;
+  }
+
+  .showcase-hero-panel {
+    padding: 20px;
+  }
+
+  .showcase-hero-panel h1 {
+    font-size: 2.3rem;
+  }
+
+  .showcase-summary,
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card-featured {
+    grid-column: auto;
+  }
+
+  .showcase-card-featured .showcase-card-body {
+    display: block;
+    padding: 18px;
+  }
+
+  .showcase-card-featured h2 {
+    font-size: 1.65rem;
+  }
+
+  .showcase-card-featured .showcase-episode-link {
+    margin-top: 16px;
+  }
+
+  .showcase-summary > p {
+    grid-column: auto;
   }
 
   .standings-hero-panel,

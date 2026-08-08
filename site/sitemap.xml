@@ -24,6 +24,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://paperclipalypse.com/showcase.html</loc>
+    <lastmod>2026-08-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-06-22-ext-real-2026-06-22.jpg</image:loc>
+      <image:title>Paperclipalypse Showcase</image:title>
+      <image:caption>The seven highest-scoring winning images in Paperclipalypse history.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://paperclipalypse.com/runs/2026-08-08-ext-real-2026-08-08.html</loc>
     <lastmod>2026-08-08</lastmod>
     <changefreq>monthly</changefreq>

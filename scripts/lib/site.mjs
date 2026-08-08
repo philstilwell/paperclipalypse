@@ -48,6 +48,7 @@ export function renderSite({ run, historyDir, siteDir }) {
   fs.writeFileSync(path.join(siteDir, "index.html"), cleanGeneratedText(renderHome(run, runs)), "utf8");
   fs.writeFileSync(path.join(siteDir, "about.html"), cleanGeneratedText(renderAboutPage()), "utf8");
   fs.writeFileSync(path.join(siteDir, "standings.html"), cleanGeneratedText(renderStandingsPage(publicRuns)), "utf8");
+  fs.writeFileSync(path.join(siteDir, "showcase.html"), cleanGeneratedText(renderShowcasePage(publicRuns)), "utf8");
   fs.writeFileSync(path.join(siteDir, "styles.css"), cleanGeneratedText(renderCss()), "utf8");
   fs.writeFileSync(path.join(siteDir, "404.html"), cleanGeneratedText(renderNotFound()), "utf8");
   fs.writeFileSync(path.join(siteDir, "feed.xml"), renderRssFeed(publicRuns), "utf8");
@@ -233,6 +234,100 @@ function renderStandingsPage(runs) {
         ${renderDailyListPaginationScript()}
       </main>`
   });
+}
+
+function renderShowcasePage(runs) {
+  const showcaseRuns = rankedShowcaseRuns(runs);
+  const topScore = showcaseRuns[0]?.rankings?.[0]?.score;
+  const description = showcaseDescription(showcaseRuns);
+
+  return pageShell({
+    title: "Paperclipalypse Showcase - Highest-Scoring Winners",
+    description,
+    canonicalPath: "/showcase.html",
+    socialImage: showcaseRuns[0] ? socialImageForRun(showcaseRuns[0]) : defaultSocialImage,
+    socialImageAlt: showcaseRuns[0] ? socialImageAltForRun(showcaseRuns[0]) : siteDescription,
+    keywords: pageKeywords(showcaseRuns),
+    schemas: renderShowcaseSchemas(showcaseRuns, description),
+    body: `
+      ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", standingsPath: "./standings.html", showcasePath: "./showcase.html", label: "Showcase" })}
+      <main class="showcase-page">
+        <section class="showcase-hero-panel">
+          <p class="eyebrow">The Winners' Wall</p>
+          <h1>Showcase</h1>
+          <p>The seven highest-scoring winning images in Paperclipalypse history, paired with the rounds that earned them a place on the wall.</p>
+          <div class="showcase-summary" aria-label="Showcase summary">
+            <div>
+              <span>Featured winners</span>
+              <strong>${showcaseRuns.length}</strong>
+            </div>
+            <div>
+              <span>Highest score</span>
+              <strong>${Number.isFinite(Number(topScore)) ? formatScore(topScore) : "Pending"}</strong>
+            </div>
+            <p><strong>Ranking method:</strong> winning score, highest first. Newer rounds break ties.</p>
+          </div>
+        </section>
+        ${renderShowcaseGrid(showcaseRuns)}
+      </main>`
+  });
+}
+
+function renderShowcaseGrid(runs) {
+  if (!runs.length) {
+    return `<p class="empty-state">No winning images have been published yet.</p>`;
+  }
+
+  return `
+        <ol class="showcase-grid" aria-label="Highest-scoring winning images">
+          ${runs.map((run, index) => renderShowcaseCard(run, index)).join("")}
+        </ol>`;
+}
+
+function rankedShowcaseRuns(runs, limit = 7) {
+  return [...runs]
+    .filter((run) => (
+      !run.dryRun
+      && run.featureImage?.src
+      && run.rankings?.[0]
+      && Number.isFinite(Number(run.rankings[0].score))
+    ))
+    .sort((a, b) => (
+      Number(b.rankings[0].score) - Number(a.rankings[0].score)
+      || dateOnly(b).localeCompare(dateOnly(a))
+      || String(b.slug).localeCompare(String(a.slug))
+    ))
+    .slice(0, limit);
+}
+
+function renderShowcaseCard(run, index) {
+  const winner = run.rankings[0];
+  const winningJoke = run.jokes?.find((joke) => joke.id === winner.jokeId);
+  const winnerName = displayNameForContestant(run, winner.contestantId, winner.contestantName);
+  const promptConcepts = (winningJoke?.seedTermsUsed || []).filter(Boolean);
+  const imageSrc = assetPath(run.featureImage.src);
+  const episodeHref = `./runs/${run.slug}.html`;
+  const episodeTitle = roundDisplayTitle(run);
+  const jokeTitle = winningJoke?.title || episodeTitle;
+  const showEpisodeTitle = cleanDisplayText(episodeTitle).toLowerCase() !== cleanDisplayText(jokeTitle).toLowerCase();
+
+  return `
+          <li class="showcase-card${index === 0 ? " showcase-card-featured" : ""}">
+            <article>
+              <a class="showcase-image-link" href="${escapeHtml(episodeHref)}" aria-label="Open the original episode for ${escapeHtml(jokeTitle)}">
+                <img src="${escapeHtml(imageSrc)}" alt="${escapeHtml(socialImageAltForRun(run))}" width="${escapeHtml(run.featureImage.width || 1024)}" height="${escapeHtml(run.featureImage.height || 512)}"${index === 0 ? "" : " loading=\"lazy\""}>
+                <span class="showcase-rank" aria-label="Rank ${index + 1}">#${index + 1}</span>
+                <span class="showcase-score"><small>Winning score</small>${formatScore(winner.score)}</span>
+              </a>
+              <div class="showcase-card-body">
+                <p class="showcase-kicker"><time datetime="${escapeHtml(dateOnly(run))}">${escapeHtml(shortDate(run))}</time> <span aria-hidden="true">/</span> ${escapeHtml(winnerName)}</p>
+                <h2>${escapeHtml(jokeTitle)}</h2>
+                ${showEpisodeTitle ? `<p class="showcase-round">From <strong>${escapeHtml(episodeTitle)}</strong></p>` : ""}
+                ${promptConcepts.length ? `<p class="showcase-concepts"><span>Prompt concepts</span>${escapeHtml(promptConcepts.join(" + "))}</p>` : ""}
+                <a class="showcase-episode-link" href="${escapeHtml(episodeHref)}">View original episode <span aria-hidden="true">&rarr;</span></a>
+              </div>
+            </article>
+          </li>`;
 }
 
 function renderModelSelectionNote() {
@@ -1200,13 +1295,14 @@ function renderRunPage(run, publicRuns) {
   });
 }
 
-function renderTopnav({ homePath, aboutPath, standingsPath, label }) {
+function renderTopnav({ homePath, aboutPath, standingsPath, showcasePath, label }) {
   const standingsHref = standingsPath || (aboutPath.startsWith("../") ? "../standings.html" : "./standings.html");
+  const showcaseHref = showcasePath || (aboutPath.startsWith("../") ? "../showcase.html" : "./showcase.html");
 
   return `
       <nav class="topnav">
         <a href="${escapeHtml(homePath)}" class="nav-brand"><span class="mini-mark" aria-hidden="true"></span>Paperclipalypse</a>
-        <span class="topnav-links"><a href="${escapeHtml(standingsHref)}">Standings</a><a href="${escapeHtml(aboutPath)}">About</a><span>${escapeHtml(label)}</span></span>
+        <span class="topnav-links"><a href="${escapeHtml(showcaseHref)}">Showcase</a><a href="${escapeHtml(standingsHref)}">Standings</a><a href="${escapeHtml(aboutPath)}">About</a><span>${escapeHtml(label)}</span></span>
       </nav>`;
 }
 
@@ -1219,6 +1315,7 @@ Sitemap: ${siteOrigin}/sitemap.xml
 }
 
 function renderSitemap(runs) {
+  const topShowcaseRun = rankedShowcaseRuns(runs, 1)[0];
   const urls = [
     {
       loc: `${siteOrigin}/`,
@@ -1242,6 +1339,19 @@ function renderSitemap(runs) {
       lastmod: latestDate(runs),
       changefreq: "daily",
       priority: "0.8"
+    },
+    {
+      loc: `${siteOrigin}/showcase.html`,
+      lastmod: latestDate(runs),
+      changefreq: "daily",
+      priority: "0.8",
+      image: topShowcaseRun
+        ? {
+          loc: socialImageForRun(topShowcaseRun),
+          title: "Paperclipalypse Showcase",
+          caption: "The seven highest-scoring winning images in Paperclipalypse history."
+        }
+        : null
     },
     ...runs.map((run) => ({
       loc: `${siteOrigin}/runs/${run.slug}.html`,
@@ -1350,6 +1460,7 @@ function renderHero(run) {
               <p class="brand-subtitle">An AI invasion of the comedy stage: humanity’s last holdout.</p>
             </div>
             <nav class="hero-links" aria-label="Site">
+              <a class="hero-about-link" href="./showcase.html">Showcase</a>
               <a class="hero-about-link" href="./standings.html">Standings</a>
               <a class="hero-about-link" href="./about.html">About</a>
             </nav>
@@ -2039,6 +2150,14 @@ function standingsDescription(leader, totalRounds) {
   return truncateSeo(`AI comedy model standings for Paperclipalypse. ${leader.name} leads with ${leader.wins} ${leader.wins === 1 ? "win" : "wins"} across ${totalRounds} published rounds, plus score and judging trends.`);
 }
 
+function showcaseDescription(runs) {
+  if (!runs.length) {
+    return "A gallery of the highest-scoring winning images from the Paperclipalypse AI comedy tournament.";
+  }
+
+  return truncateSeo(`See the ${runs.length} highest-scoring Paperclipalypse winning images, led by ${roundDisplayTitle(runs[0])} with a ${formatScore(runs[0].rankings[0].score)} score, with links to every original episode.`);
+}
+
 function runDescription(run, maxLength = 160) {
   const winner = run.rankings?.[0];
   const seeds = Array.isArray(run.seedTerms) && run.seedTerms.length
@@ -2154,6 +2273,60 @@ function renderStandingsSchemas(standings, publicRuns, totalRounds) {
     breadcrumbSchema([
       { name: "Home", url: "/" },
       { name: "Standings", url: "/standings.html" }
+    ])
+  ];
+}
+
+function renderShowcaseSchemas(runs, description) {
+  const latestShowcaseRun = [...runs]
+    .sort((a, b) => dateTime(b).localeCompare(dateTime(a)))[0];
+
+  return [
+    publisherSchema(),
+    websiteSchema(),
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${siteOrigin}/showcase.html#showcase`,
+      url: `${siteOrigin}/showcase.html`,
+      name: "Paperclipalypse Showcase",
+      description,
+      inLanguage: "en-US",
+      isPartOf: { "@id": `${siteOrigin}/#website` },
+      mainEntity: {
+        "@type": "ItemList",
+        name: "Highest-scoring Paperclipalypse winning images",
+        numberOfItems: runs.length,
+        itemListOrder: "https://schema.org/ItemListOrderDescending",
+        itemListElement: runs.map((run, index) => {
+          const winner = run.rankings[0];
+          const winningJoke = run.jokes?.find((joke) => joke.id === winner.jokeId);
+          return {
+            "@type": "ListItem",
+            position: index + 1,
+            url: runUrl(run),
+            item: {
+              "@type": "ImageObject",
+              name: winningJoke?.title || roundDisplayTitle(run),
+              caption: `${displayNameForContestant(run, winner.contestantId, winner.contestantName)} winning image from ${roundDisplayTitle(run)}, scoring ${formatScore(winner.score)}.`,
+              contentUrl: socialImageForRun(run),
+              representativeOfPage: true,
+              associatedArticle: {
+                "@type": "BlogPosting",
+                "@id": `${runUrl(run)}#article`,
+                url: runUrl(run),
+                headline: roundDisplayTitle(run),
+                datePublished: dateTime(run)
+              }
+            }
+          };
+        })
+      },
+      dateModified: dateTime(latestShowcaseRun || new Date().toISOString())
+    },
+    breadcrumbSchema([
+      { name: "Home", url: "/" },
+      { name: "Showcase", url: "/showcase.html" }
     ])
   ];
 }
@@ -2366,6 +2539,7 @@ function pageShell({
   const faviconPath = stylesheetPath.startsWith("../") ? "../favicon.png" : "./favicon.png";
   const aboutPath = stylesheetPath.startsWith("../") ? "../about.html" : "./about.html";
   const standingsPath = stylesheetPath.startsWith("../") ? "../standings.html" : "./standings.html";
+  const showcasePath = stylesheetPath.startsWith("../") ? "../showcase.html" : "./showcase.html";
   const feedPath = stylesheetPath.startsWith("../") ? "../feed.xml" : "./feed.xml";
   const canonicalUrl = absoluteUrl(canonicalPath);
   const cleanDescription = truncateSeo(description, 160);
@@ -2405,17 +2579,17 @@ function pageShell({
   </head>
   <body>
     ${body}
-    ${renderFooter({ aboutPath, standingsPath, feedPath })}
+    ${renderFooter({ aboutPath, standingsPath, showcasePath, feedPath })}
     ${cloudflareAnalytics}
   </body>
 </html>`;
 }
 
-function renderFooter({ aboutPath, standingsPath, feedPath }) {
+function renderFooter({ aboutPath, standingsPath, showcasePath, feedPath }) {
   return `
     <footer class="site-footer">
       <span>Paperclipalypse is an experimental AI humor tournament.</span>
-      <span><a href="${escapeHtml(standingsPath)}">Standings</a> / <a href="${escapeHtml(aboutPath)}">About</a> / <a href="${escapeHtml(feedPath)}">RSS</a> / Traffic is measured with Cloudflare Web Analytics.</span>
+      <span><a href="${escapeHtml(showcasePath)}">Showcase</a> / <a href="${escapeHtml(standingsPath)}">Standings</a> / <a href="${escapeHtml(aboutPath)}">About</a> / <a href="${escapeHtml(feedPath)}">RSS</a> / Traffic is measured with Cloudflare Web Analytics.</span>
     </footer>`;
 }
 
@@ -2575,7 +2749,9 @@ main,
 .topnav-links {
   display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 14px;
+  justify-content: flex-end;
 }
 
 .topnav-links a {
@@ -3029,6 +3205,269 @@ main {
 .curator-profile p:last-child {
   color: var(--ink);
   margin-bottom: 0;
+}
+
+.showcase-page {
+  display: grid;
+  gap: 28px;
+}
+
+.showcase-hero-panel {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 82% 10%, rgba(255, 48, 72, 0.13), transparent 36%),
+    linear-gradient(180deg, rgba(194, 138, 87, 0.12), transparent 64%),
+    var(--panel);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+
+.showcase-hero-panel h1 {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.25rem;
+  line-height: 0.98;
+  margin-bottom: 14px;
+  white-space: normal;
+}
+
+.showcase-hero-panel > p:not(.eyebrow) {
+  max-width: 780px;
+  color: var(--muted);
+  font-size: 1.08rem;
+  font-weight: 760;
+  line-height: 1.55;
+}
+
+.showcase-summary {
+  display: grid;
+  grid-template-columns: 190px 190px minmax(0, 1fr);
+  gap: 12px;
+  align-items: stretch;
+  margin-top: 22px;
+}
+
+.showcase-summary div,
+.showcase-summary > p {
+  border: 1px solid rgba(194, 138, 87, 0.26);
+  border-radius: 8px;
+  background: rgba(10, 11, 13, 0.74);
+  margin: 0;
+  padding: 14px 16px;
+}
+
+.showcase-summary div {
+  display: grid;
+  align-content: center;
+  gap: 7px;
+}
+
+.showcase-summary span {
+  color: var(--brass);
+  font-size: 0.74rem;
+  font-weight: 950;
+  text-transform: uppercase;
+}
+
+.showcase-summary strong {
+  color: var(--bone);
+}
+
+.showcase-summary div strong {
+  font-size: 1.4rem;
+}
+
+.showcase-summary > p {
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  font-size: 0.84rem;
+  font-weight: 780;
+  line-height: 1.45;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 28px;
+}
+
+.showcase-card-featured {
+  grid-column: 1 / -1;
+}
+
+.showcase-card article {
+  height: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(194, 138, 87, 0.08), transparent 62%),
+    var(--panel);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.showcase-image-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.showcase-image-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 52%, rgba(5, 5, 6, 0.64));
+  pointer-events: none;
+}
+
+.showcase-image-link img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1;
+  display: block;
+  object-fit: cover;
+  transition: filter 180ms ease, transform 260ms ease;
+}
+
+.showcase-image-link:hover img,
+.showcase-image-link:focus-visible img {
+  filter: brightness(1.08);
+  transform: scale(1.012);
+}
+
+.showcase-image-link:focus-visible {
+  outline: 3px solid var(--bone);
+  outline-offset: -3px;
+}
+
+.showcase-rank,
+.showcase-score {
+  position: absolute;
+  z-index: 1;
+  border: 1px solid rgba(239, 225, 207, 0.28);
+  background: rgba(7, 7, 8, 0.86);
+  backdrop-filter: blur(12px);
+  color: var(--bone);
+  font-weight: 950;
+}
+
+.showcase-rank {
+  top: 14px;
+  left: 14px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  padding: 7px 10px;
+}
+
+.showcase-score {
+  right: 14px;
+  bottom: 14px;
+  border-radius: 8px;
+  display: grid;
+  gap: 2px;
+  font-size: 1.4rem;
+  line-height: 1;
+  padding: 9px 11px;
+  text-align: right;
+}
+
+.showcase-score small {
+  color: var(--brass);
+  font-size: 0.58rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.showcase-card-body {
+  padding: 18px;
+}
+
+.showcase-card-featured .showcase-card-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 26px;
+  align-items: end;
+  padding: 22px;
+}
+
+.showcase-kicker {
+  color: var(--brass);
+  font-size: 0.76rem;
+  font-weight: 950;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.showcase-card h2 {
+  color: var(--bone);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  line-height: 1.08;
+  margin-bottom: 8px;
+}
+
+.showcase-card-featured h2 {
+  font-size: 2.05rem;
+}
+
+.showcase-round {
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 780;
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.showcase-round strong {
+  color: var(--ink);
+}
+
+.showcase-concepts {
+  border-top: 1px solid var(--line-cool);
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 780;
+  line-height: 1.45;
+  margin: 0;
+  padding-top: 12px;
+}
+
+.showcase-concepts span {
+  color: var(--dim);
+  display: block;
+  font-size: 0.66rem;
+  font-weight: 950;
+  margin-bottom: 3px;
+  text-transform: uppercase;
+}
+
+.showcase-episode-link {
+  color: var(--brass);
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 950;
+  margin-top: 16px;
+  text-transform: uppercase;
+}
+
+.showcase-card-featured .showcase-kicker,
+.showcase-card-featured h2,
+.showcase-card-featured .showcase-round,
+.showcase-card-featured .showcase-concepts {
+  grid-column: 1;
+}
+
+.showcase-card-featured .showcase-episode-link {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  align-self: center;
+  margin-top: 0;
 }
 
 .standings-page {
@@ -4273,6 +4712,14 @@ td:nth-child(4) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .showcase-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .showcase-summary > p {
+    grid-column: 1 / -1;
+  }
+
   .round-insights article {
     grid-template-columns: minmax(140px, 0.32fr) minmax(0, 1fr);
   }
@@ -4360,6 +4807,40 @@ td:nth-child(4) {
 
   .about-page h1 {
     font-size: 1.8rem;
+  }
+
+  .showcase-hero-panel {
+    padding: 20px;
+  }
+
+  .showcase-hero-panel h1 {
+    font-size: 2.3rem;
+  }
+
+  .showcase-summary,
+  .showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase-card-featured {
+    grid-column: auto;
+  }
+
+  .showcase-card-featured .showcase-card-body {
+    display: block;
+    padding: 18px;
+  }
+
+  .showcase-card-featured h2 {
+    font-size: 1.65rem;
+  }
+
+  .showcase-card-featured .showcase-episode-link {
+    margin-top: 16px;
+  }
+
+  .showcase-summary > p {
+    grid-column: auto;
   }
 
   .standings-hero-panel,
