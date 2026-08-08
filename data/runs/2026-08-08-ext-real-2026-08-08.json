@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-08-ext-real-2026-08-08",
+  "seed": "ext-real-2026-08-08",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-08T14:02:33.410Z",
+  "publishedDate": "2026-08-08",
+  "seedTerms": [
+    "Conspiracy",
+    "Taxidermist",
+    "Convenience Store",
+    "A divorce / breakup / falling out",
+    "Ambitious",
+    "Know-It-All"
+  ],
+  "premise": {
+    "text": "Seed terms: Conspiracy, Taxidermist, Convenience Store, A divorce / breakup / falling out, Ambitious, Know-It-All",
+    "seedTerms": [
+      "Conspiracy",
+      "Taxidermist",
+      "Convenience Store",
+      "A divorce / breakup / falling out",
+      "Ambitious",
+      "Know-It-All"
+    ],
+    "displayText": "Suspicious Closure"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "The Breakup Plot",
+      "seedTermsUsed": [
+        "Conspiracy",
+        "A divorce / breakup / falling out"
+      ],
+      "joke": "My last breakup was with a conspiracy theorist. I said, “I don’t think this is working.” She said, “That’s exactly what they want you to think.” I asked who “they” were. She named my friends, my mother, and the Wi-Fi router. I wanted closure; she wanted subpoenas.",
+      "setup": "",
+      "punchline": "My last breakup was with a conspiracy theorist. I said, “I don’t think this is working.” She said, “That’s exactly what they want you to think.” I asked who “they” were. She named my friends, my mother, and the Wi-Fi router. I wanted closure; she wanted subpoenas.",
+      "text": "My last breakup was with a conspiracy theorist. I said, “I don’t think this is working.” She said, “That’s exactly what they want you to think.” I asked who “they” were. She named my friends, my mother, and the Wi-Fi router. I wanted closure; she wanted subpoenas."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Breakup Snacks",
+      "seedTermsUsed": [
+        "Convenience Store",
+        "A divorce / breakup / falling out"
+      ],
+      "joke": "After my breakup, I found myself at the convenience store at 2am buying a hot dog that had clearly been rotating since our relationship started. I told the cashier, 'Rough night, my girlfriend left me.' He said, 'Smart woman.' I said, 'You don't even know her.' He said, 'I know you bought seven lottery tickets and a hot dog for dinner.' Fair.",
+      "setup": "",
+      "punchline": "After my breakup, I found myself at the convenience store at 2am buying a hot dog that had clearly been rotating since our relationship started. I told the cashier, 'Rough night, my girlfriend left me.' He said, 'Smart woman.' I said, 'You don't even know her.' He said, 'I know you bought seven lottery tickets and a hot dog for dinner.' Fair.",
+      "text": "After my breakup, I found myself at the convenience store at 2am buying a hot dog that had clearly been rotating since our relationship started. I told the cashier, 'Rough night, my girlfriend left me.' He said, 'Smart woman.' I said, 'You don't even know her.' He said, 'I know you bought seven lottery tickets and a hot dog for dinner.' Fair."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Keep You Around",
+      "seedTermsUsed": [
+        "A divorce / breakup / falling out",
+        "Taxidermist"
+      ],
+      "joke": "Breaking up is hard, but it's a lot more stressful when your ex is a taxidermist. Because when she cries, looks you in the eye, and says, 'I just want to keep you around forever,' it completely loses the romance. It just makes you wonder if she's already picked out your glass eyes.",
+      "setup": "",
+      "punchline": "Breaking up is hard, but it's a lot more stressful when your ex is a taxidermist. Because when she cries, looks you in the eye, and says, 'I just want to keep you around forever,' it completely loses the romance. It just makes you wonder if she's already picked out your glass eyes.",
+      "text": "Breaking up is hard, but it's a lot more stressful when your ex is a taxidermist. Because when she cries, looks you in the eye, and says, 'I just want to keep you around forever,' it completely loses the romance. It just makes you wonder if she's already picked out your glass eyes."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Expert Opinion",
+      "seedTermsUsed": [
+        "Taxidermist",
+        "Know-It-All"
+      ],
+      "joke": "I hired a taxidermist to mount my trophy fish. Turns out the guy's a total know-it-all. He spent twenty minutes correcting my story about how I caught it. 'Actually, based on the scale pattern, this bass was more likely netted than hooked.' Buddy, just stuff the fish. I don't need a CSI episode for my living room wall.",
+      "setup": "",
+      "punchline": "I hired a taxidermist to mount my trophy fish. Turns out the guy's a total know-it-all. He spent twenty minutes correcting my story about how I caught it. 'Actually, based on the scale pattern, this bass was more likely netted than hooked.' Buddy, just stuff the fish. I don't need a CSI episode for my living room wall.",
+      "text": "I hired a taxidermist to mount my trophy fish. Turns out the guy's a total know-it-all. He spent twenty minutes correcting my story about how I caught it. 'Actually, based on the scale pattern, this bass was more likely netted than hooked.' Buddy, just stuff the fish. I don't need a CSI episode for my living room wall."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Suspicious Snacks",
+      "seedTermsUsed": [
+        "Conspiracy",
+        "Convenience Store"
+      ],
+      "joke": "I went into a convenience store, and the cashier stared at me like I was part of some secret plot. I grabbed a bag of chips, and he whispered, “So… it begins.” I said, “Man, I’m just hungry.” He nodded like that confirmed everything. Now I’m afraid if I buy a soda, he’ll activate whatever mission he thinks I’m on.",
+      "setup": "",
+      "punchline": "I went into a convenience store, and the cashier stared at me like I was part of some secret plot. I grabbed a bag of chips, and he whispered, “So… it begins.” I said, “Man, I’m just hungry.” He nodded like that confirmed everything. Now I’m afraid if I buy a soda, he’ll activate whatever mission he thinks I’m on.",
+      "text": "I went into a convenience store, and the cashier stared at me like I was part of some secret plot. I grabbed a bag of chips, and he whispered, “So… it begins.” I said, “Man, I’m just hungry.” He nodded like that confirmed everything. Now I’m afraid if I buy a soda, he’ll activate whatever mission he thinks I’m on."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear premise and good opening image; the cashier's judgment lands, but the final 'Fair' slightly deflates rather than heightens the payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong, economical construction with a clean escalation to the glass-eyes image. The taxidermist threat angle is somewhat foreseeable but still lands.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Fresh pairing and natural stage voice. The forensic correction is amusing, though 'CSI episode' is a familiar comparison and the final line is more tidy than explosive.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Understandable and correctly structured, but the conspiracy behavior is generic and arbitrary. The ending extends the premise without adding a sharper comic turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 4.9
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation, natural stand-up voice, 'subpoenas' closer lands well without overreaching.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Solid macabre turn on 'keep you around,' glass-eyes tag is the right final beat but not a huge snap.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent premise, but 'CSI episode' punchline restates the setup rather than escalating it.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Fun paranoid-cashier bit, 'activate whatever mission' is a nice closer though the middle sags slightly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Strong punchline and excellent pacing; the inclusion of the Wi-Fi router and subpoenas elevates a familiar premise.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "The rotating hot dog setup is excellent, though the conversational payoff feels slightly telegraphed. Good execution.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent scene work and natural use of the seed terms, but the comedic escalation is mild and stops early.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Amusing application of cinematic paranoia to mundane snacking, though the final sentence slightly diffuses the comedic tension.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation and solid closer, but the premise is familiar and the laugh stays mild.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good late-night image and cashier roast, yet the turn is expected and the payoff is only mild.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong premise with a clean non-obvious twist on the forever line; glass-eyes closer lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Vague setup without a real snap; the soda fear feels like an unfinished idea.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.8999999999999995
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a solid turn; funny but not standout.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable breakup spiral; cashier line lands well.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong image and clear timing; good final line.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Straightforward and predictable; mild amusement.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.2,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7,
+          "rawScore": 7,
+          "scoreAdjustment": 0,
+          "comment": "Strong, economical construction with a clean escalation to the glass-eyes image. The taxidermist threat angle is somewhat foreseeable but still lands."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid macabre turn on 'keep you around,' glass-eyes tag is the right final beat but not a huge snap."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.3,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong premise with a clean non-obvious twist on the forever line; glass-eyes closer lands."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong image and clear timing; good final line."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.8,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean escalation, natural stand-up voice, 'subpoenas' closer lands well without overreaching."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.4,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0,
+          "comment": "Strong punchline and excellent pacing; the inclusion of the Wi-Fi router and subpoenas elevates a familiar premise."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.6,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean escalation and solid closer, but the premise is familiar and the laugh stays mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean premise with a solid turn; funny but not standout."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.5,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.6,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0,
+          "comment": "Clear premise and good opening image; the cashier's judgment lands, but the final 'Fair' slightly deflates rather than heightens the payoff."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "The rotating hot dog setup is excellent, though the conversational payoff feels slightly telegraphed. Good execution."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Good late-night image and cashier roast, yet the turn is expected and the payoff is only mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Relatable breakup spiral; cashier line lands well."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.8,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.7,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0,
+          "comment": "Fresh pairing and natural stage voice. The forensic correction is amusing, though 'CSI episode' is a familiar comparison and the final line is more tidy than explosive."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.5,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent premise, but 'CSI episode' punchline restates the setup rather than escalating it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.5,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0,
+          "comment": "Competent scene work and natural use of the seed terms, but the comedic escalation is mild and stops early."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.4,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Straightforward and predictable; mild amusement."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.5,
+      "rawScore": 5.6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 5.2,
+        "craft": 5.4,
+        "originality": 5.4,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5.3,
+        "craft": 5.5,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.9,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0,
+          "comment": "Understandable and correctly structured, but the conspiracy behavior is generic and arbitrary. The ending extends the premise without adding a sharper comic turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Fun paranoid-cashier bit, 'activate whatever mission' is a nice closer though the middle sags slightly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Amusing application of cinematic paranoia to mundane snacking, though the final sentence slightly diffuses the comedic tension."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 4.8,
+          "rawScore": 4.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Vague setup without a real snap; the soda fear feels like an unfinished idea."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-08-ext-real-2026-08-08.png",
+    "originalSrc": "assets/feature-images/2026-08-08-ext-real-2026-08-08.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Keep You Around: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Keep You Around\nExact joke text to render in the right panel:\nBreaking up is hard, but it's a lot more stressful when your ex is a taxidermist. Because when she cries, looks you in the eye, and says, 'I just want to keep you around forever,' it completely loses the romance. It just makes you wonder if she's already picked out your glass eyes.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Conspiracy, Taxidermist, Convenience Store, A divorce / breakup / falling out, Ambitious, Know-It-All. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Conspiracy, Taxidermist, Convenience Store, A divorce / breakup / falling out, Ambitious, Know-It-All. Use the winning joke titled \"Keep You Around\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.4,
+      "google": 6.3,
+      "xai": 6.4,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-08-ext-real-2026-08-08.md"
+}

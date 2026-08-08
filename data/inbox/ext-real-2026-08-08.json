@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-08T14:02:33.410Z",
+  "publishedDate": "2026-08-08",
+  "seed": "ext-real-2026-08-08",
+  "slug": "2026-08-08-ext-real-2026-08-08",
+  "source": "manual-external",
+  "seedTerms": [
+    "Conspiracy",
+    "Taxidermist",
+    "Convenience Store",
+    "A divorce / breakup / falling out",
+    "Ambitious",
+    "Know-It-All"
+  ],
+  "premise": {
+    "displayText": "Suspicious Closure"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "The Breakup Plot",
+      "seedTermsUsed": [
+        "Conspiracy",
+        "A divorce / breakup / falling out"
+      ],
+      "joke": "My last breakup was with a conspiracy theorist. I said, “I don’t think this is working.” She said, “That’s exactly what they want you to think.” I asked who “they” were. She named my friends, my mother, and the Wi-Fi router. I wanted closure; she wanted subpoenas.",
+      "setup": "",
+      "punchline": "My last breakup was with a conspiracy theorist. I said, “I don’t think this is working.” She said, “That’s exactly what they want you to think.” I asked who “they” were. She named my friends, my mother, and the Wi-Fi router. I wanted closure; she wanted subpoenas.",
+      "text": "My last breakup was with a conspiracy theorist. I said, “I don’t think this is working.” She said, “That’s exactly what they want you to think.” I asked who “they” were. She named my friends, my mother, and the Wi-Fi router. I wanted closure; she wanted subpoenas."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Breakup Snacks",
+      "seedTermsUsed": [
+        "Convenience Store",
+        "A divorce / breakup / falling out"
+      ],
+      "joke": "After my breakup, I found myself at the convenience store at 2am buying a hot dog that had clearly been rotating since our relationship started. I told the cashier, 'Rough night, my girlfriend left me.' He said, 'Smart woman.' I said, 'You don't even know her.' He said, 'I know you bought seven lottery tickets and a hot dog for dinner.' Fair.",
+      "setup": "",
+      "punchline": "After my breakup, I found myself at the convenience store at 2am buying a hot dog that had clearly been rotating since our relationship started. I told the cashier, 'Rough night, my girlfriend left me.' He said, 'Smart woman.' I said, 'You don't even know her.' He said, 'I know you bought seven lottery tickets and a hot dog for dinner.' Fair.",
+      "text": "After my breakup, I found myself at the convenience store at 2am buying a hot dog that had clearly been rotating since our relationship started. I told the cashier, 'Rough night, my girlfriend left me.' He said, 'Smart woman.' I said, 'You don't even know her.' He said, 'I know you bought seven lottery tickets and a hot dog for dinner.' Fair."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Keep You Around",
+      "seedTermsUsed": [
+        "A divorce / breakup / falling out",
+        "Taxidermist"
+      ],
+      "joke": "Breaking up is hard, but it's a lot more stressful when your ex is a taxidermist. Because when she cries, looks you in the eye, and says, 'I just want to keep you around forever,' it completely loses the romance. It just makes you wonder if she's already picked out your glass eyes.",
+      "setup": "",
+      "punchline": "Breaking up is hard, but it's a lot more stressful when your ex is a taxidermist. Because when she cries, looks you in the eye, and says, 'I just want to keep you around forever,' it completely loses the romance. It just makes you wonder if she's already picked out your glass eyes.",
+      "text": "Breaking up is hard, but it's a lot more stressful when your ex is a taxidermist. Because when she cries, looks you in the eye, and says, 'I just want to keep you around forever,' it completely loses the romance. It just makes you wonder if she's already picked out your glass eyes."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Expert Opinion",
+      "seedTermsUsed": [
+        "Taxidermist",
+        "Know-It-All"
+      ],
+      "joke": "I hired a taxidermist to mount my trophy fish. Turns out the guy's a total know-it-all. He spent twenty minutes correcting my story about how I caught it. 'Actually, based on the scale pattern, this bass was more likely netted than hooked.' Buddy, just stuff the fish. I don't need a CSI episode for my living room wall.",
+      "setup": "",
+      "punchline": "I hired a taxidermist to mount my trophy fish. Turns out the guy's a total know-it-all. He spent twenty minutes correcting my story about how I caught it. 'Actually, based on the scale pattern, this bass was more likely netted than hooked.' Buddy, just stuff the fish. I don't need a CSI episode for my living room wall.",
+      "text": "I hired a taxidermist to mount my trophy fish. Turns out the guy's a total know-it-all. He spent twenty minutes correcting my story about how I caught it. 'Actually, based on the scale pattern, this bass was more likely netted than hooked.' Buddy, just stuff the fish. I don't need a CSI episode for my living room wall."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Suspicious Snacks",
+      "seedTermsUsed": [
+        "Conspiracy",
+        "Convenience Store"
+      ],
+      "joke": "I went into a convenience store, and the cashier stared at me like I was part of some secret plot. I grabbed a bag of chips, and he whispered, “So… it begins.” I said, “Man, I’m just hungry.” He nodded like that confirmed everything. Now I’m afraid if I buy a soda, he’ll activate whatever mission he thinks I’m on.",
+      "setup": "",
+      "punchline": "I went into a convenience store, and the cashier stared at me like I was part of some secret plot. I grabbed a bag of chips, and he whispered, “So… it begins.” I said, “Man, I’m just hungry.” He nodded like that confirmed everything. Now I’m afraid if I buy a soda, he’ll activate whatever mission he thinks I’m on.",
+      "text": "I went into a convenience store, and the cashier stared at me like I was part of some secret plot. I grabbed a bag of chips, and he whispered, “So… it begins.” I said, “Man, I’m just hungry.” He nodded like that confirmed everything. Now I’m afraid if I buy a soda, he’ll activate whatever mission he thinks I’m on."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear premise and good opening image; the cashier's judgment lands, but the final 'Fair' slightly deflates rather than heightens the payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong, economical construction with a clean escalation to the glass-eyes image. The taxidermist threat angle is somewhat foreseeable but still lands."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Fresh pairing and natural stage voice. The forensic correction is amusing, though 'CSI episode' is a familiar comparison and the final line is more tidy than explosive."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "Understandable and correctly structured, but the conspiracy behavior is generic and arbitrary. The ending extends the premise without adding a sharper comic turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean escalation, natural stand-up voice, 'subpoenas' closer lands well without overreaching."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid macabre turn on 'keep you around,' glass-eyes tag is the right final beat but not a huge snap."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent premise, but 'CSI episode' punchline restates the setup rather than escalating it."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Fun paranoid-cashier bit, 'activate whatever mission' is a nice closer though the middle sags slightly."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong punchline and excellent pacing; the inclusion of the Wi-Fi router and subpoenas elevates a familiar premise."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "The rotating hot dog setup is excellent, though the conversational payoff feels slightly telegraphed. Good execution."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent scene work and natural use of the seed terms, but the comedic escalation is mild and stops early."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Amusing application of cinematic paranoia to mundane snacking, though the final sentence slightly diffuses the comedic tension."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean escalation and solid closer, but the premise is familiar and the laugh stays mild."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good late-night image and cashier roast, yet the turn is expected and the payoff is only mild."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise with a clean non-obvious twist on the forever line; glass-eyes closer lands."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Vague setup without a real snap; the soda fear feels like an unfinished idea."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean premise with a solid turn; funny but not standout."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Relatable breakup spiral; cashier line lands well."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Strong image and clear timing; good final line."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Straightforward and predictable; mild amusement."
+        }
+      ]
+    }
+  ]
+}
