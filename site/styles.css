@@ -770,7 +770,7 @@ main {
 }
 
 .showcase-score {
-  right: 14px;
+  left: 14px;
   bottom: 14px;
   border-radius: 8px;
   display: grid;
@@ -778,7 +778,7 @@ main {
   font-size: 1.4rem;
   line-height: 1;
   padding: 9px 11px;
-  text-align: right;
+  text-align: left;
 }
 
 .showcase-score small {
