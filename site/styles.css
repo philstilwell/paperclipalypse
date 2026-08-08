@@ -691,6 +691,10 @@ main {
   line-height: 1.45;
 }
 
+.showcase-summary > p strong {
+  margin-right: 0.28em;
+}
+
 .showcase-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
