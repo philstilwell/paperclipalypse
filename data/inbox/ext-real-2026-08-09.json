@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-09T15:03:41.386Z",
+  "publishedDate": "2026-08-09",
+  "seed": "ext-real-2026-08-09",
+  "slug": "2026-08-09-ext-real-2026-08-09",
+  "source": "manual-external",
+  "seedTerms": [
+    "Haunting",
+    "Server",
+    "Tropical Island",
+    "Being unprepared",
+    "Disciplined",
+    "Nervous"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "First Night",
+      "seedTermsUsed": [
+        "Server",
+        "Nervous"
+      ],
+      "joke": "I was so nervous my first night waiting tables that when a customer said, “We’re ready to order,” I said, “That makes one of us.” Then he asked what I recommended. I said, “A different waiter. I’ve seen him work.”",
+      "setup": "",
+      "punchline": "I was so nervous my first night waiting tables that when a customer said, “We’re ready to order,” I said, “That makes one of us.” Then he asked what I recommended. I said, “A different waiter. I’ve seen him work.”",
+      "text": "I was so nervous my first night waiting tables that when a customer said, “We’re ready to order,” I said, “That makes one of us.” Then he asked what I recommended. I said, “A different waiter. I’ve seen him work.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Ex-Girlfriend.exe",
+      "seedTermsUsed": [
+        "Haunting",
+        "Server"
+      ],
+      "joke": "My ex still haunts me. Not like a ghost — like a server. Three years later I'll get a notification at 2 AM: 'Memory from this day.' We're not even friends. I didn't ask for this. It's like she's running a background process on my emotional operating system, and I never agreed to the terms of service. I just wanted to log off. Instead I'm getting push notifications from a relationship that's been uninstalled for years.",
+      "setup": "",
+      "punchline": "My ex still haunts me. Not like a ghost — like a server. Three years later I'll get a notification at 2 AM: 'Memory from this day.' We're not even friends. I didn't ask for this. It's like she's running a background process on my emotional operating system, and I never agreed to the terms of service. I just wanted to log off. Instead I'm getting push notifications from a relationship that's been uninstalled for years.",
+      "text": "My ex still haunts me. Not like a ghost — like a server. Three years later I'll get a notification at 2 AM: 'Memory from this day.' We're not even friends. I didn't ask for this. It's like she's running a background process on my emotional operating system, and I never agreed to the terms of service. I just wanted to log off. Instead I'm getting push notifications from a relationship that's been uninstalled for years."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Ghostly Downtime",
+      "seedTermsUsed": [
+        "Haunting",
+        "Being unprepared"
+      ],
+      "joke": "I always thought the scariest part of becoming a ghost would be the actual haunting. But honestly, it’s being unprepared for the sheer amount of downtime. You spend centuries waiting in a dusty attic for a new family to move in, and you don’t even have a smartphone to scroll through. I'm just floating up there practicing my scary noises in a mirror for two hundred years.",
+      "setup": "",
+      "punchline": "I always thought the scariest part of becoming a ghost would be the actual haunting. But honestly, it’s being unprepared for the sheer amount of downtime. You spend centuries waiting in a dusty attic for a new family to move in, and you don’t even have a smartphone to scroll through. I'm just floating up there practicing my scary noises in a mirror for two hundred years.",
+      "text": "I always thought the scariest part of becoming a ghost would be the actual haunting. But honestly, it’s being unprepared for the sheer amount of downtime. You spend centuries waiting in a dusty attic for a new family to move in, and you don’t even have a smartphone to scroll through. I'm just floating up there practicing my scary noises in a mirror for two hundred years."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Island Red Alert",
+      "seedTermsUsed": [
+        "Being unprepared",
+        "Tropical Island"
+      ],
+      "joke": "I booked a last-minute trip to a tropical island and showed up completely unprepared. Three pairs of wool socks, zero sunscreen, one blazer. By day two I was so red the kids on the beach kept circling me with sticks, trying to roast marshmallows off my shoulders.",
+      "setup": "",
+      "punchline": "I booked a last-minute trip to a tropical island and showed up completely unprepared. Three pairs of wool socks, zero sunscreen, one blazer. By day two I was so red the kids on the beach kept circling me with sticks, trying to roast marshmallows off my shoulders.",
+      "text": "I booked a last-minute trip to a tropical island and showed up completely unprepared. Three pairs of wool socks, zero sunscreen, one blazer. By day two I was so red the kids on the beach kept circling me with sticks, trying to roast marshmallows off my shoulders."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Island Ghosted",
+      "seedTermsUsed": [
+        "Haunting",
+        "Tropical Island"
+      ],
+      "joke": "I tried to take a vacation on a tropical island, but the place felt straight-up haunted. Every time I tried to relax, something creaked behind me. I wasn’t scared—I was just annoyed. I came for palm trees and cocktails, not a ghost whispering, “Boo.” I told it, “Buddy, I paid extra for oceanfront, not paranormal beachfront.”",
+      "setup": "",
+      "punchline": "I tried to take a vacation on a tropical island, but the place felt straight-up haunted. Every time I tried to relax, something creaked behind me. I wasn’t scared—I was just annoyed. I came for palm trees and cocktails, not a ghost whispering, “Boo.” I told it, “Buddy, I paid extra for oceanfront, not paranormal beachfront.”",
+      "text": "I tried to take a vacation on a tropical island, but the place felt straight-up haunted. Every time I tried to relax, something creaked behind me. I wasn’t scared—I was just annoyed. I came for palm trees and cocktails, not a ghost whispering, “Boo.” I told it, “Buddy, I paid extra for oceanfront, not paranormal beachfront.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Relatable digital-haunting premise, but the tech metaphors pile up and the final line mostly reiterates the same idea rather than escalating it."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Clear ghost perspective and usable premise, but the downtime angle develops into mild whimsy rather than a strong punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Concrete setup, efficient escalation, and a clean visual payoff. The sunburn-as-heat-source gag is familiar, but it lands."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "Cleanly uses both concepts, but the haunting material is generic and 'paranormal beachfront' is more wordplay than a strong final turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean self-deprecating waiter bit; 'I've seen him work' is the strongest line here, tight and stage-ready."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Nice reframe of haunting-as-boredom, but the closing image is soft and the bit rambles instead of snapping."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Sunburn/marshmallow image is vivid and escalates well; solid economy, punchline lands cleanly."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Wordplay payoff ('paranormal beachfront') is the highlight; setup is a bit generic but the turn earns it."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clean stand-up rhythm and natural dialogue. The misdirection on the recommendation lands a solid mild laugh, though the waiter anxiety premise is somewhat familiar."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "The tech metaphor is overly explanatory and reads more like a monologue essay than tight stand-up. It over-explains the premise instead of landing a hard punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong visual image in the punchline with a sharp escalation from the sunburn setup. Good stage rhythm and natural first-person delivery."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "Conceptually weak turn that relies on flat dialogue restating the premise. The final line lacks a strong comic twist to carry a real laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean nervous-server setup with a serviceable double turn; familiar waiter territory kept tight."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Extended tech-metaphor pile-on that stays clever rather than funny; rhythm sags under the list."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Fresh downtime angle on ghost life; solid premise and clean close without overreaching."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Generic haunted-vacation complaint; punchline restates the setup with little snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean first-person waiter nerves; solid timing, mild but real laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "Strong metaphor but long and prose-like; punchline softens."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "Clear premise, gentle humor; lacks a sharper turn or final snap."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Straightforward but effective; good escalation and a clean final image."
+        }
+      ]
+    }
+  ]
+}

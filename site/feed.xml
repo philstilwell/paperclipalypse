@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Sat, 08 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 09 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Aug 9, 2026 - Island Red Alert</title>
+      <link>https://paperclipalypse.com/runs/2026-08-09-ext-real-2026-08-09.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-08-09-ext-real-2026-08-09.html</guid>
+      <pubDate>Sun, 09 Aug 2026 12:00:00 GMT</pubDate>
+      <description>Winner: xAI Grok 4.3 (6.5). Aug 9, 2026 Paperclipalypse AI comedy round: Island Red Alert. xAI Grok 4.3 won with 6.5. Seed terms: Haunting, Server, Tropical Island, Being unprepared, Disciplined, Nervous.</description>
+      <category>Haunting</category>
+      <category>Server</category>
+      <category>Tropical Island</category>
+      <category>Being unprepared</category>
+      <category>Disciplined</category>
+      <category>Nervous</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-08-09-ext-real-2026-08-09.jpg" type="image/jpeg" medium="image">
+        <media:title>Island Red Alert</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Island Red Alert: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Aug 8, 2026 - Suspicious Closure</title>
       <link>https://paperclipalypse.com/runs/2026-08-08-ext-real-2026-08-08.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-21-ext-real-2026-07-21.png" type="image/png" medium="image">
         <media:title>Nap Time Bounty</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Nap Time Bounty: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Jul 20, 2026 - Camp Rules</title>
-      <link>https://paperclipalypse.com/runs/2026-07-20-ext-real-2026-07-20.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-20-ext-real-2026-07-20.html</guid>
-      <pubDate>Mon, 20 Jul 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (7.4). Jul 20, 2026 Paperclipalypse AI comedy round: Camp Rules. Claude Sonnet 4.6 won with 7.4. Seed terms: Utopia, Conductor, Summer Camp, Sacrificing ethics for greater good, Independent, Suspicious.</description>
-      <category>Utopia</category>
-      <category>Conductor</category>
-      <category>Summer Camp</category>
-      <category>Sacrificing ethics for greater good</category>
-      <category>Independent</category>
-      <category>Suspicious</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-20-ext-real-2026-07-20.png" type="image/png" medium="image">
-        <media:title>Camp Rules</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled Camp Rules: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>
