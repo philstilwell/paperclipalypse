@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-10T14:52:33.886Z",
+  "publishedDate": "2026-08-10",
+  "seed": "external-real-2026-08-10",
+  "slug": "2026-08-10-external-real-2026-08-10",
+  "source": "manual-external",
+  "seedTerms": [
+    "Gothic",
+    "Treasure Hunter",
+    "Casino",
+    "Being blackmailed",
+    "Perceptive",
+    "Obsessive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Player Rewards",
+      "seedTermsUsed": [
+        "Casino",
+        "Being blackmailed"
+      ],
+      "joke": "I signed up for a casino rewards card, and now their emails sound like blackmail. “We noticed you haven’t visited lately. Come back and enjoy a free buffet.” That’s not a promotion. That’s, “We know where you were Tuesday night. Eat the shrimp, and nobody has to hear about it.”",
+      "setup": "",
+      "punchline": "I signed up for a casino rewards card, and now their emails sound like blackmail. “We noticed you haven’t visited lately. Come back and enjoy a free buffet.” That’s not a promotion. That’s, “We know where you were Tuesday night. Eat the shrimp, and nobody has to hear about it.”",
+      "text": "I signed up for a casino rewards card, and now their emails sound like blackmail. “We noticed you haven’t visited lately. Come back and enjoy a free buffet.” That’s not a promotion. That’s, “We know where you were Tuesday night. Eat the shrimp, and nobody has to hear about it.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "High Roller",
+      "seedTermsUsed": [
+        "Casino",
+        "Being blackmailed"
+      ],
+      "joke": "I got blackmailed by a guy at a casino. He had photos of me crying at the nickel slots. I said, “Buddy, everyone's seen that, I did it in the food court too.” He said, “Fine, five hundred dollars or I tell your wife.” I said, “She was the one holding the camera.” He's still got the photos. Nobody wants them. That's the real crime.",
+      "setup": "",
+      "punchline": "I got blackmailed by a guy at a casino. He had photos of me crying at the nickel slots. I said, “Buddy, everyone's seen that, I did it in the food court too.” He said, “Fine, five hundred dollars or I tell your wife.” I said, “She was the one holding the camera.” He's still got the photos. Nobody wants them. That's the real crime.",
+      "text": "I got blackmailed by a guy at a casino. He had photos of me crying at the nickel slots. I said, “Buddy, everyone's seen that, I did it in the food court too.” He said, “Fine, five hundred dollars or I tell your wife.” I said, “She was the one holding the camera.” He's still got the photos. Nobody wants them. That's the real crime."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Red 32",
+      "seedTermsUsed": [
+        "Obsessive",
+        "Casino"
+      ],
+      "joke": "I have a deeply obsessive personality, which is why I’m no longer allowed in casinos. It’s not for counting cards or gambling away my savings. I got banned because I spent four hours at the roulette table trying to sort everyone's chips by precise shade of red. The pit boss grabbed my shoulder, and I just screamed, “You can't mix crimson and burgundy, it's anarchy!”",
+      "setup": "",
+      "punchline": "I have a deeply obsessive personality, which is why I’m no longer allowed in casinos. It’s not for counting cards or gambling away my savings. I got banned because I spent four hours at the roulette table trying to sort everyone's chips by precise shade of red. The pit boss grabbed my shoulder, and I just screamed, “You can't mix crimson and burgundy, it's anarchy!”",
+      "text": "I have a deeply obsessive personality, which is why I’m no longer allowed in casinos. It’s not for counting cards or gambling away my savings. I got banned because I spent four hours at the roulette table trying to sort everyone's chips by precise shade of red. The pit boss grabbed my shoulder, and I just screamed, “You can't mix crimson and burgundy, it's anarchy!”"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Obsessive Casino Habits",
+      "seedTermsUsed": [
+        "Obsessive",
+        "Casino"
+      ],
+      "joke": "You know, I'm really obsessive when it comes to the casino. Like, I don't just play the slots—I analyze every pull, every spin, every tiny detail like my life depends on it. Last week, I spent three hours studying the pattern of a particular machine, only to realize it was just broken. My friends say I need help, but I say I'm just thorough. Who needs therapy when you can chase that jackpot with the intensity of a man possessed?",
+      "setup": "",
+      "punchline": "You know, I'm really obsessive when it comes to the casino. Like, I don't just play the slots—I analyze every pull, every spin, every tiny detail like my life depends on it. Last week, I spent three hours studying the pattern of a particular machine, only to realize it was just broken. My friends say I need help, but I say I'm just thorough. Who needs therapy when you can chase that jackpot with the intensity of a man possessed?",
+      "text": "You know, I'm really obsessive when it comes to the casino. Like, I don't just play the slots—I analyze every pull, every spin, every tiny detail like my life depends on it. Last week, I spent three hours studying the pattern of a particular machine, only to realize it was just broken. My friends say I need help, but I say I'm just thorough. Who needs therapy when you can chase that jackpot with the intensity of a man possessed?"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Gothic Gambler",
+      "seedTermsUsed": [
+        "Gothic",
+        "Casino"
+      ],
+      "joke": "I walked into this casino that looked weirdly Gothic—like Dracula opened a slots franchise. I sat down to play, and the dealer leaned in with full vampire intensity. I got so nervous I whispered, “Look, if you’re gonna drain me, at least comp my drinks.”",
+      "setup": "",
+      "punchline": "I walked into this casino that looked weirdly Gothic—like Dracula opened a slots franchise. I sat down to play, and the dealer leaned in with full vampire intensity. I got so nervous I whispered, “Look, if you’re gonna drain me, at least comp my drinks.”",
+      "text": "I walked into this casino that looked weirdly Gothic—like Dracula opened a slots franchise. I sat down to play, and the dealer leaned in with full vampire intensity. I got so nervous I whispered, “Look, if you’re gonna drain me, at least comp my drinks.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear blackmail/casino premise with a decent camera twist, but the final tag weakens rather than tops the laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Specific, visual obsessive behavior gives this personality and clean escalation; the crimson/burgundy payoff is amusing but not a major punch."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "Understandable and on-prompt, but mostly setup and character description; the broken-machine turn is mild and the therapy ending feels generic."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Economical stage premise and a clean vampire/casino double meaning, though 'drain me' is a fairly foreseeable route once Dracula is introduced."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean casino-rewards-as-threat premise with a specific, well-timed closer ('Eat the shrimp'); solid but the blackmail-email conceit is a fairly familiar comic shape."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong misdirect (banned for sorting chips by shade, not gambling) with a vivid, specific final line ('crimson and burgundy, it's anarchy') that actually carries the laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "Rambling and generic obsessive-gambler bit; ends on a flat restatement ('intensity of a man possessed') rather than a real punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun Gothic-casino premise with a decent double-meaning closer ('drain me... comp my drinks'), though the vampire-dealer angle is a well-worn image."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise linking aggressive marketing to extortion with a solid, well-paced punchline."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent character work and escalation; the pathetic twists compound perfectly to deliver a memorable punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Feels like generic filler with cliché phrasing, a predictable twist, and a rhetorical punchline that doesn't land."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Competent setup and a decent punchline combining vampire tropes with casino comps, though the trajectory is fairly expected."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean premise and natural blackmail analogy that lands a solid mid-set chuckle."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong escalation through the wife reveal and final indifference punch."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Vivid obsessive image and solid tag, but the laugh stays mild."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Predictable vampire-casino framing with only a soft final line."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise and a solid final line; mildly funny, well‑built."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good escalation and a clear turn; lands a modest but real laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Strong angle and vivid image; funny, tidy, and well‑timed."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Straightforward and familiar; lacks a sharp turn or a punchy final beat."
+        }
+      ]
+    }
+  ]
+}

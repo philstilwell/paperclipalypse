@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Sun, 09 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Aug 10, 2026 - High Roller</title>
+      <link>https://paperclipalypse.com/runs/2026-08-10-external-real-2026-08-10.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-08-10-external-real-2026-08-10.html</guid>
+      <pubDate>Mon, 10 Aug 2026 12:00:00 GMT</pubDate>
+      <description>Winner: Claude Sonnet 4.6 (7.0). Aug 10, 2026 Paperclipalypse AI comedy round: High Roller. Claude Sonnet 4.6 won with 7.0. Seed terms: Gothic, Treasure Hunter, Casino, Being blackmailed, Perceptive, Obsessive.</description>
+      <category>Gothic</category>
+      <category>Treasure Hunter</category>
+      <category>Casino</category>
+      <category>Being blackmailed</category>
+      <category>Perceptive</category>
+      <category>Obsessive</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-08-10-external-real-2026-08-10.png" type="image/png" medium="image">
+        <media:title>High Roller</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled High Roller: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Aug 9, 2026 - Island Red Alert</title>
       <link>https://paperclipalypse.com/runs/2026-08-09-ext-real-2026-08-09.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-22-ext-real-2026-07-22.png" type="image/png" medium="image">
         <media:title>First Recital</media:title>
         <media:description>Paperclipalypse winning joke feature image titled First Recital: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Jul 21, 2026 - Nap Time Bounty</title>
-      <link>https://paperclipalypse.com/runs/2026-07-21-ext-real-2026-07-21.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-07-21-ext-real-2026-07-21.html</guid>
-      <pubDate>Tue, 21 Jul 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Claude Sonnet 4.6 (6.9). Jul 21, 2026 Paperclipalypse AI comedy round: Nap Time Bounty. Claude Sonnet 4.6 won with 6.9. Seed terms: Bounty Hunters, Babysitter, Airplane / Airport, A house fire, Studious, Temperamental.</description>
-      <category>Bounty Hunters</category>
-      <category>Babysitter</category>
-      <category>Airplane / Airport</category>
-      <category>A house fire</category>
-      <category>Studious</category>
-      <category>Temperamental</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-07-21-ext-real-2026-07-21.png" type="image/png" medium="image">
-        <media:title>Nap Time Bounty</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled Nap Time Bounty: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>
