@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-11-external-real-2026-08-11",
+  "seed": "external-real-2026-08-11",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-11T14:10:44.109Z",
+  "publishedDate": "2026-08-11",
+  "seedTerms": [
+    "Disaster",
+    "Teacher",
+    "Construction Site",
+    "Being thrust into the spotlight",
+    "Introverted",
+    "Oversensitive"
+  ],
+  "premise": {
+    "text": "Seed terms: Disaster, Teacher, Construction Site, Being thrust into the spotlight, Introverted, Oversensitive",
+    "seedTerms": [
+      "Disaster",
+      "Teacher",
+      "Construction Site",
+      "Being thrust into the spotlight",
+      "Introverted",
+      "Oversensitive"
+    ],
+    "displayText": "Measure Twice"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Measure Twice",
+      "seedTermsUsed": [
+        "Construction Site",
+        "Oversensitive"
+      ],
+      "joke": "I worked construction for a while, but I was way too sensitive for it. My foreman kept saying, “Measure twice, cut once.” Everyone else heard practical advice. I heard, “Your first instinct is worthless, and frankly, we’ve discussed this.”",
+      "setup": "",
+      "punchline": "I worked construction for a while, but I was way too sensitive for it. My foreman kept saying, “Measure twice, cut once.” Everyone else heard practical advice. I heard, “Your first instinct is worthless, and frankly, we’ve discussed this.”",
+      "text": "I worked construction for a while, but I was way too sensitive for it. My foreman kept saying, “Measure twice, cut once.” Everyone else heard practical advice. I heard, “Your first instinct is worthless, and frankly, we’ve discussed this.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Best Man by Accident",
+      "seedTermsUsed": [
+        "Introverted",
+        "Being thrust into the spotlight"
+      ],
+      "joke": "I'm painfully introverted. My idea of a wild night is turning my phone to Do Not Disturb and then also unplugging the router, just to be safe. Last month at my cousin's wedding, I'm minding my business, eating my third dinner roll, when the DJ grabs the mic and yells, 'Let's hear from the best man!' I'm not the best man. I'm barely a good man. I just froze and gave a toast that was legally just the word 'congratulations' repeated four times, getting quieter each time.",
+      "setup": "",
+      "punchline": "I'm painfully introverted. My idea of a wild night is turning my phone to Do Not Disturb and then also unplugging the router, just to be safe. Last month at my cousin's wedding, I'm minding my business, eating my third dinner roll, when the DJ grabs the mic and yells, 'Let's hear from the best man!' I'm not the best man. I'm barely a good man. I just froze and gave a toast that was legally just the word 'congratulations' repeated four times, getting quieter each time.",
+      "text": "I'm painfully introverted. My idea of a wild night is turning my phone to Do Not Disturb and then also unplugging the router, just to be safe. Last month at my cousin's wedding, I'm minding my business, eating my third dinner roll, when the DJ grabs the mic and yells, 'Let's hear from the best man!' I'm not the best man. I'm barely a good man. I just froze and gave a toast that was legally just the word 'congratulations' repeated four times, getting quieter each time."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Hall Pass",
+      "seedTermsUsed": [
+        "Teacher",
+        "Oversensitive"
+      ],
+      "joke": "I realized pretty quickly I was too oversensitive to be a teacher. An eight-year-old would raise his hand and ask, \"Can I go to the bathroom?\" and I’d immediately take it personally. \"Oh, am I boring you, Liam? Is my lesson on the Oregon Trail not engaging enough? You know what, just go. Take the hall pass. Take all of them. See if I care.\"",
+      "setup": "",
+      "punchline": "I realized pretty quickly I was too oversensitive to be a teacher. An eight-year-old would raise his hand and ask, \"Can I go to the bathroom?\" and I’d immediately take it personally. \"Oh, am I boring you, Liam? Is my lesson on the Oregon Trail not engaging enough? You know what, just go. Take the hall pass. Take all of them. See if I care.\"",
+      "text": "I realized pretty quickly I was too oversensitive to be a teacher. An eight-year-old would raise his hand and ask, \"Can I go to the bathroom?\" and I’d immediately take it personally. \"Oh, am I boring you, Liam? Is my lesson on the Oregon Trail not engaging enough? You know what, just go. Take the hall pass. Take all of them. See if I care.\""
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Funnier in My Head",
+      "seedTermsUsed": [
+        "Introverted",
+        "Being thrust into the spotlight"
+      ],
+      "joke": "As an introvert, I avoid the spotlight like the plague. So of course, during open mic night, my friends shoved me on stage. Being thrust into the spotlight with a mic and no material is pure terror. I stood there for ten seconds, then said, 'I'm funnier in my head,' and walked off to applause. They thought it was intentional. Now I'm booked for next week.",
+      "setup": "",
+      "punchline": "As an introvert, I avoid the spotlight like the plague. So of course, during open mic night, my friends shoved me on stage. Being thrust into the spotlight with a mic and no material is pure terror. I stood there for ten seconds, then said, 'I'm funnier in my head,' and walked off to applause. They thought it was intentional. Now I'm booked for next week.",
+      "text": "As an introvert, I avoid the spotlight like the plague. So of course, during open mic night, my friends shoved me on stage. Being thrust into the spotlight with a mic and no material is pure terror. I stood there for ten seconds, then said, 'I'm funnier in my head,' and walked off to applause. They thought it was intentional. Now I'm booked for next week."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Spotlight Panic",
+      "seedTermsUsed": [
+        "Being thrust into the spotlight",
+        "Introverted"
+      ],
+      "joke": "I’m so introverted that when my boss suddenly thrust me into the spotlight at a meeting, my whole body panicked. I tried to introduce myself, but all that came out was, “Hi, I’m… leaving now.” Then I walked straight out the door like I’d been fired by my own personality.",
+      "setup": "",
+      "punchline": "I’m so introverted that when my boss suddenly thrust me into the spotlight at a meeting, my whole body panicked. I tried to introduce myself, but all that came out was, “Hi, I’m… leaving now.” Then I walked straight out the door like I’d been fired by my own personality.",
+      "text": "I’m so introverted that when my boss suddenly thrust me into the spotlight at a meeting, my whole body panicked. I tried to introduce myself, but all that came out was, “Hi, I’m… leaving now.” Then I walked straight out the door like I’d been fired by my own personality."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong concrete wedding setup and good escalation. 'Barely a good man' and the increasingly quiet congratulations both land, though the introvert-freezing premise is familiar.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear, natural, and amusing, but the oversensitive-teacher reaction follows an expected path. The hall-pass escalation helps without producing a particularly sharp final turn.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and stage-ready, but it leans heavily on the supplied concepts and familiar introvert/open-mic material. The accidental-success ending is predictable and mildly amusing rather than strong.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Compact with clean rhythm and a solid final phrase. The abrupt self-introduction exit is a decent turn, though the anxious-introvert premise itself is conventional.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean reinterpretation gag with a real final line; solid but modest laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good escalation and specific detail (Liam, Oregon Trail); punchline is a touch predictable but lands.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Nice twist ending (booked for next week), but setup runs long before the turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Tight, quick, funny final image; economical stage rhythm works well.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Excellent reinterpretation of a common idiom to fit the oversensitive premise; extremely tight rhythm and a very strong punchline.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 9,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.3
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid imagery and good stage presence. The 'barely a good man' line is slightly tropey, but the fading 'congratulations' is a fun visual.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Reads more like an anecdotal story summary than stand-up. Relying on an accidental success cliché and verbatim seed terms weakens the humor significantly.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 4,
+          "total": 3.3000000000000003
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Falls into the generic office meeting template and clunkily forces the seed terms into the setup, though 'fired by my own personality' is a decent closing image.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 4.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clever personal twist on a familiar work proverb; clean and tight but the laugh stays mild.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong stage picture and diminishing toast; solid timing with a real visual payoff.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Natural overreaction rant with a clean exit line; familiar angle executed well enough to land.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clear premise and exit, but the turn is expected and the payoff too light to stick.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean angle with a sharp reinterpretation of the foreman’s line.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid escalation and a funny toast; a bit long but effective.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong character voice and a clear turn; reliably amusing.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Decent premise; the turn is familiar but lands a mild smile.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 7,
+      "rawScore": 7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.7,
+        "craft": 7.5,
+        "originality": 6.7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7.5,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean reinterpretation gag with a real final line; solid but modest laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.3,
+          "rawScore": 8.3,
+          "scoreAdjustment": 0,
+          "comment": "Excellent reinterpretation of a common idiom to fit the oversensitive premise; extremely tight rhythm and a very strong punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.6,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Clever personal twist on a familiar work proverb; clean and tight but the laugh stays mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Clean angle with a sharp reinterpretation of the foreman’s line."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "Strong concrete wedding setup and good escalation. 'Barely a good man' and the increasingly quiet congratulations both land, though the introvert-freezing premise is familiar."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Solid imagery and good stage presence. The 'barely a good man' line is slightly tropey, but the fading 'congratulations' is a fun visual."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong stage picture and diminishing toast; solid timing with a real visual payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Solid escalation and a funny toast; a bit long but effective."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.5,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.1,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0,
+          "comment": "Clear, natural, and amusing, but the oversensitive-teacher reaction follows an expected path. The hall-pass escalation helps without producing a particularly sharp final turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Good escalation and specific detail (Liam, Oregon Trail); punchline is a touch predictable but lands."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.7,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.2,
+          "comment": "Natural overreaction rant with a clean exit line; familiar angle executed well enough to land."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong character voice and a clear turn; reliably amusing."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.6,
+      "rawScore": 5.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5.2,
+        "craft": 6.2,
+        "originality": 5.4,
+        "promptFit": 7.4
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 5.5,
+        "promptFit": 7.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Compact with clean rhythm and a solid final phrase. The abrupt self-introduction exit is a decent turn, though the anxious-introvert premise itself is conventional."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Tight, quick, funny final image; economical stage rhythm works well."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.3,
+          "rawScore": 4.3,
+          "scoreAdjustment": 0,
+          "comment": "Falls into the generic office meeting template and clunkily forces the seed terms into the setup, though 'fired by my own personality' is a decent closing image."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise and exit, but the turn is expected and the payoff too light to stick."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.1,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.8,
+        "surprise": 4.8,
+        "craft": 5.3,
+        "originality": 4.6,
+        "promptFit": 7.1
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.8,
+        "craft": 5.3,
+        "originality": 4.5,
+        "promptFit": 7
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.1,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0,
+          "comment": "Understandable and stage-ready, but it leans heavily on the supplied concepts and familiar introvert/open-mic material. The accidental-success ending is predictable and mildly amusing rather than strong."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Nice twist ending (booked for next week), but setup runs long before the turn."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 3.3,
+          "rawScore": 3.3,
+          "scoreAdjustment": 0,
+          "comment": "Reads more like an anecdotal story summary than stand-up. Relying on an accidental success cliché and verbatim seed terms weakens the humor significantly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Decent premise; the turn is familiar but lands a mild smile."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-11-external-real-2026-08-11.png",
+    "originalSrc": "assets/feature-images/2026-08-11-external-real-2026-08-11.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Measure Twice: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - Measure Twice\nExact joke text to render in the right panel:\nI worked construction for a while, but I was way too sensitive for it. My foreman kept saying, “Measure twice, cut once.” Everyone else heard practical advice. I heard, “Your first instinct is worthless, and frankly, we’ve discussed this.”\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Disaster, Teacher, Construction Site, Being thrust into the spotlight, Introverted, Oversensitive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Disaster, Teacher, Construction Site, Being thrust into the spotlight, Introverted, Oversensitive. Use the winning joke titled \"Measure Twice\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 6.3,
+      "google": 6.2,
+      "xai": 6.4,
+      "copilot": 5.9
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-11-external-real-2026-08-11.md"
+}
