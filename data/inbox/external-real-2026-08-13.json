@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-13T14:02:27.913Z",
+  "publishedDate": "2026-08-13",
+  "seed": "external-real-2026-08-13",
+  "slug": "2026-08-13-external-real-2026-08-13",
+  "source": "manual-external",
+  "seedTerms": [
+    "Rural Settlement",
+    "Emergency Medical Responder",
+    "Motor Home",
+    "Sexual dysfunction",
+    "Thrifty",
+    "Volatile"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Retirement Plan",
+      "seedTermsUsed": [
+        "Motor Home",
+        "Thrifty"
+      ],
+      "joke": "I bought a used motor home because I’m cheap. The salesman said, “Think of all the money you’ll save on hotels.” He was right. Now instead of paying $150 a night for a room, I pay monthly for a vehicle that contains a tiny room, gets nine miles per gallon, and needs its own plumber. Apparently my retirement plan has cup holders.",
+      "setup": "",
+      "punchline": "I bought a used motor home because I’m cheap. The salesman said, “Think of all the money you’ll save on hotels.” He was right. Now instead of paying $150 a night for a room, I pay monthly for a vehicle that contains a tiny room, gets nine miles per gallon, and needs its own plumber. Apparently my retirement plan has cup holders.",
+      "text": "I bought a used motor home because I’m cheap. The salesman said, “Think of all the money you’ll save on hotels.” He was right. Now instead of paying $150 a night for a room, I pay monthly for a vehicle that contains a tiny room, gets nine miles per gallon, and needs its own plumber. Apparently my retirement plan has cup holders."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Thrifty Rescue",
+      "seedTermsUsed": [
+        "Emergency Medical Responder",
+        "Thrifty"
+      ],
+      "joke": "I’m an EMT, and my girlfriend says I’m thrifty. I call it triage for money. Last week she’s having chest pains, I check her pulse, check her breathing, then I go “okay, before we call the ambulance, let’s rule out cheaper causes.” She goes “like what?!” I said “like are you just mad about the thermostat again.”",
+      "setup": "",
+      "punchline": "I’m an EMT, and my girlfriend says I’m thrifty. I call it triage for money. Last week she’s having chest pains, I check her pulse, check her breathing, then I go “okay, before we call the ambulance, let’s rule out cheaper causes.” She goes “like what?!” I said “like are you just mad about the thermostat again.”",
+      "text": "I’m an EMT, and my girlfriend says I’m thrifty. I call it triage for money. Last week she’s having chest pains, I check her pulse, check her breathing, then I go “okay, before we call the ambulance, let’s rule out cheaper causes.” She goes “like what?!” I said “like are you just mad about the thermostat again.”"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Retirement Cruising",
+      "seedTermsUsed": [
+        "Motor Home",
+        "Volatile"
+      ],
+      "joke": "My parents just retired and bought a motor home. It sounds peaceful, but locking two people who have been married for forty years inside a rolling seventy-square-foot box is a highly volatile situation. You haven’t witnessed true domestic terror until you’re doing seventy miles an hour down the interstate, violently swerving because they’re arguing over whose turn it is to empty the chemical toilet.",
+      "setup": "",
+      "punchline": "My parents just retired and bought a motor home. It sounds peaceful, but locking two people who have been married for forty years inside a rolling seventy-square-foot box is a highly volatile situation. You haven’t witnessed true domestic terror until you’re doing seventy miles an hour down the interstate, violently swerving because they’re arguing over whose turn it is to empty the chemical toilet.",
+      "text": "My parents just retired and bought a motor home. It sounds peaceful, but locking two people who have been married for forty years inside a rolling seventy-square-foot box is a highly volatile situation. You haven’t witnessed true domestic terror until you’re doing seventy miles an hour down the interstate, violently swerving because they’re arguing over whose turn it is to empty the chemical toilet."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "RV Rescue",
+      "seedTermsUsed": [
+        "Emergency Medical Responder",
+        "Motor Home"
+      ],
+      "joke": "I’m an emergency medical responder, but the budget was tight so they issued me a motor home instead of an ambulance. Now when I roll up to a crash with the lights flashing, the first thing the injured guy asks is whether the fold-out couch is available and if I take reservations.",
+      "setup": "",
+      "punchline": "I’m an emergency medical responder, but the budget was tight so they issued me a motor home instead of an ambulance. Now when I roll up to a crash with the lights flashing, the first thing the injured guy asks is whether the fold-out couch is available and if I take reservations.",
+      "text": "I’m an emergency medical responder, but the budget was tight so they issued me a motor home instead of an ambulance. Now when I roll up to a crash with the lights flashing, the first thing the injured guy asks is whether the fold-out couch is available and if I take reservations."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Frugal First Aid",
+      "seedTermsUsed": [
+        "Emergency Medical Responder",
+        "Thrifty"
+      ],
+      "joke": "I’m so thrifty that when I took an emergency responder class, the instructor said, “Always use the best equipment available.” I nodded while cutting an old yoga mat into medical supplies. The patient asked if I was certified. I said, “Certified? No. But I can save your life for under eight dollars.”",
+      "setup": "",
+      "punchline": "I’m so thrifty that when I took an emergency responder class, the instructor said, “Always use the best equipment available.” I nodded while cutting an old yoga mat into medical supplies. The patient asked if I was certified. I said, “Certified? No. But I can save your life for under eight dollars.”",
+      "text": "I’m so thrifty that when I took an emergency responder class, the instructor said, “Always use the best equipment available.” I nodded while cutting an old yoga mat into medical supplies. The patient asked if I was certified. I said, “Certified? No. But I can save your life for under eight dollars.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong premise and escalation; the thermostat turn is specific, relatable, and lands cleanly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear setup and vivid image, but the chemical-toilet marital argument is more amusing exaggeration than sharp punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "The ambulance-to-motor-home substitution is a solid comic engine; reservations is a clean but fairly predictable payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Coherent escalation with a decent final line, but the cheap-medical-supplies premise never produces a particularly surprising turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid economy and a nice callback ending, but the cheap-RV premise is a well-worn lane."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Vivid, specific escalation (the chemical-toilet fight) gives it the sharpest turn and cleanest stage rhythm of the set."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Fun premise, but the fold-out-couch tag lands softer than it could and reads a bit rushed."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear setup and a decent deadpan close, but the yoga-mat bit telegraphs its own punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid stand-up rhythm and a well-crafted final punchline, though the premise of RVs being money pits is slightly familiar."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong conversational flow and dialogue. 'Triage for money' is a great concept, and the thermostat pivot is grounded and effectively lands the turn."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The setup relies on vague absurdity rather than an observable truth. Being issued a motor home instead of an ambulance is too cartoonish to anchor a believable stand-up bit."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The timeline of the joke jumps awkwardly from an emergency responder class directly to treating a patient, breaking the internal logic and weakening the delivery."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid thrifty-RV complaint with a clean closer, but the turn is familiar and the laugh is mild."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong misdirection from medical triage into domestic cheapness; timing and dialogue land cleanly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Vivid image of the chemical-toilet argument elevates a common RV-couple premise into a workable stage bit."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Concept is clear but the yoga-mat gag feels forced and the payoff stays at competent filler level."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear premise and tidy rhythm; mildly funny but predictable."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good first-person angle with a real turn; lands a modest laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Strong image and escalation; a solid, amusing domestic-chaos joke."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Fun premise but the punchline is lighter and more expected."
+        }
+      ]
+    }
+  ]
+}
