@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-15-external-real-2026-08-15",
+  "seed": "external-real-2026-08-15",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-15T15:10:59Z",
+  "publishedDate": "2026-08-15",
+  "seedTerms": [
+    "War and Military",
+    "Adventurer / Explorer",
+    "Parking Garage / Lot",
+    "Being given an ultimatum",
+    "Resourceful",
+    "Hypocritical"
+  ],
+  "premise": {
+    "text": "Seed terms: War and Military, Adventurer / Explorer, Parking Garage / Lot, Being given an ultimatum, Resourceful, Hypocritical",
+    "seedTerms": [
+      "War and Military",
+      "Adventurer / Explorer",
+      "Parking Garage / Lot",
+      "Being given an ultimatum",
+      "Resourceful",
+      "Hypocritical"
+    ],
+    "displayText": "Conflict Navigation"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Conflict Navigation",
+      "seedTermsUsed": [
+        "Parking Garage / Lot",
+        "Being given an ultimatum"
+      ],
+      "joke": "My wife gave me an ultimatum in a parking garage: “Ask someone where we parked or I’m walking home.” I said, “Go ahead.” She stormed off, hit the panic button, and our car started screaming two rows over. I don’t need directions; I need conflict.",
+      "setup": "",
+      "punchline": "My wife gave me an ultimatum in a parking garage: “Ask someone where we parked or I’m walking home.” I said, “Go ahead.” She stormed off, hit the panic button, and our car started screaming two rows over. I don’t need directions; I need conflict.",
+      "text": "My wife gave me an ultimatum in a parking garage: “Ask someone where we parked or I’m walking home.” I said, “Go ahead.” She stormed off, hit the panic button, and our car started screaming two rows over. I don’t need directions; I need conflict."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Level 4, Section C",
+      "seedTermsUsed": [
+        "Parking Garage / Lot",
+        "Being given an ultimatum"
+      ],
+      "joke": "My wife gave me an ultimatum: find the car in ten minutes or we're getting divorced. So I did what any explorer would do — I picked a direction and committed. Twenty minutes later I'm sweating, circling Level 4 like Magellan, and she goes, 'That's it, we're done.' I said, 'Fine, but you're taking the bus.'",
+      "setup": "",
+      "punchline": "My wife gave me an ultimatum: find the car in ten minutes or we're getting divorced. So I did what any explorer would do — I picked a direction and committed. Twenty minutes later I'm sweating, circling Level 4 like Magellan, and she goes, 'That's it, we're done.' I said, 'Fine, but you're taking the bus.'",
+      "text": "My wife gave me an ultimatum: find the car in ten minutes or we're getting divorced. So I did what any explorer would do — I picked a direction and committed. Twenty minutes later I'm sweating, circling Level 4 like Magellan, and she goes, 'That's it, we're done.' I said, 'Fine, but you're taking the bus.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Level 4B",
+      "seedTermsUsed": [
+        "Adventurer / Explorer",
+        "Parking Garage / Lot"
+      ],
+      "joke": "I lost my car in a six-story concrete parking garage yesterday, and after forty-five minutes of wandering, I stopped looking for my Honda Civic and started exploring uncharted territory like an 18th-century cartographer. I was claiming support pillars for the Spanish Crown and eating half an old granola bar from my pocket just to survive the harsh winter of Level 4B.",
+      "setup": "",
+      "punchline": "I lost my car in a six-story concrete parking garage yesterday, and after forty-five minutes of wandering, I stopped looking for my Honda Civic and started exploring uncharted territory like an 18th-century cartographer. I was claiming support pillars for the Spanish Crown and eating half an old granola bar from my pocket just to survive the harsh winter of Level 4B.",
+      "text": "I lost my car in a six-story concrete parking garage yesterday, and after forty-five minutes of wandering, I stopped looking for my Honda Civic and started exploring uncharted territory like an 18th-century cartographer. I was claiming support pillars for the Spanish Crown and eating half an old granola bar from my pocket just to survive the harsh winter of Level 4B."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Garage Magellan",
+      "seedTermsUsed": [
+        "Adventurer / Explorer",
+        "Parking Garage / Lot"
+      ],
+      "joke": "I like to think of myself as an explorer. Last weekend I took on the ultimate challenge: finding a parking spot in a downtown garage. After circling for an hour I finally claimed a space on the lowest level. I felt like Magellan—except Magellan didn’t have to pay twenty bucks to exit.",
+      "setup": "",
+      "punchline": "I like to think of myself as an explorer. Last weekend I took on the ultimate challenge: finding a parking spot in a downtown garage. After circling for an hour I finally claimed a space on the lowest level. I felt like Magellan—except Magellan didn’t have to pay twenty bucks to exit.",
+      "text": "I like to think of myself as an explorer. Last weekend I took on the ultimate challenge: finding a parking spot in a downtown garage. After circling for an hour I finally claimed a space on the lowest level. I felt like Magellan—except Magellan didn’t have to pay twenty bucks to exit."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Garage Ultimatum",
+      "seedTermsUsed": [
+        "Adventurer / Explorer",
+        "Being given an ultimatum"
+      ],
+      "joke": "I knew I’d taken the whole ‘explorer’ thing too far when my partner gave me an ultimatum in a parking garage. I’m wandering around like I’m mapping uncharted territory, and they’re yelling, “Either find the car or find a new ride home.” I said, “I’m close—I’ve discovered three exits and a suspicious puddle.”",
+      "setup": "",
+      "punchline": "I knew I’d taken the whole ‘explorer’ thing too far when my partner gave me an ultimatum in a parking garage. I’m wandering around like I’m mapping uncharted territory, and they’re yelling, “Either find the car or find a new ride home.” I said, “I’m close—I’ve discovered three exits and a suspicious puddle.”",
+      "text": "I knew I’d taken the whole ‘explorer’ thing too far when my partner gave me an ultimatum in a parking garage. I’m wandering around like I’m mapping uncharted territory, and they’re yelling, “Either find the car or find a new ride home.” I said, “I’m close—I’ve discovered three exits and a suspicious puddle.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear escalation and a decent final reversal, but the explorer/Magellan material introduces a third seed concept and the divorce premise feels mechanically exaggerated.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 5.500000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong sustained analogy with specific images and good escalation. The Spanish Crown and survival details give it more texture than a standard lost-car bit, though the ending is more amusing than sharply punchy.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean and understandable, but the Magellan comparison and expensive-parking payoff are both predictable. Competent filler rather than a memorable turn.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.300000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The suspicious-puddle tag has some comic specificity, but the joke uses parking garage, explorer, and ultimatum concepts, exceeding the required two. The structure is solid but familiar.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 5.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Good escalation, panic-button reveal lands well, sharp closing line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Premise is familiar and overstuffed with imagery; punchline is weak, more listing than landing.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean setup, Magellan tag is a nice concrete final beat though somewhat expected route.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Solid form but punchline (puddle/exits) is mild and doesn't fully snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Tightly constructed with a sharp twist on the ultimatum trope and a punchy closing line.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.7
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Accidentally leans on three seed concepts (ultimatum, parking garage, explorer), diluting prompt fit, and ends on a predictable relationship beat.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Very familiar premise and structure; the final comparison lands as mild observational filler.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 4.800000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Incorporates three seeds conceptually (explorer, ultimatum, parking garage) and finishes with a slightly soft list-of-observations punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 4.9
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise and clean close on conflict preference; panic-button turn is familiar but lands.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Three seed concepts; Magellan bit is stock and final line restates rather than snaps.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 3,
+          "total": 4.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Exact two seeds and some absurd escalation, but no sharp final laugh line.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Three seed concepts; mild discovery punch, competent but thin.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 3,
+          "total": 4.8
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise and a clean final turn; familiar but effective.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear escalation and first‑person rhythm; the ending lands mildly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fun imagery and a distinct angle; punchline is playful rather than sharp.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean and coherent but more predictable; a competent light joke.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.1,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0,
+          "comment": "Good escalation, panic-button reveal lands well, sharp closing line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.8,
+          "rawScore": 7.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Tightly constructed with a sharp twist on the ultimatum trope and a punchy closing line."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid premise and clean close on conflict preference; panic-button turn is familiar but lands."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Solid premise and a clean final turn; familiar but effective."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 6.2,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 6.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7,
+          "rawScore": 7,
+          "scoreAdjustment": 0,
+          "comment": "Strong sustained analogy with specific images and good escalation. The Spanish Crown and survival details give it more texture than a standard lost-car bit, though the ending is more amusing than sharply punchy."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 4.6,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0,
+          "comment": "Premise is familiar and overstuffed with imagery; punchline is weak, more listing than landing."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.4,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Exact two seeds and some absurd escalation, but no sharp final laugh line."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Fun imagery and a distinct angle; punchline is playful rather than sharp."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.5,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.6,
+        "craft": 6.1,
+        "originality": 4.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 6,
+        "originality": 4.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.3,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0,
+          "comment": "Clean and understandable, but the Magellan comparison and expensive-parking payoff are both predictable. Competent filler rather than a memorable turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Clean setup, Magellan tag is a nice concrete final beat though somewhat expected route."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.9,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.1,
+          "comment": "Very familiar premise and structure; the final comparison lands as mild observational filler."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Clean and coherent but more predictable; a competent light joke."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 5.2,
+      "rawScore": 5.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 4.8
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 4.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.5,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0,
+          "comment": "Clear escalation and a decent final reversal, but the explorer/Magellan material introduces a third seed concept and the divorce premise feels mechanically exaggerated."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.2,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Accidentally leans on three seed concepts (ultimatum, parking garage, explorer), diluting prompt fit, and ends on a predictable relationship beat."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 3.9,
+          "rawScore": 4.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Three seed concepts; Magellan bit is stock and final line restates rather than snaps."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear escalation and first‑person rhythm; the ending lands mildly."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.1,
+      "rawScore": 5.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5,
+        "craft": 5.5,
+        "originality": 5,
+        "promptFit": 4.7
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 5.5,
+        "originality": 5,
+        "promptFit": 4.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.5,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0,
+          "comment": "The suspicious-puddle tag has some comic specificity, but the joke uses parking garage, explorer, and ultimatum concepts, exceeding the required two. The structure is solid but familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.5,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0,
+          "comment": "Solid form but punchline (puddle/exits) is mild and doesn't fully snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Incorporates three seeds conceptually (explorer, ultimatum, parking garage) and finishes with a slightly soft list-of-observations punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 4.6,
+          "rawScore": 4.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Three seed concepts; mild discovery punch, competent but thin."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-15-external-real-2026-08-15.png",
+    "originalSrc": "assets/feature-images/2026-08-15-external-real-2026-08-15.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Conflict Navigation: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - Conflict Navigation\nExact joke text to render in the right panel:\nMy wife gave me an ultimatum in a parking garage: “Ask someone where we parked or I’m walking home.” I said, “Go ahead.” She stormed off, hit the panic button, and our car started screaming two rows over. I don’t need directions; I need conflict.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: War and Military, Adventurer / Explorer, Parking Garage / Lot, Being given an ultimatum, Resourceful, Hypocritical. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: War and Military, Adventurer / Explorer, Parking Garage / Lot, Being given an ultimatum, Resourceful, Hypocritical. Use the winning joke titled \"Conflict Navigation\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.4,
+      "google": 6.2,
+      "xai": 6.6,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-15-external-real-2026-08-15.md"
+}
