@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-16T18:07:47Z",
+  "publishedDate": "2026-08-16",
+  "seed": "external-real-2026-08-16",
+  "slug": "2026-08-16-external-real-2026-08-16",
+  "source": "manual-external",
+  "seedTerms": [
+    "Historical",
+    "Interpreter",
+    "Pet Store",
+    "A love interest moving on",
+    "Enthusiastic",
+    "Dishonest"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Moving Backward",
+      "seedTermsUsed": [
+        "Historical",
+        "A love interest moving on"
+      ],
+      "joke": "My girlfriend said she needed to move on, and two weeks later she started dating a Civil War reenactor. I didn’t take it well. Not because she found someone else—because apparently “moving on” meant 1863. I got replaced by a guy who spends every Saturday losing the same war on purpose.",
+      "setup": "",
+      "punchline": "My girlfriend said she needed to move on, and two weeks later she started dating a Civil War reenactor. I didn’t take it well. Not because she found someone else—because apparently “moving on” meant 1863. I got replaced by a guy who spends every Saturday losing the same war on purpose.",
+      "text": "My girlfriend said she needed to move on, and two weeks later she started dating a Civil War reenactor. I didn’t take it well. Not because she found someone else—because apparently “moving on” meant 1863. I got replaced by a guy who spends every Saturday losing the same war on purpose."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Closure at the Pet Store",
+      "seedTermsUsed": [
+        "Pet Store",
+        "A love interest moving on"
+      ],
+      "joke": "My ex texted me a picture of her new boyfriend. Then, an hour later, a picture of a puppy they just adopted together. I don't know which one hurt worse, but I did notice the puppy looked more excited to be there. So I went to a pet store, just to feel wanted by something with a heartbeat. Guy asks, 'Can I help you?' I said, 'Depends. Do any of these hamsters know how to commit?'",
+      "setup": "",
+      "punchline": "My ex texted me a picture of her new boyfriend. Then, an hour later, a picture of a puppy they just adopted together. I don't know which one hurt worse, but I did notice the puppy looked more excited to be there. So I went to a pet store, just to feel wanted by something with a heartbeat. Guy asks, 'Can I help you?' I said, 'Depends. Do any of these hamsters know how to commit?'",
+      "text": "My ex texted me a picture of her new boyfriend. Then, an hour later, a picture of a puppy they just adopted together. I don't know which one hurt worse, but I did notice the puppy looked more excited to be there. So I went to a pet store, just to feel wanted by something with a heartbeat. Guy asks, 'Can I help you?' I said, 'Depends. Do any of these hamsters know how to commit?'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Declaration of Separation",
+      "seedTermsUsed": [
+        "Historical",
+        "A love interest moving on"
+      ],
+      "joke": "My ex moved on and is now dating a historical reenactor. It’s impossible to compete with that kind of confidence. I called her to ask for my favorite hoodie back, and this guy picked up the phone in full character to inform me that the colonies had declared independence and my tea was in the harbor.",
+      "setup": "",
+      "punchline": "My ex moved on and is now dating a historical reenactor. It’s impossible to compete with that kind of confidence. I called her to ask for my favorite hoodie back, and this guy picked up the phone in full character to inform me that the colonies had declared independence and my tea was in the harbor.",
+      "text": "My ex moved on and is now dating a historical reenactor. It’s impossible to compete with that kind of confidence. I called her to ask for my favorite hoodie back, and this guy picked up the phone in full character to inform me that the colonies had declared independence and my tea was in the harbor."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Ex at the Pet Store",
+      "seedTermsUsed": [
+        "Pet Store",
+        "A love interest moving on"
+      ],
+      "joke": "I ran into my ex at the pet store last week. She's moving on—she was adopting a cat. I watched her for a second and thought, yeah, that tracks. Finally found a living thing that will ignore her the exact same way I did.",
+      "setup": "",
+      "punchline": "I ran into my ex at the pet store last week. She's moving on—she was adopting a cat. I watched her for a second and thought, yeah, that tracks. Finally found a living thing that will ignore her the exact same way I did.",
+      "text": "I ran into my ex at the pet store last week. She's moving on—she was adopting a cat. I watched her for a second and thought, yeah, that tracks. Finally found a living thing that will ignore her the exact same way I did."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Pet Store Rebound",
+      "seedTermsUsed": [
+        "Pet Store",
+        "A love interest moving on"
+      ],
+      "joke": "I realized my ex had fully moved on when the pet store clerk greeted me with, “Oh, you’re the guy she used to date.” She’s in there every week buying new toys for her dog, and I’m just standing there thinking, “Great, even her pets have a more stable relationship than I do.”",
+      "setup": "",
+      "punchline": "I realized my ex had fully moved on when the pet store clerk greeted me with, “Oh, you’re the guy she used to date.” She’s in there every week buying new toys for her dog, and I’m just standing there thinking, “Great, even her pets have a more stable relationship than I do.”",
+      "text": "I realized my ex had fully moved on when the pet store clerk greeted me with, “Oh, you’re the guy she used to date.” She’s in there every week buying new toys for her dog, and I’m just standing there thinking, “Great, even her pets have a more stable relationship than I do.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear first-person bit with a solid escalation, but the hamster 'commit' punchline is a familiar relationship-wordplay turn rather than a strong surprise."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong premise, economical escalation, and a vivid final image. The independence/tea payoff lands cleanly and carries the joke."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Tight and stage-ready, with a clean reversal, though the joke about cats ignoring people is familiar enough to limit surprise and originality."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Competent and understandable, but the final comparison about pets having a more stable relationship is predictable and does not sharpen into a strong punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clean escalation from breakup to reenactor absurdity; strong closing image of losing the same war on purpose."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "The in-character phone bit with specific colonial details is the freshest turn in the batch; punchline lands cleanly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Competent but the 'ignore her too' comparison is a familiar pet-joke shape; mild payoff only."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Setup is fine but the pet-relationship-stability comparison is a stock punchline structure; underwhelming snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Sharp misdirection on 'moving on' with a clean, punchy closing tag that carries authentic stage timing."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent narrative buildup, but the hamster punchline lands on a very predictable self-pity trope."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid misdirection flipping the criticism back onto the speaker, though the cat aloofness premise is familiar."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Lacks logical snap in the turn; the closing observation feels generic and fails to resolve the setup cleanly."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clean premise and solid final image of deliberate historical failure; payoff lands without excess."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Decent escalation to the pet-store ask, but the commitment line is familiar and only mildly surprising."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Character phone bit is clear but leans on an expected Revolutionary gag; competent timing, limited snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Observation stays thin and ends on a generic comparison; little turn or stage energy."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise and a solid historical angle; the final line lands mildly."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Relatable escalation and a tidy closer; familiar but effective."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Fun imagery, though the punchline leans more whimsical than sharp."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Short and coherent, but the turn is predictable and light."
+        }
+      ]
+    }
+  ]
+}
