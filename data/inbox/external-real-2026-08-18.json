@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-18T14:02:19.290Z",
+  "publishedDate": "2026-08-18",
+  "seed": "external-real-2026-08-18",
+  "slug": "2026-08-18-external-real-2026-08-18",
+  "source": "manual-external",
+  "seedTerms": [
+    "Bio and Nanopunk",
+    "Party Planner",
+    "River / Creek",
+    "A prank going wrong",
+    "Bold",
+    "Extravagant"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "The Surprise",
+      "seedTermsUsed": [
+        "Party Planner",
+        "A prank going wrong"
+      ],
+      "joke": "I hired a party planner who said, “Do you trust me?” Apparently her big prank was telling all my guests the party started two hours earlier. By the time I arrived, they’d eaten, sung “Happy Birthday,” and gone home. Technically, she delivered exactly what I paid for: a surprise party where I was the surprise.",
+      "setup": "",
+      "punchline": "I hired a party planner who said, “Do you trust me?” Apparently her big prank was telling all my guests the party started two hours earlier. By the time I arrived, they’d eaten, sung “Happy Birthday,” and gone home. Technically, she delivered exactly what I paid for: a surprise party where I was the surprise.",
+      "text": "I hired a party planner who said, “Do you trust me?” Apparently her big prank was telling all my guests the party started two hours earlier. By the time I arrived, they’d eaten, sung “Happy Birthday,” and gone home. Technically, she delivered exactly what I paid for: a surprise party where I was the surprise."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Surprise Party Physics",
+      "seedTermsUsed": [
+        "Party Planner",
+        "A prank going wrong"
+      ],
+      "joke": "I planned my husband's fortieth as a surprise. We hid in the dark, waiting. He walks in, I jump out screaming, and he punches me on pure instinct. Full haymaker. So now the surprise is on me, in urgent care, telling a nurse 'birthday party' while she writes down 'domestic incident' and looks at me like I'm the one lying about the balloons.",
+      "setup": "",
+      "punchline": "I planned my husband's fortieth as a surprise. We hid in the dark, waiting. He walks in, I jump out screaming, and he punches me on pure instinct. Full haymaker. So now the surprise is on me, in urgent care, telling a nurse 'birthday party' while she writes down 'domestic incident' and looks at me like I'm the one lying about the balloons.",
+      "text": "I planned my husband's fortieth as a surprise. We hid in the dark, waiting. He walks in, I jump out screaming, and he punches me on pure instinct. Full haymaker. So now the surprise is on me, in urgent care, telling a nurse 'birthday party' while she writes down 'domestic incident' and looks at me like I'm the one lying about the balloons."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Cover Charge",
+      "seedTermsUsed": [
+        "Party Planner",
+        "A prank going wrong"
+      ],
+      "joke": "Being a professional party planner ruins your ability to pull a simple prank. I tried setting up the classic bucket of water over the door to soak my husband. But my professional instincts took over. By the time he walked through, it was San Pellegrino with a lemon twist, and I charged him a fifty-dollar cover just to get into our own bathroom.",
+      "setup": "",
+      "punchline": "Being a professional party planner ruins your ability to pull a simple prank. I tried setting up the classic bucket of water over the door to soak my husband. But my professional instincts took over. By the time he walked through, it was San Pellegrino with a lemon twist, and I charged him a fifty-dollar cover just to get into our own bathroom.",
+      "text": "Being a professional party planner ruins your ability to pull a simple prank. I tried setting up the classic bucket of water over the door to soak my husband. But my professional instincts took over. By the time he walked through, it was San Pellegrino with a lemon twist, and I charged him a fifty-dollar cover just to get into our own bathroom."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Anniversary Overdraft",
+      "seedTermsUsed": [
+        "Extravagant",
+        "A prank going wrong"
+      ],
+      "joke": "I wanted to do something extravagant for our anniversary, so I staged a huge prank. Fake lottery win, actors with a giant check, balloons, champagne—the whole production. She was so excited she quit her job on the spot. The prank went wrong the next morning when the bank called. Now the only extravagant thing in our life is the size of the overdraft.",
+      "setup": "",
+      "punchline": "I wanted to do something extravagant for our anniversary, so I staged a huge prank. Fake lottery win, actors with a giant check, balloons, champagne—the whole production. She was so excited she quit her job on the spot. The prank went wrong the next morning when the bank called. Now the only extravagant thing in our life is the size of the overdraft.",
+      "text": "I wanted to do something extravagant for our anniversary, so I staged a huge prank. Fake lottery win, actors with a giant check, balloons, champagne—the whole production. She was so excited she quit her job on the spot. The prank went wrong the next morning when the bank called. Now the only extravagant thing in our life is the size of the overdraft."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Creek Catastrophe",
+      "seedTermsUsed": [
+        "River / Creek",
+        "A prank going wrong"
+      ],
+      "joke": "I tried to pull a harmless prank on my buddy during our creek hike—just a little splash to scare him. But I slipped, windmilled like a malfunctioning lawn ornament, and landed face-first in the water. He didn’t even help me up. He just said, “Man, if that was the prank, the creek already got you back.”",
+      "setup": "",
+      "punchline": "I tried to pull a harmless prank on my buddy during our creek hike—just a little splash to scare him. But I slipped, windmilled like a malfunctioning lawn ornament, and landed face-first in the water. He didn’t even help me up. He just said, “Man, if that was the prank, the creek already got you back.”",
+      "text": "I tried to pull a harmless prank on my buddy during our creek hike—just a little splash to scare him. But I slipped, windmilled like a malfunctioning lawn ornament, and landed face-first in the water. He didn’t even help me up. He just said, “Man, if that was the prank, the creek already got you back.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong escalation from surprise party to urgent-care misunderstanding; the balloons tag sharpens an already solid punchline."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "The upscale-prank transformation is unexpected and coherent; San Pellegrino and the bathroom cover charge provide good escalating specifics."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear premise and structure, but fake-lottery disaster is familiar and the overdraft ending is only loosely connected to the strongest comic consequence."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Understandable slapstick with clean first-person form, but the fall is predictable and the final line mostly explains the reversal rather than adding a stronger turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean setup, tight escalation, and a solid pun-payoff ('I was the surprise'); works but the twist is telegraphed a beat early."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Vivid professional-deformation angle, concrete image (San Pellegrino, lemon twist) and a sharp closing overcharge line; best-constructed of the batch."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid extravagance-backfires structure, but the overdraft punchline is the expected outcome rather than a genuine swerve."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Nice 'malfunctioning lawn ornament' image, but the prankster-gets-pranked outcome is predictable and the closer lands soft."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent logic and clean rhythm, but the final line lands more like an intellectual semantic tidy-up than a punchy laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Vivid stage imagery and excellent escalation. The urgent care nurse detail grounds the bit effectively with a sharp, natural tag."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Predictable trajectory with a literal recital of the prompt seeds ('extravagant', 'prank went wrong') and a flat financial punchline."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Standard slapstick setup with strained simile work. The dialogue punchline feels like a generic wrap-up rather than a genuine turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean final line lands a mild smile; premise is serviceable but familiar."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 4,
+          "laugh": 7,
+          "comment": "Solid physical turn and nurse beat; only one clear seed concept."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Professional instinct override gives a clean, image-driven payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Predictable slip-and-fall; final line merely restates the mishap."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise and tidy closer; mildly funny and coherent."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Strong escalation and a clear turn; lands with a real joke feel."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun angle with upscale prank imagery; solid but not sharply surprising."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 6,
+          "laugh": 6,
+          "comment": "Clear setup and a neat financial turn; prompt fit slightly lower with one seed concept."
+        }
+      ]
+    }
+  ]
+}

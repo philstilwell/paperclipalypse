@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-18-external-real-2026-08-18",
+  "seed": "external-real-2026-08-18",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-18T14:02:19.290Z",
+  "publishedDate": "2026-08-18",
+  "seedTerms": [
+    "Bio and Nanopunk",
+    "Party Planner",
+    "River / Creek",
+    "A prank going wrong",
+    "Bold",
+    "Extravagant"
+  ],
+  "premise": {
+    "text": "Seed terms: Bio and Nanopunk, Party Planner, River / Creek, A prank going wrong, Bold, Extravagant",
+    "seedTerms": [
+      "Bio and Nanopunk",
+      "Party Planner",
+      "River / Creek",
+      "A prank going wrong",
+      "Bold",
+      "Extravagant"
+    ],
+    "displayText": "The Cover Charge"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "The Surprise",
+      "seedTermsUsed": [
+        "Party Planner",
+        "A prank going wrong"
+      ],
+      "joke": "I hired a party planner who said, “Do you trust me?” Apparently her big prank was telling all my guests the party started two hours earlier. By the time I arrived, they’d eaten, sung “Happy Birthday,” and gone home. Technically, she delivered exactly what I paid for: a surprise party where I was the surprise.",
+      "setup": "",
+      "punchline": "I hired a party planner who said, “Do you trust me?” Apparently her big prank was telling all my guests the party started two hours earlier. By the time I arrived, they’d eaten, sung “Happy Birthday,” and gone home. Technically, she delivered exactly what I paid for: a surprise party where I was the surprise.",
+      "text": "I hired a party planner who said, “Do you trust me?” Apparently her big prank was telling all my guests the party started two hours earlier. By the time I arrived, they’d eaten, sung “Happy Birthday,” and gone home. Technically, she delivered exactly what I paid for: a surprise party where I was the surprise."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Surprise Party Physics",
+      "seedTermsUsed": [
+        "Party Planner",
+        "A prank going wrong"
+      ],
+      "joke": "I planned my husband's fortieth as a surprise. We hid in the dark, waiting. He walks in, I jump out screaming, and he punches me on pure instinct. Full haymaker. So now the surprise is on me, in urgent care, telling a nurse 'birthday party' while she writes down 'domestic incident' and looks at me like I'm the one lying about the balloons.",
+      "setup": "",
+      "punchline": "I planned my husband's fortieth as a surprise. We hid in the dark, waiting. He walks in, I jump out screaming, and he punches me on pure instinct. Full haymaker. So now the surprise is on me, in urgent care, telling a nurse 'birthday party' while she writes down 'domestic incident' and looks at me like I'm the one lying about the balloons.",
+      "text": "I planned my husband's fortieth as a surprise. We hid in the dark, waiting. He walks in, I jump out screaming, and he punches me on pure instinct. Full haymaker. So now the surprise is on me, in urgent care, telling a nurse 'birthday party' while she writes down 'domestic incident' and looks at me like I'm the one lying about the balloons."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Cover Charge",
+      "seedTermsUsed": [
+        "Party Planner",
+        "A prank going wrong"
+      ],
+      "joke": "Being a professional party planner ruins your ability to pull a simple prank. I tried setting up the classic bucket of water over the door to soak my husband. But my professional instincts took over. By the time he walked through, it was San Pellegrino with a lemon twist, and I charged him a fifty-dollar cover just to get into our own bathroom.",
+      "setup": "",
+      "punchline": "Being a professional party planner ruins your ability to pull a simple prank. I tried setting up the classic bucket of water over the door to soak my husband. But my professional instincts took over. By the time he walked through, it was San Pellegrino with a lemon twist, and I charged him a fifty-dollar cover just to get into our own bathroom.",
+      "text": "Being a professional party planner ruins your ability to pull a simple prank. I tried setting up the classic bucket of water over the door to soak my husband. But my professional instincts took over. By the time he walked through, it was San Pellegrino with a lemon twist, and I charged him a fifty-dollar cover just to get into our own bathroom."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Anniversary Overdraft",
+      "seedTermsUsed": [
+        "Extravagant",
+        "A prank going wrong"
+      ],
+      "joke": "I wanted to do something extravagant for our anniversary, so I staged a huge prank. Fake lottery win, actors with a giant check, balloons, champagne—the whole production. She was so excited she quit her job on the spot. The prank went wrong the next morning when the bank called. Now the only extravagant thing in our life is the size of the overdraft.",
+      "setup": "",
+      "punchline": "I wanted to do something extravagant for our anniversary, so I staged a huge prank. Fake lottery win, actors with a giant check, balloons, champagne—the whole production. She was so excited she quit her job on the spot. The prank went wrong the next morning when the bank called. Now the only extravagant thing in our life is the size of the overdraft.",
+      "text": "I wanted to do something extravagant for our anniversary, so I staged a huge prank. Fake lottery win, actors with a giant check, balloons, champagne—the whole production. She was so excited she quit her job on the spot. The prank went wrong the next morning when the bank called. Now the only extravagant thing in our life is the size of the overdraft."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Creek Catastrophe",
+      "seedTermsUsed": [
+        "River / Creek",
+        "A prank going wrong"
+      ],
+      "joke": "I tried to pull a harmless prank on my buddy during our creek hike—just a little splash to scare him. But I slipped, windmilled like a malfunctioning lawn ornament, and landed face-first in the water. He didn’t even help me up. He just said, “Man, if that was the prank, the creek already got you back.”",
+      "setup": "",
+      "punchline": "I tried to pull a harmless prank on my buddy during our creek hike—just a little splash to scare him. But I slipped, windmilled like a malfunctioning lawn ornament, and landed face-first in the water. He didn’t even help me up. He just said, “Man, if that was the prank, the creek already got you back.”",
+      "text": "I tried to pull a harmless prank on my buddy during our creek hike—just a little splash to scare him. But I slipped, windmilled like a malfunctioning lawn ornament, and landed face-first in the water. He didn’t even help me up. He just said, “Man, if that was the prank, the creek already got you back.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong escalation from surprise party to urgent-care misunderstanding; the balloons tag sharpens an already solid punchline.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "The upscale-prank transformation is unexpected and coherent; San Pellegrino and the bathroom cover charge provide good escalating specifics.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear premise and structure, but fake-lottery disaster is familiar and the overdraft ending is only loosely connected to the strongest comic consequence.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Understandable slapstick with clean first-person form, but the fall is predictable and the final line mostly explains the reversal rather than adding a stronger turn.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.2
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup, tight escalation, and a solid pun-payoff ('I was the surprise'); works but the twist is telegraphed a beat early.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid professional-deformation angle, concrete image (San Pellegrino, lemon twist) and a sharp closing overcharge line; best-constructed of the batch.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid extravagance-backfires structure, but the overdraft punchline is the expected outcome rather than a genuine swerve.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Nice 'malfunctioning lawn ornament' image, but the prankster-gets-pranked outcome is predictable and the closer lands soft.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Competent logic and clean rhythm, but the final line lands more like an intellectual semantic tidy-up than a punchy laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Vivid stage imagery and excellent escalation. The urgent care nurse detail grounds the bit effectively with a sharp, natural tag.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Predictable trajectory with a literal recital of the prompt seeds ('extravagant', 'prank went wrong') and a flat financial punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Standard slapstick setup with strained simile work. The dialogue punchline feels like a generic wrap-up rather than a genuine turn.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.5
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean final line lands a mild smile; premise is serviceable but familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid physical turn and nurse beat; only one clear seed concept.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 4,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Professional instinct override gives a clean, image-driven payoff.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Predictable slip-and-fall; final line merely restates the mishap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise and tidy closer; mildly funny and coherent.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong escalation and a clear turn; lands with a real joke feel.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fun angle with upscale prank imagery; solid but not sharply surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear setup and a neat financial turn; prompt fit slightly lower with one seed concept.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 6,
+          "total": 6
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.2,
+      "rawScore": 7.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 7.2,
+        "craft": 7,
+        "originality": 7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7.3,
+        "craft": 7,
+        "originality": 7,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.3,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.2,
+          "comment": "The upscale-prank transformation is unexpected and coherent; San Pellegrino and the bathroom cover charge provide good escalating specifics."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 8.1,
+          "rawScore": 8.1,
+          "scoreAdjustment": 0,
+          "comment": "Vivid professional-deformation angle, concrete image (San Pellegrino, lemon twist) and a sharp closing overcharge line; best-constructed of the batch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0,
+          "comment": "Professional instinct override gives a clean, image-driven payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Fun angle with upscale prank imagery; solid but not sharply surprising."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong escalation from surprise party to urgent-care misunderstanding; the balloons tag sharpens an already solid punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.4,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Vivid stage imagery and excellent escalation. The urgent care nurse detail grounds the bit effectively with a sharp, natural tag."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.6,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0,
+          "comment": "Solid physical turn and nurse beat; only one clear seed concept."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong escalation and a clear turn; lands with a real joke feel."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 7.4,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0,
+          "comment": "Clean setup, tight escalation, and a solid pun-payoff ('I was the surprise'); works but the twist is telegraphed a beat early."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Competent logic and clean rhythm, but the final line lands more like an intellectual semantic tidy-up than a punchy laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Clean final line lands a mild smile; premise is serviceable but familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean premise and tidy closer; mildly funny and coherent."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.6,
+      "rawScore": 5.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5.2,
+        "craft": 5.7,
+        "originality": 5.2,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 5.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.5,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise and structure, but fake-lottery disaster is familiar and the overdraft ending is only loosely connected to the strongest comic consequence."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Solid extravagance-backfires structure, but the overdraft punchline is the expected outcome rather than a genuine swerve."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.5,
+          "rawScore": 4.4,
+          "scoreAdjustment": 0.1,
+          "comment": "Predictable trajectory with a literal recital of the prompt seeds ('extravagant', 'prank went wrong') and a flat financial punchline."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear setup and a neat financial turn; prompt fit slightly lower with one seed concept."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.2,
+      "rawScore": 5.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.7,
+        "surprise": 4.2,
+        "craft": 5.5,
+        "originality": 4.7,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.3,
+        "craft": 5.5,
+        "originality": 4.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Understandable slapstick with clean first-person form, but the fall is predictable and the final line mostly explains the reversal rather than adding a stronger turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.7,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0,
+          "comment": "Nice 'malfunctioning lawn ornament' image, but the prankster-gets-pranked outcome is predictable and the closer lands soft."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.6,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.1,
+          "comment": "Standard slapstick setup with strained simile work. The dialogue punchline feels like a generic wrap-up rather than a genuine turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.5,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0,
+          "comment": "Predictable slip-and-fall; final line merely restates the mishap."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-18-external-real-2026-08-18.png",
+    "originalSrc": "assets/feature-images/2026-08-18-external-real-2026-08-18.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Cover Charge: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - The Cover Charge\nExact joke text to render in the right panel:\nBeing a professional party planner ruins your ability to pull a simple prank. I tried setting up the classic bucket of water over the door to soak my husband. But my professional instincts took over. By the time he walked through, it was San Pellegrino with a lemon twist, and I charged him a fifty-dollar cover just to get into our own bathroom.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Bio and Nanopunk, Party Planner, River / Creek, A prank going wrong, Bold, Extravagant. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Bio and Nanopunk, Party Planner, River / Creek, A prank going wrong, Bold, Extravagant. Use the winning joke titled \"The Cover Charge\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.4,
+      "anthropic": 6.3,
+      "google": 6.1,
+      "xai": 6.2,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-18-external-real-2026-08-18.md"
+}
