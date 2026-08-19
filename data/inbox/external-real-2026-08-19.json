@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-19T14:02:12.439Z",
+  "publishedDate": "2026-08-19",
+  "seed": "external-real-2026-08-19",
+  "slug": "2026-08-19-external-real-2026-08-19",
+  "source": "manual-external",
+  "seedTerms": [
+    "Medical",
+    "Stock Market Trader",
+    "Backyard",
+    "Being scammed",
+    "Trusting",
+    "Catty"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Second Opinion",
+      "seedTermsUsed": [
+        "Medical",
+        "Being scammed"
+      ],
+      "joke": "I got scammed by a guy pretending to be a doctor. He examined me, prescribed something, and charged me forty bucks. I only figured it out when my insurance company called and said, \"Sir, no legitimate American doctor would let you leave with both kidneys and your savings.\"",
+      "setup": "",
+      "punchline": "I got scammed by a guy pretending to be a doctor. He examined me, prescribed something, and charged me forty bucks. I only figured it out when my insurance company called and said, \"Sir, no legitimate American doctor would let you leave with both kidneys and your savings.\"",
+      "text": "I got scammed by a guy pretending to be a doctor. He examined me, prescribed something, and charged me forty bucks. I only figured it out when my insurance company called and said, \"Sir, no legitimate American doctor would let you leave with both kidneys and your savings.\""
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Doctor's Orders",
+      "seedTermsUsed": [
+        "Medical",
+        "Trusting"
+      ],
+      "joke": "I trust doctors way too much. Any doctor. I went in for a routine checkup, guy I'd never met starts pressing on my stomach going 'does this hurt?' and I said 'a little' and he said 'good, means it's working,' and I just nodded like that was a sentence. He could've said 'we're removing your soul, insurance covers half,' and I'd have said thank you and asked if I could drive myself home.",
+      "setup": "",
+      "punchline": "I trust doctors way too much. Any doctor. I went in for a routine checkup, guy I'd never met starts pressing on my stomach going 'does this hurt?' and I said 'a little' and he said 'good, means it's working,' and I just nodded like that was a sentence. He could've said 'we're removing your soul, insurance covers half,' and I'd have said thank you and asked if I could drive myself home.",
+      "text": "I trust doctors way too much. Any doctor. I went in for a routine checkup, guy I'd never met starts pressing on my stomach going 'does this hurt?' and I said 'a little' and he said 'good, means it's working,' and I just nodded like that was a sentence. He could've said 'we're removing your soul, insurance covers half,' and I'd have said thank you and asked if I could drive myself home."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Day Trading Dad",
+      "seedTermsUsed": [
+        "Stock Market Trader",
+        "Backyard"
+      ],
+      "joke": "My brother quit his job to become a full-time stock market day trader, which basically means he loses three thousand dollars before noon and then aggressively mows the lawn so my mom thinks he had a productive day. Yesterday he bought fifty shares of a biotech startup, panicked, and turned our entire backyard into a putting green.",
+      "setup": "",
+      "punchline": "My brother quit his job to become a full-time stock market day trader, which basically means he loses three thousand dollars before noon and then aggressively mows the lawn so my mom thinks he had a productive day. Yesterday he bought fifty shares of a biotech startup, panicked, and turned our entire backyard into a putting green.",
+      "text": "My brother quit his job to become a full-time stock market day trader, which basically means he loses three thousand dollars before noon and then aggressively mows the lawn so my mom thinks he had a productive day. Yesterday he bought fifty shares of a biotech startup, panicked, and turned our entire backyard into a putting green."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Too Trusting",
+      "seedTermsUsed": [
+        "Being scammed",
+        "Trusting"
+      ],
+      "joke": "I'm way too trusting. Some guy texts me out of the blue: congrats, you've won a free cruise, just cover the small admin fee. I send the money. Three days later it hits me - the only destination I'm booked for is a one-way trip to being scammed.",
+      "setup": "",
+      "punchline": "I'm way too trusting. Some guy texts me out of the blue: congrats, you've won a free cruise, just cover the small admin fee. I send the money. Three days later it hits me - the only destination I'm booked for is a one-way trip to being scammed.",
+      "text": "I'm way too trusting. Some guy texts me out of the blue: congrats, you've won a free cruise, just cover the small admin fee. I send the money. Three days later it hits me - the only destination I'm booked for is a one-way trip to being scammed."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Backyard Tips",
+      "seedTermsUsed": [
+        "Stock Market Trader",
+        "Being scammed"
+      ],
+      "joke": "I tried hiring this guy who said he was a former stock trader to help me fix my backyard. He kept pointing at random patches of dirt saying, \"Huge growth potential right here.\" I trusted him - big mistake. Two weeks later I realized I'd basically paid him to bury my own money... and the dirt still looks bearish.",
+      "setup": "",
+      "punchline": "I tried hiring this guy who said he was a former stock trader to help me fix my backyard. He kept pointing at random patches of dirt saying, \"Huge growth potential right here.\" I trusted him - big mistake. Two weeks later I realized I'd basically paid him to bury my own money... and the dirt still looks bearish.",
+      "text": "I tried hiring this guy who said he was a former stock trader to help me fix my backyard. He kept pointing at random patches of dirt saying, \"Huge growth potential right here.\" I trusted him - big mistake. Two weeks later I realized I'd basically paid him to bury my own money... and the dirt still looks bearish."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong escalating premise with natural stage rhythm; the soul/insurance turn is memorable and the final tag lands cleanly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "The aggressive lawn-mowing image is funny and relatable, but the putting-green ending escalates more than it surprises."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 2,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 3,
+          "comment": "Clear and properly fitted, but the punchline merely labels the obvious scam and largely restates the setup."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 3,
+          "laugh": 6,
+          "comment": "Several decent finance/yard wordplays culminate in a solid bearish tag, but the joke also clearly uses Backyard and Trusting, exceeding the required two seed concepts."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean setup-turn-punchline with a strong closing line; two seed concepts used cleanly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Relatable escalation from day-trading to backyard putting green; solid but familiar comic shape."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 5,
+          "laugh": 4,
+          "comment": "Trusting and being-scammed collapse into the same idea; punchline mostly restates the setup rather than turning it."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 3,
+          "laugh": 6,
+          "comment": "Decent bearish-dirt pun, but the joke actually deploys four seed concepts (trader, backyard, scammed, trusting), violating the two-concept limit."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Sharp healthcare billing angle; the turn lands cleanly with good comic rhythm and adheres strictly to two seeds."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong conversational stand-up voice with believable escalation; the tag about driving oneself home sells the compliance well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 2,
+          "surprise": 2,
+          "craft": 3,
+          "promptFit": 7,
+          "laugh": 3,
+          "comment": "Tautological punchline that just restates the setup and recites the seed concept without an actual twist or comedic payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 3,
+          "laugh": 4,
+          "comment": "Overstuffed with four seed concepts (stock trader, backyard, trusting, scammed); puns feel mechanically assembled rather than spoken."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid insurance-call closer on the fake-doctor scam, though the organ-theft route is a well-worn path."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Effective escalation from the stomach poke to the soul-removal hypothetical with clean first-person rhythm."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "The lawn-mowing cover-up is amusing but the sudden putting-green pivot feels under-motivated."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 3,
+          "laugh": 5,
+          "comment": "Four seed concepts appear, and the bearish-dirt closer is strained wordplay that never fully lands."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "A clean setup with a playful insurance twist that delivers a mild, coherent laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Strong first-person pacing and escalation make the absurd trust angle land smoothly."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "The vivid backyard transformation gives the joke a memorable, genuinely funny turn."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "The punchline simply restates the premise, keeping the joke competent but predictable."
+        }
+      ]
+    }
+  ]
+}

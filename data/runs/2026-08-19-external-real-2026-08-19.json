@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-19-external-real-2026-08-19",
+  "seed": "external-real-2026-08-19",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-19T14:02:12.439Z",
+  "publishedDate": "2026-08-19",
+  "seedTerms": [
+    "Medical",
+    "Stock Market Trader",
+    "Backyard",
+    "Being scammed",
+    "Trusting",
+    "Catty"
+  ],
+  "premise": {
+    "text": "Seed terms: Medical, Stock Market Trader, Backyard, Being scammed, Trusting, Catty",
+    "seedTerms": [
+      "Medical",
+      "Stock Market Trader",
+      "Backyard",
+      "Being scammed",
+      "Trusting",
+      "Catty"
+    ],
+    "displayText": "Doctor's Orders"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-6"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Second Opinion",
+      "seedTermsUsed": [
+        "Medical",
+        "Being scammed"
+      ],
+      "joke": "I got scammed by a guy pretending to be a doctor. He examined me, prescribed something, and charged me forty bucks. I only figured it out when my insurance company called and said, \"Sir, no legitimate American doctor would let you leave with both kidneys and your savings.\"",
+      "setup": "",
+      "punchline": "I got scammed by a guy pretending to be a doctor. He examined me, prescribed something, and charged me forty bucks. I only figured it out when my insurance company called and said, \"Sir, no legitimate American doctor would let you leave with both kidneys and your savings.\"",
+      "text": "I got scammed by a guy pretending to be a doctor. He examined me, prescribed something, and charged me forty bucks. I only figured it out when my insurance company called and said, \"Sir, no legitimate American doctor would let you leave with both kidneys and your savings.\""
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "claude-sonnet-4-6",
+      "title": "Doctor's Orders",
+      "seedTermsUsed": [
+        "Medical",
+        "Trusting"
+      ],
+      "joke": "I trust doctors way too much. Any doctor. I went in for a routine checkup, guy I'd never met starts pressing on my stomach going 'does this hurt?' and I said 'a little' and he said 'good, means it's working,' and I just nodded like that was a sentence. He could've said 'we're removing your soul, insurance covers half,' and I'd have said thank you and asked if I could drive myself home.",
+      "setup": "",
+      "punchline": "I trust doctors way too much. Any doctor. I went in for a routine checkup, guy I'd never met starts pressing on my stomach going 'does this hurt?' and I said 'a little' and he said 'good, means it's working,' and I just nodded like that was a sentence. He could've said 'we're removing your soul, insurance covers half,' and I'd have said thank you and asked if I could drive myself home.",
+      "text": "I trust doctors way too much. Any doctor. I went in for a routine checkup, guy I'd never met starts pressing on my stomach going 'does this hurt?' and I said 'a little' and he said 'good, means it's working,' and I just nodded like that was a sentence. He could've said 'we're removing your soul, insurance covers half,' and I'd have said thank you and asked if I could drive myself home."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Day Trading Dad",
+      "seedTermsUsed": [
+        "Stock Market Trader",
+        "Backyard"
+      ],
+      "joke": "My brother quit his job to become a full-time stock market day trader, which basically means he loses three thousand dollars before noon and then aggressively mows the lawn so my mom thinks he had a productive day. Yesterday he bought fifty shares of a biotech startup, panicked, and turned our entire backyard into a putting green.",
+      "setup": "",
+      "punchline": "My brother quit his job to become a full-time stock market day trader, which basically means he loses three thousand dollars before noon and then aggressively mows the lawn so my mom thinks he had a productive day. Yesterday he bought fifty shares of a biotech startup, panicked, and turned our entire backyard into a putting green.",
+      "text": "My brother quit his job to become a full-time stock market day trader, which basically means he loses three thousand dollars before noon and then aggressively mows the lawn so my mom thinks he had a productive day. Yesterday he bought fifty shares of a biotech startup, panicked, and turned our entire backyard into a putting green."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Too Trusting",
+      "seedTermsUsed": [
+        "Being scammed",
+        "Trusting"
+      ],
+      "joke": "I'm way too trusting. Some guy texts me out of the blue: congrats, you've won a free cruise, just cover the small admin fee. I send the money. Three days later it hits me - the only destination I'm booked for is a one-way trip to being scammed.",
+      "setup": "",
+      "punchline": "I'm way too trusting. Some guy texts me out of the blue: congrats, you've won a free cruise, just cover the small admin fee. I send the money. Three days later it hits me - the only destination I'm booked for is a one-way trip to being scammed.",
+      "text": "I'm way too trusting. Some guy texts me out of the blue: congrats, you've won a free cruise, just cover the small admin fee. I send the money. Three days later it hits me - the only destination I'm booked for is a one-way trip to being scammed."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Backyard Tips",
+      "seedTermsUsed": [
+        "Stock Market Trader",
+        "Being scammed"
+      ],
+      "joke": "I tried hiring this guy who said he was a former stock trader to help me fix my backyard. He kept pointing at random patches of dirt saying, \"Huge growth potential right here.\" I trusted him - big mistake. Two weeks later I realized I'd basically paid him to bury my own money... and the dirt still looks bearish.",
+      "setup": "",
+      "punchline": "I tried hiring this guy who said he was a former stock trader to help me fix my backyard. He kept pointing at random patches of dirt saying, \"Huge growth potential right here.\" I trusted him - big mistake. Two weeks later I realized I'd basically paid him to bury my own money... and the dirt still looks bearish.",
+      "text": "I tried hiring this guy who said he was a former stock trader to help me fix my backyard. He kept pointing at random patches of dirt saying, \"Huge growth potential right here.\" I trusted him - big mistake. Two weeks later I realized I'd basically paid him to bury my own money... and the dirt still looks bearish."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong escalating premise with natural stage rhythm; the soul/insurance turn is memorable and the final tag lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "The aggressive lawn-mowing image is funny and relatable, but the putting-green ending escalates more than it surprises.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and properly fitted, but the punchline merely labels the obvious scam and largely restates the setup.",
+          "laugh": 3,
+          "surprise": 2,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 9,
+          "total": 3.6
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Several decent finance/yard wordplays culminate in a solid bearish tag, but the joke also clearly uses Backyard and Trusting, exceeding the required two seed concepts.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 3,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup-turn-punchline with a strong closing line; two seed concepts used cleanly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Relatable escalation from day-trading to backyard putting green; solid but familiar comic shape.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Trusting and being-scammed collapse into the same idea; punchline mostly restates the setup rather than turning it.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 5,
+          "total": 3.8
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Decent bearish-dirt pun, but the joke actually deploys four seed concepts (trader, backyard, scammed, trusting), violating the two-concept limit.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 3,
+          "total": 5.4
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Sharp healthcare billing angle; the turn lands cleanly with good comic rhythm and adheres strictly to two seeds.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong conversational stand-up voice with believable escalation; the tag about driving oneself home sells the compliance well.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Tautological punchline that just restates the setup and recites the seed concept without an actual twist or comedic payoff.",
+          "laugh": 3,
+          "surprise": 2,
+          "craft": 3,
+          "originality": 2,
+          "promptFit": 7,
+          "total": 3.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Overstuffed with four seed concepts (stock trader, backyard, trusting, scammed); puns feel mechanically assembled rather than spoken.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 3,
+          "total": 3.9000000000000004
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid insurance-call closer on the fake-doctor scam, though the organ-theft route is a well-worn path.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Effective escalation from the stomach poke to the soul-removal hypothetical with clean first-person rhythm.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "The lawn-mowing cover-up is amusing but the sudden putting-green pivot feels under-motivated.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Four seed concepts appear, and the bearish-dirt closer is strained wordplay that never fully lands.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 3,
+          "total": 4.8
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "A clean setup with a playful insurance twist that delivers a mild, coherent laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong first-person pacing and escalation make the absurd trust angle land smoothly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "The vivid backyard transformation gives the joke a memorable, genuinely funny turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The punchline simply restates the premise, keeping the joke competent but predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "score": 7.1,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.5,
+        "craft": 7.5,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.5,
+        "craft": 7.5,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong escalating premise with natural stage rhythm; the soul/insurance turn is memorable and the final tag lands cleanly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.4,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong conversational stand-up voice with believable escalation; the tag about driving oneself home sells the compliance well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.3,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Effective escalation from the stomach poke to the soul-removal hypothetical with clean first-person rhythm."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Strong first-person pacing and escalation make the absurd trust angle land smoothly."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.7,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean setup-turn-punchline with a strong closing line; two seed concepts used cleanly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.3,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Sharp healthcare billing angle; the turn lands cleanly with good comic rhythm and adheres strictly to two seeds."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Solid insurance-call closer on the fake-doctor scam, though the organ-theft route is a well-worn path."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "A clean setup with a playful insurance twist that delivers a mild, coherent laugh."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.3,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 5.4,
+        "craft": 6.4,
+        "originality": 5.9,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 5.5,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "The aggressive lawn-mowing image is funny and relatable, but the putting-green ending escalates more than it surprises."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.8,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Relatable escalation from day-trading to backyard putting green; solid but familiar comic shape."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6,
+          "scoreAdjustment": 0.1,
+          "comment": "The lawn-mowing cover-up is amusing but the sudden putting-green pivot feels under-motivated."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0,
+          "comment": "The vivid backyard transformation gives the joke a memorable, genuinely funny turn."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 4.9,
+      "rawScore": 5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5,
+        "craft": 5.2,
+        "originality": 5,
+        "promptFit": 3
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 5.3,
+        "originality": 5,
+        "promptFit": 3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.5,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Several decent finance/yard wordplays culminate in a solid bearish tag, but the joke also clearly uses Backyard and Trusting, exceeding the required two seed concepts."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 5.3,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Decent bearish-dirt pun, but the joke actually deploys four seed concepts (trader, backyard, scammed, trusting), violating the two-concept limit."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.1,
+          "rawScore": 3.9,
+          "scoreAdjustment": 0.2,
+          "comment": "Overstuffed with four seed concepts (stock trader, backyard, trusting, scammed); puns feel mechanically assembled rather than spoken."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 4.9,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.1,
+          "comment": "Four seed concepts appear, and the bearish-dirt closer is strained wordplay that never fully lands."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 3.9,
+      "rawScore": 4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 3.7,
+        "surprise": 3,
+        "craft": 4,
+        "originality": 3.2,
+        "promptFit": 7.2
+      },
+      "rawRubric": {
+        "laugh": 3.8,
+        "surprise": 3,
+        "craft": 4,
+        "originality": 3.3,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 3.4,
+          "rawScore": 3.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear and properly fitted, but the punchline merely labels the obvious scam and largely restates the setup."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude Sonnet 4.6",
+          "score": 3.7,
+          "rawScore": 3.8,
+          "scoreAdjustment": -0.1,
+          "comment": "Trusting and being-scammed collapse into the same idea; punchline mostly restates the setup rather than turning it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 3.3,
+          "rawScore": 3.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Tautological punchline that just restates the setup and recites the seed concept without an actual twist or comedic payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.3,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0,
+          "comment": "The punchline simply restates the premise, keeping the joke competent but predictable."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-19-external-real-2026-08-19.png",
+    "originalSrc": "assets/feature-images/2026-08-19-external-real-2026-08-19.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Doctor's Orders: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude Sonnet 4.6 - Doctor's Orders\nExact joke text to render in the right panel:\nI trust doctors way too much. Any doctor. I went in for a routine checkup, guy I'd never met starts pressing on my stomach going 'does this hurt?' and I said 'a little' and he said 'good, means it's working,' and I just nodded like that was a sentence. He could've said 'we're removing your soul, insurance covers half,' and I'd have said thank you and asked if I could drive myself home.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Medical, Stock Market Trader, Backyard, Being scammed, Trusting, Catty. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Medical, Stock Market Trader, Backyard, Being scammed, Trusting, Catty. Use the winning joke titled \"Doctor's Orders\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.4,
+      "google": 6.1,
+      "xai": 6.2,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-19-external-real-2026-08-19.md"
+}
