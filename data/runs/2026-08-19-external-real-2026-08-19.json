@@ -747,19 +747,21 @@
     }
   ],
   "featureImage": {
-    "src": "assets/feature-images/2026-08-19-external-real-2026-08-19.png",
-    "originalSrc": "assets/feature-images/2026-08-19-external-real-2026-08-19.png",
+    "src": "assets/feature-images/2026-08-19-external-real-2026-08-19.jpeg",
+    "originalSrc": "assets/feature-images/2026-08-19-external-real-2026-08-19.jpeg",
     "source": "Gemini image generation (web preview)",
     "aspectRatio": "2:1",
-    "width": 1024,
-    "height": 506,
+    "width": 1456,
+    "height": 720,
     "qa": {
       "status": "approved",
       "version": "2026-06-feature-image-v4",
       "visualApproved": true,
       "assetType": "gemini-web-preview",
       "automaticChecks": "passed",
-      "warnings": []
+      "warnings": [
+        "Feature image is larger than the standard Gemini preview; use the 1024x506 preview unless this is a legacy repair."
+      ]
     },
     "alt": "Paperclipalypse winning joke feature image titled Doctor's Orders: a paperclip stand-up comic and the winning joke scene."
   },
