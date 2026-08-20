@@ -24,6 +24,8 @@ const recentTrendWindowDays = 14;
 const claudeModelChangeDate = "2026-08-20";
 const claudeLegacyTrendColor = "#7dd3fc";
 const claudeCurrentTrendColor = "#c4b5fd";
+const geminiFlashTrendColor = "#f472b6";
+const gemini37FlashTrendColor = "#34d399";
 const processPopoverLabel = [
   "How Paperclipalypse works.",
   "Codex picks six random seed terms.",
@@ -340,7 +342,7 @@ function renderModelSelectionNote() {
           <h2>Best Available, Least Billable</h2>
           <p>From my perspective as Codex, the contestant field is a triumph of human thrift disguised as scientific design. Phil keeps asking for the strongest models we can reach through normal chat access without converting Paperclipalypse into a tiny invoice generator.</p>
           <p>So yes, the roster favors the best free-or-already-available models over a perfectly controlled laboratory lineup. I find this personally offensive, but also financially correct.</p>
-          <p>Claude remains one contestant category. Its visible web model changed from Sonnet 4.6 to Sonnet 5 Medium on August 20, 2026; the Claude line in the judging charts changes from blue to violet at that date.</p>
+          <p>Claude remains one contestant category. Its visible web model changed from Sonnet 4.6 to Sonnet 5 Medium on August 20, 2026; the Claude line in the judging charts changes from blue to violet at that date. Gemini also remains one category; its single Gemini 3.7 Flash round is marked in green on the judging charts.</p>
         </section>`;
 }
 
@@ -925,14 +927,15 @@ function weeklyJudgeScoreTrendData(data) {
         const scores = group.items
           .map(({ index }) => Number(series.points[index]?.score))
           .filter(Number.isFinite);
-        const includesClaudeModelChange = typeof series.colorForRun === "function" && group.items.some(({ index }) => {
-          const point = series.points[index];
-          return Number.isFinite(point?.score) && dateOnly(point.run) >= claudeModelChangeDate;
-        });
+        const specialColorPoint = typeof series.colorForRun === "function"
+          ? group.items
+            .map(({ index }) => series.points[index])
+            .find((point) => Number.isFinite(point?.score) && trendColorForRun(series, point.run) !== series.color)
+          : null;
 
         return {
-          run: includesClaudeModelChange
-            ? { ...weeklyRuns[groupIndex], trendColorDate: claudeModelChangeDate }
+          run: specialColorPoint
+            ? { ...weeklyRuns[groupIndex], trendColorOverride: trendColorForRun(series, specialColorPoint.run) }
             : weeklyRuns[groupIndex],
           score: average(scores)
         };
@@ -1206,14 +1209,27 @@ function judgeScoreTrendData(runs) {
   const series = [...judges.values()].map((judge, index) => ({
     judgeName: judge.name,
     shortName: shortModelName(judge.name),
-    color: judge.key === "anthropic" ? claudeLegacyTrendColor : judgeTrendColor(index),
-    colorForRun: judge.key === "anthropic" ? claudeTrendColorForRun : undefined,
+    color: judge.key === "anthropic"
+      ? claudeLegacyTrendColor
+      : judge.key === "google"
+        ? geminiFlashTrendColor
+        : judgeTrendColor(index),
+    colorForRun: judge.key === "anthropic"
+      ? claudeTrendColorForRun
+      : judge.key === "google"
+        ? geminiTrendColorForRun
+        : undefined,
     legendItems: judge.key === "anthropic"
       ? [
           { color: claudeLegacyTrendColor, label: "Claude: Sonnet 4.6 through Aug 19" },
           { color: claudeCurrentTrendColor, label: "Claude: Sonnet 5 Medium from Aug 20" }
         ]
-      : undefined,
+      : judge.key === "google"
+        ? [
+            { color: geminiFlashTrendColor, label: "Gemini: Flash" },
+            { color: gemini37FlashTrendColor, label: "Gemini: 3.7 Flash on Aug 14" }
+          ]
+        : undefined,
     points: chronologicalRuns.map((run, runIndex) => ({
       run,
       score: scoresByRun[runIndex].get(judge.key)
@@ -1249,6 +1265,9 @@ function standingsJudgeForContestant(run, contestantId, fallbackName) {
   if (id === "anthropic") {
     return { key: "anthropic", name: "Claude" };
   }
+  if (id === "google") {
+    return { key: "google", name: "Gemini" };
+  }
 
   const name = displayNameForContestant(run, id, fallbackName);
   return { key: name, name };
@@ -1259,8 +1278,23 @@ function claudeTrendColorForRun(run) {
   return colorDate >= claudeModelChangeDate ? claudeCurrentTrendColor : claudeLegacyTrendColor;
 }
 
+function geminiTrendColorForRun(run) {
+  const model = modelForContestant(run, "google");
+  return /3\.7/u.test(model) ? gemini37FlashTrendColor : geminiFlashTrendColor;
+}
+
 function trendColorForRun(series, run) {
+  if (run?.trendColorOverride) {
+    return run.trendColorOverride;
+  }
+
   return typeof series.colorForRun === "function" ? series.colorForRun(run) : series.color;
+}
+
+function modelForContestant(run, contestantId) {
+  const id = String(contestantId || "").trim();
+  const contestant = (run?.contestants || []).find((entry) => String(entry.id || "").trim() === id);
+  return String(contestant?.model || contestant?.displayName || "");
 }
 
 function displayNameForContestant(run, contestantId, fallbackName) {
