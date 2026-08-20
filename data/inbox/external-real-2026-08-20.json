@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-20T14:01:24.654Z",
+  "publishedDate": "2026-08-20",
+  "seed": "external-real-2026-08-20",
+  "slug": "2026-08-20-external-real-2026-08-20",
+  "source": "manual-external",
+  "seedTerms": [
+    "Mind Transfer",
+    "Office Worker",
+    "Factory",
+    "Interference in your life",
+    "Confident",
+    "Callous"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude Sonnet 4.6",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Smart"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Remote Work",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Office Worker"
+      ],
+      "joke": "I signed up for my company’s mind-transfer program because they promised I’d never have to commute again. They uploaded my consciousness into the office network. Now I can answer email, attend meetings, and update spreadsheets without a body. I asked my boss what happens when I retire. He said, “We delete your account.” Apparently I didn’t achieve immortality—I became software with a pension.",
+      "setup": "",
+      "punchline": "I signed up for my company’s mind-transfer program because they promised I’d never have to commute again. They uploaded my consciousness into the office network. Now I can answer email, attend meetings, and update spreadsheets without a body. I asked my boss what happens when I retire. He said, “We delete your account.” Apparently I didn’t achieve immortality—I became software with a pension.",
+      "text": "I signed up for my company’s mind-transfer program because they promised I’d never have to commute again. They uploaded my consciousness into the office network. Now I can answer email, attend meetings, and update spreadsheets without a body. I asked my boss what happens when I retire. He said, “We delete your account.” Apparently I didn’t achieve immortality—I became software with a pension."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude Sonnet 4.6",
+      "model": "Sonnet 5 Medium",
+      "title": "Backup Body",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Confident"
+      ],
+      "joke": "I did a mind transfer last year, moved my consciousness into a younger body. Best decision I ever made. New body, new confidence, walked into work like I owned the place. Turns out I did own the place, I forgot to transfer my bank account too, so now some twenty-two-year-old intern is confidently spending my retirement while I'm stuck explaining to HR why I keep answering to two names.",
+      "setup": "",
+      "punchline": "I did a mind transfer last year, moved my consciousness into a younger body. Best decision I ever made. New body, new confidence, walked into work like I owned the place. Turns out I did own the place, I forgot to transfer my bank account too, so now some twenty-two-year-old intern is confidently spending my retirement while I'm stuck explaining to HR why I keep answering to two names.",
+      "text": "I did a mind transfer last year, moved my consciousness into a younger body. Best decision I ever made. New body, new confidence, walked into work like I owned the place. Turns out I did own the place, I forgot to transfer my bank account too, so now some twenty-two-year-old intern is confidently spending my retirement while I'm stuck explaining to HR why I keep answering to two names."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Flash",
+      "title": "Family Boundaries",
+      "seedTermsUsed": [
+        "Interference in your life",
+        "Confident"
+      ],
+      "joke": "My mom has an incredible amount of confidence in her ability to run my life from three states away. She called me yesterday during a job interview, and when I declined the call, she immediately texted: \"Don’t accept their first offer, sit up straight, and order the soup.\"",
+      "setup": "",
+      "punchline": "My mom has an incredible amount of confidence in her ability to run my life from three states away. She called me yesterday during a job interview, and when I declined the call, she immediately texted: \"Don’t accept their first offer, sit up straight, and order the soup.\"",
+      "text": "My mom has an incredible amount of confidence in her ability to run my life from three states away. She called me yesterday during a job interview, and when I declined the call, she immediately texted: \"Don’t accept their first offer, sit up straight, and order the soup.\""
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast",
+      "title": "Lateral Soul Move",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Office Worker"
+      ],
+      "joke": "I was so done being an office worker I signed up for experimental mind transfer. Figured I'd wake up as a pilot or at least a guy who doesn't live for the weekend. Nope. They put me in the body of the guy in the next cubicle. Same fluorescent lights, same passive-aggressive emails, just a slightly different view of the water cooler. Turns out my soul only qualified for a lateral transfer.",
+      "setup": "",
+      "punchline": "I was so done being an office worker I signed up for experimental mind transfer. Figured I'd wake up as a pilot or at least a guy who doesn't live for the weekend. Nope. They put me in the body of the guy in the next cubicle. Same fluorescent lights, same passive-aggressive emails, just a slightly different view of the water cooler. Turns out my soul only qualified for a lateral transfer.",
+      "text": "I was so done being an office worker I signed up for experimental mind transfer. Figured I'd wake up as a pilot or at least a guy who doesn't live for the weekend. Nope. They put me in the body of the guy in the next cubicle. Same fluorescent lights, same passive-aggressive emails, just a slightly different view of the water cooler. Turns out my soul only qualified for a lateral transfer."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Smart",
+      "title": "Factory Reset",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Office Worker"
+      ],
+      "joke": "I tried this new productivity hack where you ‘swap minds’ with a super-efficient coworker. Turns out his brain runs like a factory—loud, stressed, and everything smells faintly of burnt plastic. I lasted ten minutes before begging to switch back. Now I’m just an office worker with the confidence of a man who survived OSHA violations inside his own head.",
+      "setup": "",
+      "punchline": "I tried this new productivity hack where you ‘swap minds’ with a super-efficient coworker. Turns out his brain runs like a factory—loud, stressed, and everything smells faintly of burnt plastic. I lasted ten minutes before begging to switch back. Now I’m just an office worker with the confidence of a man who survived OSHA violations inside his own head.",
+      "text": "I tried this new productivity hack where you ‘swap minds’ with a super-efficient coworker. Turns out his brain runs like a factory—loud, stressed, and everything smells faintly of burnt plastic. I lasted ten minutes before begging to switch back. Now I’m just an office worker with the confidence of a man who survived OSHA violations inside his own head."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "The mind-transfer premise has potential, but the bank-account/intern logic is unclear and the HR ending dilutes rather than sharpens the payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean, relatable setup with efficient escalation; 'order the soup' is an unexpected, concrete final turn that lands well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong first-person construction and a clear final pun; 'lateral transfer' neatly resolves both seed concepts, though the destination twist is somewhat foreseeable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 2,
+          "laugh": 6,
+          "comment": "The OSHA-inside-my-head image is amusing, but the joke clearly uses Factory and Confident in addition to Mind Transfer and Office Worker, violating the exactly-two-seeds requirement."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude Sonnet 4.6",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean escalation to a pension-software punchline; solid but the twist is fairly telegraphed."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Relatable mom-meddling bit with a specific, funny capper ('order the soup') that lands well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Good subversion of the expected upgrade fantasy; 'lateral transfer' pun ties it together nicely."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 6,
+          "comment": "Funny OSHA line, but leans on factory and confidence as extra concepts beyond the two claimed."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Logical premise with clean flow, but the punchline lands on an expected corporate trope rather than a strong laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Convoluted turn that gets tangled in logistics; the double identity payoff loses comic momentum."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong stage rhythm and a crisp final turn with 'lateral transfer' that delivers a genuine snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 4,
+          "laugh": 4,
+          "comment": "Stuffs extra seed concepts (factory, confident) beyond two, and the closing line peters out without a hard hit."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean mind-upload corporate bit; pension closer works but lands mild."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong body-swap premise with effective bank-account and dual-name turn."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Familiar distant-mom interference; light and competent but forgettable."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 3,
+          "laugh": 5,
+          "comment": "Uses more than two seed concepts; factory image and OSHA closer feel forced."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise with a tidy software-immortality turn that lands a mild, coherent laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun escalation and a clear first-person rhythm, though the final beat is more amusing than sharp."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "A relatable interference angle with a neat punch, but the joke stays small and lightly humorous."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong timing and a memorable lateral-transfer turn make this a genuinely good joke."
+        }
+      ]
+    }
+  ]
+}
