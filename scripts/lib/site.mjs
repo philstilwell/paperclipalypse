@@ -1324,9 +1324,15 @@ function shouldPreferRosterDisplayName(fallbackName, contestantId, displayName) 
 }
 
 function shortModelName(name) {
-  return String(name || "Model")
+  const modelName = String(name || "Model")
     .replace(/^OpenAI\s+/u, "")
-    .replace(/^xAI\s+/u, "")
+    .replace(/^xAI\s+/u, "");
+
+  if (/^Gemini\s+\d/u.test(modelName)) {
+    return modelName.trim();
+  }
+
+  return modelName
     .replace(/\s+\d+(?:\.\d+)*\b/u, "")
     .replace(/\bSonnet\b/u, "Sonnet")
     .trim();
