@@ -13,14 +13,14 @@
     },
     {
       "id": "anthropic",
-      "displayName": "Claude Sonnet 4.6",
+      "displayName": "Claude",
       "provider": "anthropic",
       "apiKeyEnv": "ANTHROPIC_API_KEY",
       "modelEnv": "ANTHROPIC_MODEL",
-      "defaultModel": "claude-sonnet-4-6",
+      "defaultModel": "Sonnet 5 Medium",
       "billing": "paid-api",
       "freeAutomation": false,
-      "notes": "Cost-aware Claude family choice; API calls are metered unless covered by separate provider credits."
+      "notes": "Claude category; the visible web model changed to Sonnet 5 Medium on 2026-08-20. API calls are metered unless covered by separate provider credits."
     },
     {
       "id": "google",

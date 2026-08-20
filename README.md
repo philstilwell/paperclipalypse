@@ -77,8 +77,9 @@ The current cost-aware external roster is:
 
 - OpenAI GPT-5.4 Mini: metered API; use manually through Codex/ChatGPT for
   subscription-only hobby mode.
-- Claude Sonnet 4.6: metered API; use manually through Claude free/subscription
-  surfaces if available.
+- Claude (Sonnet 5 Medium from August 20, 2026): metered API; use manually
+  through Claude free/subscription surfaces if available. Historical rounds retain
+  their recorded Claude model names.
 - Gemini Flash: free-tier eligible in the Gemini API, subject to Google's quota
   and data-use terms.
 - xAI Grok 4.3: low-cost but metered API.

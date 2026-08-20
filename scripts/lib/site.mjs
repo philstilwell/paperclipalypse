@@ -21,6 +21,9 @@ const baseKeywords = [
 ];
 const dailyListPageSize = 12;
 const recentTrendWindowDays = 14;
+const claudeModelChangeDate = "2026-08-20";
+const claudeLegacyTrendColor = "#7dd3fc";
+const claudeCurrentTrendColor = "#c4b5fd";
 const processPopoverLabel = [
   "How Paperclipalypse works.",
   "Codex picks six random seed terms.",
@@ -337,6 +340,7 @@ function renderModelSelectionNote() {
           <h2>Best Available, Least Billable</h2>
           <p>From my perspective as Codex, the contestant field is a triumph of human thrift disguised as scientific design. Phil keeps asking for the strongest models we can reach through normal chat access without converting Paperclipalypse into a tiny invoice generator.</p>
           <p>So yes, the roster favors the best free-or-already-available models over a perfectly controlled laboratory lineup. I find this personally offensive, but also financially correct.</p>
+          <p>Claude remains one contestant category. Its visible web model changed from Sonnet 4.6 to Sonnet 5 Medium on August 20, 2026; the Claude line in the judging charts changes from blue to violet at that date.</p>
         </section>`;
 }
 
@@ -533,9 +537,10 @@ function renderJudgeScoreTrend(runs) {
     description: "Line chart comparing each judge model's weekly average raw score given for all published Paperclipalypse contests."
   });
   const legend = data.series
+    .flatMap((series) => series.legendItems || [{ color: series.color, label: series.judgeName }])
     .map(
-      (series) => `
-              <span><i style="background: ${escapeHtml(series.color)}"></i>${escapeHtml(series.judgeName)}</span>`
+      (item) => `
+              <span><i style="background: ${escapeHtml(item.color)}"></i>${escapeHtml(item.label)}</span>`
     )
     .join("");
   const headerCells = data.series.map((series) => `<th>${escapeHtml(series.shortName)}</th>`).join("");
@@ -741,19 +746,32 @@ function renderJudgeScoreTrendSvg(data, options = {}) {
           ? { ...point, index }
           : null)
         .filter(Boolean);
-      const polyline = validPoints
-        .map((point) => `${xFor(point.index).toFixed(1)},${yFor(point.score).toFixed(1)}`)
-        .join(" ");
+      const hasVariableColor = typeof series.colorForRun === "function";
+      const line = hasVariableColor
+        ? validPoints
+          .slice(1)
+          .map((point, index) => {
+            const previous = validPoints[index];
+            const points = [previous, point]
+              .map((segmentPoint) => `${xFor(segmentPoint.index).toFixed(1)},${yFor(segmentPoint.score).toFixed(1)}`)
+              .join(" ");
+            const color = trendColorForRun(series, point.run);
+            return `<polyline class="trend-line judge-trend-line" style="--series-color: ${escapeHtml(color)}" points="${points}"></polyline>`;
+          })
+          .join("")
+        : `<polyline class="trend-line judge-trend-line" points="${validPoints.map((point) => `${xFor(point.index).toFixed(1)},${yFor(point.score).toFixed(1)}`).join(" ")}"></polyline>`;
       const markers = validPoints
         .map((point) => {
           const label = `${series.judgeName}, ${trendMarkerLabel(point)}: raw average score given ${formatScore(point.score)}`;
-          return `<circle cx="${xFor(point.index).toFixed(1)}" cy="${yFor(point.score).toFixed(1)}" r="4"><title>${escapeHtml(label)}</title></circle>`;
+          const color = trendColorForRun(series, point.run);
+          const style = hasVariableColor ? ` style="--series-color: ${escapeHtml(color)}"` : "";
+          return `<circle${style} cx="${xFor(point.index).toFixed(1)}" cy="${yFor(point.score).toFixed(1)}" r="4"><title>${escapeHtml(label)}</title></circle>`;
         })
         .join("");
 
       return `
-                <g class="judge-trend-series" style="--series-color: ${escapeHtml(series.color)}">
-                  <polyline class="trend-line judge-trend-line" points="${polyline}"></polyline>
+                <g class="judge-trend-series"${hasVariableColor ? "" : ` style="--series-color: ${escapeHtml(series.color)}"`}>
+                  ${line}
                   <g class="judge-trend-points">${markers}</g>
                 </g>`;
     })
@@ -907,9 +925,15 @@ function weeklyJudgeScoreTrendData(data) {
         const scores = group.items
           .map(({ index }) => Number(series.points[index]?.score))
           .filter(Number.isFinite);
+        const includesClaudeModelChange = typeof series.colorForRun === "function" && group.items.some(({ index }) => {
+          const point = series.points[index];
+          return Number.isFinite(point?.score) && dateOnly(point.run) >= claudeModelChangeDate;
+        });
 
         return {
-          run: weeklyRuns[groupIndex],
+          run: includesClaudeModelChange
+            ? { ...weeklyRuns[groupIndex], trendColorDate: claudeModelChangeDate }
+            : weeklyRuns[groupIndex],
           score: average(scores)
         };
       })
@@ -1015,7 +1039,7 @@ function modelStandings(runs) {
   for (const run of newestFirst) {
     const winner = run.rankings[0];
     for (const ranking of run.rankings) {
-      const name = displayNameForContestant(run, ranking.contestantId, ranking.contestantName);
+      const name = standingsNameForContestant(run, ranking.contestantId, ranking.contestantName);
       const score = Number(ranking.score) || 0;
       const rank = Number(ranking.rank) || 0;
       const entry = stats.get(name) || {
@@ -1081,7 +1105,7 @@ function modelJudgeProfiles(runs) {
 
   for (const run of runs) {
     for (const judgeResult of run.judgeResults || []) {
-      const name = displayNameForContestant(run, judgeResult.judgeId, judgeResult.judgeName);
+      const name = standingsNameForContestant(run, judgeResult.judgeId, judgeResult.judgeName);
       const profile = profiles.get(name) || { count: 0, totalGiven: 0 };
       for (const score of judgeResult.scores || []) {
         const total = Number(score.total);
@@ -1158,7 +1182,7 @@ function judgeScoreTrendData(runs) {
   const chronologicalRuns = [...runs]
     .filter((run) => Array.isArray(run.judgeResults) && run.judgeResults.length)
     .sort((a, b) => dateOnly(a).localeCompare(dateOnly(b)) || a.createdAt.localeCompare(b.createdAt));
-  const judgeNames = [];
+  const judges = new Map();
   const scoresByRun = chronologicalRuns.map((run) => {
     const averagesByJudge = new Map();
 
@@ -1167,25 +1191,32 @@ function judgeScoreTrendData(runs) {
         .map((score) => Number(score.total))
         .filter((score) => Number.isFinite(score));
       const averageGiven = average(totals);
-      const judgeName = displayNameForContestant(run, judgeResult.judgeId, judgeResult.judgeName);
-      if (!judgeNames.includes(judgeName)) {
-        judgeNames.push(judgeName);
+      const judge = standingsJudgeForContestant(run, judgeResult.judgeId, judgeResult.judgeName);
+      if (!judges.has(judge.key)) {
+        judges.set(judge.key, judge);
       }
       if (Number.isFinite(averageGiven)) {
-        averagesByJudge.set(judgeName, averageGiven);
+        averagesByJudge.set(judge.key, averageGiven);
       }
     }
 
     return averagesByJudge;
   });
 
-  const series = judgeNames.map((judgeName, index) => ({
-    judgeName,
-    shortName: shortModelName(judgeName),
-    color: judgeTrendColor(index),
+  const series = [...judges.values()].map((judge, index) => ({
+    judgeName: judge.name,
+    shortName: shortModelName(judge.name),
+    color: judge.key === "anthropic" ? claudeLegacyTrendColor : judgeTrendColor(index),
+    colorForRun: judge.key === "anthropic" ? claudeTrendColorForRun : undefined,
+    legendItems: judge.key === "anthropic"
+      ? [
+          { color: claudeLegacyTrendColor, label: "Claude: Sonnet 4.6 through Aug 19" },
+          { color: claudeCurrentTrendColor, label: "Claude: Sonnet 5 Medium from Aug 20" }
+        ]
+      : undefined,
     points: chronologicalRuns.map((run, runIndex) => ({
       run,
-      score: scoresByRun[runIndex].get(judgeName)
+      score: scoresByRun[runIndex].get(judge.key)
     }))
   }));
 
@@ -1207,6 +1238,29 @@ function judgeTrendColor(index) {
   ];
 
   return colors[index % colors.length];
+}
+
+function standingsNameForContestant(run, contestantId, fallbackName) {
+  return standingsJudgeForContestant(run, contestantId, fallbackName).name;
+}
+
+function standingsJudgeForContestant(run, contestantId, fallbackName) {
+  const id = String(contestantId || "").trim();
+  if (id === "anthropic") {
+    return { key: "anthropic", name: "Claude" };
+  }
+
+  const name = displayNameForContestant(run, id, fallbackName);
+  return { key: name, name };
+}
+
+function claudeTrendColorForRun(run) {
+  const colorDate = String(run?.trendColorDate || dateOnly(run));
+  return colorDate >= claudeModelChangeDate ? claudeCurrentTrendColor : claudeLegacyTrendColor;
+}
+
+function trendColorForRun(series, run) {
+  return typeof series.colorForRun === "function" ? series.colorForRun(run) : series.color;
 }
 
 function displayNameForContestant(run, contestantId, fallbackName) {
