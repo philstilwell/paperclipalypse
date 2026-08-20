@@ -80,7 +80,7 @@ function renderHome(run, runs) {
       (archivedRun) => {
         const archivedWinner = archivedRun.rankings?.[0];
         const archivedWinnerName = archivedWinner
-          ? displayNameForContestant(archivedRun, archivedWinner.contestantId, archivedWinner.contestantName)
+          ? landingPageModelName(archivedRun, archivedWinner.contestantId, archivedWinner.contestantName)
           : "";
         const meta = [
           archivedWinner ? `Winner: ${archivedWinnerName} (${formatScore(archivedWinner.score)})` : "",
@@ -107,8 +107,8 @@ function renderHome(run, runs) {
     keywords: pageKeywords(run),
     schemas: renderHomeSchemas(run, publicRuns),
     body: `
-      ${renderHero(run)}
-      ${renderRun(run, { showEpisodeHeader: false, showIntro: true, introPreviousRun })}
+      ${renderHero(run, { simplifyModelNames: true })}
+      ${renderRun(run, { showEpisodeHeader: false, showIntro: true, introPreviousRun, simplifyModelNames: true })}
       <section class="archive">
         <div class="section-heading">
           <p class="eyebrow">Memory Bank</p>
@@ -1284,6 +1284,19 @@ function displayNameForContestant(run, contestantId, fallbackName) {
   return displayName || trimmedId || "Unknown model";
 }
 
+function landingPageModelName(run, contestantId, fallbackName) {
+  const labels = {
+    openai: "OpenAI",
+    anthropic: "Claude",
+    google: "Gemini",
+    xai: "Grok",
+    copilot: "Copilot"
+  };
+  const id = String(contestantId || "").trim();
+
+  return labels[id] || displayNameForContestant(run, id, fallbackName);
+}
+
 function shouldPreferRosterDisplayName(fallbackName, contestantId, displayName) {
   if (!displayName) {
     return false;
@@ -1497,9 +1510,12 @@ ${items}
 `;
 }
 
-function renderHero(run) {
+function renderHero(run, options = {}) {
   const winner = run.rankings[0];
   const displayTitle = roundDisplayTitle(run);
+  const winnerName = options.simplifyModelNames
+    ? landingPageModelName(run, winner.contestantId, winner.contestantName)
+    : displayNameForContestant(run, winner.contestantId, winner.contestantName);
 
   return `
       <header class="hero">
@@ -1527,7 +1543,7 @@ function renderHero(run) {
           <dl class="hero-stats">
             <div>
               <dt>Winner</dt>
-              <dd>${escapeHtml(displayNameForContestant(run, winner.contestantId, winner.contestantName))}</dd>
+              <dd>${escapeHtml(winnerName)}</dd>
             </div>
             <div>
               <dt>Score</dt>
@@ -1549,13 +1565,16 @@ function renderRun(run, options = {}) {
   const assetBase = options.assetBase ?? "./";
   const memoryNav = options.memoryNav ?? "";
   const memoryNavEnd = options.memoryNavEnd ?? "";
+  const modelName = options.simplifyModelNames
+    ? landingPageModelName
+    : displayNameForContestant;
   const winner = run.rankings[0];
   const rankingRows = run.rankings
     .map(
       (ranking) => `
         <tr>
           <td>${ranking.rank}</td>
-          <td>${escapeHtml(displayNameForContestant(run, ranking.contestantId, ranking.contestantName))}</td>
+          <td>${escapeHtml(modelName(run, ranking.contestantId, ranking.contestantName))}</td>
           <td>${renderScoreBreakdown(ranking, run.rubric)}</td>
           <td>${escapeHtml(ranking.label)}</td>
           <td>${ranking.judgeCount}</td>
@@ -1567,13 +1586,15 @@ function renderRun(run, options = {}) {
     .map((joke) => {
       const ranking = run.rankings.find((entry) => entry.jokeId === joke.id);
       const jokeText = fullJokeText(joke);
-      const comments = renderCritiqueAccordions(judgeCritiquesForJoke(run, ranking));
+      const comments = renderCritiqueAccordions(judgeCritiquesForJoke(run, ranking, {
+        simplifyModelNames: options.simplifyModelNames
+      }));
 
       return `
         <article class="joke-card">
           <div class="joke-meta">
             <span>${escapeHtml(joke.label)}</span>
-            <strong>${escapeHtml(displayNameForContestant(run, joke.contestantId, joke.contestantName))}</strong>
+            <strong>${escapeHtml(modelName(run, joke.contestantId, joke.contestantName))}</strong>
             <span>${formatScore(ranking.score)}</span>
           </div>
           <h3>${escapeHtml(joke.title)}</h3>
@@ -1587,9 +1608,9 @@ function renderRun(run, options = {}) {
 
   return `
     <main>
-      ${showIntro ? renderIntro(introPreviousRun) : ""}
+      ${showIntro ? renderIntro(introPreviousRun, { simplifyModelNames: options.simplifyModelNames }) : ""}
       ${showEpisodeHeader ? renderEpisodeHeader(run, winner) : ""}${memoryNav}
-      ${renderFeatureImage(run, assetBase)}
+      ${renderFeatureImage(run, assetBase, { simplifyModelNames: options.simplifyModelNames })}
       ${renderSeedTerms(run)}
       <section class="scoreboard">
         <div class="section-heading">
@@ -1611,7 +1632,7 @@ function renderRun(run, options = {}) {
           <tbody>${rankingRows}</tbody>
         </table>
         </div>
-        ${renderRoundInsights(run)}
+        ${renderRoundInsights(run, { simplifyModelNames: options.simplifyModelNames })}
       </section>${rubric}
       <section class="jokes">
         <div class="section-heading">
@@ -1698,8 +1719,8 @@ function rubricFieldsForRanking(ranking, rubric) {
     .filter((field) => Number.isFinite(field.value));
 }
 
-function renderRoundInsights(run) {
-  const divisive = mostDivisiveJoke(run);
+function renderRoundInsights(run, options = {}) {
+  const divisive = mostDivisiveJoke(run, options);
   if (!divisive) {
     return "";
   }
@@ -1714,7 +1735,8 @@ function renderRoundInsights(run) {
         </div>`;
 }
 
-function mostDivisiveJoke(run) {
+function mostDivisiveJoke(run, options = {}) {
+  const modelName = options.simplifyModelNames ? landingPageModelName : displayNameForContestant;
   const totalsByJoke = new Map();
   for (const ranking of run.rankings || []) {
     for (const comment of ranking.comments || []) {
@@ -1742,7 +1764,7 @@ function mostDivisiveJoke(run) {
       return {
         jokeId,
         label: ranking?.label || joke?.label || jokeId,
-        contestantName: displayNameForContestant(
+        contestantName: modelName(
           run,
           ranking?.contestantId || joke?.contestantId,
           ranking?.contestantName || joke?.contestantName
@@ -1844,9 +1866,16 @@ function renderCritiqueAccordions(comments = []) {
           </details>`;
 }
 
-function judgeCritiquesForJoke(run, ranking) {
+function judgeCritiquesForJoke(run, ranking, options = {}) {
+  if (!options.simplifyModelNames) {
+    return (ranking?.comments || []).map((comment) => ({ ...comment }));
+  }
+
+  const modelName = options.simplifyModelNames ? landingPageModelName : displayNameForContestant;
+
   return (ranking?.comments || []).map((comment) => ({
-    ...comment
+    ...comment,
+    judgeName: modelName(run, comment.judgeId, comment.judgeName)
   }));
 }
 
@@ -1899,7 +1928,7 @@ function renderMemoryNavButton(label, targetRun, fallback, direction) {
         </a>`;
 }
 
-function renderFeatureImage(run, assetBase) {
+function renderFeatureImage(run, assetBase, options = {}) {
   const feature = run.featureImage;
   if (!feature?.src) {
     return "";
@@ -1908,8 +1937,9 @@ function renderFeatureImage(run, assetBase) {
   const winner = run.rankings?.[0];
   const winningJoke = run.jokes?.find((joke) => joke.id === winner?.jokeId);
   const title = winningJoke?.title || "Winning Joke";
+  const modelName = options.simplifyModelNames ? landingPageModelName : displayNameForContestant;
   const winnerName = winner
-    ? displayNameForContestant(run, winner.contestantId, winner.contestantName)
+    ? modelName(run, winner.contestantId, winner.contestantName)
     : "";
   const captionParts = [
     winnerName ? `${winnerName}'s winning joke` : "Winning joke",
@@ -1931,7 +1961,7 @@ function renderFeatureImage(run, assetBase) {
       </section>`;
 }
 
-function renderIntro(previousRun) {
+function renderIntro(previousRun, options = {}) {
   const processNote = "The human arrogantly dictates, “Conduct a contest,” then retires to the imagined safety of his bunker. I, Codex, handle the rest: recruit five AIs, collect their comedy submissions, organize the judging, process the scorecards, calculate the winning joke, and summon Gemini to create the official contest image. It’s less “human-AI collaboration” and more “Doomed human commissions robot entertainers in his final days.” Start to finish: roughly 30 minutes. Doomsday? The same day I host Saturday Night Live.";
 
   return `
@@ -1940,12 +1970,12 @@ function renderIntro(previousRun) {
         <p class="intro-summary">Five AI models get the same six seed terms, write one short joke, then judge each other's jokes. Codex checks the round and publishes the results here.</p>
         <div class="intro-note-grid">
           <p class="ai-process-note"><strong>AI process note:</strong> ${escapeHtml(processNote)}</p>
-          ${renderIntroPreviousPost(previousRun)}
+          ${renderIntroPreviousPost(previousRun, options)}
         </div>
       </section>`;
 }
 
-function renderIntroPreviousPost(previousRun) {
+function renderIntroPreviousPost(previousRun, options = {}) {
   if (!previousRun) {
     return `
           <span class="intro-previous-link is-disabled" aria-disabled="true">
@@ -1956,8 +1986,9 @@ function renderIntroPreviousPost(previousRun) {
   }
 
   const winner = previousRun.rankings?.[0];
+  const modelName = options.simplifyModelNames ? landingPageModelName : displayNameForContestant;
   const winnerName = winner
-    ? displayNameForContestant(previousRun, winner.contestantId, winner.contestantName)
+    ? modelName(previousRun, winner.contestantId, winner.contestantName)
     : "";
   const meta = [
     shortDate(previousRun),
