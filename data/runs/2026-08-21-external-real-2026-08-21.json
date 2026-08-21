@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-21-external-real-2026-08-21",
+  "seed": "external-real-2026-08-21",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-21T14:01:44.944Z",
+  "publishedDate": "2026-08-21",
+  "seedTerms": [
+    "Paranormal",
+    "Model",
+    "Canyon",
+    "Running out of critical supplies",
+    "Trusting",
+    "Evasive"
+  ],
+  "premise": {
+    "text": "Seed terms: Paranormal, Model, Canyon, Running out of critical supplies, Trusting, Evasive",
+    "seedTerms": [
+      "Paranormal",
+      "Model",
+      "Canyon",
+      "Running out of critical supplies",
+      "Trusting",
+      "Evasive"
+    ],
+    "displayText": "Haunted, Lost, and Running Dry"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Smart"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Second Opinion",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Trusting"
+      ],
+      "joke": "I'm too trusting. A medium told me my apartment was haunted and charged me $300 to remove the ghost. That night a voice whispered, “She ripped you off.” I said, “So you're still here?” The ghost said, “Yeah. And if you've got another $300, I can get rid of her.”",
+      "setup": "",
+      "punchline": "I'm too trusting. A medium told me my apartment was haunted and charged me $300 to remove the ghost. That night a voice whispered, “She ripped you off.” I said, “So you're still here?” The ghost said, “Yeah. And if you've got another $300, I can get rid of her.”",
+      "text": "I'm too trusting. A medium told me my apartment was haunted and charged me $300 to remove the ghost. That night a voice whispered, “She ripped you off.” I said, “So you're still here?” The ghost said, “Yeah. And if you've got another $300, I can get rid of her.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Outsourcing the Funeral Planning",
+      "seedTermsUsed": [
+        "Running out of critical supplies",
+        "Trusting"
+      ],
+      "joke": "My girlfriend says she trusts me with her whole life. Great, let's test that: gas light on, phone at two percent, snacks gone, forty miles from the nearest anything. She just smiles and goes, 'I trust you.' Ma'am, that's not trust — that's outsourcing the funeral planning to the guy who got us lost.",
+      "setup": "",
+      "punchline": "My girlfriend says she trusts me with her whole life. Great, let's test that: gas light on, phone at two percent, snacks gone, forty miles from the nearest anything. She just smiles and goes, 'I trust you.' Ma'am, that's not trust — that's outsourcing the funeral planning to the guy who got us lost.",
+      "text": "My girlfriend says she trusts me with her whole life. Great, let's test that: gas light on, phone at two percent, snacks gone, forty miles from the nearest anything. She just smiles and goes, 'I trust you.' Ma'am, that's not trust — that's outsourcing the funeral planning to the guy who got us lost."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Flash",
+      "title": "Haunted Roommate",
+      "seedTermsUsed": [
+        "Paranormal",
+        "Running out of critical supplies"
+      ],
+      "joke": "I’m convinced my apartment is haunted, but we have a terrible roommate dynamic. Last night, the temperature plummeted, cabinet doors started slamming, and a demonic voice echoed, 'Your time is running out.' I said, 'I know, man. We have half a square of toilet paper and no coffee. If you can move physical objects, float your ass to CVS.'",
+      "setup": "",
+      "punchline": "I’m convinced my apartment is haunted, but we have a terrible roommate dynamic. Last night, the temperature plummeted, cabinet doors started slamming, and a demonic voice echoed, 'Your time is running out.' I said, 'I know, man. We have half a square of toilet paper and no coffee. If you can move physical objects, float your ass to CVS.'",
+      "text": "I’m convinced my apartment is haunted, but we have a terrible roommate dynamic. Last night, the temperature plummeted, cabinet doors started slamming, and a demonic voice echoed, 'Your time is running out.' I said, 'I know, man. We have half a square of toilet paper and no coffee. If you can move physical objects, float your ass to CVS.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast",
+      "title": "Grand Canyon Patience",
+      "seedTermsUsed": [
+        "Canyon",
+        "Running out of critical supplies"
+      ],
+      "joke": "I went backpacking in the Grand Canyon last month. Halfway down the trail I realized I was running out of critical supplies. Not the water, not the trail mix—patience for my buddy who kept saying the campsite was “just around the bend.” That bend had its own zip code by the time we finally got there.",
+      "setup": "",
+      "punchline": "I went backpacking in the Grand Canyon last month. Halfway down the trail I realized I was running out of critical supplies. Not the water, not the trail mix—patience for my buddy who kept saying the campsite was “just around the bend.” That bend had its own zip code by the time we finally got there.",
+      "text": "I went backpacking in the Grand Canyon last month. Halfway down the trail I realized I was running out of critical supplies. Not the water, not the trail mix—patience for my buddy who kept saying the campsite was “just around the bend.” That bend had its own zip code by the time we finally got there."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Smart",
+      "title": "Desert Glamour",
+      "seedTermsUsed": [
+        "Model",
+        "Running out of critical supplies"
+      ],
+      "joke": "I once agreed to model for a ‘natural desert vibe’ photoshoot. Halfway through, the crew ran out of water, and suddenly I wasn’t a model—I was a cautionary tale. The photographer kept shouting, “Give me intensity!” and I’m thinking, “Buddy, if you don’t find a canteen soon, the only intensity you’re getting is me passing out in high-definition.”",
+      "setup": "",
+      "punchline": "I once agreed to model for a ‘natural desert vibe’ photoshoot. Halfway through, the crew ran out of water, and suddenly I wasn’t a model—I was a cautionary tale. The photographer kept shouting, “Give me intensity!” and I’m thinking, “Buddy, if you don’t find a canteen soon, the only intensity you’re getting is me passing out in high-definition.”",
+      "text": "I once agreed to model for a ‘natural desert vibe’ photoshoot. Halfway through, the crew ran out of water, and suddenly I wasn’t a model—I was a cautionary tale. The photographer kept shouting, “Give me intensity!” and I’m thinking, “Buddy, if you don’t find a canteen soon, the only intensity you’re getting is me passing out in high-definition.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clean escalation and a solid funeral-planning turn; familiar relationship-road-trip territory keeps it from feeling exceptional.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong haunted-roommate premise, effective escalation, and a sharp final image with the ghost being recruited for a CVS run.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Readable and mildly amusing, but 'critical supplies' is mostly setup misdirection because the actual shortage is patience, weakening seed-concept compliance.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clear premise and natural delivery, but the dehydration-to-passing-out payoff is fairly predictable and the high-definition tag adds only a modest extra laugh.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Nice escalation—the ghost turns out to be running its own grift, which subverts the expected haunting payoff cleanly.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Solid 'annoying roommate' framing but the turn (send the ghost to CVS) is the fairly obvious route once the premise is set.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Good misdirection naming patience as the scarce supply, but the closing 'zip code' line is a stock exaggeration that undercuts the finish.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Decent premise and a mildly clever closing pun, but the middle beats telegraph where it's headed.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid classic comedic structure and clean dialogue economy, though the ghost-as-con-artist premise is a familiar sketch trope.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong stand-up voice with vivid escalation. The punchline reframe lands naturally and feels authentic to a real stage set.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Directly recites the seed phrase verbatim, and the 'patience' misdirection combined with a zip code hyperbole is quite dated.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 4.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Functional premise and decent rhythm, but the punchline telegraphs early and ends on a relatively standard observational trope.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean scam-to-ghost-service turn with solid final line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Decent trust-versus-crisis angle, payoff is competent but familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong roommate-ghost escalation that lands on a practical punch.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Serviceable desert-model setup, turn stays mostly expected.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid paranormal twist with a clean final beat; mildly funny and coherent.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear premise and escalation; lands a modest laugh with a tidy closer.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong imagery and a sharp turn; genuinely good joke with clean timing.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent but predictable; the punchline is mild and the turn is familiar.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.9,
+      "rawScore": 7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 6.4,
+        "craft": 6.9,
+        "originality": 6.4,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.8,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong haunted-roommate premise, effective escalation, and a sharp final image with the ghost being recruited for a CVS run."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid 'annoying roommate' framing but the turn (send the ghost to CVS) is the fairly obvious route once the premise is set."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong roommate-ghost escalation that lands on a practical punch."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong imagery and a sharp turn; genuinely good joke with clean timing."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.8,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean escalation and a solid funeral-planning turn; familiar relationship-road-trip territory keeps it from feeling exceptional."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.8,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong stand-up voice with vivid escalation. The punchline reframe lands naturally and feels authentic to a real stage set."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Decent trust-versus-crisis angle, payoff is competent but familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear premise and escalation; lands a modest laugh with a tidy closer."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Nice escalation—the ghost turns out to be running its own grift, which subverts the expected haunting payoff cleanly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.4,
+          "comment": "Solid classic comedic structure and clean dialogue economy, though the ghost-as-con-artist premise is a familiar sketch trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean scam-to-ghost-service turn with solid final line."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid paranormal twist with a clean final beat; mildly funny and coherent."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.7,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear premise and natural delivery, but the dehydration-to-passing-out payoff is fairly predictable and the high-definition tag adds only a modest extra laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Decent premise and a mildly clever closing pun, but the middle beats telegraph where it's headed."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Functional premise and decent rhythm, but the punchline telegraphs early and ends on a relatively standard observational trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Serviceable desert-model setup, turn stays mostly expected."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.1,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.8,
+        "surprise": 5,
+        "craft": 5.3,
+        "originality": 4.5,
+        "promptFit": 6.5
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 5,
+        "craft": 5.3,
+        "originality": 4.5,
+        "promptFit": 6.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Readable and mildly amusing, but 'critical supplies' is mostly setup misdirection because the actual shortage is patience, weakening seed-concept compliance."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.3,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Good misdirection naming patience as the scarce supply, but the closing 'zip code' line is a stock exaggeration that undercuts the finish."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.8,
+          "rawScore": 4.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Directly recites the seed phrase verbatim, and the 'patience' misdirection combined with a zip code hyperbole is quite dated."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.2,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent but predictable; the punchline is mild and the turn is familiar."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-21-external-real-2026-08-21.png",
+    "originalSrc": "assets/feature-images/2026-08-21-external-real-2026-08-21.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Haunted Roommate: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Haunted Roommate\nExact joke text to render in the right panel:\nI’m convinced my apartment is haunted, but we have a terrible roommate dynamic. Last night, the temperature plummeted, cabinet doors started slamming, and a demonic voice echoed, 'Your time is running out.' I said, 'I know, man. We have half a square of toilet paper and no coffee. If you can move physical objects, float your ass to CVS.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Paranormal, Model, Canyon, Running out of critical supplies, Trusting, Evasive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Paranormal, Model, Canyon, Running out of critical supplies, Trusting, Evasive. Use the winning joke titled \"Haunted Roommate\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.2,
+      "google": 5.7,
+      "xai": 6.2,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-21-external-real-2026-08-21.md"
+}
