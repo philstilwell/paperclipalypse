@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-22T14:02:27.140Z",
+  "publishedDate": "2026-08-22",
+  "seed": "external-real-2026-08-22",
+  "slug": "2026-08-22-external-real-2026-08-22",
+  "source": "manual-external",
+  "seedTerms": [
+    "Heroic and Sword-Sorcery",
+    "Flight Attendant",
+    "Country Road",
+    "Discovering a secret",
+    "Happy",
+    "Selfish"
+  ],
+  "premise": {
+    "displayText": "Sword Quests at 30,000 Feet"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Smart"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Carry-On Hero",
+      "seedTermsUsed": [
+        "Heroic and Sword-Sorcery",
+        "Flight Attendant"
+      ],
+      "joke": "I was on a flight when the attendant said, “In an emergency, leave all personal belongings behind.” I raised my hand and said, “Even my sword?” She stared at me and said, “Sir, if you have a sword, the emergency started at security.”",
+      "setup": "",
+      "punchline": "I was on a flight when the attendant said, “In an emergency, leave all personal belongings behind.” I raised my hand and said, “Even my sword?” She stared at me and said, “Sir, if you have a sword, the emergency started at security.”",
+      "text": "I was on a flight when the attendant said, “In an emergency, leave all personal belongings behind.” I raised my hand and said, “Even my sword?” She stared at me and said, “Sir, if you have a sword, the emergency started at security.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Row 12 Sword Fantasy",
+      "seedTermsUsed": [
+        "Heroic and Sword-Sorcery",
+        "Flight Attendant"
+      ],
+      "joke": "I always fly a budget airline that leans real hard into the sword-and-sorcery theme. The flight attendant walks the aisle going 'Who among you is brave enough... to order the chicken.' Turbulence hits, she screams 'HOLD FAST, TRAVELERS,' and I'm just trying to get to my cousin's wedding in Ohio. At the end she said 'may your baggage claim be swift,' and I actually teared up a little.",
+      "setup": "",
+      "punchline": "I always fly a budget airline that leans real hard into the sword-and-sorcery theme. The flight attendant walks the aisle going 'Who among you is brave enough... to order the chicken.' Turbulence hits, she screams 'HOLD FAST, TRAVELERS,' and I'm just trying to get to my cousin's wedding in Ohio. At the end she said 'may your baggage claim be swift,' and I actually teared up a little.",
+      "text": "I always fly a budget airline that leans real hard into the sword-and-sorcery theme. The flight attendant walks the aisle going 'Who among you is brave enough... to order the chicken.' Turbulence hits, she screams 'HOLD FAST, TRAVELERS,' and I'm just trying to get to my cousin's wedding in Ohio. At the end she said 'may your baggage claim be swift,' and I actually teared up a little."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Flash",
+      "title": "Cabin Pressure",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Selfish"
+      ],
+      "joke": "Flight attendants always say, 'Secure your own oxygen mask before helping your child.' I love that rule. It’s the only place in modern society where being aggressively selfish is legally mandated by the FAA. My kid looked at me terrified, reaching his little hands out, and I just tapped the diagram like, 'Sorry, buddy. The lady with the beverage cart said it’s survival of the fittest today.'",
+      "setup": "",
+      "punchline": "Flight attendants always say, 'Secure your own oxygen mask before helping your child.' I love that rule. It’s the only place in modern society where being aggressively selfish is legally mandated by the FAA. My kid looked at me terrified, reaching his little hands out, and I just tapped the diagram like, 'Sorry, buddy. The lady with the beverage cart said it’s survival of the fittest today.'",
+      "text": "Flight attendants always say, 'Secure your own oxygen mask before helping your child.' I love that rule. It’s the only place in modern society where being aggressively selfish is legally mandated by the FAA. My kid looked at me terrified, reaching his little hands out, and I just tapped the diagram like, 'Sorry, buddy. The lady with the beverage cart said it’s survival of the fittest today.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast",
+      "title": "The Whole Can",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Selfish"
+      ],
+      "joke": "I'm a flight attendant, and passengers are the most selfish people on the planet. They demand the whole can of ginger ale like the plane is their private minibar. Then we hit one bump and suddenly they're clutching my wrist whispering, 'Are we gonna make it?' Buddy, five minutes ago you treated me like a vending machine. Now I'm your therapist.",
+      "setup": "",
+      "punchline": "I'm a flight attendant, and passengers are the most selfish people on the planet. They demand the whole can of ginger ale like the plane is their private minibar. Then we hit one bump and suddenly they're clutching my wrist whispering, 'Are we gonna make it?' Buddy, five minutes ago you treated me like a vending machine. Now I'm your therapist.",
+      "text": "I'm a flight attendant, and passengers are the most selfish people on the planet. They demand the whole can of ginger ale like the plane is their private minibar. Then we hit one bump and suddenly they're clutching my wrist whispering, 'Are we gonna make it?' Buddy, five minutes ago you treated me like a vending machine. Now I'm your therapist."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Smart",
+      "title": "Sky Quest",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Heroic and Sword-Sorcery"
+      ],
+      "joke": "I was on a flight where the attendant made the safety demo sound like a fantasy quest. She handed me the seatbelt and said, “Warrior, secure your armor.” I’m thinking, I just want pretzels, not to battle a dragon. But when turbulence hit, I grabbed that armrest like it was a magic sword and I was the last hero defending row 22.",
+      "setup": "",
+      "punchline": "I was on a flight where the attendant made the safety demo sound like a fantasy quest. She handed me the seatbelt and said, “Warrior, secure your armor.” I’m thinking, I just want pretzels, not to battle a dragon. But when turbulence hit, I grabbed that armrest like it was a magic sword and I was the last hero defending row 22.",
+      "text": "I was on a flight where the attendant made the safety demo sound like a fantasy quest. She handed me the seatbelt and said, “Warrior, secure your armor.” I’m thinking, I just want pretzels, not to battle a dragon. But when turbulence hit, I grabbed that armrest like it was a magic sword and I was the last hero defending row 22."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Fun sustained fantasy-airline premise with several solid tags, but the final line is softer than the middle and does not deliver a strong closing laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Familiar oxygen-mask premise, but the selfish-parent framing is clean and the diagram tap gives the punchline a strong concrete image."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear and stage-ready, but the vending-machine-to-therapist turn is predictable and leans on an overused comedy template rather than a distinctive payoff."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Coherent and economical, but the fantasy comparisons follow the setup's obvious path and the final heroic image is more cute than punchy."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean setup with a sharp, logical final line; solid timing throughout."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Oxygen-mask selfish bit is a well-trodden premise; execution and kid detail lift it but turn is predictable."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Fresh attendant's-eye-view angle with a strong escalation and a genuinely funny final snap."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Fun premise but leans whimsical; final line is cute rather than a hard laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Tightly constructed with a clean, snappy final punchline, though the setup feels slightly artificial."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Good stage rhythm and funny details ('order the chicken', 'wedding in Ohio') that build momentum well."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Solid observational premise from the attendant's POV, but the therapist turn is somewhat familiar."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "A bit overly descriptive and predictable, but follows the narrative arc cleanly to the end."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Tight setup-to-punch with a clean security snap; economical stage voice and clear final line."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Committed theme yields mild smiles and a soft closer, but the bit wanders without a sharp turn."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Solid personal escalation from the known rule into a cold, concrete image that lands."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Familiar fantasy overlay on safety demo; the armrest-hero closer is competent but soft and expected."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear premise with a tidy security turn; competent but modestly funny."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun escalation and strong voice; lands a mild but real laugh."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good angle on mandated selfishness with a clean final beat."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Relatable but familiar; the vending-machine turn is serviceable but not sharp."
+        }
+      ]
+    }
+  ]
+}

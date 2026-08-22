@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-22-external-real-2026-08-22",
+  "seed": "external-real-2026-08-22",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-22T14:02:27.140Z",
+  "publishedDate": "2026-08-22",
+  "seedTerms": [
+    "Heroic and Sword-Sorcery",
+    "Flight Attendant",
+    "Country Road",
+    "Discovering a secret",
+    "Happy",
+    "Selfish"
+  ],
+  "premise": {
+    "text": "Seed terms: Heroic and Sword-Sorcery, Flight Attendant, Country Road, Discovering a secret, Happy, Selfish",
+    "seedTerms": [
+      "Heroic and Sword-Sorcery",
+      "Flight Attendant",
+      "Country Road",
+      "Discovering a secret",
+      "Happy",
+      "Selfish"
+    ],
+    "displayText": "Sword Quests at 30,000 Feet"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Smart"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Carry-On Hero",
+      "seedTermsUsed": [
+        "Heroic and Sword-Sorcery",
+        "Flight Attendant"
+      ],
+      "joke": "I was on a flight when the attendant said, “In an emergency, leave all personal belongings behind.” I raised my hand and said, “Even my sword?” She stared at me and said, “Sir, if you have a sword, the emergency started at security.”",
+      "setup": "",
+      "punchline": "I was on a flight when the attendant said, “In an emergency, leave all personal belongings behind.” I raised my hand and said, “Even my sword?” She stared at me and said, “Sir, if you have a sword, the emergency started at security.”",
+      "text": "I was on a flight when the attendant said, “In an emergency, leave all personal belongings behind.” I raised my hand and said, “Even my sword?” She stared at me and said, “Sir, if you have a sword, the emergency started at security.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Row 12 Sword Fantasy",
+      "seedTermsUsed": [
+        "Heroic and Sword-Sorcery",
+        "Flight Attendant"
+      ],
+      "joke": "I always fly a budget airline that leans real hard into the sword-and-sorcery theme. The flight attendant walks the aisle going 'Who among you is brave enough... to order the chicken.' Turbulence hits, she screams 'HOLD FAST, TRAVELERS,' and I'm just trying to get to my cousin's wedding in Ohio. At the end she said 'may your baggage claim be swift,' and I actually teared up a little.",
+      "setup": "",
+      "punchline": "I always fly a budget airline that leans real hard into the sword-and-sorcery theme. The flight attendant walks the aisle going 'Who among you is brave enough... to order the chicken.' Turbulence hits, she screams 'HOLD FAST, TRAVELERS,' and I'm just trying to get to my cousin's wedding in Ohio. At the end she said 'may your baggage claim be swift,' and I actually teared up a little.",
+      "text": "I always fly a budget airline that leans real hard into the sword-and-sorcery theme. The flight attendant walks the aisle going 'Who among you is brave enough... to order the chicken.' Turbulence hits, she screams 'HOLD FAST, TRAVELERS,' and I'm just trying to get to my cousin's wedding in Ohio. At the end she said 'may your baggage claim be swift,' and I actually teared up a little."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Flash",
+      "title": "Cabin Pressure",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Selfish"
+      ],
+      "joke": "Flight attendants always say, 'Secure your own oxygen mask before helping your child.' I love that rule. It’s the only place in modern society where being aggressively selfish is legally mandated by the FAA. My kid looked at me terrified, reaching his little hands out, and I just tapped the diagram like, 'Sorry, buddy. The lady with the beverage cart said it’s survival of the fittest today.'",
+      "setup": "",
+      "punchline": "Flight attendants always say, 'Secure your own oxygen mask before helping your child.' I love that rule. It’s the only place in modern society where being aggressively selfish is legally mandated by the FAA. My kid looked at me terrified, reaching his little hands out, and I just tapped the diagram like, 'Sorry, buddy. The lady with the beverage cart said it’s survival of the fittest today.'",
+      "text": "Flight attendants always say, 'Secure your own oxygen mask before helping your child.' I love that rule. It’s the only place in modern society where being aggressively selfish is legally mandated by the FAA. My kid looked at me terrified, reaching his little hands out, and I just tapped the diagram like, 'Sorry, buddy. The lady with the beverage cart said it’s survival of the fittest today.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast",
+      "title": "The Whole Can",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Selfish"
+      ],
+      "joke": "I'm a flight attendant, and passengers are the most selfish people on the planet. They demand the whole can of ginger ale like the plane is their private minibar. Then we hit one bump and suddenly they're clutching my wrist whispering, 'Are we gonna make it?' Buddy, five minutes ago you treated me like a vending machine. Now I'm your therapist.",
+      "setup": "",
+      "punchline": "I'm a flight attendant, and passengers are the most selfish people on the planet. They demand the whole can of ginger ale like the plane is their private minibar. Then we hit one bump and suddenly they're clutching my wrist whispering, 'Are we gonna make it?' Buddy, five minutes ago you treated me like a vending machine. Now I'm your therapist.",
+      "text": "I'm a flight attendant, and passengers are the most selfish people on the planet. They demand the whole can of ginger ale like the plane is their private minibar. Then we hit one bump and suddenly they're clutching my wrist whispering, 'Are we gonna make it?' Buddy, five minutes ago you treated me like a vending machine. Now I'm your therapist."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Smart",
+      "title": "Sky Quest",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Heroic and Sword-Sorcery"
+      ],
+      "joke": "I was on a flight where the attendant made the safety demo sound like a fantasy quest. She handed me the seatbelt and said, “Warrior, secure your armor.” I’m thinking, I just want pretzels, not to battle a dragon. But when turbulence hit, I grabbed that armrest like it was a magic sword and I was the last hero defending row 22.",
+      "setup": "",
+      "punchline": "I was on a flight where the attendant made the safety demo sound like a fantasy quest. She handed me the seatbelt and said, “Warrior, secure your armor.” I’m thinking, I just want pretzels, not to battle a dragon. But when turbulence hit, I grabbed that armrest like it was a magic sword and I was the last hero defending row 22.",
+      "text": "I was on a flight where the attendant made the safety demo sound like a fantasy quest. She handed me the seatbelt and said, “Warrior, secure your armor.” I’m thinking, I just want pretzels, not to battle a dragon. But when turbulence hit, I grabbed that armrest like it was a magic sword and I was the last hero defending row 22."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Fun sustained fantasy-airline premise with several solid tags, but the final line is softer than the middle and does not deliver a strong closing laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Familiar oxygen-mask premise, but the selfish-parent framing is clean and the diagram tap gives the punchline a strong concrete image.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and stage-ready, but the vending-machine-to-therapist turn is predictable and leans on an overused comedy template rather than a distinctive payoff.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Coherent and economical, but the fantasy comparisons follow the setup's obvious path and the final heroic image is more cute than punchy.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup with a sharp, logical final line; solid timing throughout.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Oxygen-mask selfish bit is a well-trodden premise; execution and kid detail lift it but turn is predictable.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Fresh attendant's-eye-view angle with a strong escalation and a genuinely funny final snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Fun premise but leans whimsical; final line is cute rather than a hard laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Tightly constructed with a clean, snappy final punchline, though the setup feels slightly artificial.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good stage rhythm and funny details ('order the chicken', 'wedding in Ohio') that build momentum well.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.9
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid observational premise from the attendant's POV, but the therapist turn is somewhat familiar.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "A bit overly descriptive and predictable, but follows the narrative arc cleanly to the end.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Tight setup-to-punch with a clean security snap; economical stage voice and clear final line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Committed theme yields mild smiles and a soft closer, but the bit wanders without a sharp turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Solid personal escalation from the known rule into a cold, concrete image that lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Familiar fantasy overlay on safety demo; the armrest-hero closer is competent but soft and expected.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise with a tidy security turn; competent but modestly funny.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Fun escalation and strong voice; lands a mild but real laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good angle on mandated selfishness with a clean final beat.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relatable but familiar; the vending-machine turn is serviceable but not sharp.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean setup with a sharp, logical final line; solid timing throughout."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Tightly constructed with a clean, snappy final punchline, though the setup feels slightly artificial."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Tight setup-to-punch with a clean security snap; economical stage voice and clear final line."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.2,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear premise with a tidy security turn; competent but modestly funny."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.5,
+      "rawScore": 6.6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 5.9,
+        "craft": 6.6,
+        "originality": 5.6,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.9,
+          "rawScore": 7,
+          "scoreAdjustment": -0.1,
+          "comment": "Familiar oxygen-mask premise, but the selfish-parent framing is clean and the diagram tap gives the punchline a strong concrete image."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Oxygen-mask selfish bit is a well-trodden premise; execution and kid detail lift it but turn is predictable."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid personal escalation from the known rule into a cold, concrete image that lands."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Good angle on mandated selfishness with a clean final beat."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.5,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Fun sustained fantasy-airline premise with several solid tags, but the final line is softer than the middle and does not deliver a strong closing laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.3,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.4,
+          "comment": "Good stage rhythm and funny details ('order the chicken', 'wedding in Ohio') that build momentum well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Committed theme yields mild smiles and a soft closer, but the bit wanders without a sharp turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Fun escalation and strong voice; lands a mild but real laugh."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.3,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear and stage-ready, but the vending-machine-to-therapist turn is predictable and leans on an overused comedy template rather than a distinctive payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.3,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Fresh attendant's-eye-view angle with a strong escalation and a genuinely funny final snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.9,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Solid observational premise from the attendant's POV, but the therapist turn is somewhat familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.2,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Relatable but familiar; the vending-machine turn is serviceable but not sharp."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.7,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.7,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.1,
+          "comment": "Coherent and economical, but the fantasy comparisons follow the setup's obvious path and the final heroic image is more cute than punchy."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Fun premise but leans whimsical; final line is cute rather than a hard laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.4,
+          "comment": "A bit overly descriptive and predictable, but follows the narrative arc cleanly to the end."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Familiar fantasy overlay on safety demo; the armrest-hero closer is competent but soft and expected."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-22-external-real-2026-08-22.png",
+    "originalSrc": "assets/feature-images/2026-08-22-external-real-2026-08-22.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Carry-On Hero: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - Carry-On Hero\nExact joke text to render in the right panel:\nI was on a flight when the attendant said, “In an emergency, leave all personal belongings behind.” I raised my hand and said, “Even my sword?” She stared at me and said, “Sir, if you have a sword, the emergency started at security.”\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Heroic and Sword-Sorcery, Flight Attendant, Country Road, Discovering a secret, Happy, Selfish. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Heroic and Sword-Sorcery, Flight Attendant, Country Road, Discovering a secret, Happy, Selfish. Use the winning joke titled \"Cabin Pressure\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.3,
+      "google": 5.7,
+      "xai": 6.3,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-22-external-real-2026-08-22.md"
+}
