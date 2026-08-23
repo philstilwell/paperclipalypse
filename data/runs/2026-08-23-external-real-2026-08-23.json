@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-23-external-real-2026-08-23",
+  "seed": "external-real-2026-08-23",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-23T14:01:01.323Z",
+  "publishedDate": "2026-08-23",
+  "seedTerms": [
+    "Contemporary",
+    "Barista",
+    "Gas Station",
+    "Losing a vital item",
+    "Confident",
+    "Vindictive"
+  ],
+  "premise": {
+    "text": "Seed terms: Contemporary, Barista, Gas Station, Losing a vital item, Confident, Vindictive",
+    "seedTerms": [
+      "Contemporary",
+      "Barista",
+      "Gas Station",
+      "Losing a vital item",
+      "Confident",
+      "Vindictive"
+    ],
+    "displayText": "The Restroom Key Nobody Could Steal"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Smart"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "ChatGPT web",
+      "title": "Legally Brent",
+      "seedTermsUsed": [
+        "Barista",
+        "Confident"
+      ],
+      "joke": "I ordered a coffee, and the barista asked my name. I said, “Ben.” She confidently wrote “Brent” without hesitation. That level of certainty changed me. I spent the rest of the day introducing myself as Brent. If a woman with an apron and a Sharpie can rebrand you before 9 a.m., apparently that’s legally binding.",
+      "setup": "",
+      "punchline": "I ordered a coffee, and the barista asked my name. I said, “Ben.” She confidently wrote “Brent” without hesitation. That level of certainty changed me. I spent the rest of the day introducing myself as Brent. If a woman with an apron and a Sharpie can rebrand you before 9 a.m., apparently that’s legally binding.",
+      "text": "I ordered a coffee, and the barista asked my name. I said, “Ben.” She confidently wrote “Brent” without hesitation. That level of certainty changed me. I spent the rest of the day introducing myself as Brent. If a woman with an apron and a Sharpie can rebrand you before 9 a.m., apparently that’s legally binding."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Oat Milk Revenge",
+      "seedTermsUsed": [
+        "Barista",
+        "Vindictive"
+      ],
+      "joke": "I worked as a barista for two years, and it made me a genuinely vindictive person. Somebody corrects my name spelling now, I don't get mad, I get creative. You said your name's 'Kyle, with a Y'? Cool. Enjoy your scalding oat milk, 'Kyle with a Y,' written on the cup in cursive, ready in forty-five minutes, at a Starbucks across town that you don't even remember walking into.",
+      "setup": "",
+      "punchline": "I worked as a barista for two years, and it made me a genuinely vindictive person. Somebody corrects my name spelling now, I don't get mad, I get creative. You said your name's 'Kyle, with a Y'? Cool. Enjoy your scalding oat milk, 'Kyle with a Y,' written on the cup in cursive, ready in forty-five minutes, at a Starbucks across town that you don't even remember walking into.",
+      "text": "I worked as a barista for two years, and it made me a genuinely vindictive person. Somebody corrects my name spelling now, I don't get mad, I get creative. You said your name's 'Kyle, with a Y'? Cool. Enjoy your scalding oat milk, 'Kyle with a Y,' written on the cup in cursive, ready in forty-five minutes, at a Starbucks across town that you don't even remember walking into."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Flash",
+      "title": "Restroom Key",
+      "seedTermsUsed": [
+        "Gas Station",
+        "Losing a vital item"
+      ],
+      "joke": "I had to ask the gas station clerk for the bathroom key, and he handed me a rusty brass key chained to a full-sized snow shovel so nobody steals it. Ten minutes later, I had to walk back up to the counter and admit I lost the shovel.",
+      "setup": "",
+      "punchline": "I had to ask the gas station clerk for the bathroom key, and he handed me a rusty brass key chained to a full-sized snow shovel so nobody steals it. Ten minutes later, I had to walk back up to the counter and admit I lost the shovel.",
+      "text": "I had to ask the gas station clerk for the bathroom key, and he handed me a rusty brass key chained to a full-sized snow shovel so nobody steals it. Ten minutes later, I had to walk back up to the counter and admit I lost the shovel."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast",
+      "title": "Tip Adjustment",
+      "seedTermsUsed": [
+        "Barista",
+        "Vindictive"
+      ],
+      "joke": "I shorted a barista on the tip last week. Next time I ordered my usual triple espresso. She handed it over with a big smile. I downed the whole thing and felt nothing—pure decaf. Then she leaned in and said, 'Sleep tight.'",
+      "setup": "",
+      "punchline": "I shorted a barista on the tip last week. Next time I ordered my usual triple espresso. She handed it over with a big smile. I downed the whole thing and felt nothing—pure decaf. Then she leaned in and said, 'Sleep tight.'",
+      "text": "I shorted a barista on the tip last week. Next time I ordered my usual triple espresso. She handed it over with a big smile. I downed the whole thing and felt nothing—pure decaf. Then she leaned in and said, 'Sleep tight.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Smart",
+      "title": "Fuel Crisis",
+      "seedTermsUsed": [
+        "Gas Station",
+        "Losing a vital item"
+      ],
+      "joke": "I once lost my wallet at a gas station and tried to stay calm, but you can’t look confident while patting yourself down like you’re checking for spare organs. The cashier asked if everything was okay, and I said, “Yeah, just deciding which limb to sell so I can get home.”",
+      "setup": "",
+      "punchline": "I once lost my wallet at a gas station and tried to stay calm, but you can’t look confident while patting yourself down like you’re checking for spare organs. The cashier asked if everything was okay, and I said, “Yeah, just deciding which limb to sell so I can get home.”",
+      "text": "I once lost my wallet at a gas station and tried to stay calm, but you can’t look confident while patting yourself down like you’re checking for spare organs. The cashier asked if everything was okay, and I said, “Yeah, just deciding which limb to sell so I can get home.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear vindictive-barista premise with decent escalation, but the final across-town image feels overextended rather than sharply punched.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Excellent compact construction: concrete setup, strong visual absurdity, and a clean reversal when the supposedly unlosable object is lost.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 8.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean and economical with a proper final tag, but decaf as barista revenge is fairly foreseeable and limits the surprise.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The spare-organs image is amusing, but the limb-selling tag is more familiar; it also clearly introduces confidence as a third seed concept.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 4,
+          "total": 5.600000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup and escalation with a solid closing line, but the 'rebranding' angle is a fairly familiar comic shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid, absurd image (shovel-chained key) with a clean escalation and a punchline that actually pays off the setup.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Decent revenge premise, but the decaf logic and 'sleep tight' close land a bit murky rather than snapping clearly.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.3999999999999995
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Strong physical comedy with the organ-patting image and a punchy, well-timed closing line.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid stage cadence and a clear progression, though the 'Starbucks spelled my name wrong' setup is well-worn territory.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Overstuffed escalation that dissolves into surreal rambling rather than snapping to a crisp, punchy finish.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 4.5
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean economy and effective misdirection with the decaf switch, anchored by a tight, spoken final tag.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relatable physical image during the pat-down, but the scripted dialogue punchline lands soft.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean name-misspell premise with mild rebranding payoff; pleasant but low-stakes.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong vindictive escalation with vivid multi-layer revenge; lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Tight visual setup and inevitable admission punch; excellent stage economy.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Generic lost-wallet panic; limb line feels forced and under-delivers.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a confident rebranding turn; mildly funny and well-timed.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong voice and escalation; the vindictive twist lands a modest real laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Funny visual and a sharp final admission; genuinely good timing and turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Decaf revenge is a familiar angle but executed cleanly with a solid closer.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.5,
+      "rawScore": 7.6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.1,
+        "surprise": 7.4,
+        "craft": 7.6,
+        "originality": 7.1,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7.5,
+        "craft": 7.8,
+        "originality": 7.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 8.1,
+          "rawScore": 8.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Excellent compact construction: concrete setup, strong visual absurdity, and a clean reversal when the supposedly unlosable object is lost."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Vivid, absurd image (shovel-chained key) with a clean escalation and a punchline that actually pays off the setup."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.4,
+          "rawScore": 7.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Tight visual setup and inevitable admission punch; excellent stage economy."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0,
+          "comment": "Funny visual and a sharp final admission; genuinely good timing and turn."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean setup and escalation with a solid closing line, but the 'rebranding' angle is a fairly familiar comic shape."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.9,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.5,
+          "comment": "Solid stage cadence and a clear progression, though the 'Starbucks spelled my name wrong' setup is well-worn territory."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean name-misspell premise with mild rebranding payoff; pleasant but low-stakes."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Clean premise with a confident rebranding turn; mildly funny and well-timed."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6.3,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean and economical with a proper final tag, but decaf as barista revenge is fairly foreseeable and limits the surprise."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.2,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Decent revenge premise, but the decaf logic and 'sleep tight' close land a bit murky rather than snapping clearly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.5,
+          "rawScore": 7,
+          "scoreAdjustment": 0.5,
+          "comment": "Clean economy and effective misdirection with the decaf switch, anchored by a tight, spoken final tag."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Decaf revenge is a familiar angle but executed cleanly with a solid closer."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.1,
+        "originality": 6.1,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear vindictive-barista premise with decent escalation, but the final across-town image feels overextended rather than sharply punched."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.5,
+          "comment": "Overstuffed escalation that dissolves into surreal rambling rather than snapping to a crisp, punchy finish."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong vindictive escalation with vivid multi-layer revenge; lands cleanly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Strong voice and escalation; the vindictive twist lands a modest real laugh."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.7,
+      "rawScore": 5.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.2,
+        "craft": 5.7,
+        "originality": 5.5,
+        "promptFit": 7
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 5.5,
+        "promptFit": 7
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.5,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.1,
+          "comment": "The spare-organs image is amusing, but the limb-selling tag is more familiar; it also clearly introduces confidence as a third seed concept."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.6,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong physical comedy with the organ-patting image and a punchy, well-timed closing line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.5,
+          "comment": "Relatable physical image during the pat-down, but the scripted dialogue punchline lands soft."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Generic lost-wallet panic; limb line feels forced and under-delivers."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-23-external-real-2026-08-23.png",
+    "originalSrc": "assets/feature-images/2026-08-23-external-real-2026-08-23.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Restroom Key: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Restroom Key\nExact joke text to render in the right panel:\nI had to ask the gas station clerk for the bathroom key, and he handed me a rusty brass key chained to a full-sized snow shovel so nobody steals it. Ten minutes later, I had to walk back up to the counter and admit I lost the shovel.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Contemporary, Barista, Gas Station, Losing a vital item, Confident, Vindictive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Contemporary, Barista, Gas Station, Losing a vital item, Confident, Vindictive. Use the winning joke titled \"Restroom Key\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6.2,
+      "anthropic": 6.3,
+      "google": 5.6,
+      "xai": 6.3,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-23-external-real-2026-08-23.md"
+}
