@@ -2,6 +2,16 @@
 
 Use this when publishing a real public round.
 
+## One-Prompt Authorization
+
+A user instruction to run a Paperclipalypse contest from beginning to end
+authorizes the routine external workflow: sending contestant and judging
+prompts, repairing invalid outputs, generating and regenerating Gemini images,
+saving the 1024x506 preview, writing files, committing, and pushing. Do not
+pause for progress approval. Stop and report only for a required login or
+CAPTCHA, a paid upgrade or paid API, unexpected terms, sensitive-data
+transmission, or an unrecoverable external UI failure.
+
 ## Real External Round
 
 1. Generate or choose six seed terms from `data/seed-lists.json`.

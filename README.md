@@ -48,7 +48,11 @@ So the preferred real-tournament flow is:
 The one-instruction operating version is codified in
 `prompts/one-prompt-full-contest.md`: Phil can ask Codex to run the contest from
 beginning to end, and Codex coordinates the external web chats, Gemini image,
-render, cleanup, commit, and push without using paid APIs.
+render, cleanup, commit, and push without using paid APIs. That instruction
+also covers routine contestant and judging sends, repair prompts, Gemini image
+regeneration, and preview saving. Codex stops only for a login or CAPTCHA, a
+paid upgrade or API, unexpected terms, sensitive-data transmission, or an
+unrecoverable external UI failure.
 
 Operational lesson from live rounds: chat UIs are not APIs. If Gemini leaves a
 prompt in the composer, `Control+Enter` often submits it when the visible send

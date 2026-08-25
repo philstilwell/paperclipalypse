@@ -9,7 +9,12 @@ external AI web chat surfaces and Gemini image generation. Commit and push all.
 ```
 
 That one instruction authorizes Codex to coordinate the whole round without
-using paid model APIs.
+using paid model APIs. It also authorizes all routine external contest actions:
+sending contestant and judging prompts to the five named chat services,
+repairing invalid contestant outputs, generating and regenerating Gemini
+feature images, saving the Gemini 1024x506 preview, writing contest artifacts,
+and committing and pushing the completed round. Do not pause for progress or
+routine-action approval during a one-prompt run.
 
 ## What Codex Does
 
@@ -47,6 +52,10 @@ using paid model APIs.
 - "One-prompt process" means one operator instruction from Phil to Codex. The AI
   contestants still receive separate joke and judge prompts because judging
   requires all jokes to exist first.
+- Stop and report, rather than asking for routine progress approval, only when
+  a login is required, a CAPTCHA appears, a paid upgrade or paid API would be
+  needed, unexpected terms must be accepted, sensitive data would be sent, or
+  an external UI failure prevents completion after reasonable retries.
 - Codex must not invent external contestant jokes or missing scorecards.
 - Codex must not use paid APIs unless Phil explicitly authorizes metered API use.
 - Gemini image generation is the project default for feature images.

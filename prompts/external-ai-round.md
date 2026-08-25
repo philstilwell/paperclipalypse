@@ -97,6 +97,13 @@ Return JSON only:
 
 ## Publishing
 
+The initiating one-prompt contest instruction authorizes this full publishing
+workflow, including routine contestant and judging sends, repair prompts,
+Gemini image retries, preview saving, commit, and push. Do not ask for progress
+approval. Stop and report only for a required login or CAPTCHA, a paid upgrade
+or paid API, unexpected terms, sensitive-data transmission, or an
+unrecoverable external UI failure.
+
 1. Put the five real joke responses and five real scorecards into an episode
    JSON under `data/inbox/`.
 2. Set `source` to `manual-external`.
