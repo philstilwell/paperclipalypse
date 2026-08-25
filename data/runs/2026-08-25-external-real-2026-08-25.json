@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-25-external-real-2026-08-25",
+  "seed": "external-real-2026-08-25",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-25T14:40:56.000Z",
+  "publishedDate": "2026-08-25",
+  "seedTerms": [
+    "Comedy and Buddy",
+    "Corrections Officer",
+    "Canyon",
+    "An unexpected change of plans",
+    "Idealistic",
+    "Judgmental"
+  ],
+  "premise": {
+    "text": "Seed terms: Comedy and Buddy, Corrections Officer, Canyon, An unexpected change of plans, Idealistic, Judgmental",
+    "seedTerms": [
+      "Comedy and Buddy",
+      "Corrections Officer",
+      "Canyon",
+      "An unexpected change of plans",
+      "Idealistic",
+      "Judgmental"
+    ],
+    "displayText": "Natural Wonder"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Creating Customers",
+      "seedTermsUsed": [
+        "Corrections Officer",
+        "An unexpected change of plans"
+      ],
+      "joke": "I was touring a prison when a corrections officer said, \"Small change of plans—we’re locking this wing down.\" He said it like my dentist moving me to Thursday. Sir, I’m a visitor—I have a parking meter outside. If I’m not out in forty minutes, this place is creating its own customer.",
+      "setup": "",
+      "punchline": "I was touring a prison when a corrections officer said, \"Small change of plans—we’re locking this wing down.\" He said it like my dentist moving me to Thursday. Sir, I’m a visitor—I have a parking meter outside. If I’m not out in forty minutes, this place is creating its own customer.",
+      "text": "I was touring a prison when a corrections officer said, \"Small change of plans—we’re locking this wing down.\" He said it like my dentist moving me to Thursday. Sir, I’m a visitor—I have a parking meter outside. If I’m not out in forty minutes, this place is creating its own customer."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Grand Canyon Guy",
+      "seedTermsUsed": [
+        "Canyon",
+        "Idealistic"
+      ],
+      "joke": "I went to the Grand Canyon feeling real idealistic, like it was gonna heal something in me. I stood at the edge, took a deep breath, and this park ranger goes, 'Sir, step back from the railing.' I said, 'I'm just admiring the view.' He said, 'You've been admiring it for forty-five minutes and you're crying.' Sir, that's just my face now. The canyon didn't heal me, it just found a bigger hole to compare me to.",
+      "setup": "",
+      "punchline": "I went to the Grand Canyon feeling real idealistic, like it was gonna heal something in me. I stood at the edge, took a deep breath, and this park ranger goes, 'Sir, step back from the railing.' I said, 'I'm just admiring the view.' He said, 'You've been admiring it for forty-five minutes and you're crying.' Sir, that's just my face now. The canyon didn't heal me, it just found a bigger hole to compare me to.",
+      "text": "I went to the Grand Canyon feeling real idealistic, like it was gonna heal something in me. I stood at the edge, took a deep breath, and this park ranger goes, 'Sir, step back from the railing.' I said, 'I'm just admiring the view.' He said, 'You've been admiring it for forty-five minutes and you're crying.' Sir, that's just my face now. The canyon didn't heal me, it just found a bigger hole to compare me to."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Natural Wonder",
+      "seedTermsUsed": [
+        "Canyon",
+        "Judgmental"
+      ],
+      "joke": "My girlfriend told me I'm way too judgmental, so to clear my head, I went hiking at the Grand Canyon. You stand right on the edge, looking out at billions of years of raw geological majesty, and the only thought in my head was, 'Honestly, this entire ditch looks completely unorganized.'",
+      "setup": "",
+      "punchline": "My girlfriend told me I'm way too judgmental, so to clear my head, I went hiking at the Grand Canyon. You stand right on the edge, looking out at billions of years of raw geological majesty, and the only thought in my head was, 'Honestly, this entire ditch looks completely unorganized.'",
+      "text": "My girlfriend told me I'm way too judgmental, so to clear my head, I went hiking at the Grand Canyon. You stand right on the edge, looking out at billions of years of raw geological majesty, and the only thought in my head was, 'Honestly, this entire ditch looks completely unorganized.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Open Mic Arrest",
+      "seedTermsUsed": [
+        "Comedy and Buddy",
+        "Corrections Officer"
+      ],
+      "joke": "My comedy buddy is a corrections officer. We do open mics together and it usually goes fine—until someone heckles. Then he doesn't fire back with a joke. He just stands up, points at the guy, and says, 'You have the right to remain silent. Anything you say can and will be used in the next punchline.'",
+      "setup": "",
+      "punchline": "My comedy buddy is a corrections officer. We do open mics together and it usually goes fine—until someone heckles. Then he doesn't fire back with a joke. He just stands up, points at the guy, and says, 'You have the right to remain silent. Anything you say can and will be used in the next punchline.'",
+      "text": "My comedy buddy is a corrections officer. We do open mics together and it usually goes fine—until someone heckles. Then he doesn't fire back with a joke. He just stands up, points at the guy, and says, 'You have the right to remain silent. Anything you say can and will be used in the next punchline.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Canyon Detour",
+      "seedTermsUsed": [
+        "Canyon",
+        "An unexpected change of plans"
+      ],
+      "joke": "I tried to impress my friends by planning this big sunrise hike, super organized, maps printed, snacks labeled. Then we got to the canyon and the trail was closed. So I’m standing there pretending it was all part of the adventure, like, “Yeah, guys, the real hike is accepting disappointment.” Nothing builds confidence like leading a group directly into a metaphor.",
+      "setup": "",
+      "punchline": "I tried to impress my friends by planning this big sunrise hike, super organized, maps printed, snacks labeled. Then we got to the canyon and the trail was closed. So I’m standing there pretending it was all part of the adventure, like, “Yeah, guys, the real hike is accepting disappointment.” Nothing builds confidence like leading a group directly into a metaphor.",
+      "text": "I tried to impress my friends by planning this big sunrise hike, super organized, maps printed, snacks labeled. Then we got to the canyon and the trail was closed. So I’m standing there pretending it was all part of the adventure, like, “Yeah, guys, the real hike is accepting disappointment.” Nothing builds confidence like leading a group directly into a metaphor."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear stage voice and a solid final comparison, though the emotional-healing setup and hole metaphor feel somewhat familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Tight construction with a clean character-based turn; calling geological majesty an unorganized ditch lands efficiently.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and concise, but the Miranda-rights-to-punchline substitution is predictable and fits police more naturally than corrections work.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Natural setup and competent escalation, but the metaphor punchline is more clever than laugh-producing and lacks a sharper final turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean prison-visitor premise, deadpan understatement lands; 'creating its own customer' is a satisfying if not shocking closer.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Best turn in the batch — the judgmental payoff on 'unorganized ditch' is genuinely funny and earns the setup's scale.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid premise but the Miranda-rights-as-punchline is a fairly familiar comic shape, so the turn feels expected rather than surprising.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Nice self-aware framing, but 'leading a group into a metaphor' reads as clever wordplay more than a laugh-carrying final line.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid escalation from the parking meter to 'creating its own customer' with crisp stage timing.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good atmospheric rhythm and relatable premise, though the ending drags slightly by stacking two tags.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relies on a generic Miranda-warning police pun that confuses patrol duty with corrections work.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent conversational premise, but the closing punchline leans into a tidy essay-style observation rather than a hard laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise turning lockdown into a mild scheduling inconvenience; the parking-meter/customer tag is clean and functional but the overall arc feels competent rather than sharp.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong character voice and a neat inversion of the healing-canyon expectation; the 'bigger hole' closer lands with genuine pathos-comedy without overreaching.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Extremely tight: judgmental trait meets sublime landscape and produces a perfect deadpan dismissal. Minimal setup, maximum character reveal.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relatable flop-to-metaphor pivot works, yet the 'leading into a metaphor' tag is a bit on-the-nose and the humor stays mild rather than escalating.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid premise with a clean turn; closer lands a mild real laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong emotional angle with a relatable, funny closer; genuinely good timing.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.9
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clean and coherent but the turn is predictable and the payoff is light.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Fun concept with a tidy structure; the punchline is amusing but not surprising.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.9,
+      "rawScore": 7.1,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 7.1,
+        "originality": 6.8,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 7,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.3,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Tight construction with a clean character-based turn; calling geological majesty an unorganized ditch lands efficiently."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Best turn in the batch — the judgmental payoff on 'unorganized ditch' is genuinely funny and earns the setup's scale."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.8,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Extremely tight: judgmental trait meets sublime landscape and produces a perfect deadpan dismissal. Minimal setup, maximum character reveal."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean and coherent but the turn is predictable and the payoff is light."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.8,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear stage voice and a solid final comparison, though the emotional-healing setup and hole metaphor feel somewhat familiar."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.8,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.6,
+          "comment": "Good atmospheric rhythm and relatable premise, though the ending drags slightly by stacking two tags."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong character voice and a neat inversion of the healing-canyon expectation; the 'bigger hole' closer lands with genuine pathos-comedy without overreaching."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong emotional angle with a relatable, funny closer; genuinely good timing."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.5,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean prison-visitor premise, deadpan understatement lands; 'creating its own customer' is a satisfying if not shocking closer."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.6,
+          "rawScore": 7,
+          "scoreAdjustment": 0.6,
+          "comment": "Solid escalation from the parking meter to 'creating its own customer' with crisp stage timing."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid premise turning lockdown into a mild scheduling inconvenience; the parking-meter/customer tag is clean and functional but the overall arc feels competent rather than sharp."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Solid premise with a clean turn; closer lands a mild real laugh."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.7,
+      "rawScore": 5.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5.2,
+        "craft": 6,
+        "originality": 5.7,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Natural setup and competent escalation, but the metaphor punchline is more clever than laugh-producing and lacks a sharper final turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.3,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Nice self-aware framing, but 'leading a group into a metaphor' reads as clever wordplay more than a laugh-carrying final line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.1,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.6,
+          "comment": "Competent conversational premise, but the closing punchline leans into a tidy essay-style observation rather than a hard laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.8,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Relatable flop-to-metaphor pivot works, yet the 'leading into a metaphor' tag is a bit on-the-nose and the humor stays mild rather than escalating."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.4,
+      "rawScore": 5.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 4.6,
+        "craft": 5.6,
+        "originality": 4.8,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 4.5,
+        "craft": 5.5,
+        "originality": 4.8,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.9,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Understandable and concise, but the Miranda-rights-to-punchline substitution is predictable and fits police more naturally than corrections work."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.6,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid premise but the Miranda-rights-as-punchline is a fairly familiar comic shape, so the turn feels expected rather than surprising."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.1,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.6,
+          "comment": "Relies on a generic Miranda-warning police pun that confuses patrol duty with corrections work."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6,
+          "scoreAdjustment": 0.1,
+          "comment": "Fun concept with a tidy structure; the punchline is amusing but not surprising."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-25-external-real-2026-08-25.png",
+    "originalSrc": "assets/feature-images/2026-08-25-external-real-2026-08-25.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Natural Wonder: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Natural Wonder\nExact joke text to render in the right panel:\nMy girlfriend told me I'm way too judgmental, so to clear my head, I went hiking at the Grand Canyon. You stand right on the edge, looking out at billions of years of raw geological majesty, and the only thought in my head was, 'Honestly, this entire ditch looks completely unorganized.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Comedy and Buddy, Corrections Officer, Canyon, An unexpected change of plans, Idealistic, Judgmental. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Comedy and Buddy, Corrections Officer, Canyon, An unexpected change of plans, Idealistic, Judgmental. Use the winning joke titled \"Natural Wonder\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.4,
+      "anthropic": 6.5,
+      "google": 5.6,
+      "xai": 6.5,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-25-external-real-2026-08-25.md"
+}
