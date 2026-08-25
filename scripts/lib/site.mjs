@@ -448,16 +448,16 @@ function renderScoreTrend(runs) {
   }
 
   const recentPoints = recentTrendPoints(points);
-  const weeklyPoints = weeklyScoreTrendPoints(points);
+  const monthlyPoints = monthlyScoreTrendPoints(points);
   const recentChart = renderTrendSvg(recentPoints, {
     idPrefix: "score-trend-recent",
     title: "Paperclipalypse recent adjusted score trend",
     description: "Line chart comparing adjusted winning scores with the adjusted field average for Paperclipalypse contests in the most recent two weeks."
   });
-  const weeklyChart = renderTrendSvg(weeklyPoints, {
-    idPrefix: "score-trend-weekly",
-    title: "Paperclipalypse weekly average score trend",
-    description: "Line chart comparing weekly average adjusted winning scores with weekly average adjusted field scores for all published Paperclipalypse contests."
+  const monthlyChart = renderTrendSvg(monthlyPoints, {
+    idPrefix: "score-trend-monthly",
+    title: "Paperclipalypse monthly average score trend",
+    description: "Line chart comparing monthly average adjusted winning scores with monthly average adjusted field scores for all published Paperclipalypse contests."
   });
   const tablePoints = [...points].reverse();
   const rows = tablePoints
@@ -480,8 +480,8 @@ function renderScoreTrend(runs) {
             <h2>Adjusted Winning Score Over Time</h2>
           </div>
           <div class="trend-card">
-            <p>The brass line tracks each round's adjusted winning score. The gray line shows the adjusted average score across all five jokes, which is a calmer read on overall joke quality. The default chart shows the most recent two weeks; the weekly view averages each week from the beginning of the archive.</p>
-            ${renderChartViewToggle("score-trend", "score-trend-recent-panel", "score-trend-weekly-panel")}
+            <p>The brass line tracks each round's adjusted winning score. The gray line shows the adjusted average score across all five jokes, which is a calmer read on overall joke quality. The default chart shows the most recent two weeks; the monthly view averages each calendar month from the beginning of the archive.</p>
+            ${renderChartViewToggle("score-trend", "score-trend-recent-panel", "score-trend-monthly-panel")}
             <div class="chart-legend" aria-label="Chart legend">
               <span><i class="legend-win"></i>Adjusted winning score</span>
               <span><i class="legend-average"></i>Adjusted field average</span>
@@ -490,8 +490,8 @@ function renderScoreTrend(runs) {
               <div class="trend-chart-panel" id="score-trend-recent-panel" data-chart-panel="recent">
                 <div class="trend-chart-wrap">${recentChart}</div>
               </div>
-              <div class="trend-chart-panel" id="score-trend-weekly-panel" data-chart-panel="weekly" hidden>
-                <div class="trend-chart-wrap">${weeklyChart}</div>
+              <div class="trend-chart-panel" id="score-trend-monthly-panel" data-chart-panel="monthly" hidden>
+                <div class="trend-chart-wrap">${monthlyChart}</div>
               </div>
             </div>
             <div class="table-scroll trend-table-scroll">
@@ -527,16 +527,16 @@ function renderJudgeScoreTrend(runs) {
   }
 
   const recentData = recentJudgeScoreTrendData(data);
-  const weeklyData = weeklyJudgeScoreTrendData(data);
+  const monthlyData = monthlyJudgeScoreTrendData(data);
   const recentChart = renderJudgeScoreTrendSvg(recentData, {
     idPrefix: "judge-score-trend-recent",
     title: "Paperclipalypse recent judge score trend",
     description: "Line chart comparing each judge model's raw average score given per contest in the most recent two weeks."
   });
-  const weeklyChart = renderJudgeScoreTrendSvg(weeklyData, {
-    idPrefix: "judge-score-trend-weekly",
-    title: "Paperclipalypse weekly average judge score trend",
-    description: "Line chart comparing each judge model's weekly average raw score given for all published Paperclipalypse contests."
+  const monthlyChart = renderJudgeScoreTrendSvg(monthlyData, {
+    idPrefix: "judge-score-trend-monthly",
+    title: "Paperclipalypse monthly average judge score trend",
+    description: "Line chart comparing each judge model's monthly average raw score given for all published Paperclipalypse contests."
   });
   const legend = data.series
     .flatMap((series) => series.legendItems || [{ color: series.color, label: series.judgeName }])
@@ -572,8 +572,8 @@ function renderJudgeScoreTrend(runs) {
             <h2>Average Scores Given Each Contest</h2>
           </div>
           <div class="trend-card">
-            <p>Each line shows the raw average score a judge gave across the four jokes it scored in that contest. These raw tendencies drive the rolling normalization; lower lines are stricter judges, higher lines are more generous judges. Formula: <strong>adjusted score = raw score - judge rolling average + field rolling average</strong>. The default chart shows the most recent two weeks; the weekly view averages each judge by week from the beginning of the archive.</p>
-            ${renderChartViewToggle("judge-score-trend", "judge-score-trend-recent-panel", "judge-score-trend-weekly-panel")}
+            <p>Each line shows the raw average score a judge gave across the four jokes it scored in that contest. These raw tendencies drive the rolling normalization; lower lines are stricter judges, higher lines are more generous judges. Formula: <strong>adjusted score = raw score - judge rolling average + field rolling average</strong>. The default chart shows the most recent two weeks; the monthly view averages each judge by calendar month from the beginning of the archive.</p>
+            ${renderChartViewToggle("judge-score-trend", "judge-score-trend-recent-panel", "judge-score-trend-monthly-panel")}
             <div class="chart-legend judge-score-legend" aria-label="Judge score chart legend">
               ${legend}
             </div>
@@ -581,8 +581,8 @@ function renderJudgeScoreTrend(runs) {
               <div class="trend-chart-panel" id="judge-score-trend-recent-panel" data-chart-panel="recent">
                 <div class="trend-chart-wrap">${recentChart}</div>
               </div>
-              <div class="trend-chart-panel" id="judge-score-trend-weekly-panel" data-chart-panel="weekly" hidden>
-                <div class="trend-chart-wrap">${weeklyChart}</div>
+              <div class="trend-chart-panel" id="judge-score-trend-monthly-panel" data-chart-panel="monthly" hidden>
+                <div class="trend-chart-wrap">${monthlyChart}</div>
               </div>
             </div>
             <div class="table-scroll trend-table-scroll">
@@ -607,11 +607,11 @@ function renderJudgeScoreTrend(runs) {
         </section>`;
 }
 
-function renderChartViewToggle(chartId, recentPanelId, weeklyPanelId) {
+function renderChartViewToggle(chartId, recentPanelId, monthlyPanelId) {
   return `
             <div class="chart-view-toggle" data-chart-toggle="${escapeHtml(chartId)}" aria-label="Chart view">
               <button type="button" data-chart-view="recent" aria-controls="${escapeHtml(recentPanelId)}" aria-pressed="true">Last 2 weeks</button>
-              <button type="button" data-chart-view="weekly" aria-controls="${escapeHtml(weeklyPanelId)}" aria-pressed="false">Weekly averages</button>
+              <button type="button" data-chart-view="monthly" aria-controls="${escapeHtml(monthlyPanelId)}" aria-pressed="false">Monthly averages</button>
             </div>`;
 }
 
@@ -897,14 +897,14 @@ function recentJudgeScoreTrendData(data, days = recentTrendWindowDays) {
   };
 }
 
-function weeklyScoreTrendPoints(points) {
-  return weeklyGroups(points, (point) => dateOnly(point.run))
+function monthlyScoreTrendPoints(points) {
+  return monthlyGroups(points, (point) => dateOnly(point.run))
     .map((group) => {
-      const run = weeklyRun(group.weekStart, group.weekEnd);
+      const run = monthlyRun(group.month);
 
       return {
         run,
-        winnerName: "Weekly average",
+        winnerName: "Monthly average",
         winningScore: average(group.items.map((point) => Number(point.winningScore)).filter(Number.isFinite)),
         averageScore: average(group.items.map((point) => Number(point.averageScore)).filter(Number.isFinite))
       };
@@ -912,15 +912,15 @@ function weeklyScoreTrendPoints(points) {
     .filter((point) => Number.isFinite(point.winningScore) && Number.isFinite(point.averageScore));
 }
 
-function weeklyJudgeScoreTrendData(data) {
-  const groupedRuns = weeklyGroups(
+function monthlyJudgeScoreTrendData(data) {
+  const groupedRuns = monthlyGroups(
     data.runs.map((run, index) => ({ run, index })),
     ({ run }) => dateOnly(run)
   );
-  const weeklyRuns = groupedRuns.map((group) => weeklyRun(group.weekStart, group.weekEnd));
+  const monthlyRuns = groupedRuns.map((group) => monthlyRun(group.month));
 
   return {
-    runs: weeklyRuns,
+    runs: monthlyRuns,
     series: data.series.map((series) => ({
       ...series,
       points: groupedRuns.map((group, groupIndex) => {
@@ -935,8 +935,8 @@ function weeklyJudgeScoreTrendData(data) {
 
         return {
           run: specialColorPoint
-            ? { ...weeklyRuns[groupIndex], trendColorOverride: trendColorForRun(series, specialColorPoint.run) }
-            : weeklyRuns[groupIndex],
+            ? { ...monthlyRuns[groupIndex], trendColorOverride: trendColorForRun(series, specialColorPoint.run) }
+            : monthlyRuns[groupIndex],
           score: average(scores)
         };
       })
@@ -944,53 +944,43 @@ function weeklyJudgeScoreTrendData(data) {
   };
 }
 
-function weeklyGroups(items, dateForItem) {
+function monthlyGroups(items, dateForItem) {
   const groups = new Map();
   for (const item of items) {
     const itemDate = dateForItem(item);
-    const weekStart = weekStartDateOnly(itemDate);
-    const group = groups.get(weekStart) || {
-      weekStart,
-      weekEnd: addDaysDateOnly(weekStart, 6),
+    const month = dateOnly(itemDate).slice(0, 7);
+    const group = groups.get(month) || {
+      month,
       items: []
     };
 
     group.items.push(item);
-    groups.set(weekStart, group);
+    groups.set(month, group);
   }
 
-  return [...groups.values()].sort((a, b) => a.weekStart.localeCompare(b.weekStart));
+  return [...groups.values()].sort((a, b) => a.month.localeCompare(b.month));
 }
 
-function weeklyRun(weekStart, weekEnd) {
-  const label = weeklyRangeLabel(weekStart, weekEnd);
+function monthlyRun(month) {
+  const monthStart = `${month}-01`;
+  const label = monthlyLabel(monthStart);
 
   return {
-    publishedDate: weekStart,
-    createdAt: `${weekStart}T12:00:00Z`,
+    publishedDate: monthStart,
+    createdAt: `${monthStart}T12:00:00Z`,
     displayLabel: label,
-    markerLabel: `Week ${label}`
+    markerLabel: label
   };
 }
 
-function weeklyRangeLabel(weekStart, weekEnd) {
-  const start = shortPublicationDate(weekStart).replace(/, \d{4}$/u, "");
-  const end = shortPublicationDate(weekEnd).replace(/, \d{4}$/u, "");
-  const [startMonth, startDay] = start.split(" ");
-  const [endMonth, endDay] = end.split(" ");
-
-  return startMonth === endMonth
-    ? `${startMonth} ${startDay}-${endDay}`
-    : `${start}-${end}`;
-}
-
-function weekStartDateOnly(value) {
+function monthlyLabel(value) {
   const date = utcDateFromDateOnly(value);
-  const day = date.getUTCDay();
-  const offset = (day + 6) % 7;
-  date.setUTCDate(date.getUTCDate() - offset);
 
-  return dateOnlyFromUtcDate(date);
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC"
+  }).format(date);
 }
 
 function addDaysDateOnly(value, days) {
