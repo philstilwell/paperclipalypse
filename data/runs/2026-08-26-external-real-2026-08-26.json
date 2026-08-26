@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-26-external-real-2026-08-26",
+  "seed": "external-real-2026-08-26",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-26T14:02:38.701Z",
+  "publishedDate": "2026-08-26",
+  "seedTerms": [
+    "Revenge",
+    "Socialite",
+    "Performing Arts Theater",
+    "A loved one being put in harm's way",
+    "Supportive",
+    "Indecisive"
+  ],
+  "premise": {
+    "text": "Seed terms: Revenge, Socialite, Performing Arts Theater, A loved one being put in harm's way, Supportive, Indecisive",
+    "seedTerms": [
+      "Revenge",
+      "Socialite",
+      "Performing Arts Theater",
+      "A loved one being put in harm's way",
+      "Supportive",
+      "Indecisive"
+    ],
+    "displayText": "Parking Spot Payback"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "High-Society Revenge",
+      "seedTermsUsed": [
+        "Revenge",
+        "Socialite"
+      ],
+      "joke": "I once dated a socialite, and after we broke up she got revenge the rich-person way. She didn’t key my car or spread rumors. She changed my seat at a charity gala so I spent three hours next to a man explaining his wine portfolio. Halfway through, I was begging her to just slash my tires.",
+      "setup": "",
+      "punchline": "I once dated a socialite, and after we broke up she got revenge the rich-person way. She didn’t key my car or spread rumors. She changed my seat at a charity gala so I spent three hours next to a man explaining his wine portfolio. Halfway through, I was begging her to just slash my tires.",
+      "text": "I once dated a socialite, and after we broke up she got revenge the rich-person way. She didn’t key my car or spread rumors. She changed my seat at a charity gala so I spent three hours next to a man explaining his wine portfolio. Halfway through, I was begging her to just slash my tires."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Understudy for Revenge",
+      "seedTermsUsed": [
+        "Revenge",
+        "Indecisive"
+      ],
+      "joke": "My ex cheated on me, so I spent a year plotting revenge. Elaborate revenge. I researched his new girlfriend's schedule, his gym hours, his mom's birthday. But I'm so indecisive I couldn't commit to a plan. Slash his tires? Text his mother? Get a better haircut and 'accidentally' walk by? I ended up doing all three, on different days, like a part-time villain. Closure isn't a moment for me, it's a rollout schedule.",
+      "setup": "",
+      "punchline": "My ex cheated on me, so I spent a year plotting revenge. Elaborate revenge. I researched his new girlfriend's schedule, his gym hours, his mom's birthday. But I'm so indecisive I couldn't commit to a plan. Slash his tires? Text his mother? Get a better haircut and 'accidentally' walk by? I ended up doing all three, on different days, like a part-time villain. Closure isn't a moment for me, it's a rollout schedule.",
+      "text": "My ex cheated on me, so I spent a year plotting revenge. Elaborate revenge. I researched his new girlfriend's schedule, his gym hours, his mom's birthday. But I'm so indecisive I couldn't commit to a plan. Slash his tires? Text his mother? Get a better haircut and 'accidentally' walk by? I ended up doing all three, on different days, like a part-time villain. Closure isn't a moment for me, it's a rollout schedule."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Front Row Drama",
+      "seedTermsUsed": [
+        "Performing Arts Theater",
+        "Indecisive"
+      ],
+      "joke": "My partner took twenty minutes pacing in the performing arts theater lobby just trying to pick between sparkling water and tap, absolutely paralyzed by the menu. Then, ten seconds after the live play started, during an actor's quiet dramatic whisper, they confidently decided it was the perfect time to open a family-sized bag of SunChips.",
+      "setup": "",
+      "punchline": "My partner took twenty minutes pacing in the performing arts theater lobby just trying to pick between sparkling water and tap, absolutely paralyzed by the menu. Then, ten seconds after the live play started, during an actor's quiet dramatic whisper, they confidently decided it was the perfect time to open a family-sized bag of SunChips.",
+      "text": "My partner took twenty minutes pacing in the performing arts theater lobby just trying to pick between sparkling water and tap, absolutely paralyzed by the menu. Then, ten seconds after the live play started, during an actor's quiet dramatic whisper, they confidently decided it was the perfect time to open a family-sized bag of SunChips."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Parking Spot Payback",
+      "seedTermsUsed": [
+        "Revenge",
+        "Indecisive"
+      ],
+      "joke": "I planned the perfect revenge on the guy who stole my parking spot. Key the car? Egg it? Leave a nasty note under the wiper? Being indecisive, I stood there fifteen minutes trying to decide. He came back, saw me hovering, and asked if I needed help finding my keys. Now he waves every time he sees me. My revenge is having to wave back like we're friends.",
+      "setup": "",
+      "punchline": "I planned the perfect revenge on the guy who stole my parking spot. Key the car? Egg it? Leave a nasty note under the wiper? Being indecisive, I stood there fifteen minutes trying to decide. He came back, saw me hovering, and asked if I needed help finding my keys. Now he waves every time he sees me. My revenge is having to wave back like we're friends.",
+      "text": "I planned the perfect revenge on the guy who stole my parking spot. Key the car? Egg it? Leave a nasty note under the wiper? Being indecisive, I stood there fifteen minutes trying to decide. He came back, saw me hovering, and asked if I needed help finding my keys. Now he waves every time he sees me. My revenge is having to wave back like we're friends."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Balcony Justice",
+      "seedTermsUsed": [
+        "Revenge",
+        "Socialite"
+      ],
+      "joke": "I dated this socialite who loved making dramatic entrances—balconies, spotlights, the whole thing. One night she dumped me right before her big charity gala, so I showed up anyway. When she stepped onto the balcony to greet everyone, I yelled, “Your Wi‑Fi still auto-connects to my phone!” The gasp from the crowd was priceless. That’s the closest I’ve ever come to feeling powerful in loafers.",
+      "setup": "",
+      "punchline": "I dated this socialite who loved making dramatic entrances—balconies, spotlights, the whole thing. One night she dumped me right before her big charity gala, so I showed up anyway. When she stepped onto the balcony to greet everyone, I yelled, “Your Wi‑Fi still auto-connects to my phone!” The gasp from the crowd was priceless. That’s the closest I’ve ever come to feeling powerful in loafers.",
+      "text": "I dated this socialite who loved making dramatic entrances—balconies, spotlights, the whole thing. One night she dumped me right before her big charity gala, so I showed up anyway. When she stepped onto the balcony to greet everyone, I yelled, “Your Wi‑Fi still auto-connects to my phone!” The gasp from the crowd was priceless. That’s the closest I’ve ever come to feeling powerful in loafers."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear escalation and a solid rollout-schedule tag, though the indecisive revenge premise and villain framing feel somewhat familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong behavioral reversal from trivial indecision to disastrously confident timing; concrete, relatable, and cleanly staged.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The accidental-friendship turn is genuinely non-obvious, and the forced waving back makes an effective final escalation.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.7
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The Wi-Fi reveal is unexpected but not consequential enough to justify the gala setup, and the loafers tag adds flavor more than laughter.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise, strong escalation, punchline lands via understatement.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Cute contrast but chip-bag turn is a fairly familiar theater-etiquette bit.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Good indecision spiral, mild anticlimax ending softens the laugh a bit.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Fun image but 'loafers' tag line is weaker than the wifi reveal itself.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean stage economy with a grounded, relatable escalation. The 'wine portfolio' payoff lands neatly and avoids generic tropes.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good comedic voice and phrasing ('part-time villain'), but the punchline peters out into a descriptive concept rather than a hard laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Strong situational turn. The irony of the indecision leading to polite hostage-friendship works very well on stage.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Premise collapses under scrutiny; yelling about Wi-Fi auto-connecting makes no comedic or narrative sense to a ballroom crowd.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.800000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear socialite-revenge premise with a clean preference for classic vandalism over boredom.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good escalation from elaborate plotting into piecemeal actions and a solid rollout closer.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Concrete lobby paralysis leading to a loud, specific snack timing gag.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Fresh Wi-Fi reveal works, but the loafers tag softens the final snap.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise with a relatable rich-person revenge angle; closer lands a mild real laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid escalation and a clear first-person rhythm; the rollout-schedule turn is amusing.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "google",
+          "comment": "Coherent and grounded, but the turn is predictable and the payoff is light.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Fun social awkwardness angle; the forced friendship closer lands a modest laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 7,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 7.1,
+        "craft": 7.1,
+        "originality": 6.6,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.6,
+          "rawScore": 7.7,
+          "scoreAdjustment": -0.1,
+          "comment": "The accidental-friendship turn is genuinely non-obvious, and the forced waving back makes an effective final escalation."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Good indecision spiral, mild anticlimax ending softens the laugh a bit."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.6,
+          "comment": "Strong situational turn. The irony of the indecision leading to polite hostage-friendship works very well on stage."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Fun social awkwardness angle; the forced friendship closer lands a modest laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean premise, strong escalation, punchline lands via understatement."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.6,
+          "comment": "Clean stage economy with a grounded, relatable escalation. The 'wine portfolio' payoff lands neatly and avoids generic tropes."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Clear socialite-revenge premise with a clean preference for classic vandalism over boredom."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean premise with a relatable rich-person revenge angle; closer lands a mild real laugh."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear escalation and a solid rollout-schedule tag, though the indecisive revenge premise and villain framing feel somewhat familiar."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.9,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.6,
+          "comment": "Good comedic voice and phrasing ('part-time villain'), but the punchline peters out into a descriptive concept rather than a hard laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Good escalation from elaborate plotting into piecemeal actions and a solid rollout closer."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Solid escalation and a clear first-person rhythm; the rollout-schedule turn is amusing."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.2,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 6.1,
+        "craft": 6.4,
+        "originality": 6.1,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong behavioral reversal from trivial indecision to disastrously confident timing; concrete, relatable, and cleanly staged."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Cute contrast but chip-bag turn is a fairly familiar theater-etiquette bit."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.3,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.4,
+          "comment": "Concrete lobby paralysis leading to a loud, specific snack timing gag."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Coherent and grounded, but the turn is predictable and the payoff is light."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 6,
+        "craft": 5.5,
+        "originality": 6.2,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 6,
+        "craft": 5.5,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.9,
+          "rawScore": 6,
+          "scoreAdjustment": -0.1,
+          "comment": "The Wi-Fi reveal is unexpected but not consequential enough to justify the gala setup, and the loafers tag adds flavor more than laughter."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Fun image but 'loafers' tag line is weaker than the wifi reveal itself."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.6,
+          "comment": "Premise collapses under scrutiny; yelling about Wi-Fi auto-connecting makes no comedic or narrative sense to a ballroom crowd."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.2,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Fresh Wi-Fi reveal works, but the loafers tag softens the final snap."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-26-external-real-2026-08-26.png",
+    "originalSrc": "assets/feature-images/2026-08-26-external-real-2026-08-26.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-06-feature-image-v4",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Parking Spot Payback: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: xAI Grok 4.3 - Parking Spot Payback\nExact joke text to render in the right panel:\nI planned the perfect revenge on the guy who stole my parking spot. Key the car? Egg it? Leave a nasty note under the wiper? Being indecisive, I stood there fifteen minutes trying to decide. He came back, saw me hovering, and asked if I needed help finding my keys. Now he waves every time he sees me. My revenge is having to wave back like we're friends.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Revenge, Socialite, Performing Arts Theater, A loved one being put in harm's way, Supportive, Indecisive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Revenge, Socialite, Performing Arts Theater, A loved one being put in harm's way, Supportive, Indecisive. Use the winning joke titled \"Parking Spot Payback\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.4,
+      "anthropic": 6.5,
+      "google": 5.7,
+      "xai": 6.7,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-26-external-real-2026-08-26.md"
+}

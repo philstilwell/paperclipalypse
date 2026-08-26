@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-08-26T14:02:38.701Z",
+  "publishedDate": "2026-08-26",
+  "seed": "external-real-2026-08-26",
+  "slug": "2026-08-26-external-real-2026-08-26",
+  "source": "manual-external",
+  "seedTerms": [
+    "Revenge",
+    "Socialite",
+    "Performing Arts Theater",
+    "A loved one being put in harm's way",
+    "Supportive",
+    "Indecisive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "High-Society Revenge",
+      "seedTermsUsed": [
+        "Revenge",
+        "Socialite"
+      ],
+      "joke": "I once dated a socialite, and after we broke up she got revenge the rich-person way. She didn’t key my car or spread rumors. She changed my seat at a charity gala so I spent three hours next to a man explaining his wine portfolio. Halfway through, I was begging her to just slash my tires.",
+      "setup": "",
+      "punchline": "I once dated a socialite, and after we broke up she got revenge the rich-person way. She didn’t key my car or spread rumors. She changed my seat at a charity gala so I spent three hours next to a man explaining his wine portfolio. Halfway through, I was begging her to just slash my tires.",
+      "text": "I once dated a socialite, and after we broke up she got revenge the rich-person way. She didn’t key my car or spread rumors. She changed my seat at a charity gala so I spent three hours next to a man explaining his wine portfolio. Halfway through, I was begging her to just slash my tires."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Understudy for Revenge",
+      "seedTermsUsed": [
+        "Revenge",
+        "Indecisive"
+      ],
+      "joke": "My ex cheated on me, so I spent a year plotting revenge. Elaborate revenge. I researched his new girlfriend's schedule, his gym hours, his mom's birthday. But I'm so indecisive I couldn't commit to a plan. Slash his tires? Text his mother? Get a better haircut and 'accidentally' walk by? I ended up doing all three, on different days, like a part-time villain. Closure isn't a moment for me, it's a rollout schedule.",
+      "setup": "",
+      "punchline": "My ex cheated on me, so I spent a year plotting revenge. Elaborate revenge. I researched his new girlfriend's schedule, his gym hours, his mom's birthday. But I'm so indecisive I couldn't commit to a plan. Slash his tires? Text his mother? Get a better haircut and 'accidentally' walk by? I ended up doing all three, on different days, like a part-time villain. Closure isn't a moment for me, it's a rollout schedule.",
+      "text": "My ex cheated on me, so I spent a year plotting revenge. Elaborate revenge. I researched his new girlfriend's schedule, his gym hours, his mom's birthday. But I'm so indecisive I couldn't commit to a plan. Slash his tires? Text his mother? Get a better haircut and 'accidentally' walk by? I ended up doing all three, on different days, like a part-time villain. Closure isn't a moment for me, it's a rollout schedule."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Front Row Drama",
+      "seedTermsUsed": [
+        "Performing Arts Theater",
+        "Indecisive"
+      ],
+      "joke": "My partner took twenty minutes pacing in the performing arts theater lobby just trying to pick between sparkling water and tap, absolutely paralyzed by the menu. Then, ten seconds after the live play started, during an actor's quiet dramatic whisper, they confidently decided it was the perfect time to open a family-sized bag of SunChips.",
+      "setup": "",
+      "punchline": "My partner took twenty minutes pacing in the performing arts theater lobby just trying to pick between sparkling water and tap, absolutely paralyzed by the menu. Then, ten seconds after the live play started, during an actor's quiet dramatic whisper, they confidently decided it was the perfect time to open a family-sized bag of SunChips.",
+      "text": "My partner took twenty minutes pacing in the performing arts theater lobby just trying to pick between sparkling water and tap, absolutely paralyzed by the menu. Then, ten seconds after the live play started, during an actor's quiet dramatic whisper, they confidently decided it was the perfect time to open a family-sized bag of SunChips."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Parking Spot Payback",
+      "seedTermsUsed": [
+        "Revenge",
+        "Indecisive"
+      ],
+      "joke": "I planned the perfect revenge on the guy who stole my parking spot. Key the car? Egg it? Leave a nasty note under the wiper? Being indecisive, I stood there fifteen minutes trying to decide. He came back, saw me hovering, and asked if I needed help finding my keys. Now he waves every time he sees me. My revenge is having to wave back like we're friends.",
+      "setup": "",
+      "punchline": "I planned the perfect revenge on the guy who stole my parking spot. Key the car? Egg it? Leave a nasty note under the wiper? Being indecisive, I stood there fifteen minutes trying to decide. He came back, saw me hovering, and asked if I needed help finding my keys. Now he waves every time he sees me. My revenge is having to wave back like we're friends.",
+      "text": "I planned the perfect revenge on the guy who stole my parking spot. Key the car? Egg it? Leave a nasty note under the wiper? Being indecisive, I stood there fifteen minutes trying to decide. He came back, saw me hovering, and asked if I needed help finding my keys. Now he waves every time he sees me. My revenge is having to wave back like we're friends."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Balcony Justice",
+      "seedTermsUsed": [
+        "Revenge",
+        "Socialite"
+      ],
+      "joke": "I dated this socialite who loved making dramatic entrances—balconies, spotlights, the whole thing. One night she dumped me right before her big charity gala, so I showed up anyway. When she stepped onto the balcony to greet everyone, I yelled, “Your Wi‑Fi still auto-connects to my phone!” The gasp from the crowd was priceless. That’s the closest I’ve ever come to feeling powerful in loafers.",
+      "setup": "",
+      "punchline": "I dated this socialite who loved making dramatic entrances—balconies, spotlights, the whole thing. One night she dumped me right before her big charity gala, so I showed up anyway. When she stepped onto the balcony to greet everyone, I yelled, “Your Wi‑Fi still auto-connects to my phone!” The gasp from the crowd was priceless. That’s the closest I’ve ever come to feeling powerful in loafers.",
+      "text": "I dated this socialite who loved making dramatic entrances—balconies, spotlights, the whole thing. One night she dumped me right before her big charity gala, so I showed up anyway. When she stepped onto the balcony to greet everyone, I yelled, “Your Wi‑Fi still auto-connects to my phone!” The gasp from the crowd was priceless. That’s the closest I’ve ever come to feeling powerful in loafers."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear escalation and a solid rollout-schedule tag, though the indecisive revenge premise and villain framing feel somewhat familiar."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong behavioral reversal from trivial indecision to disastrously confident timing; concrete, relatable, and cleanly staged."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "The accidental-friendship turn is genuinely non-obvious, and the forced waving back makes an effective final escalation."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "The Wi-Fi reveal is unexpected but not consequential enough to justify the gala setup, and the loafers tag adds flavor more than laughter."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clean premise, strong escalation, punchline lands via understatement."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Cute contrast but chip-bag turn is a fairly familiar theater-etiquette bit."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good indecision spiral, mild anticlimax ending softens the laugh a bit."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun image but 'loafers' tag line is weaker than the wifi reveal itself."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean stage economy with a grounded, relatable escalation. The 'wine portfolio' payoff lands neatly and avoids generic tropes."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good comedic voice and phrasing ('part-time villain'), but the punchline peters out into a descriptive concept rather than a hard laugh."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong situational turn. The irony of the indecision leading to polite hostage-friendship works very well on stage."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Premise collapses under scrutiny; yelling about Wi-Fi auto-connecting makes no comedic or narrative sense to a ballroom crowd."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear socialite-revenge premise with a clean preference for classic vandalism over boredom."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Good escalation from elaborate plotting into piecemeal actions and a solid rollout closer."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Concrete lobby paralysis leading to a loud, specific snack timing gag."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Fresh Wi-Fi reveal works, but the loafers tag softens the final snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean premise with a relatable rich-person revenge angle; closer lands a mild real laugh."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid escalation and a clear first-person rhythm; the rollout-schedule turn is amusing."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Coherent and grounded, but the turn is predictable and the payoff is light."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Fun social awkwardness angle; the forced friendship closer lands a modest laugh."
+        }
+      ]
+    }
+  ]
+}
