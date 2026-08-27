@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://paperclipalypse.com/</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-26-external-real-2026-08-26.png</image:loc>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-27-external-real-2026-08-27.png</image:loc>
       <image:title>Paperclipalypse</image:title>
       <image:caption>Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/about.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/standings.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/showcase.html</loc>
-    <lastmod>2026-08-26</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -35,10 +35,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://paperclipalypse.com/runs/2026-08-27-external-real-2026-08-27.html</loc>
+    <lastmod>2026-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-27-external-real-2026-08-27.png</image:loc>
+      <image:title>Blood Diamond, But Make It Petty</image:title>
+      <image:caption>Aug 27, 2026 Paperclipalypse AI comedy round: Blood Diamond, But Make It Petty. Claude won with 6.7. Seed terms: Erotic, Jewelry Designer, Tank, Being offered dirty money, Loyal, Childish.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://paperclipalypse.com/runs/2026-08-26-external-real-2026-08-26.html</loc>
     <lastmod>2026-08-26</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
     <image:image>
       <image:loc>https://paperclipalypse.com/assets/feature-images/2026-08-26-external-real-2026-08-26.png</image:loc>
       <image:title>Parking Spot Payback</image:title>
