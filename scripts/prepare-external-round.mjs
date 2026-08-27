@@ -54,6 +54,7 @@ const packet = {
     "Set episodeSkeleton.premise.displayText to the intended published round title. If left blank, the importer will use the winning joke title.",
     "Build data/inbox/<seed>.json from the real jokes and scorecards.",
     "Run the tournament once with --allow-missing-feature-image to create the Gemini image brief.",
+    "Run npm run image:prompt -- --brief data/image-briefs/<round>.md to create the browser-safe plain-text Gemini prompt. Read that file directly in browser automation; do not parse the Markdown brief or embed its contents in a JavaScript string.",
     "Open a fresh Chrome tab or window for Gemini image generation and note its tab id or visible title before working there.",
     "Generate the feature image in Gemini and save the smaller 1024x506 generated preview. Prefer Chrome's media-download action on the generated image element when available; it avoids native save dialogs and full-size exports.",
     "Never use Gemini's full-size export for this project.",

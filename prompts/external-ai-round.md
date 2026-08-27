@@ -118,12 +118,16 @@ joke, any contestant is missing a scorecard, any judge scores itself, any judge
 omits another contestant, or any joke fails the first-person/two-seed structural
 checks.
 
-4. Open a fresh Chrome window for Gemini image generation, then generate the
-   feature image from the written Gemini brief. Save Gemini's 1024x506
-   generated chat-preview image, visually inspect it, and reject/regenerate weak
-   images until the image is polished, on-brief, and free of distracting text or
-   prompt-label artifacts. If Gemini leaves the prompt in the composer after a
-   send-button click, focus the composer and submit with `Control+Enter`.
+4. Run `npm run image:prompt -- --brief data/image-briefs/<round>.md` before
+   opening Gemini. It validates the brief and writes a plain-text prompt file;
+   read that file directly in browser automation rather than parsing Markdown or
+   embedding the prompt in a JavaScript string. Open a fresh Chrome window for
+   Gemini image generation, then generate the feature image. Save Gemini's exact
+   1024x506 generated chat-preview image, visually inspect it, and
+   reject/regenerate weak images until the image is polished, on-brief, and free
+   of distracting text or prompt-label artifacts. If Gemini leaves the prompt in
+   the composer after a send-button click, focus the composer and submit with
+   `Control+Enter`.
    Prefer the browser media-download action on Gemini's visible 1024x506
    generated image preview over the full-size export or a native save dialog.
 

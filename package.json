@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "image:qa": "node scripts/qa-feature-image.mjs",
+    "image:prompt": "node scripts/prepare-feature-image-prompt.mjs",
     "round:prepare": "node scripts/prepare-external-round.mjs",
+    "test": "node --test test/*.test.mjs",
     "tournament": "node scripts/run-tournament.mjs",
     "tournament:dry-run": "PAPERCLIPALYPSE_DRY_RUN=1 node scripts/run-tournament.mjs --seed demo"
   },

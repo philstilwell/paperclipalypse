@@ -22,20 +22,21 @@ transmission, or an unrecoverable external UI failure.
 6. Put the collected data in `data/inbox/<round-name>.json` with `source` set to `manual-external`.
    Include `premise.displayText` when you want an editorial round title;
    otherwise the runner will publish the winning joke title.
-7. Open a fresh Chrome window for Gemini image generation, then generate and
+7. Create the browser-safe prompt file with `npm run image:prompt -- --brief data/image-briefs/<round>.md`. Read that plain-text file directly in the browser; never parse the Markdown brief or embed its contents in a JavaScript string.
+8. Open a fresh Chrome window for Gemini image generation, then generate and
    approve a winning-joke feature image after scoring. Save or capture Gemini's
-   smaller 1024x506 generated preview. Prefer the browser media-download action
+   exact 1024x506 generated preview. Prefer the browser media-download action
    on the visible generated image element when available; this avoids native
    save dialogs and still captures the preview. Never use the full-size export
    for this project. Pass the approved preview file with `--feature-image`.
-8. Run:
+9. Run:
 
 ```sh
 node scripts/run-tournament.mjs --episode-file data/inbox/<round-name>.json --seed <round-name>
 ```
 
-9. Review the generated `site/index.html`, latest `site/runs/*.html`, and `data/runs/*.json`.
-10. Commit and push when the result is ready.
+10. Review the generated `site/index.html`, latest `site/runs/*.html`, and `data/runs/*.json`.
+11. Commit and push when the result is ready.
 
 To attach a newly approved image while rendering:
 

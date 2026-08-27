@@ -34,18 +34,23 @@ routine-action approval during a one-prompt run.
 7. Write the real external episode to `data/inbox/`.
 8. Run the tournament once with `--allow-missing-feature-image` to create the
    Gemini feature image brief.
-9. Open a fresh Chrome window for Gemini image generation so the full browser
+9. Run `npm run image:prompt -- --brief data/image-briefs/<round>.md`. This
+   writes the validated plain-text Gemini prompt under
+   `tmp/gemini-feature-images/`; read that file directly in the browser rather
+   than parsing the Markdown brief or embedding the prompt in a JavaScript
+   string.
+10. Open a fresh Chrome window for Gemini image generation so the full browser
    image controls are accessible.
-10. Prompt Google Gemini image generation for a 2:1 feature image based on the
+11. Prompt Google Gemini image generation for a 2:1 feature image based on the
     winning joke.
-11. Save Gemini's 1024x506 generated chat-preview image, not the full-size
+12. Save Gemini's exact 1024x506 generated chat-preview image, not the full-size
     export and not a cropped screenshot.
-12. QA the saved preview image. Reject and regenerate low-quality images until
+13. QA the saved preview image. Reject and regenerate low-quality images until
     the image is polished, on-brief, readable at web size, and free of visible
     prompt/layout labels or distracting text errors.
-13. Rerun the tournament with `--feature-image` and
+14. Rerun the tournament with `--feature-image` and
     `--feature-image-qa-approved`.
-14. Verify the rendered site, close temporary tabs/dialogues, commit, and push.
+15. Verify the rendered site, close temporary tabs/dialogues, commit, and push.
 
 ## Important Boundaries
 
@@ -94,6 +99,7 @@ Render an external episode and create the Gemini image brief:
 
 ```sh
 node scripts/run-tournament.mjs --episode-file data/inbox/<episode>.json --allow-missing-feature-image
+npm run image:prompt -- --brief data/image-briefs/<round>.md
 ```
 
 Attach the approved Gemini image:

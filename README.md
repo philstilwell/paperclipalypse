@@ -61,6 +61,13 @@ rejected and repaired by the original judge. For feature images, prefer the
 browser media-download action on Gemini's visible 1024x506 preview so the project
 avoids full-size exports and native save dialogs.
 
+Use `npm run image:prompt -- --brief data/image-briefs/<round>.md` before opening
+Gemini. It validates the image brief and writes a plain-text prompt file under
+`tmp/gemini-feature-images/`. Browser automation must read that file directly;
+it must not parse Markdown fences or embed the multi-line prompt in a JavaScript
+string. Image QA accepts only the exact 1024x506 Gemini preview, which prevents
+browser screenshots and full-size exports from reaching the site.
+
 The local demo flow is:
 
 1. A Codex app automation runs on your machine using your normal Codex access.

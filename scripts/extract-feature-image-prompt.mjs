@@ -1,4 +1,5 @@
 import fs from "node:fs/promises";
+import { extractGeminiImagePrompt } from "./lib/feature-image-prompt.mjs";
 
 const briefPath = process.argv[2];
 
@@ -7,12 +8,10 @@ if (!briefPath) {
   process.exit(2);
 }
 
-const brief = await fs.readFile(briefPath, "utf8");
-const match = brief.match(/## Gemini Image Prompt\s+```text\n([\s\S]*?)\n```/);
-
-if (!match) {
-  console.error(`Could not find the Gemini Image Prompt block in ${briefPath}`);
+try {
+  const brief = await fs.readFile(briefPath, "utf8");
+  process.stdout.write(extractGeminiImagePrompt(brief, briefPath));
+} catch (error) {
+  console.error(error.message);
   process.exit(1);
 }
-
-process.stdout.write(`${match[1]}\n`);

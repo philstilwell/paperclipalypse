@@ -74,6 +74,14 @@ ${prompt}
 
 Use Google Gemini image generation for the bitmap. Open a fresh Chrome tab or window first and note the working tab title or id. If Gemini leaves the prompt in the composer after a click, focus the composer and use Control+Enter to submit it.
 
+Before opening Gemini, create a browser-safe plain-text prompt file. Do not parse this Markdown document or interpolate the prompt into a browser JavaScript string:
+
+\`\`\`sh
+node scripts/prepare-feature-image-prompt.mjs --brief ${briefRelPath}
+\`\`\`
+
+Read the generated \`tmp/gemini-feature-images/${run.slug}.prompt.txt\` file directly when filling Gemini's composer.
+
 Save the smaller 1024x506 generated preview, never Gemini's full-size export. Prefer Chrome's media-download action on the visible generated image element, usually the 1024x506 image with alt text like ", AI generated"; this captures the preview directly and avoids native save dialogs. If the media-download path is unavailable, save or capture the same preview image by another non-full-export method.
 
 Low-quality images must be rejected and regenerated until the QA checklist passes. The main joke text must be legible enough not to distract; a tiny stage sign that truncates Paperclipalypse can pass if the rest of the image is polished and on brief.
