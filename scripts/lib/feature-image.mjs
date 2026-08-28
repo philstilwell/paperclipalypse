@@ -56,6 +56,7 @@ export function writeFeatureImageBrief(run, { rootDir, episodeFile } = {}) {
 export function featureImageBrief(run, { episodeFile } = {}) {
   const winningJoke = winningJokeForRun(run);
   const prompt = run.featureImagePrompt || buildFeatureImagePrompt(run);
+  const briefRelPath = path.join("data", "image-briefs", `${run.slug}.md`);
   const episodeArg = episodeFile ? ` --episode-file ${episodeFile}` : " --episode-file data/inbox/<external-episode>.json";
 
   return `# Paperclipalypse Feature Image Brief

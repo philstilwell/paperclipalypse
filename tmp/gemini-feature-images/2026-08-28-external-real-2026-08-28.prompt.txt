@@ -1,0 +1,23 @@
+Generate one polished web feature image for Paperclipalypse.
+ASPECT RATIO: exactly 2:1, horizontal wide banner.
+Style: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.
+Composition instructions, not visible labels:
+- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.
+- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.
+- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.
+- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.
+- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.
+- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.
+- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.
+- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.
+Visible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.
+Do not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.
+Optional small header text above the panel: Winner: Claude - Custody of the Cooler
+Exact joke text to render in the right panel:
+My buddy went to the bathroom at a baseball game and made me hold his nachos, his phone, his kid, and his seat. In that order of importance, apparently, because when the kid wandered off I didn’t even notice for ten minutes — I was busy protecting the nachos with my life. Found out that day I’d die for cheese sauce before I’d die for eye contact with a toddler.
+Scene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.
+Do not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.
+If the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.
+Round seed terms for exclusion reference only: Legal, Business Tycoon, Sporting Event Stands / Bleachers, Being saddled with responsibility, Pensive, Foolish. These are not scene ingredients unless the winning joke explicitly uses them.
+Text rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.
+The final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.

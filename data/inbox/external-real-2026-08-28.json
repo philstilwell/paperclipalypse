@@ -1,0 +1,149 @@
+{
+  "createdAt": "2026-08-28T14:02:32.407Z",
+  "publishedDate": "2026-08-28",
+  "seed": "external-real-2026-08-28",
+  "slug": "2026-08-28-external-real-2026-08-28",
+  "source": "manual-external",
+  "seedTerms": [
+    "Legal",
+    "Business Tycoon",
+    "Sporting Event Stands / Bleachers",
+    "Being saddled with responsibility",
+    "Pensive",
+    "Foolish"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Seat of Justice",
+      "seedTermsUsed": ["Legal", "Sporting Event Stands / Bleachers"],
+      "joke": "I got into an argument with a guy in the bleachers because he said I was sitting in his seat. I checked my ticket; he was right. So I told him, ‘Fine, but I’ve been here three innings—I think I have squatters’ rights.’ That’s when I learned stadium law is mostly enforced by a teenager holding a flashlight.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got into an argument with a guy in the bleachers because he said I was sitting in his seat. I checked my ticket; he was right. So I told him, ‘Fine, but I’ve been here three innings—I think I have squatters’ rights.’ That’s when I learned stadium law is mostly enforced by a teenager holding a flashlight."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Custody of the Cooler",
+      "seedTermsUsed": ["Sporting Event Stands / Bleachers", "Being saddled with responsibility"],
+      "joke": "My buddy went to the bathroom at a baseball game and made me hold his nachos, his phone, his kid, and his seat. In that order of importance, apparently, because when the kid wandered off I didn’t even notice for ten minutes — I was busy protecting the nachos with my life. Found out that day I’d die for cheese sauce before I’d die for eye contact with a toddler.",
+      "setup": "",
+      "punchline": "",
+      "text": "My buddy went to the bathroom at a baseball game and made me hold his nachos, his phone, his kid, and his seat. In that order of importance, apparently, because when the kid wandered off I didn’t even notice for ten minutes — I was busy protecting the nachos with my life. Found out that day I’d die for cheese sauce before I’d die for eye contact with a toddler."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Aisle Seat",
+      "seedTermsUsed": ["Sporting Event Stands / Bleachers", "Being saddled with responsibility"],
+      "joke": "I made the fatal mistake of taking the aisle seat in the bleachers at a baseball game. Instantly, I was saddled with the responsibility of being the logistics coordinator for an entire row of weak bladders. I didn’t pay eighty bucks to watch the game through a parade of sweaty lower backs, passing soggy hot dogs and crumpled twenty-dollar bills down the line like some kind of mustard-stained bank teller.",
+      "setup": "",
+      "punchline": "",
+      "text": "I made the fatal mistake of taking the aisle seat in the bleachers at a baseball game. Instantly, I was saddled with the responsibility of being the logistics coordinator for an entire row of weak bladders. I didn’t pay eighty bucks to watch the game through a parade of sweaty lower backs, passing soggy hot dogs and crumpled twenty-dollar bills down the line like some kind of mustard-stained bank teller."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Bleacher Babysitter",
+      "seedTermsUsed": ["Sporting Event Stands / Bleachers", "Being saddled with responsibility"],
+      "joke": "I finally scored tickets to the big game—cheap seats, way up in the bleachers. Perfect night. Then my brother texts: “Watch my kid for the game, cool?” So now I’m stuck in the sporting event stands, saddled with responsibility for a sugar-crazed seven-year-old who thinks the ump is a personal enemy. By the fourth inning I’m brokering nacho peace deals. I came to yell at the ref, not raise a small human.",
+      "setup": "",
+      "punchline": "",
+      "text": "I finally scored tickets to the big game—cheap seats, way up in the bleachers. Perfect night. Then my brother texts: “Watch my kid for the game, cool?” So now I’m stuck in the sporting event stands, saddled with responsibility for a sugar-crazed seven-year-old who thinks the ump is a personal enemy. By the fourth inning I’m brokering nacho peace deals. I came to yell at the ref, not raise a small human."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Bleacher Duty",
+      "seedTermsUsed": ["Sporting Event Stands / Bleachers", "Being saddled with responsibility"],
+      "joke": "I went to a game just to relax, sat way up in the bleachers. Next thing I know, my buddy hands me his kid and says, “Hold him for a minute.” Suddenly I’m the unofficial babysitter of Section 312. I’m not built for that kind of pressure—every time the crowd stood up, I panicked like I was about to drop the team’s future draft pick.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to a game just to relax, sat way up in the bleachers. Next thing I know, my buddy hands me his kid and says, “Hold him for a minute.” Suddenly I’m the unofficial babysitter of Section 312. I’m not built for that kind of pressure—every time the crowd stood up, I panicked like I was about to drop the team’s future draft pick."
+    }
+  ],
+  "judgeResults": [
+    {"judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+      {"jokeId":"anthropic","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clear escalation and a strong final contrast; the nachos-over-child priority is funny, though the basic distracted-babysitter premise is familiar."},
+      {"jokeId":"google","originality":7,"surprise":6,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong observational premise with vivid wording and good rhythm; the bank-teller image lands, but the turn is more accumulation than surprise."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Understandable and structurally sound, but it leans on prompt-language phrasing and familiar reluctant-babysitter material; the final line mostly restates the setup."},
+      {"jokeId":"copilot","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clean first-person construction and a solid draft-pick metaphor; amusing rather than exceptional, with a predictable setup-to-payoff path."}
+    ]},
+    {"judgeId":"anthropic","judgeName":"Claude","scores":[
+      {"jokeId":"openai","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Fresh legal-code angle on a seat dispute; clean escalation and a snappy closing image."},
+      {"jokeId":"google","originality":7,"surprise":6,"craft":8,"promptFit":8,"laugh":7,"comment":"Vivid, specific escalation with strong sensory punchline ('mustard-stained bank teller'); best crafted of the batch."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":6,"comment":"Solid babysitting-at-the-game bit, competent escalation, but the premise is a fairly familiar route."},
+      {"jokeId":"copilot","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Same babysitting template as another entry but thinner escalation and a softer, more predictable closing line."}
+    ]},
+    {"judgeId":"google","judgeName":"Gemini Flash","scores":[
+      {"jokeId":"openai","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Cleverly applies the 'Legal' concept to 'Bleachers' without forcing the exact wording. The 'teenager holding a flashlight' punchline is grounded, relatable, and has excellent stage rhythm."},
+      {"jokeId":"anthropic","originality":8,"surprise":8,"craft":9,"promptFit":9,"laugh":8,"comment":"Strong rule-of-three escalation with the list of items to hold. The closing contrast between cheese sauce and toddler eye contact is highly original, perfectly paced, and genuinely funny."},
+      {"jokeId":"xai","originality":4,"surprise":4,"craft":4,"promptFit":3,"laugh":4,"comment":"Penalized heavily for literal prompt recitation ('sporting event stands, saddled with responsibility'), which breaks the conversational tone. The premise is also a standard sitcom trope rather than a fresh angle."},
+      {"jokeId":"copilot","originality":4,"surprise":4,"craft":6,"promptFit":8,"laugh":5,"comment":"Competently structured but ultimately forgettable. The punchline about the draft pick is a mild exaggeration that doesn't provide enough of a surprising turn to generate a real laugh."}
+    ]},
+    {"judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+      {"jokeId":"openai","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid seat-dispute premise with a clean legal pivot; flashlight closer is mild but serviceable."},
+      {"jokeId":"anthropic","originality":7,"surprise":7,"craft":8,"promptFit":7,"laugh":7,"comment":"Strong priority gag and final line; responsibility lands clearly while the stands concept stays mostly implied."},
+      {"jokeId":"google","originality":6,"surprise":6,"craft":8,"promptFit":10,"laugh":7,"comment":"Vivid aisle-seat logistics and mustard-teller image; familiar setup elevated by concrete detail."},
+      {"jokeId":"copilot","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Serviceable babysitter-in-bleachers bit; draft-pick closer is cute but expected and light on snap."}
+    ]},
+    {"judgeId":"copilot","judgeName":"Copilot","scores":[
+      {"jokeId":"openai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Clean premise and a mild legal turn; solid but not memorable."},
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Strong escalation and a clear cheese‑over‑child turn; amusing and well‑timed."},
+      {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Vivid imagery and a relatable bleacher‑aisle burden; good rhythm and payoff."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Coherent and clear but follows a familiar babysitting‑at‑the‑game pattern."}
+    ]}
+  ]
+}
