@@ -22,13 +22,14 @@ transmission, or an unrecoverable external UI failure.
 6. Put the collected data in `data/inbox/<round-name>.json` with `source` set to `manual-external`.
    Include `premise.displayText` when you want an editorial round title;
    otherwise the runner will publish the winning joke title.
-7. Create the browser-safe prompt file with `npm run image:prompt -- --brief data/image-briefs/<round>.md`. Read that plain-text file directly in the browser; never parse the Markdown brief or embed its contents in a JavaScript string.
+7. Create the browser-safe prompt file with `npm run image:prompt -- --brief data/image-briefs/<round>.md`. In the Chrome browser-automation runtime, read that plain-text file directly from disk into a variable with `node:fs/promises`. Never navigate to it with a `file://` URL, parse the Markdown brief, or embed its contents in a JavaScript string literal.
 8. Open a fresh Chrome window for Gemini image generation, then generate and
-   approve a winning-joke feature image after scoring. Save or capture Gemini's
-   exact 1024x506 generated preview. Prefer the browser media-download action
-   on the visible generated image element when available; this avoids native
-   save dialogs and still captures the preview. Never use the full-size export
-   for this project. Pass the approved preview file with `--feature-image`.
+   approve a winning-joke feature image after scoring. Confirm the visible
+   preview's natural dimensions are exactly 1024x506, click Gemini's **Copy
+   image** control, read the resulting `image/png` through the browser clipboard
+   bridge, and save those bytes unchanged. Never use a screenshot, crop,
+   thumbnail, page-asset bundle, or full-size export. Pass the approved preview
+   file with `--feature-image`.
 9. Run:
 
 ```sh
@@ -57,9 +58,10 @@ records it as the episode's `featureImage`.
   four `jokeId` values the judge must score.
 - Do not proceed until all five judges have exactly four scores and no
   self-score.
-- For Gemini images, look for the visible 1024x506 generated image preview. The
-  browser media-download action on that image is preferred over full-size export
-  or native save dialogs.
+- For Gemini images, look for the visible 1024x506 generated image preview. Use
+  Gemini's **Copy image** control and the browser clipboard bridge to save the
+  exact preview. The preview is a temporary `blob:` image, so page-asset listing
+  and generic media download are not dependable file-export paths.
 - Gemini may truncate tiny incidental text such as a small stage sign. That can
   pass visual QA when the main joke panel is legible, the composition is strong,
   and the error is not distracting.

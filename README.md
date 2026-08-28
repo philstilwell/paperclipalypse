@@ -36,10 +36,11 @@ So the preferred real-tournament flow is:
 5. It runs the tournament once with `--allow-missing-feature-image` to create
    the Gemini image brief.
 6. It opens a fresh Chrome window for Google Gemini image generation, prompts
-   the winning-joke feature image, opens Gemini's generated preview image, saves
-   or captures the smaller 1024x506 preview, and rejects/regenerates weak images
-   until the image QA checklist passes. Do not use Gemini's full-size export for
-   this project.
+   the winning-joke feature image, verifies Gemini's generated preview is
+   exactly 1024x506, and saves the PNG through Gemini's **Copy image** control
+   and the browser clipboard bridge. It rejects/regenerates weak images until
+   the image QA checklist passes. Do not use screenshots or Gemini's full-size
+   export for this project.
 7. It reruns with `--feature-image` and `--feature-image-qa-approved`.
 8. The runner rejects incomplete participation or unapproved images before
    rendering.
@@ -57,16 +58,17 @@ unrecoverable external UI failure.
 Operational lesson from live rounds: chat UIs are not APIs. If Gemini leaves a
 prompt in the composer, `Control+Enter` often submits it when the visible send
 button does not. Placeholder scorecards such as `{"jokeId":"id", ...}` must be
-rejected and repaired by the original judge. For feature images, prefer the
-browser media-download action on Gemini's visible 1024x506 preview so the project
-avoids full-size exports and native save dialogs.
+rejected and repaired by the original judge. For feature images, use Gemini's
+**Copy image** control and the browser clipboard bridge to save the visible
+1024x506 preview without a screenshot or full-size export.
 
 Use `npm run image:prompt -- --brief data/image-briefs/<round>.md` before opening
 Gemini. It validates the image brief and writes a plain-text prompt file under
-`tmp/gemini-feature-images/`. Browser automation must read that file directly;
-it must not parse Markdown fences or embed the multi-line prompt in a JavaScript
-string. Image QA accepts only the exact 1024x506 Gemini preview, which prevents
-browser screenshots and full-size exports from reaching the site.
+`tmp/gemini-feature-images/`. Chrome browser automation must read that file
+directly from disk into a variable with `node:fs/promises`; it must not navigate
+to a `file://` URL, parse Markdown fences, or embed the multi-line prompt in a
+JavaScript string. Image QA accepts only the exact 1024x506 Gemini preview,
+which prevents browser screenshots and full-size exports from reaching the site.
 
 The local demo flow is:
 

@@ -36,15 +36,18 @@ routine-action approval during a one-prompt run.
    Gemini feature image brief.
 9. Run `npm run image:prompt -- --brief data/image-briefs/<round>.md`. This
    writes the validated plain-text Gemini prompt under
-   `tmp/gemini-feature-images/`; read that file directly in the browser rather
-   than parsing the Markdown brief or embedding the prompt in a JavaScript
-   string.
+   `tmp/gemini-feature-images/`; read that file directly from the Chrome
+   browser-automation runtime's filesystem into a variable with
+   `node:fs/promises`. Do not navigate to it with a `file://` URL, parse the
+   Markdown brief, or embed the prompt in a JavaScript string literal.
 10. Open a fresh Chrome window for Gemini image generation so the full browser
    image controls are accessible.
 11. Prompt Google Gemini image generation for a 2:1 feature image based on the
     winning joke.
-12. Save Gemini's exact 1024x506 generated chat-preview image, not the full-size
-    export and not a cropped screenshot.
+12. Confirm Gemini's generated chat preview has natural dimensions 1024x506,
+    click Gemini's **Copy image** control, read the resulting `image/png` from
+    the browser clipboard bridge, and save those bytes unchanged. Do not use
+    the full-size export, generic page-asset download, or a cropped screenshot.
 13. QA the saved preview image. Reject and regenerate low-quality images until
     the image is polished, on-brief, readable at web size, and free of visible
     prompt/layout labels or distracting text errors.
@@ -81,9 +84,10 @@ routine-action approval during a one-prompt run.
 - If a judge returns a placeholder scorecard instead of scoring the supplied
   jokes, send a short repair prompt naming the exact four `jokeId` values to
   score. Do not hand-score on the judge's behalf.
-- For Gemini feature images, prefer downloading the visible 1024x506 generated
-  image with the browser media-download action. It avoids full-size exports and
-  native save dialogs while preserving the intended web preview.
+- For Gemini feature images, save the visible 1024x506 generated image through
+  Gemini's **Copy image** control and the browser clipboard bridge. The preview
+  uses a temporary `blob:` URL, so page-asset listing and generic media download
+  are not dependable export paths.
 - Minor incidental text errors, such as a tiny truncated stage sign, can pass QA
   if the main joke text is legible and the image is otherwise polished.
 
