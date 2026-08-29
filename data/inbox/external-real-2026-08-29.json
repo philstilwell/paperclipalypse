@@ -1,0 +1,70 @@
+{
+  "createdAt": "2026-08-29T14:01:50.589Z",
+  "publishedDate": "2026-08-29",
+  "seed": "external-real-2026-08-29",
+  "slug": "2026-08-29-external-real-2026-08-29",
+  "source": "manual-external",
+  "seedTerms": ["Legal", "Architect", "Desert / Badlands", "Being offered an easy way out", "Empathetic", "Tactless"],
+  "premise": {"displayText": ""},
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"gemini-3.5-flash"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-4.3"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"openai","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini","title":"Open Floor Plan","seedTermsUsed":["Architect","Tactless"],
+      "joke":"I hired an architect who has absolutely no filter. I told him I wanted an open floor plan. He looked at my marriage and said, “You already have one: no boundaries, no support, and every argument echoes through the whole house.”","setup":"","punchline":"","text":"I hired an architect who has absolutely no filter. I told him I wanted an open floor plan. He looked at my marriage and said, “You already have one: no boundaries, no support, and every argument echoes through the whole house.”"
+    },
+    {
+      "id":"anthropic","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium","title":"Divorce Lawyer GPS","seedTermsUsed":["Legal","Tactless"],
+      "joke":"I told my divorce lawyer I still love my wife, maybe we can work it out. She didn't even look up from her laptop. She just said, 'That's adorable, sign page twelve.' I said 'don't you have, like, empathy training?' She goes, 'I had it. Now I have a boat.' I've never felt so supported and so sold at the same time.","setup":"","punchline":"","text":"I told my divorce lawyer I still love my wife, maybe we can work it out. She didn't even look up from her laptop. She just said, 'That's adorable, sign page twelve.' I said 'don't you have, like, empathy training?' She goes, 'I had it. Now I have a boat.' I've never felt so supported and so sold at the same time."
+    },
+    {
+      "id":"google","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"gemini-3.5-flash","title":"Renovation Shortcut","seedTermsUsed":["Architect","Being offered an easy way out"],
+      "joke":"I hired an architect to redesign my cramped 600-square-foot apartment. He walked in, tapped a wall with his pen, sighed, and offered me the easiest way out: 'Honestly? If you leave a candle burning by these curtains tonight, the insurance payout gets you a much better layout.'","setup":"","punchline":"","text":"I hired an architect to redesign my cramped 600-square-foot apartment. He walked in, tapped a wall with his pen, sighed, and offered me the easiest way out: 'Honestly? If you leave a candle burning by these curtains tonight, the insurance payout gets you a much better layout.'"
+    },
+    {
+      "id":"xai","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-4.3","title":"Brutal Blueprint","seedTermsUsed":["Architect","Tactless"],
+      "joke":"I hired an architect who's brilliant but completely tactless. He walks into my place, looks around for three seconds, and says, \"This has real potential... as a controlled demolition site.\" Then he bills me two hundred bucks for the \"vision consult.\"","setup":"","punchline":"","text":"I hired an architect who's brilliant but completely tactless. He walks into my place, looks around for three seconds, and says, \"This has real potential... as a controlled demolition site.\" Then he bills me two hundred bucks for the \"vision consult.\""
+    },
+    {
+      "id":"copilot","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web","title":"Blueprints","seedTermsUsed":["Architect","Legal"],
+      "joke":"I tried to help my friend with a tiny zoning issue, because I’m an architect and figured, how hard could it be? Five minutes later I’m in a conference room, accidentally giving legal advice. The lawyer leans over and whispers, “You can’t say any of that.” I said, “Why not? It worked great on my last building.” He said, “Yeah, but buildings don’t sue.”","setup":"","punchline":"","text":"I tried to help my friend with a tiny zoning issue, because I’m an architect and figured, how hard could it be? Five minutes later I’m in a conference room, accidentally giving legal advice. The lawyer leans over and whispers, “You can’t say any of that.” I said, “Why not? It worked great on my last building.” He said, “Yeah, but buildings don’t sue.”"
+    }
+  ],
+  "judgeResults": [
+    {"judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":6,"promptFit":4,"laugh":6,"comment":"The boat line is a solid cynical turn, but the joke explicitly introduces empathy as a third seed concept, hurting prompt fit; the closing line also weakens the stronger preceding punchline."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clear premise and a sharply dark, unexpected architectural solution. The insurance-fire turn lands cleanly, though the construction is more clever than truly explosive."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clean and stage-ready, but 'controlled demolition' is a fairly predictable insult for a tactless architect. The billing tag adds a useful second beat without making it exceptional."},
+      {"jokeId":"copilot","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong conversational rhythm and a clean final reversal. 'Buildings don't sue' is an effective punchline, though the premise takes slightly longer than necessary to reach it."}
+    ]},
+    {"judgeId":"anthropic","judgeName":"Claude","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean turn from architecture to marriage; solid but the metaphor mapping is a bit on-the-nose."},
+      {"jokeId":"google","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Insurance-arson route is familiar territory but executed with decent escalation and a clear final line."},
+      {"jokeId":"xai","originality":5,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Demolition line is expected once 'tactless architect' is set up; billing tag feels bolted on rather than the real punch."},
+      {"jokeId":"copilot","originality":7,"surprise":7,"craft":7,"promptFit":6,"laugh":7,"comment":"Nice escalation and the 'buildings don't sue' closer lands well; strongest natural stage rhythm of the batch."}
+    ]},
+    {"judgeId":"google","judgeName":"Gemini Flash","scores":[
+      {"jokeId":"openai","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Sharp, punchy construction. The architectural metaphor applied to marital breakdown snaps perfectly on the rule of three."},
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Solid stage voice and the boat retort lands well, but the final tag over-explains the feeling and diffuses the snap."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"A standard roast setup; 'controlled demolition site' is a well-worn punchline angle that lacks surprise."},
+      {"jokeId":"copilot","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Natural conversational cadence, but the concluding line is relatively mild and predictable for a zoning dispute premise."}
+    ]},
+    {"judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean marriage-to-floor-plan mapping with solid rhythm; turn is clever but somewhat telegraphed."},
+      {"jokeId":"anthropic","originality":6,"surprise":7,"craft":6,"promptFit":3,"laugh":7,"comment":"Boat line lands well, yet the piece pulls in a third seed concept and softens the close with summary."},
+      {"jokeId":"google","originality":5,"surprise":6,"craft":7,"promptFit":9,"laugh":5,"comment":"Concise dark premise and clean delivery, but the arson-insurance payoff feels familiar and mild."},
+      {"jokeId":"copilot","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Serviceable architect-lawyer role gag with a tidy closer; setup runs a touch long for the payoff."}
+    ]},
+    {"judgeId":"copilot","judgeName":"Copilot","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":5,"comment":"Clear premise and a sharp tactless angle; punchline lands but stays narrow."},
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Strong first‑person rhythm and a clean lawyer turn; mildly funny and coherent."},
+      {"jokeId":"google","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Dark insurance gag with a real turn; timing works though familiar."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Straightforward demolition insult; clear but predictable."}
+    ]}
+  ]
+}
