@@ -1,0 +1,70 @@
+{
+  "createdAt": "2026-08-30T14:01:39.288Z",
+  "publishedDate": "2026-08-30",
+  "seed": "external-real-2026-08-30",
+  "slug": "2026-08-30-external-real-2026-08-30",
+  "source": "manual-external",
+  "seedTerms": ["Cozy and Amateur", "Street Performer", "Farm", "Being offered dirty money", "Persistent", "Disloyal"],
+  "premise": {"displayText": ""},
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"gemini-3.5-flash"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-4.3"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"openai","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini","title":"Pick a Card","seedTermsUsed":["Street Performer","Persistent"],
+      "joke":"I saw a street magician who kept asking me to pick a card. I said no three times. On the fourth, he said, “Fine—just think of one.” I walked away. He followed me for two blocks shouting guesses. I’ve never seen a man turn “Is this your card?” into a restraining-order application.","setup":"","punchline":"","text":"I saw a street magician who kept asking me to pick a card. I said no three times. On the fourth, he said, “Fine—just think of one.” I walked away. He followed me for two blocks shouting guesses. I’ve never seen a man turn “Is this your card?” into a restraining-order application."
+    },
+    {
+      "id":"anthropic","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium","title":"The Corner Spot","seedTermsUsed":["Street Performer","Being offered dirty money"],
+      "joke":"I play guitar on a street corner downtown, case open for tips. One night a guy in a tracksuit drops in a thick wad of cash, doesn't even look at me, just mutters 'you didn't see me.' I said 'for this much, I didn't see anybody, I don't even know what a face is anymore.' Best review I ever got, and I hadn't even finished the song.","setup":"","punchline":"","text":"I play guitar on a street corner downtown, case open for tips. One night a guy in a tracksuit drops in a thick wad of cash, doesn't even look at me, just mutters 'you didn't see me.' I said 'for this much, I didn't see anybody, I don't even know what a face is anymore.' Best review I ever got, and I hadn't even finished the song."
+    },
+    {
+      "id":"google","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"gemini-3.5-flash","title":"Hustling the Subways","seedTermsUsed":["Street Performer","Persistent"],
+      "joke":"I tried making extra cash as a subway street performer, which is tough because my only instrument is a melodica I found in a puddle. But I refuse to let rejection break my spirit. If someone walks past without dropping a dollar, I don't just stop playing—I follow them onto the next train, staring deep into their eyes while maintaining eye contact through three entire stops until they Venmo me five bucks just to escape my zone of acoustic harassment.","setup":"","punchline":"","text":"I tried making extra cash as a subway street performer, which is tough because my only instrument is a melodica I found in a puddle. But I refuse to let rejection break my spirit. If someone walks past without dropping a dollar, I don't just stop playing—I follow them onto the next train, staring deep into their eyes while maintaining eye contact through three entire stops until they Venmo me five bucks just to escape my zone of acoustic harassment."
+    },
+    {
+      "id":"xai","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-4.3","title":"Best Tip Ever","seedTermsUsed":["Street Performer","Persistent"],
+      "joke":"I tried being a street performer with my guitar. Turns out I'm way too persistent. If the crowd didn't clap, I'd just keep playing the same three chords until someone paid me out of pure exhaustion. One guy finally handed me a ten and said, 'I'll pay you to stop.' Still the best tip of my career.","setup":"","punchline":"","text":"I tried being a street performer with my guitar. Turns out I'm way too persistent. If the crowd didn't clap, I'd just keep playing the same three chords until someone paid me out of pure exhaustion. One guy finally handed me a ten and said, 'I'll pay you to stop.' Still the best tip of my career."
+    },
+    {
+      "id":"copilot","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web","title":"Blanket Act","seedTermsUsed":["Cozy and Amateur","Street Performer"],
+      "joke":"I tried being a street performer once, figured I’d keep it cozy so I brought a blanket. Big mistake. I looked less like an artist and more like an amateur who’d given up halfway through a nap. People kept dropping change and saying, “Hang in there, man.” I wasn’t even performing yet—that was just me setting up.","setup":"","punchline":"","text":"I tried being a street performer once, figured I’d keep it cozy so I brought a blanket. Big mistake. I looked less like an artist and more like an amateur who’d given up halfway through a nap. People kept dropping change and saying, “Hang in there, man.” I wasn’t even performing yet—that was just me setting up."
+    }
+  ],
+  "judgeResults": [
+    {"judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+      {"jokeId":"anthropic","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Clear premise and a strong criminal-money turn; the face line lands, though the final tag adds less than the middle punch."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":6,"promptFit":10,"laugh":7,"comment":"Funny escalation into acoustic harassment with a vivid premise, but it runs long and overexplains the payoff."},
+      {"jokeId":"xai","originality":4,"surprise":4,"craft":6,"promptFit":10,"laugh":5,"comment":"Clean and understandable, but the 'pay you to stop playing' punchline is extremely familiar and predictable."},
+      {"jokeId":"copilot","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong visual premise, economical escalation, and a clean final reveal that the pity started before the performance."}
+    ]},
+    {"judgeId":"anthropic","judgeName":"Claude","scores":[
+      {"jokeId":"openai","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean escalation with a sharp, well-earned final line; natural stand-up rhythm."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Vivid, specific images (puddle melodica, eye contact for three stops) with a strong closing phrase, slightly overlong setup."},
+      {"jokeId":"xai","originality":6,"surprise":6,"craft":8,"promptFit":9,"laugh":7,"comment":"Tight and economical with a satisfying 'pay to stop' snap, though the payoff shape is a fairly familiar bit."},
+      {"jokeId":"copilot","originality":6,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Cute premise but the closer restates the setup rather than landing a real turn; softer laugh."}
+    ]},
+    {"judgeId":"google","judgeName":"Gemini Flash","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Decent premise with clear use of the two seed terms, though the execution feels slightly drawn out."},
+      {"jokeId":"anthropic","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Good comedic turn on the dirty money trope with strong first-person delivery and natural stage rhythm."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Relies on a very familiar, formulaic 'being paid to stop playing' punchline that feels somewhat predictable."},
+      {"jokeId":"copilot","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Clean setup utilizing the cozy and amateur concept well, landing a mild smile with the final image."}
+    ]},
+    {"judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+      {"jokeId":"openai","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean premise and escalation; the restraining-order close lands with real snap."},
+      {"jokeId":"anthropic","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid dirty-money implication and natural voice, but the payoff stays mild."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":6,"promptFit":9,"laugh":7,"comment":"Good train-stare escalation and phrase, though the setup runs a touch long."},
+      {"jokeId":"copilot","originality":6,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Clear image and tidy form, yet the turn is soft and mostly yields a smile."}
+    ]},
+    {"judgeId":"copilot","judgeName":"Copilot","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Clean premise and a solid restraining‑order turn; funny, not exceptional."},
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Strong image and natural voice; payoff is good but familiar."},
+      {"jokeId":"google","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":5,"comment":"Escalation works but drags; funny idea with a slightly overlong beat."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Straightforward exhaustion gag; clear but predictable."}
+    ]}
+  ]
+}
