@@ -1,0 +1,70 @@
+{
+  "createdAt": "2026-08-31T14:03:02.899Z",
+  "publishedDate": "2026-08-31",
+  "seed": "external-real-2026-08-31",
+  "slug": "2026-08-31-external-real-2026-08-31",
+  "source": "manual-external",
+  "seedTerms": ["Time Travel", "Therapist", "Summer Camp", "Being manipulated", "Charming", "Humorless"],
+  "premise": {"displayText": ""},
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"gemini-3.7-flash-web"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-fast-web"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"openai","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini","title":"Forty Years","seedTermsUsed":["Time Travel","Summer Camp"],
+      "joke":"I built a time machine and went back to summer camp to stop myself from performing in the talent show. I told twelve-year-old me, “Trust me, this will embarrass you for forty years.” He lit up: “I live past fifty?” Then he ran onstage like I’d just given him a standing ovation.","setup":"","punchline":"","text":"I built a time machine and went back to summer camp to stop myself from performing in the talent show. I told twelve-year-old me, “Trust me, this will embarrass you for forty years.” He lit up: “I live past fifty?” Then he ran onstage like I’d just given him a standing ovation."
+    },
+    {
+      "id":"anthropic","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium","title":"The Time Machine Boyfriend","seedTermsUsed":["Time Travel","Being manipulated"],
+      "joke":"I dated a guy who claimed he could time travel. Never proved it, but boy could he use it. Every fight somehow became about something I did in 2019. 'This is just like when you canceled on me in 2019.' I don't even remember 2019, man, but apparently I owe you an apology from the past. He wasn't a time traveler. He was just really good at dragging me there.","setup":"","punchline":"","text":"I dated a guy who claimed he could time travel. Never proved it, but boy could he use it. Every fight somehow became about something I did in 2019. 'This is just like when you canceled on me in 2019.' I don't even remember 2019, man, but apparently I owe you an apology from the past. He wasn't a time traveler. He was just really good at dragging me there."
+    },
+    {
+      "id":"google","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"gemini-3.7-flash-web","title":"Cabin Fever","seedTermsUsed":["Summer Camp","Humorless"],
+      "joke":"I got sent to a sleepaway camp run by joyless survivalists who treated eight-year-olds like conscripts. Day two, I tried cracking a joke to break the ice during mandatory silent breakfast, and the head counselor stared right through my soul and said, 'Laughter burns calories you haven't earned today.' I didn't smile again until my parents picked me up in August.","setup":"","punchline":"","text":"I got sent to a sleepaway camp run by joyless survivalists who treated eight-year-olds like conscripts. Day two, I tried cracking a joke to break the ice during mandatory silent breakfast, and the head counselor stared right through my soul and said, 'Laughter burns calories you haven't earned today.' I didn't smile again until my parents picked me up in August."
+    },
+    {
+      "id":"xai","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-fast-web","title":"Camp Royalty","seedTermsUsed":["Summer Camp","Charming"],
+      "joke":"When I was at summer camp, there was this charming kid who convinced the whole cabin he was a European prince. We made his bed, carried his backpack, gave him the best bunk. Then visiting day came and his mom pulled up in a rusty minivan from Ohio yelling, 'Tommy, get your butt in the car!' So much for nobility.","setup":"","punchline":"","text":"When I was at summer camp, there was this charming kid who convinced the whole cabin he was a European prince. We made his bed, carried his backpack, gave him the best bunk. Then visiting day came and his mom pulled up in a rusty minivan from Ohio yelling, 'Tommy, get your butt in the car!' So much for nobility."
+    },
+    {
+      "id":"copilot","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web","title":"Early Arrival","seedTermsUsed":["Summer Camp","Time Travel"],
+      "joke":"I tried revisiting the summer camp I went to as a kid, and the place felt frozen in time. Same cabins, same lake, same counselor yelling at me for being late. I said, “I’m thirty-five now, does it still count?” He said, “Absolutely. You were supposed to be here at 9.” That’s when I realized time travel is real—I’m still getting in trouble for the same stuff decades later.","setup":"","punchline":"","text":"I tried revisiting the summer camp I went to as a kid, and the place felt frozen in time. Same cabins, same lake, same counselor yelling at me for being late. I said, “I’m thirty-five now, does it still count?” He said, “Absolutely. You were supposed to be here at 9.” That’s when I realized time travel is real—I’m still getting in trouble for the same stuff decades later."
+    }
+  ],
+  "judgeResults": [
+    {"judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear relationship premise with a neat past-grievance/time-travel turn; the final 'dragging me there' lands, but mildly."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong comic image and a sharp survivalist line; the best laugh arrives before the final sentence, which softens the finish."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Readable and clean, but the fake-prince reveal is familiar and 'So much for nobility' adds little punch."},
+      {"jokeId":"copilot","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Competent setup and understandable turn, but the ending mostly explains the time-travel metaphor rather than delivering a sharper final laugh."}
+    ]},
+    {"judgeId":"anthropic","judgeName":"Claude","scores":[
+      {"jokeId":"openai","originality":8,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Sharp reversal—kid's takeaway is 'I live past fifty' instead of fearing embarrassment. Clean, surprising, well-timed."},
+      {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Good absurd escalation and a strong single line ('calories you haven't earned'), but overall shape is a fairly standard harsh-camp bit."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Fake-prince-revealed-as-ordinary-kid is a familiar trope; solid execution and clean final line, but the turn is telegraphed early."},
+      {"jokeId":"copilot","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":4,"comment":"Punchline just restates the setup (getting in trouble again) rather than delivering a real turn; competent but flat."}
+    ]},
+    {"judgeId":"google","judgeName":"Gemini Flash","scores":[
+      {"jokeId":"openai","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Solid misdirection with the kid's low-bar survival math turning the warning into encouragement."},
+      {"jokeId":"anthropic","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"A relatable premise on relationship scorekeeping, but the punchline explains the metaphor rather than delivering a sharp laugh."},
+      {"jokeId":"xai","originality":4,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Familiar sitcom setup with a predictable minivan reveal; the tag 'So much for nobility' adds very little."},
+      {"jokeId":"copilot","originality":5,"surprise":5,"craft":4,"promptFit":7,"laugh":5,"comment":"The counselor's line is an amusing beat, but the final explanatory sentence deflates the rhythm."}
+    ]},
+    {"judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+      {"jokeId":"openai","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean premise and solid kid reaction, but the laugh stays mild."},
+      {"jokeId":"anthropic","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Relatable relationship twist with a satisfying final reframe."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Sharp counselor line lands well inside a clear camp setup."},
+      {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Competent frozen-in-time idea, but the payoff feels forced and mild."}
+    ]},
+    {"judgeId":"copilot","judgeName":"Copilot","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Fun premise and a clean turn; solid but not exceptional."},
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Relatable angle with a good closing line; steady, not standout."},
+      {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Strong image and clear voice; darkly funny without overplaying it."},
+      {"jokeId":"xai","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Clean setup and payoff; charming deception handled well."}
+    ]}
+  ]
+}

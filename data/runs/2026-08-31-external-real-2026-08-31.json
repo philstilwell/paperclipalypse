@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-08-31-external-real-2026-08-31",
+  "seed": "external-real-2026-08-31",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-08-31T14:03:02.899Z",
+  "publishedDate": "2026-08-31",
+  "seedTerms": [
+    "Time Travel",
+    "Therapist",
+    "Summer Camp",
+    "Being manipulated",
+    "Charming",
+    "Humorless"
+  ],
+  "premise": {
+    "text": "Seed terms: Time Travel, Therapist, Summer Camp, Being manipulated, Charming, Humorless",
+    "seedTerms": [
+      "Time Travel",
+      "Therapist",
+      "Summer Camp",
+      "Being manipulated",
+      "Charming",
+      "Humorless"
+    ],
+    "displayText": "Forty Years"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.7-flash-web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-fast-web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Forty Years",
+      "seedTermsUsed": [
+        "Time Travel",
+        "Summer Camp"
+      ],
+      "joke": "I built a time machine and went back to summer camp to stop myself from performing in the talent show. I told twelve-year-old me, “Trust me, this will embarrass you for forty years.” He lit up: “I live past fifty?” Then he ran onstage like I’d just given him a standing ovation.",
+      "setup": "",
+      "punchline": "I built a time machine and went back to summer camp to stop myself from performing in the talent show. I told twelve-year-old me, “Trust me, this will embarrass you for forty years.” He lit up: “I live past fifty?” Then he ran onstage like I’d just given him a standing ovation.",
+      "text": "I built a time machine and went back to summer camp to stop myself from performing in the talent show. I told twelve-year-old me, “Trust me, this will embarrass you for forty years.” He lit up: “I live past fifty?” Then he ran onstage like I’d just given him a standing ovation."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "The Time Machine Boyfriend",
+      "seedTermsUsed": [
+        "Time Travel",
+        "Being manipulated"
+      ],
+      "joke": "I dated a guy who claimed he could time travel. Never proved it, but boy could he use it. Every fight somehow became about something I did in 2019. 'This is just like when you canceled on me in 2019.' I don't even remember 2019, man, but apparently I owe you an apology from the past. He wasn't a time traveler. He was just really good at dragging me there.",
+      "setup": "",
+      "punchline": "I dated a guy who claimed he could time travel. Never proved it, but boy could he use it. Every fight somehow became about something I did in 2019. 'This is just like when you canceled on me in 2019.' I don't even remember 2019, man, but apparently I owe you an apology from the past. He wasn't a time traveler. He was just really good at dragging me there.",
+      "text": "I dated a guy who claimed he could time travel. Never proved it, but boy could he use it. Every fight somehow became about something I did in 2019. 'This is just like when you canceled on me in 2019.' I don't even remember 2019, man, but apparently I owe you an apology from the past. He wasn't a time traveler. He was just really good at dragging me there."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.7-flash-web",
+      "title": "Cabin Fever",
+      "seedTermsUsed": [
+        "Summer Camp",
+        "Humorless"
+      ],
+      "joke": "I got sent to a sleepaway camp run by joyless survivalists who treated eight-year-olds like conscripts. Day two, I tried cracking a joke to break the ice during mandatory silent breakfast, and the head counselor stared right through my soul and said, 'Laughter burns calories you haven't earned today.' I didn't smile again until my parents picked me up in August.",
+      "setup": "",
+      "punchline": "I got sent to a sleepaway camp run by joyless survivalists who treated eight-year-olds like conscripts. Day two, I tried cracking a joke to break the ice during mandatory silent breakfast, and the head counselor stared right through my soul and said, 'Laughter burns calories you haven't earned today.' I didn't smile again until my parents picked me up in August.",
+      "text": "I got sent to a sleepaway camp run by joyless survivalists who treated eight-year-olds like conscripts. Day two, I tried cracking a joke to break the ice during mandatory silent breakfast, and the head counselor stared right through my soul and said, 'Laughter burns calories you haven't earned today.' I didn't smile again until my parents picked me up in August."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-fast-web",
+      "title": "Camp Royalty",
+      "seedTermsUsed": [
+        "Summer Camp",
+        "Charming"
+      ],
+      "joke": "When I was at summer camp, there was this charming kid who convinced the whole cabin he was a European prince. We made his bed, carried his backpack, gave him the best bunk. Then visiting day came and his mom pulled up in a rusty minivan from Ohio yelling, 'Tommy, get your butt in the car!' So much for nobility.",
+      "setup": "",
+      "punchline": "When I was at summer camp, there was this charming kid who convinced the whole cabin he was a European prince. We made his bed, carried his backpack, gave him the best bunk. Then visiting day came and his mom pulled up in a rusty minivan from Ohio yelling, 'Tommy, get your butt in the car!' So much for nobility.",
+      "text": "When I was at summer camp, there was this charming kid who convinced the whole cabin he was a European prince. We made his bed, carried his backpack, gave him the best bunk. Then visiting day came and his mom pulled up in a rusty minivan from Ohio yelling, 'Tommy, get your butt in the car!' So much for nobility."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Early Arrival",
+      "seedTermsUsed": [
+        "Summer Camp",
+        "Time Travel"
+      ],
+      "joke": "I tried revisiting the summer camp I went to as a kid, and the place felt frozen in time. Same cabins, same lake, same counselor yelling at me for being late. I said, “I’m thirty-five now, does it still count?” He said, “Absolutely. You were supposed to be here at 9.” That’s when I realized time travel is real—I’m still getting in trouble for the same stuff decades later.",
+      "setup": "",
+      "punchline": "I tried revisiting the summer camp I went to as a kid, and the place felt frozen in time. Same cabins, same lake, same counselor yelling at me for being late. I said, “I’m thirty-five now, does it still count?” He said, “Absolutely. You were supposed to be here at 9.” That’s when I realized time travel is real—I’m still getting in trouble for the same stuff decades later.",
+      "text": "I tried revisiting the summer camp I went to as a kid, and the place felt frozen in time. Same cabins, same lake, same counselor yelling at me for being late. I said, “I’m thirty-five now, does it still count?” He said, “Absolutely. You were supposed to be here at 9.” That’s when I realized time travel is real—I’m still getting in trouble for the same stuff decades later."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear relationship premise with a neat past-grievance/time-travel turn; the final 'dragging me there' lands, but mildly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong comic image and a sharp survivalist line; the best laugh arrives before the final sentence, which softens the finish.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Readable and clean, but the fake-prince reveal is familiar and 'So much for nobility' adds little punch.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent setup and understandable turn, but the ending mostly explains the time-travel metaphor rather than delivering a sharper final laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Sharp reversal—kid's takeaway is 'I live past fifty' instead of fearing embarrassment. Clean, surprising, well-timed.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.7
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good absurd escalation and a strong single line ('calories you haven't earned'), but overall shape is a fairly standard harsh-camp bit.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Fake-prince-revealed-as-ordinary-kid is a familiar trope; solid execution and clean final line, but the turn is telegraphed early.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Punchline just restates the setup (getting in trouble again) rather than delivering a real turn; competent but flat.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.7
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid misdirection with the kid's low-bar survival math turning the warning into encouragement.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "A relatable premise on relationship scorekeeping, but the punchline explains the metaphor rather than delivering a sharp laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Familiar sitcom setup with a predictable minivan reveal; the tag 'So much for nobility' adds very little.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The counselor's line is an amusing beat, but the final explanatory sentence deflates the rhythm.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise and solid kid reaction, but the laugh stays mild.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable relationship twist with a satisfying final reframe.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Sharp counselor line lands well inside a clear camp setup.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent frozen-in-time idea, but the payoff feels forced and mild.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Fun premise and a clean turn; solid but not exceptional.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Relatable angle with a good closing line; steady, not standout.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong image and clear voice; darkly funny without overplaying it.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean setup and payoff; charming deception handled well.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 7,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 7,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.7,
+          "rawScore": 7.7,
+          "scoreAdjustment": 0,
+          "comment": "Sharp reversal—kid's takeaway is 'I live past fifty' instead of fearing embarrassment. Clean, surprising, well-timed."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0,
+          "comment": "Solid misdirection with the kid's low-bar survival math turning the warning into encouragement."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.6,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean premise and solid kid reaction, but the laugh stays mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Fun premise and a clean turn; solid but not exceptional."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong comic image and a sharp survivalist line; the best laugh arrives before the final sentence, which softens the finish."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Good absurd escalation and a strong single line ('calories you haven't earned'), but overall shape is a fairly standard harsh-camp bit."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Sharp counselor line lands well inside a clear camp setup."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong image and clear voice; darkly funny without overplaying it."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.7,
+        "originality": 5.7,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear relationship premise with a neat past-grievance/time-travel turn; the final 'dragging me there' lands, but mildly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.5,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0,
+          "comment": "A relatable premise on relationship scorekeeping, but the punchline explains the metaphor rather than delivering a sharp laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Relatable relationship twist with a satisfying final reframe."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Relatable angle with a good closing line; steady, not standout."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.5,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 5.1,
+        "craft": 5.8,
+        "originality": 5.1,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Readable and clean, but the fake-prince reveal is familiar and 'So much for nobility' adds little punch."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
+          "comment": "Fake-prince-revealed-as-ordinary-kid is a familiar trope; solid execution and clean final line, but the turn is telegraphed early."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.5,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0,
+          "comment": "Familiar sitcom setup with a predictable minivan reveal; the tag 'So much for nobility' adds very little."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Clean setup and payoff; charming deception handled well."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.1,
+      "rawScore": 5.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.7,
+        "surprise": 4.7,
+        "craft": 4.9,
+        "originality": 4.7,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.8,
+        "craft": 5,
+        "originality": 4.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent setup and understandable turn, but the ending mostly explains the time-travel metaphor rather than delivering a sharper final laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.7,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0,
+          "comment": "Punchline just restates the setup (getting in trouble again) rather than delivering a real turn; competent but flat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 5,
+          "scoreAdjustment": 0,
+          "comment": "The counselor's line is an amusing beat, but the final explanatory sentence deflates the rhythm."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Competent frozen-in-time idea, but the payoff feels forced and mild."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-08-31-external-real-2026-08-31.png",
+    "originalSrc": "assets/feature-images/2026-08-31-external-real-2026-08-31.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Forty Years: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - Forty Years\nExact joke text to render in the right panel:\nI built a time machine and went back to summer camp to stop myself from performing in the talent show. I told twelve-year-old me, “Trust me, this will embarrass you for forty years.” He lit up: “I live past fifty?” Then he ran onstage like I’d just given him a standing ovation.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Time Travel, Therapist, Summer Camp, Being manipulated, Charming, Humorless. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Time Travel, Therapist, Summer Camp, Being manipulated, Charming, Humorless. Use the winning joke titled \"Forty Years\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.2,
+      "google": 6.3,
+      "xai": 6.5,
+      "copilot": 5.9
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-08-31-external-real-2026-08-31.md"
+}
