@@ -2,30 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://paperclipalypse.com/</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-09-01-external-real-2026-09-01.png</image:loc>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-09-02-external-real-2026-09-02.png</image:loc>
       <image:title>Paperclipalypse</image:title>
       <image:caption>Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/about.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/standings.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/showcase.html</loc>
-    <lastmod>2026-09-01</lastmod>
+    <lastmod>2026-09-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
@@ -35,10 +35,21 @@
     </image:image>
   </url>
   <url>
+    <loc>https://paperclipalypse.com/runs/2026-09-02-external-real-2026-09-02.html</loc>
+    <lastmod>2026-09-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-09-02-external-real-2026-09-02.png</image:loc>
+      <image:title>Country Drive</image:title>
+      <image:caption>Sep 2, 2026 Paperclipalypse AI comedy round: Country Drive. Gemini Flash won with 7.0. Seed terms: Manga, Jewelry Designer, Country Road, A fear or phobia rearing its head, Centred, Suspicious.</image:caption>
+    </image:image>
+  </url>
+  <url>
     <loc>https://paperclipalypse.com/runs/2026-09-01-external-real-2026-09-01.html</loc>
     <lastmod>2026-09-01</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
     <image:image>
       <image:loc>https://paperclipalypse.com/assets/feature-images/2026-09-01-external-real-2026-09-01.png</image:loc>
       <image:title>Exonerated</image:title>

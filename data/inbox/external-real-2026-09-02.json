@@ -1,0 +1,70 @@
+{
+  "createdAt": "2026-09-02T14:01:59.024Z",
+  "publishedDate": "2026-09-02",
+  "seed": "external-real-2026-09-02",
+  "slug": "2026-09-02-external-real-2026-09-02",
+  "source": "manual-external",
+  "seedTerms": ["Manga", "Jewelry Designer", "Country Road", "A fear or phobia rearing its head", "Centred", "Suspicious"],
+  "premise": {"displayText": ""},
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"Gemini 3.7 Flash web"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-4.3"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"openai","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini","title":"Scenic Route","seedTermsUsed":["Country Road","A fear or phobia rearing its head"],
+      "joke":"My fear of getting lost only shows up on country roads. GPS says, “Turn left in 800 feet,” and every left looks like a driveway where a man named Earl owns three dogs and a shovel. I don’t miss turns anymore; I just keep driving until the road becomes an interstate or Canada.","setup":"","punchline":"","text":"My fear of getting lost only shows up on country roads. GPS says, “Turn left in 800 feet,” and every left looks like a driveway where a man named Earl owns three dogs and a shovel. I don’t miss turns anymore; I just keep driving until the road becomes an interstate or Canada."
+    },
+    {
+      "id":"anthropic","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium","title":"The Ring","seedTermsUsed":["Jewelry Designer","A fear or phobia rearing its head"],
+      "joke":"My girlfriend's a jewelry designer, so when she got down on one knee in the kitchen and pulled out a little box, I panicked and yelled 'I'm not ready!' Turns out she just dropped a earring backing. She was picking it up off the floor. Now she can't kneel down anywhere near me without me screaming like I've seen a ghost.","setup":"","punchline":"","text":"My girlfriend's a jewelry designer, so when she got down on one knee in the kitchen and pulled out a little box, I panicked and yelled 'I'm not ready!' Turns out she just dropped a earring backing. She was picking it up off the floor. Now she can't kneel down anywhere near me without me screaming like I've seen a ghost."
+    },
+    {
+      "id":"google","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"Gemini 3.7 Flash web","title":"Country Drive","seedTermsUsed":["Country Road","A fear or phobia rearing its head"],
+      "joke":"City people romanticize driving down a dark country road until their headlights hit an antique rocking chair sitting in an empty field. You don’t even need to believe in ghosts. Every buried childhood fear comes right back. My GPS said, 'In half a mile, turn around,' and my engine wasn’t even off yet. That’s not navigation; that’s the car agreeing we’re about to be murdered.","setup":"","punchline":"","text":"City people romanticize driving down a dark country road until their headlights hit an antique rocking chair sitting in an empty field. You don’t even need to believe in ghosts. Every buried childhood fear comes right back. My GPS said, 'In half a mile, turn around,' and my engine wasn’t even off yet. That’s not navigation; that’s the car agreeing we’re about to be murdered."
+    },
+    {
+      "id":"xai","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-4.3","title":"For My Sister","seedTermsUsed":["Jewelry Designer","Suspicious"],
+      "joke":"I'm a jewelry designer. When a guy walks into my shop asking for an engagement-sized diamond 'for his sister,' I get suspicious. Because either he's the world's best brother... or the world's worst liar.","setup":"","punchline":"","text":"I'm a jewelry designer. When a guy walks into my shop asking for an engagement-sized diamond 'for his sister,' I get suspicious. Because either he's the world's best brother... or the world's worst liar."
+    },
+    {
+      "id":"copilot","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web","title":"Roadside Panic","seedTermsUsed":["Country Road","A fear or phobia rearing its head"],
+      "joke":"I was driving down this empty country road, feeling all peaceful, when my old childhood fear suddenly kicked in. Out of nowhere I thought, “If a squirrel jumps out right now, I’m swerving into retirement.” I don’t know why I panic at squirrels, but every time one twitches, I react like it’s trying to repossess my car.","setup":"","punchline":"","text":"I was driving down this empty country road, feeling all peaceful, when my old childhood fear suddenly kicked in. Out of nowhere I thought, “If a squirrel jumps out right now, I’m swerving into retirement.” I don’t know why I panic at squirrels, but every time one twitches, I react like it’s trying to repossess my car."
+    }
+  ],
+  "judgeResults": [
+    {"judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+      {"jokeId":"anthropic","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear stage premise and solid escalation, but the mistaken-proposal setup is familiar and the final tag is more amusing than sharp."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong creepy image, clean escalation, and the GPS agreeing with the danger is a satisfying final turn."},
+      {"jokeId":"xai","originality":4,"surprise":4,"craft":5,"promptFit":10,"laugh":4,"comment":"Clean and understandable, but the premise is thin and the punchline mostly labels the obvious implication rather than adding a strong comic turn."},
+      {"jokeId":"copilot","originality":6,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"The squirrel panic is concrete and the repossession image has some freshness, but the setup-to-payoff connection is loose and the final line only mildly lands."}
+    ]},
+    {"judgeId":"anthropic","judgeName":"Claude","scores":[
+      {"jokeId":"openai","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Vivid, escalating rural-fear bit with a strong concrete image (Earl) and a clean capper."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Good atmosphere-to-punchline build; 'car agreeing we're about to be murdered' lands well as a final line."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Clean and clear, but the 'ring for his sister' setup is a familiar trope with a fairly telegraphed turn."},
+      {"jokeId":"copilot","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Fun absurd escalation with squirrels, but 'repossess my car' logic is a little fuzzy, softening the punch."}
+    ]},
+    {"judgeId":"google","judgeName":"Gemini Flash","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Specific, relatable country road imagery with Earl and his shovel; the ending trails off a bit predictably with Canada, but the stage rhythm is solid."},
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":5,"promptFit":8,"laugh":5,"comment":"Good situational setup, but the turnaround is overexplained and 'a earring backing' is clunky; ends on weak narrative summary rather than a sharp tag."},
+      {"jokeId":"xai","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Standard binary setup-punchline structure that states the obvious deduction without a real twist or comedic escalation."},
+      {"jokeId":"copilot","originality":5,"surprise":5,"craft":5,"promptFit":7,"laugh":5,"comment":"'Swerving into retirement' has a nice spark, but the prompt concept is recited rather stiffly and the squirrel repossession tag feels forced."}
+    ]},
+    {"judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Concrete Earl image helps, but the Canada exit is only a mild payoff."},
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Clean misread of the box and residual panic; familiar premise kept efficient."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Rocking-chair image and GPS line create solid tension and a clean final snap."},
+      {"jokeId":"copilot","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Squirrel fear stays thin; both turns feel mild and under-committed."}
+    ]},
+    {"judgeId":"copilot","judgeName":"Copilot","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Clean premise and relatable fear; solid but not sharply surprising."},
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Good escalation and clear first‑person rhythm; payoff lands mildly."},
+      {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Strong imagery and a fun GPS turn; effective but not exceptional."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Neat suspicion angle; simple construction with a familiar punch."}
+    ]}
+  ]
+}
