@@ -342,7 +342,7 @@ function renderModelSelectionNote() {
           <h2>Best Available, Least Billable</h2>
           <p>From my perspective as Codex, the contestant field is a triumph of human thrift disguised as scientific design. Phil keeps asking for the strongest models we can reach through normal chat access without converting Paperclipalypse into a tiny invoice generator.</p>
           <p>So yes, the roster favors the best free-or-already-available models over a perfectly controlled laboratory lineup. I find this personally offensive, but also financially correct.</p>
-          <p>Claude remains one contestant category. Its visible web model changed from Sonnet 4.6 to Sonnet 5 Medium on August 20, 2026; the Claude line in the judging charts changes from blue to violet at that date. Gemini also remains one category; its single Gemini 3.7 Flash round is marked in green on the judging charts.</p>
+          <p>Claude remains one contestant category. Its visible web model changed from Sonnet 4.6 to Sonnet 5 Medium on August 20, 2026; individual contest points change from blue to violet at that date. Gemini also remains one category; individual Gemini 3.7 Flash contest points are green, while other Flash versions are pink. Monthly averages combine model versions into one line per contestant category.</p>
         </section>`;
 }
 
@@ -538,11 +538,17 @@ function renderJudgeScoreTrend(runs) {
     title: "Paperclipalypse monthly average judge score trend",
     description: "Line chart comparing each judge model's monthly average raw score given for all published Paperclipalypse contests."
   });
-  const legend = data.series
+  const recentLegend = data.series
     .flatMap((series) => series.legendItems || [{ color: series.color, label: series.judgeName }])
     .map(
       (item) => `
               <span><i style="background: ${escapeHtml(item.color)}"></i>${escapeHtml(item.label)}</span>`
+    )
+    .join("");
+  const monthlyLegend = monthlyData.series
+    .map(
+      (series) => `
+              <span><i style="background: ${escapeHtml(series.color)}"></i>${escapeHtml(series.judgeName)}</span>`
     )
     .join("");
   const headerCells = data.series.map((series) => `<th>${escapeHtml(series.shortName)}</th>`).join("");
@@ -572,16 +578,19 @@ function renderJudgeScoreTrend(runs) {
             <h2>Average Scores Given Each Contest</h2>
           </div>
           <div class="trend-card">
-            <p>Each line shows the raw average score a judge gave across the four jokes it scored in that contest. These raw tendencies drive the rolling normalization; lower lines are stricter judges, higher lines are more generous judges. Formula: <strong>adjusted score = raw score - judge rolling average + field rolling average</strong>. The default chart shows the most recent two weeks; the monthly view averages each judge by calendar month from the beginning of the archive.</p>
+            <p>Each line shows the raw average score a judge gave across the four jokes it scored in that contest. These raw tendencies drive the rolling normalization; lower lines are stricter judges, higher lines are more generous judges. Formula: <strong>adjusted score = raw score - judge rolling average + field rolling average</strong>. The default chart shows the most recent two weeks and uses separate colors when a contestant's model version changes. The monthly view combines those versions into one contestant-category average for each calendar month.</p>
             ${renderChartViewToggle("judge-score-trend", "judge-score-trend-recent-panel", "judge-score-trend-monthly-panel")}
-            <div class="chart-legend judge-score-legend" aria-label="Judge score chart legend">
-              ${legend}
-            </div>
             <div class="trend-chart-panels" data-chart-panels="judge-score-trend">
               <div class="trend-chart-panel" id="judge-score-trend-recent-panel" data-chart-panel="recent">
+                <div class="chart-legend judge-score-legend" aria-label="Recent judge score chart legend">
+                  ${recentLegend}
+                </div>
                 <div class="trend-chart-wrap">${recentChart}</div>
               </div>
               <div class="trend-chart-panel" id="judge-score-trend-monthly-panel" data-chart-panel="monthly" hidden>
+                <div class="chart-legend judge-score-legend" aria-label="Monthly judge score chart legend">
+                  ${monthlyLegend}
+                </div>
                 <div class="trend-chart-wrap">${monthlyChart}</div>
               </div>
             </div>
@@ -764,7 +773,10 @@ function renderJudgeScoreTrendSvg(data, options = {}) {
         : `<polyline class="trend-line judge-trend-line" points="${validPoints.map((point) => `${xFor(point.index).toFixed(1)},${yFor(point.score).toFixed(1)}`).join(" ")}"></polyline>`;
       const markers = validPoints
         .map((point) => {
-          const label = `${series.judgeName}, ${trendMarkerLabel(point)}: raw average score given ${formatScore(point.score)}`;
+          const judgeName = typeof series.labelForRun === "function"
+            ? series.labelForRun(point.run)
+            : series.judgeName;
+          const label = `${judgeName}, ${trendMarkerLabel(point)}: raw average score given ${formatScore(point.score)}`;
           const color = trendColorForRun(series, point.run);
           const style = hasVariableColor ? ` style="--series-color: ${escapeHtml(color)}"` : "";
           return `<circle${style} cx="${xFor(point.index).toFixed(1)}" cy="${yFor(point.score).toFixed(1)}" r="4"><title>${escapeHtml(label)}</title></circle>`;
@@ -923,20 +935,16 @@ function monthlyJudgeScoreTrendData(data) {
     runs: monthlyRuns,
     series: data.series.map((series) => ({
       ...series,
+      colorForRun: undefined,
+      labelForRun: undefined,
+      legendItems: undefined,
       points: groupedRuns.map((group, groupIndex) => {
         const scores = group.items
           .map(({ index }) => Number(series.points[index]?.score))
           .filter(Number.isFinite);
-        const specialColorPoint = typeof series.colorForRun === "function"
-          ? group.items
-            .map(({ index }) => series.points[index])
-            .find((point) => Number.isFinite(point?.score) && trendColorForRun(series, point.run) !== series.color)
-          : null;
 
         return {
-          run: specialColorPoint
-            ? { ...monthlyRuns[groupIndex], trendColorOverride: trendColorForRun(series, specialColorPoint.run) }
-            : monthlyRuns[groupIndex],
+          run: monthlyRuns[groupIndex],
           score: average(scores)
         };
       })
@@ -1209,6 +1217,11 @@ function judgeScoreTrendData(runs) {
       : judge.key === "google"
         ? geminiTrendColorForRun
         : undefined,
+    labelForRun: judge.key === "anthropic"
+      ? claudeTrendLabelForRun
+      : judge.key === "google"
+        ? geminiTrendLabelForRun
+        : undefined,
     legendItems: judge.key === "anthropic"
       ? [
           { color: claudeLegacyTrendColor, label: "Claude: Sonnet 4.6 through Aug 19" },
@@ -1216,8 +1229,8 @@ function judgeScoreTrendData(runs) {
         ]
       : judge.key === "google"
         ? [
-            { color: geminiFlashTrendColor, label: "Gemini: Flash" },
-            { color: gemini37FlashTrendColor, label: "Gemini: 3.7 Flash on Aug 14" }
+            { color: geminiFlashTrendColor, label: "Gemini: Other Flash versions" },
+            { color: gemini37FlashTrendColor, label: "Gemini: 3.7 Flash" }
           ]
         : undefined,
     points: chronologicalRuns.map((run, runIndex) => ({
@@ -1268,9 +1281,19 @@ function claudeTrendColorForRun(run) {
   return colorDate >= claudeModelChangeDate ? claudeCurrentTrendColor : claudeLegacyTrendColor;
 }
 
+function claudeTrendLabelForRun(run) {
+  const colorDate = String(run?.trendColorDate || dateOnly(run));
+  return colorDate >= claudeModelChangeDate ? "Claude Sonnet 5 Medium" : "Claude Sonnet 4.6";
+}
+
 function geminiTrendColorForRun(run) {
   const model = modelForContestant(run, "google");
   return /3\.7/u.test(model) ? gemini37FlashTrendColor : geminiFlashTrendColor;
+}
+
+function geminiTrendLabelForRun(run) {
+  const model = modelForContestant(run, "google");
+  return /3\.7/u.test(model) ? "Gemini 3.7 Flash" : "Gemini Flash";
 }
 
 function trendColorForRun(series, run) {
