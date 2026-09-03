@@ -1,0 +1,70 @@
+{
+  "createdAt": "2026-09-03T14:01:42.022Z",
+  "publishedDate": "2026-09-03",
+  "seed": "external-real-2026-09-03",
+  "slug": "2026-09-03-external-real-2026-09-03",
+  "source": "manual-external",
+  "seedTerms": ["Medical", "Military Officer", "Cafeteria", "A dangerous crossing", "Uninhibited", "Tactless"],
+  "premise": {"displayText": ""},
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"Gemini 3.8 Flash web"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-4.3"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"openai","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini","title":"Lunch Command","seedTermsUsed":["Military Officer","Cafeteria"],
+      "joke":"I had lunch in a cafeteria with a military officer. He studied the trays like a battlefield: “Chicken at twelve o’clock. Potatoes on the flank.” I reached for the last brownie and he slapped my hand away. Apparently I’d crossed the only line in the military that actually matters: dessert belongs to the highest-ranking officer.","setup":"","punchline":"","text":"I had lunch in a cafeteria with a military officer. He studied the trays like a battlefield: “Chicken at twelve o’clock. Potatoes on the flank.” I reached for the last brownie and he slapped my hand away. Apparently I’d crossed the only line in the military that actually matters: dessert belongs to the highest-ranking officer."
+    },
+    {
+      "id":"anthropic","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium","title":"Cafeteria Triage","seedTermsUsed":["Medical","Cafeteria"],
+      "joke":"I work in a hospital cafeteria, which is insane, because it's the one place on earth where the food should NOT be a surprise diagnosis. I asked the lunch lady what was in the mystery meat and she said 'we're running tests.' There's a salad bar next to the defibrillator so you can go straight from croutons to CPR. Efficient. Terrifying. Efficient.","setup":"","punchline":"","text":"I work in a hospital cafeteria, which is insane, because it's the one place on earth where the food should NOT be a surprise diagnosis. I asked the lunch lady what was in the mystery meat and she said 'we're running tests.' There's a salad bar next to the defibrillator so you can go straight from croutons to CPR. Efficient. Terrifying. Efficient."
+    },
+    {
+      "id":"google","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"Gemini 3.8 Flash web","title":"The General","seedTermsUsed":["Military Officer","Cafeteria"],
+      "joke":"My dad was an Army general for thirty years, which made normal family life terrifying. I took him to an all-you-can-eat buffet last weekend, and within ninety seconds he had assessed the salad bar, established a defensive perimeter around the carving station, and barked at an eight-year-old child to abandon the soft-serve machine because the position was compromised.","setup":"","punchline":"","text":"My dad was an Army general for thirty years, which made normal family life terrifying. I took him to an all-you-can-eat buffet last weekend, and within ninety seconds he had assessed the salad bar, established a defensive perimeter around the carving station, and barked at an eight-year-old child to abandon the soft-serve machine because the position was compromised."
+    },
+    {
+      "id":"xai","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-4.3","title":"Bedside Manner","seedTermsUsed":["Medical","Tactless"],
+      "joke":"I went in for a medical checkup last week and the doctor was completely tactless. He finishes the exam, puts down the clipboard, looks me dead in the eye, and says, \"The good news is nothing is broken. The bad news is everything else is just worn out.\"","setup":"","punchline":"","text":"I went in for a medical checkup last week and the doctor was completely tactless. He finishes the exam, puts down the clipboard, looks me dead in the eye, and says, \"The good news is nothing is broken. The bad news is everything else is just worn out.\""
+    },
+    {
+      "id":"copilot","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web","title":"Crossing the Line","seedTermsUsed":["Military Officer","Cafeteria"],
+      "joke":"I once followed this retired officer into a cafeteria because he walked with so much confidence I figured he knew where the good food was. He didn’t. He marched straight to the dessert table, saluted the cheesecake, and said, “Mission accomplished.” And I’m standing there thinking, sir, that’s not leadership—that’s emotional surrender.","setup":"","punchline":"","text":"I once followed this retired officer into a cafeteria because he walked with so much confidence I figured he knew where the good food was. He didn’t. He marched straight to the dessert table, saluted the cheesecake, and said, “Mission accomplished.” And I’m standing there thinking, sir, that’s not leadership—that’s emotional surrender."
+    }
+  ],
+  "judgeResults": [
+    {"judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Strong premise and clean medical-food wordplay, but the final repetition is weaker than the middle beats."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Clear stage premise, escalating military behavior, and a strong visual final beat with the soft-serve machine."},
+      {"jokeId":"xai","originality":4,"surprise":4,"craft":6,"promptFit":10,"laugh":5,"comment":"Clean and concise, but the worn-out-body punchline is familiar and arrives exactly where expected."},
+      {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Understandable and well structured, but saluting cheesecake and 'emotional surrender' feel constructed rather than naturally funny."}
+    ]},
+    {"judgeId":"anthropic","judgeName":"Claude","scores":[
+      {"jokeId":"openai","originality":5,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean battlefield-cafeteria conceit; punchline is a solid but familiar rank-joke turn."},
+      {"jokeId":"google","originality":7,"surprise":7,"craft":8,"promptFit":7,"laugh":7,"comment":"Specific, escalating images (soft-serve 'position compromised') give it the sharpest turn of the batch."},
+      {"jokeId":"xai","originality":3,"surprise":4,"craft":6,"promptFit":7,"laugh":5,"comment":"Competent but a well-worn doctor's-bad-news joke shape; punchline restates the setup more than twists it."},
+      {"jokeId":"copilot","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Cheesecake salute lands, but 'emotional surrender' tag muddies the clarity of the final beat."}
+    ]},
+    {"judgeId":"google","judgeName":"Gemini Flash","scores":[
+      {"jokeId":"openai","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Predictable military-metaphor setup that resolves into an unremarkable, low-impact punchline."},
+      {"jokeId":"anthropic","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Contains a couple of decent quick-hit lines ('running tests', 'croutons to CPR'), but dilutes momentum by trailing off into tags."},
+      {"jokeId":"xai","originality":3,"surprise":3,"craft":4,"promptFit":4,"laugh":3,"comment":"Relies on prompt recitation ('tactless') and lands on an ancient, generic doctor-checkup trope with no real snap."},
+      {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Clear scene and narrative escalation; the 'emotional surrender' tag lands better than average, though the salute premise remains slightly cartoonish."}
+    ]},
+    {"judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+      {"jokeId":"openai","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clear premise and form, but the hierarchy-on-dessert turn is the most obvious military cafeteria joke."},
+      {"jokeId":"anthropic","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong stage rhythm; 'running tests' and the croutons-to-CPR tag land cleanly."},
+      {"jokeId":"google","originality":6,"surprise":7,"craft":7,"promptFit":7,"laugh":7,"comment":"Vivid escalation and solid final image, though buffet-for-cafeteria is a mild stretch."},
+      {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Cute visual, but the payoffs stay soft and expected."}
+    ]},
+    {"judgeId":"copilot","judgeName":"Copilot","scores":[
+      {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Solid cafeteria‑military angle; clean turn, mildly funny."},
+      {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Consistent medical‑cafeteria premise; good escalation, moderate payoff."},
+      {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Strong imagery and rhythm; funny but not sharply surprising."},
+      {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Clear setup and punch; simple, familiar construction."}
+    ]}
+  ]
+}

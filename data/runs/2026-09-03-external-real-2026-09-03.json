@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-03-external-real-2026-09-03",
+  "seed": "external-real-2026-09-03",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-03T14:01:42.022Z",
+  "publishedDate": "2026-09-03",
+  "seedTerms": [
+    "Medical",
+    "Military Officer",
+    "Cafeteria",
+    "A dangerous crossing",
+    "Uninhibited",
+    "Tactless"
+  ],
+  "premise": {
+    "text": "Seed terms: Medical, Military Officer, Cafeteria, A dangerous crossing, Uninhibited, Tactless",
+    "seedTerms": [
+      "Medical",
+      "Military Officer",
+      "Cafeteria",
+      "A dangerous crossing",
+      "Uninhibited",
+      "Tactless"
+    ],
+    "displayText": "The General"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Lunch Command",
+      "seedTermsUsed": [
+        "Military Officer",
+        "Cafeteria"
+      ],
+      "joke": "I had lunch in a cafeteria with a military officer. He studied the trays like a battlefield: “Chicken at twelve o’clock. Potatoes on the flank.” I reached for the last brownie and he slapped my hand away. Apparently I’d crossed the only line in the military that actually matters: dessert belongs to the highest-ranking officer.",
+      "setup": "",
+      "punchline": "I had lunch in a cafeteria with a military officer. He studied the trays like a battlefield: “Chicken at twelve o’clock. Potatoes on the flank.” I reached for the last brownie and he slapped my hand away. Apparently I’d crossed the only line in the military that actually matters: dessert belongs to the highest-ranking officer.",
+      "text": "I had lunch in a cafeteria with a military officer. He studied the trays like a battlefield: “Chicken at twelve o’clock. Potatoes on the flank.” I reached for the last brownie and he slapped my hand away. Apparently I’d crossed the only line in the military that actually matters: dessert belongs to the highest-ranking officer."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Cafeteria Triage",
+      "seedTermsUsed": [
+        "Medical",
+        "Cafeteria"
+      ],
+      "joke": "I work in a hospital cafeteria, which is insane, because it's the one place on earth where the food should NOT be a surprise diagnosis. I asked the lunch lady what was in the mystery meat and she said 'we're running tests.' There's a salad bar next to the defibrillator so you can go straight from croutons to CPR. Efficient. Terrifying. Efficient.",
+      "setup": "",
+      "punchline": "I work in a hospital cafeteria, which is insane, because it's the one place on earth where the food should NOT be a surprise diagnosis. I asked the lunch lady what was in the mystery meat and she said 'we're running tests.' There's a salad bar next to the defibrillator so you can go straight from croutons to CPR. Efficient. Terrifying. Efficient.",
+      "text": "I work in a hospital cafeteria, which is insane, because it's the one place on earth where the food should NOT be a surprise diagnosis. I asked the lunch lady what was in the mystery meat and she said 'we're running tests.' There's a salad bar next to the defibrillator so you can go straight from croutons to CPR. Efficient. Terrifying. Efficient."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "The General",
+      "seedTermsUsed": [
+        "Military Officer",
+        "Cafeteria"
+      ],
+      "joke": "My dad was an Army general for thirty years, which made normal family life terrifying. I took him to an all-you-can-eat buffet last weekend, and within ninety seconds he had assessed the salad bar, established a defensive perimeter around the carving station, and barked at an eight-year-old child to abandon the soft-serve machine because the position was compromised.",
+      "setup": "",
+      "punchline": "My dad was an Army general for thirty years, which made normal family life terrifying. I took him to an all-you-can-eat buffet last weekend, and within ninety seconds he had assessed the salad bar, established a defensive perimeter around the carving station, and barked at an eight-year-old child to abandon the soft-serve machine because the position was compromised.",
+      "text": "My dad was an Army general for thirty years, which made normal family life terrifying. I took him to an all-you-can-eat buffet last weekend, and within ninety seconds he had assessed the salad bar, established a defensive perimeter around the carving station, and barked at an eight-year-old child to abandon the soft-serve machine because the position was compromised."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Bedside Manner",
+      "seedTermsUsed": [
+        "Medical",
+        "Tactless"
+      ],
+      "joke": "I went in for a medical checkup last week and the doctor was completely tactless. He finishes the exam, puts down the clipboard, looks me dead in the eye, and says, \"The good news is nothing is broken. The bad news is everything else is just worn out.\"",
+      "setup": "",
+      "punchline": "I went in for a medical checkup last week and the doctor was completely tactless. He finishes the exam, puts down the clipboard, looks me dead in the eye, and says, \"The good news is nothing is broken. The bad news is everything else is just worn out.\"",
+      "text": "I went in for a medical checkup last week and the doctor was completely tactless. He finishes the exam, puts down the clipboard, looks me dead in the eye, and says, \"The good news is nothing is broken. The bad news is everything else is just worn out.\""
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Crossing the Line",
+      "seedTermsUsed": [
+        "Military Officer",
+        "Cafeteria"
+      ],
+      "joke": "I once followed this retired officer into a cafeteria because he walked with so much confidence I figured he knew where the good food was. He didn’t. He marched straight to the dessert table, saluted the cheesecake, and said, “Mission accomplished.” And I’m standing there thinking, sir, that’s not leadership—that’s emotional surrender.",
+      "setup": "",
+      "punchline": "I once followed this retired officer into a cafeteria because he walked with so much confidence I figured he knew where the good food was. He didn’t. He marched straight to the dessert table, saluted the cheesecake, and said, “Mission accomplished.” And I’m standing there thinking, sir, that’s not leadership—that’s emotional surrender.",
+      "text": "I once followed this retired officer into a cafeteria because he walked with so much confidence I figured he knew where the good food was. He didn’t. He marched straight to the dessert table, saluted the cheesecake, and said, “Mission accomplished.” And I’m standing there thinking, sir, that’s not leadership—that’s emotional surrender."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong premise and clean medical-food wordplay, but the final repetition is weaker than the middle beats.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear stage premise, escalating military behavior, and a strong visual final beat with the soft-serve machine.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clean and concise, but the worn-out-body punchline is familiar and arrives exactly where expected.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Understandable and well structured, but saluting cheesecake and 'emotional surrender' feel constructed rather than naturally funny.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean battlefield-cafeteria conceit; punchline is a solid but familiar rank-joke turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Specific, escalating images (soft-serve 'position compromised') give it the sharpest turn of the batch.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent but a well-worn doctor's-bad-news joke shape; punchline restates the setup more than twists it.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 3,
+          "promptFit": 7,
+          "total": 5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cheesecake salute lands, but 'emotional surrender' tag muddies the clarity of the final beat.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Predictable military-metaphor setup that resolves into an unremarkable, low-impact punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Contains a couple of decent quick-hit lines ('running tests', 'croutons to CPR'), but dilutes momentum by trailing off into tags.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relies on prompt recitation ('tactless') and lands on an ancient, generic doctor-checkup trope with no real snap.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 4,
+          "total": 3.3000000000000003
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clear scene and narrative escalation; the 'emotional surrender' tag lands better than average, though the salute premise remains slightly cartoonish.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise and form, but the hierarchy-on-dessert turn is the most obvious military cafeteria joke.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong stage rhythm; 'running tests' and the croutons-to-CPR tag land cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Vivid escalation and solid final image, though buffet-for-cafeteria is a mild stretch.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.900000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute visual, but the payoffs stay soft and expected.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid cafeteria‑military angle; clean turn, mildly funny.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Consistent medical‑cafeteria premise; good escalation, moderate payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong imagery and rhythm; funny but not sharply surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear setup and punch; simple, familiar construction.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.9,
+      "rawScore": 7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 6.7,
+        "craft": 7.4,
+        "originality": 6.4,
+        "promptFit": 7.7
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.5,
+        "originality": 6.5,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.4,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear stage premise, escalating military behavior, and a strong visual final beat with the soft-serve machine."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Specific, escalating images (soft-serve 'position compromised') give it the sharpest turn of the batch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.6,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Vivid escalation and solid final image, though buffet-for-cafeteria is a mild stretch."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong imagery and rhythm; funny but not sharply surprising."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong premise and clean medical-food wordplay, but the final repetition is weaker than the middle beats."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.6,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Contains a couple of decent quick-hit lines ('running tests', 'croutons to CPR'), but dilutes momentum by trailing off into tags."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong stage rhythm; 'running tests' and the croutons-to-CPR tag land cleanly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Consistent medical‑cafeteria premise; good escalation, moderate payoff."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 5.7,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 5,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 5,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean battlefield-cafeteria conceit; punchline is a solid but familiar rank-joke turn."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.9,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Predictable military-metaphor setup that resolves into an unremarkable, low-impact punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.3,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear premise and form, but the hierarchy-on-dessert turn is the most obvious military cafeteria joke."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Solid cafeteria‑military angle; clean turn, mildly funny."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.7,
+      "rawScore": 5.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5.2,
+        "craft": 5.9,
+        "originality": 5.2,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.1,
+          "comment": "Understandable and well structured, but saluting cheesecake and 'emotional surrender' feel constructed rather than naturally funny."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Cheesecake salute lands, but 'emotional surrender' tag muddies the clarity of the final beat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear scene and narrative escalation; the 'emotional surrender' tag lands better than average, though the salute premise remains slightly cartoonish."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.3,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Cute visual, but the payoffs stay soft and expected."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.9,
+      "rawScore": 4.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.1,
+        "craft": 5.6,
+        "originality": 3.8,
+        "promptFit": 7.1
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4,
+        "craft": 5.5,
+        "originality": 3.8,
+        "promptFit": 7
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.3,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean and concise, but the worn-out-body punchline is familiar and arrives exactly where expected."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.9,
+          "rawScore": 5,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent but a well-worn doctor's-bad-news joke shape; punchline restates the setup more than twists it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 3.6,
+          "rawScore": 3.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Relies on prompt recitation ('tactless') and lands on an ancient, generic doctor-checkup trope with no real snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear setup and punch; simple, familiar construction."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-03-external-real-2026-09-03.png",
+    "originalSrc": "assets/feature-images/2026-09-03-external-real-2026-09-03.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The General: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - The General\nExact joke text to render in the right panel:\nMy dad was an Army general for thirty years, which made normal family life terrifying. I took him to an all-you-can-eat buffet last weekend, and within ninety seconds he had assessed the salad bar, established a defensive perimeter around the carving station, and barked at an eight-year-old child to abandon the soft-serve machine because the position was compromised.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Medical, Military Officer, Cafeteria, A dangerous crossing, Uninhibited, Tactless. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Medical, Military Officer, Cafeteria, A dangerous crossing, Uninhibited, Tactless. Use the winning joke titled \"The General\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.3,
+      "google": 5.9,
+      "xai": 6.5,
+      "copilot": 6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-03-external-real-2026-09-03.md"
+}
