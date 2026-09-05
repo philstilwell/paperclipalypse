@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-09-05T14:00:42.995Z",
+  "publishedDate": "2026-09-05",
+  "seed": "external-real-2026-09-05",
+  "slug": "2026-09-05-external-real-2026-09-05",
+  "source": "manual-external",
+  "seedTerms": [
+    "Legal",
+    "Flight Attendant",
+    "Farm",
+    "Experiencing discrimination",
+    "Persistent",
+    "Disrespectful"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web (joke); Gemini 3.5 Flash-Lite web (judge fallback)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol (Extra High) web",
+      "title": "Head Count",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Farm"
+      ],
+      "joke": "I grew up on a farm before becoming a flight attendant. The first time another attendant asked, “Chicken or beef?” I instinctively looked down the aisle for an open gate. On a farm, that’s not dinner service—that’s an inventory emergency.",
+      "setup": "",
+      "punchline": "",
+      "text": "I grew up on a farm before becoming a flight attendant. The first time another attendant asked, “Chicken or beef?” I instinctively looked down the aisle for an open gate. On a farm, that’s not dinner service—that’s an inventory emergency."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Seatback Farm",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Farm"
+      ],
+      "joke": "I grew up on a farm, so airplane safety demonstrations don't scare me. Lady's up there going 'in case of water landing, your seat cushion becomes a flotation device.' I've delivered a calf with less equipment. My dad once fixed a tractor with a seatbelt and pure spite. So when the flight attendant says 'ensure your seatback is in the upright position,' I hear my father yelling 'if it's not upright, MAKE it upright,' and honestly? Same energy, worse pay.",
+      "setup": "",
+      "punchline": "",
+      "text": "I grew up on a farm, so airplane safety demonstrations don't scare me. Lady's up there going 'in case of water landing, your seat cushion becomes a flotation device.' I've delivered a calf with less equipment. My dad once fixed a tractor with a seatbelt and pure spite. So when the flight attendant says 'ensure your seatback is in the upright position,' I hear my father yelling 'if it's not upright, MAKE it upright,' and honestly? Same energy, worse pay."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web (joke); Gemini 3.5 Flash-Lite web (judge fallback)",
+      "title": "Down on the Tarmac",
+      "seedTermsUsed": [
+        "Farm",
+        "Flight Attendant"
+      ],
+      "joke": "I grew up on a dairy farm, so whenever a flight attendant starts demonstrating how the oxygen mask drops from the ceiling, my muscle memory kicks in and I immediately reach up to try and milk it.",
+      "setup": "",
+      "punchline": "",
+      "text": "I grew up on a dairy farm, so whenever a flight attendant starts demonstrating how the oxygen mask drops from the ceiling, my muscle memory kicks in and I immediately reach up to try and milk it."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Farm Training",
+      "seedTermsUsed": [
+        "Farm",
+        "Flight Attendant"
+      ],
+      "joke": "I used to work on a farm before I became a flight attendant. Best training of my life. Now when the guy in 12B refuses to put his tray table up, I just stare him down and say, 'Buddy, I've milked things more stubborn than you.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I used to work on a farm before I became a flight attendant. Best training of my life. Now when the guy in 12B refuses to put his tray table up, I just stare him down and say, 'Buddy, I've milked things more stubborn than you.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Sky High Boundaries",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Disrespectful"
+      ],
+      "joke": "I once tried to be charming with a flight attendant, and she shut me down so fast the seatbelt sign came back on. I asked for a smile, and she said, “Sir, I’m not in the business of in‑flight entertainment.” I said, “Fair enough. I’m barely in the business of being a decent passenger.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I once tried to be charming with a flight attendant, and she shut me down so fast the seatbelt sign came back on. I asked for a smile, and she said, “Sir, I’m not in the business of in‑flight entertainment.” I said, “Fair enough. I’m barely in the business of being a decent passenger.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Several amusing farm-to-cabin parallels, but the bit sprawls and the final line is weaker than the preceding tractor image."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Very clean setup and a strong, instantly visual misdirection; concise enough that the absurd milk-the-mask turn lands sharply."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear and competent, but the stubborn-animal comparison is fairly obvious and the phrasing 'milked things more stubborn than you' feels slightly forced."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Readable and well-formed, but the flight-attendant comeback and self-deprecating tag are familiar and produce more of a smile than a strong laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean farm/flight-attendant swap, solid closer, slightly telegraphed."
+        },
+        {
+          "jokeId": "google",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Absurd milking-the-mask image lands fast and clean, best turn of the batch."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid stubborn-tray-table line but the 'stubborn as livestock' comparison is a familiar route."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Decent back-and-forth but punchline undercuts itself rather than escalating; longer setup than payoff justifies."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid misdirection connecting farm inventory with airline food service, though a bit straightforward."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong narrative flow and great punchline pairing parental stubbornness with low airline wages."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 6,
+          "laugh": 5,
+          "comment": "A bit cliché on the delivery, relying on a familiar tough-attitude trope rather than a sharp observation."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 6,
+          "comment": "Clever passenger banter, but it completely misses the premise of having a farm background."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear premise and serviceable farm-to-aisle image, but the inventory-emergency turn is mild and slightly explanatory."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Scattered farm comparisons dilute the timing; final payoff lands soft and over-explained."
+        },
+        {
+          "jokeId": "google",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Tight stage setup, vivid muscle-memory turn, and a clean final image that carries the laugh."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Competent self-own with a light seatbelt gag, but the disrespect concept is soft and the punch is gentle."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clear premise; mild farm‑airline contrast, light payoff."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Good escalation and imagery; funny, slightly long."
+        },
+        {
+          "jokeId": "google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Simple, clear gag; predictable turn."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Strong character voice; clean final line."
+        }
+      ]
+    }
+  ]
+}

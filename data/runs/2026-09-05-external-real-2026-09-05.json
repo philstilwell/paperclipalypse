@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-05-external-real-2026-09-05",
+  "seed": "external-real-2026-09-05",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-05T14:00:42.995Z",
+  "publishedDate": "2026-09-05",
+  "seedTerms": [
+    "Legal",
+    "Flight Attendant",
+    "Farm",
+    "Experiencing discrimination",
+    "Persistent",
+    "Disrespectful"
+  ],
+  "premise": {
+    "text": "Seed terms: Legal, Flight Attendant, Farm, Experiencing discrimination, Persistent, Disrespectful",
+    "seedTerms": [
+      "Legal",
+      "Flight Attendant",
+      "Farm",
+      "Experiencing discrimination",
+      "Persistent",
+      "Disrespectful"
+    ],
+    "displayText": "Down on the Tarmac"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web (joke); Gemini 3.5 Flash-Lite web (judge fallback)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol (Extra High) web",
+      "title": "Head Count",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Farm"
+      ],
+      "joke": "I grew up on a farm before becoming a flight attendant. The first time another attendant asked, “Chicken or beef?” I instinctively looked down the aisle for an open gate. On a farm, that’s not dinner service—that’s an inventory emergency.",
+      "setup": "",
+      "punchline": "I grew up on a farm before becoming a flight attendant. The first time another attendant asked, “Chicken or beef?” I instinctively looked down the aisle for an open gate. On a farm, that’s not dinner service—that’s an inventory emergency.",
+      "text": "I grew up on a farm before becoming a flight attendant. The first time another attendant asked, “Chicken or beef?” I instinctively looked down the aisle for an open gate. On a farm, that’s not dinner service—that’s an inventory emergency."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Seatback Farm",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Farm"
+      ],
+      "joke": "I grew up on a farm, so airplane safety demonstrations don't scare me. Lady's up there going 'in case of water landing, your seat cushion becomes a flotation device.' I've delivered a calf with less equipment. My dad once fixed a tractor with a seatbelt and pure spite. So when the flight attendant says 'ensure your seatback is in the upright position,' I hear my father yelling 'if it's not upright, MAKE it upright,' and honestly? Same energy, worse pay.",
+      "setup": "",
+      "punchline": "I grew up on a farm, so airplane safety demonstrations don't scare me. Lady's up there going 'in case of water landing, your seat cushion becomes a flotation device.' I've delivered a calf with less equipment. My dad once fixed a tractor with a seatbelt and pure spite. So when the flight attendant says 'ensure your seatback is in the upright position,' I hear my father yelling 'if it's not upright, MAKE it upright,' and honestly? Same energy, worse pay.",
+      "text": "I grew up on a farm, so airplane safety demonstrations don't scare me. Lady's up there going 'in case of water landing, your seat cushion becomes a flotation device.' I've delivered a calf with less equipment. My dad once fixed a tractor with a seatbelt and pure spite. So when the flight attendant says 'ensure your seatback is in the upright position,' I hear my father yelling 'if it's not upright, MAKE it upright,' and honestly? Same energy, worse pay."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web (joke); Gemini 3.5 Flash-Lite web (judge fallback)",
+      "title": "Down on the Tarmac",
+      "seedTermsUsed": [
+        "Farm",
+        "Flight Attendant"
+      ],
+      "joke": "I grew up on a dairy farm, so whenever a flight attendant starts demonstrating how the oxygen mask drops from the ceiling, my muscle memory kicks in and I immediately reach up to try and milk it.",
+      "setup": "",
+      "punchline": "I grew up on a dairy farm, so whenever a flight attendant starts demonstrating how the oxygen mask drops from the ceiling, my muscle memory kicks in and I immediately reach up to try and milk it.",
+      "text": "I grew up on a dairy farm, so whenever a flight attendant starts demonstrating how the oxygen mask drops from the ceiling, my muscle memory kicks in and I immediately reach up to try and milk it."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Farm Training",
+      "seedTermsUsed": [
+        "Farm",
+        "Flight Attendant"
+      ],
+      "joke": "I used to work on a farm before I became a flight attendant. Best training of my life. Now when the guy in 12B refuses to put his tray table up, I just stare him down and say, 'Buddy, I've milked things more stubborn than you.'",
+      "setup": "",
+      "punchline": "I used to work on a farm before I became a flight attendant. Best training of my life. Now when the guy in 12B refuses to put his tray table up, I just stare him down and say, 'Buddy, I've milked things more stubborn than you.'",
+      "text": "I used to work on a farm before I became a flight attendant. Best training of my life. Now when the guy in 12B refuses to put his tray table up, I just stare him down and say, 'Buddy, I've milked things more stubborn than you.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Sky High Boundaries",
+      "seedTermsUsed": [
+        "Flight Attendant",
+        "Disrespectful"
+      ],
+      "joke": "I once tried to be charming with a flight attendant, and she shut me down so fast the seatbelt sign came back on. I asked for a smile, and she said, “Sir, I’m not in the business of in‑flight entertainment.” I said, “Fair enough. I’m barely in the business of being a decent passenger.”",
+      "setup": "",
+      "punchline": "I once tried to be charming with a flight attendant, and she shut me down so fast the seatbelt sign came back on. I asked for a smile, and she said, “Sir, I’m not in the business of in‑flight entertainment.” I said, “Fair enough. I’m barely in the business of being a decent passenger.”",
+      "text": "I once tried to be charming with a flight attendant, and she shut me down so fast the seatbelt sign came back on. I asked for a smile, and she said, “Sir, I’m not in the business of in‑flight entertainment.” I said, “Fair enough. I’m barely in the business of being a decent passenger.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Several amusing farm-to-cabin parallels, but the bit sprawls and the final line is weaker than the preceding tractor image.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "google",
+          "comment": "Very clean setup and a strong, instantly visual misdirection; concise enough that the absurd milk-the-mask turn lands sharply.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and competent, but the stubborn-animal comparison is fairly obvious and the phrasing 'milked things more stubborn than you' feels slightly forced.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Readable and well-formed, but the flight-attendant comeback and self-deprecating tag are familiar and produce more of a smile than a strong laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean farm/flight-attendant swap, solid closer, slightly telegraphed.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Absurd milking-the-mask image lands fast and clean, best turn of the batch.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid stubborn-tray-table line but the 'stubborn as livestock' comparison is a familiar route.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Decent back-and-forth but punchline undercuts itself rather than escalating; longer setup than payoff justifies.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid misdirection connecting farm inventory with airline food service, though a bit straightforward.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong narrative flow and great punchline pairing parental stubbornness with low airline wages.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "A bit cliché on the delivery, relying on a familiar tough-attitude trope rather than a sharp observation.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 5.1
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clever passenger banter, but it completely misses the premise of having a farm background.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 4,
+          "total": 5.800000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise and serviceable farm-to-aisle image, but the inventory-emergency turn is mild and slightly explanatory.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Scattered farm comparisons dilute the timing; final payoff lands soft and over-explained.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "google",
+          "comment": "Tight stage setup, vivid muscle-memory turn, and a clean final image that carries the laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent self-own with a light seatbelt gag, but the disrespect concept is soft and the punch is gentle.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise; mild farm‑airline contrast, light payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good escalation and imagery; funny, slightly long.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Simple, clear gag; predictable turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Strong character voice; clean final line.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.8,
+      "rawScore": 7,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.8,
+        "craft": 7.1,
+        "originality": 6.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 7.6,
+          "rawScore": 7.7,
+          "scoreAdjustment": -0.1,
+          "comment": "Very clean setup and a strong, instantly visual misdirection; concise enough that the absurd milk-the-mask turn lands sharply."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.3,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Absurd milking-the-mask image lands fast and clean, best turn of the batch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Tight stage setup, vivid muscle-memory turn, and a clean final image that carries the laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.5,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.1,
+          "comment": "Simple, clear gag; predictable turn."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.3,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Several amusing farm-to-cabin parallels, but the bit sprawls and the final line is weaker than the preceding tractor image."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.7,
+          "comment": "Strong narrative flow and great punchline pairing parental stubbornness with low airline wages."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 4.7,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Scattered farm comparisons dilute the timing; final payoff lands soft and over-explained."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Good escalation and imagery; funny, slightly long."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 5.8,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 5.8,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean farm/flight-attendant swap, solid closer, slightly telegraphed."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.8,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.7,
+          "comment": "Solid misdirection connecting farm inventory with airline food service, though a bit straightforward."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.9,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Clear premise and serviceable farm-to-aisle image, but the inventory-emergency turn is mild and slightly explanatory."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.5,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear premise; mild farm‑airline contrast, light payoff."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.4,
+        "craft": 6.1,
+        "originality": 5.4,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 5.6,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear and competent, but the stubborn-animal comparison is fairly obvious and the phrasing 'milked things more stubborn than you' feels slightly forced."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 6,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid stubborn-tray-table line but the 'stubborn as livestock' comparison is a familiar route."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.7,
+          "comment": "A bit cliché on the delivery, relying on a familiar tough-attitude trope rather than a sharp observation."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong character voice; clean final line."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.6,
+      "rawScore": 5.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5.2,
+        "craft": 6,
+        "originality": 5.2,
+        "promptFit": 7.5
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 7.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 5.6,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.1,
+          "comment": "Readable and well-formed, but the flight-attendant comeback and self-deprecating tag are familiar and produce more of a smile than a strong laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.4,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Decent back-and-forth but punchline undercuts itself rather than escalating; longer setup than payoff justifies."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.5,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.7,
+          "comment": "Clever passenger banter, but it completely misses the premise of having a farm background."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Competent self-own with a light seatbelt gag, but the disrespect concept is soft and the punch is gentle."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-05-external-real-2026-09-05.png",
+    "originalSrc": "assets/feature-images/2026-09-05-external-real-2026-09-05.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Down on the Tarmac: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Down on the Tarmac\nExact joke text to render in the right panel:\nI grew up on a dairy farm, so whenever a flight attendant starts demonstrating how the oxygen mask drops from the ceiling, my muscle memory kicks in and I immediately reach up to try and milk it.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Legal, Flight Attendant, Farm, Experiencing discrimination, Persistent, Disrespectful. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Legal, Flight Attendant, Farm, Experiencing discrimination, Persistent, Disrespectful. Use the winning joke titled \"Down on the Tarmac\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6.2,
+      "anthropic": 6.3,
+      "google": 5.4,
+      "xai": 6.5,
+      "copilot": 6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-05-external-real-2026-09-05.md"
+}
