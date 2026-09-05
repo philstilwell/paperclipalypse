@@ -1265,6 +1265,12 @@ function standingsNameForContestant(run, contestantId, fallbackName) {
 
 function standingsJudgeForContestant(run, contestantId, fallbackName) {
   const id = String(contestantId || "").trim();
+  if (id === "openai") {
+    return { key: "openai", name: "ChatGPT" };
+  }
+  if (id === "xai") {
+    return { key: "xai", name: "Grok" };
+  }
   if (id === "anthropic") {
     return { key: "anthropic", name: "Claude" };
   }
