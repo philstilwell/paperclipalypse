@@ -1239,6 +1239,35 @@ function judgeScoreTrendData(runs) {
     }))
   }));
 
+  for (const [contestantId, colors] of [
+    ["openai", ["#c28a57", "#fb7185"]],
+    ["xai", ["#a3e635", "#f8fafc"]]
+  ]) {
+    const seriesIndex = [...judges.keys()].indexOf(contestantId);
+    if (seriesIndex < 0) continue;
+    const versionLabel = (run) => {
+      const name = displayNameForContestant(run, contestantId);
+      return contestantId === "openai"
+        ? `ChatGPT: ${name.replace(/^OpenAI\s+/u, "")}`
+        : /^xAI Grok$/u.test(name)
+          ? "Grok: Fast (version undisclosed)"
+          : name.replace(/^xAI Grok\s*/u, "Grok: ");
+    };
+    const labels = [...new Set(chronologicalRuns
+      .filter((run) => run.contestants?.some((contestant) => contestant.id === contestantId))
+      .map(versionLabel))];
+    const legendItems = labels.map((label, index) => ({
+      label,
+      color: colors[index] || `hsl(${(index * 137.5) % 360} 70% 70%)`
+    }));
+    Object.assign(series[seriesIndex], {
+      color: colors[0],
+      labelForRun: versionLabel,
+      colorForRun: (run) => legendItems.find((item) => item.label === versionLabel(run))?.color || colors[0],
+      legendItems
+    });
+  }
+
   return {
     runs: chronologicalRuns,
     series
