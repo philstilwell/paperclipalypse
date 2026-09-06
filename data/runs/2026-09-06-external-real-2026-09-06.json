@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-06-external-real-2026-09-06",
+  "seed": "external-real-2026-09-06",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-06T14:01:05.258Z",
+  "publishedDate": "2026-09-06",
+  "seedTerms": [
+    "Alt. and Parallel Universe",
+    "Removalist",
+    "Prison Cell",
+    "A fear or phobia rearing its head",
+    "Socially Aware",
+    "Forgetful"
+  ],
+  "premise": {
+    "text": "Seed terms: Alt. and Parallel Universe, Removalist, Prison Cell, A fear or phobia rearing its head, Socially Aware, Forgetful",
+    "seedTerms": [
+      "Alt. and Parallel Universe",
+      "Removalist",
+      "Prison Cell",
+      "A fear or phobia rearing its head",
+      "Socially Aware",
+      "Forgetful"
+    ],
+    "displayText": "The Movers"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol (Extra High) web",
+      "title": "Multiverse Keys",
+      "seedTermsUsed": [
+        "Alt. and Parallel Universe",
+        "Forgetful"
+      ],
+      "joke": "I’m so forgetful I’d be useless in a parallel universe. I’d finally meet alternate me and say, “Great—one of us must remember where I left my keys.” He’d pat his pockets and go, “Wait… I came here to ask you.” That’s when I’d realize the multiverse isn’t infinite possibilities. It’s just me losing the same keys in more dimensions.",
+      "setup": "",
+      "punchline": "I’m so forgetful I’d be useless in a parallel universe. I’d finally meet alternate me and say, “Great—one of us must remember where I left my keys.” He’d pat his pockets and go, “Wait… I came here to ask you.” That’s when I’d realize the multiverse isn’t infinite possibilities. It’s just me losing the same keys in more dimensions.",
+      "text": "I’m so forgetful I’d be useless in a parallel universe. I’d finally meet alternate me and say, “Great—one of us must remember where I left my keys.” He’d pat his pockets and go, “Wait… I came here to ask you.” That’s when I’d realize the multiverse isn’t infinite possibilities. It’s just me losing the same keys in more dimensions."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "The Movers",
+      "seedTermsUsed": [
+        "Removalist",
+        "Forgetful"
+      ],
+      "joke": "I hired removalists to move house, and I watched two grown men carry my couch to the truck, then carry it back inside, then back to the truck. I said, 'Guys, what's going on?' One of them goes, 'Sorry mate, we forgot if this one's already loaded.' I said, 'How many trips has it done?' He goes, 'Honestly? Could be its first day. Could be retired.' I've seen goldfish with better logistics.",
+      "setup": "",
+      "punchline": "I hired removalists to move house, and I watched two grown men carry my couch to the truck, then carry it back inside, then back to the truck. I said, 'Guys, what's going on?' One of them goes, 'Sorry mate, we forgot if this one's already loaded.' I said, 'How many trips has it done?' He goes, 'Honestly? Could be its first day. Could be retired.' I've seen goldfish with better logistics.",
+      "text": "I hired removalists to move house, and I watched two grown men carry my couch to the truck, then carry it back inside, then back to the truck. I said, 'Guys, what's going on?' One of them goes, 'Sorry mate, we forgot if this one's already loaded.' I said, 'How many trips has it done?' He goes, 'Honestly? Could be its first day. Could be retired.' I've seen goldfish with better logistics."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "The Movers",
+      "seedTermsUsed": [
+        "Removalist",
+        "A fear or phobia rearing its head"
+      ],
+      "joke": "I hired professional movers last week, mostly because I have a crippling phobia of eye contact with my friends. If you pay two guys named Vlad three hundred dollars, you don't have to pretend you're going to help carry the sleeper sofa. You can just stand in the driveway holding a single framed photo of your dog like an evacuee.",
+      "setup": "",
+      "punchline": "I hired professional movers last week, mostly because I have a crippling phobia of eye contact with my friends. If you pay two guys named Vlad three hundred dollars, you don't have to pretend you're going to help carry the sleeper sofa. You can just stand in the driveway holding a single framed photo of your dog like an evacuee.",
+      "text": "I hired professional movers last week, mostly because I have a crippling phobia of eye contact with my friends. If you pay two guys named Vlad three hundred dollars, you don't have to pretend you're going to help carry the sleeper sofa. You can just stand in the driveway holding a single framed photo of your dog like an evacuee."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Forgetful Mover",
+      "seedTermsUsed": [
+        "Removalist",
+        "Forgetful"
+      ],
+      "joke": "I hired a removalist last week. Nicest guy. Super careful with the boxes. He packed my whole apartment, labeled everything, loaded the truck, drove off... and texted me an hour later from his own driveway: 'Hey, found a bunch of random furniture in my truck. You want any of it before I unpack?'",
+      "setup": "",
+      "punchline": "I hired a removalist last week. Nicest guy. Super careful with the boxes. He packed my whole apartment, labeled everything, loaded the truck, drove off... and texted me an hour later from his own driveway: 'Hey, found a bunch of random furniture in my truck. You want any of it before I unpack?'",
+      "text": "I hired a removalist last week. Nicest guy. Super careful with the boxes. He packed my whole apartment, labeled everything, loaded the truck, drove off... and texted me an hour later from his own driveway: 'Hey, found a bunch of random furniture in my truck. You want any of it before I unpack?'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Cosmic Mix‑Up",
+      "seedTermsUsed": [
+        "Alt. and Parallel Universe",
+        "Forgetful"
+      ],
+      "joke": "I’m so forgetful I swear I slipped into a parallel universe last week. I walked into my kitchen and thought, “Who moved the toaster?” Then I realized it was me… yesterday… in this universe. At this point I’m not losing my mind, I’m just multiverse‑bad at remembering where I put it.",
+      "setup": "",
+      "punchline": "I’m so forgetful I swear I slipped into a parallel universe last week. I walked into my kitchen and thought, “Who moved the toaster?” Then I realized it was me… yesterday… in this universe. At this point I’m not losing my mind, I’m just multiverse‑bad at remembering where I put it.",
+      "text": "I’m so forgetful I swear I slipped into a parallel universe last week. I walked into my kitchen and thought, “Who moved the toaster?” Then I realized it was me… yesterday… in this universe. At this point I’m not losing my mind, I’m just multiverse‑bad at remembering where I put it."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear premise and solid escalation, but the final goldfish line is familiar and weaker than the couch-running gag.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong concrete premise, unexpected social-phobia angle, and a vivid final image that lands cleanly.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 7.8
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Cleanly constructed with a good delayed reveal; the removalist forgetting the entire move is absurd in a satisfying way.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Competent and clear, but the toaster reveal is predictable and the final line mostly repackages the setup rather than adding a stronger turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation, satisfying final line reframing multiverse as shared incompetence.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Fresh angle (social phobia, not physical fear), vivid 'evacuee with dog photo' image lands the laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Solid mild payoff, but 'found random furniture' twist is a little soft and expected once movers are forgetful.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Same core idea as Joke A but less sharp; the closing line restates the premise rather than turning it.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid stage logic and clean dialogue escalation. The punchline lands predictably on the multiverse premise, but it holds a recognizable stand-up rhythm.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good mid-joke banter with the couch dialogue, but it peters out on a tacked-on goldfish comparison tag that blunts the impact.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.5
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Paces the narrative well with tight escalation. The quoted text message serves as an effective, snap punchline with an absurd yet grounded turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Relies on a familiar 'walked into the kitchen' setup and explains its own turn before stumbling through an awkward final phrase.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.4
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean parallel-universe premise with a tidy closer, but the turn stays conceptual and the laugh stays mild.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong physical stage picture and natural dialogue; the couch logistics and goldfish closer land cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Specific social-phobia angle and the driveway-evacuee image give a solid, repeatable payoff.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Familiar forgetfulness-plus-multiverse setup; the toaster reveal is too obvious to carry real weight.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise; tidy multiverse angle; mild turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.500000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong visual; good escalation; clean final beat.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Funny social‑avoidance angle; solid character detail.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Amusing mix‑up; ending lands lightly.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.7
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.2,
+      "rawScore": 7.4,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 7.1,
+        "craft": 7.4,
+        "originality": 7.1,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7.3,
+        "craft": 7.5,
+        "originality": 7.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 7.6,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong concrete premise, unexpected social-phobia angle, and a vivid final image that lands cleanly."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.9,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Fresh angle (social phobia, not physical fear), vivid 'evacuee with dog photo' image lands the laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Specific social-phobia angle and the driveway-evacuee image give a solid, repeatable payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Funny social‑avoidance angle; solid character detail."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 6.8,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.6,
+        "craft": 6.8,
+        "originality": 6.6,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Cleanly constructed with a good delayed reveal; the removalist forgetting the entire move is absurd in a satisfying way."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid mild payoff, but 'found random furniture' twist is a little soft and expected once movers are forgetful."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.6,
+          "comment": "Paces the narrative well with tight escalation. The quoted text message serves as an effective, snap punchline with an absurd yet grounded turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Amusing mix‑up; ending lands lightly."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.5,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.1,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise and solid escalation, but the final goldfish line is familiar and weaker than the couch-running gag."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.1,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.6,
+          "comment": "Good mid-joke banter with the couch dialogue, but it peters out on a tacked-on goldfish comparison tag that blunts the impact."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong physical stage picture and natural dialogue; the couch logistics and goldfish closer land cleanly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong visual; good escalation; clean final beat."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "score": 6.4,
+      "rawScore": 6.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean escalation, satisfying final line reframing multiverse as shared incompetence."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.9,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.6,
+          "comment": "Solid stage logic and clean dialogue escalation. The punchline lands predictably on the multiverse premise, but it holds a recognizable stand-up rhythm."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean parallel-universe premise with a tidy closer, but the turn stays conceptual and the laugh stays mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear premise; tidy multiverse angle; mild turn."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.2,
+      "rawScore": 5.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.7,
+        "surprise": 4.7,
+        "craft": 5.2,
+        "originality": 4.7,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.8,
+        "craft": 5.3,
+        "originality": 4.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 5.5,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Competent and clear, but the toaster reveal is predictable and the final line mostly repackages the setup rather than adding a stronger turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.4,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Same core idea as Joke A but less sharp; the closing line restates the premise rather than turning it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.4,
+          "scoreAdjustment": 0.6,
+          "comment": "Relies on a familiar 'walked into the kitchen' setup and explains its own turn before stumbling through an awkward final phrase."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.1,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Familiar forgetfulness-plus-multiverse setup; the toaster reveal is too obvious to carry real weight."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-06-external-real-2026-09-06.png",
+    "originalSrc": "assets/feature-images/2026-09-06-external-real-2026-09-06.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Movers: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - The Movers\nExact joke text to render in the right panel:\nI hired professional movers last week, mostly because I have a crippling phobia of eye contact with my friends. If you pay two guys named Vlad three hundred dollars, you don't have to pretend you're going to help carry the sleeper sofa. You can just stand in the driveway holding a single framed photo of your dog like an evacuee.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Alt. and Parallel Universe, Removalist, Prison Cell, A fear or phobia rearing its head, Socially Aware, Forgetful. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Alt. and Parallel Universe, Removalist, Prison Cell, A fear or phobia rearing its head, Socially Aware, Forgetful. Use the winning joke titled \"The Movers\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6.2,
+      "anthropic": 6.3,
+      "google": 5.5,
+      "xai": 6.4,
+      "copilot": 5.9
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-06-external-real-2026-09-06.md"
+}

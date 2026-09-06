@@ -1,0 +1,184 @@
+{
+  "createdAt": "2026-09-06T14:01:05.258Z",
+  "publishedDate": "2026-09-06",
+  "seed": "external-real-2026-09-06",
+  "slug": "2026-09-06-external-real-2026-09-06",
+  "source": "manual-external",
+  "seedTerms": [
+    "Alt. and Parallel Universe",
+    "Removalist",
+    "Prison Cell",
+    "A fear or phobia rearing its head",
+    "Socially Aware",
+    "Forgetful"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol (Extra High) web",
+      "title": "Multiverse Keys",
+      "seedTermsUsed": [
+        "Alt. and Parallel Universe",
+        "Forgetful"
+      ],
+      "joke": "I’m so forgetful I’d be useless in a parallel universe. I’d finally meet alternate me and say, “Great—one of us must remember where I left my keys.” He’d pat his pockets and go, “Wait… I came here to ask you.” That’s when I’d realize the multiverse isn’t infinite possibilities. It’s just me losing the same keys in more dimensions.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m so forgetful I’d be useless in a parallel universe. I’d finally meet alternate me and say, “Great—one of us must remember where I left my keys.” He’d pat his pockets and go, “Wait… I came here to ask you.” That’s when I’d realize the multiverse isn’t infinite possibilities. It’s just me losing the same keys in more dimensions."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "The Movers",
+      "seedTermsUsed": [
+        "Removalist",
+        "Forgetful"
+      ],
+      "joke": "I hired removalists to move house, and I watched two grown men carry my couch to the truck, then carry it back inside, then back to the truck. I said, 'Guys, what's going on?' One of them goes, 'Sorry mate, we forgot if this one's already loaded.' I said, 'How many trips has it done?' He goes, 'Honestly? Could be its first day. Could be retired.' I've seen goldfish with better logistics.",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired removalists to move house, and I watched two grown men carry my couch to the truck, then carry it back inside, then back to the truck. I said, 'Guys, what's going on?' One of them goes, 'Sorry mate, we forgot if this one's already loaded.' I said, 'How many trips has it done?' He goes, 'Honestly? Could be its first day. Could be retired.' I've seen goldfish with better logistics."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "The Movers",
+      "seedTermsUsed": [
+        "Removalist",
+        "A fear or phobia rearing its head"
+      ],
+      "joke": "I hired professional movers last week, mostly because I have a crippling phobia of eye contact with my friends. If you pay two guys named Vlad three hundred dollars, you don't have to pretend you're going to help carry the sleeper sofa. You can just stand in the driveway holding a single framed photo of your dog like an evacuee.",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired professional movers last week, mostly because I have a crippling phobia of eye contact with my friends. If you pay two guys named Vlad three hundred dollars, you don't have to pretend you're going to help carry the sleeper sofa. You can just stand in the driveway holding a single framed photo of your dog like an evacuee."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Forgetful Mover",
+      "seedTermsUsed": [
+        "Removalist",
+        "Forgetful"
+      ],
+      "joke": "I hired a removalist last week. Nicest guy. Super careful with the boxes. He packed my whole apartment, labeled everything, loaded the truck, drove off... and texted me an hour later from his own driveway: 'Hey, found a bunch of random furniture in my truck. You want any of it before I unpack?'",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired a removalist last week. Nicest guy. Super careful with the boxes. He packed my whole apartment, labeled everything, loaded the truck, drove off... and texted me an hour later from his own driveway: 'Hey, found a bunch of random furniture in my truck. You want any of it before I unpack?'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Cosmic Mix‑Up",
+      "seedTermsUsed": [
+        "Alt. and Parallel Universe",
+        "Forgetful"
+      ],
+      "joke": "I’m so forgetful I swear I slipped into a parallel universe last week. I walked into my kitchen and thought, “Who moved the toaster?” Then I realized it was me… yesterday… in this universe. At this point I’m not losing my mind, I’m just multiverse‑bad at remembering where I put it.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m so forgetful I swear I slipped into a parallel universe last week. I walked into my kitchen and thought, “Who moved the toaster?” Then I realized it was me… yesterday… in this universe. At this point I’m not losing my mind, I’m just multiverse‑bad at remembering where I put it."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear premise and solid escalation, but the final goldfish line is familiar and weaker than the couch-running gag."},
+        {"jokeId":"google","originality":8,"surprise":8,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong concrete premise, unexpected social-phobia angle, and a vivid final image that lands cleanly."},
+        {"jokeId":"xai","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Cleanly constructed with a good delayed reveal; the removalist forgetting the entire move is absurd in a satisfying way."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Competent and clear, but the toaster reveal is predictable and the final line mostly repackages the setup rather than adding a stronger turn."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean escalation, satisfying final line reframing multiverse as shared incompetence."},
+        {"jokeId":"google","originality":8,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Fresh angle (social phobia, not physical fear), vivid 'evacuee with dog photo' image lands the laugh."},
+        {"jokeId":"xai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid mild payoff, but 'found random furniture' twist is a little soft and expected once movers are forgetful."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Same core idea as Joke A but less sharp; the closing line restates the premise rather than turning it."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Solid stage logic and clean dialogue escalation. The punchline lands predictably on the multiverse premise, but it holds a recognizable stand-up rhythm."},
+        {"jokeId":"anthropic","originality":6,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Good mid-joke banter with the couch dialogue, but it peters out on a tacked-on goldfish comparison tag that blunts the impact."},
+        {"jokeId":"xai","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Paces the narrative well with tight escalation. The quoted text message serves as an effective, snap punchline with an absurd yet grounded turn."},
+        {"jokeId":"copilot","originality":4,"surprise":4,"craft":4,"promptFit":8,"laugh":4,"comment":"Relies on a familiar 'walked into the kitchen' setup and explains its own turn before stumbling through an awkward final phrase."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Clean parallel-universe premise with a tidy closer, but the turn stays conceptual and the laugh stays mild."},
+        {"jokeId":"anthropic","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong physical stage picture and natural dialogue; the couch logistics and goldfish closer land cleanly."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Specific social-phobia angle and the driveway-evacuee image give a solid, repeatable payoff."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Familiar forgetfulness-plus-multiverse setup; the toaster reveal is too obvious to carry real weight."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Clear premise; tidy multiverse angle; mild turn."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Strong visual; good escalation; clean final beat."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Funny social‑avoidance angle; solid character detail."},
+        {"jokeId":"xai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":5,"comment":"Amusing mix‑up; ending lands lightly."}
+      ]
+    }
+  ]
+}
