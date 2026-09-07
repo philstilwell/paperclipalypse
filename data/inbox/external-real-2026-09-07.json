@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-07T14:02:54.275Z",
+  "publishedDate": "2026-09-07",
+  "seed": "external-real-2026-09-07",
+  "slug": "2026-09-07-external-real-2026-09-07",
+  "source": "manual-external",
+  "seedTerms": [
+    "Wilderness",
+    "Judge",
+    "Wedding Reception",
+    "Being trapped",
+    "Independent",
+    "Scatterbrained"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash web (underlying model not exposed)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol (Extra High) web",
+      "title": "Judicial Restraint",
+      "seedTermsUsed": ["Judge", "Wedding Reception"],
+      "joke": "I got seated next to a judge at a wedding reception. The speeches hit forty minutes, so I asked if he could do anything. He said, “Legally? No. But if the best man says ‘Webster’s defines love’ one more time, I’m willing to risk my pension.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I got seated next to a judge at a wedding reception. The speeches hit forty minutes, so I asked if he could do anything. He said, “Legally? No. But if the best man says ‘Webster’s defines love’ one more time, I’m willing to risk my pension.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "The Chicken Dance Escape Plan",
+      "seedTermsUsed": ["Wedding Reception", "Being trapped"],
+      "joke": "I got trapped at a wedding reception next to the open bar, which sounds great until you realize it means you're also next to everyone's uncle. I tried to leave four times. Every time, the DJ played a song that legally requires participation. I didn't RSVP to the electric slide. I came for cake and closure. Instead I did the chicken dance with a man named Gary who kept whispering 'we're the real married couple now.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I got trapped at a wedding reception next to the open bar, which sounds great until you realize it means you're also next to everyone's uncle. I tried to leave four times. Every time, the DJ played a song that legally requires participation. I didn't RSVP to the electric slide. I came for cake and closure. Instead I did the chicken dance with a man named Gary who kept whispering 'we're the real married couple now.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash web (underlying model not exposed)",
+      "title": "Seating Chart Hostage",
+      "seedTermsUsed": ["Wedding Reception", "Being trapped"],
+      "joke": "I realized I was truly trapped at my cousin's wedding reception when the bride’s uncle cornered me at Table 9 to explain his gold-backed crypto scheme. The exits were blocked by a conga line of drunk bridesmaids, so I had to weigh my options: fake a medical emergency, or join the conga line and aggressively shimmy my way into traffic.",
+      "setup": "",
+      "punchline": "",
+      "text": "I realized I was truly trapped at my cousin's wedding reception when the bride’s uncle cornered me at Table 9 to explain his gold-backed crypto scheme. The exits were blocked by a conga line of drunk bridesmaids, so I had to weigh my options: fake a medical emergency, or join the conga line and aggressively shimmy my way into traffic."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Conga Line Escape",
+      "seedTermsUsed": ["Being trapped", "Wedding Reception"],
+      "joke": "I got trapped at a wedding reception last weekend. Speeches forever, relatives with cameras blocking every door, DJ stuck on the same three songs. I finally joined the conga line and just kept dancing straight out the exit. Worked perfectly—until the whole line followed me into the parking lot and started doing the electric slide around my car.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got trapped at a wedding reception last weekend. Speeches forever, relatives with cameras blocking every door, DJ stuck on the same three songs. I finally joined the conga line and just kept dancing straight out the exit. Worked perfectly—until the whole line followed me into the parking lot and started doing the electric slide around my car."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Lost and Found",
+      "seedTermsUsed": ["Wilderness", "Scatterbrained"],
+      "joke": "I went camping to find inner peace, but I’m so scatterbrained I spent the whole trip losing things. First my map, then my snacks, then—somehow—my tent. By sunset I wasn’t communing with nature, I was just standing in the woods holding a single granola bar like, “Well… I guess this is home now.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I went camping to find inner peace, but I’m so scatterbrained I spent the whole trip losing things. First my map, then my snacks, then—somehow—my tent. By sunset I wasn’t communing with nature, I was just standing in the woods holding a single granola bar like, “Well… I guess this is home now.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Good rhythm and several usable lines, especially the mandatory-dance framing, but the final Gary beat feels more random than inevitable."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Concrete setup, clean escalation, and a strong visual punchline. The crypto uncle is familiar territory, but the escape choice lands well."},
+        {"jokeId":"xai","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear stage premise and a satisfying escalation when the escape plan backfires. Funny, though the conga/electric-slide material is fairly familiar."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":7,"promptFit":10,"laugh":5,"comment":"Clean and understandable with solid first-person delivery, but the lost-camping-gear progression and 'this is home now' payoff are predictable and mildly cute rather than strong."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean setup, natural voice, payoff turns on a specific absurd trigger ('Webster's defines love') rather than a generic complaint. Strong final line."},
+        {"jokeId":"google","originality":6,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Solid trapped-at-wedding premise but the crypto-uncle bit is a familiar type, and the ending options are told rather than escalated to a sharp snap."},
+        {"jokeId":"xai","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Good escalation and a nice visual reversal (conga line following into the parking lot), though 'escape via dancing' is a fairly well-worn wedding bit."},
+        {"jokeId":"copilot","originality":6,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Pleasant self-deprecating image but the losing-things structure telegraphs its own ending; punchline restates the premise more than it turns it."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Sharp, clean premise with excellent conversational rhythm; targeting the 'Webster's defines' trope lands a strong laugh."},
+        {"jokeId":"anthropic","originality":8,"surprise":8,"craft":7,"promptFit":9,"laugh":7,"comment":"Solid escalation and very funny ending image with Gary, though slightly wordy in the midsection."},
+        {"jokeId":"xai","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"A fun visual with the pied-piper conga line, but the payoff deflates a bit by piling on the generic electric slide trope."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Predictable 'losing my things' progression; competent cadence, but hits familiar filler beats without a punchy final turn."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean premise and sharp, authority-driven tag on endless speeches."},
+        {"jokeId":"anthropic","originality":7,"surprise":8,"craft":7,"promptFit":9,"laugh":7,"comment":"Builds the trap effectively and lands on a specific, weird character beat."},
+        {"jokeId":"google","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Strong visual escape, though the crypto corner is a familiar note."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clear escalation but soft final image; mild smile more than laugh."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Clean premise; judge angle adds a crisp turn."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Strong escalation; vivid uncle and dance imagery."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Crypto cornering is relatable; conga escape is fun."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Solid structure; ending lands lightly."}
+      ]
+    }
+  ]
+}
