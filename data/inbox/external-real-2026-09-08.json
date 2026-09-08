@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-08T14:02:34.438Z",
+  "publishedDate": "2026-09-08",
+  "seed": "external-real-2026-09-08",
+  "slug": "2026-09-08-external-real-2026-09-08",
+  "source": "manual-external",
+  "seedTerms": [
+    "Alien Invasion",
+    "Professional Athlete",
+    "Bazaar",
+    "Being assigned a dangerous task",
+    "Honorable",
+    "Evasive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash web (underlying model not exposed)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol (Extra High) web",
+      "title": "Take Me to Your Leader",
+      "seedTermsUsed": ["Alien Invasion", "Evasive"],
+      "joke": "An alien invasion is the one crisis I’m qualified for, because my greatest skill is avoiding a straight answer. If they say, “Take us to your leader,” I’ll go, “Absolutely—quick question: define leader.” Forty-five minutes later, they’ll be arguing over jurisdiction and I’ll be halfway home. Humanity survives because I weaponized not answering the question.",
+      "setup": "",
+      "punchline": "",
+      "text": "An alien invasion is the one crisis I’m qualified for, because my greatest skill is avoiding a straight answer. If they say, “Take us to your leader,” I’ll go, “Absolutely—quick question: define leader.” Forty-five minutes later, they’ll be arguing over jurisdiction and I’ll be halfway home. Humanity survives because I weaponized not answering the question."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Team Captain",
+      "seedTermsUsed": ["Alien Invasion", "Professional Athlete"],
+      "joke": "When the aliens landed, they didn't want our leaders. They wanted our best point guard to represent Earth in single combat. And he actually said yes. Not for humanity. He said, and I quote, 'I mean, it's a max contract, right?' Buddy, they're offering to disintegrate your family. He goes, 'Yeah, but is it insured against acts of God?' We're extinct because nobody read the incentive clause.",
+      "setup": "",
+      "punchline": "",
+      "text": "When the aliens landed, they didn't want our leaders. They wanted our best point guard to represent Earth in single combat. And he actually said yes. Not for humanity. He said, and I quote, 'I mean, it's a max contract, right?' Buddy, they're offering to disintegrate your family. He goes, 'Yeah, but is it insured against acts of God?' We're extinct because nobody read the incentive clause."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash web (underlying model not exposed)",
+      "title": "Post-Game Presser",
+      "seedTermsUsed": ["Professional Athlete", "Evasive"],
+      "joke": "I’ve started talking to my wife like an evasive professional athlete at a post-game press conference. Last night she caught me on the couch and asked, 'Did you eat the entire key lime pie?' I took a slow sip of water, stared right past her at an imaginary camera, and said, 'Look, both desserts played hard tonight. There were some execution errors on defense, but we’re just putting this behind us and focusing on breakfast.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I’ve started talking to my wife like an evasive professional athlete at a post-game press conference. Last night she caught me on the couch and asked, 'Did you eat the entire key lime pie?' I took a slow sip of water, stared right past her at an imaginary camera, and said, 'Look, both desserts played hard tonight. There were some execution errors on defense, but we’re just putting this behind us and focusing on breakfast.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Mystery Meat Mission",
+      "seedTermsUsed": ["Being assigned a dangerous task", "Evasive"],
+      "joke": "My boss assigned me a dangerous task last week—cleaning the break room fridge. I got so evasive I declared it a biohazard zone, put up caution tape, and called facilities. They sealed the whole thing off. That leftover Chinese food is still aging in there like fine wine. Management thinks I saved the office. I just didn't want to touch the mystery meat.",
+      "setup": "",
+      "punchline": "",
+      "text": "My boss assigned me a dangerous task last week—cleaning the break room fridge. I got so evasive I declared it a biohazard zone, put up caution tape, and called facilities. They sealed the whole thing off. That leftover Chinese food is still aging in there like fine wine. Management thinks I saved the office. I just didn't want to touch the mystery meat."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Market Day Heroics",
+      "seedTermsUsed": ["Alien Invasion", "Bazaar"],
+      "joke": "I was at this crowded bazaar when an alien invasion kicked off—ships in the sky, people screaming. And somehow everyone looked at me like I had a plan. I don’t know why; I was just trying to haggle over a bowl. So I stood up, puffed out my chest, and yelled, “Follow me!” Then immediately ducked behind a fruit stand. Leadership is about angles, not bravery.",
+      "setup": "",
+      "punchline": "",
+      "text": "I was at this crowded bazaar when an alien invasion kicked off—ships in the sky, people screaming. And somehow everyone looked at me like I had a plan. I don’t know why; I was just trying to haggle over a bowl. So I stood up, puffed out my chest, and yelled, “Follow me!” Then immediately ducked behind a fruit stand. Leadership is about angles, not bravery."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":5,"promptFit":4,"laugh":6,"comment":"Solid incentive-contract angle with several usable lines, but it is not first-person stand-up, and the final clause joke is more clever than explosive."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong stage voice, clean escalation, and a good final breakfast tag. The athlete-press-conference evasion premise is familiar, but the execution is polished."},
+        {"jokeId":"xai","originality":4,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clear and competent, but the boss/break-room setup is a familiar office-comedy template and the mystery-meat payoff adds little beyond the premise."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Natural first-person construction and clean seed use, but ducking behind the fruit stand is predictable and the leadership line lands more as a quip than a punchline."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean premise, escalates well, punchline lands cleanly and ties back to setup."},
+        {"jokeId":"google","originality":8,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Fresh transposition of press-conference cliché onto domestic scene; vivid, specific, escalates naturally to a genuine laugh."},
+        {"jokeId":"xai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid mundane-task bit, funny image with the fridge, but familiar office-avoidance territory keeps it from surprising much."},
+        {"jokeId":"copilot","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Good physical beat and tidy closing line, but the coward-leader turn is a fairly familiar comic shape."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Familiar sci-fi trope executed cleanly, but the bureaucratic avoidance angle feels predictable and ends with an explanatory summary line rather than a sharp punch."},
+        {"jokeId":"anthropic","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Fun satire of pro-athlete contract semantics against high existential stakes. The dialogue moves fast and lands on a solid comic image."},
+        {"jokeId":"xai","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Very standard break-room fridge workplace bit. It recites the seed terms explicitly and wraps up on a low-stakes, well-trodden punchline."},
+        {"jokeId":"copilot","originality":5,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"Clean cowardice misdirection with decent physical staging, though the concluding tag diffuses the punchline instead of letting the duck land the laugh."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Competent evasion-as-weapon premise with solid timing, but the closer mostly restates the setup."},
+        {"jokeId":"anthropic","originality":7,"surprise":7,"craft":5,"promptFit":4,"laugh":7,"comment":"Sharp athlete-greed turn lands, yet the third-person narrative weakens first-person stage form."},
+        {"jokeId":"google","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Clear stage premise, vivid delivery image, and a non-obvious sports-jargon punch that carries."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Serviceable setup and duck, but the turn is predictable and the closer moralizes."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Solid angle; clean evasive turn."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Fun premise; contract twist lands mildly."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":7,"laugh":7,"comment":"Strong rhythm; press-conference turn is crisp."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Clear setup; ending is light but coherent."}
+      ]
+    }
+  ]
+}
