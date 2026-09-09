@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-09-external-real-2026-09-09",
+  "seed": "external-real-2026-09-09",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-09T14:01:37.711Z",
+  "publishedDate": "2026-09-09",
+  "seedTerms": [
+    "Holidays",
+    "Hypnotherapist",
+    "Grocery Store",
+    "Being unprepared",
+    "Ambitious",
+    "Fussy"
+  ],
+  "premise": {
+    "text": "Seed terms: Holidays, Hypnotherapist, Grocery Store, Being unprepared, Ambitious, Fussy",
+    "seedTerms": [
+      "Holidays",
+      "Hypnotherapist",
+      "Grocery Store",
+      "Being unprepared",
+      "Ambitious",
+      "Fussy"
+    ],
+    "displayText": "Chickpea Casualty"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol (Extra High) web",
+      "title": "Seasonal Spirit",
+      "seedTermsUsed": [
+        "Holidays",
+        "Grocery Store"
+      ],
+      "joke": "I went to the grocery store during the holidays, and everyone was radiating seasonal goodwill right up until there was one pie left. I watched two strangers lock eyes over it like gunslingers. Five minutes later, one of them was leaving with the pie and yelling, “Merry Christmas!” Nothing captures the birth of peace quite like winning dessert through intimidation.",
+      "setup": "",
+      "punchline": "I went to the grocery store during the holidays, and everyone was radiating seasonal goodwill right up until there was one pie left. I watched two strangers lock eyes over it like gunslingers. Five minutes later, one of them was leaving with the pie and yelling, “Merry Christmas!” Nothing captures the birth of peace quite like winning dessert through intimidation.",
+      "text": "I went to the grocery store during the holidays, and everyone was radiating seasonal goodwill right up until there was one pie left. I watched two strangers lock eyes over it like gunslingers. Five minutes later, one of them was leaving with the pie and yelling, “Merry Christmas!” Nothing captures the birth of peace quite like winning dessert through intimidation."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Chickpea Casualty",
+      "seedTermsUsed": [
+        "Grocery Store",
+        "Being unprepared"
+      ],
+      "joke": "I went to the grocery store with no list, which is basically walking into a hostage negotiation with no demands. Some guy body-checked me for the last rotisserie chicken like it owed him money. I panicked and grabbed seven cans of chickpeas. Not for a recipe, I don't cook chickpeas, I just needed something to show for my time in there, like a war photographer coming home with proof I survived.",
+      "setup": "",
+      "punchline": "I went to the grocery store with no list, which is basically walking into a hostage negotiation with no demands. Some guy body-checked me for the last rotisserie chicken like it owed him money. I panicked and grabbed seven cans of chickpeas. Not for a recipe, I don't cook chickpeas, I just needed something to show for my time in there, like a war photographer coming home with proof I survived.",
+      "text": "I went to the grocery store with no list, which is basically walking into a hostage negotiation with no demands. Some guy body-checked me for the last rotisserie chicken like it owed him money. I panicked and grabbed seven cans of chickpeas. Not for a recipe, I don't cook chickpeas, I just needed something to show for my time in there, like a war photographer coming home with proof I survived."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Aisle Five Ambition",
+      "seedTermsUsed": [
+        "Grocery Store",
+        "Ambitious"
+      ],
+      "joke": "I get way too ambitious at the grocery store on an empty stomach. I walk in needing milk and leave with artisanal polenta, raw pomegranates, and a whole smoked trout. I get home, unpack the bags, and stare at the counter thinking, 'Who lives here? Am I hosting a rustic Italian wedding, or did I just hallucinate a personality where I roast fennel on a Tuesday?'",
+      "setup": "",
+      "punchline": "I get way too ambitious at the grocery store on an empty stomach. I walk in needing milk and leave with artisanal polenta, raw pomegranates, and a whole smoked trout. I get home, unpack the bags, and stare at the counter thinking, 'Who lives here? Am I hosting a rustic Italian wedding, or did I just hallucinate a personality where I roast fennel on a Tuesday?'",
+      "text": "I get way too ambitious at the grocery store on an empty stomach. I walk in needing milk and leave with artisanal polenta, raw pomegranates, and a whole smoked trout. I get home, unpack the bags, and stare at the counter thinking, 'Who lives here? Am I hosting a rustic Italian wedding, or did I just hallucinate a personality where I roast fennel on a Tuesday?'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Wrong Everything",
+      "seedTermsUsed": [
+        "Grocery Store",
+        "Being unprepared"
+      ],
+      "joke": "I went to the grocery store completely unprepared the other day—no list, just pure confidence. I walked the aisles telling myself I’d remember. Forty minutes later I’m at the register with frozen peas, one lime, and three kinds of mustard. The cashier asked if that was everything. I said yes… then realized the whole reason I came was bread. Being unprepared doesn’t mean you leave empty-handed. It means you leave with the wrong everything.",
+      "setup": "",
+      "punchline": "I went to the grocery store completely unprepared the other day—no list, just pure confidence. I walked the aisles telling myself I’d remember. Forty minutes later I’m at the register with frozen peas, one lime, and three kinds of mustard. The cashier asked if that was everything. I said yes… then realized the whole reason I came was bread. Being unprepared doesn’t mean you leave empty-handed. It means you leave with the wrong everything.",
+      "text": "I went to the grocery store completely unprepared the other day—no list, just pure confidence. I walked the aisles telling myself I’d remember. Forty minutes later I’m at the register with frozen peas, one lime, and three kinds of mustard. The cashier asked if that was everything. I said yes… then realized the whole reason I came was bread. Being unprepared doesn’t mean you leave empty-handed. It means you leave with the wrong everything."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Holiday Mayhem",
+      "seedTermsUsed": [
+        "Holidays",
+        "Being unprepared"
+      ],
+      "joke": "Every holiday I swear I’ll be calm and collected, but somehow I always end up sprinting around my place like a confused reindeer. Last year I tried to wrap gifts without tape and just held everything together with sheer optimism. My family opened their presents and said, “Did you… fold these shut?” I said, “Yes. It’s a new tradition called panic origami.”",
+      "setup": "",
+      "punchline": "Every holiday I swear I’ll be calm and collected, but somehow I always end up sprinting around my place like a confused reindeer. Last year I tried to wrap gifts without tape and just held everything together with sheer optimism. My family opened their presents and said, “Did you… fold these shut?” I said, “Yes. It’s a new tradition called panic origami.”",
+      "text": "Every holiday I swear I’ll be calm and collected, but somehow I always end up sprinting around my place like a confused reindeer. Last year I tried to wrap gifts without tape and just held everything together with sheer optimism. My family opened their presents and said, “Did you… fold these shut?” I said, “Yes. It’s a new tradition called panic origami.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong escalating images and a clear first-person premise. The war-photographer tag is vivid, though slightly overextended after the chickpea beat.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Specific shopping details build naturally into a strong identity-crisis turn. The fennel-on-a-Tuesday closer is distinctive, economical, and carries the laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 8.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and competent, but the forgotten-item premise is familiar and the final line mostly summarizes the setup rather than adding a sharper turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clean setup and good stage rhythm. 'Panic origami' is a solid tag, but the last-minute gift-wrapping premise and optimism joke are fairly familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean two-term use, sharp irony on 'Merry Christmas' after intimidation, strong final line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Relatable premise, funny specific grocery items, but ending trails off into a rhetorical double-question rather than one crisp snap.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.100000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Forgetting the one item you came for is a familiar beat; closing line is explanatory rather than a true punch.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "'Panic origami' is a nice concrete image and decent closer, though the reindeer opener is a bit soft.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid observational premise, but the final sentence explains the irony rather than delivering a sharp laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Excellent escalation and natural stage rhythm; the war photographer simile lands a punchy, human laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relatable setup, but over-explains the mundane misdirection and finishes on an aphorism instead of a punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clean delivery with a charming punchline, though the frantic-holiday-prep premise is relatively familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid setup and clean delivery on holiday grocery tension, but the punch lands as competent observation rather than a sharp surprise.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong first-person voice and escalating image of panic buys; war-photographer closer gives a genuine, non-obvious laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Excellent empty-stomach ambition premise with a sharp, self-aware final turn that feels like real stand-up.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.800000000000002
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute holiday unpreparedness gag and tidy tag, but the origami closer is more clever than deeply surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise; ending lands mildly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong imagery; payoff is solid but not sharp.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "google",
+          "comment": "Relatable angle; final turn is amusing, not standout.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Coherent and clean; humor is light and predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 7.4,
+      "rawScore": 7.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.1,
+        "surprise": 7.1,
+        "craft": 7.6,
+        "originality": 7.1,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.5,
+        "originality": 7,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong escalating images and a clear first-person premise. The war-photographer tag is vivid, though slightly overextended after the chickpea beat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.4,
+          "rawScore": 8.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Excellent escalation and natural stage rhythm; the war photographer simile lands a punchy, human laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong first-person voice and escalating image of panic buys; war-photographer closer gives a genuine, non-obvious laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong imagery; payoff is solid but not sharp."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7,
+      "rawScore": 7.1,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 6.4,
+        "craft": 7.2,
+        "originality": 6.7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 6.5,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 8,
+          "rawScore": 8.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Specific shopping details build naturally into a strong identity-crisis turn. The fennel-on-a-Tuesday closer is distinctive, economical, and carries the laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Relatable premise, funny specific grocery items, but ending trails off into a rhetorical double-question rather than one crisp snap."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.6,
+          "rawScore": 7.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Excellent empty-stomach ambition premise with a sharp, self-aware final turn that feels like real stand-up."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Relatable angle; final turn is amusing, not standout."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "score": 6.4,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean two-term use, sharp irony on 'Merry Christmas' after intimidation, strong final line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.9,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Solid observational premise, but the final sentence explains the irony rather than delivering a sharp laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid setup and clean delivery on holiday grocery tension, but the punch lands as competent observation rather than a sharp surprise."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear premise; ending lands mildly."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.4,
+      "rawScore": 6.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.9,
+        "craft": 6.7,
+        "originality": 5.9,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean setup and good stage rhythm. 'Panic origami' is a solid tag, but the last-minute gift-wrapping premise and optimism joke are fairly familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "'Panic origami' is a nice concrete image and decent closer, though the reindeer opener is a bit soft."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.8,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Clean delivery with a charming punchline, though the frantic-holiday-prep premise is relatively familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Cute holiday unpreparedness gag and tidy tag, but the origami closer is more clever than deeply surprising."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.6,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 5.5,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear and competent, but the forgotten-item premise is familiar and the final line mostly summarizes the setup rather than adding a sharper turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.1,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Forgetting the one item you came for is a familiar beat; closing line is explanatory rather than a true punch."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.9,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Relatable setup, but over-explains the mundane misdirection and finishes on an aphorism instead of a punchline."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Coherent and clean; humor is light and predictable."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-09-external-real-2026-09-09.png",
+    "originalSrc": "assets/feature-images/2026-09-09-external-real-2026-09-09.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Chickpea Casualty: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Chickpea Casualty\nExact joke text to render in the right panel:\nI went to the grocery store with no list, which is basically walking into a hostage negotiation with no demands. Some guy body-checked me for the last rotisserie chicken like it owed him money. I panicked and grabbed seven cans of chickpeas. Not for a recipe, I don't cook chickpeas, I just needed something to show for my time in there, like a war photographer coming home with proof I survived.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Holidays, Hypnotherapist, Grocery Store, Being unprepared, Ambitious, Fussy. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Holidays, Hypnotherapist, Grocery Store, Being unprepared, Ambitious, Fussy. Use the winning joke titled \"Chickpea Casualty\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.6,
+      "google": 6,
+      "xai": 6.5,
+      "copilot": 6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-09-external-real-2026-09-09.md"
+}

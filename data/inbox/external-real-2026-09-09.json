@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-09T14:01:37.711Z",
+  "publishedDate": "2026-09-09",
+  "seed": "external-real-2026-09-09",
+  "slug": "2026-09-09-external-real-2026-09-09",
+  "source": "manual-external",
+  "seedTerms": [
+    "Holidays",
+    "Hypnotherapist",
+    "Grocery Store",
+    "Being unprepared",
+    "Ambitious",
+    "Fussy"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol (Extra High) web",
+      "title": "Seasonal Spirit",
+      "seedTermsUsed": ["Holidays", "Grocery Store"],
+      "joke": "I went to the grocery store during the holidays, and everyone was radiating seasonal goodwill right up until there was one pie left. I watched two strangers lock eyes over it like gunslingers. Five minutes later, one of them was leaving with the pie and yelling, “Merry Christmas!” Nothing captures the birth of peace quite like winning dessert through intimidation.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to the grocery store during the holidays, and everyone was radiating seasonal goodwill right up until there was one pie left. I watched two strangers lock eyes over it like gunslingers. Five minutes later, one of them was leaving with the pie and yelling, “Merry Christmas!” Nothing captures the birth of peace quite like winning dessert through intimidation."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Chickpea Casualty",
+      "seedTermsUsed": ["Grocery Store", "Being unprepared"],
+      "joke": "I went to the grocery store with no list, which is basically walking into a hostage negotiation with no demands. Some guy body-checked me for the last rotisserie chicken like it owed him money. I panicked and grabbed seven cans of chickpeas. Not for a recipe, I don't cook chickpeas, I just needed something to show for my time in there, like a war photographer coming home with proof I survived.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to the grocery store with no list, which is basically walking into a hostage negotiation with no demands. Some guy body-checked me for the last rotisserie chicken like it owed him money. I panicked and grabbed seven cans of chickpeas. Not for a recipe, I don't cook chickpeas, I just needed something to show for my time in there, like a war photographer coming home with proof I survived."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Aisle Five Ambition",
+      "seedTermsUsed": ["Grocery Store", "Ambitious"],
+      "joke": "I get way too ambitious at the grocery store on an empty stomach. I walk in needing milk and leave with artisanal polenta, raw pomegranates, and a whole smoked trout. I get home, unpack the bags, and stare at the counter thinking, 'Who lives here? Am I hosting a rustic Italian wedding, or did I just hallucinate a personality where I roast fennel on a Tuesday?'",
+      "setup": "",
+      "punchline": "",
+      "text": "I get way too ambitious at the grocery store on an empty stomach. I walk in needing milk and leave with artisanal polenta, raw pomegranates, and a whole smoked trout. I get home, unpack the bags, and stare at the counter thinking, 'Who lives here? Am I hosting a rustic Italian wedding, or did I just hallucinate a personality where I roast fennel on a Tuesday?'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Wrong Everything",
+      "seedTermsUsed": ["Grocery Store", "Being unprepared"],
+      "joke": "I went to the grocery store completely unprepared the other day—no list, just pure confidence. I walked the aisles telling myself I’d remember. Forty minutes later I’m at the register with frozen peas, one lime, and three kinds of mustard. The cashier asked if that was everything. I said yes… then realized the whole reason I came was bread. Being unprepared doesn’t mean you leave empty-handed. It means you leave with the wrong everything.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to the grocery store completely unprepared the other day—no list, just pure confidence. I walked the aisles telling myself I’d remember. Forty minutes later I’m at the register with frozen peas, one lime, and three kinds of mustard. The cashier asked if that was everything. I said yes… then realized the whole reason I came was bread. Being unprepared doesn’t mean you leave empty-handed. It means you leave with the wrong everything."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Holiday Mayhem",
+      "seedTermsUsed": ["Holidays", "Being unprepared"],
+      "joke": "Every holiday I swear I’ll be calm and collected, but somehow I always end up sprinting around my place like a confused reindeer. Last year I tried to wrap gifts without tape and just held everything together with sheer optimism. My family opened their presents and said, “Did you… fold these shut?” I said, “Yes. It’s a new tradition called panic origami.”",
+      "setup": "",
+      "punchline": "",
+      "text": "Every holiday I swear I’ll be calm and collected, but somehow I always end up sprinting around my place like a confused reindeer. Last year I tried to wrap gifts without tape and just held everything together with sheer optimism. My family opened their presents and said, “Did you… fold these shut?” I said, “Yes. It’s a new tradition called panic origami.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong escalating images and a clear first-person premise. The war-photographer tag is vivid, though slightly overextended after the chickpea beat."},
+        {"jokeId":"google","originality":8,"surprise":8,"craft":8,"promptFit":10,"laugh":8,"comment":"Specific shopping details build naturally into a strong identity-crisis turn. The fennel-on-a-Tuesday closer is distinctive, economical, and carries the laugh."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Clear and competent, but the forgotten-item premise is familiar and the final line mostly summarizes the setup rather than adding a sharper turn."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clean setup and good stage rhythm. 'Panic origami' is a solid tag, but the last-minute gift-wrapping premise and optimism joke are fairly familiar."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clean two-term use, sharp irony on 'Merry Christmas' after intimidation, strong final line."},
+        {"jokeId":"google","originality":6,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Relatable premise, funny specific grocery items, but ending trails off into a rhetorical double-question rather than one crisp snap."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Forgetting the one item you came for is a familiar beat; closing line is explanatory rather than a true punch."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"'Panic origami' is a nice concrete image and decent closer, though the reindeer opener is a bit soft."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Solid observational premise, but the final sentence explains the irony rather than delivering a sharp laugh."},
+        {"jokeId":"anthropic","originality":8,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Excellent escalation and natural stage rhythm; the war photographer simile lands a punchy, human laugh."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Relatable setup, but over-explains the mundane misdirection and finishes on an aphorism instead of a punchline."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean delivery with a charming punchline, though the frantic-holiday-prep premise is relatively familiar."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Solid setup and clean delivery on holiday grocery tension, but the punch lands as competent observation rather than a sharp surprise."},
+        {"jokeId":"anthropic","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong first-person voice and escalating image of panic buys; war-photographer closer gives a genuine, non-obvious laugh."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":8,"comment":"Excellent empty-stomach ambition premise with a sharp, self-aware final turn that feels like real stand-up."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Cute holiday unpreparedness gag and tidy tag, but the origami closer is more clever than deeply surprising."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Clear premise; ending lands mildly."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Strong imagery; payoff is solid but not sharp."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Relatable angle; final turn is amusing, not standout."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Coherent and clean; humor is light and predictable."}
+      ]
+    }
+  ]
+}
