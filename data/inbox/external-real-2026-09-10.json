@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-10T14:01:17.616Z",
+  "publishedDate": "2026-09-10",
+  "seed": "external-real-2026-09-10",
+  "slug": "2026-09-10-external-real-2026-09-10",
+  "source": "manual-external",
+  "seedTerms": [
+    "Young Adult",
+    "Diplomat",
+    "Dorm Room",
+    "A break-in",
+    "Confident",
+    "Workaholic"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-5.4 Mini (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "GPT-5.4 Mini (Extra High) web",
+      "title": "Dorm Diplomacy",
+      "seedTermsUsed": ["Diplomat", "Dorm Room"],
+      "joke": "I lived in a dorm with a guy who wanted to be a diplomat, so every roommate argument became a peace summit. I’d say, “Whose moldy ramen is this?” and he’d go, “Before assigning blame, we should recognize the legitimate security concerns of both bowls.” By finals week, our mini-fridge had sanctions.",
+      "setup": "",
+      "punchline": "",
+      "text": "I lived in a dorm with a guy who wanted to be a diplomat, so every roommate argument became a peace summit. I’d say, “Whose moldy ramen is this?” and he’d go, “Before assigning blame, we should recognize the legitimate security concerns of both bowls.” By finals week, our mini-fridge had sanctions."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Home Invasion",
+      "seedTermsUsed": ["Dorm Room", "A break-in"],
+      "joke": "My dorm room got broken into freshman year. Nothing stolen. Instead, my laundry was folded, my desk was alphabetized, and there was a Tupperware of lasagna in a mini-fridge that had never seen food before. I called campus security panicking. They ran it and said, 'Ma'am, that's not a break-in, that's just your mother with a spare key.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My dorm room got broken into freshman year. Nothing stolen. Instead, my laundry was folded, my desk was alphabetized, and there was a Tupperware of lasagna in a mini-fridge that had never seen food before. I called campus security panicking. They ran it and said, 'Ma'am, that's not a break-in, that's just your mother with a spare key.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Negotiation Skills",
+      "seedTermsUsed": ["Dorm Room", "Diplomat"],
+      "joke": "In college, I lived in a tiny dorm room with a guy who refused to wear headphones. I tried resolving it like a seasoned diplomat: careful negotiations, listening to his grievances, establishing neutral ground. That failed completely, so I switched to aggressive sanctions and hid his deodorant until he learned how Bluetooth works.",
+      "setup": "",
+      "punchline": "",
+      "text": "In college, I lived in a tiny dorm room with a guy who refused to wear headphones. I tried resolving it like a seasoned diplomat: careful negotiations, listening to his grievances, establishing neutral ground. That failed completely, so I switched to aggressive sanctions and hid his deodorant until he learned how Bluetooth works."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Campus Security Call",
+      "seedTermsUsed": ["Dorm Room", "A break-in"],
+      "joke": "I got back to my dorm room last week and realized there’d been a break-in. Door half open, drawers dumped, clothes everywhere. I freak out and call campus security. Two guys show up, take one look around, and the older one just sighs, ‘Sir… this is a dorm room. You’re fine.’",
+      "setup": "",
+      "punchline": "",
+      "text": "I got back to my dorm room last week and realized there’d been a break-in. Door half open, drawers dumped, clothes everywhere. I freak out and call campus security. Two guys show up, take one look around, and the older one just sighs, ‘Sir… this is a dorm room. You’re fine.’"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Teenage Negotiations",
+      "seedTermsUsed": ["Young Adult", "Diplomat"],
+      "joke": "My parents said, “You’re a young adult now, start acting mature.” So I became the family diplomat. I’d negotiate curfews, Wi‑Fi passwords, laundry schedules. One night I proudly announced, “We’ve reached a compromise.” My dad goes, “Yeah, we all agreed you’re wrong, but you can present it in a PowerPoint.”",
+      "setup": "",
+      "punchline": "",
+      "text": "My parents said, “You’re a young adult now, start acting mature.” So I became the family diplomat. I’d negotiate curfews, Wi‑Fi passwords, laundry schedules. One night I proudly announced, “We’ve reached a compromise.” My dad goes, “Yeah, we all agreed you’re wrong, but you can present it in a PowerPoint.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"anthropic","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong escalation through increasingly suspicious acts of tidiness, with a clean mother reveal. The spare-key explanation is somewhat foreseeable but lands well."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear diplomat-to-sanctions structure and a solid final image, but the sanctions metaphor is the obvious comic route and hiding deodorant is only a mild payoff."},
+        {"jokeId":"xai","originality":5,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Cleanly written and immediately understandable, but the 'crime scene is actually normal dorm mess' reversal is familiar and offers only a moderate laugh."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Natural first-person setup and a decent parental reversal. The PowerPoint tag adds texture, but the underlying 'family unanimously says you're wrong' punchline is fairly conventional."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Solid escalation with a tight closing pun on 'sanctions'; clean voice and timing."},
+        {"jokeId":"google","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Familiar diplomat-roommate setup; ending is fine but less sharp than the sanctions callback in similar entries."},
+        {"jokeId":"xai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Relatable, economical, and the security guard's deadpan 'you're fine' lands cleanly."},
+        {"jokeId":"copilot","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Fresh family-negotiation angle; dad's PowerPoint line is a genuine non-obvious snap."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid escalation and comedic premise. The dialogue line about security concerns lands well, though the punchline about mini-fridge sanctions is slightly predictable once the bit is established."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean setup and believable details, but the 'mom secretly cleaned your messy room' turn is a very familiar sitcom/stand-up trope that softens the punchline."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Competent stage cadence, but the core premise—mistaking normal dorm room clutter for a burglary—is an ancient premise with no fresh spin on the finish."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"A bit mild and generic family humor. The PowerPoint punchline feels tacked on rather than an organic, high-impact topper to the diplomat conceit."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Clean diplomat framing lands a sharp, specific dialogue turn and tidy sanctions closer."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":7,"comment":"Solid parental-invasion premise with good detail buildup, though the reveal is somewhat expected."},
+        {"jokeId":"google","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Competent negotiation-to-sanctions structure, but the deodorant closer is mild and familiar."},
+        {"jokeId":"copilot","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Effective young-adult diplomat setup with a crisp PowerPoint undercut that carries the laugh."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Solid premise; sanctions tag is mildly funny."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Clean escalation; mother reveal lands gently."},
+        {"jokeId":"google","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Competent; deodorant sanction is predictable."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Clear setup; final line is familiar and light."}
+      ]
+    }
+  ]
+}

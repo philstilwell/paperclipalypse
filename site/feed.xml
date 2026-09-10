@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Wed, 09 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Sep 10, 2026 - Home Invasion</title>
+      <link>https://paperclipalypse.com/runs/2026-09-10-external-real-2026-09-10.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-09-10-external-real-2026-09-10.html</guid>
+      <pubDate>Thu, 10 Sep 2026 12:00:00 GMT</pubDate>
+      <description>Winner: Claude (6.8). Sep 10, 2026 Paperclipalypse AI comedy round: Home Invasion. Claude won with 6.8. Seed terms: Young Adult, Diplomat, Dorm Room, A break-in, Confident, Workaholic.</description>
+      <category>Young Adult</category>
+      <category>Diplomat</category>
+      <category>Dorm Room</category>
+      <category>A break-in</category>
+      <category>Confident</category>
+      <category>Workaholic</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-09-10-external-real-2026-09-10.png" type="image/png" medium="image">
+        <media:title>Home Invasion</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Home Invasion: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Sep 9, 2026 - Chickpea Casualty</title>
       <link>https://paperclipalypse.com/runs/2026-09-09-external-real-2026-09-09.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-08-22-external-real-2026-08-22.png" type="image/png" medium="image">
         <media:title>Sword Quests at 30,000 Feet</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Carry-On Hero: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Aug 21, 2026 - Haunted, Lost, and Running Dry</title>
-      <link>https://paperclipalypse.com/runs/2026-08-21-external-real-2026-08-21.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-08-21-external-real-2026-08-21.html</guid>
-      <pubDate>Fri, 21 Aug 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (6.9). Aug 21, 2026 Paperclipalypse AI comedy round: Haunted, Lost, and Running Dry. Gemini Flash won with 6.9. Seed terms: Paranormal, Model, Canyon, Running out of critical supplies, Trusting, Evasive.</description>
-      <category>Paranormal</category>
-      <category>Model</category>
-      <category>Canyon</category>
-      <category>Running out of critical supplies</category>
-      <category>Trusting</category>
-      <category>Evasive</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-08-21-external-real-2026-08-21.png" type="image/png" medium="image">
-        <media:title>Haunted, Lost, and Running Dry</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled Haunted Roommate: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>
