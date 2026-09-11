@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-11T14:01:31.270Z",
+  "publishedDate": "2026-09-11",
+  "seed": "external-real-2026-09-11",
+  "slug": "2026-09-11-external-real-2026-09-11",
+  "source": "manual-external",
+  "seedTerms": [
+    "Generation Ship",
+    "Party Planner",
+    "Pool",
+    "Being mistaken for someone else",
+    "Professional",
+    "Inflexible"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-5.4 Mini (Extra High) web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "GPT-5.4 Mini (Extra High) web",
+      "title": "Call Me Brian",
+      "seedTermsUsed": ["Party Planner", "Being mistaken for someone else"],
+      "joke": "I hired a party planner for my birthday, and she kept calling me Brian. I corrected her twice. Then she said, “Brian gets the open bar, live band, and chocolate fountain.” I said, “Actually, you were right the first time. My mother made the mistake.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired a party planner for my birthday, and she kept calling me Brian. I corrected her twice. Then she said, “Brian gets the open bar, live band, and chocolate fountain.” I said, “Actually, you were right the first time. My mother made the mistake.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Pool Party",
+      "seedTermsUsed": ["Party Planner", "Pool"],
+      "joke": "I work as a party planner, and I did a pool party last month that taught me something about myself. Guy shows up, jumps straight into the deep end fully dressed, no hello, nothing. Turns out he thought I was somebody else's party planner. Which stung, because for one glorious second I thought my invitations had just gotten so good people were diving in headfirst.",
+      "setup": "",
+      "punchline": "",
+      "text": "I work as a party planner, and I did a pool party last month that taught me something about myself. Guy shows up, jumps straight into the deep end fully dressed, no hello, nothing. Turns out he thought I was somebody else's party planner. Which stung, because for one glorious second I thought my invitations had just gotten so good people were diving in headfirst."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "The Deep End",
+      "seedTermsUsed": ["Pool", "Being mistaken for someone else"],
+      "joke": "I was relaxing at a luxury resort pool in a red polo, minding my own business, when a woman panicked and screamed, 'Lifeguard, do something, he's drowning!' I didn't want to cause an awkward scene, so I jumped in and drowned with him.",
+      "setup": "",
+      "punchline": "",
+      "text": "I was relaxing at a luxury resort pool in a red polo, minding my own business, when a woman panicked and screamed, 'Lifeguard, do something, he's drowning!' I didn't want to cause an awkward scene, so I jumped in and drowned with him."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Hull Cake",
+      "seedTermsUsed": ["Generation Ship", "Party Planner"],
+      "joke": "I'm a party planner on a generation ship. They asked me to organize the arrival celebration for the new planet. I said, \"Great, what's the date?\" The captain replied, \"Roughly 400 years from now.\" Now every planning session ends with me asking if we should order the cake fresh or just carve the recipe into the hull.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm a party planner on a generation ship. They asked me to organize the arrival celebration for the new planet. I said, \"Great, what's the date?\" The captain replied, \"Roughly 400 years from now.\" Now every planning session ends with me asking if we should order the cake fresh or just carve the recipe into the hull."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Wrong Guy at the Pool",
+      "seedTermsUsed": ["Pool", "Being mistaken for someone else"],
+      "joke": "I was at the pool trying to relax, and this guy comes up all excited, shouting, “There you are! We need you for the relay!” I said, “Buddy, I think you’ve got the wrong person.” He squints at me and goes, “Wait… you’re not our star swimmer?” I said, “No, I’m the guy who got tired walking from the snack bar.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I was at the pool trying to relax, and this guy comes up all excited, shouting, “There you are! We need you for the relay!” I said, “Buddy, I think you’ve got the wrong person.” He squints at me and goes, “Wait… you’re not our star swimmer?” I said, “No, I’m the guy who got tired walking from the snack bar.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"anthropic","originality":5,"surprise":5,"craft":6,"promptFit":4,"laugh":5,"comment":"Clear setup and decent rhythm, but the payoff is mild. It also clearly uses mistaken identity in addition to party planner and pool, exceeding the two-seed limit."},
+        {"jokeId":"google","originality":7,"surprise":8,"craft":7,"promptFit":10,"laugh":7,"comment":"Very clean setup with a sharp, dark reversal. The final line lands hard and unexpectedly, though the absurd fatalism may narrow the audience slightly."},
+        {"jokeId":"xai","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"Strong premise integration and a good final image. The hull-recipe turn is clever and coherent, but more amusing than laugh-out-loud."},
+        {"jokeId":"copilot","originality":4,"surprise":4,"craft":5,"promptFit":10,"laugh":5,"comment":"Competent and easy to follow, but the unathletic-person reveal is familiar and predictable. The punchline earns a mild smile rather than a strong laugh."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean setup and a nice self-deprecating snap, though the reveal is fairly telegraphed."},
+        {"jokeId":"google","originality":8,"surprise":8,"craft":7,"promptFit":9,"laugh":7,"comment":"Dark, absurd escalation that avoids the obvious 'I'm fine' route; the final image lands hard."},
+        {"jokeId":"xai","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Fun premise with a solid closing image, though the joke leans more clever than laugh-out-loud."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Serviceable mistaken-identity bit with a mild self-deprecating tag, but the beats are fairly predictable."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid club-ready rhythm and clean escalation, though the 'adopting the wrong identity for perks' premise is a familiar trope."},
+        {"jokeId":"anthropic","originality":5,"surprise":4,"craft":5,"promptFit":4,"laugh":4,"comment":"Accidentally pulls in a third seed concept ('being mistaken for someone else') which caps prompt fit. The punchline overexplains and diffuses the initial momentum."},
+        {"jokeId":"xai","originality":7,"surprise":6,"craft":6,"promptFit":9,"laugh":5,"comment":"Great premise pairing generation ship logistics with mundane event planning, but the tag line lands as a mild conceptual chuckle rather than a sharp laugh."},
+        {"jokeId":"copilot","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":4,"comment":"Textbook setup with an extremely predictable self-deprecating out-of-shape punchline."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean identity switch for better perks; mother line is neat but the laugh stays mild."},
+        {"jokeId":"anthropic","originality":5,"surprise":4,"craft":5,"promptFit":3,"laugh":5,"comment":"Uses three seed concepts; the invitation-flattery turn feels forced and the pool jump is under-motivated."},
+        {"jokeId":"google","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Clear premise, sharp absurd commitment, and a final image that actually carries the laugh."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Competent self-deprecation but the snack-bar closer is soft and expected."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Clean premise; final turn is mildly funny."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Decent escalation; ending lands gently."},
+        {"jokeId":"google","originality":5,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Absurd turn weakens clarity; punchline undercuts setup."},
+        {"jokeId":"xai","originality":6,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Solid sci‑fi angle; hull‑carving bit is lightly amusing."}
+      ]
+    }
+  ]
+}
