@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-12-external-real-2026-09-12",
+  "seed": "external-real-2026-09-12",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-12T14:02:16.966Z",
+  "publishedDate": "2026-09-12",
+  "seedTerms": [
+    "Mystery",
+    "Secret Service Agent",
+    "Ice Cream Parlor",
+    "Hurting someone to save them",
+    "Analytical",
+    "Needy"
+  ],
+  "premise": {
+    "text": "Seed terms: Mystery, Secret Service Agent, Ice Cream Parlor, Hurting someone to save them, Analytical, Needy",
+    "seedTerms": [
+      "Mystery",
+      "Secret Service Agent",
+      "Ice Cream Parlor",
+      "Hurting someone to save them",
+      "Analytical",
+      "Needy"
+    ],
+    "displayText": "Bodyguard Reflex"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "GPT-5.4 Mini (Extra High) web",
+      "title": "Outside My Jurisdiction",
+      "seedTermsUsed": [
+        "Secret Service Agent",
+        "Needy"
+      ],
+      "joke": "I need so much reassurance, I once dated a Secret Service agent. Every time I asked, “Would you take a bullet for me?” he’d say, “Professionally, this relationship is outside my jurisdiction.”",
+      "setup": "",
+      "punchline": "I need so much reassurance, I once dated a Secret Service agent. Every time I asked, “Would you take a bullet for me?” he’d say, “Professionally, this relationship is outside my jurisdiction.”",
+      "text": "I need so much reassurance, I once dated a Secret Service agent. Every time I asked, “Would you take a bullet for me?” he’d say, “Professionally, this relationship is outside my jurisdiction.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Emotional Spreadsheet",
+      "seedTermsUsed": [
+        "Analytical",
+        "Needy"
+      ],
+      "joke": "I'm a very analytical person dating a very needy person, so our fights are basically data reviews. She goes, \"Do you even love me?\" and I go, \"Define parameters.\" She cried once and I said, \"Interesting, that's a fourteen percent increase from Tuesday.\" Last week she said, \"I need more from you emotionally,\" so I made her a pie chart. She didn't leave. She just cried into it. I labeled that slice too.",
+      "setup": "",
+      "punchline": "I'm a very analytical person dating a very needy person, so our fights are basically data reviews. She goes, \"Do you even love me?\" and I go, \"Define parameters.\" She cried once and I said, \"Interesting, that's a fourteen percent increase from Tuesday.\" Last week she said, \"I need more from you emotionally,\" so I made her a pie chart. She didn't leave. She just cried into it. I labeled that slice too.",
+      "text": "I'm a very analytical person dating a very needy person, so our fights are basically data reviews. She goes, \"Do you even love me?\" and I go, \"Define parameters.\" She cried once and I said, \"Interesting, that's a fourteen percent increase from Tuesday.\" Last week she said, \"I need more from you emotionally,\" so I made her a pie chart. She didn't leave. She just cried into it. I labeled that slice too."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash web",
+      "title": "Bodyguard Reflex",
+      "seedTermsUsed": [
+        "Secret Service Agent",
+        "Hurting someone to save them"
+      ],
+      "joke": "My girlfriend told me I lack protective instincts, so when a stray Frisbee floated toward her in the park, I tapped into my inner Secret Service agent. I dove in slow motion, screamed 'Get down, Madame President!', and tackled her directly onto the concrete. The Frisbee missed her by twenty feet. Her collarbone, unfortunately, did not miss the curb. But hey—the threat was neutralized.",
+      "setup": "",
+      "punchline": "My girlfriend told me I lack protective instincts, so when a stray Frisbee floated toward her in the park, I tapped into my inner Secret Service agent. I dove in slow motion, screamed 'Get down, Madame President!', and tackled her directly onto the concrete. The Frisbee missed her by twenty feet. Her collarbone, unfortunately, did not miss the curb. But hey—the threat was neutralized.",
+      "text": "My girlfriend told me I lack protective instincts, so when a stray Frisbee floated toward her in the park, I tapped into my inner Secret Service agent. I dove in slow motion, screamed 'Get down, Madame President!', and tackled her directly onto the concrete. The Frisbee missed her by twenty feet. Her collarbone, unfortunately, did not miss the curb. But hey—the threat was neutralized."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Flavor Protection Detail",
+      "seedTermsUsed": [
+        "Secret Service Agent",
+        "Ice Cream Parlor"
+      ],
+      "joke": "I spent six months as a Secret Service agent. They put me on ice cream parlor detail. Every time the principal ordered a cone, I had to go in first and taste every single flavor for poison. One afternoon he wanted a triple scoop. I radioed back after the seventh sample: 'Sir, the rocky road is clean... but I can no longer feel my face or protect democracy.'",
+      "setup": "",
+      "punchline": "I spent six months as a Secret Service agent. They put me on ice cream parlor detail. Every time the principal ordered a cone, I had to go in first and taste every single flavor for poison. One afternoon he wanted a triple scoop. I radioed back after the seventh sample: 'Sir, the rocky road is clean... but I can no longer feel my face or protect democracy.'",
+      "text": "I spent six months as a Secret Service agent. They put me on ice cream parlor detail. Every time the principal ordered a cone, I had to go in first and taste every single flavor for poison. One afternoon he wanted a triple scoop. I radioed back after the seventh sample: 'Sir, the rocky road is clean... but I can no longer feel my face or protect democracy.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Cold Case",
+      "seedTermsUsed": [
+        "Mystery",
+        "Ice Cream Parlor"
+      ],
+      "joke": "I walked into this ice cream place like I was solving a mystery. The kid behind the counter goes, “Want a sample?” and I’m like, “Not until I know who’s been stealing my sprinkles.” I start interrogating everyone, checking alibis, dusting waffle cones for prints. Finally the manager sighs, “Sir… you ate them. You asked for extra and then you ate them.”",
+      "setup": "",
+      "punchline": "I walked into this ice cream place like I was solving a mystery. The kid behind the counter goes, “Want a sample?” and I’m like, “Not until I know who’s been stealing my sprinkles.” I start interrogating everyone, checking alibis, dusting waffle cones for prints. Finally the manager sighs, “Sir… you ate them. You asked for extra and then you ate them.”",
+      "text": "I walked into this ice cream place like I was solving a mystery. The kid behind the counter goes, “Want a sample?” and I’m like, “Not until I know who’s been stealing my sprinkles.” I start interrogating everyone, checking alibis, dusting waffle cones for prints. Finally the manager sighs, “Sir… you ate them. You asked for extra and then you ate them.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear escalation and a decent final tag, but the analytical-partner/data-review premise is familiar and the turns are fairly predictable.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong concrete visual and clean escalation; the injury-as-protection reversal works, though the final threat-neutralized tag is somewhat expected.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Readable and economical with a fun premise, but poison-tasting ice cream leads to a fairly obvious overindulgence payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The self-incrimination reveal is coherent and gives the bit a turn, but the detective behavior feels contrived and the payoff lands more as cute than strong.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.9
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean bureaucratic pun, tight and clear, but the payoff is mild and a bit expected.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good escalation with a dark, deadpan final line; the 'Madame President' bit lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Fun premise, nice escalating stakes, closing line is amusing though not shocking.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Solid misdirection ending; self-incrimination twist is satisfying and well-paced.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Tidy economy and clean setup, but the punchline lands as a predictable, mild workplace deflection.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Leans into a familiar analytical-partner trope, but escalates smoothly to a strong, laugh-earning tag on the pie chart.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Premise is overly cartoonish for stage stand-up; the brain-freeze payoff feels strained and artificial.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 4.8
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Stilted narrative framing and a predictable, sit-com style reveal that lacks stage bite.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 7,
+          "total": 3.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean needy-plus-jurisdiction setup with a tidy closer, but the payoff stays mild and expected.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid escalation through data-review bits to the pie-chart image; funny and specific without overreaching.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear physical premise, sharp overkill turn, and the final rationalization lands cleanly on stage.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Serviceable mystery parody but the reveal is the most obvious route and underwhelms.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise; final line is mildly funny but predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.500000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Consistent escalation; pie‑chart cry is a decent turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong physical gag; ending lands with a clear comic snap.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Fun angle; face‑numb closer is lightly amusing.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.7,
+      "rawScore": 6.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 6.4,
+        "craft": 6.9,
+        "originality": 6.4,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong concrete visual and clean escalation; the injury-as-protection reversal works, though the final threat-neutralized tag is somewhat expected."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Good escalation with a dark, deadpan final line; the 'Madame President' bit lands well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear physical premise, sharp overkill turn, and the final rationalization lands cleanly on stage."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong physical gag; ending lands with a clear comic snap."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.6,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.1,
+        "craft": 6.6,
+        "originality": 5.8,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear escalation and a decent final tag, but the analytical-partner/data-review premise is familiar and the turns are fairly predictable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.3,
+          "comment": "Leans into a familiar analytical-partner trope, but escalates smoothly to a strong, laugh-earning tag on the pie chart."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid escalation through data-review bits to the pie-chart image; funny and specific without overreaching."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Consistent escalation; pie‑chart cry is a decent turn."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6,
+      "rawScore": 6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean bureaucratic pun, tight and clear, but the payoff is mild and a bit expected."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Tidy economy and clean setup, but the punchline lands as a predictable, mild workplace deflection."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean needy-plus-jurisdiction setup with a tidy closer, but the payoff stays mild and expected."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear premise; final line is mildly funny but predictable."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.6,
+        "craft": 6.1,
+        "originality": 5.8,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Readable and economical with a fun premise, but poison-tasting ice cream leads to a fairly obvious overindulgence payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.5,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Fun premise, nice escalating stakes, closing line is amusing though not shocking."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.1,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.3,
+          "comment": "Premise is overly cartoonish for stage stand-up; the brain-freeze payoff feels strained and artificial."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Fun angle; face‑numb closer is lightly amusing."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.3,
+      "rawScore": 5.5,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 4.9,
+        "craft": 5.6,
+        "originality": 4.6,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.7,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.2,
+          "comment": "The self-incrimination reveal is coherent and gives the bit a turn, but the detective behavior feels contrived and the payoff lands more as cute than strong."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.7,
+          "rawScore": 7,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid misdirection ending; self-incrimination twist is satisfying and well-paced."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 3.9,
+          "rawScore": 3.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Stilted narrative framing and a predictable, sit-com style reveal that lacks stage bite."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Serviceable mystery parody but the reveal is the most obvious route and underwhelms."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-12-external-real-2026-09-12.png",
+    "originalSrc": "assets/feature-images/2026-09-12-external-real-2026-09-12.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Bodyguard Reflex: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Bodyguard Reflex\nExact joke text to render in the right panel:\nMy girlfriend told me I lack protective instincts, so when a stray Frisbee floated toward her in the park, I tapped into my inner Secret Service agent. I dove in slow motion, screamed 'Get down, Madame President!', and tackled her directly onto the concrete. The Frisbee missed her by twenty feet. Her collarbone, unfortunately, did not miss the curb. But hey—the threat was neutralized.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Mystery, Secret Service Agent, Ice Cream Parlor, Hurting someone to save them, Analytical, Needy. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Mystery, Secret Service Agent, Ice Cream Parlor, Hurting someone to save them, Analytical, Needy. Use the winning joke titled \"Bodyguard Reflex\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6.6,
+      "google": 6.1,
+      "xai": 6.6,
+      "copilot": 5.9
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-12-external-real-2026-09-12.md"
+}
