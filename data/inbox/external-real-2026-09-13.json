@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-09-13T16:34:26.571Z",
+  "publishedDate": "2026-09-13",
+  "seed": "external-real-2026-09-13",
+  "slug": "2026-09-13-external-real-2026-09-13",
+  "source": "manual-external",
+  "seedTerms": [
+    "Gothic",
+    "Teacher",
+    "Jewelry Store",
+    "Having a one-night stand",
+    "Witty",
+    "Indecisive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "GPT-5.4 Mini (Extra High) web",
+      "title": "Dress Code",
+      "seedTermsUsed": ["Gothic", "Teacher"],
+      "joke": "I went through a goth phase while I was teaching, so I showed up one Monday dressed entirely in black. A student looked me over and asked, “Did somebody die?” I said, “Yeah—your weekend. Take out your homework.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I went through a goth phase while I was teaching, so I showed up one Monday dressed entirely in black. A student looked me over and asked, “Did somebody die?” I said, “Yeah—your weekend. Take out your homework.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Ring Shopping",
+      "seedTermsUsed": ["Jewelry Store", "Indecisive"],
+      "joke": "I'm indecisive, so proposing was a nightmare. I stood at the jewelry counter for two hours. The guy finally said, 'Sir, this is a ring, not a life philosophy.' I said, 'What if she doesn't like princess cut?' He said, 'Then she doesn't like the shape of a rock, get help.' I bought a gift card. She said yes to the gift card.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm indecisive, so proposing was a nightmare. I stood at the jewelry counter for two hours. The guy finally said, 'Sir, this is a ring, not a life philosophy.' I said, 'What if she doesn't like princess cut?' He said, 'Then she doesn't like the shape of a rock, get help.' I bought a gift card. She said yes to the gift card."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "The Display Case",
+      "seedTermsUsed": ["Jewelry Store", "Indecisive"],
+      "joke": "I’m so indecisive that shopping at a jewelry store gives me a full panic attack. The clerk pulled out a velvet tray with six identical silver bands and asked which one spoke to me. I stood there sweating for twenty minutes until I finally whispered, 'I think they’re all talking behind my back.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m so indecisive that shopping at a jewelry store gives me a full panic attack. The clerk pulled out a velvet tray with six identical silver bands and asked which one spoke to me. I stood there sweating for twenty minutes until I finally whispered, 'I think they’re all talking behind my back.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Jewelry Store Standoff",
+      "seedTermsUsed": ["Indecisive", "Jewelry Store"],
+      "joke": "I'm so indecisive that last week I walked into a jewelry store looking for a simple gift. The salesman held up a silver bracelet and said, 'What do you think?' I said, 'Maybe.' He showed a gold one. 'Possibly.' After twenty minutes he just stares at me and says, 'Sir, the security guard is starting to get attached to you.' I replied, 'Can I get back to you on that?'",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm so indecisive that last week I walked into a jewelry store looking for a simple gift. The salesman held up a silver bracelet and said, 'What do you think?' I said, 'Maybe.' He showed a gold one. 'Possibly.' After twenty minutes he just stares at me and says, 'Sir, the security guard is starting to get attached to you.' I replied, 'Can I get back to you on that?'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Gothic Parent-Teacher Night",
+      "seedTermsUsed": ["Gothic", "Teacher"],
+      "joke": "I tried to be a cool teacher, but my students decided I’m basically Gothic now. One kid saw me grading papers in the dark and whispered, “He communes with the shadows.” I said, “No, I just refuse to replace the bulb.” But it’s too late—parents keep asking if I teach English or summon it.",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried to be a cool teacher, but my students decided I’m basically Gothic now. One kid saw me grading papers in the dark and whispered, “He communes with the shadows.” I said, “No, I just refuse to replace the bulb.” But it’s too late—parents keep asking if I teach English or summon it."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear premise and solid escalation; the gift-card reversal is the strongest turn, though the middle dialogue is somewhat familiar."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clean and concise with a clear final turn; the paranoid-band punchline is amusing but not especially strong or memorable."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Readable and structurally sound, but the security-guard line and callback produce more of a smile than a real laugh."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Strong imagery and good rhythm, with the final English/summoning line carrying the joke; slightly whimsical rather than sharply surprising."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean setup and a sharp, economical punchline that lands naturally in a teacher's voice."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Nice paranoid pun on 'speaks to me,' but the escalation is thin and the laugh is mild."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Good escalation with the maybe/possibly bit, and the security-guard line plus callback ending land well."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Solid premise but the final pun ('teach English or summon it') feels forced rather than a real snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Tidy teacher clapback with clean stage rhythm, but the snappy comeback feels familiar and mild."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong escalation with a funny salesperson interaction, capped by an absurd and satisfying final punchline."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent setup and dialogue, but the final callback line is the most predictable response to the clerk's prompt."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Charming imagery and fun phrasing around summoning English, though slightly theatrical rather than gut-laugh funny."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean short burn with solid rhythm, but the goth-to-weekend leap sits in familiar teacher-joke territory."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Stretched multi-beat setup lands on a soft gift-card closer that undercuts the built tension."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Nice personification snap from the clerk’s line; clean escalation and stage-ready whisper finish."
+        },
+        {
+          "jokeId": "copilot",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Decent wordplay on ‘summon,’ but the dark-bulb premise and gothic labeling feel stock."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Clean premise; closer is neat but not especially surprising."
+        },
+        {
+          "jokeId": "anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Solid escalation; gift-card turn is a decent payoff."
+        },
+        {
+          "jokeId": "google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Fun image; ending is amusing but lands softly."
+        },
+        {
+          "jokeId": "xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Consistent rhythm; guard attachment line gives a mild snap."
+        }
+      ]
+    }
+  ]
+}
