@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-14T14:08:07.438Z",
+  "publishedDate": "2026-09-14",
+  "seed": "external-real-2026-09-14",
+  "slug": "2026-09-14-external-real-2026-09-14",
+  "source": "manual-external",
+  "seedTerms": [
+    "Sports",
+    "Stay at Home Parent",
+    "Office Cubicle",
+    "Having to rely on others",
+    "Empathetic",
+    "Inattentive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "GPT-5.4 Mini (Extra High) web",
+      "title": "Play-by-Play Parenting",
+      "seedTermsUsed": ["Sports", "Stay at Home Parent"],
+      "joke": "I’m a stay-at-home parent, so I’ve started narrating the day like sports. “He approaches the high chair… rejects the banana… throws it deep into coverage.” By noon I’m doing postgame interviews with myself: “What went wrong out there?” Honestly, we executed the game plan. The opponent just discovered yogurt can be ammunition.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m a stay-at-home parent, so I’ve started narrating the day like sports. “He approaches the high chair… rejects the banana… throws it deep into coverage.” By noon I’m doing postgame interviews with myself: “What went wrong out there?” Honestly, we executed the game plan. The opponent just discovered yogurt can be ammunition."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Assistant Coach",
+      "seedTermsUsed": ["Sports", "Stay at Home Parent"],
+      "joke": "I became a stay-at-home dad and it turns out that's just being a sports coach with worse pay and one player. I run drills. I do halftime speeches over goldfish crackers. I've screamed 'shake it off' at a toddler who fell down doing absolutely nothing athletic. Yesterday I high-fived my son for going pee in the toilet, and some small, broken part of me thought, 'that's a playoff win.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I became a stay-at-home dad and it turns out that's just being a sports coach with worse pay and one player. I run drills. I do halftime speeches over goldfish crackers. I've screamed 'shake it off' at a toddler who fell down doing absolutely nothing athletic. Yesterday I high-fived my son for going pee in the toilet, and some small, broken part of me thought, 'that's a playoff win.'"
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Sideline Coaching",
+      "seedTermsUsed": ["Sports", "Stay at Home Parent"],
+      "joke": "I’m a stay-at-home dad, which basically means I manage a tiny, chaotic sports franchise. My four-year-old throws tantrums, refuses to run the plays, and bites the ref. Last Tuesday he spilled an entire bowl of cereal on the rug, looked me dead in the eye, and pointed toward the kitchen like, 'Review the tape, Phil. You poured it.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m a stay-at-home dad, which basically means I manage a tiny, chaotic sports franchise. My four-year-old throws tantrums, refuses to run the plays, and bites the ref. Last Tuesday he spilled an entire bowl of cereal on the rug, looked me dead in the eye, and pointed toward the kitchen like, 'Review the tape, Phil. You poured it.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Doorstep Confessional",
+      "seedTermsUsed": ["Stay at Home Parent", "Having to rely on others"],
+      "joke": "I'm a stay-at-home parent, so I have to rely on others for any adult conversation. The Amazon driver is basically my therapist now. He rings the doorbell, I open up about the juice stains, the missing shoe, and my slow mental decline, he nods, drops the box, and peels out. Best session of the week, and I didn't even have to leave the house.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm a stay-at-home parent, so I have to rely on others for any adult conversation. The Amazon driver is basically my therapist now. He rings the doorbell, I open up about the juice stains, the missing shoe, and my slow mental decline, he nods, drops the box, and peels out. Best session of the week, and I didn't even have to leave the house."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Cubicle Coach",
+      "seedTermsUsed": ["Sports", "Office Cubicle"],
+      "joke": "I tried bringing sports energy into my cubicle. I started pacing like a coach, muttering plays to myself. My coworker asked why I kept slapping the side of my monitor, and I said, “Motivation.” Then my boss walked by, saw my game face, and said, “You’re filling out expense reports.” I told him, “Yeah, and we’re in overtime.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried bringing sports energy into my cubicle. I started pacing like a coach, muttering plays to myself. My coworker asked why I kept slapping the side of my monitor, and I said, “Motivation.” Then my boss walked by, saw my game face, and said, “You’re filling out expense reports.” I told him, “Yeah, and we’re in overtime.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"anthropic","originality":5,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear premise and solid escalation, but the sports-parent analogy and playoff-win tag are fairly expected."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong specific setup and a sharp final image; the instant-replay blame shift lands cleanly."},
+        {"jokeId":"xai","originality":4,"surprise":4,"craft":6,"promptFit":10,"laugh":5,"comment":"Readable and competent, but the delivery-person-as-therapist structure is familiar and the final beat mostly extends the premise."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Natural stage rhythm and clean seed use, but expense-report overtime is an obvious sports-office wordplay route."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean sports-broadcast conceit sustained well; 'yogurt can be ammunition' is a solid closer, if not a huge laugh."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Nice franchise-manager frame; 'review the tape, Phil' is a cute capper but the setup is a bit padded."},
+        {"jokeId":"xai","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Amazon-driver-as-therapist is a fresher angle with a clean, well-timed final line."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Coherent office-sports bit but the boss exchange and 'overtime' tag feel like a familiar template."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Solid stage cadence and rhythm, but the parenting-as-sportscast premise is well-trodden territory and the yogurt punchline lands softly."},
+        {"jokeId":"anthropic","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Good build and escalation with relatable specifics; the final beat about treating potty training like a playoff win snaps naturally."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Clear premise and natural first-person flow, but treating delivery drivers as captive therapists is a familiar trope with an expected finish."},
+        {"jokeId":"copilot","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":4,"comment":"Functional first-person setup, but slapping a monitor for motivation feels contrived and the overtime punchline is predictable."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clear sports-announcer framing of parenting with a concrete yogurt payoff that lands."},
+        {"jokeId":"anthropic","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Tight coach-to-one-player premise; the toilet high-five as playoff win carries real laugh weight."},
+        {"jokeId":"google","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Franchise chaos works and the tape-review line snaps, though the name insert is slightly off."},
+        {"jokeId":"copilot","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Serviceable cubicle-sports energy, but the overtime expense-report turn is mild and familiar."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Fun sports‑broadcast angle; yogurt ammo gives a mild snap."},
+        {"jokeId":"anthropic","originality":6,"surprise":5,"craft":6,"promptFit":7,"laugh":6,"comment":"Clear premise and escalation; playoff‑win line lands decently."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Strong image with the ref bite and tape review; tidy rhythm."},
+        {"jokeId":"xai","originality":6,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Amazon‑driver therapist idea is coherent; ending is soft but workable."}
+      ]
+    }
+  ]
+}
