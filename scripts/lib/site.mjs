@@ -1637,10 +1637,6 @@ function renderHero(run, options = {}) {
               <dt>Score</dt>
               <dd>${formatScore(winner.score)}</dd>
             </div>
-            <div>
-              <dt>Mode</dt>
-              <dd><span class="mode-popover" tabindex="0" aria-label="${escapeHtml(modeDescription(run.source))}">${escapeHtml(formatMode(run.source))}<span class="info-popover mode-info">${escapeHtml(modeDescription(run.source))}</span></span></dd>
-            </div>
           </dl>
         </div>
       </header>`;
@@ -2827,11 +2823,10 @@ main,
 }
 
 .hero {
-  min-height: clamp(600px, 78svh, 820px);
+  min-height: clamp(540px, 70svh, 720px);
   position: relative;
   display: flex;
   background: var(--bg);
-  border-bottom: 1px solid rgba(194, 138, 87, 0.2);
   overflow: hidden;
   isolation: isolate;
 }
@@ -2871,7 +2866,7 @@ main,
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 28px;
-  padding: 26px 0 40px;
+  padding: 26px 0 24px;
 }
 
 .brand-row,
@@ -3030,9 +3025,9 @@ h1 {
 }
 
 .hero-stats {
-  width: min(100%, 860px);
+  width: min(100%, 760px);
   display: grid;
-  grid-template-columns: 1.4fr 0.7fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 12px;
   margin: 0;
   position: relative;
@@ -3068,6 +3063,10 @@ h1 {
 
 main {
   padding: 34px 0 64px;
+}
+
+.hero + main {
+  padding-top: 18px;
 }
 
 .episode {
@@ -4868,7 +4867,10 @@ td:nth-child(4) {
     font-size: 2.35rem;
   }
 
-  .hero-stats,
+  .hero-stats {
+    grid-template-columns: 2fr 1fr;
+  }
+
   .seed-terms ul {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -4950,7 +4952,7 @@ td:nth-child(4) {
   }
 
   .hero {
-    min-height: 82svh;
+    min-height: auto;
   }
 
   .hero-inner {
@@ -5101,10 +5103,6 @@ td:nth-child(4) {
 
   .hero-stats {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .hero-stats div:first-child {
-    grid-column: 1 / -1;
   }
 
   .hero-stats div {
