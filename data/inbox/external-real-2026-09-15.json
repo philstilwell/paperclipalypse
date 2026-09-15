@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-15T14:05:01.766Z",
+  "publishedDate": "2026-09-15",
+  "seed": "external-real-2026-09-15",
+  "slug": "2026-09-15-external-real-2026-09-15",
+  "source": "manual-external",
+  "seedTerms": [
+    "Whodunit",
+    "Tour Guide",
+    "Waterfall",
+    "Forced attendance",
+    "Flirtatious",
+    "Haughty"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "Perfect Casting",
+      "seedTermsUsed": ["Whodunit", "Forced attendance"],
+      "joke": "My family made me attend a murder-mystery dinner and cast me as the victim. Honestly, it was the best role I’ve ever had at a family gathering: I got to lie down, stop talking, and still be praised for participating.",
+      "setup": "",
+      "punchline": "",
+      "text": "My family made me attend a murder-mystery dinner and cast me as the victim. Honestly, it was the best role I’ve ever had at a family gathering: I got to lie down, stop talking, and still be praised for participating."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "The Niagara Tour Guide",
+      "seedTermsUsed": ["Tour Guide", "Flirtatious"],
+      "joke": "I took a bus tour of Niagara Falls, and our guide was way too flirtatious for a man narrating a natural disaster. Every five minutes: 'And on your left, ladies, six million gallons a minute — kinda like me, I never stop flowing.' Ma'am, I came for geology, not to be seduced by a man in a poncho. The waterfall was less thunderous than his confidence.",
+      "setup": "",
+      "punchline": "",
+      "text": "I took a bus tour of Niagara Falls, and our guide was way too flirtatious for a man narrating a natural disaster. Every five minutes: 'And on your left, ladies, six million gallons a minute — kinda like me, I never stop flowing.' Ma'am, I came for geology, not to be seduced by a man in a poncho. The waterfall was less thunderous than his confidence."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Cave Tour",
+      "seedTermsUsed": ["Tour Guide", "Whodunit"],
+      "joke": "I took a guided tour through a cavern, and ninety minutes underground really breaks down a man’s spirit. At one point the guide hit a switch, plunged us into total pitch-black darkness, and whispered, 'Now, listen to the silence.' And all I could think was, if someone stabs this guy right now, there is simply no way any jury convicts the rest of us.",
+      "setup": "",
+      "punchline": "",
+      "text": "I took a guided tour through a cavern, and ninety minutes underground really breaks down a man’s spirit. At one point the guide hit a switch, plunged us into total pitch-black darkness, and whispered, 'Now, listen to the silence.' And all I could think was, if someone stabs this guy right now, there is simply no way any jury convicts the rest of us."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Mandatory Mystery Night",
+      "seedTermsUsed": ["Forced attendance", "Whodunit"],
+      "joke": "My company forced attendance at a team-building murder mystery. So there I am at this whodunit, holding a plastic dagger and accusing Bob from accounting, when it finally hits me: the real crime isn’t the poisoned canapés. It’s whoever thought making us do this would improve morale.",
+      "setup": "",
+      "punchline": "",
+      "text": "My company forced attendance at a team-building murder mystery. So there I am at this whodunit, holding a plastic dagger and accusing Bob from accounting, when it finally hits me: the real crime isn’t the poisoned canapés. It’s whoever thought making us do this would improve morale."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Suspicious Falls",
+      "seedTermsUsed": ["Whodunit", "Waterfall"],
+      "joke": "I went to see this huge waterfall, and the tour guide acted like we were investigating a crime scene. He kept asking, “Notice anything… unusual?” I’m drenched, starving, and he’s squinting at me like I stole the river. Finally he whispers, “If the culprit is among us, speak now.” I said, “If it’s me, can I confess somewhere dry?”",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to see this huge waterfall, and the tour guide acted like we were investigating a crime scene. He kept asking, “Notice anything… unusual?” I’m drenched, starving, and he’s squinting at me like I stole the river. Finally he whispers, “If the culprit is among us, speak now.” I said, “If it’s me, can I confess somewhere dry?”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":5,"surprise":5,"craft":6,"promptFit":4,"laugh":6,"comment":"Clear stage rhythm and amusing imagery, but the flow innuendo is predictable and waterfall becomes a third seed concept."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong escalation and a clean, satisfying jury-conviction turn; slightly wordy but genuinely good."},
+        {"jokeId":"xai","originality":3,"surprise":4,"craft":5,"promptFit":9,"laugh":4,"comment":"Understandable and compliant, but the mandatory-team-building-is-the-real-crime punchline is highly familiar and merely restates the irritation."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":5,"promptFit":4,"laugh":5,"comment":"Coherent with a serviceable final line, but the premise is strained and the explicit tour guide adds a third seed concept."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":7,"comment":"Clean, well-earned turn; victim role as reward for silence lands naturally."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Good escalation into darkness, jury-nullification punchline is sharp and non-obvious."},
+        {"jokeId":"xai","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Familiar 'real crime is this event' template; punchline mostly restates setup."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Solid setup and mild wordplay close, but the 'confess dry' tag is a soft landing."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Relatable family dynamic with crisp, economical delivery and a genuinely funny payoff."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":6,"promptFit":4,"laugh":6,"comment":"Solid voice and character work, but it pulls in Waterfall as a third major seed concept alongside Tour Guide and Flirtatious."},
+        {"jokeId":"xai","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Competently framed, but lands on the most predictable 'mandatory corporate fun' cliché without a real twist."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":5,"promptFit":4,"laugh":5,"comment":"Cute escalation, but uses three seeds (Waterfall, Whodunit, and Tour Guide) and relies on a somewhat contrived premise."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean family-role inversion; mild smile, solid but not sharp."},
+        {"jokeId":"anthropic","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Predictable flirtatious-guide setup; wordy and soft landing."},
+        {"jokeId":"google","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong dark premise and jury snap; genuine stage timing."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Cute crime-scene framing; punchline stays thin and expected."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Clean premise; lying down as participation is mildly funny but predictable."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Strong image of the overconfident guide; waterfall comparison lands decently."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Dark turn is clear and coherent; the jury line gives a solid snap."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Workplace whodunit angle is tidy; morale punchline is serviceable but familiar."}
+      ]
+    }
+  ]
+}

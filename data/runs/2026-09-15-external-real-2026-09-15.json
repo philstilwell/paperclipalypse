@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-15-external-real-2026-09-15",
+  "seed": "external-real-2026-09-15",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-15T14:05:01.766Z",
+  "publishedDate": "2026-09-15",
+  "seedTerms": [
+    "Whodunit",
+    "Tour Guide",
+    "Waterfall",
+    "Forced attendance",
+    "Flirtatious",
+    "Haughty"
+  ],
+  "premise": {
+    "text": "Seed terms: Whodunit, Tour Guide, Waterfall, Forced attendance, Flirtatious, Haughty",
+    "seedTerms": [
+      "Whodunit",
+      "Tour Guide",
+      "Waterfall",
+      "Forced attendance",
+      "Flirtatious",
+      "Haughty"
+    ],
+    "displayText": "Cave Tour"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "Perfect Casting",
+      "seedTermsUsed": [
+        "Whodunit",
+        "Forced attendance"
+      ],
+      "joke": "My family made me attend a murder-mystery dinner and cast me as the victim. Honestly, it was the best role I’ve ever had at a family gathering: I got to lie down, stop talking, and still be praised for participating.",
+      "setup": "",
+      "punchline": "My family made me attend a murder-mystery dinner and cast me as the victim. Honestly, it was the best role I’ve ever had at a family gathering: I got to lie down, stop talking, and still be praised for participating.",
+      "text": "My family made me attend a murder-mystery dinner and cast me as the victim. Honestly, it was the best role I’ve ever had at a family gathering: I got to lie down, stop talking, and still be praised for participating."
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "The Niagara Tour Guide",
+      "seedTermsUsed": [
+        "Tour Guide",
+        "Flirtatious"
+      ],
+      "joke": "I took a bus tour of Niagara Falls, and our guide was way too flirtatious for a man narrating a natural disaster. Every five minutes: 'And on your left, ladies, six million gallons a minute — kinda like me, I never stop flowing.' Ma'am, I came for geology, not to be seduced by a man in a poncho. The waterfall was less thunderous than his confidence.",
+      "setup": "",
+      "punchline": "I took a bus tour of Niagara Falls, and our guide was way too flirtatious for a man narrating a natural disaster. Every five minutes: 'And on your left, ladies, six million gallons a minute — kinda like me, I never stop flowing.' Ma'am, I came for geology, not to be seduced by a man in a poncho. The waterfall was less thunderous than his confidence.",
+      "text": "I took a bus tour of Niagara Falls, and our guide was way too flirtatious for a man narrating a natural disaster. Every five minutes: 'And on your left, ladies, six million gallons a minute — kinda like me, I never stop flowing.' Ma'am, I came for geology, not to be seduced by a man in a poncho. The waterfall was less thunderous than his confidence."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Cave Tour",
+      "seedTermsUsed": [
+        "Tour Guide",
+        "Whodunit"
+      ],
+      "joke": "I took a guided tour through a cavern, and ninety minutes underground really breaks down a man’s spirit. At one point the guide hit a switch, plunged us into total pitch-black darkness, and whispered, 'Now, listen to the silence.' And all I could think was, if someone stabs this guy right now, there is simply no way any jury convicts the rest of us.",
+      "setup": "",
+      "punchline": "I took a guided tour through a cavern, and ninety minutes underground really breaks down a man’s spirit. At one point the guide hit a switch, plunged us into total pitch-black darkness, and whispered, 'Now, listen to the silence.' And all I could think was, if someone stabs this guy right now, there is simply no way any jury convicts the rest of us.",
+      "text": "I took a guided tour through a cavern, and ninety minutes underground really breaks down a man’s spirit. At one point the guide hit a switch, plunged us into total pitch-black darkness, and whispered, 'Now, listen to the silence.' And all I could think was, if someone stabs this guy right now, there is simply no way any jury convicts the rest of us."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Mandatory Mystery Night",
+      "seedTermsUsed": [
+        "Forced attendance",
+        "Whodunit"
+      ],
+      "joke": "My company forced attendance at a team-building murder mystery. So there I am at this whodunit, holding a plastic dagger and accusing Bob from accounting, when it finally hits me: the real crime isn’t the poisoned canapés. It’s whoever thought making us do this would improve morale.",
+      "setup": "",
+      "punchline": "My company forced attendance at a team-building murder mystery. So there I am at this whodunit, holding a plastic dagger and accusing Bob from accounting, when it finally hits me: the real crime isn’t the poisoned canapés. It’s whoever thought making us do this would improve morale.",
+      "text": "My company forced attendance at a team-building murder mystery. So there I am at this whodunit, holding a plastic dagger and accusing Bob from accounting, when it finally hits me: the real crime isn’t the poisoned canapés. It’s whoever thought making us do this would improve morale."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Suspicious Falls",
+      "seedTermsUsed": [
+        "Whodunit",
+        "Waterfall"
+      ],
+      "joke": "I went to see this huge waterfall, and the tour guide acted like we were investigating a crime scene. He kept asking, “Notice anything… unusual?” I’m drenched, starving, and he’s squinting at me like I stole the river. Finally he whispers, “If the culprit is among us, speak now.” I said, “If it’s me, can I confess somewhere dry?”",
+      "setup": "",
+      "punchline": "I went to see this huge waterfall, and the tour guide acted like we were investigating a crime scene. He kept asking, “Notice anything… unusual?” I’m drenched, starving, and he’s squinting at me like I stole the river. Finally he whispers, “If the culprit is among us, speak now.” I said, “If it’s me, can I confess somewhere dry?”",
+      "text": "I went to see this huge waterfall, and the tour guide acted like we were investigating a crime scene. He kept asking, “Notice anything… unusual?” I’m drenched, starving, and he’s squinting at me like I stole the river. Finally he whispers, “If the culprit is among us, speak now.” I said, “If it’s me, can I confess somewhere dry?”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Clear stage rhythm and amusing imagery, but the flow innuendo is predictable and waterfall becomes a third seed concept.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 5.500000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong escalation and a clean, satisfying jury-conviction turn; slightly wordy but genuinely good.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and compliant, but the mandatory-team-building-is-the-real-crime punchline is highly familiar and merely restates the irritation.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 9,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Coherent with a serviceable final line, but the premise is strained and the explicit tour guide adds a third seed concept.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 4.9
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean, well-earned turn; victim role as reward for silence lands naturally.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good escalation into darkness, jury-nullification punchline is sharp and non-obvious.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Familiar 'real crime is this event' template; punchline mostly restates setup.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Solid setup and mild wordplay close, but the 'confess dry' tag is a soft landing.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Relatable family dynamic with crisp, economical delivery and a genuinely funny payoff.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Solid voice and character work, but it pulls in Waterfall as a third major seed concept alongside Tour Guide and Flirtatious.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 4,
+          "total": 5.800000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competently framed, but lands on the most predictable 'mandatory corporate fun' cliché without a real twist.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute escalation, but uses three seeds (Waterfall, Whodunit, and Tour Guide) and relies on a somewhat contrived premise.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 4.9
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean family-role inversion; mild smile, solid but not sharp.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Predictable flirtatious-guide setup; wordy and soft landing.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong dark premise and jury snap; genuine stage timing.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Cute crime-scene framing; punchline stays thin and expected.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean premise; lying down as participation is mildly funny but predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong image of the overconfident guide; waterfall comparison lands decently.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Dark turn is clear and coherent; the jury line gives a solid snap.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Workplace whodunit angle is tidy; morale punchline is serviceable but familiar.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.9,
+      "rawScore": 7.1,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.9,
+        "craft": 7.1,
+        "originality": 6.6,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong escalation and a clean, satisfying jury-conviction turn; slightly wordy but genuinely good."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Good escalation into darkness, jury-nullification punchline is sharp and non-obvious."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.3,
+          "rawScore": 7.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong dark premise and jury snap; genuine stage timing."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Dark turn is clear and coherent; the jury line gives a solid snap."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "score": 6.6,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.4,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean, well-earned turn; victim role as reward for silence lands naturally."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.9,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.5,
+          "comment": "Relatable family dynamic with crisp, economical delivery and a genuinely funny payoff."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean family-role inversion; mild smile, solid but not sharp."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Clean premise; lying down as participation is mildly funny but predictable."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.8,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.6,
+        "craft": 5.9,
+        "originality": 5.6,
+        "promptFit": 5.9
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.5,
+        "craft": 5.8,
+        "originality": 5.5,
+        "promptFit": 5.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear stage rhythm and amusing imagery, but the flow innuendo is predictable and waterfall becomes a third seed concept."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.3,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.5,
+          "comment": "Solid voice and character work, but it pulls in Waterfall as a third major seed concept alongside Tour Guide and Flirtatious."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Predictable flirtatious-guide setup; wordy and soft landing."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong image of the overconfident guide; waterfall comparison lands decently."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.2,
+      "rawScore": 5.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5.2,
+        "craft": 5.2,
+        "originality": 5.2,
+        "promptFit": 5.9
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 5.3,
+        "originality": 5.3,
+        "promptFit": 6
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 4.7,
+          "rawScore": 4.9,
+          "scoreAdjustment": -0.2,
+          "comment": "Coherent with a serviceable final line, but the premise is strained and the explicit tour guide adds a third seed concept."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid setup and mild wordplay close, but the 'confess dry' tag is a soft landing."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0.5,
+          "comment": "Cute escalation, but uses three seeds (Waterfall, Whodunit, and Tour Guide) and relies on a somewhat contrived premise."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Cute crime-scene framing; punchline stays thin and expected."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5,
+      "rawScore": 4.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.3,
+        "craft": 5.3,
+        "originality": 4.1,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.3,
+        "craft": 5.3,
+        "originality": 4,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 4.4,
+          "rawScore": 4.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Understandable and compliant, but the mandatory-team-building-is-the-real-crime punchline is highly familiar and merely restates the irritation."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.6,
+          "rawScore": 5,
+          "scoreAdjustment": -0.4,
+          "comment": "Familiar 'real crime is this event' template; punchline mostly restates setup."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.1,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.5,
+          "comment": "Competently framed, but lands on the most predictable 'mandatory corporate fun' cliché without a real twist."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Workplace whodunit angle is tidy; morale punchline is serviceable but familiar."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-15-external-real-2026-09-15.png",
+    "originalSrc": "assets/feature-images/2026-09-15-external-real-2026-09-15.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Cave Tour: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Cave Tour\nExact joke text to render in the right panel:\nI took a guided tour through a cavern, and ninety minutes underground really breaks down a man’s spirit. At one point the guide hit a switch, plunged us into total pitch-black darkness, and whispered, 'Now, listen to the silence.' And all I could think was, if someone stabs this guy right now, there is simply no way any jury convicts the rest of us.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Whodunit, Tour Guide, Waterfall, Forced attendance, Flirtatious, Haughty. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Whodunit, Tour Guide, Waterfall, Forced attendance, Flirtatious, Haughty. Use the winning joke titled \"Cave Tour\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.4,
+      "anthropic": 6.6,
+      "google": 5.7,
+      "xai": 6.5,
+      "copilot": 5.8
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-15-external-real-2026-09-15.md"
+}
