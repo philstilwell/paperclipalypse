@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-16T14:01:31.985Z",
+  "publishedDate": "2026-09-16",
+  "seed": "external-real-2026-09-16",
+  "slug": "2026-09-16-external-real-2026-09-16",
+  "source": "manual-external",
+  "seedTerms": [
+    "Time Travel",
+    "Mechanic",
+    "Kitchen",
+    "Conflicting internal needs or desires",
+    "Talented",
+    "Hostile"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "Midnight Stealth",
+      "seedTermsUsed": ["Kitchen", "Conflicting internal needs or desires"],
+      "joke": "I get hungry at midnight, but I also don't want to wake my wife, so cooking becomes a stealth mission. I open every cabinet like a safecracker, unwrap cheese one molecule at a time—then the microwave finishes and screams, “HE’S EATING AGAIN!”",
+      "setup": "",
+      "punchline": "",
+      "text": "I get hungry at midnight, but I also don't want to wake my wife, so cooking becomes a stealth mission. I open every cabinet like a safecracker, unwrap cheese one molecule at a time—then the microwave finishes and screams, “HE’S EATING AGAIN!”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "Midnight Fridge Standoff",
+      "seedTermsUsed": ["Kitchen", "Conflicting internal needs or desires"],
+      "joke": "I stood in my kitchen at 1am having a full negotiation with myself. One half of me wants to be healthy. The other half already has the fridge open. And there's a third guy in there, real quiet, who just wants to eat the cheese standing up in the dark like a raccoon with regrets. That guy always wins. That guy runs my house now.",
+      "setup": "",
+      "punchline": "",
+      "text": "I stood in my kitchen at 1am having a full negotiation with myself. One half of me wants to be healthy. The other half already has the fridge open. And there's a third guy in there, real quiet, who just wants to eat the cheese standing up in the dark like a raccoon with regrets. That guy always wins. That guy runs my house now."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite web",
+      "title": "Roadside Assistance",
+      "seedTermsUsed": ["Time Travel", "Mechanic"],
+      "joke": "My check engine light came on, so I took my car to a mechanic who looked under the hood, sighed, and said, 'Sir, your alternator is stuck in 14th century feudal England.' Which explains why every time I hit a pothole, my GPS recalculates and a guy named Yeobuck tries to tax my turnips.",
+      "setup": "",
+      "punchline": "",
+      "text": "My check engine light came on, so I took my car to a mechanic who looked under the hood, sighed, and said, 'Sir, your alternator is stuck in 14th century feudal England.' Which explains why every time I hit a pothole, my GPS recalculates and a guy named Yeobuck tries to tax my turnips."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Past Due Labor",
+      "seedTermsUsed": ["Time Travel", "Mechanic"],
+      "joke": "I found a mechanic who does time travel. My car wouldn't start, he hops in his van, vanishes, comes back, and it runs perfect. Then he bills me for six hours. I go, 'You were gone twelve minutes!' He says, 'Sure, but I spent six hours in 1955 waiting for the parts to be invented.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I found a mechanic who does time travel. My car wouldn't start, he hops in his van, vanishes, comes back, and it runs perfect. Then he bills me for six hours. I go, 'You were gone twelve minutes!' He says, 'Sure, but I spent six hours in 1955 waiting for the parts to be invented.'"
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Backwards Repairs",
+      "seedTermsUsed": ["Time Travel", "Mechanic"],
+      "joke": "I took my car to this mechanic who swears he can fix anything. Halfway through, he tells me he actually learned the trade by jumping back in time to watch the pros. I said, “Great, can you jump ahead and fix it before I have to pay?” He just wiped his hands and said, “I did. You already did.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I took my car to this mechanic who swears he can fix anything. Halfway through, he tells me he actually learned the trade by jumping back in time to watch the pros. I said, “Great, can you jump ahead and fix it before I have to pay?” He just wiped his hands and said, “I did. You already did.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Strong rhythm and escalation, though the midnight-fridge premise and raccoon comparison are familiar."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":6,"promptFit":10,"laugh":5,"comment":"Inventive imagery, but the arbitrary medieval absurdity produces more whimsy than a decisive laugh."},
+        {"jokeId":"xai","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Clear premise, economical escalation, and a coherent time-travel twist that lands cleanly."},
+        {"jokeId":"copilot","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"Clean construction and a satisfying paradox, though the time-travel payment turn feels somewhat familiar."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":7,"comment":"Relatable stealth-snack premise with a clean escalating turn; microwave punchline lands well though the trope itself is familiar."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":6,"promptFit":8,"laugh":6,"comment":"Fun surreal swerve into feudal England, but the extra clauses (GPS, turnip tax, Yeobuck) dilute the timing and blunt the snap."},
+        {"jokeId":"xai","originality":7,"surprise":8,"craft":8,"promptFit":8,"laugh":8,"comment":"Tight setup, relatable billing gripe, and a sharp, logical-absurd punchline that actually pays off the premise."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":5,"promptFit":8,"laugh":5,"comment":"Interesting paradox idea but the final line is muddled rather than clarifying, so the laugh doesn't fully land."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Relatable late-night snacking premise with a slightly worn-out loud microwave punchline."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Good imagery with the raccoon persona, though the internal conflict structure is a standard comedic trope."},
+        {"jokeId":"xai","originality":7,"surprise":7,"craft":7,"promptFit":7,"laugh":7,"comment":"Clever temporal logic punchline that delivers a solid snap on the billing detail."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Neat causal loop joke, though the ending leans on a familiar sci-fi paradox trope."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean stealth-mission setup and microwave snitch punch; competent and mild."},
+        {"jokeId":"anthropic","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Vivid raccoon-with-regrets image and strong final escalation give real stage lift."},
+        {"jokeId":"google","originality":6,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Absurdist feudal premise amuses briefly but relies on random details without a clean snap."},
+        {"jokeId":"copilot","originality":4,"surprise":4,"craft":4,"promptFit":8,"laugh":4,"comment":"Paradox attempt stays muddy; final line fails to deliver a clear or earned laugh."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Stealth-cooking premise is clear; microwave scream gives a decent snap."},
+        {"jokeId":"anthropic","originality":6,"surprise":5,"craft":6,"promptFit":7,"laugh":6,"comment":"Multiple-selves negotiation is familiar; raccoon line lands reasonably well."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Feudal alternator is a fun image; turnip-tax gag provides a tidy payoff."},
+        {"jokeId":"xai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Parts-in-1955 angle is coherent; time-billing turn is mildly satisfying."}
+      ]
+    }
+  ]
+}
