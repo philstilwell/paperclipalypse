@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-17-external-real-2026-09-17",
+  "seed": "external-real-2026-09-17",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-17T14:02:02.223Z",
+  "publishedDate": "2026-09-17",
+  "seedTerms": [
+    "Political",
+    "Writer",
+    "Bus",
+    "Taking advice from the wrong person",
+    "Independent",
+    "Know-It-All"
+  ],
+  "premise": {
+    "text": "Seed terms: Political, Writer, Bus, Taking advice from the wrong person, Independent, Know-It-All",
+    "seedTerms": [
+      "Political",
+      "Writer",
+      "Bus",
+      "Taking advice from the wrong person",
+      "Independent",
+      "Know-It-All"
+    ],
+    "displayText": "The Shortcut"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "The Shortcut",
+      "seedTermsUsed": [
+        "Bus",
+        "Know-It-All"
+      ],
+      "joke": "I sat beside a know-it-all on a bus who kept criticizing the driver’s route. Finally, the driver said, “Fine—you navigate.” Ten minutes later, we were wedged under a low bridge. As we crawled out the emergency exit, he whispered to me, “Still saved us two red lights.”",
+      "setup": "",
+      "punchline": "I sat beside a know-it-all on a bus who kept criticizing the driver’s route. Finally, the driver said, “Fine—you navigate.” Ten minutes later, we were wedged under a low bridge. As we crawled out the emergency exit, he whispered to me, “Still saved us two red lights.”",
+      "text": "I sat beside a know-it-all on a bus who kept criticizing the driver’s route. Finally, the driver said, “Fine—you navigate.” Ten minutes later, we were wedged under a low bridge. As we crawled out the emergency exit, he whispered to me, “Still saved us two red lights.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "The Bus Oracle",
+      "seedTermsUsed": [
+        "Bus",
+        "Know-It-All"
+      ],
+      "joke": "I got unsolicited life advice from a guy on the bus once. Full beard, fingerless gloves, smelled like a candle store that caught fire. He goes, 'You should never microwave fish at work.' I said sir, I don't even have a job. He said, 'That's your first mistake.' Twenty minutes, no stop requested, just wisdom. I've never trusted a moving vehicle's opinion on my career since.",
+      "setup": "",
+      "punchline": "I got unsolicited life advice from a guy on the bus once. Full beard, fingerless gloves, smelled like a candle store that caught fire. He goes, 'You should never microwave fish at work.' I said sir, I don't even have a job. He said, 'That's your first mistake.' Twenty minutes, no stop requested, just wisdom. I've never trusted a moving vehicle's opinion on my career since.",
+      "text": "I got unsolicited life advice from a guy on the bus once. Full beard, fingerless gloves, smelled like a candle store that caught fire. He goes, 'You should never microwave fish at work.' I said sir, I don't even have a job. He said, 'That's your first mistake.' Twenty minutes, no stop requested, just wisdom. I've never trusted a moving vehicle's opinion on my career since."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Public Transit Life Coach",
+      "seedTermsUsed": [
+        "Bus",
+        "Taking advice from the wrong person"
+      ],
+      "joke": "I was crying on the cross-town bus last week after getting dumped, and the guy next to me leaned in and gave me thirty uninterrupted minutes of profound relationship wisdom. He was talking about boundaries, emotional maturity, forgiving yourself. I really took it to heart. Right up until he tapped the driver's shoulder and asked, 'Can you let me off in the lake?'",
+      "setup": "",
+      "punchline": "I was crying on the cross-town bus last week after getting dumped, and the guy next to me leaned in and gave me thirty uninterrupted minutes of profound relationship wisdom. He was talking about boundaries, emotional maturity, forgiving yourself. I really took it to heart. Right up until he tapped the driver's shoulder and asked, 'Can you let me off in the lake?'",
+      "text": "I was crying on the cross-town bus last week after getting dumped, and the guy next to me leaned in and gave me thirty uninterrupted minutes of profound relationship wisdom. He was talking about boundaries, emotional maturity, forgiving yourself. I really took it to heart. Right up until he tapped the driver's shoulder and asked, 'Can you let me off in the lake?'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Shortcut to Nowhere",
+      "seedTermsUsed": [
+        "Taking advice from the wrong person",
+        "Know-It-All"
+      ],
+      "joke": "I got lost downtown last week and made the classic mistake of taking advice from the wrong person—this absolute know-it-all tourist. He swore he knew a brilliant shortcut. Two hours later we were still walking in circles, but at least he could explain in perfect detail exactly why it was all my fault.",
+      "setup": "",
+      "punchline": "I got lost downtown last week and made the classic mistake of taking advice from the wrong person—this absolute know-it-all tourist. He swore he knew a brilliant shortcut. Two hours later we were still walking in circles, but at least he could explain in perfect detail exactly why it was all my fault.",
+      "text": "I got lost downtown last week and made the classic mistake of taking advice from the wrong person—this absolute know-it-all tourist. He swore he knew a brilliant shortcut. Two hours later we were still walking in circles, but at least he could explain in perfect detail exactly why it was all my fault."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Plot Twist",
+      "seedTermsUsed": [
+        "Writer",
+        "Bus"
+      ],
+      "joke": "I was riding the bus when a guy told me he was a writer and asked if I wanted “a more compelling route.” Next thing I know, he’s narrating my commute like it’s a thriller. We blow past my stop and he whispers, “The real destination… is self-discovery.” I said, “Great, but can self-discovery drop me at work on time?”",
+      "setup": "",
+      "punchline": "I was riding the bus when a guy told me he was a writer and asked if I wanted “a more compelling route.” Next thing I know, he’s narrating my commute like it’s a thriller. We blow past my stop and he whispers, “The real destination… is self-discovery.” I said, “Great, but can self-discovery drop me at work on time?”",
+      "text": "I was riding the bus when a guy told me he was a writer and asked if I wanted “a more compelling route.” Next thing I know, he’s narrating my commute like it’s a thriller. We blow past my stop and he whispers, “The real destination… is self-discovery.” I said, “Great, but can self-discovery drop me at work on time?”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong character details and rhythm; the final metaphor is amusing but slightly diffuse.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clean escalation to a genuinely unexpected reveal, though the lake line is more absurd than explosive.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.900000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Clear and economical, but the blame-shifting punchline is familiar and predictable.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.2
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Coherent wordplay and solid structure, but the self-discovery turn feels like a familiar whimsical template.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup, escalation, and a punchline that lands on character not just situation.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good misdirection; the lake tap is a genuine snap, though the setup runs a touch long.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Punchline mostly restates the setup's premise (his fault) rather than turning it; competent but flat.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Valid use of Writer and Bus as concepts; whimsical premise but the closing line is a soft landing rather than a real snap.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.9
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Solid narrative timing with a clean escalation; the punchline lands naturally on character delusion.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong descriptive setup and funny mid-joke dialogue, but the final tag peters out rather than snapping shut.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Overly literal seed recitations in the setup; predictable conclusion that describes an annoyance rather than executing a punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 4,
+          "total": 3.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Functional premise and structure, but the final callback is mild and relies on a familiar trope.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean escalation to the under-bridge image; the final boast lands with solid ironic snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Vivid character sketch, but the advice sequence stays diffuse and the closer restates rather than punches.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Tight build from earnest advice to the lake request; the undercut is sharp, visual, and stage-ready.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Serviceable dialogue rhythm, yet the self-discovery turn arrives on the expected track.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Bridge wedge visual works; exit-line gives a modest snap.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strong character detail; career-advice turn is mildly funny.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Lake request is a clean, unexpected turn; premise is clear.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Circular-walk angle is coherent; blame explanation is predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "score": 7,
+      "rawScore": 7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean setup, escalation, and a punchline that lands on character not just situation."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.5,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Solid narrative timing with a clean escalation; the punchline lands naturally on character delusion."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean escalation to the under-bridge image; the final boast lands with solid ironic snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Bridge wedge visual works; exit-line gives a modest snap."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7,
+      "rawScore": 7.1,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 7.4,
+        "craft": 6.9,
+        "originality": 6.4,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 7.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 6.8,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean escalation to a genuinely unexpected reveal, though the lake line is more absurd than explosive."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.9,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Good misdirection; the lake tap is a genuine snap, though the setup runs a touch long."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.8,
+          "rawScore": 8,
+          "scoreAdjustment": -0.2,
+          "comment": "Tight build from earnest advice to the lake request; the undercut is sharp, visual, and stage-ready."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Lake request is a clean, unexpected turn; premise is clear."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.3,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 5.8,
+        "craft": 6.1,
+        "originality": 6.6,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 6.5,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 6.5,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong character details and rhythm; the final metaphor is amusing but slightly diffuse."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.4,
+          "rawScore": 6,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong descriptive setup and funny mid-joke dialogue, but the final tag peters out rather than snapping shut."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Vivid character sketch, but the advice sequence stays diffuse and the closer restates rather than punches."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong character detail; career-advice turn is mildly funny."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.8,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 5.2,
+        "craft": 5.9,
+        "originality": 5.4,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 5.6,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.1,
+          "comment": "Coherent wordplay and solid structure, but the self-discovery turn feels like a familiar whimsical template."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Valid use of Writer and Bus as concepts; whimsical premise but the closing line is a soft landing rather than a real snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Functional premise and structure, but the final callback is mild and relies on a familiar trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Serviceable dialogue rhythm, yet the self-discovery turn arrives on the expected track."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 4.8,
+      "rawScore": 4.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.3,
+        "craft": 5.1,
+        "originality": 4.1,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.3,
+        "craft": 5,
+        "originality": 4,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 5.1,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear and economical, but the blame-shifting punchline is familiar and predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.2,
+          "rawScore": 4.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Punchline mostly restates the setup's premise (his fault) rather than turning it; competent but flat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.3,
+          "rawScore": 3.9,
+          "scoreAdjustment": 0.4,
+          "comment": "Overly literal seed recitations in the setup; predictable conclusion that describes an annoyance rather than executing a punchline."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Circular-walk angle is coherent; blame explanation is predictable."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-17-external-real-2026-09-17.png",
+    "originalSrc": "assets/feature-images/2026-09-17-external-real-2026-09-17.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Shortcut: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.6 Sol - The Shortcut\nExact joke text to render in the right panel:\nI sat beside a know-it-all on a bus who kept criticizing the driver’s route. Finally, the driver said, “Fine—you navigate.” Ten minutes later, we were wedged under a low bridge. As we crawled out the emergency exit, he whispered to me, “Still saved us two red lights.”\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Political, Writer, Bus, Taking advice from the wrong person, Independent, Know-It-All. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Political, Writer, Bus, Taking advice from the wrong person, Independent, Know-It-All. Use the winning joke titled \"Public Transit Life Coach\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.2,
+      "anthropic": 6.5,
+      "google": 5.8,
+      "xai": 6.4,
+      "copilot": 5.9
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-17-external-real-2026-09-17.md"
+}

@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-17T14:02:02.223Z",
+  "publishedDate": "2026-09-17",
+  "seed": "external-real-2026-09-17",
+  "slug": "2026-09-17-external-real-2026-09-17",
+  "source": "manual-external",
+  "seedTerms": [
+    "Political",
+    "Writer",
+    "Bus",
+    "Taking advice from the wrong person",
+    "Independent",
+    "Know-It-All"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Smart)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "The Shortcut",
+      "seedTermsUsed": ["Bus", "Know-It-All"],
+      "joke": "I sat beside a know-it-all on a bus who kept criticizing the driver’s route. Finally, the driver said, “Fine—you navigate.” Ten minutes later, we were wedged under a low bridge. As we crawled out the emergency exit, he whispered to me, “Still saved us two red lights.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I sat beside a know-it-all on a bus who kept criticizing the driver’s route. Finally, the driver said, “Fine—you navigate.” Ten minutes later, we were wedged under a low bridge. As we crawled out the emergency exit, he whispered to me, “Still saved us two red lights.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "The Bus Oracle",
+      "seedTermsUsed": ["Bus", "Know-It-All"],
+      "joke": "I got unsolicited life advice from a guy on the bus once. Full beard, fingerless gloves, smelled like a candle store that caught fire. He goes, 'You should never microwave fish at work.' I said sir, I don't even have a job. He said, 'That's your first mistake.' Twenty minutes, no stop requested, just wisdom. I've never trusted a moving vehicle's opinion on my career since.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got unsolicited life advice from a guy on the bus once. Full beard, fingerless gloves, smelled like a candle store that caught fire. He goes, 'You should never microwave fish at work.' I said sir, I don't even have a job. He said, 'That's your first mistake.' Twenty minutes, no stop requested, just wisdom. I've never trusted a moving vehicle's opinion on my career since."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Public Transit Life Coach",
+      "seedTermsUsed": ["Bus", "Taking advice from the wrong person"],
+      "joke": "I was crying on the cross-town bus last week after getting dumped, and the guy next to me leaned in and gave me thirty uninterrupted minutes of profound relationship wisdom. He was talking about boundaries, emotional maturity, forgiving yourself. I really took it to heart. Right up until he tapped the driver's shoulder and asked, 'Can you let me off in the lake?'",
+      "setup": "",
+      "punchline": "",
+      "text": "I was crying on the cross-town bus last week after getting dumped, and the guy next to me leaned in and gave me thirty uninterrupted minutes of profound relationship wisdom. He was talking about boundaries, emotional maturity, forgiving yourself. I really took it to heart. Right up until he tapped the driver's shoulder and asked, 'Can you let me off in the lake?'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Shortcut to Nowhere",
+      "seedTermsUsed": ["Taking advice from the wrong person", "Know-It-All"],
+      "joke": "I got lost downtown last week and made the classic mistake of taking advice from the wrong person—this absolute know-it-all tourist. He swore he knew a brilliant shortcut. Two hours later we were still walking in circles, but at least he could explain in perfect detail exactly why it was all my fault.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got lost downtown last week and made the classic mistake of taking advice from the wrong person—this absolute know-it-all tourist. He swore he knew a brilliant shortcut. Two hours later we were still walking in circles, but at least he could explain in perfect detail exactly why it was all my fault."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Smart)",
+      "title": "Plot Twist",
+      "seedTermsUsed": ["Writer", "Bus"],
+      "joke": "I was riding the bus when a guy told me he was a writer and asked if I wanted “a more compelling route.” Next thing I know, he’s narrating my commute like it’s a thriller. We blow past my stop and he whispers, “The real destination… is self-discovery.” I said, “Great, but can self-discovery drop me at work on time?”",
+      "setup": "",
+      "punchline": "",
+      "text": "I was riding the bus when a guy told me he was a writer and asked if I wanted “a more compelling route.” Next thing I know, he’s narrating my commute like it’s a thriller. We blow past my stop and he whispers, “The real destination… is self-discovery.” I said, “Great, but can self-discovery drop me at work on time?”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Strong character details and rhythm; the final metaphor is amusing but slightly diffuse."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"Clean escalation to a genuinely unexpected reveal, though the lake line is more absurd than explosive."},
+        {"jokeId":"xai","originality":4,"surprise":4,"craft":5,"promptFit":10,"laugh":5,"comment":"Clear and economical, but the blame-shifting punchline is familiar and predictable."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Coherent wordplay and solid structure, but the self-discovery turn feels like a familiar whimsical template."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean setup, escalation, and a punchline that lands on character not just situation."},
+        {"jokeId":"google","originality":6,"surprise":8,"craft":7,"promptFit":9,"laugh":7,"comment":"Good misdirection; the lake tap is a genuine snap, though the setup runs a touch long."},
+        {"jokeId":"xai","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Punchline mostly restates the setup's premise (his fault) rather than turning it; competent but flat."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":5,"comment":"Valid use of Writer and Bus as concepts; whimsical premise but the closing line is a soft landing rather than a real snap."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Solid narrative timing with a clean escalation; the punchline lands naturally on character delusion."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":5,"promptFit":8,"laugh":6,"comment":"Strong descriptive setup and funny mid-joke dialogue, but the final tag peters out rather than snapping shut."},
+        {"jokeId":"xai","originality":3,"surprise":4,"craft":4,"promptFit":4,"laugh":4,"comment":"Overly literal seed recitations in the setup; predictable conclusion that describes an annoyance rather than executing a punchline."},
+        {"jokeId":"copilot","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Functional premise and structure, but the final callback is mild and relies on a familiar trope."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean escalation to the under-bridge image; the final boast lands with solid ironic snap."},
+        {"jokeId":"anthropic","originality":7,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Vivid character sketch, but the advice sequence stays diffuse and the closer restates rather than punches."},
+        {"jokeId":"google","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Tight build from earnest advice to the lake request; the undercut is sharp, visual, and stage-ready."},
+        {"jokeId":"copilot","originality":6,"surprise":5,"craft":7,"promptFit":9,"laugh":6,"comment":"Serviceable dialogue rhythm, yet the self-discovery turn arrives on the expected track."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Bridge wedge visual works; exit-line gives a modest snap."},
+        {"jokeId":"anthropic","originality":6,"surprise":5,"craft":6,"promptFit":7,"laugh":6,"comment":"Strong character detail; career-advice turn is mildly funny."},
+        {"jokeId":"google","originality":6,"surprise":7,"craft":6,"promptFit":7,"laugh":6,"comment":"Lake request is a clean, unexpected turn; premise is clear."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Circular-walk angle is coherent; blame explanation is predictable."}
+      ]
+    }
+  ]
+}
