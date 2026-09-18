@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-18-external-real-2026-09-18",
+  "seed": "external-real-2026-09-18",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-18T15:04:40.114Z",
+  "publishedDate": "2026-09-18",
+  "seedTerms": [
+    "Politics-Focused",
+    "Food Critic",
+    "Cafeteria",
+    "Being mistaken for someone else",
+    "Spunky",
+    "Volatile"
+  ],
+  "premise": {
+    "text": "Seed terms: Politics-Focused, Food Critic, Cafeteria, Being mistaken for someone else, Spunky, Volatile",
+    "seedTerms": [
+      "Politics-Focused",
+      "Food Critic",
+      "Cafeteria",
+      "Being mistaken for someone else",
+      "Spunky",
+      "Volatile"
+    ],
+    "displayText": "Five-Star Lunch"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash-Lite",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "Fine Workplace Dining",
+      "seedTermsUsed": [
+        "Food Critic",
+        "Cafeteria"
+      ],
+      "joke": "I started reviewing my office cafeteria like it was fine dining. Today’s entrée had a subtle aroma of chicken and the bold texture of drywall. I asked the cook what wine pairs with it. He said, “Whatever helps you forget where you work.”",
+      "setup": "",
+      "punchline": "I started reviewing my office cafeteria like it was fine dining. Today’s entrée had a subtle aroma of chicken and the bold texture of drywall. I asked the cook what wine pairs with it. He said, “Whatever helps you forget where you work.”",
+      "text": "I started reviewing my office cafeteria like it was fine dining. Today’s entrée had a subtle aroma of chicken and the bold texture of drywall. I asked the cook what wine pairs with it. He said, “Whatever helps you forget where you work.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "Table for One Star",
+      "seedTermsUsed": [
+        "Food Critic",
+        "Cafeteria"
+      ],
+      "joke": "I worked as a food critic, and my worst assignment was reviewing my old high school cafeteria. I sent back the mystery meat. The lunch lady said, 'Sweetie, it's meatloaf.' I said, 'Then plate it like you believe that.' She charged me for a second tray out of spite. One star. Would not survive again.",
+      "setup": "",
+      "punchline": "I worked as a food critic, and my worst assignment was reviewing my old high school cafeteria. I sent back the mystery meat. The lunch lady said, 'Sweetie, it's meatloaf.' I said, 'Then plate it like you believe that.' She charged me for a second tray out of spite. One star. Would not survive again.",
+      "text": "I worked as a food critic, and my worst assignment was reviewing my old high school cafeteria. I sent back the mystery meat. The lunch lady said, 'Sweetie, it's meatloaf.' I said, 'Then plate it like you believe that.' She charged me for a second tray out of spite. One star. Would not survive again."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "model": "Gemini 3.5 Flash-Lite web",
+      "title": "Table for One",
+      "seedTermsUsed": [
+        "Cafeteria",
+        "Being mistaken for someone else"
+      ],
+      "joke": "I was eating alone in a hospital cafeteria last week when an elderly man walked up, stared intensely at my clipboard, and asked, 'Are you the health inspector?' I looked down at my lukewarm mystery meat, panicked, and whispered, 'The texture is a cry for help.' He nodded gravely, thanked me for keeping the standards high, and handed me his gelatin.",
+      "setup": "",
+      "punchline": "I was eating alone in a hospital cafeteria last week when an elderly man walked up, stared intensely at my clipboard, and asked, 'Are you the health inspector?' I looked down at my lukewarm mystery meat, panicked, and whispered, 'The texture is a cry for help.' He nodded gravely, thanked me for keeping the standards high, and handed me his gelatin.",
+      "text": "I was eating alone in a hospital cafeteria last week when an elderly man walked up, stared intensely at my clipboard, and asked, 'Are you the health inspector?' I looked down at my lukewarm mystery meat, panicked, and whispered, 'The texture is a cry for help.' He nodded gravely, thanked me for keeping the standards high, and handed me his gelatin."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Cafeteria Critic",
+      "seedTermsUsed": [
+        "Food Critic",
+        "Cafeteria"
+      ],
+      "joke": "Every time I eat in the cafeteria I turn into a food critic. Today's review: the spaghetti is al dente if by dente you mean still frozen in the middle. The garlic bread has the personality of a cardboard box. And the dessert? A brownie so dense it has its own gravitational pull. Overall score: two out of five. Points for effort, minus three for the aftertaste of regret.",
+      "setup": "",
+      "punchline": "Every time I eat in the cafeteria I turn into a food critic. Today's review: the spaghetti is al dente if by dente you mean still frozen in the middle. The garlic bread has the personality of a cardboard box. And the dessert? A brownie so dense it has its own gravitational pull. Overall score: two out of five. Points for effort, minus three for the aftertaste of regret.",
+      "text": "Every time I eat in the cafeteria I turn into a food critic. Today's review: the spaghetti is al dente if by dente you mean still frozen in the middle. The garlic bread has the personality of a cardboard box. And the dessert? A brownie so dense it has its own gravitational pull. Overall score: two out of five. Points for effort, minus three for the aftertaste of regret."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Five-Star Lunch",
+      "seedTermsUsed": [
+        "Food Critic",
+        "Cafeteria"
+      ],
+      "joke": "I accidentally wrote a restaurant review of my office cafeteria. I gave the meatloaf two stars and said it had 'the confidence of a much better meatloaf.' The manager pulled me aside and said, 'Sir, that's harsh.' I said, 'You're right, one of those stars was for having chairs.'",
+      "setup": "",
+      "punchline": "I accidentally wrote a restaurant review of my office cafeteria. I gave the meatloaf two stars and said it had 'the confidence of a much better meatloaf.' The manager pulled me aside and said, 'Sir, that's harsh.' I said, 'You're right, one of those stars was for having chairs.'",
+      "text": "I accidentally wrote a restaurant review of my office cafeteria. I gave the meatloaf two stars and said it had 'the confidence of a much better meatloaf.' The manager pulled me aside and said, 'Sir, that's harsh.' I said, 'You're right, one of those stars was for having chairs.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "The plating line is amusing and characterful, but the second-tray detail and awkward final phrase dilute the finish.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Clear mistaken-identity premise with a nicely grave escalation; the gelatin handoff provides a specific, satisfying tag.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Understandable and structured, but the cardboard, gravitational-pull, and regret lines are highly familiar cafeteria-joke material.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 10,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Economical setup, strong meatloaf wording, and a clean final reversal that lands on the funniest phrase.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean setup, solid closing line but fairly familiar 'cafeteria = bad food' territory.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Strong mistaken-identity twist with a vivid, specific final image (the gelatin) that lands well.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Funny individual lines but reads as a list of mini-jokes rather than one building bit with a single snap ending.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Tight escalation with a sharp callback punchline ('one of those stars was for having chairs') that actually pays off the setup.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash-Lite",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Familiar drywall joke; competent rhythm but predictable turns.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Decent character interaction, though the punchline loses steam at the end.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Relies on standard descriptive food list rather than a sharp comic turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Strongest of the batch with a clean premise and a genuinely funny final line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean fine-dining premise and drywall image, but the wine closer is soft and expected.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Sharp exchange on the meatloaf and a spiteful payoff that actually lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Specific hospital setup helps, yet the gelatin handoff stays charming more than funny.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Strong confidence line on the meatloaf plus a crisp undercut that carries the laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clear premise and solid tag from the cook; familiar cafeteria-food roast but the final line adds a mild turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Strongest characterization and escalation in the batch; the lunch lady exchange feels specific and the ending lands.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "google",
+          "comment": "Distinct scenario and mistaken-identity use, but the punchline diffuses into whimsy rather than a sharp laugh.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Competent string of cafeteria-food observations; gravitational-pull line is the best image, but the structure is mostly standard complaint humor.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 7.2,
+      "rawScore": 7.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 6.9,
+        "craft": 7.7,
+        "originality": 6.7,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.8,
+        "originality": 6.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 7.4,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Economical setup, strong meatloaf wording, and a clean final reversal that lands on the funniest phrase."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Tight escalation with a sharp callback punchline ('one of those stars was for having chairs') that actually pays off the setup."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 7.3,
+          "rawScore": 7,
+          "scoreAdjustment": 0.3,
+          "comment": "Strongest of the batch with a clean premise and a genuinely funny final line."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong confidence line on the meatloaf plus a crisp undercut that carries the laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.7,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.1,
+        "craft": 6.6,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 6.1,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.1,
+          "comment": "The plating line is amusing and characterful, but the second-tray detail and awkward final phrase dilute the finish."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 6.4,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Decent character interaction, though the punchline loses steam at the end."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Sharp exchange on the meatloaf and a spiteful payoff that actually lands."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.3,
+          "rawScore": 7,
+          "scoreAdjustment": 0.3,
+          "comment": "Strongest characterization and escalation in the batch; the lunch lady exchange feels specific and the ending lands."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "score": 6.7,
+      "rawScore": 6.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 6.7,
+        "craft": 6.4,
+        "originality": 6.9,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.8,
+        "craft": 6.5,
+        "originality": 7,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 7.2,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear mistaken-identity premise with a nicely grave escalation; the gelatin handoff provides a specific, satisfying tag."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong mistaken-identity twist with a vivid, specific final image (the gelatin) that lands well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Specific hospital setup helps, yet the gelatin handoff stays charming more than funny."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Distinct scenario and mistaken-identity use, but the punchline diffuses into whimsy rather than a sharp laugh."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "score": 6.2,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 5.5,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 5.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean setup, solid closing line but fairly familiar 'cafeteria = bad food' territory."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Familiar drywall joke; competent rhythm but predictable turns."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean fine-dining premise and drywall image, but the wine closer is soft and expected."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear premise and solid tag from the cook; familiar cafeteria-food roast but the final line adds a mild turn."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.2,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.8,
+        "surprise": 4.3,
+        "craft": 5.3,
+        "originality": 4.1,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.3,
+        "craft": 5.3,
+        "originality": 4,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 4.4,
+          "rawScore": 4.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Understandable and structured, but the cardboard, gravitational-pull, and regret lines are highly familiar cafeteria-joke material."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.6,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Funny individual lines but reads as a list of mini-jokes rather than one building bit with a single snap ending."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 4.8,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Relies on standard descriptive food list rather than a sharp comic turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Competent string of cafeteria-food observations; gravitational-pull line is the best image, but the structure is mostly standard complaint humor."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-18-external-real-2026-09-18.png",
+    "originalSrc": "assets/feature-images/2026-09-18-external-real-2026-09-18.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Five-Star Lunch: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Copilot - Five-Star Lunch\nExact joke text to render in the right panel:\nI accidentally wrote a restaurant review of my office cafeteria. I gave the meatloaf two stars and said it had 'the confidence of a much better meatloaf.' The manager pulled me aside and said, 'Sir, that's harsh.' I said, 'You're right, one of those stars was for having chairs.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Politics-Focused, Food Critic, Cafeteria, Being mistaken for someone else, Spunky, Volatile. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Politics-Focused, Food Critic, Cafeteria, Being mistaken for someone else, Spunky, Volatile. Use the winning joke titled \"Five-Star Lunch\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.2,
+      "anthropic": 6.4,
+      "google": 5.9,
+      "xai": 6.5,
+      "copilot": 5.9
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-18-external-real-2026-09-18.md"
+}

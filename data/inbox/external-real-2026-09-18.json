@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-18T15:04:40.114Z",
+  "publishedDate": "2026-09-18",
+  "seed": "external-real-2026-09-18",
+  "slug": "2026-09-18-external-real-2026-09-18",
+  "source": "manual-external",
+  "seedTerms": [
+    "Politics-Focused",
+    "Food Critic",
+    "Cafeteria",
+    "Being mistaken for someone else",
+    "Spunky",
+    "Volatile"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash-Lite",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "Fine Workplace Dining",
+      "seedTermsUsed": ["Food Critic", "Cafeteria"],
+      "joke": "I started reviewing my office cafeteria like it was fine dining. Today’s entrée had a subtle aroma of chicken and the bold texture of drywall. I asked the cook what wine pairs with it. He said, “Whatever helps you forget where you work.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I started reviewing my office cafeteria like it was fine dining. Today’s entrée had a subtle aroma of chicken and the bold texture of drywall. I asked the cook what wine pairs with it. He said, “Whatever helps you forget where you work.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "Table for One Star",
+      "seedTermsUsed": ["Food Critic", "Cafeteria"],
+      "joke": "I worked as a food critic, and my worst assignment was reviewing my old high school cafeteria. I sent back the mystery meat. The lunch lady said, 'Sweetie, it's meatloaf.' I said, 'Then plate it like you believe that.' She charged me for a second tray out of spite. One star. Would not survive again.",
+      "setup": "",
+      "punchline": "",
+      "text": "I worked as a food critic, and my worst assignment was reviewing my old high school cafeteria. I sent back the mystery meat. The lunch lady said, 'Sweetie, it's meatloaf.' I said, 'Then plate it like you believe that.' She charged me for a second tray out of spite. One star. Would not survive again."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "model": "Gemini 3.5 Flash-Lite web",
+      "title": "Table for One",
+      "seedTermsUsed": ["Cafeteria", "Being mistaken for someone else"],
+      "joke": "I was eating alone in a hospital cafeteria last week when an elderly man walked up, stared intensely at my clipboard, and asked, 'Are you the health inspector?' I looked down at my lukewarm mystery meat, panicked, and whispered, 'The texture is a cry for help.' He nodded gravely, thanked me for keeping the standards high, and handed me his gelatin.",
+      "setup": "",
+      "punchline": "",
+      "text": "I was eating alone in a hospital cafeteria last week when an elderly man walked up, stared intensely at my clipboard, and asked, 'Are you the health inspector?' I looked down at my lukewarm mystery meat, panicked, and whispered, 'The texture is a cry for help.' He nodded gravely, thanked me for keeping the standards high, and handed me his gelatin."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Cafeteria Critic",
+      "seedTermsUsed": ["Food Critic", "Cafeteria"],
+      "joke": "Every time I eat in the cafeteria I turn into a food critic. Today's review: the spaghetti is al dente if by dente you mean still frozen in the middle. The garlic bread has the personality of a cardboard box. And the dessert? A brownie so dense it has its own gravitational pull. Overall score: two out of five. Points for effort, minus three for the aftertaste of regret.",
+      "setup": "",
+      "punchline": "",
+      "text": "Every time I eat in the cafeteria I turn into a food critic. Today's review: the spaghetti is al dente if by dente you mean still frozen in the middle. The garlic bread has the personality of a cardboard box. And the dessert? A brownie so dense it has its own gravitational pull. Overall score: two out of five. Points for effort, minus three for the aftertaste of regret."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Five-Star Lunch",
+      "seedTermsUsed": ["Food Critic", "Cafeteria"],
+      "joke": "I accidentally wrote a restaurant review of my office cafeteria. I gave the meatloaf two stars and said it had 'the confidence of a much better meatloaf.' The manager pulled me aside and said, 'Sir, that's harsh.' I said, 'You're right, one of those stars was for having chairs.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I accidentally wrote a restaurant review of my office cafeteria. I gave the meatloaf two stars and said it had 'the confidence of a much better meatloaf.' The manager pulled me aside and said, 'Sir, that's harsh.' I said, 'You're right, one of those stars was for having chairs.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":6,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"The plating line is amusing and characterful, but the second-tray detail and awkward final phrase dilute the finish."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Clear mistaken-identity premise with a nicely grave escalation; the gelatin handoff provides a specific, satisfying tag."},
+        {"jokeId":"xai","originality":3,"surprise":3,"craft":5,"promptFit":10,"laugh":4,"comment":"Understandable and structured, but the cardboard, gravitational-pull, and regret lines are highly familiar cafeteria-joke material."},
+        {"jokeId":"copilot","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Economical setup, strong meatloaf wording, and a clean final reversal that lands on the funniest phrase."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean setup, solid closing line but fairly familiar 'cafeteria = bad food' territory."},
+        {"jokeId":"google","originality":7,"surprise":8,"craft":7,"promptFit":8,"laugh":7,"comment":"Strong mistaken-identity twist with a vivid, specific final image (the gelatin) that lands well."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":6,"comment":"Funny individual lines but reads as a list of mini-jokes rather than one building bit with a single snap ending."},
+        {"jokeId":"copilot","originality":6,"surprise":7,"craft":8,"promptFit":8,"laugh":7,"comment":"Tight escalation with a sharp callback punchline ('one of those stars was for having chairs') that actually pays off the setup."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash-Lite",
+      "scores": [
+        {"jokeId":"openai","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Familiar drywall joke; competent rhythm but predictable turns."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Decent character interaction, though the punchline loses steam at the end."},
+        {"jokeId":"xai","originality":4,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Relies on standard descriptive food list rather than a sharp comic turn."},
+        {"jokeId":"copilot","originality":7,"surprise":7,"craft":7,"promptFit":7,"laugh":7,"comment":"Strongest of the batch with a clean premise and a genuinely funny final line."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean fine-dining premise and drywall image, but the wine closer is soft and expected."},
+        {"jokeId":"anthropic","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Sharp exchange on the meatloaf and a spiteful payoff that actually lands."},
+        {"jokeId":"google","originality":7,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Specific hospital setup helps, yet the gelatin handoff stays charming more than funny."},
+        {"jokeId":"copilot","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong confidence line on the meatloaf plus a crisp undercut that carries the laugh."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":5,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear premise and solid tag from the cook; familiar cafeteria-food roast but the final line adds a mild turn."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":7,"comment":"Strongest characterization and escalation in the batch; the lunch lady exchange feels specific and the ending lands."},
+        {"jokeId":"google","originality":7,"surprise":6,"craft":6,"promptFit":10,"laugh":5,"comment":"Distinct scenario and mistaken-identity use, but the punchline diffuses into whimsy rather than a sharp laugh."},
+        {"jokeId":"xai","originality":4,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Competent string of cafeteria-food observations; gravitational-pull line is the best image, but the structure is mostly standard complaint humor."}
+      ]
+    }
+  ]
+}
