@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-19T14:02:28.562Z",
+  "publishedDate": "2026-09-19",
+  "seed": "external-real-2026-09-19",
+  "slug": "2026-09-19-external-real-2026-09-19",
+  "source": "manual-external",
+  "seedTerms": [
+    "Swashbuckler",
+    "Sommelier",
+    "Police Car",
+    "Conflicting internal needs or desires",
+    "Charming",
+    "Perfectionist"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini 3.8 Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "Tasting Notes",
+      "seedTermsUsed": ["Sommelier", "Police Car"],
+      "joke": "I took a sommelier out drinking, and on the way home a police car pulled us over. The officer asked, “Have you been drinking?” Before I could answer, the sommelier leaned over and said, “His driving has notes of panic, poor judgment, and a long finish in county jail.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I took a sommelier out drinking, and on the way home a police car pulled us over. The officer asked, “Have you been drinking?” Before I could answer, the sommelier leaned over and said, “His driving has notes of panic, poor judgment, and a long finish in county jail.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "The Wine List",
+      "seedTermsUsed": ["Sommelier", "Perfectionist"],
+      "joke": "I'm a perfectionist, which is why I got into being a sommelier, because nothing says healthy relationship with control like swirling a glass and going 'hints of oak, a whisper of cherry, and disappointment, because you paired this with salmon.' Last week my wife opened a box wine in front of me and I didn't yell, I just quietly changed my will. It's not snobbery. It's grief with a corkscrew.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm a perfectionist, which is why I got into being a sommelier, because nothing says healthy relationship with control like swirling a glass and going 'hints of oak, a whisper of cherry, and disappointment, because you paired this with salmon.' Last week my wife opened a box wine in front of me and I didn't yell, I just quietly changed my will. It's not snobbery. It's grief with a corkscrew."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini 3.8 Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Vintage Breathalyzer",
+      "seedTermsUsed": ["Sommelier", "Police Car"],
+      "joke": "I got pulled over last night, and the officer made me blow into the breathalyzer. I swirled the tube, blew gently, and said, 'Mmm, hints of oak, late-night regret, with an aggressive undertone of bad decisions.' He didn't laugh, but he did escort me to a private, leather-upholstered booth in the back of his Ford Explorer.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got pulled over last night, and the officer made me blow into the breathalyzer. I swirled the tube, blew gently, and said, 'Mmm, hints of oak, late-night regret, with an aggressive undertone of bad decisions.' He didn't laugh, but he did escort me to a private, leather-upholstered booth in the back of his Ford Explorer."
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Renaissance Fair Fail",
+      "seedTermsUsed": ["Swashbuckler", "Sommelier"],
+      "joke": "I showed up at the Renaissance fair as a full swashbuckler—boots, cape, sword, the works. Ready to duel for honor. Then they handed me a cup of mead and I froze. 'This is completely wrong with the roasted chicken. You need higher acidity, lower residual sugar.' By sundown the blacksmiths had confiscated my sword and made me the official drink-pairing guy.",
+      "setup": "",
+      "punchline": "",
+      "text": "I showed up at the Renaissance fair as a full swashbuckler—boots, cape, sword, the works. Ready to duel for honor. Then they handed me a cup of mead and I froze. 'This is completely wrong with the roasted chicken. You need higher acidity, lower residual sugar.' By sundown the blacksmiths had confiscated my sword and made me the official drink-pairing guy."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Three-Star Flirt",
+      "seedTermsUsed": ["Charming", "Perfectionist"],
+      "joke": "I’m a perfectionist trying to be charming, which is a terrible combination. I went on a first date and she said, “You don’t have to say the perfect thing.” I said, “I know,” then spent so long revising my response in my head that she paid the check, left, and texted me later: “For what it’s worth, your final draft was great.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m a perfectionist trying to be charming, which is a terrible combination. I went on a first date and she said, “You don’t have to say the perfect thing.” I said, “I know,” then spent so long revising my response in my head that she paid the check, left, and texted me later: “For what it’s worth, your final draft was great.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Strong voice and escalation, though the wine-snob premise and closing metaphor feel somewhat familiar."},
+        {"jokeId":"google","originality":5,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Clean and accessible, but tasting-note jokes around a breathalyzer are predictable; the final image adds a mild second turn."},
+        {"jokeId":"xai","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":5,"comment":"The character collision is clear and natural, but the ending resolves the premise rather than delivering a sharp punchline."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":5,"comment":"A tidy premise with good pacing, but the final text depends on her somehow knowing an internal response he never delivered."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":7,"comment":"Clean DUI/wine-tasting mashup with a tight final pun; solid but the setup telegraphs the joke early."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Same premise as Joke A but funnier because the narrator is the one performing the bit, and the squad-car twist adds a fresh beat."},
+        {"jokeId":"xai","originality":6,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Fun visual but the pairing-guy ending is soft and doesn't snap; reads more whimsical than punchy."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Nice callback structure with 'final draft,' relatable overthinking bit, though the turn is somewhat expected."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini 3.8 Flash",
+      "scores": [
+        {"jokeId":"openai","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Competent setup and punchline, but applying wine-tasting notes to a traffic stop is the most predictable route for these two seeds."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Has good stage rhythm and a solid middle tag with the will, though 'grief with a corkscrew' feels a bit more writerly than punchy."},
+        {"jokeId":"xai","originality":5,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"A narrative premise that trails off into an anticlimactic ending rather than hitting a hard final punchline."},
+        {"jokeId":"copilot","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Relatable premise with natural stage progression; the final text punchline lands cleanly and avoids wine tropes."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Clean traffic-stop premise with tasting-notes punch; solid but familiar wine-critique angle."},
+        {"jokeId":"anthropic","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong escalation from pairing critique to rewriting the will; final line lands cleanly."},
+        {"jokeId":"google","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Breathalyzer-as-tasting bit builds well into the private-booth turn; effective stage image."},
+        {"jokeId":"copilot","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Tight first-date timing and a crisp final-draft payoff; natural and economical."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":8,"promptFit":8,"laugh":8,"comment":"Strong clean premise-to-punch structure; the tasting-note translation of a DUI stop lands clearly and the final jail note carries the laugh."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":7,"comment":"Solid character voice and escalation; the will-change line is the best payoff, though wine-snob/perfectionist territory feels somewhat familiar."},
+        {"jokeId":"google","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":6,"comment":"Readable and coherent, but the sommelier-at-breathalyzer angle is fairly expected and the final Ford Explorer image is only a mild turn."},
+        {"jokeId":"xai","originality":7,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Fun contrast between sword-wielding adventurer and obsessive drink-pairing expert; amusing premise, though the ending is more whimsical than laugh-out-loud."}
+      ]
+    }
+  ]
+}
