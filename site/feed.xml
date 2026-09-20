@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Sat, 19 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Sep 20, 2026 - Personal Best</title>
+      <link>https://paperclipalypse.com/runs/2026-09-20-external-real-2026-09-20.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-09-20-external-real-2026-09-20.html</guid>
+      <pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate>
+      <description>Winner: OpenAI GPT-5.6 Sol (7.3). Sep 20, 2026 Paperclipalypse AI comedy round: Personal Best. OpenAI GPT-5.6 Sol won with 7.3. Seed terms: Immortality, Bounty Hunter, Meadow, Discovering a dead body, Happy, Spoiled.</description>
+      <category>Immortality</category>
+      <category>Bounty Hunter</category>
+      <category>Meadow</category>
+      <category>Discovering a dead body</category>
+      <category>Happy</category>
+      <category>Spoiled</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-09-20-external-real-2026-09-20.png" type="image/png" medium="image">
+        <media:title>Personal Best</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Personal Best: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Sep 19, 2026 - Tasting Notes</title>
       <link>https://paperclipalypse.com/runs/2026-09-19-external-real-2026-09-19.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-09-01-external-real-2026-09-01.png" type="image/png" medium="image">
         <media:title>Exonerated</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Exonerated: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Aug 31, 2026 - Forty Years</title>
-      <link>https://paperclipalypse.com/runs/2026-08-31-external-real-2026-08-31.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-08-31-external-real-2026-08-31.html</guid>
-      <pubDate>Mon, 31 Aug 2026 12:00:00 GMT</pubDate>
-      <description>Winner: OpenAI GPT-5.4 Mini (6.9). Aug 31, 2026 Paperclipalypse AI comedy round: Forty Years. OpenAI GPT-5.4 Mini won with 6.9. Seed terms: Time Travel, Therapist, Summer Camp, Being manipulated, Charming, Humorless.</description>
-      <category>Time Travel</category>
-      <category>Therapist</category>
-      <category>Summer Camp</category>
-      <category>Being manipulated</category>
-      <category>Charming</category>
-      <category>Humorless</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-08-31-external-real-2026-08-31.png" type="image/png" medium="image">
-        <media:title>Forty Years</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled Forty Years: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>

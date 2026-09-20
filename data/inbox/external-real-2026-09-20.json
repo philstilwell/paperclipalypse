@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-20T14:01:03.957Z",
+  "publishedDate": "2026-09-20",
+  "seed": "external-real-2026-09-20",
+  "slug": "2026-09-20-external-real-2026-09-20",
+  "source": "manual-external",
+  "seedTerms": [
+    "Immortality",
+    "Bounty Hunter",
+    "Meadow",
+    "Discovering a dead body",
+    "Happy",
+    "Spoiled"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash web (exact underlying model not exposed)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "Personal Best",
+      "seedTermsUsed": ["Discovering a dead body", "Happy"],
+      "joke": "I discovered a dead body while jogging. The police asked why I looked so happy. I wasn’t—my fitness app had just announced, “Congratulations! You passed another runner.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I discovered a dead body while jogging. The police asked why I looked so happy. I wasn’t—my fitness app had just announced, “Congratulations! You passed another runner.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "Job Security",
+      "seedTermsUsed": ["Immortality", "Bounty Hunter"],
+      "joke": "I told my doctor I want to live forever. He said science is close. Great, my only skill is being a bounty hunter. Forever's a long time to chase guys who also can't die. I catch him, drag him in, the marshal goes 'this warrant's four hundred years old, he already served that time twice.' I don't want eternal life, I want eternal severance.",
+      "setup": "",
+      "punchline": "",
+      "text": "I told my doctor I want to live forever. He said science is close. Great, my only skill is being a bounty hunter. Forever's a long time to chase guys who also can't die. I catch him, drag him in, the marshal goes 'this warrant's four hundred years old, he already served that time twice.' I don't want eternal life, I want eternal severance."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash web (exact underlying model not exposed)",
+      "title": "Morning Jog",
+      "seedTermsUsed": ["Discovering a dead body", "Happy"],
+      "joke": "I started jogging at five in the morning because all the wellness influencers swear it'll make you happy. It doesn't. You know who’s actually out at five a.m.? The person hiding a body, and the person who discovers it. By mile two, I'm not chasing a runner's high anymore—I'm just praying, 'Please let that rolled-up carpet be just a carpet.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I started jogging at five in the morning because all the wellness influencers swear it'll make you happy. It doesn't. You know who’s actually out at five a.m.? The person hiding a body, and the person who discovers it. By mile two, I'm not chasing a runner's high anymore—I'm just praying, 'Please let that rolled-up carpet be just a carpet.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Long-Term Contract",
+      "seedTermsUsed": ["Immortality", "Bounty Hunter"],
+      "joke": "I signed up as a bounty hunter for an immortal target. The job said dead or alive. Dead's impossible, so it's just alive... forever. I've been chasing this guy since powdered wigs were cool. Every time I get close, he starts a new religion and vanishes into the crowd. At this point, I'm not a bounty hunter—I'm his unpaid biographer.",
+      "setup": "",
+      "punchline": "",
+      "text": "I signed up as a bounty hunter for an immortal target. The job said dead or alive. Dead's impossible, so it's just alive... forever. I've been chasing this guy since powdered wigs were cool. Every time I get close, he starts a new religion and vanishes into the crowd. At this point, I'm not a bounty hunter—I'm his unpaid biographer."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Lifetime Upgrade",
+      "seedTermsUsed": ["Immortality", "Spoiled"],
+      "joke": "I got an immortality treatment, and it completely spoiled me. Last week my toaster died, and the warranty said it covered the product for life. I called customer service and said, \"Whose life? Because mine is no longer a useful measurement.\" The guy put me on hold and came back with, \"Sir, you're exactly why we had to rewrite the policy.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I got an immortality treatment, and it completely spoiled me. Last week my toaster died, and the warranty said it covered the product for life. I called customer service and said, \"Whose life? Because mine is no longer a useful measurement.\" The guy put me on hold and came back with, \"Sir, you're exactly why we had to rewrite the policy.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {"jokeId":"anthropic","originality":6,"surprise":5,"craft":5,"promptFit":9,"laugh":4,"comment":"The immortal pursuit has potential, but the time-served logic is muddled and ‘eternal severance’ feels attached rather than earned."},
+        {"jokeId":"google","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"A clear, well-paced escalation with a vivid final image, though the rolled-up-carpet suspicion is fairly familiar."},
+        {"jokeId":"xai","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"The new-religion turn is unexpected and the unpaid-biographer closer neatly reframes the centuries-long chase."},
+        {"jokeId":"copilot","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Polished and easy to follow, with a sound warranty premise, but the customer-service closer is predictable and adds little escalation."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Tight pun-punchline ('passed another runner') lands cleanly and economically."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Good atmosphere and a strong closing image, though slightly longer than needed."},
+        {"jokeId":"xai","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Fun escalation but 'unpaid biographer' tag is a softer payoff than the setup promises."},
+        {"jokeId":"copilot","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Absurd warranty bit escalates nicely to a satisfying customer-service snap."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Tightly constructed with sharp economy. The fitness app payoff is a clean, contemporary misdirection that delivers an immediate laugh without wasted words."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Good conversational rhythm and relatable blue-collar angle on immortality, though the punchline lands more as an amusing thought than a hard laugh."},
+        {"jokeId":"xai","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Leans heavily into sci-fi fantasy exposition rather than grounded stand-up. The 'unpaid biographer' ending is cute, but lacks stage punch."},
+        {"jokeId":"copilot","originality":6,"surprise":5,"craft":5,"promptFit":7,"laugh":5,"comment":"The customer service setup is familiar, and the seed term 'spoiled' feels forced into the premise. The final line peters out into a polite resolution instead of landing a joke."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"openai","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Tight app misdirection on the body; clean timing but lands as a clever smile rather than a real laugh."},
+        {"jokeId":"anthropic","originality":6,"surprise":6,"craft":5,"promptFit":8,"laugh":5,"comment":"Promising immortal-bounty premise diluted by length and a soft final restatement."},
+        {"jokeId":"google","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Effective early-morning dread build and strong carpet image; solid stage escalation."},
+        {"jokeId":"copilot","originality":8,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean, concrete warranty twist with natural dialogue and a closer that carries."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"openai","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Clean misdirection from fitness-app language to a corpse; concise and clear with a solid final turn."},
+        {"jokeId":"anthropic","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"Fun immortal-bounty-hunter premise with escalation; severance tag is clever but not a huge laugh."},
+        {"jokeId":"google","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Relatable setup and readable structure, but the ending is more observation than punchline."},
+        {"jokeId":"xai","originality":7,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Strong premise and imagery; unpaid-biographer ending is amusing, though the turn is somewhat predictable."}
+      ]
+    }
+  ]
+}

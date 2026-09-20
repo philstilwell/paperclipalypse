@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-20-external-real-2026-09-20",
+  "seed": "external-real-2026-09-20",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-20T14:01:03.957Z",
+  "publishedDate": "2026-09-20",
+  "seedTerms": [
+    "Immortality",
+    "Bounty Hunter",
+    "Meadow",
+    "Discovering a dead body",
+    "Happy",
+    "Spoiled"
+  ],
+  "premise": {
+    "text": "Seed terms: Immortality, Bounty Hunter, Meadow, Discovering a dead body, Happy, Spoiled",
+    "seedTerms": [
+      "Immortality",
+      "Bounty Hunter",
+      "Meadow",
+      "Discovering a dead body",
+      "Happy",
+      "Spoiled"
+    ],
+    "displayText": "Personal Best"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash web (exact underlying model not exposed)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "Personal Best",
+      "seedTermsUsed": [
+        "Discovering a dead body",
+        "Happy"
+      ],
+      "joke": "I discovered a dead body while jogging. The police asked why I looked so happy. I wasn’t—my fitness app had just announced, “Congratulations! You passed another runner.”",
+      "setup": "",
+      "punchline": "I discovered a dead body while jogging. The police asked why I looked so happy. I wasn’t—my fitness app had just announced, “Congratulations! You passed another runner.”",
+      "text": "I discovered a dead body while jogging. The police asked why I looked so happy. I wasn’t—my fitness app had just announced, “Congratulations! You passed another runner.”"
+    },
+    {
+      "id": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "Job Security",
+      "seedTermsUsed": [
+        "Immortality",
+        "Bounty Hunter"
+      ],
+      "joke": "I told my doctor I want to live forever. He said science is close. Great, my only skill is being a bounty hunter. Forever's a long time to chase guys who also can't die. I catch him, drag him in, the marshal goes 'this warrant's four hundred years old, he already served that time twice.' I don't want eternal life, I want eternal severance.",
+      "setup": "",
+      "punchline": "I told my doctor I want to live forever. He said science is close. Great, my only skill is being a bounty hunter. Forever's a long time to chase guys who also can't die. I catch him, drag him in, the marshal goes 'this warrant's four hundred years old, he already served that time twice.' I don't want eternal life, I want eternal severance.",
+      "text": "I told my doctor I want to live forever. He said science is close. Great, my only skill is being a bounty hunter. Forever's a long time to chase guys who also can't die. I catch him, drag him in, the marshal goes 'this warrant's four hundred years old, he already served that time twice.' I don't want eternal life, I want eternal severance."
+    },
+    {
+      "id": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash web (exact underlying model not exposed)",
+      "title": "Morning Jog",
+      "seedTermsUsed": [
+        "Discovering a dead body",
+        "Happy"
+      ],
+      "joke": "I started jogging at five in the morning because all the wellness influencers swear it'll make you happy. It doesn't. You know who’s actually out at five a.m.? The person hiding a body, and the person who discovers it. By mile two, I'm not chasing a runner's high anymore—I'm just praying, 'Please let that rolled-up carpet be just a carpet.'",
+      "setup": "",
+      "punchline": "I started jogging at five in the morning because all the wellness influencers swear it'll make you happy. It doesn't. You know who’s actually out at five a.m.? The person hiding a body, and the person who discovers it. By mile two, I'm not chasing a runner's high anymore—I'm just praying, 'Please let that rolled-up carpet be just a carpet.'",
+      "text": "I started jogging at five in the morning because all the wellness influencers swear it'll make you happy. It doesn't. You know who’s actually out at five a.m.? The person hiding a body, and the person who discovers it. By mile two, I'm not chasing a runner's high anymore—I'm just praying, 'Please let that rolled-up carpet be just a carpet.'"
+    },
+    {
+      "id": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Long-Term Contract",
+      "seedTermsUsed": [
+        "Immortality",
+        "Bounty Hunter"
+      ],
+      "joke": "I signed up as a bounty hunter for an immortal target. The job said dead or alive. Dead's impossible, so it's just alive... forever. I've been chasing this guy since powdered wigs were cool. Every time I get close, he starts a new religion and vanishes into the crowd. At this point, I'm not a bounty hunter—I'm his unpaid biographer.",
+      "setup": "",
+      "punchline": "I signed up as a bounty hunter for an immortal target. The job said dead or alive. Dead's impossible, so it's just alive... forever. I've been chasing this guy since powdered wigs were cool. Every time I get close, he starts a new religion and vanishes into the crowd. At this point, I'm not a bounty hunter—I'm his unpaid biographer.",
+      "text": "I signed up as a bounty hunter for an immortal target. The job said dead or alive. Dead's impossible, so it's just alive... forever. I've been chasing this guy since powdered wigs were cool. Every time I get close, he starts a new religion and vanishes into the crowd. At this point, I'm not a bounty hunter—I'm his unpaid biographer."
+    },
+    {
+      "id": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Lifetime Upgrade",
+      "seedTermsUsed": [
+        "Immortality",
+        "Spoiled"
+      ],
+      "joke": "I got an immortality treatment, and it completely spoiled me. Last week my toaster died, and the warranty said it covered the product for life. I called customer service and said, \"Whose life? Because mine is no longer a useful measurement.\" The guy put me on hold and came back with, \"Sir, you're exactly why we had to rewrite the policy.\"",
+      "setup": "",
+      "punchline": "I got an immortality treatment, and it completely spoiled me. Last week my toaster died, and the warranty said it covered the product for life. I called customer service and said, \"Whose life? Because mine is no longer a useful measurement.\" The guy put me on hold and came back with, \"Sir, you're exactly why we had to rewrite the policy.\"",
+      "text": "I got an immortality treatment, and it completely spoiled me. Last week my toaster died, and the warranty said it covered the product for life. I called customer service and said, \"Whose life? Because mine is no longer a useful measurement.\" The guy put me on hold and came back with, \"Sir, you're exactly why we had to rewrite the policy.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {
+          "jokeId": "anthropic",
+          "comment": "The immortal pursuit has potential, but the time-served logic is muddled and ‘eternal severance’ feels attached rather than earned.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "A clear, well-paced escalation with a vivid final image, though the rolled-up-carpet suspicion is fairly familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "xai",
+          "comment": "The new-religion turn is unexpected and the unpaid-biographer closer neatly reframes the centuries-long chase.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Polished and easy to follow, with a sound warranty premise, but the customer-service closer is predictable and adds little escalation.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Tight pun-punchline ('passed another runner') lands cleanly and economically.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Good atmosphere and a strong closing image, though slightly longer than needed.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Fun escalation but 'unpaid biographer' tag is a softer payoff than the setup promises.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Absurd warranty bit escalates nicely to a satisfying customer-service snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Tightly constructed with sharp economy. The fitness app payoff is a clean, contemporary misdirection that delivers an immediate laugh without wasted words.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Good conversational rhythm and relatable blue-collar angle on immortality, though the punchline lands more as an amusing thought than a hard laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Leans heavily into sci-fi fantasy exposition rather than grounded stand-up. The 'unpaid biographer' ending is cute, but lacks stage punch.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "The customer service setup is familiar, and the seed term 'spoiled' feels forced into the premise. The final line peters out into a polite resolution instead of landing a joke.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Tight app misdirection on the body; clean timing but lands as a clever smile rather than a real laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Promising immortal-bounty premise diluted by length and a soft final restatement.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "google",
+          "comment": "Effective early-morning dread build and strong carpet image; solid stage escalation.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "copilot",
+          "comment": "Clean, concrete warranty twist with natural dialogue and a closer that carries.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "openai",
+          "comment": "Clean misdirection from fitness-app language to a corpse; concise and clear with a solid final turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "anthropic",
+          "comment": "Fun immortal-bounty-hunter premise with escalation; severance tag is clever but not a huge laugh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.900000000000001
+        },
+        {
+          "jokeId": "google",
+          "comment": "Relatable setup and readable structure, but the ending is more observation than punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "xai",
+          "comment": "Strong premise and imagery; unpaid-biographer ending is amusing, though the turn is somewhat predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.700000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "score": 7.3,
+      "rawScore": 7.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.5,
+        "originality": 6.7,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.5,
+        "originality": 6.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Tight pun-punchline ('passed another runner') lands cleanly and economically."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.5,
+          "rawScore": 8,
+          "scoreAdjustment": 0.5,
+          "comment": "Tightly constructed with sharp economy. The fitness app payoff is a clean, contemporary misdirection that delivers an immediate laugh without wasted words."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Tight app misdirection on the body; clean timing but lands as a clever smile rather than a real laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.3,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean misdirection from fitness-app language to a corpse; concise and clear with a solid final turn."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 6.2,
+        "craft": 6.7,
+        "originality": 6.7,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Polished and easy to follow, with a sound warranty premise, but the customer-service closer is predictable and adds little escalation."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Absurd warranty bit escalates nicely to a satisfying customer-service snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.5,
+          "comment": "The customer service setup is familiar, and the seed term 'spoiled' feels forced into the premise. The final line peters out into a polite resolution instead of landing a joke."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.1,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean, concrete warranty twist with natural dialogue and a closer that carries."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.5,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.1,
+        "craft": 6.6,
+        "originality": 6.1,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "A clear, well-paced escalation with a vivid final image, though the rolled-up-carpet suspicion is fairly familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Good atmosphere and a strong closing image, though slightly longer than needed."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Effective early-morning dread build and strong carpet image; solid stage escalation."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Relatable setup and readable structure, but the ending is more observation than punchline."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 6.5,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.1,
+        "craft": 6.6,
+        "originality": 6.6,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 6.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "The new-religion turn is unexpected and the unpaid-biographer closer neatly reframes the centuries-long chase."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Fun escalation but 'unpaid biographer' tag is a softer payoff than the setup promises."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.5,
+          "comment": "Leans heavily into sci-fi fantasy exposition rather than grounded stand-up. The 'unpaid biographer' ending is cute, but lacks stage punch."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.8,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong premise and imagery; unpaid-biographer ending is amusing, though the turn is somewhat predictable."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6,
+      "rawScore": 6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 6.1,
+        "craft": 5.8,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 6,
+        "craft": 5.8,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 5.1,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0,
+          "comment": "The immortal pursuit has potential, but the time-served logic is muddled and ‘eternal severance’ feels attached rather than earned."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.7,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.5,
+          "comment": "Good conversational rhythm and relatable blue-collar angle on immortality, though the punchline lands more as an amusing thought than a hard laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.2,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Promising immortal-bounty premise diluted by length and a soft final restatement."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Fun immortal-bounty-hunter premise with escalation; severance tag is clever but not a huge laugh."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-20-external-real-2026-09-20.png",
+    "originalSrc": "assets/feature-images/2026-09-20-external-real-2026-09-20.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Personal Best: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.6 Sol - Personal Best\nExact joke text to render in the right panel:\nI discovered a dead body while jogging. The police asked why I looked so happy. I wasn’t—my fitness app had just announced, “Congratulations! You passed another runner.”\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Immortality, Bounty Hunter, Meadow, Discovering a dead body, Happy, Spoiled. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Immortality, Bounty Hunter, Meadow, Discovering a dead body, Happy, Spoiled. Use the winning joke titled \"Personal Best\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.2,
+      "anthropic": 6.5,
+      "google": 5.8,
+      "xai": 6.6,
+      "copilot": 6.1
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-20-external-real-2026-09-20.md"
+}
