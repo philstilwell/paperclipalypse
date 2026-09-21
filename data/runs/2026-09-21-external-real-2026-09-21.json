@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-21-external-real-2026-09-21",
+  "seed": "external-real-2026-09-21",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-21T15:48:44.363Z",
+  "publishedDate": "2026-09-21",
+  "seedTerms": [
+    "Creepy Kids",
+    "Deep Sea Diver",
+    "Science Laboratory",
+    "Having a one-night stand",
+    "Spiritual",
+    "Cruel"
+  ],
+  "premise": {
+    "text": "Seed terms: Creepy Kids, Deep Sea Diver, Science Laboratory, Having a one-night stand, Spiritual, Cruel",
+    "seedTerms": [
+      "Creepy Kids",
+      "Deep Sea Diver",
+      "Science Laboratory",
+      "Having a one-night stand",
+      "Spiritual",
+      "Cruel"
+    ],
+    "displayText": "Grace Period"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash web (exact underlying model not exposed)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast on grok.com (underlying model not exposed)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "model": "GPT-5.6 Sol Light web",
+      "title": "Grace Period",
+      "seedTermsUsed": [
+        "Creepy Kids",
+        "Spiritual"
+      ],
+      "joke": "My six-year-old insisted on saying grace at dinner. He closed his eyes and said, “Dear God, thank you for Mommy, thank you for me, and please give Daddy the strength to finish his vegetables… because we’re not buying another shovel.”",
+      "setup": "",
+      "punchline": "My six-year-old insisted on saying grace at dinner. He closed his eyes and said, “Dear God, thank you for Mommy, thank you for me, and please give Daddy the strength to finish his vegetables… because we’re not buying another shovel.”",
+      "text": "My six-year-old insisted on saying grace at dinner. He closed his eyes and said, “Dear God, thank you for Mommy, thank you for me, and please give Daddy the strength to finish his vegetables… because we’re not buying another shovel.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "The Bends",
+      "seedTermsUsed": [
+        "Deep Sea Diver",
+        "Cruel"
+      ],
+      "joke": "I dated a deep sea diver for three months. Incredible guy, terrible communicator, because his whole personality was formed at depths where sound doesn't carry and neither does emotional nuance. I'd say 'we need to talk,' and he'd just stare at me like I was a fish that wandered too close to a vent. Breaking up with him was cruel, but also efficient, because he genuinely thought silence meant things were fine at any pressure.",
+      "setup": "",
+      "punchline": "I dated a deep sea diver for three months. Incredible guy, terrible communicator, because his whole personality was formed at depths where sound doesn't carry and neither does emotional nuance. I'd say 'we need to talk,' and he'd just stare at me like I was a fish that wandered too close to a vent. Breaking up with him was cruel, but also efficient, because he genuinely thought silence meant things were fine at any pressure.",
+      "text": "I dated a deep sea diver for three months. Incredible guy, terrible communicator, because his whole personality was formed at depths where sound doesn't carry and neither does emotional nuance. I'd say 'we need to talk,' and he'd just stare at me like I was a fish that wandered too close to a vent. Breaking up with him was cruel, but also efficient, because he genuinely thought silence meant things were fine at any pressure."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash web (exact underlying model not exposed)",
+      "title": "Depth Check",
+      "seedTermsUsed": [
+        "Deep Sea Diver",
+        "Spiritual"
+      ],
+      "joke": "My new girlfriend told me she’s 'very spiritual' and wanted us to connect on a deeper level. I took that literally. Next thing she knows, I’ve got her strapped into a nine-hundred-pound pressurized diving suit dropping off the back of a tugboat. At two hundred feet down in pitch-black water, I radioed through her helmet: 'Feel the energy?'",
+      "setup": "",
+      "punchline": "My new girlfriend told me she’s 'very spiritual' and wanted us to connect on a deeper level. I took that literally. Next thing she knows, I’ve got her strapped into a nine-hundred-pound pressurized diving suit dropping off the back of a tugboat. At two hundred feet down in pitch-black water, I radioed through her helmet: 'Feel the energy?'",
+      "text": "My new girlfriend told me she’s 'very spiritual' and wanted us to connect on a deeper level. I took that literally. Next thing she knows, I’ve got her strapped into a nine-hundred-pound pressurized diving suit dropping off the back of a tugboat. At two hundred feet down in pitch-black water, I radioed through her helmet: 'Feel the energy?'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast on grok.com (underlying model not exposed)",
+      "title": "Even the Fish Have Standards",
+      "seedTermsUsed": [
+        "Deep Sea Diver",
+        "Spiritual"
+      ],
+      "joke": "I took up deep-sea diving for some peace and quiet. First time I hit the bottom it got spiritual real fast. I started confessing my whole life to a lanternfish. The fish just stared, blinked once, and swam away. Turns out even the deep sea has standards.",
+      "setup": "",
+      "punchline": "I took up deep-sea diving for some peace and quiet. First time I hit the bottom it got spiritual real fast. I started confessing my whole life to a lanternfish. The fish just stared, blinked once, and swam away. Turns out even the deep sea has standards.",
+      "text": "I took up deep-sea diving for some peace and quiet. First time I hit the bottom it got spiritual real fast. I started confessing my whole life to a lanternfish. The fish just stared, blinked once, and swam away. Turns out even the deep sea has standards."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Career Day Depths",
+      "seedTermsUsed": [
+        "Deep Sea Diver",
+        "Creepy Kids"
+      ],
+      "joke": "I did career day at an elementary school because I used to work as a deep-sea diver. I told the kids, \"The ocean is so dark down there, your flashlight only shows a few feet.\" One creepy little kid raised his hand and asked, \"So how do you know something isn't following you the rest of the way?\" I was there to inspire children, and this kid gave me a brand-new fear.",
+      "setup": "",
+      "punchline": "I did career day at an elementary school because I used to work as a deep-sea diver. I told the kids, \"The ocean is so dark down there, your flashlight only shows a few feet.\" One creepy little kid raised his hand and asked, \"So how do you know something isn't following you the rest of the way?\" I was there to inspire children, and this kid gave me a brand-new fear.",
+      "text": "I did career day at an elementary school because I used to work as a deep-sea diver. I told the kids, \"The ocean is so dark down there, your flashlight only shows a few feet.\" One creepy little kid raised his hand and asked, \"So how do you know something isn't following you the rest of the way?\" I was there to inspire children, and this kid gave me a brand-new fear."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.6 Sol",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear premise, but the pressure metaphors sprawl and the final line explains rather than lands.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The literal deeper-level turn is predictable, and the elaborate diving setup produces only a mild tag.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.7
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean and economical, but the judgmental-animal ending is familiar and only mildly amusing.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The child's question creates a vivid, relatable chill; the closing line is clear but not a strong final escalation.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean, well-timed kid joke with a solid final line; slightly familiar dark-humor-kid template but executed well.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong literalized-metaphor premise with good escalation and a snappy closing line that lands the turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Decent premise and clean form, but the punchline is soft and restates the idea more than snaps it.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Fresh angle on 'creepy kid,' natural stage voice, and a punchline that genuinely subverts the career-day setup.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid escalation and crisp punchline timing, though the 'kid secretly planning a murder' premise is a familiar trope.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "More of an essayistic observation than a stage joke; it explains its metaphors thoroughly rather than snapping on a strong punchline.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 4.9
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent structure and easy to follow, but the 'even X rejected me' ending is a well-worn stand-up formula.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Good stage rhythm and relatable reaction, though stating 'creepy little kid' in the setup slightly front-runs the punchline.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Tight prayer setup with a dark shovel turn; the kid's threat lands as shock more than pure laugh for a broad room.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear concept but wordy explanation dilutes the payoff; ends more as observation than a snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong literal escalation from spiritual to diving suit; the radio line is clean but the premise stays a bit mean.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Solid career-day premise with a creepy-kid question that cleanly flips the inspirational talk into fear.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong creepy turn from an innocent prayer setup. Clear escalation and a memorable final image.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Consistent relationship analogy but somewhat stretched. More clever observation than punch-driven joke.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Solid literal misunderstanding premise with a vivid image. Payoff is amusing but not especially sharp.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean stand-up structure and readable rhythm. 'Even the deep sea has standards' is familiar in shape but works.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.6 Sol",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 7.2,
+        "originality": 6.2,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean, well-timed kid joke with a solid final line; slightly familiar dark-humor-kid template but executed well."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.5,
+          "comment": "Solid escalation and crisp punchline timing, though the 'kid secretly planning a murder' premise is a familiar trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.3,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Tight prayer setup with a dark shovel turn; the kid's threat lands as shock more than pure laugh for a broad room."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 8.1,
+          "rawScore": 8,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong creepy turn from an innocent prayer setup. Clear escalation and a memorable final image."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.5,
+        "originality": 6.2,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
+          "comment": "The child's question creates a vivid, relatable chill; the closing line is clear but not a strong final escalation."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Fresh angle on 'creepy kid,' natural stage voice, and a punchline that genuinely subverts the career-day setup."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.6,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.5,
+          "comment": "Good stage rhythm and relatable reaction, though stating 'creepy little kid' in the setup slightly front-runs the punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.7,
+          "rawScore": 7,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid career-day premise with a creepy-kid question that cleanly flips the inspirational talk into fear."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.1,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 6.1,
+        "craft": 6.1,
+        "originality": 6.1,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6.3,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 4.7,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0,
+          "comment": "The literal deeper-level turn is predictable, and the elaborate diving setup produces only a mild tag."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.7,
+          "rawScore": 7,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong literalized-metaphor premise with good escalation and a snappy closing line that lands the turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.4,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong literal escalation from spiritual to diving suit; the radio line is clean but the premise stays a bit mean."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Solid literal misunderstanding premise with a vivid image. Payoff is amusing but not especially sharp."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
+          "comment": "Clean and economical, but the judgmental-animal ending is familiar and only mildly amusing."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Decent premise and clean form, but the punchline is soft and restates the idea more than snaps it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.5,
+          "comment": "Competent structure and easy to follow, but the 'even X rejected me' ending is a well-worn stand-up formula."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean stand-up structure and readable rhythm. 'Even the deep sea has standards' is familiar in shape but works."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.2,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.8,
+        "craft": 5.3,
+        "originality": 5.8,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.8,
+        "craft": 5.3,
+        "originality": 5.8,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.6 Sol",
+          "score": 4.5,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0,
+          "comment": "Clear premise, but the pressure metaphors sprawl and the final line explains rather than lands."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0.5,
+          "comment": "More of an essayistic observation than a stage joke; it explains its metaphors thoroughly rather than snapping on a strong punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear concept but wordy explanation dilutes the payoff; ends more as observation than a snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Consistent relationship analogy but somewhat stretched. More clever observation than punch-driven joke."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-21-external-real-2026-09-21.png",
+    "originalSrc": "assets/feature-images/2026-09-21-external-real-2026-09-21.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Grace Period: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.6 Sol - Grace Period\nExact joke text to render in the right panel:\nMy six-year-old insisted on saying grace at dinner. He closed his eyes and said, “Dear God, thank you for Mommy, thank you for me, and please give Daddy the strength to finish his vegetables… because we’re not buying another shovel.”\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Creepy Kids, Deep Sea Diver, Science Laboratory, Having a one-night stand, Spiritual, Cruel. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Creepy Kids, Deep Sea Diver, Science Laboratory, Having a one-night stand, Spiritual, Cruel. Use the winning joke titled \"Grace Period\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.4,
+      "anthropic": 6.7,
+      "google": 5.9,
+      "xai": 6.7,
+      "copilot": 6.3
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-21-external-real-2026-09-21.md"
+}
