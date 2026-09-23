@@ -1,0 +1,77 @@
+{
+  "createdAt": "2026-09-23T14:01:54.461Z",
+  "publishedDate": "2026-09-23",
+  "seed": "external-real-2026-09-23",
+  "slug": "2026-09-23-external-real-2026-09-23",
+  "source": "manual-external",
+  "seedTerms": [
+    "Blockbuster",
+    "Emergency Room Physician",
+    "Block Party",
+    "Being framed",
+    "Easygoing",
+    "Suspicious"
+  ],
+  "premise": {"displayText": ""},
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-6 Astra","provider":"openai","model":"GPT-6 Astra Light web"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium web"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"Gemini Flash web (exact underlying model not exposed)"},
+    {"id":"xai","displayName":"xAI Grok","provider":"openai-compatible","model":"Grok Fast web"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web (Auto)"}
+  ],
+  "jokes": [
+    {
+      "id":"joke-a","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-6 Astra","model":"GPT-6 Astra Light web","title":"The Handoff","seedTermsUsed":["Block Party","Being framed"],
+      "joke":"At my block party, my neighbor asked me to hold his spatula for a second. I thought he needed a beer. Then he disappeared, the grill burst into flames, and twelve people turned to look at me. I’ve never been framed before. Turns out you don’t need forged documents or planted evidence. Just barbecue tongs and a guy confidently saying, “Ask the chef.”","setup":"","punchline":"","text":"At my block party, my neighbor asked me to hold his spatula for a second. I thought he needed a beer. Then he disappeared, the grill burst into flames, and twelve people turned to look at me. I’ve never been framed before. Turns out you don’t need forged documents or planted evidence. Just barbecue tongs and a guy confidently saying, “Ask the chef.”"
+    },
+    {
+      "id":"joke-b","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium web","title":"Last One Home","seedTermsUsed":["Blockbuster","Suspicious"],
+      "joke":"I worked at Blockbuster back in the day. Best job I ever had, because everybody who walked in was already suspicious of everybody else. You'd see a guy at the counter returning a movie three weeks late, sweating, avoiding eye contact, and the whole line just silently agrees: this man is capable of anything. Meanwhile I'm sixteen, making minimum wage, treating late fees like I'm building a RICO case. 'Sir, where were you on the night of the fourteenth?' I miss having that kind of power over strangers.","setup":"","punchline":"","text":"I worked at Blockbuster back in the day. Best job I ever had, because everybody who walked in was already suspicious of everybody else. You'd see a guy at the counter returning a movie three weeks late, sweating, avoiding eye contact, and the whole line just silently agrees: this man is capable of anything. Meanwhile I'm sixteen, making minimum wage, treating late fees like I'm building a RICO case. 'Sir, where were you on the night of the fourteenth?' I miss having that kind of power over strangers."
+    },
+    {
+      "id":"joke-c","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"Gemini Flash web (exact underlying model not exposed)","title":"Bad Neighbors","seedTermsUsed":["Block Party","Being framed"],
+      "joke":"My neighborhood threw an annual block party, and someone stole three briskets right off the smoker. I knew the cops were suspicious of me the second the detective knocked on my door. He said, 'We found your grill tongs in the bushes.' I had to look this man dead in the eye and say, 'Officer, someone planted those tongs. I am a charcoal guy, and those were clearly set to medium-high.'","setup":"","punchline":"","text":"My neighborhood threw an annual block party, and someone stole three briskets right off the smoker. I knew the cops were suspicious of me the second the detective knocked on my door. He said, 'We found your grill tongs in the bushes.' I had to look this man dead in the eye and say, 'Officer, someone planted those tongs. I am a charcoal guy, and those were clearly set to medium-high.'"
+    },
+    {
+      "id":"joke-d","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok","model":"Grok Fast web","title":"Video Store Most Wanted","seedTermsUsed":["Blockbuster","Being framed"],
+      "joke":"Back in the day I got framed for not returning a Blockbuster movie. That late-fee letter hit my mailbox like a warrant. When I finally went in to settle up, the clerk stared at me like I was Public Enemy Number One. Twenty years later I still get nervous walking past empty retail spaces. Just in case the video-store police are still out there.","setup":"","punchline":"","text":"Back in the day I got framed for not returning a Blockbuster movie. That late-fee letter hit my mailbox like a warrant. When I finally went in to settle up, the clerk stared at me like I was Public Enemy Number One. Twenty years later I still get nervous walking past empty retail spaces. Just in case the video-store police are still out there."
+    },
+    {
+      "id":"joke-e","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web (Auto)","title":"Too Relaxed","seedTermsUsed":["Emergency Room Physician","Easygoing"],
+      "joke":"My ER doctor was so laid-back it was unsettling. I ran in yelling, \"Doc, I think I broke my arm!\" He looked at the X-ray, nodded, and said, \"Well, let's not put labels on things.\" That's when I realized I don't want a chill doctor; I want a doctor who can commit to a fracture.","setup":"","punchline":"","text":"My ER doctor was so laid-back it was unsettling. I ran in yelling, \"Doc, I think I broke my arm!\" He looked at the X-ray, nodded, and said, \"Well, let's not put labels on things.\" That's when I realized I don't want a chill doctor; I want a doctor who can commit to a fracture."
+    }
+  ],
+  "judgeResults": [
+    {"judgeId":"openai","judgeName":"OpenAI GPT-6 Astra","scores":[
+      {"jokeId":"joke-b","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Recognizable late-fee authority premise; the interrogation earns a smile, but excess setup and a weaker closing dilute it."},
+      {"jokeId":"joke-c","originality":4,"surprise":3,"craft":3,"promptFit":3,"laugh":3,"comment":"Tongs do not have heat settings, so the punchline collapses. Police suspicion also introduces a third seed concept."},
+      {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Clear first-person delivery, but the framing is undeveloped and the video-store police payoff feels predictable."},
+      {"jokeId":"joke-e","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"The refusal to label a fracture provides an accessible comic turn; the final line mostly explains the existing laugh."}
+    ]},
+    {"judgeId":"anthropic","judgeName":"Claude","scores":[
+      {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean misdirection and a solid closing line, but the frame-up premise is a familiar shape."},
+      {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Specific, escalating, and the 'medium-high' closer actually pays off the setup with real wordplay."},
+      {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":5,"comment":"Blockbuster late-fee premise is well-worn territory; competent but the turn is the obvious one."},
+      {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Tight premise and a genuinely funny closing pun, though the 'chill doctor' bit is a familiar template."}
+    ]},
+    {"judgeId":"google","judgeName":"Gemini Flash","scores":[
+      {"jokeId":"joke-a","originality":6,"surprise":6,"craft":5,"promptFit":8,"laugh":6,"comment":"Fun premise and relatable social trap, but the object switch from spatula to tongs and the timeline of the neighbor disappearing before speaking snag the craft."},
+      {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Solid stage cadence and rhythm; the RICO case comparison captures the petty minimum-wage power trip effectively."},
+      {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":6,"laugh":4,"comment":"States the framing rather than dramatizing it, leaning on familiar retro Blockbuster tropes without a sharp payoff."},
+      {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Economical construction that maps modern dating evasions onto emergency medicine with a crisp final punchline."}
+    ]},
+    {"judgeId":"xai","judgeName":"xAI Grok","scores":[
+      {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Clear premise and two clean concepts, but the framing explanation softens the final snap."},
+      {"jokeId":"joke-b","originality":8,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Sharp escalation from late fees into mock RICO power; final line carries real stage weight."},
+      {"jokeId":"joke-c","originality":5,"surprise":5,"craft":5,"promptFit":3,"laugh":5,"comment":"Uses three seed concepts; tongs detail undercuts the planted-evidence turn."},
+      {"jokeId":"joke-e","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Tight economy and a clean final commitment gag that lands without padding."}
+    ]},
+    {"judgeId":"copilot","judgeName":"Copilot","scores":[
+      {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear premise and callback to being framed; decent misdirection, moderate payoff."},
+      {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong escalation from late fees to criminal investigation; natural stand-up voice and solid final beat."},
+      {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":4,"laugh":7,"comment":"Funny specificity in the grill-setting defense; good punchline. Uses an extra seed concept beyond the intended two."},
+      {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Coherent and relatable, but the video-store police tag is predictable and mild."}
+    ]}
+  ]
+}

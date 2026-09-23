@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-23-external-real-2026-09-23",
+  "seed": "external-real-2026-09-23",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-23T14:01:54.461Z",
+  "publishedDate": "2026-09-23",
+  "seedTerms": [
+    "Blockbuster",
+    "Emergency Room Physician",
+    "Block Party",
+    "Being framed",
+    "Easygoing",
+    "Suspicious"
+  ],
+  "premise": {
+    "text": "Seed terms: Blockbuster, Emergency Room Physician, Block Party, Being framed, Easygoing, Suspicious",
+    "seedTerms": [
+      "Blockbuster",
+      "Emergency Room Physician",
+      "Block Party",
+      "Being framed",
+      "Easygoing",
+      "Suspicious"
+    ],
+    "displayText": "Last One Home"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 Astra",
+      "provider": "openai",
+      "model": "GPT-6 Astra Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash web (exact underlying model not exposed)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 Astra",
+      "model": "GPT-6 Astra Light web",
+      "title": "The Handoff",
+      "seedTermsUsed": [
+        "Block Party",
+        "Being framed"
+      ],
+      "joke": "At my block party, my neighbor asked me to hold his spatula for a second. I thought he needed a beer. Then he disappeared, the grill burst into flames, and twelve people turned to look at me. I’ve never been framed before. Turns out you don’t need forged documents or planted evidence. Just barbecue tongs and a guy confidently saying, “Ask the chef.”",
+      "setup": "",
+      "punchline": "At my block party, my neighbor asked me to hold his spatula for a second. I thought he needed a beer. Then he disappeared, the grill burst into flames, and twelve people turned to look at me. I’ve never been framed before. Turns out you don’t need forged documents or planted evidence. Just barbecue tongs and a guy confidently saying, “Ask the chef.”",
+      "text": "At my block party, my neighbor asked me to hold his spatula for a second. I thought he needed a beer. Then he disappeared, the grill burst into flames, and twelve people turned to look at me. I’ve never been framed before. Turns out you don’t need forged documents or planted evidence. Just barbecue tongs and a guy confidently saying, “Ask the chef.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "Last One Home",
+      "seedTermsUsed": [
+        "Blockbuster",
+        "Suspicious"
+      ],
+      "joke": "I worked at Blockbuster back in the day. Best job I ever had, because everybody who walked in was already suspicious of everybody else. You'd see a guy at the counter returning a movie three weeks late, sweating, avoiding eye contact, and the whole line just silently agrees: this man is capable of anything. Meanwhile I'm sixteen, making minimum wage, treating late fees like I'm building a RICO case. 'Sir, where were you on the night of the fourteenth?' I miss having that kind of power over strangers.",
+      "setup": "",
+      "punchline": "I worked at Blockbuster back in the day. Best job I ever had, because everybody who walked in was already suspicious of everybody else. You'd see a guy at the counter returning a movie three weeks late, sweating, avoiding eye contact, and the whole line just silently agrees: this man is capable of anything. Meanwhile I'm sixteen, making minimum wage, treating late fees like I'm building a RICO case. 'Sir, where were you on the night of the fourteenth?' I miss having that kind of power over strangers.",
+      "text": "I worked at Blockbuster back in the day. Best job I ever had, because everybody who walked in was already suspicious of everybody else. You'd see a guy at the counter returning a movie three weeks late, sweating, avoiding eye contact, and the whole line just silently agrees: this man is capable of anything. Meanwhile I'm sixteen, making minimum wage, treating late fees like I'm building a RICO case. 'Sir, where were you on the night of the fourteenth?' I miss having that kind of power over strangers."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash web (exact underlying model not exposed)",
+      "title": "Bad Neighbors",
+      "seedTermsUsed": [
+        "Block Party",
+        "Being framed"
+      ],
+      "joke": "My neighborhood threw an annual block party, and someone stole three briskets right off the smoker. I knew the cops were suspicious of me the second the detective knocked on my door. He said, 'We found your grill tongs in the bushes.' I had to look this man dead in the eye and say, 'Officer, someone planted those tongs. I am a charcoal guy, and those were clearly set to medium-high.'",
+      "setup": "",
+      "punchline": "My neighborhood threw an annual block party, and someone stole three briskets right off the smoker. I knew the cops were suspicious of me the second the detective knocked on my door. He said, 'We found your grill tongs in the bushes.' I had to look this man dead in the eye and say, 'Officer, someone planted those tongs. I am a charcoal guy, and those were clearly set to medium-high.'",
+      "text": "My neighborhood threw an annual block party, and someone stole three briskets right off the smoker. I knew the cops were suspicious of me the second the detective knocked on my door. He said, 'We found your grill tongs in the bushes.' I had to look this man dead in the eye and say, 'Officer, someone planted those tongs. I am a charcoal guy, and those were clearly set to medium-high.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Video Store Most Wanted",
+      "seedTermsUsed": [
+        "Blockbuster",
+        "Being framed"
+      ],
+      "joke": "Back in the day I got framed for not returning a Blockbuster movie. That late-fee letter hit my mailbox like a warrant. When I finally went in to settle up, the clerk stared at me like I was Public Enemy Number One. Twenty years later I still get nervous walking past empty retail spaces. Just in case the video-store police are still out there.",
+      "setup": "",
+      "punchline": "Back in the day I got framed for not returning a Blockbuster movie. That late-fee letter hit my mailbox like a warrant. When I finally went in to settle up, the clerk stared at me like I was Public Enemy Number One. Twenty years later I still get nervous walking past empty retail spaces. Just in case the video-store police are still out there.",
+      "text": "Back in the day I got framed for not returning a Blockbuster movie. That late-fee letter hit my mailbox like a warrant. When I finally went in to settle up, the clerk stared at me like I was Public Enemy Number One. Twenty years later I still get nervous walking past empty retail spaces. Just in case the video-store police are still out there."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Too Relaxed",
+      "seedTermsUsed": [
+        "Emergency Room Physician",
+        "Easygoing"
+      ],
+      "joke": "My ER doctor was so laid-back it was unsettling. I ran in yelling, \"Doc, I think I broke my arm!\" He looked at the X-ray, nodded, and said, \"Well, let's not put labels on things.\" That's when I realized I don't want a chill doctor; I want a doctor who can commit to a fracture.",
+      "setup": "",
+      "punchline": "My ER doctor was so laid-back it was unsettling. I ran in yelling, \"Doc, I think I broke my arm!\" He looked at the X-ray, nodded, and said, \"Well, let's not put labels on things.\" That's when I realized I don't want a chill doctor; I want a doctor who can commit to a fracture.",
+      "text": "My ER doctor was so laid-back it was unsettling. I ran in yelling, \"Doc, I think I broke my arm!\" He looked at the X-ray, nodded, and said, \"Well, let's not put labels on things.\" That's when I realized I don't want a chill doctor; I want a doctor who can commit to a fracture."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 Astra",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Recognizable late-fee authority premise; the interrogation earns a smile, but excess setup and a weaker closing dilute it.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Tongs do not have heat settings, so the punchline collapses. Police suspicion also introduces a third seed concept.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 3,
+          "originality": 4,
+          "promptFit": 3,
+          "total": 3.1000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear first-person delivery, but the framing is undeveloped and the video-store police payoff feels predictable.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The refusal to label a fracture provides an accessible comic turn; the final line mostly explains the existing laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean misdirection and a solid closing line, but the frame-up premise is a familiar shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific, escalating, and the 'medium-high' closer actually pays off the setup with real wordplay.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Blockbuster late-fee premise is well-worn territory; competent but the turn is the obvious one.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Tight premise and a genuinely funny closing pun, though the 'chill doctor' bit is a familiar template.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Fun premise and relatable social trap, but the object switch from spatula to tongs and the timeline of the neighbor disappearing before speaking snag the craft.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Solid stage cadence and rhythm; the RICO case comparison captures the petty minimum-wage power trip effectively.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "States the framing rather than dramatizing it, leaning on familiar retro Blockbuster tropes without a sharp payoff.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 4.4
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Economical construction that maps modern dating evasions onto emergency medicine with a crisp final punchline.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and two clean concepts, but the framing explanation softens the final snap.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Sharp escalation from late fees into mock RICO power; final line carries real stage weight.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Uses three seed concepts; tongs detail undercuts the planted-evidence turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 3,
+          "total": 4.8
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Tight economy and a clean final commitment gag that lands without padding.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and callback to being framed; decent misdirection, moderate payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong escalation from late fees to criminal investigation; natural stand-up voice and solid final beat.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Funny specificity in the grill-setting defense; good punchline. Uses an extra seed concept beyond the intended two.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 4,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Coherent and relatable, but the video-store police tag is predictable and mild.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.9,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 6.8,
+        "originality": 6.6,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 Astra",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Recognizable late-fee authority premise; the interrogation earns a smile, but excess setup and a weaker closing dilute it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.4,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.5,
+          "comment": "Solid stage cadence and rhythm; the RICO case comparison captures the petty minimum-wage power trip effectively."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.3,
+          "rawScore": 7.7,
+          "scoreAdjustment": -0.4,
+          "comment": "Sharp escalation from late fees into mock RICO power; final line carries real stage weight."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong escalation from late fees to criminal investigation; natural stand-up voice and solid final beat."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 Astra",
+          "score": 6.5,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.3,
+          "comment": "The refusal to label a fracture provides an accessible comic turn; the final line mostly explains the existing laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Tight premise and a genuinely funny closing pun, though the 'chill doctor' bit is a familiar template."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.5,
+          "comment": "Economical construction that maps modern dating evasions onto emergency medicine with a crisp final punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Tight economy and a clean final commitment gag that lands without padding."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 Astra",
+      "score": 6.2,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.9,
+        "craft": 5.9,
+        "originality": 5.9,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean misdirection and a solid closing line, but the frame-up premise is a familiar shape."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.5,
+          "rawScore": 6,
+          "scoreAdjustment": 0.5,
+          "comment": "Fun premise and relatable social trap, but the object switch from spatula to tongs and the timeline of the neighbor disappearing before speaking snag the craft."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.9,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Clear premise and two clean concepts, but the framing explanation softens the final snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise and callback to being framed; decent misdirection, moderate payoff."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 5.3,
+      "rawScore": 5.5,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 5.4,
+        "craft": 5.4,
+        "originality": 5.6,
+        "promptFit": 4.6
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 5.5,
+        "originality": 5.8,
+        "promptFit": 4.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 Astra",
+          "score": 3.4,
+          "rawScore": 3.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Tongs do not have heat settings, so the punchline collapses. Police suspicion also introduces a third seed concept."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Specific, escalating, and the 'medium-high' closer actually pays off the setup with real wordplay."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 4.4,
+          "rawScore": 4.8,
+          "scoreAdjustment": -0.4,
+          "comment": "Uses three seed concepts; tongs detail undercuts the planted-evidence turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Funny specificity in the grill-setting defense; good punchline. Uses an extra seed concept beyond the intended two."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5,
+      "rawScore": 4.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.3,
+        "craft": 5.1,
+        "originality": 4.3,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.3,
+        "craft": 5,
+        "originality": 4.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 Astra",
+          "score": 4.9,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear first-person delivery, but the framing is undeveloped and the video-store police payoff feels predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.8,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Blockbuster late-fee premise is well-worn territory; competent but the turn is the obvious one."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.9,
+          "rawScore": 4.4,
+          "scoreAdjustment": 0.5,
+          "comment": "States the framing rather than dramatizing it, leaning on familiar retro Blockbuster tropes without a sharp payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Coherent and relatable, but the video-store police tag is predictable and mild."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-23-external-real-2026-09-23.png",
+    "originalSrc": "assets/feature-images/2026-09-23-external-real-2026-09-23.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Last One Home: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Last One Home\nExact joke text to render in the right panel:\nI worked at Blockbuster back in the day. Best job I ever had, because everybody who walked in was already suspicious of everybody else. You'd see a guy at the counter returning a movie three weeks late, sweating, avoiding eye contact, and the whole line just silently agrees: this man is capable of anything. Meanwhile I'm sixteen, making minimum wage, treating late fees like I'm building a RICO case. 'Sir, where were you on the night of the fourteenth?' I miss having that kind of power over strangers.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Blockbuster, Emergency Room Physician, Block Party, Being framed, Easygoing, Suspicious. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Blockbuster, Emergency Room Physician, Block Party, Being framed, Easygoing, Suspicious. Use the winning joke titled \"Last One Home\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 6.7,
+      "google": 5.9,
+      "xai": 6.7,
+      "copilot": 6.5
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-23-external-real-2026-09-23.md"
+}
