@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-24-external-real-2026-09-24",
+  "seed": "external-real-2026-09-24",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-24T14:01:56.520Z",
+  "publishedDate": "2026-09-24",
+  "seedTerms": [
+    "Herding",
+    "Inventor",
+    "Office Cubicle",
+    "Having to stay behind",
+    "Loyal",
+    "Impatient"
+  ],
+  "premise": {
+    "text": "Seed terms: Herding, Inventor, Office Cubicle, Having to stay behind, Loyal, Impatient",
+    "seedTerms": [
+      "Herding",
+      "Inventor",
+      "Office Cubicle",
+      "Having to stay behind",
+      "Loyal",
+      "Impatient"
+    ],
+    "displayText": "Prototype Parent"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 Astra",
+      "provider": "openai",
+      "model": "GPT-6 Astra Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash web (exact underlying model not exposed)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 Astra",
+      "model": "GPT-6 Astra Light web",
+      "title": "Time Saver",
+      "seedTermsUsed": [
+        "Inventor",
+        "Impatient"
+      ],
+      "joke": "I’m so impatient I invented a microwave that opens automatically with one second left. No beep, no waiting—just lunch. My wife said, “You spent six months building something that saves you one second?” That’s unfair. It took eight months. I told her six because I wanted the conversation to end.",
+      "setup": "",
+      "punchline": "I’m so impatient I invented a microwave that opens automatically with one second left. No beep, no waiting—just lunch. My wife said, “You spent six months building something that saves you one second?” That’s unfair. It took eight months. I told her six because I wanted the conversation to end.",
+      "text": "I’m so impatient I invented a microwave that opens automatically with one second left. No beep, no waiting—just lunch. My wife said, “You spent six months building something that saves you one second?” That’s unfair. It took eight months. I told her six because I wanted the conversation to end."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "Cat Herder",
+      "seedTermsUsed": [
+        "Herding",
+        "Impatient"
+      ],
+      "joke": "My last job was herding cats. Literally. People think that phrase means 'impossible job.' No, I was paid to herd actual cats, and let me tell you, it's not impossible, it's just slow. You can herd cats. You just have to stop being impatient and accept it's going to take four hours to move eleven feet. My boss kept going 'well, dogs would be faster,' and I was like, congratulations, you've discovered why nobody hires a dog herder to be humbled.",
+      "setup": "",
+      "punchline": "My last job was herding cats. Literally. People think that phrase means 'impossible job.' No, I was paid to herd actual cats, and let me tell you, it's not impossible, it's just slow. You can herd cats. You just have to stop being impatient and accept it's going to take four hours to move eleven feet. My boss kept going 'well, dogs would be faster,' and I was like, congratulations, you've discovered why nobody hires a dog herder to be humbled.",
+      "text": "My last job was herding cats. Literally. People think that phrase means 'impossible job.' No, I was paid to herd actual cats, and let me tell you, it's not impossible, it's just slow. You can herd cats. You just have to stop being impatient and accept it's going to take four hours to move eleven feet. My boss kept going 'well, dogs would be faster,' and I was like, congratulations, you've discovered why nobody hires a dog herder to be humbled."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash web (exact underlying model not exposed)",
+      "title": "The Three-Minute Potato",
+      "seedTermsUsed": [
+        "Inventor",
+        "Impatient"
+      ],
+      "joke": "I always think about how impatient the inventor of the microwave must have been. Baking a potato normally takes an hour. This guy looked at a metal box humming with experimental military radiation and said, 'I don't have that kind of time. Zap it for three minutes. If the center is completely frozen while the skin gives me a minor tumor, that is a risk I am willing to take.'",
+      "setup": "",
+      "punchline": "I always think about how impatient the inventor of the microwave must have been. Baking a potato normally takes an hour. This guy looked at a metal box humming with experimental military radiation and said, 'I don't have that kind of time. Zap it for three minutes. If the center is completely frozen while the skin gives me a minor tumor, that is a risk I am willing to take.'",
+      "text": "I always think about how impatient the inventor of the microwave must have been. Baking a potato normally takes an hour. This guy looked at a metal box humming with experimental military radiation and said, 'I don't have that kind of time. Zap it for three minutes. If the center is completely frozen while the skin gives me a minor tumor, that is a risk I am willing to take.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Cubicle Invention",
+      "seedTermsUsed": [
+        "Inventor",
+        "Office Cubicle"
+      ],
+      "joke": "I work in an office cubicle, but I've become quite the inventor. My greatest invention is the look of intense concentration I put on whenever the boss walks by. It works every time — until he asks what I'm working on and I have to admit I was just staring at a blank Excel sheet.",
+      "setup": "",
+      "punchline": "I work in an office cubicle, but I've become quite the inventor. My greatest invention is the look of intense concentration I put on whenever the boss walks by. It works every time — until he asks what I'm working on and I have to admit I was just staring at a blank Excel sheet.",
+      "text": "I work in an office cubicle, but I've become quite the inventor. My greatest invention is the look of intense concentration I put on whenever the boss walks by. It works every time — until he asks what I'm working on and I have to admit I was just staring at a blank Excel sheet."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Prototype Parent",
+      "seedTermsUsed": [
+        "Inventor",
+        "Impatient"
+      ],
+      "joke": "I’m such an impatient inventor, I tried to build a machine that skips waiting in line. I tested it at the DMV, stepped inside, hit the button, and suddenly I was right at the moment they call your number. Turns out I’d accidentally invented aging, and the clerk welcomed me back by saying, “Good news, sir, your license only expired eight years ago.”",
+      "setup": "",
+      "punchline": "I’m such an impatient inventor, I tried to build a machine that skips waiting in line. I tested it at the DMV, stepped inside, hit the button, and suddenly I was right at the moment they call your number. Turns out I’d accidentally invented aging, and the clerk welcomed me back by saying, “Good news, sir, your license only expired eight years ago.”",
+      "text": "I’m such an impatient inventor, I tried to build a machine that skips waiting in line. I tested it at the DMV, stepped inside, hit the button, and suddenly I was right at the moment they call your number. Turns out I’d accidentally invented aging, and the clerk welcomed me back by saying, “Good news, sir, your license only expired eight years ago.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 Astra",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "The eleven-foot detail offers a smile, but the rambling setup ends in a confusing dog-herder punchline.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 3,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 3.7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear observational delivery, but the familiar microwave premise ends with a strained radiation gag.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Pretending to work is familiar territory, and calling a facial expression an invention barely integrates that seed.",
+          "laugh": 3,
+          "surprise": 2,
+          "craft": 4,
+          "originality": 2,
+          "promptFit": 4,
+          "total": 3.0000000000000004
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The DMV exaggeration is accessible, but the time jump and 'invented aging' explanation do not connect cleanly.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid domestic tag with a clean lie-about-timeline turn, but the invention idea itself is thin and familiar.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Fun escalation and the deadpan risk-assessment line lands well; slightly overlong setup before the turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Relatable cubicle bit but the fake-concentration premise is a familiar office trope and the reveal is expected.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong non-obvious swerve into aging, clean escalation, and the clerk's line is a genuinely satisfying final beat.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.5
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Excellent stand-up rhythm. The 1-second microwave trope is common, but the final turn (lying about the build time just to end the conversation) perfectly nails the 'impatient' premise with great escalation.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 8.2
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Literalizing a figure of speech ('herding cats') is a well-worn angle, and the final punchline about being 'humbled' is awkwardly phrased and fails to land a solid laugh.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 4.800000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Extremely generic office humor. The 'inventing a look of concentration' premise is tired, and the blank Excel sheet punchline is entirely predictable.",
+          "laugh": 3,
+          "surprise": 2,
+          "craft": 4,
+          "originality": 2,
+          "promptFit": 10,
+          "total": 3.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "DMV jokes are a bit dated, but framing the waiting time as 'accidentally inventing aging' is a clever, absurdist hyperbole that earns a decent smile.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean personal setup with a neat misdirection on the build time; mild but well-timed payoff.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Literal herding-cats premise is familiar and the closer lands soft; competent filler at best.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Dark risk line lands, but the third-person inventor framing softens the stage voice.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.7
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong aging twist and DMV closer; clear premise and natural first-person rhythm.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and tidy callback; final line is the strongest beat, though the turn is fairly predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Funny image and commitment to the literal premise, but it runs long and the ending lands more as a quirky observation than a punch.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong escalation from impatience to reckless experimentation; the frozen-center detail gives the joke a solid comic turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Very familiar office-comedy setup with an expected reveal; competent but lacks a distinctive twist.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 4.800000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.6,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.8,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.8,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 Astra",
+          "score": 5.1,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.5,
+          "comment": "The DMV exaggeration is accessible, but the time jump and 'invented aging' explanation do not connect cleanly."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.2,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong non-obvious swerve into aging, clean escalation, and the clerk's line is a genuinely satisfying final beat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.4,
+          "comment": "DMV jokes are a bit dated, but framing the waiting time as 'accidentally inventing aging' is a clever, absurdist hyperbole that earns a decent smile."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong aging twist and DMV closer; clear premise and natural first-person rhythm."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 Astra",
+      "score": 6.6,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.4,
+        "craft": 6.9,
+        "originality": 6.1,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.2,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid domestic tag with a clean lie-about-timeline turn, but the invention idea itself is thin and familiar."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.6,
+          "rawScore": 8.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Excellent stand-up rhythm. The 1-second microwave trope is common, but the final turn (lying about the build time just to end the conversation) perfectly nails the 'impatient' premise with great escalation."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean personal setup with a neat misdirection on the build time; mild but well-timed payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear premise and tidy callback; final line is the strongest beat, though the turn is fairly predictable."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.4,
+      "rawScore": 6.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 6.2,
+        "craft": 6.4,
+        "originality": 5.7,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 Astra",
+          "score": 6.1,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.5,
+          "comment": "Clear observational delivery, but the familiar microwave premise ends with a strained radiation gag."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Fun escalation and the deadpan risk-assessment line lands well; slightly overlong setup before the turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.3,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.4,
+          "comment": "Dark risk line lands, but the third-person inventor framing softens the stage voice."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong escalation from impatience to reckless experimentation; the frozen-center detail gives the joke a solid comic turn."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.1,
+      "rawScore": 5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.6,
+        "craft": 4.8,
+        "originality": 4.8,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.5,
+        "craft": 4.8,
+        "originality": 4.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 Astra",
+          "score": 4.2,
+          "rawScore": 3.7,
+          "scoreAdjustment": 0.5,
+          "comment": "The eleven-foot detail offers a smile, but the rambling setup ends in a confusing dog-herder punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.2,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.4,
+          "comment": "Literalizing a figure of speech ('herding cats') is a well-worn angle, and the final punchline about being 'humbled' is awkwardly phrased and fails to land a solid laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 4.7,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Literal herding-cats premise is familiar and the closer lands soft; competent filler at best."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Funny image and commitment to the literal premise, but it runs long and the ending lands more as a quirky observation than a punch."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 4.3,
+      "rawScore": 4.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 3.8,
+        "surprise": 3.1,
+        "craft": 4.8,
+        "originality": 3.3,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 3.8,
+        "surprise": 3,
+        "craft": 4.8,
+        "originality": 3.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 Astra",
+          "score": 3.5,
+          "rawScore": 3,
+          "scoreAdjustment": 0.5,
+          "comment": "Pretending to work is familiar territory, and calling a facial expression an invention barely integrates that seed."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Relatable cubicle bit but the fake-concentration premise is a familiar office trope and the reveal is expected."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4,
+          "rawScore": 3.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Extremely generic office humor. The 'inventing a look of concentration' premise is tired, and the blank Excel sheet punchline is entirely predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.5,
+          "rawScore": 4.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Very familiar office-comedy setup with an expected reveal; competent but lacks a distinctive twist."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-24-external-real-2026-09-24.png",
+    "originalSrc": "assets/feature-images/2026-09-24-external-real-2026-09-24.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Prototype Parent: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Copilot - Prototype Parent\nExact joke text to render in the right panel:\nI’m such an impatient inventor, I tried to build a machine that skips waiting in line. I tested it at the DMV, stepped inside, hit the button, and suddenly I was right at the moment they call your number. Turns out I’d accidentally invented aging, and the clerk welcomed me back by saying, “Good news, sir, your license only expired eight years ago.”\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Herding, Inventor, Office Cubicle, Having to stay behind, Loyal, Impatient. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Herding, Inventor, Office Cubicle, Having to stay behind, Loyal, Impatient. Use the winning joke titled \"Time Saver\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 5.8,
+      "anthropic": 6.6,
+      "google": 6,
+      "xai": 6.7,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-24-external-real-2026-09-24.md"
+}

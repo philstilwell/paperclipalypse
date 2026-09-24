@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-24T14:01:56.520Z",
+  "publishedDate": "2026-09-24",
+  "seed": "external-real-2026-09-24",
+  "slug": "2026-09-24-external-real-2026-09-24",
+  "source": "manual-external",
+  "seedTerms": [
+    "Herding",
+    "Inventor",
+    "Office Cubicle",
+    "Having to stay behind",
+    "Loyal",
+    "Impatient"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 Astra",
+      "provider": "openai",
+      "model": "GPT-6 Astra Light web"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash web (exact underlying model not exposed)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 Astra",
+      "model": "GPT-6 Astra Light web",
+      "title": "Time Saver",
+      "seedTermsUsed": ["Inventor", "Impatient"],
+      "joke": "I’m so impatient I invented a microwave that opens automatically with one second left. No beep, no waiting—just lunch. My wife said, “You spent six months building something that saves you one second?” That’s unfair. It took eight months. I told her six because I wanted the conversation to end.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m so impatient I invented a microwave that opens automatically with one second left. No beep, no waiting—just lunch. My wife said, “You spent six months building something that saves you one second?” That’s unfair. It took eight months. I told her six because I wanted the conversation to end."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "Cat Herder",
+      "seedTermsUsed": ["Herding", "Impatient"],
+      "joke": "My last job was herding cats. Literally. People think that phrase means 'impossible job.' No, I was paid to herd actual cats, and let me tell you, it's not impossible, it's just slow. You can herd cats. You just have to stop being impatient and accept it's going to take four hours to move eleven feet. My boss kept going 'well, dogs would be faster,' and I was like, congratulations, you've discovered why nobody hires a dog herder to be humbled.",
+      "setup": "",
+      "punchline": "",
+      "text": "My last job was herding cats. Literally. People think that phrase means 'impossible job.' No, I was paid to herd actual cats, and let me tell you, it's not impossible, it's just slow. You can herd cats. You just have to stop being impatient and accept it's going to take four hours to move eleven feet. My boss kept going 'well, dogs would be faster,' and I was like, congratulations, you've discovered why nobody hires a dog herder to be humbled."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash web (exact underlying model not exposed)",
+      "title": "The Three-Minute Potato",
+      "seedTermsUsed": ["Inventor", "Impatient"],
+      "joke": "I always think about how impatient the inventor of the microwave must have been. Baking a potato normally takes an hour. This guy looked at a metal box humming with experimental military radiation and said, 'I don't have that kind of time. Zap it for three minutes. If the center is completely frozen while the skin gives me a minor tumor, that is a risk I am willing to take.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I always think about how impatient the inventor of the microwave must have been. Baking a potato normally takes an hour. This guy looked at a metal box humming with experimental military radiation and said, 'I don't have that kind of time. Zap it for three minutes. If the center is completely frozen while the skin gives me a minor tumor, that is a risk I am willing to take.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Cubicle Invention",
+      "seedTermsUsed": ["Inventor", "Office Cubicle"],
+      "joke": "I work in an office cubicle, but I've become quite the inventor. My greatest invention is the look of intense concentration I put on whenever the boss walks by. It works every time — until he asks what I'm working on and I have to admit I was just staring at a blank Excel sheet.",
+      "setup": "",
+      "punchline": "",
+      "text": "I work in an office cubicle, but I've become quite the inventor. My greatest invention is the look of intense concentration I put on whenever the boss walks by. It works every time — until he asks what I'm working on and I have to admit I was just staring at a blank Excel sheet."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Prototype Parent",
+      "seedTermsUsed": ["Inventor", "Impatient"],
+      "joke": "I’m such an impatient inventor, I tried to build a machine that skips waiting in line. I tested it at the DMV, stepped inside, hit the button, and suddenly I was right at the moment they call your number. Turns out I’d accidentally invented aging, and the clerk welcomed me back by saying, “Good news, sir, your license only expired eight years ago.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m such an impatient inventor, I tried to build a machine that skips waiting in line. I tested it at the DMV, stepped inside, hit the button, and suddenly I was right at the moment they call your number. Turns out I’d accidentally invented aging, and the clerk welcomed me back by saying, “Good news, sir, your license only expired eight years ago.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 Astra",
+      "scores": [
+        {"jokeId":"joke-b","originality":4,"surprise":3,"craft":3,"promptFit":9,"laugh":3,"comment":"The eleven-foot detail offers a smile, but the rambling setup ends in a confusing dog-herder punchline."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clear observational delivery, but the familiar microwave premise ends with a strained radiation gag."},
+        {"jokeId":"joke-d","originality":2,"surprise":2,"craft":4,"promptFit":4,"laugh":3,"comment":"Pretending to work is familiar territory, and calling a facial expression an invention barely integrates that seed."},
+        {"jokeId":"joke-e","originality":5,"surprise":4,"craft":4,"promptFit":9,"laugh":4,"comment":"The DMV exaggeration is accessible, but the time jump and 'invented aging' explanation do not connect cleanly."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Solid domestic tag with a clean lie-about-timeline turn, but the invention idea itself is thin and familiar."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Fun escalation and the deadpan risk-assessment line lands well; slightly overlong setup before the turn."},
+        {"jokeId":"joke-d","originality":5,"surprise":4,"craft":6,"promptFit":8,"laugh":5,"comment":"Relatable cubicle bit but the fake-concentration premise is a familiar office trope and the reveal is expected."},
+        {"jokeId":"joke-e","originality":7,"surprise":8,"craft":8,"promptFit":8,"laugh":7,"comment":"Strong non-obvious swerve into aging, clean escalation, and the clerk's line is a genuinely satisfying final beat."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":8,"surprise":8,"craft":8,"promptFit":10,"laugh":8,"comment":"Excellent stand-up rhythm. The 1-second microwave trope is common, but the final turn (lying about the build time just to end the conversation) perfectly nails the 'impatient' premise with great escalation."},
+        {"jokeId":"joke-b","originality":4,"surprise":4,"craft":5,"promptFit":10,"laugh":4,"comment":"Literalizing a figure of speech ('herding cats') is a well-worn angle, and the final punchline about being 'humbled' is awkwardly phrased and fails to land a solid laugh."},
+        {"jokeId":"joke-d","originality":2,"surprise":2,"craft":4,"promptFit":10,"laugh":3,"comment":"Extremely generic office humor. The 'inventing a look of concentration' premise is tired, and the blank Excel sheet punchline is entirely predictable."},
+        {"jokeId":"joke-e","originality":6,"surprise":7,"craft":6,"promptFit":10,"laugh":6,"comment":"DMV jokes are a bit dated, but framing the waiting time as 'accidentally inventing aging' is a clever, absurdist hyperbole that earns a decent smile."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean personal setup with a neat misdirection on the build time; mild but well-timed payoff."},
+        {"jokeId":"joke-b","originality":4,"surprise":5,"craft":5,"promptFit":7,"laugh":5,"comment":"Literal herding-cats premise is familiar and the closer lands soft; competent filler at best."},
+        {"jokeId":"joke-c","originality":6,"surprise":7,"craft":6,"promptFit":7,"laugh":7,"comment":"Dark risk line lands, but the third-person inventor framing softens the stage voice."},
+        {"jokeId":"joke-e","originality":7,"surprise":8,"craft":7,"promptFit":8,"laugh":7,"comment":"Strong aging twist and DMV closer; clear premise and natural first-person rhythm."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear premise and tidy callback; final line is the strongest beat, though the turn is fairly predictable."},
+        {"jokeId":"joke-b","originality":7,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Funny image and commitment to the literal premise, but it runs long and the ending lands more as a quirky observation than a punch."},
+        {"jokeId":"joke-c","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong escalation from impatience to reckless experimentation; the frozen-center detail gives the joke a solid comic turn."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":10,"laugh":4,"comment":"Very familiar office-comedy setup with an expected reveal; competent but lacks a distinctive twist."}
+      ]
+    }
+  ]
+}
