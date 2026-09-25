@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-25T14:04:35.726Z",
+  "publishedDate": "2026-09-25",
+  "seed": "external-real-2026-09-25",
+  "slug": "2026-09-25-external-real-2026-09-25",
+  "source": "manual-external",
+  "seedTerms": [
+    "Urban",
+    "Dietician",
+    "Vegas Stage Show",
+    "Being unable to forgive someone",
+    "Spontaneous",
+    "Humorless"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 Astra",
+      "provider": "openai",
+      "model": "GPT-6 Astra web (Latest, Medium)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium web"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 Astra",
+      "model": "GPT-6 Astra web (Latest, Medium)",
+      "title": "The Reveal",
+      "seedTermsUsed": ["Dietician", "Vegas Stage Show"],
+      "joke": "My dietician told me to stop thinking of meals as entertainment. That’s difficult because I eat like I’m producing a Vegas stage show: appetizers enter through smoke, the entrée gets a spotlight, and dessert descends from the ceiling. She asked, “Where do vegetables fit in?” I said, “They’re backstage. Nobody paid to see them.”",
+      "setup": "",
+      "punchline": "",
+      "text": "My dietician told me to stop thinking of meals as entertainment. That’s difficult because I eat like I’m producing a Vegas stage show: appetizers enter through smoke, the entrée gets a spotlight, and dessert descends from the ceiling. She asked, “Where do vegetables fit in?” I said, “They’re backstage. Nobody paid to see them.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium web",
+      "title": "Cheat Day Forever",
+      "seedTermsUsed": ["Dietician", "Being unable to forgive someone"],
+      "joke": "I fired my dietician. Not because the diet failed — because I found out she went home and told her husband about my cheat days. Like it was gossip. Ma'am, I trusted you with my macros and my dignity, and you sold me out for dinner conversation. I've forgiven exes, forgiven my dad, forgiven a guy who backed into my car and drove off. But her? Never. I will hold this grudge with the same discipline I never once held a diet.",
+      "setup": "",
+      "punchline": "",
+      "text": "I fired my dietician. Not because the diet failed — because I found out she went home and told her husband about my cheat days. Like it was gossip. Ma'am, I trusted you with my macros and my dignity, and you sold me out for dinner conversation. I've forgiven exes, forgiven my dad, forgiven a guy who backed into my car and drove off. But her? Never. I will hold this grudge with the same discipline I never once held a diet."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash web",
+      "title": "Fuel Source",
+      "seedTermsUsed": ["Dietician", "Being unable to forgive someone"],
+      "joke": "My dietician told me I need to learn to forgive people, because carrying around all that toxic resentment is like swallowing poison. I told her, 'Look, you put me on a six-hundred-calorie deficit. That resentment is currently my only source of energy. If I let go of what my brother-in-law said at Thanksgiving four years ago, my organs will shut down.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My dietician told me I need to learn to forgive people, because carrying around all that toxic resentment is like swallowing poison. I told her, 'Look, you put me on a six-hundred-calorie deficit. That resentment is currently my only source of energy. If I let go of what my brother-in-law said at Thanksgiving four years ago, my organs will shut down.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Humorless Dietician",
+      "seedTermsUsed": ["Dietician", "Humorless"],
+      "joke": "I have the most humorless dietician in the world. Last appointment I said, 'I cheated on my diet with a donut.' She didn't even crack a smile. Just looked at me and said, 'That's not a cheat. That's a full-blown affair. And the scale is going to find out.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I have the most humorless dietician in the world. Last appointment I said, 'I cheated on my diet with a donut.' She didn't even crack a smile. Just looked at me and said, 'That's not a cheat. That's a full-blown affair. And the scale is going to find out.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Nutritional Grudge",
+      "seedTermsUsed": ["Dietician", "Being unable to forgive someone"],
+      "joke": "My dietician told me, \"You don't have a weight problem, you have a portion-control problem.\" That was three years ago, and I've lost thirty pounds just so I can run into her and say, \"Interesting diagnosis, doctor.\" At this point my biggest calorie source is the grudge I'm still carrying around.",
+      "setup": "",
+      "punchline": "",
+      "text": "My dietician told me, \"You don't have a weight problem, you have a portion-control problem.\" That was three years ago, and I've lost thirty pounds just so I can run into her and say, \"Interesting diagnosis, doctor.\" At this point my biggest calorie source is the grudge I'm still carrying around."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 Astra",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong escalation and a clean closing callback; the premise is relatable, though the betrayal setup is somewhat manufactured."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":8,"comment":"Clear premise, efficient escalation, and the resentment-as-calories turn lands sharply; strongest final line in the batch."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Readable and stage-friendly, but the diet-as-affair metaphor is familiar and the punchline follows the setup too predictably."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Good structure and a coherent grudge payoff, but the final calorie/grudge line is more clever than laugh-heavy and partly restates the premise."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean escalating Vegas-production conceit with a sharp, earned closing line."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":6,"laugh":6,"promptFit":9,"comment":"Solid premise but the 'organs shut down' close is a bit flat and predictable."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":7,"laugh":7,"promptFit":9,"comment":"Nice irony that the 'humorless' dietician delivers the funniest line; tight and natural."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"laugh":6,"promptFit":9,"comment":"Good callback structure but similar grudge-as-fuel idea lands softer than its sibling joke."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Fun theatrical escalation with a clean stage premise, though the vegetables backstage punchline is slightly predictable."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong stand-up cadence and escalation. The final line snaps the premise shut cleanly with good rhythm and character voice."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Undermines its own premise: the dietician's retort is actually an intentional witty quip rather than humorless, and the punchline feels like a stock quote."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Solid spite-motivation premise, but losing weight out of pettiness feels slightly muddled against a 'portion-control' diagnosis, softening the final snap."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean meal-as-production image with a solid closer, but the laugh stays mild."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Good trust-betrayal setup that lands the discipline inversion cleanly."},
+        {"jokeId":"joke-c","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Tight link of calorie deficit to held resentment with a sharp final escalation."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Competent grudge-revenge angle but the turn and closer stay soft."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear premise and imagery; backstage vegetables is a decent payoff but fairly predictable."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong grudge escalation and clean callback tying discipline to dieting; solid stand-up structure."},
+        {"jokeId":"joke-c","originality":7,"surprise":8,"craft":8,"promptFit":10,"laugh":7,"comment":"Resentment-as-fuel angle is fresh, escalates well, and lands on a strong absurd image."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Readable and concise, but the affair metaphor is familiar and the biggest laugh comes from the dietician, not the comic."}
+      ]
+    }
+  ]
+}
