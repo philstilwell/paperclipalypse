@@ -1,0 +1,184 @@
+{
+  "createdAt": "2026-09-26T14:01:06.395Z",
+  "publishedDate": "2026-09-26",
+  "seed": "external-real-2026-09-26",
+  "slug": "2026-09-26-external-real-2026-09-26",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cringe",
+    "Personal Assistant to a Celebrity",
+    "Concert",
+    "Having to blindly trust someone",
+    "Adventurous",
+    "Ignorant"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Professional Trust",
+      "seedTermsUsed": [
+        "Personal Assistant to a Celebrity",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I worked as a celebrity’s personal assistant, which is basically a job where every instruction ends with, “Don’t ask questions.” One day he handed me a sealed envelope and said, “Take this across town and give it only to Marco.” I said, “What’s in it?” He said, “You’re happier not knowing.” That’s when I realized my employee benefits included plausible deniability.",
+      "setup": "",
+      "punchline": "",
+      "text": "I worked as a celebrity’s personal assistant, which is basically a job where every instruction ends with, “Don’t ask questions.” One day he handed me a sealed envelope and said, “Take this across town and give it only to Marco.” I said, “What’s in it?” He said, “You’re happier not knowing.” That’s when I realized my employee benefits included plausible deniability."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Earpiece of Faith",
+      "seedTermsUsed": [
+        "Personal Assistant to a Celebrity",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I was a celebrity's personal assistant for a week. Just an earpiece feeding me instructions I couldn't question. \"Tell the driver left.\" Left. \"Tell security he's her cousin.\" Cousin. At one point the voice said \"tell the crowd she's not coming, but say it like it's good news,\" and I did it, I smiled and said \"great news, everybody,\" and four hundred strangers cheered nothing. That's the job. You don't get answers. You get a voice in your ear and the terrifying privilege of never once asking why.",
+      "setup": "",
+      "punchline": "",
+      "text": "I was a celebrity's personal assistant for a week. Just an earpiece feeding me instructions I couldn't question. \"Tell the driver left.\" Left. \"Tell security he's her cousin.\" Cousin. At one point the voice said \"tell the crowd she's not coming, but say it like it's good news,\" and I did it, I smiled and said \"great news, everybody,\" and four hundred strangers cheered nothing. That's the job. You don't get answers. You get a voice in your ear and the terrifying privilege of never once asking why."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Wage Gap",
+      "seedTermsUsed": [
+        "Personal Assistant to a Celebrity",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I used to be a personal assistant to a pretty major celebrity. That whole dynamic relies entirely on blind trust. Every night at the club, he’d hand me his unlocked phone, his black card, and his car keys. He just completely trusted that a guy making seventeen dollars an hour wasn't going to Venmo himself five grand and text his publicist that we were in love.",
+      "setup": "",
+      "punchline": "",
+      "text": "I used to be a personal assistant to a pretty major celebrity. That whole dynamic relies entirely on blind trust. Every night at the club, he’d hand me his unlocked phone, his black card, and his car keys. He just completely trusted that a guy making seventeen dollars an hour wasn't going to Venmo himself five grand and text his publicist that we were in love."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Celebrity PA Duties",
+      "seedTermsUsed": [
+        "Cringe",
+        "Personal Assistant to a Celebrity"
+      ],
+      "joke": "I landed a job as the personal assistant to a celebrity and every day is pure cringe. Yesterday they made me rehearse their award speech in the kitchen so they could 'feel the emotion from a distance.' There I am holding a spatula like a trophy, eyes watering, saying 'this means the world.' They walked in, nodded, and said, 'Good energy. Next time try less spatula.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I landed a job as the personal assistant to a celebrity and every day is pure cringe. Yesterday they made me rehearse their award speech in the kitchen so they could 'feel the emotion from a distance.' There I am holding a spatula like a trophy, eyes watering, saying 'this means the world.' They walked in, nodded, and said, 'Good energy. Next time try less spatula.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "VIP Instructions",
+      "seedTermsUsed": [
+        "Personal Assistant to a Celebrity",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I got a job as a personal assistant to a celebrity, which is basically a full-time experiment in blindly trusting someone richer than me. On my first day she texted, “Take my goat to a sound bath.” I thought it was a typo, but when your boss owns a goat and a sound bath, the typo is assuming you're the normal one.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got a job as a personal assistant to a celebrity, which is basically a full-time experiment in blindly trusting someone richer than me. On my first day she texted, “Take my goat to a sound bath.” I thought it was a typo, but when your boss owns a goat and a sound bath, the typo is assuming you're the normal one."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Strong voice and escalation, but the ending turns reflective rather than landing a sharp punchline."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Clear premise, economical setup, and the Venmo/publicist escalation gives it a solid final snap."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Concrete visual, natural escalation, and 'less spatula' is a clean, memorable closing line."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Good absurd-but-plausible celebrity premise with a concise reversal; the final line carries the joke well."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean setup and solid closing line, but 'plausible deniability' as employee benefit is a fairly familiar joke shape."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Specific, escalating details and a sharp, unexpected final image land well; good economy."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Fun visual with the spatula, but punchline undercuts rather than snaps; solid not standout."},
+        {"jokeId":"joke-e","originality":8,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Absurd but concrete premise, clean escalation, and the final line reframes who's 'normal' with a genuine snap."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"A competent but familiar mafia-movie trope applied to a corporate setting. The 'plausible deniability' turn is well-phrased but produces more of a nod than a laugh."},
+        {"jokeId":"joke-b","originality":6,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Interesting surreal escalation with 'four hundred strangers cheered nothing,' but it reads more like a dramatic one-man show than stand-up. Ends on a thematic summary rather than a punchline."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong, absurd visual premise that grounds the 'cringe' seed term effectively. The final tag ('less spatula') provides a sharp, stage-ready turn."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":8,"promptFit":8,"laugh":7,"comment":"A classic LA-assistant archetype elevated by a strong final line. The perspective shift ('the typo is assuming you're the normal one') has great stage rhythm and lands well."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Clean setup and tidy closer, but the deniability line is more neat than funny."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Strong visual of the crowd cheering nothing; the rest stays a bit procedural."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Specific, grounded temptations land cleanly; the love-text beat carries real comic weight."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Quirky concrete image and solid turn, yet the payoff stays mild rather than sharp."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clean setup and payoff; plausible deniability is a solid turn but somewhat familiar."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"Good escalation and voice; the 'great news' beat lands, though the ending is more observation than punchline."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong specific details and a clear comic turn; best laugh in the batch with a believable stand-up voice."},
+        {"jokeId":"joke-d","originality":6,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Clear image and readable premise, but the final line is mild and the cringe angle feels expected."}
+      ]
+    }
+  ]
+}

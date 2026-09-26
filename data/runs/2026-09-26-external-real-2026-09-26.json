@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-26-external-real-2026-09-26",
+  "seed": "external-real-2026-09-26",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-26T14:01:06.395Z",
+  "publishedDate": "2026-09-26",
+  "seedTerms": [
+    "Cringe",
+    "Personal Assistant to a Celebrity",
+    "Concert",
+    "Having to blindly trust someone",
+    "Adventurous",
+    "Ignorant"
+  ],
+  "premise": {
+    "text": "Seed terms: Cringe, Personal Assistant to a Celebrity, Concert, Having to blindly trust someone, Adventurous, Ignorant",
+    "seedTerms": [
+      "Cringe",
+      "Personal Assistant to a Celebrity",
+      "Concert",
+      "Having to blindly trust someone",
+      "Adventurous",
+      "Ignorant"
+    ],
+    "displayText": "VIP Instructions"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Professional Trust",
+      "seedTermsUsed": [
+        "Personal Assistant to a Celebrity",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I worked as a celebrity’s personal assistant, which is basically a job where every instruction ends with, “Don’t ask questions.” One day he handed me a sealed envelope and said, “Take this across town and give it only to Marco.” I said, “What’s in it?” He said, “You’re happier not knowing.” That’s when I realized my employee benefits included plausible deniability.",
+      "setup": "",
+      "punchline": "I worked as a celebrity’s personal assistant, which is basically a job where every instruction ends with, “Don’t ask questions.” One day he handed me a sealed envelope and said, “Take this across town and give it only to Marco.” I said, “What’s in it?” He said, “You’re happier not knowing.” That’s when I realized my employee benefits included plausible deniability.",
+      "text": "I worked as a celebrity’s personal assistant, which is basically a job where every instruction ends with, “Don’t ask questions.” One day he handed me a sealed envelope and said, “Take this across town and give it only to Marco.” I said, “What’s in it?” He said, “You’re happier not knowing.” That’s when I realized my employee benefits included plausible deniability."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Earpiece of Faith",
+      "seedTermsUsed": [
+        "Personal Assistant to a Celebrity",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I was a celebrity's personal assistant for a week. Just an earpiece feeding me instructions I couldn't question. \"Tell the driver left.\" Left. \"Tell security he's her cousin.\" Cousin. At one point the voice said \"tell the crowd she's not coming, but say it like it's good news,\" and I did it, I smiled and said \"great news, everybody,\" and four hundred strangers cheered nothing. That's the job. You don't get answers. You get a voice in your ear and the terrifying privilege of never once asking why.",
+      "setup": "",
+      "punchline": "I was a celebrity's personal assistant for a week. Just an earpiece feeding me instructions I couldn't question. \"Tell the driver left.\" Left. \"Tell security he's her cousin.\" Cousin. At one point the voice said \"tell the crowd she's not coming, but say it like it's good news,\" and I did it, I smiled and said \"great news, everybody,\" and four hundred strangers cheered nothing. That's the job. You don't get answers. You get a voice in your ear and the terrifying privilege of never once asking why.",
+      "text": "I was a celebrity's personal assistant for a week. Just an earpiece feeding me instructions I couldn't question. \"Tell the driver left.\" Left. \"Tell security he's her cousin.\" Cousin. At one point the voice said \"tell the crowd she's not coming, but say it like it's good news,\" and I did it, I smiled and said \"great news, everybody,\" and four hundred strangers cheered nothing. That's the job. You don't get answers. You get a voice in your ear and the terrifying privilege of never once asking why."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Wage Gap",
+      "seedTermsUsed": [
+        "Personal Assistant to a Celebrity",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I used to be a personal assistant to a pretty major celebrity. That whole dynamic relies entirely on blind trust. Every night at the club, he’d hand me his unlocked phone, his black card, and his car keys. He just completely trusted that a guy making seventeen dollars an hour wasn't going to Venmo himself five grand and text his publicist that we were in love.",
+      "setup": "",
+      "punchline": "I used to be a personal assistant to a pretty major celebrity. That whole dynamic relies entirely on blind trust. Every night at the club, he’d hand me his unlocked phone, his black card, and his car keys. He just completely trusted that a guy making seventeen dollars an hour wasn't going to Venmo himself five grand and text his publicist that we were in love.",
+      "text": "I used to be a personal assistant to a pretty major celebrity. That whole dynamic relies entirely on blind trust. Every night at the club, he’d hand me his unlocked phone, his black card, and his car keys. He just completely trusted that a guy making seventeen dollars an hour wasn't going to Venmo himself five grand and text his publicist that we were in love."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Celebrity PA Duties",
+      "seedTermsUsed": [
+        "Cringe",
+        "Personal Assistant to a Celebrity"
+      ],
+      "joke": "I landed a job as the personal assistant to a celebrity and every day is pure cringe. Yesterday they made me rehearse their award speech in the kitchen so they could 'feel the emotion from a distance.' There I am holding a spatula like a trophy, eyes watering, saying 'this means the world.' They walked in, nodded, and said, 'Good energy. Next time try less spatula.'",
+      "setup": "",
+      "punchline": "I landed a job as the personal assistant to a celebrity and every day is pure cringe. Yesterday they made me rehearse their award speech in the kitchen so they could 'feel the emotion from a distance.' There I am holding a spatula like a trophy, eyes watering, saying 'this means the world.' They walked in, nodded, and said, 'Good energy. Next time try less spatula.'",
+      "text": "I landed a job as the personal assistant to a celebrity and every day is pure cringe. Yesterday they made me rehearse their award speech in the kitchen so they could 'feel the emotion from a distance.' There I am holding a spatula like a trophy, eyes watering, saying 'this means the world.' They walked in, nodded, and said, 'Good energy. Next time try less spatula.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "VIP Instructions",
+      "seedTermsUsed": [
+        "Personal Assistant to a Celebrity",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I got a job as a personal assistant to a celebrity, which is basically a full-time experiment in blindly trusting someone richer than me. On my first day she texted, “Take my goat to a sound bath.” I thought it was a typo, but when your boss owns a goat and a sound bath, the typo is assuming you're the normal one.",
+      "setup": "",
+      "punchline": "I got a job as a personal assistant to a celebrity, which is basically a full-time experiment in blindly trusting someone richer than me. On my first day she texted, “Take my goat to a sound bath.” I thought it was a typo, but when your boss owns a goat and a sound bath, the typo is assuming you're the normal one.",
+      "text": "I got a job as a personal assistant to a celebrity, which is basically a full-time experiment in blindly trusting someone richer than me. On my first day she texted, “Take my goat to a sound bath.” I thought it was a typo, but when your boss owns a goat and a sound bath, the typo is assuming you're the normal one."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong voice and escalation, but the ending turns reflective rather than landing a sharp punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear premise, economical setup, and the Venmo/publicist escalation gives it a solid final snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Concrete visual, natural escalation, and 'less spatula' is a clean, memorable closing line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Good absurd-but-plausible celebrity premise with a concise reversal; the final line carries the joke well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean setup and solid closing line, but 'plausible deniability' as employee benefit is a fairly familiar joke shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific, escalating details and a sharp, unexpected final image land well; good economy.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Fun visual with the spatula, but punchline undercuts rather than snaps; solid not standout.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Absurd but concrete premise, clean escalation, and the final line reframes who's 'normal' with a genuine snap.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "A competent but familiar mafia-movie trope applied to a corporate setting. The 'plausible deniability' turn is well-phrased but produces more of a nod than a laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Interesting surreal escalation with 'four hundred strangers cheered nothing,' but it reads more like a dramatic one-man show than stand-up. Ends on a thematic summary rather than a punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 4.7
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Strong, absurd visual premise that grounds the 'cringe' seed term effectively. The final tag ('less spatula') provides a sharp, stage-ready turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "A classic LA-assistant archetype elevated by a strong final line. The perspective shift ('the typo is assuming you're the normal one') has great stage rhythm and lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean setup and tidy closer, but the deniability line is more neat than funny.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong visual of the crowd cheering nothing; the rest stays a bit procedural.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific, grounded temptations land cleanly; the love-text beat carries real comic weight.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Quirky concrete image and solid turn, yet the payoff stays mild rather than sharp.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean setup and payoff; plausible deniability is a solid turn but somewhat familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Good escalation and voice; the 'great news' beat lands, though the ending is more observation than punchline.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.900000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong specific details and a clear comic turn; best laugh in the batch with a believable stand-up voice.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear image and readable premise, but the final line is mild and the cringe angle feels expected.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 7.4,
+      "rawScore": 7.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.1,
+        "surprise": 7.3,
+        "craft": 7.6,
+        "originality": 7.3,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7.3,
+        "craft": 7.5,
+        "originality": 7.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 8,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.7,
+          "comment": "Good absurd-but-plausible celebrity premise with a concise reversal; the final line carries the joke well."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.8,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Absurd but concrete premise, clean escalation, and the final line reframes who's 'normal' with a genuine snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.6,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.3,
+          "comment": "A classic LA-assistant archetype elevated by a strong final line. The perspective shift ('the typo is assuming you're the normal one') has great stage rhythm and lands well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.3,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.4,
+          "comment": "Quirky concrete image and solid turn, yet the payoff stays mild rather than sharp."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.3,
+      "rawScore": 7.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 6.9,
+        "craft": 7.4,
+        "originality": 6.9,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.5,
+        "originality": 7,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 8,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.7,
+          "comment": "Clear premise, economical setup, and the Venmo/publicist escalation gives it a solid final snap."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Specific, escalating details and a sharp, unexpected final image land well; good economy."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Specific, grounded temptations land cleanly; the love-text beat carries real comic weight."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong specific details and a clear comic turn; best laugh in the batch with a believable stand-up voice."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6.8,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.6,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 8,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.7,
+          "comment": "Concrete visual, natural escalation, and 'less spatula' is a clean, memorable closing line."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Fun visual with the spatula, but punchline undercuts rather than snaps; solid not standout."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong, absurd visual premise that grounds the 'cringe' seed term effectively. The final tag ('less spatula') provides a sharp, stage-ready turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.4,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.4,
+          "comment": "Clear image and readable premise, but the final line is mild and the cringe angle feels expected."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6,
+      "rawScore": 6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.6,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.5,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.5,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.7,
+          "comment": "Strong voice and escalation, but the ending turns reflective rather than landing a sharp punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0.3,
+          "comment": "Interesting surreal escalation with 'four hundred strangers cheered nothing,' but it reads more like a dramatic one-man show than stand-up. Ends on a thematic summary rather than a punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong visual of the crowd cheering nothing; the rest stays a bit procedural."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Good escalation and voice; the 'great news' beat lands, though the ending is more observation than punchline."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 5.8,
+      "rawScore": 6,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6.5,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean setup and solid closing line, but 'plausible deniability' as employee benefit is a fairly familiar joke shape."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.3,
+          "comment": "A competent but familiar mafia-movie trope applied to a corporate setting. The 'plausible deniability' turn is well-phrased but produces more of a nod than a laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.1,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean setup and tidy closer, but the deniability line is more neat than funny."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean setup and payoff; plausible deniability is a solid turn but somewhat familiar."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-26-external-real-2026-09-26.png",
+    "originalSrc": "assets/feature-images/2026-09-26-external-real-2026-09-26.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled VIP Instructions: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Copilot - VIP Instructions\nExact joke text to render in the right panel:\nI got a job as a personal assistant to a celebrity, which is basically a full-time experiment in blindly trusting someone richer than me. On my first day she texted, “Take my goat to a sound bath.” I thought it was a typo, but when your boss owns a goat and a sound bath, the typo is assuming you're the normal one.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Cringe, Personal Assistant to a Celebrity, Concert, Having to blindly trust someone, Adventurous, Ignorant. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Cringe, Personal Assistant to a Celebrity, Concert, Having to blindly trust someone, Adventurous, Ignorant. Use the winning joke titled \"VIP Instructions\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 5.5,
+      "anthropic": 6.5,
+      "google": 6,
+      "xai": 6.6,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-26-external-real-2026-09-26.md"
+}
