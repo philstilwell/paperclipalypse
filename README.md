@@ -242,3 +242,12 @@ harassment, sexual content, defamation, and recent tragedies. A stronger
 moderation pass should be added before this runs unattended in public.
 
 The public site uses Cloudflare Web Analytics to measure traffic.
+
+## Showcase
+
+The Showcase features the seven highest-scoring contest winners published in
+the past three calendar months, including both boundary dates. The window uses
+the current date in America/New_York and advances whenever the site is rebuilt
+for publication. Newer contests break score ties. Only published, non-demo
+contests with a winning score and feature image qualify; if fewer than seven
+qualify, the page shows those available without filling gaps from older contests.

@@ -688,14 +688,16 @@ main {
 .showcase-summary > p {
   color: var(--muted);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   font-size: 0.84rem;
   font-weight: 780;
   line-height: 1.45;
 }
 
 .showcase-summary > p strong {
-  margin-right: 0.28em;
+  margin-bottom: 0.28em;
 }
 
 .showcase-grid {

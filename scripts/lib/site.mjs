@@ -2,6 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { resolveRunDisplayTitle } from "./run-title.mjs";
 import { normalizeDateOnly, shortPublicationDate } from "./publish-date.mjs";
+import { rankedShowcaseRuns, showcaseDateWindow } from "./showcase.mjs";
 import { JUDGE_NORMALIZATION_WINDOW, applyRollingJudgeNormalization, rubricForDisplay } from "./scoring.mjs";
 
 const cloudflareAnalytics = `<!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "e6dc8afcaf3243dcbc00f4e43a7fa62e"}'></script><!-- End Cloudflare Web Analytics -->`;
@@ -42,6 +43,7 @@ export function renderSite({ run, historyDir, siteDir }) {
 
   const runs = applyRollingJudgeNormalization(readRuns(historyDir));
   const publicRuns = runs.filter((archivedRun) => !archivedRun.dryRun);
+  const showcaseWindow = showcaseDateWindow();
   for (const archivedRun of runs) {
     fs.writeFileSync(
       path.join(siteDir, "runs", `${archivedRun.slug}.html`),
@@ -53,12 +55,12 @@ export function renderSite({ run, historyDir, siteDir }) {
   fs.writeFileSync(path.join(siteDir, "index.html"), cleanGeneratedText(renderHome(run, runs)), "utf8");
   fs.writeFileSync(path.join(siteDir, "about.html"), cleanGeneratedText(renderAboutPage()), "utf8");
   fs.writeFileSync(path.join(siteDir, "standings.html"), cleanGeneratedText(renderStandingsPage(publicRuns)), "utf8");
-  fs.writeFileSync(path.join(siteDir, "showcase.html"), cleanGeneratedText(renderShowcasePage(publicRuns)), "utf8");
+  fs.writeFileSync(path.join(siteDir, "showcase.html"), cleanGeneratedText(renderShowcasePage(publicRuns, showcaseWindow)), "utf8");
   fs.writeFileSync(path.join(siteDir, "styles.css"), cleanGeneratedText(renderCss()), "utf8");
   fs.writeFileSync(path.join(siteDir, "404.html"), cleanGeneratedText(renderNotFound()), "utf8");
   fs.writeFileSync(path.join(siteDir, "feed.xml"), renderRssFeed(publicRuns), "utf8");
   fs.writeFileSync(path.join(siteDir, "robots.txt"), renderRobots(), "utf8");
-  fs.writeFileSync(path.join(siteDir, "sitemap.xml"), renderSitemap(publicRuns), "utf8");
+  fs.writeFileSync(path.join(siteDir, "sitemap.xml"), renderSitemap(publicRuns, showcaseWindow), "utf8");
 }
 
 function readRuns(historyDir) {
@@ -241,13 +243,13 @@ function renderStandingsPage(runs) {
   });
 }
 
-function renderShowcasePage(runs) {
-  const showcaseRuns = rankedShowcaseRuns(runs);
+function renderShowcasePage(runs, window) {
+  const showcaseRuns = rankedShowcaseRuns(runs, { window });
   const topScore = showcaseRuns[0]?.rankings?.[0]?.score;
   const description = showcaseDescription(showcaseRuns);
 
   return pageShell({
-    title: "Paperclipalypse Showcase - Highest-Scoring Winners",
+    title: "Paperclipalypse Showcase - Top Winners of the Past Three Months",
     description,
     canonicalPath: "/showcase.html",
     socialImage: showcaseRuns[0] ? socialImageForRun(showcaseRuns[0]) : defaultSocialImage,
@@ -260,7 +262,7 @@ function renderShowcasePage(runs) {
         <section class="showcase-hero-panel">
           <p class="eyebrow">The Winners' Wall</p>
           <h1>Showcase</h1>
-          <p>The seven highest-scoring winning images in Paperclipalypse history, paired with the rounds that earned them a place on the wall.</p>
+          <p>The seven highest-scoring contest winners from the past three months, paired with their winning images and original episodes.</p>
           <div class="showcase-summary" aria-label="Showcase summary">
             <div>
               <span>Featured winners</span>
@@ -270,7 +272,7 @@ function renderShowcasePage(runs) {
               <span>Highest score</span>
               <strong>${Number.isFinite(Number(topScore)) ? formatScore(topScore) : "Pending"}</strong>
             </div>
-            <p><strong>Ranking method:</strong> winning score, highest first. Newer rounds break ties.</p>
+            <p><strong>${shortDate(window.startDate)} &ndash; ${shortDate(window.endDate)}</strong>Ranked by winning score, highest first. Newer rounds break ties.</p>
           </div>
         </section>
         ${renderShowcaseGrid(showcaseRuns)}
@@ -280,29 +282,13 @@ function renderShowcasePage(runs) {
 
 function renderShowcaseGrid(runs) {
   if (!runs.length) {
-    return `<p class="empty-state">No winning images have been published yet.</p>`;
+    return `<p class="empty-state">No winning images have been published in the past three months.</p>`;
   }
 
   return `
-        <ol class="showcase-grid" aria-label="Highest-scoring winning images">
+        <ol class="showcase-grid" aria-label="Highest-scoring contest winners from the past three months">
           ${runs.map((run, index) => renderShowcaseCard(run, index)).join("")}
         </ol>`;
-}
-
-function rankedShowcaseRuns(runs, limit = 7) {
-  return [...runs]
-    .filter((run) => (
-      !run.dryRun
-      && run.featureImage?.src
-      && run.rankings?.[0]
-      && Number.isFinite(Number(run.rankings[0].score))
-    ))
-    .sort((a, b) => (
-      Number(b.rankings[0].score) - Number(a.rankings[0].score)
-      || dateOnly(b).localeCompare(dateOnly(a))
-      || String(b.slug).localeCompare(String(a.slug))
-    ))
-    .slice(0, limit);
 }
 
 function renderShowcaseCard(run, index) {
@@ -1469,8 +1455,8 @@ Sitemap: ${siteOrigin}/sitemap.xml
 `;
 }
 
-function renderSitemap(runs) {
-  const topShowcaseRun = rankedShowcaseRuns(runs, 1)[0];
+function renderSitemap(runs, window) {
+  const topShowcaseRun = rankedShowcaseRuns(runs, { limit: 1, window })[0];
   const urls = [
     {
       loc: `${siteOrigin}/`,
@@ -1504,7 +1490,7 @@ function renderSitemap(runs) {
         ? {
           loc: socialImageForRun(topShowcaseRun),
           title: "Paperclipalypse Showcase",
-          caption: "The seven highest-scoring winning images in Paperclipalypse history."
+          caption: "The seven highest-scoring contest winners from the past three months."
         }
         : null
     },
@@ -2321,10 +2307,10 @@ function standingsDescription(leader, totalRounds) {
 
 function showcaseDescription(runs) {
   if (!runs.length) {
-    return "A gallery of the highest-scoring winning images from the Paperclipalypse AI comedy tournament.";
+    return "A gallery of the highest-scoring Paperclipalypse contest winners from the past three months, with winning images and original episodes.";
   }
 
-  return truncateSeo(`See the ${runs.length} highest-scoring Paperclipalypse winning images, led by ${roundDisplayTitle(runs[0])} with a ${formatScore(runs[0].rankings[0].score)} score, with links to every original episode.`);
+  return truncateSeo(`See the ${runs.length} highest-scoring Paperclipalypse contest winners from the past three months, led by ${roundDisplayTitle(runs[0])} with a ${formatScore(runs[0].rankings[0].score)} score.`);
 }
 
 function runDescription(run, maxLength = 160) {
@@ -2464,7 +2450,7 @@ function renderShowcaseSchemas(runs, description) {
       isPartOf: { "@id": `${siteOrigin}/#website` },
       mainEntity: {
         "@type": "ItemList",
-        name: "Highest-scoring Paperclipalypse winning images",
+        name: "Highest-scoring Paperclipalypse contest winners from the past three months",
         numberOfItems: runs.length,
         itemListOrder: "https://schema.org/ItemListOrderDescending",
         itemListElement: runs.map((run, index) => {
@@ -3453,14 +3439,16 @@ main {
 .showcase-summary > p {
   color: var(--muted);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   font-size: 0.84rem;
   font-weight: 780;
   line-height: 1.45;
 }
 
 .showcase-summary > p strong {
-  margin-right: 0.28em;
+  margin-bottom: 0.28em;
 }
 
 .showcase-grid {
