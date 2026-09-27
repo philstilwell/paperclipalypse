@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-09-27T14:00:34.572Z",
+  "publishedDate": "2026-09-27",
+  "seed": "external-real-2026-09-27",
+  "slug": "2026-09-27-external-real-2026-09-27",
+  "source": "manual-external",
+  "seedTerms": [
+    "Paranormal",
+    "Office Worker",
+    "Parade",
+    "Being arrested",
+    "Observant",
+    "Possessive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Haunted Office",
+      "seedTermsUsed": ["Paranormal", "Office Worker"],
+      "joke": "I think my office is haunted. Every morning I open a spreadsheet I definitely saved, and somehow the numbers have changed overnight. My coworkers say it’s probably user error. Absolutely not. If I’m going to spend eight hours a day staring at Excel, I need to believe at least one thing in this building has a soul.",
+      "setup": "",
+      "punchline": "",
+      "text": "I think my office is haunted. Every morning I open a spreadsheet I definitely saved, and somehow the numbers have changed overnight. My coworkers say it’s probably user error. Absolutely not. If I’m going to spend eight hours a day staring at Excel, I need to believe at least one thing in this building has a soul."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Cubicle Séance",
+      "seedTermsUsed": ["Paranormal", "Office Worker"],
+      "joke": "I told my coworker I think our office is haunted. She said, 'Why?' I said, 'Every night I leave my desk spotless, and every morning there's a ghost sitting in my chair, wearing my clothes, answering my emails, sighing at my life choices.' She said, 'Steve, that's you. You just described a job.' I said, 'That's exactly what a ghost would say.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I told my coworker I think our office is haunted. She said, 'Why?' I said, 'Every night I leave my desk spotless, and every morning there's a ghost sitting in my chair, wearing my clothes, answering my emails, sighing at my life choices.' She said, 'Steve, that's you. You just described a job.' I said, 'That's exactly what a ghost would say.'"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Unpermitted Entry",
+      "seedTermsUsed": ["Parade", "Being arrested"],
+      "joke": "I learned the hard way you can't just organically join a parade. Apparently, marching behind the local rotary club with a stray dog and a kazoo is 'disrupting a permitted event.' And let me tell you, the worst part of being arrested at a parade is the atmosphere. You’re getting handcuffed against a barricade, trying to hold onto a shred of dignity, while a four-story inflatable Snoopy just floats there, cheerfully mocking your life choices.",
+      "setup": "",
+      "punchline": "",
+      "text": "I learned the hard way you can't just organically join a parade. Apparently, marching behind the local rotary club with a stray dog and a kazoo is 'disrupting a permitted event.' And let me tell you, the worst part of being arrested at a parade is the atmosphere. You’re getting handcuffed against a barricade, trying to hold onto a shred of dignity, while a four-story inflatable Snoopy just floats there, cheerfully mocking your life choices."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Bad Possession",
+      "seedTermsUsed": ["Paranormal", "Possessive"],
+      "joke": "The other day I got possessed by a ghost. Not the fun kind that slides chairs around—this one was possessive. It kept checking my phone, asking who I was texting, and when I tried to leave the house it slammed the door and said, 'Where do you think you're going?'",
+      "setup": "",
+      "punchline": "",
+      "text": "The other day I got possessed by a ghost. Not the fun kind that slides chairs around—this one was possessive. It kept checking my phone, asking who I was texting, and when I tried to leave the house it slammed the door and said, 'Where do you think you're going?'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Haunted Productivity",
+      "seedTermsUsed": ["Paranormal", "Office Worker"],
+      "joke": "I work in an office so dull that when a ghost showed up, nobody screamed. My manager just said, \"Great, another employee who's willing to stay after hours.\" A week later the ghost quit too. It left a note saying, \"I crossed over to escape eternal suffering, and somehow this is worse.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I work in an office so dull that when a ghost showed up, nobody screamed. My manager just said, \"Great, another employee who's willing to stay after hours.\" A week later the ghost quit too. It left a note saying, \"I crossed over to escape eternal suffering, and somehow this is worse.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear stage premise and solid rhythm, but the 'office worker is already a ghost' turn is familiar and the final tag adds only a modest extra laugh."},
+        {"jokeId":"joke-c","originality":8,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Concrete, visual, and naturally escalating; the inflatable Snoopy image is memorable and the final contrast lands cleanly, though it stops just short of an exceptional punch."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Understandable and economical, but it relies heavily on the possessed/possessive wordplay and mostly extends that single premise rather than delivering a strong final turn."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Well-structured and readable with a clear escalation, but the miserable-office-versus-eternal-suffering comparison is a familiar workplace-comedy route."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":4,"craft":6,"promptFit":8,"laugh":5,"comment":"Clean and relatable but the turn is mild; punchline restates the premise rather than escalating."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":8,"laugh":7,"comment":"Strong visual contrast (inflatable Snoopy vs. handcuffs), good escalation and specific imagery carry the laugh."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Fun conceit blending possessive ghost with jealous partner; ending lands but could push further."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Nice double-turn with the ghost quitting too; office deadpan tone sustains well to a sharp final line."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong punchline blending the banality of Excel with the desire for a soul. Natural stage rhythm and very grounded."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Relies too heavily on an extended 'she said, I said' dialogue structure. The existential depression trope feels familiar."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":6,"promptFit":8,"laugh":5,"comment":"A neat pun on 'possessed/possessive', but leans entirely on a standard toxic-partner trope without much escalation."},
+        {"jokeId":"joke-e","originality":3,"surprise":3,"craft":5,"promptFit":8,"laugh":4,"comment":"The 'work is worse than hell' punchline is a very common trope. Lacks specific, grounded details that make stand-up work."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Competent office-ghost observation; the soul line is tidy but the payoff stays soft and familiar."},
+        {"jokeId":"joke-b","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clean double turn from self-as-ghost to the denial; dialogue rhythm lands a genuine mild laugh."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Specific visual of Snoopy floating over the arrest carries the laugh; strong stage image and concrete details."},
+        {"jokeId":"joke-e","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Solid escalation from dull workplace to the ghost’s quit note; clean closer with a clear comic snap."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clean office-paranormal premise with a solid final line; familiar angle but well executed."},
+        {"jokeId":"joke-b","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"Nice escalation and callback; job-as-ghost metaphor lands, though the twist is fairly predictable."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong visual image with the inflatable Snoopy ending; clear premise, escalation, and punchy final picture."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Simple possessive-ghost characterization; understandable and concise, but the turn is straightforward and mild."}
+      ]
+    }
+  ]
+}
