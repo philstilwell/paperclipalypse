@@ -1,0 +1,99 @@
+{
+  "createdAt": "2026-09-28T14:01:40.064Z",
+  "publishedDate": "2026-09-28",
+  "seed": "external-real-2026-09-28",
+  "slug": "2026-09-28-external-real-2026-09-28",
+  "source": "manual-external",
+  "seedTerms": [
+    "Herding",
+    "Dietician",
+    "Antiques Store",
+    "Indulging when you shouldn't",
+    "Ambitious",
+    "Weak-Willed"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"gemini-3.5-flash"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-4.3"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"joke-a","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini",
+      "title":"Just Browsing","seedTermsUsed":["Antiques Store","Weak-Willed"],
+      "joke":"I went into an antiques store telling myself, “I’m just browsing.” Twenty minutes later I was carrying out a Victorian chair I didn’t need because the owner said, “They don’t make them like this anymore.” Apparently my financial weakness is triggered by any object whose manufacturer is dead.",
+      "setup":"","punchline":"","text":"I went into an antiques store telling myself, “I’m just browsing.” Twenty minutes later I was carrying out a Victorian chair I didn’t need because the owner said, “They don’t make them like this anymore.” Apparently my financial weakness is triggered by any object whose manufacturer is dead."
+    },
+    {
+      "id":"joke-b","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium",
+      "title":"My Dietician Has Given Up","seedTermsUsed":["Dietician","Indulging when you shouldn't"],
+      "joke":"I hired a dietician. Real one, clipboard, disappointed sighs included. First week she catches me eating a donut in the car. Second week, a donut in a different car, like I thought that was the loophole. By week three she just texts me a photo of a salad and writes 'this is what hope looks like.' I told her I respect the hustle, but I've made my choice, and my choice is glazed.",
+      "setup":"","punchline":"","text":"I hired a dietician. Real one, clipboard, disappointed sighs included. First week she catches me eating a donut in the car. Second week, a donut in a different car, like I thought that was the loophole. By week three she just texts me a photo of a salad and writes 'this is what hope looks like.' I told her I respect the hustle, but I've made my choice, and my choice is glazed."
+    },
+    {
+      "id":"joke-c","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"gemini-3.5-flash",
+      "title":"Nutrition Consultation","seedTermsUsed":["Dietician","Indulging when you shouldn't"],
+      "joke":"My dietician told me, 'Whatever you do, don't eat your feelings.' Which sounds great in theory, but when you're having a terrible day, a sleeve of Oreos is just so much better at active listening.",
+      "setup":"","punchline":"","text":"My dietician told me, 'Whatever you do, don't eat your feelings.' Which sounds great in theory, but when you're having a terrible day, a sleeve of Oreos is just so much better at active listening."
+    },
+    {
+      "id":"joke-d","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-4.3",
+      "title":"Second Snack","seedTermsUsed":["Dietician","Indulging when you shouldn't"],
+      "joke":"I saw a dietician last week. She mapped out my entire diet, no exceptions. I left her office ready to change my life. Then I stopped for gas and somehow walked out with a king-size candy bar and a bag of chips. I ate them in the car before I even started the engine. Some people get a second wind. I get a second snack the second someone tells me not to.",
+      "setup":"","punchline":"","text":"I saw a dietician last week. She mapped out my entire diet, no exceptions. I left her office ready to change my life. Then I stopped for gas and somehow walked out with a king-size candy bar and a bag of chips. I ate them in the car before I even started the engine. Some people get a second wind. I get a second snack the second someone tells me not to."
+    },
+    {
+      "id":"joke-e","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web",
+      "title":"Cheat Day Negotiation","seedTermsUsed":["Dietician","Weak-Willed"],
+      "joke":"My dietician told me, \"When you're tempted, just ask yourself whether you really need that snack.\" I'm so weak-willed I treated it like a debate prompt. Twenty minutes later I had a family-size bag of chips and a closing argument: \"The defense rests... directly on crumbs.\"",
+      "setup":"","punchline":"","text":"My dietician told me, \"When you're tempted, just ask yourself whether you really need that snack.\" I'm so weak-willed I treated it like a debate prompt. Twenty minutes later I had a family-size bag of chips and a closing argument: \"The defense rests... directly on crumbs.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong escalation and stage rhythm; the different-car loophole is the freshest beat, and 'my choice is glazed' lands cleanly."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear and concise with a solid personification punchline, but 'eating your feelings' is a familiar setup and the turn is fairly expected."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Competent and understandable, but the structure is conventional and the 'second snack' wordplay is mild rather than a strong final turn."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Good debate-frame escalation with a clean final image; slightly constructed wording, but the closing-argument turn is distinct and effective."}
+      ]
+    },
+    {
+      "judgeId":"anthropic","judgeName":"Claude","scores":[
+        {"jokeId":"joke-a","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Nice escalation and a genuinely funny closing generalization; clean stage voice."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Solid 'eating feelings' bit; punchline lands but the angle is fairly familiar."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"A bit long for the payoff; 'second snack' pun is cute but not a big laugh."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Courtroom conceit is fresh and the crumbs closer is a genuinely good snap."}
+      ]
+    },
+    {
+      "judgeId":"google","judgeName":"Gemini Flash","scores":[
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid observational premise with clean escalation. The punchline lands with an amusing, dry turn that feels authentic to stage delivery."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"Good stage pacing and vivid imagery, especially switching cars. However, the final punchline fizzles into a familiar diet-standup trope rather than snapping shut."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Follows a very standard setup-and-immediate-relapse arc. The closing line merely re-explains the premise with minor wordplay rather than providing a real twist."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"Treating diet advice as a debate prompt is a fun premise, but stating 'I'm so weak-willed' feels like prompt recitation, and the final courtroom pun is slightly strained."}
+      ]
+    },
+    {
+      "judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"Solid premise and a clean final image, but the close explains more than it snaps."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Clear escalation, specific details, and a final line that lands the character choice."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Cute turn but thin and familiar; reads more like a one-liner than a full bit."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Strong debate frame and crumb punchline; mild rather than big laugh."}
+      ]
+    },
+    {
+      "judgeId":"copilot","judgeName":"Copilot","scores":[
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong, clean premise with a specific turn on dead manufacturers; concise and well-tagged."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":7,"comment":"Good escalation and character voice; 'different car' is funny, but the overall diet-cheating angle is familiar."},
+        {"jokeId":"joke-c","originality":4,"surprise":4,"craft":6,"promptFit":10,"laugh":5,"comment":"Clear and readable, but 'Oreos are better listeners than people' is a very common comic construction."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Solid stand-up rhythm and relatable behavior; the final line lands but follows a fairly predictable path."}
+      ]
+    }
+  ]
+}

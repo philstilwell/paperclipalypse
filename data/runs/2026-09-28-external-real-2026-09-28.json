@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-28-external-real-2026-09-28",
+  "seed": "external-real-2026-09-28",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-28T14:01:40.064Z",
+  "publishedDate": "2026-09-28",
+  "seedTerms": [
+    "Herding",
+    "Dietician",
+    "Antiques Store",
+    "Indulging when you shouldn't",
+    "Ambitious",
+    "Weak-Willed"
+  ],
+  "premise": {
+    "text": "Seed terms: Herding, Dietician, Antiques Store, Indulging when you shouldn't, Ambitious, Weak-Willed",
+    "seedTerms": [
+      "Herding",
+      "Dietician",
+      "Antiques Store",
+      "Indulging when you shouldn't",
+      "Ambitious",
+      "Weak-Willed"
+    ],
+    "displayText": "My Dietician Has Given Up"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Just Browsing",
+      "seedTermsUsed": [
+        "Antiques Store",
+        "Weak-Willed"
+      ],
+      "joke": "I went into an antiques store telling myself, “I’m just browsing.” Twenty minutes later I was carrying out a Victorian chair I didn’t need because the owner said, “They don’t make them like this anymore.” Apparently my financial weakness is triggered by any object whose manufacturer is dead.",
+      "setup": "",
+      "punchline": "I went into an antiques store telling myself, “I’m just browsing.” Twenty minutes later I was carrying out a Victorian chair I didn’t need because the owner said, “They don’t make them like this anymore.” Apparently my financial weakness is triggered by any object whose manufacturer is dead.",
+      "text": "I went into an antiques store telling myself, “I’m just browsing.” Twenty minutes later I was carrying out a Victorian chair I didn’t need because the owner said, “They don’t make them like this anymore.” Apparently my financial weakness is triggered by any object whose manufacturer is dead."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "My Dietician Has Given Up",
+      "seedTermsUsed": [
+        "Dietician",
+        "Indulging when you shouldn't"
+      ],
+      "joke": "I hired a dietician. Real one, clipboard, disappointed sighs included. First week she catches me eating a donut in the car. Second week, a donut in a different car, like I thought that was the loophole. By week three she just texts me a photo of a salad and writes 'this is what hope looks like.' I told her I respect the hustle, but I've made my choice, and my choice is glazed.",
+      "setup": "",
+      "punchline": "I hired a dietician. Real one, clipboard, disappointed sighs included. First week she catches me eating a donut in the car. Second week, a donut in a different car, like I thought that was the loophole. By week three she just texts me a photo of a salad and writes 'this is what hope looks like.' I told her I respect the hustle, but I've made my choice, and my choice is glazed.",
+      "text": "I hired a dietician. Real one, clipboard, disappointed sighs included. First week she catches me eating a donut in the car. Second week, a donut in a different car, like I thought that was the loophole. By week three she just texts me a photo of a salad and writes 'this is what hope looks like.' I told her I respect the hustle, but I've made my choice, and my choice is glazed."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Nutrition Consultation",
+      "seedTermsUsed": [
+        "Dietician",
+        "Indulging when you shouldn't"
+      ],
+      "joke": "My dietician told me, 'Whatever you do, don't eat your feelings.' Which sounds great in theory, but when you're having a terrible day, a sleeve of Oreos is just so much better at active listening.",
+      "setup": "",
+      "punchline": "My dietician told me, 'Whatever you do, don't eat your feelings.' Which sounds great in theory, but when you're having a terrible day, a sleeve of Oreos is just so much better at active listening.",
+      "text": "My dietician told me, 'Whatever you do, don't eat your feelings.' Which sounds great in theory, but when you're having a terrible day, a sleeve of Oreos is just so much better at active listening."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Second Snack",
+      "seedTermsUsed": [
+        "Dietician",
+        "Indulging when you shouldn't"
+      ],
+      "joke": "I saw a dietician last week. She mapped out my entire diet, no exceptions. I left her office ready to change my life. Then I stopped for gas and somehow walked out with a king-size candy bar and a bag of chips. I ate them in the car before I even started the engine. Some people get a second wind. I get a second snack the second someone tells me not to.",
+      "setup": "",
+      "punchline": "I saw a dietician last week. She mapped out my entire diet, no exceptions. I left her office ready to change my life. Then I stopped for gas and somehow walked out with a king-size candy bar and a bag of chips. I ate them in the car before I even started the engine. Some people get a second wind. I get a second snack the second someone tells me not to.",
+      "text": "I saw a dietician last week. She mapped out my entire diet, no exceptions. I left her office ready to change my life. Then I stopped for gas and somehow walked out with a king-size candy bar and a bag of chips. I ate them in the car before I even started the engine. Some people get a second wind. I get a second snack the second someone tells me not to."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Cheat Day Negotiation",
+      "seedTermsUsed": [
+        "Dietician",
+        "Weak-Willed"
+      ],
+      "joke": "My dietician told me, \"When you're tempted, just ask yourself whether you really need that snack.\" I'm so weak-willed I treated it like a debate prompt. Twenty minutes later I had a family-size bag of chips and a closing argument: \"The defense rests... directly on crumbs.\"",
+      "setup": "",
+      "punchline": "My dietician told me, \"When you're tempted, just ask yourself whether you really need that snack.\" I'm so weak-willed I treated it like a debate prompt. Twenty minutes later I had a family-size bag of chips and a closing argument: \"The defense rests... directly on crumbs.\"",
+      "text": "My dietician told me, \"When you're tempted, just ask yourself whether you really need that snack.\" I'm so weak-willed I treated it like a debate prompt. Twenty minutes later I had a family-size bag of chips and a closing argument: \"The defense rests... directly on crumbs.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong escalation and stage rhythm; the different-car loophole is the freshest beat, and 'my choice is glazed' lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear and concise with a solid personification punchline, but 'eating your feelings' is a familiar setup and the turn is fairly expected.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent and understandable, but the structure is conventional and the 'second snack' wordplay is mild rather than a strong final turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Good debate-frame escalation with a clean final image; slightly constructed wording, but the closing-argument turn is distinct and effective.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Nice escalation and a genuinely funny closing generalization; clean stage voice.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Solid 'eating feelings' bit; punchline lands but the angle is fairly familiar.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "A bit long for the payoff; 'second snack' pun is cute but not a big laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Courtroom conceit is fresh and the crumbs closer is a genuinely good snap.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid observational premise with clean escalation. The punchline lands with an amusing, dry turn that feels authentic to stage delivery.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Good stage pacing and vivid imagery, especially switching cars. However, the final punchline fizzles into a familiar diet-standup trope rather than snapping shut.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Follows a very standard setup-and-immediate-relapse arc. The closing line merely re-explains the premise with minor wordplay rather than providing a real twist.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Treating diet advice as a debate prompt is a fun premise, but stating 'I'm so weak-willed' feels like prompt recitation, and the final courtroom pun is slightly strained.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid premise and a clean final image, but the close explains more than it snaps.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear escalation, specific details, and a final line that lands the character choice.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Cute turn but thin and familiar; reads more like a one-liner than a full bit.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong debate frame and crumb punchline; mild rather than big laugh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong, clean premise with a specific turn on dead manufacturers; concise and well-tagged.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Good escalation and character voice; 'different car' is funny, but the overall diet-cheating angle is familiar.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear and readable, but 'Oreos are better listeners than people' is a very common comic construction.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Solid stand-up rhythm and relatable behavior; the final line lands but follows a fairly predictable path.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.300000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 7.1,
+        "originality": 6.6,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.9,
+          "rawScore": 7.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong escalation and stage rhythm; the different-car loophole is the freshest beat, and 'my choice is glazed' lands cleanly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.4,
+          "comment": "Good stage pacing and vivid imagery, especially switching cars. However, the final punchline fizzles into a familiar diet-standup trope rather than snapping shut."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear escalation, specific details, and a final line that lands the character choice."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 7,
+          "scoreAdjustment": -0.3,
+          "comment": "Good escalation and character voice; 'different car' is funny, but the overall diet-cheating angle is familiar."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.8,
+        "craft": 6.8,
+        "originality": 6.8,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.8,
+        "craft": 6.8,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.7,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Good debate-frame escalation with a clean final image; slightly constructed wording, but the closing-argument turn is distinct and effective."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Courtroom conceit is fresh and the crumbs closer is a genuinely good snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.4,
+          "comment": "Treating diet advice as a debate prompt is a fun premise, but stating 'I'm so weak-willed' feels like prompt recitation, and the final courtroom pun is slightly strained."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong debate frame and crumb punchline; mild rather than big laugh."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.6,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 6.4,
+        "craft": 6.9,
+        "originality": 6.6,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Nice escalation and a genuinely funny closing generalization; clean stage voice."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.2,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0.4,
+          "comment": "Solid observational premise with clean escalation. The punchline lands with an amusing, dry turn that feels authentic to stage delivery."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.5,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid premise and a clean final image, but the close explains more than it snaps."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.2,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong, clean premise with a specific turn on dead manufacturers; concise and well-tagged."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 5.8,
+      "rawScore": 5.9,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 4.9,
+        "craft": 6.2,
+        "originality": 4.9,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5,
+        "craft": 6.3,
+        "originality": 5,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear and concise with a solid personification punchline, but 'eating your feelings' is a familiar setup and the turn is fairly expected."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 6,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid 'eating feelings' bit; punchline lands but the angle is fairly familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.2,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Cute turn but thin and familiar; reads more like a one-liner than a full bit."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.1,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear and readable, but 'Oreos are better listeners than people' is a very common comic construction."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.6,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.8,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.8,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.1,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.4,
+          "comment": "Competent and understandable, but the structure is conventional and the 'second snack' wordplay is mild rather than a strong final turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.2,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.2,
+          "comment": "A bit long for the payoff; 'second snack' pun is cute but not a big laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Follows a very standard setup-and-immediate-relapse arc. The closing line merely re-explains the premise with minor wordplay rather than providing a real twist."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid stand-up rhythm and relatable behavior; the final line lands but follows a fairly predictable path."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-28-external-real-2026-09-28.png",
+    "originalSrc": "assets/feature-images/2026-09-28-external-real-2026-09-28.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled My Dietician Has Given Up: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - My Dietician Has Given Up\nExact joke text to render in the right panel:\nI hired a dietician. Real one, clipboard, disappointed sighs included. First week she catches me eating a donut in the car. Second week, a donut in a different car, like I thought that was the loophole. By week three she just texts me a photo of a salad and writes 'this is what hope looks like.' I told her I respect the hustle, but I've made my choice, and my choice is glazed.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Herding, Dietician, Antiques Store, Indulging when you shouldn't, Ambitious, Weak-Willed. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Herding, Dietician, Antiques Store, Indulging when you shouldn't, Ambitious, Weak-Willed. Use the winning joke titled \"My Dietician Has Given Up\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 5.9,
+      "anthropic": 6.6,
+      "google": 6,
+      "xai": 6.6,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-28-external-real-2026-09-28.md"
+}
