@@ -1,0 +1,99 @@
+{
+  "createdAt": "2026-09-29T14:01:19.358Z",
+  "publishedDate": "2026-09-29",
+  "seed": "external-real-2026-09-29",
+  "slug": "2026-09-29-external-real-2026-09-29",
+  "source": "manual-external",
+  "seedTerms": [
+    "Gunfighters",
+    "Diplomat",
+    "Fitness Center",
+    "A competitor showing up",
+    "Trusting",
+    "Spoiled"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"gemini-3.5-flash"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-4.3"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"joke-a","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini",
+      "title":"Diplomatic Fitness","seedTermsUsed":["Diplomat","Fitness Center"],
+      "joke":"I joined a fancy gym where everyone is aggressively polite. I asked a guy if he was finished with the bench, and he said, “I’m happy to accommodate your priorities.” I thought, wow, what a diplomat. Then he added, “But first I need to complete three more sets.” That’s not diplomacy—that’s an occupation.",
+      "setup":"","punchline":"","text":"I joined a fancy gym where everyone is aggressively polite. I asked a guy if he was finished with the bench, and he said, “I’m happy to accommodate your priorities.” I thought, wow, what a diplomat. Then he added, “But first I need to complete three more sets.” That’s not diplomacy—that’s an occupation."
+    },
+    {
+      "id":"joke-b","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium",
+      "title":"Gym Standoff","seedTermsUsed":["Gunfighters","Fitness Center"],
+      "joke":"I joined a gym, and it's basically the Old West. Every morning, it's me and one guy staring at the last squat rack. Nobody speaks. Somebody's hand hovers over a towel. Last week he blinked first, so I took the rack, loaded the bar, and got under it. Then I remembered I only lift the bar. He's still waiting outside. I think he's scared of me.",
+      "setup":"","punchline":"","text":"I joined a gym, and it's basically the Old West. Every morning, it's me and one guy staring at the last squat rack. Nobody speaks. Somebody's hand hovers over a towel. Last week he blinked first, so I took the rack, loaded the bar, and got under it. Then I remembered I only lift the bar. He's still waiting outside. I think he's scared of me."
+    },
+    {
+      "id":"joke-c","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"gemini-3.5-flash",
+      "title":"Treadmill Showdown","seedTermsUsed":["Fitness Center","A competitor showing up"],
+      "joke":"I was at the gym yesterday, happily jogging on the treadmill at my usual speed—which is basically 'fleeing a wasp.' Then this absolute tank of a guy hops on the machine right next to mine, glances at my monitor, sets his incline to mountain, and starts sprinting. So naturally, instead of minding my own business, I decided we were in an Olympic final. I held that pace for four minutes out of pure spite, and now I'm paying forty dollars a month to get wheeled out by paramedics.",
+      "setup":"","punchline":"","text":"I was at the gym yesterday, happily jogging on the treadmill at my usual speed—which is basically 'fleeing a wasp.' Then this absolute tank of a guy hops on the machine right next to mine, glances at my monitor, sets his incline to mountain, and starts sprinting. So naturally, instead of minding my own business, I decided we were in an Olympic final. I held that pace for four minutes out of pure spite, and now I'm paying forty dollars a month to get wheeled out by paramedics."
+    },
+    {
+      "id":"joke-d","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-4.3",
+      "title":"Spoiled Gym Members","seedTermsUsed":["Fitness Center","Spoiled"],
+      "joke":"I joined a fitness center last week and immediately realized the members are spoiled. This guy next to me on the treadmill hits pause, waves over an attendant, and says, 'Excuse me, could you increase the speed? My butler usually handles the buttons.'",
+      "setup":"","punchline":"","text":"I joined a fitness center last week and immediately realized the members are spoiled. This guy next to me on the treadmill hits pause, waves over an attendant, and says, 'Excuse me, could you increase the speed? My butler usually handles the buttons.'"
+    },
+    {
+      "id":"joke-e","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web",
+      "title":"Guest Pass Faith","seedTermsUsed":["Fitness Center","Trusting"],
+      "joke":"I joined a fitness center because the guy at the desk said, \"We’re like a family here.\" I’m way too trusting, so when he handed me a guest pass, I brought my cousin, my uncle, and a guy who helped me carry a sofa once. Now the gym says I violated membership rules, and I’m like, \"Then stop describing yourselves as family.\"",
+      "setup":"","punchline":"","text":"I joined a fitness center because the guy at the desk said, \"We’re like a family here.\" I’m way too trusting, so when he handed me a guest pass, I brought my cousin, my uncle, and a guy who helped me carry a sofa once. Now the gym says I violated membership rules, and I’m like, \"Then stop describing yourselves as family.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"Strong Old West gym framing and a decent reversal at the end. The final logic is slightly muddy, which keeps the laugh below genuinely strong."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear, energetic stand-up with good rhythm and the 'fleeing a wasp' line. The competitive-gym escalation to injury is familiar and the paramedic payoff is predictable."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Clean and immediately understandable, but the spoiled-rich-person setup points directly toward the butler punchline. Competent filler rather than a strong turn."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"The literal interpretation of 'we're like a family' is cleanly constructed and lands naturally. The premise is somewhat familiar, but the sofa-carrying acquaintance adds a useful comic detail."}
+      ]
+    },
+    {
+      "judgeId":"anthropic","judgeName":"Claude","scores":[
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":4,"comment":"Polite-gym premise is fine, but the final line is a vague pun on 'diplomat' that doesn't quite land. Stalling with three more sets is the real joke and it gets buried."},
+        {"jokeId":"joke-c","originality":5,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Relatable treadmill ego-war. 'Fleeing a wasp' is a good line, and the paramedics ending pays off the escalation. Slightly long and the last clause about the monthly fee is a bit tacked on."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Clean and concise, with a clear final line, but the entitled-rich-guy butler gag is the expected route for 'spoiled' and the payoff is predictable."},
+        {"jokeId":"joke-e","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Best of the batch. Taking the 'we're like family' slogan literally is a clear, familiar premise. The sofa-helper guest is a funny specific, and the closing retort ties the logic together and carries the laugh."}
+      ]
+    },
+    {
+      "judgeId":"google","judgeName":"Gemini Flash","scores":[
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":5,"comment":"Clean structure and fits the seeds neatly, though the payoff plays like a mild observation rather than a strong stand-up laugh."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Good stage tension and escalation with the empty bar reveal, landing a solid, self-deprecating turn."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":4,"promptFit":7,"laugh":4,"comment":"Very predictable cartoon rich-guy punchline with an unnatural dialogue beat; doesn't feel grounded in authentic stand-up."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Functional corporate-jargon literalism premise, but the tag merely restates the initial setup without a second comic gear."}
+      ]
+    },
+    {
+      "judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"Clean setup and wordplay on occupation, but the payoff stays mild and the diplomat label feels slightly announced."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Strong standoff premise and clean undercut on actual strength; the final beat lands with real comic timing."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Solid spite escalation and vivid wasp image; familiar gym-rival shape kept alive by the paramedic closer."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Clear and tidy, but the family-misread is a well-worn template with little extra snap."}
+      ]
+    },
+    {
+      "judgeId":"copilot","judgeName":"Copilot","scores":[
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear premise and solid occupation turn; concise and readable, but the punchline is somewhat predictable."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Good gym-as-duel framing with a self-deprecating reversal; strongest final laugh in the set."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Relatable competitive-gym behavior and a functional payoff, though the direction is familiar and expected."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":10,"laugh":4,"comment":"Easy to understand, but relies on a simple spoiled-rich-person exaggeration without a strong twist."}
+      ]
+    }
+  ]
+}

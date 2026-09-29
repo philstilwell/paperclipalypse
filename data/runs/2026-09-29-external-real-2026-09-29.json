@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-09-29-external-real-2026-09-29",
+  "seed": "external-real-2026-09-29",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-09-29T14:01:19.358Z",
+  "publishedDate": "2026-09-29",
+  "seedTerms": [
+    "Gunfighters",
+    "Diplomat",
+    "Fitness Center",
+    "A competitor showing up",
+    "Trusting",
+    "Spoiled"
+  ],
+  "premise": {
+    "text": "Seed terms: Gunfighters, Diplomat, Fitness Center, A competitor showing up, Trusting, Spoiled",
+    "seedTerms": [
+      "Gunfighters",
+      "Diplomat",
+      "Fitness Center",
+      "A competitor showing up",
+      "Trusting",
+      "Spoiled"
+    ],
+    "displayText": "Gym Standoff"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Diplomatic Fitness",
+      "seedTermsUsed": [
+        "Diplomat",
+        "Fitness Center"
+      ],
+      "joke": "I joined a fancy gym where everyone is aggressively polite. I asked a guy if he was finished with the bench, and he said, “I’m happy to accommodate your priorities.” I thought, wow, what a diplomat. Then he added, “But first I need to complete three more sets.” That’s not diplomacy—that’s an occupation.",
+      "setup": "",
+      "punchline": "I joined a fancy gym where everyone is aggressively polite. I asked a guy if he was finished with the bench, and he said, “I’m happy to accommodate your priorities.” I thought, wow, what a diplomat. Then he added, “But first I need to complete three more sets.” That’s not diplomacy—that’s an occupation.",
+      "text": "I joined a fancy gym where everyone is aggressively polite. I asked a guy if he was finished with the bench, and he said, “I’m happy to accommodate your priorities.” I thought, wow, what a diplomat. Then he added, “But first I need to complete three more sets.” That’s not diplomacy—that’s an occupation."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Gym Standoff",
+      "seedTermsUsed": [
+        "Gunfighters",
+        "Fitness Center"
+      ],
+      "joke": "I joined a gym, and it's basically the Old West. Every morning, it's me and one guy staring at the last squat rack. Nobody speaks. Somebody's hand hovers over a towel. Last week he blinked first, so I took the rack, loaded the bar, and got under it. Then I remembered I only lift the bar. He's still waiting outside. I think he's scared of me.",
+      "setup": "",
+      "punchline": "I joined a gym, and it's basically the Old West. Every morning, it's me and one guy staring at the last squat rack. Nobody speaks. Somebody's hand hovers over a towel. Last week he blinked first, so I took the rack, loaded the bar, and got under it. Then I remembered I only lift the bar. He's still waiting outside. I think he's scared of me.",
+      "text": "I joined a gym, and it's basically the Old West. Every morning, it's me and one guy staring at the last squat rack. Nobody speaks. Somebody's hand hovers over a towel. Last week he blinked first, so I took the rack, loaded the bar, and got under it. Then I remembered I only lift the bar. He's still waiting outside. I think he's scared of me."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Treadmill Showdown",
+      "seedTermsUsed": [
+        "Fitness Center",
+        "A competitor showing up"
+      ],
+      "joke": "I was at the gym yesterday, happily jogging on the treadmill at my usual speed—which is basically 'fleeing a wasp.' Then this absolute tank of a guy hops on the machine right next to mine, glances at my monitor, sets his incline to mountain, and starts sprinting. So naturally, instead of minding my own business, I decided we were in an Olympic final. I held that pace for four minutes out of pure spite, and now I'm paying forty dollars a month to get wheeled out by paramedics.",
+      "setup": "",
+      "punchline": "I was at the gym yesterday, happily jogging on the treadmill at my usual speed—which is basically 'fleeing a wasp.' Then this absolute tank of a guy hops on the machine right next to mine, glances at my monitor, sets his incline to mountain, and starts sprinting. So naturally, instead of minding my own business, I decided we were in an Olympic final. I held that pace for four minutes out of pure spite, and now I'm paying forty dollars a month to get wheeled out by paramedics.",
+      "text": "I was at the gym yesterday, happily jogging on the treadmill at my usual speed—which is basically 'fleeing a wasp.' Then this absolute tank of a guy hops on the machine right next to mine, glances at my monitor, sets his incline to mountain, and starts sprinting. So naturally, instead of minding my own business, I decided we were in an Olympic final. I held that pace for four minutes out of pure spite, and now I'm paying forty dollars a month to get wheeled out by paramedics."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Spoiled Gym Members",
+      "seedTermsUsed": [
+        "Fitness Center",
+        "Spoiled"
+      ],
+      "joke": "I joined a fitness center last week and immediately realized the members are spoiled. This guy next to me on the treadmill hits pause, waves over an attendant, and says, 'Excuse me, could you increase the speed? My butler usually handles the buttons.'",
+      "setup": "",
+      "punchline": "I joined a fitness center last week and immediately realized the members are spoiled. This guy next to me on the treadmill hits pause, waves over an attendant, and says, 'Excuse me, could you increase the speed? My butler usually handles the buttons.'",
+      "text": "I joined a fitness center last week and immediately realized the members are spoiled. This guy next to me on the treadmill hits pause, waves over an attendant, and says, 'Excuse me, could you increase the speed? My butler usually handles the buttons.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Guest Pass Faith",
+      "seedTermsUsed": [
+        "Fitness Center",
+        "Trusting"
+      ],
+      "joke": "I joined a fitness center because the guy at the desk said, \"We’re like a family here.\" I’m way too trusting, so when he handed me a guest pass, I brought my cousin, my uncle, and a guy who helped me carry a sofa once. Now the gym says I violated membership rules, and I’m like, \"Then stop describing yourselves as family.\"",
+      "setup": "",
+      "punchline": "I joined a fitness center because the guy at the desk said, \"We’re like a family here.\" I’m way too trusting, so when he handed me a guest pass, I brought my cousin, my uncle, and a guy who helped me carry a sofa once. Now the gym says I violated membership rules, and I’m like, \"Then stop describing yourselves as family.\"",
+      "text": "I joined a fitness center because the guy at the desk said, \"We’re like a family here.\" I’m way too trusting, so when he handed me a guest pass, I brought my cousin, my uncle, and a guy who helped me carry a sofa once. Now the gym says I violated membership rules, and I’m like, \"Then stop describing yourselves as family.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong Old West gym framing and a decent reversal at the end. The final logic is slightly muddy, which keeps the laugh below genuinely strong.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.900000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear, energetic stand-up with good rhythm and the 'fleeing a wasp' line. The competitive-gym escalation to injury is familiar and the paramedic payoff is predictable.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean and immediately understandable, but the spoiled-rich-person setup points directly toward the butler punchline. Competent filler rather than a strong turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The literal interpretation of 'we're like a family' is cleanly constructed and lands naturally. The premise is somewhat familiar, but the sofa-carrying acquaintance adds a useful comic detail.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Polite-gym premise is fine, but the final line is a vague pun on 'diplomat' that doesn't quite land. Stalling with three more sets is the real joke and it gets buried.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.8999999999999995
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Relatable treadmill ego-war. 'Fleeing a wasp' is a good line, and the paramedics ending pays off the escalation. Slightly long and the last clause about the monthly fee is a bit tacked on.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean and concise, with a clear final line, but the entitled-rich-guy butler gag is the expected route for 'spoiled' and the payoff is predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Best of the batch. Taking the 'we're like family' slogan literally is a clear, familiar premise. The sofa-helper guest is a funny specific, and the closing retort ties the logic together and carries the laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean structure and fits the seeds neatly, though the payoff plays like a mild observation rather than a strong stand-up laugh.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.9
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Good stage tension and escalation with the empty bar reveal, landing a solid, self-deprecating turn.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Very predictable cartoon rich-guy punchline with an unnatural dialogue beat; doesn't feel grounded in authentic stand-up.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.3
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Functional corporate-jargon literalism premise, but the tag merely restates the initial setup without a second comic gear.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean setup and wordplay on occupation, but the payoff stays mild and the diplomat label feels slightly announced.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong standoff premise and clean undercut on actual strength; the final beat lands with real comic timing.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Solid spite escalation and vivid wasp image; familiar gym-rival shape kept alive by the paramedic closer.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Clear and tidy, but the family-misread is a well-worn template with little extra snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and solid occupation turn; concise and readable, but the punchline is somewhat predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Good gym-as-duel framing with a self-deprecating reversal; strongest final laugh in the set.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Relatable competitive-gym behavior and a functional payoff, though the direction is familiar and expected.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Easy to understand, but relies on a simple spoiled-rich-person exaggeration without a strong twist.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 4.800000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 7.1,
+      "rawScore": 7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 7,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 7,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong Old West gym framing and a decent reversal at the end. The final logic is slightly muddy, which keeps the laugh below genuinely strong."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.3,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0.5,
+          "comment": "Good stage tension and escalation with the empty bar reveal, landing a solid, self-deprecating turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong standoff premise and clean undercut on actual strength; the final beat lands with real comic timing."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Good gym-as-duel framing with a self-deprecating reversal; strongest final laugh in the set."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.2,
+      "rawScore": 6.4,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 5.4,
+        "craft": 6.4,
+        "originality": 5.1,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 5.5,
+        "craft": 6.5,
+        "originality": 5.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear, energetic stand-up with good rhythm and the 'fleeing a wasp' line. The competitive-gym escalation to injury is familiar and the paramedic payoff is predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Relatable treadmill ego-war. 'Fleeing a wasp' is a good line, and the paramedics ending pays off the escalation. Slightly long and the last clause about the monthly fee is a bit tacked on."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.7,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid spite escalation and vivid wasp image; familiar gym-rival shape kept alive by the paramedic closer."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Relatable competitive-gym behavior and a functional payoff, though the direction is familiar and expected."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.2,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 5.6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 5.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.7,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.1,
+          "comment": "The literal interpretation of 'we're like a family' is cleanly constructed and lands naturally. The premise is somewhat familiar, but the sofa-carrying acquaintance adds a useful comic detail."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 7,
+          "scoreAdjustment": -0.2,
+          "comment": "Best of the batch. Taking the 'we're like family' slogan literally is a clear, familiar premise. The sofa-helper guest is a funny specific, and the closing retort ties the logic together and carries the laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.5,
+          "comment": "Functional corporate-jargon literalism premise, but the tag merely restates the initial setup without a second comic gear."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear and tidy, but the family-misread is a well-worn template with little extra snap."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 5.8,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5,
+        "surprise": 5.7,
+        "craft": 6,
+        "originality": 5.7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.7,
+          "rawScore": 4.9,
+          "scoreAdjustment": -0.2,
+          "comment": "Polite-gym premise is fine, but the final line is a vague pun on 'diplomat' that doesn't quite land. Stalling with three more sets is the real joke and it gets buried."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.4,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.5,
+          "comment": "Clean structure and fits the seeds neatly, though the payoff plays like a mild observation rather than a strong stand-up laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.6,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean setup and wordplay on occupation, but the payoff stays mild and the diplomat label feels slightly announced."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise and solid occupation turn; concise and readable, but the punchline is somewhat predictable."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.1,
+      "rawScore": 5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.6,
+        "craft": 5.1,
+        "originality": 4.6,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.5,
+        "craft": 5,
+        "originality": 4.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.8,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Clean and immediately understandable, but the spoiled-rich-person setup points directly toward the butler punchline. Competent filler rather than a strong turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean and concise, with a clear final line, but the entitled-rich-guy butler gag is the expected route for 'spoiled' and the payoff is predictable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.8,
+          "rawScore": 4.3,
+          "scoreAdjustment": 0.5,
+          "comment": "Very predictable cartoon rich-guy punchline with an unnatural dialogue beat; doesn't feel grounded in authentic stand-up."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.6,
+          "rawScore": 4.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Easy to understand, but relies on a simple spoiled-rich-person exaggeration without a strong twist."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-09-29-external-real-2026-09-29.png",
+    "originalSrc": "assets/feature-images/2026-09-29-external-real-2026-09-29.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Gym Standoff: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Gym Standoff\nExact joke text to render in the right panel:\nI joined a gym, and it's basically the Old West. Every morning, it's me and one guy staring at the last squat rack. Nobody speaks. Somebody's hand hovers over a towel. Last week he blinked first, so I took the rack, loaded the bar, and got under it. Then I remembered I only lift the bar. He's still waiting outside. I think he's scared of me.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Gunfighters, Diplomat, Fitness Center, A competitor showing up, Trusting, Spoiled. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Gunfighters, Diplomat, Fitness Center, A competitor showing up, Trusting, Spoiled. Use the winning joke titled \"Gym Standoff\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.4,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 6.6,
+      "google": 5.9,
+      "xai": 6.6,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-09-29-external-real-2026-09-29.md"
+}
