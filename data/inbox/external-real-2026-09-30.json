@@ -1,0 +1,99 @@
+{
+  "createdAt": "2026-09-30T14:01:35.931Z",
+  "publishedDate": "2026-09-30",
+  "seed": "external-real-2026-09-30",
+  "slug": "2026-09-30-external-real-2026-09-30",
+  "source": "manual-external",
+  "seedTerms": [
+    "Monsters",
+    "Actor",
+    "Locker Room",
+    "Losing a vital item",
+    "Decisive",
+    "Prejudiced"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"gemini-3.5-flash"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-4.3"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"joke-a","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini",
+      "title":"Method Acting","seedTermsUsed":["Actor","Losing a vital item"],
+      "joke":"I lost my keys right before an audition, so I showed up genuinely frantic. The director said, “Amazing—such raw panic. What technique do you use?” I said, “Apparently, locking myself out.” He gave me the part. I still couldn’t get home, but for the first time in my acting career, homelessness came with a callback.",
+      "setup":"","punchline":"","text":"I lost my keys right before an audition, so I showed up genuinely frantic. The director said, “Amazing—such raw panic. What technique do you use?” I said, “Apparently, locking myself out.” He gave me the part. I still couldn’t get home, but for the first time in my acting career, homelessness came with a callback."
+    },
+    {
+      "id":"joke-b","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium",
+      "title":"Method Acting","seedTermsUsed":["Actor","Losing a vital item"],
+      "joke":"My friend's an actor. Last week he lost his car keys and spent forty minutes in the driveway saying, 'Let me sit with the loss.' I said, 'Just check your pockets.' He said, 'You don't understand, I'm preparing for a role.' I said, 'What role?' He said, 'A man who finds his keys in the last place he looked.' They were in his hand. He got a standing ovation from me.",
+      "setup":"","punchline":"","text":"My friend's an actor. Last week he lost his car keys and spent forty minutes in the driveway saying, 'Let me sit with the loss.' I said, 'Just check your pockets.' He said, 'You don't understand, I'm preparing for a role.' I said, 'What role?' He said, 'A man who finds his keys in the last place he looked.' They were in his hand. He got a standing ovation from me."
+    },
+    {
+      "id":"joke-c","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"gemini-3.5-flash",
+      "title":"Blind in the Gym","seedTermsUsed":["Locker Room","Losing a vital item"],
+      "joke":"I dropped my contact lens in the gym locker room yesterday. That is the absolute worst place to suddenly go blind. You're just wandering through a humid, tiled maze, trying to locate your pants by feel, absolutely terrified that the damp, fleshy obstacle you just bumped into is going to ask how many sets you have left.",
+      "setup":"","punchline":"","text":"I dropped my contact lens in the gym locker room yesterday. That is the absolute worst place to suddenly go blind. You're just wandering through a humid, tiled maze, trying to locate your pants by feel, absolutely terrified that the damp, fleshy obstacle you just bumped into is going to ask how many sets you have left."
+    },
+    {
+      "id":"joke-d","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-4.3",
+      "title":"Method Locker","seedTermsUsed":["Actor","Locker Room"],
+      "joke":"I'm an actor, so when I got cast as a star quarterback I went full method and spent a week living in the locker room. Practiced the swagger, the high-fives, the speeches. First day of filming I stride in, clap my hands, and yell, 'Alright team, let's crush it!' The real players just stare. Then one of them says, 'Who is this guy, and why is he wearing my jersey?'",
+      "setup":"","punchline":"","text":"I'm an actor, so when I got cast as a star quarterback I went full method and spent a week living in the locker room. Practiced the swagger, the high-fives, the speeches. First day of filming I stride in, clap my hands, and yell, 'Alright team, let's crush it!' The real players just stare. Then one of them says, 'Who is this guy, and why is he wearing my jersey?'"
+    },
+    {
+      "id":"joke-e","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web",
+      "title":"Method Acting","seedTermsUsed":["Actor","Losing a vital item"],
+      "joke":"I tried acting for a while. At an audition they said, 'We need to see real panic.' I said, 'Great, give me a second,' then started patting every pocket I had. The casting director was impressed and asked how I got so believable. I said, 'Believable? I drove here with my car keys five minutes ago.'",
+      "setup":"","punchline":"","text":"I tried acting for a while. At an audition they said, 'We need to see real panic.' I said, 'Great, give me a second,' then started patting every pocket I had. The casting director was impressed and asked how I got so believable. I said, 'Believable? I drove here with my car keys five minutes ago.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+        {"jokeId":"joke-b","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Clear premise and readable timing, but the 'last place you looked' idea is familiar and the final ovation tag is weaker than the key-in-hand reveal."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong visual specificity, clean escalation, and a good final image. The locker-room anxiety feels natural rather than seed-forced."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Competent method-acting setup, but the mistaken-identity payoff is fairly predictable and does not land with enough snap."},
+        {"jokeId":"joke-e","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Efficient setup, natural first-person delivery, and a satisfying reveal that turns performed panic into genuine panic. Strong but not especially novel."}
+      ]
+    },
+    {
+      "judgeId":"anthropic","judgeName":"Claude","scores":[
+        {"jokeId":"joke-a","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Clear premise, and 'locking myself out' as an acting technique is a decent turn. The homelessness/callback closer is a stretch and slightly overwrites a joke that was already landing."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Relatable situation and a good final image of the damp obstacle asking about sets. The build is a little wordy, but the last line carries the laugh."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Coherent premise, but the twist is muddled. It's unclear why the jersey is his or why the players don't know the actor, so the ending fizzles."},
+        {"jokeId":"joke-e","originality":4,"surprise":4,"craft":4,"promptFit":9,"laugh":4,"comment":"Similar premise to Joke A, but the logic breaks: patting pockets while claiming to have just driven there doesn't produce a clear punchline. The ending confuses more than it lands."}
+      ]
+    },
+    {
+      "judgeId":"google","judgeName":"Gemini Flash","scores":[
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Solid premise and clean first-person rhythm. The final line lands reasonably well, though the 'audition panic mistook for acting' trope is fairly familiar."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":5,"promptFit":7,"laugh":5,"comment":"Frames the bit around a friend rather than speaking directly as the actor, weakening stage immediacy. The punchline drags out an obvious gag."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Standard method acting confusion setup. The punchline explains the situation rather than delivering a sharp laugh."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"Economical and easy to picture, but covers virtually the same comedic ground as Joke A with a slightly flatter finish."}
+      ]
+    },
+    {
+      "judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean first-person setup with a tidy closer, but the homelessness callback feels slightly forced and cute rather than sharp."},
+        {"jokeId":"joke-b","originality":5,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Mostly a third-person anecdote about a friend; the 'keys in hand' turn is predictable and the ovation line under-delivers."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong concrete premise and sensory detail; the final gym-guy line lands with clear stage rhythm and a satisfying social snap."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Thin, abbreviated version of the lost-keys panic audition idea; serviceable but forgettable and low on escalation."}
+      ]
+    },
+    {
+      "judgeId":"copilot","judgeName":"Copilot","scores":[
+        {"jokeId":"joke-a","originality":5,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear premise and solid callback; homelessness tag adds an extra turn but feels somewhat familiar."},
+        {"jokeId":"joke-b","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Good character-based escalation and a clean reveal that the keys were in his hand."},
+        {"jokeId":"joke-c","originality":7,"surprise":6,"craft":8,"promptFit":10,"laugh":7,"comment":"Vivid image and strong wording; more sustained comic scenario than sharp punchline."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Competent misunderstanding premise, but the final reveal is fairly predictable."}
+      ]
+    }
+  ]
+}
