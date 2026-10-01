@@ -1,0 +1,99 @@
+{
+  "createdAt": "2026-10-01T14:01:05.032Z",
+  "publishedDate": "2026-10-01",
+  "seed": "external-real-2026-10-01",
+  "slug": "2026-10-01-external-real-2026-10-01",
+  "source": "manual-external",
+  "seedTerms": [
+    "Literary",
+    "Stock Market Trader",
+    "Backyard",
+    "Bureaucracy tying hands",
+    "Disciplined",
+    "Manipulative"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"gemini-3.5-flash"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-4.3"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"joke-a","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini",
+      "title":"Lawn Portfolio","seedTermsUsed":["Stock Market Trader","Backyard"],
+      "joke":"I’m a stock market trader, so I manage my backyard like a portfolio. I bought grass high, watched it go brown, then doubled down because I believed in the fundamentals. My neighbor said, “Why don’t you just water it?” I said, “Absolutely not. I’ve already diversified into weeds.”",
+      "setup":"","punchline":"","text":"I’m a stock market trader, so I manage my backyard like a portfolio. I bought grass high, watched it go brown, then doubled down because I believed in the fundamentals. My neighbor said, “Why don’t you just water it?” I said, “Absolutely not. I’ve already diversified into weeds.”"
+    },
+    {
+      "id":"joke-b","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5 Medium",
+      "title":"Hedge Fund Tomatoes","seedTermsUsed":["Stock Market Trader","Backyard"],
+      "joke":"My brother-in-law is a stock market trader. He says my backyard garden is a terrible investment. Fair. I put in four hundred dollars of soil, fencing, and seeds, and I got six tomatoes. That's sixty-seven dollars a tomato. But I told him, 'Look, it's a growth stock.' He said, 'Is it growing?' I said, 'No, but it's very emotionally volatile. Yesterday a squirrel took a thirty percent haircut.'",
+      "setup":"","punchline":"","text":"My brother-in-law is a stock market trader. He says my backyard garden is a terrible investment. Fair. I put in four hundred dollars of soil, fencing, and seeds, and I got six tomatoes. That's sixty-seven dollars a tomato. But I told him, 'Look, it's a growth stock.' He said, 'Is it growing?' I said, 'No, but it's very emotionally volatile. Yesterday a squirrel took a thirty percent haircut.'"
+    },
+    {
+      "id":"joke-c","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"gemini-3.5-flash",
+      "title":"Garden Speculation","seedTermsUsed":["Stock Market Trader","Backyard"],
+      "joke":"I used to be a stock market trader, which ruined my ability to just enjoy a backyard garden. I don't plant vegetables; I speculate on commodities. This spring I went long on heirloom tomatoes. By July, the aphids hit, the yield plummeted, and I panicked. I completely liquidated the cucumbers to cover my margins, and my wife caught me screaming at a squirrel for insider trading at the bird feeder.",
+      "setup":"","punchline":"","text":"I used to be a stock market trader, which ruined my ability to just enjoy a backyard garden. I don't plant vegetables; I speculate on commodities. This spring I went long on heirloom tomatoes. By July, the aphids hit, the yield plummeted, and I panicked. I completely liquidated the cucumbers to cover my margins, and my wife caught me screaming at a squirrel for insider trading at the bird feeder."
+    },
+    {
+      "id":"joke-d","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-4.3",
+      "title":"Backyard Day Trader","seedTermsUsed":["Stock Market Trader","Backyard"],
+      "joke":"I became a stock market trader working from my backyard. Every morning I drag a lawn chair under the tree, open the laptop, and start barking orders at the charts. I yell buy and the squirrels freeze. I yell sell and the dog runs inside. One day a bird landed on the keyboard and I market-bought a thousand shares of whatever was under the cursor. Turns out it was a birdseed company. Finally, a trade the whole backyard could get behind.",
+      "setup":"","punchline":"","text":"I became a stock market trader working from my backyard. Every morning I drag a lawn chair under the tree, open the laptop, and start barking orders at the charts. I yell buy and the squirrels freeze. I yell sell and the dog runs inside. One day a bird landed on the keyboard and I market-bought a thousand shares of whatever was under the cursor. Turns out it was a birdseed company. Finally, a trade the whole backyard could get behind."
+    },
+    {
+      "id":"joke-e","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web",
+      "title":"Free-Range Portfolio","seedTermsUsed":["Stock Market Trader","Backyard"],
+      "joke":"I live next to a guy who treats his backyard chickens like a stock portfolio. Every morning he gives me a market update: one hen is underperforming, another has strong egg fundamentals. Last week he tried to sell me a dozen eggs and called it an IPO: an Initial Poultry Offering.",
+      "setup":"","punchline":"","text":"I live next to a guy who treats his backyard chickens like a stock portfolio. Every morning he gives me a market update: one hen is underperforming, another has strong egg fundamentals. Last week he tried to sell me a dozen eggs and called it an IPO: an Initial Poultry Offering."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong escalation from investment math to market language; the squirrel haircut is a clean, concrete final image."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":8,"comment":"Best-developed premise in the batch, with natural escalation and a strong closing image in the squirrel insider-trading accusation."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear and well structured, but the accidental birdseed trade feels engineered toward the pun rather than genuinely surprising."},
+        {"jokeId":"joke-e","originality":6,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Concise and understandable, but the joke depends heavily on the predictable Initial Poultry Offering pun, limiting surprise."}
+      ]
+    },
+    {
+      "judgeId":"anthropic","judgeName":"Claude","scores":[
+        {"jokeId":"joke-a","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Compact premise with a decent final turn ('diversified into weeds'). The portfolio-as-lawn conceit is familiar, but the ending lands cleanly."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":4,"promptFit":9,"laugh":5,"comment":"Trading jargon applied to gardening is a predictable route. The squirrel insider-trading line is the best beat, but the setup runs long and the ending is overloaded."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":5,"promptFit":9,"laugh":6,"comment":"Fun visual premise and the bird-on-keyboard trade is a good turn. The closer ('a trade the whole backyard could get behind') is a soft, explanatory ending that undercuts the snap, and the piece runs long."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clean, economical, and clearly structured, but the 'Initial Poultry Offering' pun is the kind of wordplay ending that earns a groan more than a laugh. Predictable once the chicken portfolio is set up."}
+      ]
+    },
+    {
+      "judgeId":"google","judgeName":"Gemini Flash","scores":[
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clean stage rhythm and a solid premise. 'Diversified into weeds' is a competent, if slightly predictable, payoff."},
+        {"jokeId":"joke-b","originality":8,"surprise":8,"craft":8,"promptFit":10,"laugh":8,"comment":"Excellent stand-up cadence. The $67 tomato math is highly relatable, and the '30% haircut' squirrel line perfectly bridges both concepts for a strong laugh."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Leans too heavily into cartoonish whimsy. The bird buying birdseed stock feels like a contrived story rather than grounded stand-up."},
+        {"jokeId":"joke-e","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":4,"comment":"Relies entirely on a dad-joke pun (IPO/Poultry). The setup merely exists to deliver the wordplay rather than an insightful comic idea."}
+      ]
+    },
+    {
+      "judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clean analogy but predictable; weeds line is mild and expected."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Solid cost-per-tomato setup; squirrel haircut lands as a real mild turn."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Good escalation from speculation to liquidation; squirrel insider-trading close carries a genuine laugh."},
+        {"jokeId":"joke-e","originality":4,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Pun-dependent IPO payoff feels thin and familiar; premise is clear but forgettable."}
+      ]
+    },
+    {
+      "judgeId":"copilot","judgeName":"Copilot","scores":[
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear premise and solid analogy; weeds as diversification is a mild but predictable payoff."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":7,"comment":"Good escalation from bad investment to emotional volatility; squirrel haircut line adds a stronger turn."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Nicely sustained trader-garden framing; insider trading by a squirrel is a playful, memorable finish."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":7,"comment":"Well-structured story with a clean callback to the backyard; birdseed-company reveal lands effectively."}
+      ]
+    }
+  ]
+}
