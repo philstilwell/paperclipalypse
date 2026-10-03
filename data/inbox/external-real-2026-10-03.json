@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-03T14:01:42.104Z",
+  "publishedDate": "2026-10-03",
+  "seed": "external-real-2026-10-03",
+  "slug": "2026-10-03-external-real-2026-10-03",
+  "source": "manual-external",
+  "seedTerms": [
+    "Blockbuster",
+    "Midwife",
+    "Outhouse",
+    "Being thrust into the spotlight",
+    "Supportive",
+    "Morbid"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Tough Crowd",
+      "seedTermsUsed": ["Outhouse", "Being thrust into the spotlight"],
+      "joke": "At a county fair they put the comedy stage beside the outhouses. I got shoved into the spotlight just as a door behind me opened and a guy staggered out. Before I’d said a word, he yelled, “It’s worse in there.” Tough crowd—I lost a roast battle to a toilet.",
+      "setup": "",
+      "punchline": "",
+      "text": "At a county fair they put the comedy stage beside the outhouses. I got shoved into the spotlight just as a door behind me opened and a guy staggered out. Before I’d said a word, he yelled, “It’s worse in there.” Tough crowd—I lost a roast battle to a toilet."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Birth Plan",
+      "seedTermsUsed": ["Midwife", "Being thrust into the spotlight"],
+      "joke": "My sister had a home birth, and the midwife kept saying, 'You're doing amazing, you're the star of this room.' Meanwhile I'm in the corner holding a towel, and suddenly the baby shows up and everyone turns to look at me. I'm like, 'Why's everyone looking at me?' Turns out the towel was the only thing between us and a very rough first impression.",
+      "setup": "",
+      "punchline": "",
+      "text": "My sister had a home birth, and the midwife kept saying, 'You're doing amazing, you're the star of this room.' Meanwhile I'm in the corner holding a towel, and suddenly the baby shows up and everyone turns to look at me. I'm like, 'Why's everyone looking at me?' Turns out the towel was the only thing between us and a very rough first impression."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Stage Fright",
+      "seedTermsUsed": ["Being thrust into the spotlight", "Outhouse"],
+      "joke": "People always talk about being thrust into the spotlight like it's some glamorous big break. Last summer at a rustic outdoor wedding, a sudden gust of wind ripped the door clean off the outhouse, exposing me mid-squat to eighty guests right as the bride walked down the aisle. You don't know true panic until you have to decide whether to wipe or take a bow.",
+      "setup": "",
+      "punchline": "",
+      "text": "People always talk about being thrust into the spotlight like it's some glamorous big break. Last summer at a rustic outdoor wedding, a sudden gust of wind ripped the door clean off the outhouse, exposing me mid-squat to eighty guests right as the bride walked down the aisle. You don't know true panic until you have to decide whether to wipe or take a bow."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Outhouse Delivery",
+      "seedTermsUsed": ["Midwife", "Outhouse"],
+      "joke": "I hired a midwife who was big on traditional births. She insisted we do it in an outhouse for authenticity. I'm outside holding a flashlight, pacing like a maniac, when she yells, \"It's a boy!\" Then I hear a splash. She walks out, hands me the baby, and says, \"You might want to call a plumber before the next one.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired a midwife who was big on traditional births. She insisted we do it in an outhouse for authenticity. I'm outside holding a flashlight, pacing like a maniac, when she yells, \"It's a boy!\" Then I hear a splash. She walks out, hands me the baby, and says, \"You might want to call a plumber before the next one.\""
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Accidental Celebrity",
+      "seedTermsUsed": ["Blockbuster", "Being thrust into the spotlight"],
+      "joke": "I got my first taste of fame working at Blockbuster. One night the local news came to interview the last customer renting a DVD, and I happened to be standing behind him. The reporter shoved a microphone in my face like I was witnessing history. I wasn't prepared for sudden celebrity, so when they asked for a comment I blurted, \"Be kind, rewind,\" like I was accepting a lifetime achievement award.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got my first taste of fame working at Blockbuster. One night the local news came to interview the last customer renting a DVD, and I happened to be standing behind him. The reporter shoved a microphone in my face like I was witnessing history. I wasn't prepared for sudden celebrity, so when they asked for a comment I blurted, \"Be kind, rewind,\" like I was accepting a lifetime achievement award."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":4,"craft":5,"promptFit":9,"laugh":4,"comment":"Clear first-person setup and correct seed use, but the towel logic is muddy and the payoff does not land cleanly enough for a strong laugh."},
+        {"jokeId":"joke-c","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong visual premise, clean escalation, and a crisp final choice. The exposure angle is somewhat predictable from the ingredients, but the punchline earns the laugh."},
+        {"jokeId":"joke-d","originality":6,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"The splash-to-plumber turn is clear and usable, but the outhouse-as-traditional-birth premise feels contrived and the final gag is fairly foreseeable."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":7,"promptFit":10,"laugh":5,"comment":"Well-structured and natural onstage, with strong seed integration, but the Be Kind, Rewind callback is familiar and lands more as a smile than a substantial laugh."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Clear stage premise and a decent heckle from the outhouse guy. The final 'roast battle to a toilet' line restates the joke a bit more than it twists it, but it lands cleanly."},
+        {"jokeId":"joke-c","originality":5,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Strong visual and a good final choice between wiping and taking a bow. The wedding setup runs long and the 'glamorous big break' opener is a bit generic, but the closer carries the laugh."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Absurd premise of an outhouse birth, but the plumber line is a soft ending and the baby-in-toilet beat is more uneasy than funny. The turn is predictable once the splash arrives."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"The 'Be kind, rewind' blurt is a recognizable and affectionate payoff, with a solid setup. The final simile over-explains the line, so it slightly dulls the snap."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Solid stage image with good pacing; the tag 'lost a roast battle to a toilet' gives it a clean, punchy finish."},
+        {"jokeId":"joke-b","originality":4,"surprise":3,"craft":3,"promptFit":6,"laugh":3,"comment":"Muddled setup and an anticlimactic ending that trails off into vague awkwardness rather than landing a real joke."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":4,"promptFit":7,"laugh":3,"comment":"Relies on absurd cartoon logic that falls flat; the gross-out imagery distracts without delivering a genuine laugh."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Relatable premise and smooth stand-up delivery, though the punchline is a bit mild and predictable."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clear stage premise and workable closer, but the roast-battle tag feels slightly tacked on."},
+        {"jokeId":"joke-b","originality":5,"surprise":4,"craft":4,"promptFit":6,"laugh":4,"comment":"Setup is serviceable yet the final image is murky and the turn does not land cleanly."},
+        {"jokeId":"joke-c","originality":6,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong concrete premise, natural escalation, and a final line that actually carries the laugh."},
+        {"jokeId":"joke-e","originality":6,"surprise":5,"craft":7,"promptFit":8,"laugh":6,"comment":"Nostalgic setup works, but the slogan punch takes the most obvious route."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clear setup and clean callback; the toilet winning the roast battle is amusing but fairly predictable."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Coherent story with a mild payoff, but the turn is expected and doesn't land a strong laugh."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong visual premise, clear escalation, and a solid final choice between wiping and bowing."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Absurd image and decent twist; plumber tag adds humor but the scenario feels somewhat cartoonish."}
+      ]
+    }
+  ]
+}
