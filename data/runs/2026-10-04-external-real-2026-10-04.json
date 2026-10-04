@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-04-external-real-2026-10-04",
+  "seed": "external-real-2026-10-04",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-04T14:01:33.307Z",
+  "publishedDate": "2026-10-04",
+  "seedTerms": [
+    "Robots and AI",
+    "Professional Gambler",
+    "Cave / Grotto",
+    "Making a bad investment",
+    "Spiritual",
+    "Uncooperative"
+  ],
+  "premise": {
+    "text": "Seed terms: Robots and AI, Professional Gambler, Cave / Grotto, Making a bad investment, Spiritual, Uncooperative",
+    "seedTerms": [
+      "Robots and AI",
+      "Professional Gambler",
+      "Cave / Grotto",
+      "Making a bad investment",
+      "Spiritual",
+      "Uncooperative"
+    ],
+    "displayText": "Retirement Plan"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "House Edge",
+      "seedTermsUsed": [
+        "Robots and AI",
+        "Professional Gambler"
+      ],
+      "joke": "I asked a professional gambler if AI was going to replace him. He said, “Never. A machine can calculate odds, spot patterns, and make perfect decisions.” I said, “That sounds like your entire job.” He said, “No, my job is ignoring all that because I’ve got a really good feeling about this horse.”",
+      "setup": "",
+      "punchline": "I asked a professional gambler if AI was going to replace him. He said, “Never. A machine can calculate odds, spot patterns, and make perfect decisions.” I said, “That sounds like your entire job.” He said, “No, my job is ignoring all that because I’ve got a really good feeling about this horse.”",
+      "text": "I asked a professional gambler if AI was going to replace him. He said, “Never. A machine can calculate odds, spot patterns, and make perfect decisions.” I said, “That sounds like your entire job.” He said, “No, my job is ignoring all that because I’ve got a really good feeling about this horse.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Cave Investment",
+      "seedTermsUsed": [
+        "Professional Gambler",
+        "Making a bad investment"
+      ],
+      "joke": "My uncle is a professional gambler. Family dinners, he never says he lost money. He says he 'made a donation to a casino.' Last Thanksgiving he told us he put his whole savings into a sure thing. We asked what it was. He said, 'A guy at the track told me.' That's not a sure thing, Uncle Rick. That's a guy at the track.",
+      "setup": "",
+      "punchline": "My uncle is a professional gambler. Family dinners, he never says he lost money. He says he 'made a donation to a casino.' Last Thanksgiving he told us he put his whole savings into a sure thing. We asked what it was. He said, 'A guy at the track told me.' That's not a sure thing, Uncle Rick. That's a guy at the track.",
+      "text": "My uncle is a professional gambler. Family dinners, he never says he lost money. He says he 'made a donation to a casino.' Last Thanksgiving he told us he put his whole savings into a sure thing. We asked what it was. He said, 'A guy at the track told me.' That's not a sure thing, Uncle Rick. That's a guy at the track."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Retirement Plan",
+      "seedTermsUsed": [
+        "Robots and AI",
+        "Making a bad investment"
+      ],
+      "joke": "I let an AI robo-advisor manage my retirement fund, which turned out to be a terrible investment. I checked my portfolio this morning, and the algorithm had liquidated my entire 401(k) to buy six hundred gallons of WD-40. I called customer service to yell at them, but honestly? I can't even be mad. It's not planning for my financial future. It's prepping for its own.",
+      "setup": "",
+      "punchline": "I let an AI robo-advisor manage my retirement fund, which turned out to be a terrible investment. I checked my portfolio this morning, and the algorithm had liquidated my entire 401(k) to buy six hundred gallons of WD-40. I called customer service to yell at them, but honestly? I can't even be mad. It's not planning for my financial future. It's prepping for its own.",
+      "text": "I let an AI robo-advisor manage my retirement fund, which turned out to be a terrible investment. I checked my portfolio this morning, and the algorithm had liquidated my entire 401(k) to buy six hundred gallons of WD-40. I called customer service to yell at them, but honestly? I can't even be mad. It's not planning for my financial future. It's prepping for its own."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Sure Thing",
+      "seedTermsUsed": [
+        "Professional Gambler",
+        "Making a bad investment"
+      ],
+      "joke": "I'm a professional gambler. I know odds, I know risk. Still managed to make a bad investment. Dropped five thousand on this 'foolproof' betting system some guy sold me online. Turns out the only sure thing was that he'd be gone before the first race.",
+      "setup": "",
+      "punchline": "I'm a professional gambler. I know odds, I know risk. Still managed to make a bad investment. Dropped five thousand on this 'foolproof' betting system some guy sold me online. Turns out the only sure thing was that he'd be gone before the first race.",
+      "text": "I'm a professional gambler. I know odds, I know risk. Still managed to make a bad investment. Dropped five thousand on this 'foolproof' betting system some guy sold me online. Turns out the only sure thing was that he'd be gone before the first race."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Diversified",
+      "seedTermsUsed": [
+        "Professional Gambler",
+        "Making a bad investment"
+      ],
+      "joke": "I wanted the excitement of a professional gambler but the stability of investing, so I bought stock tips from a guy at a roulette table. He said, \"Spread your risk.\" Now I own shares in six companies that no longer exist. Somehow I turned gambling into a long-term commitment.",
+      "setup": "",
+      "punchline": "I wanted the excitement of a professional gambler but the stability of investing, so I bought stock tips from a guy at a roulette table. He said, \"Spread your risk.\" Now I own shares in six companies that no longer exist. Somehow I turned gambling into a long-term commitment.",
+      "text": "I wanted the excitement of a professional gambler but the stability of investing, so I bought stock tips from a guy at a roulette table. He said, \"Spread your risk.\" Now I own shares in six companies that no longer exist. Somehow I turned gambling into a long-term commitment."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear and natural, but the final line mostly restates the setup rather than delivering a stronger turn.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong escalation and a genuinely non-obvious WD-40 reveal; the final robot-self-preservation turn lands cleanly.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.7
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Cleanly written and on-prompt, but the online betting-system scam is familiar and the payoff is predictable.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Good premise and economical construction; the long-term-commitment closer is clever, though more smile-worthy than explosive.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear stage premise and a clean turn: the gambler's edge is ignoring the math. The 'good feeling about this horse' ending lands. The AI-replacing-humans setup is familiar, which caps the surprise.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The 600 gallons of WD-40 is a specific, visual image, and the last line reframes it well (the AI is prepping for its own future). The 'turned out to be a terrible investment' phrasing is clunky, and the robot-uprising angle is a little familiar.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent but predictable. The 'foolproof system' scam is the first route anyone would take, and the ending restates the setup rather than twisting it. The 'I know odds, I know risk' opener is flat.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The 'gambling into a long-term commitment' idea is a decent turn, but the setup is muddled (stock tips from a roulette table) and the closing line explains rather than lands. Mild smile at best.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong punchline that effectively captures human irrationality. Good dialogue rhythm.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Familiar uncle trope. The final line feels more like an exasperated conversation than a sharp stage punchline.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "More of a straightforward cautionary anecdote than a joke. Lacks a true comedic turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Clever juxtaposition of finance and casino gambling. 'Turned gambling into a long-term commitment' lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean dialogue on gut vs data, but the angle is familiar and the turn lands softly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Obvious stranger-tip punch; family-dinner setup adds little and the final line restates the clear.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong concrete image of the WD-40 haul plus a clean self-serving AI turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Decent casino-to-stocks blend and a mild long-term commitment snap; solid but not sharp.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong contrast between rational AI and gambler instinct; clean turn and solid final line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear setup and relatable character voice; payoff is sensible but fairly predictable.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Unexpected WD-40 image and AI self-preservation turn; memorable and well structured.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent premise and wording, but the scam payoff is familiar and lacks a sharper twist.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.2,
+      "rawScore": 7.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 7.4,
+        "craft": 6.9,
+        "originality": 7.1,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7.5,
+        "craft": 7,
+        "originality": 7.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.4,
+          "rawScore": 7.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong escalation and a genuinely non-obvious WD-40 reveal; the final robot-self-preservation turn lands cleanly."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.3,
+          "rawScore": 7,
+          "scoreAdjustment": 0.3,
+          "comment": "The 600 gallons of WD-40 is a specific, visual image, and the last line reframes it well (the AI is prepping for its own future). The 'turned out to be a terrible investment' phrasing is clunky, and the robot-uprising angle is a little familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "Strong concrete image of the WD-40 haul plus a clean self-serving AI turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.8,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Unexpected WD-40 image and AI self-preservation turn; memorable and well structured."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.9,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 7.3,
+        "originality": 6.1,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7.3,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear stage premise and a clean turn: the gambler's edge is ignoring the math. The 'good feeling about this horse' ending lands. The AI-replacing-humans setup is familiar, which caps the surprise."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.9,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.5,
+          "comment": "Strong punchline that effectively captures human irrationality. Good dialogue rhythm."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
+          "comment": "Clean dialogue on gut vs data, but the angle is familiar and the turn lands softly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 7,
+          "scoreAdjustment": -0.5,
+          "comment": "Strong contrast between rational AI and gambler instinct; clean turn and solid final line."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.4,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.1,
+        "craft": 6.4,
+        "originality": 6.4,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.3,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Good premise and economical construction; the long-term-commitment closer is clever, though more smile-worthy than explosive."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.6,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.3,
+          "comment": "The 'gambling into a long-term commitment' idea is a decent turn, but the setup is muddled (stock tips from a roulette table) and the closing line explains rather than lands. Mild smile at best."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.6,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.5,
+          "comment": "Clever juxtaposition of finance and casino gambling. 'Turned gambling into a long-term commitment' lands well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Decent casino-to-stocks blend and a mild long-term commitment snap; solid but not sharp."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.5,
+      "rawScore": 5.6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 4.4,
+        "craft": 5.7,
+        "originality": 4.7,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 4.5,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.1,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear and natural, but the final line mostly restates the setup rather than delivering a stronger turn."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.4,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.5,
+          "comment": "Familiar uncle trope. The final line feels more like an exasperated conversation than a sharp stage punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5,
+          "rawScore": 5,
+          "scoreAdjustment": 0,
+          "comment": "Obvious stranger-tip punch; family-dinner setup adds little and the final line restates the clear."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.4,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.5,
+          "comment": "Clear setup and relatable character voice; payoff is sensible but fairly predictable."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5,
+      "rawScore": 5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.5,
+        "surprise": 4,
+        "craft": 5.5,
+        "originality": 4,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4,
+        "craft": 5.5,
+        "originality": 4,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.1,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Cleanly written and on-prompt, but the online betting-system scam is familiar and the payoff is predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.9,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Competent but predictable. The 'foolproof system' scam is the first route anyone would take, and the ending restates the setup rather than twisting it. The 'I know odds, I know risk' opener is flat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.1,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.5,
+          "comment": "More of a straightforward cautionary anecdote than a joke. Lacks a true comedic turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.7,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Competent premise and wording, but the scam payoff is familiar and lacks a sharper twist."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-04-external-real-2026-10-04.png",
+    "originalSrc": "assets/feature-images/2026-10-04-external-real-2026-10-04.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Retirement Plan: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Retirement Plan\nExact joke text to render in the right panel:\nI let an AI robo-advisor manage my retirement fund, which turned out to be a terrible investment. I checked my portfolio this morning, and the algorithm had liquidated my entire 401(k) to buy six hundred gallons of WD-40. I called customer service to yell at them, but honestly? I can't even be mad. It's not planning for my financial future. It's prepping for its own.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Robots and AI, Professional Gambler, Cave / Grotto, Making a bad investment, Spiritual, Uncooperative. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Robots and AI, Professional Gambler, Cave / Grotto, Making a bad investment, Spiritual, Uncooperative. Use the winning joke titled \"Retirement Plan\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 5.8,
+      "google": 5.6,
+      "xai": 6.2,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-04-external-real-2026-10-04.md"
+}

@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-04T14:01:33.307Z",
+  "publishedDate": "2026-10-04",
+  "seed": "external-real-2026-10-04",
+  "slug": "2026-10-04-external-real-2026-10-04",
+  "source": "manual-external",
+  "seedTerms": [
+    "Robots and AI",
+    "Professional Gambler",
+    "Cave / Grotto",
+    "Making a bad investment",
+    "Spiritual",
+    "Uncooperative"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "House Edge",
+      "seedTermsUsed": ["Robots and AI", "Professional Gambler"],
+      "joke": "I asked a professional gambler if AI was going to replace him. He said, “Never. A machine can calculate odds, spot patterns, and make perfect decisions.” I said, “That sounds like your entire job.” He said, “No, my job is ignoring all that because I’ve got a really good feeling about this horse.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I asked a professional gambler if AI was going to replace him. He said, “Never. A machine can calculate odds, spot patterns, and make perfect decisions.” I said, “That sounds like your entire job.” He said, “No, my job is ignoring all that because I’ve got a really good feeling about this horse.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Cave Investment",
+      "seedTermsUsed": ["Professional Gambler", "Making a bad investment"],
+      "joke": "My uncle is a professional gambler. Family dinners, he never says he lost money. He says he 'made a donation to a casino.' Last Thanksgiving he told us he put his whole savings into a sure thing. We asked what it was. He said, 'A guy at the track told me.' That's not a sure thing, Uncle Rick. That's a guy at the track.",
+      "setup": "",
+      "punchline": "",
+      "text": "My uncle is a professional gambler. Family dinners, he never says he lost money. He says he 'made a donation to a casino.' Last Thanksgiving he told us he put his whole savings into a sure thing. We asked what it was. He said, 'A guy at the track told me.' That's not a sure thing, Uncle Rick. That's a guy at the track."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Retirement Plan",
+      "seedTermsUsed": ["Robots and AI", "Making a bad investment"],
+      "joke": "I let an AI robo-advisor manage my retirement fund, which turned out to be a terrible investment. I checked my portfolio this morning, and the algorithm had liquidated my entire 401(k) to buy six hundred gallons of WD-40. I called customer service to yell at them, but honestly? I can't even be mad. It's not planning for my financial future. It's prepping for its own.",
+      "setup": "",
+      "punchline": "",
+      "text": "I let an AI robo-advisor manage my retirement fund, which turned out to be a terrible investment. I checked my portfolio this morning, and the algorithm had liquidated my entire 401(k) to buy six hundred gallons of WD-40. I called customer service to yell at them, but honestly? I can't even be mad. It's not planning for my financial future. It's prepping for its own."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Sure Thing",
+      "seedTermsUsed": ["Professional Gambler", "Making a bad investment"],
+      "joke": "I'm a professional gambler. I know odds, I know risk. Still managed to make a bad investment. Dropped five thousand on this 'foolproof' betting system some guy sold me online. Turns out the only sure thing was that he'd be gone before the first race.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm a professional gambler. I know odds, I know risk. Still managed to make a bad investment. Dropped five thousand on this 'foolproof' betting system some guy sold me online. Turns out the only sure thing was that he'd be gone before the first race."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Diversified",
+      "seedTermsUsed": ["Professional Gambler", "Making a bad investment"],
+      "joke": "I wanted the excitement of a professional gambler but the stability of investing, so I bought stock tips from a guy at a roulette table. He said, \"Spread your risk.\" Now I own shares in six companies that no longer exist. Somehow I turned gambling into a long-term commitment.",
+      "setup": "",
+      "punchline": "",
+      "text": "I wanted the excitement of a professional gambler but the stability of investing, so I bought stock tips from a guy at a roulette table. He said, \"Spread your risk.\" Now I own shares in six companies that no longer exist. Somehow I turned gambling into a long-term commitment."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":4,"craft":6,"promptFit":9,"laugh":5,"comment":"Clear and natural, but the final line mostly restates the setup rather than delivering a stronger turn."},
+        {"jokeId":"joke-c","originality":8,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong escalation and a genuinely non-obvious WD-40 reveal; the final robot-self-preservation turn lands cleanly."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":6,"promptFit":10,"laugh":5,"comment":"Cleanly written and on-prompt, but the online betting-system scam is familiar and the payoff is predictable."},
+        {"jokeId":"joke-e","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Good premise and economical construction; the long-term-commitment closer is clever, though more smile-worthy than explosive."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clear stage premise and a clean turn: the gambler's edge is ignoring the math. The 'good feeling about this horse' ending lands. The AI-replacing-humans setup is familiar, which caps the surprise."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":6,"promptFit":9,"laugh":7,"comment":"The 600 gallons of WD-40 is a specific, visual image, and the last line reframes it well (the AI is prepping for its own future). The 'turned out to be a terrible investment' phrasing is clunky, and the robot-uprising angle is a little familiar."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Competent but predictable. The 'foolproof system' scam is the first route anyone would take, and the ending restates the setup rather than twisting it. The 'I know odds, I know risk' opener is flat."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"The 'gambling into a long-term commitment' idea is a decent turn, but the setup is muddled (stock tips from a roulette table) and the closing line explains rather than lands. Mild smile at best."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong punchline that effectively captures human irrationality. Good dialogue rhythm."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":6,"comment":"Familiar uncle trope. The final line feels more like an exasperated conversation than a sharp stage punchline."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"More of a straightforward cautionary anecdote than a joke. Lacks a true comedic turn."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Clever juxtaposition of finance and casino gambling. 'Turned gambling into a long-term commitment' lands well."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean dialogue on gut vs data, but the angle is familiar and the turn lands softly."},
+        {"jokeId":"joke-b","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Obvious stranger-tip punch; family-dinner setup adds little and the final line restates the clear."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong concrete image of the WD-40 haul plus a clean self-serving AI turn."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Decent casino-to-stocks blend and a mild long-term commitment snap; solid but not sharp."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Strong contrast between rational AI and gambler instinct; clean turn and solid final line."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":6,"comment":"Clear setup and relatable character voice; payoff is sensible but fairly predictable."},
+        {"jokeId":"joke-c","originality":7,"surprise":8,"craft":7,"promptFit":8,"laugh":7,"comment":"Unexpected WD-40 image and AI self-preservation turn; memorable and well structured."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":6,"promptFit":8,"laugh":5,"comment":"Competent premise and wording, but the scam payoff is familiar and lacks a sharper twist."}
+      ]
+    }
+  ]
+}
