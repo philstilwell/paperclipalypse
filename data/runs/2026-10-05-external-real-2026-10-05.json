@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-05-external-real-2026-10-05",
+  "seed": "external-real-2026-10-05",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-05T14:02:13.640Z",
+  "publishedDate": "2026-10-05",
+  "seedTerms": [
+    "Bounty Hunters",
+    "Driver / Pilot / Sea Captain",
+    "Slaughterhouse",
+    "Getting lost / stranded",
+    "Calm",
+    "Hypocritical"
+  ],
+  "premise": {
+    "text": "Seed terms: Bounty Hunters, Driver / Pilot / Sea Captain, Slaughterhouse, Getting lost / stranded, Calm, Hypocritical",
+    "seedTerms": [
+      "Bounty Hunters",
+      "Driver / Pilot / Sea Captain",
+      "Slaughterhouse",
+      "Getting lost / stranded",
+      "Calm",
+      "Hypocritical"
+    ],
+    "displayText": "Safety First"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Parking Garage Bounty",
+      "seedTermsUsed": [
+        "Bounty Hunters",
+        "Getting lost / stranded"
+      ],
+      "joke": "I'd be a terrible bounty hunter. The whole profession is based on finding people, and I once got lost looking for my own car in a parking garage. After forty minutes I found a guy wandering between the rows and thought, “Finally, the fugitive.” Nope—he'd lost his Honda too. We teamed up. Technically, we both brought someone in.",
+      "setup": "",
+      "punchline": "I'd be a terrible bounty hunter. The whole profession is based on finding people, and I once got lost looking for my own car in a parking garage. After forty minutes I found a guy wandering between the rows and thought, “Finally, the fugitive.” Nope—he'd lost his Honda too. We teamed up. Technically, we both brought someone in.",
+      "text": "I'd be a terrible bounty hunter. The whole profession is based on finding people, and I once got lost looking for my own car in a parking garage. After forty minutes I found a guy wandering between the rows and thought, “Finally, the fugitive.” Nope—he'd lost his Honda too. We teamed up. Technically, we both brought someone in."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Wrong Turn",
+      "seedTermsUsed": [
+        "Getting lost / stranded",
+        "Hypocritical"
+      ],
+      "joke": "My husband refuses to ask for directions. Says he's never lost, he's just exploring. Forty minutes into exploring a farm road, I suggested we ask someone. He said, 'Ask who? There's nobody out here.' Then I got out my phone, and he said, 'Don't you dare use a map. That's cheating.' Sir, you're the only man who's ever gotten lost with a GPS and still blamed the satellite for being too far away.",
+      "setup": "",
+      "punchline": "My husband refuses to ask for directions. Says he's never lost, he's just exploring. Forty minutes into exploring a farm road, I suggested we ask someone. He said, 'Ask who? There's nobody out here.' Then I got out my phone, and he said, 'Don't you dare use a map. That's cheating.' Sir, you're the only man who's ever gotten lost with a GPS and still blamed the satellite for being too far away.",
+      "text": "My husband refuses to ask for directions. Says he's never lost, he's just exploring. Forty minutes into exploring a farm road, I suggested we ask someone. He said, 'Ask who? There's nobody out here.' Then I got out my phone, and he said, 'Don't you dare use a map. That's cheating.' Sir, you're the only man who's ever gotten lost with a GPS and still blamed the satellite for being too far away."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Safety First",
+      "seedTermsUsed": [
+        "Bounty Hunters",
+        "Hypocritical"
+      ],
+      "joke": "Bounty hunters are massive hypocrites. A guy will kick your door off the hinges, taser you in the living room, zip-tie your wrists, and toss you into the back of a Dodge Caravan. But the minute you sit up, he checks the rearview and goes, 'Hey, buckle up, I'm not getting a ticket.' My mistake, man. I didn't realize we were prioritizing traffic safety during a kidnapping.",
+      "setup": "",
+      "punchline": "Bounty hunters are massive hypocrites. A guy will kick your door off the hinges, taser you in the living room, zip-tie your wrists, and toss you into the back of a Dodge Caravan. But the minute you sit up, he checks the rearview and goes, 'Hey, buckle up, I'm not getting a ticket.' My mistake, man. I didn't realize we were prioritizing traffic safety during a kidnapping.",
+      "text": "Bounty hunters are massive hypocrites. A guy will kick your door off the hinges, taser you in the living room, zip-tie your wrists, and toss you into the back of a Dodge Caravan. But the minute you sit up, he checks the rearview and goes, 'Hey, buckle up, I'm not getting a ticket.' My mistake, man. I didn't realize we were prioritizing traffic safety during a kidnapping."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Wrong Turn Bounty",
+      "seedTermsUsed": [
+        "Bounty Hunters",
+        "Getting lost / stranded"
+      ],
+      "joke": "I signed up to be a bounty hunter thinking it’d be all high-stakes chases. First job, track this guy through the woods. Two days later I’m completely stranded, walking in circles with no signal and half a protein bar. When I finally stumble onto his camp, he’s just sitting there roasting marshmallows. Looks up and says, “Took you long enough. Want one?”",
+      "setup": "",
+      "punchline": "I signed up to be a bounty hunter thinking it’d be all high-stakes chases. First job, track this guy through the woods. Two days later I’m completely stranded, walking in circles with no signal and half a protein bar. When I finally stumble onto his camp, he’s just sitting there roasting marshmallows. Looks up and says, “Took you long enough. Want one?”",
+      "text": "I signed up to be a bounty hunter thinking it’d be all high-stakes chases. First job, track this guy through the woods. Two days later I’m completely stranded, walking in circles with no signal and half a protein bar. When I finally stumble onto his camp, he’s just sitting there roasting marshmallows. Looks up and says, “Took you long enough. Want one?”"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Excellent Navigation",
+      "seedTermsUsed": [
+        "Driver / Pilot / Sea Captain",
+        "Getting lost / stranded"
+      ],
+      "joke": "I got stranded on a lake with a guy who kept introducing himself as a sea captain. After three hours of drifting in circles, I asked, \"Are you sure you're a captain?\" He said, \"Absolutely. Getting somewhere is the crew's department.\"",
+      "setup": "",
+      "punchline": "I got stranded on a lake with a guy who kept introducing himself as a sea captain. After three hours of drifting in circles, I asked, \"Are you sure you're a captain?\" He said, \"Absolutely. Getting somewhere is the crew's department.\"",
+      "text": "I got stranded on a lake with a guy who kept introducing himself as a sea captain. After three hours of drifting in circles, I asked, \"Are you sure you're a captain?\" He said, \"Absolutely. Getting somewhere is the crew's department.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear and stage-ready, but the direction-refusal premise is very familiar; the satellite line gives it a decent extra tag.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong contrast between violent apprehension and fussy traffic safety; clean escalation and a solid final line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Readable and well-structured, with a nice role reversal, but the marshmallow payoff is more charming than sharply funny.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Very economical setup and a crisp character-revealing punchline; amusing and polished without quite reaching an 8-level laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong self-deprecating premise with a real turn: the 'fugitive' is just another lost person. The last line ('we both brought someone in') lands cleanly, though it's slightly explained.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Good specific escalation (door, taser, zip-ties, Caravan) into a fresh image of a kidnapper who cares about seatbelt tickets. The closing line slightly explains the joke, but the hypocrisy angle is clear and well built.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Pleasant, clean story with a mild payoff in the relaxed fugitive offering a marshmallow. The turn is gentle and somewhat predictable, and it reads more like an anecdote than a punchline.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Compact and understandable, and 'getting somewhere is the crew's department' is a decent line. The premise is thin, with little build-up, and the turn is fairly easy to see coming.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Nice structural turn combining the target and the hunter as lost partners, though the premise is slightly familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Relies heavily on one of the oldest comedy tropes (husbands not asking for directions), resulting in a predictable and clunky punchline.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 7,
+          "total": 4.2
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Plays out more like a mild movie scene than a punchy stand-up bit; the ending is competent but lacks a strong comedic snap.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "A clean, nicely constructed street-style joke that works fairly well as an onstage anecdote with a solid logic-reversal punchline.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid premise and clean closer, but the parking-garage lost-car setup is familiar and the payoff stays mild.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Classic husband-directions trope with a stretched satellite punch; recognizable but forgettable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear stage premise, sharp hypocrisy turn, and a final line that lands the laugh cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Concise and on-premise, but thin escalation and a mild punch that doesn’t fully carry.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.9
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and callback; teaming up with another lost person is a decent turn, though the final line is more clever than laugh-out-loud.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable lost-driver premise, but the GPS/satellite punchline follows a familiar path and lacks a strong snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong hypocrisy angle, vivid specifics, and a clean final contrast that carries the laugh.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Fun role-reversal image with the fugitive casually waiting, but the ending is gentle rather than a big punch.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.3,
+      "rawScore": 7.5,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.1,
+        "surprise": 6.9,
+        "craft": 7.6,
+        "originality": 6.9,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7,
+        "craft": 7.8,
+        "originality": 7,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong contrast between violent apprehension and fussy traffic safety; clean escalation and a solid final line."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.4,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Good specific escalation (door, taser, zip-ties, Caravan) into a fresh image of a kidnapper who cares about seatbelt tickets. The closing line slightly explains the joke, but the hypocrisy angle is clear and well built."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.4,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0,
+          "comment": "Clear stage premise, sharp hypocrisy turn, and a final line that lands the laugh cleanly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.4,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.5,
+          "comment": "Strong hypocrisy angle, vivid specifics, and a clean final contrast that carries the laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.7,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 7.1,
+        "originality": 6.3,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.4,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong self-deprecating premise with a real turn: the 'fugitive' is just another lost person. The last line ('we both brought someone in') lands cleanly, though it's slightly explained."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.9,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Nice structural turn combining the target and the hunter as lost partners, though the premise is slightly familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Solid premise and clean closer, but the parking-garage lost-car setup is familiar and the payoff stays mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.5,
+          "comment": "Clear premise and callback; teaming up with another lost person is a decent turn, though the final line is more clever than laugh-out-loud."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.4,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 6.4,
+        "craft": 6.6,
+        "originality": 6.1,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.2,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Very economical setup and a crisp character-revealing punchline; amusing and polished without quite reaching an 8-level laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Compact and understandable, and 'getting somewhere is the crew's department' is a decent line. The premise is thin, with little build-up, and the turn is fairly easy to see coming."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.9,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.4,
+          "comment": "A clean, nicely constructed street-style joke that works fairly well as an onstage anecdote with a solid logic-reversal punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.9,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0,
+          "comment": "Concise and on-premise, but thin escalation and a mild punch that doesn’t fully carry."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.3,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Readable and well-structured, with a nice role reversal, but the marshmallow payoff is more charming than sharply funny."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.9,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Pleasant, clean story with a mild payoff in the relaxed fugitive offering a marshmallow. The turn is gentle and somewhat predictable, and it reads more like an anecdote than a punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.5,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Plays out more like a mild movie scene than a punchy stand-up bit; the ending is competent but lacks a strong comedic snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Fun role-reversal image with the fugitive casually waiting, but the ending is gentle rather than a big punch."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.3,
+      "rawScore": 5.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 4.4,
+        "craft": 5.9,
+        "originality": 4.2,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 6,
+        "originality": 4.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.9,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear and stage-ready, but the direction-refusal premise is very familiar; the satellite line gives it a decent extra tag."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.6,
+          "rawScore": 4.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Relies heavily on one of the oldest comedy tropes (husbands not asking for directions), resulting in a predictable and clunky punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.4,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0,
+          "comment": "Classic husband-directions trope with a stretched satellite punch; recognizable but forgettable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.2,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.5,
+          "comment": "Relatable lost-driver premise, but the GPS/satellite punchline follows a familiar path and lacks a strong snap."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-05-external-real-2026-10-05.png",
+    "originalSrc": "assets/feature-images/2026-10-05-external-real-2026-10-05.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Safety First: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Safety First\nExact joke text to render in the right panel:\nBounty hunters are massive hypocrites. A guy will kick your door off the hinges, taser you in the living room, zip-tie your wrists, and toss you into the back of a Dodge Caravan. But the minute you sit up, he checks the rearview and goes, 'Hey, buckle up, I'm not getting a ticket.' My mistake, man. I didn't realize we were prioritizing traffic safety during a kidnapping.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Bounty Hunters, Driver / Pilot / Sea Captain, Slaughterhouse, Getting lost / stranded, Calm, Hypocritical. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Bounty Hunters, Driver / Pilot / Sea Captain, Slaughterhouse, Getting lost / stranded, Calm, Hypocritical. Use the winning joke titled \"Safety First\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 5.8,
+      "google": 5.7,
+      "xai": 6.1,
+      "copilot": 6.7
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-05-external-real-2026-10-05.md"
+}

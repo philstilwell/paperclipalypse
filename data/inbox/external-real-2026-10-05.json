@@ -1,0 +1,184 @@
+{
+  "createdAt": "2026-10-05T14:02:13.640Z",
+  "publishedDate": "2026-10-05",
+  "seed": "external-real-2026-10-05",
+  "slug": "2026-10-05-external-real-2026-10-05",
+  "source": "manual-external",
+  "seedTerms": [
+    "Bounty Hunters",
+    "Driver / Pilot / Sea Captain",
+    "Slaughterhouse",
+    "Getting lost / stranded",
+    "Calm",
+    "Hypocritical"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Parking Garage Bounty",
+      "seedTermsUsed": [
+        "Bounty Hunters",
+        "Getting lost / stranded"
+      ],
+      "joke": "I'd be a terrible bounty hunter. The whole profession is based on finding people, and I once got lost looking for my own car in a parking garage. After forty minutes I found a guy wandering between the rows and thought, “Finally, the fugitive.” Nope—he'd lost his Honda too. We teamed up. Technically, we both brought someone in.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'd be a terrible bounty hunter. The whole profession is based on finding people, and I once got lost looking for my own car in a parking garage. After forty minutes I found a guy wandering between the rows and thought, “Finally, the fugitive.” Nope—he'd lost his Honda too. We teamed up. Technically, we both brought someone in."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Wrong Turn",
+      "seedTermsUsed": [
+        "Getting lost / stranded",
+        "Hypocritical"
+      ],
+      "joke": "My husband refuses to ask for directions. Says he's never lost, he's just exploring. Forty minutes into exploring a farm road, I suggested we ask someone. He said, 'Ask who? There's nobody out here.' Then I got out my phone, and he said, 'Don't you dare use a map. That's cheating.' Sir, you're the only man who's ever gotten lost with a GPS and still blamed the satellite for being too far away.",
+      "setup": "",
+      "punchline": "",
+      "text": "My husband refuses to ask for directions. Says he's never lost, he's just exploring. Forty minutes into exploring a farm road, I suggested we ask someone. He said, 'Ask who? There's nobody out here.' Then I got out my phone, and he said, 'Don't you dare use a map. That's cheating.' Sir, you're the only man who's ever gotten lost with a GPS and still blamed the satellite for being too far away."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Safety First",
+      "seedTermsUsed": [
+        "Bounty Hunters",
+        "Hypocritical"
+      ],
+      "joke": "Bounty hunters are massive hypocrites. A guy will kick your door off the hinges, taser you in the living room, zip-tie your wrists, and toss you into the back of a Dodge Caravan. But the minute you sit up, he checks the rearview and goes, 'Hey, buckle up, I'm not getting a ticket.' My mistake, man. I didn't realize we were prioritizing traffic safety during a kidnapping.",
+      "setup": "",
+      "punchline": "",
+      "text": "Bounty hunters are massive hypocrites. A guy will kick your door off the hinges, taser you in the living room, zip-tie your wrists, and toss you into the back of a Dodge Caravan. But the minute you sit up, he checks the rearview and goes, 'Hey, buckle up, I'm not getting a ticket.' My mistake, man. I didn't realize we were prioritizing traffic safety during a kidnapping."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Wrong Turn Bounty",
+      "seedTermsUsed": [
+        "Bounty Hunters",
+        "Getting lost / stranded"
+      ],
+      "joke": "I signed up to be a bounty hunter thinking it’d be all high-stakes chases. First job, track this guy through the woods. Two days later I’m completely stranded, walking in circles with no signal and half a protein bar. When I finally stumble onto his camp, he’s just sitting there roasting marshmallows. Looks up and says, “Took you long enough. Want one?”",
+      "setup": "",
+      "punchline": "",
+      "text": "I signed up to be a bounty hunter thinking it’d be all high-stakes chases. First job, track this guy through the woods. Two days later I’m completely stranded, walking in circles with no signal and half a protein bar. When I finally stumble onto his camp, he’s just sitting there roasting marshmallows. Looks up and says, “Took you long enough. Want one?”"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Excellent Navigation",
+      "seedTermsUsed": [
+        "Driver / Pilot / Sea Captain",
+        "Getting lost / stranded"
+      ],
+      "joke": "I got stranded on a lake with a guy who kept introducing himself as a sea captain. After three hours of drifting in circles, I asked, \"Are you sure you're a captain?\" He said, \"Absolutely. Getting somewhere is the crew's department.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I got stranded on a lake with a guy who kept introducing himself as a sea captain. After three hours of drifting in circles, I asked, \"Are you sure you're a captain?\" He said, \"Absolutely. Getting somewhere is the crew's department.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":7,"promptFit":9,"laugh":6,"comment":"Clear and stage-ready, but the direction-refusal premise is very familiar; the satellite line gives it a decent extra tag."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong contrast between violent apprehension and fussy traffic safety; clean escalation and a solid final line."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Readable and well-structured, with a nice role reversal, but the marshmallow payoff is more charming than sharply funny."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Very economical setup and a crisp character-revealing punchline; amusing and polished without quite reaching an 8-level laugh."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Strong self-deprecating premise with a real turn: the 'fugitive' is just another lost person. The last line ('we both brought someone in') lands cleanly, though it's slightly explained."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Good specific escalation (door, taser, zip-ties, Caravan) into a fresh image of a kidnapper who cares about seatbelt tickets. The closing line slightly explains the joke, but the hypocrisy angle is clear and well built."},
+        {"jokeId":"joke-d","originality":5,"surprise":6,"craft":6,"promptFit":7,"laugh":5,"comment":"Pleasant, clean story with a mild payoff in the relaxed fugitive offering a marshmallow. The turn is gentle and somewhat predictable, and it reads more like an anecdote than a punchline."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Compact and understandable, and 'getting somewhere is the crew's department' is a decent line. The premise is thin, with little build-up, and the turn is fairly easy to see coming."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Nice structural turn combining the target and the hunter as lost partners, though the premise is slightly familiar."},
+        {"jokeId":"joke-b","originality":3,"surprise":3,"craft":5,"promptFit":7,"laugh":4,"comment":"Relies heavily on one of the oldest comedy tropes (husbands not asking for directions), resulting in a predictable and clunky punchline."},
+        {"jokeId":"joke-d","originality":5,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Plays out more like a mild movie scene than a punchy stand-up bit; the ending is competent but lacks a strong comedic snap."},
+        {"jokeId":"joke-e","originality":6,"surprise":7,"craft":6,"promptFit":9,"laugh":6,"comment":"A clean, nicely constructed street-style joke that works fairly well as an onstage anecdote with a solid logic-reversal punchline."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid premise and clean closer, but the parking-garage lost-car setup is familiar and the payoff stays mild."},
+        {"jokeId":"joke-b","originality":4,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Classic husband-directions trope with a stretched satellite punch; recognizable but forgettable."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clear stage premise, sharp hypocrisy turn, and a final line that lands the laugh cleanly."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":5,"comment":"Concise and on-premise, but thin escalation and a mild punch that doesn’t fully carry."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear premise and callback; teaming up with another lost person is a decent turn, though the final line is more clever than laugh-out-loud."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Relatable lost-driver premise, but the GPS/satellite punchline follows a familiar path and lacks a strong snap."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":8,"comment":"Strong hypocrisy angle, vivid specifics, and a clean final contrast that carries the laugh."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Fun role-reversal image with the fugitive casually waiting, but the ending is gentle rather than a big punch."}
+      ]
+    }
+  ]
+}
