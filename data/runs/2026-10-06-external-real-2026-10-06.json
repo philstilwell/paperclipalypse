@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-06-external-real-2026-10-06",
+  "seed": "external-real-2026-10-06",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-06T14:02:57.432Z",
+  "publishedDate": "2026-10-06",
+  "seedTerms": [
+    "Lost World",
+    "Human Test Subject",
+    "Boarding School",
+    "Losing a vital item",
+    "Quirky",
+    "Cocky"
+  ],
+  "premise": {
+    "text": "Seed terms: Lost World, Human Test Subject, Boarding School, Losing a vital item, Quirky, Cocky",
+    "seedTerms": [
+      "Lost World",
+      "Human Test Subject",
+      "Boarding School",
+      "Losing a vital item",
+      "Quirky",
+      "Cocky"
+    ],
+    "displayText": "Dress Rehearsal"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Placebo Group",
+      "seedTermsUsed": [
+        "Human Test Subject",
+        "Losing a vital item"
+      ],
+      "joke": "I volunteered as a test subject in a medical trial. They told me, \"Report any unexpected changes.\" By lunch my wallet was gone. I reported it. The researcher said, \"That's not a side effect.\" I said, \"Great—then check the placebo group for my credit cards.\"",
+      "setup": "",
+      "punchline": "I volunteered as a test subject in a medical trial. They told me, \"Report any unexpected changes.\" By lunch my wallet was gone. I reported it. The researcher said, \"That's not a side effect.\" I said, \"Great—then check the placebo group for my credit cards.\"",
+      "text": "I volunteered as a test subject in a medical trial. They told me, \"Report any unexpected changes.\" By lunch my wallet was gone. I reported it. The researcher said, \"That's not a side effect.\" I said, \"Great—then check the placebo group for my credit cards.\""
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Dress Rehearsal",
+      "seedTermsUsed": [
+        "Boarding School",
+        "Losing a vital item"
+      ],
+      "joke": "I went to boarding school, where they give you one key to your whole life. Trunk, locker, dorm, all one key. I lost it in week one. Spent four years asking permission to get into my own pants. Now I'm an adult, and I still pat my pocket every ten seconds like a guy checking whether his entire personality is still there. Spoiler: it's just the key, and I'm locked out again.",
+      "setup": "",
+      "punchline": "I went to boarding school, where they give you one key to your whole life. Trunk, locker, dorm, all one key. I lost it in week one. Spent four years asking permission to get into my own pants. Now I'm an adult, and I still pat my pocket every ten seconds like a guy checking whether his entire personality is still there. Spoiler: it's just the key, and I'm locked out again.",
+      "text": "I went to boarding school, where they give you one key to your whole life. Trunk, locker, dorm, all one key. I lost it in week one. Spent four years asking permission to get into my own pants. Now I'm an adult, and I still pat my pocket every ten seconds like a guy checking whether his entire personality is still there. Spoiler: it's just the key, and I'm locked out again."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Clinical Trial Confidence",
+      "seedTermsUsed": [
+        "Human Test Subject",
+        "Cocky"
+      ],
+      "joke": "I signed up for a paid pharmaceutical sleep study, and I walked in completely full of myself. I told the head researcher, 'Just so you know, I have twenty-five years of competitive insomnia. Good luck knocking me out.' Thirty seconds after they pushed the syringe, I woke up three days later in a hospital gown, missing both eyebrows and holding a blue ribbon with my name on it.",
+      "setup": "",
+      "punchline": "I signed up for a paid pharmaceutical sleep study, and I walked in completely full of myself. I told the head researcher, 'Just so you know, I have twenty-five years of competitive insomnia. Good luck knocking me out.' Thirty seconds after they pushed the syringe, I woke up three days later in a hospital gown, missing both eyebrows and holding a blue ribbon with my name on it.",
+      "text": "I signed up for a paid pharmaceutical sleep study, and I walked in completely full of myself. I told the head researcher, 'Just so you know, I have twenty-five years of competitive insomnia. Good luck knocking me out.' Thirty seconds after they pushed the syringe, I woke up three days later in a hospital gown, missing both eyebrows and holding a blue ribbon with my name on it."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Blurry Confidence",
+      "seedTermsUsed": [
+        "Losing a vital item",
+        "Cocky"
+      ],
+      "joke": "Last week I lost my only pair of glasses—pretty vital if you ask me. But I was feeling cocky, so I figured I could tough it out. Next thing I know I'm apologizing to a coat rack for five minutes because I thought it was my date. Turns out confidence looks a lot better when the world isn't soft-focus.",
+      "setup": "",
+      "punchline": "Last week I lost my only pair of glasses—pretty vital if you ask me. But I was feeling cocky, so I figured I could tough it out. Next thing I know I'm apologizing to a coat rack for five minutes because I thought it was my date. Turns out confidence looks a lot better when the world isn't soft-focus.",
+      "text": "Last week I lost my only pair of glasses—pretty vital if you ask me. But I was feeling cocky, so I figured I could tough it out. Next thing I know I'm apologizing to a coat rack for five minutes because I thought it was my date. Turns out confidence looks a lot better when the world isn't soft-focus."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Too Confident",
+      "seedTermsUsed": [
+        "Losing a vital item",
+        "Cocky"
+      ],
+      "joke": "I was feeling way too confident the other day. I patted my pocket and thought, Relax, I always know where my keys are. Ten minutes later I was crawling around a parking lot checking under other people's cars. That's when I realized confidence is just arrogance that hasn't lost anything yet.",
+      "setup": "",
+      "punchline": "I was feeling way too confident the other day. I patted my pocket and thought, Relax, I always know where my keys are. Ten minutes later I was crawling around a parking lot checking under other people's cars. That's when I realized confidence is just arrogance that hasn't lost anything yet.",
+      "text": "I was feeling way too confident the other day. I patted my pocket and thought, Relax, I always know where my keys are. Ten minutes later I was crawling around a parking lot checking under other people's cars. That's when I realized confidence is just arrogance that hasn't lost anything yet."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong boarding-school specificity and a good 'permission to get into my own pants' line, but the ending adds a weaker extra beat after the best laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The insomnia boast sets up a clean reversal, but the eyebrows and blue ribbon feel randomly absurd rather than causally funny.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear and stage-ready, but mistaking a coat rack for a person is familiar territory and the final soft-focus line is more tidy than punchy.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Efficient setup and a polished aphoristic closer, but it lands more as a clever observation than a strong laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.9
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and a decent final line, but the twist is mild and the wallet theft sits awkwardly in a medical-trial setting.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Good escalation to eyebrows and a blue ribbon, but the timeline is muddled ('thirty seconds' yet three days) and the cocky setup is wordy.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The coat-rack image is a familiar blurry-vision gag and the moral closer explains instead of landing.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.7
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Relatable keys situation and tidy rhythm, but the aphorism ending is predictable and feels like a template.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Crisp economy and a snappy final line that turns a clinical trial premise into petty theft.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Nice observation about boarding school paranoia, but it trails off into an overexplained tag rather than landing hard.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.3999999999999995
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Mistaking an inanimate object for a person is an ancient sitcom trope, and reciting the seed terms directly flattens the delivery.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 7,
+          "total": 3.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Relatable setup, but the conclusion resolves into an inspirational-quote aphorism rather than a comic punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean misdirection from side-effect to theft; mild payoff, solid structure.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong pants line, but adult coda dilutes the snap and restates the loss.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Irony lands, yet random eyebrows-plus-ribbon details feel tacked on.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Familiar keys-loss setup; final definition is neat but predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear setup and payoff, but the placebo-group twist is fairly predictable and earns only a mild smile.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong personal premise with escalation and a relatable obsession; the personality comparison gives it a good closing turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Good cocky setup and sudden reversal, though the eyebrow-and-ribbon detail feels random rather than sharply connected.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean and readable, with a recognizable mistaken-identity gag; competent but not especially fresh.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.3,
+      "rawScore": 6.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.9,
+        "craft": 6.2,
+        "originality": 6.4,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong boarding-school specificity and a good 'permission to get into my own pants' line, but the ending adds a weaker extra beat after the best laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.9,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.5,
+          "comment": "Nice observation about boarding school paranoia, but it trails off into an overexplained tag rather than landing hard."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Strong pants line, but adult coda dilutes the snap and restates the loss."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong personal premise with escalation and a relatable obsession; the personality comparison gives it a good closing turn."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.2,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 6.1,
+        "craft": 6.3,
+        "originality": 5.8,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.6,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear premise and a decent final line, but the twist is mild and the wallet theft sits awkwardly in a medical-trial setting."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.3,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0.5,
+          "comment": "Crisp economy and a snappy final line that turns a clinical trial premise into petty theft."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.7,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0,
+          "comment": "Clean misdirection from side-effect to theft; mild payoff, solid structure."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.2,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Clear setup and payoff, but the placebo-group twist is fairly predictable and earns only a mild smile."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.1,
+      "rawScore": 6.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 6.4,
+        "craft": 5.4,
+        "originality": 5.9,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6.5,
+        "craft": 5.5,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.3,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.3,
+          "comment": "The insomnia boast sets up a clean reversal, but the eyebrows and blue ribbon feel randomly absurd rather than causally funny."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Good escalation to eyebrows and a blue ribbon, but the timeline is muddled ('thirty seconds' yet three days) and the cocky setup is wordy."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
+          "comment": "Irony lands, yet random eyebrows-plus-ribbon details feel tacked on."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Good cocky setup and sudden reversal, though the eyebrow-and-ribbon detail feels random rather than sharply connected."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.4,
+      "rawScore": 5.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 4.6,
+        "craft": 6.1,
+        "originality": 4.9,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.5,
+        "craft": 6,
+        "originality": 4.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.6,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Efficient setup and a polished aphoristic closer, but it lands more as a clever observation than a strong laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Relatable keys situation and tidy rhythm, but the aphorism ending is predictable and feels like a template."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.5,
+          "comment": "Relatable setup, but the conclusion resolves into an inspirational-quote aphorism rather than a comic punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
+          "comment": "Familiar keys-loss setup; final definition is neat but predictable."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 4.8,
+      "rawScore": 4.9,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.5,
+        "surprise": 4,
+        "craft": 5,
+        "originality": 4,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4,
+        "craft": 5,
+        "originality": 4,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.8,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear and stage-ready, but mistaking a coat rack for a person is familiar territory and the final soft-focus line is more tidy than punchy."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.9,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0.2,
+          "comment": "The coat-rack image is a familiar blurry-vision gag and the moral closer explains instead of landing."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.1,
+          "rawScore": 3.6,
+          "scoreAdjustment": 0.5,
+          "comment": "Mistaking an inanimate object for a person is an ancient sitcom trope, and reciting the seed terms directly flattens the delivery."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 6,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean and readable, with a recognizable mistaken-identity gag; competent but not especially fresh."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-06-external-real-2026-10-06.png",
+    "originalSrc": "assets/feature-images/2026-10-06-external-real-2026-10-06.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Dress Rehearsal: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Dress Rehearsal\nExact joke text to render in the right panel:\nI went to boarding school, where they give you one key to your whole life. Trunk, locker, dorm, all one key. I lost it in week one. Spent four years asking permission to get into my own pants. Now I'm an adult, and I still pat my pocket every ten seconds like a guy checking whether his entire personality is still there. Spoiler: it's just the key, and I'm locked out again.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Lost World, Human Test Subject, Boarding School, Losing a vital item, Quirky, Cocky. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Lost World, Human Test Subject, Boarding School, Losing a vital item, Quirky, Cocky. Use the winning joke titled \"Dress Rehearsal\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.5,
+      "anthropic": 6,
+      "google": 5.7,
+      "xai": 6.2,
+      "copilot": 6.7
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-06-external-real-2026-10-06.md"
+}

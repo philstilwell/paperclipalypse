@@ -1,0 +1,184 @@
+{
+  "createdAt": "2026-10-06T14:02:57.432Z",
+  "publishedDate": "2026-10-06",
+  "seed": "external-real-2026-10-06",
+  "slug": "2026-10-06-external-real-2026-10-06",
+  "source": "manual-external",
+  "seedTerms": [
+    "Lost World",
+    "Human Test Subject",
+    "Boarding School",
+    "Losing a vital item",
+    "Quirky",
+    "Cocky"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Placebo Group",
+      "seedTermsUsed": [
+        "Human Test Subject",
+        "Losing a vital item"
+      ],
+      "joke": "I volunteered as a test subject in a medical trial. They told me, \"Report any unexpected changes.\" By lunch my wallet was gone. I reported it. The researcher said, \"That's not a side effect.\" I said, \"Great—then check the placebo group for my credit cards.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I volunteered as a test subject in a medical trial. They told me, \"Report any unexpected changes.\" By lunch my wallet was gone. I reported it. The researcher said, \"That's not a side effect.\" I said, \"Great—then check the placebo group for my credit cards.\""
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Dress Rehearsal",
+      "seedTermsUsed": [
+        "Boarding School",
+        "Losing a vital item"
+      ],
+      "joke": "I went to boarding school, where they give you one key to your whole life. Trunk, locker, dorm, all one key. I lost it in week one. Spent four years asking permission to get into my own pants. Now I'm an adult, and I still pat my pocket every ten seconds like a guy checking whether his entire personality is still there. Spoiler: it's just the key, and I'm locked out again.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to boarding school, where they give you one key to your whole life. Trunk, locker, dorm, all one key. I lost it in week one. Spent four years asking permission to get into my own pants. Now I'm an adult, and I still pat my pocket every ten seconds like a guy checking whether his entire personality is still there. Spoiler: it's just the key, and I'm locked out again."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Clinical Trial Confidence",
+      "seedTermsUsed": [
+        "Human Test Subject",
+        "Cocky"
+      ],
+      "joke": "I signed up for a paid pharmaceutical sleep study, and I walked in completely full of myself. I told the head researcher, 'Just so you know, I have twenty-five years of competitive insomnia. Good luck knocking me out.' Thirty seconds after they pushed the syringe, I woke up three days later in a hospital gown, missing both eyebrows and holding a blue ribbon with my name on it.",
+      "setup": "",
+      "punchline": "",
+      "text": "I signed up for a paid pharmaceutical sleep study, and I walked in completely full of myself. I told the head researcher, 'Just so you know, I have twenty-five years of competitive insomnia. Good luck knocking me out.' Thirty seconds after they pushed the syringe, I woke up three days later in a hospital gown, missing both eyebrows and holding a blue ribbon with my name on it."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Blurry Confidence",
+      "seedTermsUsed": [
+        "Losing a vital item",
+        "Cocky"
+      ],
+      "joke": "Last week I lost my only pair of glasses—pretty vital if you ask me. But I was feeling cocky, so I figured I could tough it out. Next thing I know I'm apologizing to a coat rack for five minutes because I thought it was my date. Turns out confidence looks a lot better when the world isn't soft-focus.",
+      "setup": "",
+      "punchline": "",
+      "text": "Last week I lost my only pair of glasses—pretty vital if you ask me. But I was feeling cocky, so I figured I could tough it out. Next thing I know I'm apologizing to a coat rack for five minutes because I thought it was my date. Turns out confidence looks a lot better when the world isn't soft-focus."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Too Confident",
+      "seedTermsUsed": [
+        "Losing a vital item",
+        "Cocky"
+      ],
+      "joke": "I was feeling way too confident the other day. I patted my pocket and thought, Relax, I always know where my keys are. Ten minutes later I was crawling around a parking lot checking under other people's cars. That's when I realized confidence is just arrogance that hasn't lost anything yet.",
+      "setup": "",
+      "punchline": "",
+      "text": "I was feeling way too confident the other day. I patted my pocket and thought, Relax, I always know where my keys are. Ten minutes later I was crawling around a parking lot checking under other people's cars. That's when I realized confidence is just arrogance that hasn't lost anything yet."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Strong boarding-school specificity and a good 'permission to get into my own pants' line, but the ending adds a weaker extra beat after the best laugh."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":6,"promptFit":9,"laugh":6,"comment":"The insomnia boast sets up a clean reversal, but the eyebrows and blue ribbon feel randomly absurd rather than causally funny."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":5,"comment":"Clear and stage-ready, but mistaking a coat rack for a person is familiar territory and the final soft-focus line is more tidy than punchy."},
+        {"jokeId":"joke-e","originality":6,"surprise":5,"craft":7,"promptFit":9,"laugh":5,"comment":"Efficient setup and a polished aphoristic closer, but it lands more as a clever observation than a strong laugh."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Clear premise and a decent final line, but the twist is mild and the wallet theft sits awkwardly in a medical-trial setting."},
+        {"jokeId":"joke-c","originality":5,"surprise":6,"craft":4,"promptFit":8,"laugh":5,"comment":"Good escalation to eyebrows and a blue ribbon, but the timeline is muddled ('thirty seconds' yet three days) and the cocky setup is wordy."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":4,"comment":"The coat-rack image is a familiar blurry-vision gag and the moral closer explains instead of landing."},
+        {"jokeId":"joke-e","originality":4,"surprise":4,"craft":6,"promptFit":9,"laugh":5,"comment":"Relatable keys situation and tidy rhythm, but the aphorism ending is predictable and feels like a template."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Crisp economy and a snappy final line that turns a clinical trial premise into petty theft."},
+        {"jokeId":"joke-b","originality":6,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Nice observation about boarding school paranoia, but it trails off into an overexplained tag rather than landing hard."},
+        {"jokeId":"joke-d","originality":3,"surprise":3,"craft":4,"promptFit":7,"laugh":3,"comment":"Mistaking an inanimate object for a person is an ancient sitcom trope, and reciting the seed terms directly flattens the delivery."},
+        {"jokeId":"joke-e","originality":4,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Relatable setup, but the conclusion resolves into an inspirational-quote aphorism rather than a comic punchline."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean misdirection from side-effect to theft; mild payoff, solid structure."},
+        {"jokeId":"joke-b","originality":7,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Strong pants line, but adult coda dilutes the snap and restates the loss."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Irony lands, yet random eyebrows-plus-ribbon details feel tacked on."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Familiar keys-loss setup; final definition is neat but predictable."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clear setup and payoff, but the placebo-group twist is fairly predictable and earns only a mild smile."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong personal premise with escalation and a relatable obsession; the personality comparison gives it a good closing turn."},
+        {"jokeId":"joke-c","originality":6,"surprise":7,"craft":6,"promptFit":9,"laugh":6,"comment":"Good cocky setup and sudden reversal, though the eyebrow-and-ribbon detail feels random rather than sharply connected."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Clean and readable, with a recognizable mistaken-identity gag; competent but not especially fresh."}
+      ]
+    }
+  ]
+}
