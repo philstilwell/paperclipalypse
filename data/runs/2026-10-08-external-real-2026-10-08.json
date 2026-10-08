@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-08-external-real-2026-10-08",
+  "seed": "external-real-2026-10-08",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-08T14:04:03.160Z",
+  "publishedDate": "2026-10-08",
+  "seedTerms": [
+    "Monsters",
+    "Security Guard",
+    "Arctic Tundra",
+    "Having to hide or escape detection",
+    "Wholesome",
+    "Temperamental"
+  ],
+  "premise": {
+    "text": "Seed terms: Monsters, Security Guard, Arctic Tundra, Having to hide or escape detection, Wholesome, Temperamental",
+    "seedTerms": [
+      "Monsters",
+      "Security Guard",
+      "Arctic Tundra",
+      "Having to hide or escape detection",
+      "Wholesome",
+      "Temperamental"
+    ],
+    "displayText": "Night Shift at the Museum"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.8-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "Night Shift",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Having to hide or escape detection"
+      ],
+      "joke": "I got caught shoplifting by a security guard. He said, 'I'm gonna have to search you.' I said, 'You already found me. I'm standing right here.' He said, 'I mean your pockets.' I said, 'Oh, good. Because there's a guy hiding in the freezer aisle who's way better at this than me.'",
+      "setup": "",
+      "punchline": "I got caught shoplifting by a security guard. He said, 'I'm gonna have to search you.' I said, 'You already found me. I'm standing right here.' He said, 'I mean your pockets.' I said, 'Oh, good. Because there's a guy hiding in the freezer aisle who's way better at this than me.'",
+      "text": "I got caught shoplifting by a security guard. He said, 'I'm gonna have to search you.' I said, 'You already found me. I'm standing right here.' He said, 'I mean your pockets.' I said, 'Oh, good. Because there's a guy hiding in the freezer aisle who's way better at this than me.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Night Shift",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Temperamental"
+      ],
+      "joke": "My building's security guard is the most temperamental man alive. Great mood Monday, I'm a threat to national security Tuesday. Last week he wouldn't let me in because I 'looked different.' I'd just shaved. This week he hugged me and called me his best friend. I live there. I've lived there six years. He's never once known that, but he is consistent about the feelings.",
+      "setup": "",
+      "punchline": "My building's security guard is the most temperamental man alive. Great mood Monday, I'm a threat to national security Tuesday. Last week he wouldn't let me in because I 'looked different.' I'd just shaved. This week he hugged me and called me his best friend. I live there. I've lived there six years. He's never once known that, but he is consistent about the feelings.",
+      "text": "My building's security guard is the most temperamental man alive. Great mood Monday, I'm a threat to national security Tuesday. Last week he wouldn't let me in because I 'looked different.' I'd just shaved. This week he hugged me and called me his best friend. I live there. I've lived there six years. He's never once known that, but he is consistent about the feelings."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.8-flash",
+      "title": "Night Shift at the Museum",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Having to hide or escape detection"
+      ],
+      "joke": "I worked as a night security guard at a modern art museum, which sounds easy until you realize your main job is making sure nobody steals a garbage bag full of leaves that costs two million dollars. One night I knocked over an eight-foot ceramic cylinder. Instead of calling it in, I quietly covered myself in white paint and stood completely frozen on the pedestal for four hours. The curator didn't even notice—she just wept and said the exhibit finally had a soul.",
+      "setup": "",
+      "punchline": "I worked as a night security guard at a modern art museum, which sounds easy until you realize your main job is making sure nobody steals a garbage bag full of leaves that costs two million dollars. One night I knocked over an eight-foot ceramic cylinder. Instead of calling it in, I quietly covered myself in white paint and stood completely frozen on the pedestal for four hours. The curator didn't even notice—she just wept and said the exhibit finally had a soul.",
+      "text": "I worked as a night security guard at a modern art museum, which sounds easy until you realize your main job is making sure nobody steals a garbage bag full of leaves that costs two million dollars. One night I knocked over an eight-foot ceramic cylinder. Instead of calling it in, I quietly covered myself in white paint and stood completely frozen on the pedestal for four hours. The curator didn't even notice—she just wept and said the exhibit finally had a soul."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Temperamental Security",
+      "seedTermsUsed": [
+        "Security Guard",
+        "Temperamental"
+      ],
+      "joke": "So I got hired as a security guard last month. Turns out I'm a little temperamental for the job. Some guy tries to walk in without a badge and I don't stop him—I just go, \"Fine. Go ahead. I see how it is. After all the nights I stood out here in the rain for you people.\"",
+      "setup": "",
+      "punchline": "So I got hired as a security guard last month. Turns out I'm a little temperamental for the job. Some guy tries to walk in without a badge and I don't stop him—I just go, \"Fine. Go ahead. I see how it is. After all the nights I stood out here in the rain for you people.\"",
+      "text": "So I got hired as a security guard last month. Turns out I'm a little temperamental for the job. Some guy tries to walk in without a badge and I don't stop him—I just go, \"Fine. Go ahead. I see how it is. After all the nights I stood out here in the rain for you people.\""
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Night Shift Expertise",
+      "seedTermsUsed": [
+        "Monsters",
+        "Security Guard"
+      ],
+      "joke": "I got a job as a security guard at a museum with a giant monster exhibit. Management said, 'If anything comes alive, hit the panic button.' By my third night I realized the monsters weren't the problem. Every motion sensor, alarm, and camera kept going off because of me. Imagine being a twelve-foot monster and watching the human sprint past your display screaming, 'WHAT WAS THAT?!'",
+      "setup": "",
+      "punchline": "I got a job as a security guard at a museum with a giant monster exhibit. Management said, 'If anything comes alive, hit the panic button.' By my third night I realized the monsters weren't the problem. Every motion sensor, alarm, and camera kept going off because of me. Imagine being a twelve-foot monster and watching the human sprint past your display screaming, 'WHAT WAS THAT?!'",
+      "text": "I got a job as a security guard at a museum with a giant monster exhibit. Management said, 'If anything comes alive, hit the panic button.' By my third night I realized the monsters weren't the problem. Every motion sensor, alarm, and camera kept going off because of me. Imagine being a twelve-foot monster and watching the human sprint past your display screaming, 'WHAT WAS THAT?!'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear premise and natural first-person delivery, but the guard's inconsistent behavior produces repetition rather than escalation. The final line is more an observation than a punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong absurdist premise with concrete imagery and a satisfying escalation. The curator's emotional reaction provides an unexpected final turn. The elaborate setup slightly weakens stage economy, but the payoff works.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Economical setup and recognizable passive-aggressive behavior. The security guard's emotional manipulation is a clean character-based reversal. Good conversational rhythm, though the punchline lacks a particularly sharp final sting.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Accessible premise with a clear role reversal, but the frightened security guard is a familiar comic device. The final image is amusing without adding much beyond the established premise. Functional rather than memorable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "The 'you found me, I'm standing right here' misread is a familiar dodge, and the freezer-aisle guy is a random add-on that doesn't earn the final turn. Hiding is barely used as a concept, so the seed fit is thin.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 4.2
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong premise: a night guard hides by turning himself into the exhibit. The curator weeping that the piece 'finally had a soul' is a good turn. The first sentence runs long and the jab at modern art is a well-worn target, but the closer carries the laugh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "A guard who guilt-trips people like a hurt parent is a workable inversion, and 'after all the nights I stood out here in the rain' is a decent last line. It is short and a bit predictable, and the temperamental trait is simply asserted.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The turn that the guard is the thing setting off the alarms, and the image of a monster watching a human sprint and scream, are fun. The middle is vague, with the list of sensors and 'the monsters weren't the problem' feeling like filler, and the final image is only mildly funny.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Classic misdirection structure with conversational dialogue, but the final freezer-aisle tag feels slightly contrived rather than landing a hard punch.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Grounded observational premise with realistic escalation, though the final sentence softens the punchline into an explanatory summary.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Strong, concise stage turn that subverts security guard authority into passive-aggressive guilt; the in-character dialogue delivers a clean, audible laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Fun cartoonish imagery with good role reversal, though relying on 'Night at the Museum' tropes makes the premise a bit familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Competent setup but weak dialogue turn and soft final image; mild smile at best.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Solid character bit with clean escalation and a satisfying closer about recognition.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong visual premise, non-obvious hide, and a final line that lands hard.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.7
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Amusing role-reversal image but predictable and slightly wordy.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear setup and payoff, but the freezer-aisle reveal is predictable and only mildly funny.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong characterization and escalation; the guard not knowing a longtime resident is amusing but not a big laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Inventive museum premise, escalating cover-up, and a strong final line that delivers the joke.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Funny emotional-overreaction angle with a clean voice and a solid character-based turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.3,
+      "rawScore": 7.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 7.4,
+        "craft": 7.1,
+        "originality": 7.6,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7.5,
+        "craft": 7.3,
+        "originality": 7.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong absurdist premise with concrete imagery and a satisfying escalation. The curator's emotional reaction provides an unexpected final turn. The elaborate setup slightly weakens stage economy, but the payoff works."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong premise: a night guard hides by turning himself into the exhibit. The curator weeping that the piece 'finally had a soul' is a good turn. The first sentence runs long and the jab at modern art is a well-worn target, but the closer carries the laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.5,
+          "rawScore": 7.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong visual premise, non-obvious hide, and a final line that lands hard."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.6,
+          "rawScore": 8,
+          "scoreAdjustment": -0.4,
+          "comment": "Inventive museum premise, escalating cover-up, and a strong final line that delivers the joke."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6.6,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.6,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Economical setup and recognizable passive-aggressive behavior. The security guard's emotional manipulation is a clean character-based reversal. Good conversational rhythm, though the punchline lacks a particularly sharp final sting."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.3,
+          "comment": "A guard who guilt-trips people like a hurt parent is a workable inversion, and 'after all the nights I stood out here in the rain' is a decent last line. It is short and a bit predictable, and the temperamental trait is simply asserted."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.5,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong, concise stage turn that subverts security guard authority into passive-aggressive guilt; the in-character dialogue delivers a clean, audible laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Funny emotional-overreaction angle with a clean voice and a solid character-based turn."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.6,
+        "craft": 5.3,
+        "originality": 5.6,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 5.3,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Accessible premise with a clear role reversal, but the frightened security guard is a familiar comic device. The final image is amusing without adding much beyond the established premise. Functional rather than memorable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.4,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.3,
+          "comment": "The turn that the guard is the thing setting off the alarms, and the image of a monster watching a human sprint and scream, are fun. The middle is vague, with the list of sensors and 'the monsters weren't the problem' feeling like filler, and the final image is only mildly funny."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.6,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Fun cartoonish imagery with good role reversal, though relying on 'Night at the Museum' tropes makes the premise a bit familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Amusing role-reversal image but predictable and slightly wordy."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.9,
+      "rawScore": 6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 5.4,
+        "craft": 6.2,
+        "originality": 5.7,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6.3,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.5,
+          "rawScore": 4.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise and natural first-person delivery, but the guard's inconsistent behavior produces repetition rather than escalation. The final line is more an observation than a punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.4,
+          "rawScore": 6,
+          "scoreAdjustment": 0.4,
+          "comment": "Grounded observational premise with realistic escalation, though the final sentence softens the punchline into an explanatory summary."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.5,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid character bit with clean escalation and a satisfying closer about recognition."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong characterization and escalation; the guard not knowing a longtime resident is amusing but not a big laugh."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 5,
+      "rawScore": 5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.8,
+        "surprise": 4.8,
+        "craft": 4.8,
+        "originality": 4.8,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.8,
+        "craft": 4.8,
+        "originality": 4.8,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.5,
+          "rawScore": 4.2,
+          "scoreAdjustment": 0.3,
+          "comment": "The 'you found me, I'm standing right here' misread is a familiar dodge, and the freezer-aisle guy is a random add-on that doesn't earn the final turn. Hiding is barely used as a concept, so the seed fit is thin."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.6,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Classic misdirection structure with conversational dialogue, but the final freezer-aisle tag feels slightly contrived rather than landing a hard punch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Competent setup but weak dialogue turn and soft final image; mild smile at best."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.9,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Clear setup and payoff, but the freezer-aisle reveal is predictable and only mildly funny."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-08-external-real-2026-10-08.png",
+    "originalSrc": "assets/feature-images/2026-10-08-external-real-2026-10-08.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Night Shift at the Museum: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Night Shift at the Museum\nExact joke text to render in the right panel:\nI worked as a night security guard at a modern art museum, which sounds easy until you realize your main job is making sure nobody steals a garbage bag full of leaves that costs two million dollars. One night I knocked over an eight-foot ceramic cylinder. Instead of calling it in, I quietly covered myself in white paint and stood completely frozen on the pedestal for four hours. The curator didn't even notice—she just wept and said the exhibit finally had a soul.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Monsters, Security Guard, Arctic Tundra, Having to hide or escape detection, Wholesome, Temperamental. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Monsters, Security Guard, Arctic Tundra, Having to hide or escape detection, Wholesome, Temperamental. Use the winning joke titled \"Night Shift at the Museum\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 5.8,
+      "google": 5.7,
+      "xai": 6.4,
+      "copilot": 6.5
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-08-external-real-2026-10-08.md"
+}
