@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-09-external-real-2026-10-09",
+  "seed": "external-real-2026-10-09",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-09T14:04:13.000Z",
+  "publishedDate": "2026-10-09",
+  "seedTerms": [
+    "Woman and Child in Peril",
+    "Baker",
+    "Graveyard / Mausoleum",
+    "Experiencing memory loss",
+    "Discreet",
+    "Cruel"
+  ],
+  "premise": {
+    "text": "Seed terms: Woman and Child in Peril, Baker, Graveyard / Mausoleum, Experiencing memory loss, Discreet, Cruel",
+    "seedTerms": [
+      "Woman and Child in Peril",
+      "Baker",
+      "Graveyard / Mausoleum",
+      "Experiencing memory loss",
+      "Discreet",
+      "Cruel"
+    ],
+    "displayText": "The Birthday Cake"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.8-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "The Birthday Cake",
+      "seedTermsUsed": [
+        "Baker",
+        "Experiencing memory loss"
+      ],
+      "joke": "My memory's getting so bad, I went to the bakery to pick up my birthday cake and forgot my own name. The baker said, 'It's written right on the cake.' I looked. It said, 'Happy Birthday, Dad.' I said, 'Oh, thank God. I thought I had kids.'",
+      "setup": "",
+      "punchline": "My memory's getting so bad, I went to the bakery to pick up my birthday cake and forgot my own name. The baker said, 'It's written right on the cake.' I looked. It said, 'Happy Birthday, Dad.' I said, 'Oh, thank God. I thought I had kids.'",
+      "text": "My memory's getting so bad, I went to the bakery to pick up my birthday cake and forgot my own name. The baker said, 'It's written right on the cake.' I looked. It said, 'Happy Birthday, Dad.' I said, 'Oh, thank God. I thought I had kids.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Short-Term Bakery",
+      "seedTermsUsed": [
+        "Baker",
+        "Experiencing memory loss"
+      ],
+      "joke": "My grandfather was a baker for fifty years, and when his memory started going, the bakery was the last thing to go. Every morning he’d get up at 3 a.m., put on the apron, and make dough. He just forgot he’d already made it. We found forty-one loaves in the basement. The doctors said it’s tragic. The neighbors said it’s the best bread he’s ever made. Honestly, forgetting you’ve already tried is the only way anyone gets good at anything.",
+      "setup": "",
+      "punchline": "My grandfather was a baker for fifty years, and when his memory started going, the bakery was the last thing to go. Every morning he’d get up at 3 a.m., put on the apron, and make dough. He just forgot he’d already made it. We found forty-one loaves in the basement. The doctors said it’s tragic. The neighbors said it’s the best bread he’s ever made. Honestly, forgetting you’ve already tried is the only way anyone gets good at anything.",
+      "text": "My grandfather was a baker for fifty years, and when his memory started going, the bakery was the last thing to go. Every morning he’d get up at 3 a.m., put on the apron, and make dough. He just forgot he’d already made it. We found forty-one loaves in the basement. The doctors said it’s tragic. The neighbors said it’s the best bread he’s ever made. Honestly, forgetting you’ve already tried is the only way anyone gets good at anything."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.8-flash",
+      "title": "Fresh Sourdough",
+      "seedTermsUsed": [
+        "Baker",
+        "Experiencing memory loss"
+      ],
+      "joke": "I tried getting into artisanal baking, but I’ve got terrible short-term memory. Yesterday I stood in front of my oven for twenty minutes in pure panic, trying to remember if I made sourdough starter, or if I just forgot a bowl of wet flour in the dark until it began to hate me.",
+      "setup": "",
+      "punchline": "I tried getting into artisanal baking, but I’ve got terrible short-term memory. Yesterday I stood in front of my oven for twenty minutes in pure panic, trying to remember if I made sourdough starter, or if I just forgot a bowl of wet flour in the dark until it began to hate me.",
+      "text": "I tried getting into artisanal baking, but I’ve got terrible short-term memory. Yesterday I stood in front of my oven for twenty minutes in pure panic, trying to remember if I made sourdough starter, or if I just forgot a bowl of wet flour in the dark until it began to hate me."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Mystery Bread",
+      "seedTermsUsed": [
+        "Baker",
+        "Experiencing memory loss"
+      ],
+      "joke": "I've been experiencing memory loss, and it's killing my career as a baker. I keep forgetting whether I already added the yeast. So now half my loaves rise beautifully, and the other half just sit there like disappointed roommates. Customers call it the mystery bread—you never know if you're getting dinner or a doorstop.",
+      "setup": "",
+      "punchline": "I've been experiencing memory loss, and it's killing my career as a baker. I keep forgetting whether I already added the yeast. So now half my loaves rise beautifully, and the other half just sit there like disappointed roommates. Customers call it the mystery bread—you never know if you're getting dinner or a doorstop.",
+      "text": "I've been experiencing memory loss, and it's killing my career as a baker. I keep forgetting whether I already added the yeast. So now half my loaves rise beautifully, and the other half just sit there like disappointed roommates. Customers call it the mystery bread—you never know if you're getting dinner or a doorstop."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "The Forgetful Bakery",
+      "seedTermsUsed": [
+        "Baker",
+        "Experiencing memory loss"
+      ],
+      "joke": "I started buying bread from a baker who keeps forgetting recipes. Last week I asked, \"What kind is this?\" He stared at the loaf and said, \"Honestly, that's why I put labels on them.\" Then he flipped it over, read the tag, and went, \"Oh good, it's bread. For a minute I thought I'd finally invented a chair.\"",
+      "setup": "",
+      "punchline": "I started buying bread from a baker who keeps forgetting recipes. Last week I asked, \"What kind is this?\" He stared at the loaf and said, \"Honestly, that's why I put labels on them.\" Then he flipped it over, read the tag, and went, \"Oh good, it's bread. For a minute I thought I'd finally invented a chair.\"",
+      "text": "I started buying bread from a baker who keeps forgetting recipes. Last week I asked, \"What kind is this?\" He stared at the loaf and said, \"Honestly, that's why I put labels on them.\" Then he flipped it over, read the tag, and went, \"Oh good, it's bread. For a minute I thought I'd finally invented a chair.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "A promising premise with concrete details, but the forty-one loaves never lead to a strong comic payoff. The final philosophical observation undermines the humor rather than delivering a punchline. More sentimental anecdote than stand-up joke.",
+          "laugh": 3,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 4.3
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "A relatable setup with an unexpected, amusing image of neglected flour developing resentment. The final phrase has personality and good rhythm, though the payoff is more whimsical than laugh-out-loud funny.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear, economical setup with natural first-person delivery. The disappointed-roommates comparison is mildly amusing, but the dinner-or-doorstop punchline is predictable and adds little surprise. Competent filler rather than a standout joke.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The label reveal establishes a workable comic progression, but mistaking bread for a chair is arbitrary rather than logically surprising. The punchline feels manufactured, weakening the laugh despite an understandable setup.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "The ‘Dad’ cake and ‘I thought I had kids’ turn is a good idea, but the logic is muddled: the cake says he is a dad, so the relief contradicts it. The first clause also stretches belief.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "’Until it began to hate me’ is a nice image, but the setup is wordy, the panic runs long, and the final line is closer to an observation than a snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.3999999999999995
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear and tidy, and ‘disappointed roommates’ is a decent simile. The dinner-or-doorstop ending is the predictable route, and ‘killing my career’ is a stock opener.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The best of the batch: the ‘labels’ exchange builds a pattern, and ‘finally invented a chair’ is an absurd, concrete final turn. The setup is a little loose, but the ending carries the laugh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Sharp, efficient construction with an excellent double-reversal punchline that lands cleanly.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Charming narrative premise, but it drifts into sentimental storytelling and ends on a philosophical thought rather than a hard laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent setup, but the yeast/flat bread angle is predictable and the final simile is a standard filler trope.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Mildly amusing dialogue, but the final leap to inventing a chair feels like slightly arbitrary absurdism rather than an earned turn.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Punchline logic collapses; the relief about kids does not follow from the cake text.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.800000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong excess-loaves image, but the closer turns reflective and undercuts the comic snap.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clean panic setup with a concrete, personified turn that lands mildly.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Chair payoff is unexpected but feels arbitrary and disconnected from the baking premise.",
+          "laugh": 5,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.100000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean misdirection from forgotten name to forgotten family; concise and punchy.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Warm premise with a mild observational ending, but the final turn is more reflective than funny.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.6
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Good voice and image; the flour 'hate me' line is amusing, but the joke lacks a strong payoff.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Solid setup and clear structure; 'dinner or a doorstop' is familiar and only mildly surprising.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.4,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.5,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.5,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.5,
+          "comment": "The ‘Dad’ cake and ‘I thought I had kids’ turn is a good idea, but the logic is muddled: the cake says he is a dad, so the relief contradicts it. The first clause also stretches belief."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.3,
+          "rawScore": 8,
+          "scoreAdjustment": 0.3,
+          "comment": "Sharp, efficient construction with an excellent double-reversal punchline that lands cleanly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 4.6,
+          "rawScore": 4.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Punchline logic collapses; the relief about kids does not follow from the cake text."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean misdirection from forgotten name to forgotten family; concise and punchy."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.2,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 5.9,
+        "craft": 6.2,
+        "originality": 6.7,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.6,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.1,
+          "comment": "A relatable setup with an unexpected, amusing image of neglected flour developing resentment. The final phrase has personality and good rhythm, though the payoff is more whimsical than laugh-out-loud funny."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.9,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.5,
+          "comment": "’Until it began to hate me’ is a nice image, but the setup is wordy, the panic runs long, and the final line is closer to an observation than a snap."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.6,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean panic setup with a concrete, personified turn that lands mildly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Good voice and image; the flour 'hate me' line is amusing, but the joke lacks a strong payoff."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 6.3,
+        "craft": 5.8,
+        "originality": 6.1,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 6.3,
+        "craft": 5.8,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.9,
+          "rawScore": 5,
+          "scoreAdjustment": -0.1,
+          "comment": "The label reveal establishes a workable comic progression, but mistaking bread for a chair is arbitrary rather than logically surprising. The punchline feels manufactured, weakening the laugh despite an understandable setup."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.5,
+          "comment": "The best of the batch: the ‘labels’ exchange builds a pattern, and ‘finally invented a chair’ is an absurd, concrete final turn. The setup is a little loose, but the ending carries the laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.1,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.3,
+          "comment": "Mildly amusing dialogue, but the final leap to inventing a chair feels like slightly arbitrary absurdism rather than an earned turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Chair payoff is unexpected but feels arbitrary and disconnected from the baking premise."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 5.6,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 4.6,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 4.5,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clear, economical setup with natural first-person delivery. The disappointed-roommates comparison is mildly amusing, but the dinner-or-doorstop punchline is predictable and adds little surprise. Competent filler rather than a standout joke."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5,
+          "scoreAdjustment": 0.5,
+          "comment": "Clear and tidy, and ‘disappointed roommates’ is a decent simile. The dinner-or-doorstop ending is the predictable route, and ‘killing my career’ is a stock opener."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Competent setup, but the yeast/flat bread angle is predictable and the final simile is a standard filler trope."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid setup and clear structure; 'dinner or a doorstop' is familiar and only mildly surprising."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.3,
+      "rawScore": 5.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.9,
+        "craft": 4.9,
+        "originality": 6.1,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 5,
+        "craft": 5,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.2,
+          "rawScore": 4.3,
+          "scoreAdjustment": -0.1,
+          "comment": "A promising premise with concrete details, but the forty-one loaves never lead to a strong comic payoff. The final philosophical observation undermines the humor rather than delivering a punchline. More sentimental anecdote than stand-up joke."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.9,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Charming narrative premise, but it drifts into sentimental storytelling and ends on a philosophical thought rather than a hard laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong excess-loaves image, but the closer turns reflective and undercuts the comic snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.2,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Warm premise with a mild observational ending, but the final turn is more reflective than funny."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-09-external-real-2026-10-09.png",
+    "originalSrc": "assets/feature-images/2026-10-09-external-real-2026-10-09.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Birthday Cake: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - The Birthday Cake\nExact joke text to render in the right panel:\nMy memory's getting so bad, I went to the bakery to pick up my birthday cake and forgot my own name. The baker said, 'It's written right on the cake.' I looked. It said, 'Happy Birthday, Dad.' I said, 'Oh, thank God. I thought I had kids.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Woman and Child in Peril, Baker, Graveyard / Mausoleum, Experiencing memory loss, Discreet, Cruel. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Woman and Child in Peril, Baker, Graveyard / Mausoleum, Experiencing memory loss, Discreet, Cruel. Use the winning joke titled \"The Birthday Cake\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 5.7,
+      "google": 5.9,
+      "xai": 6.4,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-09-external-real-2026-10-09.md"
+}

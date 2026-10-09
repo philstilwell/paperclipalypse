@@ -1,0 +1,99 @@
+{
+  "createdAt": "2026-10-09T14:04:13.000Z",
+  "publishedDate": "2026-10-09",
+  "seed": "external-real-2026-10-09",
+  "slug": "2026-10-09-external-real-2026-10-09",
+  "source": "manual-external",
+  "seedTerms": [
+    "Woman and Child in Peril",
+    "Baker",
+    "Graveyard / Mausoleum",
+    "Experiencing memory loss",
+    "Discreet",
+    "Cruel"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {"id":"openai","displayName":"OpenAI GPT-5.4 Mini","provider":"openai","model":"gpt-5.4-mini"},
+    {"id":"anthropic","displayName":"Claude","provider":"anthropic","model":"Sonnet 5.5 Medium"},
+    {"id":"google","displayName":"Gemini Flash","provider":"google","model":"gemini-3.8-flash"},
+    {"id":"xai","displayName":"xAI Grok 4.3","provider":"openai-compatible","model":"grok-4.3"},
+    {"id":"copilot","displayName":"Copilot","provider":"manual-web","model":"Microsoft Copilot web"}
+  ],
+  "jokes": [
+    {
+      "id":"joke-a","label":"Joke A","contestantId":"openai","contestantName":"OpenAI GPT-5.4 Mini","model":"gpt-5.4-mini","title":"The Birthday Cake",
+      "seedTermsUsed":["Baker","Experiencing memory loss"],
+      "joke":"My memory's getting so bad, I went to the bakery to pick up my birthday cake and forgot my own name. The baker said, 'It's written right on the cake.' I looked. It said, 'Happy Birthday, Dad.' I said, 'Oh, thank God. I thought I had kids.'",
+      "setup":"","punchline":"","text":"My memory's getting so bad, I went to the bakery to pick up my birthday cake and forgot my own name. The baker said, 'It's written right on the cake.' I looked. It said, 'Happy Birthday, Dad.' I said, 'Oh, thank God. I thought I had kids.'"
+    },
+    {
+      "id":"joke-b","label":"Joke B","contestantId":"anthropic","contestantName":"Claude","model":"Sonnet 5.5 Medium","title":"Short-Term Bakery",
+      "seedTermsUsed":["Baker","Experiencing memory loss"],
+      "joke":"My grandfather was a baker for fifty years, and when his memory started going, the bakery was the last thing to go. Every morning he’d get up at 3 a.m., put on the apron, and make dough. He just forgot he’d already made it. We found forty-one loaves in the basement. The doctors said it’s tragic. The neighbors said it’s the best bread he’s ever made. Honestly, forgetting you’ve already tried is the only way anyone gets good at anything.",
+      "setup":"","punchline":"","text":"My grandfather was a baker for fifty years, and when his memory started going, the bakery was the last thing to go. Every morning he’d get up at 3 a.m., put on the apron, and make dough. He just forgot he’d already made it. We found forty-one loaves in the basement. The doctors said it’s tragic. The neighbors said it’s the best bread he’s ever made. Honestly, forgetting you’ve already tried is the only way anyone gets good at anything."
+    },
+    {
+      "id":"joke-c","label":"Joke C","contestantId":"google","contestantName":"Gemini Flash","model":"gemini-3.8-flash","title":"Fresh Sourdough",
+      "seedTermsUsed":["Baker","Experiencing memory loss"],
+      "joke":"I tried getting into artisanal baking, but I’ve got terrible short-term memory. Yesterday I stood in front of my oven for twenty minutes in pure panic, trying to remember if I made sourdough starter, or if I just forgot a bowl of wet flour in the dark until it began to hate me.",
+      "setup":"","punchline":"","text":"I tried getting into artisanal baking, but I’ve got terrible short-term memory. Yesterday I stood in front of my oven for twenty minutes in pure panic, trying to remember if I made sourdough starter, or if I just forgot a bowl of wet flour in the dark until it began to hate me."
+    },
+    {
+      "id":"joke-d","label":"Joke D","contestantId":"xai","contestantName":"xAI Grok 4.3","model":"grok-4.3","title":"Mystery Bread",
+      "seedTermsUsed":["Baker","Experiencing memory loss"],
+      "joke":"I've been experiencing memory loss, and it's killing my career as a baker. I keep forgetting whether I already added the yeast. So now half my loaves rise beautifully, and the other half just sit there like disappointed roommates. Customers call it the mystery bread—you never know if you're getting dinner or a doorstop.",
+      "setup":"","punchline":"","text":"I've been experiencing memory loss, and it's killing my career as a baker. I keep forgetting whether I already added the yeast. So now half my loaves rise beautifully, and the other half just sit there like disappointed roommates. Customers call it the mystery bread—you never know if you're getting dinner or a doorstop."
+    },
+    {
+      "id":"joke-e","label":"Joke E","contestantId":"copilot","contestantName":"Copilot","model":"Microsoft Copilot web","title":"The Forgetful Bakery",
+      "seedTermsUsed":["Baker","Experiencing memory loss"],
+      "joke":"I started buying bread from a baker who keeps forgetting recipes. Last week I asked, \"What kind is this?\" He stared at the loaf and said, \"Honestly, that's why I put labels on them.\" Then he flipped it over, read the tag, and went, \"Oh good, it's bread. For a minute I thought I'd finally invented a chair.\"",
+      "setup":"","punchline":"","text":"I started buying bread from a baker who keeps forgetting recipes. Last week I asked, \"What kind is this?\" He stared at the loaf and said, \"Honestly, that's why I put labels on them.\" Then he flipped it over, read the tag, and went, \"Oh good, it's bread. For a minute I thought I'd finally invented a chair.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId":"openai","judgeName":"OpenAI GPT-5.4 Mini","scores":[
+        {"jokeId":"joke-b","originality":6,"surprise":4,"craft":4,"promptFit":9,"laugh":3,"comment":"A promising premise with concrete details, but the forty-one loaves never lead to a strong comic payoff. The final philosophical observation undermines the humor rather than delivering a punchline. More sentimental anecdote than stand-up joke."},
+        {"jokeId":"joke-c","originality":7,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"A relatable setup with an unexpected, amusing image of neglected flour developing resentment. The final phrase has personality and good rhythm, though the payoff is more whimsical than laugh-out-loud funny."},
+        {"jokeId":"joke-d","originality":5,"surprise":4,"craft":6,"promptFit":10,"laugh":5,"comment":"Clear, economical setup with natural first-person delivery. The disappointed-roommates comparison is mildly amusing, but the dinner-or-doorstop punchline is predictable and adds little surprise. Competent filler rather than a standout joke."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":4,"comment":"The label reveal establishes a workable comic progression, but mistaking bread for a chair is arbitrary rather than logically surprising. The punchline feels manufactured, weakening the laugh despite an understandable setup."}
+      ]
+    },
+    {
+      "judgeId":"anthropic","judgeName":"Claude","scores":[
+        {"jokeId":"joke-a","originality":5,"surprise":6,"craft":4,"promptFit":8,"laugh":5,"comment":"The ‘Dad’ cake and ‘I thought I had kids’ turn is a good idea, but the logic is muddled: the cake says he is a dad, so the relief contradicts it. The first clause also stretches belief."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"’Until it began to hate me’ is a nice image, but the setup is wordy, the panic runs long, and the final line is closer to an observation than a snap."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Clear and tidy, and ‘disappointed roommates’ is a decent simile. The dinner-or-doorstop ending is the predictable route, and ‘killing my career’ is a stock opener."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":6,"promptFit":8,"laugh":6,"comment":"The best of the batch: the ‘labels’ exchange builds a pattern, and ‘finally invented a chair’ is an absurd, concrete final turn. The setup is a little loose, but the ending carries the laugh."}
+      ]
+    },
+    {
+      "judgeId":"google","judgeName":"Gemini Flash","scores":[
+        {"jokeId":"joke-a","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Sharp, efficient construction with an excellent double-reversal punchline that lands cleanly."},
+        {"jokeId":"joke-b","originality":6,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Charming narrative premise, but it drifts into sentimental storytelling and ends on a philosophical thought rather than a hard laugh."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Competent setup, but the yeast/flat bread angle is predictable and the final simile is a standard filler trope."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"Mildly amusing dialogue, but the final leap to inventing a chair feels like slightly arbitrary absurdism rather than an earned turn."}
+      ]
+    },
+    {
+      "judgeId":"xai","judgeName":"xAI Grok 4.3","scores":[
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":4,"promptFit":9,"laugh":4,"comment":"Punchline logic collapses; the relief about kids does not follow from the cake text."},
+        {"jokeId":"joke-b","originality":7,"surprise":6,"craft":5,"promptFit":9,"laugh":6,"comment":"Strong excess-loaves image, but the closer turns reflective and undercuts the comic snap."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean panic setup with a concrete, personified turn that lands mildly."},
+        {"jokeId":"joke-e","originality":6,"surprise":7,"craft":6,"promptFit":9,"laugh":5,"comment":"Chair payoff is unexpected but feels arbitrary and disconnected from the baking premise."}
+      ]
+    },
+    {
+      "judgeId":"copilot","judgeName":"Copilot","scores":[
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Clean misdirection from forgotten name to forgotten family; concise and punchy."},
+        {"jokeId":"joke-b","originality":6,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Warm premise with a mild observational ending, but the final turn is more reflective than funny."},
+        {"jokeId":"joke-c","originality":7,"surprise":6,"craft":6,"promptFit":10,"laugh":5,"comment":"Good voice and image; the flour 'hate me' line is amusing, but the joke lacks a strong payoff."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Solid setup and clear structure; 'dinner or a doorstop' is familiar and only mildly surprising."}
+      ]
+    }
+  ]
+}
