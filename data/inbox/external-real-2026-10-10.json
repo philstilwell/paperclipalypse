@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-10T14:01:45.361Z",
+  "publishedDate": "2026-10-10",
+  "seed": "external-real-2026-10-10",
+  "slug": "2026-10-10-external-real-2026-10-10",
+  "source": "manual-external",
+  "seedTerms": [
+    "Rich and Famous",
+    "Street Performer",
+    "Parade",
+    "Sharing bad information",
+    "Innocent",
+    "Temperamental"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "The Human ATM",
+      "seedTermsUsed": ["Rich and Famous", "Street Performer"],
+      "joke": "I saw a billionaire stop to watch a street musician. The guy finished his song, held out his hat, and the billionaire dropped in a dollar. I thought, wow, even billionaires tip badly. Then the musician pulled out his phone, took a picture of the billionaire, and said, 'For five bucks, I'll delete it.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I saw a billionaire stop to watch a street musician. The guy finished his song, held out his hat, and the billionaire dropped in a dollar. I thought, wow, even billionaires tip badly. Then the musician pulled out his phone, took a picture of the billionaire, and said, 'For five bucks, I'll delete it.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Open Mic Parade",
+      "seedTermsUsed": ["Street Performer", "Temperamental"],
+      "joke": "I used to be a street performer. Juggling, mostly. The problem was my act was temperamental. Some days I'd juggle five balls beautifully, and other days I'd drop one and have a full breakdown on the sidewalk. Honestly, people tipped way more for the breakdown. So now I just stand there holding one ball, sobbing. It's called 'minimalist,' and I've never made more money.",
+      "setup": "",
+      "punchline": "",
+      "text": "I used to be a street performer. Juggling, mostly. The problem was my act was temperamental. Some days I'd juggle five balls beautifully, and other days I'd drop one and have a full breakdown on the sidewalk. Honestly, people tipped way more for the breakdown. So now I just stand there holding one ball, sobbing. It's called 'minimalist,' and I've never made more money."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Helpful Local",
+      "seedTermsUsed": ["Innocent", "Sharing bad information"],
+      "joke": "I have one of those sweet, innocent faces, so tourists constantly stop me for directions. The problem is, I have absolutely zero sense of geography, but an overwhelming desire to be helpful. So I just give a warm, welcoming smile, point confidently down the avenue, and send a minivan full of tourists straight into the municipal water treatment plant.",
+      "setup": "",
+      "punchline": "",
+      "text": "I have one of those sweet, innocent faces, so tourists constantly stop me for directions. The problem is, I have absolutely zero sense of geography, but an overwhelming desire to be helpful. So I just give a warm, welcoming smile, point confidently down the avenue, and send a minivan full of tourists straight into the municipal water treatment plant."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Living Statue",
+      "seedTermsUsed": ["Street Performer", "Temperamental"],
+      "joke": "I tried the living-statue street performer gig last summer. Stand still, collect tips, easy money. Problem is I'm temperamental. So the second a tourist snaps a selfie without dropping a coin, I break character, point straight at them, and bark, \"My stillness isn't free!\" Then freeze again like nothing happened. The tips improved. The confusion was priceless.",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried the living-statue street performer gig last summer. Stand still, collect tips, easy money. Problem is I'm temperamental. So the second a tourist snaps a selfie without dropping a coin, I break character, point straight at them, and bark, \"My stillness isn't free!\" Then freeze again like nothing happened. The tips improved. The confusion was priceless."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Celebrity Upgrade",
+      "seedTermsUsed": ["Rich and Famous", "Street Performer"],
+      "joke": "I knew I wasn't ready to be rich and famous when a guy playing guitar on the sidewalk opened a case full of cash and I got jealous. I stood next to him with my coffee hoping people would tip me for listening. One tourist dropped a dollar in my cup and said, you're not very good at this. I said, compared to my day job, I'm crushing it.",
+      "setup": "",
+      "punchline": "",
+      "text": "I knew I wasn't ready to be rich and famous when a guy playing guitar on the sidewalk opened a case full of cash and I got jealous. I stood next to him with my coffee hoping people would tip me for listening. One tourist dropped a dollar in my cup and said, you're not very good at this. I said, compared to my day job, I'm crushing it."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear escalation from juggling to monetizing emotional breakdowns. The one-ball image is amusing, but the minimalist punchline is predictable and only mildly funny."},
+        {"jokeId":"joke-c","originality":5,"surprise":4,"craft":5,"promptFit":10,"laugh":4,"comment":"Relatable setup, but the water treatment plant feels arbitrarily selected rather than comically inevitable. The ending offers an absurd destination without a strong punchline."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":5,"promptFit":10,"laugh":6,"comment":"The angry living statue creates a recognizable comic contradiction. 'My stillness isn't free!' is the strongest moment, but the two sentences afterward dilute its impact."},
+        {"jokeId":"joke-e","originality":7,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"The accidental career as a paid spectator is a fresh, relatable premise with natural first-person delivery. The final comparison to the day job lands, though it lacks the sharp surprise needed for a higher laugh score."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":6,"promptFit":9,"laugh":6,"comment":"Clear premise and a real turn: the busker flips into a shakedown. The last line works but reads slightly like a stock joke. The 'tip badly' beat is a flat middle."},
+        {"jokeId":"joke-c","originality":5,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Confident wrong directions leading to the water treatment plant is a good image, but the minivan escalation is predictable. 'Innocent' is used as a concept; 'bad information' is implied well."},
+        {"jokeId":"joke-d","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong stage premise: the statue breaking character to demand payment. 'My stillness isn't free' is a clean punchline. The final two lines add a mild explanatory tail that slightly dilutes the peak."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":4,"promptFit":8,"laugh":4,"comment":"Jealousy of a busker is a workable idea, but the turn is muddled. 'Crushing it' compared to a day job is vague and doesn't land. Rhythm is loose and the ending is not clearly the funniest beat."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":4,"surprise":5,"craft":5,"promptFit":8,"laugh":4,"comment":"The logic of the punchline falls flat; there's no clear reason a billionaire would pay to delete a random photo of himself."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Excellent escalation and a very funny, natural stand-up persona. The 'minimalist' turn works perfectly."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"A strong visual premise, but 'the confusion was priceless' is a cliché closer that dilutes the actual punchline."},
+        {"jokeId":"joke-e","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Good self-deprecating stand-up rhythm. The coffee cup misunderstanding builds to a solid, relatable punchline."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean setup and blackmail snap work, but the rich-cheap premise stays familiar and the laugh stays mild."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong escalation from temperamental drops to deliberate sobbing minimalism; the final image carries a real comic payoff."},
+        {"jokeId":"joke-c","originality":5,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Specific destination gives a clear visual, yet the innocent-bad-directions shape is well-worn and the laugh remains polite."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":5,"promptFit":7,"laugh":5,"comment":"Premise is clear but the turn is soft and the final line only restates self-deprecation without a sharper snap."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Strong reversal with the musician extorting the billionaire; clear setup and payoff."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Good escalation from juggling failure to monetized breakdown; amusing but somewhat predictable."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Clear premise and visual payoff; the wrong-directions idea is familiar, though the destination adds punch."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":8,"promptFit":8,"laugh":7,"comment":"Nicely observed character behavior, strong image, and the freeze-again tag lands cleanly."}
+      ]
+    }
+  ]
+}

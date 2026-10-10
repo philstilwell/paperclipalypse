@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-10-external-real-2026-10-10",
+  "seed": "external-real-2026-10-10",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-10T14:01:45.361Z",
+  "publishedDate": "2026-10-10",
+  "seedTerms": [
+    "Rich and Famous",
+    "Street Performer",
+    "Parade",
+    "Sharing bad information",
+    "Innocent",
+    "Temperamental"
+  ],
+  "premise": {
+    "text": "Seed terms: Rich and Famous, Street Performer, Parade, Sharing bad information, Innocent, Temperamental",
+    "seedTerms": [
+      "Rich and Famous",
+      "Street Performer",
+      "Parade",
+      "Sharing bad information",
+      "Innocent",
+      "Temperamental"
+    ],
+    "displayText": "Living Statue"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "The Human ATM",
+      "seedTermsUsed": [
+        "Rich and Famous",
+        "Street Performer"
+      ],
+      "joke": "I saw a billionaire stop to watch a street musician. The guy finished his song, held out his hat, and the billionaire dropped in a dollar. I thought, wow, even billionaires tip badly. Then the musician pulled out his phone, took a picture of the billionaire, and said, 'For five bucks, I'll delete it.'",
+      "setup": "",
+      "punchline": "I saw a billionaire stop to watch a street musician. The guy finished his song, held out his hat, and the billionaire dropped in a dollar. I thought, wow, even billionaires tip badly. Then the musician pulled out his phone, took a picture of the billionaire, and said, 'For five bucks, I'll delete it.'",
+      "text": "I saw a billionaire stop to watch a street musician. The guy finished his song, held out his hat, and the billionaire dropped in a dollar. I thought, wow, even billionaires tip badly. Then the musician pulled out his phone, took a picture of the billionaire, and said, 'For five bucks, I'll delete it.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Open Mic Parade",
+      "seedTermsUsed": [
+        "Street Performer",
+        "Temperamental"
+      ],
+      "joke": "I used to be a street performer. Juggling, mostly. The problem was my act was temperamental. Some days I'd juggle five balls beautifully, and other days I'd drop one and have a full breakdown on the sidewalk. Honestly, people tipped way more for the breakdown. So now I just stand there holding one ball, sobbing. It's called 'minimalist,' and I've never made more money.",
+      "setup": "",
+      "punchline": "I used to be a street performer. Juggling, mostly. The problem was my act was temperamental. Some days I'd juggle five balls beautifully, and other days I'd drop one and have a full breakdown on the sidewalk. Honestly, people tipped way more for the breakdown. So now I just stand there holding one ball, sobbing. It's called 'minimalist,' and I've never made more money.",
+      "text": "I used to be a street performer. Juggling, mostly. The problem was my act was temperamental. Some days I'd juggle five balls beautifully, and other days I'd drop one and have a full breakdown on the sidewalk. Honestly, people tipped way more for the breakdown. So now I just stand there holding one ball, sobbing. It's called 'minimalist,' and I've never made more money."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro web",
+      "title": "Helpful Local",
+      "seedTermsUsed": [
+        "Innocent",
+        "Sharing bad information"
+      ],
+      "joke": "I have one of those sweet, innocent faces, so tourists constantly stop me for directions. The problem is, I have absolutely zero sense of geography, but an overwhelming desire to be helpful. So I just give a warm, welcoming smile, point confidently down the avenue, and send a minivan full of tourists straight into the municipal water treatment plant.",
+      "setup": "",
+      "punchline": "I have one of those sweet, innocent faces, so tourists constantly stop me for directions. The problem is, I have absolutely zero sense of geography, but an overwhelming desire to be helpful. So I just give a warm, welcoming smile, point confidently down the avenue, and send a minivan full of tourists straight into the municipal water treatment plant.",
+      "text": "I have one of those sweet, innocent faces, so tourists constantly stop me for directions. The problem is, I have absolutely zero sense of geography, but an overwhelming desire to be helpful. So I just give a warm, welcoming smile, point confidently down the avenue, and send a minivan full of tourists straight into the municipal water treatment plant."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Living Statue",
+      "seedTermsUsed": [
+        "Street Performer",
+        "Temperamental"
+      ],
+      "joke": "I tried the living-statue street performer gig last summer. Stand still, collect tips, easy money. Problem is I'm temperamental. So the second a tourist snaps a selfie without dropping a coin, I break character, point straight at them, and bark, \"My stillness isn't free!\" Then freeze again like nothing happened. The tips improved. The confusion was priceless.",
+      "setup": "",
+      "punchline": "I tried the living-statue street performer gig last summer. Stand still, collect tips, easy money. Problem is I'm temperamental. So the second a tourist snaps a selfie without dropping a coin, I break character, point straight at them, and bark, \"My stillness isn't free!\" Then freeze again like nothing happened. The tips improved. The confusion was priceless.",
+      "text": "I tried the living-statue street performer gig last summer. Stand still, collect tips, easy money. Problem is I'm temperamental. So the second a tourist snaps a selfie without dropping a coin, I break character, point straight at them, and bark, \"My stillness isn't free!\" Then freeze again like nothing happened. The tips improved. The confusion was priceless."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Celebrity Upgrade",
+      "seedTermsUsed": [
+        "Rich and Famous",
+        "Street Performer"
+      ],
+      "joke": "I knew I wasn't ready to be rich and famous when a guy playing guitar on the sidewalk opened a case full of cash and I got jealous. I stood next to him with my coffee hoping people would tip me for listening. One tourist dropped a dollar in my cup and said, you're not very good at this. I said, compared to my day job, I'm crushing it.",
+      "setup": "",
+      "punchline": "I knew I wasn't ready to be rich and famous when a guy playing guitar on the sidewalk opened a case full of cash and I got jealous. I stood next to him with my coffee hoping people would tip me for listening. One tourist dropped a dollar in my cup and said, you're not very good at this. I said, compared to my day job, I'm crushing it.",
+      "text": "I knew I wasn't ready to be rich and famous when a guy playing guitar on the sidewalk opened a case full of cash and I got jealous. I stood next to him with my coffee hoping people would tip me for listening. One tourist dropped a dollar in my cup and said, you're not very good at this. I said, compared to my day job, I'm crushing it."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear escalation from juggling to monetizing emotional breakdowns. The one-ball image is amusing, but the minimalist punchline is predictable and only mildly funny.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Relatable setup, but the water treatment plant feels arbitrarily selected rather than comically inevitable. The ending offers an absurd destination without a strong punchline.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 4.9
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The angry living statue creates a recognizable comic contradiction. 'My stillness isn't free!' is the strongest moment, but the two sentences afterward dilute its impact.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The accidental career as a paid spectator is a fresh, relatable premise with natural first-person delivery. The final comparison to the day job lands, though it lacks the sharp surprise needed for a higher laugh score.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and a real turn: the busker flips into a shakedown. The last line works but reads slightly like a stock joke. The 'tip badly' beat is a flat middle.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Confident wrong directions leading to the water treatment plant is a good image, but the minivan escalation is predictable. 'Innocent' is used as a concept; 'bad information' is implied well.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Strong stage premise: the statue breaking character to demand payment. 'My stillness isn't free' is a clean punchline. The final two lines add a mild explanatory tail that slightly dilutes the peak.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Jealousy of a busker is a workable idea, but the turn is muddled. 'Crushing it' compared to a day job is vague and doesn't land. Rhythm is loose and the ending is not clearly the funniest beat.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.7
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "The logic of the punchline falls flat; there's no clear reason a billionaire would pay to delete a random photo of himself.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.8
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Excellent escalation and a very funny, natural stand-up persona. The 'minimalist' turn works perfectly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "A strong visual premise, but 'the confusion was priceless' is a cliché closer that dilutes the actual punchline.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Good self-deprecating stand-up rhythm. The coffee cup misunderstanding builds to a solid, relatable punchline.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean setup and blackmail snap work, but the rich-cheap premise stays familiar and the laugh stays mild.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong escalation from temperamental drops to deliberate sobbing minimalism; the final image carries a real comic payoff.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific destination gives a clear visual, yet the innocent-bad-directions shape is well-worn and the laugh remains polite.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Premise is clear but the turn is soft and the final line only restates self-deprecation without a sharper snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong reversal with the musician extorting the billionaire; clear setup and payoff.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Good escalation from juggling failure to monetized breakdown; amusing but somewhat predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear premise and visual payoff; the wrong-directions idea is familiar, though the destination adds punch.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Nicely observed character behavior, strong image, and the freeze-again tag lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6.8,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 6.6,
+        "originality": 6.3,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "The angry living statue creates a recognizable comic contradiction. 'My stillness isn't free!' is the strongest moment, but the two sentences afterward dilute its impact."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.6,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.5,
+          "comment": "Strong stage premise: the statue breaking character to demand payment. 'My stillness isn't free' is a clean punchline. The final two lines add a mild explanatory tail that slightly dilutes the peak."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "A strong visual premise, but 'the confusion was priceless' is a cliché closer that dilutes the actual punchline."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Nicely observed character behavior, strong image, and the freeze-again tag lands cleanly."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.8,
+      "rawScore": 6.9,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 6.4,
+        "craft": 7.1,
+        "originality": 6.4,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.6,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0,
+          "comment": "Clear escalation from juggling to monetizing emotional breakdowns. The one-ball image is amusing, but the minimalist punchline is predictable and only mildly funny."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.6,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Excellent escalation and a very funny, natural stand-up persona. The 'minimalist' turn works perfectly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong escalation from temperamental drops to deliberate sobbing minimalism; the final image carries a real comic payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Good escalation from juggling failure to monetized breakdown; amusing but somewhat predictable."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 6.2,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 6.5,
+        "craft": 6.3,
+        "originality": 5.5,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6.5,
+        "craft": 6.3,
+        "originality": 5.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.5,
+          "comment": "Clear premise and a real turn: the busker flips into a shakedown. The last line works but reads slightly like a stock joke. The 'tip badly' beat is a flat middle."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.2,
+          "comment": "The logic of the punchline falls flat; there's no clear reason a billionaire would pay to delete a random photo of himself."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.3,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean setup and blackmail snap work, but the rich-cheap premise stays familiar and the laugh stays mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 7,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong reversal with the musician extorting the billionaire; clear setup and payoff."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.6,
+        "craft": 5.9,
+        "originality": 6.1,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 5.8,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.7,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0,
+          "comment": "The accidental career as a paid spectator is a fresh, relatable premise with natural first-person delivery. The final comparison to the day job lands, though it lacks the sharp surprise needed for a higher laugh score."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.2,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0.5,
+          "comment": "Jealousy of a busker is a workable idea, but the turn is muddled. 'Crushing it' compared to a day job is vague and doesn't land. Rhythm is loose and the ending is not clearly the funniest beat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.2,
+          "rawScore": 7,
+          "scoreAdjustment": 0.2,
+          "comment": "Good self-deprecating stand-up rhythm. The coffee cup misunderstanding builds to a solid, relatable punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 4.9,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Premise is clear but the turn is soft and the final line only restates self-deprecation without a sharper snap."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 5.8,
+      "rawScore": 5.9,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 5.4,
+        "craft": 5.9,
+        "originality": 5.2,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.9,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0,
+          "comment": "Relatable setup, but the water treatment plant feels arbitrarily selected rather than comically inevitable. The ending offers an absurd destination without a strong punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.6,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.5,
+          "comment": "Confident wrong directions leading to the water treatment plant is a good image, but the minivan escalation is predictable. 'Innocent' is used as a concept; 'bad information' is implied well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Specific destination gives a clear visual, yet the innocent-bad-directions shape is well-worn and the laugh remains polite."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.4,
+          "comment": "Clear premise and visual payoff; the wrong-directions idea is familiar, though the destination adds punch."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-10-external-real-2026-10-10.png",
+    "originalSrc": "assets/feature-images/2026-10-10-external-real-2026-10-10.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Living Statue: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: xAI Grok 4.3 - Living Statue\nExact joke text to render in the right panel:\nI tried the living-statue street performer gig last summer. Stand still, collect tips, easy money. Problem is I'm temperamental. So the second a tourist snaps a selfie without dropping a coin, I break character, point straight at them, and bark, \"My stillness isn't free!\" Then freeze again like nothing happened. The tips improved. The confusion was priceless.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Rich and Famous, Street Performer, Parade, Sharing bad information, Innocent, Temperamental. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Rich and Famous, Street Performer, Parade, Sharing bad information, Innocent, Temperamental. Use the winning joke titled \"Open Mic Parade\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 6.2,
+      "anthropic": 5.6,
+      "google": 5.9,
+      "xai": 6.4,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-10-external-real-2026-10-10.md"
+}
