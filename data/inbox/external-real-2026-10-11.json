@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-11T13:56:49.401Z",
+  "publishedDate": "2026-10-11",
+  "seed": "external-real-2026-10-11",
+  "slug": "2026-10-11-external-real-2026-10-11",
+  "source": "manual-external",
+  "seedTerms": [
+    "Utopia",
+    "Party Planner",
+    "Amusement Park",
+    "Needing to borrow money",
+    "Wholesome",
+    "Inattentive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "A Recent Photo",
+      "seedTermsUsed": ["Amusement Park", "Inattentive"],
+      "joke": "I lost my son at an amusement park. Security asked for a recent photo. I showed them a selfie of me eating a corn dog. The guard said, 'Where's your son?' I said, 'Zoom in on my sunglasses. You can see him walking away.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I lost my son at an amusement park. Security asked for a recent photo. I showed them a selfie of me eating a corn dog. The guard said, 'Where's your son?' I said, 'Zoom in on my sunglasses. You can see him walking away.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Cousin Dale's Business Plan",
+      "seedTermsUsed": ["Needing to borrow money", "Amusement Park"],
+      "joke": "My cousin called to borrow money. Said he's opening an amusement park. I said, 'Dale, you can't even keep a houseplant alive.' He said, 'That's why it's perfect. Nobody's coming back for a refund.' I asked what rides he had. He said, 'One. You stand in line for four hours and then I tell you it's closed.' I lent him forty bucks. That's the most honest business model I've ever invested in.",
+      "setup": "",
+      "punchline": "",
+      "text": "My cousin called to borrow money. Said he's opening an amusement park. I said, 'Dale, you can't even keep a houseplant alive.' He said, 'That's why it's perfect. Nobody's coming back for a refund.' I asked what rides he had. He said, 'One. You stand in line for four hours and then I tell you it's closed.' I lent him forty bucks. That's the most honest business model I've ever invested in."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash web",
+      "title": "Family Budget",
+      "seedTermsUsed": ["Amusement Park", "Needing to borrow money"],
+      "joke": "I took my eight-year-old nephew to Six Flags yesterday, and by hour two, the financial power dynamic completely shifted. I paid sixty bucks just to park near the dumpsters, twenty-two for a bottle of lukewarm Dasani, and by three o'clock I was making direct eye contact with a third-grader whispering, 'Hey buddy... how much tooth fairy cash do you have in your Velcro wallet?'",
+      "setup": "",
+      "punchline": "",
+      "text": "I took my eight-year-old nephew to Six Flags yesterday, and by hour two, the financial power dynamic completely shifted. I paid sixty bucks just to park near the dumpsters, twenty-two for a bottle of lukewarm Dasani, and by three o'clock I was making direct eye contact with a third-grader whispering, 'Hey buddy... how much tooth fairy cash do you have in your Velcro wallet?'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Wrong Line",
+      "seedTermsUsed": ["Amusement Park", "Inattentive"],
+      "joke": "I'm so inattentive that last time I went to the amusement park, I waited forty minutes thinking I was next for the big roller coaster. Turns out it was the line for the restroom. The guy in front of me turns around and goes, 'You know this isn't a ride, right?' I said, 'With the pressure I'm feeling, it better have a bigger drop than Space Mountain.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm so inattentive that last time I went to the amusement park, I waited forty minutes thinking I was next for the big roller coaster. Turns out it was the line for the restroom. The guy in front of me turns around and goes, 'You know this isn't a ride, right?' I said, 'With the pressure I'm feeling, it better have a bigger drop than Space Mountain.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "VIP Line",
+      "seedTermsUsed": ["Party Planner", "Amusement Park"],
+      "joke": "I got hired to organize a birthday at an amusement park. The client said, 'Make the kids feel like VIPs.' I misunderstood and spent the whole budget creating a fast pass for the parents. By noon, every kid was crying, every adult was smiling, and honestly that's the closest I've ever come to a five-star event.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got hired to organize a birthday at an amusement park. The client said, 'Make the kids feel like VIPs.' I misunderstood and spent the whole budget creating a fast pass for the parents. By noon, every kid was crying, every adult was smiling, and honestly that's the closest I've ever come to a five-star event."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Clear premise with several comic turns, but the houseplant comparison is disconnected from the later gags. The closed-ride joke is familiar, and the final line explains the humor rather than delivering a stronger punch."},
+        {"jokeId":"joke-c","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong escalation from recognizable amusement-park prices to an adult desperately soliciting a child's tooth-fairy savings. Specific details, believable frustration, and an effective final image. Slightly overwritten opening, but the payoff lands."},
+        {"jokeId":"joke-d","originality":4,"surprise":5,"craft":4,"promptFit":10,"laugh":4,"comment":"The mistaken queue establishes the premise, but the confusion strains credibility. The final bathroom-pressure and roller-coaster-drop connection feels forced rather than surprising, weakening the payoff."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":6,"promptFit":10,"laugh":5,"comment":"Coherent setup and a relatable reversal prioritizing parents over children. The crying-kids, happy-adults contrast is amusing, but the final five-star-event observation is predictable and lacks a decisive punch."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong visual turn: the missing son appears in the sunglasses reflection, walking away. It's clear, economical, and the final image carries the laugh. The inattentiveness is shown, not announced."},
+        {"jokeId":"joke-c","originality":6,"surprise":7,"craft":6,"promptFit":9,"laugh":7,"comment":"Specific, relatable details (dumpster parking, $22 Dasani) build to a good role reversal: the adult hitting up a third-grader for tooth fairy cash. The last line lands, but the setup runs long and could be tighter."},
+        {"jokeId":"joke-d","originality":4,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"The wrong-line mix-up is a familiar setup and 'I'm so inattentive that' is a stock opener. The restroom-pressure payoff is mildly amusing, but the Space Mountain comparison is a predictable toilet-humor turn."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":5,"comment":"The fast-pass-for-parents misread is a decent, fresh idea. The closer is weaker, because 'closest to a five-star event' is vague and softens the contrast of crying kids and smiling adults."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Terrific economy and stage rhythm. The reveal of zooming in on the sunglasses reflection lands with a sharp, genuinely funny visual punch."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"A bit meandering with multiple mini-punchlines that dilute the impact. Competent premise, but feels like an extended sketch pitch rather than a tight stand-up bit."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Starts with an overt 'I'm so inattentive that' tell-not-show opening, followed by a very well-worn bathroom line premise and an awkward, strained tag."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Solid, clean logic and relatable parental schadenfreude, though the concluding tag wraps up a bit too quietly to generate a big laugh."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Tight premise and visual punch; solid but mild laugh."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Strong escalation and honest-business closer; genuine comic idea."},
+        {"jokeId":"joke-c","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Vivid money-shift turn lands cleanly; familiar park-cost setup."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Clean inversion and final line carry; natural stage rhythm."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Strong visual and clear inattentive-parent angle; punchline is amusing but fairly predictable."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Good escalation from loan request to absurd business model; honest-investment tag lands well."},
+        {"jokeId":"joke-c","originality":8,"surprise":8,"craft":8,"promptFit":8,"laugh":8,"comment":"Specific details, clear escalation, and a strong image in the final turn; most memorable of the batch."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Solid structure and callback to ride drops, but the misunderstanding premise feels familiar and the payoff is mild."}
+      ]
+    }
+  ]
+}
