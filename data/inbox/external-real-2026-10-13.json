@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-13T13:59:42.816Z",
+  "publishedDate": "2026-10-13",
+  "seed": "external-real-2026-10-13",
+  "slug": "2026-10-13-external-real-2026-10-13",
+  "source": "manual-external",
+  "seedTerms": [
+    "Superhero",
+    "Office Worker",
+    "Skating Rink",
+    "Rules changing",
+    "Quirky",
+    "Indecisive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite / 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "The Fine Print",
+      "seedTermsUsed": ["Superhero", "Rules changing"],
+      "joke": "I wanted to be a superhero, but apparently the rules have changed. You can't just rescue somebody anymore. Last week I pulled a guy out of a burning building. He was furious. Said, 'I was filming that!' Then he made me carry him back inside so he could get a better angle. I'm standing there in a cape, waiting for him to yell, 'Action!'",
+      "setup": "",
+      "punchline": "",
+      "text": "I wanted to be a superhero, but apparently the rules have changed. You can't just rescue somebody anymore. Last week I pulled a guy out of a burning building. He was furious. Said, 'I was filming that!' Then he made me carry him back inside so he could get a better angle. I'm standing there in a cape, waiting for him to yell, 'Action!'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Rule Changes",
+      "seedTermsUsed": ["Office Worker", "Skating Rink"],
+      "joke": "I’m an office worker, so I assumed a skating rink would be relaxing. Nope. Eleven minutes in, the guy on the loudspeaker announces, ‘Everybody switch directions!’ Just like that. No memo, no meeting, no reorganization. I’ve worked at my company nine years and we’ve never reversed anything that fast. If my boss yelled that, I’d skate straight into the wall and call it a promotion.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m an office worker, so I assumed a skating rink would be relaxing. Nope. Eleven minutes in, the guy on the loudspeaker announces, ‘Everybody switch directions!’ Just like that. No memo, no meeting, no reorganization. I’ve worked at my company nine years and we’ve never reversed anything that fast. If my boss yelled that, I’d skate straight into the wall and call it a promotion."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite web",
+      "title": "Super Office",
+      "seedTermsUsed": ["Superhero", "Office Worker"],
+      "joke": "I tried working a desk job wearing my old superhero cape, but it turns out wearing spandex to middle-management meetings doesn't make you formidable. It just means when you panic-cry over a spreadsheet typo, HR asks if your powers include filing quarterly reports on time.",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried working a desk job wearing my old superhero cape, but it turns out wearing spandex to middle-management meetings doesn't make you formidable. It just means when you panic-cry over a spreadsheet typo, HR asks if your powers include filing quarterly reports on time."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Cape Confusion",
+      "seedTermsUsed": ["Superhero", "Indecisive"],
+      "joke": "I've always wanted to be a superhero, but I'm just too indecisive. Last week there's a robbery and I'm standing there in my cape going, \"Should I fly over? Or run? Or maybe use the laser eyes?\" The thieves finished up, high-fived each other, and drove off before I could pick a power.",
+      "setup": "",
+      "punchline": "",
+      "text": "I've always wanted to be a superhero, but I'm just too indecisive. Last week there's a robbery and I'm standing there in my cape going, \"Should I fly over? Or run? Or maybe use the laser eyes?\" The thieves finished up, high-fived each other, and drove off before I could pick a power."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Performance Review",
+      "seedTermsUsed": ["Superhero", "Office Worker"],
+      "joke": "I found out I'm the office version of a superhero. Every morning I arrive looking exhausted, disappear into a tiny cubicle, and somehow spend eight hours preventing problems nobody ever sees. Then at review time my boss goes, 'What exactly do you do here?' Apparently my superpower is saving the day so effectively it looks like I was checking email.",
+      "setup": "",
+      "punchline": "",
+      "text": "I found out I'm the office version of a superhero. Every morning I arrive looking exhausted, disappear into a tiny cubicle, and somehow spend eight hours preventing problems nobody ever sees. Then at review time my boss goes, 'What exactly do you do here?' Apparently my superpower is saving the day so effectively it looks like I was checking email."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":5,"craft":6,"promptFit":4,"laugh":6,"comment":"Relatable workplace comparison with decent escalation and stage rhythm. The promotion punchline feels somewhat forced. Switching directions also introduces Rules changing as a third seed concept."},
+        {"jokeId":"joke-c","originality":4,"surprise":4,"craft":4,"promptFit":9,"laugh":4,"comment":"Clear premise, but familiar superhero-office incongruity leads to a predictable HR punchline. Awkward phrasing and excessive setup weaken the delivery."},
+        {"jokeId":"joke-d","originality":4,"surprise":3,"craft":5,"promptFit":10,"laugh":5,"comment":"Clean, accessible first-person premise with exactly two seed concepts. Unfortunately, the robbery ending is precisely what the setup predicts, leaving little comic surprise."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Coherent workplace observation with a recognizable frustration and reasonable progression. The invisible-hero comparison works, but the final email reference softens rather than sharpens the punchline."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":6,"laugh":6,"comment":"Strong comic image: the rescued man is angry he was filming, and the hero is left waiting for ‘Action!’ The rules-changing idea is only implied, but the premise is clear and the last line pays off."},
+        {"jokeId":"joke-c","originality":3,"surprise":3,"craft":3,"promptFit":6,"laugh":3,"comment":"Relies on the HR and spreadsheet template. The sentence is long and doesn’t build, so it reads more like a written line than stage timing. The ending is a flat quip and doesn’t carry the laugh."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":6,"promptFit":8,"laugh":5,"comment":"Clean, clear and well paced, and ‘before I could pick a power’ is a neat tag. The paralysis-while-crime-happens beat is the obvious route, so the surprise is low."},
+        {"jokeId":"joke-e","originality":4,"surprise":5,"craft":5,"promptFit":7,"laugh":5,"comment":"Relatable ‘unseen prevention’ point with a decent boss-review turn. The last line explains the joke rather than snapping it, and the unappreciated-worker premise is familiar."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Solid modern influencer twist on the hero trope; carrying him back inside lands nicely."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Smart parallel between corporate inertia and rink reverse skate; the final line hits cleanly."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Functional but overly literal execution; the punchline plays out exactly as telegraphed."},
+        {"jokeId":"joke-e","originality":6,"surprise":5,"craft":7,"promptFit":8,"laugh":6,"comment":"Relatable corporate satire with smooth cadence, though the payoff is gentle rather than sharp."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean premise and solid visual turn with the forced return for a better angle; final line lands cleanly."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Sharp office-to-rink parallel with a satisfying final image of skating into the wall as promotion."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Competent but familiar cape-at-work setup; punch leans on expected HR/spreadsheet beats."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid invisible-work framing as superpower, though the boss review beat is fairly expected."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Good escalation from rescue to content creation culture; clear act-out and solid ending."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean comparison between rink and office life; coherent but the promotion tag is only a mild payoff."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Understandable office-superhero mashup, but the HR quarterly-reports punchline follows a familiar route."},
+        {"jokeId":"joke-d","originality":5,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Premise is clear, but the indecisive-superhero angle is predictable and the punchline mostly extends the setup."}
+      ]
+    }
+  ]
+}

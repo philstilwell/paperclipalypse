@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-13-external-real-2026-10-13",
+  "seed": "external-real-2026-10-13",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-13T13:59:42.816Z",
+  "publishedDate": "2026-10-13",
+  "seedTerms": [
+    "Superhero",
+    "Office Worker",
+    "Skating Rink",
+    "Rules changing",
+    "Quirky",
+    "Indecisive"
+  ],
+  "premise": {
+    "text": "Seed terms: Superhero, Office Worker, Skating Rink, Rules changing, Quirky, Indecisive",
+    "seedTerms": [
+      "Superhero",
+      "Office Worker",
+      "Skating Rink",
+      "Rules changing",
+      "Quirky",
+      "Indecisive"
+    ],
+    "displayText": "The Fine Print"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite / 3.8 Flash web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "The Fine Print",
+      "seedTermsUsed": [
+        "Superhero",
+        "Rules changing"
+      ],
+      "joke": "I wanted to be a superhero, but apparently the rules have changed. You can't just rescue somebody anymore. Last week I pulled a guy out of a burning building. He was furious. Said, 'I was filming that!' Then he made me carry him back inside so he could get a better angle. I'm standing there in a cape, waiting for him to yell, 'Action!'",
+      "setup": "",
+      "punchline": "I wanted to be a superhero, but apparently the rules have changed. You can't just rescue somebody anymore. Last week I pulled a guy out of a burning building. He was furious. Said, 'I was filming that!' Then he made me carry him back inside so he could get a better angle. I'm standing there in a cape, waiting for him to yell, 'Action!'",
+      "text": "I wanted to be a superhero, but apparently the rules have changed. You can't just rescue somebody anymore. Last week I pulled a guy out of a burning building. He was furious. Said, 'I was filming that!' Then he made me carry him back inside so he could get a better angle. I'm standing there in a cape, waiting for him to yell, 'Action!'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Rule Changes",
+      "seedTermsUsed": [
+        "Office Worker",
+        "Skating Rink"
+      ],
+      "joke": "I’m an office worker, so I assumed a skating rink would be relaxing. Nope. Eleven minutes in, the guy on the loudspeaker announces, ‘Everybody switch directions!’ Just like that. No memo, no meeting, no reorganization. I’ve worked at my company nine years and we’ve never reversed anything that fast. If my boss yelled that, I’d skate straight into the wall and call it a promotion.",
+      "setup": "",
+      "punchline": "I’m an office worker, so I assumed a skating rink would be relaxing. Nope. Eleven minutes in, the guy on the loudspeaker announces, ‘Everybody switch directions!’ Just like that. No memo, no meeting, no reorganization. I’ve worked at my company nine years and we’ve never reversed anything that fast. If my boss yelled that, I’d skate straight into the wall and call it a promotion.",
+      "text": "I’m an office worker, so I assumed a skating rink would be relaxing. Nope. Eleven minutes in, the guy on the loudspeaker announces, ‘Everybody switch directions!’ Just like that. No memo, no meeting, no reorganization. I’ve worked at my company nine years and we’ve never reversed anything that fast. If my boss yelled that, I’d skate straight into the wall and call it a promotion."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite web",
+      "title": "Super Office",
+      "seedTermsUsed": [
+        "Superhero",
+        "Office Worker"
+      ],
+      "joke": "I tried working a desk job wearing my old superhero cape, but it turns out wearing spandex to middle-management meetings doesn't make you formidable. It just means when you panic-cry over a spreadsheet typo, HR asks if your powers include filing quarterly reports on time.",
+      "setup": "",
+      "punchline": "I tried working a desk job wearing my old superhero cape, but it turns out wearing spandex to middle-management meetings doesn't make you formidable. It just means when you panic-cry over a spreadsheet typo, HR asks if your powers include filing quarterly reports on time.",
+      "text": "I tried working a desk job wearing my old superhero cape, but it turns out wearing spandex to middle-management meetings doesn't make you formidable. It just means when you panic-cry over a spreadsheet typo, HR asks if your powers include filing quarterly reports on time."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Cape Confusion",
+      "seedTermsUsed": [
+        "Superhero",
+        "Indecisive"
+      ],
+      "joke": "I've always wanted to be a superhero, but I'm just too indecisive. Last week there's a robbery and I'm standing there in my cape going, \"Should I fly over? Or run? Or maybe use the laser eyes?\" The thieves finished up, high-fived each other, and drove off before I could pick a power.",
+      "setup": "",
+      "punchline": "I've always wanted to be a superhero, but I'm just too indecisive. Last week there's a robbery and I'm standing there in my cape going, \"Should I fly over? Or run? Or maybe use the laser eyes?\" The thieves finished up, high-fived each other, and drove off before I could pick a power.",
+      "text": "I've always wanted to be a superhero, but I'm just too indecisive. Last week there's a robbery and I'm standing there in my cape going, \"Should I fly over? Or run? Or maybe use the laser eyes?\" The thieves finished up, high-fived each other, and drove off before I could pick a power."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Performance Review",
+      "seedTermsUsed": [
+        "Superhero",
+        "Office Worker"
+      ],
+      "joke": "I found out I'm the office version of a superhero. Every morning I arrive looking exhausted, disappear into a tiny cubicle, and somehow spend eight hours preventing problems nobody ever sees. Then at review time my boss goes, 'What exactly do you do here?' Apparently my superpower is saving the day so effectively it looks like I was checking email.",
+      "setup": "",
+      "punchline": "I found out I'm the office version of a superhero. Every morning I arrive looking exhausted, disappear into a tiny cubicle, and somehow spend eight hours preventing problems nobody ever sees. Then at review time my boss goes, 'What exactly do you do here?' Apparently my superpower is saving the day so effectively it looks like I was checking email.",
+      "text": "I found out I'm the office version of a superhero. Every morning I arrive looking exhausted, disappear into a tiny cubicle, and somehow spend eight hours preventing problems nobody ever sees. Then at review time my boss goes, 'What exactly do you do here?' Apparently my superpower is saving the day so effectively it looks like I was checking email."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable workplace comparison with decent escalation and stage rhythm. The promotion punchline feels somewhat forced. Switching directions also introduces Rules changing as a third seed concept.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 4,
+          "total": 5.600000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear premise, but familiar superhero-office incongruity leads to a predictable HR punchline. Awkward phrasing and excessive setup weaken the delivery.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean, accessible first-person premise with exactly two seed concepts. Unfortunately, the robbery ending is precisely what the setup predicts, leaving little comic surprise.",
+          "laugh": 5,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Coherent workplace observation with a recognizable frustration and reasonable progression. The invisible-hero comparison works, but the final email reference softens rather than sharpens the punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong comic image: the rescued man is angry he was filming, and the hero is left waiting for ‘Action!’ The rules-changing idea is only implied, but the premise is clear and the last line pays off.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 6,
+          "total": 6
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Relies on the HR and spreadsheet template. The sentence is long and doesn’t build, so it reads more like a written line than stage timing. The ending is a flat quip and doesn’t carry the laugh.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 3,
+          "originality": 3,
+          "promptFit": 6,
+          "total": 3.3000000000000003
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean, clear and well paced, and ‘before I could pick a power’ is a neat tag. The paralysis-while-crime-happens beat is the obvious route, so the surprise is low.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Relatable ‘unseen prevention’ point with a decent boss-review turn. The last line explains the joke rather than snapping it, and the unappreciated-worker premise is familiar.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 5.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid modern influencer twist on the hero trope; carrying him back inside lands nicely.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Smart parallel between corporate inertia and rink reverse skate; the final line hits cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Functional but overly literal execution; the punchline plays out exactly as telegraphed.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Relatable corporate satire with smooth cadence, though the payoff is gentle rather than sharp.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean premise and solid visual turn with the forced return for a better angle; final line lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Sharp office-to-rink parallel with a satisfying final image of skating into the wall as promotion.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Competent but familiar cape-at-work setup; punch leans on expected HR/spreadsheet beats.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Solid invisible-work framing as superpower, though the boss review beat is fairly expected.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Good escalation from rescue to content creation culture; clear act-out and solid ending.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clean comparison between rink and office life; coherent but the promotion tag is only a mild payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Understandable office-superhero mashup, but the HR quarterly-reports punchline follows a familiar route.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Premise is clear, but the indecisive-superhero angle is predictable and the punchline mostly extends the setup.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "score": 6.6,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 6.4,
+        "craft": 6.7,
+        "originality": 6.2,
+        "promptFit": 7.7
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.3,
+          "rawScore": 6,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong comic image: the rescued man is angry he was filming, and the hero is left waiting for ‘Action!’ The rules-changing idea is only implied, but the premise is clear and the last line pays off."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Solid modern influencer twist on the hero trope; carrying him back inside lands nicely."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean premise and solid visual turn with the forced return for a better angle; final line lands cleanly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 7,
+          "scoreAdjustment": -0.5,
+          "comment": "Good escalation from rescue to content creation culture; clear act-out and solid ending."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.5,
+      "rawScore": 6.6,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 6.2,
+        "craft": 6.7,
+        "originality": 6.4,
+        "promptFit": 7.4
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 7.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Relatable workplace comparison with decent escalation and stage rhythm. The promotion punchline feels somewhat forced. Switching directions also introduces Rules changing as a third seed concept."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "Smart parallel between corporate inertia and rink reverse skate; the final line hits cleanly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Sharp office-to-rink parallel with a satisfying final image of skating into the wall as promotion."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Clean comparison between rink and office life; coherent but the promotion tag is only a mild payoff."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.4,
+        "craft": 6.4,
+        "originality": 5.4,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 5.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Coherent workplace observation with a recognizable frustration and reasonable progression. The invisible-hero comparison works, but the final email reference softens rather than sharpens the punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.4,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Relatable ‘unseen prevention’ point with a decent boss-review turn. The last line explains the joke rather than snapping it, and the unappreciated-worker premise is familiar."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Relatable corporate satire with smooth cadence, though the payoff is gentle rather than sharp."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid invisible-work framing as superpower, though the boss review beat is fairly expected."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.1,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 3.8,
+        "craft": 5.3,
+        "originality": 4.3,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 3.8,
+        "craft": 5.3,
+        "originality": 4.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 5.4,
+          "rawScore": 5,
+          "scoreAdjustment": 0.4,
+          "comment": "Clean, accessible first-person premise with exactly two seed concepts. Unfortunately, the robbery ending is precisely what the setup predicts, leaving little comic surprise."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.3,
+          "comment": "Clean, clear and well paced, and ‘before I could pick a power’ is a neat tag. The paralysis-while-crime-happens beat is the obvious route, so the surprise is low."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5,
+          "rawScore": 5,
+          "scoreAdjustment": 0,
+          "comment": "Functional but overly literal execution; the punchline plays out exactly as telegraphed."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.6,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.5,
+          "comment": "Premise is clear, but the indecisive-superhero angle is predictable and the punchline mostly extends the setup."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 4.7,
+      "rawScore": 4.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.2,
+        "surprise": 4.2,
+        "craft": 4.7,
+        "originality": 4.2,
+        "promptFit": 7.7
+      },
+      "rawRubric": {
+        "laugh": 4.3,
+        "surprise": 4.3,
+        "craft": 4.8,
+        "originality": 4.3,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 4.9,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear premise, but familiar superhero-office incongruity leads to a predictable HR punchline. Awkward phrasing and excessive setup weaken the delivery."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 3.6,
+          "rawScore": 3.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Relies on the HR and spreadsheet template. The sentence is long and doesn’t build, so it reads more like a written line than stage timing. The ending is a flat quip and doesn’t carry the laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.2,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Competent but familiar cape-at-work setup; punch leans on expected HR/spreadsheet beats."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.5,
+          "comment": "Understandable office-superhero mashup, but the HR quarterly-reports punchline follows a familiar route."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-13-external-real-2026-10-13.png",
+    "originalSrc": "assets/feature-images/2026-10-13-external-real-2026-10-13.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Fine Print: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-6 - The Fine Print\nExact joke text to render in the right panel:\nI wanted to be a superhero, but apparently the rules have changed. You can't just rescue somebody anymore. Last week I pulled a guy out of a burning building. He was furious. Said, 'I was filming that!' Then he made me carry him back inside so he could get a better angle. I'm standing there in a cape, waiting for him to yell, 'Action!'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Superhero, Office Worker, Skating Rink, Rules changing, Quirky, Indecisive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Superhero, Office Worker, Skating Rink, Rules changing, Quirky, Indecisive. Use the winning joke titled \"The Fine Print\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 5.7,
+      "anthropic": 5.8,
+      "google": 6.1,
+      "xai": 6.4,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-13-external-real-2026-10-13.md"
+}
