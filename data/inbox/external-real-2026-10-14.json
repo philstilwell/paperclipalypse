@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-14T14:02:03.534Z",
+  "publishedDate": "2026-10-14",
+  "seed": "external-real-2026-10-14",
+  "slug": "2026-10-14-external-real-2026-10-14",
+  "source": "manual-external",
+  "seedTerms": [
+    "Paranormal",
+    "Conductor",
+    "A CEO's Office",
+    "Lost temper / composure",
+    "Just",
+    "Morbid"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini 3.1 Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto web"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "Ghosting the Ghost",
+      "seedTermsUsed": ["Paranormal", "Lost temper / composure"],
+      "joke": "I paid a psychic to contact my dead grandfather. She closed her eyes and said, \"He's here. He wants you to stop wasting money.\" I lost my temper. I said, \"I paid you eighty bucks to get yelled at by a dead man?\" She said, \"Actually, he says you still owe him twenty.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I paid a psychic to contact my dead grandfather. She closed her eyes and said, \"He's here. He wants you to stop wasting money.\" I lost my temper. I said, \"I paid you eighty bucks to get yelled at by a dead man?\" She said, \"Actually, he says you still owe him twenty.\""
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Séance Etiquette",
+      "seedTermsUsed": ["Paranormal", "Lost temper / composure"],
+      "joke": "I went on a ghost tour last month. The guide says, ‘Stay calm, spirits feed on fear.’ Then a floorboard creaked and I screamed so loud I lost the group. Now I’m the only haunting that tour has. Somewhere there’s a ghost telling his friends, ‘Some guy’s still down in the cellar yelling at me, and I’m the one who’s dead.’",
+      "setup": "",
+      "punchline": "",
+      "text": "I went on a ghost tour last month. The guide says, ‘Stay calm, spirits feed on fear.’ Then a floorboard creaked and I screamed so loud I lost the group. Now I’m the only haunting that tour has. Somewhere there’s a ghost telling his friends, ‘Some guy’s still down in the cellar yelling at me, and I’m the one who’s dead.’"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini 3.1 Pro web",
+      "title": "Maestro's Macchiato",
+      "seedTermsUsed": ["Conductor", "Lost temper / composure"],
+      "joke": "I saw an orchestra conductor lose his temper at a barista today. It’s impossible to be intimidated by a guy whose default angry body language is waving an imaginary wand. He's screaming about his cold macchiato, but his hands are aggressively keeping a 4/4 time signature. Like, calm down, man, you're not threatening anyone. You just look like you’re about to cue the brass section to emphasize your disappointment in oat milk.",
+      "setup": "",
+      "punchline": "",
+      "text": "I saw an orchestra conductor lose his temper at a barista today. It’s impossible to be intimidated by a guy whose default angry body language is waving an imaginary wand. He's screaming about his cold macchiato, but his hands are aggressively keeping a 4/4 time signature. Like, calm down, man, you're not threatening anyone. You just look like you’re about to cue the brass section to emphasize your disappointment in oat milk."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Ghost Passengers",
+      "seedTermsUsed": ["Paranormal", "Conductor"],
+      "joke": "I was on the late subway when the conductor came over the intercom and said, \"Next stop is haunted—keep your arms inside and ignore any floating tickets.\" I laughed until a translucent guy sat down next to me and asked if the seat was taken. I said yes. He vanished. The conductor just nodded like it was a regular Tuesday.",
+      "setup": "",
+      "punchline": "",
+      "text": "I was on the late subway when the conductor came over the intercom and said, \"Next stop is haunted—keep your arms inside and ignore any floating tickets.\" I laughed until a translucent guy sat down next to me and asked if the seat was taken. I said yes. He vanished. The conductor just nodded like it was a regular Tuesday."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto web",
+      "title": "Executive Presence",
+      "seedTermsUsed": ["Paranormal", "A CEO's Office"],
+      "joke": "I work in a supposedly haunted office. Everyone kept reporting a ghost in the CEO's office, so management brought in a paranormal expert. After one hour he said, 'Good news, it's not a spirit.' Apparently no dead person would spend that much time in the building and still ask why profits are down.",
+      "setup": "",
+      "punchline": "",
+      "text": "I work in a supposedly haunted office. Everyone kept reporting a ghost in the CEO's office, so management brought in a paranormal expert. After one hour he said, 'Good news, it's not a spirit.' Apparently no dead person would spend that much time in the building and still ask why profits are down."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear premise and an amusing reversal in which the ghost becomes the frightened party. The final line is slightly overexplained, weakening the punch. Entertaining but not especially memorable."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong visual comedy built around a conductor's involuntary gestures. The 4/4 detail adds specificity, and the brass-section punchline delivers a satisfying escalation. Slightly wordy, but genuinely funny."},
+        {"jokeId":"joke-d","originality":5,"surprise":4,"craft":4,"promptFit":10,"laugh":3,"comment":"Understandable supernatural scenario, but the ghost politely disappearing has little comic force. The conductor's indifference is predictable, and the ending supplies atmosphere rather than a punchline."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Recognizable workplace satire with a coherent supernatural setup. The CEO's obsession with profits offers a mild payoff, but the corporate caricature is familiar and the punchline lacks a sharp, unexpected turn."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Clear stage premise and a real turn: the dead grandfather’s money complaint flips into him collecting a debt. Natural rhythm, and the last line carries the laugh. The psychic-contacts-dead-relative setup is familiar, which limits originality."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":5,"promptFit":8,"laugh":6,"comment":"Good observational image of a conductor’s hands keeping time mid-rant. The middle works, but the ending explains the joke instead of snapping. ‘Calm down, man’ and the repeated point dilute the final beat. Oat milk is a soft closer."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":4,"promptFit":8,"laugh":4,"comment":"Subway ‘conductor’ is a loose reading, and the haunted-ride premise is vague. ‘Seat taken? Yes. He vanished’ is mildly cute but the ghost reacts to nothing funny. The ending (‘regular Tuesday’) is a stock deadpan closer with no turn."},
+        {"jokeId":"joke-e","originality":4,"surprise":5,"craft":4,"promptFit":8,"laugh":5,"comment":"The turn that the CEO is worse than a ghost has a decent kernel, but ‘profits are down’ is a generic office-satire beat. The logic is muddled: it’s unclear why no spirit would linger, and the last sentence is overlong and explains itself rather than landing cleanly."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Classic misdirection with a sharp, well-executed punchline and natural stage dialogue."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong premise shift where the comic becomes the haunting; good stage rhythm and button."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":5,"laugh":4,"comment":"Reads more like a whimsical story than a stand-up bit, lacking a concrete punchline to carry the laugh."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Competent execution but relies heavily on a standard workplace trope rather than discovering a fresh angle."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean setup-to-punch with a satisfying money-still-owed snap; familiar psychic frame elevated by the second demand."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clear premise but the payoff stretches and softens; the ghost’s complaint feels more narrative than sharp stand-up."},
+        {"jokeId":"joke-c","originality":8,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong visual incongruity of angry 4/4 conducting; specific, stage-ready image that lands cleanly."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Efficient corporate-paranormal twist; solid smile but the final line doesn’t fully escalate the laugh."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Clear setup and payoff. The extra debt reveal is a solid tag, though the psychic/grandparent angle feels familiar."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Good escalation from fear to accidentally becoming the haunting. Strong image and a clean final turn."},
+        {"jokeId":"joke-c","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Funny observational premise sustained with specific details. Oat milk tag works, though the central joke arrives early."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Readable and coherent, but more of a whimsical paranormal scenario than a joke with a strong punchline or turn."}
+      ]
+    }
+  ]
+}
