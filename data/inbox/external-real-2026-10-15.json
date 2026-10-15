@@ -1,0 +1,344 @@
+{
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash-Lite",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto web"
+    }
+  ],
+  "createdAt": "2026-10-15T15:19:54Z",
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "The Shortcut",
+      "seedTermsUsed": [
+        "Hypnotherapist",
+        "Lazy"
+      ],
+      "joke": "I went to a hypnotherapist to cure my laziness. He said, 'Close your eyes. Imagine getting up at six, exercising, then working hard all day.' I said, 'Hang on. If you can put ideas in people's heads, why are we wasting this on me? My boss is right down the street.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to a hypnotherapist to cure my laziness. He said, 'Close your eyes. Imagine getting up at six, exercising, then working hard all day.' I said, 'Hang on. If you can put ideas in people's heads, why are we wasting this on me? My boss is right down the street.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Locker Room Mystery",
+      "seedTermsUsed": [
+        "Mystery",
+        "Locker Room"
+      ],
+      "joke": "I joined a gym last month, and I still don’t understand the locker room. There’s a guy in there who’s been towel-drying the same knee for ten minutes. Ten minutes! Nobody’s knee is that wet. I’ve been going for weeks now, and he’s always there, always the knee. I don’t know who he is, but I know one thing: somewhere in this building, there’s a very clean knee, and a very dirty secret.",
+      "setup": "",
+      "punchline": "",
+      "text": "I joined a gym last month, and I still don’t understand the locker room. There’s a guy in there who’s been towel-drying the same knee for ten minutes. Ten minutes! Nobody’s knee is that wet. I’ve been going for weeks now, and he’s always there, always the knee. I don’t know who he is, but I know one thing: somewhere in this building, there’s a very clean knee, and a very dirty secret."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "model": "Gemini 3.5 Flash-Lite web",
+      "title": "Unlocking the Mind",
+      "seedTermsUsed": [
+        "Hypnotherapist",
+        "Locker Room"
+      ],
+      "joke": "I started seeing a hypnotherapist to cure my social anxiety, which is going great except he accidentally unlocked a past-life regression while I was halfway through changing into gym shorts. Now, instead of working out, I spend forty-five minutes every Tuesday sitting on a wooden bench, weeping silently while clutching a wet towel and remembering the exact moment I died at Gettysburg. The worst part is my gym membership still charges me a monthly maintenance fee for the emotional trauma.",
+      "setup": "",
+      "punchline": "",
+      "text": "I started seeing a hypnotherapist to cure my social anxiety, which is going great except he accidentally unlocked a past-life regression while I was halfway through changing into gym shorts. Now, instead of working out, I spend forty-five minutes every Tuesday sitting on a wooden bench, weeping silently while clutching a wet towel and remembering the exact moment I died at Gettysburg. The worst part is my gym membership still charges me a monthly maintenance fee for the emotional trauma."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Tile Mission",
+      "seedTermsUsed": [
+        "Hypnotherapist",
+        "Lazy"
+      ],
+      "joke": "So I finally saw a hypnotherapist about my laziness. He puts me under and says, 'From now on, you finish every single task you start.' I wake up feeling amazing. Then I walk into the bathroom. Two hours later my wife is banging on the door. Turns out I started counting the tiles… and there are a lot of tiles.",
+      "setup": "",
+      "punchline": "",
+      "text": "So I finally saw a hypnotherapist about my laziness. He puts me under and says, 'From now on, you finish every single task you start.' I wake up feeling amazing. Then I walk into the bathroom. Two hours later my wife is banging on the door. Turns out I started counting the tiles… and there are a lot of tiles."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto web",
+      "title": "Password Clue",
+      "seedTermsUsed": [
+        "Mystery",
+        "Losing access"
+      ],
+      "joke": "I got locked out of my own email, and the recovery questions turned it into a mystery novel. It asked, 'What was your childhood nickname?' Apparently the answer wasn't 'I don't know, that's why I'm investigating.' By the third question I wasn't trying to regain access anymore, I was just trying to solve the cold case of who I used to be.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got locked out of my own email, and the recovery questions turned it into a mystery novel. It asked, 'What was your childhood nickname?' Apparently the answer wasn't 'I don't know, that's why I'm investigating.' By the third question I wasn't trying to regain access anymore, I was just trying to solve the cold case of who I used to be."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "The obsessively towel-dried knee is a distinctive, amusing observation. Repetition builds curiosity, but the final 'dirty secret' is a familiar expression rather than a satisfying comic revelation. Stronger setup than payoff."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 4,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "The Gettysburg regression creates an unexpected image, but the premise is convoluted and the joke takes too long to reach its destination. The maintenance-fee punchline feels disconnected from the central absurdity and produces little comic payoff."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "A coherent comic reversal: curing laziness creates an even less productive compulsion. The bathroom reveal provides effective escalation, although counting tiles is a relatively mild payoff. Clean construction and believable stage delivery."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Relatable frustration transformed into a clever identity mystery. The childhood-nickname response is the strongest laugh, while the cold-case ending supplies a satisfying thematic callback. Concise, natural delivery, though the final turn is more witty than laugh-inducing."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear premise and a tidy pivot to the boss, but the final line’s logic is a bit ambiguous and the boss target is familiar."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "The image of weeping on a bench, clutching a towel and remembering Gettysburg is funny, but the setup is overloaded and the maintenance-fee closer is weaker than the middle."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong turn: the hypnosis works too literally and traps him counting bathroom tiles. Clean rhythm, and the last line lands the laugh."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Relatable account-recovery frustration with a decent ‘cold case of who I used to be’ closer, but the nickname exchange is muddled and the turn is somewhat expected."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash-Lite",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid and competent redirection to the boss, though a bit structurally predictable."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Great observational detail with a strong, clean callback and a punchy final line."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Nice commitment to the literal interpretation of finishing tasks with a funny bathroom escalation."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clever spin on password recovery with a strong philosophical punchline at the end."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear premise and clean delivery, but the boss redirect is the most obvious available turn and lands soft."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong observational escalation and a sharp final image that actually carries the laugh."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Premise works but Gettysburg past-life is familiar and the membership-fee closer is weak."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Tight first-person setup with a satisfying shift from recovery questions to cold-case investigation."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear premise and payoff; boss redirection is mildly funny but fairly familiar."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong observational setup with a specific image and a neat mystery-style tag at the end."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "Readable and specific, but overlong and the final fee joke is weaker than the setup."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clean stand-up structure and escalation; tile-counting payoff is solid but not especially unexpected."
+        }
+      ]
+    }
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "publishedDate": "2026-10-15",
+  "seed": "external-real-2026-10-15",
+  "seedTerms": [
+    "Mystery",
+    "Hypnotherapist",
+    "Locker Room",
+    "Losing access",
+    "Whimsical",
+    "Lazy"
+  ],
+  "slug": "2026-10-15-external-real-2026-10-15",
+  "source": "manual-external"
+}
