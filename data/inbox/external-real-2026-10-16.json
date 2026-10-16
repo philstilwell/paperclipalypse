@@ -1,0 +1,344 @@
+{
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto web"
+    }
+  ],
+  "createdAt": "2026-10-16T14:04:46Z",
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "The Luxury Apartment",
+      "seedTermsUsed": [
+        "Run-down Apartment",
+        "Haughty"
+      ],
+      "joke": "My landlord calls my apartment a luxury residence. The ceiling leaks, the windows don't close, and the mice have stopped running when I turn on the lights. One of them actually looked annoyed. I complained to my landlord, and he said, 'You're paying for the location.' I said, 'What location? I'm indoors, and somehow I'm still exposed to the elements.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My landlord calls my apartment a luxury residence. The ceiling leaks, the windows don't close, and the mice have stopped running when I turn on the lights. One of them actually looked annoyed. I complained to my landlord, and he said, 'You're paying for the location.' I said, 'What location? I'm indoors, and somehow I'm still exposed to the elements.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Estimate",
+      "seedTermsUsed": [
+        "Mechanic",
+        "Haughty"
+      ],
+      "joke": "My mechanic is the most condescending man I've ever met. I brought my car in and he looked under the hood and sighed like a doctor delivering bad news to a smoker. He said, 'Who's been doing your oil changes?' I said, 'Me.' He said, 'Ah.' Then he charged me $400 for the 'Ah.' It's itemized. Right there on the bill: 'Ah. Labor.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My mechanic is the most condescending man I've ever met. I brought my car in and he looked under the hood and sighed like a doctor delivering bad news to a smoker. He said, 'Who's been doing your oil changes?' I said, 'Me.' He said, 'Ah.' Then he charged me $400 for the 'Ah.' It's itemized. Right there on the bill: 'Ah. Labor.'"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro web",
+      "title": "Load-Bearing",
+      "seedTermsUsed": [
+        "Run-down Apartment",
+        "Playful"
+      ],
+      "joke": "I tried to be playful and surprise my girlfriend by hiding in the closet of my incredibly run-down apartment. When she walked in, I kicked the door open and yelled, 'Boo!' She didn't scream. She didn't laugh. She just slumped in relief and said, 'Oh, thank god. I thought the load-bearing raccoons had finally breached the drywall.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried to be playful and surprise my girlfriend by hiding in the closet of my incredibly run-down apartment. When she walked in, I kicked the door open and yelled, 'Boo!' She didn't scream. She didn't laugh. She just slumped in relief and said, 'Oh, thank god. I thought the load-bearing raccoons had finally breached the drywall.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Industrial Chic",
+      "seedTermsUsed": [
+        "Run-down Apartment",
+        "Haughty"
+      ],
+      "joke": "I live in a run-down apartment, but I still act haughty about it. When friends visit I give the full tour. 'Notice the exposed brick—or as I call it, the wall that simply gave up. And the kitchen is fully equipped, provided you count the toaster that only works when you threaten it.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I live in a run-down apartment, but I still act haughty about it. When friends visit I give the full tour. 'Notice the exposed brick—or as I call it, the wall that simply gave up. And the kitchen is fully equipped, provided you count the toaster that only works when you threaten it.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto web",
+      "title": "Maintenance Request",
+      "seedTermsUsed": [
+        "Mechanic",
+        "Run-down Apartment"
+      ],
+      "joke": "I live in such a run-down apartment that when the sink started making a grinding noise, the landlord didn't send a plumber, he sent a mechanic. The guy listened under the faucet, nodded, and said, 'Good news, your transmission is fine. Bad news, your kitchen has 180,000 miles on it.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I live in such a run-down apartment that when the sink started making a grinding noise, the landlord didn't send a plumber, he sent a mechanic. The guy listened under the faucet, nodded, and said, 'Good news, your transmission is fine. Bad news, your kitchen has 180,000 miles on it.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong observational premise, natural escalation, and a satisfying final punchline. 'Ah. Labor.' is a concise, memorable payoff that makes the mechanic's condescension tangible."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "The girlfriend's unexpected relief provides a genuine reversal. 'Load-bearing raccoons' is a funny visual, but the elaborate final sentence sounds more written than spoken, weakening the delivery."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear premise and consistent characterization, but the jokes about exposed brick and threatening appliances are familiar. The closing line is mildly amusing rather than a strong comedic turn."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clean setup, natural misdirection, and efficient escalation. The transmission diagnosis sets up the apartment mileage punchline effectively. A strong, accessible joke with good stage rhythm."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid landlord-spin setup, and 'indoors, still exposed to the elements' is a clean closer. The 'annoyed mouse' beat is the freshest image. Familiar territory, but well built."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "The reversal, where she's relieved it's only her boyfriend and not a raccoon, is a real turn. 'Load-bearing raccoons' is a vivid, odd image that lands. The setup is a bit wordy, and 'playful' is stated outright rather than shown."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "The haughty-tour framing is a workable premise. 'The wall that simply gave up' and the threatened toaster are decent but predictable. Ends on a good line, though the premise is stated up front rather than discovered."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "The landlord sending a mechanic for a sink is a clever absurd premise. The mileage closer is tight and carries the laugh. The transmission wordplay is a bit pun-adjacent, but the structure is clean and economical."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent but relies on familiar bad-apartment tropes; the punchline is a bit wordy and lacks a strong snap."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 9,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent stage rhythm and pacing. The comparison to a doctor is vivid, and the itemized 'Ah. Labor' is a very strong, relatable punchline."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 3,
+          "promptFit": 3,
+          "laugh": 4,
+          "comment": "The opening sentence is pure, unnatural prompt recitation, which ruins the stage illusion. The subsequent observations feel disjointed."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Uses a slightly dated setup structure, but pays it off nicely with a clean, well-escalated absurd premise. The final line lands solidly."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Solid apartment complaint with a mild location turn; competent but forgettable."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Clean premise, sharp non-obvious billable 'Ah' that carries the laugh."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Playful setup lands on a fresh, specific raccoon image with good relief snap."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Economical car/house swap; mild and familiar payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear premise and voice; indoor-yet-exposed line is amusing, but the turn is fairly predictable and modest."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong character detail, efficient buildup, and the itemized 'Ah. Labor.' tag is a solid, clean punchline."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Good misdirection and escalation; 'load-bearing raccoons' is vivid and the reveal delivers a strong laugh."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Fun contrast between pride and decay; contains good lines, but feels more like a string of observations than a sharpened punch."
+        }
+      ]
+    }
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "publishedDate": "2026-10-16",
+  "seed": "external-real-2026-10-16",
+  "seedTerms": [
+    "Woman and Child in Peril",
+    "Mechanic",
+    "Run-down Apartment",
+    "Being offered dirty money",
+    "Playful",
+    "Haughty"
+  ],
+  "slug": "2026-10-16-external-real-2026-10-16",
+  "source": "manual-external"
+}

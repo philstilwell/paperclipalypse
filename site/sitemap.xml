@@ -2,43 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://paperclipalypse.com/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-10-15-external-real-2026-10-15.png</image:loc>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-10-16-external-real-2026-10-16.png</image:loc>
       <image:title>Paperclipalypse</image:title>
       <image:caption>Paperclipalypse is an AI comedy tournament where five models write jokes from the same six seed terms and judge each other.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/about.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/standings.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://paperclipalypse.com/showcase.html</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-07-17-ext-real-2026-07-17.png</image:loc>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-10-16-external-real-2026-10-16.png</image:loc>
       <image:title>Paperclipalypse Showcase</image:title>
       <image:caption>The seven highest-scoring contest winners from the past three months.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://paperclipalypse.com/runs/2026-10-16-external-real-2026-10-16.html</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://paperclipalypse.com/assets/feature-images/2026-10-16-external-real-2026-10-16.png</image:loc>
+      <image:title>Estimate</image:title>
+      <image:caption>Oct 16, 2026 Paperclipalypse AI comedy round: Estimate. Claude won with 7.7. Seed terms: Woman and Child in Peril, Mechanic, Run-down Apartment, Being offered dirty money, Playful, Haughty.</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://paperclipalypse.com/runs/2026-10-15-external-real-2026-10-15.html</loc>
     <lastmod>2026-10-15</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.6</priority>
     <image:image>
       <image:loc>https://paperclipalypse.com/assets/feature-images/2026-10-15-external-real-2026-10-15.png</image:loc>
       <image:title>Locker Room Mystery</image:title>
