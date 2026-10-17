@@ -1,0 +1,184 @@
+{
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto web"
+    }
+  ],
+  "createdAt": "2026-10-17T15:43:30Z",
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "The Collector's Edition",
+      "seedTermsUsed": [
+        "Comic Book",
+        "Being scammed"
+      ],
+      "joke": "I paid $400 for a rare Superman comic online. The seller said it was in mint condition, never opened. When it arrived, it was just a blank notebook with an S drawn on the cover. I demanded my money back. The guy said, 'Sorry, no refunds. You bought the invisible edition.' I said, 'Superman isn't invisible.' He said, 'Neither is your credit card statement.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I paid $400 for a rare Superman comic online. The seller said it was in mint condition, never opened. When it arrived, it was just a blank notebook with an S drawn on the cover. I demanded my money back. The guy said, 'Sorry, no refunds. You bought the invisible edition.' I said, 'Superman isn't invisible.' He said, 'Neither is your credit card statement.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Free Gift Wrap",
+      "seedTermsUsed": [
+        "Being scammed",
+        "Waterfall"
+      ],
+      "joke": "I got scammed last month. A guy online sold me a ‘private waterfall’ for four hundred dollars. Said it was on a beautiful, secluded property. I showed up and it was a guy named Dennis with a garden hose on a stepladder. And honestly? Dennis was committed. He did the mist and everything. I tipped him. That’s how I know I’m the real problem.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got scammed last month. A guy online sold me a ‘private waterfall’ for four hundred dollars. Said it was on a beautiful, secluded property. I showed up and it was a guy named Dennis with a garden hose on a stepladder. And honestly? Dennis was committed. He did the mist and everything. I tipped him. That’s how I know I’m the real problem."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro web",
+      "title": "The Water Feature",
+      "seedTermsUsed": [
+        "Being scammed",
+        "Waterfall"
+      ],
+      "joke": "I just got scammed on an Airbnb. The listing promised a 'soothing, private waterfall' right outside the bedroom window, so I paid double. Turns out, it was just a ruptured sewage pipe pouring into the alley. The worst part? The host still tried to hit me with a fifty-dollar water feature fee.",
+      "setup": "",
+      "punchline": "",
+      "text": "I just got scammed on an Airbnb. The listing promised a 'soothing, private waterfall' right outside the bedroom window, so I paid double. Turns out, it was just a ruptured sewage pipe pouring into the alley. The worst part? The host still tried to hit me with a fifty-dollar water feature fee."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Presidential Funds",
+      "seedTermsUsed": [
+        "Secret Service Agent",
+        "Being scammed"
+      ],
+      "joke": "I got scammed by a guy posing as a Secret Service agent. He walks up in the sunglasses and earpiece, flashes a badge, and says the president is in immediate danger and only my bank account can help. I transferred the money. Turns out the danger was real—his rent was due.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got scammed by a guy posing as a Secret Service agent. He walks up in the sunglasses and earpiece, flashes a badge, and says the president is in immediate danger and only my bank account can help. I transferred the money. Turns out the danger was real—his rent was due."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto web",
+      "title": "Origin Story",
+      "seedTermsUsed": [
+        "Comic Book",
+        "Secret Service Agent"
+      ],
+      "joke": "I found out my neighbor is a Secret Service agent, and now every time I read a comic book I feel underqualified. Superheroes get bitten by radioactive spiders and save the city. This guy's origin story is basically, 'I filled out government paperwork so well that if someone jumps at the President, I become the sequel.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I found out my neighbor is a Secret Service agent, and now every time I read a comic book I feel underqualified. Superheroes get bitten by radioactive spiders and save the city. This guy's origin story is basically, 'I filled out government paperwork so well that if someone jumps at the President, I become the sequel.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong visual absurdity with effective escalation. Dennis providing mist and receiving a tip creates a satisfying reversal: the victim becomes complicit in the scam. Conversational delivery and a solid closing line."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Clear, relatable setup and an effective fee-based punchline. The sewage-pipe reveal is predictable, but the additional charge provides a mild second turn. Competent observational humor without a particularly fresh angle."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":4,"comment":"Clear premise but an implausibly gullible narrator and a predictable financial twist. The rent reveal explains the scam rather than transforming it into a surprising comic insight. Limited laugh potential."},
+        {"jokeId":"joke-e","originality":6,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"An interesting contrast between superhero origin stories and bureaucratic qualifications. The paperwork premise has potential, but the sequel metaphor is strained and lacks an immediate comic payoff. More clever than laugh-inducing."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":4,"surprise":4,"craft":3,"promptFit":7,"laugh":3,"comment":"The ‘invisible edition’ turn is arbitrary, and the credit card comeback doesn’t connect to the setup. It reads as a template scam story with a non-sequitur ending."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"The sewage-pipe waterfall is a predictable reveal, but the ‘water feature fee’ button adds real insult-to-injury. The wording is tight, but the premise is familiar."},
+        {"jokeId":"joke-d","originality":5,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"A fast setup with a clean last-line flip: the danger was real because his rent was due. The scam story is generic until that turn, and the ending is mildly clever rather than big."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"A fresh angle with relatable inadequacy and a good deflating contrast between origin stories. The ‘become the sequel’ ending is smart and carries the laugh, though it’s a bit wordy."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {"jokeId":"joke-a","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"The setup is clear, but the final punchline is a non-sequitur that sounds like a joke but lacks actual comic logic."},
+        {"jokeId":"joke-b","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Excellent stand-up voice. The visual of Dennis on a stepladder is vivid, and the self-deprecating twist at the end lands perfectly."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Competent execution, but it relies on a very standard misdirection formula where the punchline is visible from a distance."},
+        {"jokeId":"joke-e","originality":5,"surprise":4,"craft":4,"promptFit":8,"laugh":4,"comment":"Comparing superheroes to bureaucrats is a familiar trope, and the final phrase ('I become the sequel') is confusing, killing the momentum."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":5,"promptFit":9,"laugh":5,"comment":"Invisible-edition bit is serviceable but the final credit-card line is flat and dialogue-heavy."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clear image, committed escalation, and clean self-own button land a real laugh."},
+        {"jokeId":"joke-c","originality":5,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid Airbnb scam premise and fee button, but the sewage reveal is the first obvious route."},
+        {"jokeId":"joke-e","originality":6,"surprise":5,"craft":4,"promptFit":8,"laugh":4,"comment":"Concept exists but the origin-story comparison is wordy and the final turn never snaps."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear scam premise and solid callback to the credit card statement; predictable but competent."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Funny visual, good escalation, and the self-own ending gives it a strong stand-up feel."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clean setup and payoff, but the sewage-pipe reveal is fairly familiar and expected."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Neat misdirection from national emergency to unpaid rent; concise and functional but not especially memorable."}
+      ]
+    }
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "publishedDate": "2026-10-17",
+  "seed": "external-real-2026-10-17",
+  "seedTerms": [
+    "Comic Book",
+    "Secret Service Agent",
+    "Waterfall",
+    "Being scammed",
+    "Bold",
+    "Unethical"
+  ],
+  "slug": "2026-10-17-external-real-2026-10-17",
+  "source": "manual-external"
+}
