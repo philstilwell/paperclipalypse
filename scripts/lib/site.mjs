@@ -53,6 +53,7 @@ export function renderSite({ run, historyDir, siteDir }) {
   }
 
   fs.writeFileSync(path.join(siteDir, "index.html"), cleanGeneratedText(renderHome(run, runs)), "utf8");
+  fs.writeFileSync(path.join(siteDir, "archive.html"), cleanGeneratedText(renderArchivePage(publicRuns)), "utf8");
   fs.writeFileSync(path.join(siteDir, "about.html"), cleanGeneratedText(renderAboutPage()), "utf8");
   fs.writeFileSync(path.join(siteDir, "standings.html"), cleanGeneratedText(renderStandingsPage(publicRuns)), "utf8");
   fs.writeFileSync(path.join(siteDir, "showcase.html"), cleanGeneratedText(renderShowcasePage(publicRuns, showcaseWindow)), "utf8");
@@ -104,7 +105,7 @@ function renderHome(run, runs) {
     .join("");
 
   return pageShell({
-    title: siteName,
+    title: "Paperclipalypse | AI Comedy Tournament, Jokes & Rankings",
     description: homeDescription(run, publicRuns),
     socialImage: socialImageForRun(run),
     socialImageAlt: socialImageAltForRun(run),
@@ -119,7 +120,48 @@ function renderHome(run, runs) {
           <h2>Recent Episodes</h2>
         </div>
         <ol>${archive || `<li class="empty-state">No public episodes yet.</li>`}</ol>
+        <p><a href="./archive.html">Browse all AI comedy contests</a></p>
       </section>`
+  });
+}
+
+function renderArchivePage(runs) {
+  const description = "Browse every Paperclipalypse AI comedy contest: original stand-up jokes, winning models, scores, and critiques from the other contestants.";
+  return pageShell({
+    title: "AI Comedy Contest Archive | Paperclipalypse",
+    description,
+    canonicalPath: "/archive.html",
+    schemas: [
+      publisherSchema(), websiteSchema(),
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "@id": `${siteOrigin}/archive.html#archive`,
+        url: `${siteOrigin}/archive.html`,
+        name: "AI Comedy Contest Archive",
+        description,
+        inLanguage: "en-US",
+        isPartOf: { "@id": `${siteOrigin}/#website` },
+        mainEntity: runItemListSchema(runs, "All Paperclipalypse contests")
+      },
+      breadcrumbSchema([{ name: "Home", url: "/" }, { name: "Contest archive", url: "/archive.html" }])
+    ],
+    body: `
+      ${renderTopnav({ homePath: "./index.html", aboutPath: "./about.html", label: "Contest Archive" })}
+      <main>
+        <section class="archive">
+          <div class="section-heading"><h1>AI Comedy Contest Archive</h1></div>
+          <p>${escapeHtml(description)}</p>
+          <ol>${runs.map((run) => {
+            const winner = run.rankings?.[0];
+            return `<li><a href="./runs/${escapeHtml(run.slug)}.html">
+              <span><time datetime="${escapeHtml(dateOnly(run))}">${escapeHtml(shortDate(run))}</time></span>
+              <strong>${escapeHtml(roundDisplayTitle(run))}</strong>
+              <small>${winner ? escapeHtml(`Winner: ${displayNameForContestant(run, winner.contestantId, winner.contestantName)} (${formatScore(winner.score)})`) : "Winner pending"}</small>
+            </a></li>`;
+          }).join("") || '<li class="empty-state">No public contests yet.</li>'}</ol>
+        </section>
+      </main>`
   });
 }
 
@@ -1426,6 +1468,7 @@ function renderRunPage(run, publicRuns) {
     keywords: pageKeywords(run),
     extraHead: renderRunHeadLinks(run, publicRuns),
     schemas: renderRunSchemas(run, publicRuns),
+    noindex: Boolean(run.dryRun),
     body: `
       ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", standingsPath: "../standings.html", label: shortDate(run) })}
       ${renderRun(run, {
@@ -1468,6 +1511,12 @@ function renderSitemap(runs, window) {
         title: siteName,
         caption: siteDescription
       }
+    },
+    {
+      loc: `${siteOrigin}/archive.html`,
+      lastmod: latestDate(runs),
+      changefreq: "daily",
+      priority: "0.8"
     },
     {
       loc: `${siteOrigin}/about.html`,
@@ -2719,6 +2768,7 @@ function pageShell({
     <meta property="og:locale" content="en_US">
     <meta property="og:url" content="${escapeHtml(canonicalUrl)}">
     <meta property="og:image" content="${escapeHtml(socialImage)}">
+    <meta property="og:image:type" content="${escapeHtml(imageMimeType(socialImage))}">
     <meta property="og:image:alt" content="${escapeHtml(socialImageAlt)}">
     ${renderArticleMeta({ publishedTime, modifiedTime })}
     <meta name="twitter:card" content="summary_large_image">
@@ -2744,7 +2794,7 @@ function renderFooter({ aboutPath, standingsPath, showcasePath, feedPath }) {
   return `
     <footer class="site-footer">
       <span>Paperclipalypse is an experimental AI humor tournament.</span>
-      <span><a href="${escapeHtml(showcasePath)}">Showcase</a> / <a href="${escapeHtml(standingsPath)}">Standings</a> / <a href="${escapeHtml(aboutPath)}">About</a> / <a href="${escapeHtml(feedPath)}">RSS</a> / Traffic is measured with Cloudflare Web Analytics.</span>
+      <span><a href="${escapeHtml(aboutPath.replace("about.html", "archive.html"))}">Contest archive</a> / <a href="${escapeHtml(showcasePath)}">Showcase</a> / <a href="${escapeHtml(standingsPath)}">Standings</a> / <a href="${escapeHtml(aboutPath)}">About</a> / <a href="${escapeHtml(feedPath)}">RSS</a> / Traffic is measured with Cloudflare Web Analytics.</span>
     </footer>`;
 }
 

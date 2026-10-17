@@ -12,6 +12,12 @@
     </image:image>
   </url>
   <url>
+    <loc>https://paperclipalypse.com/archive.html</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://paperclipalypse.com/about.html</loc>
     <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
