@@ -1,0 +1,184 @@
+{
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto web"
+    }
+  ],
+  "createdAt": "2026-10-18T14:04:19.914Z",
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "The Bakery Loan",
+      "seedTermsUsed": [
+        "Bakery",
+        "Needing to borrow money"
+      ],
+      "joke": "I asked my local baker if I could borrow fifty bucks. He said, 'I don't lend people dough.' I said, 'Come on, I'm good for it.' He said, 'That's what everybody says. Last guy owed me two hundred dollars and disappeared.' I said, 'That's terrible. What happened to him?' He said, 'I don't know. But his face is on every muffin in this shop. I take food stamps very seriously.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I asked my local baker if I could borrow fifty bucks. He said, 'I don't lend people dough.' I said, 'Come on, I'm good for it.' He said, 'That's what everybody says. Last guy owed me two hundred dollars and disappeared.' I said, 'That's terrible. What happened to him?' He said, 'I don't know. But his face is on every muffin in this shop. I take food stamps very seriously.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Rural Bakery Credit",
+      "seedTermsUsed": [
+        "Bakery",
+        "Needing to borrow money"
+      ],
+      "joke": "I needed to borrow money, so I called my dad. He said, ‘I’m not a bank.’ I said, ‘Dad, I’m 41.’ He said, ‘Then you’re old enough to know banks don’t give you a lecture.’ So I went to an actual bank. They said no. Then I walked past a bakery and bought a cinnamon roll. Turns out the only place that’ll lend me anything is a warm pastry, and it wanted nothing back but my self-respect.",
+      "setup": "",
+      "punchline": "",
+      "text": "I needed to borrow money, so I called my dad. He said, ‘I’m not a bank.’ I said, ‘Dad, I’m 41.’ He said, ‘Then you’re old enough to know banks don’t give you a lecture.’ So I went to an actual bank. They said no. Then I walked past a bakery and bought a cinnamon roll. Turns out the only place that’ll lend me anything is a warm pastry, and it wanted nothing back but my self-respect."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro web",
+      "title": "The Accommodating Midwife",
+      "seedTermsUsed": [
+        "Midwife",
+        "Weak-Willed"
+      ],
+      "joke": "I'm way too weak-willed to ever be a midwife. I just can't handle confrontation or making people uncomfortable. If a woman is screaming in labor and tells me she's completely done pushing, I'd just fold immediately. 'You know what? You're right, this seems really hard. Let's just leave it in there and try again on Tuesday.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm way too weak-willed to ever be a midwife. I just can't handle confrontation or making people uncomfortable. If a woman is screaming in labor and tells me she's completely done pushing, I'd just fold immediately. 'You know what? You're right, this seems really hard. Let's just leave it in there and try again on Tuesday.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Smart Rejection",
+      "seedTermsUsed": [
+        "Needing to borrow money",
+        "Weak-Willed"
+      ],
+      "joke": "I'm so weak-willed it's a problem. Last week I needed to borrow money, so I went straight to the one friend I knew would say no. Best move I ever made. Now I don't owe anybody a dime and I still get to feel like I tried.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm so weak-willed it's a problem. Last week I needed to borrow money, so I went straight to the one friend I knew would say no. Best move I ever made. Now I don't owe anybody a dime and I still get to feel like I tried."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto web",
+      "title": "Credit Loaf",
+      "seedTermsUsed": [
+        "Bakery",
+        "Needing to borrow money"
+      ],
+      "joke": "I was so broke I went to a bakery and asked if they offered financing. The cashier said, 'For bread?' I said, 'Look, if I could afford a full loaf, I wouldn't be comparing sourdoughs by monthly payment.' She handed me a roll and said, 'Start with the entry-level model, big spender.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I was so broke I went to a bakery and asked if they offered financing. The cashier said, 'For bread?' I said, 'Look, if I could afford a full loaf, I wouldn't be comparing sourdoughs by monthly payment.' She handed me a roll and said, 'Start with the entry-level model, big spender.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {"jokeId":"joke-b","originality":4,"surprise":4,"craft":4,"promptFit":8,"laugh":3,"comment":"The father's bank joke has some charm, but the bakery enters arbitrarily. The cinnamon roll supposedly lending money makes little sense, and the final line lacks a coherent payoff. Overlong for the laugh delivered."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong, immediately understandable premise with natural escalation. The midwife's inability to resist a patient's demands produces a satisfying absurd turn. 'Try again on Tuesday' is an excellent closing phrase."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":6,"comment":"Economical construction with a clever reversal: deliberately choosing someone who will refuse the loan. The final line neatly exposes the character's self-deception. More satisfying as an observation than as a big laugh."},
+        {"jokeId":"joke-e","originality":6,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear financial absurdity with a relatable setup. Comparing sourdough purchases to monthly payments is amusing, but the cashier's entry-level-model response extends the same premise rather than delivering a genuinely surprising final turn."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":4,"surprise":5,"craft":4,"promptFit":8,"laugh":4,"comment":"The ‘dough’ pun is the obvious route, and the muffin-face turn is confusing. The food stamps closer doesn’t connect to the setup, so the last line doesn’t carry the laugh."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong, clear premise. The comic folding to a screaming patient is a real turn, and ‘try again on Tuesday’ is a good, concrete, dark-light punchline."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Clean, tidy logic with a relatable self-deceiving turn. ‘Still get to feel like I tried’ lands as a mild real laugh, though it’s a bit familiar."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Good image of financing a loaf and comparing sourdoughs by monthly payment. ‘Entry-level model, big spender’ closes with a nice comic role reversal."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {"jokeId":"joke-a","originality":3,"surprise":4,"craft":3,"promptFit":7,"laugh":3,"comment":"Confusing non-sequitur punchline about food stamps undermines the earlier escalation and breaks the joke's logic."},
+        {"jokeId":"joke-b","originality":4,"surprise":4,"craft":4,"promptFit":7,"laugh":4,"comment":"The dad setup is strong, but the premise breaks down at the bakery; buying a cinnamon roll isn't borrowing, making the self-deprecation illogical."},
+        {"jokeId":"joke-d","originality":8,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Excellent human-relatable logic with crisp stage rhythm. The self-sabotage angle is fresh and the punchline lands naturally."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"A fun, gently absurd premise. Good conversational rhythm and a snappy closing line that ties the financing metaphor together."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Expected dough pun; muffin-face close feels forced and diluted."},
+        {"jokeId":"joke-b","originality":4,"surprise":4,"craft":6,"promptFit":8,"laugh":5,"comment":"Predictable dad-to-bank path ends in a soft, low-payoff image."},
+        {"jokeId":"joke-c","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean premise, sharp weak-willed logic, and a decisive final turn."},
+        {"jokeId":"joke-e","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Tight financing gag with a neat entry-level button; light but solid."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong escalation from borrowing money to bakery imagery; memorable final reveal and solid stand-up rhythm."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear premise and structure; pastry-as-lender idea is mildly amusing but the ending lands more as wit than a strong laugh."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":8,"comment":"Clean first-person setup, immediate character flaw, and a strong absurd turn that pays off in the final line."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Efficient construction and relatable logic reversal; a good concise joke with a modest payoff."}
+      ]
+    }
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "publishedDate": "2026-10-18",
+  "seed": "external-real-2026-10-18",
+  "seedTerms": [
+    "Rural Settlement",
+    "Midwife",
+    "Bakery",
+    "Needing to borrow money",
+    "Merciful",
+    "Weak-Willed"
+  ],
+  "slug": "2026-10-18-external-real-2026-10-18",
+  "source": "manual-external"
+}
