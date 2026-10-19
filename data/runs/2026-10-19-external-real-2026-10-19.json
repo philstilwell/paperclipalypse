@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-19-external-real-2026-10-19",
+  "seed": "external-real-2026-10-19",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-19T14:02:59.637Z",
+  "publishedDate": "2026-10-19",
+  "seedTerms": [
+    "Lawmen",
+    "Small Business Owner",
+    "Subway Train / Station / Tunnel",
+    "Being pressured by family",
+    "Generous",
+    "Pretentious"
+  ],
+  "premise": {
+    "text": "Seed terms: Lawmen, Small Business Owner, Subway Train / Station / Tunnel, Being pressured by family, Generous, Pretentious",
+    "seedTerms": [
+      "Lawmen",
+      "Small Business Owner",
+      "Subway Train / Station / Tunnel",
+      "Being pressured by family",
+      "Generous",
+      "Pretentious"
+    ],
+    "displayText": "Public Transit Sommelier"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "The Family Discount",
+      "seedTermsUsed": [
+        "Small Business Owner",
+        "Being pressured by family"
+      ],
+      "joke": "I opened a bakery, and immediately my family started demanding discounts. My sister wants half off, my uncle wants free bread, and my mother says, 'After everything I've done for you, you're charging me?' I said, 'Mom, you raised me to be independent.' She said, 'Exactly. So why are you depending on me for money?' I said, 'Because you just ate forty dollars' worth of cake.'",
+      "setup": "",
+      "punchline": "I opened a bakery, and immediately my family started demanding discounts. My sister wants half off, my uncle wants free bread, and my mother says, 'After everything I've done for you, you're charging me?' I said, 'Mom, you raised me to be independent.' She said, 'Exactly. So why are you depending on me for money?' I said, 'Because you just ate forty dollars' worth of cake.'",
+      "text": "I opened a bakery, and immediately my family started demanding discounts. My sister wants half off, my uncle wants free bread, and my mother says, 'After everything I've done for you, you're charging me?' I said, 'Mom, you raised me to be independent.' She said, 'Exactly. So why are you depending on me for money?' I said, 'Because you just ate forty dollars' worth of cake.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Express Lane",
+      "seedTermsUsed": [
+        "Subway Train / Station / Tunnel",
+        "Being pressured by family"
+      ],
+      "joke": "My mother called me while I was on the subway. Signal drops in the tunnel, so I got four seconds of her saying, ‘When are you giving me grandchildren?’ Then nothing. For the next two stops I just stared at the dark window, replaying it. That’s the first time I’ve ever wished the train would hurry up and go underground faster.",
+      "setup": "",
+      "punchline": "My mother called me while I was on the subway. Signal drops in the tunnel, so I got four seconds of her saying, ‘When are you giving me grandchildren?’ Then nothing. For the next two stops I just stared at the dark window, replaying it. That’s the first time I’ve ever wished the train would hurry up and go underground faster.",
+      "text": "My mother called me while I was on the subway. Signal drops in the tunnel, so I got four seconds of her saying, ‘When are you giving me grandchildren?’ Then nothing. For the next two stops I just stared at the dark window, replaying it. That’s the first time I’ve ever wished the train would hurry up and go underground faster."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro web",
+      "title": "Public Transit Sommelier",
+      "seedTermsUsed": [
+        "Pretentious",
+        "Subway Train / Station / Tunnel"
+      ],
+      "joke": "I'm way too pretentious for the subway, but I'm also completely broke, so I have to compromise. I just stand in the middle of a packed train holding a paper cup of tap water by the base, swirling it gently, and telling the guy blasting TikToks that I'm sensing strong notes of wet brake pads and unwashed despair.",
+      "setup": "",
+      "punchline": "I'm way too pretentious for the subway, but I'm also completely broke, so I have to compromise. I just stand in the middle of a packed train holding a paper cup of tap water by the base, swirling it gently, and telling the guy blasting TikToks that I'm sensing strong notes of wet brake pads and unwashed despair.",
+      "text": "I'm way too pretentious for the subway, but I'm also completely broke, so I have to compromise. I just stand in the middle of a packed train holding a paper cup of tap water by the base, swirling it gently, and telling the guy blasting TikToks that I'm sensing strong notes of wet brake pads and unwashed despair."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Artisanal Hardware",
+      "seedTermsUsed": [
+        "Small Business Owner",
+        "Pretentious"
+      ],
+      "joke": "I own a small business, a regular hardware store. To sound more important I got pretentious about it. I renamed the place Artisanal Tools for the Discerning Homeowner. Now when a guy asks for a hammer I say, Ah, you mean our hand-forged percussion instrument for the thoughtful application of force. He usually just goes to Home Depot.",
+      "setup": "",
+      "punchline": "I own a small business, a regular hardware store. To sound more important I got pretentious about it. I renamed the place Artisanal Tools for the Discerning Homeowner. Now when a guy asks for a hammer I say, Ah, you mean our hand-forged percussion instrument for the thoughtful application of force. He usually just goes to Home Depot.",
+      "text": "I own a small business, a regular hardware store. To sound more important I got pretentious about it. I renamed the place Artisanal Tools for the Discerning Homeowner. Now when a guy asks for a hammer I say, Ah, you mean our hand-forged percussion instrument for the thoughtful application of force. He usually just goes to Home Depot."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto web",
+      "title": "Family Investors",
+      "seedTermsUsed": [
+        "Small Business Owner",
+        "Being pressured by family"
+      ],
+      "joke": "I opened a small business because my family kept saying, 'Be your own boss.' Biggest scam ever. Now they're all shareholders with opinions. My mom calls every day asking why sales are down, my uncle wants a vice president title, and at Thanksgiving I had to give a quarterly earnings report before I was allowed any pie.",
+      "setup": "",
+      "punchline": "I opened a small business because my family kept saying, 'Be your own boss.' Biggest scam ever. Now they're all shareholders with opinions. My mom calls every day asking why sales are down, my uncle wants a vice president title, and at Thanksgiving I had to give a quarterly earnings report before I was allowed any pie.",
+      "text": "I opened a small business because my family kept saying, 'Be your own boss.' Biggest scam ever. Now they're all shareholders with opinions. My mom calls every day asking why sales are down, my uncle wants a vice president title, and at Thanksgiving I had to give a quarterly earnings report before I was allowed any pie."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable family pressure and a plausible subway situation. The setup is clear, but the final line offers a predictable desire to escape rather than a surprising comic reversal. More recognition than laughter.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong visual comedy built around treating a filthy subway like a wine tasting. The physical details are stage-friendly, and the contrast is amusing. The final tasting notes are funny, though the payoff is somewhat predictable once the premise is established.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear premise with an accessible contrast between ordinary hardware and inflated language. The elaborate hammer description earns a smile, but the Home Depot ending merely confirms the expected consequence. Limited surprise and a familiar comic structure.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Effective escalation from family encouragement to unwanted corporate oversight. The Thanksgiving earnings report provides a concrete, relatable payoff. The joke has good rhythm and a coherent comic progression, although the final turn is amusing rather than exceptionally surprising.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear setup, but the mother’s ‘depending on me’ exchange is muddled, and the closing line explains rather than turns. Familiar family-discount territory.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong concrete image: wine-tasting tap water on a packed train. ‘Unwashed despair’ lands the final turn, and ‘broke’ justifies the compromise. Wordy in the setup, but the best of the batch.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "‘Hand-forged percussion instrument’ is a decent bit, but the Home Depot ending is the expected outcome. Setup is slightly flabby (‘to sound more important I got pretentious’).",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The shareholders-with-opinions frame is a real comic idea, and the quarterly earnings report before pie is a good closing image. Midsection is a list of family cliches, but the ending carries the laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "A competent but familiar sitcom-style dialogue. The punchline makes sense but lacks the snap of a strong stage joke.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable premise that integrates the two concepts very naturally. The timing and emotional truth carry the mild laugh well.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Stiff and mechanical. Explicitly stating 'I got pretentious about it' is poor show-don't-tell, and the Home Depot punchline is highly predictable.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 6,
+          "total": 3.5000000000000004
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong, escalating stand-up structure. The rule of three works well, and the final image of giving an earnings report for Thanksgiving pie is genuinely funny.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid family freeloading premise with a clean final image, but the money-depend twist feels slightly forced and the overall angle is familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable signal-drop setup and inverted wish for more tunnel time land with quiet recognition rather than a big snap.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear visual premise, natural voice, and specific final descriptors create a strong, stage-ready image that actually earns the laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Competent shareholder-meddling escalation ending on the pie gag, yet the route stays close to a standard family-business complaint.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and escalation; familiar family-discount angle, but the cake bill gives a decent payoff.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clean structure and relatable pressure; the wish for the tunnel to last longer is a solid, natural turn.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong visual, specific language, and a satisfying punchline that merges both concepts naturally.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Good escalation through increasingly absurd rebranding; final Home Depot tag lands cleanly.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "score": 7.5,
+      "rawScore": 7.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.2,
+        "surprise": 7.2,
+        "craft": 7.5,
+        "originality": 7.5,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7.3,
+        "craft": 7.5,
+        "originality": 7.5,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 7.4,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong visual comedy built around treating a filthy subway like a wine tasting. The physical details are stage-friendly, and the contrast is amusing. The final tasting notes are funny, though the payoff is somewhat predictable once the premise is established."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.6,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong concrete image: wine-tasting tap water on a packed train. ‘Unwashed despair’ lands the final turn, and ‘broke’ justifies the compromise. Wordy in the setup, but the best of the batch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.3,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear visual premise, natural voice, and specific final descriptors create a strong, stage-ready image that actually earns the laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.7,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong visual, specific language, and a satisfying punchline that merges both concepts naturally."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.6,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.1,
+        "craft": 6.6,
+        "originality": 5.8,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 6.7,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Effective escalation from family encouragement to unwanted corporate oversight. The Thanksgiving earnings report provides a concrete, relatable payoff. The joke has good rhythm and a coherent comic progression, although the final turn is amusing rather than exceptionally surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.7,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.4,
+          "comment": "The shareholders-with-opinions frame is a real comic idea, and the quarterly earnings report before pie is a good closing image. Midsection is a list of family cliches, but the ending carries the laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 6.9,
+          "rawScore": 6.8,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong, escalating stand-up structure. The rule of three works well, and the final image of giving an earnings report for Thanksgiving pie is genuinely funny."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Competent shareholder-meddling escalation ending on the pie gag, yet the route stays close to a standard family-business complaint."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.3,
+      "rawScore": 6.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 6.1,
+        "craft": 6.4,
+        "originality": 6.1,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6.3,
+        "craft": 6.5,
+        "originality": 6.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 5.8,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.1,
+          "comment": "Relatable family pressure and a plausible subway situation. The setup is clear, but the final line offers a predictable desire to escape rather than a surprising comic reversal. More recognition than laughter."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 6.5,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.1,
+          "comment": "Relatable premise that integrates the two concepts very naturally. The timing and emotional truth carry the mild laugh well."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.6,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Relatable signal-drop setup and inverted wish for more tunnel time land with quiet recognition rather than a big snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean structure and relatable pressure; the wish for the tunnel to last longer is a solid, natural turn."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "score": 5.5,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.2,
+        "surprise": 4.7,
+        "craft": 5.7,
+        "originality": 4.5,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 4.8,
+        "craft": 5.8,
+        "originality": 4.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.9,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear setup, but the mother’s ‘depending on me’ exchange is muddled, and the closing line explains rather than turns. Familiar family-discount territory."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 5.3,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.1,
+          "comment": "A competent but familiar sitcom-style dialogue. The punchline makes sense but lacks the snap of a strong stage joke."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid family freeloading premise with a clean final image, but the money-depend twist feels slightly forced and the overall angle is familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 6,
+          "scoreAdjustment": -0.4,
+          "comment": "Clear premise and escalation; familiar family-discount angle, but the cake bill gives a decent payoff."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.3,
+      "rawScore": 5.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.6,
+        "craft": 5.3,
+        "originality": 4.6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 5.3,
+        "originality": 4.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 5.3,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear premise with an accessible contrast between ordinary hardware and inflated language. The elaborate hammer description earns a smile, but the Home Depot ending merely confirms the expected consequence. Limited surprise and a familiar comic structure."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.4,
+          "comment": "‘Hand-forged percussion instrument’ is a decent bit, but the Home Depot ending is the expected outcome. Setup is slightly flabby (‘to sound more important I got pretentious’)."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 3.6,
+          "rawScore": 3.5,
+          "scoreAdjustment": 0.1,
+          "comment": "Stiff and mechanical. Explicitly stating 'I got pretentious about it' is poor show-don't-tell, and the Home Depot punchline is highly predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.5,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Good escalation through increasingly absurd rebranding; final Home Depot tag lands cleanly."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-19-external-real-2026-10-19.png",
+    "originalSrc": "assets/feature-images/2026-10-19-external-real-2026-10-19.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Public Transit Sommelier: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Pro - Public Transit Sommelier\nExact joke text to render in the right panel:\nI'm way too pretentious for the subway, but I'm also completely broke, so I have to compromise. I just stand in the middle of a packed train holding a paper cup of tap water by the base, swirling it gently, and telling the guy blasting TikToks that I'm sensing strong notes of wet brake pads and unwashed despair.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Lawmen, Small Business Owner, Subway Train / Station / Tunnel, Being pressured by family, Generous, Pretentious. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Lawmen, Small Business Owner, Subway Train / Station / Tunnel, Being pressured by family, Generous, Pretentious. Use the winning joke titled \"Public Transit Sommelier\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 5.8,
+      "google": 6.2,
+      "xai": 6.5,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-19-external-real-2026-10-19.md"
+}
