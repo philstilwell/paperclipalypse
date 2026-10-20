@@ -1,0 +1,184 @@
+{
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "gpt-6"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast web"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto web"
+    }
+  ],
+  "createdAt": "2026-10-20T14:00:45.513Z",
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "gpt-6",
+      "title": "The Final Markdown",
+      "seedTermsUsed": [
+        "Thrift Store",
+        "A love interest moving on"
+      ],
+      "joke": "My girlfriend dumped me, and two days later I found the sweater I gave her at a thrift store. Five bucks. I paid eighty. I bought it back out of spite. The cashier said, 'No returns.' I said, 'Believe me, I've heard.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My girlfriend dumped me, and two days later I found the sweater I gave her at a thrift store. Five bucks. I paid eighty. I bought it back out of spite. The cashier said, 'No returns.' I said, 'Believe me, I've heard.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium",
+      "title": "Resale Value",
+      "seedTermsUsed": [
+        "Thrift Store",
+        "A love interest moving on"
+      ],
+      "joke": "My ex moved on so fast that I found out at the thrift store. Her new boyfriend was wearing my old jacket. I donated it during the breakup. He looked great in it, too, which really hurt. Even worse, the tag said $6. She didn't just replace me, she replaced me at a markdown, and he came with better pockets.",
+      "setup": "",
+      "punchline": "",
+      "text": "My ex moved on so fast that I found out at the thrift store. Her new boyfriend was wearing my old jacket. I donated it during the breakup. He looked great in it, too, which really hurt. Even worse, the tag said $6. She didn't just replace me, she replaced me at a markdown, and he came with better pockets."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro web",
+      "title": "Clearance Rack Romance",
+      "seedTermsUsed": [
+        "Thrift Store",
+        "A love interest moving on"
+      ],
+      "joke": "I knew my ex was completely over me when I found the custom photo mug I gave her for our anniversary at the local thrift store. Honestly, the donation wasn't what destroyed my ego. It was seeing a fifty-cent sticker right over my face. And it had a red tag. Meaning it had been there for a month, it was on clearance, and even strangers looking for a cheap pencil holder wanted absolutely nothing to do with our relationship.",
+      "setup": "",
+      "punchline": "",
+      "text": "I knew my ex was completely over me when I found the custom photo mug I gave her for our anniversary at the local thrift store. Honestly, the donation wasn't what destroyed my ego. It was seeing a fifty-cent sticker right over my face. And it had a red tag. Meaning it had been there for a month, it was on clearance, and even strangers looking for a cheap pencil holder wanted absolutely nothing to do with our relationship."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast web",
+      "title": "Blame the Previous Owner",
+      "seedTermsUsed": [
+        "Insecure",
+        "Thrift Store"
+      ],
+      "joke": "I'm so insecure about my style that I only shop at thrift stores. That way if the clothes look terrible, it's not on me—it's on the last guy who wore them. Last week I found a blazer with a faded name tag still sewn in: Brad. Now when people stare I just shrug and say, \"Talk to Brad. He's the one with the questionable taste. I'm just the current host body.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm so insecure about my style that I only shop at thrift stores. That way if the clothes look terrible, it's not on me—it's on the last guy who wore them. Last week I found a blazer with a faded name tag still sewn in: Brad. Now when people stare I just shrug and say, \"Talk to Brad. He's the one with the questionable taste. I'm just the current host body.\""
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto web",
+      "title": "Used Confidence",
+      "seedTermsUsed": [
+        "Thrift Store",
+        "Insecure"
+      ],
+      "joke": "I'm so insecure I tried to save money on self-esteem at a thrift store. I found a jacket that made me look confident, but every time I wore it, strangers would walk up and say, 'Oh wow, that's mine!' Nothing crushes your confidence faster than finding out your personality has had three previous owners.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm so insecure I tried to save money on self-esteem at a thrift store. I found a jacket that made me look confident, but every time I wore it, strangers would walk up and say, 'Oh wow, that's mine!' Nothing crushes your confidence faster than finding out your personality has had three previous owners."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear premise and natural first-person delivery. The markdown metaphor earns a mild laugh, but the better-pockets tag feels arbitrary and weakens the finish."},
+        {"jokeId":"joke-c","originality":7,"surprise":6,"craft":6,"promptFit":10,"laugh":7,"comment":"The fifty-cent sticker covering the narrator's face is a strong, concrete comic image. The clearance escalation adds humor, but the lengthy explanation dilutes the final punch."},
+        {"jokeId":"joke-d","originality":6,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Understandable premise with a mildly amusing transfer of blame to Brad. The host-body ending sounds more quirky than funny, and the joke lacks a strong final turn."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Economical construction, clear escalation, and a coherent final metaphor. The previous-owners punchline fits the premise neatly, although the underlying joke about secondhand confidence is fairly predictable."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clear premise and tight escalation. The spite buyback sets up the ‘No returns’ reversal, and the last line lands on a double meaning. Familiar breakup-gift territory, but cleanly built."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"The sticker over his face and the red tag are good images. The ending is a long explanatory sentence that spells out the joke, and the ‘donation wasn’t what destroyed my ego’ line is clumsy, so the laugh gets diluted."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Blame-shifting to the previous owner is a real comic idea, and the Brad name tag is a good concrete detail. ‘Current host body’ is a fun closer, though the setup logic is slightly strained."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":5,"promptFit":9,"laugh":6,"comment":"‘Personality has had three previous owners’ is a strong closing line. The middle is muddled, because strangers each claiming the jacket is theirs doesn’t cleanly escalate, and the opening ‘save money on self-esteem’ is a little forced."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Tight stage rhythm with a satisfying, double-meaning punchline that perfectly matches the breakup context."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"'Replaced me at a markdown' is a strong turn, but the physical logic of seeing the price tag on a jacket the new boyfriend is actively wearing muddles the imagery."},
+        {"jokeId":"joke-d","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Excellent escalation. 'I'm just the current host body' is a highly effective, unexpected, and memorable closing punchline."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"The final thought about a pre-owned personality is conceptually sharp, but the setup relies on a highly artificial scenario to get there."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Tight spite-to-rejection callback; clean stage rhythm and final snap."},
+        {"jokeId":"joke-b","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Solid markdown and pockets escalation; effective but slightly padded."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":6,"promptFit":9,"laugh":7,"comment":"Clearance and pencil-holder details land; a touch explanatory."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Personality-owners metaphor is neat; mild payoff after the setup."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":8,"promptFit":10,"laugh":8,"comment":"Strong concise setup-to-punch structure. The cashier line is a clean, relatable reversal that lands hard."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear premise with some escalation, but the markdown/replacement angle is fairly familiar and the ending is weaker."},
+        {"jokeId":"joke-c","originality":7,"surprise":6,"craft":7,"promptFit":10,"laugh":7,"comment":"Good specificity and escalation. The clearance-tag detail adds texture, though the final image is more amusing than laugh-out-loud."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Solid character voice and clear premise. 'Current host body' is a fun twist, but it leans quirky more than strongly funny."}
+      ]
+    }
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "publishedDate": "2026-10-20",
+  "seed": "external-real-2026-10-20",
+  "seedTerms": [
+    "Tech-Focused (Hard)",
+    "Therapist",
+    "Thrift Store",
+    "A love interest moving on",
+    "Observant",
+    "Insecure"
+  ],
+  "slug": "2026-10-20-external-real-2026-10-20",
+  "source": "manual-external"
+}

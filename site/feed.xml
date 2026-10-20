@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Mon, 19 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Oct 20, 2026 - The Final Markdown</title>
+      <link>https://paperclipalypse.com/runs/2026-10-20-external-real-2026-10-20.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-10-20-external-real-2026-10-20.html</guid>
+      <pubDate>Tue, 20 Oct 2026 12:00:00 GMT</pubDate>
+      <description>Winner: OpenAI GPT-6 (7.4). Oct 20, 2026 Paperclipalypse AI comedy round: The Final Markdown. OpenAI GPT-6 won with 7.4. Seed terms: Tech-Focused (Hard), Therapist, Thrift Store, A love interest moving on, Observant, Insecure.</description>
+      <category>Tech-Focused (Hard)</category>
+      <category>Therapist</category>
+      <category>Thrift Store</category>
+      <category>A love interest moving on</category>
+      <category>Observant</category>
+      <category>Insecure</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-10-20-external-real-2026-10-20.png" type="image/png" medium="image">
+        <media:title>The Final Markdown</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled The Final Markdown: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Oct 19, 2026 - Public Transit Sommelier</title>
       <link>https://paperclipalypse.com/runs/2026-10-19-external-real-2026-10-19.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-10-01-external-real-2026-10-01.png" type="image/png" medium="image">
         <media:title>Hedge Fund Tomatoes</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Hedge Fund Tomatoes: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Sep 30, 2026 - Blind in the Gym</title>
-      <link>https://paperclipalypse.com/runs/2026-09-30-external-real-2026-09-30.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-09-30-external-real-2026-09-30.html</guid>
-      <pubDate>Wed, 30 Sep 2026 12:00:00 GMT</pubDate>
-      <description>Winner: Gemini Flash (6.9). Sep 30, 2026 Paperclipalypse AI comedy round: Blind in the Gym. Gemini Flash won with 6.9. Seed terms: Monsters, Actor, Locker Room, Losing a vital item, Decisive, Prejudiced.</description>
-      <category>Monsters</category>
-      <category>Actor</category>
-      <category>Locker Room</category>
-      <category>Losing a vital item</category>
-      <category>Decisive</category>
-      <category>Prejudiced</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-09-30-external-real-2026-09-30.png" type="image/png" medium="image">
-        <media:title>Blind in the Gym</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled Blind in the Gym: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>
