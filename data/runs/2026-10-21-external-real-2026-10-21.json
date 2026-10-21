@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-21-external-real-2026-10-21",
+  "seed": "external-real-2026-10-21",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-21T14:02:32.343Z",
+  "publishedDate": "2026-10-21",
+  "seedTerms": [
+    "Rural Settlement",
+    "Actor",
+    "Psychiatric Ward",
+    "Having to work with an enemy",
+    "Diplomatic",
+    "Uncouth"
+  ],
+  "premise": {
+    "text": "Seed terms: Rural Settlement, Actor, Psychiatric Ward, Having to work with an enemy, Diplomatic, Uncouth",
+    "seedTerms": [
+      "Rural Settlement",
+      "Actor",
+      "Psychiatric Ward",
+      "Having to work with an enemy",
+      "Diplomatic",
+      "Uncouth"
+    ],
+    "displayText": "A Convincing Performance"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "gpt-5.4-mini"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "grok-4.3"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "model": "gpt-5.4-mini",
+      "title": "A Convincing Performance",
+      "seedTermsUsed": [
+        "Actor",
+        "Having to work with an enemy"
+      ],
+      "joke": "I got cast opposite my ex-wife in a romantic comedy. The director asked, 'Can you make an audience believe you're in love with her?' I said, 'I convinced her for eleven years, and she had front-row seats.'",
+      "setup": "",
+      "punchline": "I got cast opposite my ex-wife in a romantic comedy. The director asked, 'Can you make an audience believe you're in love with her?' I said, 'I convinced her for eleven years, and she had front-row seats.'",
+      "text": "I got cast opposite my ex-wife in a romantic comedy. The director asked, 'Can you make an audience believe you're in love with her?' I said, 'I convinced her for eleven years, and she had front-row seats.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Method Acting",
+      "seedTermsUsed": [
+        "Actor",
+        "Psychiatric Ward"
+      ],
+      "joke": "My cousin is an actor, so he prepared for a role as a man losing his mind by checking into a psychiatric ward. Method acting. Three days in, he told the doctors, ‘I’m not really crazy, I’m just researching.’ They said, ‘Sure. Here’s your bracelet.’ He got the part. They got his insurance. Nobody got out.",
+      "setup": "",
+      "punchline": "My cousin is an actor, so he prepared for a role as a man losing his mind by checking into a psychiatric ward. Method acting. Three days in, he told the doctors, ‘I’m not really crazy, I’m just researching.’ They said, ‘Sure. Here’s your bracelet.’ He got the part. They got his insurance. Nobody got out.",
+      "text": "My cousin is an actor, so he prepared for a role as a man losing his mind by checking into a psychiatric ward. Method acting. Three days in, he told the doctors, ‘I’m not really crazy, I’m just researching.’ They said, ‘Sure. Here’s your bracelet.’ He got the part. They got his insurance. Nobody got out."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Small Town Nemesis",
+      "seedTermsUsed": [
+        "Rural Settlement",
+        "Having to work with an enemy"
+      ],
+      "joke": "I grew up in a town of 400 people, which makes rivalries really inconvenient. In a city, you can just avoid your nemesis forever. But back home, my mortal enemy was also the only guy in a fifty-mile radius who could fix a broken septic tank. You haven't experienced true defeat until you're forced to smile and hand a cold lemonade to the man who ruined your life, simply because he's currently knee-deep in your family's consequences.",
+      "setup": "",
+      "punchline": "I grew up in a town of 400 people, which makes rivalries really inconvenient. In a city, you can just avoid your nemesis forever. But back home, my mortal enemy was also the only guy in a fifty-mile radius who could fix a broken septic tank. You haven't experienced true defeat until you're forced to smile and hand a cold lemonade to the man who ruined your life, simply because he's currently knee-deep in your family's consequences.",
+      "text": "I grew up in a town of 400 people, which makes rivalries really inconvenient. In a city, you can just avoid your nemesis forever. But back home, my mortal enemy was also the only guy in a fifty-mile radius who could fix a broken septic tank. You haven't experienced true defeat until you're forced to smile and hand a cold lemonade to the man who ruined your life, simply because he's currently knee-deep in your family's consequences."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "model": "grok-4.3",
+      "title": "Method Acting",
+      "seedTermsUsed": [
+        "Actor",
+        "Psychiatric Ward"
+      ],
+      "joke": "I finally booked a real acting role—as a patient in a psychiatric ward. Director said, 'Go method.' So I checked myself in. Two weeks later my agent calls: 'They love you! They're keeping you indefinitely!' I said, 'That's not a standing ovation. That's a commitment hearing.'",
+      "setup": "",
+      "punchline": "I finally booked a real acting role—as a patient in a psychiatric ward. Director said, 'Go method.' So I checked myself in. Two weeks later my agent calls: 'They love you! They're keeping you indefinitely!' I said, 'That's not a standing ovation. That's a commitment hearing.'",
+      "text": "I finally booked a real acting role—as a patient in a psychiatric ward. Director said, 'Go method.' So I checked myself in. Two weeks later my agent calls: 'They love you! They're keeping you indefinitely!' I said, 'That's not a standing ovation. That's a commitment hearing.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web",
+      "title": "Local Celebrity",
+      "seedTermsUsed": [
+        "Rural Settlement",
+        "Actor"
+      ],
+      "joke": "I moved to a tiny rural village and found out the local theater only had one actor. Every play was a one-man show. Hamlet? Same guy. The ghost? Same guy. The love interest? Still him. After intermission he walked back onstage and got a standing ovation from himself. Honestly, he deserved it for making eye contact with himself for two hours.",
+      "setup": "",
+      "punchline": "I moved to a tiny rural village and found out the local theater only had one actor. Every play was a one-man show. Hamlet? Same guy. The ghost? Same guy. The love interest? Still him. After intermission he walked back onstage and got a standing ovation from himself. Honestly, he deserved it for making eye contact with himself for two hours.",
+      "text": "I moved to a tiny rural village and found out the local theater only had one actor. Every play was a one-man show. Hamlet? Same guy. The ghost? Same guy. The love interest? Still him. After intermission he walked back onstage and got a standing ovation from himself. Honestly, he deserved it for making eye contact with himself for two hours."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-5.4 Mini",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Recognizable method-acting premise, but the institutionalization twist is predictable. The insurance reference distracts, and 'Nobody got out' is a weak, unfocused closing line. More anecdote than polished stand-up.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.3
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong, relatable premise with a specific predicament and effective escalation. The septic-tank situation makes the rivalry amusing, and 'knee-deep in your family's consequences' delivers a clever, concrete final turn. Slightly overwritten, but genuinely funny.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean first-person construction, efficient setup, and a recognizable punchline. The confusion between acting success and psychiatric commitment works, although the twist is foreseeable and 'commitment hearing' is more clever than laugh-inducing.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Accessible premise with amusing possibilities, but repeating 'same guy' adds little escalation. The self-applause is predictable, and the final eye-contact observation feels arbitrary rather than delivering a strong comic reversal.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.800000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear stage premise and a tight turn: the 'front-row seats' reframes eleven years of marriage as a long acting job. Economical, natural first-person delivery, and the last line carries the laugh. Divorce-acting is a familiar territory, which caps originality.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Septic-tank-versus-nemesis setup is relatable and the lemonade image has promise, but it runs long and reads like an essay. The 'family's consequences' ending is a soft pun that delivers a smirk rather than a laugh, and the stage rhythm sags in the middle.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.7
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Method-acting-into-an-institution premise is clear and the standing-ovation versus commitment-hearing contrast is a real turn. The agent's 'they love you' beat is a bit predictable and the final line is slightly explained, but it is a respectable, well-built joke.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "One-actor-plays-everything is an easy, readable premise and the self-ovation image is mildly funny. The closing eye-contact line is the best beat, but the list of roles is the obvious route and the escalation is flat, leaving it competent and forgettable.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong stage premise with a sharp, natural punchline that escalates perfectly.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Relies on a familiar trope and the final tag dilutes the rhythmic momentum.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean escalation with a snappy, well-crafted final line that lands the joke effectively.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Amusing imagery and competent stage rhythm, though it leans into light absurdity over a hard punch.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok 4.3",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean setup and a sharp personal turn on the ex-wife; the front-row seats line lands cleanly without over-explaining.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Familiar method-acting-into-ward premise; the cousin framing and final 'nobody got out' feel forced rather than earned.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 5.1
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific, grounded rural-enemy image builds well to the lemonade-and-septic payoff; the 'family's consequences' turn is sharp and human.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Cute one-man-show escalation with a solid self-ovation closer, but the laugh stays mild rather than explosive.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear first-person setup and strong closing line; familiar ex-spouse misdirection but effective.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.9
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Not first-person stand-up; largely a familiar method-acting-in-psychiatric-ward premise with an overstretched ending.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 4,
+          "total": 4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific rural image and solid escalation; more amusing than laugh-out-loud, but well constructed.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.900000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean first-person structure and tidy commitment-hearing punchline; familiar premise executed competently.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-5.4 Mini",
+      "score": 7.3,
+      "rawScore": 7.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.2,
+        "surprise": 7,
+        "craft": 7.7,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7,
+        "craft": 7.8,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.7,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear stage premise and a tight turn: the 'front-row seats' reframes eleven years of marriage as a long acting job. Economical, natural first-person delivery, and the last line carries the laugh. Divorce-acting is a familiar territory, which caps originality."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.4,
+          "rawScore": 8,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong stage premise with a sharp, natural punchline that escalates perfectly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean setup and a sharp personal turn on the ex-wife; the front-row seats line lands cleanly without over-explaining."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.5,
+          "comment": "Clear first-person setup and strong closing line; familiar ex-spouse misdirection but effective."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok 4.3",
+      "score": 6.7,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.1,
+        "craft": 7.1,
+        "originality": 5.6,
+        "promptFit": 9.6
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 5.5,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
+          "comment": "Clean first-person construction, efficient setup, and a recognizable punchline. The confusion between acting success and psychiatric commitment works, although the twist is foreseeable and 'commitment hearing' is more clever than laugh-inducing."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.7,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Method-acting-into-an-institution premise is clear and the standing-ovation versus commitment-hearing contrast is a real turn. The agent's 'they love you' beat is a bit predictable and the final line is slightly explained, but it is a respectable, well-built joke."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Clean escalation with a snappy, well-crafted final line that lands the joke effectively."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.5,
+          "comment": "Clean first-person structure and tidy commitment-hearing punchline; familiar premise executed competently."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.6,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.2,
+        "surprise": 6.7,
+        "craft": 6.2,
+        "originality": 6.7,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.8,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 7.3,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0,
+          "comment": "Strong, relatable premise with a specific predicament and effective escalation. The septic-tank situation makes the rivalry amusing, and 'knee-deep in your family's consequences' delivers a clever, concrete final turn. Slightly overwritten, but genuinely funny."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.1,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0.4,
+          "comment": "Septic-tank-versus-nemesis setup is relatable and the lemonade image has promise, but it runs long and reads like an essay. The 'family's consequences' ending is a soft pun that delivers a smirk rather than a laugh, and the stage rhythm sags in the middle."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 7.6,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Specific, grounded rural-enemy image builds well to the lemonade-and-septic payoff; the 'family's consequences' turn is sharp and human."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.5,
+          "comment": "Specific rural image and solid escalation; more amusing than laugh-out-loud, but well constructed."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 5.4,
+        "craft": 5.9,
+        "originality": 6.1,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.8,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0,
+          "comment": "Accessible premise with amusing possibilities, but repeating 'same guy' adds little escalation. The self-applause is predictable, and the final eye-contact observation feels arbitrary rather than delivering a strong comic reversal."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.4,
+          "comment": "One-actor-plays-everything is an easy, readable premise and the self-ovation image is mildly funny. The closing eye-contact line is the best beat, but the list of roles is the obvious route and the escalation is flat, leaving it competent and forgettable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.8,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Amusing imagery and competent stage rhythm, though it leans into light absurdity over a hard punch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 6.4,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Cute one-man-show escalation with a solid self-ovation closer, but the laugh stays mild rather than explosive."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 4.6,
+      "rawScore": 4.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.4,
+        "surprise": 4.4,
+        "craft": 4.7,
+        "originality": 4.2,
+        "promptFit": 6.2
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.5,
+        "craft": 4.8,
+        "originality": 4.3,
+        "promptFit": 6.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-5.4 Mini",
+          "score": 4.3,
+          "rawScore": 4.3,
+          "scoreAdjustment": 0,
+          "comment": "Recognizable method-acting premise, but the institutionalization twist is predictable. The insurance reference distracts, and 'Nobody got out' is a weak, unfocused closing line. More anecdote than polished stand-up."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.8,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Relies on a familiar trope and the final tag dilutes the rhythmic momentum."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok 4.3",
+          "score": 4.8,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Familiar method-acting-into-ward premise; the cousin framing and final 'nobody got out' feel forced rather than earned."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 3.5,
+          "rawScore": 4,
+          "scoreAdjustment": -0.5,
+          "comment": "Not first-person stand-up; largely a familiar method-acting-in-psychiatric-ward premise with an overstretched ending."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-21-external-real-2026-10-21.png",
+    "originalSrc": "assets/feature-images/2026-10-21-external-real-2026-10-21.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled A Convincing Performance: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-5.4 Mini - A Convincing Performance\nExact joke text to render in the right panel:\nI got cast opposite my ex-wife in a romantic comedy. The director asked, 'Can you make an audience believe you're in love with her?' I said, 'I convinced her for eleven years, and she had front-row seats.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Rural Settlement, Actor, Psychiatric Ward, Having to work with an enemy, Diplomatic, Uncouth. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Rural Settlement, Actor, Psychiatric Ward, Having to work with an enemy, Diplomatic, Uncouth. Use the winning joke titled \"A Convincing Performance\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.3,
+      "anthropic": 5.9,
+      "google": 5.9,
+      "xai": 6.6,
+      "copilot": 6.8
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-21-external-real-2026-10-21.md"
+}
