@@ -1,0 +1,184 @@
+{
+  "createdAt": "2026-10-22T14:03:15.998Z",
+  "publishedDate": "2026-10-22",
+  "seed": "external-real-2026-10-22",
+  "slug": "2026-10-22-external-real-2026-10-22",
+  "source": "manual-external",
+  "seedTerms": [
+    "Legal and Courtroom",
+    "General Contractor",
+    "Garage",
+    "Being cut from a team",
+    "Trusting",
+    "Materialistic"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "GPT-6 (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "GPT-6 (ChatGPT web)",
+      "title": "The Garage Renovation",
+      "seedTermsUsed": [
+        "General Contractor",
+        "Garage"
+      ],
+      "joke": "I hired a contractor to turn my garage into a home office. He said, 'First, we need to establish a budget.' I said, 'Five thousand dollars.' He laughed so hard he had to sit down. Then he charged me four hundred dollars for the chair.",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired a contractor to turn my garage into a home office. He said, 'First, we need to establish a budget.' I said, 'Five thousand dollars.' He laughed so hard he had to sit down. Then he charged me four hundred dollars for the chair."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Contractor Cross-Examination",
+      "seedTermsUsed": [
+        "General Contractor",
+        "Legal and Courtroom"
+      ],
+      "joke": "My general contractor told me the kitchen would take six weeks. That was March. Last night I cross-examined him like a lawyer: ‘Isn’t it true you said six weeks?’ He objected. ‘Hearsay.’ I said, ‘You said it to my face!’ He said, ‘Then it’s a verbal contract, and in this county those are only binding on the homeowner.’",
+      "setup": "",
+      "punchline": "",
+      "text": "My general contractor told me the kitchen would take six weeks. That was March. Last night I cross-examined him like a lawyer: ‘Isn’t it true you said six weeks?’ He objected. ‘Hearsay.’ I said, ‘You said it to my face!’ He said, ‘Then it’s a verbal contract, and in this county those are only binding on the homeowner.’"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash (web)",
+      "title": "Subcontractor Tryouts",
+      "seedTermsUsed": [
+        "General Contractor",
+        "Being cut from a team"
+      ],
+      "joke": "I tried working for a general contractor last summer, but I got cut from the crew on day three. No dramatic blowup, just the foreman pulling me aside like a high school coach to say, 'Phil, we really love your energy, but you're leaning on a broom that isn't touching the floor.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried working for a general contractor last summer, but I got cut from the crew on day three. No dramatic blowup, just the foreman pulling me aside like a high school coach to say, 'Phil, we really love your energy, but you're leaning on a broom that isn't touching the floor.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "The Priority Invoice",
+      "seedTermsUsed": [
+        "Legal and Courtroom",
+        "General Contractor"
+      ],
+      "joke": "I finally hauled my general contractor into court. I told the judge, 'This man promised the job would be done by spring. It's fall and the only thing completed is the invoice.' The contractor stands up and says, 'Objection. The invoice was always the priority.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I finally hauled my general contractor into court. I told the judge, 'This man promised the job would be done by spring. It's fall and the only thing completed is the invoice.' The contractor stands up and says, 'Objection. The invoice was always the priority.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Too Much Faith",
+      "seedTermsUsed": [
+        "General Contractor",
+        "Trusting"
+      ],
+      "joke": "I'm way too trusting. I hired a general contractor who walked through my house, nodded thoughtfully, and said, \"Good news, we can save a fortune by keeping the original structure.\" I felt proud until he clarified, \"By original structure, I mean whatever is currently preventing the roof from meeting the basement.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm way too trusting. I hired a general contractor who walked through my house, nodded thoughtfully, and said, \"Good news, we can save a fortune by keeping the original structure.\" I felt proud until he clarified, \"By original structure, I mean whatever is currently preventing the roof from meeting the basement.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {"jokeId": "joke-b", "originality": 5, "surprise": 5, "craft": 5, "promptFit": 10, "laugh": 5, "comment": "Clear courtroom premise, but the legal terminology is strained and the final line feels contrived rather than surprising. Mildly amusing."},
+        {"jokeId": "joke-c", "originality": 7, "surprise": 7, "craft": 8, "promptFit": 10, "laugh": 7, "comment": "Strong visual punchline with the broom not touching the floor. The high-school-coach delivery creates effective misdirection, and the understated incompetence feels natural onstage."},
+        {"jokeId": "joke-d", "originality": 5, "surprise": 5, "craft": 7, "promptFit": 10, "laugh": 6, "comment": "Tight construction and a recognizable contractor frustration. The invoice line is effective, but the punchline largely confirms the setup rather than delivering an unexpected turn."},
+        {"jokeId": "joke-e", "originality": 6, "surprise": 6, "craft": 6, "promptFit": 10, "laugh": 6, "comment": "Good reversal of the initial reassurance, with a vivid image of structural collapse. The wording is slightly cumbersome, and the exaggerated punchline weakens its conversational delivery."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId": "joke-a", "originality": 4, "surprise": 5, "craft": 6, "promptFit": 8, "laugh": 5, "comment": "Clear premise and a tidy button with the chair charge, but the ‘contractor laughs at my budget’ route is the familiar one."},
+        {"jokeId": "joke-c", "originality": 7, "surprise": 6, "craft": 6, "promptFit": 8, "laugh": 6, "comment": "Fresh angle of getting cut from a construction crew, and the high school coach tone works. The broom image is slightly muddled but the kicker is a real laugh."},
+        {"jokeId": "joke-d", "originality": 4, "surprise": 4, "craft": 5, "promptFit": 8, "laugh": 5, "comment": "The invoice-completed line is a decent setup, but the contractor objecting in the punchline is a weak turn that mostly restates the premise, and the tense shift hurts timing."},
+        {"jokeId": "joke-e", "originality": 6, "surprise": 6, "craft": 6, "promptFit": 8, "laugh": 6, "comment": "The ‘roof meeting the basement’ reveal is a strong image and a real turn on ‘original structure’. Trusting is only lightly used, and the setup runs a bit long."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId": "joke-a", "originality": 6, "surprise": 7, "craft": 7, "promptFit": 9, "laugh": 7, "comment": "Crisp economy with a sharp, punchy escalation on the billing turnaround."},
+        {"jokeId": "joke-b", "originality": 5, "surprise": 5, "craft": 5, "promptFit": 9, "laugh": 5, "comment": "Playful dialogue setup, but the mock-legal debate drags slightly and the punchline softens."},
+        {"jokeId": "joke-d", "originality": 5, "surprise": 5, "craft": 6, "promptFit": 9, "laugh": 5, "comment": "Clear structure, though the prompt combination leads to an expected billing punchline."},
+        {"jokeId": "joke-e", "originality": 6, "surprise": 6, "craft": 7, "promptFit": 9, "laugh": 6, "comment": "Good natural comic voice and strong visual phrasing at the finish."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId": "joke-a", "originality": 5, "surprise": 6, "craft": 6, "promptFit": 8, "laugh": 6, "comment": "Competent overcharge gag; chair turn is specific but slightly forced."},
+        {"jokeId": "joke-b", "originality": 7, "surprise": 7, "craft": 6, "promptFit": 9, "laugh": 7, "comment": "Clean legal wordplay on delay; final binding line lands with a snap."},
+        {"jokeId": "joke-c", "originality": 6, "surprise": 7, "craft": 7, "promptFit": 9, "laugh": 7, "comment": "Strong visual of the idle broom; familiar lazy-worker frame executed well."},
+        {"jokeId": "joke-e", "originality": 7, "surprise": 8, "craft": 8, "promptFit": 9, "laugh": 7, "comment": "Tight trust-to-reveal structure with a sharp collapsing-house image."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId": "joke-a", "originality": 4, "surprise": 4, "craft": 5, "promptFit": 9, "laugh": 5, "comment": "Clear and concise, but the contractor-overcharging angle is familiar and the chair tag is predictable."},
+        {"jokeId": "joke-b", "originality": 7, "surprise": 7, "craft": 7, "promptFit": 9, "laugh": 7, "comment": "Strong integration of courtroom logic with contractor frustration; the final reversal lands cleanly."},
+        {"jokeId": "joke-c", "originality": 6, "surprise": 6, "craft": 7, "promptFit": 9, "laugh": 6, "comment": "Natural stand-up voice and vivid detail; the broom line is amusing but more character-based than punchy."},
+        {"jokeId": "joke-d", "originality": 5, "surprise": 5, "craft": 6, "promptFit": 9, "laugh": 6, "comment": "Solid courtroom premise with a clean punchline, though the invoice-priority joke follows an expected path."}
+      ]
+    }
+  ]
+}
