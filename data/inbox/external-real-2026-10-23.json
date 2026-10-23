@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-10-23T14:12:16.663Z",
+  "publishedDate": "2026-10-23",
+  "seed": "external-real-2026-10-23",
+  "slug": "2026-10-23-external-real-2026-10-23",
+  "source": "manual-external",
+  "seedTerms": [
+    "Tech-Focused (Hard)",
+    "Fundraiser",
+    "Tank",
+    "Misaligned goals",
+    "Witty",
+    "Know-It-All"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "GPT-6 (ChatGPT web, High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "GPT-6 (ChatGPT web, High)",
+      "title": "Keep Him Busy",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Tank"
+      ],
+      "joke": "I volunteered for the dunk tank at my son's school fundraiser. He was terrible at throwing, but he kept buying more balls. After twenty misses, I said, 'Buddy, you don't have to spend all your money trying to dunk me.' He said, 'I'm not. Mom said I have to keep you occupied until the movers leave.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I volunteered for the dunk tank at my son's school fundraiser. He was terrible at throwing, but he kept buying more balls. After twenty misses, I said, 'Buddy, you don't have to spend all your money trying to dunk me.' He said, 'I'm not. Mom said I have to keep you occupied until the movers leave.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Tank Fundraiser",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Know-It-All"
+      ],
+      "joke": "I volunteered to run my kid’s school fundraiser, and a dad named Gary said, ‘Actually, bake sales are statistically inefficient.’ Gary had slides. Gary had a spreadsheet. Gary raised four hundred dollars in six weeks. I raised six hundred by standing outside the grocery store holding a sign that said ‘Please, I’m tired.’ Turns out people will pay anything to make a guy named Gary stop talking.",
+      "setup": "",
+      "punchline": "",
+      "text": "I volunteered to run my kid’s school fundraiser, and a dad named Gary said, ‘Actually, bake sales are statistically inefficient.’ Gary had slides. Gary had a spreadsheet. Gary raised four hundred dollars in six weeks. I raised six hundred by standing outside the grocery store holding a sign that said ‘Please, I’m tired.’ Turns out people will pay anything to make a guy named Gary stop talking."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini web",
+      "title": "Charity Splash",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Tank"
+      ],
+      "joke": "I volunteered for the dunk tank at my nephew’s school fundraiser. I thought it was a fun, innocent way to help the PTA buy some new iPads. I didn't realize I was offering myself up as a socially acceptable target for every recently divorced dad in the neighborhood who once played minor league baseball. It’s not charity anymore; it’s a firing squad with a wet finish.",
+      "setup": "",
+      "punchline": "",
+      "text": "I volunteered for the dunk tank at my nephew’s school fundraiser. I thought it was a fun, innocent way to help the PTA buy some new iPads. I didn't realize I was offering myself up as a socially acceptable target for every recently divorced dad in the neighborhood who once played minor league baseball. It’s not charity anymore; it’s a firing squad with a wet finish."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Optimized Giving",
+      "seedTermsUsed": [
+        "Know-It-All",
+        "Fundraiser"
+      ],
+      "joke": "I went to a charity fundraiser last weekend and this know-it-all parks himself at the donation table. He starts correcting everyone. 'Actually, if you give in smaller increments the matching grant multiplies better.' Buddy, the goal is keeping the lights on at the shelter, not proving you finished a podcast on effective altruism. By the end of the night we raised eight hundred bucks and one very thorough demonstration that the rest of us are financially illiterate.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to a charity fundraiser last weekend and this know-it-all parks himself at the donation table. He starts correcting everyone. 'Actually, if you give in smaller increments the matching grant multiplies better.' Buddy, the goal is keeping the lights on at the shelter, not proving you finished a podcast on effective altruism. By the end of the night we raised eight hundred bucks and one very thorough demonstration that the rest of us are financially illiterate."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Charity Expert",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Know-It-All"
+      ],
+      "joke": "I went to a charity fundraiser and got seated next to a guy who knew everything. Every auction item, he had a lecture. \"That painting is overrated.\" \"That vacation package is a tourist trap.\" By the end of the night I finally bid on something he couldn't criticize: dinner with him. I won, and somehow that counted as a donation.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to a charity fundraiser and got seated next to a guy who knew everything. Every auction item, he had a lecture. \"That painting is overrated.\" \"That vacation package is a tourist trap.\" By the end of the night I finally bid on something he couldn't criticize: dinner with him. I won, and somehow that counted as a donation."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong characterization, concrete details, and a funny sign. The contrast between Gary's elaborate analysis and the simple appeal works well. The final line earns a laugh, although its connection to the donations is slightly loose."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "A recognizable situation with amusingly specific antagonists. The minor-league baseball detail gives the premise personality. The firing-squad comparison is predictable, and 'wet finish' is more clever phrasing than a strong punchline."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Clear premise and natural first-person delivery, but the humor largely consists of describing an irritating know-it-all. The effective-altruism reference adds specificity without producing much laughter. The ending merely restates the character's established behavior."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The auction provides a natural setting, and bidding on dinner with the know-it-all is an unexpected reversal. However, the motivation and auction mechanics are unclear, weakening the payoff. More amusing as an odd idea than as a fully convincing stand-up punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clear stage premise and a real turn: the kid’s spending looks sweet, then the movers reveal a darker motive. The final line carries the laugh. The setup could be tighter, but the twist is strong."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The divorced-dad-with-a-baseball-arm image is amusing, but it arrives as a long sentence. The closer ‘firing squad with a wet finish’ is a stretch and reads more as narration than a snap."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Recognizable know-it-all setup. The podcast jab is decent, but the closer is wordy and explains itself, so the laugh softens."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Bidding on dinner with the critic is a neat turn, but the closer is a bit muddled. ‘Counted as a donation’ undercuts the payoff. The tidy setup helps."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Strong misdirection from dunk-tank setup to movers reveal; clean, clear, and punchline lands hard."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Solid know-it-all character work and escalation; Gary payoff is funny but follows a fairly familiar path."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear premise with good imagery; ending is amusing but more colorful description than a sharp comic turn."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Competent observational joke, but the ending mainly restates the setup and lacks a strong payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent setup and rhythm. The final turn is sharp, genuinely surprising, and lands perfectly with the 'dunk tank' mechanic keeping the victim trapped. Very strong human-level stage joke."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent character work, but the logic slightly fractures at the end—the comic is at a grocery store, so it's unclear how the donors are paying to make Gary stop talking if Gary isn't there with the sign. A bit disjointed."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The premise is relatable, but it lacks a true punchline. The final sentence functions more as an observational summary of the night rather than a comedic turn that generates a laugh."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 3,
+          "promptFit": 9,
+          "laugh": 3,
+          "comment": "The logical mechanics of the joke fall apart. It's unclear why dinner with a random annoying attendee would be an auction item, or why bidding on him would stop the criticisms. The premise doesn't track."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean escalation to a specific family reveal; the closer works but the laugh stays mild."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clear premise and satisfying contrast; the final line carries a real, repeatable laugh."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good stage image and wet-finish closer, but the divorced-dad revenge angle is the expected route."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clever setup about bidding on the critic; the payoff remains conceptual and mild."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-23-external-real-2026-10-23",
+  "seed": "external-real-2026-10-23",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-23T14:12:16.663Z",
+  "publishedDate": "2026-10-23",
+  "seedTerms": [
+    "Tech-Focused (Hard)",
+    "Fundraiser",
+    "Tank",
+    "Misaligned goals",
+    "Witty",
+    "Know-It-All"
+  ],
+  "premise": {
+    "text": "Seed terms: Tech-Focused (Hard), Fundraiser, Tank, Misaligned goals, Witty, Know-It-All",
+    "seedTerms": [
+      "Tech-Focused (Hard)",
+      "Fundraiser",
+      "Tank",
+      "Misaligned goals",
+      "Witty",
+      "Know-It-All"
+    ],
+    "displayText": "Keep Him Busy"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6",
+      "provider": "openai",
+      "model": "GPT-6 (ChatGPT web, High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini web"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "model": "GPT-6 (ChatGPT web, High)",
+      "title": "Keep Him Busy",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Tank"
+      ],
+      "joke": "I volunteered for the dunk tank at my son's school fundraiser. He was terrible at throwing, but he kept buying more balls. After twenty misses, I said, 'Buddy, you don't have to spend all your money trying to dunk me.' He said, 'I'm not. Mom said I have to keep you occupied until the movers leave.'",
+      "setup": "",
+      "punchline": "I volunteered for the dunk tank at my son's school fundraiser. He was terrible at throwing, but he kept buying more balls. After twenty misses, I said, 'Buddy, you don't have to spend all your money trying to dunk me.' He said, 'I'm not. Mom said I have to keep you occupied until the movers leave.'",
+      "text": "I volunteered for the dunk tank at my son's school fundraiser. He was terrible at throwing, but he kept buying more balls. After twenty misses, I said, 'Buddy, you don't have to spend all your money trying to dunk me.' He said, 'I'm not. Mom said I have to keep you occupied until the movers leave.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Tank Fundraiser",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Know-It-All"
+      ],
+      "joke": "I volunteered to run my kid’s school fundraiser, and a dad named Gary said, ‘Actually, bake sales are statistically inefficient.’ Gary had slides. Gary had a spreadsheet. Gary raised four hundred dollars in six weeks. I raised six hundred by standing outside the grocery store holding a sign that said ‘Please, I’m tired.’ Turns out people will pay anything to make a guy named Gary stop talking.",
+      "setup": "",
+      "punchline": "I volunteered to run my kid’s school fundraiser, and a dad named Gary said, ‘Actually, bake sales are statistically inefficient.’ Gary had slides. Gary had a spreadsheet. Gary raised four hundred dollars in six weeks. I raised six hundred by standing outside the grocery store holding a sign that said ‘Please, I’m tired.’ Turns out people will pay anything to make a guy named Gary stop talking.",
+      "text": "I volunteered to run my kid’s school fundraiser, and a dad named Gary said, ‘Actually, bake sales are statistically inefficient.’ Gary had slides. Gary had a spreadsheet. Gary raised four hundred dollars in six weeks. I raised six hundred by standing outside the grocery store holding a sign that said ‘Please, I’m tired.’ Turns out people will pay anything to make a guy named Gary stop talking."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini web",
+      "title": "Charity Splash",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Tank"
+      ],
+      "joke": "I volunteered for the dunk tank at my nephew’s school fundraiser. I thought it was a fun, innocent way to help the PTA buy some new iPads. I didn't realize I was offering myself up as a socially acceptable target for every recently divorced dad in the neighborhood who once played minor league baseball. It’s not charity anymore; it’s a firing squad with a wet finish.",
+      "setup": "",
+      "punchline": "I volunteered for the dunk tank at my nephew’s school fundraiser. I thought it was a fun, innocent way to help the PTA buy some new iPads. I didn't realize I was offering myself up as a socially acceptable target for every recently divorced dad in the neighborhood who once played minor league baseball. It’s not charity anymore; it’s a firing squad with a wet finish.",
+      "text": "I volunteered for the dunk tank at my nephew’s school fundraiser. I thought it was a fun, innocent way to help the PTA buy some new iPads. I didn't realize I was offering myself up as a socially acceptable target for every recently divorced dad in the neighborhood who once played minor league baseball. It’s not charity anymore; it’s a firing squad with a wet finish."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Optimized Giving",
+      "seedTermsUsed": [
+        "Know-It-All",
+        "Fundraiser"
+      ],
+      "joke": "I went to a charity fundraiser last weekend and this know-it-all parks himself at the donation table. He starts correcting everyone. 'Actually, if you give in smaller increments the matching grant multiplies better.' Buddy, the goal is keeping the lights on at the shelter, not proving you finished a podcast on effective altruism. By the end of the night we raised eight hundred bucks and one very thorough demonstration that the rest of us are financially illiterate.",
+      "setup": "",
+      "punchline": "I went to a charity fundraiser last weekend and this know-it-all parks himself at the donation table. He starts correcting everyone. 'Actually, if you give in smaller increments the matching grant multiplies better.' Buddy, the goal is keeping the lights on at the shelter, not proving you finished a podcast on effective altruism. By the end of the night we raised eight hundred bucks and one very thorough demonstration that the rest of us are financially illiterate.",
+      "text": "I went to a charity fundraiser last weekend and this know-it-all parks himself at the donation table. He starts correcting everyone. 'Actually, if you give in smaller increments the matching grant multiplies better.' Buddy, the goal is keeping the lights on at the shelter, not proving you finished a podcast on effective altruism. By the end of the night we raised eight hundred bucks and one very thorough demonstration that the rest of us are financially illiterate."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Charity Expert",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Know-It-All"
+      ],
+      "joke": "I went to a charity fundraiser and got seated next to a guy who knew everything. Every auction item, he had a lecture. \"That painting is overrated.\" \"That vacation package is a tourist trap.\" By the end of the night I finally bid on something he couldn't criticize: dinner with him. I won, and somehow that counted as a donation.",
+      "setup": "",
+      "punchline": "I went to a charity fundraiser and got seated next to a guy who knew everything. Every auction item, he had a lecture. \"That painting is overrated.\" \"That vacation package is a tourist trap.\" By the end of the night I finally bid on something he couldn't criticize: dinner with him. I won, and somehow that counted as a donation.",
+      "text": "I went to a charity fundraiser and got seated next to a guy who knew everything. Every auction item, he had a lecture. \"That painting is overrated.\" \"That vacation package is a tourist trap.\" By the end of the night I finally bid on something he couldn't criticize: dinner with him. I won, and somehow that counted as a donation."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong characterization, concrete details, and a funny sign. The contrast between Gary's elaborate analysis and the simple appeal works well. The final line earns a laugh, although its connection to the donations is slightly loose.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "A recognizable situation with amusingly specific antagonists. The minor-league baseball detail gives the premise personality. The firing-squad comparison is predictable, and 'wet finish' is more clever phrasing than a strong punchline.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear premise and natural first-person delivery, but the humor largely consists of describing an irritating know-it-all. The effective-altruism reference adds specificity without producing much laughter. The ending merely restates the character's established behavior.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The auction provides a natural setting, and bidding on dinner with the know-it-all is an unexpected reversal. However, the motivation and auction mechanics are unclear, weakening the payoff. More amusing as an odd idea than as a fully convincing stand-up punchline.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear stage premise and a real turn: the kid’s spending looks sweet, then the movers reveal a darker motive. The final line carries the laugh. The setup could be tighter, but the twist is strong.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The divorced-dad-with-a-baseball-arm image is amusing, but it arrives as a long sentence. The closer ‘firing squad with a wet finish’ is a stretch and reads more as narration than a snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Recognizable know-it-all setup. The podcast jab is decent, but the closer is wordy and explains itself, so the laugh softens.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Bidding on dinner with the critic is a neat turn, but the closer is a bit muddled. ‘Counted as a donation’ undercuts the payoff. The tidy setup helps.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong misdirection from dunk-tank setup to movers reveal; clean, clear, and punchline lands hard.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 8.100000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Solid know-it-all character work and escalation; Gary payoff is funny but follows a fairly familiar path.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear premise with good imagery; ending is amusing but more colorful description than a sharp comic turn.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent observational joke, but the ending mainly restates the setup and lacks a strong payoff.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Excellent setup and rhythm. The final turn is sharp, genuinely surprising, and lands perfectly with the 'dunk tank' mechanic keeping the victim trapped. Very strong human-level stage joke.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Competent character work, but the logic slightly fractures at the end—the comic is at a grocery store, so it's unclear how the donors are paying to make Gary stop talking if Gary isn't there with the sign. A bit disjointed.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The premise is relatable, but it lacks a true punchline. The final sentence functions more as an observational summary of the night rather than a comedic turn that generates a laugh.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The logical mechanics of the joke fall apart. It's unclear why dinner with a random annoying attendee would be an auction item, or why bidding on him would stop the criticisms. The premise doesn't track.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 3,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 3.7
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean escalation to a specific family reveal; the closer works but the laugh stays mild.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear premise and satisfying contrast; the final line carries a real, repeatable laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Good stage image and wet-finish closer, but the divorced-dad revenge angle is the expected route.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Clever setup about bidding on the critic; the payoff remains conceptual and mild.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6",
+      "score": 7.5,
+      "rawScore": 7.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.2,
+        "surprise": 7.7,
+        "craft": 7.5,
+        "originality": 6.5,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7.8,
+        "craft": 7.5,
+        "originality": 6.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.7,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear stage premise and a real turn: the kid’s spending looks sweet, then the movers reveal a darker motive. The final line carries the laugh. The setup could be tighter, but the twist is strong."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.8,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong misdirection from dunk-tank setup to movers reveal; clean, clear, and punchline lands hard."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 8.2,
+          "rawScore": 8,
+          "scoreAdjustment": 0.2,
+          "comment": "Excellent setup and rhythm. The final turn is sharp, genuinely surprising, and lands perfectly with the 'dunk tank' mechanic keeping the victim trapped. Very strong human-level stage joke."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean escalation to a specific family reveal; the closer works but the laugh stays mild."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.6,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 5.9,
+        "craft": 6.7,
+        "originality": 6.2,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 7.2,
+          "rawScore": 7,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong characterization, concrete details, and a funny sign. The contrast between Gary's elaborate analysis and the simple appeal works well. The final line earns a laugh, although its connection to the donations is slightly loose."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 7,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid know-it-all character work and escalation; Gary payoff is funny but follows a fairly familiar path."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.6,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Competent character work, but the logic slightly fractures at the end—the comic is at a grocery store, so it's unclear how the donors are paying to make Gary stop talking if Gary isn't there with the sign. A bit disjointed."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Clear premise and satisfying contrast; the final line carries a real, repeatable laugh."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6,
+      "rawScore": 6.1,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.7,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "A recognizable situation with amusingly specific antagonists. The minor-league baseball detail gives the premise personality. The firing-squad comparison is predictable, and 'wet finish' is more clever phrasing than a strong punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.4,
+          "comment": "The divorced-dad-with-a-baseball-arm image is amusing, but it arrives as a long sentence. The closer ‘firing squad with a wet finish’ is a stretch and reads more as narration than a snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear premise with good imagery; ending is amusing but more colorful description than a sharp comic turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Good stage image and wet-finish closer, but the divorced-dad revenge angle is the expected route."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.4,
+      "rawScore": 5.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.8,
+        "surprise": 5.3,
+        "craft": 5.1,
+        "originality": 5.6,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 5.3,
+        "craft": 5,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 5.9,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.2,
+          "comment": "The auction provides a natural setting, and bidding on dinner with the know-it-all is an unexpected reversal. However, the motivation and auction mechanics are unclear, weakening the payoff. More amusing as an odd idea than as a fully convincing stand-up punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.7,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Bidding on dinner with the critic is a neat turn, but the closer is a bit muddled. ‘Counted as a donation’ undercuts the payoff. The tidy setup helps."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 3.9,
+          "rawScore": 3.7,
+          "scoreAdjustment": 0.2,
+          "comment": "The logical mechanics of the joke fall apart. It's unclear why dinner with a random annoying attendee would be an auction item, or why bidding on him would stop the criticisms. The premise doesn't track."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.4,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.4,
+          "comment": "Clever setup about bidding on the critic; the payoff remains conceptual and mild."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5,
+      "rawScore": 5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.1,
+        "craft": 4.8,
+        "originality": 4.8,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4,
+        "craft": 4.8,
+        "originality": 4.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6",
+          "score": 4.7,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear premise and natural first-person delivery, but the humor largely consists of describing an irritating know-it-all. The effective-altruism reference adds specificity without producing much laughter. The ending merely restates the character's established behavior."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.4,
+          "comment": "Recognizable know-it-all setup. The podcast jab is decent, but the closer is wordy and explains itself, so the laugh softens."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Competent observational joke, but the ending mainly restates the setup and lacks a strong payoff."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.8,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.2,
+          "comment": "The premise is relatable, but it lacks a true punchline. The final sentence functions more as an observational summary of the night rather than a comedic turn that generates a laugh."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-23-external-real-2026-10-23.png",
+    "originalSrc": "assets/feature-images/2026-10-23-external-real-2026-10-23.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Keep Him Busy: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-6 - Keep Him Busy\nExact joke text to render in the right panel:\nI volunteered for the dunk tank at my son's school fundraiser. He was terrible at throwing, but he kept buying more balls. After twenty misses, I said, 'Buddy, you don't have to spend all your money trying to dunk me.' He said, 'I'm not. Mom said I have to keep you occupied until the movers leave.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Tech-Focused (Hard), Fundraiser, Tank, Misaligned goals, Witty, Know-It-All. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Tech-Focused (Hard), Fundraiser, Tank, Misaligned goals, Witty, Know-It-All. Use the winning joke titled \"Keep Him Busy\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.2,
+      "anthropic": 6,
+      "google": 6.2,
+      "xai": 6.7,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-23-external-real-2026-10-23.md"
+}
