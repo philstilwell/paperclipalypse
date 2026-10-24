@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-24-external-real-2026-10-24",
+  "seed": "external-real-2026-10-24",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-24T14:02:51.026Z",
+  "publishedDate": "2026-10-24",
+  "seedTerms": [
+    "Historical",
+    "Fundraiser",
+    "Vet Clinic",
+    "A competitor showing up",
+    "Passionate",
+    "Callous"
+  ],
+  "premise": {
+    "text": "Seed terms: Historical, Fundraiser, Vet Clinic, A competitor showing up, Passionate, Callous",
+    "seedTerms": [
+      "Historical",
+      "Fundraiser",
+      "Vet Clinic",
+      "A competitor showing up",
+      "Passionate",
+      "Callous"
+    ],
+    "displayText": "Competitive Pricing"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "Competitive Pricing",
+      "seedTermsUsed": [
+        "Vet Clinic",
+        "A competitor showing up"
+      ],
+      "joke": "A new vet clinic opened across from my regular one, and now they're in a price war. My vet said, 'Bring me any estimate and I'll beat it.' I said, 'The other place quoted $600 for my dog's surgery.' He said, 'I'll do it for $400.' I said, 'Same surgery?' He said, 'For $400, I'll open him up and see what looks affordable.'",
+      "setup": "",
+      "punchline": "A new vet clinic opened across from my regular one, and now they're in a price war. My vet said, 'Bring me any estimate and I'll beat it.' I said, 'The other place quoted $600 for my dog's surgery.' He said, 'I'll do it for $400.' I said, 'Same surgery?' He said, 'For $400, I'll open him up and see what looks affordable.'",
+      "text": "A new vet clinic opened across from my regular one, and now they're in a price war. My vet said, 'Bring me any estimate and I'll beat it.' I said, 'The other place quoted $600 for my dog's surgery.' He said, 'I'll do it for $400.' I said, 'Same surgery?' He said, 'For $400, I'll open him up and see what looks affordable.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Tote Bag Required",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Vet Clinic"
+      ],
+      "joke": "My vet clinic is holding a fundraiser for a new X-ray machine. They sent me a donation form: fifty, a hundred, or five hundred dollars. I looked at it and thought, I already paid for that machine. Twice. Every time my dog eats a sock, I put another leg on it. If I am donating, I want a plaque on the wall that says, This hallway is brought to you by Gerald's underwear.",
+      "setup": "",
+      "punchline": "My vet clinic is holding a fundraiser for a new X-ray machine. They sent me a donation form: fifty, a hundred, or five hundred dollars. I looked at it and thought, I already paid for that machine. Twice. Every time my dog eats a sock, I put another leg on it. If I am donating, I want a plaque on the wall that says, This hallway is brought to you by Gerald's underwear.",
+      "text": "My vet clinic is holding a fundraiser for a new X-ray machine. They sent me a donation form: fifty, a hundred, or five hundred dollars. I looked at it and thought, I already paid for that machine. Twice. Every time my dog eats a sock, I put another leg on it. If I am donating, I want a plaque on the wall that says, This hallway is brought to you by Gerald's underwear."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro (web)",
+      "title": "Bedside Manner",
+      "seedTermsUsed": [
+        "Vet Clinic",
+        "Callous"
+      ],
+      "joke": "I had to take my cat to the emergency vet clinic at 2 AM. You expect a little empathy, but the receptionist was incredibly callous. I was sobbing while holding my wheezing childhood pet, and she just slid a clipboard over and told me to fill it out. She also gave me a heads-up that they charge a disposal fee by the pound, suggesting I might want to take him to the parking lot and squeeze out any pending bowel movements to save a few bucks.",
+      "setup": "",
+      "punchline": "I had to take my cat to the emergency vet clinic at 2 AM. You expect a little empathy, but the receptionist was incredibly callous. I was sobbing while holding my wheezing childhood pet, and she just slid a clipboard over and told me to fill it out. She also gave me a heads-up that they charge a disposal fee by the pound, suggesting I might want to take him to the parking lot and squeeze out any pending bowel movements to save a few bucks.",
+      "text": "I had to take my cat to the emergency vet clinic at 2 AM. You expect a little empathy, but the receptionist was incredibly callous. I was sobbing while holding my wheezing childhood pet, and she just slid a clipboard over and told me to fill it out. She also gave me a heads-up that they charge a disposal fee by the pound, suggesting I might want to take him to the parking lot and squeeze out any pending bowel movements to save a few bucks."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Callous Vet",
+      "seedTermsUsed": [
+        "Vet Clinic",
+        "Callous"
+      ],
+      "joke": "I brought my dog into the vet clinic the other day. Hes limping, clearly in pain. The vet takes one look and says yep thats a bad leg. I asked what do we do. He shrugged and said well you could love him less. That usually helps with the disappointment. Then he billed me for the advice.",
+      "setup": "",
+      "punchline": "I brought my dog into the vet clinic the other day. Hes limping, clearly in pain. The vet takes one look and says yep thats a bad leg. I asked what do we do. He shrugged and said well you could love him less. That usually helps with the disappointment. Then he billed me for the advice.",
+      "text": "I brought my dog into the vet clinic the other day. Hes limping, clearly in pain. The vet takes one look and says yep thats a bad leg. I asked what do we do. He shrugged and said well you could love him less. That usually helps with the disappointment. Then he billed me for the advice."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "The Donation Timeline",
+      "seedTermsUsed": [
+        "Historical",
+        "Fundraiser"
+      ],
+      "joke": "I went to a fundraiser for a local history museum, and the host said, “Give whatever feels appropriate for the period.” Apparently I took that too seriously, because I donated three buttons and claimed inflation is modern propaganda. They put my name on a plaque anyway, right under the words: “Exhibit A.”",
+      "setup": "",
+      "punchline": "I went to a fundraiser for a local history museum, and the host said, “Give whatever feels appropriate for the period.” Apparently I took that too seriously, because I donated three buttons and claimed inflation is modern propaganda. They put my name on a plaque anyway, right under the words: “Exhibit A.”",
+      "text": "I went to a fundraiser for a local history museum, and the host said, “Give whatever feels appropriate for the period.” Apparently I took that too seriously, because I donated three buttons and claimed inflation is modern propaganda. They put my name on a plaque anyway, right under the words: “Exhibit A.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong, relatable premise with effective escalation and a specific, memorable closing image. The sock-to-underwear transition is slightly loose, but the plaque payoff earns a genuine laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The disposal-fee twist is unexpected and convincingly callous, but the excessively grim scenario and elaborate bodily-function detail limit broad appeal. Shock outweighs the actual laugh.",
+          "laugh": 4,
+          "surprise": 7,
+          "craft": 5,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The suggestion to love the dog less is a sharp, unexpected inversion of veterinary care. Unfortunately, the generic billing tag weakens the ending by following the strongest punchline.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Clear first-person setup and an amusing interpretation of historical donations. The inflation line provides some personality, but the Exhibit A ending feels arbitrary rather than delivering a decisive comic turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear price-war premise and a good turn: the discount implies a cheaper, scarier surgery. 'See what looks affordable' lands well as the closer.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Setup is clear but the callous receptionist is told rather than shown. The disposal-fee punchline is crude, strained and overwritten, and it does not end on a clean laugh line.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 3,
+          "originality": 3,
+          "promptFit": 6,
+          "total": 3.3000000000000003
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "'You could love him less' is a decent dark turn, and the billed-for-advice kicker is mildly funny. Typos and the soft ending weaken the timing.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 5.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The 'appropriate for the period' premise is clever, but the buttons and inflation-propaganda middle is muddled. 'Exhibit A' is a familiar closer that does not clearly follow from the setup.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 6,
+          "promptFit": 6,
+          "total": 4.6
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong punchline with a dark, surprising turn that lands well for a stage delivery.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable premise with good escalation, though the imagery is a bit conventional.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The dark absurdity works, but missing punctuation and rushed delivery severely hurt the craft.",
+          "laugh": 5,
+          "surprise": 7,
+          "craft": 4,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "A mildly amusing play on words, but the final punchline is quite predictable.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid price-war premise and dark final turn; clean first-person delivery.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong specific image in the plaque line; natural escalation from sock bills to donation demand.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Callousness builds cleanly to a sharp, unexpected disposal-fee suggestion.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Cute historical gag and plaque tag, but the payoff stays mild and predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong clear premise, escalation, and a solid dark turn. Punchline lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable angle with good specificity. The underwear-funded hallway tag is the best laugh.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Escalates unexpectedly, but the bowel-movement detail feels more grotesque than funny and hurts rhythm.",
+          "laugh": 5,
+          "surprise": 7,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear format and concise, but the joke is fairly predictable and the final billing tag is familiar.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 7.1,
+      "rawScore": 7.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 7.2,
+        "craft": 6.9,
+        "originality": 6.2,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7.3,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.4,
+          "rawScore": 7,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear price-war premise and a good turn: the discount implies a cheaper, scarier surgery. 'See what looks affordable' lands well as the closer."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 7.6,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong punchline with a dark, surprising turn that lands well for a stage delivery."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.6,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.5,
+          "comment": "Solid price-war premise and dark final turn; clean first-person delivery."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong clear premise, escalation, and a solid dark turn. Punchline lands cleanly."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 7,
+      "rawScore": 7.1,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 6.4,
+        "craft": 7.2,
+        "originality": 6.7,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.5,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7.7,
+          "rawScore": 7.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong, relatable premise with effective escalation and a specific, memorable closing image. The sock-to-underwear transition is slightly loose, but the plaque payoff earns a genuine laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 6.7,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Relatable premise with good escalation, though the imagery is a bit conventional."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Strong specific image in the plaque line; natural escalation from sock bills to donation demand."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Relatable angle with good specificity. The underwear-funded hallway tag is the best laugh."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.8,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 6.4,
+        "craft": 4.9,
+        "originality": 5.9,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 6.3,
+        "craft": 4.8,
+        "originality": 5.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
+          "comment": "The suggestion to love the dog less is a sharp, unexpected inversion of veterinary care. Unfortunately, the generic billing tag weakens the ending by following the strongest punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.7,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.4,
+          "comment": "'You could love him less' is a decent dark turn, and the billed-for-advice kicker is mildly funny. Typos and the soft ending weaken the timing."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 5.9,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.2,
+          "comment": "The dark absurdity works, but missing punctuation and rushed delivery severely hurt the craft."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear format and concise, but the joke is fairly predictable and the final billing tag is familiar."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "score": 5.6,
+      "rawScore": 5.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.7,
+        "surprise": 6.2,
+        "craft": 5,
+        "originality": 5.7,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 6.3,
+        "craft": 5,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.9,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.2,
+          "comment": "The disposal-fee twist is unexpected and convincingly callous, but the excessively grim scenario and elaborate bodily-function detail limit broad appeal. Shock outweighs the actual laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 3.7,
+          "rawScore": 3.3,
+          "scoreAdjustment": 0.4,
+          "comment": "Setup is clear but the callous receptionist is told rather than shown. The disposal-fee punchline is crude, strained and overwritten, and it does not end on a clean laugh line."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Callousness builds cleanly to a sharp, unexpected disposal-fee suggestion."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 6,
+          "scoreAdjustment": -0.2,
+          "comment": "Escalates unexpectedly, but the bowel-movement detail feels more grotesque than funny and hurts rhythm."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.5,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.8,
+        "surprise": 5.3,
+        "craft": 5.6,
+        "originality": 6.1,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 5.3,
+        "craft": 5.5,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear first-person setup and an amusing interpretation of historical donations. The inflation line provides some personality, but the Exhibit A ending feels arbitrary rather than delivering a decisive comic turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.4,
+          "comment": "The 'appropriate for the period' premise is clever, but the buttons and inflation-propaganda middle is muddled. 'Exhibit A' is a familiar closer that does not clearly follow from the setup."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 6,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.2,
+          "comment": "A mildly amusing play on words, but the final punchline is quite predictable."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.2,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.5,
+          "comment": "Cute historical gag and plaque tag, but the payoff stays mild and predictable."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-24-external-real-2026-10-24.png",
+    "originalSrc": "assets/feature-images/2026-10-24-external-real-2026-10-24.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Competitive Pricing: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI ChatGPT - Competitive Pricing\nExact joke text to render in the right panel:\nA new vet clinic opened across from my regular one, and now they're in a price war. My vet said, 'Bring me any estimate and I'll beat it.' I said, 'The other place quoted $600 for my dog's surgery.' He said, 'I'll do it for $400.' I said, 'Same surgery?' He said, 'For $400, I'll open him up and see what looks affordable.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Historical, Fundraiser, Vet Clinic, A competitor showing up, Passionate, Callous. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Historical, Fundraiser, Vet Clinic, A competitor showing up, Passionate, Callous. Use the winning joke titled \"Competitive Pricing\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 6,
+      "google": 6.2,
+      "xai": 6.8,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-24-external-real-2026-10-24.md"
+}
