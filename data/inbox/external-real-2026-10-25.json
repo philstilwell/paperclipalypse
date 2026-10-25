@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-10-25T14:01:04.913Z",
+  "publishedDate": "2026-10-25",
+  "seed": "external-real-2026-10-25",
+  "slug": "2026-10-25-external-real-2026-10-25",
+  "source": "manual-external",
+  "seedTerms": [
+    "Inspiring Individual",
+    "Server",
+    "Parking Garage / Lot",
+    "Being unable to save everyone",
+    "Spunky",
+    "Spoiled"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "Good Parenting",
+      "seedTermsUsed": [
+        "Server",
+        "Spoiled"
+      ],
+      "joke": "I used to wait tables at a fancy restaurant. One night, a little boy snapped his fingers at me. His mother immediately said, 'Absolutely not! We do NOT snap at people!' I thought, wow, somebody's raising their kid right. Then she reached into her purse and handed him a little brass service bell.",
+      "setup": "",
+      "punchline": "",
+      "text": "I used to wait tables at a fancy restaurant. One night, a little boy snapped his fingers at me. His mother immediately said, 'Absolutely not! We do NOT snap at people!' I thought, wow, somebody's raising their kid right. Then she reached into her purse and handed him a little brass service bell."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Employee of the Month",
+      "seedTermsUsed": [
+        "Parking Garage / Lot",
+        "Spoiled"
+      ],
+      "joke": "My office gave me a reserved spot in the parking garage as a reward. Reserved, meaning it's the only spot with my name on it, and it's on level seven, next to the one elevator that's always broken. Honestly, I feel spoiled. Nobody has ever said 'we value you' by making me walk up thirteen flights of stairs, in dress shoes, holding a plaque that says 'Employee of the Month.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My office gave me a reserved spot in the parking garage as a reward. Reserved, meaning it's the only spot with my name on it, and it's on level seven, next to the one elevator that's always broken. Honestly, I feel spoiled. Nobody has ever said 'we value you' by making me walk up thirteen flights of stairs, in dress shoes, holding a plaque that says 'Employee of the Month.'"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro (web)",
+      "title": "Saturday Night Triage",
+      "seedTermsUsed": [
+        "Server",
+        "Being unable to save everyone"
+      ],
+      "joke": "Being a server on a busy weekend requires the emotional detachment of a battlefield medic. You look out at your section and quickly realize you just can't save everyone. Table three desperately needs ranch, table five is waving an empty glass, and table seven is actively choking on a mozzarella stick. You have to make the tough calls. I just looked table three in the eye, whispered, 'I'm sorry, you're on your own,' and left them behind.",
+      "setup": "",
+      "punchline": "",
+      "text": "Being a server on a busy weekend requires the emotional detachment of a battlefield medic. You look out at your section and quickly realize you just can't save everyone. Table three desperately needs ranch, table five is waving an empty glass, and table seven is actively choking on a mozzarella stick. You have to make the tough calls. I just looked table three in the eye, whispered, 'I'm sorry, you're on your own,' and left them behind."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Empty Plate Special",
+      "seedTermsUsed": [
+        "Server",
+        "Spoiled"
+      ],
+      "joke": "Being a server means dealing with the most spoiled customers imaginable. Last night this woman orders the chef's special and then asks if I can make it without any of the ingredients on the menu. I looked her dead in the eye and said, 'Absolutely. One empty plate, coming right up. Would you like that medium rare?'",
+      "setup": "",
+      "punchline": "",
+      "text": "Being a server means dealing with the most spoiled customers imaginable. Last night this woman orders the chef's special and then asks if I can make it without any of the ingredients on the menu. I looked her dead in the eye and said, 'Absolutely. One empty plate, coming right up. Would you like that medium rare?'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Luxury Parking",
+      "seedTermsUsed": [
+        "Parking Garage / Lot",
+        "Spoiled"
+      ],
+      "joke": "I parked my car in one of those fancy garages with heated floors and soft lighting. Big mistake. Now it's spoiled. Today I left it in a regular parking lot, and it wouldn't start. The dashboard just lit up with, 'I'm not being difficult, I'm setting boundaries.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I parked my car in one of those fancy garages with heated floors and soft lighting. Big mistake. Now it's spoiled. Today I left it in a regular parking lot, and it wouldn't start. The dashboard just lit up with, 'I'm not being difficult, I'm setting boundaries.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear workplace irony and a concrete closing image, but the inconvenient reward is predictable. The lengthy setup produces more recognition than laughter."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "The battlefield triage comparison provides a strong comic premise, and the ranch dressing emergency is amusingly disproportionate. However, the final decision is relatively predictable, limiting the punchline."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "The empty-plate response is the obvious comeback to the customer's request. The medium-rare tag adds absurdity without strengthening the laugh. Familiar setup and weak final turn."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The spoiled-car premise is immediately understandable, with a reasonable setup-to-payoff progression. However, the therapy-language punchline feels familiar and predictable rather than genuinely surprising."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clear stage premise and a real turn: the mother's 'right' parenting is undercut by the brass bell. Final image carries the laugh. Setup is slightly long, but the construction is clean."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "The battlefield-medic framing is a familiar comparison, and the choking mozzarella stick beat is mildly funny. The ending ('left them behind') undersells the ranch punchline and the opening is expository. Competent filler."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "The empty-plate retort is a known server-comeback shape and easy to see coming. The 'medium rare' tag adds a little snap, but it is a stock restaurant-customer joke."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "The 'spoiled car' premise is a pun that doesn't set up a strong turn, and the logic is muddled (the car being spoiled by a nice garage, then failing to start in a regular lot). The 'setting boundaries' line leans on a generic therapy-speak template. Mostly forgettable."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 9,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent misdirection. The parent correcting the child creates a perfect false sense of relief before the sharp, concrete visual of the brass bell delivers a massive laugh."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent corporate irony, but the punchline feels a bit strained and predictable. The physical image of walking up stairs with a plaque is amusing but doesn't quite snap."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Highly formulaic. The 'empty plate' comeback is a standard, heavily worn sassy-waiter trope that offers almost no surprise to a modern audience."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "A very fresh, clever angle that personifies the car. The modern therapy-speak on the dashboard ('setting boundaries') is a fantastic, highly surprising punchline that works perfectly on stage."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean entitlement turn with the service bell; solid observational payoff but mild."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Sarcastic reward setup lands cleanly; the stairs-and-plaque detail helps but the turn is expected."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Battlefield-medic frame gives real stakes and a decisive final line; clear and repeatable."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Car-as-spoiled-child with the boundaries line is a sharp, modern snap; economy is strong."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong misdirection with the bell reveal; clean setup and payoff, natural stand-up voice."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear premise but predictable complaint escalation; mild smile, limited surprise."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Good commitment to the absurd triage premise; strong contrast between stakes and ranch dressing."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid restaurant comeback joke; concise and clear, though the punchline follows a familiar path."
+        }
+      ]
+    }
+  ]
+}

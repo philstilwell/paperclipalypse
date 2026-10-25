@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-25-external-real-2026-10-25",
+  "seed": "external-real-2026-10-25",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-25T14:01:04.913Z",
+  "publishedDate": "2026-10-25",
+  "seedTerms": [
+    "Inspiring Individual",
+    "Server",
+    "Parking Garage / Lot",
+    "Being unable to save everyone",
+    "Spunky",
+    "Spoiled"
+  ],
+  "premise": {
+    "text": "Seed terms: Inspiring Individual, Server, Parking Garage / Lot, Being unable to save everyone, Spunky, Spoiled",
+    "seedTerms": [
+      "Inspiring Individual",
+      "Server",
+      "Parking Garage / Lot",
+      "Being unable to save everyone",
+      "Spunky",
+      "Spoiled"
+    ],
+    "displayText": "Good Parenting"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "Good Parenting",
+      "seedTermsUsed": [
+        "Server",
+        "Spoiled"
+      ],
+      "joke": "I used to wait tables at a fancy restaurant. One night, a little boy snapped his fingers at me. His mother immediately said, 'Absolutely not! We do NOT snap at people!' I thought, wow, somebody's raising their kid right. Then she reached into her purse and handed him a little brass service bell.",
+      "setup": "",
+      "punchline": "I used to wait tables at a fancy restaurant. One night, a little boy snapped his fingers at me. His mother immediately said, 'Absolutely not! We do NOT snap at people!' I thought, wow, somebody's raising their kid right. Then she reached into her purse and handed him a little brass service bell.",
+      "text": "I used to wait tables at a fancy restaurant. One night, a little boy snapped his fingers at me. His mother immediately said, 'Absolutely not! We do NOT snap at people!' I thought, wow, somebody's raising their kid right. Then she reached into her purse and handed him a little brass service bell."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Employee of the Month",
+      "seedTermsUsed": [
+        "Parking Garage / Lot",
+        "Spoiled"
+      ],
+      "joke": "My office gave me a reserved spot in the parking garage as a reward. Reserved, meaning it's the only spot with my name on it, and it's on level seven, next to the one elevator that's always broken. Honestly, I feel spoiled. Nobody has ever said 'we value you' by making me walk up thirteen flights of stairs, in dress shoes, holding a plaque that says 'Employee of the Month.'",
+      "setup": "",
+      "punchline": "My office gave me a reserved spot in the parking garage as a reward. Reserved, meaning it's the only spot with my name on it, and it's on level seven, next to the one elevator that's always broken. Honestly, I feel spoiled. Nobody has ever said 'we value you' by making me walk up thirteen flights of stairs, in dress shoes, holding a plaque that says 'Employee of the Month.'",
+      "text": "My office gave me a reserved spot in the parking garage as a reward. Reserved, meaning it's the only spot with my name on it, and it's on level seven, next to the one elevator that's always broken. Honestly, I feel spoiled. Nobody has ever said 'we value you' by making me walk up thirteen flights of stairs, in dress shoes, holding a plaque that says 'Employee of the Month.'"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro (web)",
+      "title": "Saturday Night Triage",
+      "seedTermsUsed": [
+        "Server",
+        "Being unable to save everyone"
+      ],
+      "joke": "Being a server on a busy weekend requires the emotional detachment of a battlefield medic. You look out at your section and quickly realize you just can't save everyone. Table three desperately needs ranch, table five is waving an empty glass, and table seven is actively choking on a mozzarella stick. You have to make the tough calls. I just looked table three in the eye, whispered, 'I'm sorry, you're on your own,' and left them behind.",
+      "setup": "",
+      "punchline": "Being a server on a busy weekend requires the emotional detachment of a battlefield medic. You look out at your section and quickly realize you just can't save everyone. Table three desperately needs ranch, table five is waving an empty glass, and table seven is actively choking on a mozzarella stick. You have to make the tough calls. I just looked table three in the eye, whispered, 'I'm sorry, you're on your own,' and left them behind.",
+      "text": "Being a server on a busy weekend requires the emotional detachment of a battlefield medic. You look out at your section and quickly realize you just can't save everyone. Table three desperately needs ranch, table five is waving an empty glass, and table seven is actively choking on a mozzarella stick. You have to make the tough calls. I just looked table three in the eye, whispered, 'I'm sorry, you're on your own,' and left them behind."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Empty Plate Special",
+      "seedTermsUsed": [
+        "Server",
+        "Spoiled"
+      ],
+      "joke": "Being a server means dealing with the most spoiled customers imaginable. Last night this woman orders the chef's special and then asks if I can make it without any of the ingredients on the menu. I looked her dead in the eye and said, 'Absolutely. One empty plate, coming right up. Would you like that medium rare?'",
+      "setup": "",
+      "punchline": "Being a server means dealing with the most spoiled customers imaginable. Last night this woman orders the chef's special and then asks if I can make it without any of the ingredients on the menu. I looked her dead in the eye and said, 'Absolutely. One empty plate, coming right up. Would you like that medium rare?'",
+      "text": "Being a server means dealing with the most spoiled customers imaginable. Last night this woman orders the chef's special and then asks if I can make it without any of the ingredients on the menu. I looked her dead in the eye and said, 'Absolutely. One empty plate, coming right up. Would you like that medium rare?'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Luxury Parking",
+      "seedTermsUsed": [
+        "Parking Garage / Lot",
+        "Spoiled"
+      ],
+      "joke": "I parked my car in one of those fancy garages with heated floors and soft lighting. Big mistake. Now it's spoiled. Today I left it in a regular parking lot, and it wouldn't start. The dashboard just lit up with, 'I'm not being difficult, I'm setting boundaries.'",
+      "setup": "",
+      "punchline": "I parked my car in one of those fancy garages with heated floors and soft lighting. Big mistake. Now it's spoiled. Today I left it in a regular parking lot, and it wouldn't start. The dashboard just lit up with, 'I'm not being difficult, I'm setting boundaries.'",
+      "text": "I parked my car in one of those fancy garages with heated floors and soft lighting. Big mistake. Now it's spoiled. Today I left it in a regular parking lot, and it wouldn't start. The dashboard just lit up with, 'I'm not being difficult, I'm setting boundaries.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear workplace irony and a concrete closing image, but the inconvenient reward is predictable. The lengthy setup produces more recognition than laughter.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The battlefield triage comparison provides a strong comic premise, and the ranch dressing emergency is amusingly disproportionate. However, the final decision is relatively predictable, limiting the punchline.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The empty-plate response is the obvious comeback to the customer's request. The medium-rare tag adds absurdity without strengthening the laugh. Familiar setup and weak final turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 4.800000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The spoiled-car premise is immediately understandable, with a reasonable setup-to-payoff progression. However, the therapy-language punchline feels familiar and predictable rather than genuinely surprising.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear stage premise and a real turn: the mother's 'right' parenting is undercut by the brass bell. Final image carries the laugh. Setup is slightly long, but the construction is clean.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The battlefield-medic framing is a familiar comparison, and the choking mozzarella stick beat is mildly funny. The ending ('left them behind') undersells the ranch punchline and the opening is expository. Competent filler.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The empty-plate retort is a known server-comeback shape and easy to see coming. The 'medium rare' tag adds a little snap, but it is a stock restaurant-customer joke.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The 'spoiled car' premise is a pun that doesn't set up a strong turn, and the logic is muddled (the car being spoiled by a nice garage, then failing to start in a regular lot). The 'setting boundaries' line leans on a generic therapy-speak template. Mostly forgettable.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 4.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Excellent misdirection. The parent correcting the child creates a perfect false sense of relief before the sharp, concrete visual of the brass bell delivers a massive laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 9,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.3
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Competent corporate irony, but the punchline feels a bit strained and predictable. The physical image of walking up stairs with a plaque is amusing but doesn't quite snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Highly formulaic. The 'empty plate' comeback is a standard, heavily worn sassy-waiter trope that offers almost no surprise to a modern audience.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "A very fresh, clever angle that personifies the car. The modern therapy-speak on the dashboard ('setting boundaries') is a fantastic, highly surprising punchline that works perfectly on stage.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean entitlement turn with the service bell; solid observational payoff but mild.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.6000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Sarcastic reward setup lands cleanly; the stairs-and-plaque detail helps but the turn is expected.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Battlefield-medic frame gives real stakes and a decisive final line; clear and repeatable.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Car-as-spoiled-child with the boundaries line is a sharp, modern snap; economy is strong.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong misdirection with the bell reveal; clean setup and payoff, natural stand-up voice.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear premise but predictable complaint escalation; mild smile, limited surprise.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Good commitment to the absurd triage premise; strong contrast between stakes and ranch dressing.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Solid restaurant comeback joke; concise and clear, though the punchline follows a familiar path.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 7.4,
+      "rawScore": 7.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 7.7,
+        "craft": 7.7,
+        "originality": 7,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7.8,
+        "craft": 7.8,
+        "originality": 7,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.8,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.5,
+          "comment": "Clear stage premise and a real turn: the mother's 'right' parenting is undercut by the brass bell. Final image carries the laugh. Setup is slightly long, but the construction is clean."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 8.3,
+          "rawScore": 8.3,
+          "scoreAdjustment": 0,
+          "comment": "Excellent misdirection. The parent correcting the child creates a perfect false sense of relief before the sharp, concrete visual of the brass bell delivers a massive laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.1,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.5,
+          "comment": "Clean entitlement turn with the service bell; solid observational payoff but mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.4,
+          "rawScore": 7.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong misdirection with the bell reveal; clean setup and payoff, natural stand-up voice."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "score": 6.5,
+      "rawScore": 6.5,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "The battlefield triage comparison provides a strong comic premise, and the ranch dressing emergency is amusingly disproportionate. However, the final decision is relatively predictable, limiting the punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.7,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.5,
+          "comment": "The battlefield-medic framing is a familiar comparison, and the choking mozzarella stick beat is mildly funny. The ending ('left them behind') undersells the ranch punchline and the opening is expository. Competent filler."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.6,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.5,
+          "comment": "Battlefield-medic frame gives real stakes and a decisive final line; clear and repeatable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Good commitment to the absurd triage premise; strong contrast between stakes and ranch dressing."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.3,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.5,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.2,
+          "comment": "The spoiled-car premise is immediately understandable, with a reasonable setup-to-payoff progression. However, the therapy-language punchline feels familiar and predictable rather than genuinely surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.8,
+          "rawScore": 4.3,
+          "scoreAdjustment": 0.5,
+          "comment": "The 'spoiled car' premise is a pun that doesn't set up a strong turn, and the logic is muddled (the car being spoiled by a nice garage, then failing to start in a regular lot). The 'setting boundaries' line leans on a generic therapy-speak template. Mostly forgettable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 8.1,
+          "rawScore": 8.1,
+          "scoreAdjustment": 0,
+          "comment": "A very fresh, clever angle that personifies the car. The modern therapy-speak on the dashboard ('setting boundaries') is a fantastic, highly surprising punchline that works perfectly on stage."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.8,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Car-as-spoiled-child with the boundaries line is a sharp, modern snap; economy is strong."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.6,
+      "rawScore": 5.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.6,
+        "craft": 6.1,
+        "originality": 5.4,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 4.8,
+        "craft": 6.3,
+        "originality": 5.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.8,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear workplace irony and a concrete closing image, but the inconvenient reward is predictable. The lengthy setup produces more recognition than laughter."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
+          "comment": "Competent corporate irony, but the punchline feels a bit strained and predictable. The physical image of walking up stairs with a plaque is amusing but doesn't quite snap."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.7,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Sarcastic reward setup lands cleanly; the stairs-and-plaque detail helps but the turn is expected."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.2,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise but predictable complaint escalation; mild smile, limited surprise."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.3,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 4.6,
+        "craft": 5.4,
+        "originality": 4.4,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.5,
+        "craft": 5.3,
+        "originality": 4.3,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.2,
+          "comment": "The empty-plate response is the obvious comeback to the customer's request. The medium-rare tag adds absurdity without strengthening the laugh. Familiar setup and weak final turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.6,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.5,
+          "comment": "The empty-plate retort is a known server-comeback shape and easy to see coming. The 'medium rare' tag adds a little snap, but it is a stock restaurant-customer joke."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 4.6,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0,
+          "comment": "Highly formulaic. The 'empty plate' comeback is a standard, heavily worn sassy-waiter trope that offers almost no surprise to a modern audience."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 6,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid restaurant comeback joke; concise and clear, though the punchline follows a familiar path."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-25-external-real-2026-10-25.png",
+    "originalSrc": "assets/feature-images/2026-10-25-external-real-2026-10-25.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Good Parenting: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI ChatGPT - Good Parenting\nExact joke text to render in the right panel:\nI used to wait tables at a fancy restaurant. One night, a little boy snapped his fingers at me. His mother immediately said, 'Absolutely not! We do NOT snap at people!' I thought, wow, somebody's raising their kid right. Then she reached into her purse and handed him a little brass service bell.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Inspiring Individual, Server, Parking Garage / Lot, Being unable to save everyone, Spunky, Spoiled. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Inspiring Individual, Server, Parking Garage / Lot, Being unable to save everyone, Spunky, Spoiled. Use the winning joke titled \"Good Parenting\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 5.8,
+      "google": 6.3,
+      "xai": 6.8,
+      "copilot": 6.5
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-25-external-real-2026-10-25.md"
+}
