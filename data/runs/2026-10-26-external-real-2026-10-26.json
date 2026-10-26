@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-26-external-real-2026-10-26",
+  "seed": "external-real-2026-10-26",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-26T14:06:08.411Z",
+  "publishedDate": "2026-10-26",
+  "seedTerms": [
+    "Cringe",
+    "Vintner",
+    "Tropical Island",
+    "Losing a home / homeland",
+    "Talented",
+    "Foolish"
+  ],
+  "premise": {
+    "text": "Seed terms: Cringe, Vintner, Tropical Island, Losing a home / homeland, Talented, Foolish",
+    "seedTerms": [
+      "Cringe",
+      "Vintner",
+      "Tropical Island",
+      "Losing a home / homeland",
+      "Talented",
+      "Foolish"
+    ],
+    "displayText": "Island Rules"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (ChatGPT web, High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash-Lite",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-5.6 Sol (ChatGPT web, High)",
+      "title": "Wine Expert",
+      "seedTermsUsed": [
+        "Cringe",
+        "Vintner"
+      ],
+      "joke": "I went wine tasting and the vintner said, “Tell me what you notice.” I wanted to sound sophisticated, so I swirled the glass, sniffed deeply, and said, “I’m getting oak… blackberry… and a hint of regret.” He said, “That’s our best bottle.” I said, “No, the regret is mine. I’ve been pretending to taste things for forty minutes.”",
+      "setup": "",
+      "punchline": "I went wine tasting and the vintner said, “Tell me what you notice.” I wanted to sound sophisticated, so I swirled the glass, sniffed deeply, and said, “I’m getting oak… blackberry… and a hint of regret.” He said, “That’s our best bottle.” I said, “No, the regret is mine. I’ve been pretending to taste things for forty minutes.”",
+      "text": "I went wine tasting and the vintner said, “Tell me what you notice.” I wanted to sound sophisticated, so I swirled the glass, sniffed deeply, and said, “I’m getting oak… blackberry… and a hint of regret.” He said, “That’s our best bottle.” I said, “No, the regret is mine. I’ve been pretending to taste things for forty minutes.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Island Rules",
+      "seedTermsUsed": [
+        "Tropical Island",
+        "Foolish"
+      ],
+      "joke": "I watched a documentary where a guy gets stranded on a tropical island, and I thought, that’s the dream. No emails, no neighbors, just coconuts. Then he spent four years building a raft. Four years! I can’t assemble a bookshelf without crying. If I’m stranded, I’m not building a raft. I’m building a really nice hammock and telling the rescue helicopter I’m fine.",
+      "setup": "",
+      "punchline": "I watched a documentary where a guy gets stranded on a tropical island, and I thought, that’s the dream. No emails, no neighbors, just coconuts. Then he spent four years building a raft. Four years! I can’t assemble a bookshelf without crying. If I’m stranded, I’m not building a raft. I’m building a really nice hammock and telling the rescue helicopter I’m fine.",
+      "text": "I watched a documentary where a guy gets stranded on a tropical island, and I thought, that’s the dream. No emails, no neighbors, just coconuts. Then he spent four years building a raft. Four years! I can’t assemble a bookshelf without crying. If I’m stranded, I’m not building a raft. I’m building a really nice hammock and telling the rescue helicopter I’m fine."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "model": "Gemini 3.5 Flash-Lite (web)",
+      "title": "Aged to Perfection",
+      "seedTermsUsed": [
+        "Cringe",
+        "Vintner"
+      ],
+      "joke": "I tried to romance my partner by acting like a sophisticated European vintner. I bought an expensive bottle, swirled it, and whispered notes of oak and dark cherry. Then I choked on a cork, puked on their shoes, and tried to play it off by hissing, 'That's just the vintage breathing, baby.' Nothing ages you faster than your own absolute cringe.",
+      "setup": "",
+      "punchline": "I tried to romance my partner by acting like a sophisticated European vintner. I bought an expensive bottle, swirled it, and whispered notes of oak and dark cherry. Then I choked on a cork, puked on their shoes, and tried to play it off by hissing, 'That's just the vintage breathing, baby.' Nothing ages you faster than your own absolute cringe.",
+      "text": "I tried to romance my partner by acting like a sophisticated European vintner. I bought an expensive bottle, swirled it, and whispered notes of oak and dark cherry. Then I choked on a cork, puked on their shoes, and tried to play it off by hissing, 'That's just the vintage breathing, baby.' Nothing ages you faster than your own absolute cringe."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Island Vintage",
+      "seedTermsUsed": [
+        "Vintner",
+        "Tropical Island"
+      ],
+      "joke": "I moved to a tropical island to become a vintner. The brochure promised perfect growing conditions. Turns out grapes hate sand, humidity, and steel drums. My latest vintage has notes of coconut, sea salt, and dashed dreams. Tourists still buy it. They just close their eyes and pretend it’s from Napa.",
+      "setup": "",
+      "punchline": "I moved to a tropical island to become a vintner. The brochure promised perfect growing conditions. Turns out grapes hate sand, humidity, and steel drums. My latest vintage has notes of coconut, sea salt, and dashed dreams. Tourists still buy it. They just close their eyes and pretend it’s from Napa.",
+      "text": "I moved to a tropical island to become a vintner. The brochure promised perfect growing conditions. Turns out grapes hate sand, humidity, and steel drums. My latest vintage has notes of coconut, sea salt, and dashed dreams. Tourists still buy it. They just close their eyes and pretend it’s from Napa."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Wrong Genius",
+      "seedTermsUsed": [
+        "Talented",
+        "Foolish"
+      ],
+      "joke": "I’m extremely talented at putting furniture together. I built an entire IKEA dresser without looking at the instructions. Halfway through, my confidence got so high I started throwing extra screws away. Four hours later I stepped back to admire my work and realized I’d somehow built a rocking chair. That’s when I learned there’s a very thin line between gifted and stupid.",
+      "setup": "",
+      "punchline": "I’m extremely talented at putting furniture together. I built an entire IKEA dresser without looking at the instructions. Halfway through, my confidence got so high I started throwing extra screws away. Four hours later I stepped back to admire my work and realized I’d somehow built a rocking chair. That’s when I learned there’s a very thin line between gifted and stupid.",
+      "text": "I’m extremely talented at putting furniture together. I built an entire IKEA dresser without looking at the instructions. Halfway through, my confidence got so high I started throwing extra screws away. Four hours later I stepped back to admire my work and realized I’d somehow built a rocking chair. That’s when I learned there’s a very thin line between gifted and stupid."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear and likable, but the stranded-island fantasy and hammock turn are familiar; the final line gives it a mild lift.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The 'vintage breathing' recovery is the strongest beat, but the gross-out escalation is broad and the final cringe line explains rather than tops the joke.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Coherent premise and clean seed use, but the tasting-note sequence is predictable and 'dashed dreams' lands more as cute wording than a strong punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong escalation from confidence to discarded screws to the rocking-chair reveal; the final gifted-versus-stupid line is familiar but lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Wine-tasting pretension is familiar territory, but the turn from ‘regret’ as a tasting note to genuine confession, plus ‘forty minutes,’ is a real payoff. Clean first-person rhythm. The vintner’s ‘best bottle’ beat is a nice mid-joke wrinkle.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Escalation to choking and puking is crude and arrives abruptly. ‘Vintage breathing, baby’ is a decent line but sits mid-joke. The closer is a moralizing tag (‘Nothing ages you faster...’) that explains rather than lands, and ‘cringe’ is stated outright.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 7,
+          "total": 4.2
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Fresh premise, and ‘grapes hate sand, humidity, and steel drums’ has a good rhythm. ‘Dashed dreams’ is a stock phrase that softens the middle. The close, tourists pretending it’s Napa, is a mild payoff rather than a big snap.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Dresser-to-rocking-chair is a legitimately funny image and the overconfidence setup works. But the closer states the moral (‘thin line between gifted and stupid’) instead of ending on the image. ‘Foolish’ is only loosely evoked as ‘stupid,’ and the joke’s concept barely uses ‘talented’ as an idea beyond the setup, weakening fit.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 4,
+          "total": 4.9
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash-Lite",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid wine-tasting premise with a clean punchline, though slightly predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable and well-paced escalation about surviving isolation, landing the hammock tag cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Good conceptual clash between island life and winemaking, with a strong summary kicker.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Standard assembly blunder trope executed smoothly with a clear stage narrative.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Competent wine-tasting pretension bit; the personal-regret clarification is clear but lands softly.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong concrete image and clean final line about the helicopter; the incompetence payoff works.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Vivid escalation from suave act to choke-and-puke, with a sharp recovery line that carries the laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Solid overconfidence-to-reveal structure, but the IKEA-wrong-furniture angle is familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and solid self-own. Regret setup is familiar, but the reveal lands cleanly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong relatable voice and escalation. Hammock/rescue turn is amusing and natural.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Physical embarrassment creates a clear comic image. Ending is a bit expected and overexplained.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Coherent premise with a mild payoff. Dashed-dreams wine and Napa comparison feel predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.7,
+      "rawScore": 6.9,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.4,
+        "craft": 6.6,
+        "originality": 6.1,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.3,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear and likable, but the stranded-island fantasy and hammock turn are familiar; the final line gives it a mild lift."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Relatable and well-paced escalation about surviving isolation, landing the hammock tag cleanly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.5,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.6,
+          "comment": "Strong concrete image and clean final line about the helicopter; the incompetence payoff works."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong relatable voice and escalation. Hammock/rescue turn is amusing and natural."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.2,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7.4,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong escalation from confidence to discarded screws to the rocking-chair reveal; the final gifted-versus-stupid line is familiar but lands cleanly."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0.6,
+          "comment": "Dresser-to-rocking-chair is a legitimately funny image and the overconfidence setup works. But the closer states the moral (‘thin line between gifted and stupid’) instead of ending on the image. ‘Foolish’ is only loosely evoked as ‘stupid,’ and the joke’s concept barely uses ‘talented’ as an idea beyond the setup, weakening fit."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Standard assembly blunder trope executed smoothly with a clear stage narrative."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.6,
+          "comment": "Solid overconfidence-to-reveal structure, but the IKEA-wrong-furniture angle is familiar."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 6.2,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.9,
+        "craft": 6.4,
+        "originality": 5.9,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.9,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.2,
+          "comment": "Coherent premise and clean seed use, but the tasting-note sequence is predictable and 'dashed dreams' lands more as cute wording than a strong punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.4,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.6,
+          "comment": "Fresh premise, and ‘grapes hate sand, humidity, and steel drums’ has a good rhythm. ‘Dashed dreams’ is a stock phrase that softens the middle. The close, tourists pretending it’s Napa, is a mild payoff rather than a big snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Good conceptual clash between island life and winemaking, with a strong summary kicker."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.4,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Coherent premise with a mild payoff. Dashed-dreams wine and Napa comparison feel predictable."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 6.1,
+      "rawScore": 6.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.7,
+        "craft": 6.2,
+        "originality": 4.9,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.6,
+          "rawScore": 6,
+          "scoreAdjustment": 0.6,
+          "comment": "Wine-tasting pretension is familiar territory, but the turn from ‘regret’ as a tasting note to genuine confession, plus ‘forty minutes,’ is a real payoff. Clean first-person rhythm. The vintner’s ‘best bottle’ beat is a nice mid-joke wrinkle."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 6.2,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid wine-tasting premise with a clean punchline, though slightly predictable."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.3,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.6,
+          "comment": "Competent wine-tasting pretension bit; the personal-regret clarification is clear but lands softly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise and solid self-own. Regret setup is familiar, but the reveal lands cleanly."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "score": 6,
+      "rawScore": 6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.5,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.6,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.2,
+          "comment": "The 'vintage breathing' recovery is the strongest beat, but the gross-out escalation is broad and the final cringe line explains rather than tops the joke."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.8,
+          "rawScore": 4.2,
+          "scoreAdjustment": 0.6,
+          "comment": "Escalation to choking and puking is crude and arrives abruptly. ‘Vintage breathing, baby’ is a decent line but sits mid-joke. The closer is a moralizing tag (‘Nothing ages you faster...’) that explains rather than lands, and ‘cringe’ is stated outright."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.6,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.6,
+          "comment": "Vivid escalation from suave act to choke-and-puke, with a sharp recovery line that carries the laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Physical embarrassment creates a clear comic image. Ending is a bit expected and overexplained."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-26-external-real-2026-10-26.png",
+    "originalSrc": "assets/feature-images/2026-10-26-external-real-2026-10-26.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Island Rules: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Island Rules\nExact joke text to render in the right panel:\nI watched a documentary where a guy gets stranded on a tropical island, and I thought, that’s the dream. No emails, no neighbors, just coconuts. Then he spent four years building a raft. Four years! I can’t assemble a bookshelf without crying. If I’m stranded, I’m not building a raft. I’m building a really nice hammock and telling the rescue helicopter I’m fine.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Cringe, Vintner, Tropical Island, Losing a home / homeland, Talented, Foolish. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Cringe, Vintner, Tropical Island, Losing a home / homeland, Talented, Foolish. Use the winning joke titled \"Island Rules\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6,
+      "anthropic": 5.6,
+      "google": 6.3,
+      "xai": 6.8,
+      "copilot": 6.4
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-26-external-real-2026-10-26.md"
+}

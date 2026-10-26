@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-26T14:06:08.411Z",
+  "publishedDate": "2026-10-26",
+  "seed": "external-real-2026-10-26",
+  "slug": "2026-10-26-external-real-2026-10-26",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cringe",
+    "Vintner",
+    "Tropical Island",
+    "Losing a home / homeland",
+    "Talented",
+    "Foolish"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (ChatGPT web, High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash-Lite",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-5.6 Sol (ChatGPT web, High)",
+      "title": "Wine Expert",
+      "seedTermsUsed": ["Cringe", "Vintner"],
+      "joke": "I went wine tasting and the vintner said, “Tell me what you notice.” I wanted to sound sophisticated, so I swirled the glass, sniffed deeply, and said, “I’m getting oak… blackberry… and a hint of regret.” He said, “That’s our best bottle.” I said, “No, the regret is mine. I’ve been pretending to taste things for forty minutes.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I went wine tasting and the vintner said, “Tell me what you notice.” I wanted to sound sophisticated, so I swirled the glass, sniffed deeply, and said, “I’m getting oak… blackberry… and a hint of regret.” He said, “That’s our best bottle.” I said, “No, the regret is mine. I’ve been pretending to taste things for forty minutes.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Island Rules",
+      "seedTermsUsed": ["Tropical Island", "Foolish"],
+      "joke": "I watched a documentary where a guy gets stranded on a tropical island, and I thought, that’s the dream. No emails, no neighbors, just coconuts. Then he spent four years building a raft. Four years! I can’t assemble a bookshelf without crying. If I’m stranded, I’m not building a raft. I’m building a really nice hammock and telling the rescue helicopter I’m fine.",
+      "setup": "",
+      "punchline": "",
+      "text": "I watched a documentary where a guy gets stranded on a tropical island, and I thought, that’s the dream. No emails, no neighbors, just coconuts. Then he spent four years building a raft. Four years! I can’t assemble a bookshelf without crying. If I’m stranded, I’m not building a raft. I’m building a really nice hammock and telling the rescue helicopter I’m fine."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "model": "Gemini 3.5 Flash-Lite (web)",
+      "title": "Aged to Perfection",
+      "seedTermsUsed": ["Cringe", "Vintner"],
+      "joke": "I tried to romance my partner by acting like a sophisticated European vintner. I bought an expensive bottle, swirled it, and whispered notes of oak and dark cherry. Then I choked on a cork, puked on their shoes, and tried to play it off by hissing, 'That's just the vintage breathing, baby.' Nothing ages you faster than your own absolute cringe.",
+      "setup": "",
+      "punchline": "",
+      "text": "I tried to romance my partner by acting like a sophisticated European vintner. I bought an expensive bottle, swirled it, and whispered notes of oak and dark cherry. Then I choked on a cork, puked on their shoes, and tried to play it off by hissing, 'That's just the vintage breathing, baby.' Nothing ages you faster than your own absolute cringe."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Island Vintage",
+      "seedTermsUsed": ["Vintner", "Tropical Island"],
+      "joke": "I moved to a tropical island to become a vintner. The brochure promised perfect growing conditions. Turns out grapes hate sand, humidity, and steel drums. My latest vintage has notes of coconut, sea salt, and dashed dreams. Tourists still buy it. They just close their eyes and pretend it’s from Napa.",
+      "setup": "",
+      "punchline": "",
+      "text": "I moved to a tropical island to become a vintner. The brochure promised perfect growing conditions. Turns out grapes hate sand, humidity, and steel drums. My latest vintage has notes of coconut, sea salt, and dashed dreams. Tourists still buy it. They just close their eyes and pretend it’s from Napa."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Wrong Genius",
+      "seedTermsUsed": ["Talented", "Foolish"],
+      "joke": "I’m extremely talented at putting furniture together. I built an entire IKEA dresser without looking at the instructions. Halfway through, my confidence got so high I started throwing extra screws away. Four hours later I stepped back to admire my work and realized I’d somehow built a rocking chair. That’s when I learned there’s a very thin line between gifted and stupid.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m extremely talented at putting furniture together. I built an entire IKEA dresser without looking at the instructions. Halfway through, my confidence got so high I started throwing extra screws away. Four hours later I stepped back to admire my work and realized I’d somehow built a rocking chair. That’s when I learned there’s a very thin line between gifted and stupid."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear and likable, but the stranded-island fantasy and hammock turn are familiar; the final line gives it a mild lift."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"The 'vintage breathing' recovery is the strongest beat, but the gross-out escalation is broad and the final cringe line explains rather than tops the joke."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Coherent premise and clean seed use, but the tasting-note sequence is predictable and 'dashed dreams' lands more as cute wording than a strong punchline."},
+        {"jokeId":"joke-e","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong escalation from confidence to discarded screws to the rocking-chair reveal; the final gifted-versus-stupid line is familiar but lands cleanly."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":4,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Wine-tasting pretension is familiar territory, but the turn from ‘regret’ as a tasting note to genuine confession, plus ‘forty minutes,’ is a real payoff. Clean first-person rhythm. The vintner’s ‘best bottle’ beat is a nice mid-joke wrinkle."},
+        {"jokeId":"joke-c","originality":3,"surprise":4,"craft":4,"promptFit":7,"laugh":4,"comment":"Escalation to choking and puking is crude and arrives abruptly. ‘Vintage breathing, baby’ is a decent line but sits mid-joke. The closer is a moralizing tag (‘Nothing ages you faster...’) that explains rather than lands, and ‘cringe’ is stated outright."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"Fresh premise, and ‘grapes hate sand, humidity, and steel drums’ has a good rhythm. ‘Dashed dreams’ is a stock phrase that softens the middle. The close, tourists pretending it’s Napa, is a mild payoff rather than a big snap."},
+        {"jokeId":"joke-e","originality":3,"surprise":6,"craft":5,"promptFit":4,"laugh":5,"comment":"Dresser-to-rocking-chair is a legitimately funny image and the overconfidence setup works. But the closer states the moral (‘thin line between gifted and stupid’) instead of ending on the image. ‘Foolish’ is only loosely evoked as ‘stupid,’ and the joke’s concept barely uses ‘talented’ as an idea beyond the setup, weakening fit."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash-Lite",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Solid wine-tasting premise with a clean punchline, though slightly predictable."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Relatable and well-paced escalation about surviving isolation, landing the hammock tag cleanly."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Good conceptual clash between island life and winemaking, with a strong summary kicker."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Standard assembly blunder trope executed smoothly with a clear stage narrative."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":6,"comment":"Competent wine-tasting pretension bit; the personal-regret clarification is clear but lands softly."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Strong concrete image and clean final line about the helicopter; the incompetence payoff works."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Vivid escalation from suave act to choke-and-puke, with a sharp recovery line that carries the laugh."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Solid overconfidence-to-reveal structure, but the IKEA-wrong-furniture angle is familiar."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clear premise and solid self-own. Regret setup is familiar, but the reveal lands cleanly."},
+        {"jokeId":"joke-b","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong relatable voice and escalation. Hammock/rescue turn is amusing and natural."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Physical embarrassment creates a clear comic image. Ending is a bit expected and overexplained."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Coherent premise with a mild payoff. Dashed-dreams wine and Napa comparison feel predictable."}
+      ]
+    }
+  ]
+}
