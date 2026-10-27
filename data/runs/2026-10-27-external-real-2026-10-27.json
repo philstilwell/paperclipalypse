@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-27-external-real-2026-10-27",
+  "seed": "external-real-2026-10-27",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-27T14:06:02.334Z",
+  "publishedDate": "2026-10-27",
+  "seedTerms": [
+    "Corporate",
+    "Judge",
+    "Graveyard / Mausoleum",
+    "Being offered dirty money",
+    "Obedient",
+    "Spoiled"
+  ],
+  "premise": {
+    "text": "Seed terms: Corporate, Judge, Graveyard / Mausoleum, Being offered dirty money, Obedient, Spoiled",
+    "seedTerms": [
+      "Corporate",
+      "Judge",
+      "Graveyard / Mausoleum",
+      "Being offered dirty money",
+      "Obedient",
+      "Spoiled"
+    ],
+    "displayText": "Two Weeks' Notice"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (ChatGPT web, High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-5.6 Sol (ChatGPT web, High)",
+      "title": "Two Weeks' Notice",
+      "seedTermsUsed": [
+        "Corporate",
+        "Graveyard / Mausoleum"
+      ],
+      "joke": "I went to my coworker's burial. We're standing at the graveside, and my boss shakes his head and says, 'I can't believe he didn't give two weeks' notice.' I thought he was joking. Then he turned to the widow and asked if she could cover Friday.",
+      "setup": "",
+      "punchline": "I went to my coworker's burial. We're standing at the graveside, and my boss shakes his head and says, 'I can't believe he didn't give two weeks' notice.' I thought he was joking. Then he turned to the widow and asked if she could cover Friday.",
+      "text": "I went to my coworker's burial. We're standing at the graveside, and my boss shakes his head and says, 'I can't believe he didn't give two weeks' notice.' I thought he was joking. Then he turned to the widow and asked if she could cover Friday."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Fine Print",
+      "seedTermsUsed": [
+        "Being offered dirty money",
+        "Spoiled"
+      ],
+      "joke": "A stranger once slid an envelope of dirty money across the table to me. I said no, because I have morals. Then he opened the envelope, and it was a coupon for forty percent off milk. I said, \"I can't be bought.\" He said, \"It expires Friday.\" Now I'm sitting here with a gallon of milk, a guilty conscience, and the knowledge that I am, apparently, spoiled by Thursday.",
+      "setup": "",
+      "punchline": "A stranger once slid an envelope of dirty money across the table to me. I said no, because I have morals. Then he opened the envelope, and it was a coupon for forty percent off milk. I said, \"I can't be bought.\" He said, \"It expires Friday.\" Now I'm sitting here with a gallon of milk, a guilty conscience, and the knowledge that I am, apparently, spoiled by Thursday.",
+      "text": "A stranger once slid an envelope of dirty money across the table to me. I said no, because I have morals. Then he opened the envelope, and it was a coupon for forty percent off milk. I said, \"I can't be bought.\" He said, \"It expires Friday.\" Now I'm sitting here with a gallon of milk, a guilty conscience, and the knowledge that I am, apparently, spoiled by Thursday."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro (web)",
+      "title": "Open Plan Eternity",
+      "seedTermsUsed": [
+        "Corporate",
+        "Graveyard / Mausoleum"
+      ],
+      "joke": "I was walking through a graveyard recently and realized it’s basically just a corporate open-plan office. The entry-level guys are packed shoulder-to-shoulder in the flat grass cubicles, middle management gets the slightly taller headstones, and the CEO is taking up half the block in a giant marble mausoleum. Honestly, the only difference is that in a graveyard, people actually respect your do-not-disturb status.",
+      "setup": "",
+      "punchline": "I was walking through a graveyard recently and realized it’s basically just a corporate open-plan office. The entry-level guys are packed shoulder-to-shoulder in the flat grass cubicles, middle management gets the slightly taller headstones, and the CEO is taking up half the block in a giant marble mausoleum. Honestly, the only difference is that in a graveyard, people actually respect your do-not-disturb status.",
+      "text": "I was walking through a graveyard recently and realized it’s basically just a corporate open-plan office. The entry-level guys are packed shoulder-to-shoulder in the flat grass cubicles, middle management gets the slightly taller headstones, and the CEO is taking up half the block in a giant marble mausoleum. Honestly, the only difference is that in a graveyard, people actually respect your do-not-disturb status."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Bench Privilege",
+      "seedTermsUsed": [
+        "Judge",
+        "Spoiled"
+      ],
+      "joke": "I was in traffic court last week and the judge was completely spoiled. The guy ahead of me gets a speeding ticket and the judge says, 'Tell you what—skip the fine, just come wash my car Saturday.' The guy goes, 'Your Honor, that's not how the law works.' Judge bangs the gavel: 'Contempt. Now it's the car, the boat, and you bring the coffee.'",
+      "setup": "",
+      "punchline": "I was in traffic court last week and the judge was completely spoiled. The guy ahead of me gets a speeding ticket and the judge says, 'Tell you what—skip the fine, just come wash my car Saturday.' The guy goes, 'Your Honor, that's not how the law works.' Judge bangs the gavel: 'Contempt. Now it's the car, the boat, and you bring the coffee.'",
+      "text": "I was in traffic court last week and the judge was completely spoiled. The guy ahead of me gets a speeding ticket and the judge says, 'Tell you what—skip the fine, just come wash my car Saturday.' The guy goes, 'Your Honor, that's not how the law works.' Judge bangs the gavel: 'Contempt. Now it's the car, the boat, and you bring the coffee.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Appeal Process",
+      "seedTermsUsed": [
+        "Judge",
+        "Spoiled"
+      ],
+      "joke": "I found out my nephew is so spoiled, he treated a courtroom like customer service. The judge gave him community service, and he raised his hand and said, “Can I speak to your manager?” The judge said, “Son, I am the manager.” My nephew nodded and goes, “Yeah, that’s exactly what a supervisor trying to dodge a complaint would say.”",
+      "setup": "",
+      "punchline": "I found out my nephew is so spoiled, he treated a courtroom like customer service. The judge gave him community service, and he raised his hand and said, “Can I speak to your manager?” The judge said, “Son, I am the manager.” My nephew nodded and goes, “Yeah, that’s exactly what a supervisor trying to dodge a complaint would say.”",
+      "text": "I found out my nephew is so spoiled, he treated a courtroom like customer service. The judge gave him community service, and he raised his hand and said, “Can I speak to your manager?” The judge said, “Son, I am the manager.” My nephew nodded and goes, “Yeah, that’s exactly what a supervisor trying to dodge a complaint would say.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "The coupon reveal is unexpected, but the bribery premise is strained and the final 'spoiled by Thursday' line is semantically confusing rather than funny. The spoiled concept feels attached through wordplay rather than integrated into the premise.",
+          "laugh": 3,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 3.6999999999999997
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear, accessible corporate satire with effective visual escalation from cubicles to executive mausoleum. The do-not-disturb punchline lands naturally, although the workplace-death comparison is familiar and the turn is moderately predictable.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The escalating demands provide recognizable comic structure, and the gavel creates a useful final beat. However, the judge behaves more like a corrupt bully than a spoiled individual. The escalation is straightforward and the payoff produces more amusement than surprise.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "A relatable entitled-customer premise transferred effectively into a courtroom. The nephew's refusal to accept the judge's authority provides a second comic turn. The final response is amusing but slightly wordy, and the customer-service comparison is familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong stage premise and a real turn: the 'two weeks' notice' line sets up a joke reading, then the widow-cover-Friday kicker lands the dark corporate absurdity. Slight telegraphing before the end, but the final line carries the laugh.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Graveyard-as-office is a familiar analogy and the bit mostly lists comparisons. The do-not-disturb closer is a mild smile, not a snap. Clear but forgettable.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Escalation from car to boat to coffee works, and the contempt turn is a decent reversal. 'Spoiled' is a loose fit for a corrupt judge, and the punchline is more of a list extension than a sharp turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Good reversal: 'I am the manager' answered with the entitled-customer rebuttal is a recognizable, funny character beat. Spoiled and Judge are both naturally used. The setup is a little wordy, but the last line carries the laugh.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Relies on a familiar heartless-boss trope, but the execution is highly efficient and the final escalation lands beautifully.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "The transition from 'dirty money' to a milk coupon feels illogical rather than absurd, and the 'spoiled' punchline is a forced groaner.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 4.699999999999999
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Misapplies the concept of 'spoiled' to mean corrupt or demanding. The resulting scenario feels artificial and struggles to generate a laugh.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 5,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "A strong, natural premise with excellent character voice. The final line provides a great, character-consistent double-down that carries the laugh.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean corporate callousness at a funeral; the widow cover request lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Coupon reveal is mild; ending stretches for the spoiled tag and loses snap.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Extended analogy more than a timed bit; hierarchy mapping is expected and soft.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Entitled-kid escalation works; final supervisor dodge line carries the turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong, clear premise; the widow-covering-Friday tag is a good escalation and carries the laugh.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Coherent but strained. The coupon turn is mild, and the 'spoiled by Thursday' connection feels forced rather than naturally comedic.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 5,
+          "total": 4.6
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Solid extended comparison with a clean final line. More amusing observation than laugh-generating joke.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Good escalation and clear comic image. The judge abusing contempt powers creates a satisfying, non-obvious turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 7.1,
+      "rawScore": 7.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.5,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.5,
+        "originality": 6,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.7,
+          "comment": "Strong stage premise and a real turn: the 'two weeks' notice' line sets up a joke reading, then the widow-cover-Friday kicker lands the dark corporate absurdity. Slight telegraphing before the end, but the final line carries the laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Relies on a familiar heartless-boss trope, but the execution is highly efficient and the final escalation lands beautifully."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.8,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Clean corporate callousness at a funeral; the widow cover request lands cleanly."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong, clear premise; the widow-covering-Friday tag is a good escalation and carries the laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 7,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 7.1,
+        "craft": 7.1,
+        "originality": 6.3,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 7,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.5,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.1,
+          "comment": "A relatable entitled-customer premise transferred effectively into a courtroom. The nephew's refusal to accept the judge's authority provides a second comic turn. The final response is amusing but slightly wordy, and the customer-service comparison is familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.7,
+          "comment": "Good reversal: 'I am the manager' answered with the entitled-customer rebuttal is a recognizable, funny character beat. Spoiled and Judge are both naturally used. The setup is a little wordy, but the last line carries the laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 7.5,
+          "rawScore": 7.6,
+          "scoreAdjustment": -0.1,
+          "comment": "A strong, natural premise with excellent character voice. The final line provides a great, character-consistent double-down that carries the laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Entitled-kid escalation works; final supervisor dodge line carries the turn."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.9,
+        "craft": 6.1,
+        "originality": 5.4,
+        "promptFit": 7.4
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 7.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.6,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.1,
+          "comment": "The escalating demands provide recognizable comic structure, and the gavel creates a useful final beat. However, the judge behaves more like a corrupt bully than a spoiled individual. The escalation is straightforward and the payoff produces more amusement than surprise."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.7,
+          "rawScore": 6,
+          "scoreAdjustment": 0.7,
+          "comment": "Escalation from car to boat to coffee works, and the contempt turn is a decent reversal. 'Spoiled' is a loose fit for a corrupt judge, and the punchline is more of a list extension than a sharp turn."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 4.4,
+          "rawScore": 4.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Misapplies the concept of 'spoiled' to mean corrupt or demanding. The resulting scenario feels artificial and struggles to generate a laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Good escalation and clear comic image. The judge abusing contempt powers creates a satisfying, non-obvious turn."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "score": 5.7,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 4.8,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 4.8,
+        "craft": 6,
+        "originality": 5.3,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.5,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.1,
+          "comment": "Clear, accessible corporate satire with effective visual escalation from cubicles to executive mausoleum. The do-not-disturb punchline lands naturally, although the workplace-death comparison is familiar and the turn is moderately predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.3,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.7,
+          "comment": "Graveyard-as-office is a familiar analogy and the bit mostly lists comparisons. The do-not-disturb closer is a mild smile, not a snap. Clear but forgettable."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 4.6,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.5,
+          "comment": "Extended analogy more than a timed bit; hierarchy mapping is expected and soft."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid extended comparison with a clean final line. More amusing observation than laugh-generating joke."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 4.5,
+      "rawScore": 4.7,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 3.8,
+        "surprise": 4.8,
+        "craft": 4.6,
+        "originality": 5.3,
+        "promptFit": 5.6
+      },
+      "rawRubric": {
+        "laugh": 4,
+        "surprise": 5,
+        "craft": 4.8,
+        "originality": 5.5,
+        "promptFit": 5.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 3.8,
+          "rawScore": 3.7,
+          "scoreAdjustment": 0.1,
+          "comment": "The coupon reveal is unexpected, but the bribery premise is strained and the final 'spoiled by Thursday' line is semantically confusing rather than funny. The spoiled concept feels attached through wordplay rather than integrated into the premise."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Pro",
+          "score": 4.6,
+          "rawScore": 4.7,
+          "scoreAdjustment": -0.1,
+          "comment": "The transition from 'dirty money' to a milk coupon feels illogical rather than absurd, and the 'spoiled' punchline is a forced groaner."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.2,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.5,
+          "comment": "Coupon reveal is mild; ending stretches for the spoiled tag and loses snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.4,
+          "rawScore": 4.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Coherent but strained. The coupon turn is mild, and the 'spoiled by Thursday' connection feels forced rather than naturally comedic."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-27-external-real-2026-10-27.png",
+    "originalSrc": "assets/feature-images/2026-10-27-external-real-2026-10-27.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Two Weeks' Notice: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI ChatGPT - Two Weeks' Notice\nExact joke text to render in the right panel:\nI went to my coworker's burial. We're standing at the graveside, and my boss shakes his head and says, 'I can't believe he didn't give two weeks' notice.' I thought he was joking. Then he turned to the widow and asked if she could cover Friday.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Corporate, Judge, Graveyard / Mausoleum, Being offered dirty money, Obedient, Spoiled. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Corporate, Judge, Graveyard / Mausoleum, Being offered dirty money, Obedient, Spoiled. Use the winning joke titled \"Two Weeks' Notice\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6.1,
+      "anthropic": 5.5,
+      "google": 6.3,
+      "xai": 6.7,
+      "copilot": 6.4
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-27-external-real-2026-10-27.md"
+}

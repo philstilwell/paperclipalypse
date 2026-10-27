@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-10-27T14:06:02.334Z",
+  "publishedDate": "2026-10-27",
+  "seed": "external-real-2026-10-27",
+  "slug": "2026-10-27-external-real-2026-10-27",
+  "source": "manual-external",
+  "seedTerms": [
+    "Corporate",
+    "Judge",
+    "Graveyard / Mausoleum",
+    "Being offered dirty money",
+    "Obedient",
+    "Spoiled"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (ChatGPT web, High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Pro",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-5.6 Sol (ChatGPT web, High)",
+      "title": "Two Weeks' Notice",
+      "seedTermsUsed": ["Corporate", "Graveyard / Mausoleum"],
+      "joke": "I went to my coworker's burial. We're standing at the graveside, and my boss shakes his head and says, 'I can't believe he didn't give two weeks' notice.' I thought he was joking. Then he turned to the widow and asked if she could cover Friday.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to my coworker's burial. We're standing at the graveside, and my boss shakes his head and says, 'I can't believe he didn't give two weeks' notice.' I thought he was joking. Then he turned to the widow and asked if she could cover Friday."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Fine Print",
+      "seedTermsUsed": ["Being offered dirty money", "Spoiled"],
+      "joke": "A stranger once slid an envelope of dirty money across the table to me. I said no, because I have morals. Then he opened the envelope, and it was a coupon for forty percent off milk. I said, \"I can't be bought.\" He said, \"It expires Friday.\" Now I'm sitting here with a gallon of milk, a guilty conscience, and the knowledge that I am, apparently, spoiled by Thursday.",
+      "setup": "",
+      "punchline": "",
+      "text": "A stranger once slid an envelope of dirty money across the table to me. I said no, because I have morals. Then he opened the envelope, and it was a coupon for forty percent off milk. I said, \"I can't be bought.\" He said, \"It expires Friday.\" Now I'm sitting here with a gallon of milk, a guilty conscience, and the knowledge that I am, apparently, spoiled by Thursday."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Pro",
+      "model": "Gemini Pro (web)",
+      "title": "Open Plan Eternity",
+      "seedTermsUsed": ["Corporate", "Graveyard / Mausoleum"],
+      "joke": "I was walking through a graveyard recently and realized it’s basically just a corporate open-plan office. The entry-level guys are packed shoulder-to-shoulder in the flat grass cubicles, middle management gets the slightly taller headstones, and the CEO is taking up half the block in a giant marble mausoleum. Honestly, the only difference is that in a graveyard, people actually respect your do-not-disturb status.",
+      "setup": "",
+      "punchline": "",
+      "text": "I was walking through a graveyard recently and realized it’s basically just a corporate open-plan office. The entry-level guys are packed shoulder-to-shoulder in the flat grass cubicles, middle management gets the slightly taller headstones, and the CEO is taking up half the block in a giant marble mausoleum. Honestly, the only difference is that in a graveyard, people actually respect your do-not-disturb status."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Bench Privilege",
+      "seedTermsUsed": ["Judge", "Spoiled"],
+      "joke": "I was in traffic court last week and the judge was completely spoiled. The guy ahead of me gets a speeding ticket and the judge says, 'Tell you what—skip the fine, just come wash my car Saturday.' The guy goes, 'Your Honor, that's not how the law works.' Judge bangs the gavel: 'Contempt. Now it's the car, the boat, and you bring the coffee.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I was in traffic court last week and the judge was completely spoiled. The guy ahead of me gets a speeding ticket and the judge says, 'Tell you what—skip the fine, just come wash my car Saturday.' The guy goes, 'Your Honor, that's not how the law works.' Judge bangs the gavel: 'Contempt. Now it's the car, the boat, and you bring the coffee.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Appeal Process",
+      "seedTermsUsed": ["Judge", "Spoiled"],
+      "joke": "I found out my nephew is so spoiled, he treated a courtroom like customer service. The judge gave him community service, and he raised his hand and said, “Can I speak to your manager?” The judge said, “Son, I am the manager.” My nephew nodded and goes, “Yeah, that’s exactly what a supervisor trying to dodge a complaint would say.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I found out my nephew is so spoiled, he treated a courtroom like customer service. The judge gave him community service, and he raised his hand and said, “Can I speak to your manager?” The judge said, “Son, I am the manager.” My nephew nodded and goes, “Yeah, that’s exactly what a supervisor trying to dodge a complaint would say.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":4,"craft":4,"promptFit":4,"laugh":3,"comment":"The coupon reveal is unexpected, but the bribery premise is strained and the final 'spoiled by Thursday' line is semantically confusing rather than funny. The spoiled concept feels attached through wordplay rather than integrated into the premise."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear, accessible corporate satire with effective visual escalation from cubicles to executive mausoleum. The do-not-disturb punchline lands naturally, although the workplace-death comparison is familiar and the turn is moderately predictable."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"The escalating demands provide recognizable comic structure, and the gavel creates a useful final beat. However, the judge behaves more like a corrupt bully than a spoiled individual. The escalation is straightforward and the payoff produces more amusement than surprise."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"A relatable entitled-customer premise transferred effectively into a courtroom. The nephew's refusal to accept the judge's authority provides a second comic turn. The final response is amusing but slightly wordy, and the customer-service comparison is familiar."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":8,"craft":7,"promptFit":8,"laugh":7,"comment":"Strong stage premise and a real turn: the 'two weeks' notice' line sets up a joke reading, then the widow-cover-Friday kicker lands the dark corporate absurdity. Slight telegraphing before the end, but the final line carries the laugh."},
+        {"jokeId":"joke-c","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Graveyard-as-office is a familiar analogy and the bit mostly lists comparisons. The do-not-disturb closer is a mild smile, not a snap. Clear but forgettable."},
+        {"jokeId":"joke-d","originality":5,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Escalation from car to boat to coffee works, and the contempt turn is a decent reversal. 'Spoiled' is a loose fit for a corrupt judge, and the punchline is more of a list extension than a sharp turn."},
+        {"jokeId":"joke-e","originality":6,"surprise":7,"craft":6,"promptFit":9,"laugh":6,"comment":"Good reversal: 'I am the manager' answered with the entitled-customer rebuttal is a recognizable, funny character beat. Spoiled and Judge are both naturally used. The setup is a little wordy, but the last line carries the laugh."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Pro",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":8,"promptFit":8,"laugh":7,"comment":"Relies on a familiar heartless-boss trope, but the execution is highly efficient and the final escalation lands beautifully."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":5,"promptFit":6,"laugh":4,"comment":"The transition from 'dirty money' to a milk coupon feels illogical rather than absurd, and the 'spoiled' punchline is a forced groaner."},
+        {"jokeId":"joke-d","originality":4,"surprise":5,"craft":5,"promptFit":5,"laugh":4,"comment":"Misapplies the concept of 'spoiled' to mean corrupt or demanding. The resulting scenario feels artificial and struggles to generate a laugh."},
+        {"jokeId":"joke-e","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"A strong, natural premise with excellent character voice. The final line provides a great, character-consistent double-down that carries the laugh."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean corporate callousness at a funeral; the widow cover request lands cleanly."},
+        {"jokeId":"joke-b","originality":7,"surprise":6,"craft":5,"promptFit":8,"laugh":5,"comment":"Coupon reveal is mild; ending stretches for the spoiled tag and loses snap."},
+        {"jokeId":"joke-c","originality":5,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Extended analogy more than a timed bit; hierarchy mapping is expected and soft."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Entitled-kid escalation works; final supervisor dodge line carries the turn."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong, clear premise; the widow-covering-Friday tag is a good escalation and carries the laugh."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":5,"promptFit":5,"laugh":4,"comment":"Coherent but strained. The coupon turn is mild, and the 'spoiled by Thursday' connection feels forced rather than naturally comedic."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid extended comparison with a clean final line. More amusing observation than laugh-generating joke."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Good escalation and clear comic image. The judge abusing contempt powers creates a satisfying, non-obvious turn."}
+      ]
+    }
+  ]
+}
