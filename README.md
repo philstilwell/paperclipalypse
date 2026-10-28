@@ -46,6 +46,14 @@ So the preferred real-tournament flow is:
    rendering.
 9. GitHub Pages deploys the static site on push.
 
+Normal publishing updates the new episode page and its immediate chronological
+neighbors without rewriting the complete historical archive. If a shared run-page
+template changes and every historical page genuinely needs regeneration, run:
+
+```bash
+npm run site:rebuild
+```
+
 The one-instruction operating version is codified in
 `prompts/one-prompt-full-contest.md`: Phil can ask Codex to run the contest from
 beginning to end, and Codex coordinates the external web chats, Gemini image,

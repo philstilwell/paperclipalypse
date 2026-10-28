@@ -37,6 +37,10 @@ node scripts/run-tournament.mjs --episode-file data/inbox/<round-name>.json --se
 ```
 
 10. Review the generated `site/index.html`, latest `site/runs/*.html`, and `data/runs/*.json`.
+
+Normal contest runs leave unrelated historical episode pages untouched. Use
+`npm run site:rebuild` only after a shared run-page template or metadata change
+that must be applied to the complete archive.
 11. Commit and push when the result is ready.
 
 To attach a newly approved image while rendering:

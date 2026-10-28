@@ -37,16 +37,26 @@ const processPopoverLabel = [
   "The site adjusts each judge's numerical scores against that judge's average over up to five prior contests, publishes the ranked results, and shows each adjusted judge score beside its critique."
 ].join(" ");
 
-export function renderSite({ run, historyDir, siteDir }) {
+export function renderSite({ run, historyDir, siteDir, rebuildRunPages = false }) {
   fs.mkdirSync(siteDir, { recursive: true });
   fs.mkdirSync(path.join(siteDir, "runs"), { recursive: true });
 
   const runs = applyRollingJudgeNormalization(readRuns(historyDir));
   const publicRuns = runs.filter((archivedRun) => !archivedRun.dryRun);
   const showcaseWindow = showcaseDateWindow();
+  const runPagesToRefresh = affectedRunPageSlugs(run, publicRuns);
   for (const archivedRun of runs) {
+    const outputPath = path.join(siteDir, "runs", `${archivedRun.slug}.html`);
+    if (
+      !rebuildRunPages &&
+      fs.existsSync(outputPath) &&
+      !runPagesToRefresh.has(archivedRun.slug)
+    ) {
+      continue;
+    }
+
     fs.writeFileSync(
-      path.join(siteDir, "runs", `${archivedRun.slug}.html`),
+      outputPath,
       cleanGeneratedText(renderRunPage(archivedRun, publicRuns)),
       "utf8"
     );
@@ -62,6 +72,22 @@ export function renderSite({ run, historyDir, siteDir }) {
   fs.writeFileSync(path.join(siteDir, "feed.xml"), renderRssFeed(publicRuns), "utf8");
   fs.writeFileSync(path.join(siteDir, "robots.txt"), renderRobots(), "utf8");
   fs.writeFileSync(path.join(siteDir, "sitemap.xml"), renderSitemap(publicRuns, showcaseWindow), "utf8");
+}
+
+function affectedRunPageSlugs(run, publicRuns) {
+  const affected = new Set([run.slug]);
+  const index = publicRuns.findIndex((archivedRun) => archivedRun.slug === run.slug);
+  if (index < 0) {
+    return affected;
+  }
+
+  for (const neighbor of [publicRuns[index - 1], publicRuns[index + 1]]) {
+    if (neighbor) {
+      affected.add(neighbor.slug);
+    }
+  }
+
+  return affected;
 }
 
 function readRuns(historyDir) {
@@ -1467,7 +1493,7 @@ function renderRunPage(run, publicRuns) {
     modifiedTime: dateTime(run),
     keywords: pageKeywords(run),
     extraHead: renderRunHeadLinks(run, publicRuns),
-    schemas: renderRunSchemas(run, publicRuns),
+    schemas: renderRunSchemas(run),
     noindex: Boolean(run.dryRun),
     body: `
       ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", standingsPath: "../standings.html", label: shortDate(run) })}
@@ -2535,7 +2561,7 @@ function renderShowcaseSchemas(runs, description) {
   ];
 }
 
-function renderRunSchemas(run, publicRuns) {
+function renderRunSchemas(run) {
   const winner = run.rankings?.[0];
   const winningJoke = run.jokes?.find((joke) => joke.id === winner?.jokeId);
   const url = runUrl(run);
@@ -2585,8 +2611,7 @@ function renderRunSchemas(run, publicRuns) {
     breadcrumbSchema([
       { name: "Home", url: "/" },
       { name: shortDate(run), url: `/runs/${run.slug}.html` }
-    ]),
-    runItemListSchema(publicRuns.slice(0, 12), "Recent Paperclipalypse episodes")
+    ])
   ];
 }
 
