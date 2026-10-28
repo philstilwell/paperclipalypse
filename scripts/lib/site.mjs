@@ -4914,7 +4914,7 @@ td:nth-child(4) {
   }
 
   .episode {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .intro-note-grid {
@@ -4947,6 +4947,10 @@ td:nth-child(4) {
 }
 
 @media (max-width: 640px) {
+  main {
+    overflow-x: clip;
+  }
+
   .hero-backdrop {
     object-position: center top;
   }

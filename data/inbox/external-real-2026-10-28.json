@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-10-28T13:59:07.872Z",
+  "publishedDate": "2026-10-28",
+  "seed": "external-real-2026-10-28",
+  "slug": "2026-10-28-external-real-2026-10-28",
+  "source": "manual-external",
+  "seedTerms": [
+    "Wilderness",
+    "Musician",
+    "Taxidermist",
+    "Not achieving a coveted goal",
+    "Persistent",
+    "Nosy"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "Camping with a Taxidermist",
+      "seedTermsUsed": ["Wilderness", "Taxidermist"],
+      "joke": "I went camping with a taxidermist because I figured he'd know how to handle wildlife. That night, something huge started scratching at our tent. I whispered, 'What if it's a bear?' He said, 'Whatever you do, don't damage its face. That's where the money is.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I went camping with a taxidermist because I figured he'd know how to handle wildlife. That night, something huge started scratching at our tent. I whispered, 'What if it's a bear?' He said, 'Whatever you do, don't damage its face. That's where the money is.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Stuffed",
+      "seedTermsUsed": ["Taxidermist", "Nosy"],
+      "joke": "My neighbor is so nosy, she knows when I'm home by my car, my lights, and my trash. So I hired a taxidermist and had my dead uncle stuffed and propped in the front window. Now she knows everything about him. His schedule, his habits, his bad knee. She says he's very quiet. I said, 'He's very dead.' She said, 'Well, he's still home more than you.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My neighbor is so nosy, she knows when I'm home by my car, my lights, and my trash. So I hired a taxidermist and had my dead uncle stuffed and propped in the front window. Now she knows everything about him. His schedule, his habits, his bad knee. She says he's very quiet. I said, 'He's very dead.' She said, 'Well, he's still home more than you.'"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash (web)",
+      "title": "Family Reunion",
+      "seedTermsUsed": ["Taxidermist", "Nosy"],
+      "joke": "My aunt is so aggressively nosy she won't even wait for you to answer a question before going through your phone. Last Thanksgiving she asked me what I do for a living, and before I could speak, she marched straight into my basement. I’m a taxidermist. You haven't seen true panic until an intrusive middle-aged woman makes direct eye contact with an inside-out bobcat.",
+      "setup": "",
+      "punchline": "",
+      "text": "My aunt is so aggressively nosy she won't even wait for you to answer a question before going through your phone. Last Thanksgiving she asked me what I do for a living, and before I could speak, she marched straight into my basement. I’m a taxidermist. You haven't seen true panic until an intrusive middle-aged woman makes direct eye contact with an inside-out bobcat."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Permanent Arrangement",
+      "seedTermsUsed": ["Taxidermist", "Musician"],
+      "joke": "I'm a taxidermist. I dated a musician for a while. She broke up with me saying she needed someone who could make her feel alive. I pointed to my latest project and said I already do that—permanently, and without a soundcheck. She packed her bags that night.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm a taxidermist. I dated a musician for a while. She broke up with me saying she needed someone who could make her feel alive. I pointed to my latest project and said I already do that—permanently, and without a soundcheck. She packed her bags that night."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Neighborhood Watch Upgrade",
+      "seedTermsUsed": ["Persistent", "Nosy"],
+      "joke": "My neighbor is so nosy and persistent, he treats small talk like a police interrogation. I told him, \"I’m just taking out the trash.\" The next day he knocked on my door and said, \"Quick follow-up: where did it end up, and why are there receipts involved?\" I realized I’m not living next to a neighbor, I’m living next to a podcast with no unsubscribe button.",
+      "setup": "",
+      "punchline": "",
+      "text": "My neighbor is so nosy and persistent, he treats small talk like a police interrogation. I told him, \"I’m just taking out the trash.\" The next day he knocked on my door and said, \"Quick follow-up: where did it end up, and why are there receipts involved?\" I realized I’m not living next to a neighbor, I’m living next to a podcast with no unsubscribe button."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Distinctive dark absurdity and a satisfying final reversal. The stuffed-uncle premise is contrived, but the neighbor's oblivious response delivers a genuine laugh. Slightly overlong setup."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "The inside-out bobcat provides an unexpected, memorable visual. However, the final image substitutes grotesque surprise for a constructed punchline. More amusing as a bizarre anecdote than polished stand-up."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "Clear setup and natural first-person delivery, but the central reversal is predictable and logically strained. The soundcheck reference feels attached rather than earned, and the closing sentence weakens the ending."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Accessible premise with recognizable neighbor behavior and reasonable pacing. The receipts detail creates mild curiosity, but the podcast comparison is familiar and doesn't deliver a sufficiently surprising final turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Clean camping premise with a real turn: the taxidermist hears a bear and sees only a payday. The final line carries the laugh, and the economy is good. Strongest of the batch."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "The inside-out bobcat is a vivid, funny image and the reveal is a decent turn. The setup is baggy, though. 'Going through your phone' and the basement jump don't connect cleanly, and the last line is a bit over-explained."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "'Permanently, and without a soundcheck' has a dark edge, but the setup is predictable and the breakup logic is muddy. The soundcheck tag is the only part that feels specifically musician."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Generic nosy-neighbor setup, and the follow-up line doesn't quite make sense. The closing podcast metaphor is a familiar, tacked-on shape rather than a surprising turn. Nosy and persistent also blur into one concept, which weakens the fit."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid stage premise and clean economy, though the commercial opportunism punchline is a fairly standard angle for a taxidermist premise."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Escalation to a stuffed relative is cartoonish, and the closing back-and-forth diffuses rather than snaps the punchline."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Pivots on an overly literal pun about 'feeling alive'; the soundcheck tag feels tacked on rather than landing naturally."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Recites the seeds in the setup line; concludes with a generic and strained podcast metaphor that fails to carry real stand-up momentum."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean camping setup with a logical taxidermy turn; solid rhythm and final line, but the payoff stays mild rather than sharp."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Unusual image, yet the stuffed-uncle premise overreaches and the middle lines dilute timing; final observation is only serviceable."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong escalation to a specific visual payoff; natural first-person timing and a non-obvious final image that carries the laugh."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Mild observational bit with a tidy closer; the receipts detail feels forced and the overall turn remains predictable."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clear premise, strong character-based turn, concise setup and payoff. Predictable subject matter but solid laugh."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good escalation and a decent final tag. Slightly overlong and the stuffed-uncle premise feels forced before the payoff."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Vivid image and clear characterization. The ending is amusing but lands more as a funny visual than a strong punchline."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Uses the occupations cleanly, but the 'feel alive' reversal is fairly expected and the final line adds little extra laugh."
+        }
+      ]
+    }
+  ]
+}
