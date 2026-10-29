@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-10-29-external-real-2026-10-29",
+  "seed": "external-real-2026-10-29",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-10-29T13:59:52.147Z",
+  "publishedDate": "2026-10-29",
+  "seedTerms": [
+    "Espionage",
+    "Emergency Medical Responder",
+    "Graveyard / Mausoleum",
+    "Losing a job",
+    "Honest",
+    "Vindictive"
+  ],
+  "premise": {
+    "text": "Seed terms: Espionage, Emergency Medical Responder, Graveyard / Mausoleum, Losing a job, Honest, Vindictive",
+    "seedTerms": [
+      "Espionage",
+      "Emergency Medical Responder",
+      "Graveyard / Mausoleum",
+      "Losing a job",
+      "Honest",
+      "Vindictive"
+    ],
+    "displayText": "First Responder"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "Not on My Watch",
+      "seedTermsUsed": [
+        "Emergency Medical Responder",
+        "Honest"
+      ],
+      "joke": "I used to work as a paramedic. One night, a guy on a stretcher grabbed my arm and said, 'Be honest with me. Am I going to die?' I looked him straight in the eye and said, 'Nobody dies on my watch.' He said, 'Okay, when does your shift end?'",
+      "setup": "",
+      "punchline": "I used to work as a paramedic. One night, a guy on a stretcher grabbed my arm and said, 'Be honest with me. Am I going to die?' I looked him straight in the eye and said, 'Nobody dies on my watch.' He said, 'Okay, when does your shift end?'",
+      "text": "I used to work as a paramedic. One night, a guy on a stretcher grabbed my arm and said, 'Be honest with me. Am I going to die?' I looked him straight in the eye and said, 'Nobody dies on my watch.' He said, 'Okay, when does your shift end?'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Exit Interview",
+      "seedTermsUsed": [
+        "Losing a job",
+        "Graveyard / Mausoleum"
+      ],
+      "joke": "I got laid off last month, and they were really nice about it. They walked me out with a box of my stuff, a handshake, and a sad little speech. Honestly, I’ve been to funerals with less ceremony. The difference is, at a funeral nobody asks you to return your badge. And at least the guy in the mausoleum doesn’t have to update his LinkedIn.",
+      "setup": "",
+      "punchline": "I got laid off last month, and they were really nice about it. They walked me out with a box of my stuff, a handshake, and a sad little speech. Honestly, I’ve been to funerals with less ceremony. The difference is, at a funeral nobody asks you to return your badge. And at least the guy in the mausoleum doesn’t have to update his LinkedIn.",
+      "text": "I got laid off last month, and they were really nice about it. They walked me out with a box of my stuff, a handshake, and a sad little speech. Honestly, I’ve been to funerals with less ceremony. The difference is, at a funeral nobody asks you to return your badge. And at least the guy in the mausoleum doesn’t have to update his LinkedIn."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash (web)",
+      "title": "First Responder",
+      "seedTermsUsed": [
+        "Emergency Medical Responder",
+        "Vindictive"
+      ],
+      "joke": "I realized I could never be an emergency medical responder because I’m way too vindictive. If you cut me off in traffic, and two miles later I find your car wrapped around a telephone pole... I'll still give you CPR. But I'm doing the chest compressions to the beat of 'Baby Shark'. And I'm going to make sure you wake up during the 'doo-doo-doo' part.",
+      "setup": "",
+      "punchline": "I realized I could never be an emergency medical responder because I’m way too vindictive. If you cut me off in traffic, and two miles later I find your car wrapped around a telephone pole... I'll still give you CPR. But I'm doing the chest compressions to the beat of 'Baby Shark'. And I'm going to make sure you wake up during the 'doo-doo-doo' part.",
+      "text": "I realized I could never be an emergency medical responder because I’m way too vindictive. If you cut me off in traffic, and two miles later I find your car wrapped around a telephone pole... I'll still give you CPR. But I'm doing the chest compressions to the beat of 'Baby Shark'. And I'm going to make sure you wake up during the 'doo-doo-doo' part."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "The Long Way",
+      "seedTermsUsed": [
+        "Emergency Medical Responder",
+        "Vindictive"
+      ],
+      "joke": "I'm an emergency medical responder, and I try to stay professional, but sometimes I get a little vindictive. Last week this guy who cut me off in traffic was having a panic attack. I leaned over and whispered, 'Breathe into this bag... of all the things you should've considered before that left turn.'",
+      "setup": "",
+      "punchline": "I'm an emergency medical responder, and I try to stay professional, but sometimes I get a little vindictive. Last week this guy who cut me off in traffic was having a panic attack. I leaned over and whispered, 'Breathe into this bag... of all the things you should've considered before that left turn.'",
+      "text": "I'm an emergency medical responder, and I try to stay professional, but sometimes I get a little vindictive. Last week this guy who cut me off in traffic was having a panic attack. I leaned over and whispered, 'Breathe into this bag... of all the things you should've considered before that left turn.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Performance Review",
+      "seedTermsUsed": [
+        "Losing a job",
+        "Honest"
+      ],
+      "joke": "I told my boss, \"I want brutally honest feedback.\" He said, \"Okay, if a customer kidnapped you, we'd call back and ask what your ransom demands are.\" I said, \"Wow, that's hard to hear.\" He goes, \"Good news: after today, you won't hear it from your boss anymore.\"",
+      "setup": "",
+      "punchline": "I told my boss, \"I want brutally honest feedback.\" He said, \"Okay, if a customer kidnapped you, we'd call back and ask what your ransom demands are.\" I said, \"Wow, that's hard to hear.\" He goes, \"Good news: after today, you won't hear it from your boss anymore.\"",
+      "text": "I told my boss, \"I want brutally honest feedback.\" He said, \"Okay, if a customer kidnapped you, we'd call back and ask what your ransom demands are.\" I said, \"Wow, that's hard to hear.\" He goes, \"Good news: after today, you won't hear it from your boss anymore.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear first-person setup, but the funeral comparison is predictable and the LinkedIn punchline feels familiar. More observational than laugh-inducing.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong comic premise with a recognizable annoyance and a nicely escalating revenge fantasy. The final Baby Shark detail delivers a distinct, visual punchline. Good stage potential.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The premise has potential, but the bag wordplay is awkward and linguistically forced. The punchline sacrifices conversational plausibility for a clever-sounding construction.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The ransom comparison is an amusing exaggeration, and the firing provides a second turn. Clear and economical, though the final reveal is somewhat predictable once the boss becomes aggressively candid.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean stage premise and a tidy turn: the dying patient only wants to know when the paramedic’s shift ends. The structure is familiar, but the timing is tight and the last line carries the laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong concrete image: vindictive CPR timed to Baby Shark, with the guy waking up for the ‘doo-doo-doo’. It escalates well and fits the two seeds. The opening ‘could never be’ logic is slightly loose, and the ending runs a bit long.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The vindictive-paramedic premise is clear, but the punchline is garbled. ‘Breathe into this bag... of all the things’ doesn’t land as a turn, and the real insult is buried.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 3,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.4
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The ‘brutally honest feedback’ setup is familiar, and the ransom-demand line is confusing and doesn’t read as feedback. The firing twist at the end is the only real turn, and it isn’t set up well enough to snap.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean execution and solid rhythm, but relies on a somewhat familiar and predictable street-joke trope.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Good natural stand-up voice with relatable observations, though comparing a layoff to a funeral is a fairly standard angle.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The situational coincidence strains credibility for a believable stage anecdote, and the punchline phrasing feels a bit forced.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.3999999999999995
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong escalation with a snappy double-punchline that delivers a satisfying snap while naturally weaving in the concepts.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean misdirect and tight timing; familiar medical structure keeps it from higher marks.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Serviceable layoff-funeral parallel but soft, multi-beat payoff with little snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear premise, specific petty image, and well-timed final detail carry a real laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 9,
+          "total": 8.1
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Clever feedback analogy and clean firing turn, but overall mild rather than sharp.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong misdirection, clean dialogue, and a punchline that lands naturally.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.4
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear premise with relatable comparisons, but the turns are fairly expected and familiar.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Funny central image, but the setup is long and the ending repeats the same idea rather than escalating it.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Premise is understandable, but the punchline feels strained and doesn't deliver a strong comedic turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 4.7
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.1,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7,
+        "surprise": 6.8,
+        "craft": 6.5,
+        "originality": 6.8,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 6.8,
+        "craft": 6.5,
+        "originality": 6.8,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7.6,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Strong comic premise with a recognizable annoyance and a nicely escalating revenge fantasy. The final Baby Shark detail delivers a distinct, visual punchline. Good stage potential."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.2,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.5,
+          "comment": "Strong concrete image: vindictive CPR timed to Baby Shark, with the guy waking up for the ‘doo-doo-doo’. It escalates well and fits the two seeds. The opening ‘could never be’ logic is slightly loose, and the ending runs a bit long."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.6,
+          "rawScore": 8.1,
+          "scoreAdjustment": -0.5,
+          "comment": "Clear premise, specific petty image, and well-timed final detail carry a real laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Funny central image, but the setup is long and the ending repeats the same idea rather than escalating it."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 6.8,
+      "rawScore": 6.9,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 6.4,
+        "craft": 7.4,
+        "originality": 5.4,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 7.5,
+        "originality": 5.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.5,
+          "comment": "Clean stage premise and a tidy turn: the dying patient only wants to know when the paramedic’s shift ends. The structure is familiar, but the timing is tight and the last line carries the laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Clean execution and solid rhythm, but relies on a somewhat familiar and predictable street-joke trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.8,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Clean misdirect and tight timing; familiar medical structure keeps it from higher marks."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong misdirection, clean dialogue, and a punchline that lands naturally."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.3,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 6.6,
+        "craft": 6.1,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6.5,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.3,
+          "comment": "The ransom comparison is an amusing exaggeration, and the firing provides a second turn. Clear and economical, though the final reveal is somewhat predictable once the boss becomes aggressively candid."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.1,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.5,
+          "comment": "The ‘brutally honest feedback’ setup is familiar, and the ransom-demand line is confusing and doesn’t read as feedback. The firing twist at the end is the only real turn, and it isn’t set up well enough to snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.4,
+          "rawScore": 7.4,
+          "scoreAdjustment": 0,
+          "comment": "Strong escalation with a snappy double-punchline that delivers a satisfying snap while naturally weaving in the concepts."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.5,
+          "comment": "Clever feedback analogy and clean firing turn, but overall mild rather than sharp."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.7,
+      "rawScore": 5.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 4.9,
+        "craft": 5.9,
+        "originality": 4.9,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.4,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear first-person setup, but the funeral comparison is predictable and the LinkedIn punchline feels familiar. More observational than laugh-inducing."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Good natural stand-up voice with relatable observations, though comparing a layoff to a funeral is a fairly standard angle."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.1,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.5,
+          "comment": "Serviceable layoff-funeral parallel but soft, multi-beat payoff with little snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear premise with relatable comparisons, but the turns are fairly expected and familiar."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5,
+      "rawScore": 4.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.4,
+        "surprise": 4.9,
+        "craft": 4.1,
+        "originality": 5.4,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 4.3,
+        "surprise": 4.8,
+        "craft": 4,
+        "originality": 5.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.3,
+          "rawScore": 5,
+          "scoreAdjustment": 0.3,
+          "comment": "The premise has potential, but the bag wordplay is awkward and linguistically forced. The punchline sacrifices conversational plausibility for a clever-sounding construction."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.9,
+          "rawScore": 4.4,
+          "scoreAdjustment": 0.5,
+          "comment": "The vindictive-paramedic premise is clear, but the punchline is garbled. ‘Breathe into this bag... of all the things’ doesn’t land as a turn, and the real insult is buried."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0,
+          "comment": "The situational coincidence strains credibility for a believable stage anecdote, and the punchline phrasing feels a bit forced."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.4,
+          "rawScore": 4.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Premise is understandable, but the punchline feels strained and doesn't deliver a strong comedic turn."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-10-29-external-real-2026-10-29.png",
+    "originalSrc": "assets/feature-images/2026-10-29-external-real-2026-10-29.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled First Responder: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - First Responder\nExact joke text to render in the right panel:\nI realized I could never be an emergency medical responder because I’m way too vindictive. If you cut me off in traffic, and two miles later I find your car wrapped around a telephone pole... I'll still give you CPR. But I'm doing the chest compressions to the beat of 'Baby Shark'. And I'm going to make sure you wake up during the 'doo-doo-doo' part.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Espionage, Emergency Medical Responder, Graveyard / Mausoleum, Losing a job, Honest, Vindictive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Espionage, Emergency Medical Responder, Graveyard / Mausoleum, Losing a job, Honest, Vindictive. Use the winning joke titled \"First Responder\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 5.9,
+      "anthropic": 5.6,
+      "google": 6.2,
+      "xai": 6.6,
+      "copilot": 6.4
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-10-29-external-real-2026-10-29.md"
+}
