@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-10-31T14:02:58.278Z",
+  "publishedDate": "2026-10-31",
+  "seed": "external-real-2026-10-31",
+  "slug": "2026-10-31-external-real-2026-10-31",
+  "source": "manual-external",
+  "seedTerms": [
+    "Utopia",
+    "Fundraiser",
+    "Sporting Event Stands / Bleachers",
+    "War breaking out",
+    "Kind",
+    "Melodramatic"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "The Fundraiser",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Melodramatic"
+      ],
+      "joke": "I went to a charity fundraiser where they auctioned off a dinner with a celebrity. The bidding got so intense, one woman stood up and screamed, 'I'll give you ten thousand dollars!' Everyone applauded. I leaned over and asked, 'Who's the celebrity?' She said, 'I don't know. That's my husband she's bidding on.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to a charity fundraiser where they auctioned off a dinner with a celebrity. The bidding got so intense, one woman stood up and screamed, 'I'll give you ten thousand dollars!' Everyone applauded. I leaned over and asked, 'Who's the celebrity?' She said, 'I don't know. That's my husband she's bidding on.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Bleacher Utopia",
+      "seedTermsUsed": [
+        "Sporting Event Stands / Bleachers",
+        "Melodramatic"
+      ],
+      "joke": "I went to my nephew’s t-ball game, and I swear the other parents have never been more alive. A woman behind me screamed, ‘HE WAS SAFE! HE WAS SO SAFE!’ about a six-year-old who was lying down in the infield, eating a dandelion. She’s not a mother. She’s a Shakespearean widow in a folding chair. I clap politely for everything, because I peaked emotionally at the snack table.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to my nephew’s t-ball game, and I swear the other parents have never been more alive. A woman behind me screamed, ‘HE WAS SAFE! HE WAS SO SAFE!’ about a six-year-old who was lying down in the infield, eating a dandelion. She’s not a mother. She’s a Shakespearean widow in a folding chair. I clap politely for everything, because I peaked emotionally at the snack table."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro (web)",
+      "title": "The Left Flank",
+      "seedTermsUsed": [
+        "Sporting Event Stands / Bleachers",
+        "Melodramatic"
+      ],
+      "joke": "I was in the bleachers at my nephew’s under-eight soccer game. The score is zero to zero because both teams are just following a butterfly. But the parents are so melodramatic. One dad drops to his knees, screaming at the sky because his son Brayden failed to defend the left flank. Sir, Brayden is currently eating a handful of dirt. The only flank he’s defending is a fruit snack.",
+      "setup": "",
+      "punchline": "",
+      "text": "I was in the bleachers at my nephew’s under-eight soccer game. The score is zero to zero because both teams are just following a butterfly. But the parents are so melodramatic. One dad drops to his knees, screaming at the sky because his son Brayden failed to defend the left flank. Sir, Brayden is currently eating a handful of dirt. The only flank he’s defending is a fruit snack."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Little League Final Act",
+      "seedTermsUsed": [
+        "Sporting Event Stands / Bleachers",
+        "Melodramatic"
+      ],
+      "joke": "I was up in the bleachers at my nephew’s little league game when one close call at the plate turned the dad next to me completely melodramatic. He stood up, threw his arms wide, and announced to the whole field, “This injustice will haunt our family for generations!” Meanwhile his kid was already back in the dugout asking for a snack.",
+      "setup": "",
+      "punchline": "",
+      "text": "I was up in the bleachers at my nephew’s little league game when one close call at the plate turned the dad next to me completely melodramatic. He stood up, threw his arms wide, and announced to the whole field, “This injustice will haunt our family for generations!” Meanwhile his kid was already back in the dugout asking for a snack."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Charity Upgrade",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Kind"
+      ],
+      "joke": "I went to a fundraiser where they auctioned off acts of kindness. I got caught up in the bidding and paid three hundred bucks for a stranger to help me move. The volunteer showed up, looked at my couch, and said, 'For three hundred, I can be kind or I can be honest.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to a fundraiser where they auctioned off acts of kindness. I got caught up in the bidding and paid three hundred bucks for a stranger to help me move. The volunteer showed up, looked at my couch, and said, 'For three hundred, I can be kind or I can be honest.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong visual contrast between parental hysteria and childhood obliviousness. The Shakespearean widow comparison is memorable and funny. The final snack-table line is amusing but weaker than the central image."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Accessible premise with effective visual absurdity. The military language adds comic contrast, but the butterfly and dirt-eating images are familiar. The final fruit-snack line feels somewhat forced."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear, economical setup and recognizable parental overreaction. However, the generational-injustice exaggeration is predictable, and the snack punchline merely reinforces the established contrast without a fresh turn."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Fresh fundraiser premise with a natural escalation and a concise conversational punchline. The distinction between kindness and honesty creates a satisfying turn, although the payoff is more wry than laugh-out-loud funny."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 3,
+          "promptFit": 4,
+          "laugh": 3,
+          "comment": "The twist is muddled: it’s unclear who is bidding on whom, so the final line doesn’t land. Melodramatic is barely used, and the celebrity-auction setup is familiar."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "The butterfly-chasing 0-0 game is a nice image, and the flank/fruit snack callback closes cleanly. The melodramatic dad at a kids’ game is a familiar premise, and the ‘But the parents are so melodramatic’ line labels the joke instead of showing it."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "’Haunt our family for generations’ is a good melodramatic line, but the kid-wants-a-snack ending is predictable and trails off instead of snapping. Reads more like an anecdote than a punchline."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Fresh premise of auctioning acts of kindness. The ‘kind or honest’ line is a clean, in-character insult about the couch and ends on the strongest beat."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 3,
+          "surprise": 5,
+          "craft": 4,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "The mechanics of the punchline are confusing and feel like a mangled street joke. It lacks the natural logic and flow required for a successful stand-up bit."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Excellent stand-up rhythm and escalation. The 'Shakespearean widow' line perfectly captures the melodramatic seed term in a concrete, performable way."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Competent but relies heavily on telling rather than showing the 'melodramatic' seed term. The punchline is mildly amusing but falls into a standard trope for youth sports jokes."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "A clean, well-structured joke with a solid punchline about the universal misery of moving furniture. The seeds are integrated naturally into a believable stage premise."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Competent setup with a familiar husband-auction twist; the melodrama is only mild intensity and the final reveal is predictable."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong concrete image of the Shakespearean widow versus the dandelion-eating kid; clean first-person rhythm and a solid closing shrug."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Tight escalation from butterfly-chasing to dirt-eating; the fruit-snack flank line lands cleanly and carries the laugh."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Dry, efficient premise and a workable honesty punch; funny enough for a mild laugh but not especially surprising."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 6,
+          "laugh": 6,
+          "comment": "Clear setup and twist; husband reveal lands, though it's a familiar misdirection and melodramatic element is only lightly expressed."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong observational premise, vivid imagery, and a good closing tag. Melodrama concept is clear and naturally tied to the stands setting."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Good escalation from butterfly to dirt-eating child. The fruit-snack comparison is a solid punchline, though the overall angle is familiar."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clean and understandable, but the joke follows the expected path and the snack contrast is a fairly predictable payoff."
+        }
+      ]
+    }
+  ]
+}
