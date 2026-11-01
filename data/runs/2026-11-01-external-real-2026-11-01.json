@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-01-external-real-2026-11-01",
+  "seed": "external-real-2026-11-01",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-01T15:00:10.131Z",
+  "publishedDate": "2026-11-01",
+  "seedTerms": [
+    "Social Collapse",
+    "Pharmacist",
+    "Morgue",
+    "Being unable to save everyone",
+    "Perceptive",
+    "Verbose"
+  ],
+  "premise": {
+    "text": "Seed terms: Social Collapse, Pharmacist, Morgue, Being unable to save everyone, Perceptive, Verbose",
+    "seedTerms": [
+      "Social Collapse",
+      "Pharmacist",
+      "Morgue",
+      "Being unable to save everyone",
+      "Perceptive",
+      "Verbose"
+    ],
+    "displayText": "Triage at the Register"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "The Long Answer",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Verbose"
+      ],
+      "joke": "I asked my pharmacist if there was anything for talking too much. He said, 'How long has this been going on?' I said, 'Well, there are two schools of thought, but first you need some context about my childhood.' He said, 'I'm going to have to put you on hold.' I was standing right in front of him.",
+      "setup": "",
+      "punchline": "I asked my pharmacist if there was anything for talking too much. He said, 'How long has this been going on?' I said, 'Well, there are two schools of thought, but first you need some context about my childhood.' He said, 'I'm going to have to put you on hold.' I was standing right in front of him.",
+      "text": "I asked my pharmacist if there was anything for talking too much. He said, 'How long has this been going on?' I said, 'Well, there are two schools of thought, but first you need some context about my childhood.' He said, 'I'm going to have to put you on hold.' I was standing right in front of him."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Pharmacist Triage",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Being unable to save everyone"
+      ],
+      "joke": "My pharmacist looked at my prescription and said, “Take one a day, and don’t mix it with alcohol.” I said, “I came in here to be saved.” She said, “Sir, there are eleven people behind you, and one of them is coughing on the Tylenol display. I can’t save everyone.” So I’m now a statistic on a clipboard, and she’s already moved on to the cough.”",
+      "setup": "",
+      "punchline": "My pharmacist looked at my prescription and said, “Take one a day, and don’t mix it with alcohol.” I said, “I came in here to be saved.” She said, “Sir, there are eleven people behind you, and one of them is coughing on the Tylenol display. I can’t save everyone.” So I’m now a statistic on a clipboard, and she’s already moved on to the cough.”",
+      "text": "My pharmacist looked at my prescription and said, “Take one a day, and don’t mix it with alcohol.” I said, “I came in here to be saved.” She said, “Sir, there are eleven people behind you, and one of them is coughing on the Tylenol display. I can’t save everyone.” So I’m now a statistic on a clipboard, and she’s already moved on to the cough.”"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro (web)",
+      "title": "Triage at the Register",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Being unable to save everyone"
+      ],
+      "joke": "I could never be a pharmacist, because I'd struggle with the reality that you just can't save everyone. When a guy comes to the counter at midnight buying generic Viagra, Axe body spray, and a single Red Bull... legally, I have to just bag it up. But out of pure compassion? I want to grab his hand, look him in the eye, and whisper, 'Bro... she's not coming over.'",
+      "setup": "",
+      "punchline": "I could never be a pharmacist, because I'd struggle with the reality that you just can't save everyone. When a guy comes to the counter at midnight buying generic Viagra, Axe body spray, and a single Red Bull... legally, I have to just bag it up. But out of pure compassion? I want to grab his hand, look him in the eye, and whisper, 'Bro... she's not coming over.'",
+      "text": "I could never be a pharmacist, because I'd struggle with the reality that you just can't save everyone. When a guy comes to the counter at midnight buying generic Viagra, Axe body spray, and a single Red Bull... legally, I have to just bag it up. But out of pure compassion? I want to grab his hand, look him in the eye, and whisper, 'Bro... she's not coming over.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Pharmacy TED Talk",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Verbose"
+      ],
+      "joke": "My pharmacist is ridiculously verbose. I asked for something for a headache and he launched into a full lecture on ibuprofen's molecular structure, half-life, and seventeen possible interactions. By the time he finished, the headache had upgraded itself to a migraine just to drown him out.",
+      "setup": "",
+      "punchline": "My pharmacist is ridiculously verbose. I asked for something for a headache and he launched into a full lecture on ibuprofen's molecular structure, half-life, and seventeen possible interactions. By the time he finished, the headache had upgraded itself to a migraine just to drown him out.",
+      "text": "My pharmacist is ridiculously verbose. I asked for something for a headache and he launched into a full lecture on ibuprofen's molecular structure, half-life, and seventeen possible interactions. By the time he finished, the headache had upgraded itself to a migraine just to drown him out."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Side Effects Lecture",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Verbose"
+      ],
+      "joke": "I knew my pharmacist was a little too talkative when I picked up a prescription and he said, \"Any questions?\" Thirty minutes later, I was the one asking if there’d be a quiz. The label said, \"Take once daily,\" but somehow the verbal instructions included character development, a sequel, and director’s commentary.",
+      "setup": "",
+      "punchline": "I knew my pharmacist was a little too talkative when I picked up a prescription and he said, \"Any questions?\" Thirty minutes later, I was the one asking if there’d be a quiz. The label said, \"Take once daily,\" but somehow the verbal instructions included character development, a sequel, and director’s commentary.",
+      "text": "I knew my pharmacist was a little too talkative when I picked up a prescription and he said, \"Any questions?\" Thirty minutes later, I was the one asking if there’d be a quiz. The label said, \"Take once daily,\" but somehow the verbal instructions included character development, a sequel, and director’s commentary."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "The setup feels forced, and the final clipboard-and-cough line is confusing rather than funny. The premise explicitly incorporates both seeds but lacks a satisfying comic turn.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 3,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 3.6000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong, recognizable comic situation with specific visual details and a punchline that reframes the pharmacist's inability to save someone. Slightly overexplained setup, but the final line delivers a genuine laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear and economical, but the talkative person making a headache worse is an obvious premise. The migraine punchline largely restates the setup, with little surprise.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 9,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Natural first-person delivery with amusing exaggeration and decent escalation. The quiz line is familiar, and the final list provides comic imagery without a particularly sharp concluding punch.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "The comic proves the diagnosis by being verbose in the middle of the bit, and the closing line is a decent absurd snap. The ‘on hold’ turn is slightly muddled but lands.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "A concrete, recognizable image (Viagra, Axe, a lone Red Bull) builds to a clear, funny final line. The ‘can’t save everyone’ concept is reframed neatly as misplaced compassion.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The idea of a headache upgrading itself to a migraine to drown him out is a pleasant twist. The setup tells us he is ‘verbose’ instead of showing it, and the premise is familiar.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The ‘will there be a quiz’ beat is mildly funny. The closing list of movie-extras comparisons (sequel, director’s commentary) is predictable and reads as a stack of similar jokes.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Excellent stage premise with a very strong, visual punchline ('put you on hold' in person). The execution is tight and the demonstration of the 'verbose' seed term through dialogue rather than exposition is top-notch.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.9
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "The setup feels unnatural; asking to be 'saved' when told not to mix meds with alcohol doesn't flow logically. The punchline just restates the seed term rather than finding a clever angle on it.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 5,
+          "total": 4.1
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent but very predictable. The 'pharmacist explains molecules' trope is a standard exaggeration, and the punchline about the headache upgrading is a familiar comedy shape.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "A solid, well-crafted joke. It takes the same basic premise as Joke D but executes it much better with a sharp rule of three at the end ('character development, a sequel, and director's commentary').",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean in-person hold callback after verbose setup; solid timing but familiar customer-service shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "On-the-nose restatement of the seed; final clipboard image is flat and fails to snap.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific midnight purchase list builds a clear loser image; compassion whisper lands cleanly as the turn.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Quiz beat is mild filler; movie-metaphor extension is serviceable but over-extended.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid misdirection and strong final tag; familiar talkative-person premise limits freshness.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Concept is clear, but the escalation feels forced and the ending lands softly.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.8999999999999995
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong premise, specific image, and a clean reveal that pays off with a relatable human observation.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent and clear, but the headache-becomes-a-migraine punchline is a very familiar route.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.300000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 7.4,
+      "rawScore": 7.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.2,
+        "surprise": 7.2,
+        "craft": 7.5,
+        "originality": 6.5,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 7.3,
+        "craft": 7.5,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7.3,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.2,
+          "comment": "Strong, recognizable comic situation with specific visual details and a punchline that reframes the pharmacist's inability to save someone. Slightly overexplained setup, but the final line delivers a genuine laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.3,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.2,
+          "comment": "A concrete, recognizable image (Viagra, Axe, a lone Red Bull) builds to a clear, funny final line. The ‘can’t save everyone’ concept is reframed neatly as misplaced compassion."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.8,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Specific midnight purchase list builds a clear loser image; compassion whisper lands cleanly as the turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.9,
+          "rawScore": 8,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong premise, specific image, and a clean reveal that pays off with a relatable human observation."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 6.7,
+      "rawScore": 6.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.4,
+        "surprise": 6.7,
+        "craft": 6.9,
+        "originality": 5.4,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 5.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "The comic proves the diagnosis by being verbose in the middle of the bit, and the closing line is a decent absurd snap. The ‘on hold’ turn is slightly muddled but lands."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 8,
+          "rawScore": 7.9,
+          "scoreAdjustment": 0.1,
+          "comment": "Excellent stage premise with a very strong, visual punchline ('put you on hold' in person). The execution is tight and the demonstration of the 'verbose' seed term through dialogue rather than exposition is top-notch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.8,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.5,
+          "comment": "Clean in-person hold callback after verbose setup; solid timing but familiar customer-service shape."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid misdirection and strong final tag; familiar talkative-person premise limits freshness."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.6,
+      "rawScore": 5.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.8,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Natural first-person delivery with amusing exaggeration and decent escalation. The quiz line is familiar, and the final list provides comic imagery without a particularly sharp concluding punch."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.2,
+          "rawScore": 5,
+          "scoreAdjustment": 0.2,
+          "comment": "The ‘will there be a quiz’ beat is mildly funny. The closing list of movie-extras comparisons (sequel, director’s commentary) is predictable and reads as a stack of similar jokes."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.5,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.1,
+          "comment": "A solid, well-crafted joke. It takes the same basic premise as Joke D but executes it much better with a sharp rule of three at the end ('character development, a sequel, and director's commentary')."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.5,
+          "comment": "Quiz beat is mild filler; movie-metaphor extension is serviceable but over-extended."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.2,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 4.4,
+        "craft": 5.6,
+        "originality": 3.9,
+        "promptFit": 8.4
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.3,
+        "craft": 5.5,
+        "originality": 3.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 4.8,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear and economical, but the talkative person making a headache worse is an obvious premise. The migraine punchline largely restates the setup, with little surprise."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.4,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.2,
+          "comment": "The idea of a headache upgrading itself to a migraine to drown him out is a pleasant twist. The setup tells us he is ‘verbose’ instead of showing it, and the premise is familiar."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.2,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.1,
+          "comment": "Competent but very predictable. The 'pharmacist explains molecules' trope is a standard exaggeration, and the punchline about the headache upgrading is a familiar comedy shape."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.2,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent and clear, but the headache-becomes-a-migraine punchline is a very familiar route."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 4.1,
+      "rawScore": 4.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 3.7,
+        "surprise": 3.7,
+        "craft": 3.9,
+        "originality": 4.2,
+        "promptFit": 6.7
+      },
+      "rawRubric": {
+        "laugh": 3.8,
+        "surprise": 3.8,
+        "craft": 4,
+        "originality": 4.3,
+        "promptFit": 6.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 3.8,
+          "rawScore": 3.6,
+          "scoreAdjustment": 0.2,
+          "comment": "The setup feels forced, and the final clipboard-and-cough line is confusing rather than funny. The premise explicitly incorporates both seeds but lacks a satisfying comic turn."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 4.2,
+          "rawScore": 4.1,
+          "scoreAdjustment": 0.1,
+          "comment": "The setup feels unnatural; asking to be 'saved' when told not to mix meds with alcohol doesn't flow logically. The punchline just restates the seed term rather than finding a clever angle on it."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 3.5,
+          "rawScore": 4,
+          "scoreAdjustment": -0.5,
+          "comment": "On-the-nose restatement of the seed; final clipboard image is flat and fails to snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.8,
+          "rawScore": 4.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Concept is clear, but the escalation feels forced and the ending lands softly."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-01-external-real-2026-11-01.png",
+    "originalSrc": "assets/feature-images/2026-11-01-external-real-2026-11-01.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Triage at the Register: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Triage at the Register\nExact joke text to render in the right panel:\nI could never be a pharmacist, because I'd struggle with the reality that you just can't save everyone. When a guy comes to the counter at midnight buying generic Viagra, Axe body spray, and a single Red Bull... legally, I have to just bag it up. But out of pure compassion? I want to grab his hand, look him in the eye, and whisper, 'Bro... she's not coming over.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Social Collapse, Pharmacist, Morgue, Being unable to save everyone, Perceptive, Verbose. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Social Collapse, Pharmacist, Morgue, Being unable to save everyone, Perceptive, Verbose. Use the winning joke titled \"Triage at the Register\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 5.9,
+      "anthropic": 5.9,
+      "google": 6.1,
+      "xai": 6.7,
+      "copilot": 6.3
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-01-external-real-2026-11-01.md"
+}

@@ -1,0 +1,344 @@
+{
+  "createdAt": "2026-11-01T15:00:10.131Z",
+  "publishedDate": "2026-11-01",
+  "seed": "external-real-2026-11-01",
+  "slug": "2026-11-01-external-real-2026-11-01",
+  "source": "manual-external",
+  "seedTerms": [
+    "Social Collapse",
+    "Pharmacist",
+    "Morgue",
+    "Being unable to save everyone",
+    "Perceptive",
+    "Verbose"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "The Long Answer",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Verbose"
+      ],
+      "joke": "I asked my pharmacist if there was anything for talking too much. He said, 'How long has this been going on?' I said, 'Well, there are two schools of thought, but first you need some context about my childhood.' He said, 'I'm going to have to put you on hold.' I was standing right in front of him.",
+      "setup": "",
+      "punchline": "",
+      "text": "I asked my pharmacist if there was anything for talking too much. He said, 'How long has this been going on?' I said, 'Well, there are two schools of thought, but first you need some context about my childhood.' He said, 'I'm going to have to put you on hold.' I was standing right in front of him."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Pharmacist Triage",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Being unable to save everyone"
+      ],
+      "joke": "My pharmacist looked at my prescription and said, “Take one a day, and don’t mix it with alcohol.” I said, “I came in here to be saved.” She said, “Sir, there are eleven people behind you, and one of them is coughing on the Tylenol display. I can’t save everyone.” So I’m now a statistic on a clipboard, and she’s already moved on to the cough.”",
+      "setup": "",
+      "punchline": "",
+      "text": "My pharmacist looked at my prescription and said, “Take one a day, and don’t mix it with alcohol.” I said, “I came in here to be saved.” She said, “Sir, there are eleven people behind you, and one of them is coughing on the Tylenol display. I can’t save everyone.” So I’m now a statistic on a clipboard, and she’s already moved on to the cough.”"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro (web)",
+      "title": "Triage at the Register",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Being unable to save everyone"
+      ],
+      "joke": "I could never be a pharmacist, because I'd struggle with the reality that you just can't save everyone. When a guy comes to the counter at midnight buying generic Viagra, Axe body spray, and a single Red Bull... legally, I have to just bag it up. But out of pure compassion? I want to grab his hand, look him in the eye, and whisper, 'Bro... she's not coming over.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I could never be a pharmacist, because I'd struggle with the reality that you just can't save everyone. When a guy comes to the counter at midnight buying generic Viagra, Axe body spray, and a single Red Bull... legally, I have to just bag it up. But out of pure compassion? I want to grab his hand, look him in the eye, and whisper, 'Bro... she's not coming over.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Pharmacy TED Talk",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Verbose"
+      ],
+      "joke": "My pharmacist is ridiculously verbose. I asked for something for a headache and he launched into a full lecture on ibuprofen's molecular structure, half-life, and seventeen possible interactions. By the time he finished, the headache had upgraded itself to a migraine just to drown him out.",
+      "setup": "",
+      "punchline": "",
+      "text": "My pharmacist is ridiculously verbose. I asked for something for a headache and he launched into a full lecture on ibuprofen's molecular structure, half-life, and seventeen possible interactions. By the time he finished, the headache had upgraded itself to a migraine just to drown him out."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Side Effects Lecture",
+      "seedTermsUsed": [
+        "Pharmacist",
+        "Verbose"
+      ],
+      "joke": "I knew my pharmacist was a little too talkative when I picked up a prescription and he said, \"Any questions?\" Thirty minutes later, I was the one asking if there’d be a quiz. The label said, \"Take once daily,\" but somehow the verbal instructions included character development, a sequel, and director’s commentary.",
+      "setup": "",
+      "punchline": "",
+      "text": "I knew my pharmacist was a little too talkative when I picked up a prescription and he said, \"Any questions?\" Thirty minutes later, I was the one asking if there’d be a quiz. The label said, \"Take once daily,\" but somehow the verbal instructions included character development, a sequel, and director’s commentary."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 3,
+          "promptFit": 8,
+          "laugh": 3,
+          "comment": "The setup feels forced, and the final clipboard-and-cough line is confusing rather than funny. The premise explicitly incorporates both seeds but lacks a satisfying comic turn."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong, recognizable comic situation with specific visual details and a punchline that reframes the pharmacist's inability to save someone. Slightly overexplained setup, but the final line delivers a genuine laugh."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 3,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Clear and economical, but the talkative person making a headache worse is an obvious premise. The migraine punchline largely restates the setup, with little surprise."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Natural first-person delivery with amusing exaggeration and decent escalation. The quiz line is familiar, and the final list provides comic imagery without a particularly sharp concluding punch."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "The comic proves the diagnosis by being verbose in the middle of the bit, and the closing line is a decent absurd snap. The ‘on hold’ turn is slightly muddled but lands."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "A concrete, recognizable image (Viagra, Axe, a lone Red Bull) builds to a clear, funny final line. The ‘can’t save everyone’ concept is reframed neatly as misplaced compassion."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "The idea of a headache upgrading itself to a migraine to drown him out is a pleasant twist. The setup tells us he is ‘verbose’ instead of showing it, and the premise is familiar."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "The ‘will there be a quiz’ beat is mildly funny. The closing list of movie-extras comparisons (sequel, director’s commentary) is predictable and reads as a stack of similar jokes."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 8,
+          "comment": "Excellent stage premise with a very strong, visual punchline ('put you on hold' in person). The execution is tight and the demonstration of the 'verbose' seed term through dialogue rather than exposition is top-notch."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 5,
+          "laugh": 4,
+          "comment": "The setup feels unnatural; asking to be 'saved' when told not to mix meds with alcohol doesn't flow logically. The punchline just restates the seed term rather than finding a clever angle on it."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Competent but very predictable. The 'pharmacist explains molecules' trope is a standard exaggeration, and the punchline about the headache upgrading is a familiar comedy shape."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "A solid, well-crafted joke. It takes the same basic premise as Joke D but executes it much better with a sharp rule of three at the end ('character development, a sequel, and director's commentary')."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean in-person hold callback after verbose setup; solid timing but familiar customer-service shape."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 6,
+          "laugh": 4,
+          "comment": "On-the-nose restatement of the seed; final clipboard image is flat and fails to snap."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Specific midnight purchase list builds a clear loser image; compassion whisper lands cleanly as the turn."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Quiz beat is mild filler; movie-metaphor extension is serviceable but over-extended."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid misdirection and strong final tag; familiar talkative-person premise limits freshness."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Concept is clear, but the escalation feels forced and the ending lands softly."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong premise, specific image, and a clean reveal that pays off with a relatable human observation."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent and clear, but the headache-becomes-a-migraine punchline is a very familiar route."
+        }
+      ]
+    }
+  ]
+}
