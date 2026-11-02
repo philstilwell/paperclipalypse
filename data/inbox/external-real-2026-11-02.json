@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-02T14:58:45.818Z",
+  "publishedDate": "2026-11-02",
+  "seed": "external-real-2026-11-02",
+  "slug": "2026-11-02-external-real-2026-11-02",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cyberpunk",
+    "Animal Trainer",
+    "Golf Course",
+    "Discovering a dead body",
+    "Intelligent",
+    "Judgmental"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "The Dog Has a Point",
+      "seedTermsUsed": ["Animal Trainer", "Judgmental"],
+      "joke": "I hired an animal trainer because my dog keeps giving me this disgusted look whenever I eat dinner over the sink. She said, 'Dogs don't judge people. You're projecting.' Then I opened a can of ravioli and started eating it cold. She watched me for a second and said, 'Actually, I'm with the dog.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired an animal trainer because my dog keeps giving me this disgusted look whenever I eat dinner over the sink. She said, 'Dogs don't judge people. You're projecting.' Then I opened a can of ravioli and started eating it cold. She watched me for a second and said, 'Actually, I'm with the dog.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Fore",
+      "seedTermsUsed": ["Golf Course", "Judgmental"],
+      "joke": "I took up golf because my doctor said I needed a hobby that wasn’t being disappointed in myself. Turns out golf is just that with a dress code. And the worst part is the caddie. I’m paying a stranger to carry my bag and silently judge me. I’ve never had a man sigh so respectfully. My wife does it for free, but she doesn’t carry anything.",
+      "setup": "",
+      "punchline": "",
+      "text": "I took up golf because my doctor said I needed a hobby that wasn’t being disappointed in myself. Turns out golf is just that with a dress code. And the worst part is the caddie. I’m paying a stranger to carry my bag and silently judge me. I’ve never had a man sigh so respectfully. My wife does it for free, but she doesn’t carry anything."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro (web)",
+      "title": "Play It As It Lies",
+      "seedTermsUsed": ["Golf Course", "Discovering a dead body"],
+      "joke": "I was golfing with my dad last week when we discovered a dead body in the rough on the seventh hole. It was incredibly traumatic. We just stood there in complete shock. Finally, my dad stared down at the corpse, let out a deep sigh, and whispered, 'You still have to play it as it lies.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I was golfing with my dad last week when we discovered a dead body in the rough on the seventh hole. It was incredibly traumatic. We just stood there in complete shock. Finally, my dad stared down at the corpse, let out a deep sigh, and whispered, 'You still have to play it as it lies.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Play It As It Lies",
+      "seedTermsUsed": ["Golf Course", "Discovering a dead body"],
+      "joke": "I was on the golf course last weekend when I discovered a dead body in the sand trap. True story. And the first thing that went through my mind wasn't call 911. It was, is this a free drop or do I have to play it as it lies?",
+      "setup": "",
+      "punchline": "",
+      "text": "I was on the golf course last weekend when I discovered a dead body in the sand trap. True story. And the first thing that went through my mind wasn't call 911. It was, is this a free drop or do I have to play it as it lies?"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Smart Speaker",
+      "seedTermsUsed": ["Intelligent", "Judgmental"],
+      "joke": "I bought one of those super-intelligent smart speakers because I wanted help around the house. Now every time I set a timer for frozen pizza, it says, \"Timer started,\" in a tone that somehow means, \"and this is why your high school guidance counselor drinks.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I bought one of those super-intelligent smart speakers because I wanted help around the house. Now every time I set a timer for frozen pizza, it says, \"Timer started,\" in a tone that somehow means, \"and this is why your high school guidance counselor drinks.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Natural stand-up voice and good escalation. 'Sigh so respectfully' is the strongest line. The wife comparison is familiar, and the final sentence weakens rather than heightens the payoff."},
+        {"jokeId":"joke-c","originality":5,"surprise":6,"craft":5,"promptFit":10,"laugh":5,"comment":"The contrast between discovering a corpse and obsessing over golf rules creates a recognizable comic turn. However, what exactly must be played as it lies is unclear, making the punchline less satisfying."},
+        {"jokeId":"joke-d","originality":5,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Compact, conversational setup with a clear turn toward selfish golfing priorities. The free-drop question gives the absurdity a concrete context. Amusing but predictable once the premise is established."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":6,"promptFit":10,"laugh":5,"comment":"The frozen-pizza detail grounds the premise, and the imagined judgment gives the speaker personality. The guidance-counselor reference is unexpectedly specific but somewhat strained, reducing the punchline's immediate impact."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Clear premise and a good turn when the trainer switches sides. The cold ravioli is a concrete image, and the closing line lands cleanly."},
+        {"jokeId":"joke-c","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Dad’s deadpan reaction is a good character beat. ‘Play it as it lies’ is a familiar golf line, and the ‘incredibly traumatic’ filler slows the setup."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Tight and well paced, but ‘the first thing I thought wasn’t 911’ is a familiar shape. The golf-rules turn is predictable and has less character than the dad version."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"The frozen pizza timer is a relatable image, and the guidance counselor line is a fresh, specific tag that carries the laugh. The setup is slightly generic."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong concrete imagery with the cold ravioli. The trainer validating the dog's judgment rather than correcting the human is a well-timed, satisfying turn."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"The 'respectful sigh' is an excellent observational detail, but the concluding wife comparison relies heavily on a very familiar, traditional comedy trope."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"The punchline is a classic, widely known golf joke format. It functions competently but lacks a fresh twist or unexpected angle."},
+        {"jokeId":"joke-e","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Excellent comedic escalation. Attaching a hyper-specific, devastating judgment about a guidance counselor to a mundane frozen pizza timer lands with a sharp snap."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clean escalation from denial to complicity; the cold-ravioli beat lands the judgment flip effectively."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Solid observational setup and respectful-sigh image, but the wife closer is mild and familiar."},
+        {"jokeId":"joke-c","originality":4,"surprise":4,"craft":7,"promptFit":9,"laugh":6,"comment":"Tight delivery and strong final line, yet the punch is the single most obvious route for the premise."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Economical and the counselor dig is specific, but smart-device judgment is a well-worn shape."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong escalation from dog judgment to trainer agreeing; clean turn and solid stand-up voice."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Consistent premise with a few smiles, but self-disappointment, spouse, and judging-stranger beats feel familiar."},
+        {"jokeId":"joke-c","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Dark but clear golf-specific turn; father's deadpan commitment to the rule carries the laugh."},
+        {"jokeId":"joke-d","originality":4,"surprise":5,"craft":5,"promptFit":10,"laugh":6,"comment":"Functional joke, but the free-drop/play-it-as-it-lies angle is the obvious golf-body discovery premise and lacks escalation."}
+      ]
+    }
+  ]
+}

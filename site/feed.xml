@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Sun, 01 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Nov 2, 2026 - The Dog Has a Point</title>
+      <link>https://paperclipalypse.com/runs/2026-11-02-external-real-2026-11-02.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-11-02-external-real-2026-11-02.html</guid>
+      <pubDate>Mon, 02 Nov 2026 12:00:00 GMT</pubDate>
+      <description>Winner: OpenAI ChatGPT (7.1). Nov 2, 2026 Paperclipalypse AI comedy round: The Dog Has a Point. OpenAI ChatGPT won with 7.1. Seed terms: Cyberpunk, Animal Trainer, Golf Course, Discovering a dead body, Intelligent, Judgmental.</description>
+      <category>Cyberpunk</category>
+      <category>Animal Trainer</category>
+      <category>Golf Course</category>
+      <category>Discovering a dead body</category>
+      <category>Intelligent</category>
+      <category>Judgmental</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-11-02-external-real-2026-11-02.png" type="image/png" medium="image">
+        <media:title>The Dog Has a Point</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled The Dog Has a Point: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Nov 1, 2026 - Triage at the Register</title>
       <link>https://paperclipalypse.com/runs/2026-11-01-external-real-2026-11-01.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-10-14-external-real-2026-10-14.png" type="image/png" medium="image">
         <media:title>Maestro&#39;s Macchiato</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Maestro&#39;s Macchiato: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Oct 13, 2026 - The Fine Print</title>
-      <link>https://paperclipalypse.com/runs/2026-10-13-external-real-2026-10-13.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-10-13-external-real-2026-10-13.html</guid>
-      <pubDate>Tue, 13 Oct 2026 12:00:00 GMT</pubDate>
-      <description>Winner: OpenAI GPT-6 (6.6). Oct 13, 2026 Paperclipalypse AI comedy round: The Fine Print. OpenAI GPT-6 won with 6.6. Seed terms: Superhero, Office Worker, Skating Rink, Rules changing, Quirky, Indecisive.</description>
-      <category>Superhero</category>
-      <category>Office Worker</category>
-      <category>Skating Rink</category>
-      <category>Rules changing</category>
-      <category>Quirky</category>
-      <category>Indecisive</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-10-13-external-real-2026-10-13.png" type="image/png" medium="image">
-        <media:title>The Fine Print</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled The Fine Print: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>

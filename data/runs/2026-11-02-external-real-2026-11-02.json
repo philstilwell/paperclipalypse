@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-02-external-real-2026-11-02",
+  "seed": "external-real-2026-11-02",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-02T14:58:45.818Z",
+  "publishedDate": "2026-11-02",
+  "seedTerms": [
+    "Cyberpunk",
+    "Animal Trainer",
+    "Golf Course",
+    "Discovering a dead body",
+    "Intelligent",
+    "Judgmental"
+  ],
+  "premise": {
+    "text": "Seed terms: Cyberpunk, Animal Trainer, Golf Course, Discovering a dead body, Intelligent, Judgmental",
+    "seedTerms": [
+      "Cyberpunk",
+      "Animal Trainer",
+      "Golf Course",
+      "Discovering a dead body",
+      "Intelligent",
+      "Judgmental"
+    ],
+    "displayText": "The Dog Has a Point"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "ChatGPT web (High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (High)",
+      "title": "The Dog Has a Point",
+      "seedTermsUsed": [
+        "Animal Trainer",
+        "Judgmental"
+      ],
+      "joke": "I hired an animal trainer because my dog keeps giving me this disgusted look whenever I eat dinner over the sink. She said, 'Dogs don't judge people. You're projecting.' Then I opened a can of ravioli and started eating it cold. She watched me for a second and said, 'Actually, I'm with the dog.'",
+      "setup": "",
+      "punchline": "I hired an animal trainer because my dog keeps giving me this disgusted look whenever I eat dinner over the sink. She said, 'Dogs don't judge people. You're projecting.' Then I opened a can of ravioli and started eating it cold. She watched me for a second and said, 'Actually, I'm with the dog.'",
+      "text": "I hired an animal trainer because my dog keeps giving me this disgusted look whenever I eat dinner over the sink. She said, 'Dogs don't judge people. You're projecting.' Then I opened a can of ravioli and started eating it cold. She watched me for a second and said, 'Actually, I'm with the dog.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Fore",
+      "seedTermsUsed": [
+        "Golf Course",
+        "Judgmental"
+      ],
+      "joke": "I took up golf because my doctor said I needed a hobby that wasn’t being disappointed in myself. Turns out golf is just that with a dress code. And the worst part is the caddie. I’m paying a stranger to carry my bag and silently judge me. I’ve never had a man sigh so respectfully. My wife does it for free, but she doesn’t carry anything.",
+      "setup": "",
+      "punchline": "I took up golf because my doctor said I needed a hobby that wasn’t being disappointed in myself. Turns out golf is just that with a dress code. And the worst part is the caddie. I’m paying a stranger to carry my bag and silently judge me. I’ve never had a man sigh so respectfully. My wife does it for free, but she doesn’t carry anything.",
+      "text": "I took up golf because my doctor said I needed a hobby that wasn’t being disappointed in myself. Turns out golf is just that with a dress code. And the worst part is the caddie. I’m paying a stranger to carry my bag and silently judge me. I’ve never had a man sigh so respectfully. My wife does it for free, but she doesn’t carry anything."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro (web)",
+      "title": "Play It As It Lies",
+      "seedTermsUsed": [
+        "Golf Course",
+        "Discovering a dead body"
+      ],
+      "joke": "I was golfing with my dad last week when we discovered a dead body in the rough on the seventh hole. It was incredibly traumatic. We just stood there in complete shock. Finally, my dad stared down at the corpse, let out a deep sigh, and whispered, 'You still have to play it as it lies.'",
+      "setup": "",
+      "punchline": "I was golfing with my dad last week when we discovered a dead body in the rough on the seventh hole. It was incredibly traumatic. We just stood there in complete shock. Finally, my dad stared down at the corpse, let out a deep sigh, and whispered, 'You still have to play it as it lies.'",
+      "text": "I was golfing with my dad last week when we discovered a dead body in the rough on the seventh hole. It was incredibly traumatic. We just stood there in complete shock. Finally, my dad stared down at the corpse, let out a deep sigh, and whispered, 'You still have to play it as it lies.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Play It As It Lies",
+      "seedTermsUsed": [
+        "Golf Course",
+        "Discovering a dead body"
+      ],
+      "joke": "I was on the golf course last weekend when I discovered a dead body in the sand trap. True story. And the first thing that went through my mind wasn't call 911. It was, is this a free drop or do I have to play it as it lies?",
+      "setup": "",
+      "punchline": "I was on the golf course last weekend when I discovered a dead body in the sand trap. True story. And the first thing that went through my mind wasn't call 911. It was, is this a free drop or do I have to play it as it lies?",
+      "text": "I was on the golf course last weekend when I discovered a dead body in the sand trap. True story. And the first thing that went through my mind wasn't call 911. It was, is this a free drop or do I have to play it as it lies?"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Smart Speaker",
+      "seedTermsUsed": [
+        "Intelligent",
+        "Judgmental"
+      ],
+      "joke": "I bought one of those super-intelligent smart speakers because I wanted help around the house. Now every time I set a timer for frozen pizza, it says, \"Timer started,\" in a tone that somehow means, \"and this is why your high school guidance counselor drinks.\"",
+      "setup": "",
+      "punchline": "I bought one of those super-intelligent smart speakers because I wanted help around the house. Now every time I set a timer for frozen pizza, it says, \"Timer started,\" in a tone that somehow means, \"and this is why your high school guidance counselor drinks.\"",
+      "text": "I bought one of those super-intelligent smart speakers because I wanted help around the house. Now every time I set a timer for frozen pizza, it says, \"Timer started,\" in a tone that somehow means, \"and this is why your high school guidance counselor drinks.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Natural stand-up voice and good escalation. 'Sigh so respectfully' is the strongest line. The wife comparison is familiar, and the final sentence weakens rather than heightens the payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The contrast between discovering a corpse and obsessing over golf rules creates a recognizable comic turn. However, what exactly must be played as it lies is unclear, making the punchline less satisfying.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Compact, conversational setup with a clear turn toward selfish golfing priorities. The free-drop question gives the absurdity a concrete context. Amusing but predictable once the premise is established.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The frozen-pizza detail grounds the premise, and the imagined judgment gives the speaker personality. The guidance-counselor reference is unexpectedly specific but somewhat strained, reducing the punchline's immediate impact.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.9
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and a good turn when the trainer switches sides. The cold ravioli is a concrete image, and the closing line lands cleanly.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Dad’s deadpan reaction is a good character beat. ‘Play it as it lies’ is a familiar golf line, and the ‘incredibly traumatic’ filler slows the setup.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Tight and well paced, but ‘the first thing I thought wasn’t 911’ is a familiar shape. The golf-rules turn is predictable and has less character than the dad version.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The frozen pizza timer is a relatable image, and the guidance counselor line is a fresh, specific tag that carries the laugh. The setup is slightly generic.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong concrete imagery with the cold ravioli. The trainer validating the dog's judgment rather than correcting the human is a well-timed, satisfying turn.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "The 'respectful sigh' is an excellent observational detail, but the concluding wife comparison relies heavily on a very familiar, traditional comedy trope.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The punchline is a classic, widely known golf joke format. It functions competently but lacks a fresh twist or unexpected angle.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Excellent comedic escalation. Attaching a hyper-specific, devastating judgment about a guidance counselor to a mundane frozen pizza timer lands with a sharp snap.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean escalation from denial to complicity; the cold-ravioli beat lands the judgment flip effectively.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Solid observational setup and respectful-sigh image, but the wife closer is mild and familiar.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Tight delivery and strong final line, yet the punch is the single most obvious route for the premise.",
+          "laugh": 6,
+          "surprise": 4,
+          "craft": 7,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Economical and the counselor dig is specific, but smart-device judgment is a well-worn shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong escalation from dog judgment to trainer agreeing; clean turn and solid stand-up voice.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Consistent premise with a few smiles, but self-disappointment, spouse, and judging-stranger beats feel familiar.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Dark but clear golf-specific turn; father's deadpan commitment to the rule carries the laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Functional joke, but the free-drop/play-it-as-it-lies angle is the obvious golf-body discovery premise and lacks escalation.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 7.1,
+      "rawScore": 7.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 7.2,
+        "craft": 7.2,
+        "originality": 6.2,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 7.3,
+        "craft": 7.3,
+        "originality": 6.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.9,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.2,
+          "comment": "Clear premise and a good turn when the trainer switches sides. The cold ravioli is a concrete image, and the closing line lands cleanly."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 7.7,
+          "rawScore": 7.6,
+          "scoreAdjustment": 0.1,
+          "comment": "Strong concrete imagery with the cold ravioli. The trainer validating the dog's judgment rather than correcting the human is a well-timed, satisfying turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean escalation from denial to complicity; the cold-ravioli beat lands the judgment flip effectively."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong escalation from dog judgment to trainer agreeing; clean turn and solid stand-up voice."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.1,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.2,
+          "comment": "The frozen-pizza detail grounds the premise, and the imagined judgment gives the speaker personality. The guidance-counselor reference is unexpectedly specific but somewhat strained, reducing the punchline's immediate impact."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.3,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.2,
+          "comment": "The frozen pizza timer is a relatable image, and the guidance counselor line is a fresh, specific tag that carries the laugh. The setup is slightly generic."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 8.1,
+          "rawScore": 8,
+          "scoreAdjustment": 0.1,
+          "comment": "Excellent comedic escalation. Attaching a hyper-specific, devastating judgment about a guidance counselor to a mundane frozen pizza timer lands with a sharp snap."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.4,
+          "comment": "Economical and the counselor dig is specific, but smart-device judgment is a well-worn shape."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.2,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 5.7,
+        "craft": 6.2,
+        "originality": 5,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 5,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.9,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.2,
+          "comment": "The contrast between discovering a corpse and obsessing over golf rules creates a recognizable comic turn. However, what exactly must be played as it lies is unclear, making the punchline less satisfying."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.4,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Dad’s deadpan reaction is a good character beat. ‘Play it as it lies’ is a familiar golf line, and the ‘incredibly traumatic’ filler slows the setup."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.5,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Tight delivery and strong final line, yet the punch is the single most obvious route for the premise."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Dark but clear golf-specific turn; father's deadpan commitment to the rule carries the laugh."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.2,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.4,
+        "craft": 6.4,
+        "originality": 5.2,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.5,
+        "craft": 6.5,
+        "originality": 5.3,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.7,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Natural stand-up voice and good escalation. 'Sigh so respectfully' is the strongest line. The wife comparison is familiar, and the final sentence weakens rather than heightens the payoff."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.6,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.1,
+          "comment": "The 'respectful sigh' is an excellent observational detail, but the concluding wife comparison relies heavily on a very familiar, traditional comedy trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.6,
+          "rawScore": 6,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid observational setup and respectful-sigh image, but the wife closer is mild and familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Consistent premise with a few smiles, but self-disappointment, spouse, and judging-stranger beats feel familiar."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.4,
+        "craft": 5.9,
+        "originality": 4.9,
+        "promptFit": 9.5
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.5,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.2,
+          "comment": "Compact, conversational setup with a clear turn toward selfish golfing priorities. The free-drop question gives the absurdity a concrete context. Amusing but predictable once the premise is established."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Tight and well paced, but ‘the first thing I thought wasn’t 911’ is a familiar shape. The golf-rules turn is predictable and has less character than the dad version."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.7,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.1,
+          "comment": "The punchline is a classic, widely known golf joke format. It functions competently but lacks a fresh twist or unexpected angle."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.1,
+          "comment": "Functional joke, but the free-drop/play-it-as-it-lies angle is the obvious golf-body discovery premise and lacks escalation."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-02-external-real-2026-11-02.png",
+    "originalSrc": "assets/feature-images/2026-11-02-external-real-2026-11-02.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Dog Has a Point: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI ChatGPT - The Dog Has a Point\nExact joke text to render in the right panel:\nI hired an animal trainer because my dog keeps giving me this disgusted look whenever I eat dinner over the sink. She said, 'Dogs don't judge people. You're projecting.' Then I opened a can of ravioli and started eating it cold. She watched me for a second and said, 'Actually, I'm with the dog.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Cyberpunk, Animal Trainer, Golf Course, Discovering a dead body, Intelligent, Judgmental. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Cyberpunk, Animal Trainer, Golf Course, Discovering a dead body, Intelligent, Judgmental. Use the winning joke titled \"The Dog Has a Point\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 5.9,
+      "anthropic": 5.9,
+      "google": 6.1,
+      "xai": 6.6,
+      "copilot": 6.2
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-02-external-real-2026-11-02.md"
+}
