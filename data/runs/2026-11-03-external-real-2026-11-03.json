@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-03-external-real-2026-11-03",
+  "seed": "external-real-2026-11-03",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-03T14:59:57.060Z",
+  "publishedDate": "2026-11-03",
+  "seedTerms": [
+    "Cyberpunk",
+    "Small Business Owner",
+    "Casino",
+    "Being cut from a team",
+    "Happy",
+    "Judgmental"
+  ],
+  "premise": {
+    "text": "Seed terms: Cyberpunk, Small Business Owner, Casino, Being cut from a team, Happy, Judgmental",
+    "seedTerms": [
+      "Cyberpunk",
+      "Small Business Owner",
+      "Casino",
+      "Being cut from a team",
+      "Happy",
+      "Judgmental"
+    ],
+    "displayText": "The Smart Money"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-6.1 Sol Light (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-6.1 Sol Light (ChatGPT web)",
+      "title": "The Smart Money",
+      "seedTermsUsed": [
+        "Casino",
+        "Judgmental"
+      ],
+      "joke": "I get very judgmental in casinos. I watched a guy lose three hundred dollars at blackjack and thought, “How do you just ignore the numbers like that?” Then I went to the ATM. Twelve-dollar fee to withdraw forty bucks. I stared at that screen, shook my head, and said, “Hit me.”",
+      "setup": "",
+      "punchline": "I get very judgmental in casinos. I watched a guy lose three hundred dollars at blackjack and thought, “How do you just ignore the numbers like that?” Then I went to the ATM. Twelve-dollar fee to withdraw forty bucks. I stared at that screen, shook my head, and said, “Hit me.”",
+      "text": "I get very judgmental in casinos. I watched a guy lose three hundred dollars at blackjack and thought, “How do you just ignore the numbers like that?” Then I went to the ATM. Twelve-dollar fee to withdraw forty bucks. I stared at that screen, shook my head, and said, “Hit me.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Open Late",
+      "seedTermsUsed": [
+        "Small Business Owner",
+        "Casino"
+      ],
+      "joke": "I own a small business, so I know what a casino feels like from the inside. Every month I put everything I have on the table, the house always wins, and I’m told it’s called ‘taxes.’ The difference is the casino gives me free drinks. My accountant just gives me a bill and a look that says, ‘You know you could have walked away.’",
+      "setup": "",
+      "punchline": "I own a small business, so I know what a casino feels like from the inside. Every month I put everything I have on the table, the house always wins, and I’m told it’s called ‘taxes.’ The difference is the casino gives me free drinks. My accountant just gives me a bill and a look that says, ‘You know you could have walked away.’",
+      "text": "I own a small business, so I know what a casino feels like from the inside. Every month I put everything I have on the table, the house always wins, and I’m told it’s called ‘taxes.’ The difference is the casino gives me free drinks. My accountant just gives me a bill and a look that says, ‘You know you could have walked away.’"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro (web)",
+      "title": "Retail Profiling",
+      "seedTermsUsed": [
+        "Small Business Owner",
+        "Judgmental"
+      ],
+      "joke": "I run a small business, which is just a polite way of saying I am professionally judgmental. You can’t survive retail without profiling people instantly. If a guy walks into my shop wearing a fedora and spotless cargo shorts, I already know two things: he’s going to ask fourteen highly specific questions about a twelve-dollar item, and he is absolutely not going to buy it.",
+      "setup": "",
+      "punchline": "I run a small business, which is just a polite way of saying I am professionally judgmental. You can’t survive retail without profiling people instantly. If a guy walks into my shop wearing a fedora and spotless cargo shorts, I already know two things: he’s going to ask fourteen highly specific questions about a twelve-dollar item, and he is absolutely not going to buy it.",
+      "text": "I run a small business, which is just a polite way of saying I am professionally judgmental. You can’t survive retail without profiling people instantly. If a guy walks into my shop wearing a fedora and spotless cargo shorts, I already know two things: he’s going to ask fourteen highly specific questions about a twelve-dollar item, and he is absolutely not going to buy it."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "House Odds",
+      "seedTermsUsed": [
+        "Small Business Owner",
+        "Casino"
+      ],
+      "joke": "I’m a small business owner. Every day I’m gambling on inventory, on customers showing up, on the rent not going up. So the first time I walked into a casino it felt familiar. I sat at the table and told the dealer, “Just give me the house odds—I’m used to them.” He dealt. I lost. And for once, nobody followed up with a survey asking how they could improve my experience.",
+      "setup": "",
+      "punchline": "I’m a small business owner. Every day I’m gambling on inventory, on customers showing up, on the rent not going up. So the first time I walked into a casino it felt familiar. I sat at the table and told the dealer, “Just give me the house odds—I’m used to them.” He dealt. I lost. And for once, nobody followed up with a survey asking how they could improve my experience.",
+      "text": "I’m a small business owner. Every day I’m gambling on inventory, on customers showing up, on the rent not going up. So the first time I walked into a casino it felt familiar. I sat at the table and told the dealer, “Just give me the house odds—I’m used to them.” He dealt. I lost. And for once, nobody followed up with a survey asking how they could improve my experience."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "House Edge",
+      "seedTermsUsed": [
+        "Small Business Owner",
+        "Casino"
+      ],
+      "joke": "I'm a small business owner, so I tried a casino hoping to finally be on the profitable side of math. After three hours I realized it's exactly like running my shop: strangers wander around, nobody reads the signs, and somehow all the money disappears. The only difference is the casino sends someone over when I'm losing too fast and asks if I'd like a free drink.",
+      "setup": "",
+      "punchline": "I'm a small business owner, so I tried a casino hoping to finally be on the profitable side of math. After three hours I realized it's exactly like running my shop: strangers wander around, nobody reads the signs, and somehow all the money disappears. The only difference is the casino sends someone over when I'm losing too fast and asks if I'd like a free drink.",
+      "text": "I'm a small business owner, so I tried a casino hoping to finally be on the profitable side of math. After three hours I realized it's exactly like running my shop: strangers wander around, nobody reads the signs, and somehow all the money disappears. The only difference is the casino sends someone over when I'm losing too fast and asks if I'd like a free drink."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear business-as-gambling premise, but familiar tax humor and a soft accountant tag limit the payoff.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific customer details and a recognizable retail frustration give this a credible comic voice; the ending is predictable.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The house-odds request muddles the gambling logic, and the survey ending feels disconnected from the setup.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 4.9
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Readable comparison with some observational texture, but the free-drink payoff follows the obvious casino route.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.2
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and a real turn: judging a gambler, then paying a ridiculous ATM fee. ‘Hit me’ is a clean blackjack callback that carries the laugh. Slightly familiar ‘hypocrite gambler’ shape, and the fee-versus-withdrawal math is a bit loose.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Recognizable retail-customer observation with a specific image (fedora, spotless cargo shorts). Ends on a prediction rather than a turn, so the payoff is mild and the ending lands softly.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.1
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Good premise (small-business risk as casino familiarity) and the ‘house odds’ line works. The survey tag is relatable and funny, but it arrives after a somewhat flat ‘He dealt. I lost.’ beat.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Neat comparison of shop and casino, with a decent closing contrast about the free drink. The middle list (‘nobody reads the signs’) is generic, and the final turn is mild and not very surprising.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong structure and satisfying ATM punchline tying back to the casino theme.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Competent but relies on highly familiar business and tax tropes.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Decent escalation; the survey punchline is amusing but disconnects slightly from the gambling metaphor.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong execution of the business metaphor with relatable retail specifics.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean self-own; ATM fee to ‘Hit me’ lands as a solid callback.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.800000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Taxes-as-house-edge is familiar; final look is soft.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific customer type and behavior give the bit real bite.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.2
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Shop-casino parallel is competent but expected; free-drink contrast mild.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong casino misdirection; ATM fee treated like blackjack decision lands cleanly.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear premise and structure, but taxes-as-casino is familiar and the ending is mild.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific retail observation gives it life; predictable but recognizable character-based humor.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Nicely escalated comparison and the survey tag is a solid closing twist.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 7.2,
+      "rawScore": 7.3,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.9,
+        "surprise": 6.9,
+        "craft": 7.2,
+        "originality": 6.4,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 7,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.5,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.4,
+          "rawScore": 7.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear premise and a real turn: judging a gambler, then paying a ridiculous ATM fee. ‘Hit me’ is a clean blackjack callback that carries the laugh. Slightly familiar ‘hypocrite gambler’ shape, and the fee-versus-withdrawal math is a bit loose."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong structure and satisfying ATM punchline tying back to the casino theme."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.5,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean self-own; ATM fee to ‘Hit me’ lands as a solid callback."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.9,
+          "rawScore": 7.9,
+          "scoreAdjustment": 0,
+          "comment": "Strong casino misdirection; ATM fee treated like blackjack decision lands cleanly."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.3,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 5,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.3,
+          "comment": "Specific customer details and a recognizable retail frustration give this a credible comic voice; the ending is predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.4,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Recognizable retail-customer observation with a specific image (fedora, spotless cargo shorts). Ends on a prediction rather than a turn, so the payoff is mild and the ending lands softly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Specific customer type and behavior give the bit real bite."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Specific retail observation gives it life; predictable but recognizable character-based humor."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 9.8
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 9.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.2,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0.3,
+          "comment": "The house-odds request muddles the gambling logic, and the survey ending feels disconnected from the setup."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.6,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Good premise (small-business risk as casino familiarity) and the ‘house odds’ line works. The survey tag is relatable and funny, but it arrives after a somewhat flat ‘He dealt. I lost.’ beat."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Decent escalation; the survey punchline is amusing but disconnects slightly from the gambling metaphor."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0,
+          "comment": "Nicely escalated comparison and the survey tag is a solid closing twist."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.5,
+          "rawScore": 5.2,
+          "scoreAdjustment": 0.3,
+          "comment": "Readable comparison with some observational texture, but the free-drink payoff follows the obvious casino route."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.6,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.3,
+          "comment": "Neat comparison of shop and casino, with a decent closing contrast about the free drink. The middle list (‘nobody reads the signs’) is generic, and the final turn is mild and not very surprising."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.8,
+          "rawScore": 7,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong execution of the business metaphor with relatable retail specifics."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.7,
+          "rawScore": 6,
+          "scoreAdjustment": -0.3,
+          "comment": "Shop-casino parallel is competent but expected; free-drink contrast mild."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.4,
+      "rawScore": 5.5,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 4.4,
+        "craft": 5.7,
+        "originality": 4.7,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 5.8,
+        "originality": 4.8,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.4,
+          "rawScore": 5.1,
+          "scoreAdjustment": 0.3,
+          "comment": "Clear business-as-gambling premise, but familiar tax humor and a soft accountant tag limit the payoff."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.5,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.2,
+          "comment": "Competent but relies on highly familiar business and tax tropes."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.3,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Taxes-as-house-edge is familiar; final look is soft."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.5,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0,
+          "comment": "Clear premise and structure, but taxes-as-casino is familiar and the ending is mild."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-03-external-real-2026-11-03.png",
+    "originalSrc": "assets/feature-images/2026-11-03-external-real-2026-11-03.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Smart Money: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI ChatGPT - The Smart Money\nExact joke text to render in the right panel:\nI get very judgmental in casinos. I watched a guy lose three hundred dollars at blackjack and thought, “How do you just ignore the numbers like that?” Then I went to the ATM. Twelve-dollar fee to withdraw forty bucks. I stared at that screen, shook my head, and said, “Hit me.”\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Cyberpunk, Small Business Owner, Casino, Being cut from a team, Happy, Judgmental. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Cyberpunk, Small Business Owner, Casino, Being cut from a team, Happy, Judgmental. Use the winning joke titled \"The Smart Money\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 6,
+      "anthropic": 6,
+      "google": 6.5,
+      "xai": 6.5,
+      "copilot": 6.3
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-03-external-real-2026-11-03.md"
+}

@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-03T14:59:57.060Z",
+  "publishedDate": "2026-11-03",
+  "seed": "external-real-2026-11-03",
+  "slug": "2026-11-03-external-real-2026-11-03",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cyberpunk",
+    "Small Business Owner",
+    "Casino",
+    "Being cut from a team",
+    "Happy",
+    "Judgmental"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-6.1 Sol Light (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5.5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Pro (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-6.1 Sol Light (ChatGPT web)",
+      "title": "The Smart Money",
+      "seedTermsUsed": ["Casino", "Judgmental"],
+      "joke": "I get very judgmental in casinos. I watched a guy lose three hundred dollars at blackjack and thought, “How do you just ignore the numbers like that?” Then I went to the ATM. Twelve-dollar fee to withdraw forty bucks. I stared at that screen, shook my head, and said, “Hit me.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I get very judgmental in casinos. I watched a guy lose three hundred dollars at blackjack and thought, “How do you just ignore the numbers like that?” Then I went to the ATM. Twelve-dollar fee to withdraw forty bucks. I stared at that screen, shook my head, and said, “Hit me.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5.5 Medium (Claude web)",
+      "title": "Open Late",
+      "seedTermsUsed": ["Small Business Owner", "Casino"],
+      "joke": "I own a small business, so I know what a casino feels like from the inside. Every month I put everything I have on the table, the house always wins, and I’m told it’s called ‘taxes.’ The difference is the casino gives me free drinks. My accountant just gives me a bill and a look that says, ‘You know you could have walked away.’",
+      "setup": "",
+      "punchline": "",
+      "text": "I own a small business, so I know what a casino feels like from the inside. Every month I put everything I have on the table, the house always wins, and I’m told it’s called ‘taxes.’ The difference is the casino gives me free drinks. My accountant just gives me a bill and a look that says, ‘You know you could have walked away.’"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Pro (web)",
+      "title": "Retail Profiling",
+      "seedTermsUsed": ["Small Business Owner", "Judgmental"],
+      "joke": "I run a small business, which is just a polite way of saying I am professionally judgmental. You can’t survive retail without profiling people instantly. If a guy walks into my shop wearing a fedora and spotless cargo shorts, I already know two things: he’s going to ask fourteen highly specific questions about a twelve-dollar item, and he is absolutely not going to buy it.",
+      "setup": "",
+      "punchline": "",
+      "text": "I run a small business, which is just a polite way of saying I am professionally judgmental. You can’t survive retail without profiling people instantly. If a guy walks into my shop wearing a fedora and spotless cargo shorts, I already know two things: he’s going to ask fourteen highly specific questions about a twelve-dollar item, and he is absolutely not going to buy it."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "House Odds",
+      "seedTermsUsed": ["Small Business Owner", "Casino"],
+      "joke": "I’m a small business owner. Every day I’m gambling on inventory, on customers showing up, on the rent not going up. So the first time I walked into a casino it felt familiar. I sat at the table and told the dealer, “Just give me the house odds—I’m used to them.” He dealt. I lost. And for once, nobody followed up with a survey asking how they could improve my experience.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m a small business owner. Every day I’m gambling on inventory, on customers showing up, on the rent not going up. So the first time I walked into a casino it felt familiar. I sat at the table and told the dealer, “Just give me the house odds—I’m used to them.” He dealt. I lost. And for once, nobody followed up with a survey asking how they could improve my experience."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "House Edge",
+      "seedTermsUsed": ["Small Business Owner", "Casino"],
+      "joke": "I'm a small business owner, so I tried a casino hoping to finally be on the profitable side of math. After three hours I realized it's exactly like running my shop: strangers wander around, nobody reads the signs, and somehow all the money disappears. The only difference is the casino sends someone over when I'm losing too fast and asks if I'd like a free drink.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm a small business owner, so I tried a casino hoping to finally be on the profitable side of math. After three hours I realized it's exactly like running my shop: strangers wander around, nobody reads the signs, and somehow all the money disappears. The only difference is the casino sends someone over when I'm losing too fast and asks if I'd like a free drink."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":5,"comment":"Clear business-as-gambling premise, but familiar tax humor and a soft accountant tag limit the payoff."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Specific customer details and a recognizable retail frustration give this a credible comic voice; the ending is predictable."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":4,"promptFit":10,"laugh":4,"comment":"The house-odds request muddles the gambling logic, and the survey ending feels disconnected from the setup."},
+        {"jokeId":"joke-e","originality":4,"surprise":4,"craft":5,"promptFit":10,"laugh":5,"comment":"Readable comparison with some observational texture, but the free-drink payoff follows the obvious casino route."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clear premise and a real turn: judging a gambler, then paying a ridiculous ATM fee. ‘Hit me’ is a clean blackjack callback that carries the laugh. Slightly familiar ‘hypocrite gambler’ shape, and the fee-versus-withdrawal math is a bit loose."},
+        {"jokeId":"joke-c","originality":5,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Recognizable retail-customer observation with a specific image (fedora, spotless cargo shorts). Ends on a prediction rather than a turn, so the payoff is mild and the ending lands softly."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Good premise (small-business risk as casino familiarity) and the ‘house odds’ line works. The survey tag is relatable and funny, but it arrives after a somewhat flat ‘He dealt. I lost.’ beat."},
+        {"jokeId":"joke-e","originality":4,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Neat comparison of shop and casino, with a decent closing contrast about the free drink. The middle list (‘nobody reads the signs’) is generic, and the final turn is mild and not very surprising."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong structure and satisfying ATM punchline tying back to the casino theme."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Competent but relies on highly familiar business and tax tropes."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Decent escalation; the survey punchline is amusing but disconnects slightly from the gambling metaphor."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong execution of the business metaphor with relatable retail specifics."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean self-own; ATM fee to ‘Hit me’ lands as a solid callback."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Taxes-as-house-edge is familiar; final look is soft."},
+        {"jokeId":"joke-c","originality":7,"surprise":6,"craft":8,"promptFit":9,"laugh":7,"comment":"Specific customer type and behavior give the bit real bite."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Shop-casino parallel is competent but expected; free-drink contrast mild."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":8,"comment":"Strong casino misdirection; ATM fee treated like blackjack decision lands cleanly."},
+        {"jokeId":"joke-b","originality":5,"surprise":4,"craft":6,"promptFit":10,"laugh":5,"comment":"Clear premise and structure, but taxes-as-casino is familiar and the ending is mild."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Specific retail observation gives it life; predictable but recognizable character-based humor."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Nicely escalated comparison and the survey tag is a solid closing twist."}
+      ]
+    }
+  ]
+}
