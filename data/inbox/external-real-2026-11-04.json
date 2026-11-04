@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-04T15:05:41.560Z",
+  "publishedDate": "2026-11-04",
+  "seed": "external-real-2026-11-04",
+  "slug": "2026-11-04-external-real-2026-11-04",
+  "source": "manual-external",
+  "seedTerms": [
+    "Heroic and Sword-Sorcery",
+    "Personal Trainer",
+    "A CEO's Office",
+    "Having to hide or escape detection",
+    "Imaginative",
+    "Forgetful"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-6.1 Sol Light (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-6.1 Sol Light (ChatGPT web)",
+      "title": "Concealed Carbs",
+      "seedTermsUsed": ["Personal Trainer", "Having to hide or escape detection"],
+      "joke": "I saw my personal trainer at the supermarket while I was buying a whole birthday cake. I panicked and hid it under my jacket. Security stopped me, and I actually felt relieved. I would rather explain this cake to a judge than explain it to a man who says, “Let’s earn our weekend.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I saw my personal trainer at the supermarket while I was buying a whole birthday cake. I panicked and hid it under my jacket. Security stopped me, and I actually felt relieved. I would rather explain this cake to a judge than explain it to a man who says, “Let’s earn our weekend.”"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Cardio Fugitive",
+      "seedTermsUsed": ["Personal Trainer", "Having to hide or escape detection"],
+      "joke": "I hired a personal trainer, which I now realize was just paying someone to help me hide from myself. Every session he finds me. Behind the water fountain, in the sauna, once I hid inside a vending machine between the protein bars. He still finds me. Turns out you cannot outrun a man whose entire job is finding you. I’ve started billing it as cardio.",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired a personal trainer, which I now realize was just paying someone to help me hide from myself. Every session he finds me. Behind the water fountain, in the sauna, once I hid inside a vending machine between the protein bars. He still finds me. Turns out you cannot outrun a man whose entire job is finding you. I’ve started billing it as cardio."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash-Lite (web)",
+      "title": "Short-Term Memory Gains",
+      "seedTermsUsed": ["Personal Trainer", "Forgetful"],
+      "joke": "My personal trainer is so forgetful that he makes me pay for the session twice, and yesterday he spent twenty minutes spotting me on a bench press before asking what muscle group we were targeting. I told him we were working on my patience, and he nodded, jotted it down on his clipboard, and immediately asked why I was lying on the floor.",
+      "setup": "",
+      "punchline": "",
+      "text": "My personal trainer is so forgetful that he makes me pay for the session twice, and yesterday he spent twenty minutes spotting me on a bench press before asking what muscle group we were targeting. I told him we were working on my patience, and he nodded, jotted it down on his clipboard, and immediately asked why I was lying on the floor."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Spotty Memory",
+      "seedTermsUsed": ["Personal Trainer", "Forgetful"],
+      "joke": "I'm a personal trainer, but I'm so forgetful it's borderline dangerous. A client will be mid-set and ask how many reps are left. I'll freeze and go, 'Uh... the same number as last time?' Yesterday a guy asked me to spot his bench. I forgot why I was standing over him and walked off to check my phone. He's fine. His bar is still deciding whether to come down.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm a personal trainer, but I'm so forgetful it's borderline dangerous. A client will be mid-set and ask how many reps are left. I'll freeze and go, 'Uh... the same number as last time?' Yesterday a guy asked me to spot his bench. I forgot why I was standing over him and walked off to check my phone. He's fine. His bar is still deciding whether to come down."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Rep Counter",
+      "seedTermsUsed": ["Personal Trainer", "Forgetful"],
+      "joke": "I hired a personal trainer who warned me he was a little forgetful. I thought, how bad could that be? Halfway through a workout he looked at me and said, “Great progress. What are we training for?” I said, “My wedding.” He nodded and handed me a basketball. By the end of the session I was in the best shape of my life for a completely different guy’s wedding.",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired a personal trainer who warned me he was a little forgetful. I thought, how bad could that be? Halfway through a workout he looked at me and said, “Great progress. What are we training for?” I said, “My wedding.” He nodded and handed me a basketball. By the end of the session I was in the best shape of my life for a completely different guy’s wedding."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":4,"surprise":4,"craft":4,"promptFit":10,"laugh":4,"comment":"Clear avoidance premise, but the vending-machine image strains credibility and the cardio ending is predictable."},
+        {"jokeId":"joke-c","originality":3,"surprise":3,"craft":4,"promptFit":10,"laugh":3,"comment":"The patience line is familiar, and the unexplained move from bench to floor weakens the closing beat."},
+        {"jokeId":"joke-d","originality":4,"surprise":3,"craft":3,"promptFit":10,"laugh":3,"comment":"The setup is clear, but the bar deciding whether to descend is confusing and supplies no satisfying payoff."},
+        {"jokeId":"joke-e","originality":4,"surprise":4,"craft":4,"promptFit":10,"laugh":3,"comment":"The basketball introduces a mismatch, but the different man's wedding does not follow or deliver a clear laugh."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clean premise, nice escalation, strong final line comparing trainer to a judge."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Good forgetfulness bit, final image lands but is a touch telegraphed."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Funny closing image but structure sprawls a bit before the payoff."},
+        {"jokeId":"joke-e","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":8,"comment":"Clear misdirection, escalates naturally, punchline resolves cleanly and is genuinely surprising."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Relatable supermarket panic with a sharp closing line about workout guilt."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Fun absurd premise about hiding inside a vending machine; solid pacing."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Nice reversal from the trainer's perspective with a strong dangling finish."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Clever misdirection with a distinct narrative arc and clear punchline."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean premise and solid closer, but the hiding-cake setup is familiar and the laugh stays mild."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong escalation through hiding spots and a clean final turn that lands the idea without overexplaining."},
+        {"jokeId":"joke-c","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Patience line is clever but the overall structure is a bit baggy and the forgetfulness feels expected."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Unexpected basketball handoff and strong final image give the joke a clear, repeatable snap."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong relatable premise, clean escalation, and the judge-vs-trainer comparison lands well."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Clear running premise with a decent tag at the end, but the progression is somewhat predictable."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":5,"promptFit":9,"laugh":5,"comment":"Forgetful-trainer premise is familiar; patience line is mildly amusing but the ending softens the payoff."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Good first-person voice and escalation; the final image provides the strongest laugh in the joke."}
+      ]
+    }
+  ]
+}
