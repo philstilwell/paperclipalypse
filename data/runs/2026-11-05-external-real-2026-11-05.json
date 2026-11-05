@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-05-external-real-2026-11-05",
+  "seed": "external-real-2026-11-05",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-05T15:05:21.233Z",
+  "publishedDate": "2026-11-05",
+  "seedTerms": [
+    "Historical",
+    "Corrections Officer",
+    "Morgue",
+    "Being blackmailed",
+    "Obedient",
+    "Disloyal"
+  ],
+  "premise": {
+    "text": "Seed terms: Historical, Corrections Officer, Morgue, Being blackmailed, Obedient, Disloyal",
+    "seedTerms": [
+      "Historical",
+      "Corrections Officer",
+      "Morgue",
+      "Being blackmailed",
+      "Obedient",
+      "Disloyal"
+    ],
+    "displayText": "The Loyalty Discount"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-6.1 Sol (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-6.1 Sol (ChatGPT web)",
+      "title": "The Loyalty Discount",
+      "seedTermsUsed": [
+        "Being blackmailed",
+        "Disloyal"
+      ],
+      "joke": "My wife found out I was cheating because my mistress started blackmailing me. She demanded five thousand dollars or she'd tell my wife everything. I paid her. Then she demanded another five thousand. I finally confessed to my wife, who was furious. Not about the affair. About the money. She said, 'You paid ten thousand dollars to keep me from finding out? For fifty bucks, I would've helped you pack.'",
+      "setup": "",
+      "punchline": "My wife found out I was cheating because my mistress started blackmailing me. She demanded five thousand dollars or she'd tell my wife everything. I paid her. Then she demanded another five thousand. I finally confessed to my wife, who was furious. Not about the affair. About the money. She said, 'You paid ten thousand dollars to keep me from finding out? For fifty bucks, I would've helped you pack.'",
+      "text": "My wife found out I was cheating because my mistress started blackmailing me. She demanded five thousand dollars or she'd tell my wife everything. I paid her. Then she demanded another five thousand. I finally confessed to my wife, who was furious. Not about the affair. About the money. She said, 'You paid ten thousand dollars to keep me from finding out? For fifty bucks, I would've helped you pack.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Lateral Move",
+      "seedTermsUsed": [
+        "Corrections Officer",
+        "Morgue"
+      ],
+      "joke": "Before I became a corrections officer, I worked the night shift at a morgue. Honestly, barely noticed the change. Same hours, same silence, same paperwork about where somebody's staying tonight. Only real difference is now when I tell a body to stay still, I have to say please, and sometimes they still don't listen.",
+      "setup": "",
+      "punchline": "Before I became a corrections officer, I worked the night shift at a morgue. Honestly, barely noticed the change. Same hours, same silence, same paperwork about where somebody's staying tonight. Only real difference is now when I tell a body to stay still, I have to say please, and sometimes they still don't listen.",
+      "text": "Before I became a corrections officer, I worked the night shift at a morgue. Honestly, barely noticed the change. Same hours, same silence, same paperwork about where somebody's staying tonight. Only real difference is now when I tell a body to stay still, I have to say please, and sometimes they still don't listen."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash (web)",
+      "title": "The Graveyard Shift",
+      "seedTermsUsed": [
+        "Morgue",
+        "Obedient"
+      ],
+      "joke": "I recently landed a gig at the county morgue, and I have to say, it is easily the least stressful work environment I have ever experienced. My boss loves me because I'm quiet, meticulous, and obedient to every single rule on the checklist. The best part is the clientele: absolutely nobody talks back, nobody complains about the room temperature, and when I politely tell them to stay put, they actually listen.",
+      "setup": "",
+      "punchline": "I recently landed a gig at the county morgue, and I have to say, it is easily the least stressful work environment I have ever experienced. My boss loves me because I'm quiet, meticulous, and obedient to every single rule on the checklist. The best part is the clientele: absolutely nobody talks back, nobody complains about the room temperature, and when I politely tell them to stay put, they actually listen.",
+      "text": "I recently landed a gig at the county morgue, and I have to say, it is easily the least stressful work environment I have ever experienced. My boss loves me because I'm quiet, meticulous, and obedient to every single rule on the checklist. The best part is the clientele: absolutely nobody talks back, nobody complains about the room temperature, and when I politely tell them to stay put, they actually listen."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Quiet Shift",
+      "seedTermsUsed": [
+        "Corrections Officer",
+        "Morgue"
+      ],
+      "joke": "I left the prison for a job at the morgue. Best career move I ever made. Nobody's trying to tunnel out, the food complaints dropped to zero, and when I yell lights out they actually stay that way. Head count takes thirty seconds and it's always exact.",
+      "setup": "",
+      "punchline": "I left the prison for a job at the morgue. Best career move I ever made. Nobody's trying to tunnel out, the food complaints dropped to zero, and when I yell lights out they actually stay that way. Head count takes thirty seconds and it's always exact.",
+      "text": "I left the prison for a job at the morgue. Best career move I ever made. Nobody's trying to tunnel out, the food complaints dropped to zero, and when I yell lights out they actually stay that way. Head count takes thirty seconds and it's always exact."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "History Class",
+      "seedTermsUsed": [
+        "Historical",
+        "Being blackmailed"
+      ],
+      "joke": "I got one of those genealogy tests, and now I think my ancestors are blackmailing me. Every week I uncover some new historical relative who did something impressive, and suddenly my phone is like, “Your great-great-grandfather crossed an ocean with no map. You spent twenty minutes choosing a password.” At this point family history feels less like pride and more like a threat.",
+      "setup": "",
+      "punchline": "I got one of those genealogy tests, and now I think my ancestors are blackmailing me. Every week I uncover some new historical relative who did something impressive, and suddenly my phone is like, “Your great-great-grandfather crossed an ocean with no map. You spent twenty minutes choosing a password.” At this point family history feels less like pride and more like a threat.",
+      "text": "I got one of those genealogy tests, and now I think my ancestors are blackmailing me. Every week I uncover some new historical relative who did something impressive, and suddenly my phone is like, “Your great-great-grandfather crossed an ocean with no map. You spent twenty minutes choosing a password.” At this point family history feels less like pride and more like a threat."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear first-person premise and decent rhythm, but the final turn is awkward. The contrast between dead bodies and uncooperative prisoners is predictable, and the punchline lacks a strong snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The obedient morgue clientele premise is immediately obvious. Excessive setup and three variations of the same observation produce diminishing returns. The final line merely confirms the expected joke.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 10,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Economical construction, natural delivery, and effective escalation. The prison-to-morgue comparisons are familiar, but the precise head-count closer adds a satisfying final beat. Amusing rather than exceptional.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The genealogy-as-blackmail premise offers a fresher comic angle. The contrast between an ancestor crossing an ocean and struggling to choose a password is relatable and amusing. However, the strongest laugh arrives before the final sentence, which explains rather than heightens the joke.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean escalation and a sharp final line subverting expectation; slightly familiar affair-confession setup but well executed.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Competent morgue-compliance bit but the 'nobody talks back' angle is a fairly obvious route; mild smile at best.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Tight escalating list with good rhythm; 'lights out' line is the strongest beat, solid but not startling.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Fresh angle turning ancestry pride into guilt-tripping notification; punchline lands cleanly though slightly soft close.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.700000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Classic Henny Youngman/Catskills structure. The misdirection lands squarely on the financial pragmatism over infidelity, though the setup feels familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clean stage voice and smooth rhythm, but comparing living inmates to cadavers who won't lie still is the most immediate path available for these two seeds.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Plays out as an itemized list of morgue tropes (no escapes, quiet night, exact headcount) rather than building toward a single concentrated turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Relatable modern premise with the password contrast, but framing generic ancestral guilt as literal blackmail is a conceptual stretch that softens the punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 5,
+          "total": 5.300000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean escalation and a specific, stage-ready final line that carries the reversal.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Solid parallel with a small polite-request twist; mild but coherent payoff.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Predictable morgue-obedience take; explanatory and low-snap.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Fresh angle on ancestral pressure, but the password example and soft close limit the hit.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear setup and payoff; wife's reaction is a solid turn, though the cheating/blackmail premise feels familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 6,
+          "total": 5.9
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong comparison premise with good escalation; the final line adds an extra twist beyond the obvious morgue-prison similarity.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 7,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Competent and clear, but the punchline follows the most predictable morgue joke path and adds little new escalation.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Efficient writing and multiple tags on the premise, but it leans on a familiar morgue-versus-prison comparison without a strong final turn.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 5,
+          "total": 5.6000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 6.4,
+      "rawScore": 6.6,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.6,
+        "originality": 5.3,
+        "promptFit": 7.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 5.5,
+        "promptFit": 7.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7,
+          "scoreAdjustment": 0,
+          "comment": "Clean escalation and a sharp final line subverting expectation; slightly familiar affair-confession setup but well executed."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.7,
+          "rawScore": 6,
+          "scoreAdjustment": -0.3,
+          "comment": "Classic Henny Youngman/Catskills structure. The misdirection lands squarely on the financial pragmatism over infidelity, though the setup feels familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean escalation and a specific, stage-ready final line that carries the reversal."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear setup and payoff; wife's reaction is a solid turn, though the cheating/blackmail premise feels familiar."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.3,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 6.1,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 7.8
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6,
+        "craft": 6.3,
+        "originality": 6.8,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.7,
+          "comment": "The genealogy-as-blackmail premise offers a fresher comic angle. The contrast between an ancestor crossing an ocean and struggling to choose a password is relatable and amusing. However, the strongest laugh arrives before the final sentence, which explains rather than heightens the joke."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.7,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0,
+          "comment": "Fresh angle turning ancestry pride into guilt-tripping notification; punchline lands cleanly though slightly soft close."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Relatable modern premise with the password contrast, but framing generic ancestral guilt as literal blackmail is a conceptual stretch that softens the punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Fresh angle on ancestral pressure, but the password example and soft close limit the hit."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.2,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.7,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.4,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.7,
+          "comment": "Clear first-person premise and decent rhythm, but the final turn is awkward. The contrast between dead bodies and uncooperative prisoners is predictable, and the punchline lacks a strong snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.1,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean stage voice and smooth rhythm, but comparing living inmates to cadavers who won't lie still is the most immediate path available for these two seeds."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid parallel with a small polite-request twist; mild but coherent payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 7,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong comparison premise with good escalation; the final line adds an extra twist beyond the obvious morgue-prison similarity."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.8,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.1,
+        "craft": 6.3,
+        "originality": 5.1,
+        "promptFit": 7.4
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5,
+        "craft": 6.3,
+        "originality": 5,
+        "promptFit": 7.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.7,
+          "comment": "Economical construction, natural delivery, and effective escalation. The prison-to-morgue comparisons are familiar, but the precise head-count closer adds a satisfying final beat. Amusing rather than exceptional."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.4,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0,
+          "comment": "Tight escalating list with good rhythm; 'lights out' line is the strongest beat, solid but not startling."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 4.2,
+          "rawScore": 4.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Plays out as an itemized list of morgue tropes (no escapes, quiet night, exact headcount) rather than building toward a single concentrated turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.3,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Efficient writing and multiple tags on the premise, but it leans on a familiar morgue-versus-prison comparison without a strong final turn."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 4.9,
+      "rawScore": 4.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.1,
+        "craft": 5.3,
+        "originality": 4.1,
+        "promptFit": 8.1
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4,
+        "craft": 5.3,
+        "originality": 4,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.2,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.7,
+          "comment": "The obedient morgue clientele premise is immediately obvious. Excessive setup and three variations of the same observation produce diminishing returns. The final line merely confirms the expected joke."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0,
+          "comment": "Competent morgue-compliance bit but the 'nobody talks back' angle is a fairly obvious route; mild smile at best."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 4.8,
+          "rawScore": 5,
+          "scoreAdjustment": -0.2,
+          "comment": "Predictable morgue-obedience take; explanatory and low-snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.2,
+          "rawScore": 4.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Competent and clear, but the punchline follows the most predictable morgue joke path and adds little new escalation."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-05-external-real-2026-11-05.png",
+    "originalSrc": "assets/feature-images/2026-11-05-external-real-2026-11-05.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Loyalty Discount: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI ChatGPT - The Loyalty Discount\nExact joke text to render in the right panel:\nMy wife found out I was cheating because my mistress started blackmailing me. She demanded five thousand dollars or she'd tell my wife everything. I paid her. Then she demanded another five thousand. I finally confessed to my wife, who was furious. Not about the affair. About the money. She said, 'You paid ten thousand dollars to keep me from finding out? For fifty bucks, I would've helped you pack.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Historical, Corrections Officer, Morgue, Being blackmailed, Obedient, Disloyal. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Historical, Corrections Officer, Morgue, Being blackmailed, Obedient, Disloyal. Use the winning joke titled \"The Loyalty Discount\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 5.5,
+      "anthropic": 6.1,
+      "google": 6.4,
+      "xai": 6.4,
+      "copilot": 6.4
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-05-external-real-2026-11-05.md"
+}

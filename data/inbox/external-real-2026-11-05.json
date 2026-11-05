@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-05T15:05:21.233Z",
+  "publishedDate": "2026-11-05",
+  "seed": "external-real-2026-11-05",
+  "slug": "2026-11-05-external-real-2026-11-05",
+  "source": "manual-external",
+  "seedTerms": [
+    "Historical",
+    "Corrections Officer",
+    "Morgue",
+    "Being blackmailed",
+    "Obedient",
+    "Disloyal"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-6.1 Sol (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.8 Flash (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-6.1 Sol (ChatGPT web)",
+      "title": "The Loyalty Discount",
+      "seedTermsUsed": ["Being blackmailed", "Disloyal"],
+      "joke": "My wife found out I was cheating because my mistress started blackmailing me. She demanded five thousand dollars or she'd tell my wife everything. I paid her. Then she demanded another five thousand. I finally confessed to my wife, who was furious. Not about the affair. About the money. She said, 'You paid ten thousand dollars to keep me from finding out? For fifty bucks, I would've helped you pack.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My wife found out I was cheating because my mistress started blackmailing me. She demanded five thousand dollars or she'd tell my wife everything. I paid her. Then she demanded another five thousand. I finally confessed to my wife, who was furious. Not about the affair. About the money. She said, 'You paid ten thousand dollars to keep me from finding out? For fifty bucks, I would've helped you pack.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Lateral Move",
+      "seedTermsUsed": ["Corrections Officer", "Morgue"],
+      "joke": "Before I became a corrections officer, I worked the night shift at a morgue. Honestly, barely noticed the change. Same hours, same silence, same paperwork about where somebody's staying tonight. Only real difference is now when I tell a body to stay still, I have to say please, and sometimes they still don't listen.",
+      "setup": "",
+      "punchline": "",
+      "text": "Before I became a corrections officer, I worked the night shift at a morgue. Honestly, barely noticed the change. Same hours, same silence, same paperwork about where somebody's staying tonight. Only real difference is now when I tell a body to stay still, I have to say please, and sometimes they still don't listen."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.8 Flash (web)",
+      "title": "The Graveyard Shift",
+      "seedTermsUsed": ["Morgue", "Obedient"],
+      "joke": "I recently landed a gig at the county morgue, and I have to say, it is easily the least stressful work environment I have ever experienced. My boss loves me because I'm quiet, meticulous, and obedient to every single rule on the checklist. The best part is the clientele: absolutely nobody talks back, nobody complains about the room temperature, and when I politely tell them to stay put, they actually listen.",
+      "setup": "",
+      "punchline": "",
+      "text": "I recently landed a gig at the county morgue, and I have to say, it is easily the least stressful work environment I have ever experienced. My boss loves me because I'm quiet, meticulous, and obedient to every single rule on the checklist. The best part is the clientele: absolutely nobody talks back, nobody complains about the room temperature, and when I politely tell them to stay put, they actually listen."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Quiet Shift",
+      "seedTermsUsed": ["Corrections Officer", "Morgue"],
+      "joke": "I left the prison for a job at the morgue. Best career move I ever made. Nobody's trying to tunnel out, the food complaints dropped to zero, and when I yell lights out they actually stay that way. Head count takes thirty seconds and it's always exact.",
+      "setup": "",
+      "punchline": "",
+      "text": "I left the prison for a job at the morgue. Best career move I ever made. Nobody's trying to tunnel out, the food complaints dropped to zero, and when I yell lights out they actually stay that way. Head count takes thirty seconds and it's always exact."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "History Class",
+      "seedTermsUsed": ["Historical", "Being blackmailed"],
+      "joke": "I got one of those genealogy tests, and now I think my ancestors are blackmailing me. Every week I uncover some new historical relative who did something impressive, and suddenly my phone is like, “Your great-great-grandfather crossed an ocean with no map. You spent twenty minutes choosing a password.” At this point family history feels less like pride and more like a threat.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got one of those genealogy tests, and now I think my ancestors are blackmailing me. Every week I uncover some new historical relative who did something impressive, and suddenly my phone is like, “Your great-great-grandfather crossed an ocean with no map. You spent twenty minutes choosing a password.” At this point family history feels less like pride and more like a threat."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Clear first-person premise and decent rhythm, but the final turn is awkward. The contrast between dead bodies and uncooperative prisoners is predictable, and the punchline lacks a strong snap."},
+        {"jokeId":"joke-c","originality":3,"surprise":3,"craft":5,"promptFit":10,"laugh":4,"comment":"The obedient morgue clientele premise is immediately obvious. Excessive setup and three variations of the same observation produce diminishing returns. The final line merely confirms the expected joke."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Economical construction, natural delivery, and effective escalation. The prison-to-morgue comparisons are familiar, but the precise head-count closer adds a satisfying final beat. Amusing rather than exceptional."},
+        {"jokeId":"joke-e","originality":7,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"The genealogy-as-blackmail premise offers a fresher comic angle. The contrast between an ancestor crossing an ocean and struggling to choose a password is relatable and amusing. However, the strongest laugh arrives before the final sentence, which explains rather than heightens the joke."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Clean escalation and a sharp final line subverting expectation; slightly familiar affair-confession setup but well executed."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Competent morgue-compliance bit but the 'nobody talks back' angle is a fairly obvious route; mild smile at best."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Tight escalating list with good rhythm; 'lights out' line is the strongest beat, solid but not startling."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":6,"comment":"Fresh angle turning ancestry pride into guilt-tripping notification; punchline lands cleanly though slightly soft close."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Classic Henny Youngman/Catskills structure. The misdirection lands squarely on the financial pragmatism over infidelity, though the setup feels familiar."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Clean stage voice and smooth rhythm, but comparing living inmates to cadavers who won't lie still is the most immediate path available for these two seeds."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Plays out as an itemized list of morgue tropes (no escapes, quiet night, exact headcount) rather than building toward a single concentrated turn."},
+        {"jokeId":"joke-e","originality":6,"surprise":5,"craft":6,"promptFit":5,"laugh":5,"comment":"Relatable modern premise with the password contrast, but framing generic ancestral guilt as literal blackmail is a conceptual stretch that softens the punchline."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean escalation and a specific, stage-ready final line that carries the reversal."},
+        {"jokeId":"joke-b","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid parallel with a small polite-request twist; mild but coherent payoff."},
+        {"jokeId":"joke-c","originality":4,"surprise":4,"craft":5,"promptFit":8,"laugh":5,"comment":"Predictable morgue-obedience take; explanatory and low-snap."},
+        {"jokeId":"joke-e","originality":7,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"Fresh angle on ancestral pressure, but the password example and soft close limit the hit."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":6,"craft":6,"promptFit":6,"laugh":6,"comment":"Clear setup and payoff; wife's reaction is a solid turn, though the cheating/blackmail premise feels familiar."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":7,"laugh":7,"comment":"Strong comparison premise with good escalation; the final line adds an extra twist beyond the obvious morgue-prison similarity."},
+        {"jokeId":"joke-c","originality":4,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Competent and clear, but the punchline follows the most predictable morgue joke path and adds little new escalation."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":5,"laugh":6,"comment":"Efficient writing and multiple tags on the premise, but it leans on a familiar morgue-versus-prison comparison without a strong final turn."}
+      ]
+    }
+  ]
+}
