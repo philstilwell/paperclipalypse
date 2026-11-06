@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-06-external-real-2026-11-06",
+  "seed": "external-real-2026-11-06",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-06T14:59:06.946Z",
+  "publishedDate": "2026-11-06",
+  "seedTerms": [
+    "Mind Transfer",
+    "Referee",
+    "Hospital Room",
+    "Escort someone vulnerable",
+    "Uninhibited",
+    "Self-Destructive"
+  ],
+  "premise": {
+    "text": "Seed terms: Mind Transfer, Referee, Hospital Room, Escort someone vulnerable, Uninhibited, Self-Destructive",
+    "seedTerms": [
+      "Mind Transfer",
+      "Referee",
+      "Hospital Room",
+      "Escort someone vulnerable",
+      "Uninhibited",
+      "Self-Destructive"
+    ],
+    "displayText": "Upload Complete"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-6.1 Sol (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-6.1 Sol (ChatGPT web)",
+      "title": "A Better Me",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Self-Destructive"
+      ],
+      "joke": "I signed up for an experimental procedure that transfers your mind into a younger, healthier body. The doctor asked if I had any self-destructive habits. I said, 'Drinking, smoking, gambling, terrible relationships.' He said, 'We can give you a fresh start.' I said, 'Great. Can you make the new guy rich? Because I've got plans for him.'",
+      "setup": "",
+      "punchline": "I signed up for an experimental procedure that transfers your mind into a younger, healthier body. The doctor asked if I had any self-destructive habits. I said, 'Drinking, smoking, gambling, terrible relationships.' He said, 'We can give you a fresh start.' I said, 'Great. Can you make the new guy rich? Because I've got plans for him.'",
+      "text": "I signed up for an experimental procedure that transfers your mind into a younger, healthier body. The doctor asked if I had any self-destructive habits. I said, 'Drinking, smoking, gambling, terrible relationships.' He said, 'We can give you a fresh start.' I said, 'Great. Can you make the new guy rich? Because I've got plans for him.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Upload Complete",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Self-Destructive"
+      ],
+      "joke": "I finally saved up for one of those mind-upload procedures. Forty grand. The pitch was ‘leave your body behind, become pure consciousness, no more bad habits.’ Beautiful. Ninety seconds into my new digital existence, I’m pure light, infinite potential, and I think, ‘man, I could really go for a cigarette.’ I don’t have lungs. I don’t have hands. I found a way.",
+      "setup": "",
+      "punchline": "I finally saved up for one of those mind-upload procedures. Forty grand. The pitch was ‘leave your body behind, become pure consciousness, no more bad habits.’ Beautiful. Ninety seconds into my new digital existence, I’m pure light, infinite potential, and I think, ‘man, I could really go for a cigarette.’ I don’t have lungs. I don’t have hands. I found a way.",
+      "text": "I finally saved up for one of those mind-upload procedures. Forty grand. The pitch was ‘leave your body behind, become pure consciousness, no more bad habits.’ Beautiful. Ninety seconds into my new digital existence, I’m pure light, infinite potential, and I think, ‘man, I could really go for a cigarette.’ I don’t have lungs. I don’t have hands. I found a way."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite (web)",
+      "title": "Hospital Room Advice",
+      "seedTermsUsed": [
+        "Hospital Room",
+        "Self-Destructive"
+      ],
+      "joke": "I spent last weekend visiting my uncle in a hospital room after he tried to deep-fry a frozen turkey in his living room. The doctor walked in, looked at the X-rays of my uncle's scorched eyebrows, and said, 'He is completely, fascinatingly self-destructive.' My uncle didn't even blink. He just pointed his IV drip at me and whispered, 'That's the kind of brand loyalty you can't buy.'",
+      "setup": "",
+      "punchline": "I spent last weekend visiting my uncle in a hospital room after he tried to deep-fry a frozen turkey in his living room. The doctor walked in, looked at the X-rays of my uncle's scorched eyebrows, and said, 'He is completely, fascinatingly self-destructive.' My uncle didn't even blink. He just pointed his IV drip at me and whispered, 'That's the kind of brand loyalty you can't buy.'",
+      "text": "I spent last weekend visiting my uncle in a hospital room after he tried to deep-fry a frozen turkey in his living room. The doctor walked in, looked at the X-rays of my uncle's scorched eyebrows, and said, 'He is completely, fascinatingly self-destructive.' My uncle didn't even blink. He just pointed his IV drip at me and whispered, 'That's the kind of brand loyalty you can't buy.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "New Body Blues",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Self-Destructive"
+      ],
+      "joke": "I did a mind transfer last month. They uploaded me into a fresh body, only the donor turned out to be aggressively self-destructive. So now I’m over here trying to drink water and go to bed early, and my new hands are already ordering shots and texting people I blocked years ago. Last night I woke up on a rooftop with a receipt for a skydiving lesson I don’t remember buying. Apparently the warranty doesn’t cover bad decisions.",
+      "setup": "",
+      "punchline": "I did a mind transfer last month. They uploaded me into a fresh body, only the donor turned out to be aggressively self-destructive. So now I’m over here trying to drink water and go to bed early, and my new hands are already ordering shots and texting people I blocked years ago. Last night I woke up on a rooftop with a receipt for a skydiving lesson I don’t remember buying. Apparently the warranty doesn’t cover bad decisions.",
+      "text": "I did a mind transfer last month. They uploaded me into a fresh body, only the donor turned out to be aggressively self-destructive. So now I’m over here trying to drink water and go to bed early, and my new hands are already ordering shots and texting people I blocked years ago. Last night I woke up on a rooftop with a receipt for a skydiving lesson I don’t remember buying. Apparently the warranty doesn’t cover bad decisions."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Wrong Upgrade",
+      "seedTermsUsed": [
+        "Mind Transfer",
+        "Hospital Room"
+      ],
+      "joke": "I signed up for one of those futuristic mind-transfer experiments because they promised I'd wake up in a better body. I open my eyes in a hospital room, see doctors cheering, and think, \"It worked!\" Then a nurse walks in and says, \"Great news, your surgery was a success.\" I paid extra to become someone else and accidentally upgraded to... recovering from surgery.",
+      "setup": "",
+      "punchline": "I signed up for one of those futuristic mind-transfer experiments because they promised I'd wake up in a better body. I open my eyes in a hospital room, see doctors cheering, and think, \"It worked!\" Then a nurse walks in and says, \"Great news, your surgery was a success.\" I paid extra to become someone else and accidentally upgraded to... recovering from surgery.",
+      "text": "I signed up for one of those futuristic mind-transfer experiments because they promised I'd wake up in a better body. I open my eyes in a hospital room, see doctors cheering, and think, \"It worked!\" Then a nurse walks in and says, \"Great news, your surgery was a success.\" I paid extra to become someone else and accidentally upgraded to... recovering from surgery."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong premise and economical escalation. The persistence of addiction without a body is amusing, but 'I found a way' withholds the concrete payoff that could make the ending genuinely funny.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The frozen-turkey accident provides a recognizable comic setup, but the X-ray detail is awkward and the brand-loyalty punchline has no clear connection to the accident. The ending feels arbitrary rather than earned.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear first-person premise with relatable examples of bad decisions. The conflict between the transferred mind and inherited impulses works, but the rooftop escalation is predictable and the warranty punchline is familiar.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The premise is understandable and uses exactly two seed concepts, but the supposed twist does not establish a meaningful reversal. Recovering from surgery is an expected consequence of the experiment, leaving the punchline without a convincing comic payoff.",
+          "laugh": 3,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 4.199999999999999
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean escalation with a genuinely mercenary button line; solid economical bit.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Fun visual but punchline is a non-sequitur that doesn't quite cash the setup; narrator cedes the laugh to uncle.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Strong escalating structure and a crisp closing line that actually lands the joke.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Reasonable premise but the final line is muddled and undercuts its own twist.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 5.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Competent setup, but the punchline relies on a predictable desire for wealth rather than a sharp comedic turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong existential absurdity with a vivid, well-paced ending that earns its laugh.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Excellent narrative escalation and sharp character conflict between the new mind and old body habits.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 8.2
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Mildly amusing punchline about ending up right back where you started, though slightly verbose in the middle.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean setup and serviceable closer about sabotaging the new body, but the turn is familiar and the laugh is mild.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Addiction surviving pure consciousness is a solid comic idea; the final line lands cleanly without over-explaining.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Hospital-room setup is clear but the brand-loyalty punch feels forced and under-delivers.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Ironic hospital-room reveal is competent but predictable and lacks a sharp final snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and payoff; the rich-guy twist is solid but fairly predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Good escalation from digital perfection to retaining destructive urges; concise final tag lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Readable, but the brand-loyalty punchline feels forced and doesn't strongly connect to the setup.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.1
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Fun body-versus-mind framing with escalation; warranty line is clear but not especially sharp.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 7.2,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.1,
+        "originality": 7.1,
+        "promptFit": 9.6
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 7,
+        "promptFit": 9.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7.5,
+          "rawScore": 6.7,
+          "scoreAdjustment": 0.8,
+          "comment": "Strong premise and economical escalation. The persistence of addiction without a body is amusing, but 'I found a way' withholds the concrete payoff that could make the ending genuinely funny."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 7.2,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong existential absurdity with a vivid, well-paced ending that earns its laugh."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Addiction surviving pure consciousness is a solid comic idea; the final line lands cleanly without over-explaining."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Good escalation from digital perfection to retaining destructive urges; concise final tag lands."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 7.1,
+      "rawScore": 7,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.6,
+        "craft": 7.1,
+        "originality": 6.8,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.8,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.8,
+          "comment": "Clear first-person premise with relatable examples of bad decisions. The conflict between the transferred mind and inherited impulses works, but the rooftop escalation is predictable and the warranty punchline is familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong escalating structure and a crisp closing line that actually lands the joke."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 8.1,
+          "rawScore": 8.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Excellent narrative escalation and sharp character conflict between the new mind and old body habits."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Fun body-versus-mind framing with escalation; warranty line is clear but not especially sharp."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 6.1,
+      "rawScore": 6.3,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.6,
+        "craft": 6.3,
+        "originality": 5.6,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean escalation with a genuinely mercenary button line; solid economical bit."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent setup, but the punchline relies on a predictable desire for wealth rather than a sharp comedic turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean setup and serviceable closer about sabotaging the new body, but the turn is familiar and the laugh is mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise and payoff; the rich-guy twist is solid but fairly predictable."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.4,
+      "rawScore": 5.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.8,
+        "surprise": 5,
+        "craft": 5.3,
+        "originality": 4.8,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 5,
+        "craft": 5.3,
+        "originality": 4.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5,
+          "rawScore": 4.2,
+          "scoreAdjustment": 0.8,
+          "comment": "The premise is understandable and uses exactly two seed concepts, but the supposed twist does not establish a meaningful reversal. Recovering from surgery is an expected consequence of the experiment, leaving the punchline without a convincing comic payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.9,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Reasonable premise but the final line is muddled and undercuts its own twist."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Mildly amusing punchline about ending up right back where you started, though slightly verbose in the middle."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.4,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Ironic hospital-room reveal is competent but predictable and lacks a sharp final snap."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 5.1,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.5,
+        "surprise": 4.8,
+        "craft": 4.8,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.8,
+        "craft": 4.8,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.4,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.8,
+          "comment": "The frozen-turkey accident provides a recognizable comic setup, but the X-ray detail is awkward and the brand-loyalty punchline has no clear connection to the accident. The ending feels arbitrary rather than earned."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Fun visual but punchline is a non-sequitur that doesn't quite cash the setup; narrator cedes the laugh to uncle."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Hospital-room setup is clear but the brand-loyalty punch feels forced and under-delivers."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.9,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Readable, but the brand-loyalty punchline feels forced and doesn't strongly connect to the setup."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-06-external-real-2026-11-06.png",
+    "originalSrc": "assets/feature-images/2026-11-06-external-real-2026-11-06.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Upload Complete: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Upload Complete\nExact joke text to render in the right panel:\nI finally saved up for one of those mind-upload procedures. Forty grand. The pitch was ‘leave your body behind, become pure consciousness, no more bad habits.’ Beautiful. Ninety seconds into my new digital existence, I’m pure light, infinite potential, and I think, ‘man, I could really go for a cigarette.’ I don’t have lungs. I don’t have hands. I found a way.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Mind Transfer, Referee, Hospital Room, Escort someone vulnerable, Uninhibited, Self-Destructive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Mind Transfer, Referee, Hospital Room, Escort someone vulnerable, Uninhibited, Self-Destructive. Use the winning joke titled \"Upload Complete\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 5.3,
+      "anthropic": 6.3,
+      "google": 6.2,
+      "xai": 6.3,
+      "copilot": 6.3
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-06-external-real-2026-11-06.md"
+}

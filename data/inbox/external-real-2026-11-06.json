@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-06T14:59:06.946Z",
+  "publishedDate": "2026-11-06",
+  "seed": "external-real-2026-11-06",
+  "slug": "2026-11-06-external-real-2026-11-06",
+  "source": "manual-external",
+  "seedTerms": [
+    "Mind Transfer",
+    "Referee",
+    "Hospital Room",
+    "Escort someone vulnerable",
+    "Uninhibited",
+    "Self-Destructive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-6.1 Sol (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-6.1 Sol (ChatGPT web)",
+      "title": "A Better Me",
+      "seedTermsUsed": ["Mind Transfer", "Self-Destructive"],
+      "joke": "I signed up for an experimental procedure that transfers your mind into a younger, healthier body. The doctor asked if I had any self-destructive habits. I said, 'Drinking, smoking, gambling, terrible relationships.' He said, 'We can give you a fresh start.' I said, 'Great. Can you make the new guy rich? Because I've got plans for him.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I signed up for an experimental procedure that transfers your mind into a younger, healthier body. The doctor asked if I had any self-destructive habits. I said, 'Drinking, smoking, gambling, terrible relationships.' He said, 'We can give you a fresh start.' I said, 'Great. Can you make the new guy rich? Because I've got plans for him.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Upload Complete",
+      "seedTermsUsed": ["Mind Transfer", "Self-Destructive"],
+      "joke": "I finally saved up for one of those mind-upload procedures. Forty grand. The pitch was ‘leave your body behind, become pure consciousness, no more bad habits.’ Beautiful. Ninety seconds into my new digital existence, I’m pure light, infinite potential, and I think, ‘man, I could really go for a cigarette.’ I don’t have lungs. I don’t have hands. I found a way.",
+      "setup": "",
+      "punchline": "",
+      "text": "I finally saved up for one of those mind-upload procedures. Forty grand. The pitch was ‘leave your body behind, become pure consciousness, no more bad habits.’ Beautiful. Ninety seconds into my new digital existence, I’m pure light, infinite potential, and I think, ‘man, I could really go for a cigarette.’ I don’t have lungs. I don’t have hands. I found a way."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite (web)",
+      "title": "Hospital Room Advice",
+      "seedTermsUsed": ["Hospital Room", "Self-Destructive"],
+      "joke": "I spent last weekend visiting my uncle in a hospital room after he tried to deep-fry a frozen turkey in his living room. The doctor walked in, looked at the X-rays of my uncle's scorched eyebrows, and said, 'He is completely, fascinatingly self-destructive.' My uncle didn't even blink. He just pointed his IV drip at me and whispered, 'That's the kind of brand loyalty you can't buy.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I spent last weekend visiting my uncle in a hospital room after he tried to deep-fry a frozen turkey in his living room. The doctor walked in, looked at the X-rays of my uncle's scorched eyebrows, and said, 'He is completely, fascinatingly self-destructive.' My uncle didn't even blink. He just pointed his IV drip at me and whispered, 'That's the kind of brand loyalty you can't buy.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "New Body Blues",
+      "seedTermsUsed": ["Mind Transfer", "Self-Destructive"],
+      "joke": "I did a mind transfer last month. They uploaded me into a fresh body, only the donor turned out to be aggressively self-destructive. So now I’m over here trying to drink water and go to bed early, and my new hands are already ordering shots and texting people I blocked years ago. Last night I woke up on a rooftop with a receipt for a skydiving lesson I don’t remember buying. Apparently the warranty doesn’t cover bad decisions.",
+      "setup": "",
+      "punchline": "",
+      "text": "I did a mind transfer last month. They uploaded me into a fresh body, only the donor turned out to be aggressively self-destructive. So now I’m over here trying to drink water and go to bed early, and my new hands are already ordering shots and texting people I blocked years ago. Last night I woke up on a rooftop with a receipt for a skydiving lesson I don’t remember buying. Apparently the warranty doesn’t cover bad decisions."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Wrong Upgrade",
+      "seedTermsUsed": ["Mind Transfer", "Hospital Room"],
+      "joke": "I signed up for one of those futuristic mind-transfer experiments because they promised I'd wake up in a better body. I open my eyes in a hospital room, see doctors cheering, and think, \"It worked!\" Then a nurse walks in and says, \"Great news, your surgery was a success.\" I paid extra to become someone else and accidentally upgraded to... recovering from surgery.",
+      "setup": "",
+      "punchline": "",
+      "text": "I signed up for one of those futuristic mind-transfer experiments because they promised I'd wake up in a better body. I open my eyes in a hospital room, see doctors cheering, and think, \"It worked!\" Then a nurse walks in and says, \"Great news, your surgery was a success.\" I paid extra to become someone else and accidentally upgraded to... recovering from surgery."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":7,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Strong premise and economical escalation. The persistence of addiction without a body is amusing, but 'I found a way' withholds the concrete payoff that could make the ending genuinely funny."},
+        {"jokeId":"joke-c","originality":5,"surprise":4,"craft":4,"promptFit":9,"laugh":4,"comment":"The frozen-turkey accident provides a recognizable comic setup, but the X-ray detail is awkward and the brand-loyalty punchline has no clear connection to the accident. The ending feels arbitrary rather than earned."},
+        {"jokeId":"joke-d","originality":6,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear first-person premise with relatable examples of bad decisions. The conflict between the transferred mind and inherited impulses works, but the rooftop escalation is predictable and the warranty punchline is familiar."},
+        {"jokeId":"joke-e","originality":4,"surprise":4,"craft":4,"promptFit":10,"laugh":3,"comment":"The premise is understandable and uses exactly two seed concepts, but the supposed twist does not establish a meaningful reversal. Recovering from surgery is an expected consequence of the experiment, leaving the punchline without a convincing comic payoff."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean escalation with a genuinely mercenary button line; solid economical bit."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":5,"promptFit":7,"laugh":5,"comment":"Fun visual but punchline is a non-sequitur that doesn't quite cash the setup; narrator cedes the laugh to uncle."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":8,"promptFit":8,"laugh":7,"comment":"Strong escalating structure and a crisp closing line that actually lands the joke."},
+        {"jokeId":"joke-e","originality":4,"surprise":5,"craft":5,"promptFit":7,"laugh":5,"comment":"Reasonable premise but the final line is muddled and undercuts its own twist."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Competent setup, but the punchline relies on a predictable desire for wealth rather than a sharp comedic turn."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong existential absurdity with a vivid, well-paced ending that earns its laugh."},
+        {"jokeId":"joke-d","originality":8,"surprise":8,"craft":8,"promptFit":10,"laugh":8,"comment":"Excellent narrative escalation and sharp character conflict between the new mind and old body habits."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Mildly amusing punchline about ending up right back where you started, though slightly verbose in the middle."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean setup and serviceable closer about sabotaging the new body, but the turn is familiar and the laugh is mild."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Addiction surviving pure consciousness is a solid comic idea; the final line lands cleanly without over-explaining."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Hospital-room setup is clear but the brand-loyalty punch feels forced and under-delivers."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Ironic hospital-room reveal is competent but predictable and lacks a sharp final snap."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear premise and payoff; the rich-guy twist is solid but fairly predictable."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Good escalation from digital perfection to retaining destructive urges; concise final tag lands."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":4,"comment":"Readable, but the brand-loyalty punchline feels forced and doesn't strongly connect to the setup."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Fun body-versus-mind framing with escalation; warranty line is clear but not especially sharp."}
+      ]
+    }
+  ]
+}
