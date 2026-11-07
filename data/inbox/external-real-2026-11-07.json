@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-07T15:03:53.712Z",
+  "publishedDate": "2026-11-07",
+  "seed": "external-real-2026-11-07",
+  "slug": "2026-11-07-external-real-2026-11-07",
+  "source": "manual-external",
+  "seedTerms": [
+    "Medical",
+    "Recruiter",
+    "Kitchen",
+    "Public humiliation",
+    "Mature",
+    "Promiscuous"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-5.4 Mini (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-5.4 Mini (ChatGPT web)",
+      "title": "The Family Recipe",
+      "seedTermsUsed": ["Kitchen", "Public humiliation"],
+      "joke": "My wife says I embarrass her every time I cook for guests. Last Thanksgiving, I tried to prove her wrong. I made the entire dinner myself. Everyone loved it. Then my mother-in-law asked for the recipe, and my wife said, 'Just follow the instructions on the box.' I said, 'That's not fair. I added water without measuring it.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My wife says I embarrass her every time I cook for guests. Last Thanksgiving, I tried to prove her wrong. I made the entire dinner myself. Everyone loved it. Then my mother-in-law asked for the recipe, and my wife said, 'Just follow the instructions on the box.' I said, 'That's not fair. I added water without measuring it.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Mature Content Warning",
+      "seedTermsUsed": ["Mature", "Promiscuous"],
+      "joke": "I’m 50, back on dating apps, and I check the box that says ‘mature.’ Big mistake. Turns out on that app ‘mature’ isn’t a personality trait, it’s a content rating. I showed up hoping to meet someone who’d discuss retirement accounts. Instead I met four people who had, between them, personally dated my entire apartment building.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m 50, back on dating apps, and I check the box that says ‘mature.’ Big mistake. Turns out on that app ‘mature’ isn’t a personality trait, it’s a content rating. I showed up hoping to meet someone who’d discuss retirement accounts. Instead I met four people who had, between them, personally dated my entire apartment building."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite (web)",
+      "title": "The Family Reunion",
+      "seedTermsUsed": ["Medical", "Public humiliation"],
+      "joke": "My aunt cornered me at Thanksgiving to ask why I’m still single, and she didn’t whisper it. She used her outdoor indoor voice, the one usually reserved for announcing a medical emergency on a Greyhound bus. Everyone stopped chewing. I didn't even get to defend myself before my uncle chimed in to diagnose me with a terminal lack of hustle. Honestly, I'd rather take my chances in the electric chair than sit through another three-course trial where my romantic life is dragged in front of the jury.",
+      "setup": "",
+      "punchline": "",
+      "text": "My aunt cornered me at Thanksgiving to ask why I’m still single, and she didn’t whisper it. She used her outdoor indoor voice, the one usually reserved for announcing a medical emergency on a Greyhound bus. Everyone stopped chewing. I didn't even get to defend myself before my uncle chimed in to diagnose me with a terminal lack of hustle. Honestly, I'd rather take my chances in the electric chair than sit through another three-course trial where my romantic life is dragged in front of the jury."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Blender Disaster",
+      "seedTermsUsed": ["Kitchen", "Public humiliation"],
+      "joke": "I invited the in-laws over for dinner to show off my cooking skills. Everything was fine until I hit the blender without the lid. Tomato sauce exploded across the entire kitchen—ceiling, counters, my face. I walked out to the table covered in red, and my father-in-law just looked at me and said, 'Well, at least we know it's fresh.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I invited the in-laws over for dinner to show off my cooking skills. Everything was fine until I hit the blender without the lid. Tomato sauce exploded across the entire kitchen—ceiling, counters, my face. I walked out to the table covered in red, and my father-in-law just looked at me and said, 'Well, at least we know it's fresh.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Experience Counts",
+      "seedTermsUsed": ["Medical", "Recruiter"],
+      "joke": "A recruiter called and said, \"There’s a huge shortage of doctors. Do you have any medical experience?\" I said, \"I’ve watched every hospital drama on TV.\" She laughed and hung up. Honestly, that felt unfair. The surgeon on those shows operates after one inspirational speech. I at least asked about the health insurance.",
+      "setup": "",
+      "punchline": "",
+      "text": "A recruiter called and said, \"There’s a huge shortage of doctors. Do you have any medical experience?\" I said, \"I’ve watched every hospital drama on TV.\" She laughed and hung up. Honestly, that felt unfair. The surgeon on those shows operates after one inspirational speech. I at least asked about the health insurance."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clear first-person premise and natural use of both concepts. The content-rating misunderstanding is predictable, and the apartment-building exaggeration offers a modest payoff without a particularly sharp punchline."},
+        {"jokeId":"joke-c","originality":4,"surprise":3,"craft":4,"promptFit":4,"laugh":4,"comment":"The public embarrassment is clear, but the medical-emergency comparison is incidental rather than a meaningful second concept. Multiple competing metaphors dilute the rhythm, and the electric-chair comparison adds intensity without delivering a surprising punchline."},
+        {"jokeId":"joke-d","originality":4,"surprise":3,"craft":5,"promptFit":9,"laugh":4,"comment":"Straightforward setup and understandable kitchen disaster, but the lidless-blender accident is extremely familiar. The final remark is weak and does not meaningfully reinterpret the situation or deliver a strong laugh."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":6,"promptFit":9,"laugh":5,"comment":"The medical-drama premise is familiar, but the final health-insurance comparison introduces a reasonably unexpected perspective. Clear first-person delivery, though the punchline is more mildly clever than genuinely funny."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":7,"laugh":5,"comment":"Clean escalation with a decent closing line, but the payoff is mild and understated."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":5,"promptFit":5,"laugh":5,"comment":"Promising premise but gets muddled—the medical/courtroom/trial imagery mixes metaphors and the ending overreaches rather than snapping clean."},
+        {"jokeId":"joke-d","originality":5,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Solid visual chaos and a decent tag line, though ‘at least it’s fresh’ is a fairly expected wordplay turn."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Good premise and a believable button about insurance, though the TV-doctor bit is a fairly familiar comic route."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Solid domestic setup and good prompt adherence, but the punchline relies on a fairly standard marital banter trope."},
+        {"jokeId":"joke-b","originality":8,"surprise":8,"craft":8,"promptFit":8,"laugh":8,"comment":"Sharp timing, great pivot on the word 'mature,' and a strong final escalation that lands cleanly."},
+        {"jokeId":"joke-d","originality":5,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"Classic physical comedy trope; the punchline is decent but the setup is a bit predictable."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Nice structural economy and a witty closing line about health insurance, though the TV doctor premise is well-trodden."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":4,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Familiar boxed-dinner reveal with a soft water-measuring tag; competent but low payoff."},
+        {"jokeId":"joke-b","originality":7,"surprise":8,"craft":8,"promptFit":8,"laugh":7,"comment":"Sharp reframe of the mature filter as a content rating, capped by a specific and escalating final image."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":7,"promptFit":7,"laugh":6,"comment":"Solid family-roasting premise with useful medical metaphors, but the territory and turn remain familiar."},
+        {"jokeId":"joke-e","originality":3,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Thin premise that leans on a common hospital-drama cliché; the final line does not land a real turn."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":6,"comment":"Solid kitchen embarrassment premise with a clear punchline; familiar territory but competently delivered."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong misdirection on the meaning of 'mature' and a good escalating final image; natural stand-up voice."},
+        {"jokeId":"joke-c","originality":5,"surprise":4,"craft":5,"promptFit":10,"laugh":5,"comment":"Clear public-humiliation scenario but more rant than joke; several amusing lines without a strong closing turn."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":10,"laugh":5,"comment":"Easy to follow and publishable, but the blender mishap and response are predictable and lightly funny rather than memorable."}
+      ]
+    }
+  ]
+}

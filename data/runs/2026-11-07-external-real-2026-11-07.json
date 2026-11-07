@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-07-external-real-2026-11-07",
+  "seed": "external-real-2026-11-07",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-07T15:03:53.712Z",
+  "publishedDate": "2026-11-07",
+  "seedTerms": [
+    "Medical",
+    "Recruiter",
+    "Kitchen",
+    "Public humiliation",
+    "Mature",
+    "Promiscuous"
+  ],
+  "premise": {
+    "text": "Seed terms: Medical, Recruiter, Kitchen, Public humiliation, Mature, Promiscuous",
+    "seedTerms": [
+      "Medical",
+      "Recruiter",
+      "Kitchen",
+      "Public humiliation",
+      "Mature",
+      "Promiscuous"
+    ],
+    "displayText": "Mature Content Warning"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.4 Mini",
+      "provider": "openai",
+      "model": "GPT-5.4 Mini (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-5.4 Mini (ChatGPT web)",
+      "title": "The Family Recipe",
+      "seedTermsUsed": [
+        "Kitchen",
+        "Public humiliation"
+      ],
+      "joke": "My wife says I embarrass her every time I cook for guests. Last Thanksgiving, I tried to prove her wrong. I made the entire dinner myself. Everyone loved it. Then my mother-in-law asked for the recipe, and my wife said, 'Just follow the instructions on the box.' I said, 'That's not fair. I added water without measuring it.'",
+      "setup": "",
+      "punchline": "My wife says I embarrass her every time I cook for guests. Last Thanksgiving, I tried to prove her wrong. I made the entire dinner myself. Everyone loved it. Then my mother-in-law asked for the recipe, and my wife said, 'Just follow the instructions on the box.' I said, 'That's not fair. I added water without measuring it.'",
+      "text": "My wife says I embarrass her every time I cook for guests. Last Thanksgiving, I tried to prove her wrong. I made the entire dinner myself. Everyone loved it. Then my mother-in-law asked for the recipe, and my wife said, 'Just follow the instructions on the box.' I said, 'That's not fair. I added water without measuring it.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Mature Content Warning",
+      "seedTermsUsed": [
+        "Mature",
+        "Promiscuous"
+      ],
+      "joke": "I’m 50, back on dating apps, and I check the box that says ‘mature.’ Big mistake. Turns out on that app ‘mature’ isn’t a personality trait, it’s a content rating. I showed up hoping to meet someone who’d discuss retirement accounts. Instead I met four people who had, between them, personally dated my entire apartment building.",
+      "setup": "",
+      "punchline": "I’m 50, back on dating apps, and I check the box that says ‘mature.’ Big mistake. Turns out on that app ‘mature’ isn’t a personality trait, it’s a content rating. I showed up hoping to meet someone who’d discuss retirement accounts. Instead I met four people who had, between them, personally dated my entire apartment building.",
+      "text": "I’m 50, back on dating apps, and I check the box that says ‘mature.’ Big mistake. Turns out on that app ‘mature’ isn’t a personality trait, it’s a content rating. I showed up hoping to meet someone who’d discuss retirement accounts. Instead I met four people who had, between them, personally dated my entire apartment building."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite (web)",
+      "title": "The Family Reunion",
+      "seedTermsUsed": [
+        "Medical",
+        "Public humiliation"
+      ],
+      "joke": "My aunt cornered me at Thanksgiving to ask why I’m still single, and she didn’t whisper it. She used her outdoor indoor voice, the one usually reserved for announcing a medical emergency on a Greyhound bus. Everyone stopped chewing. I didn't even get to defend myself before my uncle chimed in to diagnose me with a terminal lack of hustle. Honestly, I'd rather take my chances in the electric chair than sit through another three-course trial where my romantic life is dragged in front of the jury.",
+      "setup": "",
+      "punchline": "My aunt cornered me at Thanksgiving to ask why I’m still single, and she didn’t whisper it. She used her outdoor indoor voice, the one usually reserved for announcing a medical emergency on a Greyhound bus. Everyone stopped chewing. I didn't even get to defend myself before my uncle chimed in to diagnose me with a terminal lack of hustle. Honestly, I'd rather take my chances in the electric chair than sit through another three-course trial where my romantic life is dragged in front of the jury.",
+      "text": "My aunt cornered me at Thanksgiving to ask why I’m still single, and she didn’t whisper it. She used her outdoor indoor voice, the one usually reserved for announcing a medical emergency on a Greyhound bus. Everyone stopped chewing. I didn't even get to defend myself before my uncle chimed in to diagnose me with a terminal lack of hustle. Honestly, I'd rather take my chances in the electric chair than sit through another three-course trial where my romantic life is dragged in front of the jury."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Blender Disaster",
+      "seedTermsUsed": [
+        "Kitchen",
+        "Public humiliation"
+      ],
+      "joke": "I invited the in-laws over for dinner to show off my cooking skills. Everything was fine until I hit the blender without the lid. Tomato sauce exploded across the entire kitchen—ceiling, counters, my face. I walked out to the table covered in red, and my father-in-law just looked at me and said, 'Well, at least we know it's fresh.'",
+      "setup": "",
+      "punchline": "I invited the in-laws over for dinner to show off my cooking skills. Everything was fine until I hit the blender without the lid. Tomato sauce exploded across the entire kitchen—ceiling, counters, my face. I walked out to the table covered in red, and my father-in-law just looked at me and said, 'Well, at least we know it's fresh.'",
+      "text": "I invited the in-laws over for dinner to show off my cooking skills. Everything was fine until I hit the blender without the lid. Tomato sauce exploded across the entire kitchen—ceiling, counters, my face. I walked out to the table covered in red, and my father-in-law just looked at me and said, 'Well, at least we know it's fresh.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Experience Counts",
+      "seedTermsUsed": [
+        "Medical",
+        "Recruiter"
+      ],
+      "joke": "A recruiter called and said, \"There’s a huge shortage of doctors. Do you have any medical experience?\" I said, \"I’ve watched every hospital drama on TV.\" She laughed and hung up. Honestly, that felt unfair. The surgeon on those shows operates after one inspirational speech. I at least asked about the health insurance.",
+      "setup": "",
+      "punchline": "A recruiter called and said, \"There’s a huge shortage of doctors. Do you have any medical experience?\" I said, \"I’ve watched every hospital drama on TV.\" She laughed and hung up. Honestly, that felt unfair. The surgeon on those shows operates after one inspirational speech. I at least asked about the health insurance.",
+      "text": "A recruiter called and said, \"There’s a huge shortage of doctors. Do you have any medical experience?\" I said, \"I’ve watched every hospital drama on TV.\" She laughed and hung up. Honestly, that felt unfair. The surgeon on those shows operates after one inspirational speech. I at least asked about the health insurance."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear first-person premise and natural use of both concepts. The content-rating misunderstanding is predictable, and the apartment-building exaggeration offers a modest payoff without a particularly sharp punchline.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The public embarrassment is clear, but the medical-emergency comparison is incidental rather than a meaningful second concept. Multiple competing metaphors dilute the rhythm, and the electric-chair comparison adds intensity without delivering a surprising punchline.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 4,
+          "total": 3.8
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Straightforward setup and understandable kitchen disaster, but the lidless-blender accident is extremely familiar. The final remark is weak and does not meaningfully reinterpret the situation or deliver a strong laugh.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The medical-drama premise is familiar, but the final health-insurance comparison introduces a reasonably unexpected perspective. Clear first-person delivery, though the punchline is more mildly clever than genuinely funny.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.800000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean escalation with a decent closing line, but the payoff is mild and understated.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Promising premise but gets muddled—the medical/courtroom/trial imagery mixes metaphors and the ending overreaches rather than snapping clean.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 5,
+          "total": 5.1
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Solid visual chaos and a decent tag line, though ‘at least it’s fresh’ is a fairly expected wordplay turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Good premise and a believable button about insurance, though the TV-doctor bit is a fairly familiar comic route.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid domestic setup and good prompt adherence, but the punchline relies on a fairly standard marital banter trope.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Sharp timing, great pivot on the word 'mature,' and a strong final escalation that lands cleanly.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Classic physical comedy trope; the punchline is decent but the setup is a bit predictable.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Nice structural economy and a witty closing line about health insurance, though the TV doctor premise is well-trodden.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Familiar boxed-dinner reveal with a soft water-measuring tag; competent but low payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Sharp reframe of the mature filter as a content rating, capped by a specific and escalating final image.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.5
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Solid family-roasting premise with useful medical metaphors, but the territory and turn remain familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.300000000000002
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Thin premise that leans on a common hospital-drama cliché; the final line does not land a real turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 3,
+          "promptFit": 8,
+          "total": 4.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid kitchen embarrassment premise with a clear punchline; familiar territory but competently delivered.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong misdirection on the meaning of 'mature' and a good escalating final image; natural stand-up voice.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear public-humiliation scenario but more rant than joke; several amusing lines without a strong closing turn.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Easy to follow and publishable, but the blender mishap and response are predictable and lightly funny rather than memorable.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 10,
+          "total": 5.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 7.1,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.4,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.8,
+          "comment": "Clear first-person premise and natural use of both concepts. The content-rating misunderstanding is predictable, and the apartment-building exaggeration offers a modest payoff without a particularly sharp punchline."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.7,
+          "rawScore": 8,
+          "scoreAdjustment": -0.3,
+          "comment": "Sharp timing, great pivot on the word 'mature,' and a strong final escalation that lands cleanly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.3,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Sharp reframe of the mature filter as a content rating, capped by a specific and escalating final image."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong misdirection on the meaning of 'mature' and a good escalating final image; natural stand-up voice."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.7,
+      "rawScore": 5.7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.5,
+        "craft": 6,
+        "originality": 5,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.6,
+          "rawScore": 5.8,
+          "scoreAdjustment": 0.8,
+          "comment": "The medical-drama premise is familiar, but the final health-insurance comparison introduces a reasonably unexpected perspective. Clear first-person delivery, though the punchline is more mildly clever than genuinely funny."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Good premise and a believable button about insurance, though the TV-doctor bit is a fairly familiar comic route."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Nice structural economy and a witty closing line about health insurance, though the TV doctor premise is well-trodden."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 4.3,
+          "rawScore": 4.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Thin premise that leans on a common hospital-drama cliché; the final line does not land a real turn."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.4,
+      "rawScore": 5.4,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.8,
+        "craft": 5.6,
+        "originality": 4.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.8,
+        "craft": 5.5,
+        "originality": 4.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.3,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.8,
+          "comment": "Straightforward setup and understandable kitchen disaster, but the lidless-blender accident is extremely familiar. The final remark is weak and does not meaningfully reinterpret the situation or deliver a strong laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 6,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid visual chaos and a decent tag line, though ‘at least it’s fresh’ is a fairly expected wordplay turn."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Classic physical comedy trope; the punchline is decent but the setup is a bit predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Easy to follow and publishable, but the blender mishap and response are predictable and lightly funny rather than memorable."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 5.4,
+      "rawScore": 5.6,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5,
+        "surprise": 4.8,
+        "craft": 5.8,
+        "originality": 4.5,
+        "promptFit": 8
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 6,
+        "originality": 4.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.2,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean escalation with a decent closing line, but the payoff is mild and understated."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.2,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid domestic setup and good prompt adherence, but the punchline relies on a fairly standard marital banter trope."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.2,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Familiar boxed-dinner reveal with a soft water-measuring tag; competent but low payoff."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid kitchen embarrassment premise with a clear punchline; familiar territory but competently delivered."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 5.2,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.6,
+        "craft": 5.3,
+        "originality": 5.3,
+        "promptFit": 6.6
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 4.5,
+        "craft": 5.3,
+        "originality": 5.3,
+        "promptFit": 6.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 4.6,
+          "rawScore": 3.8,
+          "scoreAdjustment": 0.8,
+          "comment": "The public embarrassment is clear, but the medical-emergency comparison is incidental rather than a meaningful second concept. Multiple competing metaphors dilute the rhythm, and the electric-chair comparison adds intensity without delivering a surprising punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.9,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Promising premise but gets muddled—the medical/courtroom/trial imagery mixes metaphors and the ending overreaches rather than snapping clean."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid family-roasting premise with useful medical metaphors, but the territory and turn remain familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear public-humiliation scenario but more rant than joke; several amusing lines without a strong closing turn."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-07-external-real-2026-11-07.png",
+    "originalSrc": "assets/feature-images/2026-11-07-external-real-2026-11-07.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Mature Content Warning: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Mature Content Warning\nExact joke text to render in the right panel:\nI’m 50, back on dating apps, and I check the box that says ‘mature.’ Big mistake. Turns out on that app ‘mature’ isn’t a personality trait, it’s a content rating. I showed up hoping to meet someone who’d discuss retirement accounts. Instead I met four people who had, between them, personally dated my entire apartment building.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Medical, Recruiter, Kitchen, Public humiliation, Mature, Promiscuous. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Medical, Recruiter, Kitchen, Public humiliation, Mature, Promiscuous. Use the winning joke titled \"Mature Content Warning\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 5.4,
+      "anthropic": 6.3,
+      "google": 6.4,
+      "xai": 6.4,
+      "copilot": 6.3
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-07-external-real-2026-11-07.md"
+}
