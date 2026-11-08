@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-08T17:54:55.000Z",
+  "publishedDate": "2026-11-08",
+  "seed": "external-real-2026-11-08",
+  "slug": "2026-11-08-external-real-2026-11-08",
+  "source": "manual-external",
+  "seedTerms": [
+    "Monsters",
+    "Tattoo Artist / Piercer",
+    "Wine Cellar",
+    "Bureaucracy tying hands",
+    "Curious",
+    "Lazy"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-5.6 Sol",
+      "provider": "openai",
+      "model": "GPT-5.6 Sol (ChatGPT web)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok 4.3",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "GPT-5.6 Sol (ChatGPT web)",
+      "title": "The Perfect Job",
+      "seedTermsUsed": ["Wine Cellar", "Lazy"],
+      "joke": "I got a job in a wine cellar. My boss said, 'The most important thing is patience. Some of these bottles need to sit undisturbed for twenty years.' I said, 'Finally, a job that rewards my natural talents.' He fired me the next morning. Apparently scheduling my second shift for 2046 showed a lack of commitment.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got a job in a wine cellar. My boss said, 'The most important thing is patience. Some of these bottles need to sit undisturbed for twenty years.' I said, 'Finally, a job that rewards my natural talents.' He fired me the next morning. Apparently scheduling my second shift for 2046 showed a lack of commitment."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Mid-Tattoo TED Talk",
+      "seedTermsUsed": ["Tattoo Artist / Piercer", "Curious"],
+      "joke": "I got a tattoo on my ribs, which already feels like being stabbed by someone with trust issues. But the worst part was my tattoo artist got curious halfway through and just stopped. Put the gun down, tilted his head, and went, ‘Wait, what does this symbol actually mean?’ Buddy, you are forty minutes deep into my skin. This is not a TED talk. This is a hostage situation. Finish the shape.",
+      "setup": "",
+      "punchline": "",
+      "text": "I got a tattoo on my ribs, which already feels like being stabbed by someone with trust issues. But the worst part was my tattoo artist got curious halfway through and just stopped. Put the gun down, tilted his head, and went, ‘Wait, what does this symbol actually mean?’ Buddy, you are forty minutes deep into my skin. This is not a TED talk. This is a hostage situation. Finish the shape."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite (web)",
+      "title": "Bad Ink",
+      "seedTermsUsed": ["Tattoo Artist / Piercer", "Lazy"],
+      "joke": "I went to get a tattoo of a majestic dragon across my entire back, but my artist was so lazy he just drew a giant green comma. Now I walk around looking like a grammatical emergency in a locker room.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to get a tattoo of a majestic dragon across my entire back, but my artist was so lazy he just drew a giant green comma. Now I walk around looking like a grammatical emergency in a locker room."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Underbed Outsourcing",
+      "seedTermsUsed": ["Monsters", "Lazy"],
+      "joke": "I’m too lazy to deal with the monsters under my bed. So I started leaving snacks down there. Now they do my laundry. I supply the Cheetos, they fold the socks. Best arrangement I’ve ever negotiated.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m too lazy to deal with the monsters under my bed. So I started leaving snacks down there. Now they do my laundry. I supply the Cheetos, they fold the socks. Best arrangement I’ve ever negotiated."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Basement Mystery",
+      "seedTermsUsed": ["Curious", "Wine Cellar"],
+      "joke": "I'm so curious that when a realtor said, \"And downstairs is the wine cellar,\" I immediately opened every bottle looking for clues. Two hours later I called her and said, 'Good news: I solved the mystery.' She asked, 'What mystery?' I said, 'Why people store this room next to the stairs.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm so curious that when a realtor said, \"And downstairs is the wine cellar,\" I immediately opened every bottle looking for clues. Two hours later I called her and said, 'Good news: I solved the mystery.' She asked, 'What mystery?' I said, 'Why people store this room next to the stairs.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Clear, relatable premise with effective escalation. The hostage comparison gets a mild laugh, but the final line is more an expression of frustration than a stronger punchline."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"The transformation from majestic dragon to giant comma is unexpected and visually specific. The grammatical emergency punchline is clever and concise, though more likely to produce a chuckle than a substantial laugh."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":4,"comment":"Understandable and economical, but the monsters becoming household helpers feels like familiar whimsical absurdity. The final sentence merely celebrates the arrangement rather than delivering a new comic turn."},
+        {"jokeId":"joke-e","originality":4,"surprise":3,"craft":3,"promptFit":9,"laugh":2,"comment":"The curiosity premise is clear, but opening bottles to investigate a cellar lacks a convincing comic connection to the final observation. The punchline is confusing rather than surprising, leaving little payoff."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean premise, solid escalation, punchline lands but is a bit telegraphed once ‘2046’ appears."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Pun-driven; the comma image is cute but the laugh is mild and the ‘grammatical emergency’ tag feels like a reach."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Fun transactional-monster conceit with a tidy button line; competent but not a standout turn."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Good misdirect building to an absurd ‘mystery solved,’ and the final line lands as a real non-obvious snap."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Clean, predictable setup-punchline structure; the 2046 punchline provides a solid, clear turn."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong physical comparison and good escalation ('hostage situation'), though slightly wordy."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"A bit simplistic and cartoonish, relying on a familiar whimsical trope without much deep surprise."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":5,"promptFit":10,"laugh":5,"comment":"Punchline lands flat as it misses the actual functional premise of a wine cellar."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Clean setup and specific 2046 payoff deliver a mild, workable lazy joke."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Strong mid-procedure interruption and hostage closer with solid stage timing."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Sharp visual of the green comma lands a concise, image-based laugh."},
+        {"jokeId":"joke-e","originality":5,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"Curiosity setup is clear but the mystery resolution stays vague and weak."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong escalation from patience to a 2046 shift; clean structure and solid punchline."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":8,"comment":"Clear premise, vivid imagery, and the hostage-situation turn lands well with good rhythm."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Simple visual joke; understandable but the comma reveal is fairly predictable and lightly amusing."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":5,"comment":"Fun monster-laundry image, but the premise resolves quickly and lacks a strong final punch."}
+      ]
+    }
+  ]
+}
