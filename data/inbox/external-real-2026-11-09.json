@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-09T15:34:23.257Z",
+  "publishedDate": "2026-11-09",
+  "seed": "external-real-2026-11-09",
+  "slug": "2026-11-09-external-real-2026-11-09",
+  "source": "manual-external",
+  "seedTerms": [
+    "Time Travel",
+    "Funeral Director / Undertaker",
+    "Quarry",
+    "Having to pick the lesser of two evils",
+    "Courageous",
+    "Promiscuous"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (Thinking High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (Thinking High)",
+      "title": "Planning Ahead",
+      "seedTermsUsed": ["Time Travel", "Funeral Director / Undertaker"],
+      "joke": "I traveled thirty years into the future to find out when I'd die. I walked into a funeral home and asked the director if he had any records on me. He said, 'Oh, absolutely. Your ex-wife prepaid for your funeral.' I was genuinely touched. Then he added, 'She's been calling every Friday to see if we've had a cancellation.'",
+      "setup": "",
+      "punchline": "",
+      "text": "I traveled thirty years into the future to find out when I'd die. I walked into a funeral home and asked the director if he had any records on me. He said, 'Oh, absolutely. Your ex-wife prepaid for your funeral.' I was genuinely touched. Then he added, 'She's been calling every Friday to see if we've had a cancellation.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Open Casket, Open Bar",
+      "seedTermsUsed": ["Funeral Director / Undertaker", "Having to pick the lesser of two evils"],
+      "joke": "I dated a funeral director for a while. Great listener, terrible texter, and every single decision in that relationship was the lesser of two evils. Dinner? “Well, I’ve got an open casket at six and a cremation at eight, so... Italian?” I broke up with him the day he described our anniversary as “viewing hours.”",
+      "setup": "",
+      "punchline": "",
+      "text": "I dated a funeral director for a while. Great listener, terrible texter, and every single decision in that relationship was the lesser of two evils. Dinner? “Well, I’ve got an open casket at six and a cremation at eight, so... Italian?” I broke up with him the day he described our anniversary as “viewing hours.”"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash-Lite (web)",
+      "title": "Final Decisions",
+      "seedTermsUsed": ["Funeral Director / Undertaker", "Having to pick the lesser of two evils"],
+      "joke": "My uncle was a funeral director for forty years, which means he spent his entire career dealing with people who finally made up their minds. But the stress got to him. He told me choosing between embalming my aunt or letting my cousin give the eulogy was the hardest choice of his life. I said, 'Uncle Gary, that's not picking the lesser of two evils.' He whispered, 'I know. They both involve open caskets and my cousin singing.'",
+      "setup": "",
+      "punchline": "",
+      "text": "My uncle was a funeral director for forty years, which means he spent his entire career dealing with people who finally made up their minds. But the stress got to him. He told me choosing between embalming my aunt or letting my cousin give the eulogy was the hardest choice of his life. I said, 'Uncle Gary, that's not picking the lesser of two evils.' He whispered, 'I know. They both involve open caskets and my cousin singing.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Time-Traveling Undertaker",
+      "seedTermsUsed": ["Time Travel", "Funeral Director / Undertaker"],
+      "joke": "I finally cracked time travel, so I did the only sensible thing—I became a funeral director. Now I go back a few days, hang out with the guy, learn the real stories, then show up at the service ready to eulogize like we were best friends. Families are blown away. The only awkward part is when the widow says, \"You must have known him so well,\" and I have to nod like I didn't just spend last Tuesday teaching him how to parallel park.",
+      "setup": "",
+      "punchline": "",
+      "text": "I finally cracked time travel, so I did the only sensible thing—I became a funeral director. Now I go back a few days, hang out with the guy, learn the real stories, then show up at the service ready to eulogize like we were best friends. Families are blown away. The only awkward part is when the widow says, \"You must have known him so well,\" and I have to nod like I didn't just spend last Tuesday teaching him how to parallel park."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Advance Notice",
+      "seedTermsUsed": ["Time Travel", "Funeral Director / Undertaker"],
+      "joke": "I accidentally time-traveled a week into the future and the first person I ran into was my funeral director. I panicked and asked, \"Wait, I die next week?\" He said, \"Relax, this is why nobody likes surprise parties. Just act shocked when you get there.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I accidentally time-traveled a week into the future and the first person I ran into was my funeral director. I panicked and asked, \"Wait, I die next week?\" He said, \"Relax, this is why nobody likes surprise parties. Just act shocked when you get there.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":5,"surprise":6,"craft":6,"promptFit":7,"laugh":6,"comment":"Clear first-person setup and a solid closing line with 'viewing hours.' The funeral-related wordplay is familiar, and the lesser-of-two-evils concept feels inserted rather than developed. Amusing but not especially memorable."},
+        {"jokeId":"joke-c","originality":5,"surprise":4,"craft":3,"promptFit":7,"laugh":4,"comment":"The opening has potential, but the central dilemma is arbitrary and the punchline is logically muddled. The connection between embalming, open caskets, and the cousin singing is insufficiently clear to deliver a satisfying laugh."},
+        {"jokeId":"joke-d","originality":7,"surprise":6,"craft":6,"promptFit":9,"laugh":5,"comment":"An inventive and coherent combination of time travel and funeral directing. The premise creates genuine comic possibilities, but the parallel-parking reveal is more quirky than funny. Strong concept, underpowered payoff."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Economical setup, immediate stakes, and a clean reversal that reframes the funeral as a surprise party. The final instruction to 'act shocked' provides a recognizable comic payoff, although the underlying death-and-surprise wordplay is fairly conventional."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean setup, strong escalating final line with real sting; natural stand-up voice throughout."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Decent dual-concept use but the ‘that’s not picking the lesser of two evils’ beat is clunky and the punchline is muddled."},
+        {"jokeId":"joke-d","originality":7,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Fun premise with a specific, absurd closing image; slightly overlong setup blunts the snap."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Tight and economical, good deadpan final line, but the idea is slighter and less memorable than the others."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Solid escalation and structure; the Friday cancellation callback lands a clean punchline."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong character-based premise with a sharp punchline on the anniversary viewing hours."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Clever use of time travel for comedic social infiltration, though slightly wordy."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Neat twist on the premise, turning a morbid encounter into an accidental spoiler for a surprise party."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid dark turn on the weekly check-in; clean delivery but familiar ex-wife bitterness keeps it from rising higher."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Competent profession-meets-relationship bit; 'viewing hours' is a mild closer but the lesser-of-two-evils framing feels stated rather than earned."},
+        {"jokeId":"joke-c","originality":4,"surprise":4,"craft":5,"promptFit":7,"laugh":4,"comment":"Wordy anecdote that forces the seed phrase; the cousin-singing payoff is the obvious route and lands soft."},
+        {"jokeId":"joke-e","originality":7,"surprise":8,"craft":8,"promptFit":9,"laugh":7,"comment":"Tight premise and non-obvious 'surprise party' reframe; final line carries cleanly with strong stage rhythm."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Strong clear setup and escalation; the cancellation tag lands cleanly and naturally."},
+        {"jokeId":"joke-b","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Coherent relationship premise, but the beats feel familiar and the ending is predictable."},
+        {"jokeId":"joke-c","originality":5,"surprise":4,"craft":5,"promptFit":8,"laugh":4,"comment":"The cousin-singing comparison is understandable, but the turn is telegraphed and only mildly funny."},
+        {"jokeId":"joke-d","originality":8,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Inventive premise with good internal logic; the parallel-parking detail gives the concept a memorable finish."}
+      ]
+    }
+  ]
+}

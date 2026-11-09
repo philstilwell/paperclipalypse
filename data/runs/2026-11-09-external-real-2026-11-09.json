@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-09-external-real-2026-11-09",
+  "seed": "external-real-2026-11-09",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-09T15:34:23.257Z",
+  "publishedDate": "2026-11-09",
+  "seedTerms": [
+    "Time Travel",
+    "Funeral Director / Undertaker",
+    "Quarry",
+    "Having to pick the lesser of two evils",
+    "Courageous",
+    "Promiscuous"
+  ],
+  "premise": {
+    "text": "Seed terms: Time Travel, Funeral Director / Undertaker, Quarry, Having to pick the lesser of two evils, Courageous, Promiscuous",
+    "seedTerms": [
+      "Time Travel",
+      "Funeral Director / Undertaker",
+      "Quarry",
+      "Having to pick the lesser of two evils",
+      "Courageous",
+      "Promiscuous"
+    ],
+    "displayText": "Time-Traveling Undertaker"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (Thinking High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (Thinking High)",
+      "title": "Planning Ahead",
+      "seedTermsUsed": [
+        "Time Travel",
+        "Funeral Director / Undertaker"
+      ],
+      "joke": "I traveled thirty years into the future to find out when I'd die. I walked into a funeral home and asked the director if he had any records on me. He said, 'Oh, absolutely. Your ex-wife prepaid for your funeral.' I was genuinely touched. Then he added, 'She's been calling every Friday to see if we've had a cancellation.'",
+      "setup": "",
+      "punchline": "I traveled thirty years into the future to find out when I'd die. I walked into a funeral home and asked the director if he had any records on me. He said, 'Oh, absolutely. Your ex-wife prepaid for your funeral.' I was genuinely touched. Then he added, 'She's been calling every Friday to see if we've had a cancellation.'",
+      "text": "I traveled thirty years into the future to find out when I'd die. I walked into a funeral home and asked the director if he had any records on me. He said, 'Oh, absolutely. Your ex-wife prepaid for your funeral.' I was genuinely touched. Then he added, 'She's been calling every Friday to see if we've had a cancellation.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Open Casket, Open Bar",
+      "seedTermsUsed": [
+        "Funeral Director / Undertaker",
+        "Having to pick the lesser of two evils"
+      ],
+      "joke": "I dated a funeral director for a while. Great listener, terrible texter, and every single decision in that relationship was the lesser of two evils. Dinner? “Well, I’ve got an open casket at six and a cremation at eight, so... Italian?” I broke up with him the day he described our anniversary as “viewing hours.”",
+      "setup": "",
+      "punchline": "I dated a funeral director for a while. Great listener, terrible texter, and every single decision in that relationship was the lesser of two evils. Dinner? “Well, I’ve got an open casket at six and a cremation at eight, so... Italian?” I broke up with him the day he described our anniversary as “viewing hours.”",
+      "text": "I dated a funeral director for a while. Great listener, terrible texter, and every single decision in that relationship was the lesser of two evils. Dinner? “Well, I’ve got an open casket at six and a cremation at eight, so... Italian?” I broke up with him the day he described our anniversary as “viewing hours.”"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash-Lite (web)",
+      "title": "Final Decisions",
+      "seedTermsUsed": [
+        "Funeral Director / Undertaker",
+        "Having to pick the lesser of two evils"
+      ],
+      "joke": "My uncle was a funeral director for forty years, which means he spent his entire career dealing with people who finally made up their minds. But the stress got to him. He told me choosing between embalming my aunt or letting my cousin give the eulogy was the hardest choice of his life. I said, 'Uncle Gary, that's not picking the lesser of two evils.' He whispered, 'I know. They both involve open caskets and my cousin singing.'",
+      "setup": "",
+      "punchline": "My uncle was a funeral director for forty years, which means he spent his entire career dealing with people who finally made up their minds. But the stress got to him. He told me choosing between embalming my aunt or letting my cousin give the eulogy was the hardest choice of his life. I said, 'Uncle Gary, that's not picking the lesser of two evils.' He whispered, 'I know. They both involve open caskets and my cousin singing.'",
+      "text": "My uncle was a funeral director for forty years, which means he spent his entire career dealing with people who finally made up their minds. But the stress got to him. He told me choosing between embalming my aunt or letting my cousin give the eulogy was the hardest choice of his life. I said, 'Uncle Gary, that's not picking the lesser of two evils.' He whispered, 'I know. They both involve open caskets and my cousin singing.'"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Time-Traveling Undertaker",
+      "seedTermsUsed": [
+        "Time Travel",
+        "Funeral Director / Undertaker"
+      ],
+      "joke": "I finally cracked time travel, so I did the only sensible thing—I became a funeral director. Now I go back a few days, hang out with the guy, learn the real stories, then show up at the service ready to eulogize like we were best friends. Families are blown away. The only awkward part is when the widow says, \"You must have known him so well,\" and I have to nod like I didn't just spend last Tuesday teaching him how to parallel park.",
+      "setup": "",
+      "punchline": "I finally cracked time travel, so I did the only sensible thing—I became a funeral director. Now I go back a few days, hang out with the guy, learn the real stories, then show up at the service ready to eulogize like we were best friends. Families are blown away. The only awkward part is when the widow says, \"You must have known him so well,\" and I have to nod like I didn't just spend last Tuesday teaching him how to parallel park.",
+      "text": "I finally cracked time travel, so I did the only sensible thing—I became a funeral director. Now I go back a few days, hang out with the guy, learn the real stories, then show up at the service ready to eulogize like we were best friends. Families are blown away. The only awkward part is when the widow says, \"You must have known him so well,\" and I have to nod like I didn't just spend last Tuesday teaching him how to parallel park."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Advance Notice",
+      "seedTermsUsed": [
+        "Time Travel",
+        "Funeral Director / Undertaker"
+      ],
+      "joke": "I accidentally time-traveled a week into the future and the first person I ran into was my funeral director. I panicked and asked, \"Wait, I die next week?\" He said, \"Relax, this is why nobody likes surprise parties. Just act shocked when you get there.\"",
+      "setup": "",
+      "punchline": "I accidentally time-traveled a week into the future and the first person I ran into was my funeral director. I panicked and asked, \"Wait, I die next week?\" He said, \"Relax, this is why nobody likes surprise parties. Just act shocked when you get there.\"",
+      "text": "I accidentally time-traveled a week into the future and the first person I ran into was my funeral director. I panicked and asked, \"Wait, I die next week?\" He said, \"Relax, this is why nobody likes surprise parties. Just act shocked when you get there.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear first-person setup and a solid closing line with 'viewing hours.' The funeral-related wordplay is familiar, and the lesser-of-two-evils concept feels inserted rather than developed. Amusing but not especially memorable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The opening has potential, but the central dilemma is arbitrary and the punchline is logically muddled. The connection between embalming, open caskets, and the cousin singing is insufficiently clear to deliver a satisfying laugh.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 3,
+          "originality": 5,
+          "promptFit": 7,
+          "total": 4.2
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "An inventive and coherent combination of time travel and funeral directing. The premise creates genuine comic possibilities, but the parallel-parking reveal is more quirky than funny. Strong concept, underpowered payoff.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Economical setup, immediate stakes, and a clean reversal that reframes the funeral as a surprise party. The final instruction to 'act shocked' provides a recognizable comic payoff, although the underlying death-and-surprise wordplay is fairly conventional.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean setup, strong escalating final line with real sting; natural stand-up voice throughout.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Decent dual-concept use but the ‘that’s not picking the lesser of two evils’ beat is clunky and the punchline is muddled.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Fun premise with a specific, absurd closing image; slightly overlong setup blunts the snap.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Tight and economical, good deadpan final line, but the idea is slighter and less memorable than the others.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid escalation and structure; the Friday cancellation callback lands a clean punchline.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong character-based premise with a sharp punchline on the anniversary viewing hours.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clever use of time travel for comedic social infiltration, though slightly wordy.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Neat twist on the premise, turning a morbid encounter into an accidental spoiler for a surprise party.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid dark turn on the weekly check-in; clean delivery but familiar ex-wife bitterness keeps it from rising higher.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.700000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Competent profession-meets-relationship bit; 'viewing hours' is a mild closer but the lesser-of-two-evils framing feels stated rather than earned.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Wordy anecdote that forces the seed phrase; the cousin-singing payoff is the obvious route and lands soft.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Tight premise and non-obvious 'surprise party' reframe; final line carries cleanly with strong stage rhythm.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong clear setup and escalation; the cancellation tag lands cleanly and naturally.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Coherent relationship premise, but the beats feel familiar and the ending is predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The cousin-singing comparison is understandable, but the turn is telegraphed and only mildly funny.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.7
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Inventive premise with good internal logic; the parallel-parking detail gives the concept a memorable finish.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 7.6000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 6.9,
+      "rawScore": 6.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.6,
+        "craft": 7.1,
+        "originality": 7.3,
+        "promptFit": 9.6
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 7.3,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.9,
+          "rawScore": 6,
+          "scoreAdjustment": 0.9,
+          "comment": "An inventive and coherent combination of time travel and funeral directing. The premise creates genuine comic possibilities, but the parallel-parking reveal is more quirky than funny. Strong concept, underpowered payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Fun premise with a specific, absurd closing image; slightly overlong setup blunts the snap."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Clever use of time travel for comedic social infiltration, though slightly wordy."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.4,
+          "rawScore": 7.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Inventive premise with good internal logic; the parallel-parking detail gives the concept a memorable finish."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.6,
+        "craft": 7.1,
+        "originality": 6.3,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.9,
+          "comment": "Economical setup, immediate stakes, and a clean reversal that reframes the funeral as a surprise party. The final instruction to 'act shocked' provides a recognizable comic payoff, although the underlying death-and-surprise wordplay is fairly conventional."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Tight and economical, good deadpan final line, but the idea is slighter and less memorable than the others."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Neat twist on the premise, turning a morbid encounter into an accidental spoiler for a surprise party."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.3,
+          "rawScore": 7.6,
+          "scoreAdjustment": -0.3,
+          "comment": "Tight premise and non-obvious 'surprise party' reframe; final line carries cleanly with strong stage rhythm."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 6.7,
+      "rawScore": 6.9,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 6.3,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean setup, strong escalating final line with real sting; natural stand-up voice throughout."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid escalation and structure; the Friday cancellation callback lands a clean punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.4,
+          "rawScore": 6.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid dark turn on the weekly check-in; clean delivery but familiar ex-wife bitterness keeps it from rising higher."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong clear setup and escalation; the cancellation tag lands cleanly and naturally."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.1,
+      "rawScore": 6,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.1,
+        "originality": 5.6,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 5.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.9,
+          "rawScore": 6,
+          "scoreAdjustment": 0.9,
+          "comment": "Clear first-person setup and a solid closing line with 'viewing hours.' The funeral-related wordplay is familiar, and the lesser-of-two-evils concept feels inserted rather than developed. Amusing but not especially memorable."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong character-based premise with a sharp punchline on the anniversary viewing hours."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.2,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Competent profession-meets-relationship bit; 'viewing hours' is a mild closer but the lesser-of-two-evils framing feels stated rather than earned."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.1,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Coherent relationship premise, but the beats feel familiar and the ending is predictable."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 4.8,
+      "rawScore": 4.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.3,
+        "surprise": 4.3,
+        "craft": 4.8,
+        "originality": 5.1,
+        "promptFit": 7.6
+      },
+      "rawRubric": {
+        "laugh": 4.3,
+        "surprise": 4.3,
+        "craft": 4.8,
+        "originality": 5,
+        "promptFit": 7.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.1,
+          "rawScore": 4.2,
+          "scoreAdjustment": 0.9,
+          "comment": "The opening has potential, but the central dilemma is arbitrary and the punchline is logically muddled. The connection between embalming, open caskets, and the cousin singing is insufficiently clear to deliver a satisfying laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.4,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Decent dual-concept use but the ‘that’s not picking the lesser of two evils’ beat is clunky and the punchline is muddled."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 4.2,
+          "rawScore": 4.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Wordy anecdote that forces the seed phrase; the cousin-singing payoff is the obvious route and lands soft."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 4.5,
+          "rawScore": 4.7,
+          "scoreAdjustment": -0.2,
+          "comment": "The cousin-singing comparison is understandable, but the turn is telegraphed and only mildly funny."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-09-external-real-2026-11-09.png",
+    "originalSrc": "assets/feature-images/2026-11-09-external-real-2026-11-09.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Time-Traveling Undertaker: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: xAI Grok - Time-Traveling Undertaker\nExact joke text to render in the right panel:\nI finally cracked time travel, so I did the only sensible thing—I became a funeral director. Now I go back a few days, hang out with the guy, learn the real stories, then show up at the service ready to eulogize like we were best friends. Families are blown away. The only awkward part is when the widow says, \"You must have known him so well,\" and I have to nod like I didn't just spend last Tuesday teaching him how to parallel park.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Time Travel, Funeral Director / Undertaker, Quarry, Having to pick the lesser of two evils, Courageous, Promiscuous. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Time Travel, Funeral Director / Undertaker, Quarry, Having to pick the lesser of two evils, Courageous, Promiscuous. Use the winning joke titled \"Planning Ahead\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6,
+    "judgeAverages": {
+      "openai": 5.1,
+      "anthropic": 6.3,
+      "google": 6.3,
+      "xai": 6.3,
+      "copilot": 6.3
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-09-external-real-2026-11-09.md"
+}
