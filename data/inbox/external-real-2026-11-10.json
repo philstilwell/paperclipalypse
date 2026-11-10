@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-10T15:02:31.036Z",
+  "publishedDate": "2026-11-10",
+  "seed": "external-real-2026-11-10",
+  "slug": "2026-11-10-external-real-2026-11-10",
+  "source": "manual-external",
+  "seedTerms": [
+    "Literary",
+    "Clergy Member",
+    "Limousine",
+    "Being targeted for revenge",
+    "Traditional",
+    "Know-It-All"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (Thinking High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (Thinking High)",
+      "title": "A Difficult Penance",
+      "seedTermsUsed": ["Clergy Member", "Know-It-All"],
+      "joke": "I went to confession because my wife says I'm a know-it-all. The priest said, 'Pride is one of the seven deadly sins.' I said, 'Technically, it's considered the root of the other six.' He said, 'For your penance, go home and tell your wife she's right.' I said, 'Can I just crawl to Rome on my knees?'",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to confession because my wife says I'm a know-it-all. The priest said, 'Pride is one of the seven deadly sins.' I said, 'Technically, it's considered the root of the other six.' He said, 'For your penance, go home and tell your wife she's right.' I said, 'Can I just crawl to Rome on my knees?'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Go in Peace",
+      "seedTermsUsed": ["Clergy Member", "Being targeted for revenge"],
+      "joke": "I confessed to my priest that I’ve been stealing his parking spot every single Sunday. Rookie mistake. Priests have the two things you need for the perfect revenge — infinite patience, and a direct line to pre-approved forgiveness. Guy keyed my car, looked me dead in the eye, and said, ‘Go in peace.’",
+      "setup": "",
+      "punchline": "",
+      "text": "I confessed to my priest that I’ve been stealing his parking spot every single Sunday. Rookie mistake. Priests have the two things you need for the perfect revenge — infinite patience, and a direct line to pre-approved forgiveness. Guy keyed my car, looked me dead in the eye, and said, ‘Go in peace.’"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini Flash-Lite (web)",
+      "title": "Drive of Vengeance",
+      "seedTermsUsed": ["Limousine", "Being targeted for revenge"],
+      "joke": "Renting a limousine to pull up to my high school reunion is a bold move, but it really sets the tone when you are specifically being hunted for revenge by your middle school track team. I told the driver to keep the engine running, not for the champagne, but because I needed a quick getaway from a guy named Todd who has been holding a grudge and a javelin since 2004.",
+      "setup": "",
+      "punchline": "",
+      "text": "Renting a limousine to pull up to my high school reunion is a bold move, but it really sets the tone when you are specifically being hunted for revenge by your middle school track team. I told the driver to keep the engine running, not for the champagne, but because I needed a quick getaway from a guy named Todd who has been holding a grudge and a javelin since 2004."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Statistical Vows",
+      "seedTermsUsed": ["Clergy Member", "Know-It-All"],
+      "joke": "I hired a clergy member to officiate my wedding. Turns out the guy's a complete know-it-all. Halfway through the vows he interrupts me and says, \"Actually, 'till death do us part' is statistically optimistic given modern divorce rates.\" Buddy, I'm trying to get married, not fail a probability exam.",
+      "setup": "",
+      "punchline": "",
+      "text": "I hired a clergy member to officiate my wedding. Turns out the guy's a complete know-it-all. Halfway through the vows he interrupts me and says, \"Actually, 'till death do us part' is statistically optimistic given modern divorce rates.\" Buddy, I'm trying to get married, not fail a probability exam."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Backseat Expert",
+      "seedTermsUsed": ["Limousine", "Know-It-All"],
+      "joke": "I got upgraded to a limousine once, which sounds fancy until you realize a know-it-all friend came with me. Halfway downtown he hit the intercom and started giving the chauffeur directions. The driver said, \"Sir, I've done this job for twenty years.\" My friend said, \"Perfect, then you've had twenty years to pick up my shortcuts.\"",
+      "setup": "",
+      "punchline": "",
+      "text": "I got upgraded to a limousine once, which sounds fancy until you realize a know-it-all friend came with me. Halfway downtown he hit the intercom and started giving the chauffeur directions. The driver said, \"Sir, I've done this job for twenty years.\" My friend said, \"Perfect, then you've had twenty years to pick up my shortcuts.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Strong comic contrast between priestly forgiveness and petty revenge. The keyed-car reveal creates a genuine reversal, and 'Go in peace' is an effective closing punchline. Slightly contrived but memorable."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":4,"promptFit":9,"laugh":4,"comment":"The javelin provides a concrete comic image, but the unexplained vendetta makes the premise feel arbitrary. Too much setup, and the ending adds detail rather than delivering a sharp reversal."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Clear, economical construction and natural first-person delivery. The statistical interruption fits the know-it-all premise, but the probability-exam punchline is predictable and produces more recognition than laughter."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"A believable setup with concise escalation and a clean final reversal. The friend's spectacular arrogance is amusing, although the familiar backseat-driver premise limits its originality and impact."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean escalation and a solid closing line; the ‘root of the other six’ beat is the best moment but the penance turn is a touch predictable."},
+        {"jokeId":"joke-c","originality":6,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Fun image but overlong and explainy; the javelin/Todd reveal does the work the rest of the sentence should’ve done faster."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":8,"promptFit":8,"laugh":7,"comment":"Strong premise, natural voice, and the probability-exam capper lands cleanly with good escalation."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Nice reversal on the driver’s experience line, tight and well-timed, though the punchline is a bit mild rather than a snap."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Classic husband-wife setup; the 'technically' pivot is clean and predictable in a fun way."},
+        {"jokeId":"joke-b","originality":7,"surprise":8,"craft":8,"promptFit":10,"laugh":8,"comment":"Strong narrative arc, great punchline merging divine forgiveness with petty automotive revenge."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":7,"promptFit":10,"laugh":6,"comment":"Solid observational punch about wedding statistics, though a bit standard in structure."},
+        {"jokeId":"joke-e","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":7,"comment":"Nice character dynamic inside the limo; the final comeback has good stubborn attitude."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Predictable know-it-all correction in confession; final line reaches without landing a real snap."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean premise and strong visual turn; the keyed car under the blessing carries the laugh."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":5,"promptFit":8,"laugh":5,"comment":"Specific image is amusing but the setup is wordy and the revenge stakes feel inflated for the payoff."},
+        {"jokeId":"joke-e","originality":5,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Economical backseat-driver beat with a clean closer, though the angle is familiar."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong character consistency and escalation; the Rome line is a solid payoff."},
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":6,"promptFit":10,"laugh":6,"comment":"Clear premise and reversal, but the revenge turn feels somewhat forced and predictable."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":10,"laugh":6,"comment":"Funny visual and specific detail with the javelin; more amusing than laugh-out-loud."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Competent wedding joke with a clear contrast, but a familiar know-it-all angle and mild payoff."}
+      ]
+    }
+  ]
+}
