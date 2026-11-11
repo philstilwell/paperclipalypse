@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-11T14:59:26.891Z",
+  "publishedDate": "2026-11-11",
+  "seed": "external-real-2026-11-11",
+  "slug": "2026-11-11-external-real-2026-11-11",
+  "source": "manual-external",
+  "seedTerms": [
+    "Rich and Famous",
+    "Emergency Medical Responder",
+    "Wedding Reception",
+    "Being targeted for revenge",
+    "Proactive",
+    "Vindictive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (Thinking High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (Thinking High)",
+      "title": "Off the Clock",
+      "seedTermsUsed": ["Emergency Medical Responder", "Wedding Reception"],
+      "joke": "I'm a paramedic. My cousin invited me to his wedding reception and said, 'You're off the clock. Just relax!' Then he seated me between his 94-year-old grandfather, who brought an oxygen tank, and Uncle Dave, who thinks an open bar is an endurance event. Everyone else got a plus-one. I got a triage section.",
+      "setup": "",
+      "punchline": "",
+      "text": "I'm a paramedic. My cousin invited me to his wedding reception and said, 'You're off the clock. Just relax!' Then he seated me between his 94-year-old grandfather, who brought an oxygen tank, and Uncle Dave, who thinks an open bar is an endurance event. Everyone else got a plus-one. I got a triage section."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Response Time",
+      "seedTermsUsed": ["Emergency Medical Responder", "Vindictive"],
+      "joke": "I’m an EMT, so technically my whole job is being the bigger person. But last month the guy who cut me off in traffic called 911 for a splinter. Same guy. I recognized the license plate before I recognized the house. And wouldn’t you know it, my GPS just... struggled that day. Took the scenic route. Hit every light. He’s fine now. Humbled, but fine. I didn’t withhold care. I just really, really honored the speed limit.",
+      "setup": "",
+      "punchline": "",
+      "text": "I’m an EMT, so technically my whole job is being the bigger person. But last month the guy who cut me off in traffic called 911 for a splinter. Same guy. I recognized the license plate before I recognized the house. And wouldn’t you know it, my GPS just... struggled that day. Took the scenic route. Hit every light. He’s fine now. Humbled, but fine. I didn’t withhold care. I just really, really honored the speed limit."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite (web)",
+      "title": "The Big Day",
+      "seedTermsUsed": ["Wedding Reception", "Vindictive"],
+      "joke": "I went to my ex-girlfriend’s wedding reception last weekend. I didn’t want to cause a scene, so I just quietly slipped a three-tier cake into the catering tent labeled 'For the Divorce Lawyer.' Look, call me vindictive, but when someone hands you an open bar and a microphone during the toast, you owe it to the room to close strong.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to my ex-girlfriend’s wedding reception last weekend. I didn’t want to cause a scene, so I just quietly slipped a three-tier cake into the catering tent labeled 'For the Divorce Lawyer.' Look, call me vindictive, but when someone hands you an open bar and a microphone during the toast, you owe it to the room to close strong."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Seating Chart",
+      "seedTermsUsed": ["Wedding Reception", "Vindictive"],
+      "joke": "I went to a wedding reception last weekend. The bride was so vindictive she arranged the entire seating chart by how badly people had wronged her. I ended up at a table with three of her exes, her former boss, and the guy who once took the last parking spot at Trader Joe’s. By the time the salad came we had already started a support group.",
+      "setup": "",
+      "punchline": "",
+      "text": "I went to a wedding reception last weekend. The bride was so vindictive she arranged the entire seating chart by how badly people had wronged her. I ended up at a table with three of her exes, her former boss, and the guy who once took the last parking spot at Trader Joe’s. By the time the salad came we had already started a support group."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Open Bar Triage",
+      "seedTermsUsed": ["Emergency Medical Responder", "Wedding Reception"],
+      "joke": "I worked as an emergency medical responder, so when my cousin got married I thought I'd finally get one night off. Ten minutes into the wedding reception, the DJ yelled, 'Is there a medic here?' and every relative pointed at me like they were trying to win a raffle. I spent the whole evening taking vitals on people who were just dancing to ABBA.",
+      "setup": "",
+      "punchline": "",
+      "text": "I worked as an emergency medical responder, so when my cousin got married I thought I'd finally get one night off. Ten minutes into the wedding reception, the DJ yelled, 'Is there a medic here?' and every relative pointed at me like they were trying to win a raffle. I spent the whole evening taking vitals on people who were just dancing to ABBA."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":6,"craft":6,"promptFit":9,"laugh":6,"comment":"A recognizable revenge premise with effective escalation and a decent speed-limit punchline. The EMT's petty retaliation creates comic tension, but the payoff is somewhat predictable and the opening is awkward."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":4,"promptFit":9,"laugh":4,"comment":"The divorce-lawyer cake offers an amusing visual, but the microphone and open-bar setup promises a payoff that never arrives. The final sentence substitutes comic bravado for an actual punchline."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"The vindictive seating chart is a coherent premise, and the Trader Joe's detail provides a modest laugh. The support-group ending is familiar and predictable rather than a surprising comic turn."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":10,"laugh":5,"comment":"Clear first-person setup, natural progression, and an accessible image of relatives pointing at the medic. The raffle comparison is amusing, but the ABBA punchline feels arbitrary rather than sharply surprising."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":7,"comment":"Clean premise, good escalation, strong concrete final image."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":5,"comment":"Cake/lawyer logic is murky; punchline restates setup rather than snapping."},
+        {"jokeId":"joke-d","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Fresh escalation with specific, funny detail (parking spot); strong closer."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid setup and relatable payoff, slightly less sharp turn than top entries."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Solid paramedic framing and a nice 'triage section' button, though seating hazards are a familiar comic setup."},
+        {"jokeId":"joke-b","originality":8,"surprise":8,"craft":8,"promptFit":8,"laugh":8,"comment":"Brilliant narrative arc; the GPS detour punchline is highly visual, disciplined, and genuinely funny."},
+        {"jokeId":"joke-d","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Fun premise with the Trader Joe's parking spot detail, though the support group punchline feels a bit soft."},
+        {"jokeId":"joke-e","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Clean stage mechanics and a relatable family dynamic, but the ABBA dancing twist lands softly."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Clean premise and strong closing image; the triage-section line carries it without padding."},
+        {"jokeId":"joke-b","originality":5,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Serviceable passive-aggressive revenge idea, but wordy and the payoff stays mild."},
+        {"jokeId":"joke-c","originality":6,"surprise":7,"craft":5,"promptFit":8,"laugh":6,"comment":"Cake label is a solid image; the mic/toast closer feels incomplete and softens the turn."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":9,"laugh":5,"comment":"Competent family-medic setup with a mild, predictable payoff."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Clear setup and efficient payoff; the 'triage section' tag lands, though the turn is fairly predictable."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":8,"promptFit":10,"laugh":7,"comment":"Strong character-based premise with escalation and a clean final button; vindictiveness is expressed naturally rather than merely stated."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":5,"promptFit":10,"laugh":5,"comment":"Has a comic attitude, but the logic of the cake label and toast tagline feels disconnected, weakening the punch."},
+        {"jokeId":"joke-d","originality":6,"surprise":5,"craft":7,"promptFit":10,"laugh":6,"comment":"Easy-to-follow premise with a solid image and tidy payoff; support-group ending is amusing but not especially unexpected."}
+      ]
+    }
+  ]
+}

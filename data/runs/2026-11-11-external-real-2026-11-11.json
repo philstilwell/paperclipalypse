@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-11-external-real-2026-11-11",
+  "seed": "external-real-2026-11-11",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-11T14:59:26.891Z",
+  "publishedDate": "2026-11-11",
+  "seedTerms": [
+    "Rich and Famous",
+    "Emergency Medical Responder",
+    "Wedding Reception",
+    "Being targeted for revenge",
+    "Proactive",
+    "Vindictive"
+  ],
+  "premise": {
+    "text": "Seed terms: Rich and Famous, Emergency Medical Responder, Wedding Reception, Being targeted for revenge, Proactive, Vindictive",
+    "seedTerms": [
+      "Rich and Famous",
+      "Emergency Medical Responder",
+      "Wedding Reception",
+      "Being targeted for revenge",
+      "Proactive",
+      "Vindictive"
+    ],
+    "displayText": "Response Time"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT",
+      "provider": "openai",
+      "model": "ChatGPT web (Thinking High)"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium (Claude web)"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "Gemini 3.5 Flash-Lite (web)"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "openai-compatible",
+      "model": "Grok Fast (web)"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot web (Auto)"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "model": "ChatGPT web (Thinking High)",
+      "title": "Off the Clock",
+      "seedTermsUsed": [
+        "Emergency Medical Responder",
+        "Wedding Reception"
+      ],
+      "joke": "I'm a paramedic. My cousin invited me to his wedding reception and said, 'You're off the clock. Just relax!' Then he seated me between his 94-year-old grandfather, who brought an oxygen tank, and Uncle Dave, who thinks an open bar is an endurance event. Everyone else got a plus-one. I got a triage section.",
+      "setup": "",
+      "punchline": "I'm a paramedic. My cousin invited me to his wedding reception and said, 'You're off the clock. Just relax!' Then he seated me between his 94-year-old grandfather, who brought an oxygen tank, and Uncle Dave, who thinks an open bar is an endurance event. Everyone else got a plus-one. I got a triage section.",
+      "text": "I'm a paramedic. My cousin invited me to his wedding reception and said, 'You're off the clock. Just relax!' Then he seated me between his 94-year-old grandfather, who brought an oxygen tank, and Uncle Dave, who thinks an open bar is an endurance event. Everyone else got a plus-one. I got a triage section."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium (Claude web)",
+      "title": "Response Time",
+      "seedTermsUsed": [
+        "Emergency Medical Responder",
+        "Vindictive"
+      ],
+      "joke": "I’m an EMT, so technically my whole job is being the bigger person. But last month the guy who cut me off in traffic called 911 for a splinter. Same guy. I recognized the license plate before I recognized the house. And wouldn’t you know it, my GPS just... struggled that day. Took the scenic route. Hit every light. He’s fine now. Humbled, but fine. I didn’t withhold care. I just really, really honored the speed limit.",
+      "setup": "",
+      "punchline": "I’m an EMT, so technically my whole job is being the bigger person. But last month the guy who cut me off in traffic called 911 for a splinter. Same guy. I recognized the license plate before I recognized the house. And wouldn’t you know it, my GPS just... struggled that day. Took the scenic route. Hit every light. He’s fine now. Humbled, but fine. I didn’t withhold care. I just really, really honored the speed limit.",
+      "text": "I’m an EMT, so technically my whole job is being the bigger person. But last month the guy who cut me off in traffic called 911 for a splinter. Same guy. I recognized the license plate before I recognized the house. And wouldn’t you know it, my GPS just... struggled that day. Took the scenic route. Hit every light. He’s fine now. Humbled, but fine. I didn’t withhold care. I just really, really honored the speed limit."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "Gemini 3.5 Flash-Lite (web)",
+      "title": "The Big Day",
+      "seedTermsUsed": [
+        "Wedding Reception",
+        "Vindictive"
+      ],
+      "joke": "I went to my ex-girlfriend’s wedding reception last weekend. I didn’t want to cause a scene, so I just quietly slipped a three-tier cake into the catering tent labeled 'For the Divorce Lawyer.' Look, call me vindictive, but when someone hands you an open bar and a microphone during the toast, you owe it to the room to close strong.",
+      "setup": "",
+      "punchline": "I went to my ex-girlfriend’s wedding reception last weekend. I didn’t want to cause a scene, so I just quietly slipped a three-tier cake into the catering tent labeled 'For the Divorce Lawyer.' Look, call me vindictive, but when someone hands you an open bar and a microphone during the toast, you owe it to the room to close strong.",
+      "text": "I went to my ex-girlfriend’s wedding reception last weekend. I didn’t want to cause a scene, so I just quietly slipped a three-tier cake into the catering tent labeled 'For the Divorce Lawyer.' Look, call me vindictive, but when someone hands you an open bar and a microphone during the toast, you owe it to the room to close strong."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Grok Fast (web)",
+      "title": "Seating Chart",
+      "seedTermsUsed": [
+        "Wedding Reception",
+        "Vindictive"
+      ],
+      "joke": "I went to a wedding reception last weekend. The bride was so vindictive she arranged the entire seating chart by how badly people had wronged her. I ended up at a table with three of her exes, her former boss, and the guy who once took the last parking spot at Trader Joe’s. By the time the salad came we had already started a support group.",
+      "setup": "",
+      "punchline": "I went to a wedding reception last weekend. The bride was so vindictive she arranged the entire seating chart by how badly people had wronged her. I ended up at a table with three of her exes, her former boss, and the guy who once took the last parking spot at Trader Joe’s. By the time the salad came we had already started a support group.",
+      "text": "I went to a wedding reception last weekend. The bride was so vindictive she arranged the entire seating chart by how badly people had wronged her. I ended up at a table with three of her exes, her former boss, and the guy who once took the last parking spot at Trader Joe’s. By the time the salad came we had already started a support group."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot web (Auto)",
+      "title": "Open Bar Triage",
+      "seedTermsUsed": [
+        "Emergency Medical Responder",
+        "Wedding Reception"
+      ],
+      "joke": "I worked as an emergency medical responder, so when my cousin got married I thought I'd finally get one night off. Ten minutes into the wedding reception, the DJ yelled, 'Is there a medic here?' and every relative pointed at me like they were trying to win a raffle. I spent the whole evening taking vitals on people who were just dancing to ABBA.",
+      "setup": "",
+      "punchline": "I worked as an emergency medical responder, so when my cousin got married I thought I'd finally get one night off. Ten minutes into the wedding reception, the DJ yelled, 'Is there a medic here?' and every relative pointed at me like they were trying to win a raffle. I spent the whole evening taking vitals on people who were just dancing to ABBA.",
+      "text": "I worked as an emergency medical responder, so when my cousin got married I thought I'd finally get one night off. Ten minutes into the wedding reception, the DJ yelled, 'Is there a medic here?' and every relative pointed at me like they were trying to win a raffle. I spent the whole evening taking vitals on people who were just dancing to ABBA."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "A recognizable revenge premise with effective escalation and a decent speed-limit punchline. The EMT's petty retaliation creates comic tension, but the payoff is somewhat predictable and the opening is awkward.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The divorce-lawyer cake offers an amusing visual, but the microphone and open-bar setup promises a payoff that never arrives. The final sentence substitutes comic bravado for an actual punchline.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.800000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The vindictive seating chart is a coherent premise, and the Trader Joe's detail provides a modest laugh. The support-group ending is familiar and predictable rather than a surprising comic turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Clear first-person setup, natural progression, and an accessible image of relatives pointing at the medic. The raffle comparison is amusing, but the ABBA punchline feels arbitrary rather than sharply surprising.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean premise, good escalation, strong concrete final image.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Cake/lawyer logic is murky; punchline restates setup rather than snapping.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Fresh escalation with specific, funny detail (parking spot); strong closer.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Solid setup and relatable payoff, slightly less sharp turn than top entries.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Solid paramedic framing and a nice 'triage section' button, though seating hazards are a familiar comic setup.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Brilliant narrative arc; the GPS detour punchline is highly visual, disciplined, and genuinely funny.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 8,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Fun premise with the Trader Joe's parking spot detail, though the support group punchline feels a bit soft.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Clean stage mechanics and a relatable family dynamic, but the ABBA dancing twist lands softly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean premise and strong closing image; the triage-section line carries it without padding.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Serviceable passive-aggressive revenge idea, but wordy and the payoff stays mild.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Cake label is a solid image; the mic/toast closer feels incomplete and softens the turn.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Competent family-medic setup with a mild, predictable payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear setup and efficient payoff; the 'triage section' tag lands, though the turn is fairly predictable.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong character-based premise with escalation and a clean final button; vindictiveness is expressed naturally rather than merely stated.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.500000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Has a comic attitude, but the logic of the cake label and toast tagline feels disconnected, weakening the punch.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Easy-to-follow premise with a solid image and tidy payoff; support-group ending is amusing but not especially unexpected.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 7,
+      "rawScore": 7,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.7,
+        "surprise": 6.7,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 6.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 7,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0.7,
+          "comment": "A recognizable revenge premise with effective escalation and a decent speed-limit punchline. The EMT's petty retaliation creates comic tension, but the payoff is somewhat predictable and the opening is awkward."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 7.5,
+          "rawScore": 8,
+          "scoreAdjustment": -0.5,
+          "comment": "Brilliant narrative arc; the GPS detour punchline is highly visual, disciplined, and genuinely funny."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.1,
+          "rawScore": 6.1,
+          "scoreAdjustment": 0,
+          "comment": "Serviceable passive-aggressive revenge idea, but wordy and the payoff stays mild."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.3,
+          "rawScore": 7.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong character-based premise with escalation and a clean final button; vindictiveness is expressed naturally rather than merely stated."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT",
+      "score": 6.5,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 5.8,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.9,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0,
+          "comment": "Clean premise, good escalation, strong concrete final image."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Solid paramedic framing and a nice 'triage section' button, though seating hazards are a familiar comic setup."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.3,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0,
+          "comment": "Clean premise and strong closing image; the triage-section line carries it without padding."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear setup and efficient payoff; the 'triage section' tag lands, though the turn is fairly predictable."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 6.3,
+      "rawScore": 6.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 5.7,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.3,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.7,
+          "comment": "The vindictive seating chart is a coherent premise, and the Trader Joe's detail provides a modest laugh. The support-group ending is familiar and predictable rather than a surprising comic turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "Fresh escalation with specific, funny detail (parking spot); strong closer."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Fun premise with the Trader Joe's parking spot detail, though the support group punchline feels a bit soft."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Easy-to-follow premise with a solid image and tidy payoff; support-group ending is amusing but not especially unexpected."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.1,
+      "rawScore": 6,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.6,
+        "craft": 6.3,
+        "originality": 5.6,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.5,
+        "craft": 6.3,
+        "originality": 5.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 6.4,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.7,
+          "comment": "Clear first-person setup, natural progression, and an accessible image of relatives pointing at the medic. The raffle comparison is amusing, but the ABBA punchline feels arbitrary rather than sharply surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.5,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0,
+          "comment": "Solid setup and relatable payoff, slightly less sharp turn than top entries."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.7,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Clean stage mechanics and a relatable family dynamic, but the ABBA dancing twist lands softly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0,
+          "comment": "Competent family-medic setup with a mild, predictable payoff."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 5.7,
+      "rawScore": 5.5,
+      "scoreAdjustment": 0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 5.9,
+        "craft": 4.9,
+        "originality": 5.6,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 5,
+        "surprise": 5.8,
+        "craft": 4.8,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT",
+          "score": 5.5,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.7,
+          "comment": "The divorce-lawyer cake offers an amusing visual, but the microphone and open-bar setup promises a payoff that never arrives. The final sentence substitutes comic bravado for an actual punchline."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.3,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0,
+          "comment": "Cake/lawyer logic is murky; punchline restates setup rather than snapping."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0,
+          "comment": "Cake label is a solid image; the mic/toast closer feels incomplete and softens the turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Has a comic attitude, but the logic of the cake label and toast tagline feels disconnected, weakening the punch."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-11-external-real-2026-11-11.png",
+    "originalSrc": "assets/feature-images/2026-11-11-external-real-2026-11-11.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Response Time: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Response Time\nExact joke text to render in the right panel:\nI’m an EMT, so technically my whole job is being the bigger person. But last month the guy who cut me off in traffic called 911 for a splinter. Same guy. I recognized the license plate before I recognized the house. And wouldn’t you know it, my GPS just... struggled that day. Took the scenic route. Hit every light. He’s fine now. Humbled, but fine. I didn’t withhold care. I just really, really honored the speed limit.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Rich and Famous, Emergency Medical Responder, Wedding Reception, Being targeted for revenge, Proactive, Vindictive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Rich and Famous, Emergency Medical Responder, Wedding Reception, Being targeted for revenge, Proactive, Vindictive. Use the winning joke titled \"Response Time\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 5.5,
+      "anthropic": 6.2,
+      "google": 6.7,
+      "xai": 6.2,
+      "copilot": 6.4
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-11-external-real-2026-11-11.md"
+}
