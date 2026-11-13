@@ -1,15 +1,29 @@
 const REQUIRED_CONTESTANTS = 5;
+const MINIMUM_OUTAGE_CONTESTANTS = 4;
 const REQUIRED_SEED_TERMS = 6;
 const SCORE_FIELDS = ["originality", "surprise", "craft", "promptFit", "laugh"];
 
-export function assertCompleteTournament({ contestants, jokes, judgeResults, seedTerms }) {
+export function assertCompleteTournament({
+  contestants,
+  jokes,
+  judgeResults,
+  seedTerms,
+  participationException,
+  allowModelOutage = false,
+  expectedContestantIds = []
+}) {
   const errors = [];
   const contestantIds = normalizedIds(contestants, "contestant", errors);
   const seedSet = new Set(normalizeTextList(seedTerms).map(normalizeForMatch));
 
-  if (!Array.isArray(contestants) || contestants.length !== REQUIRED_CONTESTANTS) {
-    errors.push(`Expected exactly ${REQUIRED_CONTESTANTS} contestants.`);
-  }
+  validateParticipationCount({
+    contestants,
+    contestantIds,
+    participationException,
+    allowModelOutage,
+    expectedContestantIds,
+    errors
+  });
 
   if (!Array.isArray(seedTerms) || seedTerms.length !== REQUIRED_SEED_TERMS) {
     errors.push(`Expected exactly ${REQUIRED_SEED_TERMS} seed terms.`);
@@ -143,6 +157,64 @@ export function assertCompleteTournament({ contestants, jokes, judgeResults, see
 
   if (errors.length) {
     throw new Error(`Tournament participation validation failed:\n- ${errors.join("\n- ")}`);
+  }
+}
+
+function validateParticipationCount({
+  contestants,
+  contestantIds,
+  participationException,
+  allowModelOutage,
+  expectedContestantIds,
+  errors
+}) {
+  const count = Array.isArray(contestants) ? contestants.length : 0;
+  if (count === REQUIRED_CONTESTANTS) {
+    if (participationException) {
+      errors.push("A participationException is only valid when a contestant is absent.");
+    }
+    return;
+  }
+
+  if (count !== MINIMUM_OUTAGE_CONTESTANTS) {
+    errors.push(`Expected exactly ${REQUIRED_CONTESTANTS} contestants, or ${MINIMUM_OUTAGE_CONTESTANTS} with an approved model-outage exception.`);
+    return;
+  }
+
+  if (!allowModelOutage) {
+    errors.push("A four-contestant outage round requires the explicit --allow-model-outage option.");
+  }
+
+  const exception = participationException && typeof participationException === "object"
+    ? participationException
+    : {};
+  if (cleanText(exception.type) !== "model-outage") {
+    errors.push('The participationException.type must be "model-outage".');
+  }
+
+  const unavailableIds = normalizeTextList(exception.unavailableContestantIds);
+  if (unavailableIds.length !== 1 || new Set(unavailableIds).size !== 1) {
+    errors.push("A four-contestant outage round must name exactly one unavailable contestant id.");
+  }
+  if (!cleanText(exception.details)) {
+    errors.push("A model-outage exception must include public details explaining the outage.");
+  }
+
+  const rosterIds = new Set(normalizeTextList(expectedContestantIds));
+  if (rosterIds.size !== REQUIRED_CONTESTANTS) {
+    errors.push(`The configured roster must contain exactly ${REQUIRED_CONTESTANTS} contestant ids before an outage exception can be used.`);
+    return;
+  }
+
+  for (const id of contestantIds) {
+    if (!rosterIds.has(id)) {
+      errors.push(`Outage round includes contestant ${id}, which is not in the configured roster.`);
+    }
+  }
+
+  const missingIds = [...rosterIds].filter((id) => !contestantIds.has(id));
+  if (missingIds.length !== 1 || missingIds[0] !== unavailableIds[0]) {
+    errors.push(`The named unavailable contestant must match the one missing configured roster member (${missingIds.join(", ") || "none"}).`);
   }
 }
 

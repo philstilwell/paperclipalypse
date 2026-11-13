@@ -1,0 +1,593 @@
+{
+  "version": 1,
+  "slug": "2026-11-12-external-real-2026-11-12",
+  "seed": "external-real-2026-11-12",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-12T15:01:53.624Z",
+  "publishedDate": "2026-11-12",
+  "seedTerms": [
+    "Lost World",
+    "Exotic Food Expert",
+    "Emergency Room",
+    "Seeing corruption / discrimination",
+    "Patient",
+    "Abrasive"
+  ],
+  "premise": {
+    "text": "Seed terms: Lost World, Exotic Food Expert, Emergency Room, Seeing corruption / discrimination, Patient, Abrasive",
+    "seedTerms": [
+      "Lost World",
+      "Exotic Food Expert",
+      "Emergency Room",
+      "Seeing corruption / discrimination",
+      "Patient",
+      "Abrasive"
+    ],
+    "displayText": "The Lost Civilization"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash-Lite",
+      "provider": "google",
+      "model": "Flash-Lite"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "The Lost Civilization",
+      "seedTermsUsed": [
+        "Lost World",
+        "Abrasive"
+      ],
+      "joke": "I discovered a lost civilization deep in the jungle, untouched for centuries. They welcomed me with a feast. I complained about the portions, corrected their grammar, and demanded to speak to whoever was in charge. They sent me home with a map and one request: 'Please tell everyone we're extinct.'",
+      "setup": "",
+      "punchline": "I discovered a lost civilization deep in the jungle, untouched for centuries. They welcomed me with a feast. I complained about the portions, corrected their grammar, and demanded to speak to whoever was in charge. They sent me home with a map and one request: 'Please tell everyone we're extinct.'",
+      "text": "I discovered a lost civilization deep in the jungle, untouched for centuries. They welcomed me with a feast. I complained about the portions, corrected their grammar, and demanded to speak to whoever was in charge. They sent me home with a map and one request: 'Please tell everyone we're extinct.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Triage by Personality",
+      "seedTermsUsed": [
+        "Emergency Room",
+        "Abrasive"
+      ],
+      "joke": "I sliced my hand open and sat in the ER for four hours behind a guy who was so abrasive to the nurses, so relentlessly rude, that by hour three they moved him straight to the front just to get him away from the rest of us. And watching that happen, bleeding, I thought: the fastest way through American healthcare isn’t insurance. It’s personality.",
+      "setup": "",
+      "punchline": "I sliced my hand open and sat in the ER for four hours behind a guy who was so abrasive to the nurses, so relentlessly rude, that by hour three they moved him straight to the front just to get him away from the rest of us. And watching that happen, bleeding, I thought: the fastest way through American healthcare isn’t insurance. It’s personality.",
+      "text": "I sliced my hand open and sat in the ER for four hours behind a guy who was so abrasive to the nurses, so relentlessly rude, that by hour three they moved him straight to the front just to get him away from the rest of us. And watching that happen, bleeding, I thought: the fastest way through American healthcare isn’t insurance. It’s personality."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "model": "Flash-Lite",
+      "title": "Hospital Menu",
+      "seedTermsUsed": [
+        "Exotic Food Expert",
+        "Emergency Room"
+      ],
+      "joke": "I had to go to the emergency room last night, and honestly, the worst part wasn't the pain—it was the dietary pamphlet. They handed me a menu that looked like it was curated by a psychotic exotic food expert who thinks everyone's last meal on earth should be boiled lichen. I'm sitting there clutching my ruptured appendix while reading about a 'hibiscus and bark reduction.' Just give me the ginger ale, or let me die with dignity.",
+      "setup": "",
+      "punchline": "I had to go to the emergency room last night, and honestly, the worst part wasn't the pain—it was the dietary pamphlet. They handed me a menu that looked like it was curated by a psychotic exotic food expert who thinks everyone's last meal on earth should be boiled lichen. I'm sitting there clutching my ruptured appendix while reading about a 'hibiscus and bark reduction.' Just give me the ginger ale, or let me die with dignity.",
+      "text": "I had to go to the emergency room last night, and honestly, the worst part wasn't the pain—it was the dietary pamphlet. They handed me a menu that looked like it was curated by a psychotic exotic food expert who thinks everyone's last meal on earth should be boiled lichen. I'm sitting there clutching my ruptured appendix while reading about a 'hibiscus and bark reduction.' Just give me the ginger ale, or let me die with dignity."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Expert Opinion",
+      "seedTermsUsed": [
+        "Exotic Food Expert",
+        "Emergency Room"
+      ],
+      "joke": "I'm an exotic food expert, which mostly means I keep ending up in the emergency room. Last week it was the fermented Icelandic shark. This week the live scorpions. The doctor walks in, sees me, and just sighs. \"You again.\" I said, \"Look, if the food doesn't fight back on the way down, how exotic can it really be?\"",
+      "setup": "",
+      "punchline": "I'm an exotic food expert, which mostly means I keep ending up in the emergency room. Last week it was the fermented Icelandic shark. This week the live scorpions. The doctor walks in, sees me, and just sighs. \"You again.\" I said, \"Look, if the food doesn't fight back on the way down, how exotic can it really be?\"",
+      "text": "I'm an exotic food expert, which mostly means I keep ending up in the emergency room. Last week it was the fermented Icelandic shark. This week the live scorpions. The doctor walks in, sees me, and just sighs. \"You again.\" I said, \"Look, if the food doesn't fight back on the way down, how exotic can it really be?\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable observation with a satisfying reversal: obnoxious behavior gets rewarded. The healthcare critique works, but the setup is wordy and 'It's personality' lacks the specificity needed for a stronger final laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Boiled lichen and bark reduction provide colorful imagery, but the absurd hospital menu feels arbitrary rather than cleverly motivated. The ruptured appendix adds urgency without improving the joke, and the dignity punchline is predictable.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear first-person premise, economical escalation, and natural dialogue. The recurring ER visits establish a workable comic character, but the idea of exotic food fighting back is familiar, making the final line more amusing than surprising.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean escalation of abrasive behavior; 'tell everyone we're extinct' is a strong closing snap, though the obnoxious-tourist template is familiar.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.2
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Competent hospital-food bit, but the direction is predictable and the closer ('die with dignity') mostly restates the complaint rather than turning it.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 7,
+          "total": 4.9
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Specific, escalating details and a sharp closing line ('if it doesn't fight back...') that reframes the premise instead of just restating it.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash-Lite",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean 'Karen in the jungle' inversion with a crisp final line, though the complaining-tourist escalation is a bit familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Relatable ER observation with decent rhythm, but the 'personality over insurance' closing line feels more like an op-ed quip than a sharp punchline, and it lightly grazes the 'Patient' concept.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.500000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Recites the prompt terms directly in the opening sentence and lands on a predictable bravado punchline without a real comic turn.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 4.800000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean escalation to a sharp extinct punchline; abrasive behavior lands clearly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Solid observational turn on ER triage via personality; payoff is earned but not shocking.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.9
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Vivid specific absurdity in the pamphlet and strong closing demand for dignity.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.300000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "score": 6.7,
+      "rawScore": 6.8,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 3,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6.7,
+        "surprise": 6.7,
+        "craft": 7,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean escalation of abrasive behavior; 'tell everyone we're extinct' is a strong closing snap, though the obnoxious-tourist template is familiar."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 5.9,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean 'Karen in the jungle' inversion with a crisp final line, though the complaining-tourist escalation is a bit familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7,
+          "rawScore": 7,
+          "scoreAdjustment": 0,
+          "comment": "Clean escalation to a sharp extinct punchline; abrasive behavior lands clearly."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.4,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 3,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 5.8,
+        "craft": 6.4,
+        "originality": 6.4,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.7,
+        "craft": 6.3,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 7.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.7,
+          "comment": "Relatable observation with a satisfying reversal: obnoxious behavior gets rewarded. The healthcare critique works, but the setup is wordy and 'It's personality' lacks the specificity needed for a stronger final laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 5.1,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.4,
+          "comment": "Relatable ER observation with decent rhythm, but the 'personality over insurance' closing line feels more like an op-ed quip than a sharp punchline, and it lightly grazes the 'Patient' concept."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0,
+          "comment": "Solid observational turn on ER triage via personality; payoff is earned but not shocking."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.9,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0,
+      "judgeCount": 3,
+      "rubric": {
+        "laugh": 5.4,
+        "surprise": 5.4,
+        "craft": 6.1,
+        "originality": 5.7,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.7,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 6.4,
+          "rawScore": 5.7,
+          "scoreAdjustment": 0.7,
+          "comment": "Clear first-person premise, economical escalation, and natural dialogue. The recurring ER visits establish a workable comic character, but the idea of exotic food fighting back is familiar, making the final line more amusing than surprising."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Specific, escalating details and a sharp closing line ('if it doesn't fight back...') that reframes the premise instead of just restating it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash-Lite",
+          "score": 4.4,
+          "rawScore": 4.8,
+          "scoreAdjustment": -0.4,
+          "comment": "Recites the prompt terms directly in the opening sentence and lands on a predictable bravado punchline without a real comic turn."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "score": 5.8,
+      "rawScore": 5.6,
+      "scoreAdjustment": 0.2,
+      "judgeCount": 3,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.2,
+        "craft": 5.9,
+        "originality": 5.5,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5,
+        "craft": 5.7,
+        "originality": 5.3,
+        "promptFit": 8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.3,
+          "rawScore": 4.6,
+          "scoreAdjustment": 0.7,
+          "comment": "Boiled lichen and bark reduction provide colorful imagery, but the absurd hospital menu feels arbitrary rather than cleverly motivated. The ruptured appendix adds urgency without improving the joke, and the dignity punchline is predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.8,
+          "rawScore": 4.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent hospital-food bit, but the direction is predictable and the closer ('die with dignity') mostly restates the complaint rather than turning it."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.3,
+          "rawScore": 7.3,
+          "scoreAdjustment": 0,
+          "comment": "Vivid specific absurdity in the pamphlet and strong closing demand for dignity."
+        }
+      ],
+      "rank": 4
+    }
+  ],
+  "participationException": {
+    "type": "model-outage",
+    "unavailableContestantIds": [
+      "copilot"
+    ],
+    "details": "Microsoft Copilot remained unable to return a response after repeated attempts over roughly six hours during a service outage."
+  },
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-12-external-real-2026-11-12.png",
+    "originalSrc": "assets/feature-images/2026-11-12-external-real-2026-11-12.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Lost Civilization: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-6 High - The Lost Civilization\nExact joke text to render in the right panel:\nI discovered a lost civilization deep in the jungle, untouched for centuries. They welcomed me with a feast. I complained about the portions, corrected their grammar, and demanded to speak to whoever was in charge. They sent me home with a map and one request: 'Please tell everyone we're extinct.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Lost World, Exotic Food Expert, Emergency Room, Seeing corruption / discrimination, Patient, Abrasive. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Lost World, Exotic Food Expert, Emergency Room, Seeing corruption / discrimination, Patient, Abrasive. Use the winning joke titled \"The Lost Civilization\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 5.5,
+      "anthropic": 6.3,
+      "google": 6.6,
+      "xai": 6.2,
+      "copilot": 6.4
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-12-external-real-2026-11-12.md"
+}

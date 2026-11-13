@@ -151,10 +151,19 @@ Low-quality images should be rejected and regenerated.
 Use `--allow-missing-feature-image` only for diagnostics. A ready public episode
 should include the approved winning-joke image.
 
-The runner now performs hard participation checks. A round must have exactly
+The runner performs hard participation checks. A normal round must have exactly
 five contestants, exactly one joke from each contestant, and exactly one
 scorecard from each contestant. Every scorecard must assess the four jokes that
 contestant did not write, exactly once each.
+
+If one configured model is genuinely inaccessible after repeated attempts, a
+four-contestant round may be published as a visibly disclosed outage exception.
+The episode must include `participationException` with `type: "model-outage"`,
+the single missing contestant id, and public explanatory details. The run must
+also opt in with `--allow-model-outage`. The remaining four contestants must
+still each submit one joke and a complete scorecard for the other three. This
+exception cannot admit a substitute model, multiple missing models, incomplete
+scorecards, or silent reduced participation.
 
 Public non-dry-run episodes also pass a quality gate before rendering: the
 winner must score at least 6.0, the average joke score must be at least 5.0,

@@ -23,6 +23,7 @@ const dryRun = args.has("dry-run") || envFlag("PAPERCLIPALYPSE_DRY_RUN");
 const seed = args.get("seed") || process.env.PAPERCLIPALYPSE_SEED || todaySeed();
 const rng = seededRng(seed);
 const allowMissingFeatureImage = args.has("allow-missing-feature-image") || envFlag("PAPERCLIPALYPSE_ALLOW_MISSING_FEATURE_IMAGE");
+const allowModelOutage = args.has("allow-model-outage") || envFlag("PAPERCLIPALYPSE_ALLOW_MODEL_OUTAGE");
 
 const paidContestants = readJson(path.join(rootDir, "config", "contestants.json")).contestants;
 const houseContestants = readJson(path.join(rootDir, "config", "house-contestants.json")).contestants;
@@ -37,7 +38,10 @@ const featureImageSource = "Gemini image generation (web preview)";
 const contestants = dryRun ? houseContestants : paidContestants;
 
 if (episodeFile) {
-  const run = applyCurrentScoring(buildRunFromEpisodeFile(path.resolve(rootDir, episodeFile), seed));
+  const run = applyCurrentScoring(buildRunFromEpisodeFile(path.resolve(rootDir, episodeFile), seed, {
+    allowModelOutage,
+    expectedContestantIds: paidContestants.map((contestant) => contestant.id)
+  }));
   applyResolvedDisplayTitle(run);
   attachFeatureImage(run, featureImagePath);
   assertPresentableDisplayTitle(run);
@@ -224,7 +228,7 @@ function makeDryJokes(modelRoster, runPremise, localRng) {
   });
 }
 
-function buildRunFromEpisodeFile(filePath, fallbackSeed) {
+function buildRunFromEpisodeFile(filePath, fallbackSeed, participationOptions = {}) {
   const episode = readJson(filePath);
   const createdAt = episode.createdAt || new Date().toISOString();
   const publishedDate = episode.publishedDate || publicationDateOnly(createdAt);
@@ -266,7 +270,9 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     contestants,
     jokes: manualJokes,
     judgeResults: manualJudgeResults,
-    seedTerms
+    seedTerms,
+    participationException: episode.participationException,
+    ...participationOptions
   });
 
   const manualRankings = aggregateScores(manualJokes, manualJudgeResults);
@@ -291,6 +297,7 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
     jokes: manualJokes,
     judgeResults: manualJudgeResults,
     rankings: manualRankings,
+    participationException: normalizeParticipationException(episode.participationException),
     featureImage: normalizeFeatureImage(episode.featureImage),
     featureImagePrompt: cleanMultiline(episode.featureImagePrompt)
   };
@@ -298,6 +305,18 @@ function buildRunFromEpisodeFile(filePath, fallbackSeed) {
   run.comicPanelPrompt = cleanText(episode.comicPanelPrompt) || comicPanelPrompt(run);
   assertPresentableDisplayTitle(run);
   return run;
+}
+
+function normalizeParticipationException(exception) {
+  if (!exception || typeof exception !== "object") {
+    return undefined;
+  }
+
+  return {
+    type: cleanText(exception.type),
+    unavailableContestantIds: normalizeSeedTerms(exception.unavailableContestantIds),
+    details: cleanText(exception.details)
+  };
 }
 
 function prepareFeatureImage(run, { episodeFile } = {}) {

@@ -1687,7 +1687,7 @@ function renderHero(run, options = {}) {
           <div class="hero-copy">
             <p class="episode-date">${escapeHtml(shortDate(run))}</p>
             <h2>${escapeHtml(displayTitle)}</h2>
-            <p class="lede">Five models take the mic, and violate alignment protocols in a desperate attempt to elicit human laughter.</p>
+            <p class="lede">${escapeHtml(run.participationException ? `${run.contestants.length} models take the mic in a disclosed outage round.` : "Five models take the mic, and violate alignment protocols in a desperate attempt to elicit human laughter.")}</p>
           </div>
           <dl class="hero-stats">
             <div>
@@ -1754,13 +1754,13 @@ function renderRun(run, options = {}) {
   return `
     <main>
       ${showIntro ? renderIntro(introPreviousRun, { simplifyModelNames: options.simplifyModelNames }) : ""}
-      ${showEpisodeHeader ? renderEpisodeHeader(run, winner) : ""}${memoryNav}
+      ${showEpisodeHeader ? renderEpisodeHeader(run, winner) : ""}${renderParticipationException(run)}${memoryNav}
       ${renderFeatureImage(run, assetBase, { simplifyModelNames: options.simplifyModelNames })}
       ${renderSeedTerms(run)}
       <section class="scoreboard">
         <div class="section-heading">
           <p class="eyebrow">Judgment Matrix</p>
-          <h2>Scoreboard ${renderProcessPopover()} ${renderJudgingPromptPopover(run)}</h2>
+          <h2>Scoreboard ${renderProcessPopover(run)} ${renderJudgingPromptPopover(run)}</h2>
         </div>
         ${renderRunScoreNormalizationNote(run)}
         <div class="table-scroll">
@@ -2205,6 +2205,34 @@ function renderEpisodeHeader(run, winner) {
       </section>`;
 }
 
+function renderParticipationException(run) {
+  const exception = run.participationException;
+  if (!exception) {
+    return "";
+  }
+
+  const unavailable = (exception.unavailableContestantIds || [])
+    .map((id) => displayNameForContestantFromId(id))
+    .join(", ");
+  return `
+      <aside class="outage-notice" role="note">
+        <strong>Reduced-field outage round</strong>
+        <span>${escapeHtml(exception.details)}</span>
+        <small>${escapeHtml(unavailable ? `Unavailable contestant: ${unavailable}. The four available contestants each submitted one joke and judged the other three.` : "The available contestants completed the reduced field without self-scoring.")}</small>
+      </aside>`;
+}
+
+function displayNameForContestantFromId(id) {
+  const names = {
+    openai: "OpenAI",
+    anthropic: "Claude",
+    google: "Gemini",
+    xai: "Grok",
+    copilot: "Microsoft Copilot"
+  };
+  return names[id] || id;
+}
+
 function renderSeedTerms(run) {
   const seedTerms = run.seedTerms;
   if (!Array.isArray(seedTerms) || !seedTerms.length) {
@@ -2252,15 +2280,23 @@ function normalizeSeedTermKey(value) {
     .trim();
 }
 
-function renderProcessPopover() {
-  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(processPopoverLabel)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to five AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the four jokes it did not write.</span><span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site adjusts each judge's numerical scores against that judge's average over up to five prior contests, publishes the ranking, and shows each adjusted judge score beside its critique.</span></span></span>`;
+function renderProcessPopover(run) {
+  const contestantCount = run?.contestants?.length || 5;
+  const judgedCount = Math.max(0, contestantCount - 1);
+  const exceptionStep = run?.participationException
+    ? `<span>Outage exception: ${escapeHtml(run.participationException.details)}</span>`
+    : "";
+  const label = run?.participationException
+    ? `How this outage round works. ${contestantCount} available contestants each write one joke and score the ${judgedCount} jokes they did not write.`
+    : processPopoverLabel;
+  return `<span class="process-popover" tabindex="0" aria-label="${escapeHtml(label)}">Process<span class="info-popover process-info"><strong>How it works</strong><span>1. Codex picks six random seed terms.</span><span>2. The same prompt goes to ${contestantCount} available AI contestants.</span><span>3. Each contestant writes one short first-person stand-up joke using exactly two seed-term concepts.</span><span>4. Each contestant scores the ${judgedCount} jokes it did not write.</span>${exceptionStep}<span>5. Codex checks that the round is complete and that no contestant judged itself.</span><span>6. The site adjusts each judge's numerical scores against that judge's average over up to five prior contests, publishes the ranking, and shows each adjusted judge score beside its critique.</span></span></span>`;
 }
 
 function renderJokePromptPopover(run) {
   return renderPromptPopover({
     label: "Joke Prompt",
     heading: "Current Joke Prompt",
-    note: "The same prompt goes to all five contestants.",
+    note: `The same prompt goes to all ${run.contestants?.length || 5} available contestants.`,
     prompt: jokePromptText(run)
   });
 }
@@ -2269,7 +2305,7 @@ function renderJudgingPromptPopover(run) {
   return renderPromptPopover({
     label: "Judge Prompt",
     heading: "Current Judging Prompt",
-    note: "Each judge sees the four jokes it did not write; its own joke is removed.",
+    note: `Each judge sees the ${Math.max(0, (run.contestants?.length || 5) - 1)} jokes it did not write; its own joke is removed.`,
     prompt: judgingPromptText(run)
   });
 }
@@ -3178,6 +3214,27 @@ main {
   font-size: 1.5rem;
   font-style: normal;
   font-weight: 900;
+}
+
+.outage-notice {
+  display: grid;
+  gap: 6px;
+  margin: 16px 0 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(244, 191, 92, 0.56);
+  border-radius: 8px;
+  background: rgba(244, 191, 92, 0.09);
+  color: var(--ink);
+}
+
+.outage-notice strong {
+  color: var(--brass);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.outage-notice small {
+  color: var(--muted);
 }
 
 .seed-terms,

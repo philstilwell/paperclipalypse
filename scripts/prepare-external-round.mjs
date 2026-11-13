@@ -47,6 +47,7 @@ const packet = {
     "Send the generation prompt to all five contestants through their normal web chat surfaces.",
     "If a chat surface leaves the prompt sitting in the composer after clicking send, focus the composer and try Control+Enter before treating it as a failed submission.",
     "Do not invent or repair missing contestant jokes.",
+    "If exactly one configured model remains inaccessible after repeated attempts and Phil authorizes an outage exception, remove only that contestant, add participationException metadata naming it, collect complete four-contestant results, and use --allow-model-outage. Never apply this silently.",
     "After all five jokes are collected, send the judging prompt to each contestant with that contestant's own joke removed.",
     "Make sure every joke object in the judging packet has a text field containing the complete joke.",
     "Reject and resubmit any scorecard that omits a joke, scores its own joke, says the joke text was missing, or merely echoes the example object with jokeId \"id\".",

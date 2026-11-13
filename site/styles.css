@@ -354,6 +354,27 @@ main {
   font-weight: 900;
 }
 
+.outage-notice {
+  display: grid;
+  gap: 6px;
+  margin: 16px 0 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(244, 191, 92, 0.56);
+  border-radius: 8px;
+  background: rgba(244, 191, 92, 0.09);
+  color: var(--ink);
+}
+
+.outage-notice strong {
+  color: var(--brass);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.outage-notice small {
+  color: var(--muted);
+}
+
 .seed-terms,
 .scoreboard,
 .rubric,

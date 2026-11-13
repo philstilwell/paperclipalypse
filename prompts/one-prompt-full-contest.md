@@ -55,6 +55,28 @@ routine-action approval during a one-prompt run.
     `--feature-image-qa-approved`.
 15. Verify the rendered site, close temporary tabs/dialogues, commit, and push.
 
+## Rare Model-Outage Exception
+
+Five contestants remain the default. If exactly one configured external model
+is inaccessible after repeated reasonable attempts, Codex may proceed only
+when Phil explicitly authorizes the exception for that round. Do not invent or
+replace the missing model's joke or scorecard.
+
+For an authorized exception:
+
+1. Record `participationException` in the episode with
+   `type: "model-outage"`, the one `unavailableContestantIds` value, and a short
+   public `details` explanation.
+2. Remove only the unavailable contestant from the episode roster.
+3. Collect one real joke and one complete scorecard from each of the four
+   available contestants. Each scorecard must cover the other three jokes and
+   must not include the judge's own joke.
+4. Run both tournament passes with `--allow-model-outage`.
+5. Verify that the published page visibly labels the reduced-field outage.
+
+This exception does not permit two or more missing models, incomplete judging,
+a substitute model, fabricated output, or an undisclosed reduced field.
+
 ## Important Boundaries
 
 - "One-prompt process" means one operator instruction from Phil to Codex. The AI

@@ -85,6 +85,14 @@ The runner blocks publication when:
 - the average joke score is below 5.0
 - any joke has fewer than four judges
 
+One narrow exception is available when a configured external model remains
+inaccessible after repeated attempts. Record a `participationException` of type
+`model-outage` in the episode, name exactly the one missing contestant, explain
+the outage for readers, and run with `--allow-model-outage`. The four available
+contestants must each provide one real joke and a complete non-self scorecard
+covering the other three. Never use the exception to invent output, substitute
+a model, omit a second contestant, or bypass an incomplete scorecard.
+
 Use `PAPERCLIPALYPSE_ALLOW_LOW_QUALITY=1` only for an intentionally weak or diagnostic public round.
 
 ## Cost Guardrails

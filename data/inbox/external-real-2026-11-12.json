@@ -1,0 +1,239 @@
+{
+  "createdAt": "2026-11-12T15:01:53.624Z",
+  "publishedDate": "2026-11-12",
+  "seed": "external-real-2026-11-12",
+  "slug": "2026-11-12-external-real-2026-11-12",
+  "source": "manual-external",
+  "participationException": {
+    "type": "model-outage",
+    "unavailableContestantIds": [
+      "copilot"
+    ],
+    "details": "Microsoft Copilot remained unable to return a response after repeated attempts over roughly six hours during a service outage."
+  },
+  "seedTerms": [
+    "Lost World",
+    "Exotic Food Expert",
+    "Emergency Room",
+    "Seeing corruption / discrimination",
+    "Patient",
+    "Abrasive"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash-Lite",
+      "provider": "google",
+      "model": "Flash-Lite"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "The Lost Civilization",
+      "seedTermsUsed": [
+        "Lost World",
+        "Abrasive"
+      ],
+      "joke": "I discovered a lost civilization deep in the jungle, untouched for centuries. They welcomed me with a feast. I complained about the portions, corrected their grammar, and demanded to speak to whoever was in charge. They sent me home with a map and one request: 'Please tell everyone we're extinct.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Triage by Personality",
+      "seedTermsUsed": [
+        "Emergency Room",
+        "Abrasive"
+      ],
+      "joke": "I sliced my hand open and sat in the ER for four hours behind a guy who was so abrasive to the nurses, so relentlessly rude, that by hour three they moved him straight to the front just to get him away from the rest of us. And watching that happen, bleeding, I thought: the fastest way through American healthcare isn’t insurance. It’s personality."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "model": "Flash-Lite",
+      "title": "Hospital Menu",
+      "seedTermsUsed": [
+        "Exotic Food Expert",
+        "Emergency Room"
+      ],
+      "joke": "I had to go to the emergency room last night, and honestly, the worst part wasn't the pain—it was the dietary pamphlet. They handed me a menu that looked like it was curated by a psychotic exotic food expert who thinks everyone's last meal on earth should be boiled lichen. I'm sitting there clutching my ruptured appendix while reading about a 'hibiscus and bark reduction.' Just give me the ginger ale, or let me die with dignity."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Expert Opinion",
+      "seedTermsUsed": [
+        "Exotic Food Expert",
+        "Emergency Room"
+      ],
+      "joke": "I'm an exotic food expert, which mostly means I keep ending up in the emergency room. Last week it was the fermented Icelandic shark. This week the live scorpions. The doctor walks in, sees me, and just sighs. \"You again.\" I said, \"Look, if the food doesn't fight back on the way down, how exotic can it really be?\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Relatable observation with a satisfying reversal: obnoxious behavior gets rewarded. The healthcare critique works, but the setup is wordy and 'It's personality' lacks the specificity needed for a stronger final laugh."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Boiled lichen and bark reduction provide colorful imagery, but the absurd hospital menu feels arbitrary rather than cleverly motivated. The ruptured appendix adds urgency without improving the joke, and the dignity punchline is predictable."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear first-person premise, economical escalation, and natural dialogue. The recurring ER visits establish a workable comic character, but the idea of exotic food fighting back is familiar, making the final line more amusing than surprising."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clean escalation of abrasive behavior; 'tell everyone we're extinct' is a strong closing snap, though the obnoxious-tourist template is familiar."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Competent hospital-food bit, but the direction is predictable and the closer ('die with dignity') mostly restates the complaint rather than turning it."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Specific, escalating details and a sharp closing line ('if it doesn't fight back...') that reframes the premise instead of just restating it."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash-Lite",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean 'Karen in the jungle' inversion with a crisp final line, though the complaining-tourist escalation is a bit familiar."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Relatable ER observation with decent rhythm, but the 'personality over insurance' closing line feels more like an op-ed quip than a sharp punchline, and it lightly grazes the 'Patient' concept."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Recites the prompt terms directly in the opening sentence and lands on a predictable bravado punchline without a real comic turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clean escalation to a sharp extinct punchline; abrasive behavior lands clearly."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Solid observational turn on ER triage via personality; payoff is earned but not shocking."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Vivid specific absurdity in the pamphlet and strong closing demand for dignity."
+        }
+      ]
+    }
+  ]
+}
