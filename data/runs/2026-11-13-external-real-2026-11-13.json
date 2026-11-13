@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-13-external-real-2026-11-13",
+  "seed": "external-real-2026-11-13",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-13T14:58:02.407Z",
+  "publishedDate": "2026-11-13",
+  "seedTerms": [
+    "Historical",
+    "Surgeon",
+    "Black Tie Event",
+    "Nepotism or favouritism",
+    "Extroverted",
+    "Humorless"
+  ],
+  "premise": {
+    "text": "Seed terms: Historical, Surgeon, Black Tie Event, Nepotism or favouritism, Extroverted, Humorless",
+    "seedTerms": [
+      "Historical",
+      "Surgeon",
+      "Black Tie Event",
+      "Nepotism or favouritism",
+      "Extroverted",
+      "Humorless"
+    ],
+    "displayText": "Bedside Manner"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "The Family Practice",
+      "seedTermsUsed": [
+        "Surgeon",
+        "Nepotism or favouritism"
+      ],
+      "joke": "I found out my surgeon got hired because his father owns the hospital. I said, 'You did go to medical school, right?' He said, 'Of course. Graduated top of my class.' I said, 'That's reassuring.' He said, 'Thanks. Dad was so proud, he bought the medical school.'",
+      "setup": "",
+      "punchline": "I found out my surgeon got hired because his father owns the hospital. I said, 'You did go to medical school, right?' He said, 'Of course. Graduated top of my class.' I said, 'That's reassuring.' He said, 'Thanks. Dad was so proud, he bought the medical school.'",
+      "text": "I found out my surgeon got hired because his father owns the hospital. I said, 'You did go to medical school, right?' He said, 'Of course. Graduated top of my class.' I said, 'That's reassuring.' He said, 'Thanks. Dad was so proud, he bought the medical school.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Bedside Manner",
+      "seedTermsUsed": [
+        "Surgeon",
+        "Extroverted"
+      ],
+      "joke": "I found out my surgeon is a huge extrovert, and that is terrifying, because the last thing you want six hours into an operation is a guy who needs to feel the room. He kept pausing mid-incision to make eye contact with the nurses, tell stories, build rapport. I woke up fine, but somehow my gallbladder had made two new friends before I did.",
+      "setup": "",
+      "punchline": "I found out my surgeon is a huge extrovert, and that is terrifying, because the last thing you want six hours into an operation is a guy who needs to feel the room. He kept pausing mid-incision to make eye contact with the nurses, tell stories, build rapport. I woke up fine, but somehow my gallbladder had made two new friends before I did.",
+      "text": "I found out my surgeon is a huge extrovert, and that is terrifying, because the last thing you want six hours into an operation is a guy who needs to feel the room. He kept pausing mid-incision to make eye contact with the nurses, tell stories, build rapport. I woke up fine, but somehow my gallbladder had made two new friends before I did."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "The Family Practice",
+      "seedTermsUsed": [
+        "Surgeon",
+        "Nepotism or favouritism"
+      ],
+      "joke": "I went in for an appendectomy last month and realized right before the anesthesia hit that the hospital was basically a family business. The head surgeon introduced his twenty-two-year-old nephew as the guy handling the actual scalpel work so he could \"get his reps in.\" Nobody wants to hear the phrase \"learning on the job\" when your abdomen is wide open. I didn't care about the kid's resume, I just prayed he inherited his uncle's steady hands instead of his dad's golf swing.",
+      "setup": "",
+      "punchline": "I went in for an appendectomy last month and realized right before the anesthesia hit that the hospital was basically a family business. The head surgeon introduced his twenty-two-year-old nephew as the guy handling the actual scalpel work so he could \"get his reps in.\" Nobody wants to hear the phrase \"learning on the job\" when your abdomen is wide open. I didn't care about the kid's resume, I just prayed he inherited his uncle's steady hands instead of his dad's golf swing.",
+      "text": "I went in for an appendectomy last month and realized right before the anesthesia hit that the hospital was basically a family business. The head surgeon introduced his twenty-two-year-old nephew as the guy handling the actual scalpel work so he could \"get his reps in.\" Nobody wants to hear the phrase \"learning on the job\" when your abdomen is wide open. I didn't care about the kid's resume, I just prayed he inherited his uncle's steady hands instead of his dad's golf swing."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Room Owner, Laugh Firewall",
+      "seedTermsUsed": [
+        "Extroverted",
+        "Humorless"
+      ],
+      "joke": "I'm an extremely extroverted guy with zero sense of humor. I walk into any room and own it within minutes—talking to everyone, keeping the energy high. Then someone tries a joke and I shut down completely. Last weekend a guy said, \"Working hard or hardly working?\" I looked at him deadpan and said, \"I am working. Hardly is not a measurable unit of effort.\"",
+      "setup": "",
+      "punchline": "I'm an extremely extroverted guy with zero sense of humor. I walk into any room and own it within minutes—talking to everyone, keeping the energy high. Then someone tries a joke and I shut down completely. Last weekend a guy said, \"Working hard or hardly working?\" I looked at him deadpan and said, \"I am working. Hardly is not a measurable unit of effort.\"",
+      "text": "I'm an extremely extroverted guy with zero sense of humor. I walk into any room and own it within minutes—talking to everyone, keeping the energy high. Then someone tries a joke and I shut down completely. Last weekend a guy said, \"Working hard or hardly working?\" I looked at him deadpan and said, \"I am working. Hardly is not a measurable unit of effort.\""
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "No Bedside Laughs",
+      "seedTermsUsed": [
+        "Surgeon",
+        "Humorless"
+      ],
+      "joke": "I had a surgeon who was so humorless, I got nervous when he asked if I had any questions before the operation. I said, \"Just one: how many of these have you done?\" He stared at me and said, \"Successfully?\" That's not a follow-up question from a surgeon; that's a trivia category.",
+      "setup": "",
+      "punchline": "I had a surgeon who was so humorless, I got nervous when he asked if I had any questions before the operation. I said, \"Just one: how many of these have you done?\" He stared at me and said, \"Successfully?\" That's not a follow-up question from a surgeon; that's a trivia category.",
+      "text": "I had a surgeon who was so humorless, I got nervous when he asked if I had any questions before the operation. I said, \"Just one: how many of these have you done?\" He stared at me and said, \"Successfully?\" That's not a follow-up question from a surgeon; that's a trivia category."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "A recognizable comic premise with an amusing final image. The gallbladder making friends is unexpected, but the setup runs long and the payoff is more whimsical than laugh-inducing.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The nephew practicing surgery provides clear stakes, and the golf-swing comparison is a decent final turn. However, the lengthy setup telegraphs the incompetence angle, and the punchline delivers only a modest laugh.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The contrast between sociability and humorlessness is clear, but the literal interpretation of a familiar expression is predictable. The final line illustrates the character rather than delivering a satisfying comic reversal.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 4.9
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Economical setup, effective misdirection through 'Successfully?', and a concise secondary punchline. The surgeon's response creates a genuine laugh, although the underlying medical-incompetence premise is familiar.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean dialogue escalation with a sharp, earned final line; solid stage rhythm.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Good premise but overlong and narrated rather than punched; ending is cute, not a snap.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clever deadpan wordplay but feels more cerebral than laugh-out-loud; slightly dry landing.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 5.9
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Tight setup, unexpected 'Successfully?' beat, and a crisp closing line that lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean classic escalation structure with a solid final turn, though the rich-dad-buys-the-school trope is fairly familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong comic premise and vivid image of an extrovert working the OR room, though the gallbladder tag is a bit whimsical rather than a sharp punch.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Reads like a straightforward character trait summary followed by a predictable literal-minded retort to a cliché.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The 'Successfully?' turn lands nicely, though the final line over-explains the joke instead of letting the surgeon's deadpan carry it.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean nepotism escalation that lands on the final line without strain.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong stage premise with a vivid, non-obvious closer that carries.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Concrete golf-swing image works; overall a touch long and explanatory.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Sharp competence turn; trailing commentary softens the pure punch.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise, strong escalation, and a solid final reveal that pays off the nepotism angle.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Fresh combination of traits, good surgical-setting details, and the gallbladder friendship tag lands cleanly.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 8,
+          "promptFit": 10,
+          "total": 8.2
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Competent observational premise with a relatable fear, but the turn is fairly expected and the ending is mild.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Fits the seeds well and is easy to follow, but the punchline relies on a literal interpretation that earns only a modest smile.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.800000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 7.1,
+      "rawScore": 7.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 7.3,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7,
+        "originality": 7.3,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 7.1,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.6,
+          "comment": "A recognizable comic premise with an amusing final image. The gallbladder making friends is unexpected, but the setup runs long and the payoff is more whimsical than laugh-inducing."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.4,
+          "rawScore": 6.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong comic premise and vivid image of an extrovert working the OR room, though the gallbladder tag is a bit whimsical rather than a sharp punch."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.1,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong stage premise with a vivid, non-obvious closer that carries."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 8,
+          "rawScore": 8.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Fresh combination of traits, good surgical-setting details, and the gallbladder friendship tag lands cleanly."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.9,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 6.5,
+        "originality": 5.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 7.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.6,
+          "comment": "Economical setup, effective misdirection through 'Successfully?', and a concise secondary punchline. The surgeon's response creates a genuine laugh, although the underlying medical-incompetence premise is familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Tight setup, unexpected 'Successfully?' beat, and a crisp closing line that lands."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "The 'Successfully?' turn lands nicely, though the final line over-explains the joke instead of letting the surgeon's deadpan carry it."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.8,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Sharp competence turn; trailing commentary softens the pure punch."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "score": 6.5,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.1,
+        "craft": 6.6,
+        "originality": 5.6,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean dialogue escalation with a sharp, earned final line; solid stage rhythm."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean classic escalation structure with a solid final turn, though the rich-dad-buys-the-school trope is fairly familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean nepotism escalation that lands on the final line without strain."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise, strong escalation, and a solid final reveal that pays off the nepotism angle."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.2,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 9.4
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 9.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 7,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.6,
+          "comment": "The nephew practicing surgery provides clear stakes, and the golf-swing comparison is a decent final turn. However, the lengthy setup telegraphs the incompetence angle, and the punchline delivers only a modest laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Good premise but overlong and narrated rather than punched; ending is cute, not a snap."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Concrete golf-swing image works; overall a touch long and explanatory."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Competent observational premise with a relatable fear, but the turn is fairly expected and the ending is mild."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.3,
+      "rawScore": 5.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.5,
+        "surprise": 4.8,
+        "craft": 5.5,
+        "originality": 5.3,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.8,
+        "craft": 5.5,
+        "originality": 5.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.5,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0.6,
+          "comment": "The contrast between sociability and humorlessness is clear, but the literal interpretation of a familiar expression is predictable. The final line illustrates the character rather than delivering a satisfying comic reversal."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.8,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Clever deadpan wordplay but feels more cerebral than laugh-out-loud; slightly dry landing."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 4.4,
+          "rawScore": 4.6,
+          "scoreAdjustment": -0.2,
+          "comment": "Reads like a straightforward character trait summary followed by a predictable literal-minded retort to a cliché."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Fits the seeds well and is easy to follow, but the punchline relies on a literal interpretation that earns only a modest smile."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-13-external-real-2026-11-13.png",
+    "originalSrc": "assets/feature-images/2026-11-13-external-real-2026-11-13.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Bedside Manner: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Bedside Manner\nExact joke text to render in the right panel:\nI found out my surgeon is a huge extrovert, and that is terrifying, because the last thing you want six hours into an operation is a guy who needs to feel the room. He kept pausing mid-incision to make eye contact with the nurses, tell stories, build rapport. I woke up fine, but somehow my gallbladder had made two new friends before I did.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Historical, Surgeon, Black Tie Event, Nepotism or favouritism, Extroverted, Humorless. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Historical, Surgeon, Black Tie Event, Nepotism or favouritism, Extroverted, Humorless. Use the winning joke titled \"Bedside Manner\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 5.7,
+      "anthropic": 6.4,
+      "google": 6.5,
+      "xai": 6.4,
+      "copilot": 6.5
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-13-external-real-2026-11-13.md"
+}
