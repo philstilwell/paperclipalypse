@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-14-external-real-2026-11-14",
+  "seed": "external-real-2026-11-14",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-14T14:56:51.350Z",
+  "publishedDate": "2026-11-14",
+  "seedTerms": [
+    "Organised Crime",
+    "Teacher",
+    "Subway Train / Station / Tunnel",
+    "Authority being threatened",
+    "Protective",
+    "Dishonest"
+  ],
+  "premise": {
+    "text": "Seed terms: Organised Crime, Teacher, Subway Train / Station / Tunnel, Authority being threatened, Protective, Dishonest",
+    "seedTerms": [
+      "Organised Crime",
+      "Teacher",
+      "Subway Train / Station / Tunnel",
+      "Authority being threatened",
+      "Protective",
+      "Dishonest"
+    ],
+    "displayText": "Parent-Teacher Mafia"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash",
+      "provider": "google",
+      "model": "gemini-3.5-flash"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "The Perfect Field Trip",
+      "seedTermsUsed": [
+        "Teacher",
+        "Subway Train / Station / Tunnel"
+      ],
+      "joke": "I'm a teacher. I took thirty students on the subway and told them, 'If we get separated, stay exactly where you are.' The doors closed with me on the train and all thirty kids still on the platform. I was furious. Ten months of teaching, and they chose THAT moment to listen.",
+      "setup": "",
+      "punchline": "I'm a teacher. I took thirty students on the subway and told them, 'If we get separated, stay exactly where you are.' The doors closed with me on the train and all thirty kids still on the platform. I was furious. Ten months of teaching, and they chose THAT moment to listen.",
+      "text": "I'm a teacher. I took thirty students on the subway and told them, 'If we get separated, stay exactly where you are.' The doors closed with me on the train and all thirty kids still on the platform. I was furious. Ten months of teaching, and they chose THAT moment to listen."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Protection Racket",
+      "seedTermsUsed": [
+        "Organised Crime",
+        "Subway Train / Station / Tunnel"
+      ],
+      "joke": "I got mugged in the subway last week, which honestly felt less personal than getting mugged by the subway itself. Same move every time — guy demands money, disappears for twenty minutes, then shows up acting like nothing happened. At least the mugger had the decency to rob me once. The MTA billed me monthly for it and called it a MetroCard.",
+      "setup": "",
+      "punchline": "I got mugged in the subway last week, which honestly felt less personal than getting mugged by the subway itself. Same move every time — guy demands money, disappears for twenty minutes, then shows up acting like nothing happened. At least the mugger had the decency to rob me once. The MTA billed me monthly for it and called it a MetroCard.",
+      "text": "I got mugged in the subway last week, which honestly felt less personal than getting mugged by the subway itself. Same move every time — guy demands money, disappears for twenty minutes, then shows up acting like nothing happened. At least the mugger had the decency to rob me once. The MTA billed me monthly for it and called it a MetroCard."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "model": "gemini-3.5-flash",
+      "title": "Parent-Teacher Mafia",
+      "seedTermsUsed": [
+        "Teacher",
+        "Organised Crime"
+      ],
+      "joke": "I used to be a middle school teacher, which is basically low-level organized crime without the pension. You run a protection racket on thirty kids for nine months, collect tributes in the form of half-eaten granola bars, and every Friday you have to sit down with the rival syndicate—the parents—and pretend their little guy didn't torch the bathroom trash can. Honestly, the only difference between me and the mob is that Tony Soprano never had to beg for dry-erase markers.",
+      "setup": "",
+      "punchline": "I used to be a middle school teacher, which is basically low-level organized crime without the pension. You run a protection racket on thirty kids for nine months, collect tributes in the form of half-eaten granola bars, and every Friday you have to sit down with the rival syndicate—the parents—and pretend their little guy didn't torch the bathroom trash can. Honestly, the only difference between me and the mob is that Tony Soprano never had to beg for dry-erase markers.",
+      "text": "I used to be a middle school teacher, which is basically low-level organized crime without the pension. You run a protection racket on thirty kids for nine months, collect tributes in the form of half-eaten granola bars, and every Friday you have to sit down with the rival syndicate—the parents—and pretend their little guy didn't torch the bathroom trash can. Honestly, the only difference between me and the mob is that Tony Soprano never had to beg for dry-erase markers."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Middle School Mob",
+      "seedTermsUsed": [
+        "Teacher",
+        "Organised Crime"
+      ],
+      "joke": "I teach middle school. It's basically organised crime with backpacks. The kids run territories in the cafeteria, they shake down the nerds for homework answers, and the other day the ringleader walked up to me after class, cracked his knuckles, and said, \"Nice lesson plan you got there. Be a shame if something happened to it during the fire drill.\"",
+      "setup": "",
+      "punchline": "I teach middle school. It's basically organised crime with backpacks. The kids run territories in the cafeteria, they shake down the nerds for homework answers, and the other day the ringleader walked up to me after class, cracked his knuckles, and said, \"Nice lesson plan you got there. Be a shame if something happened to it during the fire drill.\"",
+      "text": "I teach middle school. It's basically organised crime with backpacks. The kids run territories in the cafeteria, they shake down the nerds for homework answers, and the other day the ringleader walked up to me after class, cracked his knuckles, and said, \"Nice lesson plan you got there. Be a shame if something happened to it during the fire drill.\""
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Honesty Unit",
+      "seedTermsUsed": [
+        "Teacher",
+        "Dishonest"
+      ],
+      "joke": "I knew my kid's teacher was getting desperate during the honesty unit. She sent home a note saying, \"Please discuss the importance of truthfulness with your children.\" I signed it, \"Dad.\" The next day she emailed, \"Great lesson. Your son turned it in and said, 'My dad says if a lie is believable, it's called customer service.'\"",
+      "setup": "",
+      "punchline": "I knew my kid's teacher was getting desperate during the honesty unit. She sent home a note saying, \"Please discuss the importance of truthfulness with your children.\" I signed it, \"Dad.\" The next day she emailed, \"Great lesson. Your son turned it in and said, 'My dad says if a lie is believable, it's called customer service.'\"",
+      "text": "I knew my kid's teacher was getting desperate during the honesty unit. She sent home a note saying, \"Please discuss the importance of truthfulness with your children.\" I signed it, \"Dad.\" The next day she emailed, \"Great lesson. Your son turned it in and said, 'My dad says if a lie is believable, it's called customer service.'\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "The subway-as-mugger comparison is relatable, but the extended analogy becomes strained. The MetroCard punchline lacks a sharp payoff. An individual mugging does not clearly establish organised crime, weakening prompt fit.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 4.9
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "A coherent extended mob analogy with concrete classroom details and effective escalation. The dry-erase marker punchline provides a satisfying contrast, though the teacher-as-gangster premise is familiar and the setup runs slightly long.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Economical construction with recognizable mob dialogue and a concrete closing image. The fire-drill threat is amusing but predictable once the premise is established. Threatening the teacher's authority also introduces a plausible third seed concept.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 4,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The honesty-unit setup creates a clear expectation, and the customer-service reversal is understandable. However, the father's role in the exchange is slightly awkward, and the familiar joke about business dishonesty produces more recognition than laughter.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean, classic misdirection structure, clear stage voice, mild payoff; familiar 'kids are too literal' territory.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Solid extended metaphor but front-loaded; punchline restates premise rather than topping it, energy dips at the end.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Strong mob-voice pastiche with a real quoted threat as the button; escalates cleanly and lands on the funniest line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Nice reversal of who's being dishonest, kid's closing line is a genuine quotable turn, tight and well-paced.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean, tight stand-up rhythm with a relatable premise, though the punchline is a fairly familiar trope about kids only listening at the worst possible time.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Solid local transit complaint, but a street mugging is more petty crime than organized crime, and the MetroCard punchline feels slightly dated.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.500000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Hits both concepts squarely with decent stage voice, but the 'be a shame if something happened to it' mob cliché is too predictable to earn a strong laugh.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Funniest punchline of the batch with a sharp cynical turn, though the middle setup about signing 'Dad' does unnecessary mechanical work.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.9
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean inversion of the kids-never-listen premise with solid subway staging; final line lands but the turn is the expected one.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "MetroCard monthly-bill parallel is sharp, yet the piece uses ordinary mugging rather than organised-crime concepts.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 4,
+          "total": 6.000000000000002
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Extended teacher-as-mob metaphor stays concrete and finishes on a specific, usable markers line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Customer-service-as-lying observation is familiar; narrative framing softens the payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Classic reversal with clean timing; strong final line and clear stand-up voice.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.4
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Transit-as-mugger comparison is solid, but organized crime is not clearly used as a concept and the turn is fairly predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 4,
+          "total": 5.800000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Well-developed analogy with several amusing details; consistent escalation though slightly long and familiar.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear premise and clean punchline, but the teacher-as-mobster comparison is a common comic route with limited surprise.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 6.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 7,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.5,
+          "comment": "A coherent extended mob analogy with concrete classroom details and effective escalation. The dry-erase marker punchline provides a satisfying contrast, though the teacher-as-gangster premise is familiar and the setup runs slightly long."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.5,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid extended metaphor but front-loaded; punchline restates premise rather than topping it, energy dips at the end."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Extended teacher-as-mob metaphor stays concrete and finishes on a specific, usable markers line."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Well-developed analogy with several amusing details; consistent escalation though slightly long and familiar."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "score": 6.6,
+      "rawScore": 6.7,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.1,
+        "craft": 7.1,
+        "originality": 5.9,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.3,
+        "surprise": 6.3,
+        "craft": 7.3,
+        "originality": 6,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.3,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean, classic misdirection structure, clear stage voice, mild payoff; familiar 'kids are too literal' territory."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean, tight stand-up rhythm with a relatable premise, though the punchline is a fairly familiar trope about kids only listening at the worst possible time."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Clean inversion of the kids-never-listen premise with solid subway staging; final line lands but the turn is the expected one."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.2,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Classic reversal with clean timing; strong final line and clear stand-up voice."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.3,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 5.8,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 5.8,
+        "originality": 6,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 6.1,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.5,
+          "comment": "The honesty-unit setup creates a clear expectation, and the customer-service reversal is understandable. However, the father's role in the exchange is slightly awkward, and the familiar joke about business dishonesty produces more recognition than laughter."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Nice reversal of who's being dishonest, kid's closing line is a genuine quotable turn, tight and well-paced."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 6.8,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.1,
+          "comment": "Funniest punchline of the batch with a sharp cynical turn, though the middle setup about signing 'Dad' does unnecessary mechanical work."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.2,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.1,
+          "comment": "Customer-service-as-lying observation is familiar; narrative framing softens the payoff."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 6.2,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 5.5,
+        "promptFit": 7.8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6.5,
+        "originality": 5.5,
+        "promptFit": 7.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 6.4,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.5,
+          "comment": "Economical construction with recognizable mob dialogue and a concrete closing image. The fire-drill threat is amusing but predictable once the premise is established. Threatening the teacher's authority also introduces a plausible third seed concept."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Strong mob-voice pastiche with a real quoted threat as the button; escalates cleanly and lands on the funniest line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.5,
+          "rawScore": 5.6,
+          "scoreAdjustment": -0.1,
+          "comment": "Hits both concepts squarely with decent stage voice, but the 'be a shame if something happened to it' mob cliché is too predictable to earn a strong laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear premise and clean punchline, but the teacher-as-mobster comparison is a common comic route with limited surprise."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 5.6,
+      "rawScore": 5.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 4.8
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.8,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 4.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.4,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0.5,
+          "comment": "The subway-as-mugger comparison is relatable, but the extended analogy becomes strained. The MetroCard punchline lacks a sharp payoff. An individual mugging does not clearly establish organised crime, weakening prompt fit."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini Flash",
+          "score": 5.4,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Solid local transit complaint, but a street mugging is more petty crime than organized crime, and the MetroCard punchline feels slightly dated."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.9,
+          "rawScore": 6,
+          "scoreAdjustment": -0.1,
+          "comment": "MetroCard monthly-bill parallel is sharp, yet the piece uses ordinary mugging rather than organised-crime concepts."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.6,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.2,
+          "comment": "Transit-as-mugger comparison is solid, but organized crime is not clearly used as a concept and the turn is fairly predictable."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-14-external-real-2026-11-14.png",
+    "originalSrc": "assets/feature-images/2026-11-14-external-real-2026-11-14.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Parent-Teacher Mafia: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini Flash - Parent-Teacher Mafia\nExact joke text to render in the right panel:\nI used to be a middle school teacher, which is basically low-level organized crime without the pension. You run a protection racket on thirty kids for nine months, collect tributes in the form of half-eaten granola bars, and every Friday you have to sit down with the rival syndicate—the parents—and pretend their little guy didn't torch the bathroom trash can. Honestly, the only difference between me and the mob is that Tony Soprano never had to beg for dry-erase markers.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Organised Crime, Teacher, Subway Train / Station / Tunnel, Authority being threatened, Protective, Dishonest. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Organised Crime, Teacher, Subway Train / Station / Tunnel, Authority being threatened, Protective, Dishonest. Use the winning joke titled \"The Perfect Field Trip\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.3,
+    "judgeAverages": {
+      "openai": 5.8,
+      "anthropic": 6.4,
+      "google": 6.5,
+      "xai": 6.5,
+      "copilot": 6.5
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-14-external-real-2026-11-14.md"
+}
