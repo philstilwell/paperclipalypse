@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-15T14:56:37.110Z",
+  "publishedDate": "2026-11-15",
+  "seed": "external-real-2026-11-15",
+  "slug": "2026-11-15-external-real-2026-11-15",
+  "source": "manual-external",
+  "seedTerms": [
+    "Woman and Child in Peril",
+    "Judge",
+    "Pub",
+    "Getting caught",
+    "Happy",
+    "Dishonest"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini Flash-Lite",
+      "provider": "google",
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "The Honesty Test",
+      "seedTermsUsed": [
+        "Dishonest",
+        "Getting caught"
+      ],
+      "joke": "My wife caught me lying about how much I'd spent on a new television. She said, 'From now on, I want complete honesty in this marriage.' I said, 'Absolutely.' She asked, 'Do these jeans make me look fat?' I said, 'I think we should establish some reasonable exceptions to the new policy.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Honor System",
+      "seedTermsUsed": [
+        "Pub",
+        "Judge"
+      ],
+      "joke": "I got a DUI and the judge asked where I'd been. I said, 'Just at home, Your Honor, drinking water, being responsible.' Then my pub loyalty app pinged out loud: 'You're one pint away from a free nacho platter!' Judge just stared at me. I said, 'Those nachos are... theoretical.' He added two years. Worth it. Theoretical nachos."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini Flash-Lite",
+      "model": "gemini-3.5-flash-lite",
+      "title": "Pub Court",
+      "seedTermsUsed": [
+        "Judge",
+        "Pub"
+      ],
+      "joke": "My local pub has officially appointed me the presiding judge of bad life choices. Last night, a guy tried to argue he only had two pints. I didn't even bang a gavel; I just slowly slid his empty bowl of pub nuts across the sticky table and sentenced him to walking home in his socks."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Mid-Wave Exit",
+      "seedTermsUsed": [
+        "Pub",
+        "Getting caught"
+      ],
+      "joke": "I tried to slip out of the pub without settling up. Almost made the door. Then I got caught by the bartender who recognized my confident little wave from three stools over. He held up the bill and said, 'This is the part where you come back.' Getting caught mid-escape is bad. Getting caught mid-wave is worse."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Character Witness",
+      "seedTermsUsed": [
+        "Judge",
+        "Dishonest"
+      ],
+      "joke": "I got called for jury duty, and the judge asked if anyone had a reason they couldn't be impartial. I raised my hand and said, \"I'm a terrible liar.\" He said, \"How does that affect your judgment?\" I said, \"If the defendant says he's innocent, I'm going to believe him. If he says he's guilty, I'm going to believe him even harder.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 4,
+          "laugh": 5,
+          "comment": "The loyalty-app interruption is a recognizable comic reveal with decent timing. However, the theoretical-nachos punchline feels forced, and the repetition weakens the ending. Dishonesty and getting caught introduce additional seed concepts beyond Judge and Pub."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The imaginary pub judge is a clear, mildly inventive premise, but sliding a bowl of nuts across the table reveals nothing, and the socks punishment feels arbitrary rather than earned. Strong seed compliance, weak comic payoff."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 3,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 4,
+          "laugh": 3,
+          "comment": "The attempted escape establishes a recognizable situation, but the bartender's response is entirely predictable. The closing comparison explains the embarrassment rather than delivering a punchline. Leaving without paying also introduces Dishonest as a third seed concept."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The courtroom setup is accessible, but being a terrible liar has no logical connection to believing every defendant. The final escalation offers a recognizable joke rhythm without a convincing comic reversal. The two selected concepts fit naturally."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 3,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clean delivery but the 'honesty pact / do these jeans make me look fat' bit is a very familiar template; punchline is predictable."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Fresh courtroom-in-a-pub conceit; the nuts-bowl gavel swap and socks sentence land well with concrete imagery."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid escalation with the wave detail; final line is a decent turn but slightly underpowered as a closer."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Nice logical-paradox punchline that escalates naturally from the setup; clean, economical, and non-obvious."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini Flash-Lite",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Classic marriage trap trope, but executed cleanly with solid stage rhythm and a crisp punchline."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 8,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Great use of modern tech (loyalty app) creating an immediate, high-stakes trap. Fantastic tag at the end."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Nice physical detail with the confident wave, though the narrative arc is a bit predictable."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Fun subversion of jury impartiality, leaning into a charmingly incompetent persona."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 3,
+          "surprise": 4,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent setup with clean rhythm, but the jeans punch is a well-worn marital trope that lands as mild recognition rather than fresh laugh."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong concrete image of the loyalty app interrupting court; the theoretical-nachos close carries a genuine, repeatable turn."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Appealing pub-as-courtroom premise and physical nuts-bowl detail, yet the socks sentence stays mild and slightly writerly."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean logical twist on the terrible-liar claim; earns a solid smile more than a big stage laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Classic honesty-in-marriage misdirection; clear and functional but very familiar."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong concrete image with the loyalty-app reveal and callback to theoretical nachos."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Amusing pub-courtroom premise, but the sentencing detail feels more whimsical than punchy."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Nicely observed escalation from sneaking out to getting caught waving; clean and concise."
+        }
+      ]
+    }
+  ]
+}
