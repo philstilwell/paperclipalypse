@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-16-external-real-2026-11-16",
+  "seed": "external-real-2026-11-16",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-16T14:58:51.328Z",
+  "publishedDate": "2026-11-16",
+  "seedTerms": [
+    "Cozy and Amateur",
+    "Midwife",
+    "Arctic Tundra",
+    "Having to steal something vital",
+    "Intelligent",
+    "Fanatical"
+  ],
+  "premise": {
+    "text": "Seed terms: Cozy and Amateur, Midwife, Arctic Tundra, Having to steal something vital, Intelligent, Fanatical",
+    "seedTerms": [
+      "Cozy and Amateur",
+      "Midwife",
+      "Arctic Tundra",
+      "Having to steal something vital",
+      "Intelligent",
+      "Fanatical"
+    ],
+    "displayText": "Emergency Preparedness"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "Emergency Preparedness",
+      "seedTermsUsed": [
+        "Having to steal something vital",
+        "Fanatical"
+      ],
+      "joke": "My roommate's fanatical about disaster preparedness. When his emergency radio died, he stole the batteries from our smoke detector. I said, 'What if there's a fire?' He said, 'Relax. We'll hear about it on the radio.'",
+      "setup": "",
+      "punchline": "My roommate's fanatical about disaster preparedness. When his emergency radio died, he stole the batteries from our smoke detector. I said, 'What if there's a fire?' He said, 'Relax. We'll hear about it on the radio.'",
+      "text": "My roommate's fanatical about disaster preparedness. When his emergency radio died, he stole the batteries from our smoke detector. I said, 'What if there's a fire?' He said, 'Relax. We'll hear about it on the radio.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Home Birth Heist",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Having to steal something vital"
+      ],
+      "joke": "My cousin became a midwife — self-taught, very cozy, candles, essential oils, a playlist called ‘Womb Vibes.’ First real delivery, baby’s crowning, and she leans over and whispers, ‘Can you run next door and borrow their turkey baster? We never actually bought the suction thing.’ That’s the moment I realized home birth just means felony with snacks.",
+      "setup": "",
+      "punchline": "My cousin became a midwife — self-taught, very cozy, candles, essential oils, a playlist called ‘Womb Vibes.’ First real delivery, baby’s crowning, and she leans over and whispers, ‘Can you run next door and borrow their turkey baster? We never actually bought the suction thing.’ That’s the moment I realized home birth just means felony with snacks.",
+      "text": "My cousin became a midwife — self-taught, very cozy, candles, essential oils, a playlist called ‘Womb Vibes.’ First real delivery, baby’s crowning, and she leans over and whispers, ‘Can you run next door and borrow their turkey baster? We never actually bought the suction thing.’ That’s the moment I realized home birth just means felony with snacks."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "The Overqualified Doula",
+      "seedTermsUsed": [
+        "Midwife",
+        "Fanatical"
+      ],
+      "joke": "My wife hired a midwife for our home birth, and I realized halfway through she wasn't a medical professional—she was a cult leader. Every time my wife screamed in pain, this woman stared into my eyes and whispered, 'The Earth is reclaiming its rent.' I tried to hand my wife an ice chip and the midwife slapped it out of my hand like I'd offered her heroin. By hour twelve, I wasn't even rooting for a healthy baby anymore; I was just hoping we'd both survive the ritual.",
+      "setup": "",
+      "punchline": "My wife hired a midwife for our home birth, and I realized halfway through she wasn't a medical professional—she was a cult leader. Every time my wife screamed in pain, this woman stared into my eyes and whispered, 'The Earth is reclaiming its rent.' I tried to hand my wife an ice chip and the midwife slapped it out of my hand like I'd offered her heroin. By hour twelve, I wasn't even rooting for a healthy baby anymore; I was just hoping we'd both survive the ritual.",
+      "text": "My wife hired a midwife for our home birth, and I realized halfway through she wasn't a medical professional—she was a cult leader. Every time my wife screamed in pain, this woman stared into my eyes and whispered, 'The Earth is reclaiming its rent.' I tried to hand my wife an ice chip and the midwife slapped it out of my hand like I'd offered her heroin. By hour twelve, I wasn't even rooting for a healthy baby anymore; I was just hoping we'd both survive the ritual."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Trust Your Body",
+      "seedTermsUsed": [
+        "Midwife",
+        "Fanatical"
+      ],
+      "joke": "I'm a midwife who's fanatical about going natural. Epidurals are for quitters. During one long labor I kept repeating, 'Trust your body. Your body knows what to do.' After hour fourteen the mom locked eyes with me and said, 'My body knows what to do. It's telling me to fire you.'",
+      "setup": "",
+      "punchline": "I'm a midwife who's fanatical about going natural. Epidurals are for quitters. During one long labor I kept repeating, 'Trust your body. Your body knows what to do.' After hour fourteen the mom locked eyes with me and said, 'My body knows what to do. It's telling me to fire you.'",
+      "text": "I'm a midwife who's fanatical about going natural. Epidurals are for quitters. During one long labor I kept repeating, 'Trust your body. Your body knows what to do.' After hour fourteen the mom locked eyes with me and said, 'My body knows what to do. It's telling me to fire you.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Practice Run",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Having to steal something vital"
+      ],
+      "joke": "I found out there's a huge difference between a professional thief and an amateur thief. A professional steals the crown jewels; an amateur steals one thing he absolutely needs. I forgot my house keys, tried to sneak into my own place through a window, and my neighbor yelled, “Hey, that's illegal!” I was like, “I know, that's why I'm so bad at it.”",
+      "setup": "",
+      "punchline": "I found out there's a huge difference between a professional thief and an amateur thief. A professional steals the crown jewels; an amateur steals one thing he absolutely needs. I forgot my house keys, tried to sneak into my own place through a window, and my neighbor yelled, “Hey, that's illegal!” I was like, “I know, that's why I'm so bad at it.”",
+      "text": "I found out there's a huge difference between a professional thief and an amateur thief. A professional steals the crown jewels; an amateur steals one thing he absolutely needs. I forgot my house keys, tried to sneak into my own place through a window, and my neighbor yelled, “Hey, that's illegal!” I was like, “I know, that's why I'm so bad at it.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Distinctive imagery and a promising premise, but the turkey baster is an implausible detail and 'felony with snacks' feels disconnected. Uses three seed concepts, and borrowing is not stealing.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 4,
+          "originality": 6,
+          "promptFit": 4,
+          "total": 4.4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The cult-leader premise offers some amusing imagery, particularly the ice-chip confrontation. However, the lengthy escalation produces no substantial final reversal. 'Survive the ritual' merely reinforces the established premise.",
+          "laugh": 4,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.8999999999999995
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clear first-person premise, economical escalation, and an understandable final reversal. The patient's response provides a genuine mild laugh, although the joke follows a familiar setup and the punchline is fairly predictable.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "The distinction between amateur and professional thieves has potential, but the example involves entering one's own home rather than stealing something vital. The final line lacks a convincing comic connection to the neighbor's accusation.",
+          "laugh": 3,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 4,
+          "total": 3.3000000000000003
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean logic-loop punchline, economical, lands naturally; solid but not a standout image.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Good escalating cult imagery, but runs long and the final line restates dread rather than snapping a new turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Nice mirrored-line turn ('fire you'), tight setup-to-punchline economy, feels like a real bit.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Decent self-deprecating closer but the premise-definition setup is familiar and the laugh is mild.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Crisp, tight setup-and-payoff rhythm with a solid ironic turn and clean two-seed adherence.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Funny turkey-baster escalation, though the closing line slightly blurs the punch and it uses three seed concepts (Midwife, Cozy and Amateur, and borrowing/stealing).",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 4,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent premise and clean seed fit, but the angry-patient retort is predictable and lacks a sharp comic twist.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.1000000000000005
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Loose, meandering premise with a weak punchline that falls flat and only half-uses the 'Cozy and Amateur' seed.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 6,
+          "total": 4.2
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Tight circular logic with clean stage rhythm and a final line that lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.300000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Uses three seed concepts including midwife; turkey-baster image is vivid but the realization line softens the turn.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 3,
+          "total": 5.900000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clear first-person premise and cult escalation; dialogue carries multiple beats without overreach.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Familiar own-house break-in premise; final line restates rather than snaps.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 4,
+          "total": 4.2
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean setup and strong concise reversal; radio line lands well though the premise is fairly familiar.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 7.100000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Memorable escalation and a strong final tag, but it clearly brings in the midwife concept beyond the listed two seed terms.",
+          "laugh": 7,
+          "surprise": 8,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 4,
+          "total": 6.900000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The cult-leader angle is understandable, but it runs long and the ending drifts into exaggeration rather than a sharp punchline.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.8
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Solid stand-up structure and clear payoff, but the turn is predictable and built on a familiar complaint premise.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.200000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "score": 6.8,
+      "rawScore": 7,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 7.1,
+        "originality": 5.8,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 6.8,
+        "surprise": 6.8,
+        "craft": 7.3,
+        "originality": 6,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean logic-loop punchline, economical, lands naturally; solid but not a standout image."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 7,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Crisp, tight setup-and-payoff rhythm with a solid ironic turn and clean two-seed adherence."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.1,
+          "rawScore": 7.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Tight circular logic with clean stage rhythm and a final line that lands."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean setup and strong concise reversal; radio line lands well though the premise is fairly familiar."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 4.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 4.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 6.6,
+          "rawScore": 5.9,
+          "scoreAdjustment": 0.7,
+          "comment": "Clear first-person premise, economical escalation, and an understandable final reversal. The patient's response provides a genuine mild laugh, although the joke follows a familiar setup and the punchline is fairly predictable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 7,
+          "scoreAdjustment": -0.2,
+          "comment": "Nice mirrored-line turn ('fire you'), tight setup-to-punchline economy, feels like a real bit."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5,
+          "rawScore": 5.1,
+          "scoreAdjustment": -0.1,
+          "comment": "Competent premise and clean seed fit, but the angry-patient retort is predictable and lacks a sharp comic twist."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid stand-up structure and clear payoff, but the turn is predictable and built on a familiar complaint premise."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "score": 6.1,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.5,
+        "surprise": 6,
+        "craft": 6,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 6,
+        "craft": 6,
+        "originality": 6.3,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.6,
+          "rawScore": 4.9,
+          "scoreAdjustment": 0.7,
+          "comment": "The cult-leader premise offers some amusing imagery, particularly the ice-chip confrontation. However, the lengthy escalation produces no substantial final reversal. 'Survive the ritual' merely reinforces the established premise."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.1,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.2,
+          "comment": "Good escalating cult imagery, but runs long and the final line restates dread rather than snapping a new turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear first-person premise and cult escalation; dialogue carries multiple beats without overreach."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.5,
+          "rawScore": 5.8,
+          "scoreAdjustment": -0.3,
+          "comment": "The cult-leader angle is understandable, but it runs long and the ending drifts into exaggeration rather than a sharp punchline."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6,
+      "rawScore": 5.9,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 6.8,
+        "craft": 5.8,
+        "originality": 6.5,
+        "promptFit": 3.8
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.8,
+        "craft": 5.8,
+        "originality": 6.5,
+        "promptFit": 3.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.1,
+          "rawScore": 4.4,
+          "scoreAdjustment": 0.7,
+          "comment": "Distinctive imagery and a promising premise, but the turkey baster is an implausible detail and 'felony with snacks' feels disconnected. Uses three seed concepts, and borrowing is not stealing."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.4,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.1,
+          "comment": "Funny turkey-baster escalation, though the closing line slightly blurs the punch and it uses three seed concepts (Midwife, Cozy and Amateur, and borrowing/stealing)."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.7,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.2,
+          "comment": "Uses three seed concepts including midwife; turkey-baster image is vivid but the realization line softens the turn."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Memorable escalation and a strong final tag, but it clearly brings in the midwife concept beyond the listed two seed terms."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 4.4,
+      "rawScore": 4.3,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.1,
+        "surprise": 4.1,
+        "craft": 4.8,
+        "originality": 4.1,
+        "promptFit": 5.6
+      },
+      "rawRubric": {
+        "laugh": 4,
+        "surprise": 4,
+        "craft": 4.8,
+        "originality": 4,
+        "promptFit": 5.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 4,
+          "rawScore": 3.3,
+          "scoreAdjustment": 0.7,
+          "comment": "The distinction between amateur and professional thieves has potential, but the example involves entering one's own home rather than stealing something vital. The final line lacks a convincing comic connection to the neighbor's accusation."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Decent self-deprecating closer but the premise-definition setup is familiar and the laugh is mild."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 4.1,
+          "rawScore": 4.2,
+          "scoreAdjustment": -0.1,
+          "comment": "Loose, meandering premise with a weak punchline that falls flat and only half-uses the 'Cozy and Amateur' seed."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 4,
+          "rawScore": 4.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Familiar own-house break-in premise; final line restates rather than snaps."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-16-external-real-2026-11-16.png",
+    "originalSrc": "assets/feature-images/2026-11-16-external-real-2026-11-16.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Emergency Preparedness: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-6 High - Emergency Preparedness\nExact joke text to render in the right panel:\nMy roommate's fanatical about disaster preparedness. When his emergency radio died, he stole the batteries from our smoke detector. I said, 'What if there's a fire?' He said, 'Relax. We'll hear about it on the radio.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Cozy and Amateur, Midwife, Arctic Tundra, Having to steal something vital, Intelligent, Fanatical. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Cozy and Amateur, Midwife, Arctic Tundra, Having to steal something vital, Intelligent, Fanatical. Use the winning joke titled \"Emergency Preparedness\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 5.5,
+      "anthropic": 6.4,
+      "google": 6.3,
+      "xai": 6.5,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-16-external-real-2026-11-16.md"
+}

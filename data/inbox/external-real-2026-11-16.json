@@ -1,0 +1,169 @@
+{
+  "createdAt": "2026-11-16T14:58:51.328Z",
+  "publishedDate": "2026-11-16",
+  "seed": "external-real-2026-11-16",
+  "slug": "2026-11-16-external-real-2026-11-16",
+  "source": "manual-external",
+  "seedTerms": [
+    "Cozy and Amateur",
+    "Midwife",
+    "Arctic Tundra",
+    "Having to steal something vital",
+    "Intelligent",
+    "Fanatical"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "Emergency Preparedness",
+      "seedTermsUsed": [
+        "Having to steal something vital",
+        "Fanatical"
+      ],
+      "joke": "My roommate's fanatical about disaster preparedness. When his emergency radio died, he stole the batteries from our smoke detector. I said, 'What if there's a fire?' He said, 'Relax. We'll hear about it on the radio.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Home Birth Heist",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Having to steal something vital"
+      ],
+      "joke": "My cousin became a midwife — self-taught, very cozy, candles, essential oils, a playlist called ‘Womb Vibes.’ First real delivery, baby’s crowning, and she leans over and whispers, ‘Can you run next door and borrow their turkey baster? We never actually bought the suction thing.’ That’s the moment I realized home birth just means felony with snacks."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "The Overqualified Doula",
+      "seedTermsUsed": [
+        "Midwife",
+        "Fanatical"
+      ],
+      "joke": "My wife hired a midwife for our home birth, and I realized halfway through she wasn't a medical professional—she was a cult leader. Every time my wife screamed in pain, this woman stared into my eyes and whispered, 'The Earth is reclaiming its rent.' I tried to hand my wife an ice chip and the midwife slapped it out of my hand like I'd offered her heroin. By hour twelve, I wasn't even rooting for a healthy baby anymore; I was just hoping we'd both survive the ritual."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Trust Your Body",
+      "seedTermsUsed": [
+        "Midwife",
+        "Fanatical"
+      ],
+      "joke": "I'm a midwife who's fanatical about going natural. Epidurals are for quitters. During one long labor I kept repeating, 'Trust your body. Your body knows what to do.' After hour fourteen the mom locked eyes with me and said, 'My body knows what to do. It's telling me to fire you.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Practice Run",
+      "seedTermsUsed": [
+        "Cozy and Amateur",
+        "Having to steal something vital"
+      ],
+      "joke": "I found out there's a huge difference between a professional thief and an amateur thief. A professional steals the crown jewels; an amateur steals one thing he absolutely needs. I forgot my house keys, tried to sneak into my own place through a window, and my neighbor yelled, “Hey, that's illegal!” I was like, “I know, that's why I'm so bad at it.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {"jokeId":"joke-b","originality":6,"surprise":5,"craft":4,"promptFit":4,"laugh":4,"comment":"Distinctive imagery and a promising premise, but the turkey baster is an implausible detail and 'felony with snacks' feels disconnected. Uses three seed concepts, and borrowing is not stealing."},
+        {"jokeId":"joke-c","originality":5,"surprise":5,"craft":5,"promptFit":8,"laugh":4,"comment":"The cult-leader premise offers some amusing imagery, particularly the ice-chip confrontation. However, the lengthy escalation produces no substantial final reversal. 'Survive the ritual' merely reinforces the established premise."},
+        {"jokeId":"joke-d","originality":4,"surprise":5,"craft":6,"promptFit":9,"laugh":6,"comment":"Clear first-person premise, economical escalation, and an understandable final reversal. The patient's response provides a genuine mild laugh, although the joke follows a familiar setup and the punchline is fairly predictable."},
+        {"jokeId":"joke-e","originality":3,"surprise":3,"craft":4,"promptFit":4,"laugh":3,"comment":"The distinction between amateur and professional thieves has potential, but the example involves entering one's own home rather than stealing something vital. The final line lacks a convincing comic connection to the neighbor's accusation."}
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":6,"craft":7,"promptFit":8,"laugh":6,"comment":"Clean logic-loop punchline, economical, lands naturally; solid but not a standout image."},
+        {"jokeId":"joke-c","originality":7,"surprise":6,"craft":6,"promptFit":8,"laugh":6,"comment":"Good escalating cult imagery, but runs long and the final line restates dread rather than snapping a new turn."},
+        {"jokeId":"joke-d","originality":6,"surprise":7,"craft":7,"promptFit":8,"laugh":7,"comment":"Nice mirrored-line turn ('fire you'), tight setup-to-punchline economy, feels like a real bit."},
+        {"jokeId":"joke-e","originality":5,"surprise":5,"craft":6,"promptFit":8,"laugh":5,"comment":"Decent self-deprecating closer but the premise-definition setup is familiar and the laugh is mild."}
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Crisp, tight setup-and-payoff rhythm with a solid ironic turn and clean two-seed adherence."},
+        {"jokeId":"joke-b","originality":7,"surprise":7,"craft":6,"promptFit":4,"laugh":7,"comment":"Funny turkey-baster escalation, though the closing line slightly blurs the punch and it uses three seed concepts (Midwife, Cozy and Amateur, and borrowing/stealing)."},
+        {"jokeId":"joke-d","originality":4,"surprise":4,"craft":5,"promptFit":9,"laugh":5,"comment":"Competent premise and clean seed fit, but the angry-patient retort is predictable and lacks a sharp comic twist."},
+        {"jokeId":"joke-e","originality":4,"surprise":4,"craft":4,"promptFit":6,"laugh":4,"comment":"Loose, meandering premise with a weak punchline that falls flat and only half-uses the 'Cozy and Amateur' seed."}
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":8,"promptFit":9,"laugh":7,"comment":"Tight circular logic with clean stage rhythm and a final line that lands."},
+        {"jokeId":"joke-b","originality":6,"surprise":7,"craft":6,"promptFit":3,"laugh":6,"comment":"Uses three seed concepts including midwife; turkey-baster image is vivid but the realization line softens the turn."},
+        {"jokeId":"joke-c","originality":7,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clear first-person premise and cult escalation; dialogue carries multiple beats without overreach."},
+        {"jokeId":"joke-e","originality":4,"surprise":4,"craft":5,"promptFit":4,"laugh":4,"comment":"Familiar own-house break-in premise; final line restates rather than snaps."}
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {"jokeId":"joke-a","originality":6,"surprise":7,"craft":7,"promptFit":9,"laugh":7,"comment":"Clean setup and strong concise reversal; radio line lands well though the premise is fairly familiar."},
+        {"jokeId":"joke-b","originality":7,"surprise":8,"craft":7,"promptFit":4,"laugh":7,"comment":"Memorable escalation and a strong final tag, but it clearly brings in the midwife concept beyond the listed two seed terms."},
+        {"jokeId":"joke-c","originality":6,"surprise":6,"craft":6,"promptFit":8,"laugh":5,"comment":"The cult-leader angle is understandable, but it runs long and the ending drifts into exaggeration rather than a sharp punchline."},
+        {"jokeId":"joke-d","originality":5,"surprise":5,"craft":7,"promptFit":9,"laugh":6,"comment":"Solid stand-up structure and clear payoff, but the turn is predictable and built on a familiar complaint premise."}
+      ]
+    }
+  ]
+}
