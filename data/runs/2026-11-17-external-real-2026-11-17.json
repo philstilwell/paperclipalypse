@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-17-external-real-2026-11-17",
+  "seed": "external-real-2026-11-17",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-17T15:04:05.596Z",
+  "publishedDate": "2026-11-17",
+  "seedTerms": [
+    "Wilderness",
+    "Exotic Food Expert",
+    "Outhouse",
+    "Authority being threatened",
+    "Tolerant",
+    "Workaholic"
+  ],
+  "premise": {
+    "text": "Seed terms: Wilderness, Exotic Food Expert, Outhouse, Authority being threatened, Tolerant, Workaholic",
+    "seedTerms": [
+      "Wilderness",
+      "Exotic Food Expert",
+      "Outhouse",
+      "Authority being threatened",
+      "Tolerant",
+      "Workaholic"
+    ],
+    "displayText": "Bear Safety"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "Bear Safety",
+      "seedTermsUsed": [
+        "Wilderness",
+        "Outhouse"
+      ],
+      "joke": "I went camping, and the outhouse had a bear-safety sign: 'If confronted, stand tall, make yourself look bigger, and slowly back away.' I'm sitting there with my pants around my ankles. If a bear opens that door, he's going to have to give me a minute to become a person.",
+      "setup": "",
+      "punchline": "I went camping, and the outhouse had a bear-safety sign: 'If confronted, stand tall, make yourself look bigger, and slowly back away.' I'm sitting there with my pants around my ankles. If a bear opens that door, he's going to have to give me a minute to become a person.",
+      "text": "I went camping, and the outhouse had a bear-safety sign: 'If confronted, stand tall, make yourself look bigger, and slowly back away.' I'm sitting there with my pants around my ankles. If a bear opens that door, he's going to have to give me a minute to become a person."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Out House, In Office",
+      "seedTermsUsed": [
+        "Workaholic",
+        "Outhouse"
+      ],
+      "joke": "I'm such a workaholic my family staged an intervention. To punish me, they made me spend a weekend at my uncle's farmhouse, the one with the outhouse out back. Did it slow me down? No. I just told my boss I'd found the one meeting room nobody interrupts. Took every call in there. My uncle knocked once, I said 'occupied, and also closing a deal,' and he just walked away slower than a man should walk away from that sentence.",
+      "setup": "",
+      "punchline": "I'm such a workaholic my family staged an intervention. To punish me, they made me spend a weekend at my uncle's farmhouse, the one with the outhouse out back. Did it slow me down? No. I just told my boss I'd found the one meeting room nobody interrupts. Took every call in there. My uncle knocked once, I said 'occupied, and also closing a deal,' and he just walked away slower than a man should walk away from that sentence.",
+      "text": "I'm such a workaholic my family staged an intervention. To punish me, they made me spend a weekend at my uncle's farmhouse, the one with the outhouse out back. Did it slow me down? No. I just told my boss I'd found the one meeting room nobody interrupts. Took every call in there. My uncle knocked once, I said 'occupied, and also closing a deal,' and he just walked away slower than a man should walk away from that sentence."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Roughing It",
+      "seedTermsUsed": [
+        "Outhouse",
+        "Workaholic"
+      ],
+      "joke": "I’m such a workaholic I finally rented an off-grid cabin to unplug, and the listing bragged about a 'rustic outhouse.' Turns out that’s just a wooden box over a hole in the dirt with a crescent moon carved in the door so raccoons can watch you panic. Honestly, it wasn’t even a real vacation—I still sat there for forty minutes until my legs went numb, staring at a spiderweb and wondering why my inbox wasn't loading.",
+      "setup": "",
+      "punchline": "I’m such a workaholic I finally rented an off-grid cabin to unplug, and the listing bragged about a 'rustic outhouse.' Turns out that’s just a wooden box over a hole in the dirt with a crescent moon carved in the door so raccoons can watch you panic. Honestly, it wasn’t even a real vacation—I still sat there for forty minutes until my legs went numb, staring at a spiderweb and wondering why my inbox wasn't loading.",
+      "text": "I’m such a workaholic I finally rented an off-grid cabin to unplug, and the listing bragged about a 'rustic outhouse.' Turns out that’s just a wooden box over a hole in the dirt with a crescent moon carved in the door so raccoons can watch you panic. Honestly, it wasn’t even a real vacation—I still sat there for forty minutes until my legs went numb, staring at a spiderweb and wondering why my inbox wasn't loading."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Nature Calls on Mute",
+      "seedTermsUsed": [
+        "Workaholic",
+        "Outhouse"
+      ],
+      "joke": "I'm a workaholic. Last year I finally went off-grid to a cabin that had nothing but an outhouse. Within two days I’d installed a desk, a power bank, and a Starlink dish on the roof. Now when nature calls, I answer on mute so nobody hears the flush during the board meeting.",
+      "setup": "",
+      "punchline": "I'm a workaholic. Last year I finally went off-grid to a cabin that had nothing but an outhouse. Within two days I’d installed a desk, a power bank, and a Starlink dish on the roof. Now when nature calls, I answer on mute so nobody hears the flush during the board meeting.",
+      "text": "I'm a workaholic. Last year I finally went off-grid to a cabin that had nothing but an outhouse. Within two days I’d installed a desk, a power bank, and a Starlink dish on the roof. Now when nature calls, I answer on mute so nobody hears the flush during the board meeting."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Out of Office",
+      "seedTermsUsed": [
+        "Workaholic",
+        "Wilderness"
+      ],
+      "joke": "I’m such a workaholic that I went camping to unplug, and by day two I was giving performance reviews to the squirrels. One squirrel kept stealing everyone’s food, and honestly, he showed more initiative than half my coworkers. I caught myself saying, “Great hustle, but let’s circle back after hibernation.”",
+      "setup": "",
+      "punchline": "I’m such a workaholic that I went camping to unplug, and by day two I was giving performance reviews to the squirrels. One squirrel kept stealing everyone’s food, and honestly, he showed more initiative than half my coworkers. I caught myself saying, “Great hustle, but let’s circle back after hibernation.”",
+      "text": "I’m such a workaholic that I went camping to unplug, and by day two I was giving performance reviews to the squirrels. One squirrel kept stealing everyone’s food, and honestly, he showed more initiative than half my coworkers. I caught myself saying, “Great hustle, but let’s circle back after hibernation.”"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear premise and natural first-person delivery, but the setup is overlong. The closing observation is awkwardly phrased and lacks a sharp payoff.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The raccoon image provides some amusement, and the inbox obsession fits the character. However, the final turn is predictable and weaker than the earlier imagery.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Economical setup with recognizable workaholic behavior, but the punchline depends on an outhouse flushing, undermining the joke's internal logic. The mute-button gag is familiar.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 4,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.5
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Good first-person rhythm and a coherent escalation from camping to squirrel performance reviews. The hibernation callback is tidy, but familiar corporate jargon makes the ending more cute than laugh-provoking.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 5.500000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean bear-sign premise with a genuinely funny, non-obvious final image; tight and natural.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Competent but overlong; 'inbox wasn't loading' is a soft, expected landing rather than a real snap.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Good escalation (desk, power bank, Starlink) paying off in a sharp, specific closer about muting the flush.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Fun corporate-jargon-on-squirrels bit with a solid closing line, though the performance-review frame edges toward familiar territory.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong visual premise and relatable panic; 'become a person' lands well with clean stage pacing.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Decent escalating scenario and a funny closing beat from the uncle, though the 'intervention' setup feels slightly padded.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent premise, but the ending stumbles slightly on the logic of an outhouse flushing.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Relies heavily on a standard AI corporate-buzzword-in-nature template ('performance reviews,' 'circle back').",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.7
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise, strong vulnerability image, and a sharp understated final turn that carries the laugh.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Solid workaholic-outhouse premise weakened by longer setup and a milder final reaction.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Vivid outhouse details escalate cleanly into the workaholic failure; final image lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Clean delivery of a familiar office-speak-on-animals template with a competent but expected turn.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong visual premise, clear escalation, and the final line delivers a distinct laugh.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Solid workaholic angle with a good character detail at the end, though the route is fairly expected.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The inbox-not-loading payoff fits the premise, but the setup is longer than the laugh it earns.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean and clear, but turning an outhouse into a remote office is a predictable workaholic joke path.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 6.1000000000000005
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "score": 7.4,
+      "rawScore": 7.6,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.3,
+        "surprise": 7,
+        "craft": 7.3,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 7.5,
+        "surprise": 7.3,
+        "craft": 7.5,
+        "originality": 7,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean bear-sign premise with a genuinely funny, non-obvious final image; tight and natural."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 7.2,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0,
+          "comment": "Strong visual premise and relatable panic; 'become a person' lands well with clean stage pacing."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7.7,
+          "rawScore": 8,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear premise, strong vulnerability image, and a sharp understated final turn that carries the laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.5,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.4,
+          "comment": "Strong visual premise, clear escalation, and the final line delivers a distinct laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.2,
+      "rawScore": 6.2,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6,
+        "surprise": 5.5,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 9.3
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.5,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.8,
+          "rawScore": 5,
+          "scoreAdjustment": 0.8,
+          "comment": "Clear premise and natural first-person delivery, but the setup is overlong. The closing observation is awkwardly phrased and lacks a sharp payoff."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.3,
+          "rawScore": 6.3,
+          "scoreAdjustment": 0,
+          "comment": "Decent escalating scenario and a funny closing beat from the uncle, though the 'intervention' setup feels slightly padded."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Solid workaholic-outhouse premise weakened by longer setup and a milder final reaction."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.6,
+          "rawScore": 7,
+          "scoreAdjustment": -0.4,
+          "comment": "Solid workaholic angle with a good character detail at the end, though the route is fairly expected."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "score": 6,
+      "rawScore": 6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.7,
+        "surprise": 5.2,
+        "craft": 5.7,
+        "originality": 5.7,
+        "promptFit": 9.2
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.3,
+        "craft": 5.8,
+        "originality": 5.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 6.2,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.8,
+          "comment": "The raccoon image provides some amusement, and the inbox obsession fits the character. However, the final turn is predictable and weaker than the earlier imagery."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Competent but overlong; 'inbox wasn't loading' is a soft, expected landing rather than a real snap."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Vivid outhouse details escalate cleanly into the workaholic failure; final image lands."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.8,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.4,
+          "comment": "The inbox-not-loading payoff fits the premise, but the setup is longer than the laugh it earns."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 4.8,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6.3,
+        "originality": 4.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 6.3,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.8,
+          "comment": "Good first-person rhythm and a coherent escalation from camping to squirrel performance reviews. The hibernation callback is tidy, but familiar corporate jargon makes the ending more cute than laugh-provoking."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.3,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.2,
+          "comment": "Fun corporate-jargon-on-squirrels bit with a solid closing line, though the performance-review frame edges toward familiar territory."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 4.7,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0,
+          "comment": "Relies heavily on a standard AI corporate-buzzword-in-nature template ('performance reviews,' 'circle back')."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.1,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean delivery of a familiar office-speak-on-animals template with a competent but expected turn."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.8,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 5.3,
+        "craft": 5.6,
+        "originality": 5.3,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 5.3,
+        "craft": 5.5,
+        "originality": 5.3,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.3,
+          "rawScore": 4.5,
+          "scoreAdjustment": 0.8,
+          "comment": "Economical setup with recognizable workaholic behavior, but the punchline depends on an outhouse flushing, undermining the joke's internal logic. The mute-button gag is familiar."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Good escalation (desk, power bank, Starlink) paying off in a sharp, specific closer about muting the flush."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.3,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0,
+          "comment": "Competent premise, but the ending stumbles slightly on the logic of an outhouse flushing."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.4,
+          "comment": "Clean and clear, but turning an outhouse into a remote office is a predictable workaholic joke path."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-17-external-real-2026-11-17.png",
+    "originalSrc": "assets/feature-images/2026-11-17-external-real-2026-11-17.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Bear Safety: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: OpenAI GPT-6 High - Bear Safety\nExact joke text to render in the right panel:\nI went camping, and the outhouse had a bear-safety sign: 'If confronted, stand tall, make yourself look bigger, and slowly back away.' I'm sitting there with my pants around my ankles. If a bear opens that door, he's going to have to give me a minute to become a person.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Wilderness, Exotic Food Expert, Outhouse, Authority being threatened, Tolerant, Workaholic. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Wilderness, Exotic Food Expert, Outhouse, Authority being threatened, Tolerant, Workaholic. Use the winning joke titled \"Bear Safety\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 5.3,
+      "anthropic": 6.4,
+      "google": 6.1,
+      "xai": 6.4,
+      "copilot": 6.6
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-17-external-real-2026-11-17.md"
+}
