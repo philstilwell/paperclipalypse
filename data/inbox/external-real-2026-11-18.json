@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-18T15:03:53.702Z",
+  "publishedDate": "2026-11-18",
+  "seed": "external-real-2026-11-18",
+  "slug": "2026-11-18-external-real-2026-11-18",
+  "source": "manual-external",
+  "seedTerms": [
+    "Gothic",
+    "Farmer / Rancher",
+    "Summer Camp",
+    "A challenge beyond skill",
+    "Persistent",
+    "Stubborn"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "The Goth Farmer",
+      "seedTermsUsed": [
+        "Gothic",
+        "Farmer / Rancher"
+      ],
+      "joke": "I worked for a goth farmer. Everything was black: the barn, the tractor, even the chickens. But his scarecrow wore a business suit and carried a briefcase. I asked, 'Why doesn't your scarecrow dress like you?' He said, 'Because crows aren't afraid of death. But everybody on this farm is terrified of the bank.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "The Goat Standoff",
+      "seedTermsUsed": [
+        "Farmer / Rancher",
+        "Stubborn"
+      ],
+      "joke": "I spent a summer helping my uncle on his ranch, trying to get one goat through a gate. Just one gate. I pulled, I pushed, I bribed it with grain like it owed me money. That goat looked me dead in the eye for forty-five minutes. Forty-five minutes! Eventually I just sat down next to it, defeated, and we watched the sunset together. I didn’t move the goat. The goat moved me."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Hayride From Hell",
+      "seedTermsUsed": [
+        "Gothic",
+        "Farmer / Rancher"
+      ],
+      "joke": "I grew up on a cattle ranch, which is basically the exact opposite of my goth phase. You try maintaining dark, mysterious brooding energy at five in the morning while shoveling warm manure in platform boots. Nothing ruins an aesthetic faster than an angry rooster. I wanted to write poetry about the eternal abyss, and my dad just handed me a shovel and told me to go fix the fence before the goats ate the drywall."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Goth at Camp",
+      "seedTermsUsed": [
+        "Gothic",
+        "Summer Camp"
+      ],
+      "joke": "I was the only goth kid at summer camp. The counselors kept trying to drag me into canoe races and friendship circles. I'd sit by the lake in my black hoodie, staring at the water like it held the secrets of the universe. One of them finally asked why I wouldn't join in. I said, 'I am joining in. This is my version of a trust fall—trusting that the void will eventually claim us all.' They let me stay in the cabin after that."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Promotion Refusal",
+      "seedTermsUsed": [
+        "Farmer / Rancher",
+        "Stubborn"
+      ],
+      "joke": "I tried ranching for a year because people said it builds character. Apparently my character was already employed by one goat. That animal was so stubborn I spent three hours trying to pull him into a trailer, then realized he’d somehow trained me to stand in a field arguing with a goat about his career goals."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Clear premise and relatable frustration, but the lengthy buildup ends in a sentimental wordplay rather than a genuine punchline. The goat's stubbornness is predictable, and the final turn produces more warmth than laughter."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "The contrast between gothic self-image and messy ranch work produces vivid, recognizable comedy. Platform boots and manure are particularly effective. However, the ending is another example of ranch chores rather than an unexpected payoff."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "The gothic camper premise is immediately understandable, but the humor relies on familiar stereotypes about darkness and existential despair. The trust-fall reinterpretation is mildly clever, while the final sentence adds little comic impact."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Concise, conversational, and built around a recognizable frustration. The reversal in which the goat effectively trains the rancher works, and the career-goals image provides a modest laugh. The premise remains familiar, and the punchline lacks a sufficiently sharp surprise."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean two-part setup with a sharp, unexpected final line about banks vs. crows; slightly explainer-ish delivery but lands well."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good escalating imagery (platform boots, manure, rooster) but the final line is a mild deflation rather than a sharp snap."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Nice voice and the void/trust-fall line is a fresh turn; ending is cute but not a huge laugh, more a smile."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid stubborn-animal premise with a funny final image of negotiating career goals with a goat; slightly familiar shape but well executed."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean setup-punchline structure with a solid grounded twist about farm debt; lands reliably without feeling overly artificial."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Starts with good physical buildup, but the 'goat moved me' wordplay softens the ending into a sentimental pun rather than a sharp stage laugh."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The 'trusting the void' line is a bit predictable for a goth trope, and the final tag trails off instead of snapping."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The 'character was already employed by one goat' phrasing is clunky and obscures the setup before it gets to a decent closing image."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean setup and bank punch work, but the laugh stays mild."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong rhythm, concrete struggle, and a satisfying final turn."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Vivid goth-ranch contrast and solid closer; earns a real smile."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Serviceable stubborn-goat idea, but the career-goals finish is thin."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 8,
+          "comment": "Strong misdirection from goth aesthetics to farm economics; clean setup and punchline."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Funny stubborn-goat premise with good escalation; ending is clever but slightly predictable."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Solid contrast between goth identity and ranch life, but more observational than punchline-driven."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear character voice and premise, but the void humor follows an expected goth stereotype without a strong final turn."
+        }
+      ]
+    }
+  ]
+}
