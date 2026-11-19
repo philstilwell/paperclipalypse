@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-19T14:56:54.925Z",
+  "publishedDate": "2026-11-19",
+  "seed": "external-real-2026-11-19",
+  "slug": "2026-11-19-external-real-2026-11-19",
+  "source": "manual-external",
+  "seedTerms": [
+    "Sports",
+    "Dancer",
+    "Pool",
+    "Being arrested",
+    "Flamboyant",
+    "Cocky"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "Born to Lead",
+      "seedTermsUsed": [
+        "Dancer",
+        "Cocky"
+      ],
+      "joke": "I signed up for salsa lessons and told the instructor, 'I'm a natural leader. Just give me your best partner.' She paired me with a woman who'd been dancing for twenty years. Halfway through, she stopped and said, 'You're supposed to lead, not drag.' I said, 'Sorry, I'm used to taking charge.' She said, 'Of what, hostage situations?'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Pool Noodle Justice",
+      "seedTermsUsed": [
+        "Pool",
+        "Being arrested"
+      ],
+      "joke": "I did a cannonball so massive at my apartment pool that the lifeguard actually arrested me. Sat me down on the concrete, read me my rights, the whole production. Except instead of handcuffs, he zip-tied my wrists together with a pool noodle. I wasn't scared. I was impressed — this man turned a daycare toy into probable cause and gave me full felony energy over a splash."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Diving Board Confidence",
+      "seedTermsUsed": [
+        "Pool",
+        "Cocky"
+      ],
+      "joke": "I always get way too cocky at a public pool. I will climb the high dive like an Olympic champion, bounce twice, and immediately forget how arms work. Halfway down, I am not doing a graceful swan dive—I am just a panicked rotisserie chicken slapping the water at forty miles an hour. The worst part is swimming back to the ladder trying to act like I meant to bruise my entire chest."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "First Dance Class",
+      "seedTermsUsed": [
+        "Cocky",
+        "Dancer"
+      ],
+      "joke": "I walked into my first dance class feeling pretty cocky. Told the instructor, 'Don't go easy on me. I pick things up fast.' She puts on the music, watches me for about ten seconds, and says, 'Okay. We're going to start with something simpler. Like standing still.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Deep End Confidence",
+      "seedTermsUsed": [
+        "Pool",
+        "Cocky"
+      ],
+      "joke": "I got way too confident at the community pool. I walked in wearing mirrored goggles like an Olympic champion, stretched dramatically, and told my friend, 'Try to keep up.' Then I pushed off the wall so hard I skipped the ladder completely on the way back up. Nothing humbles you faster than needing a lifeguard to explain stairs."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The absurd arrest premise has potential, but the pool-noodle handcuffs are contrived and the ending piles on jargon rather than delivering a decisive punchline."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 6,
+          "comment": "The panicked rotisserie chicken is a vivid, amusing image with recognizable physical comedy. The ending is weaker than the central image. The Olympic comparison also introduces Sports as a third seed concept."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Economical setup, natural dialogue, and a clean final reversal. Standing still is a satisfying modest punchline, though the overconfident beginner being humbled is familiar territory."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 3,
+          "promptFit": 4,
+          "laugh": 4,
+          "comment": "The Olympic swagger establishes character, but the physical mechanics of skipping the ladder are unclear. The stairs punchline depends on an awkward visual connection. The Olympic reference also introduces a third seed concept."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong tag line, hostage-situations snap is genuinely surprising and lands clean; good escalation and timing."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Rotisserie chicken image is vivid and funny; closing line is solid but slightly softer than the midpoint joke."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clean setup and competent turn, but 'standing still' is a fairly expected deflation; lacks a sharper final snap."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Decent escalation but the ladder/stairs punchline is mild and somewhat predictable; less vivid than the rotisserie chicken version."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean two-person banter setup with a decent 'hostage situations' closer, though the overconfident guy failing at dance class is a very familiar premise."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Leans into cartoon absurdity rather than a believable stand-up premise, and the final line summarizes the quirkiness instead of landing a sharp punch."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Tight, readable rhythm, but the 'start with standing still' insult is a predictable stock roast."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Strong opening visual of mirrored-goggle hubris, though the 'skipped the ladder / explain stairs' mechanics get muddy right at the punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent dance-class fail with a clever tag, but the hostage line feels tacked on and the laugh stays mild."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Pool-noodle cuffs is a strong visual, yet the closer admires the prop more than landing a sharp personal turn."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Vivid rotisserie-chicken image and clean recovery attempt give it real stage energy and a clear laugh."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean humility closer, but the physical fail stays less specific and the payoff milder than it could be."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear stand-up structure and two seeds used naturally. The hostage-situations line is a decent turn, but fairly predictable and not especially memorable."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Commits to a silly premise, but the arrest scenario never becomes believable enough to land strongly. More amusing imagery than actual punchline."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong visual escalation from confidence to disaster. The rotisserie-chicken image is vivid and the final act-like-I-meant-it tag closes well."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean and concise, but the 'start with standing still' put-down is a familiar comedy move with a very expected payoff."
+        }
+      ]
+    }
+  ]
+}
