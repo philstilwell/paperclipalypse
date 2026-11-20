@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-20T15:01:10.940Z",
+  "publishedDate": "2026-11-20",
+  "seed": "external-real-2026-11-20",
+  "slug": "2026-11-20-external-real-2026-11-20",
+  "source": "manual-external",
+  "seedTerms": [
+    "Psychological",
+    "Midwife",
+    "Helicopter",
+    "Being betrayed or abandoned",
+    "Meticulous",
+    "Nagging"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "Packing Up",
+      "seedTermsUsed": [
+        "Meticulous",
+        "Being betrayed or abandoned"
+      ],
+      "joke": "My girlfriend left me because I'm obsessed with details. As she packed, I kept telling her how to fold things to save space. Finally she screamed, 'Do you even care that I'm leaving?' I said, 'Of course I care. If you roll your sweaters instead of folding them, you could've left twenty minutes ago.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Code Orange",
+      "seedTermsUsed": [
+        "Helicopter",
+        "Meticulous"
+      ],
+      "joke": "I’m a meticulous helicopter parent. Other dads yell ‘be careful’ from the bench. I’ve got a laser rangefinder, a spreadsheet, and a color-coded threat system for the swing set. Last week I radioed my wife: ‘Unknown child, orange shirt, closing fast on the slide, requesting backup.’ Silence. Turns out she was down the street in a lawn chair with a book, just living her life."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Birth Plan",
+      "seedTermsUsed": [
+        "Midwife",
+        "Meticulous"
+      ],
+      "joke": "My wife hired a midwife for our first kid, and I thought she'd be a chill hippie with sage and rainsticks. No. This woman ran the delivery room like an air traffic controller with a clipboard. I tried to hold my wife's hand and she smacked my wrist—said I was blocking her sightlines and ruining the lighting for the placenta. By the time the baby came out, he was already filing his own taxes just to avoid getting written up."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Helicopter Midwife",
+      "seedTermsUsed": [
+        "Midwife",
+        "Helicopter"
+      ],
+      "joke": "I hired a midwife for the home birth. Turns out she was a full helicopter midwife. Hovered over every contraction barking instructions like air traffic control. \"Push! Angle ten degrees left! You're drifting off the runway!\" By the time the baby showed up I was waiting for the landing gear to drop and the rotors to stop spinning in the living room."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "College Tour",
+      "seedTermsUsed": [
+        "Helicopter",
+        "Nagging"
+      ],
+      "joke": "My mom is such a helicopter parent, she came with me on a college tour and kept giving the guide notes. Halfway through she was nagging the university: “How are you monitoring his attendance? Who checks his laundry?” By the end, the admissions office wasn't evaluating me anymore, they were trying to accept her and place me with a host family."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clear premise and amusing surveillance details, but the escalation is predictable. The wife's peaceful escape provides contrast rather than a strong punchline. Competent setup with a weak finish."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The controlling midwife is a workable comic premise, and the air traffic controller comparison is vivid. However, the placenta lighting detail feels forced, and the baby filing taxes is an arbitrary exaggeration rather than a satisfying payoff."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 3,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The helicopter metaphor is immediately apparent and simply continues through familiar aviation imagery. The final line repeats the established premise without introducing a genuine reversal or punchline."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "A relatable premise with natural escalation and a coherent final reversal. The admissions office accepting the mother while relocating the child is an amusing, reasonably unexpected turn. Strongest punchline in the batch, though not exceptionally original."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean, economical escalation; final line lands the callous-detail payoff well, though premise is familiar territory."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Funny mental image but the tag (filing taxes) is a non sequitur that dilutes rather than snaps the turn; a bit long."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Tight air-traffic-control conceit sustained cleanly through to a satisfying matching final image."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong escalation with a genuinely surprising final turn (she gets accepted instead); best constructed button of the set."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean structure and a sharp, dry final line that turns the abandonment premise neatly."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Solid escalation on the over-prepared dad trope, though the ending deflates into a flat contrast rather than a punch."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Literalizes 'helicopter' cleanly, but the aviation imagery is predictable and mixes airplane runway metaphors with rotor blades."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Relatable college tour premise with a decent final turn, though the middle beats feel slightly familiar."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean character premise; the packing-efficiency reply under the breakup lands with real timing."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Solid gadget escalation and radio call, but the final undercut softens the snap."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear midwife control premise, yet the taxes closer feels cute rather than earned."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Natural college-tour setup with a satisfying role-reversal finish."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong concise escalation and a clean character-based turn; familiar premise but good payoff."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear image and commitment to the premise; ending is amusing but soft compared with the setup."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Fun contrast between expectations and reality with solid escalation; tax-filing tag is a bit exaggerated but lands."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Very direct interpretation of the seed terms; readable but the runway/rotor punchline largely repeats the setup metaphor."
+        }
+      ]
+    }
+  ]
+}
