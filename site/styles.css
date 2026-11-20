@@ -1411,14 +1411,13 @@ main {
 }
 
 .judge-trend-line {
-  stroke: var(--series-color);
   stroke-width: 3;
 }
 
-.judge-trend-points circle {
-  fill: var(--series-color);
+.judge-trend-marker {
   stroke: #08090a;
-  stroke-width: 2;
+  stroke-width: 1.4;
+  stroke-linejoin: round;
 }
 
 .judge-score-legend {
