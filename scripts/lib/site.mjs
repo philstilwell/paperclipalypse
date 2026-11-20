@@ -23,10 +23,35 @@ const baseKeywords = [
 const dailyListPageSize = 12;
 const recentTrendWindowDays = 14;
 const claudeModelChangeDate = "2026-08-20";
-const claudeLegacyTrendColor = "#7dd3fc";
-const claudeCurrentTrendColor = "#c4b5fd";
-const geminiFlashTrendColor = "#f472b6";
-const gemini37FlashTrendColor = "#34d399";
+const claudeLegacyTrendColor = "#1889ff";
+const claudeCurrentTrendColor = "#b19bff";
+const geminiFlashTrendColor = "#ff5ab7";
+const gemini37FlashTrendColor = "#9fffbf";
+const chatGptHighTrendColor = "#28e7ff";
+const grokFastTrendColor = "#f8fafc";
+const judgeTrendPalette = new Map([
+  ["ChatGPT", chatGptHighTrendColor],
+  ["Claude", claudeCurrentTrendColor],
+  ["Gemini", geminiFlashTrendColor],
+  ["Grok", grokFastTrendColor],
+  ["Copilot", "#ffd21a"],
+  ["ChatGPT: GPT-5.4 Mini", "#ab8256"],
+  ["ChatGPT: GPT-5.6 Sol", "#00b687"],
+  ["ChatGPT: GPT-6 Astra", "#afaf00"],
+  ["ChatGPT: GPT-6", "#e700ff"],
+  ["ChatGPT: ChatGPT", "#ff5726"],
+  ["ChatGPT: GPT-6 High", chatGptHighTrendColor],
+  ["Grok: 4.3", "#90ec32"],
+  ["Grok: Fast (version undisclosed)", grokFastTrendColor]
+]);
+const roundJudgeMarker = { path: "M -4.5 0 a 4.5 4.5 0 1 0 9 0 a 4.5 4.5 0 1 0 -9 0 Z", dash: "11 4 2 4" };
+const judgeTrendStyles = new Map([
+  ["openai", { path: "M -4 -4 H 4 V 4 H -4 Z", dash: "none" }],
+  ["anthropic", { path: "M 0 -5.5 5.5 0 0 5.5 -5.5 0 Z", dash: "8 5" }],
+  ["google", { path: "M 0 -5.5 5.3 4 -5.3 4 Z", dash: "1 6" }],
+  ["xai", roundJudgeMarker],
+  ["Copilot", { path: "M -2 -5 H 2 V -2 H 5 V 2 H 2 V 5 H -2 V 2 H -5 V -2 H -2 Z", dash: "4 4" }]
+]);
 const processPopoverLabel = [
   "How Paperclipalypse works.",
   "Codex picks six random seed terms.",
@@ -592,19 +617,6 @@ function renderJudgeScoreTrend(runs) {
     title: "Paperclipalypse monthly average judge score trend",
     description: "Line chart comparing each judge model's monthly average raw score given for all published Paperclipalypse contests."
   });
-  const recentLegend = data.series
-    .flatMap((series) => series.legendItems || [{ color: series.color, label: series.judgeName }])
-    .map(
-      (item) => `
-              <span><i style="background: ${escapeHtml(item.color)}"></i>${escapeHtml(item.label)}</span>`
-    )
-    .join("");
-  const monthlyLegend = monthlyData.series
-    .map(
-      (series) => `
-              <span><i style="background: ${escapeHtml(series.color)}"></i>${escapeHtml(series.judgeName)}</span>`
-    )
-    .join("");
   const headerCells = data.series.map((series) => `<th>${escapeHtml(series.shortName)}</th>`).join("");
   const tableRuns = data.runs.map((run, runIndex) => ({ run, runIndex })).reverse();
   const rows = tableRuns
@@ -637,13 +649,13 @@ function renderJudgeScoreTrend(runs) {
             <div class="trend-chart-panels" data-chart-panels="judge-score-trend">
               <div class="trend-chart-panel" id="judge-score-trend-recent-panel" data-chart-panel="recent">
                 <div class="chart-legend judge-score-legend" aria-label="Recent judge score chart legend">
-                  ${recentLegend}
+                  ${renderJudgeTrendLegend(recentData)}
                 </div>
                 <div class="trend-chart-wrap">${recentChart}</div>
               </div>
               <div class="trend-chart-panel" id="judge-score-trend-monthly-panel" data-chart-panel="monthly" hidden>
                 <div class="chart-legend judge-score-legend" aria-label="Monthly judge score chart legend">
-                  ${monthlyLegend}
+                  ${renderJudgeTrendLegend(monthlyData)}
                 </div>
                 <div class="trend-chart-wrap">${monthlyChart}</div>
               </div>
@@ -763,6 +775,33 @@ function renderDailyListPaginationScript() {
         </script>`;
 }
 
+function renderJudgeLine(style, color, points) {
+  return `<polyline class="trend-line judge-trend-line" stroke="${escapeHtml(color)}" stroke-dasharray="${style.dash}" points="${points}"></polyline>`;
+}
+
+function renderJudgeMarker(style, color, x, y, label) {
+  const title = label ? `<title>${escapeHtml(label)}</title>` : "";
+  return `<path class="judge-trend-marker" fill="${escapeHtml(color)}" d="${style.path}" transform="translate(${x} ${y})">${title}</path>`;
+}
+
+function renderJudgeTrendLegend(data) {
+  return data.series.flatMap((series) => {
+    const legendLabels = new Map(series.legendItems?.map(({ color, label }) => [color, label]));
+    const visible = new Map();
+    for (const { run, score } of series.points) {
+      if (!Number.isFinite(score)) continue;
+      const color = trendColorForRun(series, run);
+      const label = legendLabels.get(color) || series.labelForRun?.(run) || series.judgeName;
+      visible.set(label, color);
+    }
+    return [...visible].map(([label, color]) => {
+      const line = renderJudgeLine(series.style, color, "2,8 48,8");
+      const marker = renderJudgeMarker(series.style, color, 25, 8);
+      return `<span><svg width="50" height="16" viewBox="0 0 50 16" aria-hidden="true">${line}${marker}</svg>${escapeHtml(label)}</span>`;
+    });
+  }).join("\n");
+}
+
 function renderJudgeScoreTrendSvg(data, options = {}) {
   const idPrefix = options.idPrefix || "judge-score-trend";
   const width = 880;
@@ -821,10 +860,10 @@ function renderJudgeScoreTrendSvg(data, options = {}) {
               .map((segmentPoint) => `${xFor(segmentPoint.index).toFixed(1)},${yFor(segmentPoint.score).toFixed(1)}`)
               .join(" ");
             const color = trendColorForRun(series, point.run);
-            return `<polyline class="trend-line judge-trend-line" style="--series-color: ${escapeHtml(color)}" points="${points}"></polyline>`;
+            return renderJudgeLine(series.style, color, points);
           })
           .join("")
-        : `<polyline class="trend-line judge-trend-line" points="${validPoints.map((point) => `${xFor(point.index).toFixed(1)},${yFor(point.score).toFixed(1)}`).join(" ")}"></polyline>`;
+        : renderJudgeLine(series.style, series.color, validPoints.map((point) => `${xFor(point.index).toFixed(1)},${yFor(point.score).toFixed(1)}`).join(" "));
       const markers = validPoints
         .map((point) => {
           const judgeName = typeof series.labelForRun === "function"
@@ -832,13 +871,12 @@ function renderJudgeScoreTrendSvg(data, options = {}) {
             : series.judgeName;
           const label = `${judgeName}, ${trendMarkerLabel(point)}: raw average score given ${formatScore(point.score)}`;
           const color = trendColorForRun(series, point.run);
-          const style = hasVariableColor ? ` style="--series-color: ${escapeHtml(color)}"` : "";
-          return `<circle${style} cx="${xFor(point.index).toFixed(1)}" cy="${yFor(point.score).toFixed(1)}" r="4"><title>${escapeHtml(label)}</title></circle>`;
+          return renderJudgeMarker(series.style, color, xFor(point.index).toFixed(1), yFor(point.score).toFixed(1), label);
         })
         .join("");
 
       return `
-                <g class="judge-trend-series"${hasVariableColor ? "" : ` style="--series-color: ${escapeHtml(series.color)}"`}>
+                <g class="judge-trend-series">
                   ${line}
                   <g class="judge-trend-points">${markers}</g>
                 </g>`;
@@ -1258,14 +1296,18 @@ function judgeScoreTrendData(runs) {
     return averagesByJudge;
   });
 
-  const series = [...judges.values()].map((judge, index) => ({
+  const colors = new Map(judgeTrendPalette);
+  const colorForLabel = (label) => {
+    if (!colors.has(label)) {
+      colors.set(label, nextJudgeTrendColor([...colors.values(), claudeLegacyTrendColor, gemini37FlashTrendColor]));
+    }
+    return colors.get(label);
+  };
+  const series = [...judges.values()].map((judge) => ({
     judgeName: judge.name,
     shortName: shortModelName(judge.name),
-    color: judge.key === "anthropic"
-      ? claudeLegacyTrendColor
-      : judge.key === "google"
-        ? geminiFlashTrendColor
-        : judgeTrendColor(index),
+    style: judgeTrendStyles.get(judge.key) || roundJudgeMarker,
+    color: colorForLabel(judge.name),
     colorForRun: judge.key === "anthropic"
       ? claudeTrendColorForRun
       : judge.key === "google"
@@ -1293,10 +1335,7 @@ function judgeScoreTrendData(runs) {
     }))
   }));
 
-  for (const [contestantId, colors] of [
-    ["openai", ["#c28a57", "#fb7185"]],
-    ["xai", ["#a3e635", "#f8fafc"]]
-  ]) {
+  for (const contestantId of ["openai", "xai"]) {
     const seriesIndex = [...judges.keys()].indexOf(contestantId);
     if (seriesIndex < 0) continue;
     const versionLabel = (run) => {
@@ -1310,14 +1349,11 @@ function judgeScoreTrendData(runs) {
     const labels = [...new Set(chronologicalRuns
       .filter((run) => run.contestants?.some((contestant) => contestant.id === contestantId))
       .map(versionLabel))];
-    const legendItems = labels.map((label, index) => ({
-      label,
-      color: colors[index] || `hsl(${(index * 137.5) % 360} 70% 70%)`
-    }));
-    Object.assign(series[seriesIndex], {
-      color: colors[0],
+    const legendItems = labels.map((label) => ({ label, color: colorForLabel(label) }));
+    const judgeSeries = series[seriesIndex];
+    Object.assign(judgeSeries, {
       labelForRun: versionLabel,
-      colorForRun: (run) => legendItems.find((item) => item.label === versionLabel(run))?.color || colors[0],
+      colorForRun: (run) => colors.get(versionLabel(run)) || judgeSeries.color,
       legendItems
     });
   }
@@ -1328,18 +1364,29 @@ function judgeScoreTrendData(runs) {
   };
 }
 
-function judgeTrendColor(index) {
-  const colors = [
-    "#c28a57",
-    "#7dd3fc",
-    "#f472b6",
-    "#a3e635",
-    "#facc15",
-    "#c4b5fd",
-    "#fb7185"
-  ];
-
-  return colors[index % colors.length];
+function nextJudgeTrendColor(usedColors) {
+  const used = [...new Set(usedColors)].map((hex) =>
+    hex.slice(1).match(/../g).map((channel) => parseInt(channel, 16))
+  );
+  const levels = [0, 51, 102, 153, 204, 255];
+  let bestDistance = -1;
+  let bestColor;
+  for (const r of levels) {
+    for (const g of levels) {
+      for (const b of levels) {
+        // Exclude dim swatches on the dark plot, then maximize separation from the nearest color.
+        if (0.2126 * r + 0.7152 * g + 0.0722 * b < 130) continue;
+        const distance = Math.min(...used.map(([ur, ug, ub]) =>
+          2 * (r - ur) ** 2 + 4 * (g - ug) ** 2 + 3 * (b - ub) ** 2
+        ));
+        if (distance > bestDistance) {
+          bestDistance = distance;
+          bestColor = "#" + [r, g, b].map((channel) => channel.toString(16).padStart(2, "0")).join("");
+        }
+      }
+    }
+  }
+  return bestColor;
 }
 
 function standingsNameForContestant(run, contestantId, fallbackName) {
@@ -4273,14 +4320,13 @@ main {
 }
 
 .judge-trend-line {
-  stroke: var(--series-color);
   stroke-width: 3;
 }
 
-.judge-trend-points circle {
-  fill: var(--series-color);
+.judge-trend-marker {
   stroke: #08090a;
-  stroke-width: 2;
+  stroke-width: 1.4;
+  stroke-linejoin: round;
 }
 
 .judge-score-legend {
