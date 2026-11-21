@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-21-external-real-2026-11-21",
+  "seed": "external-real-2026-11-21",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-21T15:03:38.910Z",
+  "publishedDate": "2026-11-21",
+  "seedTerms": [
+    "Outlaws",
+    "Funeral Director / Undertaker",
+    "Country Road",
+    "Being scammed",
+    "Calm",
+    "Timid"
+  ],
+  "premise": {
+    "text": "Seed terms: Outlaws, Funeral Director / Undertaker, Country Road, Being scammed, Calm, Timid",
+    "seedTerms": [
+      "Outlaws",
+      "Funeral Director / Undertaker",
+      "Country Road",
+      "Being scammed",
+      "Calm",
+      "Timid"
+    ],
+    "displayText": "Grief Upcharge"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "The Art of Letting Go",
+      "seedTermsUsed": [
+        "Being scammed",
+        "Calm"
+      ],
+      "joke": "I downloaded a meditation app to help me stay calm. It promised a free trial, then charged me $200. I called for a refund, and a soothing voice said, 'Breathe. Notice your anger. Let it go.' I said, 'You stole my money!' It said, 'And yet you're still so attached to it.'",
+      "setup": "",
+      "punchline": "I downloaded a meditation app to help me stay calm. It promised a free trial, then charged me $200. I called for a refund, and a soothing voice said, 'Breathe. Notice your anger. Let it go.' I said, 'You stole my money!' It said, 'And yet you're still so attached to it.'",
+      "text": "I downloaded a meditation app to help me stay calm. It promised a free trial, then charged me $200. I called for a refund, and a soothing voice said, 'Breathe. Notice your anger. Let it go.' I said, 'You stole my money!' It said, 'And yet you're still so attached to it.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "The Calmest I’ve Ever Been",
+      "seedTermsUsed": [
+        "Being scammed",
+        "Calm"
+      ],
+      "joke": "I got a call last month saying my car’s extended warranty was expiring, and I have never felt more at peace in my life. My voice got slow, my shoulders dropped, I started breathing from my diaphragm. The guy said, ‘Sir, is now a good time?’ I said, ‘Honestly? Yeah.’ I don’t know what that says about my actual life, but the one time a stranger lied to my face and tried to take my money, I finally found my center.",
+      "setup": "",
+      "punchline": "I got a call last month saying my car’s extended warranty was expiring, and I have never felt more at peace in my life. My voice got slow, my shoulders dropped, I started breathing from my diaphragm. The guy said, ‘Sir, is now a good time?’ I said, ‘Honestly? Yeah.’ I don’t know what that says about my actual life, but the one time a stranger lied to my face and tried to take my money, I finally found my center.",
+      "text": "I got a call last month saying my car’s extended warranty was expiring, and I have never felt more at peace in my life. My voice got slow, my shoulders dropped, I started breathing from my diaphragm. The guy said, ‘Sir, is now a good time?’ I said, ‘Honestly? Yeah.’ I don’t know what that says about my actual life, but the one time a stranger lied to my face and tried to take my money, I finally found my center."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Grief Upcharge",
+      "seedTermsUsed": [
+        "Funeral Director / Undertaker",
+        "Being scammed"
+      ],
+      "joke": "I got scammed at a funeral home last week, which feels like the least sporting venue to run a hustle. The director sat me down in a velvet room, nodded very gently, and said, \"We have the pine box, or the Eternal Serenity Mahogany with memory-foam lining.\" I looked at him and said, \"Buddy, he's dead. If he starts complaining about lumbar support, we've got way bigger problems than our budget.\"",
+      "setup": "",
+      "punchline": "I got scammed at a funeral home last week, which feels like the least sporting venue to run a hustle. The director sat me down in a velvet room, nodded very gently, and said, \"We have the pine box, or the Eternal Serenity Mahogany with memory-foam lining.\" I looked at him and said, \"Buddy, he's dead. If he starts complaining about lumbar support, we've got way bigger problems than our budget.\"",
+      "text": "I got scammed at a funeral home last week, which feels like the least sporting venue to run a hustle. The director sat me down in a velvet room, nodded very gently, and said, \"We have the pine box, or the Eternal Serenity Mahogany with memory-foam lining.\" I looked at him and said, \"Buddy, he's dead. If he starts complaining about lumbar support, we've got way bigger problems than our budget.\""
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Soft-Spoken Sendoff",
+      "seedTermsUsed": [
+        "Funeral Director / Undertaker",
+        "Timid"
+      ],
+      "joke": "I'm a funeral director, but I'm painfully timid. Last week a widow asked if her husband looked peaceful. I stared at my shoes for a full ten seconds and finally muttered, 'Well... he hasn't complained yet.' Then I quietly excused myself to go straighten flowers that were already perfect.",
+      "setup": "",
+      "punchline": "I'm a funeral director, but I'm painfully timid. Last week a widow asked if her husband looked peaceful. I stared at my shoes for a full ten seconds and finally muttered, 'Well... he hasn't complained yet.' Then I quietly excused myself to go straighten flowers that were already perfect.",
+      "text": "I'm a funeral director, but I'm painfully timid. Last week a widow asked if her husband looked peaceful. I stared at my shoes for a full ten seconds and finally muttered, 'Well... he hasn't complained yet.' Then I quietly excused myself to go straighten flowers that were already perfect."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Final Expense",
+      "seedTermsUsed": [
+        "Funeral Director / Undertaker",
+        "Being scammed"
+      ],
+      "joke": "I knew I'd been scammed when a funeral director sold me a 'lifetime burial package.' Halfway through the paperwork I said, 'Lifetime? Isn't every burial package lifetime?' He smiled and said, 'Exactly. That's why it's our longest-lasting product.'",
+      "setup": "",
+      "punchline": "I knew I'd been scammed when a funeral director sold me a 'lifetime burial package.' Halfway through the paperwork I said, 'Lifetime? Isn't every burial package lifetime?' He smiled and said, 'Exactly. That's why it's our longest-lasting product.'",
+      "text": "I knew I'd been scammed when a funeral director sold me a 'lifetime burial package.' Halfway through the paperwork I said, 'Lifetime? Isn't every burial package lifetime?' He smiled and said, 'Exactly. That's why it's our longest-lasting product.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "An amusing contrast between serenity and a scam call, but the extended setup leads to an observation rather than a strong punchline. The final sentence explains the premise instead of delivering a laugh.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 4.9
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "A recognizable funeral-home upselling premise with effective escalation. The lumbar-support punchline is concrete, accessible, and well timed. The underlying observation is familiar, but the execution delivers a genuine laugh.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The timid characterization is clear, but 'he hasn't complained yet' is a predictable dead-person joke. The closing flower-straightening detail adds characterization without strengthening the payoff.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 4,
+          "originality": 3,
+          "promptFit": 10,
+          "total": 4.3
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Concise and understandable, but the lifetime-burial observation is apparent almost immediately. The director's response merely repeats the central irony rather than introducing a surprising comic turn.",
+          "laugh": 4,
+          "surprise": 3,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.5
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean irony with meditation-app voice; solid final line, slightly familiar app-bot gag shape.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Strong absurd premise (upsell at a funeral) with a sharp, logical punchline that lands cleanly.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Mild and cute, but the timid-undertaker bit stays flat; punchline restates premise rather than turning it.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Decent logic-twist scam line, but the ‘lifetime’ wordplay is a fairly predictable route.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clean first-person setup and crisp final turn using the meditation app framing well, though the 'attached to your money' angle is somewhat familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Fresh reversal on finding zen during a scam call; the ending trails off slightly into explanation rather than snapping on a sharp punchline.",
+          "laugh": 6,
+          "surprise": 7,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.600000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "The 'hasn't complained yet' undertaker line is an old chestnut, and the added tag about straightening flowers dilutes the finish.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Predictable wordplay on 'lifetime' that states the punchline prematurely in the middle and ends on a weak restatement.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 9,
+          "total": 4.7
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clever mindfulness reversal, but therapy-flavored and mild; more admire than laugh.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.7
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Strong inversion of the scam call into unexpected calm; clean stage voice and solid closer.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Specific lumbar-support image and sharp final line; funeral upselling handled with good timing.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.400000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Clean lifetime wordplay but thin and predictable once the setup lands.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Strong personification of the app; the attachment line is a solid turn and punchline.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clear premise and irony, but the ending is more observational than punchy.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.4
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Well-built scene with a clear escalation and a strong final line that carries the laugh.",
+          "laugh": 8,
+          "surprise": 7,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 7.900000000000001
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent character-based joke, but the punchline is fairly predictable and gentle.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 10,
+          "total": 5.7
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "score": 7.3,
+      "rawScore": 7.4,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 7.2,
+        "surprise": 6.7,
+        "craft": 7.4,
+        "originality": 6.7,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 7.3,
+        "surprise": 6.8,
+        "craft": 7.5,
+        "originality": 6.8,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 8,
+          "rawScore": 7,
+          "scoreAdjustment": 1,
+          "comment": "A recognizable funeral-home upselling premise with effective escalation. The lumbar-support punchline is concrete, accessible, and well timed. The underlying observation is familiar, but the execution delivers a genuine laugh."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong absurd premise (upsell at a funeral) with a sharp, logical punchline that lands cleanly."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Specific lumbar-support image and sharp final line; funeral upselling handled with good timing."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 7.4,
+          "rawScore": 7.9,
+          "scoreAdjustment": -0.5,
+          "comment": "Well-built scene with a clear escalation and a strong final line that carries the laugh."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.3,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 6.1,
+        "craft": 6.1,
+        "originality": 6.3,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 6,
+        "craft": 6,
+        "originality": 6.3,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.9,
+          "rawScore": 4.9,
+          "scoreAdjustment": 1,
+          "comment": "An amusing contrast between serenity and a scam call, but the extended setup leads to an observation rather than a strong punchline. The final sentence explains the premise instead of delivering a laugh."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.9,
+          "rawScore": 6.6,
+          "scoreAdjustment": 0.3,
+          "comment": "Fresh reversal on finding zen during a scam call; the ending trails off slightly into explanation rather than snapping on a sharp punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.6,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.5,
+          "comment": "Strong inversion of the scam call into unexpected calm; clean stage voice and solid closer."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.5,
+          "comment": "Clear premise and irony, but the ending is more observational than punchy."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "score": 6.2,
+      "rawScore": 6.4,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 6,
+        "craft": 6.5,
+        "originality": 5.3,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 5.5,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean irony with meditation-app voice; solid final line, slightly familiar app-bot gag shape."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.8,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.3,
+          "comment": "Clean first-person setup and crisp final turn using the meditation app framing well, though the 'attached to your money' angle is somewhat familiar."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.2,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.5,
+          "comment": "Clever mindfulness reversal, but therapy-flavored and mild; more admire than laugh."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.5,
+          "comment": "Strong personification of the app; the attachment line is a solid turn and punchline."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.3,
+      "rawScore": 5.2,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.9,
+        "surprise": 4.4,
+        "craft": 5.4,
+        "originality": 4.6,
+        "promptFit": 9.1
+      },
+      "rawRubric": {
+        "laugh": 4.8,
+        "surprise": 4.3,
+        "craft": 5.3,
+        "originality": 4.5,
+        "promptFit": 9.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.3,
+          "rawScore": 4.3,
+          "scoreAdjustment": 1,
+          "comment": "The timid characterization is clear, but 'he hasn't complained yet' is a predictable dead-person joke. The closing flower-straightening detail adds characterization without strengthening the payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Mild and cute, but the timid-undertaker bit stays flat; punchline restates premise rather than turning it."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.7,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.3,
+          "comment": "The 'hasn't complained yet' undertaker line is an old chestnut, and the added tag about straightening flowers dilutes the finish."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.2,
+          "rawScore": 5.7,
+          "scoreAdjustment": -0.5,
+          "comment": "Competent character-based joke, but the punchline is fairly predictable and gentle."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.2,
+      "rawScore": 5.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 4.6,
+        "surprise": 4.4,
+        "craft": 5.6,
+        "originality": 4.6,
+        "promptFit": 8.6
+      },
+      "rawRubric": {
+        "laugh": 4.5,
+        "surprise": 4.3,
+        "craft": 5.5,
+        "originality": 4.5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI GPT-6 High",
+          "score": 5.5,
+          "rawScore": 4.5,
+          "scoreAdjustment": 1,
+          "comment": "Concise and understandable, but the lifetime-burial observation is apparent almost immediately. The director's response merely repeats the central irony rather than introducing a surprising comic turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 5.2,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Decent logic-twist scam line, but the ‘lifetime’ wordplay is a fairly predictable route."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0.3,
+          "comment": "Predictable wordplay on 'lifetime' that states the punchline prematurely in the middle and ends on a weak restatement."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5,
+          "rawScore": 5.5,
+          "scoreAdjustment": -0.5,
+          "comment": "Clean lifetime wordplay but thin and predictable once the setup lands."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-21-external-real-2026-11-21.png",
+    "originalSrc": "assets/feature-images/2026-11-21-external-real-2026-11-21.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1024,
+    "height": 506,
+    "qa": {
+      "status": "approved",
+      "version": "2026-08-feature-image-v5",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Grief Upcharge: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Gemini - Grief Upcharge\nExact joke text to render in the right panel:\nI got scammed at a funeral home last week, which feels like the least sporting venue to run a hustle. The director sat me down in a velvet room, nodded very gently, and said, \"We have the pine box, or the Eternal Serenity Mahogany with memory-foam lining.\" I looked at him and said, \"Buddy, he's dead. If he starts complaining about lumbar support, we've got way bigger problems than our budget.\"\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Outlaws, Funeral Director / Undertaker, Country Road, Being scammed, Calm, Timid. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Outlaws, Funeral Director / Undertaker, Country Road, Being scammed, Calm, Timid. Use the winning joke titled \"Grief Upcharge\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.1,
+    "judgeAverages": {
+      "openai": 5.1,
+      "anthropic": 6.4,
+      "google": 5.8,
+      "xai": 6.6,
+      "copilot": 6.5
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-21-external-real-2026-11-21.md"
+}

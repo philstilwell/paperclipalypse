@@ -2329,20 +2329,19 @@ td:nth-child(4) {
     align-items: flex-start;
   }
 
-  .info-popover {
-    left: 0;
-    transform: translateY(-4px);
-  }
-
-  .process-info {
-    left: 0;
-    right: auto;
-  }
-
-  .prompt-info {
-    left: 0;
-    right: auto;
+  .info-popover,
+  .process-info,
+  .prompt-info,
+  .hero-stats .mode-info {
+    bottom: auto;
+    left: 24px;
     max-height: min(72vh, 560px);
+    overflow: auto;
+    position: fixed;
+    right: 24px;
+    top: max(72px, 16vh);
+    transform: translateY(-4px);
+    width: auto;
   }
 
   .rubric-note:hover .info-popover,
