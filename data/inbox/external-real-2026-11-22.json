@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-22T15:00:23.593Z",
+  "publishedDate": "2026-11-22",
+  "seed": "external-real-2026-11-22",
+  "slug": "2026-11-22-external-real-2026-11-22",
+  "source": "manual-external",
+  "seedTerms": [
+    "Social Collapse",
+    "Reporter",
+    "University Lecture Hall",
+    "Being arrested",
+    "Funny",
+    "Insecure"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "Journalistic Standards",
+      "seedTermsUsed": [
+        "Reporter",
+        "Insecure"
+      ],
+      "joke": "I'm dating a reporter, which is rough because I'm insecure. I asked her, 'Am I the most attractive man you've ever dated?' She said, 'I can't publish that without two independent sources.' I said, 'Fine, call my mother.' She did. My mother said, 'Well, he's always had a lovely personality.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Guest Lecture",
+      "seedTermsUsed": [
+        "University Lecture Hall",
+        "Being arrested"
+      ],
+      "joke": "I gave a guest lecture at a university once, and halfway through, two security guards tackled me and put me in handcuffs. Turns out the real professor was still waiting outside because I’d walked into the wrong lecture hall and just started talking. Forty minutes in, confident, making eye contact, really building rapport. Students were nodding. Someone was taking notes. I was arrested for impersonating a professor, but honestly, best performance review of my career."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "End of Days",
+      "seedTermsUsed": [
+        "Social Collapse",
+        "Insecure"
+      ],
+      "joke": "I’m honestly kind of hoping for total social collapse, mostly because I’m way too insecure to survive regular society. Right now, I lose sleep wondering if the barista thinks I’m weird because I said 'you too' when she told me to enjoy my iced coffee. Put me in the apocalypse! Nobody’s judging your social anxiety when you’re both fighting a feral raccoon for a can of beans. Finally, a level playing field."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Halfway Up",
+      "seedTermsUsed": [
+        "University Lecture Hall",
+        "Insecure"
+      ],
+      "joke": "I was sitting in a university lecture hall when the professor asked if anyone had questions. I raised my hand, then got so insecure I yanked it right back down. Then I got insecure about looking indecisive, so up it went again. Down. Up. By the end of class my arm was just stuck halfway, trembling, like it was quietly negotiating permission to exist."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Low Self-Esteem Crime",
+      "seedTermsUsed": [
+        "Being arrested",
+        "Insecure"
+      ],
+      "joke": "I got arrested for shoplifting, and honestly the worst part wasn't the handcuffs, it was how supportive the cop was. He looked at the security footage and said, \"You know, you could've just asked for help.\" That's when I realized my self-esteem is so low, even my crime looked like a cry for feedback."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear premise with amusing escalation and a decent closing line. The arrest feels contrived, and the setup is longer than necessary."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Relatable insecurity contrasted effectively with apocalyptic survival. The raccoon image is amusing, but the closing line adds little."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear physical escalation and a distinctive final image. The ending is more poetic than funny, weakening the payoff."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Concise setup with a recognizable insecurity angle. The supportive cop is mildly unexpected, but the final line feels forced rather than delivering a strong laugh."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Clean journalism-sourcing conceit, escalates well, mother’s backhanded line lands as the real punchline."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good premise and raccoon image, but setup runs long before the payoff and ‘level playing field’ is a soft landing."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Nice physical escalation and image of the trembling arm, but turn is fairly expected once premise is set."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Sharp final line reframes the whole bit; cop’s supportive tone is a fresh, specific angle."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean setup and journalistic framing, though the 'ask my mom and she calls me nice' turn is a classic, slightly predictable trope."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong, vivid premise with great escalation; the 'best performance review' closer lands well, even if walking into the wrong room for 40 minutes stretches plausibility."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Relatable physical image, but it plays more like an anxious anecdote than a structured punchline; the final simile is a bit overwrought."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Starts with a promising subversion, but the closing line ('cry for feedback') over-explains the premise instead of landing a sharp punch."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean sources gag lands, but the mother closer is a familiar soft dig that undercuts the turn."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong stage premise with clear escalation; the performance-review closer snaps cleanly."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Relatable anxiety beat and concrete raccoon image, yet more observational than sharply turned."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Supportive-cop line is unexpected; the feedback reframe gives a clean, earned final snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong, clean escalation from reporter logic to the mother's deflating quote. Natural stand-up rhythm and a solid final laugh."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Clear premise with good escalation. The performance-review tag is a satisfying payoff, though slightly predictable by the end."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Relatable insecurity angle with a clear contrast. The raccoon image helps, but the turn is fairly expected and earns more smiles than laughs."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Nicely observed insecurity behavior. The closing image is vivid and well-worded, though it lands more as recognition humor than a strong punchline."
+        }
+      ]
+    }
+  ]
+}
