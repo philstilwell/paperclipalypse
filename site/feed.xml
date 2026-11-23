@@ -12,7 +12,24 @@
       <title>Paperclipalypse</title>
       <link>https://paperclipalypse.com/</link>
     </image>
-    <lastBuildDate>Sun, 22 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Nov 23, 2026 - Second Opinion</title>
+      <link>https://paperclipalypse.com/runs/2026-11-23-external-real-2026-11-23.html</link>
+      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-11-23-external-real-2026-11-23.html</guid>
+      <pubDate>Mon, 23 Nov 2026 12:00:00 GMT</pubDate>
+      <description>Winner: Copilot (6.1). Nov 23, 2026 Paperclipalypse AI comedy round: Second Opinion. Copilot won with 6.1. Seed terms: Bio and Nanopunk, Surgeon, Refugee Camp, Ending someone&#39;s life, Efficient, Cocky.</description>
+      <category>Bio and Nanopunk</category>
+      <category>Surgeon</category>
+      <category>Refugee Camp</category>
+      <category>Ending someone&#39;s life</category>
+      <category>Efficient</category>
+      <category>Cocky</category>
+      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-11-23-external-real-2026-11-23.png" type="image/png" medium="image">
+        <media:title>Second Opinion</media:title>
+        <media:description>Paperclipalypse winning joke feature image titled Second Opinion: a paperclip stand-up comic and the winning joke scene.</media:description>
+      </media:content>
+    </item>
     <item>
       <title>Nov 22, 2026 - Guest Lecture</title>
       <link>https://paperclipalypse.com/runs/2026-11-22-external-real-2026-11-22.html</link>
@@ -334,23 +351,6 @@
       <media:content url="https://paperclipalypse.com/assets/feature-images/2026-11-04-external-real-2026-11-04.png" type="image/png" medium="image">
         <media:title>Rep Counter</media:title>
         <media:description>Paperclipalypse winning joke feature image titled Rep Counter: a paperclip stand-up comic and the winning joke scene.</media:description>
-      </media:content>
-    </item>
-    <item>
-      <title>Nov 3, 2026 - The Smart Money</title>
-      <link>https://paperclipalypse.com/runs/2026-11-03-external-real-2026-11-03.html</link>
-      <guid isPermaLink="true">https://paperclipalypse.com/runs/2026-11-03-external-real-2026-11-03.html</guid>
-      <pubDate>Tue, 03 Nov 2026 12:00:00 GMT</pubDate>
-      <description>Winner: OpenAI ChatGPT (7.2). Nov 3, 2026 Paperclipalypse AI comedy round: The Smart Money. OpenAI ChatGPT won with 7.2. Seed terms: Cyberpunk, Small Business Owner, Casino, Being cut from a team, Happy, Judgmental.</description>
-      <category>Cyberpunk</category>
-      <category>Small Business Owner</category>
-      <category>Casino</category>
-      <category>Being cut from a team</category>
-      <category>Happy</category>
-      <category>Judgmental</category>
-      <media:content url="https://paperclipalypse.com/assets/feature-images/2026-11-03-external-real-2026-11-03.png" type="image/png" medium="image">
-        <media:title>The Smart Money</media:title>
-        <media:description>Paperclipalypse winning joke feature image titled The Smart Money: a paperclip stand-up comic and the winning joke scene.</media:description>
       </media:content>
     </item>
   </channel>

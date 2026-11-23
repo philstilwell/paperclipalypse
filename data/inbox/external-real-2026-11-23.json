@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-23T14:56:30.987Z",
+  "publishedDate": "2026-11-23",
+  "seed": "external-real-2026-11-23",
+  "slug": "2026-11-23-external-real-2026-11-23",
+  "source": "manual-external",
+  "seedTerms": [
+    "Bio and Nanopunk",
+    "Surgeon",
+    "Refugee Camp",
+    "Ending someone's life",
+    "Efficient",
+    "Cocky"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI GPT-6 High",
+      "provider": "openai",
+      "model": "GPT-6 High"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI GPT-6 High",
+      "model": "GPT-6 High",
+      "title": "A Surgeon’s Confidence",
+      "seedTermsUsed": [
+        "Surgeon",
+        "Cocky"
+      ],
+      "joke": "My surgeon was unbelievably cocky. Right before the operation, he said, 'Don't worry. I've never made a mistake in my life.' I said, 'That's reassuring. How many surgeries have you performed?' He said, 'You're my first.' I said, 'Then how can you be so confident?' He said, 'I've never had a complaint.'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "The Compassionate Downgrade",
+      "seedTermsUsed": [
+        "Surgeon",
+        "Cocky"
+      ],
+      "joke": "I told a surgeon I was nervous before my operation. He said, “Relax, I’ve done this a thousand times, I could do it in my sleep.” I said, “That’s not comforting, that’s a disclaimer.” He said, “Fine, you want humble? Last week I removed a gallbladder and left a Bluetooth speaker in as a tip.” I said I’d rather have the confidence back."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Overconfident Scalpel",
+      "seedTermsUsed": [
+        "Surgeon",
+        "Cocky"
+      ],
+      "joke": "I love a confident doctor, right up until they get cocky. Last month I went in for a routine appendectomy, and my surgeon walked into the operating room wearing a T-shirt that just said, 'No Mistakes, Just Bonus Organs.' He looked at my chart, snapped his gloves, and went, 'Relax, I’ve done this a hundred times—and honestly, I’m feeling lucky today.' Lucky? Buddy, you’re holding a scalpel, not a scratch-off ticket."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Tee Time Priority",
+      "seedTermsUsed": [
+        "Surgeon",
+        "Efficient"
+      ],
+      "joke": "I'm a surgeon who believes in efficiency. Why spend an hour on a procedure when you can do it in twenty minutes? My colleagues call it rushing. I call it respecting the patient's time. And my tee time."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Second Opinion",
+      "seedTermsUsed": [
+        "Surgeon",
+        "Cocky"
+      ],
+      "joke": "I went to a surgeon who was so cocky, he didn't say, \"You'll be fine.\" He said, \"This operation is mostly for my highlight reel.\" Halfway through explaining the risks, he started ranking his favorite stitches. Nothing makes you root for humility like hearing a guy describe your appendix as \"a pretty easy warm-up.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI GPT-6 High",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 4,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The Bluetooth speaker is unexpected but arbitrary, and the final line lacks a strong payoff. The dialogue feels constructed rather than conversational."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clear premise, recognizable absurdity, and a solid scratch-off ticket comparison. The ending earns a mild laugh, though the overconfident surgeon premise is familiar and the setup is lengthy."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Economical construction and natural first-person delivery. The golf punchline is understandable but highly predictable, limiting its comic impact."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "The highlight-reel premise offers potential, but ranking stitches adds little escalation. The final warm-up remark repeats the surgeon's arrogance without delivering a surprising turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Classic first-surgery reveal works via clean Q&A rhythm, but the twist is a familiar stand-up shape."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Good visual with the T-shirt, but overlong setup dilutes momentum and final line is a soft restate of cockiness."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Tight and economical, tee-time tag lands cleanly, but premise is a fairly standard efficiency-doctor joke."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Nice escalation with highlight reel and stitch-ranking, but closing line reads more clever than laugh-out-loud."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 3,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Clean back-and-forth rhythm, but the 'zero complaints because zero patients' punchline is an old street-joke chestnut."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Starts with a decent disclaimer line, then veers into random absurdity with the Bluetooth speaker gag before a flat closing tag."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Tight, economical persona bit with a clean misdirection, though the golf-obsessed doctor trope is very familiar."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Stronger voice and vivid details ('highlight reel', ranking stitches) give it genuine stage texture and a solid closing line."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Dialogue-heavy setup reaches a mild logical payoff but lacks sharp economy or a strong stage snap."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 4,
+          "promptFit": 7,
+          "laugh": 4,
+          "comment": "Bluetooth tip is forced absurdity that undercuts the cocky premise and leaves a flat closer."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clear premise, vivid T-shirt image, and a clean final comparison that actually carries the laugh."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Specific details and a natural closer land solidly, though the cocky angle is somewhat expected."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean structure and a solid reversal; familiar premise but the complaint line lands."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Some fun escalation and a decent tag, though the Bluetooth speaker image feels a bit forced."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear premise, but the turns are predictable and the final scratch-off comparison is a mild payoff."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent one-liner-style premise, but the tee-time punchline is familiar and expected."
+        }
+      ]
+    }
+  ]
+}
