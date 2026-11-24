@@ -1,12 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
 
-export const FEATURE_IMAGE_QA_VERSION = "2026-08-feature-image-v5";
-export const GEMINI_PREVIEW_DIMENSIONS = { width: 1024, height: 506 };
+export const FEATURE_IMAGE_QA_VERSION = "2026-11-feature-image-v6";
+export const GEMINI_PREVIEW_DIMENSIONS = [
+  { width: 1024, height: 506 },
+  { width: 1456, height: 720 }
+];
+const geminiPreviewSizes = GEMINI_PREVIEW_DIMENSIONS.map(({ width, height }) => `${width}x${height}`).join(" or ");
 
 export const FEATURE_IMAGE_QA_CHECKLIST = [
-  "The image is Gemini's smaller generated preview image, saved or captured from the preview viewer. Do not use Gemini's full-size export for this project.",
-  "The image is exactly Gemini's 1024x506 generated preview. Do not use a screenshot, crop, thumbnail, or full-size export.",
+  `The image is Gemini's unmodified ${geminiPreviewSizes} chat preview, saved through Copy image. Do not use a screenshot, crop, thumbnail, or full-size export.`,
   "The image is visually polished: balanced composition, intentional color, clean contrast, and no obvious generation artifacts.",
   "The image clearly features the Paperclipalypse paperclip stand-up comic on or near a microphone.",
   "The image includes a visual scene inspired by the winning joke, not a generic or unrelated scene.",
@@ -34,15 +37,12 @@ export function qaFeatureImageFile(filePath, { visualApproved = false, allowWebP
 
     if (!dimensions) {
       errors.push("Feature image dimensions could not be read. Use a PNG, JPEG, or WebP image.");
-    } else {
-      if (
-        dimensions.width !== GEMINI_PREVIEW_DIMENSIONS.width ||
-        dimensions.height !== GEMINI_PREVIEW_DIMENSIONS.height
-      ) {
-        errors.push(
-          `Feature image is ${dimensions.width}x${dimensions.height}. Use Gemini's exact ${GEMINI_PREVIEW_DIMENSIONS.width}x${GEMINI_PREVIEW_DIMENSIONS.height} chat preview, not a screenshot, crop, thumbnail, or full-size export.`
-        );
-      }
+    } else if (!GEMINI_PREVIEW_DIMENSIONS.some(({ width, height }) => (
+      dimensions.width === width && dimensions.height === height
+    ))) {
+      errors.push(
+        `Feature image is ${dimensions.width}x${dimensions.height}. Use Gemini's exact ${geminiPreviewSizes} chat preview, not a screenshot, crop, thumbnail, or full-size export.`
+      );
     }
 
     if (sizeBytes < 100_000) {

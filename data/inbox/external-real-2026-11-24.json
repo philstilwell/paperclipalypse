@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-24T15:01:54.129Z",
+  "publishedDate": "2026-11-24",
+  "seed": "external-real-2026-11-24",
+  "slug": "2026-11-24-external-real-2026-11-24",
+  "source": "manual-external",
+  "seedTerms": [
+    "Famous and Not Famous",
+    "Assassin",
+    "Park",
+    "Not achieving a coveted goal",
+    "Objective",
+    "Callous"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT Latest Medium",
+      "provider": "openai",
+      "model": "Latest Medium"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT Latest Medium",
+      "model": "Latest Medium",
+      "title": "My Biggest Fan",
+      "seedTermsUsed": [
+        "Famous and Not Famous",
+        "Park"
+      ],
+      "joke": "I was walking through the park when a woman ran up to me and said, 'Oh my God, can I get a picture?' I said, 'Of course!' She handed me her phone and went back to stand with her husband. Apparently, I have the kind of face people trust with a $1,200 phone but don't want in a photograph."
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Park Bench Red Flags",
+      "seedTermsUsed": [
+        "Assassin",
+        "Park"
+      ],
+      "joke": "I dated a guy for two months before I found out he was an assassin. Should've clocked it sooner -- every date was a walk in the park, and he'd pick the bench, survey the exits, then say 'perfect, nobody can see us here.' I thought he was romantic. He was doing recon. And when I finally broke up with him, he looked more nervous than I'd ever seen him on the job."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Grass Is Greener",
+      "seedTermsUsed": [
+        "Park",
+        "Not achieving a coveted goal"
+      ],
+      "joke": "I’ve been trying to get into an exclusive country club for three years, and last week I finally got rejected for the fourth time. So I went to the public park to clear my head. Turns out it’s the exact same experience, except the guys yelling at me to hurry up are toddlers on tricycles, and the water hazard is just a guy washing his socks in the fountain. Honestly, the dress code is way more relaxed, and nobody’s judging my swing."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Tipped Assassin",
+      "seedTermsUsed": [
+        "Assassin",
+        "Not achieving a coveted goal"
+      ],
+      "joke": "My coveted goal was always to become a successful assassin. I keep not achieving it. Last job, I had the perfect moment. The target looked right at me. I panicked and asked for directions to the nearest coffee shop. We walked there together. He paid. My handler said that was the first time a mark ever tipped the assassin."
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Participation Bench",
+      "seedTermsUsed": [
+        "Park",
+        "Not achieving a coveted goal"
+      ],
+      "joke": "I trained all year to run a marathon and finally crossed the finish line in the park. My buddy said, \"You must feel amazing.\" I said, \"Not really. My dream was to qualify for Boston.\" He goes, \"How far off were you?\" I said, \"About three hundred miles south.\""
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT Latest Medium",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Amusing reinterpretation of romantic behavior, but the ending lacks a decisive punchline."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Entertaining visual comparisons, particularly the fountain, but the extended setup leads to a weak closing line."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "A genuinely funny reversal with an effective closing line, despite the conspicuously forced opening."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Economical setup and clean misdirection deliver a satisfying geographic punchline."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clean twist on being trusted but not photo-worthy; solid closer, mildly familiar setup."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Good mid-section images (toddlers, socks) but ends on a restating tag instead of a real snap."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Fresh premise, escalates well, punchline ('tipped the assassin') lands cleanly."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Tight, well-timed misdirection; 'three hundred miles south' is a satisfying concrete snap."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean, recognizable observational setup with tight rhythm, though the phone-handoff misdirect is a familiar premise and the closing tag softens the snap."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Strong opening premise in the park, but the ending trails off into a flat observation without a sharp comedic turn or punchline."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Mildly amusing awkward-assassin bit, held back by clunky prompt recitation in the first two sentences and a gentle closing tag."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Crisp setup and a neat geographic misdirect on qualifying for Boston, delivering a solid, concise club-ready one-liner."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 6,
+          "comment": "Clean setup and decent final image, but the fame angle is thin and the laugh stays mild."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Solid recon reveal, yet the breakup closer softens instead of landing a sharper turn."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong comparison and concrete park details give a clear, repeatable comic idea."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Economical and clear, but the geographic punch is mild and park feels incidental."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean misdirection, relatable premise, and a solid final image."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Coherent assassin dating premise, but the turns are fairly predictable."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear setup with some amusing details, but the comparison feels stretched and lacks a strong punchline."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong character-based reversal and a good closing line that carries the laugh."
+        }
+      ]
+    }
+  ]
+}

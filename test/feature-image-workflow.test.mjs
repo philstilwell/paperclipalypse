@@ -4,7 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import test from "node:test";
 import { extractGeminiImagePrompt } from "../scripts/lib/feature-image-prompt.mjs";
-import { GEMINI_PREVIEW_DIMENSIONS, qaFeatureImageFile } from "../scripts/lib/image-qa.mjs";
+import { qaFeatureImageFile } from "../scripts/lib/image-qa.mjs";
 
 const validPrompt = [
   "Generate one polished web feature image for Paperclipalypse.",
@@ -30,13 +30,20 @@ test("accepts only the exact Gemini preview dimensions", () => {
   const screenshotPath = path.join(tempDir, "screenshot.png");
 
   try {
-    fs.writeFileSync(previewPath, pngHeader(GEMINI_PREVIEW_DIMENSIONS.width, GEMINI_PREVIEW_DIMENSIONS.height));
+    for (const [width, height] of [[1024, 506], [1456, 720]]) {
+      fs.writeFileSync(previewPath, pngHeader(width, height));
+      const qa = qaFeatureImageFile(previewPath, { visualApproved: true });
+      assert.equal(qa.passed, true);
+      assert.deepEqual(qa.dimensions, { format: "png", width, height });
+      assert.equal(qaFeatureImageFile(previewPath).passed, false);
+    }
     fs.writeFileSync(screenshotPath, pngHeader(1556, 778));
-    assert.equal(qaFeatureImageFile(previewPath, { visualApproved: true }).passed, true);
     assert.match(
       qaFeatureImageFile(screenshotPath, { visualApproved: true }).errors.join("\n"),
-      /exact 1024x506 chat preview/
+      /exact 1024x506 or 1456x720 chat preview/
     );
+    fs.writeFileSync(screenshotPath, pngHeader(1456, 721));
+    assert.equal(qaFeatureImageFile(screenshotPath, { visualApproved: true }).passed, false);
   } finally {
     fs.rmSync(tempDir, { recursive: true, force: true });
   }

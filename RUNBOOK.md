@@ -7,7 +7,7 @@ Use this when publishing a real public round.
 A user instruction to run a Paperclipalypse contest from beginning to end
 authorizes the routine external workflow: sending contestant and judging
 prompts, repairing invalid outputs, generating and regenerating Gemini images,
-saving the 1024x506 preview, writing files, committing, and pushing. Do not
+saving the chat preview, writing files, committing, and pushing. Do not
 pause for progress approval. Stop and report only for a required login or
 CAPTCHA, a paid upgrade or paid API, unexpected terms, sensitive-data
 transmission, or an unrecoverable external UI failure.
@@ -25,7 +25,7 @@ transmission, or an unrecoverable external UI failure.
 7. Create the browser-safe prompt file with `npm run image:prompt -- --brief data/image-briefs/<round>.md`. In the Chrome browser-automation runtime, read that plain-text file directly from disk into a variable with `node:fs/promises`. Never navigate to it with a `file://` URL, parse the Markdown brief, or embed its contents in a JavaScript string literal.
 8. Open a fresh Chrome window for Gemini image generation, then generate and
    approve a winning-joke feature image after scoring. Confirm the visible
-   preview's natural dimensions are exactly 1024x506, click Gemini's **Copy
+   preview's natural dimensions are exactly 1024x506 or 1456x720, click Gemini's **Copy
    image** control, read the resulting `image/png` through the browser clipboard
    bridge, and save those bytes unchanged. Never use a screenshot, crop,
    thumbnail, page-asset bundle, or full-size export. Pass the approved preview
@@ -62,7 +62,7 @@ records it as the episode's `featureImage`.
   four `jokeId` values the judge must score.
 - Do not proceed until all five judges have exactly four scores and no
   self-score.
-- For Gemini images, look for the visible 1024x506 generated image preview. Use
+- For Gemini images, look for the visible 1024x506 or 1456x720 generated image preview. Use
   Gemini's **Copy image** control and the browser clipboard bridge to save the
   exact preview. The preview is a temporary `blob:` image, so page-asset listing
   and generic media download are not dependable file-export paths.
@@ -105,7 +105,7 @@ Do not add API keys to GitHub Actions for normal operation. Only run `npm run to
 
 - Check the page on desktop and mobile widths.
 - Confirm the winning-joke feature image loads and keeps its 2:1 crop.
-- Confirm the feature image came from Gemini's 1024x506 preview, not the full-size export.
+- Confirm the feature image came from Gemini's chat preview at its original dimensions.
 - Confirm the `Process`, `Mode`, and rubric popovers work by hover and keyboard focus.
 - Confirm the Cloudflare analytics snippet appears once per generated HTML page.
 - Keep the public language honest: manual external rounds use real chat-surface outputs, not fully autonomous provider APIs.

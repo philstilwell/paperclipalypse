@@ -37,7 +37,7 @@ So the preferred real-tournament flow is:
    the Gemini image brief.
 6. It opens a fresh Chrome window for Google Gemini image generation, prompts
    the winning-joke feature image, verifies Gemini's generated preview is
-   exactly 1024x506, and saves the PNG through Gemini's **Copy image** control
+   exactly 1024x506 or 1456x720, and saves the PNG through Gemini's **Copy image** control
    and the browser clipboard bridge. It rejects/regenerates weak images until
    the image QA checklist passes. Do not use screenshots or Gemini's full-size
    export for this project.
@@ -68,15 +68,15 @@ prompt in the composer, `Control+Enter` often submits it when the visible send
 button does not. Placeholder scorecards such as `{"jokeId":"id", ...}` must be
 rejected and repaired by the original judge. For feature images, use Gemini's
 **Copy image** control and the browser clipboard bridge to save the visible
-1024x506 preview without a screenshot or full-size export.
+chat preview at its original dimensions without a screenshot or full-size export.
 
 Use `npm run image:prompt -- --brief data/image-briefs/<round>.md` before opening
 Gemini. It validates the image brief and writes a plain-text prompt file under
 `tmp/gemini-feature-images/`. Chrome browser automation must read that file
 directly from disk into a variable with `node:fs/promises`; it must not navigate
 to a `file://` URL, parse Markdown fences, or embed the multi-line prompt in a
-JavaScript string. Image QA accepts only the exact 1024x506 Gemini preview,
-which prevents browser screenshots and full-size exports from reaching the site.
+JavaScript string. Image QA accepts the two exact Gemini preview sizes,
+1024x506 and 1456x720. Preserve the copied PNG unchanged.
 
 The local demo flow is:
 

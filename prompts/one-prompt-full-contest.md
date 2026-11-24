@@ -12,7 +12,7 @@ That one instruction authorizes Codex to coordinate the whole round without
 using paid model APIs. It also authorizes all routine external contest actions:
 sending contestant and judging prompts to the five named chat services,
 repairing invalid contestant outputs, generating and regenerating Gemini
-feature images, saving the Gemini 1024x506 preview, writing contest artifacts,
+feature images, saving the Gemini chat preview, writing contest artifacts,
 and committing and pushing the completed round. Do not pause for progress or
 routine-action approval during a one-prompt run.
 
@@ -44,7 +44,7 @@ routine-action approval during a one-prompt run.
    image controls are accessible.
 11. Prompt Google Gemini image generation for a 2:1 feature image based on the
     winning joke.
-12. Confirm Gemini's generated chat preview has natural dimensions 1024x506,
+12. Confirm Gemini's generated chat preview has natural dimensions 1024x506 or 1456x720,
     click Gemini's **Copy image** control, read the resulting `image/png` from
     the browser clipboard bridge, and save those bytes unchanged. Do not use
     the full-size export, generic page-asset download, or a cropped screenshot.
@@ -92,7 +92,7 @@ a substitute model, fabricated output, or an undisclosed reduced field.
 - Publication dates and generated slugs use Eastern time
   (`America/New_York`) unless Phil explicitly requests another date.
 - Gemini image generation should be run in a fresh Chrome window so Codex can
-  reach the generated image controls and save the 1024x506 chat-preview image.
+  reach the generated image controls and save the chat preview at its original dimensions.
 - Gemini may imperfectly render long in-image text. The site HTML remains the
   canonical exact joke text; the image prompt still asks Gemini to include the
   joke text when possible.
@@ -106,7 +106,7 @@ a substitute model, fabricated output, or an undisclosed reduced field.
 - If a judge returns a placeholder scorecard instead of scoring the supplied
   jokes, send a short repair prompt naming the exact four `jokeId` values to
   score. Do not hand-score on the judge's behalf.
-- For Gemini feature images, save the visible 1024x506 generated image through
+- For Gemini feature images, save the visible 1024x506 or 1456x720 generated image through
   Gemini's **Copy image** control and the browser clipboard bridge. The preview
   uses a temporary `blob:` URL, so page-asset listing and generic media download
   are not dependable export paths.
