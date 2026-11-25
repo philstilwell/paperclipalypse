@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-25T15:04:34.445Z",
+  "publishedDate": "2026-11-25",
+  "seed": "external-real-2026-11-25",
+  "slug": "2026-11-25-external-real-2026-11-25",
+  "source": "manual-external",
+  "seedTerms": [
+    "Steampunk",
+    "Fortune Teller",
+    "Fire Station",
+    "Having to blindly trust someone",
+    "Talented",
+    "Spoiled"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT Latest Medium",
+      "provider": "openai",
+      "model": "Latest Medium"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT Latest Medium",
+      "model": "Latest Medium",
+      "title": "Family Money",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Spoiled"
+      ],
+      "joke": "I went to a fortune teller who told me I'd soon come into a large sum of money. I got excited and asked if she could see when. She closed her eyes, held my hands, and said, 'When your father gets off the phone.' I said, 'Can you see how much?' She said, 'Well, how much did you tell him this reading costs?'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Palm Reading",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I went to a fortune teller last month. She grabs my hand and says, 'You have to trust me completely, no questions.' Lady, I've known you for ninety seconds and you're already asking for more blind trust than my last relationship. But fine, I held out my palm. She squints at it and goes, 'I see a man who settles for less than he deserves.' I said, 'Yeah, that's why I'm holding your hand right now.'"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Crystal Ball Liability",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I went to a fortune teller last week, and honestly, the scariest part isn't the ghosts—it's just handing your credit card to a stranger in a dark tent who claims she can't see next Tuesday. She flipped over a death card and asked if I wanted the forty-dollar bundle to fix my aura. Now I'm sitting there thinking, if she's actually psychic, why is she asking me for my billing zip code?"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Blind Trust Reading",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I went to a fortune teller last week. She said the only way the reading would work is if I blindly trusted her. So I closed my eyes. Opened them. Wallet gone. She just smiled and said, 'I see financial loss in your immediate future.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Advance Notice",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I went to a fortune teller, which is a weird business model because the whole transaction is just paying a stranger to be confidently wrong in advance. She said, 'You need to learn to trust people.' I said, 'Lady, I'm sitting in a room with purple curtains while you describe my future. If I trusted people any harder, I'd be financing a dragon.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT Latest Medium",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Natural conversational rhythm and a satisfying reversal that turns the fortune teller's diagnosis against her."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "The billing ZIP code exposes a familiar psychic contradiction. The scattered setup weakens the payoff."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Excellent economy and timing. The stolen wallet makes the final prediction amusing, although somewhat foreseeable."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Strong opening observation and imaginative exaggeration, but financing a dragon feels more whimsical than sharply comedic."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 7,
+          "laugh": 7,
+          "comment": "Nice double-twist ending (dad on phone, cost reveal); spoiled is only loosely implied but the mechanics land well."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Clean irony about billing zip code undercutting psychic claims; solid escalation and clear two-concept use."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Competent but the pickpocket-while-blind-trusting beat is the first obvious route and feels familiar."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong framing of the business model plus the absurd dragon-financing capper gives it the freshest turn of the set."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clear premise and solid spoiled-kid angle, though the back-and-forth phrasing slightly dilutes the final snap."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Natural stage cadence, but the 'settling for you' insult punchline feels familiar and telegraphed."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Clean and tight rhythm, but the stolen-wallet sight gag and 'financial loss' punchline are very predictable."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Strong opening observation about the business model, though the closing 'financing a dragon' line leans into random absurdity rather than a sharp turn."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 7,
+          "laugh": 5,
+          "comment": "Spoiled lands via the dad-pays angle, but the second beat is weaker and undercuts the first."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean trust setup into a sharp self-burn; natural rhythm and the final line carries."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good scam details and stage voice, but the core psychic-payment observation is familiar."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Observational premise is fine, yet the dragon turn feels cute rather than sharp."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clear setup and payoff; inheritance angle is familiar but lands cleanly."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Good misdirection into self-deprecation; natural stand-up voice and solid closing line."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Funny skepticism premise with a logical punchline, though the turn is somewhat predictable."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Simple, efficient joke construction; the financial-loss prediction gag is a well-worn comic device."
+        }
+      ]
+    }
+  ]
+}

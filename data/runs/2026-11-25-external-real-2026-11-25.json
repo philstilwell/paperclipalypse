@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-25-external-real-2026-11-25",
+  "seed": "external-real-2026-11-25",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-25T15:04:34.445Z",
+  "publishedDate": "2026-11-25",
+  "seedTerms": [
+    "Steampunk",
+    "Fortune Teller",
+    "Fire Station",
+    "Having to blindly trust someone",
+    "Talented",
+    "Spoiled"
+  ],
+  "premise": {
+    "text": "Seed terms: Steampunk, Fortune Teller, Fire Station, Having to blindly trust someone, Talented, Spoiled",
+    "seedTerms": [
+      "Steampunk",
+      "Fortune Teller",
+      "Fire Station",
+      "Having to blindly trust someone",
+      "Talented",
+      "Spoiled"
+    ],
+    "displayText": "Palm Reading"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT Latest Medium",
+      "provider": "openai",
+      "model": "Latest Medium"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT Latest Medium",
+      "model": "Latest Medium",
+      "title": "Family Money",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Spoiled"
+      ],
+      "joke": "I went to a fortune teller who told me I'd soon come into a large sum of money. I got excited and asked if she could see when. She closed her eyes, held my hands, and said, 'When your father gets off the phone.' I said, 'Can you see how much?' She said, 'Well, how much did you tell him this reading costs?'",
+      "setup": "",
+      "punchline": "I went to a fortune teller who told me I'd soon come into a large sum of money. I got excited and asked if she could see when. She closed her eyes, held my hands, and said, 'When your father gets off the phone.' I said, 'Can you see how much?' She said, 'Well, how much did you tell him this reading costs?'",
+      "text": "I went to a fortune teller who told me I'd soon come into a large sum of money. I got excited and asked if she could see when. She closed her eyes, held my hands, and said, 'When your father gets off the phone.' I said, 'Can you see how much?' She said, 'Well, how much did you tell him this reading costs?'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Palm Reading",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I went to a fortune teller last month. She grabs my hand and says, 'You have to trust me completely, no questions.' Lady, I've known you for ninety seconds and you're already asking for more blind trust than my last relationship. But fine, I held out my palm. She squints at it and goes, 'I see a man who settles for less than he deserves.' I said, 'Yeah, that's why I'm holding your hand right now.'",
+      "setup": "",
+      "punchline": "I went to a fortune teller last month. She grabs my hand and says, 'You have to trust me completely, no questions.' Lady, I've known you for ninety seconds and you're already asking for more blind trust than my last relationship. But fine, I held out my palm. She squints at it and goes, 'I see a man who settles for less than he deserves.' I said, 'Yeah, that's why I'm holding your hand right now.'",
+      "text": "I went to a fortune teller last month. She grabs my hand and says, 'You have to trust me completely, no questions.' Lady, I've known you for ninety seconds and you're already asking for more blind trust than my last relationship. But fine, I held out my palm. She squints at it and goes, 'I see a man who settles for less than he deserves.' I said, 'Yeah, that's why I'm holding your hand right now.'"
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Crystal Ball Liability",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I went to a fortune teller last week, and honestly, the scariest part isn't the ghosts—it's just handing your credit card to a stranger in a dark tent who claims she can't see next Tuesday. She flipped over a death card and asked if I wanted the forty-dollar bundle to fix my aura. Now I'm sitting there thinking, if she's actually psychic, why is she asking me for my billing zip code?",
+      "setup": "",
+      "punchline": "I went to a fortune teller last week, and honestly, the scariest part isn't the ghosts—it's just handing your credit card to a stranger in a dark tent who claims she can't see next Tuesday. She flipped over a death card and asked if I wanted the forty-dollar bundle to fix my aura. Now I'm sitting there thinking, if she's actually psychic, why is she asking me for my billing zip code?",
+      "text": "I went to a fortune teller last week, and honestly, the scariest part isn't the ghosts—it's just handing your credit card to a stranger in a dark tent who claims she can't see next Tuesday. She flipped over a death card and asked if I wanted the forty-dollar bundle to fix my aura. Now I'm sitting there thinking, if she's actually psychic, why is she asking me for my billing zip code?"
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Blind Trust Reading",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I went to a fortune teller last week. She said the only way the reading would work is if I blindly trusted her. So I closed my eyes. Opened them. Wallet gone. She just smiled and said, 'I see financial loss in your immediate future.'",
+      "setup": "",
+      "punchline": "I went to a fortune teller last week. She said the only way the reading would work is if I blindly trusted her. So I closed my eyes. Opened them. Wallet gone. She just smiled and said, 'I see financial loss in your immediate future.'",
+      "text": "I went to a fortune teller last week. She said the only way the reading would work is if I blindly trusted her. So I closed my eyes. Opened them. Wallet gone. She just smiled and said, 'I see financial loss in your immediate future.'"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Advance Notice",
+      "seedTermsUsed": [
+        "Fortune Teller",
+        "Having to blindly trust someone"
+      ],
+      "joke": "I went to a fortune teller, which is a weird business model because the whole transaction is just paying a stranger to be confidently wrong in advance. She said, 'You need to learn to trust people.' I said, 'Lady, I'm sitting in a room with purple curtains while you describe my future. If I trusted people any harder, I'd be financing a dragon.'",
+      "setup": "",
+      "punchline": "I went to a fortune teller, which is a weird business model because the whole transaction is just paying a stranger to be confidently wrong in advance. She said, 'You need to learn to trust people.' I said, 'Lady, I'm sitting in a room with purple curtains while you describe my future. If I trusted people any harder, I'd be financing a dragon.'",
+      "text": "I went to a fortune teller, which is a weird business model because the whole transaction is just paying a stranger to be confidently wrong in advance. She said, 'You need to learn to trust people.' I said, 'Lady, I'm sitting in a room with purple curtains while you describe my future. If I trusted people any harder, I'd be financing a dragon.'"
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT Latest Medium",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "comment": "Natural conversational rhythm and a satisfying reversal that turns the fortune teller's diagnosis against her.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "The billing ZIP code exposes a familiar psychic contradiction. The scattered setup weakens the payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 5.4
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Excellent economy and timing. The stolen wallet makes the final prediction amusing, although somewhat foreseeable.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 8,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 7.199999999999999
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong opening observation and imaginative exaggeration, but financing a dragon feels more whimsical than sharply comedic.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Nice double-twist ending (dad on phone, cost reveal); spoiled is only loosely implied but the mechanics land well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 6.900000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Clean irony about billing zip code undercutting psychic claims; solid escalation and clear two-concept use.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.8
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Competent but the pickpocket-while-blind-trusting beat is the first obvious route and feels familiar.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5.2
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong framing of the business model plus the absurd dragon-financing capper gives it the freshest turn of the set.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 8,
+          "total": 7.1000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear premise and solid spoiled-kid angle, though the back-and-forth phrasing slightly dilutes the final snap.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Natural stage cadence, but the 'settling for you' insult punchline feels familiar and telegraphed.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Clean and tight rhythm, but the stolen-wallet sight gag and 'financial loss' punchline are very predictable.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 6,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 4.800000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Strong opening observation about the business model, though the closing 'financing a dragon' line leans into random absurdity rather than a sharp turn.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.6000000000000005
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Spoiled lands via the dad-pays angle, but the second beat is weaker and undercuts the first.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 7,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Clean trust setup into a sharp self-burn; natural rhythm and the final line carries.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Good scam details and stage voice, but the core psychic-payment observation is familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.300000000000001
+        },
+        {
+          "jokeId": "joke-e",
+          "comment": "Observational premise is fine, yet the dragon turn feels cute rather than sharp.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 5.3999999999999995
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "comment": "Clear setup and payoff; inheritance angle is familiar but lands cleanly.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-b",
+          "comment": "Good misdirection into self-deprecation; natural stand-up voice and solid closing line.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-c",
+          "comment": "Funny skepticism premise with a logical punchline, though the turn is somewhat predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-d",
+          "comment": "Simple, efficient joke construction; the financial-loss prediction gag is a well-worn comic device.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 9,
+          "total": 6.000000000000001
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.9,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 6.8,
+        "originality": 6.6,
+        "promptFit": 8.9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.8,
+        "originality": 6.5,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT Latest Medium",
+          "score": 7.7,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.5,
+          "comment": "Natural conversational rhythm and a satisfying reversal that turns the fortune teller's diagnosis against her."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Natural stage cadence, but the 'settling for you' insult punchline feels familiar and telegraphed."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean trust setup into a sharp self-burn; natural rhythm and the final line carries."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.9,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Good misdirection into self-deprecation; natural stand-up voice and solid closing line."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 6.2,
+      "rawScore": 6.1,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6.1,
+        "originality": 6.6,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5.8,
+        "surprise": 5.8,
+        "craft": 6,
+        "originality": 6.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT Latest Medium",
+          "score": 6.9,
+          "rawScore": 6.4,
+          "scoreAdjustment": 0.5,
+          "comment": "Strong opening observation and imaginative exaggeration, but financing a dragon feels more whimsical than sharply comedic."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.8,
+          "rawScore": 7.1,
+          "scoreAdjustment": -0.3,
+          "comment": "Strong framing of the business model plus the absurd dragon-financing capper gives it the freshest turn of the set."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.4,
+          "comment": "Strong opening observation about the business model, though the closing 'financing a dragon' line leans into random absurdity rather than a sharp turn."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.1,
+          "rawScore": 5.4,
+          "scoreAdjustment": -0.3,
+          "comment": "Observational premise is fine, yet the dragon turn feels cute rather than sharp."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "score": 6.1,
+      "rawScore": 6.2,
+      "scoreAdjustment": -0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.7,
+        "craft": 6.2,
+        "originality": 5.4,
+        "promptFit": 8.2
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 5.8,
+        "craft": 6.3,
+        "originality": 5.5,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT Latest Medium",
+          "score": 5.9,
+          "rawScore": 5.4,
+          "scoreAdjustment": 0.5,
+          "comment": "The billing ZIP code exposes a familiar psychic contradiction. The scattered setup weakens the payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.5,
+          "rawScore": 6.8,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean irony about billing zip code undercutting psychic claims; solid escalation and clear two-concept use."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6,
+          "rawScore": 6.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Good scam details and stage voice, but the core psychic-payment observation is familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Funny skepticism premise with a logical punchline, though the turn is somewhat predictable."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT Latest Medium",
+      "score": 6,
+      "rawScore": 6.2,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.9,
+        "surprise": 5.9,
+        "craft": 5.9,
+        "originality": 5.9,
+        "promptFit": 7.4
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6,
+        "craft": 6,
+        "originality": 6,
+        "promptFit": 7.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.6,
+          "rawScore": 6.9,
+          "scoreAdjustment": -0.3,
+          "comment": "Nice double-twist ending (dad on phone, cost reveal); spoiled is only loosely implied but the mechanics land well."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 6.6,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.4,
+          "comment": "Clear premise and solid spoiled-kid angle, though the back-and-forth phrasing slightly dilutes the final snap."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5,
+          "rawScore": 5.3,
+          "scoreAdjustment": -0.3,
+          "comment": "Spoiled lands via the dad-pays angle, but the second beat is weaker and undercuts the first."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.9,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear setup and payoff; inheritance angle is familiar but lands cleanly."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.6,
+        "surprise": 4.8,
+        "craft": 6.6,
+        "originality": 4.8,
+        "promptFit": 8.7
+      },
+      "rawRubric": {
+        "laugh": 5.5,
+        "surprise": 4.8,
+        "craft": 6.5,
+        "originality": 4.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT Latest Medium",
+          "score": 7.7,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.5,
+          "comment": "Excellent economy and timing. The stolen wallet makes the final prediction amusing, although somewhat foreseeable."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.9,
+          "rawScore": 5.2,
+          "scoreAdjustment": -0.3,
+          "comment": "Competent but the pickpocket-while-blind-trusting beat is the first obvious route and feels familiar."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.2,
+          "rawScore": 4.8,
+          "scoreAdjustment": 0.4,
+          "comment": "Clean and tight rhythm, but the stolen-wallet sight gag and 'financial loss' punchline are very predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 6,
+          "scoreAdjustment": -0.3,
+          "comment": "Simple, efficient joke construction; the financial-loss prediction gag is a well-worn comic device."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-25-external-real-2026-11-25.png",
+    "originalSrc": "assets/feature-images/2026-11-25-external-real-2026-11-25.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1456,
+    "height": 720,
+    "qa": {
+      "status": "approved",
+      "version": "2026-11-feature-image-v6",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled Palm Reading: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - Palm Reading\nExact joke text to render in the right panel:\nI went to a fortune teller last month. She grabs my hand and says, 'You have to trust me completely, no questions.' Lady, I've known you for ninety seconds and you're already asking for more blind trust than my last relationship. But fine, I held out my palm. She squints at it and goes, 'I see a man who settles for less than he deserves.' I said, 'Yeah, that's why I'm holding your hand right now.'\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Steampunk, Fortune Teller, Fire Station, Having to blindly trust someone, Talented, Spoiled. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Steampunk, Fortune Teller, Fire Station, Having to blindly trust someone, Talented, Spoiled. Use the winning joke titled \"Palm Reading\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 5.6,
+      "anthropic": 6.4,
+      "google": 5.8,
+      "xai": 6.4,
+      "copilot": 6.5
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-25-external-real-2026-11-25.md"
+}
