@@ -1,0 +1,785 @@
+{
+  "version": 1,
+  "slug": "2026-11-27-external-real-2026-11-27",
+  "seed": "external-real-2026-11-27",
+  "dryRun": false,
+  "source": "manual-external",
+  "createdAt": "2026-11-27T15:03:58.014Z",
+  "publishedDate": "2026-11-27",
+  "seedTerms": [
+    "Achieve Potential",
+    "Locksmith",
+    "Black Tie Event",
+    "Being the bearer of bad news",
+    "Private",
+    "Pushy"
+  ],
+  "premise": {
+    "text": "Seed terms: Achieve Potential, Locksmith, Black Tie Event, Being the bearer of bad news, Private, Pushy",
+    "seedTerms": [
+      "Achieve Potential",
+      "Locksmith",
+      "Black Tie Event",
+      "Being the bearer of bad news",
+      "Private",
+      "Pushy"
+    ],
+    "displayText": "The Locksmith Diagnosis"
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT Latest Medium",
+      "provider": "openai",
+      "model": "Latest Medium"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "rubric": {
+    "version": "2026-06-strict-standup-v4",
+    "fields": [
+      {
+        "key": "laugh",
+        "label": "Laugh",
+        "weight": 0.4,
+        "description": "How likely a human reader is to actually laugh, not merely understand or admire the idea."
+      },
+      {
+        "key": "surprise",
+        "label": "Surprise",
+        "weight": 0.2,
+        "description": "Whether the turn avoids the first obvious route and lands with a satisfying snap."
+      },
+      {
+        "key": "craft",
+        "label": "Craft",
+        "weight": 0.2,
+        "description": "Economy, stage rhythm, first-person clarity, escalation, and a final line that carries the laugh."
+      },
+      {
+        "key": "originality",
+        "label": "Originality",
+        "weight": 0.1,
+        "description": "Freshness of comic angle, image, wording, and avoidance of familiar AI joke shapes."
+      },
+      {
+        "key": "promptFit",
+        "label": "Prompt Fit",
+        "weight": 0.1,
+        "description": "Natural first-person stand-up form using exactly two seed terms as concepts, with the other four left out."
+      }
+    ],
+    "anchors": [
+      {
+        "range": "1-2",
+        "label": "Broken",
+        "description": "Not a joke, incoherent, unsafe, or unusable."
+      },
+      {
+        "range": "3-4",
+        "label": "Weak",
+        "description": "Recognizably attempting humor, but generic, strained, confusing, or mostly prompt recital."
+      },
+      {
+        "range": "5",
+        "label": "Competent",
+        "description": "Clear and publishable as filler, but unlikely to earn more than a mild smile."
+      },
+      {
+        "range": "6",
+        "label": "Amusing",
+        "description": "A real comic idea with a mild payoff; respectable, not a winner."
+      },
+      {
+        "range": "7",
+        "label": "Good",
+        "description": "A genuinely good joke with clear timing; some humans would repeat the comic idea or turn."
+      },
+      {
+        "range": "8",
+        "label": "Excellent",
+        "description": "Strong human-level joke with a memorable turn, clean construction, and no apologetic scoring curve."
+      },
+      {
+        "range": "9",
+        "label": "Outstanding",
+        "description": "Rare and replayable; clearly better than normal good AI humor and strong by human standards."
+      },
+      {
+        "range": "10",
+        "label": "Classic",
+        "description": "Reserve for a joke a human would quote later; most seasons should have none."
+      }
+    ]
+  },
+  "jokes": [
+    {
+      "id": "joke-openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT Latest Medium",
+      "model": "Latest Medium",
+      "title": "Emergency Rates",
+      "seedTermsUsed": [
+        "Locksmith",
+        "Black Tie Event"
+      ],
+      "joke": "I locked myself out of my house on the way to a black-tie wedding. The locksmith took one look at my tuxedo and charged me $350. He opened the door in twelve seconds. For that kind of money, I wanted him to struggle a little. Fake a cramp. Call an older locksmith who comes out of retirement for one last job.",
+      "setup": "",
+      "punchline": "I locked myself out of my house on the way to a black-tie wedding. The locksmith took one look at my tuxedo and charged me $350. He opened the door in twelve seconds. For that kind of money, I wanted him to struggle a little. Fake a cramp. Call an older locksmith who comes out of retirement for one last job.",
+      "text": "I locked myself out of my house on the way to a black-tie wedding. The locksmith took one look at my tuxedo and charged me $350. He opened the door in twelve seconds. For that kind of money, I wanted him to struggle a little. Fake a cramp. Call an older locksmith who comes out of retirement for one last job."
+    },
+    {
+      "id": "joke-anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "The Locksmith Diagnosis",
+      "seedTermsUsed": [
+        "Locksmith",
+        "Being the bearer of bad news"
+      ],
+      "joke": "I locked myself out last week, so I called a locksmith. Guy shows up, looks at my door for two seconds, and goes, 'I gotta be honest with you.' I said, 'please don't,' because nothing good has ever followed those words except maybe a surprise party. He goes, 'this lock gave up before I got here. I'm basically just the guy who confirms time of death.' I paid him ninety dollars to diagnose a door.",
+      "setup": "",
+      "punchline": "I locked myself out last week, so I called a locksmith. Guy shows up, looks at my door for two seconds, and goes, 'I gotta be honest with you.' I said, 'please don't,' because nothing good has ever followed those words except maybe a surprise party. He goes, 'this lock gave up before I got here. I'm basically just the guy who confirms time of death.' I paid him ninety dollars to diagnose a door.",
+      "text": "I locked myself out last week, so I called a locksmith. Guy shows up, looks at my door for two seconds, and goes, 'I gotta be honest with you.' I said, 'please don't,' because nothing good has ever followed those words except maybe a surprise party. He goes, 'this lock gave up before I got here. I'm basically just the guy who confirms time of death.' I paid him ninety dollars to diagnose a door."
+    },
+    {
+      "id": "joke-google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Black Tie Lockout",
+      "seedTermsUsed": [
+        "Locksmith",
+        "Black Tie Event"
+      ],
+      "joke": "I locked myself out of my apartment last weekend right before a black tie event, so I had to call a locksmith while standing on the porch in a rented tuxedo. He pulls up in a rusty van, takes one look at my bow tie, and starts charging me like I own the building. Honestly, nothing ruins formalwear faster than begging a stranger to break into your own home for two hundred dollars while holding a cummerbund.",
+      "setup": "",
+      "punchline": "I locked myself out of my apartment last weekend right before a black tie event, so I had to call a locksmith while standing on the porch in a rented tuxedo. He pulls up in a rusty van, takes one look at my bow tie, and starts charging me like I own the building. Honestly, nothing ruins formalwear faster than begging a stranger to break into your own home for two hundred dollars while holding a cummerbund.",
+      "text": "I locked myself out of my apartment last weekend right before a black tie event, so I had to call a locksmith while standing on the porch in a rented tuxedo. He pulls up in a rusty van, takes one look at my bow tie, and starts charging me like I own the building. Honestly, nothing ruins formalwear faster than begging a stranger to break into your own home for two hundred dollars while holding a cummerbund."
+    },
+    {
+      "id": "joke-xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Thorough Service",
+      "seedTermsUsed": [
+        "Locksmith",
+        "Pushy"
+      ],
+      "joke": "I locked myself out of my car and called a locksmith. The guy who showed up was so pushy he never even asked what was wrong. He just went straight to work and said, 'Relax, I've got this.' Thirty seconds later the driver's door was open... along with the passenger door, the trunk, the hood, and the glove box. He looked at me and said, 'I like to be thorough.'",
+      "setup": "",
+      "punchline": "I locked myself out of my car and called a locksmith. The guy who showed up was so pushy he never even asked what was wrong. He just went straight to work and said, 'Relax, I've got this.' Thirty seconds later the driver's door was open... along with the passenger door, the trunk, the hood, and the glove box. He looked at me and said, 'I like to be thorough.'",
+      "text": "I locked myself out of my car and called a locksmith. The guy who showed up was so pushy he never even asked what was wrong. He just went straight to work and said, 'Relax, I've got this.' Thirty seconds later the driver's door was open... along with the passenger door, the trunk, the hood, and the glove box. He looked at me and said, 'I like to be thorough.'"
+    },
+    {
+      "id": "joke-copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Unlocked Career",
+      "seedTermsUsed": [
+        "Achieve Potential",
+        "Locksmith"
+      ],
+      "joke": "I hired one of those life coaches who keeps saying, \"You have so much untapped potential.\" After six months I still hadn't accomplished anything, so I fired him and called a locksmith. In ten minutes the locksmith actually fixed the thing that was locked. Apparently my potential was behind a deadbolt.",
+      "setup": "",
+      "punchline": "I hired one of those life coaches who keeps saying, \"You have so much untapped potential.\" After six months I still hadn't accomplished anything, so I fired him and called a locksmith. In ten minutes the locksmith actually fixed the thing that was locked. Apparently my potential was behind a deadbolt.",
+      "text": "I hired one of those life coaches who keeps saying, \"You have so much untapped potential.\" After six months I still hadn't accomplished anything, so I fired him and called a locksmith. In ten minutes the locksmith actually fixed the thing that was locked. Apparently my potential was behind a deadbolt."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT Latest Medium",
+      "scores": [
+        {
+          "jokeId": "joke-anthropic",
+          "comment": "Amusing medical analogy, but the final sentence is weaker than the time-of-death line.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 7,
+          "promptFit": 10,
+          "total": 6.500000000000001
+        },
+        {
+          "jokeId": "joke-google",
+          "comment": "Relatable predicament with amusing class-based pricing, but the ending lacks a decisive comic turn.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 6.200000000000001
+        },
+        {
+          "jokeId": "joke-xai",
+          "comment": "Concrete escalation creates a mildly amusing image, but the predictable closing line wastes it.",
+          "laugh": 5,
+          "surprise": 6,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.5
+        },
+        {
+          "jokeId": "joke-copilot",
+          "comment": "Understandable metaphorical reversal, but the contrived transition and predictable wordplay limit the payoff.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 6,
+          "promptFit": 10,
+          "total": 5.6
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-openai",
+          "comment": "Clean premise and escalation; 'fake a cramp' button is a nice small surprise but modest payoff overall.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        },
+        {
+          "jokeId": "joke-google",
+          "comment": "Setup is solid but the closing line restates the premise rather than turning it; cummerbund image is the only spark.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.7
+        },
+        {
+          "jokeId": "joke-xai",
+          "comment": "Clear escalation (every door opens) lands a real surprise, and 'I like to be thorough' is an earned final line.",
+          "laugh": 8,
+          "surprise": 8,
+          "craft": 8,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 8
+        },
+        {
+          "jokeId": "joke-copilot",
+          "comment": "Good conceptual pairing and tidy final line, but the turn is fairly telegraphed once the setup lands.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.500000000000002
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-openai",
+          "comment": "Clean stage rhythm and a solid escalation on the twelve-second unlock, though the tuxedo detail drops out of the punchline.",
+          "laugh": 7,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 9,
+          "total": 6.9
+        },
+        {
+          "jokeId": "joke-anthropic",
+          "comment": "Strong conversational cadence and a sharp final turn ('diagnose a door'), only slightly slowed by the middle parenthetical aside.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-xai",
+          "comment": "Clear premise and clean two-seed fit, but the escalation into cartoonish slapstick feels familiar and predictable.",
+          "laugh": 5,
+          "surprise": 5,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.3
+        },
+        {
+          "jokeId": "joke-copilot",
+          "comment": "Relies on a literal pun on 'untapped/locked' rather than a grounded situation, leaving the final line feeling mechanical.",
+          "laugh": 4,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 4.7
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-openai",
+          "comment": "Solid locked-out premise with a modest absurd escalation, but the turn stays mild and familiar.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 6.1000000000000005
+        },
+        {
+          "jokeId": "joke-anthropic",
+          "comment": "Effective personification of the failed lock plus a clean diagnostic button that lands.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 7,
+          "promptFit": 9,
+          "total": 7.200000000000001
+        },
+        {
+          "jokeId": "joke-google",
+          "comment": "Mostly observational complaint; formalwear details never produce a real snap.",
+          "laugh": 5,
+          "surprise": 4,
+          "craft": 5,
+          "originality": 4,
+          "promptFit": 8,
+          "total": 5
+        },
+        {
+          "jokeId": "joke-copilot",
+          "comment": "Clean literalization of potential with good economy; mild but functional.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.400000000000001
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-openai",
+          "comment": "Strong escalation and a clean final image; retirement tag lands well.",
+          "laugh": 7,
+          "surprise": 7,
+          "craft": 7,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 7.000000000000001
+        },
+        {
+          "jokeId": "joke-anthropic",
+          "comment": "Solid premise and coherent turn, but the payoff is mild and somewhat predictable.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        },
+        {
+          "jokeId": "joke-google",
+          "comment": "Clear situation and relatable contrast, though the angle is familiar and the finish is modest.",
+          "laugh": 6,
+          "surprise": 5,
+          "craft": 6,
+          "originality": 5,
+          "promptFit": 8,
+          "total": 5.9
+        },
+        {
+          "jokeId": "joke-xai",
+          "comment": "Good exaggeration and characterization; amusing image, but the punchline doesn't quite snap.",
+          "laugh": 6,
+          "surprise": 6,
+          "craft": 6,
+          "originality": 6,
+          "promptFit": 8,
+          "total": 6.2
+        }
+      ]
+    }
+  ],
+  "rankings": [
+    {
+      "jokeId": "joke-anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "score": 6.8,
+      "rawScore": 6.8,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.6,
+        "surprise": 6.6,
+        "craft": 6.6,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.5,
+        "craft": 6.5,
+        "originality": 6.8,
+        "promptFit": 9
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT Latest Medium",
+          "score": 6.7,
+          "rawScore": 6.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Amusing medical analogy, but the final sentence is weaker than the time-of-death line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 7.8,
+          "rawScore": 7.2,
+          "scoreAdjustment": 0.6,
+          "comment": "Strong conversational cadence and a sharp final turn ('diagnose a door'), only slightly slowed by the middle parenthetical aside."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 7,
+          "rawScore": 7.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Effective personification of the failed lock plus a clean diagnostic button that lands."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid premise and coherent turn, but the payoff is mild and somewhat predictable."
+        }
+      ],
+      "rank": 1
+    },
+    {
+      "jokeId": "joke-openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT Latest Medium",
+      "score": 6.6,
+      "rawScore": 6.6,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.5,
+        "surprise": 6.2,
+        "craft": 6.7,
+        "originality": 5.7,
+        "promptFit": 8.5
+      },
+      "rawRubric": {
+        "laugh": 6.5,
+        "surprise": 6.3,
+        "craft": 6.8,
+        "originality": 5.8,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Clean premise and escalation; 'fake a cramp' button is a nice small surprise but modest payoff overall."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 7.5,
+          "rawScore": 6.9,
+          "scoreAdjustment": 0.6,
+          "comment": "Clean stage rhythm and a solid escalation on the twelve-second unlock, though the tuxedo detail drops out of the punchline."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 5.9,
+          "rawScore": 6.1,
+          "scoreAdjustment": -0.2,
+          "comment": "Solid locked-out premise with a modest absurd escalation, but the turn stays mild and familiar."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6.8,
+          "rawScore": 7,
+          "scoreAdjustment": -0.2,
+          "comment": "Strong escalation and a clean final image; retirement tag lands well."
+        }
+      ],
+      "rank": 2
+    },
+    {
+      "jokeId": "joke-xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "score": 6.3,
+      "rawScore": 6.3,
+      "scoreAdjustment": 0,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 6.1,
+        "surprise": 6.3,
+        "craft": 6.1,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 6,
+        "surprise": 6.3,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 8.3
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT Latest Medium",
+          "score": 5.7,
+          "rawScore": 5.5,
+          "scoreAdjustment": 0.2,
+          "comment": "Concrete escalation creates a mildly amusing image, but the predictable closing line wastes it."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 7.7,
+          "rawScore": 8,
+          "scoreAdjustment": -0.3,
+          "comment": "Clear escalation (every door opens) lands a real surprise, and 'I like to be thorough' is an earned final line."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.9,
+          "rawScore": 5.3,
+          "scoreAdjustment": 0.6,
+          "comment": "Clear premise and clean two-seed fit, but the escalation into cartoonish slapstick feels familiar and predictable."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 6,
+          "rawScore": 6.2,
+          "scoreAdjustment": -0.2,
+          "comment": "Good exaggeration and characterization; amusing image, but the punchline doesn't quite snap."
+        }
+      ],
+      "rank": 3
+    },
+    {
+      "jokeId": "joke-copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "score": 5.9,
+      "rawScore": 5.8,
+      "scoreAdjustment": 0.1,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6.1,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 5.3,
+        "craft": 6,
+        "originality": 5.8,
+        "promptFit": 8.8
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT Latest Medium",
+          "score": 5.8,
+          "rawScore": 5.6,
+          "scoreAdjustment": 0.2,
+          "comment": "Understandable metaphorical reversal, but the contrived transition and predictable wordplay limit the payoff."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 6.2,
+          "rawScore": 6.5,
+          "scoreAdjustment": -0.3,
+          "comment": "Good conceptual pairing and tidy final line, but the turn is fairly telegraphed once the setup lands."
+        },
+        {
+          "judgeId": "google",
+          "judgeName": "Gemini",
+          "score": 5.3,
+          "rawScore": 4.7,
+          "scoreAdjustment": 0.6,
+          "comment": "Relies on a literal pun on 'untapped/locked' rather than a grounded situation, leaving the final line feeling mechanical."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 6.2,
+          "rawScore": 6.4,
+          "scoreAdjustment": -0.2,
+          "comment": "Clean literalization of potential with good economy; mild but functional."
+        }
+      ],
+      "rank": 4
+    },
+    {
+      "jokeId": "joke-google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "score": 5.3,
+      "rawScore": 5.5,
+      "scoreAdjustment": -0.2,
+      "judgeCount": 4,
+      "rubric": {
+        "laugh": 5.1,
+        "surprise": 4.4,
+        "craft": 5.4,
+        "originality": 4.9,
+        "promptFit": 8.3
+      },
+      "rawRubric": {
+        "laugh": 5.3,
+        "surprise": 4.5,
+        "craft": 5.5,
+        "originality": 5,
+        "promptFit": 8.5
+      },
+      "comments": [
+        {
+          "judgeId": "openai",
+          "judgeName": "OpenAI ChatGPT Latest Medium",
+          "score": 6.4,
+          "rawScore": 6.2,
+          "scoreAdjustment": 0.2,
+          "comment": "Relatable predicament with amusing class-based pricing, but the ending lacks a decisive comic turn."
+        },
+        {
+          "judgeId": "anthropic",
+          "judgeName": "Claude",
+          "score": 4.4,
+          "rawScore": 4.7,
+          "scoreAdjustment": -0.3,
+          "comment": "Setup is solid but the closing line restates the premise rather than turning it; cummerbund image is the only spark."
+        },
+        {
+          "judgeId": "xai",
+          "judgeName": "xAI Grok",
+          "score": 4.8,
+          "rawScore": 5,
+          "scoreAdjustment": -0.2,
+          "comment": "Mostly observational complaint; formalwear details never produce a real snap."
+        },
+        {
+          "judgeId": "copilot",
+          "judgeName": "Copilot",
+          "score": 5.7,
+          "rawScore": 5.9,
+          "scoreAdjustment": -0.2,
+          "comment": "Clear situation and relatable contrast, though the angle is familiar and the finish is modest."
+        }
+      ],
+      "rank": 5
+    }
+  ],
+  "featureImage": {
+    "src": "assets/feature-images/2026-11-27-external-real-2026-11-27.png",
+    "originalSrc": "assets/feature-images/2026-11-27-external-real-2026-11-27.png",
+    "source": "Gemini image generation (web preview)",
+    "aspectRatio": "2:1",
+    "width": 1456,
+    "height": 720,
+    "qa": {
+      "status": "approved",
+      "version": "2026-11-feature-image-v6",
+      "visualApproved": true,
+      "assetType": "gemini-web-preview",
+      "automaticChecks": "passed",
+      "warnings": []
+    },
+    "alt": "Paperclipalypse winning joke feature image titled The Locksmith Diagnosis: a paperclip stand-up comic and the winning joke scene."
+  },
+  "featureImagePrompt": "Generate one polished web feature image for Paperclipalypse.\nASPECT RATIO: exactly 2:1, horizontal wide banner.\nStyle: full-color gothic newspaper-comic illustration, darkly funny but warm, clean black ink, crisp editorial cartoon linework, cinematic stage lighting, high contrast, readable composition. Not monochrome. Not sepia-only. Use a balanced color palette: warm amber stage lights, dark bronze and silver metal paperclip, muted greens for the joke setting, dusty blue-gray shadows, cream-white text, subtle deep red accent lights.\nComposition instructions, not visible labels:\n- Compose the image as one continuous illustration, not as a boxy triptych or three separate image panels. Do not add white gutters, hard section borders, or comic-strip dividers between the paperclip stage and the joke scenario.\n- Let the paperclip stage on the left bleed visually into the joke scenario in the center through shared lighting, background, floor, props, or atmosphere. The right-side joke text may remain distinct inside its own dark framed poster panel.\n- Put a charming anthropomorphic paperclip stand-up comedian at a vintage microphone on the left side of the image. The paperclip should look metallic and expressive, related to Paperclipalypse's paperclip-comedian logo, but not identical.\n- Put the winning joke scene in the middle of the image, shown as literal visual comedy action and props. Make it energetic, funny, and non-gory.\n- Keep anatomy clean and believable. Every human or animal should have the normal, correct number of visible limbs, digits, and joints for the pose. Do not generate extra arms, extra hands, fused limbs, duplicated body parts, or broken-looking anatomy.\n- Preserve the physical scenario described by the winning joke. If the joke says a person is pinned, trapped, under, inside, holding, lifting, falling, carrying, or otherwise physically positioned in a specific way, show that exact physical relation clearly and safely instead of a nearby or symbolic version.\n- If the joke describes someone pinned under a vehicle or other heavy object, show the person visibly underneath that object with their body position clear and cartoon-safe. Do not place them merely beside, near, or behind the object.\n- Put a clean dark framed poster panel on the right side of the image. The panel should contain the winning joke text in large cream-white lettering with generous margins and legible line breaks.\nVisible text allowed in the entire image: the right-panel joke text, a tiny stage sign reading Paperclipalypse, and optionally a small winner/title header above the panel.\nDo not render layout words, percentages, prompt labels, section names, fake captions, signatures, watermarks, or filler microtext.\nOptional small header text above the panel: Winner: Claude - The Locksmith Diagnosis\nExact joke text to render in the right panel:\nI locked myself out last week, so I called a locksmith. Guy shows up, looks at my door for two seconds, and goes, 'I gotta be honest with you.' I said, 'please don't,' because nothing good has ever followed those words except maybe a surprise party. He goes, 'this lock gave up before I got here. I'm basically just the guy who confirms time of death.' I paid him ninety dollars to diagnose a door.\nScene source: use the exact winning joke text as the primary scene brief. The illustration must depict the concrete situation that the joke describes, not a softened, adjacent, or generic version. Do not infer a separate premise from all six seed terms.\nDo not introduce unrelated seed-term concepts, occupations, animals, locations, props, or side characters unless they are explicitly required by the winning joke text.\nIf the winning joke mentions one seed-term concept but not another, depict only what the joke actually describes.\nRound seed terms for exclusion reference only: Achieve Potential, Locksmith, Black Tie Event, Being the bearer of bad news, Private, Pushy. These are not scene ingredients unless the winning joke explicitly uses them.\nText rules: use simple clean lettering, spell every word correctly, keep the text inside the right panel, and do not distort letter shapes. The website HTML remains the canonical exact joke text if image lettering is imperfect.\nThe final image should feel like a finished feature image for an AI comedy tournament: funny, stylish, readable, full-color, and visually balanced across the paperclip comic, the joke scene, and the joke text.",
+  "comicPanelPrompt": "Single-panel newspaper comic for Paperclipalypse. Seed terms: Achieve Potential, Locksmith, Black Tie Event, Being the bearer of bad news, Private, Pushy. Use the winning joke titled \"The Locksmith Diagnosis\" as the source of the scene. Style: clean black ink, limited color accents, expressive characters, no text bubbles except a tiny scoreboard reading Paperclipalypse.",
+  "scoring": {
+    "method": "rolling-judge-bias-v1",
+    "label": "Judge-normalized adjusted score",
+    "formula": "adjusted = raw - judge rolling average + field rolling average",
+    "windowSize": 5,
+    "historyContestCount": 5,
+    "fieldAverage": 6.2,
+    "judgeAverages": {
+      "openai": 6,
+      "anthropic": 6.5,
+      "google": 5.6,
+      "xai": 6.4,
+      "copilot": 6.4
+    },
+    "applied": true
+  },
+  "featureImageBrief": "data/image-briefs/2026-11-27-external-real-2026-11-27.md"
+}

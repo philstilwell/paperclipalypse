@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-27T15:03:58.014Z",
+  "publishedDate": "2026-11-27",
+  "seed": "external-real-2026-11-27",
+  "slug": "2026-11-27-external-real-2026-11-27",
+  "source": "manual-external",
+  "seedTerms": [
+    "Achieve Potential",
+    "Locksmith",
+    "Black Tie Event",
+    "Being the bearer of bad news",
+    "Private",
+    "Pushy"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT Latest Medium",
+      "provider": "openai",
+      "model": "Latest Medium"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-openai",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT Latest Medium",
+      "model": "Latest Medium",
+      "title": "Emergency Rates",
+      "seedTermsUsed": [
+        "Locksmith",
+        "Black Tie Event"
+      ],
+      "joke": "I locked myself out of my house on the way to a black-tie wedding. The locksmith took one look at my tuxedo and charged me $350. He opened the door in twelve seconds. For that kind of money, I wanted him to struggle a little. Fake a cramp. Call an older locksmith who comes out of retirement for one last job."
+    },
+    {
+      "id": "joke-anthropic",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "The Locksmith Diagnosis",
+      "seedTermsUsed": [
+        "Locksmith",
+        "Being the bearer of bad news"
+      ],
+      "joke": "I locked myself out last week, so I called a locksmith. Guy shows up, looks at my door for two seconds, and goes, 'I gotta be honest with you.' I said, 'please don't,' because nothing good has ever followed those words except maybe a surprise party. He goes, 'this lock gave up before I got here. I'm basically just the guy who confirms time of death.' I paid him ninety dollars to diagnose a door."
+    },
+    {
+      "id": "joke-google",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Black Tie Lockout",
+      "seedTermsUsed": [
+        "Locksmith",
+        "Black Tie Event"
+      ],
+      "joke": "I locked myself out of my apartment last weekend right before a black tie event, so I had to call a locksmith while standing on the porch in a rented tuxedo. He pulls up in a rusty van, takes one look at my bow tie, and starts charging me like I own the building. Honestly, nothing ruins formalwear faster than begging a stranger to break into your own home for two hundred dollars while holding a cummerbund."
+    },
+    {
+      "id": "joke-xai",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Thorough Service",
+      "seedTermsUsed": [
+        "Locksmith",
+        "Pushy"
+      ],
+      "joke": "I locked myself out of my car and called a locksmith. The guy who showed up was so pushy he never even asked what was wrong. He just went straight to work and said, 'Relax, I've got this.' Thirty seconds later the driver's door was open... along with the passenger door, the trunk, the hood, and the glove box. He looked at me and said, 'I like to be thorough.'"
+    },
+    {
+      "id": "joke-copilot",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Unlocked Career",
+      "seedTermsUsed": [
+        "Achieve Potential",
+        "Locksmith"
+      ],
+      "joke": "I hired one of those life coaches who keeps saying, \"You have so much untapped potential.\" After six months I still hadn't accomplished anything, so I fired him and called a locksmith. In ten minutes the locksmith actually fixed the thing that was locked. Apparently my potential was behind a deadbolt."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT Latest Medium",
+      "scores": [
+        {
+          "jokeId": "joke-anthropic",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Amusing medical analogy, but the final sentence is weaker than the time-of-death line."
+        },
+        {
+          "jokeId": "joke-google",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Relatable predicament with amusing class-based pricing, but the ending lacks a decisive comic turn."
+        },
+        {
+          "jokeId": "joke-xai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Concrete escalation creates a mildly amusing image, but the predictable closing line wastes it."
+        },
+        {
+          "jokeId": "joke-copilot",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Understandable metaphorical reversal, but the contrived transition and predictable wordplay limit the payoff."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Clean premise and escalation; 'fake a cramp' button is a nice small surprise but modest payoff overall."
+        },
+        {
+          "jokeId": "joke-google",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Setup is solid but the closing line restates the premise rather than turning it; cummerbund image is the only spark."
+        },
+        {
+          "jokeId": "joke-xai",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Clear escalation (every door opens) lands a real surprise, and 'I like to be thorough' is an earned final line."
+        },
+        {
+          "jokeId": "joke-copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Good conceptual pairing and tidy final line, but the turn is fairly telegraphed once the setup lands."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-openai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean stage rhythm and a solid escalation on the twelve-second unlock, though the tuxedo detail drops out of the punchline."
+        },
+        {
+          "jokeId": "joke-anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Strong conversational cadence and a sharp final turn ('diagnose a door'), only slightly slowed by the middle parenthetical aside."
+        },
+        {
+          "jokeId": "joke-xai",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clear premise and clean two-seed fit, but the escalation into cartoonish slapstick feels familiar and predictable."
+        },
+        {
+          "jokeId": "joke-copilot",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 4,
+          "comment": "Relies on a literal pun on 'untapped/locked' rather than a grounded situation, leaving the final line feeling mechanical."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-openai",
+          "originality": 5,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid locked-out premise with a modest absurd escalation, but the turn stays mild and familiar."
+        },
+        {
+          "jokeId": "joke-anthropic",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Effective personification of the failed lock plus a clean diagnostic button that lands."
+        },
+        {
+          "jokeId": "joke-google",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Mostly observational complaint; formalwear details never produce a real snap."
+        },
+        {
+          "jokeId": "joke-copilot",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clean literalization of potential with good economy; mild but functional."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-openai",
+          "originality": 6,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong escalation and a clean final image; retirement tag lands well."
+        },
+        {
+          "jokeId": "joke-anthropic",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Solid premise and coherent turn, but the payoff is mild and somewhat predictable."
+        },
+        {
+          "jokeId": "joke-google",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Clear situation and relatable contrast, though the angle is familiar and the finish is modest."
+        },
+        {
+          "jokeId": "joke-xai",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good exaggeration and characterization; amusing image, but the punchline doesn't quite snap."
+        }
+      ]
+    }
+  ]
+}
