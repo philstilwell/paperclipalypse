@@ -1,5 +1,9 @@
 # Paperclipalypse One-Prompt Contest Protocol
 
+The daily series ended with the November 27, 2026 contest. If a scheduled
+task invokes this protocol, exit before preparing a round, contacting
+contestants, or publishing. Phil can still request a special contest directly.
+
 This is the intended operator flow when Phil gives Codex a single instruction
 such as:
 

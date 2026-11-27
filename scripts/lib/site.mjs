@@ -127,6 +127,8 @@ function readRuns(historyDir) {
     .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
 }
 
+const dailyFinaleSlug = "2026-11-27-external-real-2026-11-27";
+
 function renderHome(run, runs) {
   const publicRuns = runs.filter((archivedRun) => !archivedRun.dryRun || archivedRun.slug === run.slug);
   const introPreviousRun = publicRuns.find((archivedRun) => archivedRun.slug !== run.slug);
@@ -1543,7 +1545,7 @@ function renderRunPage(run, publicRuns) {
     schemas: renderRunSchemas(run),
     noindex: Boolean(run.dryRun),
     body: `
-      ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", standingsPath: "../standings.html", label: shortDate(run) })}
+      ${renderTopnav({ homePath: "../index.html", aboutPath: "../about.html", standingsPath: "../standings.html", label: shortDate(run) })}${run.slug === dailyFinaleSlug ? renderDailyFinale("../") : ""}
       ${renderRun(run, {
         assetBase: "../",
         memoryNav: renderMemoryNav(run, publicRuns, "Memory Bank navigation"),
@@ -1732,7 +1734,7 @@ function renderHero(run, options = {}) {
               <a class="hero-about-link" href="./standings.html">Standings</a>
               <a class="hero-about-link" href="./about.html">About</a>
             </nav>
-          </div>
+          </div>${run.slug === dailyFinaleSlug ? renderDailyFinale("./") : ""}
           <div class="hero-copy">
             <p class="episode-date">${escapeHtml(shortDate(run))}</p>
             <h2>${escapeHtml(displayTitle)}</h2>
@@ -1750,6 +1752,25 @@ function renderHero(run, options = {}) {
           </dl>
         </div>
       </header>`;
+}
+
+function renderDailyFinale(assetBase) {
+  return `
+      <section class="daily-finale" aria-labelledby="daily-finale-title">
+        <header class="finale-heading">
+          <p class="finale-kicker">The daily series finale</p>
+          <h2 id="daily-finale-title">That’s our time!</h2>
+        </header>
+        <div class="finale-message">
+          <p><strong>Today is our last daily contest.</strong> Since June, we’ve put 894 jokes on stage across 179 contests. We’re proud of how the site performed, right down to giving readers a look at every judge’s score. Thanks for laughing along and for having your own opinions about who deserved to win.</p>
+          <p>We may bring the comics back for an encore. For now, we’re turning our attention to other AI projects. At Xensible, we’re helping people build sites like this one. If you have an idea of your own, we’d love to hear it.</p>
+          <a class="finale-cta" href="https://xensible.com/">Build with us at Xensible.com <span aria-hidden="true">↗</span></a>
+        </div>
+        <figure class="finale-portrait">
+          <img src="${escapeHtml(assetBase)}assets/phil.webp" alt="Caricature of Phil Stilwell in his flat cap and glasses" width="1024" height="1536">
+          <figcaption>Phil Stilwell</figcaption>
+        </figure>
+      </section>`;
 }
 
 function renderRun(run, options = {}) {
@@ -3225,6 +3246,102 @@ main {
 
 .hero + main {
   padding-top: 18px;
+}
+
+.daily-finale {
+  --finale-gold: #ffd77d;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(185px, 32%);
+  grid-template-areas: "heading portrait" "message portrait";
+  column-gap: clamp(16px, 3vw, 44px);
+  isolation: isolate;
+  overflow: hidden;
+  margin: 0 0 32px;
+  padding: clamp(24px, 4vw, 54px) clamp(20px, 4vw, 54px) 0;
+  border: 1px solid #a47a4a;
+  border-top: 4px solid var(--finale-gold);
+  border-radius: 14px;
+  color: #fff3e6;
+  background: radial-gradient(ellipse at 87% 46%, #783331 0, transparent 50%),
+    linear-gradient(118deg, #251923 16%, #321923 58%, #4e2227);
+}
+
+.topnav + .daily-finale { width: min(1180px, calc(100% - 32px)); margin: 8px auto 0; }
+.hero .daily-finale { margin: 0; }
+.finale-heading { grid-area: heading; }
+.finale-kicker {
+  margin: 0 0 12px;
+  color: var(--finale-gold);
+  font-size: .78rem;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.daily-finale .finale-heading h2 {
+  margin: 0;
+  color: #fff2d9;
+  font: 700 clamp(3rem, 6.2vw, 5.6rem)/.99 Georgia, "Times New Roman", serif;
+  letter-spacing: -.055em;
+}
+.finale-message {
+  grid-area: message;
+  padding-bottom: clamp(26px, 4vw, 48px);
+  max-width: 67ch;
+}
+.finale-message p { margin: 1em 0; font-size: clamp(1rem, 1.6vw, 1.12rem); line-height: 1.55; }
+.finale-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .85em;
+  margin-top: 6px;
+  padding: .85em 1.1em;
+  background: var(--finale-gold);
+  color: #291624;
+  border-radius: 6px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.finale-cta:hover { background: #ffe9b4; text-decoration: underline; }
+.finale-cta:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+.finale-portrait {
+  grid-area: portrait;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  background: radial-gradient(ellipse closest-side at center 47%, #eead70 0%, #bc704c 96%, transparent 98%);
+}
+.finale-portrait img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 145%;
+  max-width: none;
+  height: auto;
+  transform: translateX(-50%);
+}
+.finale-portrait figcaption {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  padding: .32em .85em;
+  white-space: nowrap;
+  background: #fff1d8;
+  color: #311923;
+  box-shadow: 4px 4px 0 #552634;
+  font: italic 700 1.25rem Georgia, serif;
+}
+@media (max-width: 680px) {
+  .daily-finale {
+    grid-template-columns: minmax(0, 1fr) clamp(85px, 23vw, 135px);
+    grid-template-areas: "heading portrait" "message message";
+    gap: 4px 10px;
+    padding: 22px 18px 0;
+  }
+  .finale-heading { align-self: center; }
+  .daily-finale .finale-heading h2 { font-size: clamp(2.4rem, 9vw, 3.7rem); }
+  .finale-portrait { height: clamp(120px, 30vw, 160px); }
+  .finale-portrait figcaption { bottom: 4px; padding: .22em .5em; font-size: .85rem; }
 }
 
 .episode {
