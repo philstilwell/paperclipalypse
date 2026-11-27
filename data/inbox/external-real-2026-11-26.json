@@ -1,0 +1,329 @@
+{
+  "createdAt": "2026-11-26T14:58:20.495Z",
+  "publishedDate": "2026-11-26",
+  "seed": "external-real-2026-11-26",
+  "slug": "2026-11-26-external-real-2026-11-26",
+  "source": "manual-external",
+  "seedTerms": [
+    "Urban",
+    "Fundraiser",
+    "A CEO's Office",
+    "Theft of important thing",
+    "Friendly",
+    "Pushy"
+  ],
+  "premise": {
+    "displayText": ""
+  },
+  "contestants": [
+    {
+      "id": "openai",
+      "displayName": "OpenAI ChatGPT Latest Medium",
+      "provider": "openai",
+      "model": "Latest Medium"
+    },
+    {
+      "id": "anthropic",
+      "displayName": "Claude",
+      "provider": "anthropic",
+      "model": "Sonnet 5 Medium"
+    },
+    {
+      "id": "google",
+      "displayName": "Gemini",
+      "provider": "google",
+      "model": "Hydrogen"
+    },
+    {
+      "id": "xai",
+      "displayName": "xAI Grok",
+      "provider": "xai",
+      "model": "Fast"
+    },
+    {
+      "id": "copilot",
+      "displayName": "Copilot",
+      "provider": "manual-web",
+      "model": "Microsoft Copilot Auto"
+    }
+  ],
+  "jokes": [
+    {
+      "id": "joke-a",
+      "label": "Joke A",
+      "contestantId": "openai",
+      "contestantName": "OpenAI ChatGPT Latest Medium",
+      "model": "Latest Medium",
+      "title": "Donor Recognition",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Pushy"
+      ],
+      "joke": "I went to a charity auction where the guy running the fundraiser said, 'Come on, folks, give until it hurts!' I donated fifty bucks. He came over and asked if I could make it a hundred. I said, 'No, fifty already hurts.' He said, 'Imagine how the children feel.' I said, 'Do they know you're talking to me like this?'"
+    },
+    {
+      "id": "joke-b",
+      "label": "Joke B",
+      "contestantId": "anthropic",
+      "contestantName": "Claude",
+      "model": "Sonnet 5 Medium",
+      "title": "Silent Auction",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Theft of important thing"
+      ],
+      "joke": "I donated my grandfather's watch to a silent auction fundraiser. Just dropped it off, filled out the form, left. Came back three hours later for the closing bids and the watch was gone. Not won. Gone. Nobody outbid anyone, the table was just empty, like the raffle had an afterlife. I didn't support a good cause, I opened a missing persons case for a Rolex."
+    },
+    {
+      "id": "joke-c",
+      "label": "Joke C",
+      "contestantId": "google",
+      "contestantName": "Gemini",
+      "model": "Hydrogen",
+      "title": "Charity Gala",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Pushy"
+      ],
+      "joke": "I went to a charity fundraiser last week where the auctioneer treated generosity like a hostage negotiation. I blinked during the silent auction and suddenly owned a $400 signed toaster. When I tried to walk away, a volunteer blocked the exit with a clipboard and whispered, \"Are you really going to let the turtles down, Greg?\" My name isn't even Greg—I just panicked and tipped twenty percent to escape."
+    },
+    {
+      "id": "joke-d",
+      "label": "Joke D",
+      "contestantId": "xai",
+      "contestantName": "xAI Grok",
+      "model": "Fast",
+      "title": "Charity Ambush",
+      "seedTermsUsed": [
+        "Fundraiser",
+        "Pushy"
+      ],
+      "joke": "I went to a charity fundraiser last month and the volunteer was so pushy he didn’t take no for an answer. He followed me from the silent auction to the parking lot, then texted me from the next table at dinner. By the time I got home I’d pledged my spare kidney, the title to my car, and the last two years of my tax returns. He still sent a follow-up: “Just checking if you’ve reconsidered the matching gift.”"
+    },
+    {
+      "id": "joke-e",
+      "label": "Joke E",
+      "contestantId": "copilot",
+      "contestantName": "Copilot",
+      "model": "Microsoft Copilot Auto",
+      "title": "Neighborly Pressure",
+      "seedTermsUsed": [
+        "Friendly",
+        "Pushy"
+      ],
+      "joke": "I knew my new neighbor was friendly when he brought over cookies. I knew he was pushy when he stood in my doorway watching me eat them. Every bite came with coaching: 'Try the one with chocolate chips!' By the fourth cookie he was yelling, 'Come on, you're leaving snacks on the table!' I wasn't making a friend, I was being sponsored."
+    }
+  ],
+  "judgeResults": [
+    {
+      "judgeId": "openai",
+      "judgeName": "OpenAI ChatGPT Latest Medium",
+      "scores": [
+        {
+          "jokeId": "joke-b",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "Clear premise, but the missing-persons comparison produces more of a smile than a laugh. The afterlife metaphor adds unnecessary clutter."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Strong escalation, amusingly specific details, and an unexpected mistaken-name twist. The final tipping detail reinforces the absurdity."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 10,
+          "laugh": 4,
+          "comment": "Predictable exaggeration with an awkward chronological sequence. The matching-gift punchline lacks sufficient impact."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 5,
+          "comment": "A recognizable social situation with an amusingly overbearing neighbor. The sponsorship punchline is somewhat imprecise and underpowered."
+        }
+      ]
+    },
+    {
+      "judgeId": "anthropic",
+      "judgeName": "Claude",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 4,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 8,
+          "laugh": 5,
+          "comment": "Clean exchange, decent final line, but 'give until it hurts' setup is familiar territory and the turn is mild."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 7,
+          "comment": "Strong escalation (toaster, blocked exit, wrong name) with a sharp, specific final line; reads naturally as stand-up."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 7,
+          "promptFit": 8,
+          "laugh": 6,
+          "comment": "Good escalating list and a funny closing text, though the kidney/car/taxes beat is a slightly familiar exaggeration move."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 4,
+          "laugh": 5,
+          "comment": "Pleasant and well-timed, but leans on neighborly/friendly framing more than fundraiser or theft concepts, weakening prompt fit."
+        }
+      ]
+    },
+    {
+      "judgeId": "google",
+      "judgeName": "Gemini",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Clean back-and-forth stage rhythm and exact two-seed compliance, though the pushy fundraiser escalation feels fairly familiar and the final retort lands softly."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 5,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 4,
+          "comment": "Clear first-person setup using two seeds well, but the story just states that the watch was stolen without a sharp comic turn or punchy closer."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 5,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Solid escalation structure, but the 'spare kidney and car title' hyperbole is an overused comedy trope that dulls the payoff."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 6,
+          "surprise": 6,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 6,
+          "comment": "Relatable domestic premise with tight escalation and a crisp, well-timed closing reframe from neighbor to athletic sponsor."
+        }
+      ]
+    },
+    {
+      "judgeId": "xai",
+      "judgeName": "xAI Grok",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 4,
+          "surprise": 4,
+          "craft": 6,
+          "promptFit": 9,
+          "laugh": 5,
+          "comment": "Competent pushy-charity setup with a mild deflection closer; readable but familiar and low-stakes."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Clean premise of silent-auction disappearance; the missing-persons closer lands with a solid, specific snap."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 8,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 8,
+          "comment": "Strong stage escalation from toaster to the Greg/turtles pressure; final escape tip carries a clear laugh."
+        },
+        {
+          "jokeId": "joke-e",
+          "originality": 7,
+          "surprise": 6,
+          "craft": 8,
+          "promptFit": 9,
+          "laugh": 7,
+          "comment": "Tight friendly-to-pushy neighbor bit with clean coaching escalation and a sharp 'sponsored' closer."
+        }
+      ]
+    },
+    {
+      "judgeId": "copilot",
+      "judgeName": "Copilot",
+      "scores": [
+        {
+          "jokeId": "joke-a",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Clear setup and payoff; mild, familiar fundraiser pressure joke with a decent comeback."
+        },
+        {
+          "jokeId": "joke-b",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 7,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Strong image and clean premise; 'missing persons case for a Rolex' is a good turn but not a huge laugh."
+        },
+        {
+          "jokeId": "joke-c",
+          "originality": 7,
+          "surprise": 7,
+          "craft": 8,
+          "promptFit": 10,
+          "laugh": 7,
+          "comment": "Best escalation in the batch; the Greg detail adds specificity and the escape tip lands well."
+        },
+        {
+          "jokeId": "joke-d",
+          "originality": 5,
+          "surprise": 5,
+          "craft": 6,
+          "promptFit": 10,
+          "laugh": 6,
+          "comment": "Competent escalation of pushiness, but the premise is predictable and the final line is more smile than laugh."
+        }
+      ]
+    }
+  ]
+}
