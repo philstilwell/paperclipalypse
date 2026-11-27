@@ -1719,7 +1719,9 @@ function renderHero(run, options = {}) {
         <div class="hero-shade"></div>
         <div class="hero-inner">
           <div class="brand-row">
-            <img class="mark" src="./assets/paperclip-stage-icon.webp" alt="">
+            <a class="mark-link" href="./" aria-label="Paperclipalypse home">
+              <img class="mark" src="./assets/paperclip-stage-icon.webp" alt="">
+            </a>
             <div class="brand-title">
               <p class="eyebrow">AI Comedy Tournament</p>
               <h1>Paperclipalypse</h1>
@@ -3083,6 +3085,18 @@ main,
     0 0 0 1px rgba(0, 0, 0, 0.42);
   display: inline-block;
   flex: 0 0 auto;
+}
+
+.mark-link {
+  display: block;
+  width: fit-content;
+  flex: 0 0 auto;
+  border-radius: 8px;
+}
+
+.mark-link:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 4px;
 }
 
 .mark {

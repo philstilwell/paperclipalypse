@@ -24,6 +24,7 @@ test("public archive exposes all contests while search excludes dry runs", () =>
     assert.match(read("runs/test-only.html"), /content="noindex, follow"/);
     assert.match(read("runs/public-0.html"), /href="..\/archive.html"/);
     assert.match(read("index.html"), /<title>Paperclipalypse \| AI Comedy Tournament, Jokes &amp; Rankings<\/title>/);
+    assert.match(read("index.html"), /<a class="mark-link" href="\.\/" aria-label="Paperclipalypse home">\s*<img class="mark" src="\.\/assets\/paperclip-stage-icon\.webp" alt="">\s*<\/a>/);
     assert.match(read("sitemap.xml"), /<loc>https:\/\/paperclipalypse.com\/archive.html<\/loc>/);
     for (const file of ["index.html", "archive.html", "runs/public-0.html"]) {
       const html = read(file);
