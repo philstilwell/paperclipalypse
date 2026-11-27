@@ -59,6 +59,10 @@ jobs:
         with:
           path: site
 
+      # The artifact can take a few seconds to appear in the Pages deploy lookup.
+      - name: Allow Pages artifact to become visible
+        run: sleep 30
+
       - name: Deploy Pages
         id: deployment
         uses: actions/deploy-pages@v5
